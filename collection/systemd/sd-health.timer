@@ -1,0 +1,10 @@
+[Unit]
+Description=Feed health check daily
+
+[Timer]
+OnCalendar=*-*-* 08:05
+RandomizedDelaySec=600
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Run the GDELT poller every 6 hours
+
+[Timer]
+OnCalendar=*-*-* 00/6:40
+RandomizedDelaySec=300
+Persistent=true
+
+[Install]
+WantedBy=timers.target

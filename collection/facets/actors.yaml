@@ -1,0 +1,25 @@
+# Facet: ACTORS — vendor/financier/model synonym list (subset of system prompt §1)
+# Version: 1.0 · used by the GDELT query builder; never hard-code these inline.
+version: "1.0"
+terms:
+  - Huawei
+  - ZTE
+  - "Alibaba Cloud"
+  - "Tencent Cloud"
+  - "China Exim"
+  - "China Development Bank"
+  - Nvidia
+  - AWS
+  - "Amazon Web Services"
+  - "Microsoft Azure"
+  - "Google Cloud"
+  - Oracle
+  - Ericsson
+  - Nokia
+  - Cisco
+  - OpenAI
+  - Anthropic
+  - DeepSeek
+  - Qwen
+  - Mistral
+  - G42

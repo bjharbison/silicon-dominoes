@@ -1,0 +1,10 @@
+[Unit]
+Description=Retry missing Wayback snapshots every 6 hours
+
+[Timer]
+OnCalendar=*-*-* 00/6:05
+RandomizedDelaySec=300
+Persistent=true
+
+[Install]
+WantedBy=timers.target

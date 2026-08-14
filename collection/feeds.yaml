@@ -1,0 +1,89 @@
+# Silicon Dominoes — pilot feed set (Southeast Asia)
+# Synced into the `feeds` table by every collector run (feeds is a mutable
+# config table by design). Editing this file + rerunning a poller is how
+# feeds are added, retired, or corrected.
+#
+# HONESTY NOTE: entries marked `unverified: true` are best-guess URLs that
+# could not be network-verified when this file was written. That is fine:
+# the feed-health monitor exists precisely to flag dead feeds on day one,
+# and replacing a URL here is the fix. Expect to tune this file during the
+# first week of operation.
+
+pilot_scope:
+  region: southeast_asia
+  countries: [IDN, VNM, THA, MYS, PHL, SGP, KHM, LAO, MMR]
+
+feeds:
+  # ---- regional trade / technical press (S2-class sources) ----------------
+  - feed_id: rss-techwireasia
+    feed_class: rss
+    url: https://techwireasia.com/feed/
+    notes: Regional tech trade press; broad SEA coverage.
+
+  - feed_id: rss-developingtelecoms
+    feed_class: rss
+    url: https://developingtelecoms.com/component/obrss/developing-telecoms.feed
+    unverified: true
+    notes: Telecom infrastructure in emerging markets; strong on RAN vendor awards.
+
+  - feed_id: rss-datacenterdynamics
+    feed_class: rss
+    url: https://www.datacenterdynamics.com/rss/
+    unverified: true
+    notes: DC builds, cloud regions, subsea cable landings — Facilities/Cloud layers.
+
+  - feed_id: rss-lightreading
+    feed_class: rss
+    url: https://www.lightreading.com/rss.xml
+    unverified: true
+    notes: Networks layer; vendor contract reporting.
+
+  - feed_id: rss-e27
+    feed_class: rss
+    url: https://e27.co/feed/
+    unverified: true
+    notes: SEA tech ecosystem; Applications/Models layer signals.
+
+  # ---- national / institutional (S1-class sources) ------------------------
+  - feed_id: rss-imda-sg
+    feed_class: rss
+    url: https://www.imda.gov.sg/rss-feeds
+    unverified: true
+    notes: Singapore IMDA press releases. If no RSS exists, replace with the
+      press-release index URL and let the page-change detector handle it.
+
+  - feed_id: rss-mic-vn
+    feed_class: rss
+    url: https://english.mic.gov.vn/rss/home.rss
+    unverified: true
+    notes: Vietnam Ministry of Information & Communications (English edition).
+
+  # ---- structured news retrieval (GDELT DOC 2.0) --------------------------
+  # Query is BUILT AT RUNTIME from the facet files (system prompt §3.2 —
+  # synonyms are never hard-coded). One capture per run of the result set.
+  - feed_id: gdelt-sea-stack
+    feed_class: structured_news
+    url: https://api.gdeltproject.org/api/v2/doc/doc
+    gdelt:
+      facets: [actors, domains, geo_sea]
+      timespan: 1d
+      maxrecords: 100
+      max_terms_per_facet: 8
+
+# ---- verify-at-every-run items (system prompt §1, §4) ---------------------
+# Membership status of WAICO and Pax Silica must show a successful
+# verification within the last cycle; a missed verification is itself an
+# alert (staleness rule in feed_health). Each fetch is archived as a capture;
+# a content change fires an immediate ntfy notification.
+# TODO: replace placeholder URLs with the canonical membership pages once
+# identified — until then these will alert as failing, which is correct.
+verify_items:
+  - feed_id: verify-waico
+    url: https://REPLACE-ME.example/waico-membership
+    label: WAICO founding membership page
+    max_gap_days: 8
+
+  - feed_id: verify-pax-silica
+    url: https://REPLACE-ME.example/pax-silica-members
+    label: Pax Silica membership and fund status
+    max_gap_days: 8

@@ -1,0 +1,11 @@
+[Unit]
+Description=Silicon Dominoes — feed health monitor
+Wants=network-online.target
+After=network-online.target postgresql.service
+
+[Service]
+Type=oneshot
+User=dominoes
+WorkingDirectory=/opt/silicon-dominoes/collection
+EnvironmentFile=/etc/silicon-dominoes/collector.env
+ExecStart=/opt/silicon-dominoes/collection/.venv/bin/python -m collector.feed_health

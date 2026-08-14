@@ -1,0 +1,14 @@
+# Facet: GEO — Southeast Asia pilot country terms
+# Version: 1.0 · iso3 keys align with pilot_scope in feeds.yaml
+version: "1.0"
+terms:
+  - Indonesia
+  - Vietnam
+  - Thailand
+  - Malaysia
+  - Philippines
+  - Singapore
+  - Cambodia
+  - Laos
+  - Myanmar
+iso3: [IDN, VNM, THA, MYS, PHL, SGP, KHM, LAO, MMR]

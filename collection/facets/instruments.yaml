@@ -1,0 +1,16 @@
+# Facet: INSTRUMENTS — commitment-instrument terms (ladder §2.1)
+# Version: 1.0 · not yet used by the GDELT pilot query (keeps query short);
+# reserved for tender-portal and refined queries.
+version: "1.0"
+terms:
+  - contract
+  - tender
+  - procurement
+  - "memorandum of understanding"
+  - MOU
+  - agreement
+  - financing
+  - loan
+  - license
+  - "export license"
+  - cancellation
