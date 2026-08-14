@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://silicondominoes.org/schemas/edges.schema.json",
+  "title": "edges.json — exposure and cascade edges contract",
+  "description": "Dyadic exposure edges (doc 01 §3.1, the model's primitive object) and cascade edges (doc 01 §6). Schema-enforced rules: every cascade edge carries a concrete mechanism string (with a pattern-level rejection of 'neighbors correlate' phrasings — the review UI enforces the full rule) and a ledger reference (doc 04: every emitted cascade edge generates a ledger entry); cascade edges are structurally marked projection:true (§2.3 no projection/observation mixing); exposure edges must be decomposable to evidence. Not schema-enforceable: mechanism concreteness beyond the pattern check, edge-weight math, hedging-prior consistency.",
+  "type": "object",
+  "required": ["schema_version", "cycle_date", "generated_at", "methodology_version", "weight_vector_stamp", "exposure_edges", "cascade_edges"],
+  "properties": {
+    "schema_version": true,
+    "cycle_date": true,
+    "generated_at": true,
+    "methodology_version": true,
+    "weight_vector_stamp": true,
+    "out_of_cycle": true,
+    "exposure_edges": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/exposureEdge" }
+    },
+    "cascade_edges": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/cascadeEdge" }
+    }
+  },
+  "allOf": [ { "$ref": "common.schema.json#/$defs/envelope" } ],
+  "unevaluatedProperties": false,
+  "$defs": {
+    "exposureEdge": {
+      "type": "object",
+      "description": "(country, controller, layer) → exposure attributes. Country scores are derived from these edges, never asserted (doc 01 §3.2); this file is what the alignment_index one-tap decomposition resolves to (doc 02 regression test 2).",
+      "required": ["edge_id", "edge_type", "country_iso3", "controller", "layer", "evidence_refs"],
+      "properties": {
+        "edge_id": { "type": "string" },
+        "edge_type": { "const": "exposure" },
+        "country_iso3": { "$ref": "common.schema.json#/$defs/iso3" },
+        "controller": { "$ref": "common.schema.json#/$defs/controller" },
+        "layer": { "$ref": "common.schema.json#/$defs/layer" },
+        "d_share": {
+          "$ref": "common.schema.json#/$defs/probability",
+          "description": "This controller's installed-base share at this layer."
+        },
+        "e_score": { "$ref": "common.schema.json#/$defs/score0to100" },
+        "p": {
+          "type": "object",
+          "description": "Applicable P sub-indicators on this edge; only the relevant ones appear, each evidenced-or-null.",
+          "properties": {
+            "p_license": { "$ref": "common.schema.json#/$defs/pSubIndicator" },
+            "p_update": { "$ref": "common.schema.json#/$defs/pSubIndicator" },
+            "p_spares": { "$ref": "common.schema.json#/$defs/pSubIndicator" },
+            "p_jurisdiction": { "$ref": "common.schema.json#/$defs/pSubIndicator" },
+            "p_telemetry": { "$ref": "common.schema.json#/$defs/pSubIndicator" }
+          },
+          "additionalProperties": false
+        },
+        "t_flow": { "type": "number" },
+        "sub_state_actor": {
+          "type": "object",
+          "description": "Doc 01 §5: edges may attach to sub-state entities, rolled up for the map but preserved here.",
+          "required": ["name", "actor_type"],
+          "properties": {
+            "name": { "type": "string" },
+            "actor_type": {
+              "type": "string",
+              "enum": ["state_telco", "ministry", "regulator", "sovereign_fund", "province", "state_enterprise", "other"]
+            }
+          },
+          "additionalProperties": false
+        },
+        "bundle_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Doc 01 §2.5: edges created by packaged commitments carry the bundle reference; renewal analysis treats the bundle as the unit of decision."
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "event_ids. No edge without coded evidence (§2.3 no unsourced deltas)."
+        },
+        "confidence": { "$ref": "common.schema.json#/$defs/confidence" }
+      },
+      "additionalProperties": false
+    },
+    "cascadeEdge": {
+      "type": "object",
+      "required": ["edge_id", "edge_type", "projection", "from_iso3", "to_iso3", "mechanism", "mechanism_channel", "probability", "confidence", "ledger_ref"],
+      "properties": {
+        "edge_id": { "type": "string" },
+        "edge_type": { "const": "cascade" },
+        "projection": {
+          "const": true,
+          "description": "§2.3: cascade layers are always-labeled projections, never mixed with observed data. The constant makes mislabeling a validation failure."
+        },
+        "from_iso3": { "$ref": "common.schema.json#/$defs/iso3" },
+        "to_iso3": { "$ref": "common.schema.json#/$defs/iso3" },
+        "layer": { "$ref": "common.schema.json#/$defs/layer" },
+        "mechanism": {
+          "type": "string",
+          "minLength": 25,
+          "not": {
+            "pattern": "(?i)neighbou?rs?\\s+(correlate|are\\s+correlated)|regional\\s+correlation|leans\\s+(prc|us)$"
+          },
+          "description": "Doc 01 §6 rule 1: a concrete channel — a named interconnector, creditor, bundle, or sub-state actor. The pattern check catches the canonical lazy phrasings; the review UI enforces the substantive rule."
+        },
+        "mechanism_channel": {
+          "type": "string",
+          "enum": ["interconnector", "cable_route", "standards_harmonization", "bundled_financing", "vendor_interoperability", "ministerial_emulation", "reference_deployment", "shared_creditor", "sub_state_channel"]
+        },
+        "probability": { "$ref": "common.schema.json#/$defs/probability" },
+        "confidence": { "$ref": "common.schema.json#/$defs/confidence" },
+        "ledger_ref": {
+          "type": "string",
+          "description": "Doc 04 Class A: every cascade edge generates a ledger entry; this is its prediction_id."
+        },
+        "network_basis": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Which §3.2 network metrics contributed (e.g. shared_controller_centrality, single_creditor_concentration)."
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

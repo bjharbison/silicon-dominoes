@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://silicondominoes.org/schemas/events.schema.json",
+  "title": "events.json — coded events contract",
+  "description": "All newly coded events for a publication cycle (system prompt §3.3, §5). Schema-enforced rules: corroboration for Tier ≥ 3 (two S3+ sources incl. one S1/S2; the ≥5-point-delta half of the rule is checked in the pipeline where deltas exist), no S5-only sourcing, reversal fields required when direction=reversal, analyst inference explicitly tagged, corrections referencing the corrected event. Not schema-enforceable (pipeline/review-UI responsibility): source *independence*, the two-S4-cannot-corroborate rule, the Goodhart 2-point cap, Tier-1/2 decay.",
+  "type": "object",
+  "required": ["schema_version", "cycle_date", "generated_at", "methodology_version", "weight_vector_stamp", "events"],
+  "properties": {
+    "schema_version": true,
+    "cycle_date": true,
+    "generated_at": true,
+    "methodology_version": true,
+    "weight_vector_stamp": true,
+    "out_of_cycle": true,
+    "events": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/event" }
+    }
+  },
+  "allOf": [ { "$ref": "common.schema.json#/$defs/envelope" } ],
+  "unevaluatedProperties": false,
+  "$defs": {
+    "event": {
+      "type": "object",
+      "required": [
+        "event_id", "date", "retrieved_at", "country_iso3", "layer",
+        "instrument_tier", "direction", "depth_dimensions", "sources", "confidence", "summary"
+      ],
+      "properties": {
+        "event_id": { "type": "string" },
+        "date": {
+          "$ref": "common.schema.json#/$defs/isoDate",
+          "description": "True event date, not capture date."
+        },
+        "retrieved_at": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+        "country_iso3": { "$ref": "common.schema.json#/$defs/iso3" },
+        "layer": { "$ref": "common.schema.json#/$defs/layer" },
+        "instrument_tier": { "$ref": "common.schema.json#/$defs/instrumentTier" },
+        "direction": {
+          "type": "string",
+          "enum": ["us", "prc", "sovereign", "reversal"]
+        },
+        "reversal_target": {
+          "$ref": "common.schema.json#/$defs/pole",
+          "description": "Required when direction=reversal: the pole whose prior commitment is reversed."
+        },
+        "reversed_tier": {
+          "$ref": "common.schema.json#/$defs/instrumentTier",
+          "description": "Required when direction=reversal: reversal weights ×(−1) at the tier of the thing reversed (§2.1)."
+        },
+        "reversed_event_id": { "type": "string" },
+        "depth_dimensions": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["D", "E", "P", "T"] },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "p_subindicators_evidenced": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["p_license", "p_update", "p_spares", "p_jurisdiction", "p_telemetry"]
+          },
+          "description": "Which P sub-indicators this event evidences, when depth_dimensions includes P."
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 20,
+          "description": "Analyst's own-words summary (§2.3 no verbatim reproduction)."
+        },
+        "sources": {
+          "type": "array",
+          "items": { "$ref": "common.schema.json#/$defs/citation" },
+          "minItems": 1
+        },
+        "confidence": { "$ref": "common.schema.json#/$defs/confidence" },
+        "analyst_inference": {
+          "type": "boolean",
+          "default": false,
+          "description": "§2.3: analyst judgment is tagged and rendered separately from observed events."
+        },
+        "inference_rationale": { "type": "string" },
+        "correction": {
+          "type": "boolean",
+          "default": false,
+          "description": "Corrections append; prior events are immutable (§2.3)."
+        },
+        "corrects_event_id": { "type": "string" },
+        "bundle_id": { "type": "string" },
+        "bundle_anchor": {
+          "$ref": "common.schema.json#/$defs/layer",
+          "description": "§3.4: the layer carrying the financing, set on exactly one event per bundle (pipeline-checked)."
+        },
+        "dyad": {
+          "type": "object",
+          "required": ["controller_id"],
+          "properties": {
+            "controller_id": { "type": "string" },
+            "controller_name": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "sub_state_actor": {
+          "type": "object",
+          "description": "Doc 01 §5: the sub-state entity the commitment actually attaches to.",
+          "required": ["name", "actor_type"],
+          "properties": {
+            "name": { "type": "string" },
+            "actor_type": {
+              "type": "string",
+              "enum": ["state_telco", "ministry", "regulator", "sovereign_fund", "province", "state_enterprise", "other"]
+            }
+          },
+          "additionalProperties": false
+        },
+        "contested_decision": {
+          "type": "boolean",
+          "description": "Doc 01 §5: intra-government contestation over a procurement — high-information signal."
+        },
+        "announced_value_usd": { "type": "number", "minimum": 0 },
+        "verified_value_usd": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Recorded separately from announced; announced values are routinely inflated (§2.2)."
+        },
+        "research_gap_refs": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "$comment": "Corroboration rule, §2.2: Tier ≥ 3 requires two S3-or-better sources, at least one of them S1/S2.",
+          "if": {
+            "properties": { "instrument_tier": { "minimum": 3 } },
+            "required": ["instrument_tier"]
+          },
+          "then": {
+            "properties": {
+              "sources": {
+                "allOf": [
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": { "source_tier": { "enum": ["S1", "S2"] } },
+                      "required": ["source_tier"]
+                    }
+                  },
+                  {
+                    "contains": {
+                      "type": "object",
+                      "properties": { "source_tier": { "enum": ["S1", "S2", "S3"] } },
+                      "required": ["source_tier"]
+                    },
+                    "minContains": 2
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "$comment": "S5 is never scored (§2.2): every published event must have at least one S1–S4 source.",
+          "properties": {
+            "sources": {
+              "contains": {
+                "type": "object",
+                "properties": { "source_tier": { "enum": ["S1", "S2", "S3", "S4"] } },
+                "required": ["source_tier"]
+              }
+            }
+          }
+        },
+        {
+          "$comment": "Reversal events must name what they reverse and at what tier.",
+          "if": {
+            "properties": { "direction": { "const": "reversal" } },
+            "required": ["direction"]
+          },
+          "then": {
+            "required": ["reversal_target", "reversed_tier"]
+          }
+        },
+        {
+          "$comment": "Tagged inference must carry its rationale.",
+          "if": {
+            "properties": { "analyst_inference": { "const": true } },
+            "required": ["analyst_inference"]
+          },
+          "then": { "required": ["inference_rationale"] }
+        },
+        {
+          "$comment": "A correction must reference the event it corrects.",
+          "if": {
+            "properties": { "correction": { "const": true } },
+            "required": ["correction"]
+          },
+          "then": { "required": ["corrects_event_id"] }
+        }
+      ]
+    }
+  }
+}

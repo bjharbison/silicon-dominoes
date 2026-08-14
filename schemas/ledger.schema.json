@@ -1,0 +1,267 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://silicondominoes.org/schemas/ledger.schema.json",
+  "title": "ledger.json — prediction ledger contract",
+  "description": "Prediction-ledger state per doc 04: Class A cascade predictions, Class B pre-registered index predictions over renewal cliffs (with frozen test sets), Class C chokepoint-exercise observations, running Brier scores by class, calibration data, and the two baseline comparisons. Schema-enforced rules: every prediction has a dated, source-verifiable resolution criterion; resolved entries carry outcome and brier_contribution; Class B distributions cover the full outcome set; model and analyst forecasts are separate entries; supersession is by reference. Not schema-enforceable (pipeline/DB responsibility): append-only immutability, distribution sum-to-1, resolution meeting the S1/two-source criterion, the four-consecutive-quarters baseline-failure trigger.",
+  "type": "object",
+  "required": ["schema_version", "cycle_date", "generated_at", "methodology_version", "weight_vector_stamp", "predictions", "exercise_observations", "test_sets", "brier", "baselines"],
+  "properties": {
+    "schema_version": true,
+    "cycle_date": true,
+    "generated_at": true,
+    "methodology_version": true,
+    "weight_vector_stamp": true,
+    "out_of_cycle": true,
+    "predictions": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "$ref": "#/$defs/cascadePrediction" },
+          { "$ref": "#/$defs/indexPrediction" }
+        ]
+      }
+    },
+    "exercise_observations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/exerciseObservation" }
+    },
+    "test_sets": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/testSet" }
+    },
+    "brier": {
+      "type": "object",
+      "required": ["class_a", "class_b"],
+      "properties": {
+        "class_a": { "$ref": "#/$defs/brierBlock" },
+        "class_b": { "$ref": "#/$defs/brierBlock" }
+      },
+      "additionalProperties": false
+    },
+    "baselines": {
+      "type": "object",
+      "description": "Doc 04: skill relative to (a) incumbent-always-retained and (b) hedging-prior base rates. Four consecutive quarters below baseline (a) triggers a published methodology review.",
+      "required": ["incumbent_always_retained", "hedging_prior"],
+      "properties": {
+        "incumbent_always_retained": { "$ref": "#/$defs/baselineBlock" },
+        "hedging_prior": { "$ref": "#/$defs/baselineBlock" }
+      },
+      "additionalProperties": false
+    },
+    "calibration": {
+      "type": "array",
+      "description": "Calibration curve bins for the dashboard.",
+      "items": {
+        "type": "object",
+        "required": ["bin_low", "bin_high", "forecast_mean", "observed_frequency", "n"],
+        "properties": {
+          "bin_low": { "$ref": "common.schema.json#/$defs/probability" },
+          "bin_high": { "$ref": "common.schema.json#/$defs/probability" },
+          "forecast_mean": { "$ref": "common.schema.json#/$defs/probability" },
+          "observed_frequency": { "$ref": "common.schema.json#/$defs/probability" },
+          "n": { "type": "integer", "minimum": 0 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "methodology_review_triggered": {
+      "type": "boolean",
+      "description": "True when the four-quarter baseline-failure condition has fired; the finding is published, not buried."
+    }
+  },
+  "allOf": [ { "$ref": "common.schema.json#/$defs/envelope" } ],
+  "unevaluatedProperties": false,
+  "$defs": {
+    "predictionCore": {
+      "type": "object",
+      "required": ["prediction_id", "created_at", "resolution_criterion", "resolution_date", "resolved"],
+      "properties": {
+        "prediction_id": { "type": "string" },
+        "created_at": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+        "resolution_criterion": {
+          "type": "string",
+          "minLength": 25,
+          "description": "The S1/S2-verifiable event that resolves this. No prediction without one (doc 04)."
+        },
+        "resolution_date": { "$ref": "common.schema.json#/$defs/isoDate" },
+        "resolved": { "type": "boolean" },
+        "resolved_at": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+        "resolution_evidence_refs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "event_ids meeting the S1-or-two-source criterion."
+        },
+        "brier_contribution": { "type": "number", "minimum": 0 },
+        "supersedes": {
+          "type": "string",
+          "description": "Doc 04 immutability: entries are never edited; a new entry references the one it supersedes. Superseded-before-resolution entries still resolve and still score."
+        },
+        "methodology_version_at_creation": { "type": "string" }
+      }
+    },
+    "cascadePrediction": {
+      "allOf": [
+        { "$ref": "#/$defs/predictionCore" },
+        {
+          "type": "object",
+          "required": ["class", "claim", "mechanism", "probability", "country_iso3"],
+          "properties": {
+            "class": { "const": "cascade" },
+            "claim": {
+              "type": "string",
+              "minLength": 25,
+              "description": "'<country> will <specific observable> by <date>'."
+            },
+            "country_iso3": { "$ref": "common.schema.json#/$defs/iso3" },
+            "mechanism": {
+              "type": "string",
+              "minLength": 25,
+              "not": { "pattern": "(?i)neighbou?rs?\\s+(correlate|are\\s+correlated)" }
+            },
+            "probability": { "$ref": "common.schema.json#/$defs/probability" },
+            "outcome": { "type": "boolean", "description": "Did the claimed observable occur by the resolution date." },
+            "cascade_edge_ref": { "type": "string" }
+          }
+        }
+      ],
+      "unevaluatedProperties": false,
+      "if": { "properties": { "resolved": { "const": true } }, "required": ["resolved"] },
+      "then": { "required": ["outcome", "brier_contribution", "resolution_evidence_refs"] }
+    },
+    "indexPrediction": {
+      "allOf": [
+        { "$ref": "#/$defs/predictionCore" },
+        {
+          "type": "object",
+          "required": ["class", "cliff_id", "test_set_id", "forecast_source", "distribution"],
+          "properties": {
+            "class": { "const": "index" },
+            "cliff_id": { "type": "string" },
+            "test_set_id": {
+              "type": "string",
+              "description": "The frozen quarterly enumeration this prediction belongs to (doc 04 Class B step 1)."
+            },
+            "forecast_source": {
+              "type": "string",
+              "enum": ["model", "analyst"],
+              "description": "Model and analyst forecasts are separate entries so their skill is scored apart (doc 04 Class B step 2)."
+            },
+            "derivation_version": {
+              "type": "string",
+              "description": "Version of the mechanical derivation formula; required when forecast_source=model."
+            },
+            "distribution": {
+              "type": "object",
+              "description": "Probability over the full outcome set. Pipeline asserts sum ≈ 1.",
+              "required": ["incumbent_retained", "switch_us", "switch_prc", "switch_sovereign", "split_award", "cancellation_delay"],
+              "properties": {
+                "incumbent_retained": { "$ref": "common.schema.json#/$defs/probability" },
+                "switch_us": { "$ref": "common.schema.json#/$defs/probability" },
+                "switch_prc": { "$ref": "common.schema.json#/$defs/probability" },
+                "switch_sovereign": { "$ref": "common.schema.json#/$defs/probability" },
+                "split_award": { "$ref": "common.schema.json#/$defs/probability" },
+                "cancellation_delay": { "$ref": "common.schema.json#/$defs/probability" }
+              },
+              "additionalProperties": false
+            },
+            "outcome": {
+              "type": "string",
+              "enum": ["incumbent_retained", "switch_us", "switch_prc", "switch_sovereign", "split_award", "cancellation_delay"]
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false,
+      "if": { "properties": { "resolved": { "const": true } }, "required": ["resolved"] },
+      "then": { "required": ["outcome", "brier_contribution", "resolution_evidence_refs"] }
+    },
+    "testSet": {
+      "type": "object",
+      "description": "Quarterly renewal-cliff enumeration, frozen at creation (doc 04 Class B step 1).",
+      "required": ["test_set_id", "enumerated_at", "frozen", "cliffs"],
+      "properties": {
+        "test_set_id": { "type": "string" },
+        "enumerated_at": { "$ref": "common.schema.json#/$defs/isoDateTime" },
+        "frozen": { "const": true },
+        "cliffs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["cliff_id", "country_iso3", "layer", "cliff_type", "expected_decision_date"],
+            "properties": {
+              "cliff_id": { "type": "string" },
+              "country_iso3": { "$ref": "common.schema.json#/$defs/iso3" },
+              "layer": { "$ref": "common.schema.json#/$defs/layer" },
+              "cliff_type": {
+                "type": "string",
+                "enum": ["ran_contract", "cloud_tender", "dc_phase", "financing_rollover", "license_renewal", "other"]
+              },
+              "expected_decision_date": { "$ref": "common.schema.json#/$defs/isoDate" },
+              "incumbent_pole": { "$ref": "common.schema.json#/$defs/pole" },
+              "bundle_id": { "type": "string" },
+              "evidence_refs": { "type": "array", "items": { "type": "string" } }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "exerciseObservation": {
+      "type": "object",
+      "description": "Class C: an observed chokepoint *exercise* (not a forecast). Calibrates the weight p_license/p_update deserve (doc 04, doc 02 Farrell-Newman caution).",
+      "required": ["observation_id", "observed_at", "exercise_type", "target_iso3", "layer", "event_refs"],
+      "properties": {
+        "observation_id": { "type": "string" },
+        "observed_at": { "$ref": "common.schema.json#/$defs/isoDate" },
+        "exercise_type": {
+          "type": "string",
+          "enum": ["license_denial", "cutoff", "forced_divestment", "data_access_order", "update_withheld", "spares_embargo", "other"]
+        },
+        "controller": { "$ref": "common.schema.json#/$defs/controller" },
+        "target_iso3": { "$ref": "common.schema.json#/$defs/iso3" },
+        "layer": { "$ref": "common.schema.json#/$defs/layer" },
+        "p_subindicator": {
+          "type": "string",
+          "enum": ["p_license", "p_update", "p_spares", "p_jurisdiction", "p_telemetry"]
+        },
+        "event_refs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "brierBlock": {
+      "type": "object",
+      "required": ["running_brier", "n_resolved", "period_brier", "n_resolved_period"],
+      "properties": {
+        "running_brier": { "type": "number", "minimum": 0 },
+        "n_resolved": { "type": "integer", "minimum": 0 },
+        "period_brier": { "type": ["number", "null"], "minimum": 0 },
+        "n_resolved_period": { "type": "integer", "minimum": 0 },
+        "by_forecast_source": {
+          "type": "object",
+          "description": "Class B only: model vs. analyst skill, scored apart.",
+          "properties": {
+            "model": { "type": "number", "minimum": 0 },
+            "analyst": { "type": "number", "minimum": 0 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "baselineBlock": {
+      "type": "object",
+      "required": ["baseline_brier", "skill_score", "consecutive_quarters_below_baseline"],
+      "properties": {
+        "baseline_brier": { "type": "number", "minimum": 0 },
+        "skill_score": { "type": "number", "description": "Positive = model beats baseline." },
+        "consecutive_quarters_below_baseline": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    }
+  }
+}

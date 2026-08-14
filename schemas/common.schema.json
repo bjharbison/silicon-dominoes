@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://silicondominoes.org/schemas/common.schema.json",
+  "title": "Silicon Dominoes — shared definitions",
+  "description": "Shared $defs for the four JSON publication contracts (countries, edges, events, ledger). changelog.md is prose and has no schema. Methodology: DEPTH-N v2.0 (doc 01).",
+  "$defs": {
+    "iso3": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$",
+      "description": "ISO 3166-1 alpha-3 country/territory code."
+    },
+    "layer": {
+      "type": "string",
+      "enum": ["power", "facilities", "silicon", "networks", "cloud", "models", "applications"],
+      "description": "The seven stack layers, system prompt §1."
+    },
+    "pole": {
+      "type": "string",
+      "enum": ["us", "prc", "sovereign", "other"],
+      "description": "Supplier pole of control."
+    },
+    "score0to100": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "probability": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "instrumentTier": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Instrument ladder tier, system prompt §2.1."
+    },
+    "sourceTier": {
+      "type": "string",
+      "enum": ["S1", "S2", "S3", "S4", "S5"],
+      "description": "Source tier, system prompt §2.2. S5 is lead-generation only and never appears as the sole basis of a scored event."
+    },
+    "isoDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "isoDateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "citation": {
+      "type": "object",
+      "description": "Every citation carries both the live URL and an archived snapshot reference (architecture §3, traceability invariant).",
+      "required": ["url", "archived_url", "retrieved_at", "source_tier"],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "archived_url": { "type": "string", "format": "uri", "description": "ArchiveBox or Wayback snapshot URL." },
+        "snapshot_id": { "type": "string" },
+        "retrieved_at": { "$ref": "#/$defs/isoDateTime" },
+        "source_tier": { "$ref": "#/$defs/sourceTier" },
+        "publisher": { "type": "string" },
+        "title": { "type": "string" },
+        "language": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "confidence": {
+      "type": "object",
+      "description": "Confidence propagated from source-tier mix and null rates (doc 01 §3.3).",
+      "required": ["level"],
+      "properties": {
+        "level": { "$ref": "#/$defs/probability" },
+        "band_low": { "type": "number" },
+        "band_high": { "type": "number" }
+      },
+      "additionalProperties": false
+    },
+    "estField": {
+      "type": "object",
+      "description": "Modeled value. Per §2.3 prohibitions, _est fields must document their method.",
+      "required": ["value", "method"],
+      "properties": {
+        "value": { "type": "number" },
+        "method": { "type": "string", "minLength": 3 }
+      },
+      "additionalProperties": false
+    },
+    "pSubIndicator": {
+      "description": "Provenance sub-indicator (doc 01 §2.3): either evidenced with event refs, or an explicit null with a mandatory opacity_reason. Never proxied by vendor nationality.",
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["status", "value", "evidence_refs"],
+          "properties": {
+            "status": { "const": "evidenced" },
+            "value": { "$ref": "#/$defs/score0to100" },
+            "evidence_refs": {
+              "type": "array",
+              "items": { "type": "string" },
+              "minItems": 1,
+              "description": "event_ids in events.json."
+            },
+            "notes": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": ["status", "opacity_reason"],
+          "properties": {
+            "status": { "const": "null" },
+            "opacity_reason": { "type": "string", "minLength": 5 }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "dVector": {
+      "type": "object",
+      "description": "Dependence share vector over supplier poles (doc 01 §2.1). Shares are fractions in [0,1]; pipeline validation (not schema) asserts they sum to ≤ 1.0 with remainder = unattributed.",
+      "required": ["us", "prc", "sovereign", "other"],
+      "properties": {
+        "us": { "$ref": "#/$defs/probability" },
+        "prc": { "$ref": "#/$defs/probability" },
+        "sovereign": { "$ref": "#/$defs/probability" },
+        "other": { "$ref": "#/$defs/probability" }
+      },
+      "additionalProperties": false
+    },
+    "tierComposition": {
+      "type": "object",
+      "description": "Share of a Trajectory value contributed by each instrument tier. Must accompany every published T (§2.1 Goodhart guard).",
+      "required": ["t1", "t2", "t3", "t4", "t5"],
+      "properties": {
+        "t1": { "$ref": "#/$defs/probability" },
+        "t2": { "$ref": "#/$defs/probability" },
+        "t3": { "$ref": "#/$defs/probability" },
+        "t4": { "$ref": "#/$defs/probability" },
+        "t5": { "$ref": "#/$defs/probability" }
+      },
+      "additionalProperties": false
+    },
+    "controller": {
+      "type": "object",
+      "description": "An entity that actually holds a chokepoint (doc 01 §3.1): a state pole, a specific creditor, a specific hub, or a regulatory regime.",
+      "required": ["controller_id", "controller_type", "name"],
+      "properties": {
+        "controller_id": { "type": "string" },
+        "controller_type": {
+          "type": "string",
+          "enum": ["state_pole", "creditor", "hub", "regulatory_regime"]
+        },
+        "name": { "type": "string" },
+        "pole": { "$ref": "#/$defs/pole", "description": "Pole attribution for aggregation, where applicable." }
+      },
+      "additionalProperties": false
+    },
+    "envelope": {
+      "type": "object",
+      "description": "Common publication envelope. The active methodology version and weight/parameter vector are stamped into every published dataset (§5).",
+      "required": ["schema_version", "cycle_date", "generated_at", "methodology_version", "weight_vector_stamp"],
+      "properties": {
+        "schema_version": { "type": "string" },
+        "cycle_date": { "$ref": "#/$defs/isoDate" },
+        "generated_at": { "$ref": "#/$defs/isoDateTime" },
+        "methodology_version": { "type": "string", "pattern": "^v\\d+\\.\\d+(\\.\\d+)?$" },
+        "weight_vector_stamp": {
+          "type": "object",
+          "required": ["hash"],
+          "properties": {
+            "hash": { "type": "string", "description": "Content hash of the full parameter vector." },
+            "layer_weights": {
+              "type": "object",
+              "additionalProperties": { "type": "number" }
+            },
+            "decay_lambda": { "type": "number" },
+            "goodhart_cap_points": { "type": "number" }
+          },
+          "additionalProperties": true
+        },
+        "out_of_cycle": {
+          "type": "boolean",
+          "description": "True when this publication was triggered by a Tier-4/5 event or reversal rather than the weekly cadence (§4)."
+        }
+      }
+    }
+  }
+}

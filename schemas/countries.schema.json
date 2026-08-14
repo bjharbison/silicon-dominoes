@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://silicondominoes.org/schemas/countries.schema.json",
+  "title": "countries.json — per-country record contract",
+  "description": "Per-country published record per methodology doc 01 §7. Schema-enforced rules: alignment_index is structurally marked derived:true; countries below the evidence threshold publish as an explicit insufficient_data record (never a neutral value); every P sub-indicator is evidenced or an explicit null with opacity_reason; posture overrides require a written rationale; coverage metrics (evidence_count, null_coverage_rate) are mandatory. Not schema-enforceable (pipeline responsibility): posture assignment via the versioned clustering, D-share sum checks, confidence propagation math, doc 02 regression tests (P–D correlation, off-cycle D/E variance).",
+  "type": "object",
+  "required": ["schema_version", "cycle_date", "generated_at", "methodology_version", "weight_vector_stamp", "countries"],
+  "properties": {
+    "schema_version": true,
+    "cycle_date": true,
+    "generated_at": true,
+    "methodology_version": true,
+    "weight_vector_stamp": true,
+    "out_of_cycle": true,
+    "countries": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "$ref": "#/$defs/countryRecord" },
+          { "$ref": "#/$defs/insufficientDataRecord" }
+        ]
+      }
+    }
+  },
+  "allOf": [ { "$ref": "common.schema.json#/$defs/envelope" } ],
+  "unevaluatedProperties": false,
+  "$defs": {
+    "insufficientDataRecord": {
+      "type": "object",
+      "description": "§5: countries below the minimum evidence threshold render as 'insufficient data' — a distinct state, never a neutral midpoint.",
+      "required": ["iso3", "status", "evidence_count", "null_coverage_rate"],
+      "properties": {
+        "iso3": { "$ref": "common.schema.json#/$defs/iso3" },
+        "status": { "const": "insufficient_data" },
+        "evidence_count": { "type": "integer", "minimum": 0 },
+        "null_coverage_rate": { "$ref": "common.schema.json#/$defs/probability" },
+        "research_gap_refs": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "countryRecord": {
+      "type": "object",
+      "required": [
+        "iso3", "status",
+        "exposure_us", "exposure_prc", "exposure_sovereign",
+        "alignment_index", "sovereign_pull",
+        "readiness", "readiness_tier", "strategic_salience",
+        "lock_in", "posture", "contest_score", "cascade_susceptibility",
+        "per_layer", "confidence", "evidence_count", "null_coverage_rate"
+      ],
+      "properties": {
+        "iso3": { "$ref": "common.schema.json#/$defs/iso3" },
+        "status": { "const": "scored" },
+        "exposure_us": { "$ref": "common.schema.json#/$defs/score0to100" },
+        "exposure_prc": { "$ref": "common.schema.json#/$defs/score0to100" },
+        "exposure_sovereign": { "$ref": "common.schema.json#/$defs/score0to100" },
+        "alignment_index": {
+          "type": "object",
+          "description": "Doc 01 §3.2: display-only derived metric, f(exposure_us − exposure_prc). The derived flag is structural — a record without derived:true fails validation.",
+          "required": ["value", "derived"],
+          "properties": {
+            "value": { "type": "number", "minimum": -100, "maximum": 100 },
+            "derived": { "const": true }
+          },
+          "additionalProperties": false
+        },
+        "sovereign_pull": { "$ref": "common.schema.json#/$defs/score0to100" },
+        "readiness": { "$ref": "common.schema.json#/$defs/score0to100" },
+        "readiness_tier": {
+          "type": "string",
+          "enum": ["T0", "T1", "T2", "T3", "T4", "T5"]
+        },
+        "strategic_salience": {
+          "$ref": "common.schema.json#/$defs/score0to100",
+          "description": "Doc 01 §4.2: rendered as its own layer; never folded into alignment."
+        },
+        "lock_in": { "$ref": "common.schema.json#/$defs/score0to100" },
+        "posture": {
+          "type": "string",
+          "enum": ["committed_us", "committed_prc", "leaning_us", "leaning_prc", "hedged_active", "sovereign_seeking", "excluded", "inert"],
+          "description": "Clustering output over disaggregated per-layer vectors (doc 01 §4.3). hedged_active and inert are never merged downstream."
+        },
+        "posture_override": { "type": "boolean", "default": false },
+        "posture_override_rationale": { "type": "string", "minLength": 20 },
+        "posture_cluster_mapping_version": { "type": "string" },
+        "contest_score": { "$ref": "common.schema.json#/$defs/score0to100" },
+        "cascade_susceptibility": { "$ref": "common.schema.json#/$defs/score0to100" },
+        "network_metrics": {
+          "type": "object",
+          "description": "Doc 01 §3.2 derived network-position metrics.",
+          "properties": {
+            "controller_hhi": { "type": "number", "minimum": 0, "maximum": 1 },
+            "single_hub_dependence": { "$ref": "common.schema.json#/$defs/probability" },
+            "shared_controller_centrality": { "type": "number", "minimum": 0 }
+          },
+          "additionalProperties": false
+        },
+        "per_layer": {
+          "type": "object",
+          "required": ["power", "facilities", "silicon", "networks", "cloud", "models", "applications"],
+          "properties": {
+            "power": { "$ref": "#/$defs/layerRecord" },
+            "facilities": { "$ref": "#/$defs/layerRecord" },
+            "silicon": { "$ref": "#/$defs/layerRecord" },
+            "networks": { "$ref": "#/$defs/layerRecord" },
+            "cloud": { "$ref": "#/$defs/layerRecord" },
+            "models": { "$ref": "#/$defs/layerRecord" },
+            "applications": { "$ref": "#/$defs/layerRecord" }
+          },
+          "additionalProperties": false
+        },
+        "confidence": { "$ref": "common.schema.json#/$defs/confidence" },
+        "evidence_count": { "type": "integer", "minimum": 0 },
+        "null_coverage_rate": {
+          "$ref": "common.schema.json#/$defs/probability",
+          "description": "Share of P sub-indicators published as explicit nulls (doc 01 §2.3 — published, not hidden)."
+        },
+        "coverage_flag": {
+          "type": "string",
+          "enum": ["normal", "evidence_flow_dropped"],
+          "description": "Architecture §4: distinguishes 'nothing happened' from 'we stopped hearing'."
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": { "posture_override": { "const": true } },
+            "required": ["posture_override"]
+          },
+          "then": {
+            "required": ["posture_override_rationale"],
+            "$comment": "Doc 01 §4.3: overrides require a written rationale rendered in the UI."
+          }
+        }
+      ]
+    },
+    "layerRecord": {
+      "type": "object",
+      "required": ["d_vector", "e", "p", "t"],
+      "properties": {
+        "d_vector": { "$ref": "common.schema.json#/$defs/dVector" },
+        "e": {
+          "type": "object",
+          "description": "Exit cost per incumbent pole (doc 01 §2.2). Keys are poles; a pole with no installed base is simply absent.",
+          "properties": {
+            "us": { "$ref": "common.schema.json#/$defs/score0to100" },
+            "prc": { "$ref": "common.schema.json#/$defs/score0to100" },
+            "sovereign": { "$ref": "common.schema.json#/$defs/score0to100" },
+            "other": { "$ref": "common.schema.json#/$defs/score0to100" }
+          },
+          "additionalProperties": false
+        },
+        "p": {
+          "type": "object",
+          "description": "Doc 01 §2.3: five sub-indicators, each evidenced or explicit-null. Chokepoint (license/update/spares) and panopticon (jurisdiction/telemetry) are never summed.",
+          "required": ["p_license", "p_update", "p_spares", "p_jurisdiction", "p_telemetry"],
+          "properties": {
+            "p_license": { "$ref": "common.schema.json#/$defs/pSubIndicator" },
+            "p_update": { "$ref": "common.schema.json#/$defs/pSubIndicator" },
+            "p_spares": { "$ref": "common.schema.json#/$defs/pSubIndicator" },
+            "p_jurisdiction": { "$ref": "common.schema.json#/$defs/pSubIndicator" },
+            "p_telemetry": { "$ref": "common.schema.json#/$defs/pSubIndicator" }
+          },
+          "additionalProperties": false
+        },
+        "t": {
+          "type": "object",
+          "description": "Trajectory flow with mandatory tier composition (§2.1: readers must be able to see when movement is all talk).",
+          "required": ["value_by_pole", "tier_composition"],
+          "properties": {
+            "value_by_pole": {
+              "type": "object",
+              "properties": {
+                "us": { "type": "number" },
+                "prc": { "type": "number" },
+                "sovereign": { "type": "number" }
+              },
+              "additionalProperties": false
+            },
+            "tier_composition": { "$ref": "common.schema.json#/$defs/tierComposition" },
+            "realization_prob_est": {
+              "$ref": "common.schema.json#/$defs/estField",
+              "description": "Doc 01 §4.2: H-derived discount on projected D/E impact of T in low-readiness states."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

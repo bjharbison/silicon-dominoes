@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "cycle_date": "2026-08-07",
+  "generated_at": "2026-08-07T06:00:00Z",
+  "methodology_version": "v2.0",
+  "weight_vector_stamp": { "hash": "sha256:3f9a1c" },
+  "predictions": [
+    {
+      "prediction_id": "pred-2026-0087",
+      "class": "cascade",
+      "created_at": "2026-08-07T06:00:00Z",
+      "country_iso3": "TZA",
+      "claim": "Tanzania will award its e-government hosting tender to a US-pole cloud provider by 2027-03-31.",
+      "mechanism": "Reference deployment channel: Kenyan sovereign-cloud award cited as benchmark in Tanzania's published pre-tender consultation.",
+      "probability": 0.35,
+      "resolution_criterion": "Award notice on Tanzania's national e-procurement portal (S1) or two independent S2/S3 reports of the award naming the vendor.",
+      "resolution_date": "2027-03-31",
+      "resolved": false,
+      "cascade_edge_ref": "casc-ken-tza-001",
+      "methodology_version_at_creation": "v2.0"
+    },
+    {
+      "prediction_id": "pred-2026-0088",
+      "class": "index",
+      "created_at": "2026-07-01T00:00:00Z",
+      "cliff_id": "cliff-ken-ran-2026-11",
+      "test_set_id": "ts-2026-Q3",
+      "forecast_source": "model",
+      "derivation_version": "deriv-v2.0.0",
+      "distribution": {
+        "incumbent_retained": 0.52,
+        "switch_us": 0.13,
+        "switch_prc": 0.05,
+        "switch_sovereign": 0.04,
+        "split_award": 0.2,
+        "cancellation_delay": 0.06
+      },
+      "resolution_criterion": "RAN refresh award published by the operator or the communications regulator (S1), or two independent S2/S3 award reports.",
+      "resolution_date": "2026-12-31",
+      "resolved": false,
+      "methodology_version_at_creation": "v2.0"
+    },
+    {
+      "prediction_id": "pred-2026-0089",
+      "class": "index",
+      "created_at": "2026-07-01T00:00:00Z",
+      "cliff_id": "cliff-ken-ran-2026-11",
+      "test_set_id": "ts-2026-Q3",
+      "forecast_source": "analyst",
+      "distribution": {
+        "incumbent_retained": 0.4,
+        "switch_us": 0.2,
+        "switch_prc": 0.05,
+        "switch_sovereign": 0.05,
+        "split_award": 0.25,
+        "cancellation_delay": 0.05
+      },
+      "resolution_criterion": "RAN refresh award published by the operator or the communications regulator (S1), or two independent S2/S3 award reports.",
+      "resolution_date": "2026-12-31",
+      "resolved": false,
+      "methodology_version_at_creation": "v2.0"
+    }
+  ],
+  "exercise_observations": [
+    {
+      "observation_id": "obs-2026-0012",
+      "observed_at": "2026-07-22",
+      "exercise_type": "license_denial",
+      "controller": {
+        "controller_id": "ctrl-us-bis",
+        "controller_type": "regulatory_regime",
+        "name": "US export-control regime",
+        "pole": "us"
+      },
+      "target_iso3": "ARE",
+      "layer": "silicon",
+      "p_subindicator": "p_license",
+      "event_refs": ["ev-2026-0341"]
+    }
+  ],
+  "test_sets": [
+    {
+      "test_set_id": "ts-2026-Q3",
+      "enumerated_at": "2026-07-01T00:00:00Z",
+      "frozen": true,
+      "cliffs": [
+        {
+          "cliff_id": "cliff-ken-ran-2026-11",
+          "country_iso3": "KEN",
+          "layer": "networks",
+          "cliff_type": "ran_contract",
+          "expected_decision_date": "2026-11-30",
+          "incumbent_pole": "prc",
+          "evidence_refs": ["ev-2026-0341"]
+        }
+      ]
+    }
+  ],
+  "brier": {
+    "class_a": { "running_brier": 0.21, "n_resolved": 14, "period_brier": null, "n_resolved_period": 0 },
+    "class_b": {
+      "running_brier": 0.18,
+      "n_resolved": 9,
+      "period_brier": 0.16,
+      "n_resolved_period": 2,
+      "by_forecast_source": { "model": 0.19, "analyst": 0.17 }
+    }
+  },
+  "baselines": {
+    "incumbent_always_retained": { "baseline_brier": 0.22, "skill_score": 0.18, "consecutive_quarters_below_baseline": 0 },
+    "hedging_prior": { "baseline_brier": 0.2, "skill_score": 0.1, "consecutive_quarters_below_baseline": 0 }
+  },
+  "calibration": [
+    { "bin_low": 0.0, "bin_high": 0.2, "forecast_mean": 0.12, "observed_frequency": 0.1, "n": 10 },
+    { "bin_low": 0.2, "bin_high": 0.4, "forecast_mean": 0.31, "observed_frequency": 0.33, "n": 9 }
+  ],
+  "methodology_review_triggered": false
+}
