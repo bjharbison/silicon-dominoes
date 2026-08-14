@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silicon Dominoes — Dashboard Prototype</title>
+<!--
+  Silicon Dominoes dashboard prototype v2 (build-order step 6 preview).
+  Single file, no build step. Three views over countries.json: map, charts, table.
+
+  DATA SOURCES
+    - "Synthetic demo" (default): ~30 procedurally generated country records,
+      deterministic (seeded PRNG), watermarked in the UI, and carrying a
+      top-level {"synthetic": true} marker that the real validate.py schema
+      gate would REJECT — by design, this dataset can never be published.
+    - "Fixture": the real contract sample. Tries fetch('schemas/fixtures/
+      countries.json') when served; falls back to the embedded copy on file://.
+    - "Load countries.json": any local file.
+
+  Spec rules encoded in the UI (unchanged from v1):
+    insufficient_data = hatching, never neutral · alignment always labeled
+    derived · chokepoint | panopticon displayed apart, never summed · nulls
+    are nulls with opacity_reason on hover · hedged_active and inert never
+    share a color · methodology + weight stamp on the page · the two-axis
+    US×PRC exposure view is first-class (doc 01 §3.2), rendered in Charts.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+  :root{
+    --ground:#10141c; --panel:#171c26; --line:#2a3140;
+    --ink:#d7dce6; --ink-dim:#8b93a5;
+    --us:#3d6fd6; --prc:#c0392f; --sov:#8a6fd1; --other:#4a5264;
+    --mid:#e8e0cf; --nodata:#1c222e;
+    --hedge:#e5a53c; --inert:#5a6170; --ok:#57b98a; --warn:#e5a53c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{background:var(--ground);color:var(--ink);
+    font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;
+    display:flex;flex-direction:column}
+  header{display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+    padding:12px 18px;border-bottom:1px solid var(--line)}
+  header h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;
+    letter-spacing:.14em;text-transform:uppercase}
+  nav{display:flex;gap:2px}
+  nav button{background:none;border:1px solid var(--line);color:var(--ink-dim);
+    font:inherit;font-size:11px;letter-spacing:.1em;padding:5px 14px;cursor:pointer;text-transform:uppercase}
+  nav button.active{color:var(--ink);border-color:var(--ink-dim);background:var(--panel)}
+  nav button:focus-visible{outline:1px solid var(--ink)}
+  .stamp{margin-left:auto;border:1px solid var(--ink-dim);color:var(--ink-dim);
+    padding:3px 9px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+    transform:rotate(-1deg);white-space:nowrap}
+  .stamp b{color:var(--ink)}
+  #demoBanner{display:none;background:repeating-linear-gradient(45deg,#3a2f14,#3a2f14 12px,#443716 12px,#443716 24px);
+    color:var(--warn);border-bottom:1px solid #5c4b1e;padding:6px 18px;font-size:11px;letter-spacing:.06em}
+  #demoBanner b{letter-spacing:.12em}
+  main{flex:1;display:flex;min-height:0}
+  .view{flex:1;min-width:0;display:none;position:relative}
+  .view.active{display:block}
+  #view-charts,#view-table{overflow-y:auto;padding:18px}
+  /* map */
+  #map{width:100%;height:100%;display:block;cursor:grab}
+  #map:active{cursor:grabbing}
+  .country{stroke:var(--ground);stroke-width:.4;transition:opacity .12s}
+  .country:hover{opacity:.82;cursor:pointer}
+  .country.selected{stroke:#fff;stroke-width:1.1}
+  #tooltip{position:fixed;pointer-events:none;display:none;z-index:9;
+    background:var(--panel);border:1px solid var(--line);padding:6px 9px;font-size:11px;
+    max-width:280px;line-height:1.5}
+  #tooltip .tt-name{font-weight:600}
+  #tooltip .tt-dim{color:var(--ink-dim)}
+  #legend{position:absolute;left:18px;bottom:16px;background:var(--panel);
+    border:1px solid var(--line);padding:10px 12px;font-size:10px;line-height:1.7;z-index:3}
+  #legend .bar{width:180px;height:9px;margin:3px 0 1px}
+  #legend .ends{display:flex;justify-content:space-between;color:var(--ink-dim)}
+  #legend .row{display:flex;align-items:center;gap:7px;margin-top:5px}
+  #legend .sw{width:16px;height:11px;border:1px solid var(--line);flex:none}
+  /* charts */
+  .chart{margin-bottom:26px;max-width:980px}
+  .chart h3{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);
+    font-weight:500;margin-bottom:4px}
+  .chart .cap{color:var(--ink-dim);font-size:10.5px;margin-bottom:8px;line-height:1.5;max-width:640px}
+  .chart svg{width:100%;height:auto;display:block;background:var(--panel);border:1px solid var(--line)}
+  .dot{cursor:pointer}
+  .dot:hover circle{stroke:#fff}
+  .abar,.hcell{cursor:pointer}
+  .abar:hover rect,.hcell:hover{stroke:#fff;stroke-width:1}
+  /* table */
+  #tablewrap{max-width:1200px}
+  #tfilter{background:var(--panel);border:1px solid var(--line);color:var(--ink);
+    font:inherit;font-size:12px;padding:5px 10px;width:240px;margin-bottom:10px}
+  #tfilter:focus-visible{outline:1px solid var(--ink-dim)}
+  table.data{width:100%;border-collapse:collapse;font-size:11.5px}
+  table.data th{position:sticky;top:-18px;background:var(--ground);text-align:right;color:var(--ink-dim);
+    font-weight:500;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;
+    padding:6px 8px;border-bottom:1px solid var(--ink-dim);cursor:pointer;white-space:nowrap;user-select:none}
+  table.data th:first-child,table.data th:nth-child(2){text-align:left}
+  table.data th.sorted{color:var(--ink)}
+  table.data td{padding:5px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+  table.data td:first-child,table.data td:nth-child(2){text-align:left}
+  table.data tr{cursor:pointer}
+  table.data tr:hover td{background:#1b2130}
+  table.data tr.selected td{background:#232b3d}
+  td.insuff{color:var(--ink-dim);font-style:italic}
+  .cellchip{display:inline-block;min-width:44px;padding:1px 6px;text-align:center}
+  /* side panel */
+  #panel{width:390px;flex:none;border-left:1px solid var(--line);background:var(--panel);
+    overflow-y:auto;padding:16px}
+  #panel .empty{color:var(--ink-dim);line-height:1.8;padding-top:8px}
+  .p-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .p-head h2{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700}
+  .p-head .iso{color:var(--ink-dim)}
+  .posture{font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border:1px solid currentColor}
+  .sec{margin-top:16px;border-top:1px solid var(--line);padding-top:11px}
+  .sec h3{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);
+    margin-bottom:8px;font-weight:500}
+  .kv{display:flex;justify-content:space-between;gap:10px;margin:3px 0}
+  .kv .k{color:var(--ink-dim)}
+  .flag-derived{color:var(--ink-dim);font-size:10px}
+  .expo{margin:5px 0}
+  .expo .lab{display:flex;justify-content:space-between;font-size:11px;margin-bottom:2px}
+  .expo .track{height:7px;background:var(--nodata)}
+  .expo .fill{height:100%}
+  table.layers{width:100%;border-collapse:collapse;font-size:11px}
+  table.layers th{text-align:left;color:var(--ink-dim);font-weight:500;font-size:9.5px;
+    letter-spacing:.07em;text-transform:uppercase;padding:3px 4px;border-bottom:1px solid var(--line)}
+  table.layers td{padding:4px;border-bottom:1px solid var(--line);vertical-align:middle}
+  .dbar{display:flex;height:8px;width:74px;background:var(--nodata)}
+  .dbar div{height:100%}
+  .tbar{display:flex;height:6px;width:56px;background:var(--nodata);margin-top:2px}
+  .tbar div{height:100%}
+  .pgroup{display:flex;gap:8px}
+  .pcell{display:flex;gap:3px}
+  .pdot{width:9px;height:9px;border-radius:50%;border:1px solid var(--ink-dim);flex:none;cursor:help}
+  .pdot.evid{background:var(--ok);border-color:var(--ok)}
+  .plabels{display:flex;gap:8px;color:var(--ink-dim);font-size:9px;margin-top:2px;line-height:1.5}
+  .insuff-note{border:1px dashed var(--ink-dim);padding:10px;margin-top:14px;line-height:1.7;color:var(--ink-dim)}
+  footer{display:flex;gap:16px;align-items:center;padding:8px 18px;flex-wrap:wrap;
+    border-top:1px solid var(--line);color:var(--ink-dim);font-size:10.5px}
+  footer select{background:var(--panel);border:1px solid var(--line);color:var(--ink);font:inherit;font-size:11px;padding:3px 6px}
+  footer label{border:1px solid var(--line);padding:3px 10px;cursor:pointer;color:var(--ink)}
+  footer label:hover{border-color:var(--ink-dim)}
+  #status{margin-left:auto}
+  input[type=file]{display:none}
+  @media (max-width:900px){
+    main{flex-direction:column}
+    #panel{width:100%;border-left:none;border-top:1px solid var(--line);max-height:45vh}
+    table.data th{top:0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Silicon Dominoes</h1>
+  <nav>
+    <button data-view="map" class="active">Map</button>
+    <button data-view="charts">Charts</button>
+    <button data-view="table">Table</button>
+  </nav>
+  <span class="stamp" id="stamp">awaiting data</span>
+</header>
+
+<div id="demoBanner"><b>⚠ SYNTHETIC DEMO DATA</b> — every value below is invented, deterministically generated to exercise the interface. This dataset carries a marker that the schema gate rejects, so it can never be published as real intelligence.</div>
+
+<main>
+  <div class="view active" id="view-map">
+    <svg id="map"></svg>
+    <div id="legend">
+      <div>alignment_index <span class="flag-derived">(derived)</span></div>
+      <canvas class="bar" id="legendbar" width="180" height="9"></canvas>
+      <div class="ends"><span>−100 PRC</span><span>0</span><span>+100 US</span></div>
+      <div class="row"><div class="sw" id="sw-insuff"></div>insufficient data</div>
+      <div class="row"><div class="sw" style="background:var(--nodata)"></div>not in dataset</div>
+    </div>
+  </div>
+
+  <div class="view" id="view-charts">
+    <div class="chart">
+      <h3>Two-axis exposure — US × PRC</h3>
+      <div class="cap">The first-class view (doc 01 §3.2): the signed alignment scalar hides that both exposures can be high at once. Hedgers live in the upper right. Point color = posture. Click a point to open its record.</div>
+      <svg id="scatter"></svg>
+      <div id="postureLegend" class="plabels" style="margin-top:6px;flex-wrap:wrap"></div>
+    </div>
+    <div class="chart">
+      <h3>Alignment index, sorted <span class="flag-derived">(derived)</span></h3>
+      <div class="cap">Reading aid only — click any bar to see the exposure decomposition it summarizes.</div>
+      <svg id="alignbars"></svg>
+    </div>
+    <div class="chart">
+      <h3>Countries × layers — net dependence by pole</h3>
+      <div class="cap">Cell = net installed-base share (US − PRC) at that layer, from each layer's D vector. Layer-level divergence is the expected outcome, not an anomaly. Hatched rows are insufficient-data countries.</div>
+      <svg id="heatmap"></svg>
+    </div>
+  </div>
+
+  <div class="view" id="view-table">
+    <div id="tablewrap">
+      <input id="tfilter" type="search" placeholder="filter countries…" aria-label="Filter countries">
+      <table class="data"><thead id="thead"></thead><tbody id="tbody"></tbody></table>
+    </div>
+  </div>
+
+  <aside id="panel" aria-live="polite">
+    <div class="empty">Select a country — on the map, in a chart, or in the table — to open its DEPTH-N record.</div>
+  </aside>
+</main>
+
+<footer>
+  <span>dataset</span>
+  <select id="srcsel">
+    <option value="demo">Synthetic demo (~30 countries)</option>
+    <option value="fixture">Fixture (real contract sample)</option>
+  </select>
+  <label for="filein">Load countries.json</label>
+  <input type="file" id="filein" accept=".json,application/json">
+  <span id="status"></span>
+</footer>
+
+<div id="tooltip"></div>
+
+<script>
+/* ====================== constants ====================== */
+const GEO_URL = "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson";
+const LAYERS = ["power","facilities","silicon","networks","cloud","models","applications"];
+const POLE_COLORS = { us:"#3d6fd6", prc:"#c0392f", sovereign:"#8a6fd1", other:"#4a5264" };
+const POSTURE_COLORS = {
+  committed_us:"#3d6fd6", leaning_us:"#6f92dd", committed_prc:"#c0392f", leaning_prc:"#cf6a5d",
+  hedged_active:"#e5a53c", sovereign_seeking:"#8a6fd1", excluded:"#7a4a4a", inert:"#5a6170"
+};
+const alignScale = d3.scaleLinear().domain([-100,0,100])
+  .range(["#c0392f","#e8e0cf","#3d6fd6"]).clamp(true);
+
+/* ====================== embedded fixture ====================== */
+const FIXTURE_DATA = {
+  "schema_version":"1.0.0","cycle_date":"2026-08-07","generated_at":"2026-08-07T06:00:00Z",
+  "methodology_version":"v2.0","weight_vector_stamp":{"hash":"sha256:3f9a1c"},
+  "countries":[
+    {"iso3":"KEN","status":"scored","exposure_us":58.2,"exposure_prc":41.5,"exposure_sovereign":12.0,
+     "alignment_index":{"value":16.7,"derived":true},"sovereign_pull":12.0,"readiness":46.0,"readiness_tier":"T2",
+     "strategic_salience":61.0,"lock_in":44.0,"posture":"hedged_active","posture_override":false,
+     "posture_cluster_mapping_version":"cluster-map-v2.0.1","contest_score":71.0,"cascade_susceptibility":38.0,
+     "network_metrics":{"controller_hhi":0.31,"single_hub_dependence":0.22,"shared_controller_centrality":1.4},
+     "per_layer":{
+      "power":{"d_vector":{"us":0.05,"prc":0.4,"sovereign":0.45,"other":0.1},"e":{"prc":55},
+        "p":{"p_license":{"status":"null","opacity_reason":"No published licensing terms for grid equipment identified."},
+             "p_update":{"status":"null","opacity_reason":"Remote-management architecture undisclosed."},
+             "p_spares":{"status":"evidenced","value":62,"evidence_refs":["ev-2026-0341"]},
+             "p_jurisdiction":{"status":"null","opacity_reason":"Not applicable at this layer for this country; no data-bearing assets coded."},
+             "p_telemetry":{"status":"null","opacity_reason":"No architecture disclosures located."}},
+        "t":{"value_by_pole":{"us":0.0,"prc":1.2,"sovereign":0.4},
+             "tier_composition":{"t1":0.5,"t2":0.5,"t3":0.0,"t4":0.0,"t5":0.0}}},
+      "facilities":{"d_vector":{"us":0.2,"prc":0.3,"sovereign":0.4,"other":0.1},"e":{"prc":40,"us":25},
+        "p":{"p_license":{"status":"null","opacity_reason":"Facility contracts unpublished."},
+             "p_update":{"status":"null","opacity_reason":"Facility contracts unpublished."},
+             "p_spares":{"status":"null","opacity_reason":"Facility contracts unpublished."},
+             "p_jurisdiction":{"status":"null","opacity_reason":"Facility contracts unpublished."},
+             "p_telemetry":{"status":"null","opacity_reason":"Facility contracts unpublished."}},
+        "t":{"value_by_pole":{"us":2.1,"prc":0.0,"sovereign":0.0},
+             "tier_composition":{"t1":0.0,"t2":1.0,"t3":0.0,"t4":0.0,"t5":0.0},
+             "realization_prob_est":{"value":0.6,"method":"H-derived logistic on readiness_tier T2, method doc 01 §4.2, params in weight vector."}}},
+      "silicon":{"d_vector":{"us":0.7,"prc":0.15,"sovereign":0.0,"other":0.15},"e":{"us":30},
+        "p":{"p_license":{"status":"evidenced","value":70,"evidence_refs":["ev-2026-0341"]},
+             "p_update":{"status":"null","opacity_reason":"Attestation requirements not published for installed SKUs."},
+             "p_spares":{"status":"null","opacity_reason":"Service contract awards not located."},
+             "p_jurisdiction":{"status":"null","opacity_reason":"Not a data-bearing layer as coded."},
+             "p_telemetry":{"status":"null","opacity_reason":"No architecture disclosures located."}},
+        "t":{"value_by_pole":{"us":0.8,"prc":0.0,"sovereign":0.0},
+             "tier_composition":{"t1":1.0,"t2":0.0,"t3":0.0,"t4":0.0,"t5":0.0}}},
+      "networks":{"d_vector":{"us":0.15,"prc":0.65,"sovereign":0.0,"other":0.2},"e":{"prc":72},
+        "p":{"p_license":{"status":"null","opacity_reason":"Vendor contract terms confidential."},
+             "p_update":{"status":"null","opacity_reason":"RAN management architecture undisclosed."},
+             "p_spares":{"status":"evidenced","value":68,"evidence_refs":["ev-2026-0341"]},
+             "p_jurisdiction":{"status":"null","opacity_reason":"Core-network data handling undisclosed."},
+             "p_telemetry":{"status":"null","opacity_reason":"No regulator findings located."}},
+        "t":{"value_by_pole":{"us":0.0,"prc":0.5,"sovereign":0.0},
+             "tier_composition":{"t1":0.0,"t2":0.0,"t3":1.0,"t4":0.0,"t5":0.0}}},
+      "cloud":{"d_vector":{"us":0.55,"prc":0.25,"sovereign":0.1,"other":0.1},"e":{"us":48,"prc":30},
+        "p":{"p_license":{"status":"null","opacity_reason":"Hosting agreement riders unpublished."},
+             "p_update":{"status":"null","opacity_reason":"Control-plane dependency documented only in marketing materials (S4)."},
+             "p_spares":{"status":"null","opacity_reason":"Not applicable as coded for cloud services."},
+             "p_jurisdiction":{"status":"evidenced","value":35,"evidence_refs":["ev-2026-0343"]},
+             "p_telemetry":{"status":"null","opacity_reason":"No architecture disclosures located."}},
+        "t":{"value_by_pole":{"us":3.4,"prc":0.0,"sovereign":0.0},
+             "tier_composition":{"t1":0.0,"t2":0.2,"t3":0.8,"t4":0.0,"t5":0.0}}},
+      "models":{"d_vector":{"us":0.6,"prc":0.1,"sovereign":0.2,"other":0.1},"e":{"us":20},
+        "p":{"p_license":{"status":"null","opacity_reason":"Model licensing terms per-deployment; none published."},
+             "p_update":{"status":"null","opacity_reason":"API-dependency architecture not coded this cycle."},
+             "p_spares":{"status":"null","opacity_reason":"Not applicable at this layer."},
+             "p_jurisdiction":{"status":"null","opacity_reason":"Deployment jurisdictions unverified."},
+             "p_telemetry":{"status":"null","opacity_reason":"Provider telemetry practices undisclosed."}},
+        "t":{"value_by_pole":{"us":0.3,"prc":0.0,"sovereign":0.6},
+             "tier_composition":{"t1":0.6,"t2":0.4,"t3":0.0,"t4":0.0,"t5":0.0}}},
+      "applications":{"d_vector":{"us":0.4,"prc":0.35,"sovereign":0.15,"other":0.1},"e":{"us":22,"prc":28},
+        "p":{"p_license":{"status":"null","opacity_reason":"App-layer licensing not coded."},
+             "p_update":{"status":"null","opacity_reason":"App-layer update channels not coded."},
+             "p_spares":{"status":"null","opacity_reason":"Not applicable at this layer."},
+             "p_jurisdiction":{"status":"null","opacity_reason":"Per-app data residency unverified."},
+             "p_telemetry":{"status":"null","opacity_reason":"Per-app telemetry unverified."}},
+        "t":{"value_by_pole":{"us":0.2,"prc":0.4,"sovereign":0.1},
+             "tier_composition":{"t1":0.8,"t2":0.2,"t3":0.0,"t4":0.0,"t5":0.0}}}},
+     "confidence":{"level":0.68,"band_low":0.55,"band_high":0.78},
+     "evidence_count":3,"null_coverage_rate":0.86,"coverage_flag":"normal"},
+    {"iso3":"COM","status":"insufficient_data","evidence_count":1,"null_coverage_rate":1.0,
+     "research_gap_refs":["rg-2026-0102"]}
+  ]
+};
+
+/* ====================== synthetic demo generator ======================
+   Deterministic (fixed seed). Seeds: [iso3, name, usExp, prcExp, sovExp].
+   Postures derive from the exposures; everything else from the PRNG.     */
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+
+const DEMO_SEEDS = [
+  ["JPN","Japan",78,12,25],["KOR","South Korea",74,15,22],["GBR","United Kingdom",80,8,30],
+  ["AUS","Australia",76,10,20],["ISR","Israel",70,12,35],["POL","Poland",68,14,28],
+  ["MEX","Mexico",62,20,15],["PHL","Philippines",60,25,12],
+  ["PAK","Pakistan",18,72,10],["KHM","Cambodia",12,78,8],["LAO","Laos",10,80,6],
+  ["ETH","Ethiopia",22,68,12],["ZWE","Zimbabwe",15,70,8],["MMR","Myanmar",14,75,7],
+  ["UZB","Uzbekistan",25,60,15],["KAZ","Kazakhstan",30,58,18],
+  ["KEN","Kenya",58,42,12],["IDN","Indonesia",48,46,20],["VNM","Vietnam",44,50,18],
+  ["THA","Thailand",52,45,15],["MYS","Malaysia",55,48,22],["EGY","Egypt",45,50,14],
+  ["SAU","Saudi Arabia",60,38,30],["ARE","United Arab Emirates",62,40,35],["TUR","Turkey",50,42,32],
+  ["BRA","Brazil",52,40,28],["ZAF","South Africa",46,44,20],["NGA","Nigeria",50,45,12],
+  ["MAR","Morocco",55,35,18],["BGD","Bangladesh",35,55,10],
+  ["DEU","Germany",55,15,70],["FRA","France",50,12,75],["IND","India",55,25,66],
+  ["TKM","Turkmenistan",20,28,5]
+];
+const DEMO_INSUFFICIENT = [["COM","Comoros"],["TCD","Chad"],["PNG","Papua New Guinea"]];
+const DEMO_NAMES = new Map(DEMO_SEEDS.map(s=>[s[0],s[1]]).concat(DEMO_INSUFFICIENT));
+
+function assignPosture(us,prc,sov){
+  if(us<32 && prc<32 && sov<32) return "inert";
+  if(sov>=60) return "sovereign_seeking";
+  if(us>=40 && prc>=40) return "hedged_active";
+  if(us-prc>=40) return us>=75 ? "committed_us" : "leaning_us";
+  if(prc-us>=40) return prc>=75 ? "committed_prc" : "leaning_prc";
+  if(us>prc) return "leaning_us";
+  return "leaning_prc";
+}
+const DEMO_NULL_REASON = "Synthetic demo record — invented for interface testing; no underlying evidence exists.";
+
+function makeDemoLayer(rng, us, prc, sov, layer){
+  // layer biases: chokepoints concentrate mid-stack; regulation pulls at models/apps
+  let u=us/100, p=prc/100, s=sov/100;
+  if(layer==="silicon"){u*=1.5;p*=0.6}
+  if(layer==="networks"){p*=1.4;u*=0.8}
+  if(layer==="power"){s*=1.4;u*=0.6;p*=1.1}
+  if(layer==="models"||layer==="applications"){s*=1.3}
+  u*=0.8+0.4*rng(); p*=0.8+0.4*rng(); s*=0.8+0.4*rng();
+  const tot=u+p+s, cap=0.85+0.1*rng();
+  if(tot>cap){u*=cap/tot;p*=cap/tot;s*=cap/tot}
+  const other=Math.max(0,1-(u+p+s))*(0.3+0.5*rng());
+  const dv={us:r2(u),prc:r2(p),sovereign:r2(s),other:r2(other)};
+  const e={}; const inc = u>=p ? "us" : "prc";
+  e[inc]=Math.round(25+55*rng());
+  if(Math.abs(u-p)<0.15) e[inc==="us"?"prc":"us"]=Math.round(20+40*rng());
+  const P={};
+  for(const k of ["p_license","p_update","p_spares","p_jurisdiction","p_telemetry"]){
+    P[k]= rng()<0.18
+      ? {status:"evidenced",value:Math.round(30+50*rng()),evidence_refs:["synthetic-demo"]}
+      : {status:"null",opacity_reason:DEMO_NULL_REASON};
+  }
+  const tv={us:r1(3*u*rng()),prc:r1(3*p*rng()),sovereign:r1(2*s*rng())};
+  let w=[rng()*0.9,rng()*0.7,rng()*0.5,rng()*0.2,rng()*0.1];
+  const wt=w.reduce((a,b)=>a+b,0)||1; w=w.map(x=>r2(x/wt));
+  w[0]=r2(1-(w[1]+w[2]+w[3]+w[4])); // force exact sum 1.00
+  return {d_vector:dv,e,p:P,
+    t:{value_by_pole:tv,tier_composition:{t1:w[0],t2:w[1],t3:w[2],t4:w[3],t5:w[4]}}};
+}
+
+function generateDemo(){
+  const rng = mulberry32(20260813);
+  const countries = DEMO_SEEDS.map(([iso3,name,us,prc,sov])=>{
+    const per_layer={};
+    for(const L of LAYERS) per_layer[L]=makeDemoLayer(rng,us,prc,sov,L);
+    const readiness=Math.round(15+70*rng());
+    const tier="T"+Math.min(5,Math.floor(readiness/16));
+    const align=Math.max(-100,Math.min(100,us-prc));
+    const conf=r2(0.4+0.4*rng());
+    return {iso3,status:"scored",
+      exposure_us:us,exposure_prc:prc,exposure_sovereign:sov,
+      alignment_index:{value:align,derived:true},
+      sovereign_pull:sov,readiness,readiness_tier:tier,
+      strategic_salience:Math.round(20+70*rng()),
+      lock_in:Math.round(Math.max(us,prc)*(0.5+0.4*rng())),
+      posture:assignPosture(us,prc,sov),posture_override:false,
+      posture_cluster_mapping_version:"cluster-map-DEMO",
+      contest_score:Math.round(Math.max(5,100-Math.abs(align)-25*rng())),
+      cascade_susceptibility:Math.round(10+60*rng()),
+      network_metrics:{controller_hhi:r2(0.15+0.5*rng()),single_hub_dependence:r2(0.1+0.5*rng()),
+                       shared_controller_centrality:r1(0.5+2.5*rng())},
+      per_layer,
+      confidence:{level:conf,band_low:r2(conf-0.12),band_high:r2(conf+0.1)},
+      evidence_count:Math.round(4+36*rng()),
+      null_coverage_rate:r2(0.6+0.35*rng()),coverage_flag:"normal"};
+  });
+  for(const [iso3] of DEMO_INSUFFICIENT){
+    countries.push({iso3,status:"insufficient_data",
+      evidence_count:Math.round(2*rng()),null_coverage_rate:1.0,
+      research_gap_refs:["rg-DEMO-"+iso3]});
+  }
+  return {synthetic:true,  // <- the real validate.py rejects unknown keys: unpublishable by design
+    schema_version:"1.0.0",cycle_date:"2026-08-13",generated_at:new Date().toISOString(),
+    methodology_version:"v0.0",weight_vector_stamp:{hash:"SYNTHETIC"},countries};
+}
+function r1(x){return Math.round(x*10)/10}
+function r2(x){return Math.round(x*100)/100}
+
+/* ====================== state ====================== */
+let dataset=null, byIso=new Map(), features=null, featureIndex=new Map();
+let selectedIso=null, countryPaths=null, currentView="map";
+let sortKey="alignment", sortDir=-1, filterText="";
+
+const svg=d3.select("#map");
+const tooltip=document.getElementById("tooltip");
+const statusEl=document.getElementById("status");
+const isoOf = f => f.id || (f.properties&&(f.properties.iso_a3||f.properties.ISO_A3||f.properties.adm0_a3)) || null;
+
+/* ====================== dataset handling ====================== */
+async function setSource(mode){
+  if(mode==="demo"){
+    applyDataset(generateDemo(),"synthetic demo (generated in-page)");
+  }else if(mode==="fixture"){
+    try{
+      const r=await fetch("schemas/fixtures/countries.json",{cache:"no-store"});
+      if(!r.ok) throw new Error(r.status);
+      applyDataset(await r.json(),"schemas/fixtures/countries.json");
+    }catch(e){
+      applyDataset(FIXTURE_DATA,"embedded fixture (fetch unavailable)");
+    }
+  }
+}
+function applyDataset(data,label){
+  if(!data||!Array.isArray(data.countries)){statusEl.textContent="invalid countries.json — expected a countries array";return}
+  dataset=data;
+  byIso=new Map(data.countries.map(c=>[c.iso3,c]));
+  const syn = data.synthetic===true;
+  document.getElementById("demoBanner").style.display = syn ? "block" : "none";
+  document.getElementById("stamp").innerHTML = syn
+    ? "<b>SYNTHETIC</b> · "+data.countries.length+" invented records · not publishable"
+    : "cycle <b>"+esc(data.cycle_date||"?")+"</b> · methodology <b>"+esc(data.methodology_version||"?")+
+      "</b> · weights <b>"+esc((data.weight_vector_stamp&&data.weight_vector_stamp.hash)||"?")+"</b>";
+  statusEl.textContent="source: "+label+" · "+data.countries.length+" record(s)";
+  recolor(); renderCharts(); renderTable();
+  if(selectedIso&&byIso.has(selectedIso)) showPanel(selectedIso); 
+}
+document.getElementById("srcsel").addEventListener("change",e=>setSource(e.target.value));
+document.getElementById("filein").addEventListener("change",ev=>{
+  const f=ev.target.files[0]; if(!f)return;
+  const rd=new FileReader();
+  rd.onload=()=>{try{applyDataset(JSON.parse(rd.result),f.name)}catch(e){statusEl.textContent="could not parse "+f.name}};
+  rd.readAsText(f);
+});
+
+/* ====================== tabs ====================== */
+for(const btn of document.querySelectorAll("nav button")){
+  btn.addEventListener("click",()=>{
+    currentView=btn.dataset.view;
+    document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("active",b===btn));
+    document.querySelectorAll(".view").forEach(v=>v.classList.toggle("active",v.id==="view-"+currentView));
+  });
+}
+
+/* ====================== map ====================== */
+async function drawMap(){
+  let world;
+  try{ world=await d3.json(GEO_URL); }
+  catch(e){ statusEl.textContent="basemap failed to load — check network access"; return; }
+  features=world.features.filter(f=>isoOf(f)!=="ATA");
+  featureIndex=new Map(features.map(f=>[isoOf(f),f]));
+  const wrap=document.getElementById("view-map");
+  const W=wrap.clientWidth||1000, H=wrap.clientHeight||560;
+  svg.attr("viewBox","0 0 "+W+" "+H);
+  const projection=d3.geoNaturalEarth1().fitSize([W,H-16],{type:"FeatureCollection",features});
+  const path=d3.geoPath(projection);
+  const g=svg.append("g");
+  countryPaths=g.selectAll("path").data(features).join("path")
+    .attr("class","country").attr("d",path).attr("fill","var(--nodata)")
+    .on("mousemove",(ev,d)=>{
+      const iso=isoOf(d), rec=byIso.get(iso);
+      let line;
+      if(!rec) line="<span class='tt-dim'>not in dataset</span>";
+      else if(rec.status==="insufficient_data") line="<span class='tt-dim'>insufficient data · evidence_count "+rec.evidence_count+"</span>";
+      else line="alignment "+fmtSigned(rec.alignment_index.value)+" <span class='tt-dim'>(derived)</span> · "+esc(rec.posture);
+      showTip(ev,"<div class='tt-name'>"+esc(nameOf(iso,d))+" · "+esc(iso)+"</div>"+line);
+    })
+    .on("mouseleave",hideTip)
+    .on("click",(ev,d)=>select(isoOf(d)));
+  const zoom=d3.zoom().scaleExtent([1,10]).on("zoom",ev=>g.attr("transform",ev.transform));
+  svg.call(zoom).on("dblclick.zoom",null);
+  svg.on("dblclick",()=>svg.transition().duration(400).call(zoom.transform,d3.zoomIdentity));
+  const defs=svg.append("defs");
+  const pat=defs.append("pattern").attr("id","hatch").attr("width",6).attr("height",6)
+    .attr("patternTransform","rotate(45)").attr("patternUnits","userSpaceOnUse");
+  pat.append("rect").attr("width",6).attr("height",6).attr("fill","#242b38");
+  pat.append("line").attr("x1",0).attr("y1",0).attr("x2",0).attr("y2",6).attr("stroke","#4a5468").attr("stroke-width",2);
+  document.getElementById("sw-insuff").style.background=
+    "repeating-linear-gradient(45deg,#242b38,#242b38 3px,#4a5468 3px,#4a5468 5px)";
+  recolor();
+}
+function recolor(){
+  if(!countryPaths)return;
+  countryPaths.attr("fill",d=>{
+    const rec=byIso.get(isoOf(d));
+    if(!rec)return "var(--nodata)";
+    if(rec.status==="insufficient_data")return "url(#hatch)";
+    return alignScale(rec.alignment_index.value);
+  }).classed("selected",d=>isoOf(d)===selectedIso);
+}
+
+/* ====================== charts ====================== */
+function scored(){ return dataset ? dataset.countries.filter(c=>c.status==="scored") : []; }
+
+function renderCharts(){
+  if(!dataset)return;
+  renderScatter(); renderAlignBars(); renderHeatmap(); renderPostureLegend();
+}
+
+function renderScatter(){
+  const S=d3.select("#scatter"); S.selectAll("*").remove();
+  const W=940,H=430,M={l:46,r:16,t:14,b:38};
+  S.attr("viewBox","0 0 "+W+" "+H);
+  const x=d3.scaleLinear().domain([0,100]).range([M.l,W-M.r]);
+  const y=d3.scaleLinear().domain([0,100]).range([H-M.b,M.t]);
+  const ax=S.append("g");
+  for(const v of [0,25,50,75,100]){
+    ax.append("line").attr("x1",x(v)).attr("x2",x(v)).attr("y1",y(0)).attr("y2",y(100)).attr("stroke","#222938");
+    ax.append("line").attr("y1",y(v)).attr("y2",y(v)).attr("x1",x(0)).attr("x2",x(100)).attr("stroke","#222938");
+    ax.append("text").attr("x",x(v)).attr("y",H-14).attr("fill","#8b93a5").attr("font-size",10).attr("text-anchor","middle").text(v);
+    ax.append("text").attr("x",M.l-8).attr("y",y(v)+3).attr("fill","#8b93a5").attr("font-size",10).attr("text-anchor","end").text(v);
+  }
+  ax.append("line").attr("x1",x(0)).attr("y1",y(0)).attr("x2",x(100)).attr("y2",y(100))
+    .attr("stroke","#39404f").attr("stroke-dasharray","4 4");
+  ax.append("text").attr("x",(x(0)+x(100))/2).attr("y",H-2).attr("fill","#8b93a5").attr("font-size",10)
+    .attr("text-anchor","middle").text("exposure_us →");
+  ax.append("text").attr("transform","rotate(-90)").attr("x",-(H/2)).attr("y",12)
+    .attr("fill","#8b93a5").attr("font-size",10).attr("text-anchor","middle").text("exposure_prc →");
+  const dots=S.selectAll("g.dot").data(scored()).join("g").attr("class","dot")
+    .attr("transform",c=>"translate("+x(c.exposure_us)+","+y(c.exposure_prc)+")")
+    .on("click",(ev,c)=>select(c.iso3))
+    .on("mousemove",(ev,c)=>showTip(ev,"<div class='tt-name'>"+esc(nameOf(c.iso3))+"</div>US "+c.exposure_us+" · PRC "+c.exposure_prc+" · sov "+c.exposure_sovereign+"<br><span class='tt-dim'>"+esc(c.posture)+"</span>"))
+    .on("mouseleave",hideTip);
+  dots.append("circle").attr("r",c=>c.iso3===selectedIso?8:6)
+    .attr("fill",c=>POSTURE_COLORS[c.posture]||"#8b93a5")
+    .attr("stroke",c=>c.iso3===selectedIso?"#fff":"#10141c").attr("stroke-width",1.2);
+  dots.append("text").attr("x",8).attr("y",3).attr("fill","#8b93a5").attr("font-size",9).text(c=>c.iso3);
+}
+
+function renderAlignBars(){
+  const S=d3.select("#alignbars"); S.selectAll("*").remove();
+  const rows=scored().slice().sort((a,b)=>b.alignment_index.value-a.alignment_index.value);
+  const W=940,rh=17,M={l:52,r:52,t:8,b:22},H=M.t+rows.length*rh+M.b;
+  S.attr("viewBox","0 0 "+W+" "+H);
+  const x=d3.scaleLinear().domain([-100,100]).range([M.l,W-M.r]);
+  S.append("line").attr("x1",x(0)).attr("x2",x(0)).attr("y1",M.t).attr("y2",H-M.b).attr("stroke","#39404f");
+  for(const v of [-100,-50,50,100])
+    S.append("text").attr("x",x(v)).attr("y",H-8).attr("fill","#8b93a5").attr("font-size",10).attr("text-anchor","middle").text(fmtSigned(v));
+  const g=S.selectAll("g.abar").data(rows).join("g").attr("class","abar")
+    .attr("transform",(c,i)=>"translate(0,"+(M.t+i*rh)+")")
+    .on("click",(ev,c)=>select(c.iso3))
+    .on("mousemove",(ev,c)=>showTip(ev,"<div class='tt-name'>"+esc(nameOf(c.iso3))+"</div>alignment "+fmtSigned(c.alignment_index.value)+" <span class='tt-dim'>(derived from exposure_us "+c.exposure_us+" − exposure_prc "+c.exposure_prc+")</span>"))
+    .on("mouseleave",hideTip);
+  g.append("rect")
+    .attr("x",c=>Math.min(x(0),x(c.alignment_index.value)))
+    .attr("width",c=>Math.abs(x(c.alignment_index.value)-x(0)))
+    .attr("y",3).attr("height",rh-6)
+    .attr("fill",c=>alignScale(c.alignment_index.value))
+    .attr("stroke",c=>c.iso3===selectedIso?"#fff":"none");
+  g.append("text").attr("x",c=>c.alignment_index.value>=0?x(0)-6:x(0)+6)
+    .attr("y",rh/2+3).attr("fill","#8b93a5").attr("font-size",9.5)
+    .attr("text-anchor",c=>c.alignment_index.value>=0?"end":"start").text(c=>c.iso3);
+}
+
+function renderHeatmap(){
+  const S=d3.select("#heatmap"); S.selectAll("*").remove();
+  if(!dataset)return;
+  const rows=dataset.countries.slice().sort((a,b)=>{
+    const av=a.status==="scored"?a.alignment_index.value:-999;
+    const bv=b.status==="scored"?b.alignment_index.value:-999;
+    return bv-av;
+  });
+  const W=940,rh=18,M={l:52,r:16,t:26,b:8},cw=(W-M.l-M.r)/LAYERS.length,H=M.t+rows.length*rh+M.b;
+  S.attr("viewBox","0 0 "+W+" "+H);
+  LAYERS.forEach((L,i)=>S.append("text").attr("x",M.l+i*cw+cw/2).attr("y",16)
+    .attr("fill","#8b93a5").attr("font-size",9.5).attr("text-anchor","middle").text(L));
+  rows.forEach((c,ri)=>{
+    const yy=M.t+ri*rh;
+    S.append("text").attr("x",M.l-6).attr("y",yy+rh/2+3).attr("fill",c.iso3===selectedIso?"#fff":"#8b93a5")
+      .attr("font-size",9.5).attr("text-anchor","end").style("cursor","pointer")
+      .on("click",()=>select(c.iso3)).text(c.iso3);
+    LAYERS.forEach((L,ci)=>{
+      const cell=S.append("rect").attr("class","hcell")
+        .attr("x",M.l+ci*cw+1).attr("y",yy+1).attr("width",cw-2).attr("height",rh-2)
+        .on("click",()=>select(c.iso3));
+      if(c.status!=="scored"){
+        cell.attr("fill","url(#hatchC)")
+          .on("mousemove",ev=>showTip(ev,"<div class='tt-name'>"+esc(nameOf(c.iso3))+"</div><span class='tt-dim'>insufficient data</span>"))
+          .on("mouseleave",hideTip);
+        return;
+      }
+      const dv=c.per_layer[L].d_vector;
+      const net=(dv.us-dv.prc)*100;
+      cell.attr("fill",alignScale(net))
+        .on("mousemove",ev=>showTip(ev,"<div class='tt-name'>"+esc(nameOf(c.iso3))+" · "+L+"</div>net "+fmtSigned(net)+"<br><span class='tt-dim'>D: US "+pct(dv.us)+" · PRC "+pct(dv.prc)+" · sov "+pct(dv.sovereign)+" · other "+pct(dv.other)+"</span>"))
+        .on("mouseleave",hideTip);
+    });
+  });
+  const defs=S.append("defs");
+  const pat=defs.append("pattern").attr("id","hatchC").attr("width",6).attr("height",6)
+    .attr("patternTransform","rotate(45)").attr("patternUnits","userSpaceOnUse");
+  pat.append("rect").attr("width",6).attr("height",6).attr("fill","#242b38");
+  pat.append("line").attr("x1",0).attr("y1",0).attr("x2",0).attr("y2",6).attr("stroke","#4a5468").attr("stroke-width",2);
+}
+
+function renderPostureLegend(){
+  const el=document.getElementById("postureLegend");
+  el.innerHTML=Object.entries(POSTURE_COLORS).map(([k,c])=>
+    "<span style='display:inline-flex;align-items:center;gap:4px;margin-right:10px'>"+
+    "<span style='width:9px;height:9px;border-radius:50%;background:"+c+";display:inline-block'></span>"+k+"</span>").join("");
+}
+
+/* ====================== table ====================== */
+const COLS=[
+  {key:"iso3",label:"iso3",get:c=>c.iso3,str:true},
+  {key:"name",label:"country",get:c=>nameOf(c.iso3),str:true},
+  {key:"posture",label:"posture",get:c=>c.status==="scored"?c.posture:"insufficient",str:true},
+  {key:"alignment",label:"alignment (derived)",get:c=>c.status==="scored"?c.alignment_index.value:null,chip:true},
+  {key:"exposure_us",label:"exp US",get:c=>c.status==="scored"?c.exposure_us:null},
+  {key:"exposure_prc",label:"exp PRC",get:c=>c.status==="scored"?c.exposure_prc:null},
+  {key:"exposure_sovereign",label:"exp sov",get:c=>c.status==="scored"?c.exposure_sovereign:null},
+  {key:"readiness",label:"readiness",get:c=>c.status==="scored"?c.readiness:null,extra:c=>c.status==="scored"?" "+c.readiness_tier:""},
+  {key:"strategic_salience",label:"salience",get:c=>c.status==="scored"?c.strategic_salience:null},
+  {key:"lock_in",label:"lock-in",get:c=>c.status==="scored"?c.lock_in:null},
+  {key:"contest_score",label:"contest",get:c=>c.status==="scored"?c.contest_score:null},
+  {key:"cascade_susceptibility",label:"cascade",get:c=>c.status==="scored"?c.cascade_susceptibility:null},
+  {key:"evidence_count",label:"evid #",get:c=>c.evidence_count},
+  {key:"null_coverage_rate",label:"null cov",get:c=>c.null_coverage_rate,fmt:pct}
+];
+function renderTable(){
+  if(!dataset)return;
+  const thead=document.getElementById("thead");
+  thead.innerHTML="<tr>"+COLS.map(col=>
+    "<th data-key='"+col.key+"' class='"+(col.key===sortKey?"sorted":"")+"'>"+col.label+
+    (col.key===sortKey?(sortDir<0?" ▼":" ▲"):"")+"</th>").join("")+"</tr>";
+  thead.querySelectorAll("th").forEach(th=>th.addEventListener("click",()=>{
+    const k=th.dataset.key;
+    if(sortKey===k) sortDir*=-1; else {sortKey=k;sortDir=-1;}
+    renderTable();
+  }));
+  const col=COLS.find(c=>c.key===sortKey);
+  let rows=dataset.countries.slice();
+  if(filterText){
+    const q=filterText.toLowerCase();
+    rows=rows.filter(c=>c.iso3.toLowerCase().includes(q)||nameOf(c.iso3).toLowerCase().includes(q)||
+      (c.posture&&c.posture.includes(q)));
+  }
+  rows.sort((a,b)=>{
+    const av=col.get(a), bv=col.get(b);
+    if(av==null&&bv==null)return 0;
+    if(av==null)return 1; if(bv==null)return -1;
+    const cmp=col.str?String(av).localeCompare(String(bv)):av-bv;
+    return cmp*(sortDir<0?-1:1);
+  });
+  const tbody=document.getElementById("tbody");
+  tbody.innerHTML=rows.map(c=>{
+    const insuff=c.status!=="scored";
+    return "<tr data-iso='"+c.iso3+"' class='"+(c.iso3===selectedIso?"selected":"")+"'>"+
+      COLS.map(col=>{
+        const v=col.get(c);
+        if(v==null)return "<td class='insuff'>—</td>";
+        if(col.chip)return "<td><span class='cellchip' style='background:"+alignScale(v)+";color:#10141c'>"+fmtSigned(v)+"</span></td>";
+        let txt=col.fmt?col.fmt(v):v;
+        if(col.extra)txt+=col.extra(c);
+        if(col.key==="posture"&&!insuff)
+          return "<td style='color:"+(POSTURE_COLORS[v]||"inherit")+"'>"+esc(String(txt))+"</td>";
+        return "<td"+(insuff&&col.key!=="iso3"&&col.key!=="name"?" class='insuff'":"")+">"+esc(String(txt))+"</td>";
+      }).join("")+"</tr>";
+  }).join("");
+  tbody.querySelectorAll("tr").forEach(tr=>tr.addEventListener("click",()=>select(tr.dataset.iso)));
+}
+document.getElementById("tfilter").addEventListener("input",e=>{filterText=e.target.value;renderTable()});
+
+/* ====================== selection & panel ====================== */
+function select(iso){
+  selectedIso=iso;
+  recolor(); renderCharts(); renderTable();
+  showPanel(iso);
+}
+function showPanel(iso){
+  const panel=document.getElementById("panel");
+  const rec=byIso.get(iso);
+  const name=nameOf(iso);
+  if(!rec){
+    panel.innerHTML="<div class='p-head'><h2>"+esc(name)+"</h2><span class='iso'>"+esc(iso)+"</span></div>"+
+      "<div class='insuff-note'>Not in this dataset — distinct from a scored neutral and from insufficient data.</div>";
+    return;
+  }
+  if(rec.status==="insufficient_data"){
+    panel.innerHTML=
+      "<div class='p-head'><h2>"+esc(name)+"</h2><span class='iso'>"+esc(iso)+"</span></div>"+
+      "<div class='insuff-note'><b>INSUFFICIENT DATA</b><br>"+
+      "Evidence below the minimum threshold — its own state, never a neutral value (§5).<br>"+
+      "evidence_count: "+rec.evidence_count+" · null_coverage_rate: "+pct(rec.null_coverage_rate)+
+      (rec.research_gap_refs?"<br>open research gaps: "+rec.research_gap_refs.map(esc).join(", "):"")+"</div>";
+    return;
+  }
+  const pc=POSTURE_COLORS[rec.posture]||"var(--ink-dim)";
+  let html=
+    "<div class='p-head'><h2>"+esc(name)+"</h2><span class='iso'>"+esc(iso)+"</span>"+
+    "<span class='posture' style='color:"+pc+"'>"+esc(rec.posture)+(rec.posture_override?" · override":"")+"</span></div>";
+  html+="<div class='sec'><h3>Exposure <span style='text-transform:none'>(derived from edges)</span></h3>"+
+    expoBar("exposure_us",rec.exposure_us,"var(--us)")+
+    expoBar("exposure_prc",rec.exposure_prc,"var(--prc)")+
+    expoBar("exposure_sovereign",rec.exposure_sovereign,"var(--sov)")+
+    "<div class='kv'><span class='k'>alignment_index <span class='flag-derived'>(derived — reading aid)</span></span><span>"+fmtSigned(rec.alignment_index.value)+"</span></div></div>";
+  html+="<div class='sec'><h3>Country scores</h3>"+
+    kv("readiness",rec.readiness+" · "+rec.readiness_tier)+
+    kv("strategic_salience",rec.strategic_salience)+
+    kv("lock_in",rec.lock_in)+
+    kv("contest_score",rec.contest_score)+
+    kv("cascade_susceptibility",rec.cascade_susceptibility)+"</div>";
+  html+="<div class='sec'><h3>Per-layer DEPTH</h3>"+
+    "<table class='layers'><tr><th>layer</th><th>D by pole</th><th>E max</th><th>P — choke | panopt</th><th>T tiers</th></tr>";
+  for(const layer of LAYERS){
+    const L=rec.per_layer[layer];
+    if(!L){html+="<tr><td>"+layer+"</td><td colspan='4' style='color:var(--ink-dim)'>—</td></tr>";continue}
+    html+="<tr><td>"+layer+"</td><td>"+dBar(L.d_vector)+"</td><td>"+eMax(L.e)+"</td><td>"+pCells(L.p)+"</td><td>"+tCell(L.t)+"</td></tr>";
+  }
+  html+="</table>"+
+    "<div class='plabels'><span>●&nbsp;evidenced · ○&nbsp;null (hover for opacity_reason)</span></div>"+
+    "<div class='plabels'><span>chokepoint: license / update / spares&nbsp;|&nbsp;panopticon: jurisdiction / telemetry — displayed apart, never summed</span></div></div>";
+  html+="<div class='sec'><h3>Provenance of this record</h3>"+
+    kv("confidence",rec.confidence.level+(rec.confidence.band_low!=null?" ["+rec.confidence.band_low+"–"+rec.confidence.band_high+"]":""))+
+    kv("evidence_count",rec.evidence_count)+
+    kv("null_coverage_rate",pct(rec.null_coverage_rate))+
+    (rec.coverage_flag?kv("coverage_flag",rec.coverage_flag):"")+
+    (rec.posture_cluster_mapping_version?kv("cluster mapping",rec.posture_cluster_mapping_version):"")+
+    "<div class='flag-derived' style='margin-top:8px;line-height:1.6'>In the full system every value here is one tap from its citing events and archived sources.</div></div>";
+  panel.innerHTML=html;
+}
+
+/* ====================== fragments ====================== */
+function expoBar(label,v,color){
+  return "<div class='expo'><div class='lab'><span>"+label+"</span><span>"+v+"</span></div>"+
+    "<div class='track'><div class='fill' style='width:"+Math.max(0,Math.min(100,v))+"%;background:"+color+"'></div></div></div>";
+}
+function kv(k,v){return "<div class='kv'><span class='k'>"+k+"</span><span>"+v+"</span></div>"}
+function dBar(dv){
+  let s="<div class='dbar' title='US "+pct(dv.us)+" · PRC "+pct(dv.prc)+" · sov "+pct(dv.sovereign)+" · other "+pct(dv.other)+"'>";
+  for(const pole of ["us","prc","sovereign","other"]){
+    const w=(dv[pole]||0)*100;
+    if(w>0)s+="<div style='width:"+w+"%;background:"+POLE_COLORS[pole]+"'></div>";
+  }
+  return s+"</div>";
+}
+function eMax(e){
+  if(!e||Object.keys(e).length===0)return "<span style='color:var(--ink-dim)'>—</span>";
+  const pole=Object.keys(e).reduce((a,b)=>e[a]>=e[b]?a:b);
+  return e[pole]+" <span style='color:var(--ink-dim)'>("+pole+")</span>";
+}
+function pDot(sub,label){
+  if(sub.status==="evidenced")
+    return "<span class='pdot evid' title='"+esc(label)+" — evidenced: "+sub.value+" (refs: "+sub.evidence_refs.join(", ")+")'></span>";
+  return "<span class='pdot' title='"+esc(label)+" — null: "+esc(sub.opacity_reason)+"'></span>";
+}
+function pCells(p){
+  return "<div class='pgroup'>"+
+    "<span class='pcell'>"+pDot(p.p_license,"p_license")+pDot(p.p_update,"p_update")+pDot(p.p_spares,"p_spares")+"</span>"+
+    "<span style='color:var(--line)'>|</span>"+
+    "<span class='pcell'>"+pDot(p.p_jurisdiction,"p_jurisdiction")+pDot(p.p_telemetry,"p_telemetry")+"</span></div>";
+}
+function tCell(t){
+  const v=t.value_by_pole||{};
+  const net=(v.us||0)-(v.prc||0);
+  const comp=t.tier_composition;
+  const shades=["#39404f","#4a5468","#67718a","#8b93a5","#c5cbd8"];
+  let bar="<div class='tbar' title='tier composition t1–t5: "+[comp.t1,comp.t2,comp.t3,comp.t4,comp.t5].join(" / ")+"'>";
+  [comp.t1,comp.t2,comp.t3,comp.t4,comp.t5].forEach((w,i)=>{
+    if(w>0)bar+="<div style='width:"+(w*100)+"%;background:"+shades[i]+"'></div>";
+  });
+  bar+="</div>";
+  const est=t.realization_prob_est?" <span class='flag-derived' title='"+esc(t.realization_prob_est.method)+"'>est "+t.realization_prob_est.value+"</span>":"";
+  return fmtSigned(r1(net))+est+bar;
+}
+
+/* ====================== utils ====================== */
+function nameOf(iso,f){
+  const feat=f||featureIndex.get(iso);
+  if(feat&&feat.properties&&feat.properties.name)return feat.properties.name;
+  return DEMO_NAMES.get(iso)||iso;
+}
+function fmtSigned(v){return (v>0?"+":"")+(Math.round(v*10)/10)}
+function pct(v){return v==null?"—":Math.round(v*100)+"%"}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function showTip(ev,html){
+  tooltip.innerHTML=html;tooltip.style.display="block";
+  tooltip.style.left=Math.min(ev.clientX+14,window.innerWidth-290)+"px";
+  tooltip.style.top=(ev.clientY+14)+"px";
+}
+function hideTip(){tooltip.style.display="none"}
+
+/* ====================== legend gradient ====================== */
+(function(){
+  const cv=document.getElementById("legendbar").getContext("2d");
+  for(let x=0;x<180;x++){cv.fillStyle=alignScale(-100+(x/179)*200);cv.fillRect(x,0,1,9)}
+})();
+
+/* ====================== boot ====================== */
+drawMap().then(()=>setSource("demo"));
+</script>
+</body>
+</html>
