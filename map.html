@@ -5,8 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Silicon Dominoes — Dashboard Prototype</title>
 <!--
-  Silicon Dominoes dashboard prototype v2 (build-order step 6 preview).
-  Single file, no build step. Three views over countries.json: map, charts, table.
+  Silicon Dominoes dashboard prototype v4 (build-order step 6 preview).
+  Single file, no build step. Four views over countries.json: map, charts,
+  table, guide.
+
+  v4: seven-layer drill-down.
+    - Charts get a layer filter. "All layers" = the composite exposure view.
+      Picking one layer re-renders scatter / sorted bars / side-by-side bars
+      from that layer's D vector, RE-LABELED as installed-base (D) shares --
+      per-layer exposure composites are pipeline outputs computed from edges
+      and do not exist in countries.json, so the UI never invents them.
+    - Heatmap cells click through to a per-layer detail card in the side
+      panel: D stacked shares, E per incumbent pole, all five P sub-indicators
+      with opacity_reasons shown inline (chokepoint | panopticon, never
+      summed), T by pole with tier composition.
+    - Table rows expand (chevron) into a seven-layer strip; layer rows click
+      through to the same detail card.
 
   DATA SOURCES
     - "Synthetic demo" (default): ~30 procedurally generated country records,
@@ -131,6 +145,28 @@
   .dbar div{height:100%}
   .tbar{display:flex;height:6px;width:56px;background:var(--nodata);margin-top:2px}
   .tbar div{height:100%}
+  /* layer drill-down */
+  .laysel{display:flex;gap:2px;flex-wrap:wrap;align-items:center;margin:0 0 16px;max-width:980px}
+  .laysel button{background:none;border:1px solid var(--line);color:var(--ink-dim);font:inherit;
+    font-size:10px;letter-spacing:.08em;padding:3px 10px;cursor:pointer;text-transform:uppercase}
+  .laysel button.active{color:var(--ink);border-color:var(--ink-dim);background:var(--panel)}
+  .laysel .note{color:var(--ink-dim);font-size:10px;margin-left:8px;line-height:1.5;max-width:520px}
+  td.expander{width:18px;color:var(--ink-dim);cursor:pointer;user-select:none;text-align:center!important}
+  td.expander:hover{color:var(--ink)}
+  tr.subrow td{background:#141926;padding:6px 8px;cursor:default}
+  tr.subrow:hover td{background:#141926}
+  tr.subrow table.layers td{border-bottom:1px solid #222938}
+  tr.subrow table.layers tr[data-layer]:hover td{background:#1b2130}
+  .layertabs{display:flex;gap:2px;flex-wrap:wrap;margin:10px 0 2px}
+  .layertabs button{background:none;border:1px solid var(--line);color:var(--ink-dim);font:inherit;
+    font-size:9.5px;padding:2px 7px;cursor:pointer;text-transform:uppercase;letter-spacing:.06em}
+  .layertabs button.active{color:var(--ink);border-color:var(--ink-dim);background:#1b2130}
+  .backlink{color:var(--ink-dim);font-size:10px;cursor:pointer;letter-spacing:.06em;text-transform:uppercase}
+  .backlink:hover{color:var(--ink)}
+  .prow{display:flex;gap:8px;align-items:baseline;margin:5px 0;line-height:1.5}
+  .prow .pname{width:106px;flex:none;color:var(--ink-dim);font-size:10px}
+  .prow .pval{font-size:10.5px;min-width:0}
+  .pghead{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-dim);margin-top:8px}
   .pgroup{display:flex;gap:8px}
   .pcell{display:flex;gap:3px}
   .pdot{width:9px;height:9px;border-radius:50%;border:1px solid var(--ink-dim);flex:none;cursor:help}
@@ -208,6 +244,7 @@
   </div>
 
   <div class="view" id="view-charts">
+    <div class="laysel" id="laysel"></div>
     <div class="chart">
       <h3>Two-axis exposure — US × PRC<span class="info" data-g="c_scatter">?</span></h3>
       <div class="cap">Each dot is a country placed by how deep it sits in <em>both</em> stacks at once — right = more American, up = more Chinese. A country can be deep in both: that's hedging, and it lives in the upper right, away from the dashed either/or line. This is the honest view a single left–right number hides (doc 01 §3.2). Dot color = posture. Click a dot for the full record.</div>
@@ -294,6 +331,15 @@ const PLAIN_POSTURE={
   sovereign_seeking:"building its own stack, importing selectively",
   excluded:"cut off from one stack (sanctions, bans)",
   inert:"little is happening — not choosing, not building"};
+const LAYER_PLAIN={power:"the electricity to run it all",facilities:"the buildings \u2014 data centers",
+  silicon:"the chips",networks:"telecom gear and undersea cables",cloud:"who hosts the compute and data",
+  models:"whose AI models get used",applications:"the apps people actually touch"};
+const P_META=[
+  ["p_license","p_license","choke","Is operation contingent on a revocable export license or end-use agreement?"],
+  ["p_update","p_update","choke","Does the stack depend on a remote update / attestation channel the supplier controls?"],
+  ["p_spares","p_spares","choke","Maintenance, parts, and consumables dependency."],
+  ["p_jurisdiction","p_jurisdiction","panopt","Under whose legal process does the data / telemetry sit?"],
+  ["p_telemetry","p_telemetry","panopt","Does the supplier see operational data by design?"]];
 const GLOSSARY={
   exposure_us:{label:"US exposure",plain:"How deeply embedded in the American stack, 0\u2013100 \u2014 chips, clouds, models, contracts. Computed from supplier-by-supplier ties, not asserted."},
   exposure_prc:{label:"PRC exposure",plain:"How deeply embedded in China's stack, 0\u2013100. Measured the same way as US exposure \u2014 and both can be high at once."},
@@ -314,7 +360,9 @@ const GLOSSARY={
   c_scatter:{label:"Two-axis exposure",plain:"The dashboard's most important chart: it shows countries deep in BOTH stacks, which any single left\u2013right score erases."},
   c_heatmap:{label:"Countries \u00d7 layers",plain:"Countries don't pick one side for everything \u2014 they pick per layer. This grid shows where each side's equipment actually sits."},
   c_quadrant:{label:"Locked in vs. up for grabs",plain:"Two different questions \u2014 how expensive is leaving, and is anyone competing \u2014 that together say where the next real decisions are."},
-  c_trio:{label:"Exposure side by side",plain:"Same data as the scatter, as bars. Long blue and long red together = hedging."}
+  c_trio:{label:"Exposure side by side",plain:"Same data as the scatter, as bars. Long blue and long red together = hedging."},
+  c_layerview:{label:"Layer filter",plain:"\u201cAll layers\u201d shows the composite exposure scores. Picking one layer switches the first three charts to installed-base (D) shares at that slice of the stack \u2014 what's physically in place, straight from each country's layer record. Per-layer exposure composites are computed by the pipeline from edges and don't exist in this file, so the display never invents them. Lock-in, contest, and readiness are country-level and don't change with this filter."},
+  layer_detail:{label:"Layer detail",plain:"One slice of one country's stack: whose kit is installed (D), what leaving would cost (E), the five control sub-indicators (P \u2014 chokepoint and panopticon shown apart, never summed), and which way new deals are flowing (T)."}
 };
 const BANDS={
   strategic_salience:["limited strategic assets","some strategic assets","significant \u2014 votes, bases, minerals, or cables","a major strategic prize"],
@@ -515,6 +563,8 @@ function r2(x){return Math.round(x*100)/100}
 let dataset=null, byIso=new Map(), features=null, featureIndex=new Map();
 let selectedIso=null, countryPaths=null, currentView="map";
 let sortKey="alignment", sortDir=-1, filterText="";
+let chartLayer="all", panelLayer=null;
+const expandedRows=new Set();
 
 const svg=d3.select("#map");
 const tooltip=document.getElementById("tooltip");
@@ -563,7 +613,9 @@ function applyDataset(data,label){
       "</b> · weights <b>"+esc((data.weight_vector_stamp&&data.weight_vector_stamp.hash)||"?")+"</b>";
   statusEl.textContent="source: "+label+" · "+data.countries.length+" record(s)";
   recolor(); renderCharts(); renderTable();
-  if(selectedIso&&byIso.has(selectedIso)) showPanel(selectedIso); 
+  if(selectedIso&&byIso.has(selectedIso)){
+    if(panelLayer) showLayerPanel(selectedIso,panelLayer); else showPanel(selectedIso);
+  }
 }
 document.getElementById("srcsel").addEventListener("change",e=>setSource(e.target.value));
 document.getElementById("filein").addEventListener("change",ev=>{
@@ -638,10 +690,22 @@ function renderCharts(){
   renderScatter(); renderAlignBars(); renderHeatmap(); renderQuadrant(); renderExpoTrio(); renderLadder(); renderPostureLegend();
 }
 
+function layerD(c,pole){
+  const L=c.per_layer&&c.per_layer[chartLayer];
+  if(!L||!L.d_vector)return null;
+  return Math.round((L.d_vector[pole]||0)*100);
+}
+function modeChip(S,W){
+  if(chartLayer==="all")return;
+  S.append("text").attr("x",W-16).attr("y",14).attr("fill","#e5a53c").attr("font-size",9.5)
+    .attr("letter-spacing","0.1em").attr("text-anchor","end")
+    .text(chartLayer.toUpperCase()+" \u00b7 INSTALLED-BASE (D) VIEW");
+}
 function renderScatter(){
   const S=d3.select("#scatter"); S.selectAll("*").remove();
   const W=940,H=430,M={l:46,r:16,t:14,b:38};
   S.attr("viewBox","0 0 "+W+" "+H);
+  const perLayer=chartLayer!=="all";
   const x=d3.scaleLinear().domain([0,100]).range([M.l,W-M.r]);
   const y=d3.scaleLinear().domain([0,100]).range([H-M.b,M.t]);
   const ax=S.append("g");
@@ -654,43 +718,61 @@ function renderScatter(){
   ax.append("line").attr("x1",x(0)).attr("y1",y(0)).attr("x2",x(100)).attr("y2",y(100))
     .attr("stroke","#39404f").attr("stroke-dasharray","4 4");
   ax.append("text").attr("x",(x(0)+x(100))/2).attr("y",H-2).attr("fill","#8b93a5").attr("font-size",10)
-    .attr("text-anchor","middle").text("exposure_us →");
+    .attr("text-anchor","middle").text(perLayer?"D share \u2014 US kit installed at "+chartLayer+" (%) \u2192":"exposure_us \u2192");
   ax.append("text").attr("transform","rotate(-90)").attr("x",-(H/2)).attr("y",12)
-    .attr("fill","#8b93a5").attr("font-size",10).attr("text-anchor","middle").text("exposure_prc →");
-  const dots=S.selectAll("g.dot").data(scored()).join("g").attr("class","dot")
-    .attr("transform",c=>"translate("+x(c.exposure_us)+","+y(c.exposure_prc)+")")
-    .on("click",(ev,c)=>select(c.iso3))
-    .on("mousemove",(ev,c)=>showTip(ev,"<div class='tt-name'>"+esc(nameOf(c.iso3))+"</div>US "+c.exposure_us+" · PRC "+c.exposure_prc+" · sov "+c.exposure_sovereign+"<br><span class='tt-dim'>"+esc(c.posture)+"</span>"))
+    .attr("fill","#8b93a5").attr("font-size",10).attr("text-anchor","middle")
+    .text(perLayer?"D share \u2014 PRC kit installed at "+chartLayer+" (%) \u2192":"exposure_prc \u2192");
+  modeChip(S,W);
+  const pts=scored().map(c=>{
+    const px=perLayer?layerD(c,"us"):c.exposure_us;
+    const py=perLayer?layerD(c,"prc"):c.exposure_prc;
+    return (px==null||py==null)?null:{c,px,py};
+  }).filter(Boolean);
+  const dots=S.selectAll("g.dot").data(pts).join("g").attr("class","dot")
+    .attr("transform",d=>"translate("+x(d.px)+","+y(d.py)+")")
+    .on("click",(ev,d)=>perLayer?selectLayer(d.c.iso3,chartLayer):select(d.c.iso3))
+    .on("mousemove",(ev,d)=>showTip(ev, perLayer
+      ? "<div class='tt-name'>"+esc(nameOf(d.c.iso3))+" \u00b7 "+esc(chartLayer)+"</div>installed base \u2014 US "+d.px+"% \u00b7 PRC "+d.py+"% \u00b7 sov "+layerD(d.c,"sovereign")+"%<br><span class='tt-dim'>click for this layer's detail card</span>"
+      : "<div class='tt-name'>"+esc(nameOf(d.c.iso3))+"</div>US "+d.c.exposure_us+" \u00b7 PRC "+d.c.exposure_prc+" \u00b7 sov "+d.c.exposure_sovereign+"<br><span class='tt-dim'>"+esc(d.c.posture)+"</span>"))
     .on("mouseleave",hideTip);
-  dots.append("circle").attr("r",c=>c.iso3===selectedIso?8:6)
-    .attr("fill",c=>POSTURE_COLORS[c.posture]||"#8b93a5")
-    .attr("stroke",c=>c.iso3===selectedIso?"#fff":"#10141c").attr("stroke-width",1.2);
-  dots.append("text").attr("x",8).attr("y",3).attr("fill","#8b93a5").attr("font-size",9).text(c=>c.iso3);
+  dots.append("circle").attr("r",d=>d.c.iso3===selectedIso?8:6)
+    .attr("fill",d=>POSTURE_COLORS[d.c.posture]||"#8b93a5")
+    .attr("stroke",d=>d.c.iso3===selectedIso?"#fff":"#10141c").attr("stroke-width",1.2);
+  dots.append("text").attr("x",8).attr("y",3).attr("fill","#8b93a5").attr("font-size",9).text(d=>d.c.iso3);
 }
 
 function renderAlignBars(){
   const S=d3.select("#alignbars"); S.selectAll("*").remove();
-  const rows=scored().slice().sort((a,b)=>b.alignment_index.value-a.alignment_index.value);
+  const perLayer=chartLayer!=="all";
+  const val=c=>{
+    if(!perLayer)return c.alignment_index.value;
+    const u=layerD(c,"us"),p=layerD(c,"prc");
+    return (u==null||p==null)?null:u-p;
+  };
+  const rows=scored().map(c=>({c,v:val(c)})).filter(d=>d.v!=null).sort((a,b)=>b.v-a.v);
   const W=940,rh=17,M={l:52,r:52,t:8,b:22},H=M.t+rows.length*rh+M.b;
   S.attr("viewBox","0 0 "+W+" "+H);
   const x=d3.scaleLinear().domain([-100,100]).range([M.l,W-M.r]);
   S.append("line").attr("x1",x(0)).attr("x2",x(0)).attr("y1",M.t).attr("y2",H-M.b).attr("stroke","#39404f");
   for(const v of [-100,-50,50,100])
     S.append("text").attr("x",x(v)).attr("y",H-8).attr("fill","#8b93a5").attr("font-size",10).attr("text-anchor","middle").text(fmtSigned(v));
+  modeChip(S,W);
   const g=S.selectAll("g.abar").data(rows).join("g").attr("class","abar")
-    .attr("transform",(c,i)=>"translate(0,"+(M.t+i*rh)+")")
-    .on("click",(ev,c)=>select(c.iso3))
-    .on("mousemove",(ev,c)=>showTip(ev,"<div class='tt-name'>"+esc(nameOf(c.iso3))+"</div>alignment "+fmtSigned(c.alignment_index.value)+" <span class='tt-dim'>(derived from exposure_us "+c.exposure_us+" − exposure_prc "+c.exposure_prc+")</span>"))
+    .attr("transform",(d,i)=>"translate(0,"+(M.t+i*rh)+")")
+    .on("click",(ev,d)=>perLayer?selectLayer(d.c.iso3,chartLayer):select(d.c.iso3))
+    .on("mousemove",(ev,d)=>showTip(ev, perLayer
+      ? "<div class='tt-name'>"+esc(nameOf(d.c.iso3))+" \u00b7 "+esc(chartLayer)+"</div>net installed-base share "+fmtSigned(d.v)+" <span class='tt-dim'>(US "+layerD(d.c,"us")+"% \u2212 PRC "+layerD(d.c,"prc")+"%)</span><br><span class='tt-dim'>click for this layer's detail card</span>"
+      : "<div class='tt-name'>"+esc(nameOf(d.c.iso3))+"</div>alignment "+fmtSigned(d.v)+" <span class='tt-dim'>(derived from exposure_us "+d.c.exposure_us+" \u2212 exposure_prc "+d.c.exposure_prc+")</span>"))
     .on("mouseleave",hideTip);
   g.append("rect")
-    .attr("x",c=>Math.min(x(0),x(c.alignment_index.value)))
-    .attr("width",c=>Math.abs(x(c.alignment_index.value)-x(0)))
+    .attr("x",d=>Math.min(x(0),x(d.v)))
+    .attr("width",d=>Math.abs(x(d.v)-x(0)))
     .attr("y",3).attr("height",rh-6)
-    .attr("fill",c=>alignScale(c.alignment_index.value))
-    .attr("stroke",c=>c.iso3===selectedIso?"#fff":"none");
-  g.append("text").attr("x",c=>c.alignment_index.value>=0?x(0)-6:x(0)+6)
+    .attr("fill",d=>alignScale(d.v))
+    .attr("stroke",d=>d.c.iso3===selectedIso?"#fff":"none");
+  g.append("text").attr("x",d=>d.v>=0?x(0)-6:x(0)+6)
     .attr("y",rh/2+3).attr("fill","#8b93a5").attr("font-size",9.5)
-    .attr("text-anchor",c=>c.alignment_index.value>=0?"end":"start").text(c=>c.iso3);
+    .attr("text-anchor",d=>d.v>=0?"end":"start").text(d=>d.c.iso3);
 }
 
 function renderHeatmap(){
@@ -712,9 +794,9 @@ function renderHeatmap(){
       .on("click",()=>select(c.iso3)).text(c.iso3);
     LAYERS.forEach((L,ci)=>{
       const cell=S.append("rect").attr("class","hcell")
-        .attr("x",M.l+ci*cw+1).attr("y",yy+1).attr("width",cw-2).attr("height",rh-2)
-        .on("click",()=>select(c.iso3));
+        .attr("x",M.l+ci*cw+1).attr("y",yy+1).attr("width",cw-2).attr("height",rh-2);
       if(c.status!=="scored"){
+        cell.on("click",()=>select(c.iso3));
         cell.attr("fill","url(#hatchC)")
           .on("mousemove",ev=>showTip(ev,"<div class='tt-name'>"+esc(nameOf(c.iso3))+"</div><span class='tt-dim'>insufficient data</span>"))
           .on("mouseleave",hideTip);
@@ -723,7 +805,8 @@ function renderHeatmap(){
       const dv=c.per_layer[L].d_vector;
       const net=(dv.us-dv.prc)*100;
       cell.attr("fill",alignScale(net))
-        .on("mousemove",ev=>showTip(ev,"<div class='tt-name'>"+esc(nameOf(c.iso3))+" · "+L+"</div>net "+fmtSigned(net)+"<br><span class='tt-dim'>D: US "+pct(dv.us)+" · PRC "+pct(dv.prc)+" · sov "+pct(dv.sovereign)+" · other "+pct(dv.other)+"</span>"))
+        .on("click",()=>selectLayer(c.iso3,L))
+        .on("mousemove",ev=>showTip(ev,"<div class='tt-name'>"+esc(nameOf(c.iso3))+" · "+L+"</div>net "+fmtSigned(net)+"<br><span class='tt-dim'>D: US "+pct(dv.us)+" · PRC "+pct(dv.prc)+" · sov "+pct(dv.sovereign)+" · other "+pct(dv.other)+"</span><br><span class='tt-dim'>click for this layer's detail card</span>"))
         .on("mouseleave",hideTip);
     });
   });
@@ -779,7 +862,13 @@ function renderQuadrant(){
 
 function renderExpoTrio(){
   const S=d3.select("#expotrio"); S.selectAll("*").remove();
-  const rows=scored().slice().sort((a,b)=>b.alignment_index.value-a.alignment_index.value);
+  const perLayer=chartLayer!=="all";
+  const get=(c,pole)=>{
+    if(!perLayer)return pole==="us"?c.exposure_us:pole==="prc"?c.exposure_prc:c.exposure_sovereign;
+    return layerD(c,pole);
+  };
+  const rows=scored().filter(c=>get(c,"us")!=null)
+    .slice().sort((a,b)=>(get(b,"us")-get(b,"prc"))-(get(a,"us")-get(a,"prc")));
   const bh=7,gap=2,rh=3*(bh+gap)+12,M={l:52,r:40,t:6,b:20},W=940,H=M.t+rows.length*rh+M.b;
   S.attr("viewBox","0 0 "+W+" "+H);
   const x=d3.scaleLinear().domain([0,100]).range([M.l,W-M.r]);
@@ -787,19 +876,20 @@ function renderExpoTrio(){
     S.append("line").attr("x1",x(v)).attr("x2",x(v)).attr("y1",M.t).attr("y2",H-M.b).attr("stroke","#222938");
     S.append("text").attr("x",x(v)).attr("y",H-6).attr("fill","#8b93a5").attr("font-size",10).attr("text-anchor","middle").text(v);
   }
+  modeChip(S,W);
   const polereading={us:"American stack",prc:"China's stack",sovereign:"its own / third-pole stack"};
   rows.forEach((c,ri)=>{
     const yy=M.t+ri*rh;
     S.append("text").attr("x",M.l-6).attr("y",yy+rh/2).attr("fill",c.iso3===selectedIso?"#fff":"#8b93a5")
       .attr("font-size",9.5).attr("text-anchor","end").style("cursor","pointer")
-      .on("click",()=>select(c.iso3)).text(c.iso3);
-    [["us",c.exposure_us],["prc",c.exposure_prc],["sovereign",c.exposure_sovereign]].forEach(([pole,v],bi)=>{
+      .on("click",()=>perLayer?selectLayer(c.iso3,chartLayer):select(c.iso3)).text(c.iso3);
+    [["us",get(c,"us")],["prc",get(c,"prc")],["sovereign",get(c,"sovereign")]].forEach(([pole,v],bi)=>{
       S.append("rect").attr("class","abar")
         .attr("x",x(0)).attr("y",yy+bi*(bh+gap)).attr("width",Math.max(1,x(v)-x(0))).attr("height",bh)
         .attr("fill",POLE_COLORS[pole==="sovereign"?"sovereign":pole])
-        .on("click",()=>select(c.iso3))
-        .on("mousemove",ev=>showTip(ev,"<div class='tt-name'>"+esc(nameOf(c.iso3))+"</div>"+
-          "exposure to "+polereading[pole]+": "+v+" / 100"))
+        .on("click",()=>perLayer?selectLayer(c.iso3,chartLayer):select(c.iso3))
+        .on("mousemove",ev=>showTip(ev,"<div class='tt-name'>"+esc(nameOf(c.iso3))+(perLayer?" \u00b7 "+esc(chartLayer):"")+"</div>"+
+          (perLayer?"installed-base share, "+polereading[pole]+": "+v+"%":"exposure to "+polereading[pole]+": "+v+" / 100")))
         .on("mouseleave",hideTip);
     });
   });
@@ -852,10 +942,10 @@ const COLS=[
 function renderTable(){
   if(!dataset)return;
   const thead=document.getElementById("thead");
-  thead.innerHTML="<tr>"+COLS.map(col=>
+  thead.innerHTML="<tr><th style='width:18px;cursor:default'></th>"+COLS.map(col=>
     "<th data-key='"+col.key+"' class='"+(col.key===sortKey?"sorted":"")+"'>"+col.label+
-    (col.key===sortKey?(sortDir<0?" ▼":" ▲"):"")+"</th>").join("")+"</tr>";
-  thead.querySelectorAll("th").forEach(th=>{
+    (col.key===sortKey?(sortDir<0?" \u25bc":" \u25b2"):"")+"</th>").join("")+"</tr>";
+  thead.querySelectorAll("th[data-key]").forEach(th=>{
     th.addEventListener("click",()=>{
       const k=th.dataset.key;
       if(sortKey===k) sortDir*=-1; else {sortKey=k;sortDir=-1;}
@@ -886,10 +976,13 @@ function renderTable(){
   const tbody=document.getElementById("tbody");
   tbody.innerHTML=rows.map(c=>{
     const insuff=c.status!=="scored";
-    return "<tr data-iso='"+c.iso3+"' class='"+(c.iso3===selectedIso?"selected":"")+"'>"+
+    const canX=!insuff&&c.per_layer;
+    const isX=canX&&expandedRows.has(c.iso3);
+    let r="<tr data-iso='"+c.iso3+"' class='"+(c.iso3===selectedIso?"selected":"")+"'>"+
+      "<td class='expander' title='"+(canX?"show the seven layers":"")+"'>"+(canX?(isX?"\u25be":"\u25b8"):"")+"</td>"+
       COLS.map(col=>{
         const v=col.get(c);
-        if(v==null)return "<td class='insuff'>—</td>";
+        if(v==null)return "<td class='insuff'>\u2014</td>";
         if(col.chip)return "<td><span class='cellchip' style='background:"+alignScale(v)+";color:#10141c'>"+fmtSigned(v)+"</span></td>";
         let txt=col.fmt?col.fmt(v):v;
         if(col.extra)txt+=col.extra(c);
@@ -897,16 +990,44 @@ function renderTable(){
           return "<td style='color:"+(POSTURE_COLORS[v]||"inherit")+"'>"+esc(String(txt))+"</td>";
         return "<td"+(insuff&&col.key!=="iso3"&&col.key!=="name"?" class='insuff'":"")+">"+esc(String(txt))+"</td>";
       }).join("")+"</tr>";
+    if(isX){
+      r+="<tr class='subrow' data-iso='"+c.iso3+"'><td></td><td colspan='"+COLS.length+"'>"+
+        "<table class='layers'><tr><th>layer</th><th>D by pole</th><th>E max</th><th>P \u2014 choke | panopt</th><th>T tiers</th></tr>"+
+        LAYERS.map(layer=>{
+          const L=c.per_layer[layer];
+          if(!L)return "<tr><td>"+layer+"</td><td colspan='4' style='color:var(--ink-dim)'>\u2014</td></tr>";
+          return "<tr data-layer='"+layer+"' style='cursor:pointer'><td>"+layer+"</td><td>"+dBar(L.d_vector)+"</td><td>"+eMax(L.e)+"</td><td>"+pCells(L.p)+"</td><td>"+tCell(L.t)+"</td></tr>";
+        }).join("")+"</table>"+
+        "<div class='plabels'><span>\u25cf&nbsp;evidenced \u00b7 \u25cb&nbsp;null (hover for opacity_reason) \u00b7 click a layer row for its detail card</span></div>"+
+        "</td></tr>";
+    }
+    return r;
   }).join("");
-  tbody.querySelectorAll("tr").forEach(tr=>tr.addEventListener("click",()=>select(tr.dataset.iso)));
+  tbody.querySelectorAll("tr[data-iso]:not(.subrow)").forEach(tr=>tr.addEventListener("click",ev=>{
+    if(ev.target.classList.contains("expander")){
+      const iso=tr.dataset.iso;
+      if(expandedRows.has(iso))expandedRows.delete(iso);else expandedRows.add(iso);
+      renderTable();return;
+    }
+    select(tr.dataset.iso);
+  }));
+  tbody.querySelectorAll("tr.subrow tr[data-layer]").forEach(row=>row.addEventListener("click",ev=>{
+    ev.stopPropagation();
+    selectLayer(row.closest("tr.subrow").dataset.iso,row.dataset.layer);
+  }));
 }
 document.getElementById("tfilter").addEventListener("input",e=>{filterText=e.target.value;renderTable()});
 
 /* ====================== selection & panel ====================== */
 function select(iso){
-  selectedIso=iso;
+  selectedIso=iso; panelLayer=null;
   recolor(); renderCharts(); renderTable();
   showPanel(iso);
+}
+function selectLayer(iso,layer){
+  selectedIso=iso; panelLayer=layer;
+  recolor(); renderCharts(); renderTable();
+  showLayerPanel(iso,layer);
 }
 function showPanel(iso){
   const panel=document.getElementById("panel");
@@ -954,10 +1075,10 @@ function showPanel(iso){
   for(const layer of LAYERS){
     const L=rec.per_layer[layer];
     if(!L){html+="<tr><td>"+layer+"</td><td colspan='4' style='color:var(--ink-dim)'>—</td></tr>";continue}
-    html+="<tr><td>"+layer+"</td><td>"+dBar(L.d_vector)+"</td><td>"+eMax(L.e)+"</td><td>"+pCells(L.p)+"</td><td>"+tCell(L.t)+"</td></tr>";
+    html+="<tr data-layer='"+layer+"' style='cursor:pointer'><td>"+layer+"</td><td>"+dBar(L.d_vector)+"</td><td>"+eMax(L.e)+"</td><td>"+pCells(L.p)+"</td><td>"+tCell(L.t)+"</td></tr>";
   }
   html+="</table>"+
-    "<div class='plabels'><span>●&nbsp;evidenced · ○&nbsp;null (hover for opacity_reason)</span></div>"+
+    "<div class='plabels'><span>●&nbsp;evidenced · ○&nbsp;null (hover for opacity_reason) · click a layer row for its detail card</span></div>"+
     "<div class='plabels'><span>chokepoint: license / update / spares&nbsp;|&nbsp;panopticon: jurisdiction / telemetry — displayed apart, never summed</span></div></div>";
   html+="<div class='sec'><h3>Provenance of this record"+info("provenance_sec")+"</h3>"+
     "<div class='plain'>How much evidence sits behind everything above \u2014 and how much is still honestly unknown.</div>"+
@@ -968,6 +1089,83 @@ function showPanel(iso){
     (rec.posture_cluster_mapping_version?kv("cluster mapping",rec.posture_cluster_mapping_version):"")+
     "<div class='flag-derived' style='margin-top:8px;line-height:1.6'>In the full system every value here is one tap from its citing events and archived sources.</div></div>";
   panel.innerHTML=html;
+  panel.querySelectorAll("table.layers tr[data-layer]").forEach(row=>
+    row.addEventListener("click",()=>showLayerPanel(iso,row.dataset.layer)));
+}
+
+/* ====================== layer detail card ====================== */
+function showLayerPanel(iso,layer){
+  const rec=byIso.get(iso);
+  if(!rec||rec.status!=="scored"||!rec.per_layer||!rec.per_layer[layer]){showPanel(iso);return;}
+  panelLayer=layer;
+  const L=rec.per_layer[layer];
+  const panel=document.getElementById("panel");
+  const name=nameOf(iso);
+  let html="<div class='backlink' id='backfull'>\u2190 full record \u2014 "+esc(name)+"</div>";
+  html+="<div class='p-head' style='margin-top:8px'><h2>"+esc(name)+"</h2>"+
+    "<span class='iso'>"+esc(iso)+" \u00b7 "+esc(layer)+"</span>"+info("layer_detail")+"</div>";
+  html+="<div class='plain' style='margin-top:4px'>"+cap1(esc(LAYER_PLAIN[layer]||layer))+". One slice of the stack \u2014 the four DEPTH questions asked of it.</div>";
+  html+="<div class='layertabs'>"+LAYERS.map(l=>
+    "<button data-ltab='"+l+"' class='"+(l===layer?"active":"")+"'"+
+    (rec.per_layer[l]?"":" disabled style='opacity:.35;cursor:default'")+">"+l+"</button>").join("")+"</div>";
+  const dv=L.d_vector||{};
+  html+="<div class='sec'><h3>D \u2014 installed base by pole</h3>"+
+    "<div class='plain'>Whose equipment is actually in place at this layer, as shares.</div>"+
+    "<div class='dbar' style='width:100%;height:12px'>"+
+    ["us","prc","sovereign","other"].map(pole=>{
+      const w=(dv[pole]||0)*100;
+      return w>0?"<div style='width:"+w+"%;background:"+POLE_COLORS[pole]+"'></div>":"";
+    }).join("")+"</div>"+
+    "<div style='margin-top:6px'>"+
+    [["us","US"],["prc","PRC"],["sovereign","sovereign / third"],["other","other"]].map(([pole,lab])=>
+      "<div class='kv'><span class='k'><span style='display:inline-block;width:9px;height:9px;background:"+POLE_COLORS[pole]+";margin-right:6px;vertical-align:-1px'></span>"+lab+"</span><span>"+pct(dv[pole]||0)+"</span></div>").join("")+
+    "</div></div>";
+  const eKeys=L.e?Object.keys(L.e):[];
+  html+="<div class='sec'><h3>E \u2014 exit cost by incumbent pole</h3>"+
+    "<div class='plain'>How expensive leaving that pole would be at this layer, 0\u2013100: contract tenor, encumbered debt, trained workforce, data portability, whether a real alternative exists.</div>"+
+    (eKeys.length
+      ? eKeys.map(pole=>expoBar("e \u00b7 "+pole,L.e[pole],POLE_COLORS[pole]||"#67718a")).join("")
+      : "<div class='plain'>\u2014 not coded at this layer.</div>")+"</div>";
+  html+="<div class='sec'><h3>P \u2014 provenance &amp; control</h3>"+
+    "<div class='plain'>Two different powers, displayed apart and never summed: switching it off (chokepoint) and seeing through it (panopticon). Unknown is recorded as null with a reason \u2014 never guessed.</div>"+
+    "<div class='pghead'>Chokepoint \u2014 can the supplier switch it off?</div>"+
+    P_META.filter(m=>m[2]==="choke").map(m=>pRowFull(m,L.p&&L.p[m[0]])).join("")+
+    "<div class='pghead'>Panopticon \u2014 can the supplier see through it?</div>"+
+    P_META.filter(m=>m[2]==="panopt").map(m=>pRowFull(m,L.p&&L.p[m[0]])).join("")+
+    "</div>";
+  const t=L.t||{}, tv=t.value_by_pole||{}, comp=t.tier_composition||{};
+  const net=(tv.us||0)-(tv.prc||0);
+  const shades=["#39404f","#4a5468","#67718a","#8b93a5","#c5cbd8"];
+  const compVals=["t1","t2","t3","t4","t5"].map(k=>comp[k]!=null?comp[k]:0);
+  const hasT=compVals.some(v=>v>0)||(tv.us||0)!==0||(tv.prc||0)!==0||(tv.sovereign||0)!==0;
+  html+="<div class='sec'><h3>T \u2014 new commitments</h3>"+
+    "<div class='plain'>Which way new deals are flowing at this layer, weighted by how real they are. The tier bar shows how much is talk (t1, darkest) vs. built (t5, lightest).</div>";
+  if(hasT){
+    html+=kv("net flow (US \u2212 PRC)",fmtSigned(r1(net)))+
+      kv("us / prc / sovereign",r1(tv.us||0)+" / "+r1(tv.prc||0)+" / "+r1(tv.sovereign||0))+
+      kv("tier composition t1\u2013t5",compVals.join(" / "))+
+      "<div class='tbar' style='width:100%;height:8px;margin-top:4px'>"+
+      compVals.map((w,i)=>w>0?"<div style='width:"+(w*100)+"%;background:"+shades[i]+"'></div>":"").join("")+"</div>";
+    if(t.realization_prob_est)
+      html+="<div class='plain' style='margin-top:6px'>realization_prob_est "+t.realization_prob_est.value+" \u2014 "+esc(t.realization_prob_est.method||"")+"</div>";
+  }else{
+    html+="<div class='plain'>\u2014 no new commitments coded at this layer this cycle.</div>";
+  }
+  html+="</div>";
+  html+="<div class='sec'><div class='flag-derived' style='line-height:1.6'>In the full system every value here is one tap from its citing events and archived sources.</div></div>";
+  panel.innerHTML=html;
+  document.getElementById("backfull").addEventListener("click",()=>{panelLayer=null;showPanel(iso);});
+  panel.querySelectorAll("[data-ltab]:not([disabled])").forEach(b=>
+    b.addEventListener("click",()=>showLayerPanel(iso,b.dataset.ltab)));
+}
+function pRowFull(meta,sub){
+  const [key,label,,q]=meta;
+  if(!sub) return "<div class='prow'><span class='pdot'></span><span class='pname'>"+esc(label)+"</span><span class='pval' style='color:var(--ink-dim)'>\u2014 not present in record</span></div>";
+  const dot= sub.status==="evidenced" ? "<span class='pdot evid' title='"+esc(q)+"'></span>" : "<span class='pdot' title='"+esc(q)+"'></span>";
+  const val= sub.status==="evidenced"
+    ? "evidenced \u00b7 "+sub.value+(sub.evidence_refs&&sub.evidence_refs.length?" <span class='mkey'>refs: "+sub.evidence_refs.map(esc).join(", ")+"</span>":"")
+    : "<span style='color:var(--ink-dim)'>null \u2014 "+esc(sub.opacity_reason||"no opacity_reason recorded")+"</span>";
+  return "<div class='prow'>"+dot+"<span class='pname' title='"+esc(q)+"'>"+esc(label)+"</span><span class='pval'>"+val+"</span></div>";
 }
 
 /* ====================== fragments ====================== */
@@ -1045,9 +1243,6 @@ function hideTip(){tooltip.style.display="none"}
 
 /* ====================== guide ====================== */
 function buildGuide(){
-  const LAYER_PLAIN={power:"the electricity to run it all",facilities:"the buildings \u2014 data centers",
-    silicon:"the chips",networks:"telecom gear and undersea cables",cloud:"who hosts the compute and data",
-    models:"whose AI models get used",applications:"the apps people actually touch"};
   const DEPTH=[
     ["D","Dependence","Whose equipment is actually installed today \u2014 measured as shares per layer, from customs data, spectrum registries, vendor audits, and cloud maps."],
     ["E","Exit cost","How expensive leaving the current supplier would be: years left on contracts, debt tied to the kit, a workforce trained on it, data that's hard to move \u2014 and whether a real alternative even exists."],
@@ -1081,6 +1276,27 @@ function buildGuide(){
   document.getElementById("guideBody").innerHTML=h;
 }
 buildGuide();
+
+/* ====================== charts layer selector ====================== */
+function buildLaysel(){
+  const el=document.getElementById("laysel");
+  el.innerHTML="<button data-l='all' class='active'>All layers</button>"+
+    LAYERS.map(l=>"<button data-l='"+l+"'>"+l+"</button>").join("")+
+    "<span class='note' id='layselNote'></span>";
+  el.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
+    chartLayer=b.dataset.l;
+    el.querySelectorAll("button").forEach(x=>x.classList.toggle("active",x===b));
+    updateLayselNote(); renderCharts();
+  }));
+  updateLayselNote();
+}
+function updateLayselNote(){
+  const n=document.getElementById("layselNote");
+  n.innerHTML= chartLayer==="all"
+    ? "Composite exposure scores, all layers combined."+info("c_layerview")
+    : "Installed-base (D) shares at the <b>"+esc(chartLayer)+"</b> layer \u2014 what's physically in place there. Lock-in, contest, and readiness charts stay country-level."+info("c_layerview");
+}
+buildLaysel();
 
 /* ====================== boot ====================== */
 drawMap().then(()=>setSource("deskpass"));
