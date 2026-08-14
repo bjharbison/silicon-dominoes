@@ -86,7 +86,7 @@
   .dot{cursor:pointer}
   .dot:hover circle{stroke:#fff}
   .abar,.hcell{cursor:pointer}
-  .abar:hover rect,.hcell:hover{stroke:#fff;stroke-width:1}
+  .abar:hover rect,.hcell:hover,rect.abar:hover{stroke:#fff;stroke-width:1}
   /* table */
   #tablewrap{max-width:1200px}
   #tfilter{background:var(--panel);border:1px solid var(--line);color:var(--ink);
@@ -137,6 +137,34 @@
   .pdot.evid{background:var(--ok);border-color:var(--ok)}
   .plabels{display:flex;gap:8px;color:var(--ink-dim);font-size:9px;margin-top:2px;line-height:1.5}
   .insuff-note{border:1px dashed var(--ink-dim);padding:10px;margin-top:14px;line-height:1.7;color:var(--ink-dim)}
+  /* plain-language layer */
+  .info{display:inline-flex;align-items:center;justify-content:center;width:13px;height:13px;
+    border:1px solid var(--ink-dim);border-radius:50%;color:var(--ink-dim);font-size:9px;
+    margin-left:6px;cursor:help;vertical-align:1px;text-transform:none;letter-spacing:0}
+  .info:hover{color:var(--ink);border-color:var(--ink)}
+  .plain{color:var(--ink-dim);font-size:10px;line-height:1.55;margin:1px 0 8px;max-width:340px}
+  .mkey{opacity:.5;font-size:9px;letter-spacing:0}
+  .minitrack{height:4px;background:var(--nodata);margin:2px 0 1px}
+  .minitrack div{height:100%;background:#67718a}
+  /* guide */
+  #view-guide{overflow-y:auto;padding:24px 28px}
+  .guide{max-width:780px;line-height:1.75;font-size:12.5px}
+  .guide h2{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;
+    letter-spacing:.1em;text-transform:uppercase;margin:26px 0 8px}
+  .guide h2:first-child{margin-top:0}
+  .guide p{margin-bottom:10px;color:var(--ink)}
+  .guide .dim{color:var(--ink-dim)}
+  .g-item{display:flex;gap:14px;border-left:2px solid var(--line);padding:7px 0 7px 14px;margin:6px 0}
+  .g-letter{font-family:'Space Grotesk',sans-serif;font-size:26px;font-weight:700;
+    color:var(--ink-dim);width:30px;flex:none;line-height:1.1}
+  .g-item b{display:block;margin-bottom:2px}
+  .g-item .dim{font-size:11.5px}
+  .g-term{display:flex;gap:14px;padding:6px 0;border-bottom:1px solid var(--line);align-items:baseline}
+  .g-term .t{width:170px;flex:none}
+  .g-term .t .mkey{display:block}
+  .g-term .dim{font-size:11.5px}
+  .g-post{display:inline-flex;align-items:center;gap:6px;margin:3px 14px 3px 0}
+  .g-post .sw{width:10px;height:10px;border-radius:50%;flex:none}
   footer{display:flex;gap:16px;align-items:center;padding:8px 18px;flex-wrap:wrap;
     border-top:1px solid var(--line);color:var(--ink-dim);font-size:10.5px}
   footer select{background:var(--panel);border:1px solid var(--line);color:var(--ink);font:inherit;font-size:11px;padding:3px 6px}
@@ -159,6 +187,7 @@
     <button data-view="map" class="active">Map</button>
     <button data-view="charts">Charts</button>
     <button data-view="table">Table</button>
+    <button data-view="guide">Guide</button>
   </nav>
   <span class="stamp" id="stamp">awaiting data</span>
 </header>
@@ -174,34 +203,53 @@
       <div class="ends"><span>−100 PRC</span><span>0</span><span>+100 US</span></div>
       <div class="row"><div class="sw" id="sw-insuff"></div>insufficient data</div>
       <div class="row"><div class="sw" style="background:var(--nodata)"></div>not in dataset</div>
+      <div style="margin-top:7px;color:var(--ink-dim);max-width:210px;line-height:1.55">Color = net tilt only: blue leans on the American stack, red on China's. It hides hedging — click a country, or open Charts, for the full picture. New here? See the <b>Guide</b> tab.</div>
     </div>
   </div>
 
   <div class="view" id="view-charts">
     <div class="chart">
-      <h3>Two-axis exposure — US × PRC</h3>
-      <div class="cap">The first-class view (doc 01 §3.2): the signed alignment scalar hides that both exposures can be high at once. Hedgers live in the upper right. Point color = posture. Click a point to open its record.</div>
+      <h3>Two-axis exposure — US × PRC<span class="info" data-g="c_scatter">?</span></h3>
+      <div class="cap">Each dot is a country placed by how deep it sits in <em>both</em> stacks at once — right = more American, up = more Chinese. A country can be deep in both: that's hedging, and it lives in the upper right, away from the dashed either/or line. This is the honest view a single left–right number hides (doc 01 §3.2). Dot color = posture. Click a dot for the full record.</div>
       <svg id="scatter"></svg>
       <div id="postureLegend" class="plabels" style="margin-top:6px;flex-wrap:wrap"></div>
     </div>
     <div class="chart">
-      <h3>Alignment index, sorted <span class="flag-derived">(derived)</span></h3>
-      <div class="cap">Reading aid only — click any bar to see the exposure decomposition it summarizes.</div>
+      <h3>Net tilt, sorted <span class="flag-derived">(alignment_index — derived)</span><span class="info" data-g="alignment_index">?</span></h3>
+      <div class="cap">One number per country: US exposure minus PRC exposure. Blue = tilted American, red = tilted Chinese. A reading aid only — it flattens the two-axis picture above, so click any bar to see what it summarizes.</div>
       <svg id="alignbars"></svg>
     </div>
     <div class="chart">
-      <h3>Countries × layers — net dependence by pole</h3>
-      <div class="cap">Cell = net installed-base share (US − PRC) at that layer, from each layer's D vector. Layer-level divergence is the expected outcome, not an anomaly. Hatched rows are insufficient-data countries.</div>
+      <h3>Countries × layers — whose kit, slice by slice<span class="info" data-g="c_heatmap">?</span></h3>
+      <div class="cap">Each cell: which side's equipment dominates that slice of the stack (blue = mostly American kit installed, red = mostly Chinese). A country running US chips over Chinese telecom gear is normal, not a contradiction — layer-level divergence is the expected outcome. Hatched rows = not enough evidence to score. Hover any cell for the exact shares.</div>
       <svg id="heatmap"></svg>
+    </div>
+    <div class="chart">
+      <h3>Locked in vs. up for grabs<span class="info" data-g="c_quadrant">?</span></h3>
+      <div class="cap">Right = harder to leave the current main supplier (lock-in). Up = more actively contested right now (competing offers, contracts up for renewal). Upper-left is the battleground: still cheap to switch and being fought over. Lower-right is settled: expensive to leave and nobody's bidding.</div>
+      <svg id="quadrant"></svg>
+    </div>
+    <div class="chart">
+      <h3>Exposure to each stack, side by side<span class="info" data-g="c_trio">?</span></h3>
+      <div class="cap">The three exposure scores as plain bars — American, Chinese, sovereign/own — per country. The bar version of the scatter above: long blue <em>and</em> long red together means the country is deliberately buying from both sides.</div>
+      <svg id="expotrio"></svg>
+    </div>
+    <div class="chart">
+      <h3>Readiness ladder<span class="info" data-g="readiness">?</span></h3>
+      <div class="cap">Who could actually absorb and run more AI infrastructure — power, skills, capital, institutions — from frontier-ready (T5) to not yet able (T0). Low readiness doesn't mean irrelevant: strategic weight (votes, bases, minerals, cables) is tracked separately.</div>
+      <svg id="ladder"></svg>
     </div>
   </div>
 
   <div class="view" id="view-table">
     <div id="tablewrap">
+      <div class="plain" style="max-width:none;margin-bottom:6px">Hover any column header for what it means in plain terms · click a header to sort · click a row to open the country's full record. Em-dashes mean not scored, never zero.</div>
       <input id="tfilter" type="search" placeholder="filter countries…" aria-label="Filter countries">
       <table class="data"><thead id="thead"></thead><tbody id="tbody"></tbody></table>
     </div>
   </div>
+
+  <div class="view" id="view-guide"><div class="guide" id="guideBody"></div></div>
 
   <aside id="panel" aria-live="polite">
     <div class="empty">Select a country — on the map, in a chart, or in the table — to open its DEPTH-N record.</div>
@@ -211,6 +259,7 @@
 <footer>
   <span>dataset</span>
   <select id="srcsel">
+    <option value="deskpass" selected>Desk pass 2026-08-14 (SE Asia pilot, provisional)</option>
     <option value="demo">Synthetic demo (~30 countries)</option>
     <option value="fixture">Fixture (real contract sample)</option>
   </select>
@@ -232,6 +281,59 @@ const POSTURE_COLORS = {
 };
 const alignScale = d3.scaleLinear().domain([-100,0,100])
   .range(["#c0392f","#e8e0cf","#3d6fd6"]).clamp(true);
+
+/* ====================== plain-language layer ====================== */
+const TIER_WORDS={T0:"not yet able to absorb at scale",T1:"early foundations",T2:"developing capacity",
+  T3:"capable",T4:"advanced",T5:"frontier-ready"};
+const PLAIN_POSTURE={
+  committed_us:"built deeply on the American stack",
+  leaning_us:"tilted American, but not locked in",
+  committed_prc:"built deeply on China's stack",
+  leaning_prc:"tilted Chinese, but not locked in",
+  hedged_active:"deliberately buying from both sides — a strategy, not indecision",
+  sovereign_seeking:"building its own stack, importing selectively",
+  excluded:"cut off from one stack (sanctions, bans)",
+  inert:"little is happening — not choosing, not building"};
+const GLOSSARY={
+  exposure_us:{label:"US exposure",plain:"How deeply embedded in the American stack, 0\u2013100 \u2014 chips, clouds, models, contracts. Computed from supplier-by-supplier ties, not asserted."},
+  exposure_prc:{label:"PRC exposure",plain:"How deeply embedded in China's stack, 0\u2013100. Measured the same way as US exposure \u2014 and both can be high at once."},
+  exposure_sovereign:{label:"Sovereign exposure",plain:"How much runs on the country's own stack or a third pole (EU, India, Gulf, open-weight models), 0\u2013100. A competitive vector in its own right, never a leftover."},
+  alignment_index:{label:"Net tilt (alignment)",plain:"US exposure minus PRC exposure. A reading aid only: it hides that both can be high at once \u2014 which is exactly what hedging looks like. Always one click from its decomposition."},
+  readiness:{label:"Readiness (H)",plain:"Could the country actually absorb and run AI infrastructure \u2014 electricity, skills, capital, institutions? 0\u2013100 with tiers T0 (not yet) to T5 (frontier-ready). Signing a memo never raises readiness; only built capacity does."},
+  strategic_salience:{label:"Strategic weight",plain:"Why the country matters beyond its tech stack: UN votes, bases and overflight, critical minerals, undersea-cable landings. Tracked separately so low-readiness but strategically important states stay visible."},
+  lock_in:{label:"Lock-in",plain:"How stuck the country is with its current main supplier: contract length, debt tied to the equipment, a workforce trained on it, data that's hard to move. High = leaving would hurt."},
+  contest_score:{label:"Up for grabs",plain:"How actively contested right now: competing offers on the table, contracts coming up for renewal, room to maneuver. High = a live bidding war."},
+  cascade_susceptibility:{label:"Spillover risk",plain:"How exposed to neighbors' choices through shared cables, shared lenders, shared standards, and copied deployments. Feeds projections \u2014 it is not an observation about what has happened."},
+  posture:{label:"Posture",plain:"The overall pattern of the country's choices, read from its full layer-by-layer record \u2014 not from any single number."},
+  confidence:{label:"Confidence",plain:"How sure this record is (0\u20131), based on source quality and how much is honestly marked unknown."},
+  evidence_count:{label:"Evidence items",plain:"How many pieces of dated, sourced evidence sit behind this record. Every score must trace back to these."},
+  null_coverage_rate:{label:"Share unknown",plain:"How much of the record is marked unknown rather than guessed. A high number with visible gaps is more trustworthy than a low number with silent guesses."},
+  country_scores:{label:"Country scores",plain:"Five summary numbers on a 0\u2013100 scale. Hover the ? on any of them \u2014 or read the plain line under each \u2014 for what it means."},
+  per_layer:{label:"Per-layer DEPTH",plain:"The stack sliced into seven layers, each answering: whose kit is installed (D), what leaving costs (E), who can switch it off or see through it (P), and which way new deals flow (T)."},
+  provenance_sec:{label:"Provenance of this record",plain:"How much evidence sits behind what you just read \u2014 and how much is still honestly unknown."},
+  c_scatter:{label:"Two-axis exposure",plain:"The dashboard's most important chart: it shows countries deep in BOTH stacks, which any single left\u2013right score erases."},
+  c_heatmap:{label:"Countries \u00d7 layers",plain:"Countries don't pick one side for everything \u2014 they pick per layer. This grid shows where each side's equipment actually sits."},
+  c_quadrant:{label:"Locked in vs. up for grabs",plain:"Two different questions \u2014 how expensive is leaving, and is anyone competing \u2014 that together say where the next real decisions are."},
+  c_trio:{label:"Exposure side by side",plain:"Same data as the scatter, as bars. Long blue and long red together = hedging."}
+};
+const BANDS={
+  strategic_salience:["limited strategic assets","some strategic assets","significant \u2014 votes, bases, minerals, or cables","a major strategic prize"],
+  lock_in:["easy to switch suppliers","some switching friction","hard to leave the incumbent","effectively captive"],
+  contest_score:["not currently contested","some competition for it","actively contested","a full-on bidding war"],
+  cascade_susceptibility:["well insulated from neighbors' choices","some spillover exposure","noticeably exposed to neighbors' choices","highly exposed to regional spillover"]};
+function band(key,v){const b=BANDS[key];return v<25?b[0]:v<50?b[1]:v<75?b[2]:b[3]}
+function info(g){return "<span class='info' data-g='"+g+"'>?</span>"}
+document.addEventListener("mousemove",ev=>{
+  const el=ev.target.closest&&ev.target.closest(".info");
+  if(el&&GLOSSARY[el.dataset.g]){
+    const g=GLOSSARY[el.dataset.g];
+    showTip(ev,"<div class='tt-name'>"+g.label+"</div>"+g.plain);
+    el.dataset.tipOn="1";
+  }else if(document.querySelector(".info[data-tip-on]")){
+    document.querySelectorAll(".info[data-tip-on]").forEach(e=>delete e.dataset.tipOn);
+    hideTip();
+  }
+});
 
 /* ====================== embedded fixture ====================== */
 const FIXTURE_DATA = {
@@ -419,9 +521,16 @@ const tooltip=document.getElementById("tooltip");
 const statusEl=document.getElementById("status");
 const isoOf = f => f.id || (f.properties&&(f.properties.iso_a3||f.properties.ISO_A3||f.properties.adm0_a3)) || null;
 
+/* ====================== embedded desk pass (2026-08-14) ======================
+   Single-analyst manual research pass, SE Asia pilot. provisional:true — the
+   validate.py gate rejects unknown envelope keys, so this can never publish. */
+const DESK_PASS_DATA = {"schema_version":"1.0.0","cycle_date":"2026-08-14","generated_at":"2026-08-14T11:37:44Z","methodology_version":"v2.0","weight_vector_stamp":{"hash":"manual-desk-pass-no-weights-applied"},"provisional":true,"provenance_note":"ONE-TIME MANUAL DESK PASS (2026-08-14). Single-analyst estimates from a same-day web research pass. WAICO founding membership verified for KHM, IDN, LAO, MYS, MMR; Pax Silica signature verified for SGP (Dec 2025) and PHL (Apr 2026); major 2024-2026 infrastructure commitments from S2/S3 press. No coded events table, corroboration rule not mechanically enforced, no review gate, no clustering run (postures are analyst labels), network metrics not computed. DEMO ONLY - never publish or ingest into the pipeline.","countries":[{"iso3":"SGP","status":"scored","exposure_us":70,"exposure_prc":26,"exposure_sovereign":44,"alignment_index":{"value":44,"derived":true},"sovereign_pull":44,"readiness":90,"readiness_tier":"T5","strategic_salience":82,"lock_in":62,"posture":"leaning_us","posture_override":false,"posture_cluster_mapping_version":"manual-desk-pass (no clustering run)","contest_score":35,"cascade_susceptibility":30,"network_metrics":{"controller_hhi":null,"single_hub_dependence":null,"shared_controller_centrality":null},"per_layer":{"power":{"d_vector":{"us":0.05,"prc":0.05,"sovereign":0.8,"other":0.1},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"facilities":{"d_vector":{"us":0.55,"prc":0.1,"sovereign":0.3,"other":0.05},"e":{"us":70},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"silicon":{"d_vector":{"us":0.85,"prc":0.05,"sovereign":0.05,"other":0.05},"e":{"us":75},"p":{"p_license":{"status":"evidenced","value":80,"evidence_refs":["desk-2026-0814-usg-export-controls"]},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":2.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t3":0.5,"t5":0.5}}},"networks":{"d_vector":{"us":0.55,"prc":0.1,"sovereign":0.25,"other":0.1},"e":{"us":50},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"cloud":{"d_vector":{"us":0.7,"prc":0.15,"sovereign":0.15,"other":0.0},"e":{"us":65,"prc":20},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":1.5,"prc":0.0,"sovereign":0.0},"tier_composition":{"t3":0.6,"t5":0.4}}},"models":{"d_vector":{"us":0.55,"prc":0.1,"sovereign":0.3,"other":0.05},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":1.2},"tier_composition":{"t2":0.5,"t3":0.5}}},"applications":{"d_vector":{"us":0.5,"prc":0.25,"sovereign":0.2,"other":0.05},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}}},"confidence":{"level":0.55,"band_low":0.4,"band_high":0.65},"evidence_count":6,"null_coverage_rate":0.83,"coverage_flag":"manual_desk_pass"},{"iso3":"PHL","status":"scored","exposure_us":54,"exposure_prc":37,"exposure_sovereign":8,"alignment_index":{"value":17,"derived":true},"sovereign_pull":8,"readiness":42,"readiness_tier":"T2","strategic_salience":68,"lock_in":48,"posture":"leaning_us","posture_override":false,"posture_cluster_mapping_version":"manual-desk-pass (no clustering run)","contest_score":62,"cascade_susceptibility":55,"network_metrics":{"controller_hhi":null,"single_hub_dependence":null,"shared_controller_centrality":null},"per_layer":{"power":{"d_vector":{"us":0.1,"prc":0.15,"sovereign":0.6,"other":0.15},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"facilities":{"d_vector":{"us":0.35,"prc":0.2,"sovereign":0.3,"other":0.15},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":1.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t2":0.6,"t3":0.4}}},"silicon":{"d_vector":{"us":0.6,"prc":0.1,"sovereign":0.05,"other":0.25},"e":{},"p":{"p_license":{"status":"evidenced","value":80,"evidence_refs":["desk-2026-0814-usg-export-controls"]},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"networks":{"d_vector":{"us":0.25,"prc":0.55,"sovereign":0.1,"other":0.1},"e":{"prc":58},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"cloud":{"d_vector":{"us":0.55,"prc":0.2,"sovereign":0.1,"other":0.15},"e":{"us":45},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"models":{"d_vector":{"us":0.55,"prc":0.1,"sovereign":0.1,"other":0.25},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"applications":{"d_vector":{"us":0.45,"prc":0.35,"sovereign":0.1,"other":0.1},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.8,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0.7,"t2":0.3}}}},"confidence":{"level":0.5,"band_low":0.35,"band_high":0.6},"evidence_count":5,"null_coverage_rate":0.86,"coverage_flag":"manual_desk_pass"},{"iso3":"VNM","status":"scored","exposure_us":47,"exposure_prc":28,"exposure_sovereign":55,"alignment_index":{"value":19,"derived":true},"sovereign_pull":55,"readiness":58,"readiness_tier":"T3","strategic_salience":74,"lock_in":40,"posture":"sovereign_seeking","posture_override":false,"posture_cluster_mapping_version":"manual-desk-pass (no clustering run)","contest_score":58,"cascade_susceptibility":40,"network_metrics":{"controller_hhi":null,"single_hub_dependence":null,"shared_controller_centrality":null},"per_layer":{"power":{"d_vector":{"us":0.05,"prc":0.25,"sovereign":0.6,"other":0.1},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"facilities":{"d_vector":{"us":0.15,"prc":0.1,"sovereign":0.65,"other":0.1},"e":{"sovereign":55},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":1.5},"tier_composition":{"t4":0.4,"t5":0.6}}},"silicon":{"d_vector":{"us":0.75,"prc":0.05,"sovereign":0.1,"other":0.1},"e":{"us":60},"p":{"p_license":{"status":"evidenced","value":80,"evidence_refs":["desk-2026-0814-usg-export-controls"]},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":2.5,"prc":0.0,"sovereign":0.0},"tier_composition":{"t4":0.3,"t5":0.7}}},"networks":{"d_vector":{"us":0.3,"prc":0.2,"sovereign":0.45,"other":0.05},"e":{"sovereign":50},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"cloud":{"d_vector":{"us":0.3,"prc":0.15,"sovereign":0.5,"other":0.05},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":1.0},"tier_composition":{"t3":0.6,"t5":0.4}}},"models":{"d_vector":{"us":0.25,"prc":0.15,"sovereign":0.55,"other":0.05},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":2.0},"tier_composition":{"t3":0.4,"t5":0.6}}},"applications":{"d_vector":{"us":0.3,"prc":0.3,"sovereign":0.35,"other":0.05},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}}},"confidence":{"level":0.55,"band_low":0.4,"band_high":0.65},"evidence_count":7,"null_coverage_rate":0.8,"coverage_flag":"manual_desk_pass"},{"iso3":"IDN","status":"scored","exposure_us":51,"exposure_prc":47,"exposure_sovereign":15,"alignment_index":{"value":4,"derived":true},"sovereign_pull":15,"readiness":48,"readiness_tier":"T2","strategic_salience":80,"lock_in":42,"posture":"hedged_active","posture_override":false,"posture_cluster_mapping_version":"manual-desk-pass (no clustering run)","contest_score":78,"cascade_susceptibility":60,"network_metrics":{"controller_hhi":null,"single_hub_dependence":null,"shared_controller_centrality":null},"per_layer":{"power":{"d_vector":{"us":0.05,"prc":0.3,"sovereign":0.55,"other":0.1},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"facilities":{"d_vector":{"us":0.4,"prc":0.3,"sovereign":0.2,"other":0.1},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":2.5,"prc":0.8,"sovereign":0.0},"tier_composition":{"t1":0.2,"t2":0.3,"t3":0.3,"t4":0.2}}},"silicon":{"d_vector":{"us":0.65,"prc":0.15,"sovereign":0.05,"other":0.15},"e":{},"p":{"p_license":{"status":"evidenced","value":80,"evidence_refs":["desk-2026-0814-usg-export-controls"]},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":2.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0.3,"t2":0.4,"t3":0.3}}},"networks":{"d_vector":{"us":0.2,"prc":0.6,"sovereign":0.1,"other":0.1},"e":{"prc":62},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"cloud":{"d_vector":{"us":0.45,"prc":0.4,"sovereign":0.1,"other":0.05},"e":{"us":40,"prc":38},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"models":{"d_vector":{"us":0.4,"prc":0.25,"sovereign":0.2,"other":0.15},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.6,"sovereign":0.0},"tier_composition":{"t1":1.0}}},"applications":{"d_vector":{"us":0.35,"prc":0.45,"sovereign":0.1,"other":0.1},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.5,"sovereign":0.0},"tier_composition":{"t1":1.0}}}},"confidence":{"level":0.5,"band_low":0.35,"band_high":0.6},"evidence_count":8,"null_coverage_rate":0.84,"coverage_flag":"manual_desk_pass"},{"iso3":"THA","status":"scored","exposure_us":54,"exposure_prc":44,"exposure_sovereign":10,"alignment_index":{"value":10,"derived":true},"sovereign_pull":10,"readiness":54,"readiness_tier":"T3","strategic_salience":62,"lock_in":45,"posture":"hedged_active","posture_override":false,"posture_cluster_mapping_version":"manual-desk-pass (no clustering run)","contest_score":72,"cascade_susceptibility":55,"network_metrics":{"controller_hhi":null,"single_hub_dependence":null,"shared_controller_centrality":null},"per_layer":{"power":{"d_vector":{"us":0.05,"prc":0.15,"sovereign":0.7,"other":0.1},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.6,"prc":0.0,"sovereign":0.0},"tier_composition":{"t2":1.0}}},"facilities":{"d_vector":{"us":0.45,"prc":0.3,"sovereign":0.15,"other":0.1},"e":{"us":42,"prc":35},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":2.0,"prc":1.2,"sovereign":0.0},"tier_composition":{"t2":0.2,"t3":0.4,"t4":0.4}}},"silicon":{"d_vector":{"us":0.65,"prc":0.15,"sovereign":0.05,"other":0.15},"e":{},"p":{"p_license":{"status":"evidenced","value":80,"evidence_refs":["desk-2026-0814-usg-export-controls"]},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"networks":{"d_vector":{"us":0.3,"prc":0.5,"sovereign":0.1,"other":0.1},"e":{"prc":55},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"cloud":{"d_vector":{"us":0.5,"prc":0.35,"sovereign":0.05,"other":0.1},"e":{"us":45,"prc":35},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"models":{"d_vector":{"us":0.45,"prc":0.2,"sovereign":0.15,"other":0.2},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"applications":{"d_vector":{"us":0.35,"prc":0.45,"sovereign":0.1,"other":0.1},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}}},"confidence":{"level":0.5,"band_low":0.35,"band_high":0.6},"evidence_count":6,"null_coverage_rate":0.86,"coverage_flag":"manual_desk_pass"},{"iso3":"MYS","status":"scored","exposure_us":61,"exposure_prc":45,"exposure_sovereign":24,"alignment_index":{"value":16,"derived":true},"sovereign_pull":24,"readiness":58,"readiness_tier":"T3","strategic_salience":70,"lock_in":55,"posture":"hedged_active","posture_override":false,"posture_cluster_mapping_version":"manual-desk-pass (no clustering run)","contest_score":75,"cascade_susceptibility":62,"network_metrics":{"controller_hhi":null,"single_hub_dependence":null,"shared_controller_centrality":null},"per_layer":{"power":{"d_vector":{"us":0.05,"prc":0.1,"sovereign":0.75,"other":0.1},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.8},"tier_composition":{"t1":0.5,"t2":0.5}}},"facilities":{"d_vector":{"us":0.45,"prc":0.3,"sovereign":0.2,"other":0.05},"e":{"us":55,"prc":40},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":2.5,"prc":1.5,"sovereign":0.0},"tier_composition":{"t3":0.2,"t4":0.3,"t5":0.5}}},"silicon":{"d_vector":{"us":0.8,"prc":0.1,"sovereign":0.02,"other":0.08},"e":{"us":65},"p":{"p_license":{"status":"evidenced","value":80,"evidence_refs":["desk-2026-0814-usg-export-controls"]},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":2.5,"prc":0.0,"sovereign":0.0},"tier_composition":{"t4":0.3,"t5":0.7}}},"networks":{"d_vector":{"us":0.3,"prc":0.5,"sovereign":0.1,"other":0.1},"e":{"prc":52},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"cloud":{"d_vector":{"us":0.55,"prc":0.3,"sovereign":0.12,"other":0.03},"e":{"us":55,"prc":30},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":1.5,"prc":0.0,"sovereign":0.8},"tier_composition":{"t2":0.3,"t3":0.3,"t5":0.4}}},"models":{"d_vector":{"us":0.45,"prc":0.2,"sovereign":0.25,"other":0.1},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":1.0},"tier_composition":{"t2":0.6,"t3":0.4}}},"applications":{"d_vector":{"us":0.4,"prc":0.4,"sovereign":0.12,"other":0.08},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.5,"sovereign":0.0},"tier_composition":{"t1":1.0}}}},"confidence":{"level":0.55,"band_low":0.4,"band_high":0.65},"evidence_count":8,"null_coverage_rate":0.82,"coverage_flag":"manual_desk_pass"},{"iso3":"KHM","status":"scored","exposure_us":12,"exposure_prc":58,"exposure_sovereign":5,"alignment_index":{"value":-46,"derived":true},"sovereign_pull":5,"readiness":28,"readiness_tier":"T1","strategic_salience":40,"lock_in":62,"posture":"committed_prc","posture_override":false,"posture_cluster_mapping_version":"manual-desk-pass (no clustering run)","contest_score":22,"cascade_susceptibility":45,"network_metrics":{"controller_hhi":null,"single_hub_dependence":null,"shared_controller_centrality":null},"per_layer":{"power":{"d_vector":{"us":0.02,"prc":0.45,"sovereign":0.4,"other":0.13},"e":{"prc":60},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"facilities":{"d_vector":{"us":0.05,"prc":0.5,"sovereign":0.25,"other":0.2},"e":{"prc":55},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"silicon":{"d_vector":{"us":0.2,"prc":0.45,"sovereign":0.02,"other":0.33},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"networks":{"d_vector":{"us":0.05,"prc":0.75,"sovereign":0.1,"other":0.1},"e":{"prc":70},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"cloud":{"d_vector":{"us":0.15,"prc":0.6,"sovereign":0.05,"other":0.2},"e":{"prc":55},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"models":{"d_vector":{"us":0.2,"prc":0.4,"sovereign":0.05,"other":0.35},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.5,"sovereign":0.0},"tier_composition":{"t1":1.0}}},"applications":{"d_vector":{"us":0.15,"prc":0.6,"sovereign":0.05,"other":0.2},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.4,"sovereign":0.0},"tier_composition":{"t1":1.0}}}},"confidence":{"level":0.45,"band_low":0.30000000000000004,"band_high":0.55},"evidence_count":4,"null_coverage_rate":0.9,"coverage_flag":"manual_desk_pass"},{"iso3":"LAO","status":"scored","exposure_us":8,"exposure_prc":54,"exposure_sovereign":6,"alignment_index":{"value":-46,"derived":true},"sovereign_pull":6,"readiness":20,"readiness_tier":"T1","strategic_salience":55,"lock_in":68,"posture":"leaning_prc","posture_override":false,"posture_cluster_mapping_version":"manual-desk-pass (no clustering run)","contest_score":18,"cascade_susceptibility":50,"network_metrics":{"controller_hhi":null,"single_hub_dependence":null,"shared_controller_centrality":null},"per_layer":{"power":{"d_vector":{"us":0.02,"prc":0.7,"sovereign":0.15,"other":0.13},"e":{"prc":80},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"evidenced","value":70,"evidence_refs":["desk-2026-0814-lao-grid-concession"]},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"facilities":{"d_vector":{"us":0.02,"prc":0.5,"sovereign":0.15,"other":0.33},"e":{"prc":55},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"silicon":{"d_vector":{"us":0.1,"prc":0.4,"sovereign":0.02,"other":0.48},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"networks":{"d_vector":{"us":0.05,"prc":0.45,"sovereign":0.1,"other":0.4},"e":{"prc":50},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"cloud":{"d_vector":{"us":0.08,"prc":0.55,"sovereign":0.05,"other":0.32},"e":{"prc":50},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"models":{"d_vector":{"us":0.1,"prc":0.4,"sovereign":0.05,"other":0.45},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.4,"sovereign":0.0},"tier_composition":{"t1":1.0}}},"applications":{"d_vector":{"us":0.08,"prc":0.55,"sovereign":0.05,"other":0.32},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}}},"confidence":{"level":0.4,"band_low":0.25,"band_high":0.5},"evidence_count":4,"null_coverage_rate":0.92,"coverage_flag":"manual_desk_pass"},{"iso3":"MMR","status":"scored","exposure_us":4,"exposure_prc":50,"exposure_sovereign":3,"alignment_index":{"value":-46,"derived":true},"sovereign_pull":3,"readiness":14,"readiness_tier":"T0","strategic_salience":45,"lock_in":58,"posture":"excluded","posture_override":false,"posture_cluster_mapping_version":"manual-desk-pass (no clustering run)","contest_score":10,"cascade_susceptibility":35,"network_metrics":{"controller_hhi":null,"single_hub_dependence":null,"shared_controller_centrality":null},"per_layer":{"power":{"d_vector":{"us":0.01,"prc":0.45,"sovereign":0.3,"other":0.24},"e":{"prc":55},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"facilities":{"d_vector":{"us":0.01,"prc":0.4,"sovereign":0.15,"other":0.44},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"silicon":{"d_vector":{"us":0.05,"prc":0.4,"sovereign":0.01,"other":0.54},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"networks":{"d_vector":{"us":0.02,"prc":0.65,"sovereign":0.1,"other":0.23},"e":{"prc":62},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"cloud":{"d_vector":{"us":0.05,"prc":0.55,"sovereign":0.05,"other":0.35},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}},"models":{"d_vector":{"us":0.05,"prc":0.35,"sovereign":0.02,"other":0.58},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.3,"sovereign":0.0},"tier_composition":{"t1":1.0}}},"applications":{"d_vector":{"us":0.05,"prc":0.55,"sovereign":0.05,"other":0.35},"e":{},"p":{"p_license":{"status":"null","opacity_reason":"Desk pass: licensing terms not researched at this layer."},"p_update":{"status":"null","opacity_reason":"Desk pass: update/attestation architecture not researched."},"p_spares":{"status":"null","opacity_reason":"Desk pass: spares/maintenance dependency not researched."},"p_jurisdiction":{"status":"null","opacity_reason":"Desk pass: data jurisdiction not researched at this layer."},"p_telemetry":{"status":"null","opacity_reason":"Desk pass: telemetry architecture not researched."}},"t":{"value_by_pole":{"us":0.0,"prc":0.0,"sovereign":0.0},"tier_composition":{"t1":0,"t2":0,"t3":0,"t4":0,"t5":0}}}},"confidence":{"level":0.35,"band_low":0.19999999999999998,"band_high":0.44999999999999996},"evidence_count":3,"null_coverage_rate":0.94,"coverage_flag":"manual_desk_pass"}]};
+
 /* ====================== dataset handling ====================== */
 async function setSource(mode){
-  if(mode==="demo"){
+  if(mode==="deskpass"){
+    applyDataset(DESK_PASS_DATA,"embedded desk pass 2026-08-14");
+  }else if(mode==="demo"){
     applyDataset(generateDemo(),"synthetic demo (generated in-page)");
   }else if(mode==="fixture"){
     try{
@@ -437,11 +546,20 @@ function applyDataset(data,label){
   if(!data||!Array.isArray(data.countries)){statusEl.textContent="invalid countries.json — expected a countries array";return}
   dataset=data;
   byIso=new Map(data.countries.map(c=>[c.iso3,c]));
-  const syn = data.synthetic===true;
-  document.getElementById("demoBanner").style.display = syn ? "block" : "none";
+  const syn = data.synthetic===true, prov = data.provisional===true;
+  const banner = document.getElementById("demoBanner");
+  if(syn){
+    banner.innerHTML = "<b>\u26a0 SYNTHETIC DEMO DATA</b> \u2014 every value below is invented, deterministically generated to exercise the interface. This dataset carries a marker that the schema gate rejects, so it can never be published as real intelligence.";
+    banner.style.display = "block";
+  }else if(prov){
+    banner.innerHTML = "<b>\u26a0 PROVISIONAL \u2014 MANUAL DESK PASS (2026-08-14)</b> \u2014 single-analyst estimates from a one-day research pass. No coded events table, corroboration rule not enforced, postures are analyst labels, not clustering output. Demo only \u2014 structurally unpublishable.";
+    banner.style.display = "block";
+  }else{
+    banner.style.display = "none";
+  }
   document.getElementById("stamp").innerHTML = syn
     ? "<b>SYNTHETIC</b> · "+data.countries.length+" invented records · not publishable"
-    : "cycle <b>"+esc(data.cycle_date||"?")+"</b> · methodology <b>"+esc(data.methodology_version||"?")+
+    : (prov?"<b>PROVISIONAL</b> · ":"")+"cycle <b>"+esc(data.cycle_date||"?")+"</b> · methodology <b>"+esc(data.methodology_version||"?")+
       "</b> · weights <b>"+esc((data.weight_vector_stamp&&data.weight_vector_stamp.hash)||"?")+"</b>";
   statusEl.textContent="source: "+label+" · "+data.countries.length+" record(s)";
   recolor(); renderCharts(); renderTable();
@@ -484,7 +602,8 @@ async function drawMap(){
       let line;
       if(!rec) line="<span class='tt-dim'>not in dataset</span>";
       else if(rec.status==="insufficient_data") line="<span class='tt-dim'>insufficient data · evidence_count "+rec.evidence_count+"</span>";
-      else line="alignment "+fmtSigned(rec.alignment_index.value)+" <span class='tt-dim'>(derived)</span> · "+esc(rec.posture);
+      else line="net tilt "+fmtSigned(rec.alignment_index.value)+" <span class='tt-dim'>(derived)</span> · "+esc(rec.posture)+
+        "<br><span class='tt-dim'>"+esc(PLAIN_POSTURE[rec.posture]||"")+" — click for the full record</span>";
       showTip(ev,"<div class='tt-name'>"+esc(nameOf(iso,d))+" · "+esc(iso)+"</div>"+line);
     })
     .on("mouseleave",hideTip)
@@ -516,7 +635,7 @@ function scored(){ return dataset ? dataset.countries.filter(c=>c.status==="scor
 
 function renderCharts(){
   if(!dataset)return;
-  renderScatter(); renderAlignBars(); renderHeatmap(); renderPostureLegend();
+  renderScatter(); renderAlignBars(); renderHeatmap(); renderQuadrant(); renderExpoTrio(); renderLadder(); renderPostureLegend();
 }
 
 function renderScatter(){
@@ -618,26 +737,117 @@ function renderHeatmap(){
 function renderPostureLegend(){
   const el=document.getElementById("postureLegend");
   el.innerHTML=Object.entries(POSTURE_COLORS).map(([k,c])=>
-    "<span style='display:inline-flex;align-items:center;gap:4px;margin-right:10px'>"+
+    "<span style='display:inline-flex;align-items:center;gap:4px;margin-right:10px;cursor:help' title='"+esc(PLAIN_POSTURE[k]||"")+"'>"+
     "<span style='width:9px;height:9px;border-radius:50%;background:"+c+";display:inline-block'></span>"+k+"</span>").join("");
+}
+
+function renderQuadrant(){
+  const S=d3.select("#quadrant"); S.selectAll("*").remove();
+  const W=940,H=430,M={l:46,r:16,t:14,b:38};
+  S.attr("viewBox","0 0 "+W+" "+H);
+  const x=d3.scaleLinear().domain([0,100]).range([M.l,W-M.r]);
+  const y=d3.scaleLinear().domain([0,100]).range([H-M.b,M.t]);
+  const ax=S.append("g");
+  for(const v of [0,25,50,75,100]){
+    ax.append("line").attr("x1",x(v)).attr("x2",x(v)).attr("y1",y(0)).attr("y2",y(100)).attr("stroke","#222938");
+    ax.append("line").attr("y1",y(v)).attr("y2",y(v)).attr("x1",x(0)).attr("x2",x(100)).attr("stroke","#222938");
+    ax.append("text").attr("x",x(v)).attr("y",H-14).attr("fill","#8b93a5").attr("font-size",10).attr("text-anchor","middle").text(v);
+    ax.append("text").attr("x",M.l-8).attr("y",y(v)+3).attr("fill","#8b93a5").attr("font-size",10).attr("text-anchor","end").text(v);
+  }
+  ax.append("line").attr("x1",x(50)).attr("x2",x(50)).attr("y1",y(0)).attr("y2",y(100)).attr("stroke","#39404f").attr("stroke-dasharray","4 4");
+  ax.append("line").attr("y1",y(50)).attr("y2",y(50)).attr("x1",x(0)).attr("x2",x(100)).attr("stroke","#39404f").attr("stroke-dasharray","4 4");
+  const quad=[["BATTLEGROUND",25,75],["CONTESTED BUT STUCK",75,75],["QUIET",25,25],["LOCKED IN",75,25]];
+  for(const [t,qx,qy] of quad)
+    ax.append("text").attr("x",x(qx)).attr("y",y(qy)).attr("fill","#39404f").attr("font-size",13)
+      .attr("font-weight",700).attr("letter-spacing","0.14em").attr("text-anchor","middle").text(t);
+  ax.append("text").attr("x",(x(0)+x(100))/2).attr("y",H-2).attr("fill","#8b93a5").attr("font-size",10)
+    .attr("text-anchor","middle").text("lock_in — harder to leave →");
+  ax.append("text").attr("transform","rotate(-90)").attr("x",-(H/2)).attr("y",12)
+    .attr("fill","#8b93a5").attr("font-size",10).attr("text-anchor","middle").text("contest_score — more contested →");
+  const dots=S.selectAll("g.dot").data(scored()).join("g").attr("class","dot")
+    .attr("transform",c=>"translate("+x(c.lock_in)+","+y(c.contest_score)+")")
+    .on("click",(ev,c)=>select(c.iso3))
+    .on("mousemove",(ev,c)=>showTip(ev,"<div class='tt-name'>"+esc(nameOf(c.iso3))+"</div>"+
+      "lock-in "+c.lock_in+" <span class='tt-dim'>— "+band("lock_in",c.lock_in)+"</span><br>"+
+      "contest "+c.contest_score+" <span class='tt-dim'>— "+band("contest_score",c.contest_score)+"</span>"))
+    .on("mouseleave",hideTip);
+  dots.append("circle").attr("r",c=>c.iso3===selectedIso?8:6)
+    .attr("fill",c=>POSTURE_COLORS[c.posture]||"#8b93a5")
+    .attr("stroke",c=>c.iso3===selectedIso?"#fff":"#10141c").attr("stroke-width",1.2);
+  dots.append("text").attr("x",8).attr("y",3).attr("fill","#8b93a5").attr("font-size",9).text(c=>c.iso3);
+}
+
+function renderExpoTrio(){
+  const S=d3.select("#expotrio"); S.selectAll("*").remove();
+  const rows=scored().slice().sort((a,b)=>b.alignment_index.value-a.alignment_index.value);
+  const bh=7,gap=2,rh=3*(bh+gap)+12,M={l:52,r:40,t:6,b:20},W=940,H=M.t+rows.length*rh+M.b;
+  S.attr("viewBox","0 0 "+W+" "+H);
+  const x=d3.scaleLinear().domain([0,100]).range([M.l,W-M.r]);
+  for(const v of [0,25,50,75,100]){
+    S.append("line").attr("x1",x(v)).attr("x2",x(v)).attr("y1",M.t).attr("y2",H-M.b).attr("stroke","#222938");
+    S.append("text").attr("x",x(v)).attr("y",H-6).attr("fill","#8b93a5").attr("font-size",10).attr("text-anchor","middle").text(v);
+  }
+  const polereading={us:"American stack",prc:"China's stack",sovereign:"its own / third-pole stack"};
+  rows.forEach((c,ri)=>{
+    const yy=M.t+ri*rh;
+    S.append("text").attr("x",M.l-6).attr("y",yy+rh/2).attr("fill",c.iso3===selectedIso?"#fff":"#8b93a5")
+      .attr("font-size",9.5).attr("text-anchor","end").style("cursor","pointer")
+      .on("click",()=>select(c.iso3)).text(c.iso3);
+    [["us",c.exposure_us],["prc",c.exposure_prc],["sovereign",c.exposure_sovereign]].forEach(([pole,v],bi)=>{
+      S.append("rect").attr("class","abar")
+        .attr("x",x(0)).attr("y",yy+bi*(bh+gap)).attr("width",Math.max(1,x(v)-x(0))).attr("height",bh)
+        .attr("fill",POLE_COLORS[pole==="sovereign"?"sovereign":pole])
+        .on("click",()=>select(c.iso3))
+        .on("mousemove",ev=>showTip(ev,"<div class='tt-name'>"+esc(nameOf(c.iso3))+"</div>"+
+          "exposure to "+polereading[pole]+": "+v+" / 100"))
+        .on("mouseleave",hideTip);
+    });
+  });
+}
+
+function renderLadder(){
+  const S=d3.select("#ladder"); S.selectAll("*").remove();
+  const rows=scored().slice().sort((a,b)=>b.readiness-a.readiness);
+  const rh=19,M={l:52,r:150,t:6,b:20},W=940,H=M.t+rows.length*rh+M.b;
+  S.attr("viewBox","0 0 "+W+" "+H);
+  const x=d3.scaleLinear().domain([0,100]).range([M.l,W-M.r]);
+  for(const v of [0,25,50,75,100]){
+    S.append("line").attr("x1",x(v)).attr("x2",x(v)).attr("y1",M.t).attr("y2",H-M.b).attr("stroke","#222938");
+    S.append("text").attr("x",x(v)).attr("y",H-6).attr("fill","#8b93a5").attr("font-size",10).attr("text-anchor","middle").text(v);
+  }
+  rows.forEach((c,ri)=>{
+    const yy=M.t+ri*rh;
+    S.append("text").attr("x",M.l-6).attr("y",yy+rh/2+3).attr("fill",c.iso3===selectedIso?"#fff":"#8b93a5")
+      .attr("font-size",9.5).attr("text-anchor","end").style("cursor","pointer")
+      .on("click",()=>select(c.iso3)).text(c.iso3);
+    S.append("rect").attr("class","abar")
+      .attr("x",x(0)).attr("y",yy+3).attr("width",Math.max(1,x(c.readiness)-x(0))).attr("height",rh-7)
+      .attr("fill","#67718a").attr("stroke",c.iso3===selectedIso?"#fff":"none")
+      .on("click",()=>select(c.iso3))
+      .on("mousemove",ev=>showTip(ev,"<div class='tt-name'>"+esc(nameOf(c.iso3))+"</div>readiness "+c.readiness+
+        " · "+c.readiness_tier+"<br><span class='tt-dim'>"+TIER_WORDS[c.readiness_tier]+"</span>"))
+      .on("mouseleave",hideTip);
+    S.append("text").attr("x",x(c.readiness)+6).attr("y",yy+rh/2+3).attr("fill","#8b93a5").attr("font-size",9.5)
+      .text(c.readiness_tier+" — "+TIER_WORDS[c.readiness_tier]);
+  });
 }
 
 /* ====================== table ====================== */
 const COLS=[
   {key:"iso3",label:"iso3",get:c=>c.iso3,str:true},
   {key:"name",label:"country",get:c=>nameOf(c.iso3),str:true},
-  {key:"posture",label:"posture",get:c=>c.status==="scored"?c.posture:"insufficient",str:true},
-  {key:"alignment",label:"alignment (derived)",get:c=>c.status==="scored"?c.alignment_index.value:null,chip:true},
-  {key:"exposure_us",label:"exp US",get:c=>c.status==="scored"?c.exposure_us:null},
-  {key:"exposure_prc",label:"exp PRC",get:c=>c.status==="scored"?c.exposure_prc:null},
-  {key:"exposure_sovereign",label:"exp sov",get:c=>c.status==="scored"?c.exposure_sovereign:null},
-  {key:"readiness",label:"readiness",get:c=>c.status==="scored"?c.readiness:null,extra:c=>c.status==="scored"?" "+c.readiness_tier:""},
-  {key:"strategic_salience",label:"salience",get:c=>c.status==="scored"?c.strategic_salience:null},
-  {key:"lock_in",label:"lock-in",get:c=>c.status==="scored"?c.lock_in:null},
-  {key:"contest_score",label:"contest",get:c=>c.status==="scored"?c.contest_score:null},
-  {key:"cascade_susceptibility",label:"cascade",get:c=>c.status==="scored"?c.cascade_susceptibility:null},
-  {key:"evidence_count",label:"evid #",get:c=>c.evidence_count},
-  {key:"null_coverage_rate",label:"null cov",get:c=>c.null_coverage_rate,fmt:pct}
+  {key:"posture",label:"posture",g:"posture",get:c=>c.status==="scored"?c.posture:"insufficient",str:true},
+  {key:"alignment",label:"net tilt (derived)",g:"alignment_index",get:c=>c.status==="scored"?c.alignment_index.value:null,chip:true},
+  {key:"exposure_us",label:"US exposure",g:"exposure_us",get:c=>c.status==="scored"?c.exposure_us:null},
+  {key:"exposure_prc",label:"PRC exposure",g:"exposure_prc",get:c=>c.status==="scored"?c.exposure_prc:null},
+  {key:"exposure_sovereign",label:"sov exposure",g:"exposure_sovereign",get:c=>c.status==="scored"?c.exposure_sovereign:null},
+  {key:"readiness",label:"readiness",g:"readiness",get:c=>c.status==="scored"?c.readiness:null,extra:c=>c.status==="scored"?" "+c.readiness_tier:""},
+  {key:"strategic_salience",label:"strategic weight",g:"strategic_salience",get:c=>c.status==="scored"?c.strategic_salience:null},
+  {key:"lock_in",label:"lock-in",g:"lock_in",get:c=>c.status==="scored"?c.lock_in:null},
+  {key:"contest_score",label:"up for grabs",g:"contest_score",get:c=>c.status==="scored"?c.contest_score:null},
+  {key:"cascade_susceptibility",label:"spillover risk",g:"cascade_susceptibility",get:c=>c.status==="scored"?c.cascade_susceptibility:null},
+  {key:"evidence_count",label:"evid #",g:"evidence_count",get:c=>c.evidence_count},
+  {key:"null_coverage_rate",label:"% unknown",g:"null_coverage_rate",get:c=>c.null_coverage_rate,fmt:pct}
 ];
 function renderTable(){
   if(!dataset)return;
@@ -645,11 +855,20 @@ function renderTable(){
   thead.innerHTML="<tr>"+COLS.map(col=>
     "<th data-key='"+col.key+"' class='"+(col.key===sortKey?"sorted":"")+"'>"+col.label+
     (col.key===sortKey?(sortDir<0?" ▼":" ▲"):"")+"</th>").join("")+"</tr>";
-  thead.querySelectorAll("th").forEach(th=>th.addEventListener("click",()=>{
-    const k=th.dataset.key;
-    if(sortKey===k) sortDir*=-1; else {sortKey=k;sortDir=-1;}
-    renderTable();
-  }));
+  thead.querySelectorAll("th").forEach(th=>{
+    th.addEventListener("click",()=>{
+      const k=th.dataset.key;
+      if(sortKey===k) sortDir*=-1; else {sortKey=k;sortDir=-1;}
+      renderTable();
+    });
+    const col=COLS.find(c=>c.key===th.dataset.key);
+    if(col&&col.g&&GLOSSARY[col.g]){
+      th.addEventListener("mousemove",ev=>showTip(ev,
+        "<div class='tt-name'>"+GLOSSARY[col.g].label+" <span class='tt-dim'>"+col.g+"</span></div>"+GLOSSARY[col.g].plain+
+        "<br><span class='tt-dim'>click to sort by this column</span>"));
+      th.addEventListener("mouseleave",hideTip);
+    }
+  });
   const col=COLS.find(c=>c.key===sortKey);
   let rows=dataset.countries.slice();
   if(filterText){
@@ -710,19 +929,27 @@ function showPanel(iso){
   const pc=POSTURE_COLORS[rec.posture]||"var(--ink-dim)";
   let html=
     "<div class='p-head'><h2>"+esc(name)+"</h2><span class='iso'>"+esc(iso)+"</span>"+
-    "<span class='posture' style='color:"+pc+"'>"+esc(rec.posture)+(rec.posture_override?" · override":"")+"</span></div>";
-  html+="<div class='sec'><h3>Exposure <span style='text-transform:none'>(derived from edges)</span></h3>"+
+    "<span class='posture' style='color:"+pc+"'>"+esc(rec.posture)+(rec.posture_override?" · override":"")+"</span></div>"+
+    "<div class='plain' style='margin-top:6px'>"+esc(PLAIN_POSTURE[rec.posture]||"")+"</div>";
+  html+="<div class='sec'><h3>Exposure <span style='text-transform:none'>(derived from edges)</span>"+info("exposure_us")+"</h3>"+
+    "<div class='plain'>How deeply this country sits in each stack, 0\u2013100. Both sides can be high at once \u2014 that's hedging.</div>"+
     expoBar("exposure_us",rec.exposure_us,"var(--us)")+
     expoBar("exposure_prc",rec.exposure_prc,"var(--prc)")+
     expoBar("exposure_sovereign",rec.exposure_sovereign,"var(--sov)")+
-    "<div class='kv'><span class='k'>alignment_index <span class='flag-derived'>(derived — reading aid)</span></span><span>"+fmtSigned(rec.alignment_index.value)+"</span></div></div>";
-  html+="<div class='sec'><h3>Country scores</h3>"+
-    kv("readiness",rec.readiness+" · "+rec.readiness_tier)+
-    kv("strategic_salience",rec.strategic_salience)+
-    kv("lock_in",rec.lock_in)+
-    kv("contest_score",rec.contest_score)+
-    kv("cascade_susceptibility",rec.cascade_susceptibility)+"</div>";
-  html+="<div class='sec'><h3>Per-layer DEPTH</h3>"+
+    "<div class='kv'><span class='k'>net tilt <span class='mkey'>alignment_index</span> <span class='flag-derived'>(derived)</span>"+info("alignment_index")+"</span><span>"+fmtSigned(rec.alignment_index.value)+"</span></div></div>";
+  html+="<div class='sec'><h3>Country scores"+info("country_scores")+"</h3>"+
+    scoreRow("readiness",rec.readiness,rec.readiness+" · "+rec.readiness_tier,
+      rec.readiness_tier+" \u2014 "+TIER_WORDS[rec.readiness_tier]+".")+
+    scoreRow("strategic_salience",rec.strategic_salience,rec.strategic_salience,
+      cap1(band("strategic_salience",rec.strategic_salience))+".")+
+    scoreRow("lock_in",rec.lock_in,rec.lock_in,
+      cap1(band("lock_in",rec.lock_in))+".")+
+    scoreRow("contest_score",rec.contest_score,rec.contest_score,
+      cap1(band("contest_score",rec.contest_score))+".")+
+    scoreRow("cascade_susceptibility",rec.cascade_susceptibility,rec.cascade_susceptibility,
+      cap1(band("cascade_susceptibility",rec.cascade_susceptibility))+".")+"</div>";
+  html+="<div class='sec'><h3>Per-layer DEPTH"+info("per_layer")+"</h3>"+
+    "<div class='plain'>The stack, sliced into seven layers. For each: whose kit is installed (D), what leaving would cost (E), who can switch it off or see through it (P), and which way new deals are flowing (T).</div>"+
     "<table class='layers'><tr><th>layer</th><th>D by pole</th><th>E max</th><th>P — choke | panopt</th><th>T tiers</th></tr>";
   for(const layer of LAYERS){
     const L=rec.per_layer[layer];
@@ -732,7 +959,8 @@ function showPanel(iso){
   html+="</table>"+
     "<div class='plabels'><span>●&nbsp;evidenced · ○&nbsp;null (hover for opacity_reason)</span></div>"+
     "<div class='plabels'><span>chokepoint: license / update / spares&nbsp;|&nbsp;panopticon: jurisdiction / telemetry — displayed apart, never summed</span></div></div>";
-  html+="<div class='sec'><h3>Provenance of this record</h3>"+
+  html+="<div class='sec'><h3>Provenance of this record"+info("provenance_sec")+"</h3>"+
+    "<div class='plain'>How much evidence sits behind everything above \u2014 and how much is still honestly unknown.</div>"+
     kv("confidence",rec.confidence.level+(rec.confidence.band_low!=null?" ["+rec.confidence.band_low+"–"+rec.confidence.band_high+"]":""))+
     kv("evidence_count",rec.evidence_count)+
     kv("null_coverage_rate",pct(rec.null_coverage_rate))+
@@ -748,6 +976,13 @@ function expoBar(label,v,color){
     "<div class='track'><div class='fill' style='width:"+Math.max(0,Math.min(100,v))+"%;background:"+color+"'></div></div></div>";
 }
 function kv(k,v){return "<div class='kv'><span class='k'>"+k+"</span><span>"+v+"</span></div>"}
+function cap1(s){return s.charAt(0).toUpperCase()+s.slice(1)}
+function scoreRow(gkey,num,valText,reading){
+  const g=GLOSSARY[gkey];
+  return "<div class='kv'><span class='k'>"+g.label+" <span class='mkey'>"+gkey+"</span>"+info(gkey)+"</span><span>"+valText+"</span></div>"+
+    "<div class='minitrack'><div style='width:"+Math.max(0,Math.min(100,num))+"%'></div></div>"+
+    "<div class='plain'>"+reading+"</div>";
+}
 function dBar(dv){
   let s="<div class='dbar' title='US "+pct(dv.us)+" · PRC "+pct(dv.prc)+" · sov "+pct(dv.sovereign)+" · other "+pct(dv.other)+"'>";
   for(const pole of ["us","prc","sovereign","other"]){
@@ -808,8 +1043,47 @@ function hideTip(){tooltip.style.display="none"}
   for(let x=0;x<180;x++){cv.fillStyle=alignScale(-100+(x/179)*200);cv.fillRect(x,0,1,9)}
 })();
 
+/* ====================== guide ====================== */
+function buildGuide(){
+  const LAYER_PLAIN={power:"the electricity to run it all",facilities:"the buildings \u2014 data centers",
+    silicon:"the chips",networks:"telecom gear and undersea cables",cloud:"who hosts the compute and data",
+    models:"whose AI models get used",applications:"the apps people actually touch"};
+  const DEPTH=[
+    ["D","Dependence","Whose equipment is actually installed today \u2014 measured as shares per layer, from customs data, spectrum registries, vendor audits, and cloud maps."],
+    ["E","Exit cost","How expensive leaving the current supplier would be: years left on contracts, debt tied to the kit, a workforce trained on it, data that's hard to move \u2014 and whether a real alternative even exists."],
+    ["P","Provenance & control","Two separate questions, never added together: can the supplier switch it off (a chokepoint \u2014 licenses, remote updates, spare parts), and can the supplier see through it (a panopticon \u2014 data jurisdiction, built-in telemetry)? Where contracts are secret, the answer is recorded as unknown \u2014 never guessed."],
+    ["T","Trajectory","Which way new deals are flowing, weighted by how real they are. A press-release memo counts for little and fades within two years; an operational facility counts fully and only a reversal retires it."],
+    ["H","Headroom","Could the country absorb more if offered \u2014 power, skills, capital, institutions? Low headroom discounts announcements, but it never erases equipment that's already installed."]];
+  const RULES=[
+    "Unknown means unknown. Secret contract terms are shown as open circles with a reason \u2014 never silently filled in with a guess.",
+    "The single left\u2013right \u201cnet tilt\u201d number is a reading aid. It is always one click from the two-axis picture it summarizes, because it hides hedging by construction.",
+    "\u201cCan switch it off\u201d and \u201ccan see through it\u201d are different powers with different uses. They are displayed apart and never summed.",
+    "Hedging is a strategy; inertia is its absence. hedged_active and inert never share a color.",
+    "\u201cInsufficient data\u201d is its own state (hatched), never shown as a neutral middle value.",
+    "Announcements are cheap and this dashboard is read by the governments it scores \u2014 so announcement-tier news can never move a published score by more than 2 points, and every Trajectory display shows how much of the movement is just talk."];
+  const scoreKeys=["exposure_us","exposure_prc","exposure_sovereign","alignment_index","readiness",
+    "strategic_salience","lock_in","contest_score","cascade_susceptibility","confidence","evidence_count","null_coverage_rate"];
+  let h="<h2>What this dashboard measures</h2>"+
+    "<p>Every country runs on an AI technology stack \u2014 chips, data centers, telecom networks, clouds, models, apps, and the power behind them. This dashboard measures which stack each country is embedded in: the American one, China's, its own (or a third pole like the EU or India) \u2014 or a deliberate mix of both, which is a strategy in its own right, called hedging. Every number is built from dated, sourced events; belief without evidence is recorded as a research gap, not a score.</p>"+
+    "<h2>The stack \u2014 seven layers</h2><p class='dim'>Countries choose per layer, not once. Running American chips over Chinese telecom gear is normal, and the layer where a dependency sits determines what kind of leverage it creates.</p>";
+  h+=LAYERS.map(L=>"<div class='g-term'><span class='t'><b>"+cap1(L)+"</b></span><span class='dim'>"+LAYER_PLAIN[L]+"</span></div>").join("");
+  h+="<h2>DEPTH \u2014 five questions asked of every layer</h2>";
+  h+=DEPTH.map(([l,t,d])=>"<div class='g-item'><span class='g-letter'>"+l+"</span><span><b>"+t+"</b><span class='dim'>"+d+"</span></span></div>").join("");
+  h+="<h2>The country scores, in plain terms</h2>";
+  h+=scoreKeys.map(k=>{const g=GLOSSARY[k];return "<div class='g-term'><span class='t'><b>"+g.label+"</b><span class='mkey'>"+k+"</span></span><span class='dim'>"+g.plain+"</span></div>"}).join("");
+  h+="<h2>Postures \u2014 the overall pattern</h2><p class='dim'>Read from a country's full layer-by-layer record, not from any single number. In the full system this label comes from clustering; in the current desk-pass dataset it is an analyst's call, and says so.</p><p>";
+  h+=Object.entries(PLAIN_POSTURE).map(([k,v])=>"<span class='g-post'><span class='sw' style='background:"+POSTURE_COLORS[k]+"'></span><b>"+k+"</b>&nbsp;<span class='dim'>\u2014 "+v+"</span></span>").join(" ");
+  h+="</p><h2>Rules this display follows</h2>";
+  h+=RULES.map(r=>"<div class='g-item'><span class='g-letter'>\u00b7</span><span class='dim'>"+r+"</span></div>").join("");
+  h+="<h2>Where the numbers come from</h2>"+
+    "<p class='dim'>Methodology: DEPTH-N v2.0. Every published score decomposes to dated, sourced, coded events, with source quality tiered and big claims requiring two independent sources. Full methodology and code: <a href='https://github.com/bjharbison/silicon-dominoes' style='color:var(--ink)'>github.com/bjharbison/silicon-dominoes</a>.</p>"+
+    "<p class='dim'>Hover the small <span class='info' style='cursor:help'>?</span> markers anywhere in the app for these definitions in place.</p>";
+  document.getElementById("guideBody").innerHTML=h;
+}
+buildGuide();
+
 /* ====================== boot ====================== */
-drawMap().then(()=>setSource("demo"));
+drawMap().then(()=>setSource("deskpass"));
 </script>
 </body>
 </html>
