@@ -213,6 +213,33 @@
     #panel{width:100%;border-left:none;border-top:1px solid var(--line);max-height:45vh}
     table.data th{top:0}
   }
+  /* ====== simple / advanced mode ====== */
+  body:not(.simple) .simple-only{display:none!important}
+  body.simple .adv-only{display:none!important}
+  #modeToggle{display:flex;gap:0;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+  #modeToggle button{background:none;border:none;color:var(--ink-dim);font:inherit;font-size:10px;
+    letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;cursor:pointer}
+  #modeToggle button.active{color:var(--ground);background:var(--ink-dim)}
+  #view-simple{overflow-y:auto;padding:18px}
+  #simpleIntro{color:var(--ink-dim);font-size:12px;line-height:1.6;max-width:760px;margin-bottom:14px}
+  #simpleCards{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:12px}
+  .scard{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:13px;cursor:pointer}
+  .scard:hover{border-color:var(--ink-dim)}
+  .scard h3{font-family:'Space Grotesk',sans-serif;font-size:14px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .scard.insuff{background:repeating-linear-gradient(45deg,#242b38,#242b38 6px,#1c222e 6px,#1c222e 12px)}
+  .pchip{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--ground);border-radius:3px;padding:2px 7px;font-weight:700}
+  .s-sent{color:var(--ink);font-size:12px;line-height:1.7;margin:9px 0 10px}
+  .dim2{color:var(--ink-dim);font-size:11px;line-height:1.6}
+  .sbarrow{display:flex;align-items:center;gap:8px;margin:4px 0}
+  .sbl{width:92px;color:var(--ink-dim);font-size:10.5px;text-align:right;flex:none}
+  .sbar{flex:1;height:9px;background:var(--nodata);border-radius:2px;overflow:hidden}
+  .sbar>div{height:100%}
+  .sbv{width:26px;font-size:11px;flex:none}
+  .s-meta{color:var(--ink-dim);font-size:10.5px;margin-top:8px;letter-spacing:.05em}
+  .fullrec{margin-top:14px;background:none;border:1px solid var(--ink-dim);color:var(--ink);font:inherit;
+    font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;cursor:pointer;width:100%}
+  .fullrec:hover{background:var(--panel)}
 </style>
 </head>
 <body>
@@ -221,10 +248,15 @@
   <h1>Silicon Dominoes</h1>
   <nav>
     <button data-view="map" class="active">Map</button>
-    <button data-view="charts">Charts</button>
-    <button data-view="table">Table</button>
+    <button data-view="simple" class="simple-only">Overview</button>
+    <button data-view="charts" class="adv-only">Charts</button>
+    <button data-view="table" class="adv-only">Table</button>
     <button data-view="guide">Guide</button>
   </nav>
+  <div id="modeToggle" title="Simple: plain-language summaries generated from the data. Advanced: the full analytic record.">
+    <button data-mode="simple" class="active">Simple</button>
+    <button data-mode="advanced">Advanced</button>
+  </div>
   <span class="stamp" id="stamp">awaiting data</span>
 </header>
 
@@ -234,13 +266,18 @@
   <div class="view active" id="view-map">
     <svg id="map"></svg>
     <div id="legend">
-      <div>alignment_index <span class="flag-derived">(derived)</span></div>
+      <div><span class="adv-only">alignment_index <span class="flag-derived">(derived)</span></span><span class="simple-only">Net tilt</span></div>
       <canvas class="bar" id="legendbar" width="180" height="9"></canvas>
       <div class="ends"><span>−100 PRC</span><span>0</span><span>+100 US</span></div>
       <div class="row"><div class="sw" id="sw-insuff"></div>insufficient data</div>
       <div class="row"><div class="sw" style="background:var(--nodata)"></div>not in dataset</div>
       <div style="margin-top:7px;color:var(--ink-dim);max-width:210px;line-height:1.55">Color = net tilt only: blue leans on the American stack, red on China's. It hides hedging — click a country, or open Charts, for the full picture. New here? See the <b>Guide</b> tab.</div>
     </div>
+  </div>
+
+  <div class="view" id="view-simple">
+    <div id="simpleIntro">Plain-language snapshot. Every sentence below is generated word-for-word from the country's data record &mdash; nothing is hand-written. Click a card for its story; switch to <b>Advanced</b> (top right) for the full analytic detail.</div>
+    <div id="simpleCards"></div>
   </div>
 
   <div class="view" id="view-charts">
@@ -318,6 +355,45 @@ const POSTURE_COLORS = {
 };
 const alignScale = d3.scaleLinear().domain([-100,0,100])
   .range(["#c0392f","#e8e0cf","#3d6fd6"]).clamp(true);
+
+/* ====================== simple-mode lexicon (v0.2) ======================
+   Versioned phrase mappings for the plain-language layer. Every posture enum
+   in POSTURE_COLORS MUST have an entry; the smoke test asserts coverage.
+   All Simple-mode sentences are composed mechanically from these + the data
+   record — no free text, so the words can never disagree with the numbers. */
+const SIMPLE_LEXICON={version:"0.2",
+  posture:{
+    committed_us:{legend:"Firmly US stack",sent:"is firmly embedded in the US technology stack"},
+    committed_prc:{legend:"Firmly Chinese stack",sent:"is firmly embedded in the Chinese technology stack"},
+    leaning_us:{legend:"Leans US",sent:"leans toward the US technology stack"},
+    leaning_prc:{legend:"Leans China",sent:"leans toward the Chinese technology stack"},
+    hedged_active:{legend:"Playing both sides",sent:"is keeping its options open, taking deals from both the US and China"},
+    sovereign_seeking:{legend:"Building its own",sent:"is working to build its own AI capacity rather than depend on either superpower"},
+    excluded:{legend:"Cut off",sent:"is largely cut off from major AI suppliers"},
+    inert:{legend:"Not in the game",sent:"has little AI infrastructure activity so far"}},
+  layer_nouns:{power:"electricity supply",facilities:"data centers",silicon:"chips",networks:"telecom networks",
+    cloud:"cloud services",models:"AI models",applications:"apps & services"},
+  lock:["It could still change course fairly easily.","Changing course now would be costly.","Its commitments would be very hard to reverse."],
+  traj:{talk:"Most recent movement is announcements, not signed deals.",
+    done:"Most recent movement is signed contracts and built projects, not just talk.",
+    mix:"Recent movement is a mix of announcements and signed deals."},
+  conf_caveat:"Evidence is still thin \u2014 treat this as an early read.",
+  insufficient:"doesn't have enough sourced evidence for us to say"};
+let uiMode="simple";
+
+/* ====================== facility layer (earmarked, empty) ======================
+   Future facilities.json contract, one entry per facility:
+   { id, name, lat, lon, layer (one of LAYERS), pole (us|prc|sovereign|other),
+     country_iso3, status, evidence_refs[] }
+   Markers render inside the map's zoomed <g>, so zoom/pan is inherited for free.
+   Planned UI: one icon shape per layer, legend, click -> detail card, layer filter. */
+const FACILITIES=[];
+let facilityG=null, facilityProjection=null;
+function renderFacilities(){
+  if(!facilityG||!facilityProjection||!FACILITIES.length)return;
+  facilityG.selectAll("*").remove();
+  /* marker rendering lands here when FACILITIES has data */
+}
 
 /* ====================== plain-language layer ====================== */
 const TIER_WORDS={T0:"not yet able to absorb at scale",T1:"early foundations",T2:"developing capacity",
@@ -612,7 +688,7 @@ function applyDataset(data,label){
     : (prov?"<b>PROVISIONAL</b> · ":"")+"cycle <b>"+esc(data.cycle_date||"?")+"</b> · methodology <b>"+esc(data.methodology_version||"?")+
       "</b> · weights <b>"+esc((data.weight_vector_stamp&&data.weight_vector_stamp.hash)||"?")+"</b>";
   statusEl.textContent="source: "+label+" · "+data.countries.length+" record(s)";
-  recolor(); renderCharts(); renderTable();
+  recolor(); renderCharts(); renderTable(); renderSimple();
   if(selectedIso&&byIso.has(selectedIso)){
     if(panelLayer) showLayerPanel(selectedIso,panelLayer); else showPanel(selectedIso);
   }
@@ -654,6 +730,8 @@ async function drawMap(){
       let line;
       if(!rec) line="<span class='tt-dim'>not in dataset</span>";
       else if(rec.status==="insufficient_data") line="<span class='tt-dim'>insufficient data · evidence_count "+rec.evidence_count+"</span>";
+      else if(uiMode==="simple") line=esc((SIMPLE_LEXICON.posture[rec.posture]||{legend:rec.posture}).legend)+
+        "<br><span class='tt-dim'>US "+rec.exposure_us+" · China "+rec.exposure_prc+" — click for the story</span>";
       else line="net tilt "+fmtSigned(rec.alignment_index.value)+" <span class='tt-dim'>(derived)</span> · "+esc(rec.posture)+
         "<br><span class='tt-dim'>"+esc(PLAIN_POSTURE[rec.posture]||"")+" — click for the full record</span>";
       showTip(ev,"<div class='tt-name'>"+esc(nameOf(iso,d))+" · "+esc(iso)+"</div>"+line);
@@ -663,6 +741,7 @@ async function drawMap(){
   const zoom=d3.zoom().scaleExtent([1,10]).on("zoom",ev=>g.attr("transform",ev.transform));
   svg.call(zoom).on("dblclick.zoom",null);
   svg.on("dblclick",()=>svg.transition().duration(400).call(zoom.transform,d3.zoomIdentity));
+  facilityG=g.append("g").attr("id","facilityLayer"); facilityProjection=projection; renderFacilities();
   const defs=svg.append("defs");
   const pat=defs.append("pattern").attr("id","hatch").attr("width",6).attr("height",6)
     .attr("patternTransform","rotate(45)").attr("patternUnits","userSpaceOnUse");
@@ -1047,6 +1126,21 @@ function showPanel(iso){
       (rec.research_gap_refs?"<br>open research gaps: "+rec.research_gap_refs.map(esc).join(", "):"")+"</div>";
     return;
   }
+  if(uiMode==="simple"){
+    const P=SIMPLE_LEXICON.posture[rec.posture]||{legend:rec.posture};
+    panel.innerHTML=
+      "<div class='p-head'><h2>"+esc(name)+"</h2><span class='iso'>"+esc(iso)+"</span>"+
+      "<span class='pchip' style='background:"+(POSTURE_COLORS[rec.posture]||"#5a6170")+"'>"+esc(P.legend)+"</span></div>"+
+      "<div class='s-sent' style='margin-top:9px'>"+esc(simpleSummary(rec,name))+"</div>"+
+      "<div class='sec'><h3>The two numbers behind the label</h3>"+
+      sbarS("US exposure",rec.exposure_us,"var(--us)")+
+      sbarS("China exposure",rec.exposure_prc,"var(--prc)")+
+      "<div class='dim2' style='margin-top:7px'>The lean label is just the difference between these two \u2014 both can be high at once, which is exactly what \u201cplaying both sides\u201d looks like.</div></div>"+
+      "<div class='s-meta'>confidence "+confDots(rec)+" \u00b7 based on "+rec.evidence_count+" sourced events</div>"+
+      "<button class='fullrec' id='goAdvanced'>Show full record \u2192 Advanced</button>";
+    document.getElementById("goAdvanced").addEventListener("click",()=>{setMode("advanced");showPanel(iso);});
+    return;
+  }
   const pc=POSTURE_COLORS[rec.posture]||"var(--ink-dim)";
   let html=
     "<div class='p-head'><h2>"+esc(name)+"</h2><span class='iso'>"+esc(iso)+"</span>"+
@@ -1297,6 +1391,85 @@ function updateLayselNote(){
     : "Installed-base (D) shares at the <b>"+esc(chartLayer)+"</b> layer \u2014 what's physically in place there. Lock-in, contest, and readiness charts stay country-level."+info("c_layerview");
 }
 buildLaysel();
+
+/* ====================== simple mode engine ====================== */
+function confDots(rec){
+  const lvl=rec.confidence&&rec.confidence.level!=null?rec.confidence.level:0;
+  return lvl<0.40?"\u25cf\u25cb\u25cb":lvl<=0.70?"\u25cf\u25cf\u25cb":"\u25cf\u25cf\u25cf";
+}
+function simpleSummary(rec,name){
+  const LX=SIMPLE_LEXICON, p=rec.posture;
+  const noun=l=>LX.layer_nouns[l]||l;
+  const topLayers=poles=>{
+    const s=LAYERS.map(l=>{const L=rec.per_layer&&rec.per_layer[l];
+      return [l, L&&L.d_vector?poles.reduce((a,pp)=>a+(L.d_vector[pp]||0),0):0];});
+    s.sort((a,b)=>b[1]-a[1]);
+    return s.slice(0,2).filter(x=>x[1]>0).map(x=>noun(x[0]));
+  };
+  let first;
+  const base=(LX.posture[p]||{sent:"is in an unmapped posture ("+p+")"}).sent;
+  if(p==="excluded"||p==="inert"){
+    const dom=rec.exposure_prc>=rec.exposure_us?"prc":"us";
+    const tl=topLayers([dom]);
+    first=name+" "+base+(tl.length?"; what presence exists is mostly "+(dom==="prc"?"Chinese ":"American ")+tl.join(" and "):"")+".";
+  }else{
+    const polesOf={committed_us:["us"],leaning_us:["us"],committed_prc:["prc"],leaning_prc:["prc"],
+      sovereign_seeking:["sovereign"],hedged_active:["us","prc"]};
+    const tl=topLayers(polesOf[p]||["us","prc"]);
+    first=name+" "+base+(tl.length?", driven mostly by "+tl.join(" and "):"")+".";
+  }
+  const li=rec.lock_in, lock=li<=33?LX.lock[0]:li<=66?LX.lock[1]:LX.lock[2];
+  let talk=0,done=0;
+  for(const l of LAYERS){
+    const L=rec.per_layer&&rec.per_layer[l]; if(!L||!L.t)continue;
+    const tot=Object.values(L.t.value_by_pole||{}).reduce((a,b)=>a+b,0);
+    const tc=L.t.tier_composition||{}; const s=Object.values(tc).reduce((a,b)=>a+b,0)||1;
+    talk+=tot*((tc.t1||0)+(tc.t2||0))/s; done+=tot*((tc.t3||0)+(tc.t4||0)+(tc.t5||0))/s;
+  }
+  const tt=talk+done;
+  const traj=tt===0?"":(talk/tt>=0.65?LX.traj.talk:done/tt>=0.65?LX.traj.done:LX.traj.mix);
+  const lvl=rec.confidence&&rec.confidence.level!=null?rec.confidence.level:0;
+  const caveat=lvl<0.40?LX.conf_caveat:"";
+  return first+" "+lock+(traj?" "+traj:"")+(caveat?" "+caveat:"")+" Based on "+rec.evidence_count+" sourced events.";
+}
+function sbarS(lbl,v,color){
+  return "<div class='sbarrow'><span class='sbl'>"+esc(lbl)+"</span><div class='sbar'><div style='width:"+
+    Math.max(0,Math.min(100,v))+"%;background:"+color+"'></div></div><span class='sbv'>"+v+"</span></div>";
+}
+function renderSimple(){
+  const el=document.getElementById("simpleCards");
+  if(!el||!dataset)return;
+  const rows=dataset.countries.slice().sort((a,b)=>{
+    const av=a.status==="scored"?a.alignment_index.value:-999;
+    const bv=b.status==="scored"?b.alignment_index.value:-999;
+    return bv-av;});
+  el.innerHTML=rows.map(c=>{
+    const name=nameOf(c.iso3);
+    if(c.status!=="scored")
+      return "<div class='scard insuff' data-iso='"+c.iso3+"'><h3>"+esc(name)+"</h3>"+
+        "<div class='s-sent'>"+esc(name)+" "+esc(SIMPLE_LEXICON.insufficient)+".</div>"+
+        "<div class='dim2'>"+c.evidence_count+" evidence item(s) on file \u2014 below the minimum. Not neutral: unknown.</div></div>";
+    const P=SIMPLE_LEXICON.posture[c.posture]||{legend:c.posture};
+    return "<div class='scard' data-iso='"+c.iso3+"'>"+
+      "<h3>"+esc(name)+" <span class='pchip' style='background:"+(POSTURE_COLORS[c.posture]||"#5a6170")+"'>"+esc(P.legend)+"</span></h3>"+
+      "<div class='s-sent'>"+esc(simpleSummary(c,name))+"</div>"+
+      sbarS("US",c.exposure_us,"var(--us)")+sbarS("China",c.exposure_prc,"var(--prc)")+
+      "<div class='s-meta'>confidence "+confDots(c)+"</div></div>";
+  }).join("");
+  el.querySelectorAll(".scard").forEach(d=>d.addEventListener("click",()=>select(d.dataset.iso)));
+}
+function switchView(v){const b=document.querySelector("nav button[data-view='"+v+"']");if(b)b.click();}
+function setMode(m){
+  uiMode=m;
+  document.body.classList.toggle("simple",m==="simple");
+  document.querySelectorAll("#modeToggle button").forEach(b=>b.classList.toggle("active",b.dataset.mode===m));
+  if(m==="simple"&&(currentView==="charts"||currentView==="table"))switchView("simple");
+  if(m==="advanced"&&currentView==="simple")switchView("map");
+  if(selectedIso&&byIso.has(selectedIso)&&!panelLayer)showPanel(selectedIso);
+  try{localStorage.setItem("sd_mode",m)}catch(e){}
+}
+document.querySelectorAll("#modeToggle button").forEach(b=>b.addEventListener("click",()=>setMode(b.dataset.mode)));
+(function(){let m="simple";try{const s=localStorage.getItem("sd_mode");if(s==="advanced"||s==="simple")m=s;}catch(e){}setMode(m);})();
 
 /* ====================== boot ====================== */
 drawMap().then(()=>setSource("deskpass"));
