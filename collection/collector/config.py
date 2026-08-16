@@ -55,3 +55,13 @@ def sync_feeds(conn, cfg: dict) -> None:
                 (feed_id, feed_class, url),
             )
     conn.commit()
+
+
+# --------------------------------------------------------------------- LLM --
+# Step 4a extraction. Routed through LiteLLM on CT 102 to the Mac mini per the
+# homelab principle (Mac = inference only). Temperature is fixed at 0 in
+# extract.py, not configurable — reproducibility is a requirement, not a knob.
+LLM_BASE = os.environ.get("SD_LLM_BASE", "http://192.168.1.190:4000")
+LLM_MODEL = os.environ.get("SD_LLM_MODEL", "qwen3.6:35b-mlx")
+LLM_KEY = os.environ.get("SD_LLM_KEY", "")
+LLM_TIMEOUT = int(os.environ.get("SD_LLM_TIMEOUT", "180"))

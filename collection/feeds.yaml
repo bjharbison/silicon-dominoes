@@ -16,29 +16,34 @@ pilot_scope:
 feeds:
   # ---- regional trade / technical press (S2-class sources) ----------------
   - feed_id: rss-techwireasia
+    source_tier: S2
     feed_class: rss
     url: https://techwireasia.com/feed/
     notes: Regional tech trade press; broad SEA coverage.
 
   - feed_id: rss-developingtelecoms
+    source_tier: S2
     feed_class: rss
     url: https://developingtelecoms.com/component/obrss/developing-telecoms.feed
     unverified: true
     notes: Telecom infrastructure in emerging markets; strong on RAN vendor awards.
 
   - feed_id: rss-datacenterdynamics
+    source_tier: S2
     feed_class: rss
     url: https://www.datacenterdynamics.com/rss/
     unverified: true
     notes: DC builds, cloud regions, subsea cable landings — Facilities/Cloud layers.
 
   - feed_id: rss-lightreading
+    source_tier: S2
     feed_class: rss
     url: https://www.lightreading.com/rss.xml
     unverified: true
     notes: Networks layer; vendor contract reporting.
 
   - feed_id: rss-e27
+    source_tier: S3
     feed_class: rss
     url: https://e27.co/feed/
     unverified: true
@@ -46,6 +51,7 @@ feeds:
 
   # ---- national / institutional (S1-class sources) ------------------------
   - feed_id: rss-imda-sg
+    source_tier: S1
     feed_class: rss
     url: https://www.imda.gov.sg/rss-feeds
     unverified: true
@@ -53,6 +59,7 @@ feeds:
       press-release index URL and let the page-change detector handle it.
 
   - feed_id: rss-mic-vn
+    source_tier: S1
     feed_class: rss
     url: https://english.mic.gov.vn/rss/home.rss
     unverified: true
@@ -62,6 +69,7 @@ feeds:
   # Query is BUILT AT RUNTIME from the facet files (system prompt §3.2 —
   # synonyms are never hard-coded). One capture per run of the result set.
   - feed_id: gdelt-sea-stack
+    source_tier: S3
     feed_class: structured_news
     url: https://api.gdeltproject.org/api/v2/doc/doc
     gdelt:

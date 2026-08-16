@@ -1,0 +1,176 @@
+# Silicon Dominoes — facet lists (system prompt §3.2)
+# Version: 1.0 · 2026-08-16
+#
+# Used by the deterministic prefilter in collection/extract.py and by GDELT
+# Boolean query construction. Synonyms live HERE, never hard-coded inline
+# (system prompt §3.2). Any edit bumps the version below.
+#
+# Prefilter rule: a capture proceeds to LLM extraction only if it matches
+# >=1 geo term AND >=1 entity term. Instrument terms are NOT part of the
+# gate — they are too generic and would admit most trade press — but they
+# are recorded here for GDELT query construction.
+
+version: "1.0"
+
+# ---------------------------------------------------------------- geography --
+# Pilot scope: nine Southeast Asian states. Includes demonyms, capitals, and
+# the specific subnational sites where AI/DC/telecom investment concentrates,
+# because regional press frequently names the site and not the country.
+geo:
+  SGP:
+    - Singapore
+    - Singaporean
+    - Jurong
+    - Tuas
+    - IMDA
+  MYS:
+    - Malaysia
+    - Malaysian
+    - Kuala Lumpur
+    - Johor
+    - Iskandar Puteri
+    - Cyberjaya
+    - Penang
+    - Sarawak
+    - MDEC
+  IDN:
+    - Indonesia
+    - Indonesian
+    - Jakarta
+    - Batam
+    - Riau
+    - Nongsa
+    - Kominfo
+    - Komdigi
+  VNM:
+    - Vietnam
+    - Viet Nam
+    - Vietnamese
+    - Hanoi
+    - Ho Chi Minh City
+    - Da Nang
+    - Viettel
+    - VNPT
+    - FPT
+  THA:
+    - Thailand
+    - Thai
+    - Bangkok
+    - Chonburi
+    - Rayong
+    - Eastern Economic Corridor
+    - NBTC
+  PHL:
+    - Philippines
+    - Philippine
+    - Filipino
+    - Manila
+    - Cebu
+    - Clark
+    - Batangas
+    - DICT
+  KHM:
+    - Cambodia
+    - Cambodian
+    - Phnom Penh
+    - Sihanoukville
+  LAO:
+    - Laos
+    - Lao PDR
+    - Laotian
+    - Vientiane
+  MMR:
+    - Myanmar
+    - Burma
+    - Burmese
+    - Yangon
+    - Naypyidaw
+
+# ------------------------------------------------------------------ actors --
+# Per system prompt §1. Poles are kept separate so the prefilter can record
+# WHICH vector matched — useful triage signal for the reviewer, and required
+# for the `direction` field.
+actors:
+  prc:
+    silicon: [Huawei, HiSilicon, Ascend, Kunpeng, Cambricon, Biren, Moore Threads, Hygon, SMIC]
+    networks: [Huawei, ZTE, Hikvision, Dahua, China Mobile, China Telecom, China Unicom]
+    cloud: [Alibaba Cloud, Huawei Cloud, Tencent Cloud, Inspur, Sugon, Aliyun]
+    models: [DeepSeek, Qwen, Kimi, GLM, Ernie, Hunyuan, MiniMax, Zhipu, Moonshot, Baichuan]
+    finance: [China Exim, Export-Import Bank of China, China Development Bank, Silk Road Fund, CIDCA, AIIB]
+    governance: [WAICO, World AI Cooperation Organization, Global AI Governance Initiative, Digital Silk Road]
+  us:
+    silicon: [Nvidia, AMD, Broadcom, Marvell, Intel, Micron, Qualcomm, GB200, GB300, H100, H200, B200, DGX]
+    networks: [Cisco, Arista, Juniper, Ciena, Corning, Nokia, Ericsson]
+    cloud: [AWS, Amazon Web Services, Microsoft Azure, Google Cloud, Oracle Cloud, CoreWeave, Equinix, Digital Realty]
+    models: [OpenAI, Anthropic, Google DeepMind, Meta AI, xAI, Claude, GPT, Gemini, Llama]
+    finance: [DFC, Development Finance Corporation, US EXIM, Export-Import Bank of the United States, JBIC, KEXIM]
+    governance: [Pax Silica, American AI Exports Program, Entity List, export controls, BIS]
+  sovereign:
+    eu: [Mistral, Aleph Alpha, ASML, Imec, EuroHPC, Schwarz Digits, OVHcloud, GDPR adequacy, AI Act]
+    gulf: [G42, TII, Falcon, HUMAIN, Core42, MGX, Mubadala, PIF]
+    asia: [Sakana, Rakuten AI, Naver, LG Exaone, Samsung, SK Hynix, TSMC, ITRI]
+    india: [Reliance Jio, Tata, Yotta, BharatGPT, Sarvam, IndiaAI]
+    other: [SEA-LION, AI Singapore, open-weight, sovereign AI, sovereign cloud]
+
+# ---------------------------------------------- operators and counterparties --
+# Regional DC/telecom operators and sub-state entities (doc 01 §5). These are
+# frequently the actual decision-maker; a capture naming one is worth reading
+# even when no pole vendor is named in the headline.
+operators:
+  - STT GDC
+  - ST Telemedia
+  - YTL
+  - Princeton Digital Group
+  - Bridge Data Centres
+  - AirTrunk
+  - Vantage Data Centers
+  - EdgeConneX
+  - GDS
+  - Chindata
+  - Telkom Indonesia
+  - Telkomsel
+  - Indosat
+  - XL Axiata
+  - Singtel
+  - StarHub
+  - M1
+  - Maxis
+  - Celcom
+  - Digi
+  - Telekom Malaysia
+  - TIME dotCom
+  - AIS
+  - True Corporation
+  - Globe Telecom
+  - PLDT
+  - Converge
+  - Viettel
+  - VNPT
+  - MobiFone
+  - Temasek
+  - Khazanah
+  - Danantara
+  - GIC
+
+# -------------------------------------------------------------- instruments --
+# NOT part of the prefilter gate (too generic). Retained for GDELT Boolean
+# query construction and as a hint list for the extraction prompt.
+instruments:
+  tier1: [memorandum of understanding, MOU, letter of intent, communique, statement of intent, joint declaration]
+  tier2: [framework agreement, feasibility study, pilot project, proof of concept, exploratory]
+  tier3: [contract awarded, procurement award, signed agreement, tender won, supply agreement, purchase order]
+  tier4: [financial close, financing closed, groundbreaking, construction begins, export license, loan facility, green loan, syndicated loan]
+  tier5: [operational, went live, fully deployed, migration complete, refresh contract, expansion phase]
+  reversal: [cancelled, terminated, suspended, banned, expelled, license denied, withdrawn, blacklisted, divested]
+
+# ------------------------------------------------------------------ domains --
+# Stack layer hint terms (system prompt §1). Used by the extraction prompt to
+# propose `layer`; the reviewer confirms.
+layers:
+  power: [power purchase agreement, PPA, grid connection, substation, megawatt, MW capacity, generation, transmission]
+  facilities: [data center, data centre, campus, colocation, hyperscale, MW IT load, cooling, land acquisition]
+  silicon: [GPU, accelerator, chip, semiconductor, fab, wafer, foundry, packaging, HBM]
+  networks: [5G, RAN, submarine cable, subsea cable, fiber, core network, spectrum, landing station, IXP]
+  cloud: [cloud region, availability zone, sovereign cloud, IaaS, PaaS, cloud migration, tenancy]
+  models: [foundation model, LLM, large language model, model training, fine-tuning, open weights, parameters]
+  applications: [smart city, safe city, surveillance, e-government, digital ID, national platform, super app]

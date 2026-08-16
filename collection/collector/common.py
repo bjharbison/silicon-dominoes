@@ -14,7 +14,10 @@ from . import config
 
 # ---------------------------------------------------------------- database --
 def connect() -> psycopg.Connection:
-    return psycopg.connect(config.DB_URL)
+    # The database was created with SQL_ASCII encoding, under which psycopg
+    # cannot infer a text encoding and returns every text column as bytes.
+    # Pinning the client encoding makes text arrive as str everywhere.
+    return psycopg.connect(config.DB_URL, client_encoding="utf8")
 
 
 # ----------------------------------------------------------------- archive --
