@@ -32,6 +32,8 @@ def fetch_article(url: str) -> bytes | None:
 def poll_feed(conn, feed: dict) -> tuple[int, int, str | None]:
     """Returns (entries_seen, new_captures, error)."""
     feed_id, url = feed["feed_id"], feed["url"]
+    dedupe_on = feed.get("dedupe_on", "url")
+    skipped = 0
     parsed = feedparser.parse(url, agent=config.USER_AGENT)
     if parsed.get("bozo") and not parsed.entries:
         return 0, 0, f"unparseable feed: {parsed.get('bozo_exception')}"
@@ -40,6 +42,9 @@ def poll_feed(conn, feed: dict) -> tuple[int, int, str | None]:
     for entry in parsed.entries:
         link = entry.get("link")
         if not link:
+            continue
+        if dedupe_on == "url" and common.url_already_captured(conn, feed_id, link):
+            skipped += 1
             continue
         payload = fetch_article(link)
         if payload is not None:
@@ -53,6 +58,8 @@ def poll_feed(conn, feed: dict) -> tuple[int, int, str | None]:
                                  ext=ext, parse_status=status,
                                  snapshot_id=snap_id, snapshot_url=snap_url):
             new += 1
+    if skipped:
+        print(f"[{feed_id}] skipped {skipped} already-captured URL(s)")
     return len(parsed.entries), new, None
 
 

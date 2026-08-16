@@ -1,6 +1,7 @@
 """Silicon Dominoes collector — small shared helpers (db, archive, wayback, ntfy)."""
 from __future__ import annotations
 
+import gzip
 import hashlib
 import time
 from datetime import datetime, timezone
@@ -26,12 +27,13 @@ def write_archive(feed_id: str, payload: bytes, ext: str = "bin") -> str:
     (path relative to SD_ARCHIVE_DIR). Idempotent: same content = same path."""
     digest = sha256_hex(payload)
     now = datetime.now(timezone.utc)
-    rel = Path("raw") / feed_id / f"{now:%Y}" / f"{now:%m}" / digest[:2] / f"{digest}.{ext}"
+    rel = (Path("raw") / feed_id / f"{now:%Y}" / f"{now:%m}" / digest[:2]
+           / f"{digest}.{ext}.gz")
     dest = config.ARCHIVE_DIR / rel
     dest.parent.mkdir(parents=True, exist_ok=True)
     if not dest.exists():
         tmp = dest.with_suffix(dest.suffix + ".tmp")
-        tmp.write_bytes(payload)
+        tmp.write_bytes(gzip.compress(payload))
         tmp.rename(dest)
     return str(rel)
 
@@ -59,6 +61,20 @@ def insert_capture(conn, *, feed_id: str, url: str, payload: bytes, ext: str,
         cur.execute("UPDATE feeds SET last_capture_at = now() WHERE feed_id = %s", (feed_id,))
     conn.commit()
     return inserted
+
+
+def url_already_captured(conn, feed_id: str, url: str) -> bool:
+    """True if this (feed_id, url) was ever captured. Used to skip re-fetching
+    news articles whose bytes change on every render (request UIDs, ad slots)
+    while their content does not. Feeds whose URL is stable but whose content
+    is the signal (membership pages, tender portals) set dedupe_on: content
+    in feeds.yaml and are exempt."""
+    with conn.cursor() as cur:
+        cur.execute(
+            "SELECT 1 FROM raw_captures WHERE feed_id = %s AND url = %s LIMIT 1",
+            (feed_id, url),
+        )
+        return cur.fetchone() is not None
 
 
 def latest_sha(conn, feed_id: str) -> str | None:

@@ -1,0 +1,7 @@
+-- 003_url_index.sql — supports URL-based dedup for news feeds (2026-08-16).
+-- Non-unique by design: historical content-hash duplicates already exist in
+-- raw_captures and cannot be deleted (immutability trigger), so a UNIQUE
+-- index would fail to build. Uniqueness is enforced in the poller instead.
+-- Apply as table owner: su - postgres -c "psql -d silicon_dominoes -f 003_url_index.sql"
+CREATE INDEX IF NOT EXISTS idx_raw_captures_url
+    ON raw_captures (feed_id, url);
