@@ -6,11 +6,27 @@
 # (system prompt §3.2). Any edit bumps the version below.
 #
 # Prefilter rule: a capture proceeds to LLM extraction only if it matches
-# >=1 geo term AND >=1 entity term. Instrument terms are NOT part of the
+# >=1 geo term AND >=1 entity term.
+#
+# TWO STANDING EXCLUSIONS (v1.1), both measured, both easy to re-break:
+#
+# 1. No term may appear in BOTH `geo` and `actors`/`operators`. Such a term
+#    satisfies both sides of the AND gate alone, degrading it to OR.
+#
+# 2. Ministry names are NOT on the entity watchlist, despite system prompt
+#    §3.1 mandating a per-country ministry watch. A ministry's own outlet
+#    prints its name in every article, so on that feed the name carries zero
+#    discriminating power. Measured on rss-mic-vn 2026-08-16: adding
+#    "Bộ Khoa học và Công nghệ" took passes 3 -> 17, but 11 of the 17 matched
+#    the ministry and nothing else — masthead, not signal. Note the term is
+#    selective only by orthographic accident: the abbreviations "Bộ KH&CN" (7
+#    captures) and "BKHCN" (6) are NOT matched, and adding them as synonyms
+#    would collapse the gate for this feed. Ministries are tracked via the
+#    §3.1 watchlist monitors, not via this prefilter. Instrument terms are NOT part of the
 # gate — they are too generic and would admit most trade press — but they
 # are recorded here for GDELT query construction.
 
-version: "1.0"
+version: "1.1"
 
 # ---------------------------------------------------------------- geography --
 # Pilot scope: nine Southeast Asian states. Includes demonyms, capitals, and
@@ -49,9 +65,21 @@ geo:
     - Hanoi
     - Ho Chi Minh City
     - Da Nang
-    - Viettel
-    - VNPT
-    - FPT
+    # Vietnamese-language forms: mic-vn publishes in Vietnamese and none of
+    # the undecorated terms above match its copy. Measured 2026-08-16 over 63
+    # deduped captures: "Việt Nam" 33, "Hồ Chí Minh" 6, "Hà Nội" 5.
+    # Archive text is already NFC-normalised, so these match as written.
+    - Việt Nam
+    - Hà Nội
+    - Đà Nẵng
+    - Thành phố Hồ Chí Minh
+    - Hồ Chí Minh
+    - TP.HCM
+    - Hải Phòng
+    # Viettel / VNPT / FPT removed from geo (v1.1): a term present in BOTH geo
+    # and operators satisfies both sides of the geo-AND-entity gate by itself,
+    # silently degrading the gate to OR for that term. Operator names belong in
+    # `operators` only. FPT was geo-only and is added there below.
   THA:
     - Thailand
     - Thai
@@ -148,6 +176,11 @@ operators:
   - Viettel
   - VNPT
   - MobiFone
+  - FPT
+  - CMC
+  - VNG
+  - VinAI
+  - Vingroup
   - Temasek
   - Khazanah
   - Danantara
