@@ -208,11 +208,8 @@
   footer label:hover{border-color:var(--ink-dim)}
   #status{margin-left:auto}
   input[type=file]{display:none}
-  @media (max-width:900px){
-    main{flex-direction:column}
-    #panel{width:100%;border-left:none;border-top:1px solid var(--line);max-height:45vh}
-    table.data th{top:0}
-  }
+  /* v5.1: mobile rules moved to the end of this stylesheet so they win on
+     source order against the simple/advanced section below. */
   /* ====== simple / advanced mode ====== */
   body:not(.simple) .simple-only{display:none!important}
   body.simple .adv-only{display:none!important}
@@ -240,6 +237,35 @@
   .fullrec{margin-top:14px;background:none;border:1px solid var(--ink-dim);color:var(--ink);font:inherit;
     font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;cursor:pointer;width:100%}
   .fullrec:hover{background:var(--panel)}
+
+  /* ====== v5.1 mobile ======
+     The page scrolls; main no longer competes with header/banner/footer for a
+     fixed 100vh. #map carries an explicit height so the projection always has
+     a real box to fit into, and #legend flows below the map instead of
+     floating over a container that may be short. */
+  @media (max-width:900px){
+    html,body{height:auto}
+    body{min-height:100%}
+    header{padding:10px 12px;gap:10px}
+    .stamp{margin-left:0;white-space:normal;transform:none;line-height:1.5}
+    main{flex-direction:column;min-height:0}
+    #view-map.active{display:flex;flex-direction:column}
+    #map{height:58vh;min-height:300px;flex:none;touch-action:pan-y}
+    #legend{position:static;margin:10px 12px 4px;max-width:none;z-index:auto}
+    #legend .bar{width:100%;max-width:240px}
+    #view-charts,#view-table,#view-guide,#view-simple{overflow-y:visible;padding:14px 12px}
+    #panel{width:100%;flex:none;border-left:none;border-top:1px solid var(--line);
+      max-height:none;overflow-y:visible;padding:14px 12px}
+    #simpleCards{grid-template-columns:1fr}
+    .chart{margin-bottom:20px}
+    footer{flex-wrap:wrap;row-gap:8px}
+    #status{margin-left:0;width:100%}
+    #tfilter{width:100%}
+    table.data th{top:0}
+    /* tap targets */
+    nav button,#modeToggle button,.laysel button{padding:8px 13px;font-size:11px}
+    footer label,footer select{padding:7px 10px}
+  }
 </style>
 </head>
 <body>
@@ -711,16 +737,45 @@ for(const btn of document.querySelectorAll("nav button")){
 }
 
 /* ====================== map ====================== */
+/* v5.1: measure the <svg> itself rather than its wrapper, and never hand d3 a
+   degenerate box. Previously W/H came from #view-map.clientWidth/Height with a
+   ||fallback that only fires on exactly 0 -- a container a few px tall passed
+   a NEGATIVE height into fitSize() and the map silently drew nothing. */
+function mapBox(){
+  const wrap=document.getElementById("view-map");
+  const r=svg.node().getBoundingClientRect();
+  const w=Math.round(r.width)||wrap.clientWidth||1000;
+  const h=Math.round(r.height)||wrap.clientHeight||560;
+  return {W:Math.max(280,w),H:Math.max(240,h)};
+}
+function mapProjectionFor(W,H){
+  return d3.geoNaturalEarth1()
+    .fitSize([W,Math.max(120,H-16)],{type:"FeatureCollection",features});
+}
+/* Re-fit on rotate / resize / browser-chrome collapse. Cheap: re-paths the
+   existing selection, no refetch, no rebind. */
+function refitMap(){
+  if(!countryPaths||!features||!features.length)return;
+  const {W,H}=mapBox();
+  svg.attr("viewBox","0 0 "+W+" "+H);
+  const projection=mapProjectionFor(W,H);
+  countryPaths.attr("d",d3.geoPath(projection));
+  facilityProjection=projection; renderFacilities();
+}
+let _refitTimer=null;
+window.addEventListener("resize",()=>{
+  clearTimeout(_refitTimer); _refitTimer=setTimeout(refitMap,180);
+});
+
 async function drawMap(){
   let world;
   try{ world=await d3.json(GEO_URL); }
   catch(e){ statusEl.textContent="basemap failed to load — check network access"; return; }
   features=world.features.filter(f=>isoOf(f)!=="ATA");
   featureIndex=new Map(features.map(f=>[isoOf(f),f]));
-  const wrap=document.getElementById("view-map");
-  const W=wrap.clientWidth||1000, H=wrap.clientHeight||560;
+  const {W,H}=mapBox();
   svg.attr("viewBox","0 0 "+W+" "+H);
-  const projection=d3.geoNaturalEarth1().fitSize([W,H-16],{type:"FeatureCollection",features});
+  const projection=mapProjectionFor(W,H);
   const path=d3.geoPath(projection);
   const g=svg.append("g");
   countryPaths=g.selectAll("path").data(features).join("path")
@@ -750,6 +805,7 @@ async function drawMap(){
   document.getElementById("sw-insuff").style.background=
     "repeating-linear-gradient(45deg,#242b38,#242b38 3px,#4a5468 3px,#4a5468 5px)";
   recolor();
+  requestAnimationFrame(()=>requestAnimationFrame(refitMap));
 }
 function recolor(){
   if(!countryPaths)return;
@@ -1458,7 +1514,8 @@ function renderSimple(){
   }).join("");
   el.querySelectorAll(".scard").forEach(d=>d.addEventListener("click",()=>select(d.dataset.iso)));
 }
-function switchView(v){const b=document.querySelector("nav button[data-view='"+v+"']");if(b)b.click();}
+function switchView(v){const b=document.querySelector("nav button[data-view='"+v+"']");if(b)b.click();
+  if(v==="map")requestAnimationFrame(refitMap);}
 function setMode(m){
   uiMode=m;
   document.body.classList.toggle("simple",m==="simple");
