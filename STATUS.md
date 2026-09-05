@@ -1,5 +1,5 @@
 # Silicon Dominoes — Project Status
-Last updated: 2026-09-05 (fifth session) · Purpose: running record of what's built, what's live, and what's next. Update this file at the end of each work session — **and commit it.** This file was not tracked in git until 2026-09-05; see that session's entry.
+Last updated: 2026-09-05 (fifth session, end of day) · Purpose: running record of what's built, what's live, and what's next. Update this file at the end of each work session — **and commit it.** This file was not tracked in git until 2026-09-05; see that session's entry.
 
 ## Where things stand
 
@@ -96,7 +96,11 @@ Also caught: `collection/sql/003_url_index.sql` had never been written as a file
 
 **New operating rule:** edit on Windows → push → `pct exec 109 -- su - dominoes -c '~/bin/sd-deploy'` on the Proxmox host. The CT never authors. The `collection/.venv` and `/etc/silicon-dominoes/collector.env` are outside the repo and unaffected by the reset.
 
-**Remaining prerequisite before the first agent task:** the `PreToolUse` hook for the DDL prohibition. `CLAUDE.md` is context, not a gate; that violation is the unrecoverable one. Then the first task is `validate.py` (`fixtures/must-reject/`, `--self-test`), because the grader must exist before anything it grades.
+**Later same day — both prerequisites closed, first agent task accepted:**
+- **`PreToolUse` guard landed as `b576eff`.** `.claude/settings.json` registers `.claude/hooks/guard-bash.sh` on the Bash tool; it blocks `psql`, `pg_dump`, `su - postgres`, `pct …`, `ssh user@`, any `192.168.1.x` address, `sd-deploy`, `systemctl`, and `collector.env`. Exit 2 with the reason on stderr, which Claude Code feeds back to the agent. **SQL text is deliberately not blocked** — writing numbered `.sql` files is the agent's job; executing them is Brian's, as `postgres` inside CT 109. `.gitattributes` pins `*.sh` to LF so the script survives Windows checkout. Verified live in the desktop Code tab: the agent's `echo 192.168.1.204` was blocked with the message surfaced; `/hooks` listing is terminal-only and says nothing about whether the hook loads.
+- **First Claude Code agent task accepted — `3b016ee`.** `validate.py` now rejects `synthetic: true` / `provisional: true` envelopes with an explicit check and its own message (containment is intentional, not incidental via `additionalProperties`); `schemas/fixtures/must-reject/` holds the desk-pass file and a minimal synthetic envelope; `--self-test` fails if any must-reject case validates. The agent respected the guard when it hit it and ran the test via WSL Ubuntu (Python 3.14) because **Windows Python on Spectre is 3.8 without `jsonschema` — use WSL for `validate.py` locally.** Agent committed nothing; Brian reviewed the diff, committed on the task branch, fast-forward merged, pushed, deployed.
+- **Agent-task loop as run:** open Claude Code (desktop Code tab, Local, folder = checkout, `main`, worktree off) → paste task with "done = passing test, don't commit" → `git diff --stat main` + rerun the test yourself → keep (`commit`, `checkout main`, `merge --ff-only`, `push`, `sd-deploy`) or discard (`branch -D`).
+- Observed: agent output linked a commit under a different GitHub account's URL (`VerdunHere/…`), presumably inferred from another login on the machine. Remote is `bjharbison`; pushes confirm it. Treat agent-generated links as unverified.
 
 ## Gap record: 2026-08-16 → 2026-09-05 (reconstructed, not contemporaneous)
 
@@ -230,7 +234,7 @@ The anti-join keys on `review_queue` existence, so the 178 prefilter rejects wil
 
 ## Immediate next action (next session)
 
-**As of 2026-09-05:** (1) add the `PreToolUse` hook enforcing the DDL prohibition; (2) open Claude Code on the first agent task — `validate.py` intentional containment (`fixtures/must-reject/`, explicit `synthetic`/`provisional` rejection, `--self-test`), one branch, done = passing test; (3) verify which Phase 1 intake items below are actually complete before resuming them.
+**As of 2026-09-05 (end of day):** prerequisites done, grader exists. Next: (1) verify which Phase 1 intake items below are actually complete (`trafilatura` in requirements, `Viettel`/`VNPT`/`FPT` in `actors`, `facets_version` anti-join, e27, GDELT expansion) before resuming them — several are now candidates for agent tasks since `validate.py --self-test` and the extractor's `--dry-run` give them a finish line; (2) Phase 2 breaking schema pass (doc 07 F-2/F-3/F-7, doc 04 L-8/L-9, F-6 text, H sub-indices, major `schema_version` bump) — agent writes schema deltas and `.sql`, Brian applies DDL; `validate.py` must-reject fixtures grow with it; (3) review UI only after Phase 2 lands.
 
 **Written 2026-08-16, retained as the Phase 1 checklist:** Step 4a runs, and has produced its first real candidate. The next session fixes the two feed defects that are starving it. Ordered by value per unit of effort:
 
@@ -258,7 +262,7 @@ Build order for 4a (`collection/extract.py`):
 - **Two `REPLACE-ME` placeholder URLs** still in `verify_items`: WAICO membership page and Pax Silica membership page (state.gov/pax-silica is the obvious S1 candidate for the latter). These will alert as failing until replaced, which is correct behaviour.
 - **Move raw archive to NAS** (deferred). CT-local storage works and is backed up by vzdump, but the architecture intends the NAS as the raw-archive home. Path forward likely means either disabling Synology Advanced ACLs on the share, or a different mount approach. Less urgent now that gzip cut the growth curve ~5×.
 - **Offsite backup of the raw archive**: decide Backblaze B2 via rclone vs. private GitHub repo — required, not optional. Applies to the CT-local path.
-- ~~Run `validate.py` once locally~~ ✅ done (fourth session). **Still outstanding: make containment intentional.** Right now the desk-pass file is rejected only *incidentally* — unknown envelope keys trip `additionalProperties: false`. Anyone who later relaxes the envelope silently loses the guarantee. Three changes: (1) an explicit check in `validate.py` rejecting any envelope carrying `synthetic: true` or `provisional: true`, with its own failure message; (2) a `schemas/fixtures/must-reject/` directory holding the desk-pass file plus a minimal `synthetic: true` envelope; (3) extend the existing `--self-test` flag so a file under `must-reject/` that *validates* is itself a test failure. Note the desk-pass file is not currently in `schemas/fixtures/` at all.
+- ~~Run `validate.py` once locally~~ ✅ done (fourth session). ~~**Still outstanding: make containment intentional.**~~ ✅ `3b016ee` (fifth session, first agent task) — the three changes below are implemented. Right now the desk-pass file is rejected only *incidentally* — unknown envelope keys trip `additionalProperties: false`. Anyone who later relaxes the envelope silently loses the guarantee. Three changes: (1) an explicit check in `validate.py` rejecting any envelope carrying `synthetic: true` or `provisional: true`, with its own failure message; (2) a `schemas/fixtures/must-reject/` directory holding the desk-pass file plus a minimal `synthetic: true` envelope; (3) extend the existing `--self-test` flag so a file under `must-reject/` that *validates* is itself a test failure. Note the desk-pass file is not currently in `schemas/fixtures/` at all.
 - **README line for Simple mode** (approved): "The dashboard opens in Simple mode — plain-language summaries generated word-for-word from each country's data record. The Advanced toggle exposes the full DEPTH-N analytic detail."
 - **Facility map layer** (roadmap, data-side): curate `facilities.json` per the contract documented in map.html's `FACILITIES` comment. Seed candidates from the desk pass: YTL–NVIDIA Johor, Firmus/NVIDIA Batam, Viettel DGX B200 cluster. Design questions to settle first: hand-curated vs. derived from coded events (events would need optional geo fields), and whether facility entries fall under the S1–S4 corroboration rule (they should). Rendering (icons per layer, click-through, layer filter) is already scaffolded.
 - **Add `trafilatura` to `collection/requirements.txt`** — confirmed in use (2.2.0 installed in `collection/.venv`) but absent from requirements. A rebuild from the repo comes up without it and fails silently as "unreadable" captures.
@@ -268,7 +272,7 @@ Build order for 4a (`collection/extract.py`):
 - **Decide the re-examination mechanism for prefilter rejects** — `facets_version` stamped in the candidate blob and anti-joined on, vs. deleting rejected rows. Without it, facet improvements do not reach the 178 already-rejected captures.
 - **Extractor writes duplicate candidates for the same capture** when `--capture-id` is used (capture 41 has two `pending` rows). Either skip captures with an existing `pending` row, or handle duplicates in the review UI.
 - **Build the GDELT JSON expansion path** in the extractor — result payloads are currently rejected as "not an article," so the GDELT feed produces no candidates.
-- **`PreToolUse` hook for the DDL prohibition** — required before the first Claude Code task. `CLAUDE.md` is advisory; the hook is the gate.
+- ~~`PreToolUse` hook for the DDL prohibition~~ ✅ `b576eff` (fifth session).
 - **Confirm doc 07 F-7 fragment is committed** to `project-knowledge/`; it currently exists as a chat artifact.
 - **Rotate `SD_LLM_KEY`** in `/etc/silicon-dominoes/collector.env` (previously exposed in chat). Enumerate consumers first.
 - **License**: decide before public data launch (MIT for code like Trapline; consider CC-BY for datasets).
@@ -288,5 +292,7 @@ Point Claude at this file. For collection ops: `pct enter 109` from the Proxmox 
 - Moving files CT → Windows: `pct pull 109 <src> /tmp/<file>` on the host, then `scp root@192.168.1.50:/tmp/<file> C:\path\<file>` in PowerShell.
 
 For Step 4: LiteLLM is at 192.168.1.190:4000, qwen3.6:35b-mlx is the model, temperature 0, strip reasoning blocks before JSON parsing (from homelab principles).
+
+**Running `validate.py` on Spectre:** Windows Python is 3.8 and lacks `jsonschema`; use `wsl -d Ubuntu -- bash -c 'cd /mnt/c/Users/harbi/Documents/GitHub/chessmasterAI/silicon-dominoes/silicon-dominoes/schemas && python3 validate.py --self-test'`. In CT 109 the equivalent is `../.venv-validate/bin/python validate.py --self-test` from `schemas/`.
 
 **Pipeline venv is `/opt/silicon-dominoes/collection/.venv/`** — inside `collection/`, not beside it. Run from `WorkingDirectory=/opt/silicon-dominoes/collection` as `.venv/bin/python -m collector.extract`. Manual runs do not load `/etc/silicon-dominoes/collector.env` (systemd does that via `EnvironmentFile=`); the defaults in `config.py` currently match the env file, so this has not bitten yet, but prefix with `set -a; . /etc/silicon-dominoes/collector.env; set +a;` when it matters.
