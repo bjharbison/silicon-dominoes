@@ -443,7 +443,7 @@ def enqueue(conn, capture_id: int, candidate: dict, status: str,
             INSERT INTO review_queue (capture_id, candidate, status, rejection_reason)
             VALUES (%s, %s, %s, %s)
             """,
-            (capture_id, json.dumps(candidate), status, rejection_reason),
+            (capture_id, json.dumps(candidate, ensure_ascii=False), status, rejection_reason),
         )
     conn.commit()
 
