@@ -1,5 +1,5 @@
 # Silicon Dominoes — facet lists (system prompt §3.2)
-# Version: 1.0 · 2026-08-16
+# Version: see the `version:` key below (single canonical home)
 #
 # Used by the deterministic prefilter in collection/extract.py and by GDELT
 # Boolean query construction. Synonyms live HERE, never hard-coded inline
