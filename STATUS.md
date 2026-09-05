@@ -1,5 +1,5 @@
 # Silicon Dominoes — Project Status
-Last updated: 2026-08-16 (fourth session) · Purpose: running record of what's built, what's live, and what's next. Update this file at the end of each work session.
+Last updated: 2026-09-05 (fifth session) · Purpose: running record of what's built, what's live, and what's next. Update this file at the end of each work session — **and commit it.** This file was not tracked in git until 2026-09-05; see that session's entry.
 
 ## Where things stand
 
@@ -71,13 +71,46 @@ Also caught: `collection/sql/003_url_index.sql` had never been written as a file
 
 **Step 1 verification closed.** A throwaway venv at `/opt/silicon-dominoes/.venv-validate` (gitignored) runs `validate.py`; all four contract fixtures pass schema and cross-field checks. Invocation: `pct exec 109 -- su - dominoes -c 'cd /opt/silicon-dominoes/schemas && ../.venv-validate/bin/python validate.py fixtures'`.
 
-**Transfer mechanics, for next time.** The CT has no GitHub credential and `dominoes` cannot push. The route used was `git archive --format=zip -o /tmp/sd-changes.zip HEAD .gitignore collection` → `pct pull` → `scp` to Windows → extract over the checkout → commit in GitHub Desktop. Gotchas:
+**Transfer mechanics (RETIRED 2026-09-05 — CT 109 is now pull-only; see fifth session. Kept for the record.)** The CT has no GitHub credential and `dominoes` cannot push. The route used was `git archive --format=zip -o /tmp/sd-changes.zip HEAD .gitignore collection` → `pct pull` → `scp` to Windows → extract over the checkout → commit in GitHub Desktop. Gotchas:
 
 - **The Explorer "Replace or Skip Files" dialog must be answered "Replace the files in the destination."** First attempt skipped it, and only the two files at paths that did not already exist were written — Desktop showed 2 changed files instead of 8.
 - `git archive` includes only tracked files, so `__pycache__` and venvs are excluded automatically.
 - Windows hides extensions: `sd-changes` on the Desktop is the .zip, not an extracted folder. `dir sd-changes\...` fails accordingly.
 - The CRLF warning in GitHub Desktop is expected and harmless — `.gitattributes` normalizes line endings, which is why the diff was 2 real files rather than 28 phantom ones.
-- **This shuttle only works while the CT owns `collection/` and Windows owns `map.html`.** If both ever edit the same file, overwrite-extract silently loses one side. That is the argument for giving the CT a scoped push token at step 5.
+- **This shuttle only works while the CT owns `collection/` and Windows owns `map.html`.** If both ever edit the same file, overwrite-extract silently loses one side. That is the argument for giving the CT a scoped push token at step 5. *(Resolved the other way on 2026-09-05: the CT was demoted instead of promoted.)*
+
+## Repo ownership consolidation (2026-09-05, fifth session)
+
+**Purpose:** land the prerequisite for any Claude Code agent task — one author (the Windows/Spectre checkout), CT 109 demoted to a pull-only deploy target, the `git archive → pct pull → scp → GitHub Desktop` shuttle retired.
+
+**Findings on the way in:**
+- **The CT was one commit ahead of GitHub again.** `facets v1.1` (Vietnamese geo forms; geo/entity duplicate removal; ministry-name exclusion) existed only in the container, and GitHub had two commits the CT lacked (`CLAUDE.md`, a `map.html` update). Non-overlapping files, so a rebase was clean. Second time this failure mode has bitten; it is now structurally closed.
+- **STATUS.md was never tracked.** `git ls-files` on both checkouts showed no `STATUS.md`; the only copy was the 2026-08-16 version in the Claude Project knowledge. Committed this session.
+- **Command-line git on Windows was authenticating as a different GitHub account** (403 on push); GitHub Desktop had its own working credential, which is why earlier pushes succeeded. Fixed with `git config --global credential.https://github.com.username bjharbison`; `git push` now prompts for and caches the right account. Matters because Claude Code shells out to `git`.
+- Windows checkout path is nested oddly: `C:\Users\harbi\Documents\GitHub\chessmasterAI\silicon-dominoes\silicon-dominoes`. Works; just not where anyone would look.
+
+**What was done:**
+1. CT commit rebased onto `origin/main`, exported with `git format-patch -1`, moved via `pct pull` → `scp`, applied on Windows with `git am` (preserves message and author; cannot silently skip files the way the zip-extract did). Pushed as `0fe76b4`.
+2. CT reset to `origin/main` (`0fe76b4`). Its push URL set to `DISABLED` (`git remote set-url --push origin DISABLED`), so a push from the container fails by construction, not by absence of a credential.
+3. Pull-only deploy script at `/home/dominoes/bin/sd-deploy` in CT 109: refuses with exit 1 if `git status --porcelain` is non-empty, otherwise `fetch` + `reset --hard origin/main`. **The refusal is the guard** — an edit made in the CT now breaks the deploy loudly instead of being destroyed by the reset. Verified by deliberately dirtying the tree.
+
+**New operating rule:** edit on Windows → push → `pct exec 109 -- su - dominoes -c '~/bin/sd-deploy'` on the Proxmox host. The CT never authors. The `collection/.venv` and `/etc/silicon-dominoes/collector.env` are outside the repo and unaffected by the reset.
+
+**Remaining prerequisite before the first agent task:** the `PreToolUse` hook for the DDL prohibition. `CLAUDE.md` is context, not a gate; that violation is the unrecoverable one. Then the first task is `validate.py` (`fixtures/must-reject/`, `--self-test`), because the grader must exist before anything it grades.
+
+## Gap record: 2026-08-16 → 2026-09-05 (reconstructed, not contemporaneous)
+
+Sessions in this window did not update this file (it was not in git). The following is reconstructed from commit history and Project memory and should be treated as a summary, not a session log. Items marked † are decisions recorded in project-knowledge docs or memory rather than in this repo.
+
+- **Phase 1 intake work:** `facets/entities.yaml` bumped to v1.1 (commit `0fe76b4`): Vietnamese-form geo terms added; geo/entity duplicate terms removed; ministry-name exclusion recorded. Status of the NFC/AND-gate measurement, `Viettel`/`VNPT`/`FPT` geo→actors move, `facets_version` re-examination mechanism, `rss-e27`, and `trafilatura` in requirements: **check against the file and the queue before assuming any are done.** Known: `rss-mic-vn` points at a staging host (`emicweb.dev.cnnd.vn`) that cannot support durable citations.
+- **`CLAUDE.md`** added to repo root (commit `2180466`). Keep under ~200 lines; constraints, not a copy of the docs.
+- **`map.html`** updated (commit `c47f15c`). Contents not recorded here — diff against `2180466` if it matters.
+- † **Doc 07 F-7 (pole resolution)** drafted: `pole` enum narrowed to `us | prc | third`; `sovereign` removed as a registry-level pole and recast as an edge-level derivation (controller jurisdiction matches exposed country ISO3). Hard rule: no exposure field may be a residual of others. Merged into the F-2 breaking pass. Not yet in `project-knowledge/` in this repo — confirm.
+- † **Source-tier decision:** data-centre directory aggregators (Data Center Map, Baxtel, datacenterHawk) are S5 — private `discovery_index` in CT 109 only; never exported, never joined to scores, never in `evidence_refs[]`. `validate.py` has no gate for the S5 floor yet; `check_source_tier_floor` fixture is the mechanism when the facility layer is built.
+- † **H sub-index indicators** agreed (UNESCO UIS researchers/million, GERD % GDP, ISCED-8 graduates in relevant fields, WIPO IPC G06N resident filings, OECD triadic families); US and PRC as full country records under the global-expansion tier. Publishing H sub-indices individually belongs in the Phase 2 pass.
+- † **D/E stock baseline path agreed:** hand-code a nine-country baseline against S1/S2 through the review queue with corroboration enforced, published as cycle zero. Analyst work; no agent produces D/E values.
+- † **BrightRay MY-01** (Sedenak, Johor) researched; controller attribution unresolved; US$600–700M convertible financing creditor unnamed — standing `research_gap`.
+- † **Open verification:** WAICO founding date conflict (system prompt 16 July vs Jamestown 17 July 2026) — resolve against S1 and flag in changelog before the announcement post's membership claims publish.
 
 ## Dashboard v4 (live)
 
@@ -197,7 +230,9 @@ The anti-join keys on `review_queue` existence, so the 178 prefilter rejects wil
 
 ## Immediate next action (next session)
 
-**Step 4a runs, and has produced its first real candidate. The next session fixes the two feed defects that are starving it.** Ordered by value per unit of effort:
+**As of 2026-09-05:** (1) add the `PreToolUse` hook enforcing the DDL prohibition; (2) open Claude Code on the first agent task — `validate.py` intentional containment (`fixtures/must-reject/`, explicit `synthetic`/`provisional` rejection, `--self-test`), one branch, done = passing test; (3) verify which Phase 1 intake items below are actually complete before resuming them.
+
+**Written 2026-08-16, retained as the Phase 1 checklist:** Step 4a runs, and has produced its first real candidate. The next session fixes the two feed defects that are starving it. Ordered by value per unit of effort:
 
 1. **Confirm the AND-gate hypothesis before touching facets.** Measure, over the `mic-vn` corpus, how many captures match geo-only vs. entity-only vs. both under the current lists, and whether the text is NFC-normalised (if it is decomposed Unicode, `"Việt Nam"` typed into YAML will not match no matter what is added, and the fix belongs in `read_capture` instead). This determines whether the fix is *more geo terms* or *moving `Viettel`/`VNPT`/`FPT` into `actors`* — probably both.
 2. **Add Vietnamese-form geo terms** to `facets/entities.yaml`: `Việt Nam`, `Hà Nội`, `Đà Nẵng`, `Thành phố Hồ Chí Minh`, plus the ministries seen in the corpus (`Bộ Khoa học và Công nghệ`). Pure YAML, no code, recovers up to ~60% of 63 captures. Bump the facets version.
@@ -233,6 +268,9 @@ Build order for 4a (`collection/extract.py`):
 - **Decide the re-examination mechanism for prefilter rejects** — `facets_version` stamped in the candidate blob and anti-joined on, vs. deleting rejected rows. Without it, facet improvements do not reach the 178 already-rejected captures.
 - **Extractor writes duplicate candidates for the same capture** when `--capture-id` is used (capture 41 has two `pending` rows). Either skip captures with an existing `pending` row, or handle duplicates in the review UI.
 - **Build the GDELT JSON expansion path** in the extractor — result payloads are currently rejected as "not an article," so the GDELT feed produces no candidates.
+- **`PreToolUse` hook for the DDL prohibition** — required before the first Claude Code task. `CLAUDE.md` is advisory; the hook is the gate.
+- **Confirm doc 07 F-7 fragment is committed** to `project-knowledge/`; it currently exists as a chat artifact.
+- **Rotate `SD_LLM_KEY`** in `/etc/silicon-dominoes/collector.env` (previously exposed in chat). Enumerate consumers first.
 - **License**: decide before public data launch (MIT for code like Trapline; consider CC-BY for datasets).
 - From ARCHITECTURE.md §15, still open: posture clustering algorithm choice; admin framework for the review UI (lean pragmatic for v1).
 - **Consider `SD_WAYBACK=0` for iterative testing.** Lower priority than it looks: since the URL-dedup fix a re-poll skips known URLs *before* the Wayback submission, so the cost only lands on genuinely new articles, and step-4 extraction reads archive objects without polling at all. **Verify the safety net before relying on it** — confirm `snapshot_retry.py` selects on *absence of a snapshot row*, not a time window; if it filters by recency, captures skipped today could fall out of range and never be snapshotted, silently breaking the traceability guarantee (ARCHITECTURE §3). **Do not edit `collector.env`** — all five timers load it, so a forgotten flag degrades scheduled runs. Use a per-invocation override instead, with the assignment *inside* the quoted command: `su - dominoes -c 'SD_WAYBACK=0 ...'` (`su -` resets the environment, so putting it outside silently does nothing).
@@ -241,7 +279,7 @@ Build order for 4a (`collection/extract.py`):
 
 Point Claude at this file. For collection ops: `pct enter 109` from the Proxmox host lands you in the CT as root; use `su - dominoes -c '...'` to run pipeline commands as the service user (peer auth requires the Linux user to match the Postgres role). DDL requires `su - postgres -c '...'` instead. Check timer schedule with `SYSTEMD_PAGER=cat systemctl list-timers 'sd-*'`; check what timers ran with `journalctl -u sd-rss.service --since today --no-pager` (remember: `--since`, not `-b`, inside LXC).
 
-**Git in the CT:** the repo is owned by `dominoes`, so git commands run as root fail with "dubious ownership." Use `su - dominoes -c '...'` rather than adding a root `safe.directory` exception. **End every session that touches `collection/` by running `git status --short` in the CT** — an uncommitted working tree there is the single point of failure this project has already hit once.
+**Git in the CT (pull-only since 2026-09-05):** the repo is owned by `dominoes`, so git commands run as root fail with "dubious ownership." Use `su - dominoes -c '...'`. **Never edit the repo in the CT.** Deploy with `pct exec 109 -- su - dominoes -c '~/bin/sd-deploy'`; it refuses if the tree is dirty, which is the guard. Push from the CT is disabled at the remote-URL level. Windows checkout: `C:\Users\harbi\Documents\GitHub\chessmasterAI\silicon-dominoes\silicon-dominoes`.
 
 **Shell gotchas that cost time this session:**
 - Multi-line pastes into `pct enter` or `su - <user>` are swallowed before the shell is ready — run one command at a time, or use `su - dominoes -c '...'`.
