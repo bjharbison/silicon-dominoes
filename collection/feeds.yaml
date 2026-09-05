@@ -58,25 +58,27 @@ feeds:
     notes: Singapore IMDA press releases. If no RSS exists, replace with the
       press-release index URL and let the page-change detector handle it.
 
-  - feed_id: rss-mic-vn
-    source_tier: S1
-    feed_class: rss
-    url: https://english.mic.gov.vn/rss/home.rss
-    unverified: true
-    notes: Vietnam Ministry of Information & Communications (English edition).
+  # RETIRED 2026-09-05 — items resolve to staging host emicweb.dev.cnnd.vn, no durable citations; Vietnamese-language work deprioritised. See STATUS.md.
+#   - feed_id: rss-mic-vn
+#     source_tier: S1
+#     feed_class: rss
+#     url: https://english.mic.gov.vn/rss/home.rss
+#     unverified: true
+#     notes: Vietnam Ministry of Information & Communications (English edition).
 
   # ---- structured news retrieval (GDELT DOC 2.0) --------------------------
   # Query is BUILT AT RUNTIME from the facet files (system prompt §3.2 —
   # synonyms are never hard-coded). One capture per run of the result set.
-  - feed_id: gdelt-sea-stack
-    source_tier: S3
-    feed_class: structured_news
-    url: https://api.gdeltproject.org/api/v2/doc/doc
-    gdelt:
-      facets: [actors, domains, geo_sea]
-      timespan: 1d
-      maxrecords: 100
-      max_terms_per_facet: 8
+  # RETIRED 2026-09-05 — GDELT DOC API returns 429 indefinitely (no Retry-After); structured news retrieval not operational. See STATUS.md.
+#   - feed_id: gdelt-sea-stack
+#     source_tier: S3
+#     feed_class: structured_news
+#     url: https://api.gdeltproject.org/api/v2/doc/doc
+#     gdelt:
+#       facets: [actors, domains, geo_sea]
+#       timespan: 1d
+#       maxrecords: 100
+#       max_terms_per_facet: 8
 
 # ---- verify-at-every-run items (system prompt §1, §4) ---------------------
 # Membership status of WAICO and Pax Silica must show a successful
