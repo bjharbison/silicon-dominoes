@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "cycle_date": "2026-08-07",
+  "generated_at": "2026-08-07T06:00:00Z",
+  "methodology_version": "v2.0",
+  "weight_vector_stamp": {
+    "hash": "sha256:3f9a1c",
+    "layer_weights": { "silicon": 1.0, "networks": 1.0, "cloud": 1.0, "models": 0.7, "applications": 0.7, "power": 0.4, "facilities": 0.4 },
+    "decay_lambda": 0.0578,
+    "goodhart_cap_points": 2
+  },
+  "events": [
+    {
+      "event_id": "ev-2026-0341",
+      "date": "2026-08-03",
+      "retrieved_at": "2026-08-03T14:22:10Z",
+      "country_iso3": "KEN",
+      "layer": "cloud",
+      "instrument_tier": 3,
+      "direction": "us",
+      "depth_dimensions": ["T", "E"],
+      "summary": "National treasury e-procurement portal published a signed three-year sovereign-cloud hosting award to a US hyperscaler's Nairobi region, value and counterparty disclosed in the award notice.",
+      "sources": [
+        {
+          "url": "https://tenders.go.ke/award/2026-8812",
+          "archived_url": "https://archive.silicondominoes.org/snap/a1b2c3",
+          "snapshot_id": "a1b2c3",
+          "retrieved_at": "2026-08-03T14:22:10Z",
+          "source_tier": "S1",
+          "publisher": "PPRA Kenya",
+          "title": "Award notice 2026-8812"
+        },
+        {
+          "url": "https://example-trade-press.com/kenya-cloud-award",
+          "archived_url": "https://archive.silicondominoes.org/snap/d4e5f6",
+          "snapshot_id": "d4e5f6",
+          "retrieved_at": "2026-08-04T09:10:00Z",
+          "source_tier": "S2",
+          "publisher": "Example Trade Press",
+          "title": "Kenya awards sovereign cloud contract"
+        }
+      ],
+      "confidence": { "level": 0.9 },
+      "bundle_id": "bundle-ke-2026-02",
+      "bundle_anchor": "cloud",
+      "announced_value_usd": 180000000,
+      "verified_value_usd": 142000000,
+      "dyad": { "controller_id": "ctrl-us-hyperscaler-1", "controller_name": "US hyperscaler (Nairobi region)" }
+    },
+    {
+      "event_id": "ev-2026-0342",
+      "date": "2026-08-03",
+      "retrieved_at": "2026-08-03T14:25:00Z",
+      "country_iso3": "KEN",
+      "layer": "facilities",
+      "instrument_tier": 2,
+      "direction": "us",
+      "depth_dimensions": ["T"],
+      "summary": "Feasibility study for an associated edge data-centre buildout announced as part of the same package as the cloud award, per the ministry release accompanying the tender result.",
+      "sources": [
+        {
+          "url": "https://ict.go.ke/press/edge-dc-study",
+          "archived_url": "https://archive.silicondominoes.org/snap/g7h8i9",
+          "snapshot_id": "g7h8i9",
+          "retrieved_at": "2026-08-03T14:25:00Z",
+          "source_tier": "S1",
+          "publisher": "Ministry of ICT Kenya",
+          "title": "Edge DC feasibility study announcement"
+        }
+      ],
+      "confidence": { "level": 0.7 },
+      "bundle_id": "bundle-ke-2026-02",
+      "sub_state_actor": { "name": "Ministry of ICT", "actor_type": "ministry" }
+    },
+    {
+      "event_id": "ev-2026-0343",
+      "date": "2026-07-30",
+      "retrieved_at": "2026-07-31T08:00:00Z",
+      "country_iso3": "KEN",
+      "layer": "cloud",
+      "instrument_tier": 1,
+      "direction": "us",
+      "depth_dimensions": ["P"],
+      "p_subindicators_evidenced": ["p_jurisdiction"],
+      "summary": "Published hosting terms for the awarded region state that customer data remains under Kenyan legal process with localization in-country, per the provider's public jurisdictional documentation.",
+      "sources": [
+        {
+          "url": "https://example-hyperscaler.com/nairobi-region-terms",
+          "archived_url": "https://archive.silicondominoes.org/snap/j1k2l3",
+          "snapshot_id": "j1k2l3",
+          "retrieved_at": "2026-07-31T08:00:00Z",
+          "source_tier": "S2",
+          "publisher": "Provider documentation",
+          "title": "Nairobi region jurisdictional terms"
+        }
+      ],
+      "confidence": { "level": 0.75 },
+      "analyst_inference": true,
+      "inference_rationale": "Jurisdictional reading of published terms; contract-specific riders remain unobserved."
+    }
+  ]
+}

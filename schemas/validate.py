@@ -8,11 +8,16 @@ Usage:
 
 A contract that fails validation does not publish (ARCHITECTURE.md §7.6).
 
-Two validation layers run here:
+Three validation layers run here:
 
   1. JSON Schema validation (draft 2020-12) of each artifact against its
      schema, with common.schema.json resolved locally.
-  2. Cross-field checks that JSON Schema cannot express. These implement
+  2. Containment check (CLAUDE.md §1): any envelope carrying synthetic:true
+     or provisional:true fails, by name, independent of whatever the schema
+     does or does not catch via unevaluatedProperties. Demo and desk-pass
+     datasets are structurally unpublishable and this must keep saying so
+     even if a schema is loosened later.
+  3. Cross-field checks that JSON Schema cannot express. These implement
      the remaining halves of rules whose first halves live in the schemas:
 
        - D-share vectors sum to <= 1.0 (+ epsilon)
@@ -25,6 +30,9 @@ Two validation layers run here:
          (the schema requires two S3+; this checks the S4 independence rule)
        - Superseded ledger entries reference an existing prediction_id
        - insufficient_data countries never carry scores
+
+`--self-test` validates fixtures/ (must pass) and every case directory
+under fixtures/must-reject/ (must each fail).
 
 Requires: jsonschema >= 4.18  (pip install jsonschema)
 """
@@ -74,6 +82,30 @@ def schema_validate(artifact_dir: Path, errors: list[str]):
         validator = make_validator(schema_file)
         for err in sorted(validator.iter_errors(load(path)), key=lambda e: e.json_path):
             errors.append(f"{artifact}: {err.json_path}: {err.message}")
+
+
+def containment_check(artifact_dir: Path, errors: list[str]):
+    """CLAUDE.md §1: synthetic:true or provisional:true must fail validation
+    with its own named error, on every contract that carries the envelope —
+    never proceed on the assumption that unevaluatedProperties will always
+    be the thing that catches it."""
+    for artifact in CONTRACTS:
+        path = artifact_dir / artifact
+        if not path.exists():
+            continue
+        data = load(path)
+        if not isinstance(data, dict):
+            continue
+        if data.get("synthetic") is True:
+            errors.append(
+                f"{artifact}: CONTAINMENT — envelope carries synthetic: true; "
+                f"synthetic/demo datasets are structurally unpublishable (CLAUDE.md §1)"
+            )
+        if data.get("provisional") is True:
+            errors.append(
+                f"{artifact}: CONTAINMENT — envelope carries provisional: true; "
+                f"provisional/desk-pass datasets are structurally unpublishable (CLAUDE.md §1)"
+            )
 
 
 def cross_field_checks(artifact_dir: Path, errors: list[str]):
@@ -170,14 +202,56 @@ def cross_field_checks(artifact_dir: Path, errors: list[str]):
                     )
 
 
-def main():
-    args = sys.argv[1:]
-    artifact_dir = SCHEMA_DIR / "fixtures" if args == ["--self-test"] else Path(args[0])
-
+def run_bundle(artifact_dir: Path) -> list[str]:
+    """Run all three validation layers against one artifact directory."""
     errors: list[str] = []
     schema_validate(artifact_dir, errors)
+    containment_check(artifact_dir, errors)
     if not errors:  # cross-field checks assume schema-valid shapes
         cross_field_checks(artifact_dir, errors)
+    return errors
+
+
+def self_test() -> int:
+    """fixtures/ must validate clean; every case dir under
+    fixtures/must-reject/ must fail. Returns a process exit code."""
+    failures: list[str] = []
+
+    fixtures_dir = SCHEMA_DIR / "fixtures"
+    errors = run_bundle(fixtures_dir)
+    if errors:
+        failures.append(f"fixtures/: expected PASS, got {len(errors)} violation(s):")
+        failures.extend(f"    {e}" for e in errors)
+
+    must_reject_dir = fixtures_dir / "must-reject"
+    cases = sorted(p for p in must_reject_dir.iterdir() if p.is_dir()) if must_reject_dir.exists() else []
+    if not cases:
+        failures.append("fixtures/must-reject/: no case directories found — nothing to self-test")
+    for case_dir in cases:
+        errors = run_bundle(case_dir)
+        if not errors:
+            failures.append(f"fixtures/must-reject/{case_dir.name}/: expected FAIL, got OK")
+
+    if failures:
+        print(f"SELF-TEST FAIL — {len(failures)} problem(s):\n")
+        for f in failures:
+            print(f"  ✗ {f}")
+        return 1
+
+    print(
+        f"OK — self-test passed: fixtures/ validates clean; "
+        f"{len(cases)} fixtures/must-reject/ case(s) all failed as required."
+    )
+    return 0
+
+
+def main():
+    args = sys.argv[1:]
+    if args == ["--self-test"]:
+        sys.exit(self_test())
+
+    artifact_dir = Path(args[0])
+    errors = run_bundle(artifact_dir)
 
     if errors:
         print(f"FAIL — {len(errors)} violation(s); this cycle does not publish:\n")

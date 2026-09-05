@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "cycle_date": "2026-08-07",
+  "generated_at": "2026-08-07T06:00:00Z",
+  "methodology_version": "v2.0",
+  "weight_vector_stamp": { "hash": "sha256:3f9a1c" },
+  "exposure_edges": [
+    {
+      "edge_id": "edge-ken-cloud-001",
+      "edge_type": "exposure",
+      "country_iso3": "KEN",
+      "controller": {
+        "controller_id": "ctrl-us-hyperscaler-1",
+        "controller_type": "hub",
+        "name": "US hyperscaler (Nairobi region)",
+        "pole": "us"
+      },
+      "layer": "cloud",
+      "d_share": 0.55,
+      "e_score": 48,
+      "p": {
+        "p_jurisdiction": { "status": "evidenced", "value": 35, "evidence_refs": ["ev-2026-0343"] }
+      },
+      "t_flow": 3.4,
+      "bundle_ids": ["bundle-ke-2026-02"],
+      "evidence_refs": ["ev-2026-0341", "ev-2026-0343"],
+      "confidence": { "level": 0.8 }
+    }
+  ],
+  "cascade_edges": [
+    {
+      "edge_id": "casc-ken-tza-001",
+      "edge_type": "cascade",
+      "projection": true,
+      "from_iso3": "KEN",
+      "to_iso3": "TZA",
+      "layer": "cloud",
+      "mechanism": "Regional reference deployment: Tanzania's e-government tender committee cited the Kenyan sovereign-cloud award as its benchmark architecture in the published pre-tender consultation.",
+      "mechanism_channel": "reference_deployment",
+      "probability": 0.35,
+      "confidence": { "level": 0.6, "band_low": 0.2, "band_high": 0.5 },
+      "ledger_ref": "pred-2026-0087",
+      "network_basis": ["shared_controller_centrality"]
+    }
+  ]
+}

@@ -1,0 +1,3178 @@
+{
+  "schema_version": "1.0.0",
+  "cycle_date": "2026-08-14",
+  "generated_at": "2026-08-14T11:37:44Z",
+  "methodology_version": "v2.0",
+  "weight_vector_stamp": {
+    "hash": "manual-desk-pass-no-weights-applied"
+  },
+  "provisional": true,
+  "provenance_note": "ONE-TIME MANUAL DESK PASS (2026-08-14). Single-analyst estimates from a same-day web research pass. WAICO founding membership verified for KHM, IDN, LAO, MYS, MMR; Pax Silica signature verified for SGP (Dec 2025) and PHL (Apr 2026); major 2024-2026 infrastructure commitments from S2/S3 press. No coded events table, corroboration rule not mechanically enforced, no review gate, no clustering run (postures are analyst labels), network metrics not computed. DEMO ONLY - never publish or ingest into the pipeline.",
+  "countries": [
+    {
+      "iso3": "SGP",
+      "status": "scored",
+      "exposure_us": 70,
+      "exposure_prc": 26,
+      "exposure_sovereign": 44,
+      "alignment_index": {
+        "value": 44,
+        "derived": true
+      },
+      "sovereign_pull": 44,
+      "readiness": 90,
+      "readiness_tier": "T5",
+      "strategic_salience": 82,
+      "lock_in": 62,
+      "posture": "leaning_us",
+      "posture_override": false,
+      "posture_cluster_mapping_version": "manual-desk-pass (no clustering run)",
+      "contest_score": 35,
+      "cascade_susceptibility": 30,
+      "network_metrics": {
+        "controller_hhi": null,
+        "single_hub_dependence": null,
+        "shared_controller_centrality": null
+      },
+      "per_layer": {
+        "power": {
+          "d_vector": {
+            "us": 0.05,
+            "prc": 0.05,
+            "sovereign": 0.8,
+            "other": 0.1
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "facilities": {
+          "d_vector": {
+            "us": 0.55,
+            "prc": 0.1,
+            "sovereign": 0.3,
+            "other": 0.05
+          },
+          "e": {
+            "us": 70
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "silicon": {
+          "d_vector": {
+            "us": 0.85,
+            "prc": 0.05,
+            "sovereign": 0.05,
+            "other": 0.05
+          },
+          "e": {
+            "us": 75
+          },
+          "p": {
+            "p_license": {
+              "status": "evidenced",
+              "value": 80,
+              "evidence_refs": [
+                "desk-2026-0814-usg-export-controls"
+              ]
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 2.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t3": 0.5,
+              "t5": 0.5
+            }
+          }
+        },
+        "networks": {
+          "d_vector": {
+            "us": 0.55,
+            "prc": 0.1,
+            "sovereign": 0.25,
+            "other": 0.1
+          },
+          "e": {
+            "us": 50
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "cloud": {
+          "d_vector": {
+            "us": 0.7,
+            "prc": 0.15,
+            "sovereign": 0.15,
+            "other": 0.0
+          },
+          "e": {
+            "us": 65,
+            "prc": 20
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 1.5,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t3": 0.6,
+              "t5": 0.4
+            }
+          }
+        },
+        "models": {
+          "d_vector": {
+            "us": 0.55,
+            "prc": 0.1,
+            "sovereign": 0.3,
+            "other": 0.05
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 1.2
+            },
+            "tier_composition": {
+              "t2": 0.5,
+              "t3": 0.5
+            }
+          }
+        },
+        "applications": {
+          "d_vector": {
+            "us": 0.5,
+            "prc": 0.25,
+            "sovereign": 0.2,
+            "other": 0.05
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        }
+      },
+      "confidence": {
+        "level": 0.55,
+        "band_low": 0.4,
+        "band_high": 0.65
+      },
+      "evidence_count": 6,
+      "null_coverage_rate": 0.83,
+      "coverage_flag": "manual_desk_pass"
+    },
+    {
+      "iso3": "PHL",
+      "status": "scored",
+      "exposure_us": 54,
+      "exposure_prc": 37,
+      "exposure_sovereign": 8,
+      "alignment_index": {
+        "value": 17,
+        "derived": true
+      },
+      "sovereign_pull": 8,
+      "readiness": 42,
+      "readiness_tier": "T2",
+      "strategic_salience": 68,
+      "lock_in": 48,
+      "posture": "leaning_us",
+      "posture_override": false,
+      "posture_cluster_mapping_version": "manual-desk-pass (no clustering run)",
+      "contest_score": 62,
+      "cascade_susceptibility": 55,
+      "network_metrics": {
+        "controller_hhi": null,
+        "single_hub_dependence": null,
+        "shared_controller_centrality": null
+      },
+      "per_layer": {
+        "power": {
+          "d_vector": {
+            "us": 0.1,
+            "prc": 0.15,
+            "sovereign": 0.6,
+            "other": 0.15
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "facilities": {
+          "d_vector": {
+            "us": 0.35,
+            "prc": 0.2,
+            "sovereign": 0.3,
+            "other": 0.15
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 1.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t2": 0.6,
+              "t3": 0.4
+            }
+          }
+        },
+        "silicon": {
+          "d_vector": {
+            "us": 0.6,
+            "prc": 0.1,
+            "sovereign": 0.05,
+            "other": 0.25
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "evidenced",
+              "value": 80,
+              "evidence_refs": [
+                "desk-2026-0814-usg-export-controls"
+              ]
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "networks": {
+          "d_vector": {
+            "us": 0.25,
+            "prc": 0.55,
+            "sovereign": 0.1,
+            "other": 0.1
+          },
+          "e": {
+            "prc": 58
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "cloud": {
+          "d_vector": {
+            "us": 0.55,
+            "prc": 0.2,
+            "sovereign": 0.1,
+            "other": 0.15
+          },
+          "e": {
+            "us": 45
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "models": {
+          "d_vector": {
+            "us": 0.55,
+            "prc": 0.1,
+            "sovereign": 0.1,
+            "other": 0.25
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "applications": {
+          "d_vector": {
+            "us": 0.45,
+            "prc": 0.35,
+            "sovereign": 0.1,
+            "other": 0.1
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.8,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0.7,
+              "t2": 0.3
+            }
+          }
+        }
+      },
+      "confidence": {
+        "level": 0.5,
+        "band_low": 0.35,
+        "band_high": 0.6
+      },
+      "evidence_count": 5,
+      "null_coverage_rate": 0.86,
+      "coverage_flag": "manual_desk_pass"
+    },
+    {
+      "iso3": "VNM",
+      "status": "scored",
+      "exposure_us": 47,
+      "exposure_prc": 28,
+      "exposure_sovereign": 55,
+      "alignment_index": {
+        "value": 19,
+        "derived": true
+      },
+      "sovereign_pull": 55,
+      "readiness": 58,
+      "readiness_tier": "T3",
+      "strategic_salience": 74,
+      "lock_in": 40,
+      "posture": "sovereign_seeking",
+      "posture_override": false,
+      "posture_cluster_mapping_version": "manual-desk-pass (no clustering run)",
+      "contest_score": 58,
+      "cascade_susceptibility": 40,
+      "network_metrics": {
+        "controller_hhi": null,
+        "single_hub_dependence": null,
+        "shared_controller_centrality": null
+      },
+      "per_layer": {
+        "power": {
+          "d_vector": {
+            "us": 0.05,
+            "prc": 0.25,
+            "sovereign": 0.6,
+            "other": 0.1
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "facilities": {
+          "d_vector": {
+            "us": 0.15,
+            "prc": 0.1,
+            "sovereign": 0.65,
+            "other": 0.1
+          },
+          "e": {
+            "sovereign": 55
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 1.5
+            },
+            "tier_composition": {
+              "t4": 0.4,
+              "t5": 0.6
+            }
+          }
+        },
+        "silicon": {
+          "d_vector": {
+            "us": 0.75,
+            "prc": 0.05,
+            "sovereign": 0.1,
+            "other": 0.1
+          },
+          "e": {
+            "us": 60
+          },
+          "p": {
+            "p_license": {
+              "status": "evidenced",
+              "value": 80,
+              "evidence_refs": [
+                "desk-2026-0814-usg-export-controls"
+              ]
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 2.5,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t4": 0.3,
+              "t5": 0.7
+            }
+          }
+        },
+        "networks": {
+          "d_vector": {
+            "us": 0.3,
+            "prc": 0.2,
+            "sovereign": 0.45,
+            "other": 0.05
+          },
+          "e": {
+            "sovereign": 50
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "cloud": {
+          "d_vector": {
+            "us": 0.3,
+            "prc": 0.15,
+            "sovereign": 0.5,
+            "other": 0.05
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 1.0
+            },
+            "tier_composition": {
+              "t3": 0.6,
+              "t5": 0.4
+            }
+          }
+        },
+        "models": {
+          "d_vector": {
+            "us": 0.25,
+            "prc": 0.15,
+            "sovereign": 0.55,
+            "other": 0.05
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 2.0
+            },
+            "tier_composition": {
+              "t3": 0.4,
+              "t5": 0.6
+            }
+          }
+        },
+        "applications": {
+          "d_vector": {
+            "us": 0.3,
+            "prc": 0.3,
+            "sovereign": 0.35,
+            "other": 0.05
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        }
+      },
+      "confidence": {
+        "level": 0.55,
+        "band_low": 0.4,
+        "band_high": 0.65
+      },
+      "evidence_count": 7,
+      "null_coverage_rate": 0.8,
+      "coverage_flag": "manual_desk_pass"
+    },
+    {
+      "iso3": "IDN",
+      "status": "scored",
+      "exposure_us": 51,
+      "exposure_prc": 47,
+      "exposure_sovereign": 15,
+      "alignment_index": {
+        "value": 4,
+        "derived": true
+      },
+      "sovereign_pull": 15,
+      "readiness": 48,
+      "readiness_tier": "T2",
+      "strategic_salience": 80,
+      "lock_in": 42,
+      "posture": "hedged_active",
+      "posture_override": false,
+      "posture_cluster_mapping_version": "manual-desk-pass (no clustering run)",
+      "contest_score": 78,
+      "cascade_susceptibility": 60,
+      "network_metrics": {
+        "controller_hhi": null,
+        "single_hub_dependence": null,
+        "shared_controller_centrality": null
+      },
+      "per_layer": {
+        "power": {
+          "d_vector": {
+            "us": 0.05,
+            "prc": 0.3,
+            "sovereign": 0.55,
+            "other": 0.1
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "facilities": {
+          "d_vector": {
+            "us": 0.4,
+            "prc": 0.3,
+            "sovereign": 0.2,
+            "other": 0.1
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 2.5,
+              "prc": 0.8,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0.2,
+              "t2": 0.3,
+              "t3": 0.3,
+              "t4": 0.2
+            }
+          }
+        },
+        "silicon": {
+          "d_vector": {
+            "us": 0.65,
+            "prc": 0.15,
+            "sovereign": 0.05,
+            "other": 0.15
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "evidenced",
+              "value": 80,
+              "evidence_refs": [
+                "desk-2026-0814-usg-export-controls"
+              ]
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 2.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0.3,
+              "t2": 0.4,
+              "t3": 0.3
+            }
+          }
+        },
+        "networks": {
+          "d_vector": {
+            "us": 0.2,
+            "prc": 0.6,
+            "sovereign": 0.1,
+            "other": 0.1
+          },
+          "e": {
+            "prc": 62
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "cloud": {
+          "d_vector": {
+            "us": 0.45,
+            "prc": 0.4,
+            "sovereign": 0.1,
+            "other": 0.05
+          },
+          "e": {
+            "us": 40,
+            "prc": 38
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "models": {
+          "d_vector": {
+            "us": 0.4,
+            "prc": 0.25,
+            "sovereign": 0.2,
+            "other": 0.15
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.6,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 1.0
+            }
+          }
+        },
+        "applications": {
+          "d_vector": {
+            "us": 0.35,
+            "prc": 0.45,
+            "sovereign": 0.1,
+            "other": 0.1
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.5,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 1.0
+            }
+          }
+        }
+      },
+      "confidence": {
+        "level": 0.5,
+        "band_low": 0.35,
+        "band_high": 0.6
+      },
+      "evidence_count": 8,
+      "null_coverage_rate": 0.84,
+      "coverage_flag": "manual_desk_pass"
+    },
+    {
+      "iso3": "THA",
+      "status": "scored",
+      "exposure_us": 54,
+      "exposure_prc": 44,
+      "exposure_sovereign": 10,
+      "alignment_index": {
+        "value": 10,
+        "derived": true
+      },
+      "sovereign_pull": 10,
+      "readiness": 54,
+      "readiness_tier": "T3",
+      "strategic_salience": 62,
+      "lock_in": 45,
+      "posture": "hedged_active",
+      "posture_override": false,
+      "posture_cluster_mapping_version": "manual-desk-pass (no clustering run)",
+      "contest_score": 72,
+      "cascade_susceptibility": 55,
+      "network_metrics": {
+        "controller_hhi": null,
+        "single_hub_dependence": null,
+        "shared_controller_centrality": null
+      },
+      "per_layer": {
+        "power": {
+          "d_vector": {
+            "us": 0.05,
+            "prc": 0.15,
+            "sovereign": 0.7,
+            "other": 0.1
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.6,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t2": 1.0
+            }
+          }
+        },
+        "facilities": {
+          "d_vector": {
+            "us": 0.45,
+            "prc": 0.3,
+            "sovereign": 0.15,
+            "other": 0.1
+          },
+          "e": {
+            "us": 42,
+            "prc": 35
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 2.0,
+              "prc": 1.2,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t2": 0.2,
+              "t3": 0.4,
+              "t4": 0.4
+            }
+          }
+        },
+        "silicon": {
+          "d_vector": {
+            "us": 0.65,
+            "prc": 0.15,
+            "sovereign": 0.05,
+            "other": 0.15
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "evidenced",
+              "value": 80,
+              "evidence_refs": [
+                "desk-2026-0814-usg-export-controls"
+              ]
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "networks": {
+          "d_vector": {
+            "us": 0.3,
+            "prc": 0.5,
+            "sovereign": 0.1,
+            "other": 0.1
+          },
+          "e": {
+            "prc": 55
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "cloud": {
+          "d_vector": {
+            "us": 0.5,
+            "prc": 0.35,
+            "sovereign": 0.05,
+            "other": 0.1
+          },
+          "e": {
+            "us": 45,
+            "prc": 35
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "models": {
+          "d_vector": {
+            "us": 0.45,
+            "prc": 0.2,
+            "sovereign": 0.15,
+            "other": 0.2
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "applications": {
+          "d_vector": {
+            "us": 0.35,
+            "prc": 0.45,
+            "sovereign": 0.1,
+            "other": 0.1
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        }
+      },
+      "confidence": {
+        "level": 0.5,
+        "band_low": 0.35,
+        "band_high": 0.6
+      },
+      "evidence_count": 6,
+      "null_coverage_rate": 0.86,
+      "coverage_flag": "manual_desk_pass"
+    },
+    {
+      "iso3": "MYS",
+      "status": "scored",
+      "exposure_us": 61,
+      "exposure_prc": 45,
+      "exposure_sovereign": 24,
+      "alignment_index": {
+        "value": 16,
+        "derived": true
+      },
+      "sovereign_pull": 24,
+      "readiness": 58,
+      "readiness_tier": "T3",
+      "strategic_salience": 70,
+      "lock_in": 55,
+      "posture": "hedged_active",
+      "posture_override": false,
+      "posture_cluster_mapping_version": "manual-desk-pass (no clustering run)",
+      "contest_score": 75,
+      "cascade_susceptibility": 62,
+      "network_metrics": {
+        "controller_hhi": null,
+        "single_hub_dependence": null,
+        "shared_controller_centrality": null
+      },
+      "per_layer": {
+        "power": {
+          "d_vector": {
+            "us": 0.05,
+            "prc": 0.1,
+            "sovereign": 0.75,
+            "other": 0.1
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.8
+            },
+            "tier_composition": {
+              "t1": 0.5,
+              "t2": 0.5
+            }
+          }
+        },
+        "facilities": {
+          "d_vector": {
+            "us": 0.45,
+            "prc": 0.3,
+            "sovereign": 0.2,
+            "other": 0.05
+          },
+          "e": {
+            "us": 55,
+            "prc": 40
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 2.5,
+              "prc": 1.5,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t3": 0.2,
+              "t4": 0.3,
+              "t5": 0.5
+            }
+          }
+        },
+        "silicon": {
+          "d_vector": {
+            "us": 0.8,
+            "prc": 0.1,
+            "sovereign": 0.02,
+            "other": 0.08
+          },
+          "e": {
+            "us": 65
+          },
+          "p": {
+            "p_license": {
+              "status": "evidenced",
+              "value": 80,
+              "evidence_refs": [
+                "desk-2026-0814-usg-export-controls"
+              ]
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 2.5,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t4": 0.3,
+              "t5": 0.7
+            }
+          }
+        },
+        "networks": {
+          "d_vector": {
+            "us": 0.3,
+            "prc": 0.5,
+            "sovereign": 0.1,
+            "other": 0.1
+          },
+          "e": {
+            "prc": 52
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "cloud": {
+          "d_vector": {
+            "us": 0.55,
+            "prc": 0.3,
+            "sovereign": 0.12,
+            "other": 0.03
+          },
+          "e": {
+            "us": 55,
+            "prc": 30
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 1.5,
+              "prc": 0.0,
+              "sovereign": 0.8
+            },
+            "tier_composition": {
+              "t2": 0.3,
+              "t3": 0.3,
+              "t5": 0.4
+            }
+          }
+        },
+        "models": {
+          "d_vector": {
+            "us": 0.45,
+            "prc": 0.2,
+            "sovereign": 0.25,
+            "other": 0.1
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 1.0
+            },
+            "tier_composition": {
+              "t2": 0.6,
+              "t3": 0.4
+            }
+          }
+        },
+        "applications": {
+          "d_vector": {
+            "us": 0.4,
+            "prc": 0.4,
+            "sovereign": 0.12,
+            "other": 0.08
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.5,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 1.0
+            }
+          }
+        }
+      },
+      "confidence": {
+        "level": 0.55,
+        "band_low": 0.4,
+        "band_high": 0.65
+      },
+      "evidence_count": 8,
+      "null_coverage_rate": 0.82,
+      "coverage_flag": "manual_desk_pass"
+    },
+    {
+      "iso3": "KHM",
+      "status": "scored",
+      "exposure_us": 12,
+      "exposure_prc": 58,
+      "exposure_sovereign": 5,
+      "alignment_index": {
+        "value": -46,
+        "derived": true
+      },
+      "sovereign_pull": 5,
+      "readiness": 28,
+      "readiness_tier": "T1",
+      "strategic_salience": 40,
+      "lock_in": 62,
+      "posture": "committed_prc",
+      "posture_override": false,
+      "posture_cluster_mapping_version": "manual-desk-pass (no clustering run)",
+      "contest_score": 22,
+      "cascade_susceptibility": 45,
+      "network_metrics": {
+        "controller_hhi": null,
+        "single_hub_dependence": null,
+        "shared_controller_centrality": null
+      },
+      "per_layer": {
+        "power": {
+          "d_vector": {
+            "us": 0.02,
+            "prc": 0.45,
+            "sovereign": 0.4,
+            "other": 0.13
+          },
+          "e": {
+            "prc": 60
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "facilities": {
+          "d_vector": {
+            "us": 0.05,
+            "prc": 0.5,
+            "sovereign": 0.25,
+            "other": 0.2
+          },
+          "e": {
+            "prc": 55
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "silicon": {
+          "d_vector": {
+            "us": 0.2,
+            "prc": 0.45,
+            "sovereign": 0.02,
+            "other": 0.33
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "networks": {
+          "d_vector": {
+            "us": 0.05,
+            "prc": 0.75,
+            "sovereign": 0.1,
+            "other": 0.1
+          },
+          "e": {
+            "prc": 70
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "cloud": {
+          "d_vector": {
+            "us": 0.15,
+            "prc": 0.6,
+            "sovereign": 0.05,
+            "other": 0.2
+          },
+          "e": {
+            "prc": 55
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "models": {
+          "d_vector": {
+            "us": 0.2,
+            "prc": 0.4,
+            "sovereign": 0.05,
+            "other": 0.35
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.5,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 1.0
+            }
+          }
+        },
+        "applications": {
+          "d_vector": {
+            "us": 0.15,
+            "prc": 0.6,
+            "sovereign": 0.05,
+            "other": 0.2
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.4,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 1.0
+            }
+          }
+        }
+      },
+      "confidence": {
+        "level": 0.45,
+        "band_low": 0.30000000000000004,
+        "band_high": 0.55
+      },
+      "evidence_count": 4,
+      "null_coverage_rate": 0.9,
+      "coverage_flag": "manual_desk_pass"
+    },
+    {
+      "iso3": "LAO",
+      "status": "scored",
+      "exposure_us": 8,
+      "exposure_prc": 54,
+      "exposure_sovereign": 6,
+      "alignment_index": {
+        "value": -46,
+        "derived": true
+      },
+      "sovereign_pull": 6,
+      "readiness": 20,
+      "readiness_tier": "T1",
+      "strategic_salience": 55,
+      "lock_in": 68,
+      "posture": "leaning_prc",
+      "posture_override": false,
+      "posture_cluster_mapping_version": "manual-desk-pass (no clustering run)",
+      "contest_score": 18,
+      "cascade_susceptibility": 50,
+      "network_metrics": {
+        "controller_hhi": null,
+        "single_hub_dependence": null,
+        "shared_controller_centrality": null
+      },
+      "per_layer": {
+        "power": {
+          "d_vector": {
+            "us": 0.02,
+            "prc": 0.7,
+            "sovereign": 0.15,
+            "other": 0.13
+          },
+          "e": {
+            "prc": 80
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "evidenced",
+              "value": 70,
+              "evidence_refs": [
+                "desk-2026-0814-lao-grid-concession"
+              ]
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "facilities": {
+          "d_vector": {
+            "us": 0.02,
+            "prc": 0.5,
+            "sovereign": 0.15,
+            "other": 0.33
+          },
+          "e": {
+            "prc": 55
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "silicon": {
+          "d_vector": {
+            "us": 0.1,
+            "prc": 0.4,
+            "sovereign": 0.02,
+            "other": 0.48
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "networks": {
+          "d_vector": {
+            "us": 0.05,
+            "prc": 0.45,
+            "sovereign": 0.1,
+            "other": 0.4
+          },
+          "e": {
+            "prc": 50
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "cloud": {
+          "d_vector": {
+            "us": 0.08,
+            "prc": 0.55,
+            "sovereign": 0.05,
+            "other": 0.32
+          },
+          "e": {
+            "prc": 50
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "models": {
+          "d_vector": {
+            "us": 0.1,
+            "prc": 0.4,
+            "sovereign": 0.05,
+            "other": 0.45
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.4,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 1.0
+            }
+          }
+        },
+        "applications": {
+          "d_vector": {
+            "us": 0.08,
+            "prc": 0.55,
+            "sovereign": 0.05,
+            "other": 0.32
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        }
+      },
+      "confidence": {
+        "level": 0.4,
+        "band_low": 0.25,
+        "band_high": 0.5
+      },
+      "evidence_count": 4,
+      "null_coverage_rate": 0.92,
+      "coverage_flag": "manual_desk_pass"
+    },
+    {
+      "iso3": "MMR",
+      "status": "scored",
+      "exposure_us": 4,
+      "exposure_prc": 50,
+      "exposure_sovereign": 3,
+      "alignment_index": {
+        "value": -46,
+        "derived": true
+      },
+      "sovereign_pull": 3,
+      "readiness": 14,
+      "readiness_tier": "T0",
+      "strategic_salience": 45,
+      "lock_in": 58,
+      "posture": "excluded",
+      "posture_override": false,
+      "posture_cluster_mapping_version": "manual-desk-pass (no clustering run)",
+      "contest_score": 10,
+      "cascade_susceptibility": 35,
+      "network_metrics": {
+        "controller_hhi": null,
+        "single_hub_dependence": null,
+        "shared_controller_centrality": null
+      },
+      "per_layer": {
+        "power": {
+          "d_vector": {
+            "us": 0.01,
+            "prc": 0.45,
+            "sovereign": 0.3,
+            "other": 0.24
+          },
+          "e": {
+            "prc": 55
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "facilities": {
+          "d_vector": {
+            "us": 0.01,
+            "prc": 0.4,
+            "sovereign": 0.15,
+            "other": 0.44
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "silicon": {
+          "d_vector": {
+            "us": 0.05,
+            "prc": 0.4,
+            "sovereign": 0.01,
+            "other": 0.54
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "networks": {
+          "d_vector": {
+            "us": 0.02,
+            "prc": 0.65,
+            "sovereign": 0.1,
+            "other": 0.23
+          },
+          "e": {
+            "prc": 62
+          },
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "cloud": {
+          "d_vector": {
+            "us": 0.05,
+            "prc": 0.55,
+            "sovereign": 0.05,
+            "other": 0.35
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        },
+        "models": {
+          "d_vector": {
+            "us": 0.05,
+            "prc": 0.35,
+            "sovereign": 0.02,
+            "other": 0.58
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.3,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 1.0
+            }
+          }
+        },
+        "applications": {
+          "d_vector": {
+            "us": 0.05,
+            "prc": 0.55,
+            "sovereign": 0.05,
+            "other": 0.35
+          },
+          "e": {},
+          "p": {
+            "p_license": {
+              "status": "null",
+              "opacity_reason": "Desk pass: licensing terms not researched at this layer."
+            },
+            "p_update": {
+              "status": "null",
+              "opacity_reason": "Desk pass: update/attestation architecture not researched."
+            },
+            "p_spares": {
+              "status": "null",
+              "opacity_reason": "Desk pass: spares/maintenance dependency not researched."
+            },
+            "p_jurisdiction": {
+              "status": "null",
+              "opacity_reason": "Desk pass: data jurisdiction not researched at this layer."
+            },
+            "p_telemetry": {
+              "status": "null",
+              "opacity_reason": "Desk pass: telemetry architecture not researched."
+            }
+          },
+          "t": {
+            "value_by_pole": {
+              "us": 0.0,
+              "prc": 0.0,
+              "sovereign": 0.0
+            },
+            "tier_composition": {
+              "t1": 0,
+              "t2": 0,
+              "t3": 0,
+              "t4": 0,
+              "t5": 0
+            }
+          }
+        }
+      },
+      "confidence": {
+        "level": 0.35,
+        "band_low": 0.19999999999999998,
+        "band_high": 0.44999999999999996
+      },
+      "evidence_count": 3,
+      "null_coverage_rate": 0.94,
+      "coverage_flag": "manual_desk_pass"
+    }
+  ]
+}
