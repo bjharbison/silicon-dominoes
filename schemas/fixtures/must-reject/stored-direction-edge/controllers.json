@@ -1,0 +1,83 @@
+{
+  "schema_version": "2.0.0",
+  "cycle_date": "2026-08-07",
+  "generated_at": "2026-08-07T06:00:00Z",
+  "methodology_version": "v2.0",
+  "weight_vector_stamp": {
+    "hash": "sha256:3f9a1c"
+  },
+  "controllers": [
+    {
+      "controller_id": "test_operator_a",
+      "name": "Test Operator A (fixture)",
+      "controller_type": "firm",
+      "control_jurisdiction": "AUS",
+      "evidence_refs": [
+        "https://fixture.invalid/registry/test_operator_a"
+      ]
+    },
+    {
+      "controller_id": "test_tenant_b",
+      "name": "Test Tenant B (fixture)",
+      "controller_type": "firm",
+      "control_jurisdiction": "USA",
+      "evidence_refs": [
+        "https://fixture.invalid/registry/test_tenant_b"
+      ]
+    },
+    {
+      "controller_id": "test_creditor_c",
+      "name": "Test Creditor C (fixture)",
+      "controller_type": "creditor",
+      "control_jurisdiction": "CHN",
+      "evidence_refs": [
+        "https://fixture.invalid/registry/test_creditor_c"
+      ]
+    },
+    {
+      "controller_id": "test_regulator_d",
+      "name": "Test Regulator D (fixture)",
+      "controller_type": "regulatory_regime",
+      "control_jurisdiction": "THA",
+      "evidence_refs": [
+        "https://fixture.invalid/registry/test_regulator_d"
+      ]
+    },
+    {
+      "controller_id": "test_local_sub_e",
+      "name": "Test Local Sub E (fixture)",
+      "controller_type": "firm",
+      "control_jurisdiction": "CHN",
+      "incorporation": "SGP",
+      "notes": "Doc 07 F-7 rule 4 worked example: incorporated in SGP, controlled from CHN. Incorporation informs a p_jurisdiction reviewer prompt; it never changes direction_derived.",
+      "evidence_refs": [
+        "https://fixture.invalid/registry/test_local_sub_e"
+      ]
+    },
+    {
+      "controller_id": "test_consortium_f",
+      "name": "Test Consortium F (fixture)",
+      "controller_type": "consortium",
+      "control_jurisdiction": "SGP",
+      "members": [
+        {
+          "controller_id": "test_operator_a",
+          "role": "operator",
+          "share": 0.4
+        },
+        {
+          "controller_id": "test_tenant_b",
+          "role": "investor",
+          "share": 0.35
+        },
+        {
+          "controller_id": "test_creditor_c",
+          "role": "landing_party"
+        }
+      ],
+      "evidence_refs": [
+        "https://fixture.invalid/registry/test_consortium_f"
+      ]
+    }
+  ]
+}

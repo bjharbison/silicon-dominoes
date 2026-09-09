@@ -5,7 +5,15 @@
   "methodology_version": "v2.0",
   "weight_vector_stamp": {
     "hash": "sha256:3f9a1c",
-    "layer_weights": { "silicon": 1.0, "networks": 1.0, "cloud": 1.0, "models": 0.7, "applications": 0.7, "power": 0.4, "facilities": 0.4 },
+    "layer_weights": {
+      "silicon": 1.0,
+      "networks": 1.0,
+      "cloud": 1.0,
+      "models": 0.7,
+      "applications": 0.7,
+      "power": 0.4,
+      "facilities": 0.4
+    },
     "decay_lambda": 0.0578,
     "goodhart_cap_points": 2
   },
@@ -17,8 +25,11 @@
       "country_iso3": "KEN",
       "layer": "cloud",
       "instrument_tier": 3,
-      "controller_id": "test_tenant_b",
-      "depth_dimensions": ["T", "E"],
+      "controller_id": "test_nonexistent_x",
+      "depth_dimensions": [
+        "T",
+        "E"
+      ],
       "summary": "National treasury e-procurement portal published a signed three-year sovereign-cloud hosting award to a US hyperscaler's Nairobi region, value and counterparty disclosed in the award notice.",
       "sources": [
         {
@@ -40,7 +51,9 @@
           "title": "Kenya awards sovereign cloud contract"
         }
       ],
-      "confidence": { "level": 0.9 },
+      "confidence": {
+        "level": 0.9
+      },
       "bundle_id": "bundle-ke-2026-02",
       "bundle_anchor": "cloud",
       "announced_value_usd": 180000000,
@@ -54,7 +67,9 @@
       "layer": "facilities",
       "instrument_tier": 2,
       "controller_id": "test_operator_a",
-      "depth_dimensions": ["T"],
+      "depth_dimensions": [
+        "T"
+      ],
       "summary": "Feasibility study for an associated edge data-centre buildout announced as part of the same package as the cloud award, per the ministry release accompanying the tender result.",
       "sources": [
         {
@@ -67,9 +82,14 @@
           "title": "Edge DC feasibility study announcement"
         }
       ],
-      "confidence": { "level": 0.7 },
+      "confidence": {
+        "level": 0.7
+      },
       "bundle_id": "bundle-ke-2026-02",
-      "sub_state_actor": { "name": "Ministry of ICT", "actor_type": "ministry" }
+      "sub_state_actor": {
+        "name": "Ministry of ICT",
+        "actor_type": "ministry"
+      }
     },
     {
       "event_id": "ev-2026-0343",
@@ -79,8 +99,12 @@
       "layer": "cloud",
       "instrument_tier": 1,
       "controller_id": "test_tenant_b",
-      "depth_dimensions": ["P"],
-      "p_subindicators_evidenced": ["p_jurisdiction"],
+      "depth_dimensions": [
+        "P"
+      ],
+      "p_subindicators_evidenced": [
+        "p_jurisdiction"
+      ],
       "summary": "Published hosting terms for the awarded region state that customer data remains under Kenyan legal process with localization in-country, per the provider's public jurisdictional documentation.",
       "sources": [
         {
@@ -93,7 +117,9 @@
           "title": "Nairobi region jurisdictional terms"
         }
       ],
-      "confidence": { "level": 0.75 },
+      "confidence": {
+        "level": 0.75
+      },
       "analyst_inference": true,
       "inference_rationale": "Jurisdictional reading of published terms; contract-specific riders remain unobserved."
     }

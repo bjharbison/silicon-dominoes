@@ -61,6 +61,9 @@ facets version.
 own named error message. The demo datasets are unpublishable by design and that property is
 a test, not an accident of strict schemas.
 
+**Agents never invent URLs or citations.** Test data uses `https://fixture.invalid/`
+exclusively; `validate.py` rejects it on publish.
+
 ---
 
 ## 2. Scoring rules that constrain implementation

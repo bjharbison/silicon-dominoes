@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "cycle_date": "2026-08-07",
   "generated_at": "2026-08-07T06:00:00Z",
   "methodology_version": "v2.0",
@@ -9,12 +9,8 @@
       "edge_id": "edge-ken-cloud-001",
       "edge_type": "exposure",
       "country_iso3": "KEN",
-      "controller": {
-        "controller_id": "ctrl-us-hyperscaler-1",
-        "controller_type": "hub",
-        "name": "US hyperscaler (Nairobi region)",
-        "pole": "us"
-      },
+      "controller_id": "test_tenant_b",
+      "direction_derived": { "value": "us", "derived": true },
       "layer": "cloud",
       "d_share": 0.55,
       "e_score": 48,

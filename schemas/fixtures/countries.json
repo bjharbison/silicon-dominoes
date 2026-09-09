@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "cycle_date": "2026-08-07",
   "generated_at": "2026-08-07T06:00:00Z",
   "methodology_version": "v2.0",
@@ -142,6 +142,135 @@
       "evidence_count": 1,
       "null_coverage_rate": 1.0,
       "research_gap_refs": ["rg-2026-0102"]
+    },
+    {
+      "iso3": "MDG",
+      "status": "scored",
+      "exposure_us": 20.0,
+      "exposure_prc": 15.0,
+      "exposure_sovereign": 10.0,
+      "alignment_index": { "value": 5.0, "derived": true },
+      "sovereign_pull": 10.0,
+      "readiness": 30.0,
+      "readiness_tier": "T1",
+      "strategic_salience": 25.0,
+      "lock_in": 20.0,
+      "posture": "inert",
+      "posture_override": false,
+      "posture_cluster_mapping_version": "cluster-map-v2.0.1",
+      "contest_score": 15.0,
+      "cascade_susceptibility": 10.0,
+      "per_layer": {
+        "power": {
+          "d_vector": { "us": 0.05, "prc": 0.05, "sovereign": 0.05, "other": 0.05 },
+          "e": {},
+          "p": {
+            "p_license": { "status": "null", "opacity_reason": "No published licensing terms identified for this layer." },
+            "p_update": { "status": "null", "opacity_reason": "Remote-management architecture undisclosed." },
+            "p_spares": { "status": "null", "opacity_reason": "Service contract awards not located." },
+            "p_jurisdiction": { "status": "null", "opacity_reason": "No data-bearing assets coded at this layer." },
+            "p_telemetry": { "status": "null", "opacity_reason": "No architecture disclosures located." }
+          },
+          "t": {
+            "value_by_pole": { "us": 0.0, "prc": 0.0, "sovereign": 0.0 },
+            "tier_composition": { "t1": 0.0, "t2": 0.0, "t3": 0.0, "t4": 0.0, "t5": 0.0 }
+          }
+        },
+        "facilities": {
+          "d_vector": { "us": 0.05, "prc": 0.05, "sovereign": 0.05, "other": 0.05 },
+          "e": {},
+          "p": {
+            "p_license": { "status": "null", "opacity_reason": "Facility contracts unpublished." },
+            "p_update": { "status": "null", "opacity_reason": "Facility contracts unpublished." },
+            "p_spares": { "status": "null", "opacity_reason": "Facility contracts unpublished." },
+            "p_jurisdiction": { "status": "null", "opacity_reason": "Facility contracts unpublished." },
+            "p_telemetry": { "status": "null", "opacity_reason": "Facility contracts unpublished." }
+          },
+          "t": {
+            "value_by_pole": { "us": 0.0, "prc": 0.0, "sovereign": 0.0 },
+            "tier_composition": { "t1": 0.0, "t2": 0.0, "t3": 0.0, "t4": 0.0, "t5": 0.0 }
+          }
+        },
+        "silicon": {
+          "d_vector": { "us": 0.05, "prc": 0.05, "sovereign": 0.05, "other": 0.05 },
+          "e": {},
+          "p": {
+            "p_license": { "status": "null", "opacity_reason": "No published licensing terms identified for this layer." },
+            "p_update": { "status": "null", "opacity_reason": "Attestation requirements not published for installed SKUs." },
+            "p_spares": { "status": "null", "opacity_reason": "Service contract awards not located." },
+            "p_jurisdiction": { "status": "null", "opacity_reason": "Not a data-bearing layer as coded." },
+            "p_telemetry": { "status": "null", "opacity_reason": "No architecture disclosures located." }
+          },
+          "t": {
+            "value_by_pole": { "us": 0.0, "prc": 0.0, "sovereign": 0.0 },
+            "tier_composition": { "t1": 0.0, "t2": 0.0, "t3": 0.0, "t4": 0.0, "t5": 0.0 }
+          }
+        },
+        "networks": {
+          "d_vector": { "us": 0.05, "prc": 0.05, "sovereign": 0.05, "other": 0.05 },
+          "e": {},
+          "p": {
+            "p_license": { "status": "null", "opacity_reason": "Vendor contract terms confidential." },
+            "p_update": { "status": "null", "opacity_reason": "RAN management architecture undisclosed." },
+            "p_spares": { "status": "null", "opacity_reason": "Service contract awards not located." },
+            "p_jurisdiction": { "status": "null", "opacity_reason": "Core-network data handling undisclosed." },
+            "p_telemetry": { "status": "null", "opacity_reason": "No regulator findings located." }
+          },
+          "t": {
+            "value_by_pole": { "us": 0.0, "prc": 0.0, "sovereign": 0.0 },
+            "tier_composition": { "t1": 0.0, "t2": 0.0, "t3": 0.0, "t4": 0.0, "t5": 0.0 }
+          }
+        },
+        "cloud": {
+          "d_vector": { "us": 0.05, "prc": 0.05, "sovereign": 0.05, "other": 0.05 },
+          "e": {},
+          "p": {
+            "p_license": { "status": "null", "opacity_reason": "Hosting agreement riders unpublished." },
+            "p_update": { "status": "null", "opacity_reason": "Control-plane dependency undisclosed." },
+            "p_spares": { "status": "null", "opacity_reason": "Not applicable as coded for cloud services." },
+            "p_jurisdiction": { "status": "null", "opacity_reason": "No architecture disclosures located." },
+            "p_telemetry": { "status": "null", "opacity_reason": "No architecture disclosures located." }
+          },
+          "t": {
+            "value_by_pole": { "us": 0.0, "prc": 0.0, "sovereign": 0.0 },
+            "tier_composition": { "t1": 0.0, "t2": 0.0, "t3": 0.0, "t4": 0.0, "t5": 0.0 }
+          }
+        },
+        "models": {
+          "d_vector": { "us": 0.05, "prc": 0.05, "sovereign": 0.05, "other": 0.05 },
+          "e": {},
+          "p": {
+            "p_license": { "status": "null", "opacity_reason": "Model licensing terms per-deployment; none published." },
+            "p_update": { "status": "null", "opacity_reason": "API-dependency architecture not coded this cycle." },
+            "p_spares": { "status": "null", "opacity_reason": "Not applicable at this layer." },
+            "p_jurisdiction": { "status": "null", "opacity_reason": "Deployment jurisdictions unverified." },
+            "p_telemetry": { "status": "null", "opacity_reason": "Provider telemetry practices undisclosed." }
+          },
+          "t": {
+            "value_by_pole": { "us": 0.0, "prc": 0.0, "sovereign": 0.0 },
+            "tier_composition": { "t1": 0.0, "t2": 0.0, "t3": 0.0, "t4": 0.0, "t5": 0.0 }
+          }
+        },
+        "applications": {
+          "d_vector": { "us": 0.05, "prc": 0.05, "sovereign": 0.05, "other": 0.05 },
+          "e": {},
+          "p": {
+            "p_license": { "status": "null", "opacity_reason": "App-layer licensing not coded." },
+            "p_update": { "status": "null", "opacity_reason": "App-layer update channels not coded." },
+            "p_spares": { "status": "null", "opacity_reason": "Not applicable at this layer." },
+            "p_jurisdiction": { "status": "null", "opacity_reason": "Per-app data residency unverified." },
+            "p_telemetry": { "status": "null", "opacity_reason": "Per-app telemetry unverified." }
+          },
+          "t": {
+            "value_by_pole": { "us": 0.0, "prc": 0.0, "sovereign": 0.0 },
+            "tier_composition": { "t1": 0.0, "t2": 0.0, "t3": 0.0, "t4": 0.0, "t5": 0.0 }
+          }
+        }
+      },
+      "confidence": { "level": 0.3, "band_low": 0.2, "band_high": 0.4 },
+      "evidence_count": 0,
+      "null_coverage_rate": 1.0,
+      "coverage_flag": "normal"
     }
   ]
 }

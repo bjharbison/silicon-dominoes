@@ -16,8 +16,45 @@
     },
     "pole": {
       "type": "string",
-      "enum": ["us", "prc", "sovereign", "other"],
-      "description": "Supplier pole of control."
+      "enum": ["us", "prc", "third"],
+      "description": "Registry-level pole (doc 07 F-7 rule 1). No 'sovereign' pole here — sovereign is an edge-level derivation (#/$defs/derivedDirection), never an entity property. 'third' is an acknowledged residual at pole level only; full granularity is recovered from control_jurisdiction at aggregation."
+    },
+    "controllerId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "Registry key into controllers.json (doc 07 F-7)."
+    },
+    "jurisdiction": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$|^EU$",
+      "description": "ISO3 or the EU regulatory bloc — used for control_jurisdiction and incorporation (doc 07 F-7)."
+    },
+    "controllerType": {
+      "type": "string",
+      "enum": ["state", "creditor", "consortium", "regulatory_regime", "firm"],
+      "description": "controllers.json registry entry type (doc 07 F-7)."
+    },
+    "derivedDirection": {
+      "type": "string",
+      "enum": ["us", "prc", "third", "sovereign"],
+      "description": "Edge-level derived direction (doc 07 F-7 rule 3): 'sovereign' iff the controller's control_jurisdiction equals the edge's country_iso3, else the controller's effective pole. Always emitted with derived:true."
+    },
+    "memberRole": {
+      "type": "string",
+      "enum": ["landing_party", "operator", "investor"],
+      "description": "Consortium member role (doc 07 F-7 rule 6)."
+    },
+    "reversalTarget": {
+      "type": "object",
+      "description": "Inline reversal target for facts predating coded collection, so no reversal is ever uncodeable (doc 07 F-7 rule 8) — same shape as doc 04 L-8's exercise_target.",
+      "required": ["controller_id", "country_iso3", "layer", "tier_reversed"],
+      "properties": {
+        "controller_id": { "$ref": "#/$defs/controllerId" },
+        "country_iso3": { "$ref": "#/$defs/iso3" },
+        "layer": { "$ref": "#/$defs/layer" },
+        "tier_reversed": { "$ref": "#/$defs/instrumentTier" }
+      },
+      "additionalProperties": false
     },
     "score0to100": {
       "type": "number",

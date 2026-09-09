@@ -3,7 +3,9 @@
   "cycle_date": "2026-08-07",
   "generated_at": "2026-08-07T06:00:00Z",
   "methodology_version": "v2.0",
-  "weight_vector_stamp": { "hash": "sha256:3f9a1c" },
+  "weight_vector_stamp": {
+    "hash": "sha256:3f9a1c"
+  },
   "predictions": [
     {
       "prediction_id": "pred-2026-0087",
@@ -75,7 +77,9 @@
       "target_iso3": "ARE",
       "layer": "silicon",
       "p_subindicator": "p_license",
-      "event_refs": ["ev-2026-0341"]
+      "event_refs": [
+        "ev-2026-0341"
+      ]
     }
   ],
   "test_sets": [
@@ -91,28 +95,58 @@
           "cliff_type": "ran_contract",
           "expected_decision_date": "2026-11-30",
           "incumbent_pole": "prc",
-          "evidence_refs": ["ev-2026-0341"]
+          "evidence_refs": [
+            "ev-2026-0341"
+          ]
         }
       ]
     }
   ],
   "brier": {
-    "class_a": { "running_brier": 0.21, "n_resolved": 14, "period_brier": null, "n_resolved_period": 0 },
+    "class_a": {
+      "running_brier": 0.21,
+      "n_resolved": 14,
+      "period_brier": null,
+      "n_resolved_period": 0
+    },
     "class_b": {
       "running_brier": 0.18,
       "n_resolved": 9,
       "period_brier": 0.16,
       "n_resolved_period": 2,
-      "by_forecast_source": { "model": 0.19, "analyst": 0.17 }
+      "by_forecast_source": {
+        "model": 0.19,
+        "analyst": 0.17
+      }
     }
   },
   "baselines": {
-    "incumbent_always_retained": { "baseline_brier": 0.22, "skill_score": 0.18, "consecutive_quarters_below_baseline": 0 },
-    "hedging_prior": { "baseline_brier": 0.2, "skill_score": 0.1, "consecutive_quarters_below_baseline": 0 }
+    "incumbent_always_retained": {
+      "baseline_brier": 0.22,
+      "skill_score": 0.18,
+      "consecutive_quarters_below_baseline": 0
+    },
+    "hedging_prior": {
+      "baseline_brier": 0.2,
+      "skill_score": 0.1,
+      "consecutive_quarters_below_baseline": 0
+    }
   },
   "calibration": [
-    { "bin_low": 0.0, "bin_high": 0.2, "forecast_mean": 0.12, "observed_frequency": 0.1, "n": 10 },
-    { "bin_low": 0.2, "bin_high": 0.4, "forecast_mean": 0.31, "observed_frequency": 0.33, "n": 9 }
+    {
+      "bin_low": 0.0,
+      "bin_high": 0.2,
+      "forecast_mean": 0.12,
+      "observed_frequency": 0.1,
+      "n": 10
+    },
+    {
+      "bin_low": 0.2,
+      "bin_high": 0.4,
+      "forecast_mean": 0.31,
+      "observed_frequency": 0.33,
+      "n": 9
+    }
   ],
   "methodology_review_triggered": false
 }

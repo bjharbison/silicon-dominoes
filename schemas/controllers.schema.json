@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://silicondominoes.org/schemas/controllers.schema.json",
+  "title": "controllers.json — controller registry contract",
+  "description": "Doc 07 F-2/F-7: the registry of entities that actually hold chokepoints — a state pole, a specific creditor, a consortium, a regulatory regime, a firm. Sixth contract, referenced by controller_id from edges.json and events.json rather than asserted inline beside them. Schema-enforced rules here are structural only (shape, enums, patterns); pole derivation, direction derivation, consortium membership rules, reversal resolution, and controller_id resolution are cross-file business rules and live in validate.py's named checks (doc 07 §4), not here.",
+  "type": "object",
+  "required": ["schema_version", "cycle_date", "generated_at", "methodology_version", "weight_vector_stamp", "controllers"],
+  "properties": {
+    "schema_version": true,
+    "cycle_date": true,
+    "generated_at": true,
+    "methodology_version": true,
+    "weight_vector_stamp": true,
+    "out_of_cycle": true,
+    "controllers": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/controllerEntry" }
+    }
+  },
+  "allOf": [ { "$ref": "common.schema.json#/$defs/envelope" } ],
+  "unevaluatedProperties": false,
+  "$defs": {
+    "controllerEntry": {
+      "type": "object",
+      "description": "Doc 07 F-7 registry shape. pole_override is the only asserted pole field; everywhere else pole is derived (validate.py check_pole_derivation) from control_jurisdiction via pole_map.json.",
+      "required": ["controller_id", "name", "controller_type", "control_jurisdiction", "evidence_refs"],
+      "properties": {
+        "controller_id": { "$ref": "common.schema.json#/$defs/controllerId" },
+        "name": { "type": "string", "minLength": 1 },
+        "controller_type": { "$ref": "common.schema.json#/$defs/controllerType" },
+        "control_jurisdiction": {
+          "$ref": "common.schema.json#/$defs/jurisdiction",
+          "description": "Jurisdiction of ultimate control. Load-bearing — this, not incorporation, is what pole and direction derive from."
+        },
+        "incorporation": {
+          "$ref": "common.schema.json#/$defs/jurisdiction",
+          "description": "Jurisdiction of incorporation. Descriptive only (doc 07 F-7 rule 4): informs a p_jurisdiction reviewer prompt when it differs from control_jurisdiction, never changes direction_derived."
+        },
+        "parent_id": { "$ref": "common.schema.json#/$defs/controllerId" },
+        "pole_override": {
+          "$ref": "common.schema.json#/$defs/pole",
+          "description": "The only place a pole is an analytic assertion rather than a derivation. Requires override_rationale (validate.py check_pole_derivation)."
+        },
+        "override_rationale": { "type": "string", "minLength": 5 },
+        "members": {
+          "type": "array",
+          "description": "Consortium-only (validate.py check_consortium_members). Malaysia is exposed to the consortium, not to each member.",
+          "items": { "$ref": "#/$defs/member" },
+          "minItems": 1
+        },
+        "notes": { "type": "string" },
+        "evidence_refs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "member": {
+      "type": "object",
+      "required": ["controller_id", "role"],
+      "properties": {
+        "controller_id": { "$ref": "common.schema.json#/$defs/controllerId" },
+        "role": { "$ref": "common.schema.json#/$defs/memberRole" },
+        "share": { "$ref": "common.schema.json#/$defs/probability" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

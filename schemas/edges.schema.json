@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://silicondominoes.org/schemas/edges.schema.json",
   "title": "edges.json — exposure and cascade edges contract",
-  "description": "Dyadic exposure edges (doc 01 §3.1, the model's primitive object) and cascade edges (doc 01 §6). Schema-enforced rules: every cascade edge carries a concrete mechanism string (with a pattern-level rejection of 'neighbors correlate' phrasings — the review UI enforces the full rule) and a ledger reference (doc 04: every emitted cascade edge generates a ledger entry); cascade edges are structurally marked projection:true (§2.3 no projection/observation mixing); exposure edges must be decomposable to evidence. Not schema-enforceable: mechanism concreteness beyond the pattern check, edge-weight math, hedging-prior consistency.",
+  "description": "Dyadic exposure edges (doc 01 §3.1, the model's primitive object) and cascade edges (doc 01 §6). Schema-enforced rules: every cascade edge carries a concrete mechanism string (with a pattern-level rejection of 'neighbors correlate' phrasings — the review UI enforces the full rule) and a ledger reference (doc 04: every emitted cascade edge generates a ledger entry); cascade edges are structurally marked projection:true (§2.3 no projection/observation mixing); exposure edges must be decomposable to evidence; doc 07 F-2 controller_id is required with no null branch and a stored 'direction' is structurally forbidden. Not schema-enforceable: mechanism concreteness beyond the pattern check, edge-weight math, hedging-prior consistency, controller_id resolution into controllers.json, direction_derived/pole derivation correctness, consortium mixed_control correctness (validate.py, doc 07 §4).",
   "type": "object",
   "required": ["schema_version", "cycle_date", "generated_at", "methodology_version", "weight_vector_stamp", "exposure_edges", "cascade_edges"],
   "properties": {
@@ -26,13 +26,13 @@
   "$defs": {
     "exposureEdge": {
       "type": "object",
-      "description": "(country, controller, layer) → exposure attributes. Country scores are derived from these edges, never asserted (doc 01 §3.2); this file is what the alignment_index one-tap decomposition resolves to (doc 02 regression test 2).",
-      "required": ["edge_id", "edge_type", "country_iso3", "controller", "layer", "evidence_refs"],
+      "description": "(country, controller, layer) → exposure attributes. Country scores are derived from these edges, never asserted (doc 01 §3.2); this file is what the alignment_index one-tap decomposition resolves to (doc 02 regression test 2). Doc 07 F-2: controller_id is required with no null branch — there is no such thing as an exposure to an unidentified controller; a stored 'direction' field is structurally forbidden (not listed below, and this object is additionalProperties:false) — direction is derived from the controller (direction_derived), never coded beside it.",
+      "required": ["edge_id", "edge_type", "country_iso3", "controller_id", "layer", "evidence_refs"],
       "properties": {
         "edge_id": { "type": "string" },
         "edge_type": { "const": "exposure" },
         "country_iso3": { "$ref": "common.schema.json#/$defs/iso3" },
-        "controller": { "$ref": "common.schema.json#/$defs/controller" },
+        "controller_id": { "$ref": "common.schema.json#/$defs/controllerId" },
         "layer": { "$ref": "common.schema.json#/$defs/layer" },
         "d_share": {
           "$ref": "common.schema.json#/$defs/probability",
@@ -76,7 +76,21 @@
           "minItems": 1,
           "description": "event_ids. No edge without coded evidence (§2.3 no unsourced deltas)."
         },
-        "confidence": { "$ref": "common.schema.json#/$defs/confidence" }
+        "confidence": { "$ref": "common.schema.json#/$defs/confidence" },
+        "direction_derived": {
+          "type": "object",
+          "description": "Doc 07 F-7 rule 3: computed from the controller, never asserted. validate.py check_direction_derived verifies value correctness against controllers.json + pole_map.json.",
+          "required": ["value", "derived"],
+          "properties": {
+            "value": { "$ref": "common.schema.json#/$defs/derivedDirection" },
+            "derived": { "const": true }
+          },
+          "additionalProperties": false
+        },
+        "mixed_control": {
+          "type": "boolean",
+          "description": "Doc 07 F-7 rule 6: set when the edge's controller is a consortium with no documented controlling member — the scoring pipeline can split by evidenced shares or disclose 'unsplit', but never silently pick a pole."
+        }
       },
       "additionalProperties": false
     },

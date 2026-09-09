@@ -1,0 +1,12 @@
+{
+  "methodology_version": "2.0",
+  "map": {
+    "USA": "us",
+    "CHN": "prc",
+    "HKG": "prc",
+    "MAC": "prc",
+    "EU": "third",
+    "TWN": "third"
+  },
+  "default": "third"
+}
