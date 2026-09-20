@@ -78,6 +78,14 @@ BREAKER_PROBE_H = float(os.environ.get("SD_BREAKER_PROBE_H", "24"))
 POLL_STALE_H = float(os.environ.get("SD_POLL_STALE_H", "6"))
 COLLECTOR_DOWN_RENOTIFY_H = float(os.environ.get("SD_COLLECTOR_DOWN_RENOTIFY_H", "6"))
 
+# ----------------------------------------------------------------------- ntfy --
+# common.notify()'s own connect/read timeout and total deadline — smaller
+# than the general HTTP_* defaults on purpose (a notification should never
+# block a whole collector run for as long as an ordinary fetch is allowed
+# to). One value for both: notify()'s payload is tiny, so there's no
+# meaningful difference between "slow to connect" and "slow overall" here.
+NTFY_TIMEOUT = float(os.environ.get("SD_NTFY_TIMEOUT", "15"))
+
 
 def load_feeds_config() -> dict:
     with open(FEEDS_FILE, "r", encoding="utf-8") as f:

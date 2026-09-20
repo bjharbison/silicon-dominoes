@@ -17,6 +17,7 @@ from . import common, config, fetcher
 
 
 def main() -> int:
+    common.warn_if_ntfy_unconfigured()
     cfg = config.load_feeds_config()
     conn = common.connect()
     config.sync_feeds(conn, cfg)

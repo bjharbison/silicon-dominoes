@@ -17,6 +17,7 @@ BATCH = 25
 
 
 def main() -> int:
+    common.warn_if_ntfy_unconfigured()
     conn = common.connect()
     with conn.cursor() as cur:
         cur.execute(

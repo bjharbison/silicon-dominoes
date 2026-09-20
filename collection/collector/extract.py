@@ -540,6 +540,7 @@ def main() -> int:
                     help="prefilter only; no LLM calls, no database writes")
     args = ap.parse_args()
 
+    common.warn_if_ntfy_unconfigured()
     facets = load_facets()
     geo, entities = build_terms(facets)
     print(f"facets v{facets.get('version')}: "

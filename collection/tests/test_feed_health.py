@@ -67,12 +67,19 @@ class FakeHealthStore:
         pass
 
 
-def _spy_notify(test: unittest.TestCase) -> list[tuple]:
+def _spy_notify(test: unittest.TestCase, returns: bool = True) -> list[tuple]:
+    """Replaces common.notify with a spy that records (title, message) and
+    returns `returns` — real notify() now returns True only on an actual
+    2xx delivery, so a spy that silently returned None (falsy) would make
+    every notified run look like a failed delivery. Default True: most
+    tests here are about WHETHER/WHAT was sent, not delivery outcome —
+    test_gap_writes_survive_a_failed_delivery uses returns=False."""
     calls: list[tuple] = []
     original = common.notify
 
     def spy(title, message, **kwargs):
         calls.append((title, message))
+        return returns
 
     common.notify = spy
     test.addCleanup(lambda: setattr(common, "notify", original))
@@ -95,8 +102,8 @@ class NotifyOnChangeTests(unittest.TestCase):
         result1 = feed_health.run(cfg, store, now=T0)
         result2 = feed_health.run(cfg, store, now=T0 + timedelta(hours=1))
 
-        self.assertFalse(result1.notified)
-        self.assertFalse(result2.notified)
+        self.assertEqual(result1.notify_status, "none")
+        self.assertEqual(result2.notify_status, "none")
         self.assertEqual(calls, [])
 
     def test_one_message_lists_both_opens_and_closes(self) -> None:
@@ -119,7 +126,7 @@ class NotifyOnChangeTests(unittest.TestCase):
 
         result = feed_health.run(cfg, store, now=T0)
 
-        self.assertTrue(result.notified)
+        self.assertEqual(result.notify_status, "delivered")
         self.assertEqual(len(calls), 1, "exactly one notify for this run")
         title, message = calls[0]
         self.assertIn("dead_feed:rss-dying", message)
@@ -152,17 +159,17 @@ class NotifyOnChangeTests(unittest.TestCase):
 
         # Run 1: opens collector_down, notifies once.
         r1 = feed_health.run(cfg, store, now=T0)
-        self.assertTrue(r1.notified)
+        self.assertEqual(r1.notify_status, "delivered")
         self.assertEqual(len(calls), 1)
 
         # Run 2, +3h: still open, not due for a renotify yet (< 6h).
         r2 = feed_health.run(cfg, store, now=T0 + timedelta(hours=3))
-        self.assertFalse(r2.notified)
+        self.assertEqual(r2.notify_status, "none")
         self.assertEqual(len(calls), 1)
 
         # Run 3, +6h: renotify due, even though nothing opened or closed.
         r3 = feed_health.run(cfg, store, now=T0 + timedelta(hours=6))
-        self.assertTrue(r3.notified)
+        self.assertEqual(r3.notify_status, "delivered")
         self.assertEqual(r3.opened, [])
         self.assertEqual(r3.closed, [])
         self.assertEqual(len(calls), 2)
@@ -189,9 +196,41 @@ class DryRunTests(unittest.TestCase):
 
         result = feed_health.run(cfg, store, now=T0, dry_run=True)
 
-        self.assertFalse(result.notified)
+        self.assertEqual(result.notify_status, "none")
         self.assertEqual(len(result.opened), 1, "dry-run must still report what WOULD open")
         self.assertEqual(store.gaps, [], "dry-run must not have written anything")
+
+
+class FailedDeliveryTests(unittest.TestCase):
+    """Test f from the notify-honest spec: a failed delivery never undoes
+    or blocks the gap writes, and is reported distinctly from both "nothing
+    to send" and "sent and delivered"."""
+
+    def test_gap_writes_survive_a_failed_delivery(self) -> None:
+        calls = _spy_notify(self, returns=False)   # simulates e.g. a 403/black-hole
+        store = FakeHealthStore()
+        store.feeds = [{"feed_id": "rss-fine", "feed_class": "rss"}]
+        store.histories = {"rss-fine": [_row("ok", T0 - timedelta(hours=1), 2)]}
+        store.latest_captures = {"rss-fine": T0 - timedelta(hours=1)}
+        # A gap whose condition has now cleared — must still close even
+        # though the notification about it will fail to deliver.
+        store.gaps = [{"gap_id": 1, "origin": "dead_feed:rss-fine",
+                      "description": "was dead", "status": "open", "opened_at": T0}]
+        cfg = {"feeds": [{"feed_id": "rss-fine"}], "verify_items": []}
+
+        result = feed_health.run(cfg, store, now=T0)
+
+        self.assertEqual(len(calls), 1, "delivery was attempted")
+        self.assertEqual(result.notify_status, "failed")
+        self.assertEqual(len(result.closed), 1)
+        self.assertEqual(store.gaps[0]["status"], "resolved",
+                         "the gap write must have gone through regardless of "
+                         "whether the notification about it was delivered")
+
+    def test_notify_display_capitalizes_failed_only(self) -> None:
+        self.assertEqual(feed_health._notify_display("failed"), "FAILED")
+        self.assertEqual(feed_health._notify_display("delivered"), "delivered")
+        self.assertEqual(feed_health._notify_display("none"), "none")
 
 
 class DigestTests(unittest.TestCase):

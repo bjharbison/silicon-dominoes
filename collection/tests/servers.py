@@ -168,6 +168,34 @@ def _start(handler_cls) -> _QuietHTTPServer:
     return server
 
 
+def notify_stub_server(status: int = 200) -> _QuietHTTPServer:
+    """Records the headers/body of every POST received and responds with
+    `status`; used to test common.notify(). `server.hit_count` counts
+    requests, `server.last_headers` / `server.last_body` hold the most
+    recent one."""
+    class Handler(BaseHTTPRequestHandler):
+        protocol_version = "HTTP/1.1"
+
+        def do_POST(self) -> None:
+            length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(length) if length else b""
+            self.server.hit_count += 1
+            self.server.last_headers = dict(self.headers)
+            self.server.last_body = body
+            self.send_response(status)
+            self.send_header("Content-Length", "0")
+            self.end_headers()
+
+        def log_message(self, *_args) -> None:
+            pass
+
+    server = _start(Handler)
+    server.hit_count = 0
+    server.last_headers = None
+    server.last_body = None
+    return server
+
+
 def oversized_server(size_bytes: int) -> _QuietHTTPServer:
     class Handler(BaseHTTPRequestHandler):
         protocol_version = "HTTP/1.1"

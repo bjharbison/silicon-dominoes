@@ -125,7 +125,13 @@ class DbHealthStore:
 class RunResult(NamedTuple):
     opened: list          # list[health_rules.Problem]
     closed: list           # list[(gap: dict, reason: str)]
-    notified: bool
+    notify_status: str     # "none" | "delivered" | "failed" — see common.notify()
+
+
+def _notify_display(notify_status: str) -> str:
+    """FAILED in caps so a failed delivery stands out in the journal —
+    everything else (none/delivered) prints as-is."""
+    return "FAILED" if notify_status == "failed" else notify_status
 
 
 def _country_for(feed_id: str, feed_cfg_by_id: dict, verify_cfg_by_id: dict) -> str | None:
@@ -264,7 +270,7 @@ def run(cfg: dict, store, *, now: datetime | None = None, dry_run: bool = False)
             print(f"[dry-run] would notify ({priority}): {title}\n{message}")
         else:
             print("[dry-run] would notify: nothing")
-        return RunResult(to_open, closures, False)
+        return RunResult(to_open, closures, "none")
 
     for problem in to_open:
         country = None
@@ -275,14 +281,20 @@ def run(cfg: dict, store, *, now: datetime | None = None, dry_run: bool = False)
     for gap, _reason in closures:
         store.close_gap(gap["gap_id"])
 
+    # Gap writes above are already done by the time notify() is attempted —
+    # a failed delivery can never undo or block them, only fail to report
+    # them (see common.notify()'s module docstring on why the return value
+    # matters: SD_NTFY_URL sat empty for over a month while every call site
+    # behaved as if delivery had succeeded).
     notification = _build_notification(to_open, closures, renotify, collector_down_gap)
-    notified = False
     if notification:
         title, message, priority, tags = notification
-        common.notify(title, message, priority=priority, tags=tags)
-        notified = True
+        delivered = common.notify(title, message, priority=priority, tags=tags)
+        notify_status = "delivered" if delivered else "failed"
+    else:
+        notify_status = "none"
 
-    return RunResult(to_open, closures, notified)
+    return RunResult(to_open, closures, notify_status)
 
 
 def digest(store) -> list[dict]:
@@ -308,6 +320,7 @@ def main() -> int:
                     help="print and notify every open managed gap; nothing else")
     args = ap.parse_args()
 
+    common.warn_if_ntfy_unconfigured()
     cfg = config.load_feeds_config()
     conn = common.connect()
     store = DbHealthStore(conn)
@@ -318,8 +331,11 @@ def main() -> int:
         return 0
 
     result = run(cfg, store, dry_run=args.dry_run)
-    print(f"done: {len(result.opened)} opened, {len(result.closed)} closed, "
-         f"notified={result.notified}")
+    if args.dry_run:
+        print(f"done: would open {len(result.opened)}, would close {len(result.closed)}")
+    else:
+        print(f"done: {len(result.opened)} opened, {len(result.closed)} closed, "
+             f"notified={_notify_display(result.notify_status)}")
     conn.close()
     return 0
 

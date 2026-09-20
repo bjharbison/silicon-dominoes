@@ -288,6 +288,7 @@ def run(cfg: dict, store, *, now: datetime | None = None) -> tuple[int, list[tup
 
 
 def main() -> int:
+    common.warn_if_ntfy_unconfigured()
     cfg = config.load_feeds_config()
     conn = common.connect()
     config.sync_feeds(conn, cfg)

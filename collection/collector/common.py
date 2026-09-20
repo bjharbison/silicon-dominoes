@@ -6,6 +6,7 @@ import hashlib
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 import psycopg
 
@@ -123,19 +124,80 @@ def wayback_submit(url: str) -> tuple[str | None, str | None]:
 
 
 # -------------------------------------------------------------------- ntfy --
+def _redact_ntfy_url(text: str) -> str:
+    """Never let SD_NTFY_URL — or any recognizable fragment of it — reach a
+    printed line, even via an exception message that happens to embed it.
+    Our own fetcher exceptions always embed the full URL (f"{method} {url}:
+    ..."); a lower-level requests/urllib3 exception might embed just the
+    host, the path, or (ntfy's URL shape is host/topic) the bare topic name
+    with no leading slash at all — e.g. an error string built from parsing
+    the URL itself rather than repeating it verbatim. All four are redacted
+    independently. The bare topic is only redacted when it's at least 8
+    characters: shorter than that it's too likely to be an ordinary
+    substring of unrelated text (redacting every occurrence of "a" would
+    mangle everything)."""
+    url = config.NTFY_URL
+    if not url:
+        return text
+    redacted = text.replace(url, "<SD_NTFY_URL>")
+    parsed = urlparse(url)
+    if parsed.netloc:
+        redacted = redacted.replace(parsed.netloc, "<SD_NTFY_URL>")
+    if parsed.path and parsed.path != "/":
+        redacted = redacted.replace(parsed.path, "<SD_NTFY_URL>")
+        topic = parsed.path.lstrip("/")
+        if len(topic) >= 8:
+            redacted = redacted.replace(topic, "<SD_NTFY_URL>")
+    return redacted
+
+
+def _sanitize_header_value(value: str) -> str:
+    """HTTP header values are latin-1 (ISO-8859-1) — code points 0-255
+    only. The ntfy Title header carries the alert title verbatim, which is
+    free text someone typed and can contain characters outside that range
+    (an em dash, a smart quote, ...); left unsanitized, requests raises a
+    UnicodeEncodeError trying to put it on the wire, and notify() would
+    report a perfectly good alert as a delivery failure over one character.
+    Anything unencodable becomes '-'; the message body is unaffected — it's
+    sent as UTF-8 bytes in the request body, not a header."""
+    return "".join(c if ord(c) <= 0xFF else "-" for c in value)
+
+
 def notify(title: str, message: str, priority: str = "default",
-           tags: str = "satellite") -> None:
-    """Send an ntfy notification; logs to stdout and never raises."""
+           tags: str = "satellite") -> bool:
+    """Send an ntfy notification. Returns True only if the server actually
+    answered 2xx — SD_NTFY_URL was empty in production from 2026-08-16 to
+    2026-09-20, during which every call here printed its "[notify] ..."
+    line and returned, so journals and feed_health's old notified=True read
+    as if alerts had gone out when not one ever had. A caller that cares
+    whether an alert was actually delivered (not just attempted) must check
+    the return value; never raises regardless of what goes wrong."""
     print(f"[notify] {title}: {message}")
     if not config.NTFY_URL:
-        return
+        print(f"[notify] NOT SENT (SD_NTFY_URL is empty): {title}")
+        return False
     try:
-        fetcher.post(
+        resp = fetcher.post(
             config.NTFY_URL,
             data=message.encode("utf-8"),
-            headers={"Title": title, "Priority": priority, "Tags": tags,
-                     "User-Agent": config.USER_AGENT},
-            read_timeout=15, deadline=15,
+            headers={"Title": _sanitize_header_value(title), "Priority": priority,
+                     "Tags": tags, "User-Agent": config.USER_AGENT},
+            read_timeout=config.NTFY_TIMEOUT, deadline=config.NTFY_TIMEOUT,
         )
-    except fetcher.FetchError as exc:
-        print(f"[notify] delivery failed: {exc}")
+    except Exception as exc:            # noqa: BLE001 — notify() must never raise
+        detail = _redact_ntfy_url(f"{type(exc).__name__}: {exc}")
+        print(f"[notify] delivery failed: {detail}")
+        return False
+    if not (200 <= resp.status_code < 300):
+        print(f"[notify] delivery refused: HTTP {resp.status_code}")
+        return False
+    return True
+
+
+def warn_if_ntfy_unconfigured() -> None:
+    """Call once near the top of every collector entry point's main() —
+    poll_rss, feed_health, verify_watch, snapshot_retry, poll_gdelt,
+    extract. One shared check instead of six copies of the same `if not
+    config.NTFY_URL` guard."""
+    if not config.NTFY_URL:
+        print("WARNING: SD_NTFY_URL is empty - notifications are journal-only")
