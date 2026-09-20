@@ -331,13 +331,39 @@ Everything below was verified against the machine during the session unless mark
 - Write statements validated against real Postgres inside a rolled-back transaction, as `dominoes`: `BEGIN; INSERT ...; UPDATE ... SET status = 'resolved' ...; SELECT ...; ROLLBACK;` -> `INSERT 0 1`, `UPDATE 1`, `resolved | t`. This is the pattern for any SQL the tests cannot execute.
 - A poll ran `sync_feeds`: six rows went `active = f` (`gdelt-sea-stack`, `rss-mic-vn`, `rss-e27`, `rss-techwireasia`, `rss-developingtelecoms`, `rss-imda-sg`); four stay active.
 - `--dry-run` predicted exactly: 0 to open, 7 to close. Units installed (diffed first: only `sd-health.timer` differed, two digest units new). First live run 21:54:53 — gaps 1–3, 7, 9 closed as "feed retired", gaps 6 and 8 (the August false positives on the live feeds) as "condition cleared", `notified=True`. The hourly timer then fired by itself three seconds later: `0 opened, 0 closed, notified=False` — an unplanned proof of idempotence. A second `--dry-run`: nothing to do. **Open managed gaps: 4 and 5 only** (the two `REPLACE-ME` verify items — real problems).
-- Arrival of the ntfy message on Brian's phone was not confirmed in-session.
+- The ntfy message did **not** arrive: `SD_NTFY_URL` was empty. See the next subsection.
 
 **Known limits, accepted:** the `collector_down` re-notify is stateless (derived from `opened_at`), so timer jitter can occasionally skip or double a window; ledger-based rules cover `feed_class = rss` only — a rebuilt GDELT poller must write `feed_runs` or it will be invisible to them; `--dry-run`'s final `done:` line says "closed" for would-close (cosmetic).
 
 **Not reviewed this session:** the final `config.py` diff after the follow-up that added the empty-config guard (if `feeds.yaml` yields zero feed_ids, skip the deactivation UPDATE and warn) — requested and covered by a test, but not read by eye. The three B1 agent-report items listed above also remain open.
 
 **A side effect to act on:** auto-closing gap 9 (`dead_feed:rss-mic-vn`, "feed retired") removed the only open record of **Vietnam's coverage hole**. A retired feed is not a closed intelligence gap. It needs an `analyst`-origin gap, which the monitor never touches (see housekeeping).
+
+### Alerts were never delivered — found and fixed (`9bf5f72`, same session, night)
+
+**The finding.** After the first live health run logged `notified=True`, Brian reported that nothing reached his phone. `SD_NTFY_URL=` was present in `/etc/silicon-dominoes/collector.env` with **no value**, and `notify()` was written to print its `[notify] ...` line and return quietly when the address is empty. **From 2026-08-16 until 2026-09-20 this pipeline never delivered a single notification to anyone.** No phone had the ntfy app or a subscription either. It was found only because someone asked whether the message actually arrived.
+
+**Corrections to earlier statements in this file** (left in place above as the record of what was believed at the time):
+- Sixth session: the three malformed feeds did not "emit a notify ... ~12 alerts/day". They wrote twelve `[notify]` lines a day to the journal. Nothing was sent.
+- Eighth session, contributing factor (3), and B1 health-monitor finding 3: no "Feed health: N problem(s)" message ever "went out", daily or otherwise. The alarm-fatigue reasoning was built on journal lines. The 18-hour outage raised nothing because the system had no way to tell anyone anything.
+- "The first alert-free poll since 2026-08-16" was the first poll without a `[notify]` *log line*.
+- Every `notified=True` before `9bf5f72` meant "notify() was called", not "delivered".
+
+**Fixed the same night.**
+- Alerts now go to the public `ntfy.sh` server on a secret topic. **The topic name is the only protection** — anyone who knows it can read and send — so it is a long generated passphrase, saved in Vaultwarden first, entered on the phone (ntfy app: **+**, topic name, Subscribe) and on the server. It never appears in chat, terminal output, or the journal. Self-hosting ntfy on the tailnet remains an option; it would be a one-line change to the same file.
+- `collector.env` was world-readable (`-rw-r--r-- root root`); now `-rw-r----- root dominoes`, since it holds a secret.
+- `notify()` (`9bf5f72`): returns `True` only on a 2xx from the server; an empty address prints `NOT SENT`; a refusal prints the HTTP code; any exception is caught; the URL, host, path and bare topic are redacted from every printed line; titles are made header-safe so a character like an em dash cannot silently kill delivery. `feed_health`'s `done:` line reports `none | delivered | FAILED`, and a failed delivery never undoes the gap writes. Every collector entry point prints `WARNING: SD_NTFY_URL is empty - notifications are journal-only` at startup if it is ever blank again. `--dry-run` now says "would open / would close". **106 tests** pass in WSL and in the CT 109 venv.
+- **Verified end to end on the phone:** a manual test message, then "Feed health digest: 2 open gap(s)" sent by the real monitor through systemd. The journal of that run contained no warning line and no trace of the topic.
+
+**CT 109 DNS — the two-resolver mitigation did not fix it.** `sd-deploy` failed again on a cold lookup with both resolvers active. A timed lookup took **10.037 s** and then succeeded: two back-to-back 5-second timeouts, one to each resolver, then an instant answer. The resolvers are fine; **the first UDP packet of each new flow is dropped after idle** — per destination, so it is not a one-time ARP miss. Something stateful in the path (double-NAT, flow offload / IDS, or the Proxmox bridge firewall) is the suspect; not established. TCP hides it by retransmitting within a second. The collector tolerates it (every fetch has a 60 s whole-call deadline); `sd-deploy` does not, because git gives up sooner than the resolver does.
+
+**Gotchas learned tonight:**
+- **A pasted command that ends in `read` swallows its own trailing newline** (Windows line endings: the second character is consumed as the input). `read -rs T` returned empty every time, invisibly. Use a loop that ignores empty input: `unset T; while [ -z "$T" ]; do read -rs T; done; echo "got ${#T} chars"`, then write with `sed -i "s|^SD_NTFY_URL=.*|SD_NTFY_URL=https://ntfy.sh/$T|" /etc/silicon-dominoes/collector.env; unset T`.
+- Inspect the stored value without revealing it — read the file directly rather than sourcing it (a value with shell metacharacters could execute): `pct exec 109 -- python3 -c "import re; v=[l.split('=',1)[1].strip() for l in open('/etc/silicon-dominoes/collector.env') if l.startswith('SD_NTFY_URL=')][0]; t=v.rsplit('/',1)[-1]; print('len=%d' % len(t), 'valid=%s' % bool(re.fullmatch('[-_A-Za-z0-9]{1,64}', t)), 'prefix_ok=%s' % v.startswith('https://ntfy.sh/'))"`. ntfy topics allow only letters, digits, `-` and `_`, up to 64 characters.
+- Status-only delivery test: `pct exec 109 -- bash -c "set -a; . /etc/silicon-dominoes/collector.env; set +a; curl -s -o /dev/null -m 15 -w '%{http_code}\n' -H 'Title: SD test' -d 'manual test' \"\$SD_NTFY_URL\""`. `200` with no buzz means the phone and the server hold different topic strings. Posting to a URL with an empty topic returns `400` ("request body must be valid JSON").
+- PowerShell strips inner double quotes when handing a command to `wsl.exe`: a quoted `grep -E "a|b"` turns its `|` into shell pipes. Use `grep -e ^Ran -e ^OK -e ^FAILED -e ^FAIL: -e ^ERROR:` — no inner quotes, no `|` in the pattern.
+- Two windows, two kinds of command: `pct exec ...` goes in the **Proxmox** SSH window (`root@homelab`); `git`, `wsl`, `type`, `findstr`, `python` go in **PowerShell** (`PS C:\...`). Instructions should label every block, and say what a step is for before giving the command.
+- A log line that says something was sent is not evidence it arrived. Check the far end.
 
 ## Desk-pass demo dataset (one-time artifact — containment rules)
 
@@ -444,7 +470,12 @@ Everything below was verified against the machine during the session unless mark
 - ~~Collector hardening task B1: `feed_runs` ledger, circuit breaker, healthy-first ordering, must-exit test~~ — `bbb0ccf`; 004 applied 2026-09-20.
 - ~~Collector hardening task B2: rebuild `feed_health.py` on the ledger~~ — `52a5147`; units installed, first live run 2026-09-20 21:54 UTC closed gaps 1–3 and 6–9.
 - A rebuilt GDELT (or any non-RSS) poller must write `feed_runs`, or the ledger-based health rules cannot see it.
-- Cosmetic: `feed_health --dry-run` ends with `done: ... N closed`; should read "would close".
+- ~~Cosmetic: `feed_health --dry-run` ends with `done: ... N closed`~~ — fixed in `9bf5f72`.
+- ~~Notifications: `SD_NTFY_URL` empty since 2026-08-16; `notify()` reported attempts as deliveries~~ — wired to ntfy.sh and fixed in `9bf5f72`; verified on the phone 2026-09-20.
+- Add retries to `sd-deploy` (three attempts a few seconds apart): every DNS failure so far has been one cold lookup followed by success.
+- CT 109 DNS root cause: time a cold `getent hosts github.com` from the Proxmox host and from one other container after idle. 10 s on all of them means the router path (UDR7 / double-NAT list); only CT 109 means its own network config.
+- `feed_health --digest` does not log whether its notification was delivered; `run()` does. Small follow-up.
+- Optional: self-host ntfy on the tailnet instead of `ntfy.sh` (CT 109 must reach it by LAN IP — MagicDNS does not resolve inside LXC).
 - `CLAUDE.md` §1 names the grantee role as `dominoes`; privileges are held by `sd_pipeline` (dominoes is a member). Brian to correct the wording.
 - The two `REPLACE-ME` verify URLs now have a cost on record: they make the daily health notification permanently non-empty.
 - ~~Expect new false `research_gaps` for the four retired feeds~~ — wrong: each already holds its one open gap and nothing ever closes them. Gaps 1–3 and 6–9 are stale or false; B2 closes them by rule rather than by hand.
