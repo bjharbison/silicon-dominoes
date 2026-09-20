@@ -135,14 +135,14 @@ Back as root in the CT:
 ```
 cp /opt/silicon-dominoes/collection/systemd/*.service /opt/silicon-dominoes/collection/systemd/*.timer /etc/systemd/system/
 systemctl daemon-reload
-systemctl enable --now sd-rss.timer sd-gdelt.timer sd-verify.timer sd-snapshot-retry.timer sd-health.timer
+systemctl enable --now sd-rss.timer sd-gdelt.timer sd-verify.timer sd-snapshot-retry.timer sd-health.timer sd-health-digest.timer
 ```
 
 Verify:
 ```
 SYSTEMD_PAGER=cat systemctl list-timers 'sd-*'
 ```
-Expect five timers with NEXT times. Watch a run live later with:
+Expect six timers with NEXT times. Watch a run live later with:
 ```
 journalctl -u sd-rss.service --since "today" --no-pager
 ```
@@ -155,11 +155,15 @@ journalctl -u sd-rss.service --since "today" --no-pager
 ## 10. What runs when
 | Timer | Cadence | Does |
 |---|---|---|
-| sd-rss | every 2h | polls RSS feeds, archives new articles, Wayback-snapshots them |
+| sd-rss | every 2h | polls RSS feeds, archives new articles, Wayback-snapshots them, records every poll attempt in `feed_runs` |
 | sd-gdelt | every 6h | runs the faceted GDELT query, archives the result set |
 | sd-verify | daily 07:10 | fetches WAICO / Pax Silica pages, alerts on change or failure |
 | sd-snapshot-retry | every 6h | Wayback-retries captures that missed a snapshot |
-| sd-health | daily 08:05 | capture-rate baselines, staleness rules, opens research_gaps, ntfy |
+| sd-health | hourly | poll-staleness, breaker-derived dead feeds, weekly low-volume — opens/closes `research_gaps`, notifies only on a change (see `collector/health_rules.py`) |
+| sd-health-digest | weekly, Mon 08:30 | `feed_health --digest`: notifies a summary of every currently-open managed gap, no evaluation |
+
+## 11. feeds.yaml keys
+`country_iso3` (optional, on a `feeds:` or `verify_items:` entry): the pilot country this feed covers, e.g. `country_iso3: VNM`. When `feed_health.py` opens a `research_gaps` row for this feed (`dead_feed:<id>`, `poll_stale:<id>`, `low_volume:<id>`), it copies this value onto the gap's `country_iso3` column so gaps carry country attribution instead of none. Optional — omit it and the gap opens with `country_iso3 = NULL`, same as before. `collector_down` gaps are never about a single feed and never carry a country regardless of this key.
 
 ## Known open items
 - WAICO / Pax Silica URLs in feeds.yaml are placeholders (`REPLACE-ME`) — they will alert as failing until you identify the canonical membership pages, which is the staleness rule working as intended.

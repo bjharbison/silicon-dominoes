@@ -19,6 +19,11 @@ Environment (from /etc/silicon-dominoes/collector.env via systemd EnvironmentFil
   SD_BREAKER_THRESHOLD     consecutive failed/timeout runs before a feed is
                            quarantined by collector/breaker.py (default 5)
   SD_BREAKER_PROBE_H       hours between quarantine probes (default 24)
+  SD_POLL_STALE_H          hours since an RSS feed's newest feed_runs row (any
+                           outcome) before feed_health.py calls it poll-stale
+                           (default 6)
+  SD_COLLECTOR_DOWN_RENOTIFY_H  hours between re-notifications while a
+                           collector_down gap stays open (default 6)
 """
 from __future__ import annotations
 
@@ -66,6 +71,13 @@ FEED_BUDGET = float(os.environ.get("SD_FEED_BUDGET", "300"))
 BREAKER_THRESHOLD = int(os.environ.get("SD_BREAKER_THRESHOLD", "5"))
 BREAKER_PROBE_H = float(os.environ.get("SD_BREAKER_PROBE_H", "24"))
 
+# -------------------------------------------------------------------- health --
+# collector/feed_health.py + collector/health_rules.py. Like breaker.py,
+# health_rules.py takes these as explicit arguments rather than importing
+# config — it does no I/O at all.
+POLL_STALE_H = float(os.environ.get("SD_POLL_STALE_H", "6"))
+COLLECTOR_DOWN_RENOTIFY_H = float(os.environ.get("SD_COLLECTOR_DOWN_RENOTIFY_H", "6"))
+
 
 def load_feeds_config() -> dict:
     with open(FEEDS_FILE, "r", encoding="utf-8") as f:
@@ -77,24 +89,55 @@ def load_facet(name: str) -> dict:
         return yaml.safe_load(f)
 
 
+def present_feed_ids(cfg: dict) -> set[str]:
+    """feed_ids that feeds.yaml currently declares — both `feeds:` and
+    `verify_items:` count as present. Pure set logic, no I/O: this is what
+    sync_feeds uses to decide which existing `feeds` rows to retire, kept
+    separate so it's directly testable without a database."""
+    ids = {feed["feed_id"] for feed in cfg.get("feeds", [])}
+    ids |= {item["feed_id"] for item in cfg.get("verify_items", [])}
+    return ids
+
+
 def sync_feeds(conn, cfg: dict) -> None:
-    """Upsert feeds.yaml definitions into the (mutable, by design) feeds table."""
+    """Upsert feeds.yaml definitions into the (mutable, by design) feeds
+    table, reactivating any that return, and retire (active = false) every
+    existing row whose feed_id is no longer present in feeds.yaml —
+    feed_health.py evaluates active feeds only, so this is what lets a
+    removed feed's open gaps close as 'feed retired' instead of being
+    checked forever (the pre-harden-health bug: all ten feeds rows stayed
+    active = t no matter what feeds.yaml said)."""
     rows = []
     for feed in cfg.get("feeds", []):
         rows.append((feed["feed_id"], feed["feed_class"], feed.get("url")))
     for item in cfg.get("verify_items", []):
         rows.append((item["feed_id"], "watchlist", item["url"]))
+    present = present_feed_ids(cfg)
     with conn.cursor() as cur:
         for feed_id, feed_class, url in rows:
             cur.execute(
                 """
-                INSERT INTO feeds (feed_id, feed_class, url)
-                VALUES (%s, %s, %s)
+                INSERT INTO feeds (feed_id, feed_class, url, active)
+                VALUES (%s, %s, %s, true)
                 ON CONFLICT (feed_id)
-                DO UPDATE SET url = EXCLUDED.url, updated_at = now()
+                DO UPDATE SET url = EXCLUDED.url, active = true, updated_at = now()
                 """,
                 (feed_id, feed_class, url),
             )
+        if present:
+            cur.execute(
+                "UPDATE feeds SET active = false, updated_at = now() "
+                "WHERE active AND NOT (feed_id = ANY(%s))",
+                (list(present),),
+            )
+        else:
+            # present_feed_ids(cfg) == set() almost certainly means
+            # feeds.yaml failed to parse into what was expected (empty or
+            # malformed), not "retire every feed" — skip the deactivation
+            # rather than act on it.
+            print("sync_feeds: feeds.yaml declares zero feed_ids — skipping "
+                 "the retirement UPDATE (this looks like a broken config, "
+                 "not an instruction to retire everything)")
     conn.commit()
 
 

@@ -1,8 +1,8 @@
 [Unit]
-Description=Feed health check hourly
+Description=Weekly feed health digest, Mondays 08:30 UTC
 
 [Timer]
-OnCalendar=*-*-* *:05
+OnCalendar=Mon *-*-* 08:30:00
 RandomizedDelaySec=600
 Persistent=true
 
