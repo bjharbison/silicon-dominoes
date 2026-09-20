@@ -16,6 +16,9 @@ Environment (from /etc/silicon-dominoes/collector.env via systemd EnvironmentFil
                            moving on and leaving the rest for next poll (default 300)
   SD_LLM_DEADLINE          total wall-clock seconds for the extract.py LLM call
                            (default 300)
+  SD_BREAKER_THRESHOLD     consecutive failed/timeout runs before a feed is
+                           quarantined by collector/breaker.py (default 5)
+  SD_BREAKER_PROBE_H       hours between quarantine probes (default 24)
 """
 from __future__ import annotations
 
@@ -52,6 +55,16 @@ FETCH_MAX_BYTES = int(os.environ.get("SD_FETCH_MAX_BYTES", str(10 * 1024 * 1024)
 # remaining URLs are left for the next poll via the existing (feed_id, url)
 # dedup — never silently dropped.
 FEED_BUDGET = float(os.environ.get("SD_FEED_BUDGET", "300"))
+
+# ------------------------------------------------------------------ breaker --
+# collector/breaker.py: a feed that fails/times out this many consecutive
+# REAL (non-skipped) polls in a row is quarantined — further runs skip it
+# without attempting a connection until one probe succeeds, tried at most
+# once per BREAKER_PROBE_H. breaker.py itself takes these as explicit
+# arguments (it does no I/O, including no config import); poll_rss.py is the
+# only reader of these two names.
+BREAKER_THRESHOLD = int(os.environ.get("SD_BREAKER_THRESHOLD", "5"))
+BREAKER_PROBE_H = float(os.environ.get("SD_BREAKER_PROBE_H", "24"))
 
 
 def load_feeds_config() -> dict:
