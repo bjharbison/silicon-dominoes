@@ -15,18 +15,20 @@ pilot_scope:
 
 feeds:
   # ---- regional trade / technical press (S2-class sources) ----------------
-  - feed_id: rss-techwireasia
-    source_tier: S2
-    feed_class: rss
-    url: https://techwireasia.com/feed/
-    notes: Regional tech trade press; broad SEA coverage.
+  # RETIRED 2026-09-20 — unparseable on every poll since 2026-08-16 (syntax error at 2:0: the server does not return XML to the collector); alerted every 2h for a known condition. Reinstate only with a verified working URL. See STATUS.md.
+#   - feed_id: rss-techwireasia
+#     source_tier: S2
+#     feed_class: rss
+#     url: https://techwireasia.com/feed/
+#     notes: Regional tech trade press; broad SEA coverage.
 
-  - feed_id: rss-developingtelecoms
-    source_tier: S2
-    feed_class: rss
-    url: https://developingtelecoms.com/component/obrss/developing-telecoms.feed
-    unverified: true
-    notes: Telecom infrastructure in emerging markets; strong on RAN vendor awards.
+  # RETIRED 2026-09-20 — malformed XML on every poll since 2026-08-16 (mismatched tag at 239:2); alerted every 2h for a known condition. Reinstate only with a verified working URL. See STATUS.md.
+#   - feed_id: rss-developingtelecoms
+#     source_tier: S2
+#     feed_class: rss
+#     url: https://developingtelecoms.com/component/obrss/developing-telecoms.feed
+#     unverified: true
+#     notes: Telecom infrastructure in emerging markets; strong on RAN vendor awards.
 
   - feed_id: rss-datacenterdynamics
     source_tier: S2
@@ -42,21 +44,23 @@ feeds:
     unverified: true
     notes: Networks layer; vendor contract reporting.
 
-  - feed_id: rss-e27
-    source_tier: S3
-    feed_class: rss
-    url: https://e27.co/feed/
-    unverified: true
-    notes: SEA tech ecosystem; Applications/Models layer signals.
+  # RETIRED 2026-09-20 — every capture since 2026-08-16 was login-wall chrome (zero candidates, ever). From 2026-09-19 20:17 UTC e27.co accepted connections and never responded, hanging sd-rss for ~18h and blocking every other feed; reproduced 2026-09-20 14:08 UTC. See STATUS.md.
+#   - feed_id: rss-e27
+#     source_tier: S3
+#     feed_class: rss
+#     url: https://e27.co/feed/
+#     unverified: true
+#     notes: SEA tech ecosystem; Applications/Models layer signals.
 
   # ---- national / institutional (S1-class sources) ------------------------
-  - feed_id: rss-imda-sg
-    source_tier: S1
-    feed_class: rss
-    url: https://www.imda.gov.sg/rss-feeds
-    unverified: true
-    notes: Singapore IMDA press releases. If no RSS exists, replace with the
-      press-release index URL and let the page-change detector handle it.
+  # RETIRED 2026-09-20 — URL is an HTML index page, not a feed (not well-formed at 6:24355 on every poll since 2026-08-16). Candidate for verify_items-style page-change detection instead of RSS. See STATUS.md.
+#   - feed_id: rss-imda-sg
+#     source_tier: S1
+#     feed_class: rss
+#     url: https://www.imda.gov.sg/rss-feeds
+#     unverified: true
+#     notes: Singapore IMDA press releases. If no RSS exists, replace with the
+#       press-release index URL and let the page-change detector handle it.
 
   # RETIRED 2026-09-05 — items resolve to staging host emicweb.dev.cnnd.vn, no durable citations; Vietnamese-language work deprioritised. See STATUS.md.
 #   - feed_id: rss-mic-vn
