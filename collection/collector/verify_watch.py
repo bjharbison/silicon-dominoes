@@ -13,9 +13,7 @@ from __future__ import annotations
 
 import sys
 
-import requests
-
-from . import common, config
+from . import common, config, fetcher
 
 
 def main() -> int:
@@ -27,10 +25,9 @@ def main() -> int:
     for item in cfg.get("verify_items", []):
         feed_id, url, label = item["feed_id"], item["url"], item.get("label", item["feed_id"])
         try:
-            resp = requests.get(url, headers={"User-Agent": config.USER_AGENT},
-                                timeout=config.FETCH_TIMEOUT)
+            resp = fetcher.get(url, headers={"User-Agent": config.USER_AGENT})
             resp.raise_for_status()
-        except requests.RequestException as exc:
+        except fetcher.FetchError as exc:
             failures += 1
             common.notify(f"VERIFY FAILED: {label}",
                           f"{url} — {exc}. Membership status is unverified this run.",

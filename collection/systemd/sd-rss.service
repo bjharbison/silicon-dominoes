@@ -8,4 +8,11 @@ Type=oneshot
 User=dominoes
 WorkingDirectory=/opt/silicon-dominoes/collection
 EnvironmentFile=/etc/silicon-dominoes/collector.env
+Environment=PYTHONUNBUFFERED=1
+# Hard ceiling on the whole run: 2026-09-19 this unit hung 18h with nothing
+# in the journal because stdout was block-buffered and nothing bounded the
+# run itself. PYTHONUNBUFFERED above fixes the silent journal; this fixes
+# the hang having no ceiling at all — belt and suspenders alongside the
+# per-call and per-feed bounds in collector/fetcher.py and poll_rss.py.
+TimeoutStartSec=30min
 ExecStart=/opt/silicon-dominoes/collection/.venv/bin/python -m collector.poll_rss

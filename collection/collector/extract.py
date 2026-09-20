@@ -40,9 +40,7 @@ import sys
 import traceback
 from typing import Any
 
-import requests
-
-from . import common, config
+from . import common, config, fetcher
 
 # ---------------------------------------------------------------- constants --
 # Mirrors the Postgres enums exactly. A candidate whose value is not in these
@@ -273,10 +271,14 @@ def call_llm(article_text: str, url: str) -> dict | None:
     if config.LLM_KEY:
         headers["Authorization"] = f"Bearer {config.LLM_KEY}"
     try:
-        resp = requests.post(
+        # read_timeout matches the total deadline rather than the general
+        # short default: a local model sends nothing back until the whole
+        # completion is ready, so a short read timeout would trip on every
+        # slow-but-healthy generation. LLM_DEADLINE is still the hard cap.
+        resp = fetcher.post(
             f"{config.LLM_BASE}/v1/chat/completions",
             headers=headers,
-            json={
+            json_body={
                 "model": config.LLM_MODEL,
                 "temperature": 0,
                 "messages": [
@@ -284,9 +286,10 @@ def call_llm(article_text: str, url: str) -> dict | None:
                     {"role": "user", "content": user},
                 ],
             },
-            timeout=config.LLM_TIMEOUT,
+            read_timeout=config.LLM_DEADLINE,
+            deadline=config.LLM_DEADLINE,
         )
-    except requests.RequestException as exc:
+    except fetcher.FetchError as exc:
         print(f"    LLM request failed: {exc}")
         return None
     if not resp.ok:

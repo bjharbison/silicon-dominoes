@@ -8,4 +8,6 @@ Type=oneshot
 User=dominoes
 WorkingDirectory=/opt/silicon-dominoes/collection
 EnvironmentFile=/etc/silicon-dominoes/collector.env
+Environment=PYTHONUNBUFFERED=1
+TimeoutStartSec=10min
 ExecStart=/opt/silicon-dominoes/collection/.venv/bin/python -m collector.feed_health

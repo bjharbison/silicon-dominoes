@@ -11,9 +11,7 @@ from __future__ import annotations
 
 import sys
 
-import requests
-
-from . import common, config
+from . import common, config, fetcher
 
 
 def or_group(terms: list[str], cap: int) -> str:
@@ -49,16 +47,15 @@ def main() -> int:
         }
         print(f"[{feed['feed_id']}] query: {query}")
         try:
-            resp = requests.get(feed["url"], params=params,
-                                headers={"User-Agent": config.USER_AGENT},
-                                timeout=60)
+            resp = fetcher.get(feed["url"], params=params,
+                            headers={"User-Agent": config.USER_AGENT})
             resp.raise_for_status()
             new = common.insert_capture(
                 conn, feed_id=feed["feed_id"], url=resp.url,
                 payload=resp.content, ext="json", parse_status="captured")
             print(f"[{feed['feed_id']}] {'new result set archived' if new else 'unchanged result set'}")
             ran += 1
-        except requests.RequestException as exc:
+        except fetcher.FetchError as exc:
             common.notify("Collector: GDELT poll failed",
                           f"{feed['feed_id']}: {exc}", priority="high", tags="warning")
     conn.close()

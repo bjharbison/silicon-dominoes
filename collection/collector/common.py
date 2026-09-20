@@ -8,9 +8,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import psycopg
-import requests
 
-from . import config
+from . import config, fetcher
 
 # ---------------------------------------------------------------- database --
 def connect() -> psycopg.Connection:
@@ -107,16 +106,18 @@ def wayback_submit(url: str) -> tuple[str | None, str | None]:
         time.sleep(wait)
     _last_submit = time.monotonic()
     try:
-        resp = requests.get(
+        # Save Page Now can be slow; give it its own longer allowance rather
+        # than the general-purpose defaults.
+        resp = fetcher.get(
             "https://web.archive.org/save/" + url,
             headers={"User-Agent": config.USER_AGENT},
-            timeout=90, allow_redirects=True,
+            allow_redirects=True, read_timeout=90, deadline=90,
         )
         final = resp.url or ""
         if "/web/" in final:
             ts = final.split("/web/")[1].split("/")[0]
             return ts, final
-    except requests.RequestException:
+    except fetcher.FetchError:
         pass
     return None, None
 
@@ -129,12 +130,12 @@ def notify(title: str, message: str, priority: str = "default",
     if not config.NTFY_URL:
         return
     try:
-        requests.post(
+        fetcher.post(
             config.NTFY_URL,
             data=message.encode("utf-8"),
             headers={"Title": title, "Priority": priority, "Tags": tags,
                      "User-Agent": config.USER_AGENT},
-            timeout=15,
+            read_timeout=15, deadline=15,
         )
-    except requests.RequestException as exc:
+    except fetcher.FetchError as exc:
         print(f"[notify] delivery failed: {exc}")
