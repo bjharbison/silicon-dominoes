@@ -287,6 +287,33 @@ Everything below was verified against the machine during the session unless mark
 - Unit files in `/etc/systemd/system/` are **copies**, not symlinks. After any change under `collection/systemd/`: deploy, `diff -u` live vs repo (stop on any `-` line), `cp`, `daemon-reload`, verify with `systemctl show`.
 - `STATUS.md` had itself fallen two sessions behind; the sixth- and seventh-session record was spliced in at the start of this session as `51360a3`.
 
+### Task B1 — run ledger and circuit breaker (`bbb0ccf`, same session, later)
+
+**What landed** (branch `harden-ledger`, agent-built in three passes; 9 files, 1,013 insertions; merged fast-forward, pushed, deployed):
+- `collection/sql/004_feed_runs.sql` — append-only `feed_runs` ledger: one row per feed per poll **attempt** (`ok | failed | timeout | budget_exhausted | skipped_quarantined`), `entries_seen`, `new_captures`, `error`; index on `(feed_id, finished_at DESC)`; `CALL make_append_only('feed_runs')`; `GRANT SELECT, INSERT ... TO sd_pipeline`. No sequence grant — `run_id` is an identity column and needs none; the agent's first draft carried a schema-wide `GRANT USAGE ON ALL SEQUENCES`, removed as out of scope.
+- `collector/breaker.py` — pure, no I/O. Quarantine after `SD_BREAKER_THRESHOLD=5` consecutive `failed`/`timeout` runs; `ok` and `budget_exhausted` reset the count; the breaker's own skip rows are ignored when counting; one probe per `SD_BREAKER_PROBE_H=24`. There is **no stored "quarantined" flag**: state is derived from the ledger, and "just entered" is detected by comparing the verdict on the history with the verdict on the history minus its newest row — so each transition notifies exactly once and is reproducible from the table alone.
+- `poll_rss`: `poll_feed` returns an outcome; feeds are polled healthy-first, then no-history, then failing (stable within groups); a quarantined feed is skipped with no connection attempt, logged `outcome=skipped_quarantined next_probe=...`, and is not counted as a failure for the per-run notify.
+- **The ledger is best-effort and must never fail a poll.** A bug here was caught in review, not by tests: psycopg leaves a connection in an *aborted transaction* after any failed statement, so with `feed_runs` missing the swallowed `UndefinedTable` would have made every later query in the run fail — a missing ledger would have failed every feed. The in-memory `FakeStore` has no transaction state and all 38 tests passed regardless. Fix: `DbStore.record_run` / `recent_runs` roll back before re-raising, and `run()`'s generic except-branch rolls back before recording the failure, so a DB error inside one feed cannot poison the connection for the feeds after it. Pinned by `test_transaction_recovery.py`, which drives the real `DbStore` over a fake psycopg-style connection.
+- **39 tests**, passing in WSL (Python 3.14) and in the CT 109 pipeline venv (Python 3.13). New: breaker transitions, quarantine with zero connection attempts, ordering, ledger rows per outcome, ledger-unavailable, aborted-transaction recovery, a static check that the SQL `CHECK` list matches the code's outcome constants and grants only to `sd_pipeline`, and a **must-exit** subprocess test (a process that hit a trickle timeout must actually exit).
+
+**Live verification, in this order on purpose.** Deployed `bbb0ccf` *before* applying 004 and ran a poll: `feed_runs unavailable: relation "feed_runs" does not exist` printed **once**, both feeds polled, `0 feed failure(s)` — the rollback fix exercised against real psycopg, which the test suite can only imitate. Then 004 applied as postgres (`BEGIN / CREATE TABLE / CREATE INDEX / CALL / GRANT / COMMIT`); the next poll wrote `run_id` 1 and 2, both `ok` (DCD 20 entries, Light Reading 50, 0 new), 2026-09-20 17:50 UTC.
+
+**Applying collection DDL** (root's shell pipes the file in, so `postgres` needs no read access to the dominoes-owned repo):
+`pct exec 109 -- bash -c "su - postgres -c 'psql -d silicon_dominoes -v ON_ERROR_STOP=1' < /opt/silicon-dominoes/collection/sql/004_feed_runs.sql"`
+
+**Role finding (verified live).** Every collector table grants to role **`sd_pipeline`**; `dominoes` is the peer-auth login role and a *member* of `sd_pipeline`. `CLAUDE.md` §1 and earlier sections of this file say `dominoes` "holds DML" — true only via that membership. New tables grant to `sd_pipeline`. Brian to correct the `CLAUDE.md` wording.
+
+**Health-monitor findings — from reading `feed_health.py` and the live tables; these define task B2:**
+1. It measures **captures, never polls.** Every check reads `raw_captures`, where "nothing new" and "collector dead" are the same picture.
+2. **Gaps open once and never close.** `open_gap_if_needed` returns early if a gap is open for that origin and nothing ever closes one. Gaps 6 and 8 — the August false positives on the two live feeds — have occupied those feeds' slots since 2026-08-23/24, so during the outage the monitor *could not* open anything new. This corrects contributing factor (3) above: not "indistinguishable" — no new signal was possible.
+3. **The notification is identical every day.** `notify` fires whenever `problems` is non-empty, and the two `REPLACE-ME` verify items guarantee it never is: a high-priority "Feed health: N problem(s)" has gone out every morning since 2026-08-17.
+4. **The capture-rate check is weekend-blind:** last 48 h vs. a 30-day daily average, so the Monday 08:12 UTC run sees a weekend-sized window. (The August first-fill inflation has since rolled out of the 30-day baseline; the weekend effect is structural.)
+5. **Retired feeds are still `active = t`.** All ten rows in `feeds` are active, including `gdelt-sea-stack`, `rss-mic-vn`, `rss-e27` and the three malformed feeds: `config.sync_feeds` never deactivates a feed that leaves `feeds.yaml`, so the monitor checks retired feeds forever. (The poller is unaffected — it reads the YAML.)
+6. No gap carries a `country_iso3` — feed-health gaps have no country attribution at all, not just gap 9.
+- **Correction:** the prediction written earlier this session — that the 08:12 UTC run would open *new* false gaps for the four retired feeds — was wrong. Each already holds its one open gap (2, 3, 7, and presumably 1), so nothing new can open. Gap 9 (mic-vn, opened 2026-08-31, before its retirement) was the one correct gap in the table.
+
+**Not reviewed this session:** the B1 agent's report lines on (a) whether the must-exit test fails when `daemon=True` is removed from `fetcher.py`, (b) whether the aborted-transaction test failed before the rollback fix, and (c) what `common.connect()` does about autocommit. The code and tests were reviewed directly; these three claims were not seen.
+
 ## Desk-pass demo dataset (one-time artifact — containment rules)
 
 `countries-desk-pass-2026-08-14.json`, embedded in map.html and existing as a standalone file. A **single-analyst manual research pass** performed in-chat on 2026-08-14, NOT pipeline output:
@@ -311,16 +338,22 @@ Everything below was verified against the machine during the session unless mark
 
 ## Immediate next action (next session)
 
-**Collection is hang-proof (`2497b85`) but not yet self-reporting. Task B comes first because the outage showed the health monitor cannot tell a dead collector from a quiet weekend. Then back to the Phase 2 schema pass, which still precedes the review UI.**
+**Collection is hang-proof (`2497b85`) and now records every poll attempt (`bbb0ccf`, `feed_runs` live since 2026-09-20 17:50 UTC), but the health monitor cannot use that record yet. Task B2 comes first; then back to the Phase 2 schema pass, which still precedes the review UI.**
 
-0. **Check first:** `sd-health` runs 08:12 UTC daily and will probably have opened false `research_gaps` for the four feeds retired on 2026-09-20 (it did for mic-vn: gap 9), because their rows remain in the `feeds` table. Note the gap ids; task B fixes the cause.
-1. **Collector hardening, task B** (agent task; needs one DDL step from Brian):
-   - append-only `feed_runs` ledger — feed, started, finished, outcome (`ok | failed | timeout | budget_exhausted | skipped_quarantined`), new-capture count, error — as `collection/sql/004_feed_runs.sql`, applied by Brian as postgres;
-   - circuit breaker: after N consecutive failures a feed is quarantined (skipped, growing backoff, one probe per day) and an alert fires **once on state change**, not every run; quarantine is automatic containment, retirement in `feeds.yaml` stays a human decision;
-   - healthy-feeds-first ordering;
-   - `sd-health`: primary check becomes **age of the last completed poll per feed**; feeds absent from `feeds.yaml` are treated as retired, not collapsed; baseline excludes the first-fill burst (absorbs the old housekeeping item);
-   - a subprocess test that a process which hit a trickle timeout actually **exits** within deadline + 3 s — that property currently rests on one `daemon=True` keyword.
-   Done = the test suite passes in WSL and in the CT venv, with a first-burst-then-steady series that does not fire and a stopped-collector series that does.
+0. **Check first:**
+   - the ledger is accumulating: `select feed_id, outcome, count(*), max(finished_at) from feed_runs group by 1,2 order by 1,2` — expect ~12 `ok` rows per feed per day and nothing else;
+   - close the three unreviewed B1 report items (end of the eighth-session section); at minimum confirm by hand that `test_must_exit` fails with `daemon=True` removed from `fetcher.py`, then restore it;
+   - whether `sd_pipeline` may `UPDATE research_gaps` (B2 needs to close gaps): `select privilege_type from information_schema.role_table_grants where table_name = 'research_gaps' and grantee = 'sd_pipeline'`, as postgres.
+1. **Collector hardening, task B2 — rebuild `feed_health.py` on the ledger** (agent task):
+   - a **poll-staleness** signal from `feed_runs` with its own origin (`poll_stale:<feed_id>`), plus a single `collector_down` when no feed has a completed run within 3x the poll interval — never sharing a slot with capture-rate heuristics;
+   - gaps **close automatically** when their condition clears, so the monitor can fire again;
+   - notify **on state change only** (gap opened / closed), not daily for standing problems;
+   - capture-rate check on a weekly window against prior weeks, first-fill excluded;
+   - `config.sync_feeds` sets `active = false` for feeds absent from `feeds.yaml`, and their open gaps close as "feed retired";
+   - optional per-feed `country_iso3` in `feeds.yaml`, carried onto the gaps that feed opens;
+   - a `--dry-run` flag (evaluate and print; no writes, no notify), because the SQL cannot be exercised off the CT;
+   - decision logic as pure functions over rows so the tests need no Postgres.
+   Done = suite passes in WSL and in the CT venv, including a first-burst-then-steady series that does not fire, a weekend series that does not fire, and a stopped-collector series that does; then a `--dry-run` on the CT reviewed before the first real run.
 2. **Fixture-bloat refactor, as its own commit, before `f3-bundles`.** Must-reject cases become a delta over the passing fixture set. Done = the same 11 cases, same results under `validate.py --self-test`, fewer files.
 3. **Branch `f3-bundles`: F-3 + doc 04 L-8/L-9 together** (shared `events.schema.json`). Done = self-test passes and each new must-reject case fails for its intended reason.
 4. **F-6 text pass on doc 01** (`sovereign_pull`, `alignment_index`'s `f`, the `third`-is-residual-at-pole-level sentence). The `strategic_salience` note belongs in doc 06, which must be recovered first.
@@ -392,8 +425,11 @@ Everything below was verified against the machine during the session unless mark
 - ~~Health-monitor baseline calibration~~ as a standalone item — folded into task B.
 
 **New:**
-- Collector hardening task B: `feed_runs` ledger (`004_feed_runs.sql`), circuit breaker, healthy-first ordering, `sd-health` last-completed-poll check that respects retirement, must-exit subprocess test.
-- Expect false `research_gaps` for the four feeds retired 2026-09-20 until task B lands; record their ids rather than acting on them.
+- ~~Collector hardening task B1: `feed_runs` ledger, circuit breaker, healthy-first ordering, must-exit test~~ — `bbb0ccf`; 004 applied 2026-09-20.
+- Collector hardening task B2: rebuild `feed_health.py` on the ledger (next action 1).
+- `CLAUDE.md` §1 names the grantee role as `dominoes`; privileges are held by `sd_pipeline` (dominoes is a member). Brian to correct the wording.
+- The two `REPLACE-ME` verify URLs now have a cost on record: they make the daily health notification permanently non-empty.
+- ~~Expect new false `research_gaps` for the four retired feeds~~ — wrong: each already holds its one open gap and nothing ever closes them. Gaps 1–3 and 6–9 are stale or false; B2 closes them by rule rather than by hand.
 - **Source recruitment:** the live feed set is two S2 English trade-press feeds. No S1, no in-country source for any pilot country.
 - `rss-imda-sg` is a candidate for `verify_items`-style page-change detection rather than RSS (its URL is an HTML index page).
 - CT 109 DNS: if `sd-deploy` fails on resolution again with two resolvers configured, move the problem to the UDR7 / double-NAT list.
