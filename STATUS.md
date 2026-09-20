@@ -1,5 +1,5 @@
 # Silicon Dominoes — Project Status
-Last updated: 2026-09-20 (eighth session; sixth and seventh sessions recorded here retroactively) · Purpose: running record of what's built, what's live, and what's next. Update this file at the end of each work session — **and commit it.** This file was not tracked in git until 2026-09-05; see that session's entry.
+Last updated: 2026-09-20 (eighth session, end of day; sixth and seventh sessions were recorded retroactively the same day) · Purpose: running record of what's built, what's live, and what's next. Update this file at the end of each work session — **and commit it.** This file was not tracked in git until 2026-09-05; see that session's entry.
 
 ## Where things stand
 
@@ -252,6 +252,41 @@ The anti-join keys on `review_queue` existence, so the 178 prefilter rejects wil
 - **Agent fabrication pattern, second instance.** The Code agent printed a commit URL under `github.com/VerdunHere/...` — inferred from the misconfigured local identity, not from the remote. The actual remote is `bjharbison`. **Verify pushes by `git fetch` + `git log origin/main`, or on GitHub directly — never from agent output.**
 - **Fixture bloat flagged.** Each of the 11 must-reject cases carries a full five-contract copy (55 files ✓). Every new check adds five more. Addressed first in the next-action list.
 
+## Collection outage, feed retirements, and collector hardening (2026-09-20, eighth session)
+
+Everything below was verified against the machine during the session unless marked otherwise.
+
+**What was found.** A routine `sd-deploy` failed on DNS, and the follow-up check of the RSS journal showed the last line was `Starting sd-rss.service` at **2026-09-19 20:17:03 UTC** with no `Finished`. The poller had been hung for ~18 hours; `sd-rss.timer` showed `NEXT -` because systemd will not schedule a new run while the previous activation is still `activating (start)`. Last completed poll before the hang: 2026-09-19 18:19 UTC.
+
+**Diagnosis.**
+- `ss -tunp` on the hung process showed one socket, `ESTAB 0 0 → 104.26.4.32:443`, both queues empty: a blocking read on a connection whose far end had gone quiet. Resolving every host in `feeds.yaml` matched that address to **`e27.co`**. The hang reproduced on a fresh run at 14:08 UTC (same host, 306 ms CPU in four minutes) and did *not* reproduce at 14:24 UTC — intermittent, not permanent.
+- **Root cause, confirmed in the fix diff:** `poll_rss.poll_feed` called `feedparser.parse(url, agent=...)`, letting feedparser fetch the feed URL itself with **no timeout**. The article fetch beside it already had one. One unbounded call, on the first network operation of every feed.
+- **Contributing:** (1) the units are `Type=oneshot`, whose start timeout defaults to infinity — nothing bounded the run; (2) stdout to the journal is block-buffered and flushes at exit, so a hung run logs *nothing* — an empty journal says nothing about which feed it is on (the feed was identified from the socket, not the log); (3) `sd-health` ran at 08:12 UTC, twelve hours into the outage. Whether it alerted was not checked; either way the alert would have been indistinguishable from the three false "capture rate collapsed" gaps it opens daily. The miscalibrated baseline stopped being housekeeping when it masked a real outage.
+
+**Evidence lost: none.** `raw_captures` has zero rows after 2026-09-19 18:00 UTC, but the three polls before the hang had also found 0 new (weekend), and the first completed polls after recovery found DCD 20/20 and Light Reading 50/50 entries already captured — no item entered either feed during the outage that was not already held. Collector down ~18h over a weekend, nothing missed.
+
+**Feed retirements — `8edc18c`.** `rss-e27` (all-time `review_queue`: **254 of 254 rejected**, zero candidates ever; ~a fifth of everything the extractor had examined), plus `rss-techwireasia`, `rss-developingtelecoms`, `rss-imda-sg` (unparseable on every poll since 2026-08-16). Commented out in `feeds.yaml` with dated inline rationale, same style as the mic-vn retirement. First poll under the new config, 14:33 UTC: two feeds, `0 feed failure(s)`, no `[notify]` line — the first alert-free poll since 2026-08-16.
+
+**The collection layer is now two feeds:** `rss-datacenterdynamics` and `rss-lightreading`. Both S2, both English-language trade press. **No S1 source and no in-country source for any of the nine pilot countries.** This was effectively true since August (the other four never produced a candidate); the config now says so. Source recruitment is a real workstream and the source choices are Brian's analyst call.
+
+**Collector hardening, task A — `2497b85`** (branch `harden-fetch`, agent-built in two passes, 20 files, 1,113 insertions; merged fast-forward, pushed, deployed).
+- `collector/fetcher.py`: the one bounded HTTP path for every outbound call (feed fetch, article fetch, Wayback, ntfy, verify_watch, snapshot_retry, poll_gdelt, the LLM call). Connect and read timeouts, a **whole-call wall-clock deadline** (connect, header wait, and body all count), and a response size cap; typed `FetchError` / `FetchTimeout` / `FetchTooLarge`. Mechanism: the request runs in a **daemon** watchdog thread and `fetch()` waits on it up to the deadline — daemon so an abandoned worker can never keep the process from exiting. feedparser now only ever parses bytes.
+- Defaults in `config.py`, env-overridable: `SD_HTTP_CONNECT_TIMEOUT=10`, `SD_HTTP_READ_TIMEOUT=30`, `SD_FETCH_DEADLINE=60`, `SD_FETCH_MAX_BYTES=10485760`, `SD_FEED_BUDGET=300`, `SD_LLM_DEADLINE=300`. The LLM call passes `read_timeout` and `deadline` = `LLM_DEADLINE`, because a local model sends nothing until the whole completion is ready.
+- `poll_rss`: per-feed wall-clock budget checked before each article fetch; on exhaustion logs `outcome=budget_exhausted urls_remaining=N` and moves on (the URLs are picked up next poll by the existing dedup). Budget exhaustion is not counted as a failure. A small `DbStore` seam and a `run(cfg, store)` loop let tests drive the poller with an in-memory fake. **Expected behaviour:** a new 50-item feed with Wayback submissions will exhaust its 300 s budget on first fill and finish on the next poll.
+- All five `collection/systemd/*.service` files carry `Environment=PYTHONUNBUFFERED=1` and a `TimeoutStartSec` (rss 30min, gdelt 30min, snapshot-retry 60min, verify 10min, health 10min).
+- **First collector test suite:** `collection/tests/`, 16 tests, stdlib `unittest`, no Postgres, no external network (stub servers on 127.0.0.1): black-hole, body-trickle, header-trickle, oversized, gzip decoded, 5 MiB throughput (0.027 s), explicit-deadline override, LLM slow-response, poll run over [black-hole, trickle, healthy], per-feed budget, static guard (no raw `requests`/`urllib`/`feedparser.parse(url)` outside the fetcher), unit-file guard, requirements scan including function-level imports. **Passes in WSL (Python 3.14) and in the CT 109 pipeline venv (Python 3.13).** The first agent pass streamed with `chunk_size=1`; the follow-up replaced it. The "before" throughput was never recorded, so no claim is made about how slow it was.
+- **Unit files installed on CT 109 from the repo** (~17:02 UTC): diffed first (additions only), copied to `/etc/systemd/system/`, the live-only `sd-rss.service.d/timeout.conf` drop-in removed, `daemon-reload`, all five verified via `systemctl show`. A rebuild from the repo now reproduces the ceilings.
+
+**CT 109 DNS.** `sd-deploy` failed three times during the session with `Could not resolve host: github.com`; each time a retry minutes later succeeded, 20/20 burst lookups were clean on both CT and host, and the poller resolved hosts seconds after a failure. Pattern: **the first lookup after several idle minutes fails.** Root cause not established (the double-NAT path is the suspect). Mitigation applied: `pct set 109 --nameserver "1.1.1.1 9.9.9.9"`, active after a CT reboot (~17:00 UTC; all four timers rescheduled). If `sd-deploy` fails this way again with two resolvers, the problem is upstream of the CT and belongs on the UDR7 migration list.
+
+**Operational notes learned this session:**
+- `systemctl start` on a oneshot unit blocks until the run ends — use `systemctl start --no-block sd-rss.service`, then read the journal.
+- A hung run is diagnosed from its socket (`ss -tunp | grep python`, then resolve the hosts in `feeds.yaml`), not from its log.
+- `unittest` prints its verdict to stderr while test `print()` output is buffered to the end, so `| tail` can cut off the verdict. Use: `... -m unittest discover -s collection/tests 2>&1 | grep -E "^Ran |^OK|^FAILED|^FAIL:|^ERROR:"`.
+- Run collector tests in the CT from the repo root: `pct exec 109 -- su - dominoes -c 'cd /opt/silicon-dominoes && collection/.venv/bin/python -m unittest discover -s collection/tests'`. In WSL use the venv at `collection/.venv-test` (gitignored).
+- Unit files in `/etc/systemd/system/` are **copies**, not symlinks. After any change under `collection/systemd/`: deploy, `diff -u` live vs repo (stop on any `-` line), `cp`, `daemon-reload`, verify with `systemctl show`.
+- `STATUS.md` had itself fallen two sessions behind; the sixth- and seventh-session record was spliced in at the start of this session as `51360a3`.
+
 ## Desk-pass demo dataset (one-time artifact — containment rules)
 
 `countries-desk-pass-2026-08-14.json`, embedded in map.html and existing as a standalone file. A **single-analyst manual research pass** performed in-chat on 2026-08-14, NOT pipeline output:
@@ -276,20 +311,29 @@ The anti-join keys on `review_queue` existence, so the 178 prefilter rejects wil
 
 ## Immediate next action (next session)
 
-**Phase 1 is closed. F-2/F-7 are landed (`b5cff84`). The rest of the Phase 2 schema pass comes before the review UI — building the UI first means building the reviewer form twice.**
+**Collection is hang-proof (`2497b85`) but not yet self-reporting. Task B comes first because the outage showed the health monitor cannot tell a dead collector from a quiet weekend. Then back to the Phase 2 schema pass, which still precedes the review UI.**
 
-1. **Fixture-bloat refactor, as its own commit, before `f3-bundles`.** Must-reject cases become a delta over the passing fixture set instead of a full copy. Done = the same 11 cases, the same pass/fail results under `validate.py --self-test`, fewer files. Kept separate from F-3 so `git diff --stat main` on the F-3 branch shows only F-3.
-2. **Branch `f3-bundles`: F-3 + doc 04 L-8/L-9 together** (they share `events.schema.json`): `bundle_disposition` required (`anchor | member | standalone`), `standalone_rationale` conditionally required, one anchor per `bundle_id` retained; `chokepoint_exercise` / `exercise_type` / `exercise_target`, the latter reusing the `reversal_target` shape. Done = self-test passes and each new must-reject case fails for its intended reason.
-3. **F-6 text pass on doc 01:** define or remove `sovereign_pull`; specify `alignment_index`'s `f`; the sentence acknowledging `third` as a residual at pole level only (F-7 rule 1). The `strategic_salience` closure-rule note belongs in doc 06, which must be recovered first.
-4. **`schema_version` decision.** Already `2.0.0`. F-3 and L-8/L-9 add required fields and are breaking again. Nothing has ever published under 2.0.0, so decide once: ride inside 2.0.0 (no consumer exists to break) or go to 3.0.0 (strict reading of `schemas/README.md`). Either way, record it here and confirm `map.html` and exports agree with the final number.
-5. **Then the review UI**, designed against the 10 pending rows and the two fixtures (captures 1274 and 1242).
+0. **Check first:** `sd-health` runs 08:12 UTC daily and will probably have opened false `research_gaps` for the four feeds retired on 2026-09-20 (it did for mic-vn: gap 9), because their rows remain in the `feeds` table. Note the gap ids; task B fixes the cause.
+1. **Collector hardening, task B** (agent task; needs one DDL step from Brian):
+   - append-only `feed_runs` ledger — feed, started, finished, outcome (`ok | failed | timeout | budget_exhausted | skipped_quarantined`), new-capture count, error — as `collection/sql/004_feed_runs.sql`, applied by Brian as postgres;
+   - circuit breaker: after N consecutive failures a feed is quarantined (skipped, growing backoff, one probe per day) and an alert fires **once on state change**, not every run; quarantine is automatic containment, retirement in `feeds.yaml` stays a human decision;
+   - healthy-feeds-first ordering;
+   - `sd-health`: primary check becomes **age of the last completed poll per feed**; feeds absent from `feeds.yaml` are treated as retired, not collapsed; baseline excludes the first-fill burst (absorbs the old housekeeping item);
+   - a subprocess test that a process which hit a trickle timeout actually **exits** within deadline + 3 s — that property currently rests on one `daemon=True` keyword.
+   Done = the test suite passes in WSL and in the CT venv, with a first-burst-then-steady series that does not fire and a stopped-collector series that does.
+2. **Fixture-bloat refactor, as its own commit, before `f3-bundles`.** Must-reject cases become a delta over the passing fixture set. Done = the same 11 cases, same results under `validate.py --self-test`, fewer files.
+3. **Branch `f3-bundles`: F-3 + doc 04 L-8/L-9 together** (shared `events.schema.json`). Done = self-test passes and each new must-reject case fails for its intended reason.
+4. **F-6 text pass on doc 01** (`sovereign_pull`, `alignment_index`'s `f`, the `third`-is-residual-at-pole-level sentence). The `strategic_salience` note belongs in doc 06, which must be recovered first.
+5. **`schema_version` decision:** already `2.0.0`; decide whether F-3/L-8 ride inside it (nothing has ever published) or go to 3.0.0. Record it here.
+6. **Then the review UI**, designed against the 10 pending rows and captures 1274 and 1242.
 
-**Housekeeping (agent tasks unless marked; none blocks Phase 2):**
-- Extractor `--retry-failed` path for rows with `rejection_reason = "LLM extraction failed — retry"`, plus a distinct status so they stop inflating the review count. Done = test showing such a row is re-examined.
-- Health-monitor baseline: exclude the first 48h of a feed's history, or use median daily *new* captures. Done = test with a first-burst-then-steady synthetic series that does not fire.
-- Retire `rss-e27`; remove or disable the three malformed feeds. YAML only.
+**Standing, Brian's analyst work (not agent tasks):** source recruitment for a two-feed collection layer — at minimum one S1 and one in-country source per pilot country is the shape of the gap; VNM candidates already noted (VnExpress International, Vietnam Investment Review). New feeds are now safe to add: a bad one costs its own slot, not the run.
+
+**Housekeeping (none blocks the above):**
+- Extractor `--retry-failed` path for the 48 `LLM extraction failed — retry` rows, plus a distinct status.
 - **Brian, as postgres:** `UPDATE research_gaps SET country_iso3 = 'VNM' WHERE gap_id = 9;` and open a VNM replacement-source gap.
 - Add `dominoes` to `systemd-journal`, or standardise on reading logs as root.
+- `collection/sql/003_url_index.sql.txt` is a stray tracked duplicate: `fc` it against the `.sql`, then `git rm` if identical.
 
 ## Open items / TODOs
 
@@ -337,6 +381,23 @@ The anti-join keys on `review_queue` existence, so the 178 prefilter rejects wil
 - **GDELT rebuild via Web NGrams** — parked behind Phase 2. Volume probe first. Needs a versioned domain→source-tier map authored by Brian (GDELT spans S3–S4 including state media), built behind a `structured_news` interface so the DOC API can return.
 - **D/E structural gap.** The collection layer produces T (flow) only. D and E are stocks needing feed class 3 (Comtrade HS codes, tender portals, registries, cable DBs), specified in ARCHITECTURE §3 and not built. Working answer: hand-code a nine-country stock baseline against S1/S2 sources through the review queue, corroboration enforced, published as cycle zero. Analyst work, not an agent task.
 - **WAICO founding-date conflict.** `SYSTEM_PROMPT.md` §1 says 16 July 2026; at least one S3/S4 source citing Xinhua/NDRC says 17 July. Resolve against S1 and flag in the first changelog per §1. Do it in the same pass as replacing the two `REPLACE-ME` verify URLs and verifying pilot-country WAICO / Pax Silica membership.
+
+### Delta 2026-09-20 (eighth session)
+
+**Closed:**
+- ~~Retire `rss-e27`~~ and ~~remove/disable `rss-techwireasia`, `rss-developingtelecoms`, `rss-imda-sg`~~ — `8edc18c`.
+- ~~Poller HTTP calls lack timeouts; units have no runtime ceiling; journal output buffered~~ — `2497b85`; unit files installed on CT 109 and the live-only drop-in removed.
+- ~~`trafilatura` missing from `collection/requirements.txt`~~ — present (`trafilatura==2.2.0`); now guarded by `test_requirements`.
+- ~~CT 109 single DNS resolver~~ — second resolver `9.9.9.9` active. Root cause of the first-lookup-after-idle failures still unknown.
+- ~~Health-monitor baseline calibration~~ as a standalone item — folded into task B.
+
+**New:**
+- Collector hardening task B: `feed_runs` ledger (`004_feed_runs.sql`), circuit breaker, healthy-first ordering, `sd-health` last-completed-poll check that respects retirement, must-exit subprocess test.
+- Expect false `research_gaps` for the four feeds retired 2026-09-20 until task B lands; record their ids rather than acting on them.
+- **Source recruitment:** the live feed set is two S2 English trade-press feeds. No S1, no in-country source for any pilot country.
+- `rss-imda-sg` is a candidate for `verify_items`-style page-change detection rather than RSS (its URL is an HTML index page).
+- CT 109 DNS: if `sd-deploy` fails on resolution again with two resolvers configured, move the problem to the UDR7 / double-NAT list.
+- Stray tracked file `collection/sql/003_url_index.sql.txt`.
 
 ## How to resume in a fresh chat
 
