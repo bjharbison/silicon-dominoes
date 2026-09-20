@@ -1,5 +1,5 @@
 # Silicon Dominoes — Project Status
-Last updated: 2026-09-05 (fifth session, end of day) · Purpose: running record of what's built, what's live, and what's next. Update this file at the end of each work session — **and commit it.** This file was not tracked in git until 2026-09-05; see that session's entry.
+Last updated: 2026-09-20 (eighth session; sixth and seventh sessions recorded here retroactively) · Purpose: running record of what's built, what's live, and what's next. Update this file at the end of each work session — **and commit it.** This file was not tracked in git until 2026-09-05; see that session's entry.
 
 ## Where things stand
 
@@ -210,6 +210,48 @@ Text length by feed, deduped by URL, measured through `read_capture`:
 
 The anti-join keys on `review_queue` existence, so the 178 prefilter rejects will **not** be reconsidered under improved facets. `review_queue` rows are not immutable the way `raw_captures` is, so deleting rejects is possible — but the auditability-preserving option is to stamp `facets_version` into the candidate blob and anti-join on version, so a capture is re-examined when the facets change and the old decision stays on the record. Settle this before widening any lists.
 
+## Intake audit and Phase 1 close-out (2026-09-08, sixth session)
+
+**Purpose:** verify the "roughly a thousand unprocessed captures" claim before scoping Phase 1 work. The claim was stale; Phase 1 is closed. Every finding below is from live container output that session, not from prior notes.
+
+**Findings (all checked against the machine, several correcting this file):**
+
+- **Intake is current.** `sd-deploy` landed `5bc5c30`. Extractor dry run found **89** captures to examine, not ~1,000 — extraction had been running since the fifth session (the `ensure_ascii=False` fix in `5bc5c30` only triggers on Vietnamese geo hits). Full run: `extracted=2, filtered=85, not-relevant=2`. Funnel by feed for the day: DCD 3 pending / 47 rejected, e27 22 rejected, Light Reading 18 rejected. No mic-vn in the batch.
+- **`gdelt-sea-stack` and `rss-mic-vn` are retired, not failing.** Commit `e1edad9` (2026-09-05) commented both out of `feeds.yaml` with inline rationale; `sd-gdelt.timer` is `disabled` (unit file present, `Active: inactive (dead)`); only four `sd-*` timers are scheduled. Earlier "GDELT 429 on every run" and "mic-vn staging host unresolved" framings in this file describe the pre-`e1edad9` state and are superseded. GDELT's last capture: 2026-08-16. mic-vn's last capture: 2026-09-05 14:16 UTC.
+- **GDELT root cause is upstream.** Per GDELT's own guidance the legacy DOC search API is being intentionally starved during a Spanner migration; the sanctioned replacement is the Web NGrams dataset (per-minute gzipped files plus TOC at `data.gdeltproject.org/gdeltv5/weblegacy/ngrams/`). Reinstating GDELT is therefore a rebuild (new poller, domain→source-tier map, provenance recording), not a fix. Parked behind Phase 2; run a volume probe before scoping.
+- **`entities.yaml` header fix landed** in `e1edad9` (header now defers to the `version` key).
+- **Review queue, all time:** `pending 10 · rejected 1191 · needs_more_sourcing 48`. All 48 `needs_more_sourcing` rows carry `rejection_reason = "LLM extraction failed — retry"`. They are retry work, not review work; the true review backlog is 10.
+- **Health monitor is running and opening `research_gaps`** (gaps 5–9 exist). Two defects:
+  - **Baselines are miscalibrated.** Gaps 6–8 flag DCD, e27, and Light Reading as "capture rate collapsed" against expected ~29–31 per 48h. Those expectations are the first-fill burst (50-item initial polls). Post-dedup steady state is 0–2 new per poll, which is correct behaviour. Three of the five most recent gaps are false positives.
+  - **Gap 9 (mic-vn) has no `country_iso3`.** Retiring mic-vn leaves **VNM with zero in-country sources**; all Vietnam evidence now arrives via English-language trade press. This is a coverage gap for a pilot country (ARCHITECTURE §4 "we stopped hearing" vs "nothing happened") and must be disclosed as such, not filed as feed health.
+- **`rss-e27` is still live** and captured 59 items in the prior 7 days, all login-wall chrome (22/22 prefilter rejects on the day). It inflates capture counts and coverage metrics while contributing nothing.
+- **Three malformed feeds still fail every 2h run** (`rss-techwireasia`, `rss-developingtelecoms`, `rss-imda-sg`) and emit a notify each time — ~12 alerts/day for a known condition.
+- **`dominoes` is not in `systemd-journal`**, so `journalctl` as that user shows a partial log. Read logs as root: `pct exec 109 -- bash -c "journalctl -u sd-rss.service --since '6 hours ago' --no-pager"`.
+
+**The day's two candidates became the Phase 2 test fixtures.** Both miscoded in exactly the ways doc 07 F-2 predicts:
+
+- Capture 1274, Firmus/OpenAI Malaysia → extractor coded `MYS / facilities / T2 / us`. Direction assigned from the customer's nationality; the controller is Firmus (control AUS, third pole) with OpenAI as tenant.
+- Capture 1242, Thailand pauses construction on 49 DCs → extractor coded `THA / facilities / T1 / sovereign` **and** `THA / cloud / T5 / us`. The first is wrong: a construction pause is a reversal at the tier reversed, not a Tier-1 statement of intent. The second is a hallucinated event — AWS's existing presence mentioned as article context, coded as new operational-at-scale; it would trigger an out-of-cycle D/E recompute if approved.
+
+**Decisions:**
+- Phase 1 declared closed. No facet work is on the critical path.
+- The critical path is Phase 2 (one breaking schema pass), then the review UI.
+- mic-vn retirement stands; the VNM coverage gap is recorded and a replacement-source gap is owed (candidates: VnExpress International, Vietnam Investment Review — S2/S3, English, durable URLs).
+- e27 to be retired the same way as mic-vn (comment out with dated inline rationale).
+
+## F-2 / F-7 schema pass (2026-09-09, seventh session)
+
+*Written 2026-09-20 from session notes, not contemporaneously. Items marked ✓ were re-verified against the checkout on 2026-09-20.*
+
+- **Design review before build.** Five registry design decisions (D1–D5) were critically reviewed before any code was written; all five had real defects: D1 conflated incorporation with jurisdiction of control and left `third` as an unexamined residual; D2 silently dropped mixed-ownership signal in consortia; D3 wrongly concluded a foreign tenant produces no exposure edge; D4 made reversals of pre-collection facts structurally uncodeable; D5 had no handling for HKG, MAC, TWN, or EU. The corrections are recorded as doc 07 **F-7** and are authoritative for the F-2 implementation.
+- **Fixture containment.** Fixtures carrying real entity names and plausible URLs were identified as fabricated citations sitting in the repo. Rule now mechanical: `https://fixture.invalid/` URLs only, `^test_` ids, `(fixture)` in names, enforced by `check_no_fixture_artifacts` on the publish path.
+- **Pre-flight finding: `project-knowledge/` held only docs 01–04.** Docs 05, 06, and 07 were absent despite this file recording otherwise. Doc 07 v1.1 (31,750 bytes) was written and committed as `5bda127` ✓. **Docs 05 (Simple-mode lexicon) and 06 (DIMEFIL provenance) are still not in the repository** — recovery items, below.
+- **Build.** Agent task on branch `f2-controllers`: 859 net insertions across 17 files — `controllers.schema.json`, `pole_map.json`, `controller_id` required on edges with no null branch, stored `direction` forbidden, `direction_derived` emitted `derived: true`, inline `reversal_target`, no sum constraint across exposure fields. `validate.py --self-test` passed with 11 must-reject cases in both WSL and the CT 109 venv. Merged fast-forward to main as `b5cff84` ✓, pushed ✓ (`origin/main` = `b5cff84` after fetch, 2026-09-20), deployed to CT 109.
+- **`schema_version` is already `2.0.0`** ✓ across the five passing fixtures and the must-reject set; the major bump rode in `b5cff84`. The `countries.json` in `must-reject/desk-pass` and `must-reject/synthetic-minimal` are at `1.0.0` ✓ — confirm each is rejected for its intended reason (the `provisional` / `synthetic` envelope check) and not incidentally.
+- **Git identity.** The Windows global identity was `VerdunHere` / `harbison.brian@gmail.com`; corrected to `Brian Harbison` / `harbisonbrian@protonmail.com`. Two already-pushed commits carry the old identity and were deliberately left as-is rather than rewriting published history. A junk config key `credential.https://github.com.usernamegit` (paste collision) was removed. `git config --global core.pager cat` set, so `git diff --stat` no longer traps in `less`.
+- **Agent fabrication pattern, second instance.** The Code agent printed a commit URL under `github.com/VerdunHere/...` — inferred from the misconfigured local identity, not from the remote. The actual remote is `bjharbison`. **Verify pushes by `git fetch` + `git log origin/main`, or on GitHub directly — never from agent output.**
+- **Fixture bloat flagged.** Each of the 11 must-reject cases carries a full five-contract copy (55 files ✓). Every new check adds five more. Addressed first in the next-action list.
+
 ## Desk-pass demo dataset (one-time artifact — containment rules)
 
 `countries-desk-pass-2026-08-14.json`, embedded in map.html and existing as a standalone file. A **single-analyst manual research pass** performed in-chat on 2026-08-14, NOT pipeline output:
@@ -234,27 +276,20 @@ The anti-join keys on `review_queue` existence, so the 178 prefilter rejects wil
 
 ## Immediate next action (next session)
 
-**As of 2026-09-05 (end of day):** prerequisites done, grader exists. Next: (1) verify which Phase 1 intake items below are actually complete (`trafilatura` in requirements, `Viettel`/`VNPT`/`FPT` in `actors`, `facets_version` anti-join, e27, GDELT expansion) before resuming them — several are now candidates for agent tasks since `validate.py --self-test` and the extractor's `--dry-run` give them a finish line; (2) Phase 2 breaking schema pass (doc 07 F-2/F-3/F-7, doc 04 L-8/L-9, F-6 text, H sub-indices, major `schema_version` bump) — agent writes schema deltas and `.sql`, Brian applies DDL; `validate.py` must-reject fixtures grow with it; (3) review UI only after Phase 2 lands.
+**Phase 1 is closed. F-2/F-7 are landed (`b5cff84`). The rest of the Phase 2 schema pass comes before the review UI — building the UI first means building the reviewer form twice.**
 
-**Written 2026-08-16, retained as the Phase 1 checklist:** Step 4a runs, and has produced its first real candidate. The next session fixes the two feed defects that are starving it. Ordered by value per unit of effort:
+1. **Fixture-bloat refactor, as its own commit, before `f3-bundles`.** Must-reject cases become a delta over the passing fixture set instead of a full copy. Done = the same 11 cases, the same pass/fail results under `validate.py --self-test`, fewer files. Kept separate from F-3 so `git diff --stat main` on the F-3 branch shows only F-3.
+2. **Branch `f3-bundles`: F-3 + doc 04 L-8/L-9 together** (they share `events.schema.json`): `bundle_disposition` required (`anchor | member | standalone`), `standalone_rationale` conditionally required, one anchor per `bundle_id` retained; `chokepoint_exercise` / `exercise_type` / `exercise_target`, the latter reusing the `reversal_target` shape. Done = self-test passes and each new must-reject case fails for its intended reason.
+3. **F-6 text pass on doc 01:** define or remove `sovereign_pull`; specify `alignment_index`'s `f`; the sentence acknowledging `third` as a residual at pole level only (F-7 rule 1). The `strategic_salience` closure-rule note belongs in doc 06, which must be recovered first.
+4. **`schema_version` decision.** Already `2.0.0`. F-3 and L-8/L-9 add required fields and are breaking again. Nothing has ever published under 2.0.0, so decide once: ride inside 2.0.0 (no consumer exists to break) or go to 3.0.0 (strict reading of `schemas/README.md`). Either way, record it here and confirm `map.html` and exports agree with the final number.
+5. **Then the review UI**, designed against the 10 pending rows and the two fixtures (captures 1274 and 1242).
 
-1. **Confirm the AND-gate hypothesis before touching facets.** Measure, over the `mic-vn` corpus, how many captures match geo-only vs. entity-only vs. both under the current lists, and whether the text is NFC-normalised (if it is decomposed Unicode, `"Việt Nam"` typed into YAML will not match no matter what is added, and the fix belongs in `read_capture` instead). This determines whether the fix is *more geo terms* or *moving `Viettel`/`VNPT`/`FPT` into `actors`* — probably both.
-2. **Add Vietnamese-form geo terms** to `facets/entities.yaml`: `Việt Nam`, `Hà Nội`, `Đà Nẵng`, `Thành phố Hồ Chí Minh`, plus the ministries seen in the corpus (`Bộ Khoa học và Công nghệ`). Pure YAML, no code, recovers up to ~60% of 63 captures. Bump the facets version.
-3. **Diagnose the e27 fetch path.** All 50 captures are login-wall chrome. Determine whether the feed supplies stub URLs, whether the page needs a different user-agent, or whether the outlet is simply unusable behind its wall — and if unusable, drop it rather than carry a dead feed that biases coverage silently.
-4. **Decide the re-examination mechanism** (`facets_version` in the candidate blob vs. deleting prefilter rejects) — required before any facet change can actually recover the 178 already-rejected captures.
-5. **Then the review UI.** Six pending candidates exist, one of them rich enough to design against, and the coding problems listed above are exactly the affordances the reviewer screen needs to make easy to fix.
-
-Schema facts confirmed live, so 4a needs no migration:
-
-- `review_queue` exists: `review_id`, `capture_id` (FK), `candidate jsonb`, `status`, `reviewer`, `reviewed_at`, `rejection_reason`. Enum `review_status` = `pending | approved | rejected | needs_more_sourcing`. Partial index on pending.
-- `raw_captures` has **no title or text column** — content lives in the archive at `object_key`. The extractor reads files, not rows.
-
-Build order for 4a (`collection/extract.py`):
-
-1. Select work with `DISTINCT ON (feed_id, url)`; read `object_key`, handling `.html`, `.html.gz`, `.json`.
-2. **Deterministic prefilter** on the facet lists (pilot-country geo terms + §1 vendor/financier entities) before any LLM call. Most captures are irrelevant trade press; the gate must be auditable, which a model triage is not.
-3. LLM extraction → candidate JSON matching the `events` schema, written to `review_queue`.
-4. First test case: the STT GDC $1.37B green loan for the Johor / Iskandar Puteri campus (capture in rss-lightreading) — MYS, Facilities, Tier 4 (financing closed), with value and counterparty. Clean, unambiguous, and directly comparable to the hand-coded desk-pass entry.
+**Housekeeping (agent tasks unless marked; none blocks Phase 2):**
+- Extractor `--retry-failed` path for rows with `rejection_reason = "LLM extraction failed — retry"`, plus a distinct status so they stop inflating the review count. Done = test showing such a row is re-examined.
+- Health-monitor baseline: exclude the first 48h of a feed's history, or use median daily *new* captures. Done = test with a first-burst-then-steady synthetic series that does not fire.
+- Retire `rss-e27`; remove or disable the three malformed feeds. YAML only.
+- **Brian, as postgres:** `UPDATE research_gaps SET country_iso3 = 'VNM' WHERE gap_id = 9;` and open a VNM replacement-source gap.
+- Add `dominoes` to `systemd-journal`, or standardise on reading logs as root.
 
 ## Open items / TODOs
 
@@ -278,6 +313,30 @@ Build order for 4a (`collection/extract.py`):
 - **License**: decide before public data launch (MIT for code like Trapline; consider CC-BY for datasets).
 - From ARCHITECTURE.md §15, still open: posture clustering algorithm choice; admin framework for the review UI (lean pragmatic for v1).
 - **Consider `SD_WAYBACK=0` for iterative testing.** Lower priority than it looks: since the URL-dedup fix a re-poll skips known URLs *before* the Wayback submission, so the cost only lands on genuinely new articles, and step-4 extraction reads archive objects without polling at all. **Verify the safety net before relying on it** — confirm `snapshot_retry.py` selects on *absence of a snapshot row*, not a time window; if it filters by recency, captures skipped today could fall out of range and never be snapshotted, silently breaking the traceability guarantee (ARCHITECTURE §3). **Do not edit `collector.env`** — all five timers load it, so a forgotten flag degrades scheduled runs. Use a per-invocation override instead, with the assignment *inside* the quoted command: `su - dominoes -c 'SD_WAYBACK=0 ...'` (`su -` resets the environment, so putting it outside silently does nothing).
+
+### Delta 2026-09-08 → 2026-09-20
+
+**Closed:**
+- ~~Corrected `entities.yaml` header commit~~ — landed in `e1edad9`.
+- ~~Diagnose and fix GDELT 429~~ — feed retired `e1edad9`; root cause is upstream (see sixth session). Reopens only as the Web NGrams rebuild.
+- ~~Check `rss-mic-vn` production-host probe~~ — feed retired `e1edad9`; see VNM coverage gap.
+- ~~Fix or drop `rss-e27`~~ → decision made: drop. (Execution still open, below.)
+- ~~Doc 07 F-2: controller registry, derived direction~~ — landed `b5cff84` together with F-7.
+- ~~`must-reject` fixtures and explicit `synthetic` / `provisional` rejection in `validate.py`~~ — in place; 11 cases as of `b5cff84`.
+
+**New:**
+- **Recover docs 05 and 06 into `project-knowledge/`.** Doc 05 (Simple-mode lexicon v0.2) exists in the Claude Project knowledge store. Doc 06 (DIMEFIL provenance) is cited by doc 07 F-3, F-5, F-6 and F-7 and its location is unconfirmed. Until it is back, F-6 is half-blocked.
+- Fixture-bloat refactor (next action 1).
+- Retire `rss-e27` in `feeds.yaml` with dated inline rationale.
+- Remove/disable `rss-techwireasia`, `rss-developingtelecoms`, `rss-imda-sg` until replacement URLs exist.
+- `research_gaps` gap 9: set `country_iso3 = 'VNM'`; open a replacement-source gap for Vietnam (S2/S3, English, durable URLs).
+- Extractor `--retry-failed` for the 48 LLM-failure rows; distinct status.
+- Health-monitor baseline calibration (first-fill burst excluded).
+- Grant `dominoes` the `systemd-journal` group or document root-only log reading.
+- **Reversal coding:** the extractor has no path for reversal events (Thailand pause coded as T1 intent). The review UI must make "this is a reversal at tier N" a one-click correction; the extractor prompt should be taught the reversal class before Phase 4.
+- **GDELT rebuild via Web NGrams** — parked behind Phase 2. Volume probe first. Needs a versioned domain→source-tier map authored by Brian (GDELT spans S3–S4 including state media), built behind a `structured_news` interface so the DOC API can return.
+- **D/E structural gap.** The collection layer produces T (flow) only. D and E are stocks needing feed class 3 (Comtrade HS codes, tender portals, registries, cable DBs), specified in ARCHITECTURE §3 and not built. Working answer: hand-code a nine-country stock baseline against S1/S2 sources through the review queue, corroboration enforced, published as cycle zero. Analyst work, not an agent task.
+- **WAICO founding-date conflict.** `SYSTEM_PROMPT.md` §1 says 16 July 2026; at least one S3/S4 source citing Xinhua/NDRC says 17 July. Resolve against S1 and flag in the first changelog per §1. Do it in the same pass as replacing the two `REPLACE-ME` verify URLs and verifying pilot-country WAICO / Pax Silica membership.
 
 ## How to resume in a fresh chat
 
