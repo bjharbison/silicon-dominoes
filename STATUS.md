@@ -1,5 +1,5 @@
 # Silicon Dominoes — Project Status
-Last updated: 2026-09-20 (eighth session, end of day; sixth and seventh sessions were recorded retroactively the same day) · Purpose: running record of what's built, what's live, and what's next. Update this file at the end of each work session — **and commit it.** This file was not tracked in git until 2026-09-05; see that session's entry.
+Last updated: 2026-09-20 (eighth session, close; summary sections below refreshed the same night) · Purpose: running record of what's built, what's live, and what's next. Update this file at the end of each work session — **and commit it.** This file was not tracked in git until 2026-09-05; see that session's entry.
 
 ## Where things stand
 
@@ -7,17 +7,17 @@ Last updated: 2026-09-20 (eighth session, end of day; sixth and seventh sessions
 
 **Live site:** https://bjharbison.github.io/silicon-dominoes/ — GitHub Pages, enabled and working. Dashboard is **v5** (Simple/Advanced mode), pushed and live as of the fourth session. `index.html` is a meta-refresh redirect to `map.html`, so the bare URL opens the dashboard; the README renders on GitHub itself. Repo About sidebar links the Pages site. **Operational note: Pages deploys lag up to ~10 minutes behind commits (CDN cache) — hard-refresh (Ctrl+Shift+R) or append `?v=N` before troubleshooting a "stale" deploy.**
 
-**Collection layer live:** CT 109 `dominoes` at 192.168.1.204, Postgres 17 with all T1–T11 guarantees verified, five systemd timers active. 225 captures across five feeds (four RSS + GDELT), still growing on schedule. URL-dedup and gzip patches applied 2026-08-16. Extraction has run: 191 `review_queue` rows, 6 pending candidates — but two of four RSS feeds are effectively contributing nothing (see feed diagnosis).
+**Collection layer live and hardened (2026-09-20):** CT 109 `dominoes` at 192.168.1.204, Postgres 17 (T1–T11 verified 2026-08-16). **Two live feeds** — `rss-datacenterdynamics` and `rss-lightreading`, both S2 English-language trade press; six feeds are retired, each with a dated rationale inline in `feeds.yaml`. **There is no S1 source and no in-country source for any of the nine pilot countries** — source recruitment is the open analytic gap, and it is Brian's work. Every outbound request is time-bounded; every poll attempt is recorded in `feed_runs`; a feed that keeps failing is quarantined automatically; the health monitor runs hourly off that ledger, closes gaps that clear, never treats evidence it could not read as "fine", and notifies only when something changes (plus a Monday digest). **Alerts reach Brian's phone through ntfy — first delivery 2026-09-20; none was ever delivered before that (see the eighth-session record).** 106 collector tests pass in WSL and in the CT venv. Known issue: CT 109 drops the first DNS packet after idle (a 10 s stall), so `sd-deploy` sometimes needs a second run.
 
 **Build order progress (ARCHITECTURE.md §14):**
 
 | Step | What | Status |
 |---|---|---|
-| 1 | JSON Schemas for the publication contracts (`schemas/`) | ✅ Built, committed, ✅ **verified 2026-08-16 (fourth session).** `validate.py fixtures` returns `OK — all contracts valid; cross-field checks passed` against live jsonschema 4.18 in CT 109. Remaining: `must-reject` fixtures (see open items) |
+| 1 | JSON Schemas for the publication contracts (`schemas/`) | ✅ Built and verified. **`schema_version` 2.0.0** since `b5cff84` (2026-09-09): controller registry, derived pole and direction, fixture containment; `validate.py --self-test` passes with 11 must-reject cases. Remaining Phase 2 pass: fixture-bloat refactor, F-3 + doc 04 L-8/L-9, F-6 text (see next actions) |
 | 2 | Postgres schema (`db/`) | ✅ Built, ✅ **deployed and verified on 2026-08-16.** All eleven guarantee tests (T1–T11) PASS on live Postgres 17 in CT 109 |
-| 3 | Collection layer (`collection/`) | ✅ Built, ✅ **deployed and running on 2026-08-16.** Five systemd timers active; URL-dedup fix verified live (three feeds still fail with real XML parse errors — see open items) |
+| 3 | Collection layer (`collection/`) | ✅ Built, deployed, and **hardened 2026-09-20.** Two live RSS feeds, six retired. Bounded fetcher, per-feed budget, `feed_runs` ledger, circuit breaker, health monitor on the ledger, ntfy alerts verified on the phone. 106 tests in `collection/tests/`. Five timers: `sd-rss`, `sd-snapshot-retry`, `sd-verify`, `sd-health` (hourly), `sd-health-digest` (Mondays); `sd-gdelt` disabled |
 | — | Dashboard (`map.html`, v5) | ✅ Built third session, ✅ **pushed and live 2026-08-16 (fourth session).** Simple/Advanced mode toggle, plain-language Overview, facility-layer earmark. Version check: `grep -c "SIMPLE_LEXICON" map.html` → 6 for v5, 0 for v4 |
-| 4 | Review UI + LLM candidate-event extraction | **4a built and run.** `collection/collector/extract.py` (586 lines, `c11d750`); 191 `review_queue` rows, 6 pending candidates, first real machine-coded event captured. Blocked on two feed defects (see diagnosis). Review UI not started |
+| 4 | Review UI + LLM candidate-event extraction | **4a built and running** (`collection/collector/extract.py`). Review queue as of 2026-09-08: 10 pending, 48 LLM-failure retries, 1,191 rejected. Review UI not started — deliberately after the Phase 2 schema pass, so the reviewer form is built once |
 | 5 | Scoring pipeline + publication of the five contracts | Not started |
 | 6 | Public frontend (full version) | v5 live |
 | 7 | Public API, exports, PDF reports | Not started |
@@ -386,6 +386,15 @@ Everything below was verified against the machine during the session unless mark
 - **Wayback now, ArchiveBox later**; late snapshots go to append-only `url_snapshots` (`collection/sql/002_url_snapshots.sql`). `SD_WAYBACK=1` in `/etc/silicon-dominoes/collector.env` (Wayback submission is the slow part of each poll — several seconds per URL, rate-limited by IA).
 - **Simple mode prose is templated, never hand-written.** Summaries are generated deterministically from a versioned in-file lexicon (`SIMPLE_LEXICON`) plus the data record — the plain-language layer inherits the same auditability guarantee as the numbers, and a lexicon change is a versioned, reviewable diff. Rationale: hand-written blurbs could silently disagree with the data; an LLM writing them would be unauditable.
 - **Demo datasets are structurally unpublishable:** synthetic carries `synthetic: true`; desk pass carries `provisional: true` + unknown envelope keys. `validate.py` rejects both.
+- **Privileges are held by role `sd_pipeline`; `dominoes` is the peer-auth login role and a member of it** (verified live 2026-09-20 — this refines the bullet above). New tables grant to `sd_pipeline`. `feed_runs` makes 19 tables.
+- **Every outbound HTTP call goes through `collector/fetcher.py`** — connect and read timeouts, a whole-call wall-clock deadline, a size cap. feedparser only ever parses bytes. A static test fails the suite if a raw `requests` / `urllib` / `feedparser.parse(url)` call appears anywhere else. Rationale: one unbounded call hung the collector for 18 hours.
+- **Health is judged from polls, not captures.** Every poll attempt writes a `feed_runs` row; "nothing new" and "collector dead" are different pictures only in that table. A poller that does not write the ledger is invisible to the health rules.
+- **The monitor never treats "could not find out" as "fine".** Unreadable evidence makes an origin *undetermined* for that run: neither opened nor closed.
+- **Gaps close automatically when their condition clears; notifications fire on change only; checks run hourly; one digest on Mondays.** A monitor that repeats itself every day is one nobody reads, and gaps that never close leave no slot for a real alarm.
+- **A retired feed is not a closed intelligence gap.** The monitor closes a retired feed's gap; a coverage hole (a country with no in-country source) is recorded as an `analyst`-origin gap, which the monitor never touches.
+- **Alerts go to the public `ntfy.sh` server on a secret topic** — a generated passphrase kept in Vaultwarden, entered on the phone and in `collector.env` (`-rw-r----- root dominoes`), never shown in chat, terminal output, or the journal. Self-hosting ntfy on the tailnet remains a one-line change.
+- **`notify()` reports delivery, not attempts** — `True` only on a 2xx from the server, and a loud startup warning if the address is ever empty again.
+- **Agent-built code is accepted only after the diff is read, Brian has run the tests himself in WSL and in the CT, and any SQL has touched the real database safely** — a `--dry-run` for reads, a rolled-back transaction for writes. In one day this caught an aborted-transaction bug, four "unknown treated as cleared" bugs, a wall-clock-dependent test, and an over-broad GRANT, none of which a passing suite showed.
 
 ## Immediate next action (next session)
 
@@ -485,6 +494,23 @@ Everything below was verified against the machine during the session unless mark
 - Stray tracked file `collection/sql/003_url_index.sql.txt`.
 
 ## How to resume in a fresh chat
+
+**Start here (state as of 2026-09-20).** Read "Where things stand", then "Immediate next action". Explain what a step is for before giving commands, and label every command block with its window.
+
+**Two windows, two kinds of command.** `pct exec ...` goes in the **Proxmox** SSH window (prompt `root@homelab`). `git`, `wsl`, `type`, `findstr`, `python` go in **PowerShell** in the checkout (prompt `PS C:\...`). Pasting one into the other fails noisily but harmlessly.
+
+**Five-minute health check (Proxmox window):**
+- timers: `pct exec 109 -- bash -c "SYSTEMD_PAGER=cat systemctl list-timers 'sd-*' --no-pager"` — five timers, each with a real NEXT time; a `-` under NEXT means a run is stuck.
+- ledger: `pct exec 109 -- su - dominoes -c "PAGER=cat psql -d silicon_dominoes -c \"select feed_id, outcome, count(*), max(finished_at) from feed_runs group by 1,2 order by 1,2\""` — about 12 `ok` rows per feed per day.
+- monitor: `pct exec 109 -- bash -c "journalctl -u sd-health.service --since '1 day ago' --no-pager | grep 'done:' | tail -5"` — read logs as root; `dominoes` is not in `systemd-journal`.
+- gaps: `pct exec 109 -- su - dominoes -c "PAGER=cat psql -d silicon_dominoes -c \"select gap_id, origin, status from research_gaps order by 1\""`.
+- what it would do right now, writing nothing: `pct exec 109 -- su - dominoes -c 'cd /opt/silicon-dominoes/collection && .venv/bin/python -m collector.feed_health --dry-run'`.
+
+**Collector tests.** PowerShell: `wsl -d Ubuntu -- bash -c 'cd /mnt/c/Users/harbi/Documents/GitHub/chessmasterAI/silicon-dominoes/silicon-dominoes && collection/.venv-test/bin/python -m unittest discover -s collection/tests 2>&1 | grep -e ^Ran -e ^OK -e ^FAILED -e ^FAIL: -e ^ERROR:'`. Proxmox: `pct exec 109 -- su - dominoes -c 'cd /opt/silicon-dominoes && collection/.venv/bin/python -m unittest discover -s collection/tests 2>&1 | grep -e ^Ran -e ^OK -e ^FAILED -e ^FAIL: -e ^ERROR:'`. Expect `Ran 106 tests` and `OK` in both.
+
+**The agent-task loop, as run on 2026-09-20.** `git checkout -b <task>` -> paste the prompt into the Code tab (Local, this folder, worktree off; the prompt says "do NOT commit" and defines done as passing tests) -> `git status --short`, `git diff --stat main`, run the tests yourself -> read the diff, send follow-ups until it is right -> `git add` new files, `git commit -am`, `git checkout main`, `git merge --ff-only <task>`, `git push`, `git log --oneline -1 origin/main` -> `sd-deploy` (run it twice if DNS fails) -> tests in the CT -> if `collection/systemd/` changed: `diff -u` live against repo, `cp`, `daemon-reload`, verify -> if there is DDL: apply as postgres by piping the file in from root's shell -> a live check. Update this file last.
+
+**Alerts.** ntfy app on the phone, subscribed to the topic saved in Vaultwarden ("Silicon Dominoes ntfy topic"). Send a test without revealing the topic: `pct exec 109 -- bash -c "set -a; . /etc/silicon-dominoes/collector.env; set +a; curl -s -o /dev/null -m 15 -w '%{http_code}\n' -H 'Title: SD test' -d 'manual test' \"\$SD_NTFY_URL\""` — `200` plus a buzz. Manual collector runs do not load `collector.env`, so they print the `SD_NTFY_URL is empty` warning and send nothing; that is expected, and the note further down about the defaults matching the env file no longer holds for this one setting.
 
 Point Claude at this file. For collection ops: `pct enter 109` from the Proxmox host lands you in the CT as root; use `su - dominoes -c '...'` to run pipeline commands as the service user (peer auth requires the Linux user to match the Postgres role). DDL requires `su - postgres -c '...'` instead. Check timer schedule with `SYSTEMD_PAGER=cat systemctl list-timers 'sd-*'`; check what timers ran with `journalctl -u sd-rss.service --since today --no-pager` (remember: `--since`, not `-b`, inside LXC).
 
