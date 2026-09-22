@@ -1,10 +1,39 @@
 [Unit]
-Description=Run the GDELT poller every 6 hours
+Description=Fire the GDELT poller every 15 minutes, 02:00-05:45 UTC
 
 [Timer]
-OnCalendar=*-*-* 00/6:40
-RandomizedDelaySec=300
-Persistent=true
+# Pacing lives HERE, not in collector/poll_gdelt.py — a bug in the code
+# cannot burst GDELT because there is no loop over queries to have a bug
+# in; only the timer decides how often a request happens at all.
+#
+# 02..05:00/15 fires at :00/:15/:30/:45 across hours 02-05 UTC — 4 hours ×
+# 4 fires/hour = 16 fires/night, ~112/week. Weighed against ~30-50 kind:
+# gdelt queries expected in feeds.yaml (each eligible again only every
+# SD_GDELT_QUERY_MIN_GAP_DAYS, default 7d, since GDELT DOC 2.0 results are
+# retroactive — polling a query more often buys no coverage), that's an
+# order of magnitude under the ~60-requests/90min threshold that triggered
+# the 2026-07 block evidence cites. Do not tighten this without new
+# evidence from collection/probe_gdelt.py.
+OnCalendar=*-*-* 02..05:00/15
+# Small on purpose: at RandomizedDelaySec=300 (sd-gdelt's old 6-hourly
+# value) two adjacent 15-minute fires could land within seconds of each
+# other, compressing the deliberate spacing above. 60s keeps fires spread
+# out from systemd/NTP jitter without meaningfully colliding with the next
+# scheduled fire 15 minutes later.
+RandomizedDelaySec=60
+# false, deliberately — NOT the usual choice (every other unit in this
+# project uses Persistent=true so a missed run gets a catch-up fire after
+# downtime). GDELT DOC 2.0 results are retroactive, so a missed fire here
+# costs nothing: the query it would have run is exactly as eligible next
+# time, with no lost coverage. A catch-up fire, on the other hand, runs
+# whenever the system next boots — which could land seconds before the
+# next regularly scheduled fire (defeating the 15-minute spacing this
+# whole timer exists to enforce) or well outside the 02:00-05:45 UTC
+# window this project deliberately confines GDELT traffic to. Persistent=
+# true would trade a real, free safety property (fires only ever happen on
+# schedule, inside the window) for a benefit (catching up a missed poll)
+# that this design doesn't need.
+Persistent=false
 
 [Install]
 WantedBy=timers.target

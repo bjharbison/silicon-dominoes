@@ -168,6 +168,36 @@ def _start(handler_cls) -> _QuietHTTPServer:
     return server
 
 
+def gdelt_stub_server(articles: list | None = None) -> _QuietHTTPServer:
+    """Records the full request path (including query string) of the most
+    recent GET in `server.last_path`, and responds with a minimal valid
+    GDELT DOC 2.0 JSON body — {"articles": articles or []} — so collector.
+    fetcher.classify_gdelt_body reads it as 'ok'. Used to prove the real
+    (non-injected) fetch path — collector.fetcher.get, exercised through
+    poll_gdelt.py's default fetch_query — actually sends the query
+    parameters poll_gdelt._gdelt_params builds, since every other gdelt
+    test injects a fake fetch_query and never touches a socket at all."""
+    body = json.dumps({"articles": articles or []}).encode("utf-8")
+
+    class Handler(BaseHTTPRequestHandler):
+        protocol_version = "HTTP/1.1"
+
+        def do_GET(self) -> None:
+            self.server.last_path = self.path
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+
+        def log_message(self, *_args) -> None:
+            pass
+
+    server = _start(Handler)
+    server.last_path = None
+    return server
+
+
 def notify_stub_server(status: int = 200) -> _QuietHTTPServer:
     """Records the headers/body of every POST received and responds with
     `status`; used to test common.notify(). `server.hit_count` counts

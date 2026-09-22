@@ -163,6 +163,34 @@ class PollRunTests(unittest.TestCase):
         fast_captures = sum(1 for (feed_id, _url) in store.captured if feed_id == "fast")
         self.assertEqual(fast_captures, 2, "the next feed must still run to completion")
 
+    def test_poll_rss_never_selects_a_kind_gdelt_feed(self) -> None:
+        # kind: gdelt points at a server that WOULD register captures if
+        # poll_rss touched it — the assertion is that it never does, not
+        # just that it fails gracefully.
+        rss_server = servers.healthy_feed_server(n_articles=1)
+        self.addCleanup(rss_server.stop)
+        gdelt_server = servers.healthy_feed_server(n_articles=3)
+        self.addCleanup(gdelt_server.stop)
+
+        cfg = {"feeds": [
+            {"feed_id": "rss-a", "feed_class": "rss", "kind": "rss",
+             "url": rss_server.url + "feed"},
+            {"feed_id": "gdelt-a", "feed_class": "structured_news", "kind": "gdelt",
+             "query": "irrelevant here", "timespan": "7d"},
+        ]}
+        store = FakeStore()
+
+        total_new, failures = poll_rss.run(cfg, store)
+
+        self.assertEqual(total_new, 1, "only the rss feed's article should be captured")
+        self.assertEqual(
+            sum(1 for (feed_id, _url) in store.captured if feed_id == "gdelt-a"), 0,
+            "the gdelt feed must never be touched by poll_rss")
+        self.assertEqual(store.runs.get("gdelt-a"), None,
+                         "no feed_runs row should be written for a feed poll_rss "
+                         "never even selected")
+        self.assertEqual(failures, [])
+
 
 class BreakerIntegrationTests(unittest.TestCase):
     """Test b: a feed failing 5 runs in a row is skipped on the 6th with no

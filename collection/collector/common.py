@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import gzip
 import hashlib
+import json
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -43,22 +44,51 @@ def write_archive(feed_id: str, payload: bytes, ext: str = "bin") -> str:
 
 def insert_capture(conn, *, feed_id: str, url: str, payload: bytes, ext: str,
                    parse_status: str, snapshot_id: str | None = None,
-                   snapshot_url: str | None = None) -> bool:
+                   snapshot_url: str | None = None,
+                   metadata: dict | None = None) -> bool:
     """Archive payload and insert the raw_captures index row.
     Returns True if this is NEW content (row inserted), False if the
-    (feed_id, sha256) pair was already captured — the dedupe rule."""
+    (feed_id, sha256) pair was already captured — the dedupe rule.
+
+    `metadata` is optional, per-capture provenance as a plain dict (e.g.
+    poll_gdelt.py's query_id/seendate/sourcecountry/language/domain) —
+    unused by RSS callers, added for gdelt-slow. Dumped with
+    ensure_ascii=False, matching extract.py's enqueue(): this database is
+    SQL_ASCII and rejects \\u escapes above 0x7F in jsonb, so json.dumps'
+    default ensure_ascii=True output can fail to insert on non-ASCII
+    content (e.g. a non-Latin sourcecountry or domain).
+
+    The `metadata` column only exists once collection/sql/005_gdelt.sql
+    has been applied — every earlier schema lacks it entirely. The INSERT
+    below therefore names the column ONLY when metadata is not None: every
+    RSS caller passes metadata=None (the default) and must keep working
+    against an un-migrated database exactly as before, so the column can
+    never appear in the statement text unless a caller actually asked for
+    it. Passing a real metadata dict against an un-migrated database still
+    fails at INSERT time, same as before — that part is unavoidable and
+    correct; what changed is that NOT passing one no longer fails too."""
     digest = sha256_hex(payload)
     object_key = write_archive(feed_id, payload, ext)
+    # retrieved_at is always now() — a SQL literal, not a parameter — kept
+    # as its own fixed column/placeholder pair, separate from the
+    # parameterized columns below so the two lists can never drift out of
+    # step with each other.
+    columns = ["feed_id", "retrieved_at", "url", "sha256", "object_key",
+              "snapshot_id", "snapshot_url", "parse_status"]
+    placeholders = ["%s", "now()", "%s", "%s", "%s", "%s", "%s", "%s"]
+    values = [feed_id, url, digest, object_key, snapshot_id, snapshot_url, parse_status]
+    if metadata is not None:
+        columns.append("metadata")
+        placeholders.append("%s")
+        values.append(json.dumps(metadata, ensure_ascii=False))
     with conn.cursor() as cur:
         cur.execute(
-            """
-            INSERT INTO raw_captures
-              (feed_id, retrieved_at, url, sha256, object_key,
-               snapshot_id, snapshot_url, parse_status)
-            VALUES (%s, now(), %s, %s, %s, %s, %s, %s)
+            f"""
+            INSERT INTO raw_captures ({", ".join(columns)})
+            VALUES ({", ".join(placeholders)})
             ON CONFLICT (feed_id, sha256) DO NOTHING
             """,
-            (feed_id, url, digest, object_key, snapshot_id, snapshot_url, parse_status),
+            tuple(values),
         )
         inserted = cur.rowcount == 1
         cur.execute("UPDATE feeds SET last_capture_at = now() WHERE feed_id = %s", (feed_id,))

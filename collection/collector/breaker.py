@@ -127,3 +127,34 @@ def order_feeds(feeds: Sequence[Mapping], latest_outcome: Mapping[str, str | Non
     wherever `feeds` ties on group). `latest_outcome` maps feed_id to that
     feed's most recent non-skipped outcome, or None if it has no history."""
     return sorted(feeds, key=lambda f: _order_group(latest_outcome.get(f["feed_id"])))
+
+
+DEFAULT_GDELT_COOLDOWN = timedelta(hours=24)
+
+
+def gdelt_cooldown_active(runs: Sequence[Run], now: datetime, *,
+                          cooldown: timedelta = DEFAULT_GDELT_COOLDOWN) -> bool:
+    """True if any run in `runs` has outcome == 'throttled' within the last
+    `cooldown` (default 24h). This is a DELIBERATELY different policy from
+    decide() above: the 5-consecutive-failures breaker is right for an
+    ordinary flaky feed, but GDELT's throttle block is sticky and IP-wide —
+    2026-07 evidence found retrying INTO an active block extends it, and
+    "they share an IP" means one throttled query is evidence about every
+    kind: gdelt query, not just the one that got it. So there is no
+    per-query consecutive-failure count, no probe, no quarantine/recovery
+    state_change here — just a flat "has anything been throttled recently"
+    gate that poll_gdelt.py checks before selecting ANY query to run.
+
+    `runs` is the caller's job to assemble: poll_gdelt.DbStore.recent_
+    throttles(since) — a time-windowed lookup (outcome='throttled' AND
+    finished_at >= since) across ALL feed_ids, not each kind: gdelt feed's
+    own history concatenated. That matters: it also sees a query since
+    REMOVED from feeds.yaml, whose throttle can still be the reason the
+    shared cooldown must stay active, which a per-feed-history assembly
+    would miss entirely. Pure: no I/O, most-recent-first ordering not
+    required (this scans all of `runs` unconditionally, unlike
+    consecutive_failures)."""
+    for run in runs:
+        if run["outcome"] == "throttled" and (now - run["finished_at"]) <= cooldown:
+            return True
+    return False

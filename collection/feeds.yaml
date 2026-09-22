@@ -84,6 +84,61 @@ feeds:
 #       maxrecords: 100
 #       max_terms_per_facet: 8
 
+  # ---- gdelt-slow: one query per feeds.yaml entry, one request per timer
+  # fire (collector/poll_gdelt.py) — NOT the faceted-runtime-query shape
+  # above. `kind: gdelt` selects the poller; `feed_class: structured_news`
+  # is unchanged, for the `feeds` table's DB column. `query` is a complete,
+  # literal GDELT DOC 2.0 Boolean query string, written by hand (synonym
+  # facets are not consulted for this poller — reusing them would reproduce
+  # the multi-facet AND-of-ORs query the old gdelt-sea-stack shape built,
+  # which is exactly the query shape suspected of tripping the sticky
+  # throttle in the first place). `country_iso3` is optional, documentation-
+  # only in this iteration (not compiled into `query` or `params`).
+  # DISABLED pending collection/probe_gdelt.py's hand-run results — do not
+  # enable until the throttle signatures in collector/fetcher.py have been
+  # confirmed against a real response body.
+  # OPERATING RULE: every new kind: gdelt query gets exactly one hand-run
+  # `probe_gdelt.py --query 'TEXT'` check before it is ever uncommented
+  # below — an unknown/text-error response costs a 24h GLOBAL cooldown
+  # (every kind: gdelt query blocked, not just this one) plus a repeating
+  # high-priority alert, so that is a far more expensive way to find out
+  # a query's shape is wrong than one hand-run check first.
+#   - feed_id: gdelt-vnm-5g
+#     source_tier: S3
+#     feed_class: structured_news
+#     kind: gdelt
+#     query: '(5G OR "fifth generation") sourcecountry:VM'
+#     timespan: 7d
+#     country_iso3: VNM
+#     maxrecords: 100
+
+#   - feed_id: gdelt-vnm-datacenter
+#     source_tier: S3
+#     feed_class: structured_news
+#     kind: gdelt
+#     query: '(datacenter OR "data center" OR "trung tâm dữ liệu") sourcecountry:VM sourcelang:vietnamese'
+#     timespan: 7d
+#     country_iso3: VNM
+#     maxrecords: 100
+
+#   - feed_id: gdelt-idn-semiconductor
+#     source_tier: S3
+#     feed_class: structured_news
+#     kind: gdelt
+#     query: '(semiconductor OR chip OR foundry) sourcecountry:ID'
+#     timespan: 7d
+#     country_iso3: IDN
+#     maxrecords: 100
+
+#   - feed_id: gdelt-idn-huawei
+#     source_tier: S3
+#     feed_class: structured_news
+#     kind: gdelt
+#     query: 'Huawei sourcecountry:ID'
+#     timespan: 7d
+#     country_iso3: IDN
+#     maxrecords: 50
+
 # ---- verify-at-every-run items (system prompt §1, §4) ---------------------
 # Membership status of WAICO and Pax Silica must show a successful
 # verification within the last cycle; a missed verification is itself an

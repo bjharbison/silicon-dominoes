@@ -183,3 +183,95 @@ def get(url: str, **kwargs: Any) -> FetchResult:
 
 def post(url: str, **kwargs: Any) -> FetchResult:
     return fetch(url, method="POST", **kwargs)
+
+
+# ---------------------------------------------------------------- gdelt --
+# GDELT DOC 2.0 throttles hard and the block is sticky (2026-07 third-party
+# evidence: ~60 requests over 90 minutes triggered a block no retry
+# interval cleared, and backing off made it worse). Critically, a throttled
+# response carries NO JSON error object — it reads exactly like "zero
+# results" unless the body is actually parsed. That is almost certainly
+# what killed the original gdelt-sea-stack feed: a burst of queries per
+# poll, blocked early, and a health monitor reading only capture counts
+# that could not tell a block from a quiet day.
+#
+# PROVISIONAL. These substrings are the best available evidence — GDELT's
+# public rate-limit message is documented as mentioning "1 request every 5
+# seconds" — but no real throttled body has been captured yet. Tighten this
+# from evidence, not guesswork, once collection/probe_gdelt.py has been run
+# by hand and its saved bodies reviewed. Matched case-insensitively as a
+# loose substring set, deliberately — a near-miss on the exact wording must
+# still be caught, since guessing wrong in the permissive direction (an
+# actual throttle read as "ok") is the failure this whole design exists to
+# prevent, while guessing wrong in the strict direction only costs one
+# extra day of latency on a query that will run again in 7.
+GDELT_THROTTLE_SIGNATURES = (
+    "1 request every 5 seconds",
+    "request every 5 seconds",
+    "too many requests",
+    "rate limit",
+)
+
+
+def classify_gdelt_body(status_code: int, body: bytes) -> str:
+    """Classify a GDELT DOC 2.0 response. Returns one of:
+
+      'ok'        — 2xx AND a valid JSON object whose 'articles' value is a
+                    list (an empty list is 'ok', not 'empty' — GDELT
+                    reporting zero matches for a real query is a normal,
+                    common result, not a failure).
+      'throttled' — status 429 (regardless of body), OR any other non-2xx
+                    or non-'ok' 2xx body matching a known rate-limit
+                    signature (GDELT_THROTTLE_SIGNATURES above).
+      'unknown'   — anything else: a non-2xx status with no signature
+                    match, or a 2xx body that isn't a JSON object with an
+                    'articles' list and has no signature match either
+                    (empty/whitespace body, non-JSON, HTML, JSON missing
+                    'articles' or with a non-list 'articles' value). The
+                    caller (poll_gdelt.py, via gdelt_cooldown_active)
+                    treats this identically to 'throttled' — an
+                    unparseable response must never be mistaken for a
+                    successful empty poll. The ledger still records which
+                    of the two this was, in the free-text error column,
+                    not the constrained outcome column — see
+                    collection/sql/005_gdelt.sql.
+
+    Decision order (status is checked FIRST, then body — reversed from an
+    earlier version of this function that ignored status_code entirely):
+
+      (a) status == 429 -> 'throttled', whatever the body — GDELT is not
+          expected to send a JSON error object on a throttle (see the
+          module-level note above), but a 429 is an unambiguous machine-
+          readable signal when it IS present and must win outright, even
+          over a body that happens to parse as well-formed 'ok' JSON.
+      (b) any other non-2xx status can never be 'ok': signature match ->
+          'throttled', else 'unknown'.
+      (c) 2xx: parse JSON FIRST, before ever consulting a signature — a
+          dict whose 'articles' value is a list -> 'ok'. This ordering
+          matters: real article content in a valid response must never be
+          misread as a throttle just because some article's own title or
+          summary happens to contain a phrase like "rate limit".
+      (d) only if (c) did not return: signature match -> 'throttled'.
+      (e) else -> 'unknown'.
+    """
+    stripped = body.strip()
+    text_lower = stripped.decode("utf-8", errors="replace").lower()
+
+    def signature_match() -> bool:
+        return any(signature in text_lower for signature in GDELT_THROTTLE_SIGNATURES)
+
+    if status_code == 429:
+        return "throttled"
+
+    if not (200 <= status_code < 300):
+        return "throttled" if signature_match() else "unknown"
+
+    if stripped:
+        try:
+            parsed = json_module.loads(stripped)
+        except (json_module.JSONDecodeError, UnicodeDecodeError):
+            parsed = None
+        if isinstance(parsed, dict) and isinstance(parsed.get("articles"), list):
+            return "ok"
+
+    return "throttled" if signature_match() else "unknown"

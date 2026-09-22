@@ -24,6 +24,18 @@ Environment (from /etc/silicon-dominoes/collector.env via systemd EnvironmentFil
                            (default 6)
   SD_COLLECTOR_DOWN_RENOTIFY_H  hours between re-notifications while a
                            collector_down gap stays open (default 6)
+  SD_GDELT_BUDGET          wall-clock seconds poll_gdelt spends fetching
+                           article bodies per invocation, mirroring
+                           SD_FEED_BUDGET's role in poll_rss (default 300)
+  SD_GDELT_QUERY_MIN_GAP_DAYS  days a kind: gdelt query must wait after an
+                           'ok' run before it is eligible to run again —
+                           GDELT DOC 2.0 results are retroactive, so
+                           polling a query more often than this buys no
+                           additional coverage, only additional risk of a
+                           throttle (default 7)
+  SD_GDELT_COOLDOWN_H      hours after any kind: gdelt query is throttled
+                           before ANY kind: gdelt query is attempted again
+                           — the block is sticky and IP-wide (default 24)
 """
 from __future__ import annotations
 
@@ -78,6 +90,15 @@ BREAKER_PROBE_H = float(os.environ.get("SD_BREAKER_PROBE_H", "24"))
 POLL_STALE_H = float(os.environ.get("SD_POLL_STALE_H", "6"))
 COLLECTOR_DOWN_RENOTIFY_H = float(os.environ.get("SD_COLLECTOR_DOWN_RENOTIFY_H", "6"))
 
+# --------------------------------------------------------------------- gdelt --
+# collector/poll_gdelt.py + collector/breaker.py's gdelt_cooldown_active.
+# Like BREAKER_THRESHOLD/BREAKER_PROBE_H above, these are read here and
+# passed in explicitly — gdelt_cooldown_active takes no config import, only
+# arguments, same discipline as breaker.decide().
+GDELT_BUDGET = float(os.environ.get("SD_GDELT_BUDGET", "300"))
+GDELT_QUERY_MIN_GAP_DAYS = float(os.environ.get("SD_GDELT_QUERY_MIN_GAP_DAYS", "7"))
+GDELT_COOLDOWN_H = float(os.environ.get("SD_GDELT_COOLDOWN_H", "24"))
+
 # ----------------------------------------------------------------------- ntfy --
 # common.notify()'s own connect/read timeout and total deadline — smaller
 # than the general HTTP_* defaults on purpose (a notification should never
@@ -107,6 +128,77 @@ def present_feed_ids(cfg: dict) -> set[str]:
     return ids
 
 
+# ---------------------------------------------------------------- kind --
+# A `feeds:` entry's `kind` (gdelt-slow) selects which poller acts on it —
+# poll_rss only 'rss', poll_gdelt only 'gdelt' — orthogonal to `feed_class`
+# (still read separately by sync_feeds below, unchanged, for the `feeds`
+# table's DB column). Absent `kind` means 'rss', for backward compatibility
+# with every feeds.yaml entry that predates this field.
+VALID_KINDS = frozenset({"rss", "gdelt"})
+
+
+def feed_kind(feed: dict) -> str:
+    """feed['kind'], defaulting to 'rss'. Assumes validate_feed_kinds() has
+    already run (sync_feeds calls it first, before any SQL) — does not
+    itself raise, so a caller that skips validation and hands this a bad
+    kind just gets the bad string back rather than a KeyError; the actual
+    hard-stop lives in validate_feed_kinds()."""
+    return feed.get("kind", "rss")
+
+
+# kind <-> feed_class must agree. Pollers select rows purely by `kind`
+# (poll_rss only kind: rss, poll_gdelt only kind: gdelt); feed_class is a
+# separate, pre-existing DB enum (see sync_feeds below) that feed_health.py
+# and everything else reading the `feeds` table relies on for monitoring
+# and display, and has no idea `kind` even exists. Before this map, nothing
+# made the two agree: a feeds.yaml entry with kind: gdelt but a typo'd
+# feed_class: rss would poll exactly as intended while being monitored and
+# displayed as an ordinary RSS feed everywhere else — a silent split
+# between what actually runs and what the rest of the system believes is
+# running.
+KIND_TO_FEED_CLASS = {"rss": "rss", "gdelt": "structured_news"}
+
+
+def validate_feed_kinds(cfg: dict) -> None:
+    """Every `feeds:` entry's kind must be 'rss', 'gdelt', or absent
+    (-> 'rss'), and: kind and feed_class must agree per KIND_TO_FEED_CLASS
+    (see its own comment for why), and a kind: gdelt entry must carry a
+    non-empty string `query` (poll_gdelt.py's _gdelt_params reads
+    feed['query'] directly, with no default — a missing/blank one must
+    fail here, loudly, rather than surface later as a KeyError or an empty
+    request body deep inside a live poll). All three are hard errors,
+    raised here — BEFORE sync_feeds touches SQL — so a bad feeds.yaml entry
+    can never silently become a path by which sync_feeds retires a live
+    feed, or by which a poller and the rest of the system quietly disagree
+    about what a feed even is. This is the same class of residual already
+    accepted for a partially broken feeds.yaml (present_feed_ids()
+    returning empty skips the retirement UPDATE rather than retiring
+    everything) — deliberately NOT widened to also swallow any of these
+    silently; all three abort instead."""
+    for feed in cfg.get("feeds", []):
+        feed_id = feed.get("feed_id")
+        kind = feed.get("kind", "rss")
+        if kind not in VALID_KINDS:
+            raise ValueError(
+                f"feeds.yaml: feed_id {feed_id!r} has unrecognised "
+                f"kind {kind!r} (expected one of {sorted(VALID_KINDS)} or omitted)")
+
+        expected_feed_class = KIND_TO_FEED_CLASS[kind]
+        feed_class = feed.get("feed_class")
+        if feed_class != expected_feed_class:
+            raise ValueError(
+                f"feeds.yaml: feed_id {feed_id!r} has kind {kind!r} but "
+                f"feed_class {feed_class!r} (expected {expected_feed_class!r} — "
+                f"kind and feed_class must agree, see config.KIND_TO_FEED_CLASS)")
+
+        if kind == "gdelt":
+            query = feed.get("query")
+            if not isinstance(query, str) or not query.strip():
+                raise ValueError(
+                    f"feeds.yaml: feed_id {feed_id!r} has kind 'gdelt' but no "
+                    f"non-empty 'query' string")
+
+
 def sync_feeds(conn, cfg: dict) -> None:
     """Upsert feeds.yaml definitions into the (mutable, by design) feeds
     table, reactivating any that return, and retire (active = false) every
@@ -115,6 +207,7 @@ def sync_feeds(conn, cfg: dict) -> None:
     removed feed's open gaps close as 'feed retired' instead of being
     checked forever (the pre-harden-health bug: all ten feeds rows stayed
     active = t no matter what feeds.yaml said)."""
+    validate_feed_kinds(cfg)             # before any SQL — see its docstring
     rows = []
     for feed in cfg.get("feeds", []):
         rows.append((feed["feed_id"], feed["feed_class"], feed.get("url")))

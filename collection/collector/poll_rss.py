@@ -73,10 +73,12 @@ class DbStore:
 
     def record_capture(self, feed_id: str, url: str, payload: bytes, ext: str,
                        status: str, snapshot_id: str | None,
-                       snapshot_url: str | None) -> bool:
+                       snapshot_url: str | None,
+                       metadata: dict | None = None) -> bool:
         return common.insert_capture(
             self._conn, feed_id=feed_id, url=url, payload=payload, ext=ext,
-            parse_status=status, snapshot_id=snapshot_id, snapshot_url=snapshot_url)
+            parse_status=status, snapshot_id=snapshot_id, snapshot_url=snapshot_url,
+            metadata=metadata)
 
     def record_run(self, *, feed_id: str, started_at: datetime, finished_at: datetime,
                    outcome: str, entries_seen: int, new_captures: int,
@@ -218,7 +220,10 @@ def run(cfg: dict, store, *, now: datetime | None = None) -> tuple[int, list[tup
     now = now or datetime.now(timezone.utc)
     recent_runs, record_run = _make_ledger_calls(store)
 
-    feeds = [f for f in cfg.get("feeds", []) if f["feed_class"] == "rss"]
+    # kind (gdelt-slow), not feed_class, selects pollers — orthogonal fields,
+    # see config.feed_kind's docstring. Absent kind defaults to 'rss', so
+    # every pre-gdelt-slow feeds.yaml entry keeps polling exactly as before.
+    feeds = [f for f in cfg.get("feeds", []) if config.feed_kind(f) == "rss"]
     histories = {f["feed_id"]: recent_runs(f["feed_id"], HISTORY_LOOKBACK) for f in feeds}
     latest_outcome = {
         feed_id: (breaker.last_real_run(history) or {}).get("outcome")

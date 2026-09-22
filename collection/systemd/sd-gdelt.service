@@ -1,5 +1,5 @@
 [Unit]
-Description=Silicon Dominoes — GDELT structured-news poller
+Description=Silicon Dominoes — GDELT DOC 2.0 poller (one query per fire)
 Wants=network-online.target
 After=network-online.target postgresql.service
 
@@ -9,5 +9,11 @@ User=dominoes
 WorkingDirectory=/opt/silicon-dominoes/collection
 EnvironmentFile=/etc/silicon-dominoes/collector.env
 Environment=PYTHONUNBUFFERED=1
-TimeoutStartSec=30min
+# 30min (sd-rss's ceiling) sized a multi-feed, multi-request loop; this
+# poller issues AT MOST ONE DOC 2.0 request per invocation (collector/
+# poll_gdelt.py's whole design — see its module docstring), so 10min is
+# generous margin over one request plus a budgeted article-capture pass
+# (SD_GDELT_BUDGET, default 300s) — still a hard ceiling, same reasoning
+# as sd-rss.service's own comment on why one must exist at all.
+TimeoutStartSec=10min
 ExecStart=/opt/silicon-dominoes/collection/.venv/bin/python -m collector.poll_gdelt
