@@ -1,0 +1,822 @@
+{
+ "layer": "prc_cloud_regions",
+ "schema": "sd-layer/0.1",
+ "version": "0.1.0-draft",
+ "review_status": "unreviewed",
+ "generated": "2026-10-20T11:55:00Z",
+ "rule": "live = provider-designated public cloud region/AZ in-country; announced = country named, not live; closed = shut down. Secondary sources only: no provider sites, .cn domains or PRC state media were fetched. Partner/JV-run regions counted as live with a note.",
+ "countries": {
+  "ARE": {
+   "alibaba": {
+    "status": "live",
+    "since": "2016",
+    "note": "Dubai, two zones since 2016 (DCD Sept 2025); originally built with Meraas (Yvolv JV). Further expansion announced Sept 2026."
+   },
+   "sources": [
+    {
+     "url": "https://www.datacenterdynamics.com/en/news/alibaba-cloud-to-launch-data-centers-in-eight-locations-in-coming-year/",
+     "source_tier": "S2",
+     "date": "2025-09-25",
+     "supports": "alibaba"
+    }
+   ]
+  },
+  "ARG": {
+   "huawei": {
+    "status": "live",
+    "since": null,
+    "note": "Buenos Aires; BNamericas (2023) calls Argentina a 'national' region alongside main regions in BRA/CHL/MEX."
+   },
+   "sources": [
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-cloud-region-in-philippines",
+     "source_tier": "S2",
+     "date": "2024-12-05",
+     "supports": "huawei"
+    },
+    {
+     "url": "https://bnamericas.com/en/news/huawei-pledges-new-latam-datacenters-but-is-mum-on-details",
+     "source_tier": "S2",
+     "date": "2023-03-31",
+     "supports": "huawei"
+    }
+   ]
+  },
+  "AUS": {
+   "alibaba": {
+    "status": "closed",
+    "since": "2016",
+    "note": "Sydney region; operations ended 30 Sept 2024. Since-year approximate (Capacity, undated c.2016, lists Sydney as planned/new)."
+   },
+   "sources": [
+    {
+     "url": "https://www.theregister.com/2024/07/01/alibaba_cloud_closes_india_australia/",
+     "source_tier": "S2",
+     "date": "2024-07-01",
+     "supports": "alibaba"
+    }
+   ]
+  },
+  "BRA": {
+   "alibaba": {
+    "status": "live",
+    "since": "2026",
+    "note": "First Brazil region (two DCs, São Paulo area likely) announced as launched 27 Aug 2026; secondary reports do not explicitly confirm general availability."
+   },
+   "huawei": {
+    "status": "live",
+    "since": null,
+    "note": "São Paulo region (DCD 2023, 2024)."
+   },
+   "tencent": {
+    "status": "live",
+    "since": null,
+    "note": "São Paulo listed among Tencent regions by DCD Feb 2025; launch reported 2021 per Wikipedia."
+   },
+   "sources": [
+    {
+     "url": "https://www.baguete.com.br/public/noticias/alibaba-tem-regiao-de-cloud-no-brasil",
+     "source_tier": "S2",
+     "date": "2026-08-27",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://www.mobiletime.com.br/noticias/27/08/2026/alibaba-cloud-anuncia-lancamento-de-dois-data-centers-em-sao-paulo/",
+     "source_tier": "S2",
+     "date": "2026-08-27",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-cloud-region-in-philippines",
+     "source_tier": "S2",
+     "date": "2024-12-05",
+     "supports": "huawei"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/tencent-cloud-launches-first-middle-east-cloud-region-in-saudi-arabia",
+     "source_tier": "S2",
+     "date": "2025-02-11",
+     "supports": "tencent"
+    }
+   ]
+  },
+  "CAN": {
+   "tencent": {
+    "status": "live",
+    "since": null,
+    "note": "Toronto listed among Tencent regions by DCD Feb 2025."
+   },
+   "sources": [
+    {
+     "url": "https://datacenterdynamics.com/en/news/tencent-cloud-launches-first-middle-east-cloud-region-in-saudi-arabia",
+     "source_tier": "S2",
+     "date": "2025-02-11",
+     "supports": "tencent"
+    }
+   ]
+  },
+  "CHL": {
+   "huawei": {
+    "status": "live",
+    "since": null,
+    "note": "Santiago region (DCD 2023, 2024)."
+   },
+   "sources": [
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-saudi-cloud-region-in-riyadh",
+     "source_tier": "S2",
+     "date": "2023-09-04",
+     "supports": "huawei"
+    }
+   ]
+  },
+  "CHN": {
+   "home_market": true,
+   "note": "Mainland China is the home market for all three providers (multiple regions each); not scored as an overseas footprint. Not individually sourced in this layer."
+  },
+  "DEU": {
+   "alibaba": {
+    "status": "live",
+    "since": "2016",
+    "note": "Frankfurt; first European DC 2016 (Vodafone colocation), third German DC May 2022; expansion announced Sept 2026."
+   },
+   "tencent": {
+    "status": "live",
+    "since": null,
+    "note": "Frankfurt; third German AZ launched early 2026 (DataCentre News UK, Mar 2026)."
+   },
+   "sources": [
+    {
+     "url": "https://www.theregister.com/2022/05/17/alibaba_cloud_german_datacenter/",
+     "source_tier": "S2",
+     "date": "2022-05-17",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://datacentrenews.uk/story/tencent-cloud-boosts-frankfurt-ai-capacity-for-europe",
+     "source_tier": "S2",
+     "date": "2026-03-04",
+     "supports": "tencent"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/tencent-cloud-launches-first-middle-east-cloud-region-in-saudi-arabia",
+     "source_tier": "S2",
+     "date": "2025-02-11",
+     "supports": "tencent"
+    }
+   ]
+  },
+  "EGY": {
+   "huawei": {
+    "status": "live",
+    "since": "2024",
+    "note": "Cairo Region (33rd globally) launched May 2024; additional Egyptian AZs reported Feb 2025."
+   },
+   "sources": [
+    {
+     "url": "https://w.media/huawei-cloud-launches-cloud-region-in-cairo/",
+     "source_tier": "S2",
+     "date": "2024-05-28",
+     "supports": "huawei"
+    },
+    {
+     "url": "https://techafricanews.com/?p=42955",
+     "source_tier": "S3",
+     "date": "2025-02-25",
+     "supports": "huawei"
+    }
+   ]
+  },
+  "FIN": {
+   "alibaba": {
+    "status": "announced",
+    "since": null,
+    "note": "First Finland region announced Sept 2026, within 12 months."
+   },
+   "sources": [
+    {
+     "url": "https://w.media/?p=43837",
+     "source_tier": "S2",
+     "date": "2026-09-30",
+     "supports": "alibaba"
+    }
+   ]
+  },
+  "FRA": {
+   "alibaba": {
+    "status": "live",
+    "since": "2026",
+    "note": "Paris region, two AZs, reported fully operational June 2026 (secondary report of provider announcement); announced Sept 2025."
+   },
+   "sources": [
+    {
+     "url": "https://techrepublic.com/article/news-alibaba-cloud-ai-sovereignty-emea-france/",
+     "source_tier": "S2",
+     "date": "2026-06-18",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://www.datacenterdynamics.com/en/news/alibaba-cloud-to-launch-data-centers-in-eight-locations-in-coming-year/",
+     "source_tier": "S2",
+     "date": "2025-09-25",
+     "supports": "alibaba (announcement)"
+    }
+   ]
+  },
+  "GBR": {
+   "alibaba": {
+    "status": "live",
+    "since": "2018",
+    "note": "London region (two AZs) launched 2018. TechRepublic June 2026 still describes UK as existing European infrastructure. No secondary report of a UK closure found - conflicts with tasking premise; see notes."
+   },
+   "sources": [
+    {
+     "url": "https://www.datacenterdynamics.com/en/news/alibaba-launches-london-region-two-data-centers/",
+     "source_tier": "S2",
+     "date": "2018-10-22",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://techrepublic.com/article/news-alibaba-cloud-ai-sovereignty-emea-france/",
+     "source_tier": "S2",
+     "date": "2026-06-18",
+     "supports": "alibaba (still live 2026)"
+    }
+   ]
+  },
+  "HKG": {
+   "alibaba": {
+    "status": "live",
+    "since": "2014",
+    "note": "Hong Kong DC online May 2014 per Wikipedia (confirmation only); Sept 2026 reporting lists Hong Kong among locations where Alibaba is expanding existing capacity."
+   },
+   "huawei": {
+    "status": "live",
+    "since": null,
+    "note": "DCD (2023, 2024) refers to Huawei Cloud regions 'across China and Hong Kong' without naming them."
+   },
+   "tencent": {
+    "status": "live",
+    "since": "2017",
+    "note": "DCD 2018: first Hong Kong DC online 2017; second (financial-sector) added 2018; Verdict 2021 reports a further HK IDC launch."
+   },
+   "sources": [
+    {
+     "url": "https://www.eweek.com/news/alibaba-cloud-europe-data-centers-emea/",
+     "source_tier": "S2",
+     "date": "2026-09-23",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Alibaba_Cloud",
+     "source_tier": "S5",
+     "date": null,
+     "supports": "alibaba (since 2014; confirmation only)"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-cloud-region-in-philippines",
+     "source_tier": "S2",
+     "date": "2024-12-05",
+     "supports": "huawei"
+    },
+    {
+     "url": "https://www.datacenterdynamics.com/en/news/tencent-launches-data-centers-in-the-us-india-hong-kong/",
+     "source_tier": "S2",
+     "date": "2018-03-29",
+     "supports": "tencent"
+    },
+    {
+     "url": "https://www.verdict.co.uk/tencent-cloud-data-centre/",
+     "source_tier": "S2",
+     "date": "2021-06-03",
+     "supports": "tencent"
+    }
+   ]
+  },
+  "IDN": {
+   "alibaba": {
+    "status": "live",
+    "since": "2018",
+    "note": "DCs opened 2018 and 2019, third planned early 2021 (DCD 2020)."
+   },
+   "huawei": {
+    "status": "live",
+    "since": null,
+    "note": "Planned per DCD Sept 2023; Jakarta listed as a region by DCD Dec 2024."
+   },
+   "tencent": {
+    "status": "live",
+    "since": "2021",
+    "note": "First Indonesian IDC April 2021 (Verdict); third DC announced Feb 2025 (CRN Asia)."
+   },
+   "sources": [
+    {
+     "url": "https://datacenterdynamics.com/en/news/alibaba-plans-third-indonesian-cloud-data-center-2021",
+     "source_tier": "S2",
+     "date": "2020-07-03",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-cloud-region-in-philippines",
+     "source_tier": "S2",
+     "date": "2024-12-05",
+     "supports": "huawei"
+    },
+    {
+     "url": "https://www.verdict.co.uk/tencent-cloud-data-centre/",
+     "source_tier": "S2",
+     "date": "2021-06-03",
+     "supports": "tencent"
+    },
+    {
+     "url": "https://www.crnasia.com/news/2025/cloud/tencent-cloud-reinforces-its-presence-in-indonesia-with-thir",
+     "source_tier": "S2",
+     "date": "2025-02-20",
+     "supports": "tencent"
+    }
+   ]
+  },
+  "IND": {
+   "alibaba": {
+    "status": "closed",
+    "since": "2017",
+    "note": "Mumbai region; customers told operations end 15 July 2024."
+   },
+   "sources": [
+    {
+     "url": "https://www.theregister.com/2024/07/01/alibaba_cloud_closes_india_australia/",
+     "source_tier": "S2",
+     "date": "2024-07-01",
+     "supports": "alibaba"
+    }
+   ]
+  },
+  "IRL": {
+   "huawei": {
+    "status": "live",
+    "since": null,
+    "note": "Dublin listed as a Huawei Cloud region by DCD Dec 2024 (European hub announced Oct 2022)."
+   },
+   "sources": [
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-cloud-region-in-philippines",
+     "source_tier": "S2",
+     "date": "2024-12-05",
+     "supports": "huawei"
+    }
+   ]
+  },
+  "JPN": {
+   "alibaba": {
+    "status": "live",
+    "since": "2016",
+    "note": "Three AZs in Tokyo per DCD Sept 2025; originally via SB Cloud (SoftBank JV)."
+   },
+   "tencent": {
+    "status": "live",
+    "since": null,
+    "note": "Two Tokyo AZs; Osaka region (third Japan AZ) announced April 2025 - Osaka go-live not verified."
+   },
+   "sources": [
+    {
+     "url": "https://www.datacenterdynamics.com/en/news/alibaba-cloud-to-launch-data-centers-in-eight-locations-in-coming-year/",
+     "source_tier": "S2",
+     "date": "2025-09-25",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://capacitymedia.com/article/29ot8h3lzrj4xeqb4k3r4/news/alibaba-extends-cloud-offering-to-europe-japan-middle-east-and-australia",
+     "source_tier": "S2",
+     "date": null,
+     "supports": "alibaba (SB Cloud JV; undated c.2016)"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/tencent-cloud-launches-region-in-osaka-japan",
+     "source_tier": "S2",
+     "date": "2025-04-16",
+     "supports": "tencent"
+    }
+   ]
+  },
+  "KOR": {
+   "alibaba": {
+    "status": "live",
+    "since": "2022",
+    "note": "Seoul region launched March 2022; two AZs per DCD Sept 2025; a third Korean DC reported later (not fetched)."
+   },
+   "tencent": {
+    "status": "live",
+    "since": null,
+    "note": "Verdict (June 2021) reports a second Korean AZ launched; planned Seoul DC first reported 2017 (PCWorld)."
+   },
+   "sources": [
+    {
+     "url": "https://datacenterdynamics.com/en/news/alibaba-opens-south-korean-data-center-in-seoul",
+     "source_tier": "S2",
+     "date": "2022-03-30",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://www.datacenterdynamics.com/en/news/alibaba-cloud-to-launch-data-centers-in-eight-locations-in-coming-year/",
+     "source_tier": "S2",
+     "date": "2025-09-25",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://www.verdict.co.uk/tencent-cloud-data-centre/",
+     "source_tier": "S2",
+     "date": "2021-06-03",
+     "supports": "tencent"
+    }
+   ]
+  },
+  "MEX": {
+   "alibaba": {
+    "status": "live",
+    "since": "2025",
+    "note": "Querétaro region, one AZ, launched Feb 2025."
+   },
+   "huawei": {
+    "status": "live",
+    "since": null,
+    "note": "Mexico City; DCD Dec 2024 says two Huawei regions in Mexico City."
+   },
+   "sources": [
+    {
+     "url": "https://datacenterdynamics.com/en/news/alibaba-cloud-launches-mexico-cloud-region",
+     "source_tier": "S2",
+     "date": "2025-02-19",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-cloud-region-in-philippines",
+     "source_tier": "S2",
+     "date": "2024-12-05",
+     "supports": "huawei"
+    }
+   ]
+  },
+  "MYS": {
+   "alibaba": {
+    "status": "live",
+    "since": "2017",
+    "note": "Three AZs in Kuala Lumpur per DCD Sept 2025; further expansion announced Sept 2026. Since-year per Wikipedia (Oct 2017)."
+   },
+   "tencent": {
+    "status": "live",
+    "since": "2026",
+    "note": "First Malaysia region in Johor, up to three AZs, reported launched Aug 2026 (secondary reports relaying Tencent announcement; GA of all AZs not confirmed). Earlier 2024 Cyberjaya 'Alto Cloud' DC with GRM (per Wikipedia) is a partner facility, not counted as a region."
+   },
+   "sources": [
+    {
+     "url": "https://www.datacenterdynamics.com/en/news/alibaba-cloud-to-launch-data-centers-in-eight-locations-in-coming-year/",
+     "source_tier": "S2",
+     "date": "2025-09-25",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://w.media/tencent-cloud-launches-cloud-region-in-johor-its-first-in-malaysia/",
+     "source_tier": "S2",
+     "date": "2026-08-19",
+     "supports": "tencent"
+    },
+    {
+     "url": "https://www.aap.com.au/aapreleases/cision20260818ae28526/",
+     "source_tier": "S4",
+     "date": "2026-08-18",
+     "supports": "tencent (press release wire copy)"
+    }
+   ]
+  },
+  "NGA": {
+   "huawei": {
+    "status": "live",
+    "since": "2024",
+    "note": "Nigeria cloud region launched Dec 2024 (DCD); exact site not disclosed (Lagos area implied)."
+   },
+   "sources": [
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-cloud-region-in-nigeria",
+     "source_tier": "S2",
+     "date": "2024-12-13",
+     "supports": "huawei"
+    },
+    {
+     "url": "https://techafricanews.com/?p=42955",
+     "source_tier": "S3",
+     "date": "2025-02-25",
+     "supports": "huawei"
+    }
+   ]
+  },
+  "NLD": {
+   "alibaba": {
+    "status": "announced",
+    "since": null,
+    "note": "First Netherlands region announced Sept 2025; Sept 2026 reports say go-live planned October 2026. Go-live not confirmed as of 2026-10-20."
+   },
+   "sources": [
+    {
+     "url": "https://www.eweek.com/news/alibaba-cloud-europe-data-centers-emea/",
+     "source_tier": "S2",
+     "date": "2026-09-23",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://www.cloudmagazin.com/en/2026/09/28/alibaba-expands-its-operations-including-in-germany/",
+     "source_tier": "S3",
+     "date": "2026-09-28",
+     "supports": "alibaba"
+    }
+   ]
+  },
+  "PER": {
+   "huawei": {
+    "status": "live",
+    "since": null,
+    "note": "Lima; BNamericas (2023) calls Peru a 'national' region."
+   },
+   "sources": [
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-cloud-region-in-philippines",
+     "source_tier": "S2",
+     "date": "2024-12-05",
+     "supports": "huawei"
+    },
+    {
+     "url": "https://bnamericas.com/en/news/huawei-pledges-new-latam-datacenters-but-is-mum-on-details",
+     "source_tier": "S2",
+     "date": "2023-03-31",
+     "supports": "huawei"
+    }
+   ]
+  },
+  "PHL": {
+   "alibaba": {
+    "status": "live",
+    "since": "2021",
+    "note": "First Manila DC; Capacity article undated; Wikipedia gives June 2021."
+   },
+   "huawei": {
+    "status": "live",
+    "since": "2024",
+    "note": "Philippines Region, three AZs, launched Dec 2024 (DCD)."
+   },
+   "sources": [
+    {
+     "url": "https://capacitymedia.com/articles/3828780/alibaba-cloud-opens-first-data-centre-in-philippines",
+     "source_tier": "S2",
+     "date": null,
+     "supports": "alibaba (undated)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Alibaba_Cloud",
+     "source_tier": "S5",
+     "date": null,
+     "supports": "alibaba since-year (confirmation only)"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-cloud-region-in-philippines",
+     "source_tier": "S2",
+     "date": "2024-12-05",
+     "supports": "huawei"
+    }
+   ]
+  },
+  "SAU": {
+   "alibaba": {
+    "status": "live",
+    "since": "2022",
+    "note": "Riyadh DCs opened June 2022, operated through Saudi Cloud Computing Company (SCCC), a JV of Alibaba Cloud and STC - partner-operated, not wholly Alibaba."
+   },
+   "huawei": {
+    "status": "live",
+    "since": "2023",
+    "note": "Riyadh Region, three AZs, launched Sept 2023."
+   },
+   "tencent": {
+    "status": "live",
+    "since": "2025",
+    "note": "Announced Feb 2025 (LEAP); Arab News Sept 2025 said still finalizing; DataCentre News UK (Mar 2026) says two Saudi AZs launched in 2025."
+   },
+   "sources": [
+    {
+     "url": "https://www.theregister.com/2022/06/08/alibaba_business_continues_international_expansion/",
+     "source_tier": "S2",
+     "date": "2022-06-08",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-saudi-cloud-region-in-riyadh",
+     "source_tier": "S2",
+     "date": "2023-09-04",
+     "supports": "huawei"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/tencent-cloud-launches-first-middle-east-cloud-region-in-saudi-arabia",
+     "source_tier": "S2",
+     "date": "2025-02-11",
+     "supports": "tencent (announcement)"
+    },
+    {
+     "url": "https://www.arabnews.pk/node/2616094/business-economy",
+     "source_tier": "S3",
+     "date": "2025-09-20",
+     "supports": "tencent (not yet live as of Sept 2025)"
+    },
+    {
+     "url": "https://datacentrenews.uk/story/tencent-cloud-boosts-frankfurt-ai-capacity-for-europe",
+     "source_tier": "S2",
+     "date": "2026-03-04",
+     "supports": "tencent (live)"
+    }
+   ]
+  },
+  "SGP": {
+   "alibaba": {
+    "status": "live",
+    "since": "2015",
+    "note": "Overseas HQ; first DC 2015 per Capacity Media (undated, c.2016) and Wikipedia."
+   },
+   "huawei": {
+    "status": "live",
+    "since": null,
+    "note": "Listed among existing international regions by DCD 2023 and 2024."
+   },
+   "tencent": {
+    "status": "live",
+    "since": null,
+    "note": "Named in Tencent's footprint in W.Media Aug 2026 (Malaysia launch report)."
+   },
+   "sources": [
+    {
+     "url": "https://capacitymedia.com/article/29ot8h3lzrj4xeqb4k3r4/news/alibaba-extends-cloud-offering-to-europe-japan-middle-east-and-australia",
+     "source_tier": "S2",
+     "date": null,
+     "supports": "alibaba (article undated; describes 2015 Singapore DC)"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-saudi-cloud-region-in-riyadh",
+     "source_tier": "S2",
+     "date": "2023-09-04",
+     "supports": "huawei"
+    },
+    {
+     "url": "https://w.media/tencent-cloud-launches-cloud-region-in-johor-its-first-in-malaysia/",
+     "source_tier": "S2",
+     "date": "2026-08-19",
+     "supports": "tencent"
+    }
+   ]
+  },
+  "THA": {
+   "alibaba": {
+    "status": "live",
+    "since": "2022",
+    "note": "First Bangkok DC (one AZ) May 2022; second Thai DC Feb 2025. DCD calls it a data center with an AZ rather than explicitly a 'region'."
+   },
+   "huawei": {
+    "status": "live",
+    "since": null,
+    "note": "Bangkok listed as existing region (DCD 2023, 2024)."
+   },
+   "tencent": {
+    "status": "live",
+    "since": null,
+    "note": "Bangkok IDC launch reported 2021 (Verdict); DCD 2022 notes two Tencent Bangkok AZs."
+   },
+   "sources": [
+    {
+     "url": "https://datacenterdynamics.com/en/news/alibaba-opens-data-center-in-bangkok-thailand",
+     "source_tier": "S2",
+     "date": "2022-05-13",
+     "supports": "alibaba+tencent"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-saudi-cloud-region-in-riyadh",
+     "source_tier": "S2",
+     "date": "2023-09-04",
+     "supports": "huawei"
+    },
+    {
+     "url": "https://www.verdict.co.uk/tencent-cloud-data-centre/",
+     "source_tier": "S2",
+     "date": "2021-06-03",
+     "supports": "tencent"
+    }
+   ]
+  },
+  "TUR": {
+   "alibaba": {
+    "status": "announced",
+    "since": null,
+    "note": "First Turkey region announced Sept 2026, within 12 months."
+   },
+   "huawei": {
+    "status": "live",
+    "since": null,
+    "note": "Istanbul listed as a Huawei Cloud region by DCD Dec 2024."
+   },
+   "sources": [
+    {
+     "url": "https://w.media/?p=43837",
+     "source_tier": "S2",
+     "date": "2026-09-30",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://www.eweek.com/news/alibaba-cloud-europe-data-centers-emea/",
+     "source_tier": "S2",
+     "date": "2026-09-23",
+     "supports": "alibaba"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-cloud-region-in-philippines",
+     "source_tier": "S2",
+     "date": "2024-12-05",
+     "supports": "huawei"
+    }
+   ]
+  },
+  "USA": {
+   "alibaba": {
+    "status": "live",
+    "since": "2015",
+    "note": "Two US DCs online 2015 (California/Silicon Valley; Virginia per Wikipedia)."
+   },
+   "tencent": {
+    "status": "live",
+    "since": "2017",
+    "note": "Silicon Valley (2017) and Virginia (2018); both listed as live in DCD Feb 2025."
+   },
+   "sources": [
+    {
+     "url": "https://capacitymedia.com/article/29ot8h3lzrj4xeqb4k3r4/news/alibaba-extends-cloud-offering-to-europe-japan-middle-east-and-australia",
+     "source_tier": "S2",
+     "date": null,
+     "supports": "alibaba (undated c.2016)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Alibaba_Cloud",
+     "source_tier": "S5",
+     "date": null,
+     "supports": "alibaba (confirmation only)"
+    },
+    {
+     "url": "https://www.pcworld.com/article/406559/tencent-adding-five-data-centers-to-target-cloud-users-outside-china.html",
+     "source_tier": "S2",
+     "date": "2017-04-26",
+     "supports": "tencent"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/tencent-cloud-launches-first-middle-east-cloud-region-in-saudi-arabia",
+     "source_tier": "S2",
+     "date": "2025-02-11",
+     "supports": "tencent"
+    }
+   ]
+  },
+  "ZAF": {
+   "huawei": {
+    "status": "live",
+    "since": "2019",
+    "note": "Johannesburg region; DC established 2019 per ITWeb Africa."
+   },
+   "sources": [
+    {
+     "url": "https://datacenterdynamics.com/en/news/huawei-launches-saudi-cloud-region-in-riyadh",
+     "source_tier": "S2",
+     "date": "2023-09-04",
+     "supports": "huawei"
+    },
+    {
+     "url": "https://itweb.africa/content/nWJad7bNdgg7bjO1",
+     "source_tier": "S2",
+     "date": "2024-09-04",
+     "supports": "huawei (since 2019)"
+    }
+   ]
+  }
+ },
+ "notes": [
+  "UK CONFLICT: tasking cited an Alibaba UK closure; no secondary source found reporting one. DCD 2018 confirms London launch and TechRepublic (2026-06-18) describes UK as existing Alibaba European infrastructure. Recorded as live; flag for review rather than assumed closed.",
+  "Alibaba closures confirmed only for India (Mumbai, 15 Jul 2024) and Australia (Sydney, 30 Sep 2024) per The Register.",
+  "Alibaba NLD planned go-live October 2026; not confirmed live as of 2026-10-20 -> 'announced'. Re-verify next run.",
+  "Alibaba BRA (Aug 2026) and FRA (Jun 2026): reported launched/operational via secondary reports of provider announcements; BRA reports do not explicitly confirm GA.",
+  "Alibaba SAU is operated via SCCC (JV with STC), i.e. partner-operated; JPN originally via SB Cloud (SoftBank JV). Both counted as Alibaba-designated regions.",
+  "Alibaba THA: DCD describes a Bangkok data center with one AZ, not explicitly a 'region'; counted live.",
+  "Tencent SAU: Feb 2025 'launch' announcement, Sept 2025 Arab News said not yet live, Mar 2026 DataCentre News UK says two AZs launched in 2025 -> live, moderate confidence.",
+  "Tencent JPN: Osaka (third Japan AZ) announced Apr 2025; Osaka go-live not verified (Japan already live via Tokyo).",
+  "Tencent IND (Mumbai, opened 2018), Tencent RUS (Moscow, 600 racks at IXcellerate 2018-19) and Huawei RUS (Moscow, 500 rented racks, 2019): current status could not be verified by any 2024-2026 secondary source; omitted rather than guessed. Tencent's DCD Feb 2025 region list names Silicon Valley, Virginia, Toronto, Frankfurt, São Paulo but not Moscow or Mumbai (Asia list not given). Recommend research_gap records.",
+  "Tencent BHR: March 2021 announcement of first MENA 'internet data centre' in Bahrain (per Verdict 2021); Tencent later called Saudi its 'first Middle East region', so Bahrain is not treated as a region. Omitted.",
+  "Tencent MYS: 2024 Cyberjaya 'Alto Cloud' DC with GRM (Wikipedia) is a partner facility, not a Tencent region; only the Aug 2026 Johor region is counted.",
+  "Huawei MYS: Technology Magazine (Aug 2025) says Huawei Cloud has 'five regions and 17 AZs across ASEAN' without naming them; named ASEAN regions found are SGP, THA, IDN, PHL (four). No source names a Malaysian Huawei region - omitted; possible gap.",
+  "Huawei KEN: ITWeb Africa (Sep 2024) says Kenya has only a PoP linked to Johannesburg, not a region. Omitted.",
+  "Huawei FRA / DEU: no Huawei-designated region found (Open Telekom Cloud is a Deutsche Telekom service, not a Huawei region). Omitted.",
+  "Huawei 'since' years mostly null: region lists (DCD 2023/2024) confirm existence but not launch dates for SGP, THA, IDN, TUR, IRL, MEX, BRA, CHL, ARG, PER, HKG.",
+  "Several since-years for Alibaba (HKG 2014, MYS 2017, IDN 2018 corroborated by DCD, PHL 2021, USA 2015) rely on Wikipedia as confirmation; treat as lower confidence.",
+  "Capacity Media Alibaba articles (Singapore/US/Dubai/Frankfurt/Japan; Philippines) carry no visible publication date; date recorded as null.",
+  "Some sources (aap.com.au cision releases) are wire copies of provider press releases -> S4; used only alongside S2 reporting.",
+  "SCMP (Alibaba-owned) appeared in search results but was not used as a source."
+ ]
+}
