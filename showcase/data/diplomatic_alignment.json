@@ -1,0 +1,1591 @@
+{
+ "layer": "diplomatic_alignment",
+ "schema": "sd-layer/0.1",
+ "version": "0.2.0-draft",
+ "review_status": "unreviewed",
+ "generated": "2026-10-19T00:00:00Z",
+ "instrument_tier": 1,
+ "instrument_note": "Bloc membership is a Tier-1 instrument (statement of intent): what governments signed, not what they built.",
+ "cell_rule": "pax_silica AND waico -> hedge; pax_silica only -> us; waico only -> prc; neither -> insufficient (never rendered as balanced). Observer, invited, considering and unconfirmed statuses do NOT count as membership.",
+ "eu_rule": "EUU is carried as its own row. EU membership is NOT propagated to member states.",
+ "default_for_unlisted_countries": "insufficient",
+ "blocs": {
+  "pax_silica": {
+   "launched": "2025-12-12",
+   "signatories_excluding_us": 24,
+   "non_signatory_participants": [
+    "TWN"
+   ],
+   "source": "https://www.state.gov/pax-silica",
+   "source_tier": "S1",
+   "page_modified": "2026-08-27",
+   "recheck_2026-10-19": "No new signatory found. Portugal and Estonia signed only the separate Joint Statement on AI Opportunity (35 signers), not the Pax Silica Declaration (BHFS). state.gov page could not be fetched on 2026-10-19; list carried from the 2026-09-23 fetch."
+  },
+  "waico": {
+   "founded": "2026-07-16",
+   "signatories": 37,
+   "observers": [
+    "BGD"
+   ],
+   "roster_source": "https://www.globalsecurity.org/military/world/int/waico.htm",
+   "roster_source_tier": "S5",
+   "accessions_source": "https://southwardtech.com/waico-signatories-37-countries/",
+   "recheck_2026-10-19": "No accession after 31 July 2026 found (searches 2026-10-02 and 2026-10-19).",
+   "founding_date_note": "16 July 2026; Jamestown China Brief 26:17 gives 17 July (the WAIC opening) - flagged, treated as an error."
+  }
+ },
+ "open_items": [
+  "No official WAICO member list is published; 18 of the 29 founders rest only on an S5 roster (marked confidence low). Recruit an S1 list and re-verify.",
+  "COG vs COD: rosters disagree on which Congo signed. Coded COG pending S1.",
+  "MWI: one Mozambican outlet only; coded unconfirmed, renders insufficient.",
+  "Signing is not ratification; no ratification field yet.",
+  "Pax Silica signing dates missing for FIN, NOR, SWE, ARE (leads: Apr, May, Mar, Jan 2026) - need S1 releases.",
+  "SGP 'considering' WAICO invitation: original 9 Sep 2026 report not located.",
+  "BGD Pax Silica invitation (1 Aug 2026) is lead-only."
+ ],
+ "countries": {
+  "ARE": {
+   "name": "United Arab Emirates",
+   "pax_silica": {
+    "status": "signatory",
+    "date": null,
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "ARG": {
+   "name": "Argentina",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2026-06-26",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     },
+     {
+      "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+      "source_tier": "S3",
+      "retrieved_at": "2026-10-19T00:00:00Z",
+      "note": "names the ten June 2026 summit signatories"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "AUS": {
+   "name": "Australia",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2025-12-12",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "BGD": {
+   "name": "Bangladesh",
+   "pax_silica": {
+    "status": "invited",
+    "date": "2026-08-01",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://en.wikipedia.org/wiki/Pax_Silica",
+      "source_tier": "S5",
+      "retrieved_at": "2026-10-19T00:00:00Z",
+      "note": "lead only: reported invitation, not verified"
+     }
+    ]
+   },
+   "waico": {
+    "status": "observer",
+    "date": "2026-08-01",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.thedailystar.net/news/bangladesh/news/bangladesh-join-global-ai-body-observer-4237571",
+      "source_tier": "S3",
+      "retrieved_at": "2026-09-23T00:00:00Z"
+     }
+    ]
+   },
+   "cell": "insufficient"
+  },
+  "BLR": {
+   "name": "Belarus",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "BRA": {
+   "name": "Brazil",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "BRN": {
+   "name": "Brunei",
+   "pax_silica": null,
+   "waico": {
+    "status": "acceded",
+    "date": "2026-07-31",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://southwardtech.com/waico-signatories-37-countries/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "relays PRC foreign-ministry readouts of 30-31 July 2026"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "CHL": {
+   "name": "Chile",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2026-06-26",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     },
+     {
+      "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+      "source_tier": "S3",
+      "retrieved_at": "2026-10-19T00:00:00Z",
+      "note": "names the ten June 2026 summit signatories"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "CHN": {
+   "name": "China",
+   "pax_silica": null,
+   "waico": {
+    "status": "convener",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "CMR": {
+   "name": "Cameroon",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "COG": {
+   "name": "Republic of the Congo",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "CRI": {
+   "name": "Costa Rica",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2026-06-26",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     },
+     {
+      "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+      "source_tier": "S3",
+      "retrieved_at": "2026-10-19T00:00:00Z",
+      "note": "names the ten June 2026 summit signatories"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "CUB": {
+   "name": "Cuba",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "DEU": {
+   "name": "Germany",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2026-06-26",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     },
+     {
+      "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+      "source_tier": "S3",
+      "retrieved_at": "2026-10-19T00:00:00Z",
+      "note": "names the ten June 2026 summit signatories"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "DMA": {
+   "name": "Dominica",
+   "pax_silica": null,
+   "waico": {
+    "status": "acceded",
+    "date": "2026-07-30",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://southwardtech.com/waico-signatories-37-countries/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "relays PRC foreign-ministry readouts of 30-31 July 2026"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "DZA": {
+   "name": "Algeria",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "ETH": {
+   "name": "Ethiopia",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "EUU": {
+   "name": "European Union",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2026-06-26",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     },
+     {
+      "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+      "source_tier": "S3",
+      "retrieved_at": "2026-10-19T00:00:00Z",
+      "note": "names the ten June 2026 summit signatories"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "FIN": {
+   "name": "Finland",
+   "pax_silica": {
+    "status": "signatory",
+    "date": null,
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "GBR": {
+   "name": "United Kingdom",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2025-12-12",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "GEO": {
+   "name": "Georgia",
+   "pax_silica": null,
+   "waico": {
+    "status": "acceded",
+    "date": "2026-07-31",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://southwardtech.com/waico-signatories-37-countries/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "relays PRC foreign-ministry readouts of 30-31 July 2026"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "GRC": {
+   "name": "Greece",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2026-06-26",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     },
+     {
+      "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+      "source_tier": "S3",
+      "retrieved_at": "2026-10-19T00:00:00Z",
+      "note": "names the ten June 2026 summit signatories"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "IDN": {
+   "name": "Indonesia",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://rri.co.id/en/international/2576777/indonesia-joins-29-nations-to-launch-global-ai-cooperation-body",
+      "source_tier": "S3",
+      "retrieved_at": "2026-09-23T00:00:00Z"
+     },
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "IND": {
+   "name": "India",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2026-02",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     },
+     {
+      "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/02/united-states-and-india-sign-pax-silica-declaration",
+      "source_tier": "S1",
+      "retrieved_at": "2026-10-19T00:00:00Z"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "IRN": {
+   "name": "Iran",
+   "pax_silica": null,
+   "waico": {
+    "status": "acceded",
+    "date": "2026-07-31",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://en.irna.ir/news/86224376/Iran-joins-world-AI-cooperation-organization",
+      "source_tier": "S4",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "Iranian state news agency"
+     },
+     {
+      "url": "https://southwardtech.com/waico-signatories-37-countries/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "relays PRC foreign-ministry readouts of 30-31 July 2026"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "ISR": {
+   "name": "Israel",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2025-12-12",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "ITA": {
+   "name": "Italy",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2026-07-31",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     }
+    ],
+    "note": "Attended the June 2026 summit as an observer (BHFS), then signed 31 July 2026."
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "JPN": {
+   "name": "Japan",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2025-12-12",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "KAZ": {
+   "name": "Kazakhstan",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2026-06-26",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     },
+     {
+      "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+      "source_tier": "S3",
+      "retrieved_at": "2026-10-19T00:00:00Z",
+      "note": "names the ten June 2026 summit signatories"
+     }
+    ]
+   },
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "hedge"
+  },
+  "KEN": {
+   "name": "Kenya",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "KGZ": {
+   "name": "Kyrgyzstan",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "KHM": {
+   "name": "Cambodia",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "named"
+     },
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "KOR": {
+   "name": "Republic of Korea",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2025-12-12",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "LAO": {
+   "name": "Laos",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://kpl.gov.la/detail.aspx?id=102205",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "Lao state news agency; deputy PM/FM signed"
+     },
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "LSO": {
+   "name": "Lesotho",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://lesothotribune.co.ls/?p=13915",
+      "source_tier": "S3",
+      "retrieved_at": "2026-09-23T00:00:00Z"
+     },
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "MMR": {
+   "name": "Myanmar",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "named"
+     },
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "MOZ": {
+   "name": "Mozambique",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://clubofmozambique.com/news/mozambique-becomes-founding-member-of-world-ai-cooperation-organization-waico/",
+      "source_tier": "S3",
+      "retrieved_at": "2026-09-23T00:00:00Z"
+     },
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "MWI": {
+   "name": "Malawi",
+   "pax_silica": null,
+   "waico": {
+    "status": "unconfirmed",
+    "date": null,
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://clubofmozambique.com/news/mozambique-becomes-founding-member-of-world-ai-cooperation-organization-waico/",
+      "source_tier": "S3",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "lists Malawi among signatories; absent from every other roster"
+     }
+    ]
+   },
+   "cell": "insufficient"
+  },
+  "MYS": {
+   "name": "Malaysia",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "named"
+     },
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "NIC": {
+   "name": "Nicaragua",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "NLD": {
+   "name": "Netherlands",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2026-06-26",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     },
+     {
+      "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+      "source_tier": "S3",
+      "retrieved_at": "2026-10-19T00:00:00Z",
+      "note": "names the ten June 2026 summit signatories"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "NOR": {
+   "name": "Norway",
+   "pax_silica": {
+    "status": "signatory",
+    "date": null,
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "OMN": {
+   "name": "Oman",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "PAK": {
+   "name": "Pakistan",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.app.com.pk/?p=1248271",
+      "source_tier": "S3",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "Associated Press of Pakistan; FM signed"
+     },
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "PAN": {
+   "name": "Panama",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2026-06-26",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     },
+     {
+      "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+      "source_tier": "S3",
+      "retrieved_at": "2026-10-19T00:00:00Z",
+      "note": "names the ten June 2026 summit signatories"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "PHL": {
+   "name": "Philippines",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2026-04",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     },
+     {
+      "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/04/the-united-states-and-the-philippines-launch-plans-for-4000-acre-economic-security-zone-to-shore-up-supply-chains-first-ai-native-industrial-acceleration-hub-under-pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "QAT": {
+   "name": "Qatar",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2026-01",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     },
+     {
+      "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/01/the-united-states-welcomes-qatars-signing-of-pax-silica-declaration",
+      "source_tier": "S1",
+      "retrieved_at": "2026-10-19T00:00:00Z"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "RUS": {
+   "name": "Russia",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "SDN": {
+   "name": "Sudan",
+   "pax_silica": null,
+   "waico": {
+    "status": "acceded",
+    "date": "2026-07-31",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://tpra.gov.sd/en/sudan-signs-agreement-establishing-world-artificial-intelligence-cooperation-organization-as-a-founding-member-state/",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "Sudanese regulator"
+     },
+     {
+      "url": "https://southwardtech.com/waico-signatories-37-countries/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "relays PRC foreign-ministry readouts of 30-31 July 2026"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "SEN": {
+   "name": "Senegal",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "SGP": {
+   "name": "Singapore",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2025-12-12",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     }
+    ]
+   },
+   "waico": {
+    "status": "considering_invitation",
+    "date": "2026-09-09",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://en.wikipedia.org/wiki/World_Artificial_Intelligence_Cooperation_Organization",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "lead only; cites a 9 Sep 2026 report not yet located"
+     }
+    ]
+   },
+   "cell": "us"
+  },
+  "SLV": {
+   "name": "El Salvador",
+   "pax_silica": {
+    "status": "signatory",
+    "date": "2026-06-26",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     },
+     {
+      "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+      "source_tier": "S3",
+      "retrieved_at": "2026-10-19T00:00:00Z",
+      "note": "names the ten June 2026 summit signatories"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "SRB": {
+   "name": "Serbia",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "SWE": {
+   "name": "Sweden",
+   "pax_silica": {
+    "status": "signatory",
+    "date": null,
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "state.gov signatory list, page modified 2026-08-27"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "TGO": {
+   "name": "Togo",
+   "pax_silica": null,
+   "waico": {
+    "status": "acceded",
+    "date": "2026-07-31",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://southwardtech.com/waico-signatories-37-countries/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "relays PRC foreign-ministry readouts of 30-31 July 2026"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "THA": {
+   "name": "Thailand",
+   "pax_silica": null,
+   "waico": null,
+   "cell": "insufficient"
+  },
+  "TJK": {
+   "name": "Tajikistan",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "TWN": {
+   "name": "Taiwan",
+   "pax_silica": {
+    "status": "non_signatory_participant",
+    "date": "2026-01",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z"
+     },
+     {
+      "url": "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/",
+      "source_tier": "S3",
+      "retrieved_at": "2026-10-19T00:00:00Z"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "TZA": {
+   "name": "Tanzania",
+   "pax_silica": null,
+   "waico": {
+    "status": "acceded",
+    "date": "2026-07-31",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://southwardtech.com/waico-signatories-37-countries/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "relays PRC foreign-ministry readouts of 30-31 July 2026"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "USA": {
+   "name": "United States",
+   "pax_silica": {
+    "status": "convener",
+    "date": "2025-12-12",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://www.state.gov/pax-silica",
+      "source_tier": "S1",
+      "retrieved_at": "2026-09-23T00:00:00Z"
+     }
+    ]
+   },
+   "waico": null,
+   "cell": "us"
+  },
+  "UZB": {
+   "name": "Uzbekistan",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "VEN": {
+   "name": "Venezuela",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "VNM": {
+   "name": "Vietnam",
+   "pax_silica": null,
+   "waico": {
+    "status": "acceded",
+    "date": "2026-07-31",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://southwardtech.com/waico-signatories-37-countries/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "relays PRC foreign-ministry readouts of 30-31 July 2026"
+     }
+    ]
+   },
+   "cell": "prc"
+  },
+  "ZAF": {
+   "name": "South Africa",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  },
+  "ZMB": {
+   "name": "Zambia",
+   "pax_silica": null,
+   "waico": {
+    "status": "founding",
+    "date": "2026-07-16",
+    "instrument_tier": 1,
+    "sources": [
+     {
+      "url": "https://thediplomat.com/2026/07/chinas-new-ai-club-the-world-artificial-intelligence-cooperation-organization/",
+      "source_tier": "S2",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "founding of WAICO with 29 states"
+     },
+     {
+      "url": "https://www.globalsecurity.org/military/world/int/waico.htm",
+      "source_tier": "S5",
+      "retrieved_at": "2026-09-23T00:00:00Z",
+      "note": "full 29-name roster; traces to a social-media post; lead only"
+     }
+    ],
+    "confidence": "low",
+    "note": "Membership rests on the uncorroborated 29-name roster; no named S1-S3 confirmation for this state yet."
+   },
+   "cell": "prc"
+  }
+ }
+}
