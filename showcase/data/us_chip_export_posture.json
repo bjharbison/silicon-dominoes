@@ -1,0 +1,2041 @@
+{
+ "layer": "us_chip_export_posture",
+ "schema": "sd-layer/0.1",
+ "version": "0.1.0-draft",
+ "review_status": "unreviewed",
+ "generated": "2026-10-20T11:45:00Z",
+ "as_of": "2026-10-20",
+ "current_scheme": "No AI Diffusion tiers. BIS announced on 12-13 May 2025 it would not enforce the Jan 2025 AI Diffusion Rule; no replacement rule has issued, and on 14 Jul 2026 Under Secretary Kessler told Congress none is intended (new rulemaking instead). The CFR text of 15 CFR 742.6(a)(6)(iii)(A) still reads as a worldwide licence requirement with per-country TPP allocations, but BIS enforces it only as the pre-Diffusion scheme: (1) destination-based licence requirement for 3A090/4A090 and related .z items to Country Groups D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; review is presumption of denial for D:5 and Macau, presumption of approval for other D:1/D:4 destinations; (2) per BIS guidance of 31 May 2026, a worldwide licence requirement where the buyer is headquartered in, or its ultimate parent is headquartered in, D:5 or Macau (originally 744.23(a)(3), now 742.6(a)(6)(iii)(A)). Modifications: FR 2026-00789 (eff. 15 Jan 2026) case-by-case review for US-origin exports to China/Macau of chips below TPP 21,000 and DRAM bandwidth 6,500 GB/s (H200-class), with conditions; FR 2026-14132 (eff. 10 Jul 2026) moved the UAE to A:5 while expressly retaining a UAE licence requirement with an approved-entity exemption (Supp. 8 to Part 740); FR 2026-02262 (eff. 3 Feb 2026) removed Cambodia from D:5. Part 744 end-use/end-user controls (Entity List, military/WMD, May 2025 AI-training policy statement) and GP10 guidance on Huawei Ascend apply everywhere. The American AI Exports Program (EO 14320, 23 Jul 2025) is promotional and has not been found to create a licence exemption.",
+ "scheme_sources": [
+  {
+   "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+   "source_tier": "S1",
+   "date": "2026-10-16",
+   "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+  },
+  {
+   "url": "https://www.bis.gov/node/9171",
+   "source_tier": "S1",
+   "date": "2026-10-20",
+   "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+  },
+  {
+   "url": "https://www.bis.gov/media/documents/bis-guidance-may-31-2026.pdf",
+   "source_tier": "S1",
+   "date": "2026-05-31",
+   "note": "BIS guidance: licence requirement for 3A090/4A090 (.a/.b) and .z items to entities headquartered in, or with ultimate parent in, D:5 or Macau remains enforced worldwide; May 2025 non-enforcement covers only other destination-based requirements."
+  },
+  {
+   "url": "https://www.hklaw.com/en/insights/publications/2026/06/bis-publishes-guidance-license-requirements-advanced-computing-items",
+   "source_tier": "S2",
+   "date": "2026-06-05",
+   "note": "Holland & Knight on May 31 2026 guidance; no replacement rule issued; GAO found (12 May 2026) the non-enforcement announcement was a 'rule' under the CRA."
+  },
+  {
+   "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+   "source_tier": "S2",
+   "date": "2026-06-08",
+   "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+  },
+  {
+   "url": "https://www.wiley.law/alert-BIS-Rescinds-AI-Diffusion-Rule",
+   "source_tier": "S2",
+   "date": "2025-05",
+   "note": "BIS announced rescission/non-enforcement of AI Diffusion Rule 12-13 May 2025; Huawei Ascend GP10 guidance; diversion red flags; Part 744 policy statement on AI training for D:5/Macau-HQ parties."
+  },
+  {
+   "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+   "source_tier": "S2",
+   "date": "2024-01-11",
+   "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+  },
+  {
+   "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+   "source_tier": "S2",
+   "date": "2026-01-20",
+   "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+  },
+  {
+   "url": "https://www.morganlewis.com/pubs/2026/07/bis-upgrades-uae-export-control-status-with-ai-chip-access-limited-to-approved-entities",
+   "source_tier": "S2",
+   "date": "2026-07-21",
+   "note": "Morgan Lewis on BIS final rule 'Enhanced Favorable Treatment for the UAE' (FR doc 2026-14132, published 14 Jul 2026, effective 10 Jul 2026): UAE removed from D:3/D:4, added to A:5; licence requirement for advanced computing items retained except for approved entities in Supp. 8 to Part 740. Also reports Kessler told Congress 14 Jul 2026 no replacement for AI Diffusion is intended."
+  },
+  {
+   "url": "https://www.lw.com/en/insights/us-eases-export-controls-for-the-uae-4-key-takeaways",
+   "source_tier": "S2",
+   "date": "2026-07",
+   "note": "Latham: approved entities include UAE government agencies, G42 and Core42 (authorisation expiring 6 Apr 2027) and subsidiaries of certain US AI companies; MGX to be favourably reviewed but not listed."
+  },
+  {
+   "url": "https://kpmg.com/us/en/taxnewsflash/news/2026/02/us-bis-removes-cambodia-arms-embargoed-country-list.html",
+   "source_tier": "S2",
+   "date": "2026-02-03",
+   "note": "BIS rule (FR doc 2026-02262) removed Cambodia from D:5 effective 3 Feb 2026; Cambodia remains in D:1."
+  }
+ ],
+ "default": {
+  "code": "no_license_required_general",
+  "explanation": "Any destination not in D:1, D:4 or D:5 and not Macau or the UAE (and D-group members also in A:5/A:6, e.g. Israel) needs no destination-based licence for 3A090/4A090/.z items while the AI Diffusion worldwide requirement is unenforced. A licence is still required if the buyer or its ultimate parent is headquartered in D:5 or Macau, and Part 744 end-use/end-user controls (Entity List, military/WMD, AI-training policy statement) and GP10 apply.",
+  "sources": [
+   {
+    "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+    "source_tier": "S1",
+    "date": "2026-10-16",
+    "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+   },
+   {
+    "url": "https://www.bis.gov/media/documents/bis-guidance-may-31-2026.pdf",
+    "source_tier": "S1",
+    "date": "2026-05-31",
+    "note": "BIS guidance: licence requirement for 3A090/4A090 (.a/.b) and .z items to entities headquartered in, or with ultimate parent in, D:5 or Macau remains enforced worldwide; May 2025 non-enforcement covers only other destination-based requirements."
+   },
+   {
+    "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+    "source_tier": "S2",
+    "date": "2026-06-08",
+    "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+   },
+   {
+    "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+    "source_tier": "S2",
+    "date": "2024-01-11",
+    "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+   }
+  ]
+ },
+ "countries": {
+  "AFG": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "ARE": {
+   "code": "license_required",
+   "country_groups": [
+    "A:5",
+    "B"
+   ],
+   "special_arrangement": {
+    "type": "approved_entity_list",
+    "description": "FR doc 2026-14132 (pub. 14 Jul 2026, eff. 10 Jul 2026): UAE moved out of D:3/D:4 into A:5 but licence requirement for 3A090/4A090 (.a and .b) and .z items expressly retained for the UAE, with no licence needed where consignee and all end users are approved entities in Supp. No. 8 to Part 740: UAE government agencies; G42 and Core42 (expiring 6 Apr 2027 absent BIS action); UAE subsidiaries of certain US-HQ AI/hyperscale companies. MGX to be favourably reviewed but not listed. Earlier: 19 Nov 2025 authorisation for G42 up to 35,000 GB300-equivalent.",
+    "sources": [
+     {
+      "url": "https://www.morganlewis.com/pubs/2026/07/bis-upgrades-uae-export-control-status-with-ai-chip-access-limited-to-approved-entities",
+      "source_tier": "S2",
+      "date": "2026-07-21",
+      "note": "Morgan Lewis on BIS final rule 'Enhanced Favorable Treatment for the UAE' (FR doc 2026-14132, published 14 Jul 2026, effective 10 Jul 2026): UAE removed from D:3/D:4, added to A:5; licence requirement for advanced computing items retained except for approved entities in Supp. 8 to Part 740. Also reports Kessler told Congress 14 Jul 2026 no replacement for AI Diffusion is intended."
+     },
+     {
+      "url": "https://www.lw.com/en/insights/us-eases-export-controls-for-the-uae-4-key-takeaways",
+      "source_tier": "S2",
+      "date": "2026-07",
+      "note": "Latham: approved entities include UAE government agencies, G42 and Core42 (authorisation expiring 6 Apr 2027) and subsidiaries of certain US AI companies; MGX to be favourably reviewed but not listed."
+     },
+     {
+      "url": "https://www.arnoldporter.com/en/perspectives/blogs/enforcement-edge/2026/07/moving-up-the-country-ladder",
+      "source_tier": "S2",
+      "date": "2026-07",
+      "note": "Arnold & Porter on the same UAE rule."
+     },
+     {
+      "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+      "source_tier": "S1",
+      "date": "2026-10-16",
+      "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+     },
+     {
+      "url": "https://www.thenationalnews.com/future/technology/2025/11/20/uae-ai-nvidia-chips-us/",
+      "source_tier": "S3",
+      "date": "2025-11-20",
+      "note": "Commerce announced 19 Nov 2025 authorisation for G42 (UAE) and HUMAIN (Saudi Arabia) to buy up to the equivalent of 35,000 Nvidia GB300 each, with security and reporting requirements."
+     }
+    ]
+   },
+   "basis": "UAE named explicitly in 742.6(a)(6)(iii); licence required except for Supp. 8 approved entities. Review policy for non-listed UAE parties not established from fetched sources.",
+   "sources": [
+    {
+     "url": "https://www.morganlewis.com/pubs/2026/07/bis-upgrades-uae-export-control-status-with-ai-chip-access-limited-to-approved-entities",
+     "source_tier": "S2",
+     "date": "2026-07-21",
+     "note": "Morgan Lewis on BIS final rule 'Enhanced Favorable Treatment for the UAE' (FR doc 2026-14132, published 14 Jul 2026, effective 10 Jul 2026): UAE removed from D:3/D:4, added to A:5; licence requirement for advanced computing items retained except for approved entities in Supp. 8 to Part 740. Also reports Kessler told Congress 14 Jul 2026 no replacement for AI Diffusion is intended."
+    },
+    {
+     "url": "https://www.lw.com/en/insights/us-eases-export-controls-for-the-uae-4-key-takeaways",
+     "source_tier": "S2",
+     "date": "2026-07",
+     "note": "Latham: approved entities include UAE government agencies, G42 and Core42 (authorisation expiring 6 Apr 2027) and subsidiaries of certain US AI companies; MGX to be favourably reviewed but not listed."
+    },
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    }
+   ]
+  },
+  "ARM": {
+   "code": "license_required",
+   "country_groups": [
+    "D:1"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "AZE": {
+   "code": "license_required",
+   "country_groups": [
+    "D:1"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "BHR": {
+   "code": "license_required",
+   "country_groups": [
+    "D:4"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "BLR": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:1",
+    "D:4",
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide. Additionally subject to the Russia/Belarus licence requirements of EAR 746.8 (not separately fetched in this run).",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "CAF": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "CHN": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:1",
+    "D:4",
+    "D:5"
+   ],
+   "special_arrangement": {
+    "type": "case_by_case_carveout",
+    "description": "H200-class case-by-case licensing (FR doc 2026-00789, eff. 15 Jan 2026). Licences reported issued for small H200 volumes (Feb 2026), with a 25% duty and US inspection; PRC authorities reportedly restricting purchases.",
+    "sources": [
+     {
+      "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+      "source_tier": "S2",
+      "date": "2026-01-20",
+      "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+     },
+     {
+      "url": "https://public-inspection.federalregister.gov/2026-00789.pdf",
+      "source_tier": "S1",
+      "date": "2026-01-15",
+      "note": "Federal Register public-inspection PDF of FR doc 2026-00789 (seen in search results; not fetched directly — content relied on via Covington and eCFR)."
+     },
+     {
+      "url": "https://news.bgov.com/international-trade/nvidia-gets-us-license-for-small-amount-of-h200-exports-to-china",
+      "source_tier": "S2",
+      "date": "2026-02-26",
+      "note": "Nvidia received a US licence for a small number of H200s to Chinese customers, subject to US inspection and 25% duty; Beijing's acceptance unclear."
+     },
+     {
+      "url": "https://btw.media/en/china-blocks-nvidia-h200-ai-chips-despite-us-export-clearance",
+      "source_tier": "S3",
+      "date": "2026-01-20",
+      "note": "Reports (citing the Guardian, 17 Jan 2026) that Chinese customs were told to stop H200 imports despite US clearance. Lower-tier outlet; PRC-side restriction, not a US control."
+     }
+    ]
+   },
+   "basis": "D:1, D:4, D:5: licence required; presumption of denial by default. Since 15 Jan 2026, US-origin exports to China end users of chips below TPP 21,000 and DRAM bandwidth 6,500 GB/s (e.g. H200, MI325X) get case-by-case review subject to conditions (50% of US-shipped TPP cap, US third-party testing, KYC, no military/restricted end users); reexports/foreign-origin shipments stay presumption of denial. All Huawei Ascend/PRC-designed 3A090 ICs likely subject to GP10 (May 2025 guidance).",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "COD": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "CUB": {
+   "code": "embargoed",
+   "country_groups": [
+    "D:5",
+    "E:2"
+   ],
+   "special_arrangement": null,
+   "basis": "Comprehensive embargo under EAR Part 746 (E:1/E:2); also D:5, so 742.6(b)(10) presumption of denial would apply in any case.",
+   "sources": [
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    }
+   ]
+  },
+  "EGY": {
+   "code": "license_required",
+   "country_groups": [
+    "D:4"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "ERI": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "GEO": {
+   "code": "license_required",
+   "country_groups": [
+    "D:1"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "HTI": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "IRN": {
+   "code": "embargoed",
+   "country_groups": [
+    "D:4",
+    "D:5",
+    "E:1"
+   ],
+   "special_arrangement": null,
+   "basis": "Comprehensive embargo under EAR Part 746 (E:1/E:2); also D:5, so 742.6(b)(10) presumption of denial would apply in any case.",
+   "sources": [
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    }
+   ]
+  },
+  "IRQ": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:1",
+    "D:4",
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "JOR": {
+   "code": "license_required",
+   "country_groups": [
+    "D:4"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "KAZ": {
+   "code": "license_required",
+   "country_groups": [
+    "D:1"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "KGZ": {
+   "code": "license_required",
+   "country_groups": [
+    "D:1"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "KHM": {
+   "code": "license_required",
+   "country_groups": [
+    "D:1"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau. Removed from D:5 on 3 Feb 2026 (remains D:1).",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    },
+    {
+     "url": "https://kpmg.com/us/en/taxnewsflash/news/2026/02/us-bis-removes-cambodia-arms-embargoed-country-list.html",
+     "source_tier": "S2",
+     "date": "2026-02-03",
+     "note": "BIS rule (FR doc 2026-02262) removed Cambodia from D:5 effective 3 Feb 2026; Cambodia remains in D:1."
+    }
+   ]
+  },
+  "KWT": {
+   "code": "license_required",
+   "country_groups": [
+    "D:4"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "LAO": {
+   "code": "license_required",
+   "country_groups": [
+    "D:1"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "LBN": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:4",
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "LBY": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:1",
+    "D:4",
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "MAC": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:1",
+    "D:4"
+   ],
+   "special_arrangement": {
+    "type": "case_by_case_carveout",
+    "description": "Same Jan 2026 case-by-case review policy as China for qualifying chips exported from the US (FR doc 2026-00789).",
+    "sources": [
+     {
+      "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+      "source_tier": "S2",
+      "date": "2026-01-20",
+      "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+     },
+     {
+      "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+      "source_tier": "S1",
+      "date": "2026-10-16",
+      "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+     }
+    ]
+   },
+   "basis": "Macau is named separately alongside D:5 in 742.6: licence required; presumption of denial, except the Jan 2026 case-by-case carve-out for qualifying US-origin chips (TPP<21,000, DRAM bw<6,500 GB/s) to China/Macau end users.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "MDA": {
+   "code": "license_required",
+   "country_groups": [
+    "D:1"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "MMR": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:1",
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "MNG": {
+   "code": "license_required",
+   "country_groups": [
+    "D:1"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "NIC": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:1",
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "OMN": {
+   "code": "license_required",
+   "country_groups": [
+    "D:4"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "PAK": {
+   "code": "license_required",
+   "country_groups": [
+    "D:4"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "PRK": {
+   "code": "embargoed",
+   "country_groups": [
+    "D:1",
+    "D:4",
+    "D:5",
+    "E:1"
+   ],
+   "special_arrangement": null,
+   "basis": "Comprehensive embargo under EAR Part 746 (E:1/E:2); also D:5, so 742.6(b)(10) presumption of denial would apply in any case.",
+   "sources": [
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    }
+   ]
+  },
+  "QAT": {
+   "code": "license_required",
+   "country_groups": [
+    "D:4"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "RUS": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:1",
+    "D:4",
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide. Additionally subject to the Russia/Belarus licence requirements of EAR 746.8 (not separately fetched in this run).",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "SAU": {
+   "code": "license_required",
+   "country_groups": [
+    "D:4"
+   ],
+   "special_arrangement": {
+    "type": "entity_authorization",
+    "description": "Commerce authorised (19 Nov 2025) HUMAIN to acquire up to the equivalent of 35,000 Nvidia GB300 with security and reporting requirements. This is a licensing decision, not a regulatory exemption; no Saudi equivalent of the UAE Supp. 8 rule found.",
+    "sources": [
+     {
+      "url": "https://www.thenationalnews.com/future/technology/2025/11/20/uae-ai-nvidia-chips-us/",
+      "source_tier": "S3",
+      "date": "2025-11-20",
+      "note": "Commerce announced 19 Nov 2025 authorisation for G42 (UAE) and HUMAIN (Saudi Arabia) to buy up to the equivalent of 35,000 Nvidia GB300 each, with security and reporting requirements."
+     },
+     {
+      "url": "https://news.bgov.com/artificial-intelligence/nvidia-chip-sales-to-g42-humain-approved-by-commerce-department",
+      "source_tier": "S2",
+      "date": "2025-11",
+      "note": "Bloomberg Government headline (seen in search results, not fetched): Nvidia chip sales to G42, HUMAIN approved by Commerce."
+     }
+    ]
+   },
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "SDN": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "SOM": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "SSD": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "SYR": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:4",
+    "D:5",
+    "E:1"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide. Comprehensive embargo was relaxed in Sept 2025 (licence exception SPP regime); Syria remains in E:1 and D:5 as of Aug 2026, so coded presumption of denial rather than embargoed.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    },
+    {
+     "url": "https://www.steptoe.com/en/news-publications/international-compliance-blog/us-rescinds-syrias-state-sponsor-of-terrorism-designation.html",
+     "source_tier": "S2",
+     "date": "2026-08-28",
+     "note": "As of 28 Aug 2026 Syria remains in E:1 and D:5; comprehensive embargo replaced by licence-exception (SPP) regime with eased review policies."
+    },
+    {
+     "url": "https://www.mofo.com/resources/insights/250929-u-s-relaxes-export-controls-on-syria",
+     "source_tier": "S2",
+     "date": "2025-09-29",
+     "note": "Seen in search results only (not fetched): BIS relaxed Syria export controls Sept 2025."
+    }
+   ]
+  },
+  "TJK": {
+   "code": "license_required",
+   "country_groups": [
+    "D:1"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "TKM": {
+   "code": "license_required",
+   "country_groups": [
+    "D:1"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "UZB": {
+   "code": "license_required",
+   "country_groups": [
+    "D:1"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "VEN": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:1",
+    "D:4",
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "VNM": {
+   "code": "license_required",
+   "country_groups": [
+    "D:1"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "YEM": {
+   "code": "license_required",
+   "country_groups": [
+    "D:1",
+    "D:4"
+   ],
+   "special_arrangement": null,
+   "basis": "In D:1 and/or D:4 but not D:5 and not A:5/A:6: licence required under the pre-AI-Diffusion destination scheme BIS continues to apply; presumption of approval unless the recipient is headquartered (or ultimate parent) in D:5/Macau.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  },
+  "ZWE": {
+   "code": "license_presumption_denial",
+   "country_groups": [
+    "D:5"
+   ],
+   "special_arrangement": null,
+   "basis": "Destination in D:5 (or Macau): licence required for 3A090/4A090 and .z items; reviewed under presumption of denial (15 CFR 742.6(b)(10)). Entities headquartered here trigger a licence requirement worldwide.",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-742/section-742.6",
+     "source_tier": "S1",
+     "date": "2026-10-16",
+     "note": "eCFR text of 15 CFR 742.6 (current as of 10/16/2026); (a)(6)(iii) licence requirements and (b)(10) review policy. Text still contains the AI Diffusion worldwide requirement and per-country TPP allocations, which BIS does not enforce except as described in the May 2026 guidance."
+    },
+    {
+     "url": "https://www.bis.gov/node/9171",
+     "source_tier": "S1",
+     "date": "2026-10-20",
+     "note": "Supplement No. 1 to Part 740 Country Groups, as rendered on bis.gov (fetched 2026-10-20); matches Cornell LII copy (UAE in A:5, Cambodia not in D:5)."
+    },
+    {
+     "url": "https://sanctionsnews.bakermckenzie.com/bis-clarifies-that-license-requirements-for-advanced-computing-items-to-country-group-d5-and-macau-headquartered-entities-remain-in-force-despite-ai-diffusion-rule-non-enforcement/",
+     "source_tier": "S2",
+     "date": "2026-06-08",
+     "note": "Baker McKenzie: non-enforcement applies only outside D:5/Macau destinations and HQ test; status quo is the pre-AI-Diffusion provisions."
+    },
+    {
+     "url": "https://www.fenwick.com/insights/publications/bis-publishes-new-faqs-related-to-updated-advanced-computing-supercomputing-rules",
+     "source_tier": "S2",
+     "date": "2024-01-11",
+     "note": "Pre-AI-Diffusion (Oct/Nov 2023) scheme: licence required to D:1, D:4, D:5 and Macau, excluding destinations also in A:5 or A:6; presumption of denial for D:5 and Macau; presumption of approval for D:1/D:4 unless recipient HQ'd in D:5/Macau."
+    },
+    {
+     "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+     "source_tier": "S2",
+     "date": "2026-01-20",
+     "note": "Covington on BIS final rule 'Revision to License Review Policy for Advanced Computing Commodities' (FR doc 2026-00789, 15 Jan 2026): case-by-case review for US-origin exports to China/Macau of chips with TPP<21,000 and DRAM bandwidth<6,500 GB/s (e.g. H200, MI325X) under conditions; everything else to D:5/Macau stays presumption of denial; licence still required for D:1, D:4, D:5."
+    }
+   ]
+  }
+ },
+ "notes": [
+  "The CFR text of 742.6(a)(6)(iii)(A)/(b)(10) still contains the AI Diffusion worldwide licence requirement, supplement 5 country lists and the 790M-TPP per-country allocation. Coding follows BIS's announced non-enforcement plus the May 31 2026 guidance, i.e. the pre-Diffusion D:1/D:4/D:5/Macau scheme. This is enforcement policy, not regulatory text: it could change without a Federal Register rule, and GAO (12 May 2026) found the non-enforcement announcement was itself a 'rule' under the CRA.",
+  "The D:1/D:4 'presumption of approval' and the A:5/A:6 exclusion come from a January 2024 secondary source (Fenwick) describing the Oct/Nov 2023 rule. The 2023 FR text and BIS FAQs were not fetched directly in this run. Verify before relying on the review-policy distinction between license_required and license_presumption_denial.",
+  "Israel (D:4, but A:6) is coded under the default (no destination licence) because of the A:5/A:6 exclusion. The same exclusion applies to any D-group member in A:5/A:6; only Israel currently qualifies.",
+  "UAE: the .a-item licence requirement for the UAE sits in 742.6(a)(6)(iii)(A), the paragraph that is otherwise unenforced outside D:5/Macau. Law-firm summaries say BIS expressly retained it for the UAE in FR 2026-14132, but the rule text and preamble were not fetched directly. The review policy for UAE parties not on Supp. 8 is not established. The individual US-company subsidiaries on Supp. 8 were not named in the sources fetched. The G42/Core42 listing expires 6 Apr 2027.",
+  "Saudi Arabia is still in D:4 (and D:3), so it is coded license_required. HUMAIN's Nov 2025 authorisation is a licensing decision, not a regulatory carve-out. No Saudi rule equivalent to the UAE's was found, but the absence of a Sept-Oct 2026 Saudi rule was not exhaustively confirmed. The Arnold & Porter commentary suggests the UAE rule is 'the template' for other Gulf partners.",
+  "China: the H200-class case-by-case policy (FR 2026-00789) covers only exports from the US. PRC authorities reportedly blocked or discouraged H200 imports from Jan 2026, and licences for small volumes were reported in Feb 2026. Whether licences have been granted or revoked since is not confirmed as of Oct 2026. The 25% duty and revenue arrangements are tariff/commercial measures, not EAR terms.",
+  "Russia and Belarus face additional EAR 746.8 restrictions (licence for all CCL items, policy of denial). These were not separately fetched this run. Coded license_presumption_denial on D:5 grounds, not 'embargoed'. A stricter reading would code them embargoed.",
+  "Syria: the comprehensive embargo was relaxed (Sept 2025) and the SST designation was rescinded, but Syria is still in E:1 and D:5 per the Aug 2026 Steptoe post and the current bis.gov country groups. It is coded license_presumption_denial, not embargoed. The status of advanced computing items to Syria was not addressed in the fetched source.",
+  "Malaysia and Thailand: a US rule imposing AI-chip licence requirements was reported as planned in July 2025, but no issued rule was found. Both are coded under the default. Malaysia's own domestic export permit for US AI chips is out of scope for this layer.",
+  "No issued replacement framework was found. A compute-threshold global licensing framework (GB300-equivalent tiers, host-government investment matching) was reported in draft in March 2026 and denied by Commerce. Kessler told Congress on 14 Jul 2026 that no AI Diffusion replacement is intended. Rules published 15 Sep to 20 Oct 2026 were checked only by search, so a very recent rule could be missed.",
+  "The American AI Exports Program (EO 14320, 23 Jul 2025) is promotional and is not coded as a licence exemption for any country. No country-level 'full-stack package' licence exemption was found.",
+  "Entity-level controls (Entity List, the D:5/Macau headquarters test, the Part 744 military/WMD/AI-training policy statement, GP10 for Huawei Ascend) apply in every country, including default ones. This layer codes destination posture only, so a 'no_license_required_general' country can still host restricted end users.",
+  "The country-group memberships come from bis.gov node/9171 and Cornell LII, both fetched 2026-10-20 and consistent with each other (UAE in A:5 and out of D:4; Cambodia out of D:5). Neither page shows its last-amended date.",
+  "Sources marked 'seen in search results, not fetched' (FR public-inspection PDF 2026-00789, Bloomberg Government on G42/HUMAIN, MoFo on Syria) are corroborating references only. Their content was not read."
+ ]
+}
