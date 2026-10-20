@@ -68,6 +68,9 @@ Display-only, recomputed in the browser from the files above, never stored.
    PRC each hold ≥ 30% of the total → **contested**; else if one pole holds ≥ 50% →
    **leans US / PRC / sovereign-third**; else **mixed**.
 
+5. The United States and China are shown as the two poles, not scored: hosting the
+   other side's cloud regions would otherwise make the US look contested.
+
 Until a country's desk pass lands, its lean rests only on the global layers, which
 over-weight hyperscaler presence and under-count sovereign and PRC network stacks. The
 "desk pass" layer shows which countries have been coded.

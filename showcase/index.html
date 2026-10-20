@@ -147,13 +147,16 @@ function lean(iso){
   if(sum<.70) cell="insufficient";
   else if(tot.us>=.3*sum&&tot.prc>=.3*sum) cell="contested";
   else{const top=Object.entries(tot).sort((a,b)=>b[1]-a[1])[0]; cell=top[1]>=.5*sum?"lean_"+top[0]:"mixed";}
+  // The two poles are the reference points, not swing states: hosting the other side's
+  // cloud regions would otherwise read the US as 'contested' and China as 'insufficient'.
+  if(iso==="USA") cell="pole_us"; else if(iso==="CHN") cell="pole_prc";
   return {cell,tot,sum,ev};
 }
 
 /* ---------------- views ---------------- */
 const VIEWS={
   lean:{label:"Stack lean (derived)",cap:"Mechanical rule over all layers and desk-pass findings. Hatched = insufficient data, never neutral.",
-    cats:{lean_us:["Leans US","--us"],lean_prc:["Leans PRC","--prc"],lean_sov:["Leans sovereign / third","--sov"],
+    cats:{pole_us:["US (pole)","--us"],pole_prc:["China (pole)","--prc"],lean_us:["Leans US","--us2"],lean_prc:["Leans PRC","--prc2"],lean_sov:["Leans sovereign / third","--sov"],
       contested:["Contested (US and PRC both ≥30%)","--hedge"],mixed:["Mixed","--mixed"],insufficient:["Insufficient data","hatch"]},
     of:iso=>lean(iso).cell},
   blocs:{label:"Blocs",cap:"Tier-1 instrument: what governments signed. Observers and invitations do not count.",

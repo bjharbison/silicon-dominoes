@@ -1,0 +1,1097 @@
+{
+ "layer": "prc_model_restrictions",
+ "schema": "sd-layer/0.1",
+ "version": "0.1.0-draft",
+ "review_status": "unreviewed",
+ "generated": "2026-10-20T12:05:00Z",
+ "rule": "National-government actions restricting PRC-developed AI models/apps. Advisories, warnings and investigations are not coded as actions. Sub-national actions are listed separately and do not colour the map.",
+ "countries": {
+  "AUS": {
+   "actions": [
+    {
+     "date": "2025-02-04",
+     "body": "Department of Home Affairs (Secretary), PSPF Direction 001-2025",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "government_devices",
+     "current_status": "in_force",
+     "summary": "A mandatory protective-security direction required Australian Government entities to prevent use or installation of DeepSeek products, apps and web services and remove existing instances from government systems and mobile devices.",
+     "sources": [
+      {
+       "url": "https://www.protectivesecurity.gov.au/node/952",
+       "source_tier": "S1",
+       "date": "2025-02-04"
+      },
+      {
+       "url": "https://www.ewn.co.za/2025/02/05/australia-bans-deepseek-ai-program-on-govt-devices",
+       "source_tier": "S3",
+       "date": "2025-02-05"
+      },
+      {
+       "url": "https://finance.yahoo.com/news/factbox-governments-regulators-increase-scrutiny-095326244.html",
+       "source_tier": "S3",
+       "date": "2026-01-06"
+      }
+     ],
+     "notes": "The S1 page does not print a date; 4 Feb 2025 is inferred from AFP's report that the direction was issued overnight before 5 Feb (AEDT)."
+    }
+   ]
+  },
+  "BEL": {
+   "actions": [
+    {
+     "date": "2025-12-01",
+     "body": "Federal Minister for Modernisation of Public Administration (Vanessa Matz), circular based on Centre for Cybersecurity Belgium analysis",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "government_devices",
+     "current_status": "in_force",
+     "summary": "A federal circular required DeepSeek apps to be removed by 1 Dec 2025 from work devices and government-funded phones of federal staff, including defence, federal police and the public prosecutor's office.",
+     "sources": [
+      {
+       "url": "https://www.vrt.be/vrtnws/en/2025/12/01/belgian-government-bans-chinas-deepseek-in-the-civil-service/",
+       "source_tier": "S3",
+       "date": "2025-12-01"
+      }
+     ],
+     "notes": "Single source; circular publication date not given (removal deadline 1 Dec 2025). Needs a second independent source (e.g. Moniteur belge / BOSA). dig.watch also covered it (not fetched)."
+    }
+   ]
+  },
+  "CAN": {
+   "actions": [
+    {
+     "date": "2025-02-06",
+     "body": "Treasury Board of Canada Secretariat, Chief Information Officer (Dominic Rochon)",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "government_devices",
+     "current_status": "in_force",
+     "summary": "The federal CIO said DeepSeek was restricted on government mobile devices managed by Shared Services Canada and recommended all departments block the app and website on their devices and networks.",
+     "sources": [
+      {
+       "url": "https://globalnews.ca/news/11008920/deepseek-banned-government-devices-canada-china-privacy",
+       "source_tier": "S3",
+       "date": "2025-02-07"
+      },
+      {
+       "url": "https://amp.cbc.ca/lite/story/1.7453401",
+       "source_tier": "S3",
+       "date": "2025-02-07"
+      }
+     ],
+     "notes": "Mandatory for SSC-managed mobile devices; a recommendation for other departments. No canada.ca S1 notice located."
+    }
+   ]
+  },
+  "CZE": {
+   "actions": [
+    {
+     "date": "2025-07-09",
+     "body": "National Cyber and Information Security Agency (NÚKIB), warning under s.12 of Act 181/2014",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "sector",
+     "sector": "regulated critical/essential/significant information systems",
+     "current_status": "in_force",
+     "summary": "NÚKIB issued a binding 'High' threat warning requiring entities under the Cybersecurity Act to assess DeepSeek products, apps, websites and APIs used on devices accessing critical, essential and significant information systems; locally run open-source DeepSeek weights are excluded.",
+     "sources": [
+      {
+       "url": "https://nukib.gov.cz/download/uredni_deska/VAROVANI-pred- nekterymi-produkty-spolecnosti-DeepSeek.pdf",
+       "source_tier": "S1",
+       "date": "2025-07-09"
+      },
+      {
+       "url": "https://www.expats.cz/czech-news/article/czech-government-bans-chain-s-deepseek-ai-warns-of-security-risk",
+       "source_tier": "S3",
+       "date": "2025-07-12"
+      }
+     ]
+    },
+    {
+     "date": "2025-07-09",
+     "body": "Government of the Czech Republic (announced by PM Petr Fiala)",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "government_devices",
+     "current_status": "in_force",
+     "summary": "Following the NÚKIB warning, the government banned use of any DeepSeek products in state administration.",
+     "sources": [
+      {
+       "url": "https://english.alarabiya.net/News/world/2025/07/09/the-czech-republic-bans-deepseek-in-state-administration-over-cybersecurity-concerns",
+       "source_tier": "S3",
+       "date": "2025-07-09"
+      },
+      {
+       "url": "https://www.expats.cz/czech-news/article/czech-government-bans-chain-s-deepseek-ai-warns-of-security-risk",
+       "source_tier": "S3",
+       "date": "2025-07-12"
+      },
+      {
+       "url": "https://finance.yahoo.com/news/factbox-governments-regulators-increase-scrutiny-095326244.html",
+       "source_tier": "S3",
+       "date": "2026-01-06"
+      }
+     ],
+     "notes": "Government resolution text (vlada.cz) not located; date is the AP announcement date. Al Arabiya carries AP."
+    }
+   ]
+  },
+  "DEU": {
+   "actions": [
+    {
+     "date": "2025-06-27",
+     "body": "Berliner Beauftragte für Datenschutz und Informationsfreiheit (Berlin state DPA), coordinated with the Baden-Württemberg, Rheinland-Pfalz and Bremen DPAs; Bundesnetzagentur informed",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "national_block",
+     "current_status": "unclear",
+     "summary": "After DeepSeek ignored a May 2025 request to withdraw its apps or lawfully safeguard transfers to China, the Berlin commissioner filed DSA Article 16 notices with Apple and Google flagging the German-market DeepSeek apps as illegal content under GDPR Art. 46(1), asking the stores to decide on blocking.",
+     "sources": [
+      {
+       "url": "https://www.datenschutz-berlin.de/fileadmin/user_upload/pdf/publikationen/DSK/2025/20250627-BlnBDI-PM-DeepSeek.pdf",
+       "source_tier": "S1",
+       "date": "2025-06-27"
+      },
+      {
+       "url": "https://www.business-standard.com/world-news/germany-orders-apple-google-to-remove-deepseek-app-over-data-concerns-125062701443_1.html",
+       "source_tier": "S3",
+       "date": "2025-06-27"
+      },
+      {
+       "url": "https://finance.yahoo.com/news/factbox-governments-regulators-increase-scrutiny-095326244.html",
+       "source_tier": "S3",
+       "date": "2026-01-06"
+      }
+     ],
+     "notes": "Issuing body is a Land (state) authority, not a federal one; listed here because the measure targets German app-store availability nationwide. Reclassify to subnational if the schema requires a federal issuer. This is a notice to platforms, not a block order; no evidence found that Apple or Google removed the app (Google said it was reviewing; Apple declined comment). Status therefore unclear."
+    }
+   ]
+  },
+  "IND": {
+   "actions": [
+    {
+     "date": "2025-01-29",
+     "body": "Ministry of Finance (internal advisory)",
+     "models": [
+      "DeepSeek",
+      "ChatGPT (non-PRC)"
+     ],
+     "scope": "government_devices",
+     "current_status": "unclear",
+     "summary": "The finance ministry told its employees to avoid AI tools such as ChatGPT and DeepSeek on office computers and devices for official work, citing confidentiality of government data.",
+     "sources": [
+      {
+       "url": "https://profit.pakistantoday.com.pk/?p=185899",
+       "source_tier": "S3",
+       "date": null
+      },
+      {
+       "url": "https://finance.yahoo.com/news/factbox-governments-regulators-increase-scrutiny-095326244.html",
+       "source_tier": "S3",
+       "date": "2026-01-06"
+      }
+     ],
+     "notes": "Not PRC-specific: covers all AI tools including US ones; ministry-level only, not government-wide. Medianama reported a Rajya Sabha answer contradicting the ban (not fetched). Republished Reuters copy; publication date not shown in fetched text."
+    }
+   ]
+  },
+  "ITA": {
+   "actions": [
+    {
+     "date": "2025-01-30",
+     "body": "Garante per la protezione dei dati personali (Italian DPA)",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "national_block",
+     "current_status": "in_force",
+     "summary": "The data protection authority ordered, with immediate effect under GDPR Art. 58(2)(f), a limitation on Hangzhou DeepSeek and Beijing DeepSeek processing personal data of people in Italy after the companies claimed EU law did not apply to them, and opened an investigation.",
+     "sources": [
+      {
+       "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/print/10097450",
+       "source_tier": "S1",
+       "date": "2025-01-30"
+      },
+      {
+       "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/10098477",
+       "source_tier": "S1",
+       "date": "2025-01-30"
+      },
+      {
+       "url": "https://finance.yahoo.com/news/factbox-governments-regulators-increase-scrutiny-095326244.html",
+       "source_tier": "S3",
+       "date": "2026-01-06"
+      }
+     ],
+     "notes": "The order is styled a 'definitive limitation' but adopted urgently pending investigation. No lifting found as of 2026-10-20 (absence of evidence, not confirmed). The separate AGCM (antitrust) case on hallucination warnings closed with commitments; that is consumer-protection, not a restriction, and is not coded."
+    }
+   ]
+  },
+  "KOR": {
+   "actions": [
+    {
+     "date": "2025-02-04",
+     "body": "Ministry of the Interior and Safety (guidance), followed by individual ministries",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "government_devices",
+     "current_status": "unclear",
+     "summary": "After interior-ministry guidance urging caution with generative AI, the foreign, defence and trade-industry-energy ministries blocked DeepSeek on official systems on 5 Feb 2025, followed on 6 Feb by the science/ICT and environment ministries and the National Police Agency.",
+     "sources": [
+      {
+       "url": "https://www.koreatimes.co.kr/southkorea/law-crime/20250206/korean-govt-ministries-begin-to-block-access-to-deekseek-due-to-security-concerns",
+       "source_tier": "S3",
+       "date": "2025-02-06"
+      },
+      {
+       "url": "https://finance.yahoo.com/news/factbox-governments-regulators-increase-scrutiny-095326244.html",
+       "source_tier": "S3",
+       "date": "2026-01-06"
+      }
+     ],
+     "notes": "Ministry-by-ministry blocks, not a single government-wide order; the interior ministry guidance did not name DeepSeek. Reuters describes the industry-ministry block as 'temporary'. No confirmation of whether ministry blocks were lifted after the April 2025 app restoration. No S1 notice located."
+    },
+    {
+     "date": "2025-02-17",
+     "body": "Personal Information Protection Commission (PIPC)",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "download_suspension",
+     "current_status": "lifted",
+     "summary": "The PIPC announced that new downloads of the DeepSeek app in South Korean app stores were suspended, on its recommendation, until the company fixed personal-data compliance gaps; existing installs and use continued.",
+     "sources": [
+      {
+       "url": "https://digitalpolicyalert.org/event/27182-personal-information-protection-commission-adopted-an-order-temporarily-banning-deepseek-over-violations-of-personal-information-protection-act",
+       "source_tier": "S2",
+       "date": "2025-02-17"
+      },
+      {
+       "url": "https://www.techradar.com/pro/security/deepseek-blocked-from-app-stores-in-south-korea",
+       "source_tier": "S2",
+       "date": "2025-02-17"
+      },
+      {
+       "url": "https://www.nbcmiami.com/news/business/money-report/south-korea-says-deepseek-transferred-user-data-to-china-and-the-u-s-without-consent/3598854/",
+       "source_tier": "S3",
+       "date": "2025-04-24"
+      }
+     ],
+     "notes": "Legally a suspension DeepSeek applied itself at PIPC's recommendation (MLex calls it 'self-imposed'), not a formal PIPC block order; Digital Policy Alert labels it an order. The effective date (reported elsewhere as 15 Feb 2025) is not confirmed; 17 Feb is the announcement date. No pipc.go.kr notice URL located."
+    },
+    {
+     "date": "2025-04-28",
+     "body": "Personal Information Protection Commission (PIPC) / DeepSeek",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "lifted",
+     "current_status": "in_force",
+     "summary": "DeepSeek became downloadable again in Korean app stores after accepting PIPC corrective recommendations issued 24 Apr 2025, including destroying prompt data sent to a Chinese firm and setting up lawful overseas-transfer procedures.",
+     "sources": [
+      {
+       "url": "https://jang.com.pk/en/36975-deepseek-available-again-in-south-korea-after-two-month-suspension-news",
+       "source_tier": "S3",
+       "date": "2025-04-28"
+      },
+      {
+       "url": "https://www.mlex.com/mlex/amp/articles/2330850",
+       "source_tier": "S2",
+       "date": "2025-04-28"
+      },
+      {
+       "url": "https://finance.yahoo.com/news/factbox-governments-regulators-increase-scrutiny-095326244.html",
+       "source_tier": "S3",
+       "date": "2026-01-06"
+      }
+     ]
+    }
+   ]
+  },
+  "LTU": {
+   "actions": [
+    {
+     "date": "2025-02-12",
+     "body": "Office of the Seimas (Chancellor Algirdas Stončaitis)",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "government_devices",
+     "current_status": "in_force",
+     "summary": "The parliament's administrative office banned DeepSeek on all devices it issues, covering office staff and MPs' advisers but not MPs themselves.",
+     "sources": [
+      {
+       "url": "https://www.lrt.lt/en/news-in-english/19/2487268/lithuanian-parliament-staff-banned-from-using-deepseek-on-official-devices",
+       "source_tier": "S3",
+       "date": "2025-02-13"
+      }
+     ],
+     "notes": "Legislature-administration scope only. Government-wide restriction was under consideration in Feb 2025 (LRT, 10 Feb 2025); no evidence found that it was adopted. NKSC guidance to critical sectors is advisory."
+    }
+   ]
+  },
+  "NLD": {
+   "actions": [
+    {
+     "date": "2025-02-06",
+     "body": "State Secretary for Digitalisation (Ministry of the Interior and Kingdom Relations)",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "government_devices",
+     "current_status": "in_force",
+     "summary": "The Dutch central government barred civil servants from using DeepSeek for their work, under its policy on apps from countries with offensive cyber programmes.",
+     "sources": [
+      {
+       "url": "https://nltimes.nl/2025/02/06/dutch-govt-bans-officials-using-chinese-ai-app-deepseek-espionage-concerns",
+       "source_tier": "S3",
+       "date": "2025-02-06"
+      },
+      {
+       "url": "https://finance.yahoo.com/news/factbox-governments-regulators-increase-scrutiny-095326244.html",
+       "source_tier": "S3",
+       "date": "2026-01-06"
+      }
+     ],
+     "notes": "Date conflict: NL Times reports the ban on 6 Feb 2025; the Reuters factbox (Jan 2026) places it in 'late July'. Possibly a later formalisation, or a factbox error. No rijksoverheid.nl S1 notice located. The Dutch DPA (AP) only issued a public caution and opened an inquiry (not coded)."
+    }
+   ]
+  },
+  "TWN": {
+   "actions": [
+    {
+     "date": "2025-01-31",
+     "body": "Ministry of Digital Affairs (under Executive Yuan principles)",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "government_devices",
+     "current_status": "in_force",
+     "summary": "The digital ministry barred DeepSeek AI products in central and local government agencies, public schools, state-owned enterprises, administrative corporations and public venues, and asked regulators to apply the restriction to critical infrastructure and government-funded foundations.",
+     "sources": [
+      {
+       "url": "https://moda.gov.tw/en/press/press-releases/15104",
+       "source_tier": "S1",
+       "date": "2025-01-31"
+      },
+      {
+       "url": "https://www.koreatimes.co.kr/amp/world/20250201/taiwan-bans-government-agencies-from-using-deepseek",
+       "source_tier": "S3",
+       "date": "2025-02-01"
+      },
+      {
+       "url": "https://finance.yahoo.com/news/factbox-governments-regulators-increase-scrutiny-095326244.html",
+       "source_tier": "S3",
+       "date": "2026-01-06"
+      }
+     ],
+     "notes": "Scope extends beyond devices to public schools, SOEs and critical infrastructure. A 16 Nov 2025 National Security Bureau inspection of five PRC AI apps produced a public warning only, not a new restriction (not coded; see unverified)."
+    }
+   ]
+  },
+  "USA": {
+   "actions": [
+    {
+     "date": "2025-01-24",
+     "body": "US Navy",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "government_devices",
+     "current_status": "unclear",
+     "summary": "A Navy email told personnel not to download, install or use DeepSeek in any capacity, work or personal, citing security and ethical concerns.",
+     "sources": [
+      {
+       "url": "https://www.shacknews.com/article/142886/us-navy-deepseek-ban",
+       "source_tier": "S3",
+       "date": "2025-01-28"
+      },
+      {
+       "url": "https://www.nbcphiladelphia.com/news/business/money-report/nasa-becomes-latest-federal-agency-to-block-chinas-deepseek-on-security-and-privacy-concerns/4095118/",
+       "source_tier": "S3",
+       "date": "2025-01-31"
+      }
+     ],
+     "notes": "Effective date per Shacknews (citing CNBC). Likely superseded/absorbed by NDAA FY2026 s.1532 for DoD."
+    },
+    {
+     "date": "2025-01-28",
+     "body": "Defense Information Systems Agency (DoD)",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "government_devices",
+     "current_status": "unclear",
+     "summary": "DISA blocked access to DeepSeek's website on Pentagon networks after staff had connected work computers to its servers.",
+     "sources": [
+      {
+       "url": "https://news.bloomberglaw.com/ip-law/pentagon-workers-used-deepseeks-chatbot-for-days-before-block",
+       "source_tier": "S2",
+       "date": "2025-01-31"
+      },
+      {
+       "url": "https://techcrunch.com/2025/02/03/deepseek-the-countries-and-agencies-that-have-banned-the-ai-companys-tech",
+       "source_tier": "S2",
+       "date": "2025-02-03"
+      }
+     ],
+     "notes": "Date inferred from 'late Tuesday'. TechCrunch notes DoD personnel could still reach DeepSeek models via the authorised Ask Sage platform at the time."
+    },
+    {
+     "date": "2025-01-30",
+     "body": "US House of Representatives, Chief Administrative Officer",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "government_devices",
+     "current_status": "unclear",
+     "summary": "The House CAO declared DeepSeek unauthorised for official House use pending review, restricted it on House-issued devices and barred installation on official phones, computers and tablets.",
+     "sources": [
+      {
+       "url": "https://www.axios.com/2025/01/30/house-congress-bans-deepseek-ai",
+       "source_tier": "S3",
+       "date": "2025-01-30"
+      },
+      {
+       "url": "https://www.nbcphiladelphia.com/news/business/money-report/nasa-becomes-latest-federal-agency-to-block-chinas-deepseek-on-security-and-privacy-concerns/4095118/",
+       "source_tier": "S3",
+       "date": "2025-01-31"
+      }
+     ],
+     "notes": "Legislative-branch administration; 'pending review' status not updated in sources found."
+    },
+    {
+     "date": "2025-01-31",
+     "body": "NASA (Chief AI Officer)",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "government_devices",
+     "current_status": "in_force",
+     "summary": "A NASA memo barred sharing agency data with DeepSeek and access via NASA devices and networks, and NASA's Security Operations Center blocked it.",
+     "sources": [
+      {
+       "url": "https://www.nbcphiladelphia.com/news/business/money-report/nasa-becomes-latest-federal-agency-to-block-chinas-deepseek-on-security-and-privacy-concerns/4095118/",
+       "source_tier": "S3",
+       "date": "2025-01-31"
+      },
+      {
+       "url": "https://techcrunch.com/2025/02/03/deepseek-the-countries-and-agencies-that-have-banned-the-ai-companys-tech",
+       "source_tier": "S2",
+       "date": "2025-02-03"
+      }
+     ],
+     "notes": "Now also covered by the Oct 2026 DHS FASCSA order for civilian agencies."
+    },
+    {
+     "date": "2025-03-17",
+     "body": "Department of Commerce (bureaus)",
+     "models": [
+      "DeepSeek"
+     ],
+     "scope": "government_devices",
+     "current_status": "in_force",
+     "summary": "Commerce Department bureaus barred DeepSeek on government devices, per sources cited by Reuters.",
+     "sources": [
+      {
+       "url": "https://www.thecitizen.co.tz/tanzania/news/international/us-commerce-department-bureaus-ban-china-s-deepseek-on-government-devices-sources-say-4969668",
+       "source_tier": "S3",
+       "date": "2025-03-18"
+      }
+     ],
+     "notes": "Single wire (Reuters, anonymous sources); no S1. Reuters item timestamp 17 Mar 2025 UTC evening."
+    },
+    {
+     "date": "2025-12-18",
+     "body": "US Congress / President: NDAA FY2026 (Public Law 119-60, S.1071), section 1532",
+     "models": [
+      "DeepSeek",
+      "any AI developed by High Flyer or entities it owns/funds/holds >=20% of"
+     ],
+     "scope": "sector",
+     "sector": "Department of Defense and DoD contractors/subcontractors",
+     "current_status": "in_force",
+     "summary": "Federal law prohibits DoD and its contractors from using AI developed by DeepSeek or High Flyer (and their successors) and requires its removal from DoD systems, with the bar taking effect after a 30-day period (17 Jan 2026).",
+     "sources": [
+      {
+       "url": "https://digitalpolicyalert.org/event/42289-national-defense-authorization-act-for-fiscal-year-2026-public-law-119-60-including-prohibition-on-use-of-deepseek-and-related-artificial-intelligence-partially-entered-into-force",
+       "source_tier": "S2",
+       "date": "2025-12-18"
+      },
+      {
+       "url": "https://bpb-us-e1.wpmucdn.com/websites.harvard.edu/dist/f/106/files/2026/01/NDAA-2026-Guidance-and-Prohibition-on-use-of-certain-Artificial-Intelligence.pdf",
+       "source_tier": "S2",
+       "date": "2026-01-14"
+      }
+     ],
+     "notes": "First federal statute naming DeepSeek. No congress.gov S1 URL was located through search; add one. Harvard PDF is a contractor-compliance guidance note (S2-equivalent institutional source)."
+    },
+    {
+     "date": "2026-10-19",
+     "body": "Department of Homeland Security, exclusion and removal order under the Federal Acquisition Supply Chain Security Act of 2018 (on Federal Acquisition Security Council recommendation)",
+     "models": [
+      "DeepSeek",
+      "third-party products built on DeepSeek"
+     ],
+     "scope": "government_devices",
+     "current_status": "in_force",
+     "summary": "DHS ordered federal civilian agencies to remove DeepSeek products, including third-party services built on DeepSeek, from their IT systems and barred them from procuring such products; it does not restrict private use.",
+     "sources": [
+      {
+       "url": "https://www.bnnbloomberg.ca/business/international/2026/10/19/us-banning-chinese-ai-deepseek-from-government-agency-it-systems/",
+       "source_tier": "S3",
+       "date": "2026-10-19"
+      },
+      {
+       "url": "https://business-standard.com/amp/technology/artificial-intelligence/us-bans-chinese-ai-deepseek-from-civilian-government-agency-it-systems-126101901265_1.html",
+       "source_tier": "S3",
+       "date": "2026-10-19"
+      },
+      {
+       "url": "https://www.koreajoongangdaily.com/world/us-orders-deepseek-removal-from-federal-agencies/12928749",
+       "source_tier": "S3",
+       "date": "2026-10-19"
+      }
+     ],
+     "notes": "Issued one day before compilation. Federal Register publication reported as scheduled for 2026-10-20; S1 Federal Register URL not yet located. BNN and Business Standard both carry the same Reuters story, so they are one source; Korea JoongAng Daily (Yonhap) is the independent second. Effective/compliance deadlines not confirmed. Treatment of locally hosted open weights not confirmed."
+    }
+   ]
+  }
+ },
+ "compiled": "2026-10-20",
+ "coverage_window": "2025-01-01 to 2026-10-20",
+ "subnational": [
+  {
+   "country": "USA",
+   "jurisdiction": "Texas",
+   "date": "2025-01-31",
+   "body": "Governor Greg Abbott",
+   "models": [
+    "DeepSeek",
+    "RedNote and other PRC apps"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://www.govtech.com/biz/data/wheres-deepseek-banned-the-states-blocking-chinese-made-ai",
+     "source_tier": "S2",
+     "date": null
+    },
+    {
+     "url": "https://statetechmagazine.com/article/2025/04/these-states-have-banned-deepseek",
+     "source_tier": "S2",
+     "date": "2025-04"
+    }
+   ]
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "New York",
+   "date": "2025-02-10",
+   "body": "Governor Kathy Hochul / state ITS",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://www.govtech.com/biz/data/wheres-deepseek-banned-the-states-blocking-chinese-made-ai",
+     "source_tier": "S2",
+     "date": null
+    },
+    {
+     "url": "https://statetechmagazine.com/article/2025/04/these-states-have-banned-deepseek",
+     "source_tier": "S2",
+     "date": "2025-04"
+    }
+   ]
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "Virginia",
+   "date": "2025-02-11",
+   "body": "Governor Glenn Youngkin, Executive Order 46",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://www.govtech.com/biz/data/wheres-deepseek-banned-the-states-blocking-chinese-made-ai",
+     "source_tier": "S2",
+     "date": null
+    },
+    {
+     "url": "https://sustainabletechpartner.com/news/deepseek-banned-and-permitted-in-which-counties-list-of-government-actions-vs-china-based-ai-software/",
+     "source_tier": "S5",
+     "date": "2025-05-11"
+    }
+   ]
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "Iowa",
+   "date": "2025-02-19",
+   "body": "Governor Kim Reynolds directive",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://statetechmagazine.com/article/2025/04/these-states-have-banned-deepseek",
+     "source_tier": "S2",
+     "date": "2025-04"
+    }
+   ]
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "Pennsylvania (Treasury Department only)",
+   "date": "2025-02-20",
+   "body": "Pennsylvania Treasury",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "unclear",
+   "sources": [
+    {
+     "url": "https://sustainabletechpartner.com/news/deepseek-banned-and-permitted-in-which-counties-list-of-government-actions-vs-china-based-ai-software/",
+     "source_tier": "S5",
+     "date": "2025-05-11"
+    }
+   ]
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "Florida (Department of Financial Services only)",
+   "date": "2025-02-21",
+   "body": "Florida CFO",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "unclear",
+   "sources": [
+    {
+     "url": "https://sustainabletechpartner.com/news/deepseek-banned-and-permitted-in-which-counties-list-of-government-actions-vs-china-based-ai-software/",
+     "source_tier": "S5",
+     "date": "2025-05-11"
+    },
+    {
+     "url": "https://statetechmagazine.com/article/2025/04/these-states-have-banned-deepseek",
+     "source_tier": "S2",
+     "date": "2025-04"
+    }
+   ]
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "Georgia",
+   "date": "2025-02-21",
+   "body": "GEMA/HS Banned Platforms List",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://statetechmagazine.com/article/2025/04/these-states-have-banned-deepseek",
+     "source_tier": "S2",
+     "date": "2025-04"
+    },
+    {
+     "url": "https://sustainabletechpartner.com/news/deepseek-banned-and-permitted-in-which-counties-list-of-government-actions-vs-china-based-ai-software/",
+     "source_tier": "S5",
+     "date": "2025-05-11"
+    }
+   ]
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "Nebraska",
+   "date": "2025-03-05",
+   "body": "Governor Jim Pillen executive order (CCP-affiliated apps)",
+   "models": [
+    "DeepSeek (not confirmed by name)"
+   ],
+   "scope": "government_devices",
+   "current_status": "unclear",
+   "sources": [
+    {
+     "url": "https://statetechmagazine.com/article/2025/04/these-states-have-banned-deepseek",
+     "source_tier": "S2",
+     "date": "2025-04"
+    }
+   ],
+   "notes": "Source says the order does not name DeepSeek explicitly."
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "Tennessee",
+   "date": "2025-03-06",
+   "body": "Governor Bill Lee",
+   "models": [
+    "DeepSeek",
+    "Manus"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://statetechmagazine.com/article/2025/04/these-states-have-banned-deepseek",
+     "source_tier": "S2",
+     "date": "2025-04"
+    }
+   ]
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "Arkansas",
+   "date": "2025-03-06",
+   "body": "Governor Sarah Huckabee Sanders",
+   "models": [
+    "DeepSeek",
+    "RedNote",
+    "Lemon8"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://statetechmagazine.com/article/2025/04/these-states-have-banned-deepseek",
+     "source_tier": "S2",
+     "date": "2025-04"
+    }
+   ]
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "South Dakota",
+   "date": "2025-03",
+   "body": "Governor Larry Rhoden / Bureau of Information and Telecommunications (under EO 2023-06)",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://statetechmagazine.com/article/2025/04/these-states-have-banned-deepseek",
+     "source_tier": "S2",
+     "date": "2025-04"
+    }
+   ]
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "North Carolina",
+   "date": "2025-03",
+   "body": "NC Department of Information Technology",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://statetechmagazine.com/article/2025/04/these-states-have-banned-deepseek",
+     "source_tier": "S2",
+     "date": "2025-04"
+    }
+   ]
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "North Dakota",
+   "date": null,
+   "body": "North Dakota Information Technology",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://statetechmagazine.com/article/2025/04/these-states-have-banned-deepseek",
+     "source_tier": "S2",
+     "date": "2025-04"
+    }
+   ]
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "Oklahoma",
+   "date": "2025-03-21",
+   "body": "State CIO at request of Governor Kevin Stitt",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://statetechmagazine.com/article/2025/04/these-states-have-banned-deepseek",
+     "source_tier": "S2",
+     "date": "2025-04"
+    }
+   ]
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "Alabama",
+   "date": "2025-03-26",
+   "body": "Governor Kay Ivey memo",
+   "models": [
+    "DeepSeek",
+    "Manus"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://statetechmagazine.com/article/2025/04/these-states-have-banned-deepseek",
+     "source_tier": "S2",
+     "date": "2025-04"
+    }
+   ]
+  },
+  {
+   "country": "USA",
+   "jurisdiction": "Kansas",
+   "date": "2025-04-08",
+   "body": "State law HB 2313 (signed by Governor Laura Kelly)",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://statetechmagazine.com/article/2025/04/these-states-have-banned-deepseek",
+     "source_tier": "S2",
+     "date": "2025-04"
+    }
+   ]
+  },
+  {
+   "country": "AUS",
+   "jurisdiction": "New South Wales",
+   "date": "2025-01",
+   "body": "Department of Customer Service",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://www.itnews.com.au/news/most-australian-states-and-territories-ban-deepseek-614813",
+     "source_tier": "S2",
+     "date": "2025-02-06"
+    }
+   ]
+  },
+  {
+   "country": "AUS",
+   "jurisdiction": "South Australia",
+   "date": "2025-02",
+   "body": "SA Government",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://www.itnews.com.au/news/most-australian-states-and-territories-ban-deepseek-614813",
+     "source_tier": "S2",
+     "date": "2025-02-06"
+    }
+   ]
+  },
+  {
+   "country": "AUS",
+   "jurisdiction": "Queensland",
+   "date": "2025-02",
+   "body": "Queensland Government policy",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://www.itnews.com.au/news/most-australian-states-and-territories-ban-deepseek-614813",
+     "source_tier": "S2",
+     "date": "2025-02-06"
+    }
+   ]
+  },
+  {
+   "country": "AUS",
+   "jurisdiction": "Western Australia",
+   "date": "2025-02",
+   "body": "WA cyber security direction",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://www.itnews.com.au/news/most-australian-states-and-territories-ban-deepseek-614813",
+     "source_tier": "S2",
+     "date": "2025-02-06"
+    }
+   ]
+  },
+  {
+   "country": "AUS",
+   "jurisdiction": "Australian Capital Territory",
+   "date": "2025-02-10",
+   "body": "ACT Government",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://www.itnews.com.au/news/most-australian-states-and-territories-ban-deepseek-614813",
+     "source_tier": "S2",
+     "date": "2025-02-06"
+    }
+   ]
+  },
+  {
+   "country": "AUS",
+   "jurisdiction": "Northern Territory",
+   "date": "2025-02",
+   "body": "NT cyber security policy",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://www.itnews.com.au/news/most-australian-states-and-territories-ban-deepseek-614813",
+     "source_tier": "S2",
+     "date": "2025-02-06"
+    }
+   ]
+  },
+  {
+   "country": "AUS",
+   "jurisdiction": "Victoria",
+   "date": "2025-02",
+   "body": "Department of Government Services",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://www.itnews.com.au/news/most-australian-states-and-territories-ban-deepseek-614813",
+     "source_tier": "S2",
+     "date": "2025-02-06"
+    }
+   ]
+  },
+  {
+   "country": "CAN",
+   "jurisdiction": "British Columbia",
+   "date": "2025-02-05",
+   "body": "Office of the Chief Information Officer (Hayden Lansdell)",
+   "models": [
+    "DeepSeek"
+   ],
+   "scope": "government_devices",
+   "current_status": "in_force",
+   "sources": [
+    {
+     "url": "https://thetyee.ca/News/2025/02/07/BC-Canada-Ban-Public-Sector-Staff-DeepSeek/",
+     "source_tier": "S3",
+     "date": "2025-02-07"
+    }
+   ]
+  }
+ ],
+ "unverified": [
+  {
+   "country": "KOR",
+   "claim": "PIPC issued a further DeepSeek investigation finding on 27 Nov 2025 covering the voluntary suspension and corrective implementation; contents not read.",
+   "lead_url": "https://digitalpolicyalert.org/event/35750-personal-information-protection-commission-issued-investigation-finding-on-deepseek-over-personal-information-processing-practices-including-voluntary-suspension-and-corrective-implementation"
+  },
+  {
+   "country": "KOR",
+   "claim": "Korea Hydro & Nuclear Power (state-owned) blocked all AI services for staff in Feb 2025.",
+   "lead_url": "https://tech.co/news/which-countries-have-banned-deepseek-already"
+  },
+  {
+   "country": "USA",
+   "claim": "DeepSeek blocked on all US Senate devices (Senate Sergeant at Arms).",
+   "lead_url": "https://tech.co/news/which-countries-have-banned-deepseek-already"
+  },
+  {
+   "country": "TWN",
+   "claim": "National Security Bureau inspection (16 Nov 2025) of five PRC generative-AI apps found security and bias problems; public warning only, no new restriction confirmed. Only DeepSeek is named in fetched text; other four apps not confirmed.",
+   "lead_url": "https://focustaiwan.tw/cross-strait/202511160005"
+  },
+  {
+   "country": "CZE",
+   "claim": "Czech Armed Forces cyber command (VeInKyS) warned on 5 Aug 2025 against DeepSeek, Qwen, Kimi and Doubao; a warning, not a ban.",
+   "lead_url": "https://www.lupa.cz/aktuality/armada-cr-varuje-pred-cinskou-ai-sluzby-deepseek-ci-qwen-jsou-pry-dobre-a-levne-ale-nebezpecne/"
+  },
+  {
+   "country": "JPN",
+   "claim": "Digital Agency council notice (6 Feb 2025) told ministries to weigh DeepSeek risks and consult NISC before use; Digital Minister Taira urged officials to refrain (1 Feb 2025). Caution, not a ban, so not coded as a restriction.",
+   "lead_url": "https://internet.watch.impress.co.jp/docs/news/1660903.html"
+  },
+  {
+   "country": "LTU",
+   "claim": "Government-wide restriction on DeepSeek for key institutions was under consideration (Feb 2025); adoption not confirmed.",
+   "lead_url": "https://www.lrt.lt/en/news-in-english/19/2483364/lithuania-mulls-restrictions-on-deepseek-use"
+  },
+  {
+   "country": "USA",
+   "claim": "Additional US state actions after April 2025 (and Montana AG memo of 27 Feb 2025) not systematically collected.",
+   "lead_url": "https://dojmt.gov/wp-content/uploads/2025/03/AG-DeepSeek-Memo-Final-2.27.25.pdf"
+  },
+  {
+   "country": "AUS",
+   "claim": "Tasmania was still 'considering its position' in Feb 2025; later decision not found.",
+   "lead_url": "https://www.itnews.com.au/news/most-australian-states-and-territories-ban-deepseek-614813"
+  },
+  {
+   "country": "IND",
+   "claim": "A Rajya Sabha answer reportedly contradicted the finance ministry AI-tool ban.",
+   "lead_url": "https://www.medianama.com/2025/03/223-ai-usage-in-government-rajya-sabha-response-contradicts-finance-ministry-ban/"
+  }
+ ],
+ "notes": [
+  "No national action found that targets Qwen, Kimi or Manus specifically. Manus appears only in US state bans (Tennessee, Alabama). PRC models other than DeepSeek appear only in advisories (Czech military, Taiwan NSB).",
+  "Only one lifting found: South Korea (download suspension lifted 2025-04-28). No other national restriction found lifted as of 2026-10-20.",
+  "Advisories, investigations and cautions (France CNIL, Ireland DPC, Belgium GBA inquiry, Dutch AP, Japan, Lithuania NKSC, Philippines DICT which said it had no problem with DeepSeek) are not coded as restrictions.",
+  "The Reuters factbox (finance.yahoo.com, 2026-01-06) is used as a cross-country S3 corroborator; it is one source, not independent per row.",
+  "S1 notices located and fetched: ITA (Garante), DEU (Berlin DPA), AUS (PSPF), TWN (MODA), CZE (NUKIB). S1 missing: KOR, NLD, IND, CAN, BEL, LTU, all USA rows (congress.gov and Federal Register URLs not surfaced by search).",
+  "Subnational US rows rely mainly on StateTech (S2) and GovTech (S2) roundups; governor press releases not fetched. Sustainabletechpartner is treated as S5 (lead only).",
+  "Date convention: where a source gives only a weekday, the date is inferred and flagged in notes."
+ ]
+}
