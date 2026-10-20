@@ -1,0 +1,1547 @@
+{
+ "layer": "us_cloud_regions",
+ "schema": "sd-layer/0.1",
+ "version": "0.1.0-draft",
+ "review_status": "unreviewed",
+ "generated": "2026-10-20T11:30:00Z",
+ "as_of": "2026-10-20",
+ "rule": "ga = generally available public region physically in-country; announced = country publicly named, not live; partner_operated = run by a local partner (China). Edge/Local Zones, Outposts, government-only clouds excluded. confidence low = status rests on an S5 aggregator or an old announcement not on any current official list.",
+ "sources_index": {
+  "aws": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+  "azure": "https://learn.microsoft.com/azure/reliability/regions-list",
+  "gcp": "https://docs.cloud.google.com/memorystore/docs/redis/regions"
+ },
+ "countries": {
+  "ARE": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "me-central-1 UAE"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "uaenorth",
+     "uaecentral (restricted access)"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    }
+   ]
+  },
+  "AUS": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "ap-southeast-2 Sydney",
+     "ap-southeast-4 Melbourne"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "australiaeast",
+     "australiasoutheast",
+     "australiacentral (Canberra)",
+     "australiacentral2 (restricted access)"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "australia-southeast1 Sydney",
+     "australia-southeast2 Melbourne"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ]
+  },
+  "AUT": {
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "austriaeast"
+    ]
+   },
+   "gcp": {
+    "status": "announced",
+    "regions": [
+     "Austria (announced 2022)"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1"
+    },
+    {
+     "url": "https://cloud.google.com/blog/products/infrastructure/introducing-new-google-cloud-regions",
+     "source_tier": "S1",
+     "note": "2022-10-11 Google announces Austria region"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "Austria absent from current GCP list"
+    }
+   ]
+  },
+  "BEL": {
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "belgiumcentral"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "europe-west1 Belgium"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1"
+    }
+   ],
+   "note": "AWS plans a sovereign Local Zone (not a region) in Belgium; not counted."
+  },
+  "BHR": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "me-south-1 Bahrain"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1"
+    }
+   ]
+  },
+  "BRA": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "sa-east-1 Sao Paulo"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "brazilsouth",
+     "brazilsoutheast (restricted access)"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "southamerica-east1 Sao Paulo"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ]
+  },
+  "CAN": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "ca-central-1 Canada Central",
+     "ca-west-1 Calgary"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "canadacentral",
+     "canadaeast"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "northamerica-northeast1 Montreal",
+     "northamerica-northeast2 Toronto"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ]
+  },
+  "CHE": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "eu-central-2 Zurich"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "switzerlandnorth",
+     "switzerlandwest (restricted access)"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "europe-west6 Zurich"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ]
+  },
+  "CHL": {
+   "aws": {
+    "status": "announced",
+    "regions": [
+     "South America (Chile) - expected by end-2026"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "chilecentral"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "southamerica-west1 Santiago"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
+     "source_tier": "S1",
+     "note": "AWS page: announced regions in Saudi Arabia and Chile"
+    },
+    {
+     "url": "https://rcrwireless.com/20250528/telco-cloud/aws-launch-region-chile",
+     "source_tier": "S2",
+     "note": "2025-05-28, AWS Chile region planned, launch by end-2026"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1"
+    }
+   ]
+  },
+  "CHN": {
+   "aws": {
+    "status": "partner_operated",
+    "regions": [
+     "cn-north-1 Beijing (Sinnet)",
+     "cn-northwest-1 Ningxia (NWCD)"
+    ]
+   },
+   "azure": {
+    "status": "partner_operated",
+    "regions": [
+     "chinaeast",
+     "chinaeast2",
+     "chinanorth",
+     "chinanorth2",
+     "chinanorth3 (21Vianet)"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/ja_jp/global-infrastructure/latest/regions/aws-regions.html",
+     "source_tier": "S1",
+     "note": "AWS China accounts access only Beijing and Ningxia regions; separate partition"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "China regions excluded; operated by 21Vianet"
+    },
+    {
+     "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+     "source_tier": "S1",
+     "note": "China geography: China East, East 2, North, North 2, North 3"
+    }
+   ],
+   "note": "Operator names (Sinnet, NWCD) are from background knowledge, not from a fetched page. No Chinese-hosted pages fetched."
+  },
+  "DEU": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "eu-central-1 Frankfurt",
+     "eusc-de-east-1 Brandenburg (AWS European Sovereign Cloud, separate aws-eusc partition)"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "germanywestcentral",
+     "germanynorth (restricted access)"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "europe-west3 Frankfurt",
+     "europe-west10 Berlin"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    },
+    {
+     "url": "https://aws.amazon.com/blogs/aws/opening-the-aws-european-sovereign-cloud",
+     "source_tier": "S1",
+     "note": "AWS European Sovereign Cloud GA 2026-01-14 in Brandenburg"
+    }
+   ]
+  },
+  "DNK": {
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "denmarkeast"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1"
+    },
+    {
+     "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+     "source_tier": "S1"
+    }
+   ]
+  },
+  "ESP": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "eu-south-2 Spain"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "spaincentral"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "europe-southwest1 Madrid"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ]
+  },
+  "FIN": {
+   "azure": {
+    "status": "announced",
+    "regions": [
+     "Finland Central (Helsinki area)"
+    ],
+    "confidence": "low"
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "europe-north1 Finland"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+     "source_tier": "S1",
+     "note": "Azure: announced intent to build in Southern Finland"
+    },
+    {
+     "url": "https://www.azurespeed.com/Information/AzureUpcomingRegions",
+     "source_tier": "S5"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1"
+    }
+   ]
+  },
+  "FRA": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "eu-west-3 Paris"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "francecentral",
+     "francesouth (restricted access)"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "europe-west9 Paris"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ]
+  },
+  "GBR": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "eu-west-2 London"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "uksouth",
+     "ukwest"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "europe-west2 London"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ]
+  },
+  "GRC": {
+   "azure": {
+    "status": "announced",
+    "regions": [
+     "Greece Central (Athens)"
+    ],
+    "confidence": "low"
+   },
+   "gcp": {
+    "status": "announced",
+    "regions": [
+     "Athens (announced 2022)"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+     "source_tier": "S1",
+     "note": "Azure: announced plans for Greece"
+    },
+    {
+     "url": "https://www.azurespeed.com/Information/AzureUpcomingRegions",
+     "source_tier": "S5"
+    },
+    {
+     "url": "https://cloud.google.com/blog/products/infrastructure/introducing-new-google-cloud-regions",
+     "source_tier": "S1"
+    },
+    {
+     "url": "https://cloud.google.com/blog/products/infrastructure/expanding-cloud-infrastructure-around-the-world/",
+     "source_tier": "S1",
+     "note": "Athens future region"
+    },
+    {
+     "url": "https://www.datacenterdynamics.com/en/news/google-planning-new-greek-cloud-region/",
+     "source_tier": "S2"
+    }
+   ]
+  },
+  "HKG": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "ap-east-1 Hong Kong"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "eastasia (Hong Kong)"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "asia-east2 Hong Kong"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    },
+    {
+     "url": "https://learn.microsoft.com/th-th/Azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Maps Azure East Asia to Hong Kong"
+    }
+   ]
+  },
+  "IDN": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "ap-southeast-3 Jakarta"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "indonesiacentral"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "asia-southeast2 Jakarta"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ]
+  },
+  "IND": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "ap-south-1 Mumbai",
+     "ap-south-2 Hyderabad"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "centralindia",
+     "southindia",
+     "westindia",
+     "indiasouthcentral"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "asia-south1 Mumbai",
+     "asia-south2 Delhi"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ]
+  },
+  "IRL": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "eu-west-1 Ireland"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "northeurope (Ireland)"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://learn.microsoft.com/th-th/Azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Maps Azure North Europe to Ireland"
+    }
+   ]
+  },
+  "ISR": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "il-central-1 Tel Aviv"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "israelcentral"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "me-west1 Tel Aviv"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ]
+  },
+  "ITA": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "eu-south-1 Milan"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "italynorth"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "europe-west8 Milan",
+     "europe-west12 Turin"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ]
+  },
+  "JPN": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "ap-northeast-1 Tokyo",
+     "ap-northeast-3 Osaka"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "japaneast",
+     "japanwest"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "asia-northeast1 Tokyo",
+     "asia-northeast2 Osaka"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ]
+  },
+  "KEN": {
+   "azure": {
+    "status": "announced",
+    "regions": [
+     "East Africa Cloud Region (with G42)"
+    ],
+    "confidence": "low"
+   },
+   "sources": [
+    {
+     "url": "https://news.microsoft.com/2024/05/22/microsoft-and-g42-announce-1-billion-comprehensive-digital-ecosystem-initiative-for-kenya/",
+     "source_tier": "S1",
+     "note": "2024-05-22: new East Africa Cloud Region to be operational within 24 months of definitive agreements"
+    }
+   ],
+   "note": "Kenya region announced via Microsoft/G42; not in Azure regions list, geographies page or azurespeed upcoming list. Progress unverified; treat as low-confidence announced."
+  },
+  "KOR": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "ap-northeast-2 Seoul"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "koreacentral",
+     "koreasouth"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "asia-northeast3 Seoul"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ]
+  },
+  "KWT": {
+   "azure": {
+    "status": "announced",
+    "regions": [
+     "Kuwait AI-powered Azure region (intent, no timeline)"
+    ],
+    "confidence": "low"
+   },
+   "gcp": {
+    "status": "announced",
+    "regions": [
+     "Kuwait (announced 2023, no timeline)"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://news.microsoft.com/en-xm/2025/03/06/microsoft-strengthens-partnership-with-kuwait-government-announces-intent-to-establish-ai-powered-azure-region-to-accelerate-ai-transformation-and-drive-economic-growth/",
+     "source_tier": "S1",
+     "note": "Microsoft 2025-03-06: intent to establish Azure region"
+    },
+    {
+     "url": "https://www.datacenterdynamics.com/en/news/microsoft-to-develop-azure-cloud-region-in-kuwait/",
+     "source_tier": "S2"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/google-to-bring-cloud-region-to-kuwait",
+     "source_tier": "S2",
+     "note": "2023-01-24 Google setting up Kuwait region, no timeline"
+    }
+   ]
+  },
+  "MEX": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "mx-central-1 Mexico (Central)"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "mexicocentral"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "northamerica-south1 Mexico"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    },
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/doc-history.html",
+     "source_tier": "S1",
+     "note": "mx-central-1 launched 2025-01-14"
+    }
+   ]
+  },
+  "MYS": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "ap-southeast-5 Malaysia"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "malaysiawest"
+    ]
+   },
+   "gcp": {
+    "status": "announced",
+    "regions": [
+     "Malaysia (announced 2022)"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/google-announces-plans-for-cloud-regions-in-malaysia-thailand-and-new-zealand",
+     "source_tier": "S2",
+     "note": "2022-08-10 Google plans regions in Malaysia, Thailand, NZ; Malaysia absent from current GCP list"
+    }
+   ],
+   "note": "Azure geographies page also shows an announced additional Malaysia region ('Southeast Asia 3'); country already GA."
+  },
+  "NLD": {
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "westeurope (Netherlands)"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "europe-west4 Netherlands"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1"
+    },
+    {
+     "url": "https://learn.microsoft.com/th-th/Azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Maps Azure West Europe to Netherlands"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1"
+    }
+   ],
+   "note": "AWS plans a sovereign Local Zone (not a region) in the Netherlands per the AWS European Sovereign Cloud post; not counted."
+  },
+  "NOR": {
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "norwayeast",
+     "norwaywest (restricted access)"
+    ]
+   },
+   "gcp": {
+    "status": "announced",
+    "regions": [
+     "Oslo (announced 2022)"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1"
+    },
+    {
+     "url": "https://cloud.google.com/blog/products/infrastructure/introducing-new-google-cloud-regions",
+     "source_tier": "S1",
+     "note": "2022-10-11 Google announces Norway region"
+    },
+    {
+     "url": "https://cloud.google.com/blog/products/infrastructure/expanding-cloud-infrastructure-around-the-world/",
+     "source_tier": "S1",
+     "note": "2023-09-19: Oslo still upcoming"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "Norway absent from current GCP list"
+    }
+   ]
+  },
+  "NZL": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "ap-southeast-6 New Zealand"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "newzealandnorth"
+    ]
+   },
+   "gcp": {
+    "status": "announced",
+    "regions": [
+     "Auckland (announced)"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    },
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/doc-history.html",
+     "source_tier": "S1",
+     "note": "ap-southeast-6 launched 2025-09-02"
+    },
+    {
+     "url": "https://cloud.google.com/blog/products/infrastructure/expanding-cloud-infrastructure-around-the-world/",
+     "source_tier": "S1",
+     "note": "2023-09-19 Google blog: Auckland future region"
+    },
+    {
+     "url": "https://datacenterdynamics.com/en/news/google-announces-plans-for-cloud-regions-in-malaysia-thailand-and-new-zealand",
+     "source_tier": "S2"
+    }
+   ]
+  },
+  "POL": {
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "polandcentral"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "europe-central2 Warsaw"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1"
+    }
+   ]
+  },
+  "QAT": {
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "qatarcentral"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "me-central1 Doha"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1"
+    }
+   ]
+  },
+  "SAU": {
+   "aws": {
+    "status": "announced",
+    "regions": [
+     "Saudi Arabia region - targeted 2026"
+    ]
+   },
+   "azure": {
+    "status": "announced",
+    "regions": [
+     "Saudi Arabia East (Dammam) - stated go-live Nov/Q4 2026"
+    ],
+    "confidence": "low"
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "me-central2 Dammam (access governed by separate terms)"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
+     "source_tier": "S1",
+     "note": "AWS page lists Saudi Arabia as announced"
+    },
+    {
+     "url": "https://www.rcrwireless.com/20240306/telco-cloud/aws-launch-infrastructure-region-saudi-arabia-2026",
+     "source_tier": "S2",
+     "note": "2024-03-06, launch targeted 2026"
+    },
+    {
+     "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+     "source_tier": "S1",
+     "note": "Saudi Arabia geography / Saudi Arabia East listed as available-or-coming-soon"
+    },
+    {
+     "url": "https://meatechwatch.com/2026/02/11/microsoft-confirms-saudi-arabia-datacenter-region-to-go-live-in-q4-2026/",
+     "source_tier": "S2",
+     "note": "2026-02-11, go-live Q4 2026"
+    },
+    {
+     "url": "https://www.azurespeed.com/Information/AzureUpcomingRegions",
+     "source_tier": "S5"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1"
+    },
+    {
+     "url": "https://cloud.google.com/about/locations?hl=de",
+     "source_tier": "S1",
+     "note": "footnote: Dammam access described in a separate document"
+    },
+    {
+     "url": "https://cloud.google.com/blog/products/infrastructure/expanding-cloud-infrastructure-around-the-world/",
+     "source_tier": "S1",
+     "note": "Dammam described as open, 2023-09-19"
+    }
+   ],
+   "note": "Both AWS and Azure Saudi regions are due in 2026 and may flip to GA within weeks; re-verify each run."
+  },
+  "SGP": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "ap-southeast-1 Singapore"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "southeastasia (Singapore)"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "asia-southeast1 Singapore"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    },
+    {
+     "url": "https://learn.microsoft.com/th-th/Azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Maps Azure Southeast Asia to Singapore"
+    }
+   ]
+  },
+  "SWE": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "eu-north-1 Stockholm"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "swedencentral"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "europe-north2 Stockholm"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ],
+   "note": "Azure also has restricted paired region Sweden South (not listed as a row)."
+  },
+  "THA": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "ap-southeast-7 Thailand"
+    ]
+   },
+   "azure": {
+    "status": "announced",
+    "regions": [
+     "Thailand South (Bangkok)"
+    ],
+    "confidence": "low"
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "asia-southeast3 Bangkok"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    },
+    {
+     "url": "https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/",
+     "source_tier": "S1",
+     "note": "Azure: announced intent to establish Thailand South"
+    },
+    {
+     "url": "https://www.azurespeed.com/Information/AzureUpcomingRegions",
+     "source_tier": "S5"
+    }
+   ]
+  },
+  "TWN": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "ap-east-2 Taipei"
+    ]
+   },
+   "azure": {
+    "status": "announced",
+    "regions": [
+     "Taiwan North (preview / coming soon)"
+    ],
+    "confidence": "low"
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "asia-east1 Taiwan"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    },
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/doc-history.html",
+     "source_tier": "S1",
+     "note": "ap-east-2 launched 2025-06-06"
+    },
+    {
+     "url": "https://www.azurespeed.com/Information/AzureUpcomingRegions",
+     "source_tier": "S5",
+     "note": "Taiwan North listed as upcoming"
+    }
+   ],
+   "note": "Azure Taiwan North shown on regions-list with preview/coming-soon icon; not counted as GA. Azure also lists restricted pair Taiwan Northwest."
+  },
+  "USA": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "us-east-1 N. Virginia",
+     "us-east-2 Ohio",
+     "us-west-1 N. California",
+     "us-west-2 Oregon"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "centralus",
+     "eastus",
+     "eastus2",
+     "northcentralus",
+     "southcentralus",
+     "westcentralus",
+     "westus",
+     "westus2",
+     "westus3"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "us-central1 Iowa",
+     "us-east1 South Carolina",
+     "us-east4 N. Virginia",
+     "us-east5 Columbus",
+     "us-south1 Dallas",
+     "us-west1 Oregon",
+     "us-west2 Los Angeles",
+     "us-west3 Salt Lake City",
+     "us-west4 Las Vegas"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    },
+    {
+     "url": "https://www.azurespeed.com/Information/AzureUpcomingRegions",
+     "source_tier": "S5",
+     "note": "East US 3 (Georgia) listed as upcoming; country already GA"
+    }
+   ],
+   "note": "GovCloud (AWS) and Azure Government/US Sec regions excluded as government-only."
+  },
+  "ZAF": {
+   "aws": {
+    "status": "ga",
+    "regions": [
+     "af-south-1 Cape Town"
+    ]
+   },
+   "azure": {
+    "status": "ga",
+    "regions": [
+     "southafricanorth",
+     "southafricawest (restricted access)"
+    ]
+   },
+   "gcp": {
+    "status": "ga",
+    "regions": [
+     "africa-south1 Johannesburg"
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-availability-zones.md",
+     "source_tier": "S1",
+     "note": "AWS AZ table with per-region geography"
+    },
+    {
+     "url": "https://learn.microsoft.com/azure/reliability/regions-list",
+     "source_tier": "S1",
+     "note": "Azure regions list (programmatic names, restricted flags)"
+    },
+    {
+     "url": "https://docs.cloud.google.com/memorystore/docs/redis/regions",
+     "source_tier": "S1",
+     "note": "GCP region list with locations; 43 regions, matches cloud.google.com/about/locations count"
+    }
+   ]
+  }
+ },
+ "notes": [
+  "AWS: 34 commercial regions in the standard partition (docs AZ table) + eusc-de-east-1 (European Sovereign Cloud, GA 2026-01-14) + 2 GovCloud (excluded) + 2 China (partner_operated) = 39, matching the '39 Geographic Regions' on aws.amazon.com regions_az. Announced: Saudi Arabia, Chile.",
+  "AWS us-east-1 is gaining a Maryland AZ ('Coming in 2026'); same country, no effect.",
+  "Azure restricted-access regions (australiacentral2, brazilsoutheast, francesouth, germanynorth, norwaywest, southafricawest, switzerlandwest, uaecentral) are listed but only matter where a GA region already exists, so no country status depends on them.",
+  "Azure Taiwan North carries a preview/coming-soon marker on the regions list; coded announced, not ga.",
+  "Azure Government, US Sec, and legacy Germany sovereign regions excluded. Azure Extended Zones, AWS Local Zones/Outposts/Wavelength, and CDN PoPs excluded.",
+  "GCP: 43 regions per cloud.google.com/about/locations (page updated 2026-10-05); the Memorystore regions page lists exactly 43, used as the per-region list. The full compute regions-zones page was too long to read in one fetch. Countries are inferred from city names on that page.",
+  "GCP announced regions still not live as of this check: Austria, Greece, Norway (all announced 2022), Malaysia and New Zealand (2022/2023), Kuwait (2023). The current GCP locations page does not show 'upcoming' text in fetched form, so announced status rests on older announcements plus their absence from the live list; any of them may have been cancelled quietly.",
+  "Azure announced list (Finland, Greece, Saudi Arabia, Taiwan, Thailand, East US 3) comes from azurespeed.com (S5, third-party) and is corroborated by Microsoft's geographies page (S1), which lumps 'available or coming soon' together.",
+  "Azure Kenya (with G42, 2024) and Kuwait (2025) are announced by Microsoft (S1 press release) but appear on no current Microsoft region list; status low-confidence.",
+  "datacenters.microsoft.com globe was not fetched (it came only as a redirect, not a search result).",
+  "GCP me-central2 Dammam is GA but access is governed by separate terms (footnote 6 on the locations page).",
+  "The AWS regions page in Japanese (ja_jp) was the only regions table fetched; the English AZ markdown table corroborates all 34 codes plus geography."
+ ]
+}
