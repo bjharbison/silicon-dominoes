@@ -64,7 +64,11 @@ def main():
     if git("status", "--porcelain").strip():
         problems.append("working tree has uncommitted changes; commit or discard them first")
 
-    git("fetch", "--quiet", "origin", "main", "showcase")
+    # Explicit refspecs: a shallow single-branch clone has no origin/showcase otherwise.
+    # --depth 1000 so merge-base can find the fork point from a shallow clone.
+    git("fetch", "--quiet", "--depth=1000", "origin",
+        "+refs/heads/main:refs/remotes/origin/main",
+        "+refs/heads/showcase:refs/remotes/origin/showcase")
     fork_point = git("merge-base", "origin/main", "HEAD").strip()
 
     # Whole-branch check against where showcase left main.
