@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "IDN",
-  "VNM",
-  "THA",
-  "MYS",
-  "PHL",
-  "SGP",
-  "KHM",
-  "LAO",
-  "MMR",
-  "ARE",
   "ARG",
   "AUS",
   "BGD",
@@ -254,5 +244,16 @@
   "VIR",
   "WLF"
  ],
- "done": []
+ "done": [
+  "IDN",
+  "VNM",
+  "THA",
+  "MYS",
+  "PHL",
+  "SGP",
+  "KHM",
+  "LAO",
+  "MMR",
+  "ARE"
+ ]
 }

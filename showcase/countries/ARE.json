@@ -1,0 +1,301 @@
+{
+  "schema": "sd-showcase-country/0.1",
+  "spec_version": "0.1",
+  "iso3": "ARE",
+  "name": "United Arab Emirates",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-21T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ARE-001",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "G42 (Khazna Data Centers)",
+      "local_actor": "G42",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-10",
+      "summary": "Khazna, a G42 company, is building a 1GW Stargate UAE cluster inside the 5GW UAE-US AI Campus in Abu Dhabi; first 200MW under construction, targeted for 2026. Partners: OpenAI, Oracle, Nvidia, Cisco, SoftBank.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.tradearabia.com/News/329356/G42's-prime-AI-infrastructure-cluster-set-for-2026-handover/IT",
+          "publisher": "TradeArabia",
+          "source_tier": "S3",
+          "date": "2025-10-16",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/g42-ceo-says-company-will-receive-first-ai-chip-shipments-within-months-to-support-initial-200mw-of-capacity-for-planned-stargate-cluster/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-01-21",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-uae",
+          "publisher": "Epoch AI",
+          "source_tier": "S2",
+          "date": "2026-07-22",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Facility controller is domestic (G42/Khazna) but the tenant (OpenAI) and the accelerators are US, and US export-licence conditions give Washington leverage over use. Epoch AI (Jul 2026) still listed 0 MW operational; whether the 200MW phase is live by Oct 2026 is unconfirmed.",
+      "bundle_id": "ARE-B1"
+    },
+    {
+      "id": "ARE-002",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "UAE government / G42",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-05-22",
+      "summary": "First OpenAI for Countries partnership: alongside the Stargate UAE cluster, OpenAI says the UAE will be the first country to enable ChatGPT nationwide, across education, health, energy and government services.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-stargate-uae",
+          "publisher": "OpenAI",
+          "source_tier": "S1",
+          "date": "2025-05-22",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://gulfnews.com/business/markets/is-openai-giving-chatgpt-for-free-to-all-uae-residents-know-whats-true-1.500141497",
+          "publisher": "Gulf News",
+          "source_tier": "S3",
+          "date": "2025-05-27",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 1: announced partnership with no published contract terms or value. Gulf News notes claims of free ChatGPT Plus for all residents were not confirmed.",
+      "bundle_id": "ARE-B1"
+    },
+    {
+      "id": "ARE-003",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Microsoft / Nvidia",
+      "local_actor": "Microsoft UAE operations (G42 partnership)",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-09",
+      "summary": "US Commerce granted Microsoft a first-of-its-kind licence to ship Nvidia GB300 GPUs (tens of thousands) to the UAE; reported November 2025 alongside Microsoft's UAE commitment of about $15.2bn through 2030.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nationalcioreview.com/articles-insights/extra-bytes/nvidia-chips-approved-for-uae-as-microsoft-expands-ai-investment",
+          "publisher": "The National CIO Review",
+          "source_tier": "S3",
+          "date": "2025-11-03",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "The $15.2bn figure is Microsoft's total UAE commitment (incl. $1.5bn G42 equity), not the chip value, so announced_value_usd is left null. Separate from the Nov 2025 G42 authorisation already in us_chip_export_posture.json."
+    },
+    {
+      "id": "ARE-004",
+      "layer": "facilities",
+      "pole": "prc",
+      "controller": "Huawei and other Chinese vendors",
+      "local_actor": "G42",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Huawei and other Chinese equipment in G42's systems",
+      "date": "2024-04",
+      "summary": "As a condition of Microsoft's $1.5bn minority investment in G42 (April 2024), G42 agreed to divest from China and, per New York Times reporting relayed here, strip Huawei and other Chinese equipment from its systems.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.silicon.co.uk/cloud/ai/white-house-g42-ai-huawei-microsoft-569256",
+          "publisher": "Silicon UK",
+          "source_tier": "S3",
+          "date": "2024-06-25",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Layer and tier of the reversed equipment are not stated; coded facilities/tier 3 conservatively. Extent and completion of the removal are not independently verified."
+    },
+    {
+      "id": "ARE-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Etisalat (e&)",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2019-02",
+      "summary": "Etisalat named Huawei to supply an end-to-end 5G network in the UAE: radio access, service-based 5G core and 5G-ready transport, for deployment in 2019.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/8352-etisalat-partners-with-huawei-to-deploy-5g-network.html.md",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2019-02-26",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Agreement value and whether Huawei remains sole RAN/core supplier for e& are not shown; likely operational at scale but not evidenced here, so kept at tier 3."
+    },
+    {
+      "id": "ARE-006",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "e& UAE",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-02-27",
+      "summary": "At MWC 2024, e& UAE signed an MoU with Huawei on 5G-Advanced and 50G PON to deliver a '10 Giga' experience (up to 10 Gbps mobile).",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomreview.com/articles/telecom-operators/7874-mwc24-e-uae-sets-stage-for-intelligent-10-giga-experience",
+          "publisher": "Telecom Review",
+          "source_tier": "S2",
+          "date": "2024-02-27",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": null
+    },
+    {
+      "id": "ARE-007",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Dubai Police",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2016-10",
+      "summary": "Huawei signed a long-term collaboration agreement with Dubai Police to develop a Safe City Innovation Centre; demonstrated facial recognition, video analytics and anti-drone tools at GITEX 2016.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20161021/internet-of-things/huawei-dubai-police-develop-safe-city-innovation-center",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2016-10-21",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": null
+    },
+    {
+      "id": "ARE-008",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Dubai (police / city CCTV)",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": null,
+      "summary": "BuzzFeed News reported Hikvision already supplied Dubai with thousands of CCTV cameras; Huawei marketed its FusionInsight footage-search platform to UAE police. No confirmed contract for the Oyoon programme.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.buzzfeednews.com/meghara/dubai-facial-recognition-technology-ibm-huawei-hikvision",
+          "publisher": "BuzzFeed News",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Article undated (internal references suggest 2019). Camera supply implies deployed hardware but no contract, value or date is evidenced, so tier 3 low."
+    },
+    {
+      "id": "ARE-009",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "MBZUAI",
+      "local_actor": "MBZUAI",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-01",
+      "summary": "MBZUAI released K2 Think V2, an open-source reasoning model published with training data and code, framed as a UAE sovereign model; trained on fewer than 2,000 Nvidia chips.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.agbi.com/ai/2026/01/abu-dhabi-university-unveils-ai-model-to-take-on-us-and-china/",
+          "publisher": "AGBI",
+          "source_tier": "S3",
+          "date": "2026-01",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Instrument ladder fits a model release poorly; coded tier 2 because government or at-scale adoption is not evidenced. Training compute is US silicon. TII Falcon models not separately coded this pass."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on higher-priority layers; no AI-specific power evidence surfaced (Stargate UAE campus power supply not examined)"
+    }
+  },
+  "research_gaps": [
+    "Is the first 200MW of Stargate UAE operational as of Oct 2026? Epoch AI (Jul 2026) still showed 0 MW live.",
+    "du's 5G RAN/core vendors not established; du said in 2019 US Huawei restrictions were not an issue - current supplier unknown.",
+    "Whether e& still runs a Huawei 5G core, and whether any UAE operator has swapped out Huawei since the 2025-26 US chip arrangements.",
+    "Verify G42's removal of Huawei/Chinese equipment (2024) with a primary or second independent source.",
+    "Second independent source for Microsoft's Sept 2025 GB300 licence and actual shipment volumes.",
+    "Scale and current status of Hikvision/Huawei surveillance deployments (Dubai Police Oyoon, Abu Dhabi safe city).",
+    "HMN Tech or other PRC-built submarine cables landing in the UAE not searched.",
+    "TII Falcon model family and any government adoption of Falcon/Jais not coded.",
+    "Pax Silica signing date for ARE still missing (see diplomatic_alignment.json notes)."
+  ],
+  "searches_run": 10
+}

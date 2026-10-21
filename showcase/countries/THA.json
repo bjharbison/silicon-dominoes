@@ -1,0 +1,496 @@
+{
+  "schema": "sd-showcase-country/0.1",
+  "spec_version": "0.1",
+  "iso3": "THA",
+  "name": "Thailand",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-21T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "THA-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "True Corporation",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2020-04-27",
+      "summary": "True selected Ericsson as 5G radio access network vendor for its national 5G network covering northern, central-western and upper southern Thailand on 700 MHz, 2.6 GHz and 26 GHz.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20200427/5g/ericsson-to-provide-5g-ran-thailands-true-corporation",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2020-04-27",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish (third pole). Contract value not disclosed; True has since merged with DTAC, so current RAN vendor split is unverified."
+    },
+    {
+      "id": "THA-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "True Move H",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2020-07-29",
+      "summary": "True Move selected ZTE 5G macro base stations and indoor units to build a commercial tri-band 5G network, apparently alongside Ericsson in other regions.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/20200729/5g/true-move-selects-zte-ran-portfolio-5g-launch",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2020-07-29",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Geographic split between ZTE and Ericsson inferred from the two separate awards; not stated in one source."
+    },
+    {
+      "id": "THA-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE (also Nokia)",
+      "local_actor": "AIS",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2019-08-30",
+      "summary": "AIS signed memorandums of understanding with Nokia, Huawei and ZTE to develop 5G use cases for industry verticals; no supply contract disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://totaltele.com/nokia-huawei-and-zte-sign-5g-deals-with-thailands-ais/",
+          "publisher": "Total Telecom",
+          "source_tier": "S2",
+          "date": "2019-08-30",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.mobileworldlive.com/huawei/ais-inks-5g-rd-deals-with-nokia-huawei-zte/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2019-08",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded prc because two of three MOU partners are PRC vendors; the Nokia MOU is third-pole. AIS ran a 5G core tender in July 2020 with Huawei among five bidders; outcome not found."
+    },
+    {
+      "id": "THA-004",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Alphabet (Google) via Quartz Computing",
+      "local_actor": "Thailand Board of Investment",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-11",
+      "summary": "BOI approved investment promotion for a hyperscale data centre by Google subsidiary Quartz Computing in Chonburi, valued at THB 32.8 billion.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/data-centres-networks/17571-thai-investment-board-approves-data-centre-projects-from-google-gds.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2024-11-05",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "BOI promotion approval coded tier 2 (approval, not construction). USD value not given per project; not converted."
+    },
+    {
+      "id": "THA-005",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "GDS (Digitalland Services, subsidiary of GDS IDC Services)",
+      "local_actor": "Thailand Board of Investment",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-11",
+      "summary": "BOI approved a THB 28 billion hyperscale data centre in Chonburi by Digitalland Services, described as a GDS IDC Services subsidiary.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/data-centres-networks/17571-thai-investment-board-approves-data-centre-projects-from-google-gds.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2024-11-05",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: GDS Holdings is PRC-headquartered, but its international business was restructured into a separately financed, Singapore-based entity; which one controls this project is unclear."
+    },
+    {
+      "id": "THA-006",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "DAMAC Digital",
+      "local_actor": "NextGen Data Center and Cloud Services",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-11",
+      "summary": "BOI approved an 84 MW hyperscale data centre in Navanakorn Industrial Estate, Pathum Thani, by a DAMAC Digital subsidiary, worth THB 26.7 billion.",
+      "announced_value_usd": 826420000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://technode.global/2025/11/11/thailand-approves-3-1b-data-center-projects/",
+          "publisher": "TechNode Global",
+          "source_tier": "S2",
+          "date": "2025-11-11",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.telecomreviewasia.com/news/industry-news/26926-thailand-approves-usd-3-1b-in-new-investments-with-major-data-center-push/",
+          "publisher": "Telecom Review Asia",
+          "source_tier": "S2",
+          "date": "2025-11-19",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "DAMAC Digital is Dubai-based (third pole). USD figure is Telecom Review Asia's own conversion."
+    },
+    {
+      "id": "THA-007",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Unknown (company described as related to DAMAC unit)",
+      "local_actor": "Zenith Data Center and Cloud Services",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-11",
+      "summary": "BOI approved a 200 MW hyperscale data centre in Navanakorn Industrial Estate, Pathum Thani, by Zenith Data Center and Cloud Services, worth THB 54.9 billion.",
+      "announced_value_usd": 1700000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://technode.global/2025/11/11/thailand-approves-3-1b-data-center-projects/",
+          "publisher": "TechNode Global",
+          "source_tier": "S2",
+          "date": "2025-11-11",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.telecomreviewasia.com/news/industry-news/26926-thailand-approves-usd-3-1b-in-new-investments-with-major-data-center-push/",
+          "publisher": "Telecom Review Asia",
+          "source_tier": "S2",
+          "date": "2025-11-19",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: TechNode calls it a related company (apparently of the DAMAC unit) but Telecom Review Asia gives no parent; controller unconfirmed. USD figure is Telecom Review Asia's conversion."
+    },
+    {
+      "id": "THA-008",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "KDDI",
+      "local_actor": "Telehouse (Thailand)",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-11",
+      "summary": "BOI approved a 12 MW data centre in Huai Khwang, Bangkok, by KDDI subsidiary Telehouse Thailand, worth THB 7.55 billion.",
+      "announced_value_usd": 233640000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://technode.global/2025/11/11/thailand-approves-3-1b-data-center-projects/",
+          "publisher": "TechNode Global",
+          "source_tier": "S2",
+          "date": "2025-11-11",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.telecomreviewasia.com/news/industry-news/26926-thailand-approves-usd-3-1b-in-new-investments-with-major-data-center-push/",
+          "publisher": "Telecom Review Asia",
+          "source_tier": "S2",
+          "date": "2025-11-19",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "KDDI is Japanese (third pole). USD figure is Telecom Review Asia's conversion."
+    },
+    {
+      "id": "THA-009",
+      "layer": "facilities",
+      "pole": "prc",
+      "controller": "ZDATA Technologies",
+      "local_actor": "Vistas Technology",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-11",
+      "summary": "BOI approved an 80 MW data centre in Amata City Chonburi by ZDATA subsidiary Vistas Technology; reported value THB 9.09 billion or 9.9 billion depending on source.",
+      "announced_value_usd": 306390000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://technode.global/2025/11/11/thailand-approves-3-1b-data-center-projects/",
+          "publisher": "TechNode Global",
+          "source_tier": "S2",
+          "date": "2025-11-11",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.telecomreviewasia.com/news/industry-news/26926-thailand-approves-usd-3-1b-in-new-investments-with-major-data-center-push/",
+          "publisher": "Telecom Review Asia",
+          "source_tier": "S2",
+          "date": "2025-11-19",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "PRC pole rests on Telecom Review Asia describing ZDATA Technologies as Chinese; TechNode does not state nationality. Sources disagree on THB value; USD figure is Telecom Review Asia's conversion of THB 9.9bn."
+    },
+    {
+      "id": "THA-010",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Multiple, undisclosed",
+      "local_actor": "Thai government data centre supervision commission / NESDC",
+      "instrument_tier": 4,
+      "reversal": true,
+      "reversal_of": "construction of 49 data centres under way (tier 4) and approvals for 117 planned facilities",
+      "date": "2026-09-04",
+      "summary": "Government suspended construction of 49 data centres and froze approval of 117 planned facilities while it drafts new rules, citing power, water and community impacts.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/thailand-pauses-construction-on-49-data-centers-as-it-plans-new-regulations/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-09-07",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.lightreading.com/regulatory-politics/thailand-suspends-data-center-projects-as-oil-leak-sparks-environmental-concerns",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2026-09-09",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/05/thailand-freezes-49-data-centres-as-resource-fears-escalate",
+          "publisher": "The Star",
+          "source_tier": "S3",
+          "date": "2026-09-05",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Pole null: affected projects and their controllers were not disclosed, so the pole of what was paused is unknown. Pause is regulatory and resource-driven, not vendor-targeted; Light Reading links it to an oil leak at DAMAC Digital's BKK01 site."
+    },
+    {
+      "id": "THA-011",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "SIAM.AI Cloud",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-12-04",
+      "summary": "SIAM.AI, Thailand's first Nvidia Cloud Partner, launched an Nvidia H100 GPU cluster for a sovereign cloud, planning H200 and GB200 expansion; Nvidia said it would work with the Thai government.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.bangkokpost.com/business/general/2914135/nvidia-chief-backs-thai-sovereign-ai-project",
+          "publisher": "Bangkok Post",
+          "source_tier": "S3",
+          "date": "2024-12",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://taipeitimes.com/News/biz/archives/2024/12/05/2003827972",
+          "publisher": "Taipei Times",
+          "source_tier": "S3",
+          "date": "2024-12-05",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded tier 4 (deployed) rather than 5 because GPU count, value and utilisation are undisclosed. No S1/S2 source seen, so not corroborated. Taipei Times reports the CEO is reportedly related to Thaksin Shinawatra."
+    },
+    {
+      "id": "THA-012",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "MDES / Big Data Institute / NECTEC consortium",
+      "local_actor": "ThaiLLM",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-04-01",
+      "summary": "ThaiLLM, a Thai-language foundation model in 8B and 30B versions trained on over 100 billion Thai tokens on the ThaiSC supercomputer, was publicly launched with playground, API and downloads.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nstda.or.th/en/news/news-years-2026/thaillm.html",
+          "publisher": "NSTDA",
+          "source_tier": "S1",
+          "date": "2026-04-01",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://govinsider.asia/intl-en/article/thai-government-to-launch-local-language-llm-this-september",
+          "publisher": "GovInsider",
+          "source_tier": "S2",
+          "date": "2025-01",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Corroborated set false: GovInsider confirms the programme and developers but predates the launch, so the launch itself rests on one S1 government source. Base model undisclosed; if built on a foreign open-weight model, the update-control pole may differ."
+    },
+    {
+      "id": "THA-013",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "SCBX",
+      "local_actor": "Office of the Public Sector Development Commission",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-06-13",
+      "summary": "SCBX and the public sector development office launched a pilot chatbot on SCBX's Thai-language Typhoon model to guide officials, with plans to extend to other government services.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.thestorythailand.com/en/?p=155590",
+          "publisher": "The Story Thailand",
+          "source_tier": "S3",
+          "date": "2025-06-13",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "SCBX is a Thai financial group, so domestic pole."
+    },
+    {
+      "id": "THA-014",
+      "layer": "cloud",
+      "pole": "prc",
+      "controller": "Huawei Cloud",
+      "local_actor": "Ministry of Digital Economy and Society",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2023",
+      "summary": "Huawei Cloud and the digital economy ministry signed an MOU on AI development, industry applications, ecosystem building and talent at Huawei Cloud's 2023 Thailand summit.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.bangkokpost.com/life/tech/2708159/huawei-mdes-unveil-vision-for-ai-powered-future",
+          "publisher": "Bangkok Post",
+          "source_tier": "S3",
+          "date": "2023",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Exact signing date not given in the article."
+    },
+    {
+      "id": "THA-015",
+      "layer": "cloud",
+      "pole": "prc",
+      "controller": "Huawei Cloud",
+      "local_actor": "Ministry of Digital Economy and Society",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-08",
+      "summary": "Report says the ministry partnered with Huawei Cloud, resulting in an e-government cloud launch and support for an Eastern Economic Corridor smart-city project; no terms disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.pattayamail.com/thailandnews/mdes-and-huawei-partnered-to-accelerate-thailands-digital-transformation-468816",
+          "publisher": "Pattaya Mail",
+          "source_tier": "S4",
+          "date": "2024-08-17",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Article reads as vendor publicity, so treated S4 (evidence a claim was made). Tier 3 is provisional: no contract, value or scope disclosed; a human should verify whether a Huawei-hosted e-government cloud is operational."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on Huawei/Hikvision safe-city and police CCTV returned only Hikvision's own newsroom (uncitable) and paywalled trade pages; no citable procurement found"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "no power supply tied specifically to an AI or data-centre project surfaced; power concerns appear only as the stated reason for the 2026 data-centre pause (THA-010)"
+    }
+  },
+  "research_gaps": [
+    "Outcome of AIS's July 2020 5G core tender (Nokia, Ericsson, Huawei, ZTE, Samsung) and current Huawei share of AIS and NT radio networks.",
+    "Current RAN/core vendor mix after the True-DTAC merger.",
+    "Which of the 49 paused data centres and 117 frozen approvals belong to which controllers (US, PRC, Gulf, Japanese); whether Google, GDS or ZDATA projects are affected; content of the new rules.",
+    "Controller of Zenith Data Center and Cloud Services and whether GDS's Thai project sits with GDS Holdings (PRC) or its spun-out international business.",
+    "SIAM.AI GPU count, value and any US export licence; status of the reported July 2025 US plan to require AI-chip licences for Thailand.",
+    "ThaiLLM base model and training compute; any government agreement with OpenAI, Google, Microsoft or a PRC model provider (none found).",
+    "Scope and status of the Huawei Cloud e-government cloud reported in 2024; safe-city/surveillance procurement (Hikvision, Dahua, Huawei) via S1 procurement records."
+  ],
+  "searches_run": 10
+}

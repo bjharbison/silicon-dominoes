@@ -1,0 +1,384 @@
+{
+  "schema": "sd-showcase-country/0.1",
+  "spec_version": "0.1",
+  "iso3": "SGP",
+  "name": "Singapore",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-21T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SGP-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia (RAN) and Ericsson (core, mmWave)",
+      "local_actor": "StarHub and M1 joint venture",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2020-06",
+      "summary": "StarHub and M1 picked Nokia for radio access and Ericsson for core and mmWave in their joint 5G network after Singapore's final 5G awards; Huawei did not win the main networks.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20200624/5g/singapore-select-nokia-ericsson-5g",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2020-06-24",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2020-06-24/singapore-issues-final-5g-awards-to-singtel-starhub-m1-group",
+          "publisher": "Bloomberg",
+          "source_tier": "S3",
+          "date": "2020-06-24",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Not coded as a Huawei exclusion: a minister publicly said no vendor was excluded (Bloomberg, 25 Jun 2020), and the operators said Huawei was not fully ruled out for other network parts. Singtel's 5G vendor not confirmed in sources seen."
+    },
+    {
+      "id": "SGP-002",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Equinix; Microsoft",
+      "local_actor": "IMDA / EDB (DC-CFA pilot)",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2023-07-14",
+      "summary": "IMDA's pilot data-centre call for application provisionally allocated part of about 80 MW of new capacity to Equinix and Microsoft.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2023/four-data-centre-proposals-selected-as-part-of-pilot-data-centre-call-for-application",
+          "publisher": "IMDA",
+          "source_tier": "S1",
+          "date": "2023-07-14",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/singapore-selects-equinix-microsoft-airtrunk-and-gds-for-80mw-data-center-trial",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Provisional award treated as tier 2; individual MW split per operator not captured."
+    },
+    {
+      "id": "SGP-003",
+      "layer": "facilities",
+      "pole": "prc",
+      "controller": "GDS",
+      "local_actor": "IMDA / EDB (DC-CFA pilot)",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2023-07-14",
+      "summary": "GDS was among four operators provisionally selected under IMDA's pilot data-centre call for application, which allocated about 80 MW of new capacity.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2023/four-data-centre-proposals-selected-as-part-of-pilot-data-centre-call-for-application",
+          "publisher": "IMDA",
+          "source_tier": "S1",
+          "date": "2023-07-14",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/singapore-selects-equinix-microsoft-airtrunk-and-gds-for-80mw-data-center-trial",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "GDS was a PRC-headquartered operator at award time; its international business was later restructured as a separate entity, which may change the controller's pole. Needs review."
+    },
+    {
+      "id": "SGP-004",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "AirTrunk-ByteDance consortium",
+      "local_actor": "IMDA / EDB (DC-CFA pilot)",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2023-07-14",
+      "summary": "A consortium of AirTrunk and ByteDance was provisionally selected under IMDA's pilot data-centre call for application for a share of about 80 MW of new capacity.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2023/four-data-centre-proposals-selected-as-part-of-pilot-data-centre-call-for-application",
+          "publisher": "IMDA",
+          "source_tier": "S1",
+          "date": "2023-07-14",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/singapore-selects-equinix-microsoft-airtrunk-and-gds-for-80mw-data-center-trial",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: mixed consortium of a data-centre operator (Australian-founded; ownership changes not verified in this pass) and PRC-founded ByteDance; which party controls the facility is not stated in sources."
+    },
+    {
+      "id": "SGP-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "National Supercomputing Centre (NSCC) Singapore",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-06",
+      "summary": "NSCC launched the Aspire 2B national research supercomputer, using more than 1,500 Nvidia H200 GPUs with AMD Epyc CPUs.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/singapore-launches-new-national-supercomputer/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-06-15",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single S2 source; system integrator not named."
+    },
+    {
+      "id": "SGP-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia (US export-control regime)",
+      "local_actor": "Singapore Police Force / Singapore Customs",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-02-26",
+      "summary": "Singapore authorities raided over 20 sites and charged three men with fraud over server shipments reportedly tied to Nvidia chip diversion; media linked it to US probes on DeepSeek's chip sourcing.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fortune.com/asia/2025/02/28/singapore-charges-fraud-nvidia-chip-smuggling",
+          "publisher": "Fortune",
+          "source_tier": "S3",
+          "date": "2025-02-28",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.freemalaysiatoday.com/category/world/2025/02/28/singapore-charges-three-with-fraud",
+          "publisher": "Free Malaysia Today",
+          "source_tier": "S3",
+          "date": "2025-02-28",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Analyst inference: indicates Singapore enforcing against diversion of US-controlled accelerators. Tier 3 used for formal criminal charges, an imperfect fit to the ladder. DeepSeek link is reported, not established. No S1/S2 source seen."
+    },
+    {
+      "id": "SGP-007",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "Ministry of Digital Development and Information (MDDI)",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-05-20",
+      "summary": "MDDI signed its first MOU with OpenAI for an 'OpenAI for Singapore' initiative, including OpenAI's first Applied AI Lab outside the US and an S$300 million ecosystem commitment.",
+      "announced_value_usd": 234000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.edb.gov.sg/en/about-edb/media-releases-publications/openai-launches-applied-ai-lab-in-singapore.html",
+          "publisher": "Singapore EDB",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://w.media/openai-to-commit-us-234-million-for-openai-for-singapore/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2026-05-20",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "USD figure (about US$234 million) is W.Media's conversion of S$300 million on the announcement date."
+    },
+    {
+      "id": "SGP-008",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Google / Google DeepMind",
+      "local_actor": "Ministry of Digital Development and Information (MDDI)",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-05-20",
+      "summary": "Google and MDDI signed an MOU expanding a 2022 partnership to deploy frontier AI at scale, including DeepMind collaboration in health, life sciences and education.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://w.media/google-and-singapore-ink-mou-to-deploy-frontier-ai-at-scale/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2026-05-20",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://securitybrief.asia/story/google-expands-singapore-ai-pact-across-public-sector",
+          "publisher": "SecurityBrief Asia",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": null
+    },
+    {
+      "id": "SGP-009",
+      "layer": "models",
+      "pole": "prc",
+      "controller": "Alibaba (Qwen open weights)",
+      "local_actor": "AI Singapore",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-11-25",
+      "summary": "AI Singapore released Qwen-SEA-LION-v4, its regional national model, built on Alibaba's Qwen3-32B with Alibaba Cloud technical support and added Southeast Asian language data.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.computerweekly.com/news/366634858/AI-Singapore-taps-Alibaba-Cloud-to-power-Sea-Lion-model",
+          "publisher": "Computer Weekly",
+          "source_tier": "S2",
+          "date": "2025-11-25",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://technode.com/2025/11/25/singapores-national-ai-program-drops-meta-model-and-switches-to-alibabas-qwen/",
+          "publisher": "TechNode",
+          "source_tier": "S2",
+          "date": "2025-11-25",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 2: a released collaboration with no contract shown. Open weights fine-tuned locally limit Alibaba's switch-off power; prc pole reflects base-model provenance. Gemma-based SEA-LION variants also appear to exist (lead only, not cited)."
+    },
+    {
+      "id": "SGP-010",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Meta (Llama model family)",
+      "local_actor": "AI Singapore",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Use of Meta model family as base for SEA-LION national model",
+      "date": "2025-11-25",
+      "summary": "Reporting says AI Singapore moved its SEA-LION model off Meta's model family when adopting Alibaba's Qwen base for version 4.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://technode.com/2025/11/25/singapores-national-ai-program-drops-meta-model-and-switches-to-alibabas-qwen/",
+          "publisher": "TechNode",
+          "source_tier": "S2",
+          "date": "2025-11-25",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Substitution rather than a ban; coded as reversal of prior use of a US base model. Single source; tier of prior use is uncertain."
+    },
+    {
+      "id": "SGP-011",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Google (Gemini, Google Distributed Cloud air-gapped)",
+      "local_actor": "GovTech Singapore; HTX; CSIT",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-08-28",
+      "summary": "GovTech said GovTech, HTX and CSIT would get Gemini on Google's air-gapped distributed cloud, with Agentspace for selected public officers and Gemini 2.5 Flash on the Government on Commercial Cloud platform.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://govinsider.asia/intl-en/article/singapore-government-first-in-asia-to-deploy-agentic-ai-on-googles-air-gapped-cloud",
+          "publisher": "GovInsider",
+          "source_tier": "S2",
+          "date": "2025-08-28",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Year inferred as 2025 from the article's page metadata; language is forward-looking, so coded as pilot (tier 2)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced in data-centre searches; budget spent on other layers"
+    }
+  },
+  "research_gaps": [
+    "Singtel's 5G RAN/core vendor not confirmed in sources seen; check whether any Huawei kit remains in operator networks or TPG.",
+    "Second data-centre call for application (DC-CFA2, ~300 MW) awardees and controllers not yet established.",
+    "Current controller of AirTrunk and of GDS's international business (DayOne) for pole assignment of 2023 DC-CFA awards.",
+    "Outcome of the Feb 2025 Nvidia server fraud prosecution; locate S1 (SPF/AGC) statement.",
+    "Whether earlier SEA-LION versions were Llama-based (confirm the reported 'switch off Meta') and scale of government use of Qwen-SEA-LION.",
+    "Safe-city / surveillance vendors (police camera network) not searched.",
+    "WAICO invitation status (global layer cites only an S5 lead)."
+  ],
+  "searches_run": 9
+}

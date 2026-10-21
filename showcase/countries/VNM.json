@@ -1,0 +1,453 @@
+{
+  "schema": "sd-showcase-country/0.1",
+  "spec_version": "0.1",
+  "iso3": "VNM",
+  "name": "Vietnam",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-21T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "VNM-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Viettel",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Viettel's prior use of Huawei as a network equipment supplier, not extended to its 5G rollout",
+      "date": "2019-08",
+      "summary": "Viettel left Huawei off its 5G supplier list, with its chief executive citing security doubts about Huawei and choosing Ericsson and Nokia instead; other leading carriers were also reported avoiding Huawei 5G gear.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/ericsson/viettel-leaves-huawei-off-5g-supplier-list/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2019-09-06",
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "note": "relays Bloomberg interview with Viettel CEO"
+        },
+        {
+          "url": "https://venturebeat.com/2019/08/26/vietnams-top-carriers-avoid-huawei-5g-gear-citing-security-concerns",
+          "publisher": "VentureBeat",
+          "source_tier": "S3",
+          "date": "2019-08-26",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as an exclusion (reversal) rather than a formal ban: no regulator decision found. Tier 3 is a judgment for the procurement relationship not extended; the existing 4G Huawei base was not reported removed."
+    },
+    {
+      "id": "VNM-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson; Nokia",
+      "local_actor": "Viettel",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": null,
+      "summary": "Ericsson and Nokia hold contracts for Vietnam's 5G core network infrastructure; Viettel had chosen the two Nordic vendors for its 5G rollout in 2019.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://uk.marketscreener.com/news/huawei-zte-seal-5g-deals-in-vietnam-after-us-tariffs-as-ties-with-china-warm-ce7d51dada8ff227",
+          "publisher": "Reuters (via MarketScreener)",
+          "source_tier": "S3",
+          "date": "2025-11-28",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.mobileworldlive.com/ericsson/viettel-leaves-huawei-off-5g-supplier-list/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2019-09-06",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Contract dates, values and which operators beyond Viettel hold Ericsson/Nokia core contracts are not stated in the sources; date left null."
+    },
+    {
+      "id": "VNM-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": null,
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-04",
+      "summary": "A consortium including Huawei won a 5G equipment contract worth about $23 million in Vietnam, weeks after US tariffs on Vietnamese goods were announced, per tender data and people familiar cited by Reuters.",
+      "announced_value_usd": 23000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://uk.marketscreener.com/news/huawei-zte-seal-5g-deals-in-vietnam-after-us-tariffs-as-ties-with-china-warm-ce7d51dada8ff227",
+          "publisher": "Reuters (via MarketScreener)",
+          "source_tier": "S3",
+          "date": "2025-11-28",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Buying operator not named in the source. Reuters frames the award as following warming China ties after US tariffs; causation is not established."
+    },
+    {
+      "id": "VNM-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": null,
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025",
+      "summary": "ZTE won at least two contracts for 5G antennas in Vietnam during 2025, together worth more than $20 million, one awarded in late November 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://uk.marketscreener.com/news/huawei-zte-seal-5g-deals-in-vietnam-after-us-tariffs-as-ties-with-china-warm-ce7d51dada8ff227",
+          "publisher": "Reuters (via MarketScreener)",
+          "source_tier": "S3",
+          "date": "2025-11-28",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Announced value left null because the source gives only a lower bound (more than $20 million). Buying operator(s) not named."
+    },
+    {
+      "id": "VNM-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Viettel",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-06",
+      "summary": "Huawei signed an agreement with Viettel on 5G technology transfer in June 2025, according to Vietnam's defence ministry as reported by Reuters; Huawei also lost several 5G tenders that year.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://uk.marketscreener.com/news/huawei-zte-seal-5g-deals-in-vietnam-after-us-tariffs-as-ties-with-china-warm-ce7d51dada8ff227",
+          "publisher": "Reuters (via MarketScreener)",
+          "source_tier": "S3",
+          "date": "2025-11-28",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 2 (framework/technology-transfer agreement) since no equipment purchase is described. Viettel is military-owned, so the defence ministry is the reporting authority."
+    },
+    {
+      "id": "VNM-006",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Asia Link Cable consortium (incl. China Telecom Global, Singtel, Globe, DITO, UNN)",
+      "local_actor": "FPT Telecom",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2023-05",
+      "summary": "FPT Telecom committed about $87 million to the roughly 6,000 km Asia Link Cable, whose consortium includes China Telecom Global alongside Singaporean, Philippine and Bruneian carriers.",
+      "announced_value_usd": 87000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://w.media/vietnamese-telco-takes-a-strategic-step-with-subsea-cable-investment/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2023-05-03",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: control is shared across a multinational consortium in which a PRC state carrier participates; the cable supplier is not named and no Vietnamese landing point is given in the source."
+    },
+    {
+      "id": "VNM-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Viettel",
+      "local_actor": "Viettel",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-04",
+      "summary": "Viettel opened an AI-ready data centre at Hoa Lac Hi-Tech Park, Hanoi, with up to 30 MW capacity, described as the largest in Vietnam and its 14th facility.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://w.media/viettel-opens-largest-scale-data-center-in-vietnam/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2024-04-12",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.hanoitimes.vn/viettel-inaugurates-largest-data-center-in-vietnam-supporting-ai-development-326568.html",
+          "publisher": "Hanoi Times",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "note": "outlet of the Hanoi People's Committee; state-affiliated"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single S2 source plus a state-affiliated outlet, so not marked corroborated under the rule; the opening itself is low-controversy. Equipment vendors not named."
+    },
+    {
+      "id": "VNM-008",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "G42",
+      "local_actor": "FPT; Viet Thai Group; VinaCapital",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-02-08",
+      "summary": "G42 signed a long-term framework agreement with an FPT–Viet Thai consortium to invest in, build and operate hyperscale data centres in Vietnam, with up to $1 billion expected for sovereign AI and cloud infrastructure.",
+      "announced_value_usd": 1000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fpt.com/en/news/fpt-partners-strategically-to-develop-data-infrastructure-in-ho-chi-minh-city",
+          "publisher": "FPT Corporation",
+          "source_tier": "S1",
+          "date": "2026-02-08",
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "note": "company release by a party to the deal"
+        },
+        {
+          "url": "https://news.bgov.com/mergers-and-acquisitions/abu-dhabis-g42-leads-1-billion-data-center-project-in-vietnam",
+          "publisher": "Bloomberg Government",
+          "source_tier": "S3",
+          "date": "2026-02-09",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Follows a July 2025 reported proposal by G42 and partners for a ~$2 billion hyperscale data centre in Ho Chi Minh City (W.Media 2025-07-11, AGBI); the $2bn figure was not carried forward and is not counted here. No site, capacity or investment decision yet."
+    },
+    {
+      "id": "VNM-009",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "FPT",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-03-26",
+      "summary": "FPT's AI Factory in Vietnam serves customers on Nvidia HGX H100 and H200 platforms and announced an Nvidia HGX B300 build-out; it began from an April 2024 $200 million MOU with Nvidia.",
+      "announced_value_usd": 200000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.businesswire.com/news/home/20260326685242/en/FPT-AI-Factory-Accelerates-AI-Reasoning-Capabilities-across-Southeast-Asia-and-Japan-with-NVIDIA",
+          "publisher": "FPT via Business Wire",
+          "source_tier": "S1",
+          "date": "2026-03-26",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://vietnamnews.vn/economy/1654395/fpt-and-nvidia-ink-mou-to-build-200m-ai-factory.html",
+          "publisher": "Viet Nam News",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "note": "state-affiliated (Vietnam News Agency)"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "$200 million is the MOU announcement figure, not verified spend. GPU counts not disclosed; FPT infrastructure spans Vietnam and Japan, so the Vietnam share is unknown. B300 systems not yet live as of the release."
+    },
+    {
+      "id": "VNM-010",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Viettel",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-03",
+      "summary": "Viettel reports operating a cluster of 22 Nvidia DGX B200 systems and partnering with Nvidia on sovereign AI infrastructure and Vietnamese foundation models.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://vietnamnews.vn/economy/1777543/viettel-partners-with-nvidia-to-build-sovereign-ai-ecosystem.html",
+          "publisher": "Viet Nam News",
+          "source_tier": "S4",
+          "date": "2026-03-17",
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "note": "state-affiliated (Vietnam News Agency)"
+        },
+        {
+          "url": "https://manage.thediplomat.com/2024/12/vietnam-signs-agreement-with-nvidia-to-establish-ai-research-and-data-centers",
+          "publisher": "The Diplomat",
+          "source_tier": "S3",
+          "date": "2024-12",
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "note": "states Viettel's AI data centre already used Nvidia technology"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Instrument form of the Viettel–Nvidia partnership not stated; tier 5 reflects the reported operating cluster only, which lacks S1/S2 confirmation."
+    },
+    {
+      "id": "VNM-011",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Government of Vietnam; Viettel",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-12-05",
+      "summary": "Vietnam's government signed an agreement with Nvidia to set up an AI research and development centre and expand a Viettel-owned AI data centre; no value was disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://manage.thediplomat.com/2024/12/vietnam-signs-agreement-with-nvidia-to-establish-ai-research-and-data-centers",
+          "publisher": "The Diplomat",
+          "source_tier": "S3",
+          "date": "2024-12",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://nst.com.my/amp/world/region/2024/12/1144426/nvidia-signs-deal-establish-ai-centre-vietnam",
+          "publisher": "New Straits Times",
+          "source_tier": "S3",
+          "date": "2024-12",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Legal form of the agreement is unspecified; coded tier 1. Not corroborated (no S1/S2 source found)."
+    },
+    {
+      "id": "VNM-012",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Vingroup (VinBrain)",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-12-05",
+      "summary": "Nvidia acquired VinBrain, Vingroup's healthcare AI unit, confirmed at a December 2024 meeting with the Vietnamese government; terms were not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://theinvestor.vn/nvidia-acquires-ai-unit-of-vietnamese-private-giant-vingroup-d13667.html",
+          "publisher": "The Investor",
+          "source_tier": "S4",
+          "date": "2024-12-06",
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "note": "Vietnam Investment Review title; state-affiliated"
+        },
+        {
+          "url": "https://manage.thediplomat.com/2024/12/vietnam-signs-agreement-with-nvidia-to-establish-ai-research-and-data-centers",
+          "publisher": "The Diplomat",
+          "source_tier": "S3",
+          "date": "2024-12",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 4 treats the acquisition as a closed transaction; Vingroup had invested over $126 million in VinBrain, which is not the deal price."
+    },
+    {
+      "id": "VNM-013",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Viettel AI",
+      "local_actor": "Viettel",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-05-29",
+      "summary": "Viettel AI trained VT-Super-120B, a 120-billion-parameter Vietnamese sovereign model built on Nvidia's open Nemotron 3 Super architecture; no public release was described.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://viettelai.vn/en/tin-tuc/viettel-trains-120-billion-parameter-vietnamese-sovereign-ai-model",
+          "publisher": "Viettel AI",
+          "source_tier": "S4",
+          "date": "2026-05-29",
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "note": "own announcement of a military-owned firm; treated as corporate/state-affiliated"
+        },
+        {
+          "url": "https://en.qdnd.vn/economy/military-businesses/viettel-trains-sovereign-vietnamese-ai-model-591714",
+          "publisher": "People's Army Newspaper",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "note": "Vietnamese military newspaper; state-affiliated"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole domestic because Viettel controls the fine-tuned weights; the base is US-origin open weights (Nvidia Nemotron), a dependency on the US ecosystem rather than vendor control. Tier 2 as developed and benchmarked but not deployed at scale."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced in facility searches; search budget spent on higher-priority layers"
+    }
+  },
+  "research_gaps": [
+    "Which operator(s) bought the April 2025 Huawei-consortium 5G equipment and the ZTE antenna contracts? Check Vietnamese tender portals.",
+    "Text and status of the June 2025 Huawei–Viettel 5G technology-transfer agreement (defence ministry source).",
+    "Safe-city / public-security camera procurement: one search found only privacy coverage, no vendor-specific award records for Hikvision, Dahua or Huawei.",
+    "Status of the G42–FPT–Viet Thai hyperscale project: site, capacity, investment certificate, construction start.",
+    "Viettel's Ho Chi Minh City large data-centre groundbreaking (W.Media) not reviewed; capacity and equipment vendors unknown.",
+    "Builders/suppliers of Vietnam's newer submarine cables (ALC, ADC, SJC2) and any HMN Technologies role; ALC Vietnamese landing point.",
+    "S1/S2 confirmation of Viettel's 22-system DGX B200 cluster and any BIS licences for Vietnam-bound advanced accelerators.",
+    "Government adoption of foreign frontier models (OpenAI, Google, DeepSeek, Qwen) in Vietnamese public services was not searched."
+  ],
+  "searches_run": 10
+}

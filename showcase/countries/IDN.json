@@ -1,0 +1,617 @@
+{
+  "schema": "sd-showcase-country/0.1",
+  "spec_version": "0.1",
+  "iso3": "IDN",
+  "name": "Indonesia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-21T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "IDN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "XL Axiata",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-10-22",
+      "summary": "Huawei and XL Axiata announced the build of a fully converged cloud-native core network in Jakarta supporting 2G, 4G and 5G NSA/SA.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gizmologi.id/news/telco/huawei-xl-axiata-luncurkan-jaringan-inti-full-converge-begini-kecanggihannya/",
+          "publisher": "Gizmologi",
+          "source_tier": "S2",
+          "date": "2024-10-22",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Article frames this as launch of construction; whether the core is live for all XL subscribers is not confirmed. A core network supplier has deep update/switch-off leverage."
+    },
+    {
+      "id": "IDN-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "XL Axiata",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2019-06-01",
+      "summary": "Per company disclosures reported by Bisnis, XL extended a Huawei agreement to supply and install network infrastructure from June 2019 to December 2024, valued at about Rp4.015 trillion.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://teknologi.bisnis.com/read/20220228/101/1505451/cengkraman-huawei-tech-investment-di-3-operator-seluler-besar-di-indonesia",
+          "publisher": "Bisnis Indonesia",
+          "source_tier": "S3",
+          "date": "2022-02-28",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Value is in rupiah and not converted to USD here (no source-date rate fetched). Underlying filings not retrieved directly."
+    },
+    {
+      "id": "IDN-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Indosat Ooredoo Hutchison",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2021-12",
+      "summary": "Indosat issued Huawei purchase orders worth about Rp949 billion for RAN and transmission equipment between November 2020 and December 2021, the largest of its three vendors in that window.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://teknologi.bisnis.com/read/20220228/101/1505451/cengkraman-huawei-tech-investment-di-3-operator-seluler-besar-di-indonesia",
+          "publisher": "Bisnis Indonesia",
+          "source_tier": "S3",
+          "date": "2022-02-28",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Rupiah value not converted. Indosat's later 2022 choice of Nokia as principal 4G/5G RAN vendor (IDN-006) may indicate partial displacement of Huawei, but no source states a Huawei exit."
+    },
+    {
+      "id": "IDN-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telkomsel",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-03-03",
+      "summary": "Telkomsel and Huawei signed a one-year strategic partnership at MWC 2025 covering 5G, cloud and enterprise innovation plus digital-talent training.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telkomsel.com/en/about-us/news/telkomsel-and-huawei-forge-strategic-partnership-5g-cloud-and-enterprise-solutions",
+          "publisher": "Telkomsel",
+          "source_tier": "S1",
+          "date": "2025-03-04",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": null
+    },
+    {
+      "id": "IDN-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telkomsel",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-04",
+      "summary": "At MWC 2026 Telkomsel and Huawei signed a further strategic partnership to expand 5G and home broadband using Huawei MetaAAU radio hardware and AI-enabled network features; no value or timeline disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://investortrust.id/market/99013/telkomsel-huawei-fast-track-indonesias-5g-future-with-ai-powered-network-expansion",
+          "publisher": "Investortrust",
+          "source_tier": "S3",
+          "date": "2026-04-05",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Mentions of specific Huawei radio hardware suggest Huawei RAN supply in Telkomsel's 5G footprint, but no award notice was found."
+    },
+    {
+      "id": "IDN-006",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Indosat Ooredoo Hutchison",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2022-03-08",
+      "summary": "Indosat named Nokia principal 4G/5G RAN vendor in a three-year deal across Sumatra, Kalimantan and Java, and expanded Ericsson's 5G radio supply in greater Jakarta; values undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20220308/5g/indosat-ooredoo-hutchinson-selects-nordic-vendors-5g-expansion",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2022-03-08",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://techwireasia.com/2022/03/indosat-ooredoo-hutchison-announce-5g-partnerships-with-nokia-and-ericsson/",
+          "publisher": "Tech Wire Asia",
+          "source_tier": "S2",
+          "date": "2022-03",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nokia (Finland) and Ericsson (Sweden) coded as third pole."
+    },
+    {
+      "id": "IDN-007",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Telkomsel",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2023-08-17",
+      "summary": "Telkomsel renewed its contract with Ericsson to expand 4G/5G RAN, adding Massive MIMO radios; Ericsson 5G RAN already deployed in Sumatra and East Kalimantan including Nusantara.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://cyprusshippingnews.com/2023/08/17/telkomsel-and-ericsson-strengthen-partnership-to-expand-4g-5g-networks-in-indonesia/",
+          "publisher": "Cyprus Shipping News",
+          "source_tier": "S3",
+          "date": "2023-08-17",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Source appears to reprint a joint press release; no value or term disclosed. Telkomsel is multi-vendor (Huawei, Nokia, ZTE in a 2018 radio agreement per Bisnis)."
+    },
+    {
+      "id": "IDN-008",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "HMN Technologies",
+      "local_actor": "Telkom Indonesia",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-02-13",
+      "summary": "HMN Tech is building Telkom's PASELA submarine cable, over 1,100 km linking Merauke (South Papua) and Tual (Maluku), using its own equipment; ready for service targeted Q3 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/hmn-tech-builds-indonesias-pasela-cable-system/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2026-02-13",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Cable is owned by Telkom (domestic); coded prc because the PRC builder supplies the wet plant and equipment, the dimension SPEC §2 flags for HMN cables. Whether construction has physically started is not confirmed."
+    },
+    {
+      "id": "IDN-009",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "PINS Indonesia (Telkom Group); Bandung city government",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": null,
+      "summary": "Telkom unit PINS and Huawei inaugurated a Bandung smart-city partnership including video surveillance and analysis of traffic and crime hotspots; a later think-tank piece describes a Huawei-Telkom command centre and camera network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dailysocial.id/post/pins-indonesia-and-huawei-inaugurated-a-partnership-on-bandung-smart-city",
+          "publisher": "DailySocial",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://lowyinstitute.org/the-interpreter/indonesia-china-smart-city-can-make-clever-politics",
+          "publisher": "Lowy Institute (The Interpreter)",
+          "source_tier": "S4",
+          "date": "2023-04-04",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Date unknown; Lowy cites 2016 for a Huawei-Telkom smart-city MoU. Current operating status of the Bandung system not established."
+    },
+    {
+      "id": "IDN-010",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Firmus Technologies; DayOne",
+      "local_actor": "BP Batam",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-07",
+      "summary": "Australia-based Firmus and Singapore-based DayOne, with Nvidia, plan a 360 MW AI campus at Kabil Tech Park, Batam; design phase, operations targeted 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://btw.media/en/firmus-nvidia-plan-360mw-ai-hub-in-batam",
+          "publisher": "BTW Media",
+          "source_tier": "S2",
+          "date": "2026-07-02",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.idnfinancials.com/news/66333/backed-by-nvidia-batam-eyes-southeast-asias-ai-hub-position",
+          "publisher": "IDNFinancials",
+          "source_tier": "S3",
+          "date": "2026-07-21",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Firmus estimates US$25-30bn of customer offtake over six years; that is a company revenue estimate, not an investment value, so not entered as announced_value_usd.",
+      "bundle_id": "IDN-B1"
+    },
+    {
+      "id": "IDN-011",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Firmus Technologies; DayOne",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-07",
+      "summary": "The Batam campus plan envisages up to 170,000 Nvidia accelerators deployed across 2027 and 2028.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://btw.media/en/firmus-nvidia-plan-360mw-ai-hub-in-batam",
+          "publisher": "BTW Media",
+          "source_tier": "S2",
+          "date": "2026-07-02",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Planned volume only; no export-licence evidence found for this shipment.",
+      "bundle_id": "IDN-B1"
+    },
+    {
+      "id": "IDN-012",
+      "layer": "power",
+      "pole": "domestic",
+      "controller": "PLN Batam",
+      "local_actor": "DayOne",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-07",
+      "summary": "DayOne secured a 450 MW power purchase agreement with state utility subsidiary PLN Batam to supply the Kabil Tech Park AI campus.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://btw.media/en/firmus-nvidia-plan-360mw-ai-hub-in-batam",
+          "publisher": "BTW Media",
+          "source_tier": "S2",
+          "date": "2026-07-02",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": null,
+      "bundle_id": "IDN-B1"
+    },
+    {
+      "id": "IDN-013",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "BDx Data Centers",
+      "local_actor": null,
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-09-22",
+      "summary": "Singapore-based BDx broke ground on a 640 MW AI data-centre campus at Jatiluhur, West Java, with 845 MVA grid capacity from PLN; first phase targeted early 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.techrepublic.com/article/news-indonesia-bdx-ai-data-center-permits-apac/",
+          "publisher": "TechRepublic",
+          "source_tier": "S2",
+          "date": "2026-09-30",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.thestar.com.my/business/business-news/2026/09/30/indonesian-governor-orders-halt-on-data-centre-project-by-singapore039sbdx-due-to-lack-of-permits",
+          "publisher": "The Star",
+          "source_tier": "S3",
+          "date": "2026-09-30",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded third on BDx's Singapore base; ultimate shareholders not established in sources. Whether this is the Indosat/Lintasarta BDx Indonesia JV is not stated."
+    },
+    {
+      "id": "IDN-014",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "BDx Data Centers",
+      "local_actor": "West Java provincial government",
+      "instrument_tier": 4,
+      "reversal": true,
+      "reversal_of": "IDN-013 BDx Jatiluhur campus construction",
+      "date": "2026-09-30",
+      "summary": "West Java Governor Dedi Mulyadi ordered construction of the BDx Jatiluhur campus halted until environmental assessment and building permits are issued.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.thestar.com.my/business/business-news/2026/09/30/indonesian-governor-orders-halt-on-data-centre-project-by-singapore039sbdx-due-to-lack-of-permits",
+          "publisher": "The Star",
+          "source_tier": "S3",
+          "date": "2026-09-30",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.techrepublic.com/article/news-indonesia-bdx-ai-data-center-permits-apac/",
+          "publisher": "TechRepublic",
+          "source_tier": "S2",
+          "date": "2026-09-30",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.dealstreetasia.com/stories/indonesia-halts-bdx-data-centre-project-due-to-lack-of-permits-496721/",
+          "publisher": "DealStreetAsia",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Permit-based pause, not a cancellation; governor said no environmental violation was alleged."
+    },
+    {
+      "id": "IDN-015",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Lintasarta (Indosat Ooredoo Hutchison)",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-02-29",
+      "summary": "Indosat unit Lintasarta signed an MoU with Nvidia to offer sovereign AI cloud and GPU-as-a-service; Indosat then said it would integrate Nvidia Blackwell GPUs. No counts or values given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/ai-machine-learning/indosat-eyes-gpu-as-a-service-with-nvidia-collaboration",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2024-02-29",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.thejakartapost.com/business/2024/03/22/indosat-leads-with-nvidias-gpu-computing-pioneering-indonesia-generative-ais",
+          "publisher": "The Jakarta Post",
+          "source_tier": "S3",
+          "date": "2024-03-22",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Indosat's GPU Merdeka sovereign cloud later served Sahabat-AI (IDN-018), implying some Nvidia capacity is operational, but no deployment count was found."
+    },
+    {
+      "id": "IDN-016",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Ooredoo Group; Indosat Ooredoo Hutchison",
+      "local_actor": "Indosat Ooredoo Hutchison",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-08",
+      "summary": "Indosat launched Zankore, a platform targeting 1 GW of Nvidia AI-factory capacity with Ooredoo as lead investor and Nokia networking; about 200 MW expected in H1 2027. No value or site disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://w.media/?p=42335",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2026-08-10",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Coded third because Qatar's Ooredoo is lead investor and Indosat is controlled via an Ooredoo-CK Hutchison holding; a domestic reading is also arguable.",
+      "bundle_id": "IDN-B2"
+    },
+    {
+      "id": "IDN-017",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Indosat Ooredoo Hutchison",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-08",
+      "summary": "The Zankore AI factory is planned around Nvidia GB300 NVL72 systems and Nvidia DSX designs.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://w.media/?p=42335",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2026-08-10",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": null,
+      "bundle_id": "IDN-B2"
+    },
+    {
+      "id": "IDN-018",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "GoTo Group; Indosat Ooredoo Hutchison",
+      "local_actor": null,
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-06-02",
+      "summary": "GoTo and Indosat released a 70-billion-parameter Sahabat-AI open model covering Indonesian and four regional languages, plus a public chat service inside the GoPay app, trained on Indosat's GPU Merdeka cloud.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gotocompany.com/en/news/press/sahabat-ai-gets-smarter-indosat-and-goto-launch-new-70-billion-parameter-model-with-multilingual-chat-service",
+          "publisher": "GoTo Group",
+          "source_tier": "S1",
+          "date": "2025-06-02",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://media.dealstreetasia.com/stories/goto-indosat-sahabat-ai-444237",
+          "publisher": "DealStreetAsia",
+          "source_tier": "S2",
+          "date": "2025-06",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.mobileworldlive.com/operators/goto-indosat-launch-upgraded-indonesian-llm/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2025-06",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded domestic (GoTo is Indonesian; Indosat is Indonesian-listed though foreign-controlled). Base model not named in sources; if derived from a foreign open-weight model, the upstream dependency would be a separate finding. Tier 5 reflects public availability; usage scale unknown."
+    },
+    {
+      "id": "IDN-019",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia; Cisco",
+      "local_actor": "Komdigi; Indosat Ooredoo Hutchison",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-07",
+      "summary": "Komdigi launched a national AI Center of Excellence with Indosat, Cisco and Nvidia, including an AI factory on Nvidia Blackwell infrastructure and a Cisco-powered sovereign security operations platform.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/indonesia-ai-center-of-excellence",
+          "publisher": "NVIDIA blog",
+          "source_tier": "S4",
+          "date": "2025-07-10",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://siliconangle.com/2025/07/16/indonesia-to-establish-ai-center-of-excellence-with-support-from-nvidia-cisco-and-indosat/",
+          "publisher": "SiliconANGLE",
+          "source_tier": "S2",
+          "date": "2025-07-16",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.frontier-enterprise.com/indonesia-puts-up-ai-coe-with-indosat-cisco-nvidia/",
+          "publisher": "Frontier Enterprise",
+          "source_tier": "S2",
+          "date": "2025-07",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "No GPU quantity disclosed; framework-level government partnership."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "coded"
+    }
+  },
+  "research_gaps": [
+    "Huawei vs Nokia/Ericsson/ZTE share of 5G RAN and core at Telkomsel, Indosat and XL; any award notices in operator annual reports.",
+    "Who ultimately owns BDx Data Centers, whether Jatiluhur is the Indosat/Lintasarta BDx Indonesia JV, and whether the halt has been lifted.",
+    "Actual Nvidia GPU counts deployed at Indosat GPU Merdeka / Lintasarta; any Huawei Ascend or PRC accelerator deployments (none found).",
+    "Base model of Sahabat-AI 70B (not named in fetched sources).",
+    "Current status of the Huawei-built Bandung safe-city system and any police procurement of Chinese surveillance tech (only an unsourced web piece found, not cited).",
+    "Whether HMN Tech PASELA construction has physically begun and who maintains the cable.",
+    "Microsoft's 2024 US$1.7bn cloud/AI pledge is a cloud-layer item covered by global layers; not coded here."
+  ],
+  "searches_run": 10
+}

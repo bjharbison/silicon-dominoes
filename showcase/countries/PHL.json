@@ -1,0 +1,401 @@
+{
+  "schema": "sd-showcase-country/0.1",
+  "spec_version": "0.1",
+  "iso3": "PHL",
+  "name": "Philippines",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-21T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "PHL-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Globe Telecom",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2020-09",
+      "summary": "At a September 2020 Senate hearing Globe's counsel said roughly 80% of its network equipment came from Huawei, the rest Ericsson and Nokia, and that the board had begun talks on replacing Huawei gear.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.philstar.com/headlines/2020/09/24/2044697/globe-moving-away-huawei/amp/",
+          "publisher": "The Philippine Star",
+          "source_tier": "S3",
+          "date": "2020-09-24",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single S3 source from 2020. Globe stated an intent to move to non-Chinese vendors; no evidence found in this pass that a replacement was executed, so the Huawei installed base is coded as the current state and no reversal is coded."
+    },
+    {
+      "id": "PHL-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Smart Communications (PLDT)",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2018-08",
+      "summary": "PLDT and its mobile arm Smart selected Ericsson to deploy 5G-ready network equipment in 2018.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.philstar.com/business/2018/08/11/1841407/pldt-taps-ericsson-5g-deployment/amp/",
+          "publisher": "The Philippine Star",
+          "source_tier": "S3",
+          "date": "2018-08-11",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.rcrwireless.com/20180813/5g/ericsson-secures-5g-network-philipppines",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2018-08-13",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Sources seen in search results only (titles); contract value not established. Ericsson is Swedish, hence pole third. Search results also showed 2019 reporting of Huawei competing for PLDT 5G work; PLDT's full vendor mix was not resolved."
+    },
+    {
+      "id": "PHL-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "DITO Telecommunity",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2020-10",
+      "summary": "Trade press reported Huawei and ZTE as DITO's prime network vendors, with ZTE affiliate Whale Cloud supplying BSS/OSS; DITO is 40% owned by state-owned China Telecom.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/business-management/dito-says-it-s-on-track-to-break-philippines-duopoly-in-march",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-10-07",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Supply deals were not publicly announced by DITO per the source; single S2 source, so uncorroborated."
+    },
+    {
+      "id": "PHL-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "China Telecom (40% shareholder of DITO)",
+      "local_actor": "Armed Forces of the Philippines",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2019-09",
+      "summary": "The AFP signed a memorandum of agreement letting DITO, part-owned by China Telecom, place cell towers and equipment on military bases; it drew Senate calls for security review.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.philstar.com/headlines/2019/09/18/1952885/headlines",
+          "publisher": "The Philippine Star",
+          "source_tier": "S3",
+          "date": "2019-09-18",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://amp.scmp.com/week-asia/economics/article/3101316/philippines-gives-china-backed-telecom-firm-green-light-build",
+          "publisher": "South China Morning Post",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.benarnews.org/english/news/philippine/PH-China-Military-telecom-09152020155340.html",
+          "publisher": "BenarNews",
+          "source_tier": "S4",
+          "date": "2020-09-15",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "BenarNews is US-government-funded, so treated as S4. Pole prc reflects China Telecom's minority stake and vendor mix; DITO's controlling shareholders are Philippine (Udenna/Chelsea), so control is mixed. MOA coded as tier 2 framework access."
+    },
+    {
+      "id": "PHL-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "PLDT (VITRO / ePLDT)",
+      "local_actor": "VITRO Sta. Rosa, Laguna",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-07",
+      "summary": "PLDT's data-centre arm VITRO runs a 50 MW AI-ready hyperscale site in Sta. Rosa, Laguna, operating since July 2024 and inaugurated April 2025, with plans for up to 500 MW.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/20250428/data-center-2/philippines-ai-data",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2025-04-28",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://w.media/vitro-data-center-arm-of-pldt-unveils-the-philippines-first-ai-ready-hyperscale-data-center/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2025-04-24",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "PLDT is Philippine-incorporated, hence domestic, though it has significant foreign shareholders; investment value undisclosed."
+    },
+    {
+      "id": "PHL-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "VITRO (PLDT)",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-07",
+      "summary": "VITRO Sta. Rosa hosts Nvidia-powered GPU servers and sells GPU-as-a-service to enterprise and government customers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/20250428/data-center-2/philippines-ai-data",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2025-04-28",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://w.media/vitro-data-center-arm-of-pldt-unveils-the-philippines-first-ai-ready-hyperscale-data-center/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2025-04-24",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "GPU count and model are undisclosed, so 'at scale' is unverified; tier 5 reflects operational deployment rather than a known fleet size. Date is the site's operational start, not a confirmed GPU go-live date."
+    },
+    {
+      "id": "PHL-007",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "ST Telemedia Global Data Centres (Singapore)",
+      "local_actor": "STT GDC Philippines (JV with Globe Telecom and Ayala Corp.)",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-10",
+      "summary": "STT GDC Philippines is building STT Fairview 1 in Quezon City, a 124 MW-design campus; in late 2024 phase 1 was reported on track for service by Q2 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/data-centres-networks/17552-stt-gdc-philippines-says-hyperscale-data-centre-on-track-for-q2-2025.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2024-10-31",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://malaya.com.ph/business/corporate/largest-data-center-to-rise-in-qc",
+          "publisher": "Malaya Business Insight",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ownership percentages undisclosed; pole third assumes the Singapore-headquartered operator controls operations, with Globe and Ayala as local partners. Whether phase 1 actually opened was not confirmed in this pass. Malaya page date unreliable."
+    },
+    {
+      "id": "PHL-008",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Google (Gemini Enterprise)",
+      "local_actor": "Department of Information and Communications Technology",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-06-22",
+      "summary": "DICT and Google Cloud announced an expanded multi-year collaboration giving 50,000 civil servants Gemini Enterprise, rising to 200,000+ within 18 months, plus Gemini-based agents for e-government.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://lightreading.com/ai-machine-learning/philippines-taps-google-for-agentic-ai-in-government-services",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2026-06-22",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.crnasia.com/news/2026/cloud/dict-and-google-cloud-expand-ai-work-for-philippine-public-s",
+          "publisher": "CRN Asia",
+          "source_tier": "S2",
+          "date": "2026-06-22",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://mb.com.ph/2026/06/22/dict-and-google-cloud-strike-multi-year-deal-to-bring-ai-agents-and-cyber-defense-to-philippine-government-services",
+          "publisher": "Manila Bulletin",
+          "source_tier": "S3",
+          "date": "2026-06-22",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Instrument type not stated in sources (no contract or value disclosed), so coded tier 2 despite an initial rollout; upgrade if a procurement award surfaces. Manila Bulletin seen in search results only.",
+      "bundle_id": "PHL-B1"
+    },
+    {
+      "id": "PHL-009",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Google Cloud",
+      "local_actor": "DICT National Security Operations Center; PS-DBM eMarketplace",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-06-22",
+      "summary": "Same DICT-Google package covers citizen-facing multilingual AI agents on e-government platforms and a Google Cloud cyberdefense alliance centred on the National Security Operations Center.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://lightreading.com/ai-machine-learning/philippines-taps-google-for-agentic-ai-in-government-services",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2026-06-22",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.crnasia.com/news/2026/cloud/dict-and-google-cloud-expand-ai-work-for-philippine-public-s",
+          "publisher": "CRN Asia",
+          "source_tier": "S2",
+          "date": "2026-06-22",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Package also references integrating Google-linked TPU and Apricot subsea cables with the DICT Luzon Bypass; not coded separately as networks.",
+      "bundle_id": "PHL-B1"
+    },
+    {
+      "id": "PHL-010",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "China International Telecommunication Construction Corp. (Huawei equipment reported)",
+      "local_actor": "Department of the Interior and Local Government",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2018-11",
+      "summary": "DILG signed a P20-billion Safe Philippines contract with state-owned CITCC for 12,000 CCTV cameras in Metro Manila and Davao plus a command centre with facial recognition, to be financed by a Chinese loan.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.philstar.com/headlines/2018/12/13/1876639/headlines",
+          "publisher": "The Philippine Star",
+          "source_tier": "S3",
+          "date": "2018-12-13",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://newsinfo.inquirer.net/1598545/dilg-exec-urges-next-admin-to-pursue-cctv-project-for-ph",
+          "publisher": "Philippine Daily Inquirer",
+          "source_tier": "S3",
+          "date": "2022-05-17",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Approx. USD value not converted. Huawei's equipment role was reported by Inquirer but not confirmed by officials per Philstar. Both sources S3, so uncorroborated under the S1/S2 rule."
+    },
+    {
+      "id": "PHL-011",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "China International Telecommunication Construction Corp. / China Eximbank",
+      "local_actor": "Department of the Interior and Local Government",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "PHL-010 Safe Philippines CCTV contract with CITCC (2018)",
+      "date": "2021",
+      "summary": "DILG recommended cancelling the Safe Philippines CCTV project in late 2021 after China Eximbank loan funds were never released; it was shelved, though officials floated a revival with new bidders in 2022.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://newsinfo.inquirer.net/1598545/dilg-exec-urges-next-admin-to-pursue-cctv-project-for-ph",
+          "publisher": "Philippine Daily Inquirer",
+          "source_tier": "S3",
+          "date": "2022-05-17",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Status after May 2022 not checked; a revival under new bidders would not restore the PRC finding unless a PRC contractor won again."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on higher-priority layers; no AI-specific power evidence surfaced incidentally"
+    }
+  },
+  "research_gaps": [
+    "Did Globe actually replace its Huawei RAN/core after the 2020 stated intent? Current vendor share?",
+    "Current PLDT/Smart and DITO 5G vendor mix (Huawei/ZTE vs Ericsson/Nokia) as of 2025-2026.",
+    "Was the Safe Philippines CCTV project revived after 2022, and with which contractor?",
+    "Did STT Fairview 1 phase 1 enter service in 2025?",
+    "Instrument type and value of the 2026 DICT-Google Cloud deal (procurement award or MOU?).",
+    "Nvidia GPU fleet size at VITRO Sta. Rosa; any other large accelerator deployments.",
+    "PRC-built (HMN Tech) submarine cable landings in the Philippines - not searched.",
+    "Whether the AFP-DITO military-base MOA was later revised or suspended."
+  ],
+  "searches_run": 9
+}

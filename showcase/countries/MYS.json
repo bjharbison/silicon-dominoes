@@ -1,0 +1,478 @@
+{
+  "schema": "sd-showcase-country/0.1",
+  "spec_version": "0.1",
+  "iso3": "MYS",
+  "name": "Malaysia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-21T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MYS-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "U Mobile",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-04",
+      "summary": "U Mobile named Huawei and ZTE as technology partners for Malaysia's second 5G network after a tender to which only those two vendors responded; no contract value or RAN/core split disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/u-mobile-picks-huawei-and-zte-for-malaysias-second-5g-network/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-04-16",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.rcrwireless.com/20250417/5g/u-mobile-awards-deals",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2025-04-17",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 2 (partner selection) rather than tier 3: neither source describes a signed binding contract or value; some trade-blog headlines describe MoUs. Rollout status in 2026 not checked."
+    },
+    {
+      "id": "MYS-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Digital Nasional Bhd (DNB)",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2021",
+      "summary": "Ericsson has supplied the rollout of the state-initiated single wholesale 5G network operated by DNB, launched 2021; the Finance Ministry holds 34% with Maxis, YTL and CelcomDigi holding the rest.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/u-mobile-picks-huawei-and-zte-for-malaysias-second-5g-network/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-04-16",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single background mention; operational-at-scale tier inferred from DNB's live network. Ericsson contract terms and value not sourced in this pass."
+    },
+    {
+      "id": "MYS-003",
+      "layer": "silicon",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Skyvast Corporation",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-05-19",
+      "summary": "Deputy Communications Minister Teo Nie Ching announced 3,000 Huawei Ascend chips would underpin a Malaysian sovereign AI-as-a-service infrastructure with Skyvast and Chinese server maker Leadyo, to be supplied by 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/malaysian-govt-retracts-launch-of-huawei-powered-sovereign-ai/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-05-21",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.scmp.com/tech/big-tech/article/3311363/tech-war-malaysia-walks-back-ai-project-huawei-tech-giant-denies-chip-exports",
+          "publisher": "South China Morning Post",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Retracted two days later (MYS-004). Huawei denied selling Ascend chips in Malaysia, per DCD."
+    },
+    {
+      "id": "MYS-004",
+      "layer": "silicon",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Investment, Trade and Industry (MITI)",
+      "instrument_tier": 1,
+      "reversal": true,
+      "reversal_of": "MYS-003: deputy minister's announcement of a Huawei Ascend-based sovereign AI initiative",
+      "date": "2025-05-21",
+      "summary": "MITI disowned the Huawei/Skyvast AI initiative as not developed, endorsed or coordinated by government, required legal and reputational due diligence for any such project, and reaffirmed export-control compliance; the minister's remarks were retracted.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/malaysian-govt-retracts-launch-of-huawei-powered-sovereign-ai/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-05-21",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.thevibes.com/articles/news/108501/ai-initiative-not-government-endorsed-miti-states",
+          "publisher": "The Vibes",
+          "source_tier": "S3",
+          "date": "2025-05-21",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.scmp.com/tech/big-tech/article/3311363/tech-war-malaysia-walks-back-ai-project-huawei-tech-giant-denies-chip-exports",
+          "publisher": "South China Morning Post",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Retraction followed US pushback per later reporting (SoyaCincau 2026-09-10); the causal link is reported, not stated by MITI."
+    },
+    {
+      "id": "MYS-005",
+      "layer": "silicon",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telekom Malaysia",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-09-07",
+      "summary": "Bloomberg, citing anonymous sources, reported Malaysia leaning toward Huawei Ascend 910C chips for a RM2 billion sovereign AI programme whose backbone Telekom Malaysia won by tender; nothing signed, and a separate Nvidia/AMD tender was discussed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://thenextweb.com/news/malaysia-huawei-ai-chips-sovereign-ai-us-export-warning",
+          "publisher": "The Next Web",
+          "source_tier": "S3",
+          "date": "2026-09-08",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://soyacincau.com/2026/09/10/malaysia-reportedly-eyeing-huawei-chips-for-rm2-billion-sovereign-ai-push/",
+          "publisher": "SoyaCincau",
+          "source_tier": "S3",
+          "date": "2026-09-10",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.deccanchronicle.com/technology/malaysia-eyes-huawei-chips-for-ai-project-despite-us-warning-1985500",
+          "publisher": "Deccan Chronicle",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "All three sources relay one Bloomberg report, so not independent; coded tier 1 because it is a reported deliberation, not even an official statement. RM2bn (~US$494m per TNW) is the programme value, not a Huawei award, so left out of value fields. State Dept warned against untrusted suppliers; NSC officials due in Washington."
+    },
+    {
+      "id": "MYS-006",
+      "layer": "silicon",
+      "pole": null,
+      "controller": "Government of Malaysia (MITI)",
+      "local_actor": "Ministry of Investment, Trade and Industry (MITI)",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-07-14",
+      "summary": "MITI placed US-origin high-performance AI chips on the Strategic Items List under a catch-all control, requiring a Strategic Trade Permit and 30 days' notice before export, transhipment or transit.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/malaysian-govt-introduces-export-license-and-30-day-notification-requirement-for-export-of-us-ai-chips/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07-16",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.freemalaysiatoday.com/category/nation/2025/07/14/malaysia-tightens-rules-on-export-of-us-ai-chips",
+          "publisher": "Free Malaysia Today",
+          "source_tier": "S3",
+          "date": "2025-07-14",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Pole null: the regime is controlled by Malaysia but exists to align with US export controls against diversion of US chips; it is evidence of US-facing compliance rather than a US- or domestic-controlled asset."
+    },
+    {
+      "id": "MYS-007",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "YTL Power International",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-10-31",
+      "summary": "YTL Power declared its YTL AI Cloud facility in Kulai, Johor operational, running liquid-cooled Nvidia GB200 NVL72 Grace Blackwell systems; unit count not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://technode.global/2025/11/03/ytl-power-completes-nvidia-powered-ai-data-center-facility-in-johor/",
+          "publisher": "TechNode Global",
+          "source_tier": "S2",
+          "date": "2025-11-03",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://fmtv5.freemalaysiatoday.com/category/nation/2025/10/31/malaysia-completes-first-nvidia-powered-data-centre-in-johor",
+          "publisher": "Free Malaysia Today",
+          "source_tier": "S3",
+          "date": "2025-10-31",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.ytlpowerinternational.com/press-releases/malaysia-accelerates-sovereign-ai-ambition-nvidia-and-ytl-brief-prime-minister-anwar-ibrahim-at-apec-summit/",
+          "publisher": "YTL Power International",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Silicon pole is US (Nvidia controls firmware/driver updates and is subject to US export licensing); facility controller is domestic (MYS-008)."
+    },
+    {
+      "id": "MYS-008",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "YTL Power International",
+      "local_actor": "YTL Power International",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-10-31",
+      "summary": "YTL's first AI data centre in its 600 MW Green Data Center Park, Kulai, Johor was completed and is operational, positioned by government as part of Malaysia's sovereign AI effort.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://technode.global/2025/11/03/ytl-power-completes-nvidia-powered-ai-data-center-facility-in-johor/",
+          "publisher": "TechNode Global",
+          "source_tier": "S2",
+          "date": "2025-11-03",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://fmtv5.freemalaysiatoday.com/category/nation/2025/10/31/malaysia-completes-first-nvidia-powered-data-centre-in-johor",
+          "publisher": "Free Malaysia Today",
+          "source_tier": "S3",
+          "date": "2025-10-31",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": null
+    },
+    {
+      "id": "MYS-009",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "YTL AI Labs",
+      "local_actor": "YTL AI Labs; Universiti Malaya",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-08-12",
+      "summary": "Prime Minister Anwar launched ILMU, a Malaysian multimodal large language model built by YTL AI Labs with Universiti Malaya, presented as a homegrown sovereign model.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mlex.com/mlex/amp/articles/2375982",
+          "publisher": "MLex",
+          "source_tier": "S2",
+          "date": "2025-08-12",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://technode.global/2025/11/03/ytl-power-completes-nvidia-powered-ai-data-center-facility-in-johor/",
+          "publisher": "TechNode Global",
+          "source_tier": "S2",
+          "date": "2025-11-03",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4 (launched/released) rather than 5: adoption at scale across government not evidenced. Training/serving hardware appears to be the Nvidia-based YTL AI Cloud (MYS-007), so model control is domestic but the compute layer beneath it is US."
+    },
+    {
+      "id": "MYS-010",
+      "layer": "facilities",
+      "pole": "prc",
+      "controller": "ByteDance",
+      "local_actor": "Ministry of Investment, Trade and Industry (MITI)",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-06-07",
+      "summary": "Trade minister Tengku Zafrul said ByteDance planned about MYR10 billion to make Malaysia a regional AI hub plus MYR1.5 billion to extend its data-centre footprint; TikTok already has a Johor data centre.",
+      "announced_value_usd": 2130000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/asia-pacific/bytedance-to-invest-2b-in-malaysia-ai-development/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2024-06-07",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://ca.news.yahoo.com/bytedance-plans-2-1-billion-105526260.html",
+          "publisher": "Reuters via Yahoo News",
+          "source_tier": "S3",
+          "date": "2024-06-07",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Announced value uses the source's own conversion (MYR10bn ~ US$2.13bn) and excludes the separate MYR1.5bn. Ministerial announcement only; no construction or contract evidence found in this pass."
+    },
+    {
+      "id": "MYS-011",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "DayOne (GDS international arm)",
+      "local_actor": "DayOne",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-03-18",
+      "summary": "DayOne, GDS's international arm, has operated a Johor data-centre campus since about 2023 and in March 2025 was reported seeking a roughly US$3.4bn-equivalent syndicated loan for expansion and refinancing.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://w.media/gds-seeks-us-3-4-billion-for-its-johor-data-center/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2025-03-18",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: DayOne was the international arm of PRC-listed GDS but has been restructured with outside investors; current controlling jurisdiction is unresolved. Loan closure and tenants (reportedly hyperscale/ByteDance in other press) not verified."
+    },
+    {
+      "id": "MYS-012",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Sime Darby Property",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-05-30",
+      "summary": "Google announced a US$2 billion (RM9.4 billion) investment for its first Malaysian data centre at Elmina Business Park on Sime Darby Property land and a Greater Kuala Lumpur cloud region.",
+      "announced_value_usd": 2000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mida.gov.my/mida-news/google-to-invest-rm9-4-bln-in-malaysia-develop-data-centre-cloud-region/",
+          "publisher": "Malaysian Investment Development Authority",
+          "source_tier": "S1",
+          "date": "2024-05-30",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://www.datacenterknowledge.com/data-center-construction/google-to-invest-2b-in-malaysia-build-data-center",
+          "publisher": "Data Center Knowledge",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Construction progress not checked; global cloud layer still lists the GCP Malaysia region as announced, not live."
+    },
+    {
+      "id": "MYS-013",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Deputy Prime Minister Ahmad Zahid Hamidi",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-10-14",
+      "summary": "After meeting China's public security minister, Deputy PM Zahid said Malaysia is ready to consider Chinese-style HD CCTV with facial recognition at crime hotspots, citing an earlier Johor pilot; to be taken to Cabinet, no vendor named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.thestar.com.my/news/nation/2026/10/14/crooks-beware-malaysia-may-copy-china039s-use-of-hi-def-cctv-with-facial-recognition-tech-at-crime-hotspots-says-zahid",
+          "publisher": "The Star",
+          "source_tier": "S3",
+          "date": "2026-10-14",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        },
+        {
+          "url": "https://bernama.com/en/general/news.php?id=2620441",
+          "publisher": "Bernama",
+          "source_tier": "S4",
+          "date": "2026-10-14",
+          "retrieved_at": "2026-10-21T09:20:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the statement endorses a Chinese policing model but names no vendor or controller. Bernama is Malaysian state media (S4). Vendor of the earlier Iskandar Puteri pilot unknown."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced in data-centre searches; search budget spent on silicon and network layers"
+    }
+  },
+  "research_gaps": [
+    "Has U Mobile signed binding Huawei/ZTE contracts (RAN vs core, value), and what is its 2026 coverage?",
+    "Outcome of the RM2bn sovereign AI programme chip choice (Huawei Ascend 910C vs Nvidia/AMD) and the Telekom Malaysia tender award notice.",
+    "Current controlling jurisdiction of DayOne after its restructuring away from GDS, and whether the 2025 loan closed.",
+    "Status of Google's Elmina data centre and Microsoft's Malaysia West build-out (construction/operation tier).",
+    "ByteDance Malaysia AI hub: any construction or contract evidence beyond the 2024 ministerial statement.",
+    "Vendor of the Iskandar Puteri policing CCTV pilot and any Cabinet decision after Zahid's October 2026 China visit.",
+    "Government adoption of foreign frontier models (OpenAI, Google, DeepSeek, Qwen) by ministries — not found in this pass."
+  ],
+  "searches_run": 10
+}
