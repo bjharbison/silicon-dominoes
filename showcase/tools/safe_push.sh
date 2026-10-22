@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # The ONLY way automated runs push. Runs the guard, then a plain (never forced) push of
 # the showcase branch to origin/showcase. Any failure stops here with nothing pushed.
-#   usage: bash showcase/tools/safe_push.sh daily|build
+#   usage: bash showcase/tools/safe_push.sh daily|audit|build
 set -euo pipefail
-mode="${1:?usage: safe_push.sh daily|build}"
+mode="${1:?usage: safe_push.sh daily|audit|build}"
 cd "$(git rev-parse --show-toplevel)"
 python3 showcase/tools/guard.py --mode "$mode"
 # Explicit refspec: local showcase -> remote showcase, nothing else. No --force, no --tags,
