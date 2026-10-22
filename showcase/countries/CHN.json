@@ -1,0 +1,326 @@
+{
+  "schema": "sd-showcase-country/0.1",
+  "spec_version": "0.1",
+  "iso3": "CHN",
+  "name": "China",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-22T10:30:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "CHN-001",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Cyberspace Administration of China; ByteDance; Alibaba",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Chinese tech firms' orders and testing of Nvidia RTX Pro 6000D accelerators",
+      "date": "2025-09",
+      "summary": "Per an FT report, China's internet regulator told ByteDance, Alibaba and other firms to cancel orders for and stop testing Nvidia's China-market RTX Pro 6000D; an August directive had already raised security concerns about the H20.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/chinas-internet-regulator-tells-chinese-tech-companies-to-stop-buying-nvidia-ai-chips-report/",
+          "publisher": "DatacenterDynamics (citing Financial Times)",
+          "source_tier": "S2",
+          "date": "2025-09-17",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        },
+        {
+          "url": "https://www.mobileworldlive.com/nvidia/china-bans-domestic-companies-from-buying-nvidia-chips/",
+          "publisher": "Mobile World Live (citing Financial Times, CNBC)",
+          "source_tier": "S2",
+          "date": "2025-09-17",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Both outlets relay one FT report based on unnamed sources, so independence is weaker than the host count suggests. Tier 3 assumes cancelled orders were binding; order values and volumes not disclosed. A PRC-side reversal of US silicon."
+    },
+    {
+      "id": "CHN-002",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "US Government (Commerce/BIS); Nvidia",
+      "local_actor": null,
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Licence-free Nvidia H20 sales to China",
+      "date": "2025-04-09",
+      "summary": "Nvidia disclosed that the US government informed it on 9 April 2025 that H20 exports to China, Hong Kong and Macau need a licence, later stated as indefinite; Nvidia expected up to about $5.5bn in related charges.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000082/nvda-20250409.htm",
+          "publisher": "NVIDIA Form 8-K (SEC EDGAR)",
+          "source_tier": "S1",
+          "date": "2025-04-09",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single S1 filing; no second independent source fetched, so confidence is mechanically low despite the primary source. Tier 5 because H20 was shipping at scale before the licence requirement. The $5.5bn is a charge estimate, not a deal value, so not entered as a value."
+    },
+    {
+      "id": "CHN-003",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "US Government (Commerce); Nvidia",
+      "local_actor": null,
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-08",
+      "summary": "A US official told Reuters the Commerce Department had begun issuing licences for Nvidia to export H20 chips to China; numbers of licences, recipients and permitted values were unclear.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.malaymail.com/news/money/2025/08/09/nvidia-scores-us-export-licence-win-clears-path-for-ai-chip-sales-to-china/187008",
+          "publisher": "Malay Mail (Reuters)",
+          "source_tier": "S3",
+          "date": "2025-08-09",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        },
+        {
+          "url": "https://citizen.digital/article/us-licenses-nvidia-to-export-chips-to-china-official-says-n367718",
+          "publisher": "Citizen Digital (Reuters)",
+          "source_tier": "S3",
+          "date": "2025-08",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both sources appear to carry the same Reuters wire; no S1/S2 source fetched. A reported 15% revenue-share arrangement was not confirmed in pages read. Whether licensed H20 volumes actually shipped, given Beijing's later discouragement (CHN-001), is unresolved."
+    },
+    {
+      "id": "CHN-004",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Micron Technology",
+      "local_actor": "Cyberspace Administration of China; critical information infrastructure operators",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Micron product purchases by Chinese critical information infrastructure operators",
+      "date": "2023-05-21",
+      "summary": "After a cybersecurity review, China's internet regulator said Micron products posed serious network security risks and barred critical information infrastructure operators from buying them; specific risks and products were not identified.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2023/5/22/china-bars-operators-from-buying-chips-from-us-tech-firm-micron",
+          "publisher": "Al Jazeera",
+          "source_tier": "S3",
+          "date": "2023-05-22",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        },
+        {
+          "url": "https://technode.com/2023/05/22/china-bars-us-chipmaker-micron-from-key-infrastructure-projects/",
+          "publisher": "TechNode",
+          "source_tier": "S2",
+          "date": "2023-05-22",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Coded silicon (memory). Tier 5 assumes Micron supply to these operators was operational; the sources do not quantify affected volumes."
+    },
+    {
+      "id": "CHN-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Foreign AI chip vendors (chiefly Nvidia, per context)",
+      "local_actor": "PRC regulatory authorities; state-funded data-centre projects",
+      "instrument_tier": 4,
+      "reversal": true,
+      "reversal_of": "Foreign AI accelerators installed or planned in state-funded Chinese data centres",
+      "date": "2025-11",
+      "summary": "Reuters reported, citing two sources, that new state-funded Chinese data-centre projects must use only domestic AI chips; projects under 30% complete must remove installed foreign chips or cancel planned purchases.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.taipeitimes.com/News/biz/archives/2025/11/06/2003846709",
+          "publisher": "Taipei Times (Reuters)",
+          "source_tier": "S3",
+          "date": "2025-11-06",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        },
+        {
+          "url": "https://triviumchina.com/2025/11/06/beijing-bans-foreign-ai-chips-in-state-funded-data-centers/",
+          "publisher": "Trivium China",
+          "source_tier": "S2",
+          "date": "2025-11-06",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Guidance itself not public; both sources rest on Reuters' unnamed sources. Pole us is inference: the guidance targets foreign chips generally, and Nvidia is the dominant foreign supplier. Tier 4 is a judgement for partly built projects; number of projects affected unknown."
+    },
+    {
+      "id": "CHN-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Intel; AMD; Microsoft (Windows)",
+      "local_actor": "Ministry of Finance; MIIT; government agencies at township level and above",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Intel/AMD processors and Windows in Chinese government PCs and servers",
+      "date": "2024-03",
+      "summary": "Per an FT report, procurement guidelines require government agencies to buy 'safe and reliable' domestic processors and operating systems, phasing Intel and AMD out of government PCs and servers and sidelining Windows and foreign databases.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.malaymail.com/news/money/2024/03/24/china-blocks-use-of-intel-and-amd-chips-in-government-computers-ft-reports/125245",
+          "publisher": "Malay Mail (Reuters, citing FT)",
+          "source_tier": "S3",
+          "date": "2024-03-24",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        },
+        {
+          "url": "https://www.medianama.com/2024/03/223-china-bans-use-chips-govt-computers/",
+          "publisher": "MediaNama (citing FT)",
+          "source_tier": "S2",
+          "date": "2024-03-26",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Date is the March 2024 reporting date, when officials were said to be applying the rules. Sources disagree on when the guidelines were unveiled (MediaNama says December 2022; Malay Mail says December without a year). Also touches the applications layer (OS, databases)."
+    },
+    {
+      "id": "CHN-007",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Intel; AMD (foreign processor vendors)",
+      "local_actor": "MIIT; state-owned mobile operators",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Foreign processors in Chinese state-owned telecom operators' networks",
+      "date": "2024",
+      "summary": "The WSJ reported that MIIT told state-owned mobile operators to inspect networks for non-Chinese processors and phase out foreign core chips, with Intel and AMD named, by 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecoms.com/telecoms-law/china-reportedly-ordering-operators-to-phase-out-foreign-chips-from-networks",
+          "publisher": "Telecoms.com (citing WSJ)",
+          "source_tier": "S2",
+          "date": "2024-04-12",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        },
+        {
+          "url": "https://theglobeandmail.com/business/technology/article-china-reportedly-tells-telecom-firms-to-phase-out-foreign-chips-in/",
+          "publisher": "The Globe and Mail",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Rests on WSJ's anonymous sources; Globe and Mail page seen in search results only (headline consistent), not fetched. Telecoms.com says the directive was given earlier in 2024. Completion status by 2027 unknown."
+    },
+    {
+      "id": "CHN-008",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": null,
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "API access to OpenAI models from mainland China",
+      "date": "2024-07",
+      "summary": "OpenAI told developers in unsupported regions, including mainland China, it would take additional steps to block their API traffic from July 2024; China is not on OpenAI's supported-countries list.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.theregister.com/2024/06/25/openai_unsupported_countries/",
+          "publisher": "The Register",
+          "source_tier": "S2",
+          "date": "2024-06-25",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        },
+        {
+          "url": "https://bnnbloomberg.ca/openai-warns-it-will-block-access-to-ai-tools-from-china-1.2089149",
+          "publisher": "BNN Bloomberg (Bloomberg)",
+          "source_tier": "S3",
+          "date": "2024-06-25",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "A US-controller-side reversal. Tier 5 is a judgement: use was unofficial (China never supported) but reported as substantial. The Register notes 9 July as effective date without a year. Azure-hosted access via 21Vianet reportedly continued (lead only, not verified)."
+    },
+    {
+      "id": "CHN-009",
+      "layer": "silicon",
+      "pole": "domestic",
+      "controller": "Huawei",
+      "local_actor": null,
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-04",
+      "summary": "Reuters reported, citing unnamed people, that Huawei planned to begin mass shipments of its Ascend 910C accelerator, roughly 60% of H100 inference performance, to Chinese customers from May 2025. No customers named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sdxcentral.com/news/huawei-unveils-ascend-920-ai-chip-will-start-shipping-910c-to-chinese-customers-from-may-report-sdx/",
+          "publisher": "SDxCentral (citing Reuters)",
+          "source_tier": "S2",
+          "date": "2025-04-22",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Planned shipments, not confirmed deliveries; tier 2 is a conservative judgement. Domestic pole: Huawei is a Chinese controller in China's own record. Actual deployed volumes and customers are a research gap."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "no facility-level controller findings coded; the state-funded data-centre chip mandate is coded under silicon (CHN-005). China shown as a pole, so domestic campus build-out not searched separately"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "no foreign-stack application findings searched for; domestic safe-city systems are pole-internal. OS/database exclusion is noted within CHN-006"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "China treated as a pole; search budget spent on US-stack relationship items"
+    }
+  },
+  "research_gaps": [
+    "Did licensed H20 volumes ship after August 2025, and was the reported 15% US revenue-share arrangement formalised? Read Nvidia 10-Q MD&A/risk factors directly.",
+    "CAC summoned Nvidia on 31 July 2025 over alleged H20 backdoor risks (The Register); the August 2025 directive discouraging H20 purchases needs its own sourced finding.",
+    "Actual deployed Ascend 910C/CloudMatrix volumes and named customers (telcos, hyperscalers).",
+    "When were the government 'safe and reliable' procurement guidelines unveiled (December 2022 vs December 2023)?",
+    "How many state-funded data-centre projects removed foreign chips under the November 2025 guidance?",
+    "Status of PRC-side restrictions on H200 imports after US case-by-case licences (covered in global layer; PRC side unresolved)."
+  ],
+  "searches_run": 9
+}

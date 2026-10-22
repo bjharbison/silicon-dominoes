@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "ARG",
-  "AUS",
-  "BGD",
-  "BLR",
-  "BRA",
-  "BRN",
-  "CHL",
-  "CHN",
-  "CMR",
-  "COG",
   "CRI",
   "CUB",
   "DEU",
@@ -254,6 +244,16 @@
   "KHM",
   "LAO",
   "MMR",
-  "ARE"
+  "ARE",
+  "ARG",
+  "AUS",
+  "BGD",
+  "BLR",
+  "BRA",
+  "BRN",
+  "CHL",
+  "CHN",
+  "CMR",
+  "COG"
  ]
 }

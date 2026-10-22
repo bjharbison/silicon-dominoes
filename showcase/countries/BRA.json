@@ -1,0 +1,320 @@
+{
+  "schema": "sd-showcase-country/0.1",
+  "spec_version": "0.1",
+  "iso3": "BRA",
+  "name": "Brazil",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-22T10:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BRA-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "TIM Brasil",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2023-05",
+      "summary": "TIM named Ericsson and Huawei as its initial 5G radio-access suppliers in December 2021, on non-exclusive terms, and renewed 4G and 5G supply contracts with both vendors in May 2023. Values undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://teletime.com.br/08/12/2021/tim-confirma-ericsson-e-huawei-como-primeiros-fornecedores-do-5g/",
+          "publisher": "TELETIME",
+          "source_tier": "S2",
+          "date": "2021-12-08",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://dplnews.com/tim-renova-contratos-com-huawei-e-ericsson-para-redes-4g-e-5g/",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2023-05-11",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Huawei's share of TIM's RAN versus Ericsson's is not disclosed; core vendor not confirmed. Vivo and Claro vendor splits not established in this pass. Ericsson is a third-pole (EU) supplier on the same network."
+    },
+    {
+      "id": "BRA-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Communications; Anatel",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Huawei eligibility to supply the federal government's private 5G network",
+      "date": "2021-03",
+      "summary": "The communications minister said Huawei was not eligible to supply the government's dedicated private 5G network under Anatel's auction-notice supplier governance requirements and a ministerial ordinance, while remaining free to supply commercial operators.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.poder360.com.br/governo/huawei-esta-fora-da-rede-exclusiva-de-5g-para-o-governo-diz-fabio-faria/",
+          "publisher": "Poder360",
+          "source_tier": "S3",
+          "date": "2021-03-10",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded as a partial exclusion (government network only), not a national ban. Tier 3 assigned as the tier of the procurement Huawei was excluded from; no award existed to reverse. The source says Huawei's private-company status conflicts with the governance criteria; that is the outlet's characterisation, not a quoted rule."
+    },
+    {
+      "id": "BRA-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Omnia (controlled by Pátria Investimentos)",
+      "local_actor": "ByteDance / TikTok (tenant); Pecém ZPE, Ceará",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-01-06",
+      "summary": "A data-centre campus for ByteDance in Pecém's export processing zone began preliminary works in January 2026; phase one is 200 MW IT, targeting operation from Q3 2027 and serving users outside Brazil.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.poder360.com.br/poder-infra/omnia-firma-acordo-de-us-2-bi-para-data-center-do-tiktok-no-ce/",
+          "publisher": "Poder360",
+          "source_tier": "S3",
+          "date": "2026-05-19",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/br/not%C3%ADcias/brasil-iniciar%C3%A1-constru%C3%A7%C3%A3o-de-data-center-tiktok-em-seis-meses-diz-ministro/",
+          "publisher": "DatacenterDynamics Brasil",
+          "source_tier": "S2",
+          "date": "2025-10-13",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Controller pole is contested between sources: Poder360 names Omnia (Pátria-controlled) as developer, DCD (Oct 2025) describes the project as ByteDance-led with Casa dos Ventos. Coded domestic on the later Omnia account; Pátria's corporate domicile not verified here. Tenant ByteDance is PRC. DCD cited about R$50bn; not converted.",
+      "bundle_id": "BRA-B1"
+    },
+    {
+      "id": "BRA-004",
+      "layer": "power",
+      "pole": "domestic",
+      "controller": "Casa dos Ventos",
+      "local_actor": "Omnia",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-05",
+      "summary": "Omnia signed a 20-year, US$2 billion self-production power deal with Casa dos Ventos, taking an undisclosed stake in wind parks (mainly the 630 MW Ibiapaba complex) to supply the Pecém TikTok data centre.",
+      "announced_value_usd": 2000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.poder360.com.br/poder-infra/omnia-firma-acordo-de-us-2-bi-para-data-center-do-tiktok-no-ce/",
+          "publisher": "Poder360",
+          "source_tier": "S3",
+          "date": "2026-05-19",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single source fetched; The Next Web also reported the deal (seen in search, not fetched). Value as announced in USD by the source.",
+      "bundle_id": "BRA-B1"
+    },
+    {
+      "id": "BRA-005",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Scala Data Centers",
+      "local_actor": "Municipality of Eldorado do Sul; Rio Grande do Sul state government",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-12",
+      "summary": "Eldorado do Sul enacted a municipal law enabling Scala's 'AI City' campus: 54 MW initial IT capacity, up to 4.75 GW potential. As of March 2026 the project remained in masterplan and permitting.",
+      "announced_value_usd": 50000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/es/noticias/primera-ciudad-de-data-centers-de-latinoamerica-tiene-construccion-autorizada/",
+          "publisher": "DatacenterDynamics en Español",
+          "source_tier": "S2",
+          "date": "2024-12-19",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://olhardigital.com.br/2026/03/25/pro/rs-se-prepara-para-ter-verdadeira-cidade-de-data-centers-conheca/",
+          "publisher": "Olhar Digital",
+          "source_tier": "S3",
+          "date": "2026-03-25",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: neither source names Scala's parent; Scala is widely reported as DigitalBridge-backed (US), but that was not verified in this pass. Announced value is the full-campus estimate; phase one was put at US$500 million. Coded tier 2 because licences were still pending and construction start is unconfirmed; no tenant named."
+    },
+    {
+      "id": "BRA-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia; AMD (integrator Eviden, France)",
+      "local_actor": "Laboratório Nacional de Computação Científica (LNCC)",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-07",
+      "summary": "The LNCC's Santos Dumont supercomputer completed a roughly fourfold upgrade by Eviden using Nvidia H100 and Grace Hopper plus AMD MI300A accelerators, described as the first major investment under the Brazilian AI Plan (PBIA).",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/brazils-national-scientific-computing-lab-completes-upgrade-of-santos-dumont-supercomputer/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07-13",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://tecnoblog.net/noticias/supercomputador-brasileiro-santos-dumont-recebe-atualizacao-e-suporte-a-ia/",
+          "publisher": "Tecnoblog",
+          "source_tier": "S2",
+          "date": "2025-07-11",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Pole coded us for the accelerators (Nvidia and AMD dominate the GPU count); the facility itself is domestic (LNCC) and the integrator is EU. Upgrade cost not disclosed."
+    },
+    {
+      "id": "BRA-007",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Serpro",
+      "local_actor": "Serpro (federal data-processing company); MeetKai Brasil (supplier)",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-08",
+      "summary": "Serpro signed a contract with MeetKai Brasil to supply model families, code and weights for a sovereign government AI that Serpro will own and train on national data in its own data centres. Value undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobiletime.com.br/?p=860692",
+          "publisher": "Mobile Time",
+          "source_tier": "S2",
+          "date": "2026-08-07",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://pr.timesoftheislands.com/article/MeetKai-Brasil-Named-Final-Winner-of-SERPROs-Sovereign-AI-Government-Contract/6a429e62efcd53a5cebe2b50",
+          "publisher": "MeetKai press release (syndicated)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded domestic because Serpro is to own the weights and hosting; the supplier MeetKai is US-origin, so base-model provenance and update dependence are open questions. A separate from-scratch PBIA LLM depends on a federal supercomputer purchase."
+    },
+    {
+      "id": "BRA-008",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision; Dahua",
+      "local_actor": "Rio de Janeiro state government (Governor Cláudio Castro)",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-04-21",
+      "summary": "During an official mission to China, Rio de Janeiro's governor signed agreements with Hikvision and Dahua to expand state video surveillance across all 92 municipalities; type, value and camera numbers of the agreements were not reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://diariodorio.com/claudio-castro-fecha-acordos-na-china-para-expandir-videomonitoramento-em-todo-o-estado-do-rio/",
+          "publisher": "Diário do Rio",
+          "source_tier": "S3",
+          "date": "2025-04-21",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://revistaoeste.com/mundo/rio-faz-acordo-com-empresas-chinesas-e-chama-a-atencao-dos-eua/",
+          "publisher": "Revista Oeste",
+          "source_tier": "S3",
+          "date": "2025-09-03",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 1 because neither source says whether the agreements are binding contracts. Revista Oeste cites about 5,800 cameras including facial recognition, which may conflate the existing vehicle-camera fleet."
+    },
+    {
+      "id": "BRA-009",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Rio de Janeiro Military Police",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": null,
+      "summary": "Rio de Janeiro state had bought 21,571 Hikvision body cameras, about 13,000 in operation with the Military Police, according to an April 2025 report.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://diariodorio.com/claudio-castro-fecha-acordos-na-china-para-expandir-videomonitoramento-em-todo-o-estado-do-rio/",
+          "publisher": "Diário do Rio",
+          "source_tier": "S3",
+          "date": "2025-04-21",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Purchase date not stated; operational as of April 2025. Whether footage or analytics depend on Hikvision cloud/update channels is not known."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "coded"
+    }
+  },
+  "research_gaps": [
+    "RAN and core vendor shares for Vivo and Claro (Huawei vs Ericsson/Nokia) and TIM's core vendor.",
+    "Final text of the Anatel 5G notice/ordinance on government-network supplier criteria, and whether the private federal network was ever awarded (and to whom).",
+    "Who controls the Pecém TikTok campus: Omnia/Pátria versus ByteDance-led accounts; Pátria's domicile; whether ByteDance owns any equity.",
+    "Scala Data Centers' ultimate parent (reported DigitalBridge) and whether AI City construction has actually begun; any named hyperscaler tenant.",
+    "Base model and value of the Serpro-MeetKai contract; status of the PBIA federal supercomputer purchase and from-scratch Brazilian LLM.",
+    "Whether the Rio Hikvision/Dahua agreements became binding procurements; other state safe-city programmes (Ceará, São Paulo Smart Sampa vendor).",
+    "Redata data-centre tax regime: enacted terms and beneficiaries not researched in this pass.",
+    "No dedicated reversal search beyond the 2021 government-network exclusion; a broader check is warranted."
+  ],
+  "searches_run": 10
+}

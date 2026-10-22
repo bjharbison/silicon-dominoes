@@ -1,0 +1,297 @@
+{
+  "schema": "sd-showcase-country/0.1",
+  "spec_version": "0.1",
+  "iso3": "COG",
+  "name": "Republic of the Congo",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-22T10:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "COG-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; Alcatel-Lucent (Nokia) Shanghai Bell; CMEC (contractors), China Eximbank (lender)",
+      "local_actor": "Government of the Republic of Congo",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2013-01",
+      "summary": "China Eximbank loans (2008, 2012, 2017) financed phases 1-2 of the National Coverage Project, a 3,000+ km fibre backbone linking Pointe-Noire, Brazzaville and Ouesso, built by Huawei, Shanghai Bell and CMEC; recorded as completed.",
+      "announced_value_usd": 100000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/30497",
+          "publisher": "AidData (William & Mary), Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://china.aiddata.org/projects/57477",
+          "publisher": "AidData (William & Mary), Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://china.aiddata.org/projects/57529",
+          "publisher": "AidData (William & Mary), Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Date is the Pointe-Noire-Brazzaville segment's provisional acceptance; full completion date unknown per AidData. Announced value is the phase-1 commercial contract ($100m); phase-2 contract was $73m. All sources one host, so uncorroborated. Loans secured on SNPC oil proceeds.",
+      "bundle_id": "COG-B1"
+    },
+    {
+      "id": "COG-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei (contractor), China Eximbank (lender)",
+      "local_actor": "Government of the Republic of Congo; Congo Telecom",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2017-05-20",
+      "summary": "Phase 3 of the National Coverage Project: Huawei contract signed July 2015, China Eximbank concessional loan of RMB 460 million committed May 2017, extending fibre Ouesso-Impfondo and last-mile links; still under implementation in 2022.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/68940",
+          "publisher": "AidData (William & Mary), Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 4 because loan financing is committed; completion not confirmed. RMB value not converted to USD here (AidData's constant-2023 figure is about $72m, not an announced value).",
+      "bundle_id": "COG-B1"
+    },
+    {
+      "id": "COG-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; China Eximbank",
+      "local_actor": null,
+      "instrument_tier": 4,
+      "reversal": true,
+      "reversal_of": "COG-002 (National Coverage Project Phase 3)",
+      "date": null,
+      "summary": "Phase 3 fibre works stalled after the oil-price fall left Congo struggling to service debt; the project resumed only after a 2019 debt-restructuring agreement, per AidData.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/68940",
+          "publisher": "AidData (William & Mary), Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded as a pause (reversal) of the Phase 3 financing/construction; it was later resumed, so this is not a cancellation. Exact pause dates unknown."
+    },
+    {
+      "id": "COG-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE (technical support)",
+      "local_actor": "MTN Congo",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2022-10-28",
+      "summary": "MTN Congo ran a 5G pilot launched by the prime minister on 28 October 2022 with technical support from ZTE; the telecoms minister reported speeds above 10 Gbps.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/successful-pilot-renews-mtn-congos-5g-ambitions/Olx4z7kaajZq56km",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2022-11-02",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "MTN Congo announced commercial 5G in October 2024 (Techpoint Africa), but no source seen names the commercial RAN/core vendor."
+    },
+    {
+      "id": "COG-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei (named strategic partner)",
+      "local_actor": "Congo Telecom",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-12",
+      "summary": "The telecoms minister declared state-owned Congo Telecom's new mobile network operational after successful test calls with MTN and Airtel, citing a strategic partnership with Huawei.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fr.allafrica.com/stories/202412270185.html",
+          "publisher": "AllAfrica (republishing Congolese press)",
+          "source_tier": "S3",
+          "date": "2024-12",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Source names Huawei as partner but does not state it built or supplies the network; pole is provisional. Date inferred from the AllAfrica story ID; article gives only 23 December."
+    },
+    {
+      "id": "COG-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of the Republic of Congo (Ministry of Posts, Telecommunications and Digital Economy)",
+      "local_actor": "Ministry of Posts, Telecommunications and Digital Economy",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-09",
+      "summary": "Brazzaville national data centre in Bacongo, funded by the AfDB and Congolese state under the Central Africa Backbone project and built by a Chinese contractor, missed 2024-2025 deadlines; inauguration now targeted before end-2026.",
+      "announced_value_usd": 15000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/african-development-bank-to-build-data-center-in-the-republic-of-congo/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-05-20",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://constructafrica.com/news/congo-brazzaville-data-centre-set-2024-completion",
+          "publisher": "Construct Africa",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://osiris.sn/congo-apres-plusieurs-reports-le-data-center-national-annonce-pour-fin-2026.html",
+          "publisher": "OSIRIS (relaying Agence Ecofin)",
+          "source_tier": "S3",
+          "date": "2026-09-25",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://techafricanews.com/2025/08/07/congo-nears-completion-of-landmark-national-data-center-aims-for-november-2025-launch/",
+          "publisher": "TechAfrica News",
+          "source_tier": "S3",
+          "date": "2025-08-07",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Controller coded domestic (state-owned facility); builder reported as Chinese (Construct Africa names Sumec and a second firm, truncated), operator not named. Announced value is Construct Africa's $15m; OSIRIS gives EUR 13.8m of the EUR 66.55m CAB envelope."
+    },
+    {
+      "id": "COG-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of the Republic of Congo",
+      "local_actor": "Ministry of Posts, Telecommunications and Digital Economy",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2020-03",
+      "summary": "The government signed a US$30 million agreement with India's Sterling and Wilson to build a data centre in Pointe-Noire under the Central Africa Backbone programme, with Exim Bank of India financing expected.",
+      "announced_value_usd": 30000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/data-centres-networks/9336-republic-of-congo-signs-new-data-centre-deal.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2020-03-17",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://www.ecofinagency.com/telecom/0903-41097-sterling-and-wilson-private-ltd-secures-deal-to-build-a-data-center-in-pointe-noir-congo",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S3",
+          "date": "2020-03-09",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Controller coded domestic (government client); contractor and expected financier are Indian (third pole). Ecofin's '$30 billion' is evidently a typo for $30m. No later evidence of construction or operation was found."
+    },
+    {
+      "id": "COG-008",
+      "layer": "models",
+      "pole": "prc",
+      "controller": "China Academy of Information and Communications Technology (CAICT)",
+      "local_actor": "Government of the Republic of Congo",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-09-16",
+      "summary": "At a BRICS forum in Xiamen, Congo presented plans with China's CAICT for an Africa Center for Research in Artificial Intelligence (CARIA), a pan-African AI research and training hub; still at planning stage.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/fils-digital-uk/2209-48902-congo-showcases-digital-ambitions-at-brics-forum-with-plans-for-pan-african-ai-center",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S3",
+          "date": "2025-09-22",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Layer 'models' is the closest fit for an AI research centre; no model, compute or location named. CAICT is a PRC ministry-affiliated institute, hence pole prc. Statement of intent only."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases, deployments or export-licence decisions surfaced in data-centre and AI searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "two safe-city/video-surveillance searches surfaced Cameroon, Mauritius and DRC results but nothing specific to Brazzaville"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced beyond the national data centre's unresolved grid/solar supply"
+    }
+  },
+  "research_gaps": [
+    "Is there a Huawei safe-city or video-surveillance system in Brazzaville (the hint could not be confirmed in 2 searches)?",
+    "Which vendor supplies MTN Congo's commercial 5G (launched October 2024) and Airtel Congo's RAN/core?",
+    "Did Huawei build Congo Telecom's mobile network, or only partner on it?",
+    "Was the Brazzaville national data centre inaugurated, who operates it, and which Chinese firm built it?",
+    "Status of the Sterling and Wilson Pointe-Noire data centre since 2020.",
+    "Completion status of National Coverage Project Phase 3, and the Congo-Cameroon / Congo-CAR river fibre links under CAB.",
+    "WACS landing at Pointe-Noire and any HMN Tech cable involvement were not searched.",
+    "No Western or Gulf AI data-centre MOUs surfaced; a broader check is warranted."
+  ],
+  "searches_run": 10
+}

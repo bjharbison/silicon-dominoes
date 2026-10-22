@@ -1,0 +1,306 @@
+{
+  "schema": "sd-showcase-country/0.1",
+  "spec_version": "0.1",
+  "iso3": "CHL",
+  "name": "Chile",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-22T10:30:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "CHL-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Aisino (with German consortium partner)",
+      "local_actor": "Servicio de Registro Civil e Identificación",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Award of the national ID card and passport production contract to the Aisino-led consortium",
+      "date": "2021-11",
+      "summary": "Registro Civil withdrew its award of the ID card and passport contract from a consortium led by state-owned Chinese firm Aisino, citing unmet information requests on US Visa Waiver requirements, and re-awarded it to France's Idemia (about US$226m).",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.cnnchile.com/pais/registro-civil-licitacion-pasaportes-idemia_20211119/",
+          "publisher": "CNN Chile",
+          "source_tier": "S3",
+          "date": "2021-11-19",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://www.latercera.com/pulso/noticia/pasaportes-el-registro-civil-deja-sin-efecto-la-adjudicacion-de-aisino/OZQEJBQUZ5CHVHNAMSJWLXSK5Q/",
+          "publisher": "La Tercera",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reversal dated November 2021, not 2023 as the brief hint suggested. La Tercera seen in search results only (headline). The US$226m is the replacement Idemia contract value, not Aisino's bid, so it is not recorded as a value field. Both sources are S3, so the corroboration rule (one S1/S2) is not met."
+    },
+    {
+      "id": "CHL-002",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Cerrillos municipality / Santiago environmental tribunal",
+      "instrument_tier": 4,
+      "reversal": true,
+      "reversal_of": "Environmental permit for Google's US$200m Cerrillos (Santiago) data centre",
+      "date": "2024-02-28",
+      "summary": "A Chilean environmental court partially reversed the permit for Google's US$200m Cerrillos data centre, ordering water-impact reassessment for the Santiago aquifer; in September 2024 Google said it would abandon the original plan and restart with air cooling.",
+      "announced_value_usd": 200000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/chile-partially-reverses-google-data-center-permit-over-water-use-concerns",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-02-28",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://intellinews.com/google-scraps-200mn-chile-data-centre-plan-over-environmental-concerns-344016",
+          "publisher": "bne IntelliNews",
+          "source_tier": "S3",
+          "date": "2024-09-18",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 4 because the reversed instrument was an issued environmental permit. A partial permit reversal followed by the company restarting the project; this is not an exit from Chile."
+    },
+    {
+      "id": "CHL-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Desarrollo País (state-owned infrastructure company)",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-06-04",
+      "summary": "Google and Chile signed an agreement to deploy the Humboldt cable, 14,800 km from Valparaíso to Sydney via French Polynesia, with state firm Desarrollo País; estimated US$300-550m, Chile contributing US$25m, deployment envisioned for 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.clickondetroit.com/tech/2025/06/04/google-partners-with-chile-to-deploy-a-trans-pacific-submarine-cable/",
+          "publisher": "Associated Press (via WDIV ClickOnDetroit)",
+          "source_tier": "S3",
+          "date": "2025-06-04",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://www.carey.cl/desarrollo-pais-y-google-se-asocian-para-desarrollar-proyecto-de-cable-submarino-humboldt-que-conectara-chile-y-australia",
+          "publisher": "Carey (law firm news post)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded tier 3 as a signed agreement, but the binding terms and ownership split are not disclosed. Other AP syndications in the results are the same wire story, so they are not independent. Not verified here: whether Chile chose this route over a China-landing option (the brief hint)."
+    },
+    {
+      "id": "CHL-004",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Amazon Web Services",
+      "local_actor": "InvestChile",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-05-07",
+      "summary": "AWS committed more than US$4bn to build a Chilean cloud region by end-2026, building on two Santiago data-centre projects (US$205m each) approved in January and July 2024.",
+      "announced_value_usd": 4000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/amazon-to-invest-4bn-in-chile-data-center-region/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-05-07",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://migracion.investchile.gob.cl/news/tag/data-center",
+          "publisher": "InvestChile",
+          "source_tier": "S1",
+          "date": "2025-05-09",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4 rests on the 2024 project approvals (permits issued). The US$4bn is a corporate commitment, not verified spend. The InvestChile page confirms the announcement and three Santiago data centres but not the amount. The cloud-region status itself is in the global layer."
+    },
+    {
+      "id": "CHL-005",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "CENIA (Centro Nacional de Inteligencia Artificial)",
+      "local_actor": "Ministry of Science, Technology, Knowledge and Innovation",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-02-10",
+      "summary": "Chile's CENIA launched Latam-GPT in Santiago, an open regional model fine-tuned from Meta's Llama 3.1 70B with more than 60 institutions in 15 countries, on a reported US$550,000 budget; AWS and CAF participated.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.aibusiness.com/generative-ai/the-new-open-source-ai-model-for-latin-america",
+          "publisher": "AI Business",
+          "source_tier": "S2",
+          "date": "2026-02-12",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://www.marcachile.cl/en/america-latina-ya-cuenta-con-su-primer-modelo-de-inteligencia-artificial/",
+          "publisher": "Marca Chile",
+          "source_tier": "S4",
+          "date": "2026-02-10",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded domestic because CENIA controls the released weights. The base model is US open weights (Llama 3.1), so licence lineage depends on Meta. Coded tier 5 as a public release, but scale of adoption is unknown. Marca Chile is state promotion (S4) and seen in search only."
+    },
+    {
+      "id": "CHL-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "NVIDIA (accelerator vendor)",
+      "local_actor": "Universidad de Tarapacá",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-03",
+      "summary": "Universidad de Tarapacá in Arica planned a roughly US$10m supercomputing facility of 12 nodes with eight NVIDIA H200 GPUs each to train Latam-GPT.",
+      "announced_value_usd": 10000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.xataka.com/robotica-e-ia/chile-preguntaron-a-chatgpt-su-cultura-respuesta-fue-floja-que-latinoamerica-se-ha-unido-para-crear-latam-gpt",
+          "publisher": "Xataka",
+          "source_tier": "S2",
+          "date": "2025-03-29",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/es/noticias/la-universidad-de-tarapac%C3%A1-proyecta-el-mayor-centro-de-superc%C3%B3mputo-de-chile/",
+          "publisher": "DatacenterDynamics (Spanish)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "The DCD page failed to load; only its headline (university plans Chile's largest supercomputing centre) was seen. Coded tier 2 because no procurement contract or commissioning was confirmed. The 96-GPU total is derived from the reported figures. Pole is the chip vendor's; the facility operator is domestic."
+    },
+    {
+      "id": "CHL-007",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "WOM",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2021-05",
+      "summary": "WOM ran a 5G pilot with Huawei in 2019 and in 2021 held equipment trials with Huawei, Nokia and Ericsson; reporting described WOM as inclined to buy Huawei gear, but no award was confirmed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/?p=100201",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2021-05-26",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://www.lightreading.com/5g/in-5g-chile-leaves-door-open-to-buying-huawei",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2021-03-23",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "low",
+      "analyst_inference": "Trials and pilots only (tier 2); Huawei's actual share in WOM's RAN or core is unverified. Pole prc reflects the Huawei pilot only."
+    },
+    {
+      "id": "CHL-008",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Entel",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2023-09-12",
+      "summary": "Entel completed its national 5G rollout of 1,371 base stations across 311 communes; its long-standing network partner is Ericsson, which also supplies its private-5G offering.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20230912/5g/entel-completes-final-phase-5g-rollout-chile",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2023-09-12",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        },
+        {
+          "url": "https://dplnews.com/huawei-esta-a-un-paso-del-5g-en-chile/",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2021-03-15",
+          "retrieved_at": "2026-10-22T10:15:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Neither source names Ericsson as Entel's public 5G RAN or core vendor. RCR names Ericsson only for private 5G; DPL describes a long Ericsson alliance and an Ericsson 5G test network. Vendor attribution is an inference. Ericsson is Swedish, so the pole is third."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced; search budget spent on other layers"
+    }
+  },
+  "research_gaps": [
+    "Did Chile choose the Humboldt/South Pacific route over a China-landing trans-Pacific option (around 2019-2020)? This was not verified in this pass.",
+    "Which vendors supply RAN and core for WOM, Entel, Claro and Movistar 5G today? Get primary operator or Subtel evidence.",
+    "Is the Universidad de Tarapacá H200 cluster procured and operational, and through which supplier?",
+    "Get an S1 source for the Aisino award withdrawal (Registro Civil statement or ChileCompra record) and whether Aisino litigated.",
+    "Status of Google's redesigned Cerrillos data centre after the 2024 restart.",
+    "Safe-city or surveillance deployments using Huawei, Hikvision or Dahua by Chilean municipalities or police: not searched.",
+    "Tecfusions AI-ready campus and other large 2025-26 data-centre projects (controller and tier): the source failed to load."
+  ],
+  "searches_run": 10
+}

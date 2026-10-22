@@ -1,0 +1,290 @@
+{
+  "schema": "sd-showcase-country/0.1",
+  "spec_version": "0.1",
+  "iso3": "CMR",
+  "name": "Cameroon",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-22T10:55:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "CMR-001",
+      "layer": "networks",
+      "pole": null,
+      "controller": "China Unicom do Brasil; Camtel (co-funders); Huawei Marine (builder)",
+      "local_actor": "Camtel",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2018-09",
+      "summary": "The roughly 6,000 km SAIL submarine cable between Kribi, Cameroon and Fortaleza, Brazil, co-funded by China Unicom's Brazilian subsidiary and Camtel and built by Huawei Marine, completed installation in September 2018.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/connectivity/huawei-marine-completes-sail-subsea-network-build",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2018-09-11",
+          "retrieved_at": "2026-10-22T10:40:00Z"
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/huawei-marine-starts-building-6000km-sail-cable/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2017-06-28",
+          "retrieved_at": "2026-10-22T10:40:00Z"
+        },
+        {
+          "url": "https://ecomatin.net/cameroun-la-chambre-des-comptes-accuse-camtel-davoir-brade-son-independance-aux-chinois-huawei-et-eximbank",
+          "publisher": "EcoMatin (reporting Chambre des comptes audit)",
+          "source_tier": "S3",
+          "date": "2025-08-28",
+          "retrieved_at": "2026-10-22T10:40:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Pole null: ownership is shared between a PRC carrier subsidiary and Cameroon's state telco, and neither source states who operates the system. Builder Huawei Marine is PRC-origin (now HMN Tech). The audit court (via EcoMatin) reports SAIL entered service, cost 99.66 billion FCFA and was 0.31% utilised at end-2021; coded tier 4 not 5 because use is negligible, not at scale. Cost not converted."
+    },
+    {
+      "id": "CMR-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei Technologies (contractor); Export-Import Bank of China (lender)",
+      "local_actor": "Camtel; Government of Cameroon",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2015-11",
+      "summary": "A presidential decree authorised Cameroon to sign a 198.9 billion FCFA preferential Eximbank of China loan for phase two of the national broadband network, adding 3,000 km of fibre to 13 towns, with Huawei carrying out construction.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.businessincameroon.com/telecom/0211-5762-eximbank-china-lends-198-9-billion-fcfa-to-cameroon-to-deploy-fiber-optic",
+          "publisher": "Business in Cameroon",
+          "source_tier": "S3",
+          "date": "2015-11-02",
+          "retrieved_at": "2026-10-22T10:40:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Source confirms only the signing decree, not signature, disbursement or completion; tier 3 reflects a named contractor and lender. Loan value in FCFA not converted. The Zamengoe data centre (CMR-003) is reported as part of the same NBN II programme.",
+      "bundle_id": "CMR-B1"
+    },
+    {
+      "id": "CMR-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Camtel",
+      "local_actor": "Camtel",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2020-07",
+      "summary": "Camtel's Zamengoe (NBN II) Tier III-design data centre outside Yaoundé, 3,000 square metres, was built by China Shenyang International Cooperation and equipped by a Huawei-led consortium under an Exim Bank of China loan; reported value $15 million.",
+      "announced_value_usd": 15000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/huawei-equips-cameroon-govt-data-center-helps-rains-south-africa-5g-project",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2020-07-20",
+          "retrieved_at": "2026-10-22T10:40:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole domestic because state-owned Camtel controls the facility; equipment is Huawei and financing PRC state debt, so the stack inside is PRC-dependent (see CMR-004 on Huawei holding Camtel system access). Coded tier 4: built and equipped, but the source does not confirm operation at scale.",
+      "bundle_id": "CMR-B1"
+    },
+    {
+      "id": "CMR-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Camtel",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-08",
+      "summary": "Cameroon's audit court found Huawei has supplied and maintained Camtel's IT systems since 2011 with no written agreement, directly managing equipment and holding access codes, and urged a new contract returning full control to Camtel.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ecomatin.net/cameroun-la-chambre-des-comptes-accuse-camtel-davoir-brade-son-independance-aux-chinois-huawei-et-eximbank",
+          "publisher": "EcoMatin (reporting Chambre des comptes audit)",
+          "source_tier": "S3",
+          "date": "2025-08-28",
+          "retrieved_at": "2026-10-22T10:40:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single secondary report of a public audit (period 2015-2021); the underlying Chambre des comptes report was not located. The same report says about 90% of Camtel's 412.1 billion FCFA bank debt is owed to Eximbank of China. This is direct evidence of PRC operational control, not just supply."
+    },
+    {
+      "id": "CMR-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Délégation générale à la sûreté nationale (DGSN)",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2019-08-22",
+      "summary": "Huawei won a 2017 national police video-surveillance contract after a pilot; by August 2019 a Yaoundé command centre linked about 2,000 Huawei-installed cameras across eight cities, with a second phase of 5,000 more planned.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.businessincameroon.com/telecom/1802-6910-chinese-huawei-wins-a-contract-for-the-installation-of-a-video-surveillance-network-for-the-cameroonian-police",
+          "publisher": "Business in Cameroon",
+          "source_tier": "S3",
+          "date": "2017-02-18",
+          "retrieved_at": "2026-10-22T10:40:00Z"
+        },
+        {
+          "url": "https://www.afrik.com/le-cameroun-se-dote-d-un-centre-de-commandement-de-videosurveillance-a-yaounde",
+          "publisher": "Afrik.com",
+          "source_tier": "S3",
+          "date": "2019-08-26",
+          "retrieved_at": "2026-10-22T10:40:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Two independent S3 sources but no S1/S2, so not corroborated under the rule. Contract value and financing undisclosed. Status of the 5,000-camera second phase unknown."
+    },
+    {
+      "id": "CMR-006",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Cybastion",
+      "local_actor": "Government of Cameroon (counterparty not named)",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-08",
+      "summary": "US firm Cybastion presented a planned $75 million AI data centre in Douala, paired with a dedicated power plant, at the first US-Cameroon economic dialogue in August 2026; site, capacity, schedule and financing undisclosed.",
+      "announced_value_usd": 75000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/cybastion-plans-75m-cameroon-data-centre/VgZeyvJlplrMdjX9",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2026-09-02",
+          "retrieved_at": "2026-10-22T10:40:00Z"
+        },
+        {
+          "url": "https://www.businessincameroon.com/public-management/0709-16693-us-firm-cybastion-plans-75-million-ai-data-center-and-power-plant-in-douala",
+          "publisher": "Business in Cameroon",
+          "source_tier": "S3",
+          "date": "2026-09-07",
+          "retrieved_at": "2026-10-22T10:40:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Business in Cameroon calls it an investment proposal, not secured financing; no MoU or contract reported, so tier 1.",
+      "bundle_id": "CMR-B2"
+    },
+    {
+      "id": "CMR-007",
+      "layer": "power",
+      "pole": "us",
+      "controller": "Cybastion",
+      "local_actor": "Government of Cameroon (counterparty not named)",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-08",
+      "summary": "Cybastion's Douala AI data-centre proposal includes a power plant to supply the facility dedicated capacity; output capacity was not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/cybastion-plans-75m-cameroon-data-centre/VgZeyvJlplrMdjX9",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2026-09-02",
+          "retrieved_at": "2026-10-22T10:40:00Z"
+        },
+        {
+          "url": "https://www.businessincameroon.com/public-management/0709-16693-us-firm-cybastion-plans-75-million-ai-data-center-and-power-plant-in-douala",
+          "publisher": "Business in Cameroon",
+          "source_tier": "S3",
+          "date": "2026-09-07",
+          "retrieved_at": "2026-10-22T10:40:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "The $75 million figure covers the combined project; no split between data centre and power plant reported, so value recorded only on CMR-006.",
+      "bundle_id": "CMR-B2"
+    },
+    {
+      "id": "CMR-008",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "ST Digital",
+      "local_actor": "Ministry of Posts and Telecommunications (MINPOSTEL)",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-07-14",
+      "summary": "During a ministerial visit, the government signalled it would work with Douala-based ST Digital to implement the national AI strategy and host national data in the firm's sovereign cloud and Tier 3 data centre; no contract reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.businessincameroon.com/public-management/1607-14855-cameroon-taps-st-digital-to-lead-national-artificial-intelligence-strategy",
+          "publisher": "Business in Cameroon",
+          "source_tier": "S3",
+          "date": "2025-07-16",
+          "retrieved_at": "2026-10-22T10:40:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole domestic rests on the article calling ST Digital a local firm; ownership and equipment suppliers are not stated."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases, deployments or licence decisions surfaced in data-centre and AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one targeted search found the national AI strategy and conferences but no frontier-model partnership or sovereign model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "coded"
+    }
+  },
+  "research_gaps": [
+    "Which vendors supply RAN and core for MTN Cameroon, Orange Cameroun, Camtel/Blue and Nexttel, and has any 5G licence been issued?",
+    "Obtain the Chambre des comptes report on Camtel directly and check whether a new Huawei agreement restoring Camtel control was signed.",
+    "Was the NBN II Eximbank loan signed and disbursed, and is phase II complete?",
+    "Is the Zamengoe data centre operational at scale and who are its tenants?",
+    "Status and financing of the 5,000-camera second phase of the DGSN video-surveillance system.",
+    "Ownership of ST Digital and any formal agreement under the national AI strategy.",
+    "No reversals found in one targeted search; a broader check is warranted."
+  ],
+  "searches_run": 9
+}

@@ -1,0 +1,355 @@
+{
+  "schema": "sd-showcase-country/0.1",
+  "spec_version": "0.1",
+  "iso3": "ARG",
+  "name": "Argentina",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-22T10:30:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ARG-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telefónica Argentina (Movistar); Telecom Argentina; Claro",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2019-05",
+      "summary": "A 2019 report said Huawei was Argentina's main 4G supplier: Movistar's mobile core fully Huawei, Huawei supplying 70% of Telecom's national network, plus Claro fibre/microwave and about a third of ARSAT's fibre backbone.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.iprofesional.com/tecnologia/293063-trump-vs-huawei-riesgo-para-movistar-personal-y-claro-en-argentina",
+          "publisher": "iProfesional",
+          "source_tier": "S3",
+          "date": "2019-05-31",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Article states its figures came from Huawei-linked sources and operators declined to comment; shares may be outdated after 2018-2024 vendor changes. Current 5G core vendors unverified."
+    },
+    {
+      "id": "ARG-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Telefónica Argentina (Movistar)",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2018-06",
+      "summary": "Ericsson won a 4G RAN expansion and upgrade deal with Telefónica Argentina running to 2021, lifting its share of the operator's RAN to about 80% from an even split with Huawei.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://lightreading.com/5g/ericsson-beefs-up-with-telef-nica-argentina-as-huawei-goes-hungry",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2018-06-14",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Partial displacement of Huawei in RAN by commercial choice, not a ban, so not coded as a reversal. Pole third (Sweden). Core network not covered."
+    },
+    {
+      "id": "ARG-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Claro Argentina (América Movil)",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2024-08",
+      "summary": "Nokia was named sole supplier for the first phase of Claro Argentina's 5G radio access rollout in the largest cities, using AirScale baseband and IPAA+ antennas.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/20240827/featured/nokia-secures-5g-contract-claro-argentina",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2024-08-27",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        },
+        {
+          "url": "https://www.telesemana.com/blog/2024/08/27/claro-argentina-comenzara-a-desplegar-su-red-5g-de-la-mano-de-nokia-su-socio-eterno/",
+          "publisher": "TeleSemana",
+          "source_tier": "S2",
+          "date": "2024-08-27",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "RAN only; contract value undisclosed. TeleSemana corroboration based on its search-result headline, not fetched. Pole third (Finland)."
+    },
+    {
+      "id": "ARG-004",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Sur Energy (Sur Ventures)",
+      "local_actor": "Government of Argentina (RIGI regime)",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-10-10",
+      "summary": "Milei's government announced Stargate Argentina: a planned Patagonian AI data centre of up to 500 MW and up to US$25 billion by Sur Energy, with OpenAI signing a letter of intent. By May 2026 no RIGI application had been filed.",
+      "announced_value_usd": 25000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://buenosairesherald.com/business/argentine-government-and-openai-announce-project-to-build-data-center-in-patagonia",
+          "publisher": "Buenos Aires Herald",
+          "source_tier": "S3",
+          "date": "2025-10-10",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/es/noticias/openai-sur-energy-preparan-proyecto-de-centro-de-datos-en-argentina-por-valor-de-25000-millones-de-d%C3%B3lares/",
+          "publisher": "DatacenterDynamics (Spanish)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        },
+        {
+          "url": "https://batimes.com.ar/news/economy/chau-gpt-no-trace-of-mega-billion-dollar-ai-project-announced-before-elections.phtml",
+          "publisher": "Buenos Aires Times",
+          "source_tier": "S3",
+          "date": "2026-05-28",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: Sur Energy is described as Argentine-US owned with no ownership split, so controller jurisdiction is unclear. Stalled per May 2026 reporting but no official cancellation or pause found, so not coded as a reversal. DCD source seen in search results only.",
+      "bundle_id": "ARG-B1"
+    },
+    {
+      "id": "ARG-005",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "Sur Energy",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025-10-10",
+      "summary": "Under the Stargate Argentina letter of intent, OpenAI would buy the planned data centre's computing capacity; financing was to come from investment funds rather than OpenAI.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://buenosairesherald.com/business/argentine-government-and-openai-announce-project-to-build-data-center-in-patagonia",
+          "publisher": "Buenos Aires Herald",
+          "source_tier": "S3",
+          "date": "2025-10-10",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        },
+        {
+          "url": "https://batimes.com.ar/news/economy/chau-gpt-no-trace-of-mega-billion-dollar-ai-project-announced-before-elections.phtml",
+          "publisher": "Buenos Aires Times",
+          "source_tier": "S3",
+          "date": "2026-05-28",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Coded to models layer as the OpenAI offtake side of the bundle; no government adoption of OpenAI models for public services found.",
+      "bundle_id": "ARG-B1"
+    },
+    {
+      "id": "ARG-006",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "CALF (Neuquén electricity and services cooperative)",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-07",
+      "summary": "Neuquén cooperative CALF announced an expanded strategic partnership with Huawei to grow its connectivity network; a US embassy warning of visa restrictions followed, and CALF said it would not change plans solely because of it.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://wtop.com/world/2026/08/china-rebukes-us-over-huawei-dispute-as-argentinas-milei-balances-ties-with-washington-and-beijing/",
+          "publisher": "AP via WTOP",
+          "source_tier": "S3",
+          "date": "2026-08",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        },
+        {
+          "url": "https://eleconomista.com.ar/negocios/escala-pelea-china-estados-unidos-argentina-visas-huawei-data-center-cerca-vaca-muerta-n97196",
+          "publisher": "El Economista",
+          "source_tier": "S3",
+          "date": "2026-08-06",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Preliminary agreements only; definitive contracts unsigned as of August 2026. US visa pressure is not a reversal unless CALF withdraws. Sub-state actor, not a national decision.",
+      "bundle_id": "ARG-B2"
+    },
+    {
+      "id": "ARG-007",
+      "layer": "facilities",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "CALF",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2026-07",
+      "summary": "CALF and Huawei held talks, under preliminary agreements, to develop a regional data centre in Neuquén near Vaca Muerta and supply equipment; definitive contracts were not yet signed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://eleconomista.com.ar/negocios/escala-pelea-china-estados-unidos-argentina-visas-huawei-data-center-cerca-vaca-muerta-n97196",
+          "publisher": "El Economista",
+          "source_tier": "S3",
+          "date": "2026-08-06",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Controller of the planned facility is unclear (CALF would likely own it, Huawei supply it); coded prc on the vendor because the article frames it as Huawei's project. Value undisclosed.",
+      "bundle_id": "ARG-B2"
+    },
+    {
+      "id": "ARG-008",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Province of Jujuy (Ministry of Security)",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2019-03",
+      "summary": "Jujuy province contracted ZTE for a public-security system of about 600 cameras, monitoring centres, a 911 centre and fibre links for 310 sites, financed by a BBVA Hong Kong credit line with a national sovereign guarantee.",
+      "announced_value_usd": 30000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/?p=18784",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2019-07-09",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        },
+        {
+          "url": "https://aduananews.com/en/china-financiara-para-el-desarrollo-de-servicios-de-seguridad-e-interconexion-en-jujuy/",
+          "publisher": "Aduana News",
+          "source_tier": "S3",
+          "date": "2019-03-27",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Values differ: DPL News cites US$30m, Aduana News a US$24m credit line; announced value recorded from DPL News. Operational status today not verified."
+    },
+    {
+      "id": "ARG-009",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Municipality of Magdalena (Buenos Aires province); VIMOX S.R.L.",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2011-08",
+      "summary": "A trade-press case study described a Hikvision IP camera surveillance network covering Magdalena's towns, integrated by VIMOX and linked to a central monitoring office, already operating.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.securityworldmarket.com/int/Newsarchive/first-ever-safe-city-public-surveillance-project-in-argentina",
+          "publisher": "SecurityWorldMarket",
+          "source_tier": "S4",
+          "date": "2011-08-31",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tiered S4: reads as vendor-supplied case study. Old, small-scale deployment; current status unknown."
+    },
+    {
+      "id": "ARG-010",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Intel (accelerators); Lenovo (integrator)",
+      "local_actor": "Servicio Meteorológico Nacional; Secretaría de Innovación, Ciencia y Tecnología",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "date": "2025",
+      "summary": "Clementina XXI, a state supercomputer at the weather service bought in 2022 for US$4.9m with CAF financing, uses 296 Intel Ponte Vecchio GPUs; it reached full operation in 2025 and was opened to firms for AI work in 2026.",
+      "announced_value_usd": 4900000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/argentina-launches-clementina-xxi-supercomputer",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-10-23",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        },
+        {
+          "url": "https://www.argentina.gob.ar/node/506546",
+          "publisher": "Presidencia de la Nación",
+          "source_tier": "S1",
+          "date": "2026-07-03",
+          "retrieved_at": "2026-10-22T10:00:00Z"
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole us on the accelerator vendor; system is state-owned and integrator Lenovo is PRC-headquartered. Value is the 2022 purchase price, not an audited figure. Small compared with commercial AI clusters."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power deal confirmed; Stargate energy partners (Central Puerto, Genneia) mentioned only in passing and unverified"
+    }
+  },
+  "research_gaps": [
+    "Current 5G RAN/core vendors for Telecom Argentina (Personal) and Movistar; Huawei's present share after 2018-2024 changes.",
+    "Has CALF signed definitive contracts with Huawei, or withdrawn under US visa pressure (a reversal if so)?",
+    "Is Stargate Argentina dead, revived under 'Super RIGI', or relocated? Sur Energy ownership split.",
+    "Neuquén Espacio Lejano station (PLA-linked deep-space ground station): Argentine delegation inspected it in September 2026 per BA Times headline; not an AI-stack layer, not coded, outcome unread.",
+    "No national Huawei/ZTE ban or exclusion under Milei found; 2023 5G auction reportedly did not exclude Huawei (unverified).",
+    "Status of Jujuy ZTE system and any other provincial safe-city deals (Hikvision/Dahua).",
+    "Government adoption of foreign frontier models or a sovereign Spanish-language model not searched in depth."
+  ],
+  "searches_run": 10
+}
