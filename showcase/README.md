@@ -55,6 +55,10 @@ Display-only, recomputed in the browser from the files above, never stored.
    instrument tier weights T1 0.15 · T2 0.35 · T3 0.70 · T4 0.85 · T5 1.00.
    - desk-pass finding: its tier weight to its `pole` (`domestic` and `third` both count as
      *sovereign/third*); halved if `confidence` is low; **negative** if `reversal: true`.
+     Rule v0.2 (after `AUDIT-2026-10-22.md`): only reversals with `reversal_reason`
+     `geopolitical` or `sanctions` count (permit pauses, business decisions and law
+     enforcement do not); `municipal` findings count half; non-reversal findings dated
+     before 2020 count half unless `still_current: true`, and zero if `still_current: false`.
    - US cloud region live (any of AWS/Azure/GCP): US +1.00; announced only: US +0.35.
    - PRC cloud region live (any of Alibaba/Huawei/Tencent): PRC +1.00; announced only: PRC +0.35.
    - Bloc membership: +0.15 to that bloc's pole.

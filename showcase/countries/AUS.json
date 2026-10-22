@@ -1,9 +1,9 @@
 {
-  "schema": "sd-showcase-country/0.1",
-  "spec_version": "0.1",
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
   "iso3": "AUS",
   "name": "Australia",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-22T10:05:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -13,10 +13,17 @@
       "pole": "prc",
       "controller": "Huawei; ZTE",
       "local_actor": "Australian mobile operators (Home Affairs and Communications ministers)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 3,
       "reversal": true,
       "reversal_of": "Huawei/ZTE eligibility to supply Australian 5G network equipment",
+      "reversal_reason": "geopolitical",
       "date": "2018-08-22",
+      "still_current": null,
       "summary": "Government 5G security guidance disqualified vendors likely subject to extrajudicial foreign-government direction, effectively excluding Huawei and ZTE from 5G networks; the statement did not name them, but Huawei confirmed it was targeted.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -26,19 +33,21 @@
           "publisher": "Mobile World Live",
           "source_tier": "S2",
           "date": "2018-08-23",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         },
         {
           "url": "https://www.telecompaper.com/news/australian-government-bans-huawei-zte-from-building-5g-networks--1257766",
           "publisher": "Telecompaper",
           "source_tier": "S2",
           "date": null,
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": false
         }
       ],
-      "corroborated": true,
-      "confidence": "high",
-      "analyst_inference": "Reversed-thing tier set at 3 as a judgment: the ban removed prospective 5G supply eligibility rather than a specific signed 5G contract; Huawei's pre-existing 4G RAN at Australian operators is not evidenced in these sources. Telecompaper seen in search results only."
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reversed-thing tier set at 3 as a judgment: the ban removed prospective 5G supply eligibility rather than a specific signed 5G contract; Huawei's pre-existing 4G RAN at Australian operators is not evidenced in these sources. Telecompaper seen in search results only. Audit 2026-10-22: no longer corroborated, because a second source was seen only as a search-result headline."
     },
     {
       "id": "AUS-002",
@@ -46,11 +55,18 @@
       "pole": "prc",
       "controller": "Huawei Marine (now HMN Tech)",
       "local_actor": "Solomon Islands government; Australian Government",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 2,
       "reversal": true,
       "reversal_of": "Huawei Marine's competing offer for the Solomon Islands international submarine cable",
-      "date": "2018-01",
-      "summary": "Australia majority-funded the Coral Sea Cable, built by Vocus, to shut out a competing Huawei Marine offer for the Solomon Islands link; Vocus took over scoping of the Solomons-PNG-Australia cable in early 2018.",
+      "reversal_reason": "geopolitical",
+      "date": "2018",
+      "still_current": null,
+      "summary": "Australia majority-funded the Coral Sea Cable, built by Vocus, to shut out a competing Huawei Marine offer for the Solomon Islands link.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -59,12 +75,13 @@
           "publisher": "SubTel Forum",
           "source_tier": "S2",
           "date": "2021-06-24",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
       "confidence": "medium",
-      "analyst_inference": "Reversed-thing tier set at 2 because the source describes a Huawei offer, not a confirmed signed contract; a January 2018 iTWire report seen in search says Huawei had been signed, but its URL could not pass the record checker, so it is uncited. Coded under AUS because Australia drove the displacement; the displaced deal was the Solomon Islands'. Month is from that iTWire report."
+      "analyst_inference": "Reversed-thing tier set at 2 because the source describes a Huawei offer, not a confirmed signed contract; a January 2018 iTWire report seen in search says Huawei had been signed, but its URL could not pass the record checker, so it is uncited. Coded under AUS because Australia drove the displacement; the displaced deal was the Solomon Islands'. Month is from that iTWire report. Audit 2026-10-22: Unsupported detail (Vocus taking over scoping, Jan 2018) removed; date reduced to the year."
     },
     {
       "id": "AUS-003",
@@ -72,11 +89,18 @@
       "pole": "domestic",
       "controller": "Australian Government (funder); Vocus (builder)",
       "local_actor": "Papua New Guinea; Solomon Islands",
-      "instrument_tier": 4,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2019-09",
-      "summary": "The 4,700 km Coral Sea Cable System linking Australia, PNG and Solomon Islands completed its final splice; mostly Australian taxpayer-funded at about $200 million, with ready-for-service expected by end-2019.",
+      "still_current": true,
+      "summary": "The 4,700 km Coral Sea Cable System linking Australia, PNG and Solomon Islands, mostly Australian-funded at about $200 million, completed its final splice in 2019 and has been in service since about end-2019.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -85,19 +109,21 @@
           "publisher": "SubTel Forum",
           "source_tier": "S2",
           "date": "2019-09-30",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         },
         {
           "url": "https://www.itwire.com/telecoms-and-nbn/final-splice-of-coral-sea-cable-system-completed.html",
           "publisher": "iTWire",
           "source_tier": "S2",
           "date": null,
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": false
         }
       ],
-      "corroborated": true,
-      "confidence": "medium",
-      "analyst_inference": "Tier 4 (construction complete); commercial service not confirmed in sources read. Currency of the ~$200m figure not stated, so not converted. iTWire article seen in search results only."
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 4 (construction complete); commercial service not confirmed in sources read. Currency of the ~$200m figure not stated, so not converted. iTWire article seen in search results only. Audit 2026-10-22: Operating since about end-2019, so tier 5. Audit 2026-10-22: no longer corroborated, because a second source was seen only as a search-result headline."
     },
     {
       "id": "AUS-004",
@@ -105,10 +131,17 @@
       "pole": "prc",
       "controller": "Hikvision; Dahua",
       "local_actor": "Department of Defence; DFAT; other Commonwealth agencies",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 5,
       "reversal": true,
       "reversal_of": "Installed Hikvision/Dahua cameras, intercoms and recorders at Australian government sites",
+      "reversal_reason": "geopolitical",
       "date": "2023-02-09",
+      "still_current": null,
       "summary": "After an audit found at least 913 Hikvision and Dahua cameras, intercoms, entry systems and recorders across almost all departments, Defence and other agencies said they would remove the Chinese-made devices.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -118,19 +151,21 @@
           "publisher": "NPR / Associated Press (via KUNC)",
           "source_tier": "S3",
           "date": "2023-02-08",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         },
         {
           "url": "https://www.cyberdaily.au/security/8680-defence-minister-announces-removal-of-chinese-made-security-cameras",
           "publisher": "Cyber Daily",
           "source_tier": "S2",
           "date": null,
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": false
         }
       ],
-      "corroborated": true,
-      "confidence": "medium",
-      "analyst_inference": "Tier 5 as the reversed equipment was installed and operating. Completion of removal across agencies not verified. Cyber Daily seen in search results only."
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 as the reversed equipment was installed and operating. Completion of removal across agencies not verified. Cyber Daily seen in search results only. Audit 2026-10-22: no longer corroborated, because a second source was seen only as a search-result headline."
     },
     {
       "id": "AUS-005",
@@ -138,10 +173,17 @@
       "pole": "us",
       "controller": "Blackstone (with CPP Investments)",
       "local_actor": "AirTrunk",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 4,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2024-12",
+      "still_current": null,
       "summary": "A Blackstone-led consortium with Canada's CPP Investments closed its acquisition of Sydney-headquartered data-centre operator AirTrunk from Macquarie and PSP Investments at about A$24 billion enterprise value, after regulatory approvals.",
       "announced_value_usd": 16100000000,
       "verified_value_usd": null,
@@ -151,21 +193,24 @@
           "publisher": "DatacenterDynamics",
           "source_tier": "S2",
           "date": "2024-09-04",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         },
         {
           "url": "https://www.telecomtv.com/content/digital-platforms-services/completion-of-airtrunk-acquisition-by-blackstone-52043",
           "publisher": "TelecomTV",
           "source_tier": "S2",
           "date": "2024-12-23",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         },
         {
           "url": "https://www.forbes.com.au/?p=120868",
           "publisher": "Forbes Australia",
           "source_tier": "S3",
           "date": "2024-12-23",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
@@ -178,10 +223,17 @@
       "pole": "us",
       "controller": "Microsoft",
       "local_actor": "Australian Signals Directorate",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2023-10-24",
+      "still_current": null,
       "summary": "Microsoft announced A$5 billion over two years for hyperscale cloud and AI infrastructure in Australia, growing its data centres from 20 to 29, alongside a cyber-shield partnership with the Australian Signals Directorate.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -191,14 +243,16 @@
           "publisher": "Austrade",
           "source_tier": "S1",
           "date": "2024-07-17",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         },
         {
           "url": "https://thenewdaily.com.au/news/2023/10/24/microsoft-australia-shield-ai",
           "publisher": "The New Daily",
           "source_tier": "S3",
           "date": "2023-10-24",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
@@ -211,10 +265,17 @@
       "pole": "us",
       "controller": "Amazon Web Services",
       "local_actor": "Sydney and Melbourne regions",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-06",
+      "still_current": null,
       "summary": "AWS announced A$20 billion of new investment over 2025-2029 to expand data centres in Sydney and Melbourne, on top of A$9 billion invested in 2012-2023.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -224,19 +285,21 @@
           "publisher": "Austrade",
           "source_tier": "S1",
           "date": "2025-07-14",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         },
         {
           "url": "https://aboutamazon.com/news/aws/amazon-data-center-investment-in-australia",
           "publisher": "Amazon",
           "source_tier": "S1",
           "date": null,
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": false
         }
       ],
-      "corroborated": true,
+      "corroborated": false,
       "confidence": "medium",
-      "analyst_inference": "Pledge, tier 1. Announcement month inferred from a June 2025 wire report seen in search; Austrade page dated July 2025. Amazon page seen in search results only. A$ value not converted."
+      "analyst_inference": "Pledge, tier 1. Announcement month inferred from a June 2025 wire report seen in search; Austrade page dated July 2025. Amazon page seen in search results only. A$ value not converted. Audit 2026-10-22: no longer corroborated, because a second source was seen only as a search-result headline."
     },
     {
       "id": "AUS-008",
@@ -244,10 +307,17 @@
       "pole": "third",
       "controller": "European Energy",
       "local_actor": "Amazon Web Services",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 3,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-07",
+      "still_current": null,
       "summary": "Amazon will buy over 170 MW from three new solar farms in Victoria and Queensland developed and operated by European Energy, tied to its Australian data-centre expansion.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -257,7 +327,8 @@
           "publisher": "Austrade",
           "source_tier": "S1",
           "date": "2025-07-14",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -270,10 +341,17 @@
       "pole": "domestic",
       "controller": "NEXTDC",
       "local_actor": "OpenAI",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-12-05",
+      "still_current": null,
       "summary": "NEXTDC and OpenAI signed an MoU under OpenAI for Countries to develop a hyperscale AI campus with a GPU supercluster at NEXTDC's S7 Eastern Creek site in Sydney; phase one targeted for late 2027.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -283,14 +361,16 @@
           "publisher": "NEXTDC",
           "source_tier": "S1",
           "date": "2025-12-05",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         },
         {
           "url": "https://ia.acs.org.au/article/2025/openai--nextdc-ink--7b-australian-data-centre-deal.html",
           "publisher": "ACS Information Age",
           "source_tier": "S2",
           "date": "2025-12-08",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
@@ -304,10 +384,17 @@
       "pole": "us",
       "controller": "OpenAI",
       "local_actor": "NEXTDC",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-12-05",
+      "still_current": null,
       "summary": "OpenAI named Australia a regional infrastructure partner under its OpenAI for Countries programme via the NEXTDC MoU, pitched as sovereign AI capacity for government and defence; no government body is a party.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -317,14 +404,16 @@
           "publisher": "NEXTDC",
           "source_tier": "S1",
           "date": "2025-12-05",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         },
         {
           "url": "https://ia.acs.org.au/article/2025/openai--nextdc-ink--7b-australian-data-centre-deal.html",
           "publisher": "ACS Information Age",
           "source_tier": "S2",
           "date": "2025-12-08",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
@@ -338,10 +427,17 @@
       "pole": "us",
       "controller": "Nvidia",
       "local_actor": "Sharon AI",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2026-06-12",
+      "still_current": null,
       "summary": "Sharon AI announced a six-year compute collaboration with Nvidia covering up to 40,000 GB300 GPUs in Australia on a revenue-sharing model, targeting over 55,000 Nvidia GPUs deployed by mid-2027.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -351,7 +447,8 @@
           "publisher": "Converge Digest",
           "source_tier": "S2",
           "date": "2026-06-12",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -364,10 +461,17 @@
       "pole": "us",
       "controller": "Microsoft",
       "local_actor": "Digital Transformation Agency; Australian Public Service agencies",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2023-11-16",
+      "still_current": null,
       "summary": "The Australian Government ran a six-month whole-of-government trial of Microsoft 365 Copilot, announced November 2023; the evaluation found moderate use, mainly summarising and drafting, with most participants wanting to continue.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -377,19 +481,21 @@
           "publisher": "Digital Transformation Agency",
           "source_tier": "S1",
           "date": "2023-11-16",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         },
         {
           "url": "https://the-decoder.com/australian-government-pilots-microsoft-copilot-with-mixed-results/",
           "publisher": "The Decoder",
           "source_tier": "S2",
           "date": null,
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": false
         }
       ],
-      "corroborated": true,
+      "corroborated": false,
       "confidence": "high",
-      "analyst_inference": "Pilot (tier 2). Post-trial procurement status not established. The Decoder seen in search results only."
+      "analyst_inference": "Pilot (tier 2). Post-trial procurement status not established. The Decoder seen in search results only. Audit 2026-10-22: no longer corroborated, because a second source was seen only as a search-result headline."
     }
   ],
   "layers_searched": {
@@ -412,6 +518,21 @@
       "result": "coded"
     }
   },
+  "corrections": [
+    {
+      "date": "2026-10-22",
+      "audit": "AUDIT-2026-10-22.md",
+      "ids": [
+        "AUS-001",
+        "AUS-002",
+        "AUS-003",
+        "AUS-004",
+        "AUS-007",
+        "AUS-012"
+      ],
+      "note": "Migrated to spec v0.2 (scale, reversal_reason, still_current, builder/financier, base model, opened flags; corroboration recomputed on opened sources) and audit corrections applied."
+    }
+  ],
   "research_gaps": [
     "Current RAN/core vendors for Telstra, Optus and TPG, and whether legacy Huawei 4G equipment has been fully removed.",
     "Whether the Hikvision/Dahua removal across Commonwealth agencies (and state governments) was completed.",

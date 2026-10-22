@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate showcase country records against SPEC.md §3–4. Exit 1 on any problem.
+"""Validate showcase country records against SPEC.md v0.2 §3–4. Exit 1 on any problem.
 
 Usage: python3 showcase/tools/check_country.py showcase/countries/VNM.json [more ...]
 """
@@ -19,9 +19,14 @@ BANNED_HOST_RE = re.compile(
     r"globaltimes\.cn|chinadaily\.com\.cn|alibabacloud\.com|huaweicloud\.com|"
     r"tencentcloud\.com|huawei\.com|zte\.com\.cn|hikvision\.com|dahuasecurity\.com)",
     re.I)
-PLACEHOLDER_RE = re.compile(r"(example\.(com|org)|\.invalid|localhost|REPLACE)", re.I)
+# REPLACE-ME/REPLACE_ME only: a bare "replace" matched real headlines ("vocus-replaces-huawei").
+PLACEHOLDER_RE = re.compile(r"(example\.(com|org)|\.invalid|localhost|REPLACE[-_]ME)", re.I)
 FIELD_ORDER = ["schema", "spec_version", "iso3", "name", "review_status", "coded_at",
-               "coded_by", "findings", "layers_searched", "research_gaps", "searches_run"]
+               "coded_by", "findings", "layers_searched", "corrections", "research_gaps",
+               "searches_run"]
+FINDING_REQUIRED = ["builder", "financier", "scale", "reversal_reason", "still_current"]
+SCALES = {"national", "subnational", "municipal"}
+REASONS = {"geopolitical", "sanctions", "commercial", "regulatory"}
 
 
 def check(path):
@@ -35,10 +40,12 @@ def check(path):
         p.append("iso3 must match the file name")
     if list(rec.keys()) != FIELD_ORDER:
         p.append(f"top-level keys must be exactly, in order: {FIELD_ORDER}")
-    if rec.get("schema") != "sd-showcase-country/0.1":
-        p.append("schema must be sd-showcase-country/0.1")
-    if rec.get("review_status") != "unreviewed":
-        p.append("review_status must be 'unreviewed'")
+    if rec.get("schema") != "sd-showcase-country/0.2" or rec.get("spec_version") != "0.2":
+        p.append("schema must be sd-showcase-country/0.2 and spec_version 0.2")
+    if rec.get("review_status") not in ("unreviewed", "audited", "reviewed"):
+        p.append("review_status must be unreviewed, audited or reviewed")
+    if not isinstance(rec.get("corrections"), list):
+        p.append("corrections must be a list ([] for a new record)")
     if not isinstance(rec.get("searches_run"), int):
         p.append("searches_run must be an integer")
     ids = set()
@@ -65,6 +72,23 @@ def check(path):
         s = f.get("summary") or ""
         if not s or len(s.split()) > 40:
             p.append(f"{tag}: summary required, at most 40 words")
+        for k in FINDING_REQUIRED:
+            if k not in f:
+                p.append(f"{tag}: missing field {k} (null is allowed)")
+        if f.get("scale") not in SCALES:
+            p.append(f"{tag}: scale must be national/subnational/municipal")
+        if f.get("reversal") and f.get("reversal_reason") not in REASONS:
+            p.append(f"{tag}: reversal needs reversal_reason in {sorted(REASONS)}")
+        if not f.get("reversal") and f.get("reversal_reason") is not None:
+            p.append(f"{tag}: reversal_reason must be null when reversal is false")
+        if f.get("still_current") not in (True, False, None):
+            p.append(f"{tag}: still_current must be true/false/null")
+        if f.get("layer") == "models":
+            for k in ("base_model", "base_model_pole"):
+                if k not in f:
+                    p.append(f"{tag}: models finding needs {k} (null is allowed)")
+            if f.get("base_model_pole") not in POLES:
+                p.append(f"{tag}: bad base_model_pole")
         if f.get("confidence") not in ("high", "medium", "low"):
             p.append(f"{tag}: confidence must be high/medium/low")
         srcs = f.get("sources") or []
@@ -78,17 +102,21 @@ def check(path):
                 p.append(f"{tag}.sources[{j}]: {url} is a PRC-hosted or vendor site; cite secondary reporting")
             if PLACEHOLDER_RE.search(url):
                 p.append(f"{tag}.sources[{j}]: placeholder url")
+            if not isinstance(src.get("opened"), bool):
+                p.append(f"{tag}.sources[{j}]: opened must be true or false")
             if src.get("source_tier") not in TIERS:
                 p.append(f"{tag}.sources[{j}]: source_tier must be S1-S4 (S5 is never cited)")
         # Corroboration rule, recomputed rather than trusted.
-        good = [x for x in srcs if x.get("source_tier") in ("S1", "S2", "S3")]
+        good = [x for x in srcs if x.get("source_tier") in ("S1", "S2", "S3") and x.get("opened") is True]
         hosts = {re.sub(r"^www\.", "", (x.get("url") or "").split("/")[2]) for x in good
                  if (x.get("url") or "").count("/") >= 2}
         corroborated = len(hosts) >= 2 and any(x.get("source_tier") in ("S1", "S2") for x in good)
         if f.get("corroborated") is True and not corroborated:
             p.append(f"{tag}: marked corroborated but lacks 2 independent S1-S3 sources incl. one S1/S2")
-        if f.get("instrument_tier", 0) >= 3 and not corroborated and f.get("confidence") != "low":
-            p.append(f"{tag}: uncorroborated tier>=3 finding must have confidence 'low'")
+        single_s1 = any(x.get("source_tier") == "S1" and x.get("opened") is True for x in srcs)
+        allowed = ("low", "medium") if single_s1 else ("low",)
+        if f.get("instrument_tier", 0) >= 3 and not corroborated and f.get("confidence") not in allowed:
+            p.append(f"{tag}: uncorroborated tier>=3 finding must have confidence low (medium if an opened S1 source)")
     ls = rec.get("layers_searched") or {}
     if set(ls) != GAP_LAYERS:
         p.append(f"layers_searched must list exactly {sorted(GAP_LAYERS)}")

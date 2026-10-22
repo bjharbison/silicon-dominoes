@@ -1,9 +1,9 @@
 {
-  "schema": "sd-showcase-country/0.1",
-  "spec_version": "0.1",
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
   "iso3": "BRN",
   "name": "Brunei Darussalam",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-22T10:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -13,10 +13,17 @@
       "pole": "prc",
       "controller": "Huawei",
       "local_actor": "Telekom Brunei Berhad (TelBru, now Imagine)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 3,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2010-10",
+      "still_current": null,
       "summary": "Telekom Brunei, then the sole fixed operator, selected Huawei as exclusive turnkey supplier for its four-phase national FTTH next-generation broadband network, covering active and passive equipment and construction management.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -26,7 +33,8 @@
           "publisher": "Converge Digest",
           "source_tier": "S2",
           "date": "2010-10-24",
-          "retrieved_at": "2026-10-22T10:15:00Z"
+          "retrieved_at": "2026-10-22T10:15:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -39,10 +47,17 @@
       "pole": "us",
       "controller": "Juniper Networks",
       "local_actor": "Unified National Networks (UNN)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 3,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2022-08",
+      "still_current": null,
       "summary": "UNN is refreshing its network core to edge using Juniper MX960 routers for its 100 Gbps backbone, SRX5800 security gateways and ACX2200 metro routers for RAN aggregation, alongside building a telco cloud ahead of 5G.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -52,7 +67,8 @@
           "publisher": "iTnews Asia",
           "source_tier": "S2",
           "date": "2022-08-24",
-          "retrieved_at": "2026-10-22T10:15:00Z"
+          "retrieved_at": "2026-10-22T10:15:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -65,10 +81,17 @@
       "pole": "domestic",
       "controller": "Unified National Networks (UNN)",
       "local_actor": "Unified National Networks (UNN)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 4,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2023-08",
+      "still_current": null,
       "summary": "Construction began on UNN's prefabricated data centre in Tungku, about 51,000 sq ft with 200 Vertiv-supplied racks and a second power feed from Berakas Power Company; opening was targeted for early 2024.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -78,7 +101,8 @@
           "publisher": "DatacenterDynamics",
           "source_tier": "S2",
           "date": "2023-08-04",
-          "retrieved_at": "2026-10-22T10:15:00Z"
+          "retrieved_at": "2026-10-22T10:15:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -91,10 +115,17 @@
       "pole": null,
       "controller": "EVYD Technology Sdn Bhd",
       "local_actor": "Unified National Networks (UNN); Ministry of Health",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-12-08",
+      "still_current": null,
       "summary": "UNN announced AI GPU servers deployed in its Tier 3 colocation facility to host EVYD's data platform, billed as Brunei's first national AI application platform, initially a proof of concept serving the Ministry of Health and BruHealth.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -104,7 +135,8 @@
           "publisher": "Unified National Networks",
           "source_tier": "S4",
           "date": "2025-12-08",
-          "retrieved_at": "2026-10-22T10:15:00Z"
+          "retrieved_at": "2026-10-22T10:15:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -117,10 +149,17 @@
       "pole": "prc",
       "controller": "Huawei Brunei",
       "local_actor": "Imagine Sdn Bhd",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-09",
+      "still_current": null,
       "summary": "Operator Imagine announced strategic partnerships with Toppan Ecquaria and Huawei Brunei, the Huawei tie-up aimed at network infrastructure, cloud readiness and digital solutions; no instrument type or financial terms disclosed.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -130,7 +169,8 @@
           "publisher": "Imagine Sdn Bhd",
           "source_tier": "S4",
           "date": "2025-09-10",
-          "retrieved_at": "2026-10-22T10:15:00Z"
+          "retrieved_at": "2026-10-22T10:15:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -143,10 +183,17 @@
       "pole": "us",
       "controller": "Microsoft",
       "local_actor": "Government of Brunei Darussalam",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2023-03-14",
+      "still_current": null,
       "summary": "At a Bandar Seri Begawan summit Microsoft publicly committed to support Brunei's digital transformation across Azure cloud, AI, government services and cybersecurity; no MoU, contract or value was described.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -156,7 +203,8 @@
           "publisher": "Microsoft Source Asia",
           "source_tier": "S4",
           "date": "2023-03-14",
-          "retrieved_at": "2026-10-22T10:15:00Z"
+          "retrieved_at": "2026-10-22T10:15:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -187,6 +235,14 @@
       "null_reason": "no AI-specific power evidence surfaced beyond a second feed for the UNN data centre"
     }
   },
+  "corrections": [
+    {
+      "date": "2026-10-22",
+      "audit": "AUDIT-2026-10-22.md",
+      "ids": [],
+      "note": "Migrated to spec v0.2 (scale, reversal_reason, still_current, builder/financier, base model, opened flags; corroboration recomputed on opened sources) and audit corrections applied."
+    }
+  ],
   "research_gaps": [
     "Which vendor supplies UNN's 5G RAN and mobile core (Huawei, Ericsson, Nokia or ZTE)? No source named one.",
     "Is the UNN Tungku prefab data centre operational, and who owns UNN (Darussalam Assets?)",

@@ -1,9 +1,9 @@
 {
-  "schema": "sd-showcase-country/0.1",
-  "spec_version": "0.1",
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
   "iso3": "BLR",
   "name": "Belarus",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-22T10:30:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -13,10 +13,17 @@
       "pole": "prc",
       "controller": "Huawei",
       "local_actor": "beCloud (Belarusian Cloud Technologies)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 5,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2015-12-17",
+      "still_current": null,
       "summary": "Infrastructure operator beCloud began commercial LTE Advanced service in Minsk with about 150 base stations, on Huawei-supplied equipment, open to all mobile operators; MTS subscribers connected first.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -26,7 +33,8 @@
           "publisher": "dev.by",
           "source_tier": "S2",
           "date": "2015-12-17",
-          "retrieved_at": "2026-10-22T10:15:00Z"
+          "retrieved_at": "2026-10-22T10:15:00Z",
+          "opened": true
         },
         {
           "url": "https://tech.onliner.by/2016/12/14/lte-regiony",
@@ -34,7 +42,8 @@
           "source_tier": "S3",
           "date": "2016-12-14",
           "retrieved_at": "2026-10-22T10:15:00Z",
-          "note": "confirms beCloud regional LTE rollout from Dec 2016; does not name the vendor"
+          "note": "confirms beCloud regional LTE rollout from Dec 2016; does not name the vendor",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -47,10 +56,17 @@
       "pole": "domestic",
       "controller": "beCloud (Belarusian Cloud Technologies)",
       "local_actor": "MTS; life:)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 5,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2026-04-08",
+      "still_current": null,
       "summary": "Under Decree No. 139 (1 April 2025) beCloud became sole 5G/LTE infrastructure operator for 2025-2034; MTS and Life launched commercial 5G in April 2026 in Minsk and four regional centres, each citing over 1,000 base stations.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -60,14 +76,16 @@
           "publisher": "Ministry of Communications and Informatization of Belarus",
           "source_tier": "S1",
           "date": "2025-04",
-          "retrieved_at": "2026-10-22T10:15:00Z"
+          "retrieved_at": "2026-10-22T10:15:00Z",
+          "opened": true
         },
         {
           "url": "https://news.zerkalo.io/economics/124610.html",
           "publisher": "Zerkalo",
           "source_tier": "S3",
           "date": "2026-04-08",
-          "retrieved_at": "2026-10-22T10:15:00Z"
+          "retrieved_at": "2026-10-22T10:15:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
@@ -80,10 +98,17 @@
       "pole": "third",
       "controller": "Irteya",
       "local_actor": "MTS; Beeline (pilot zone)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-06-05",
+      "still_current": null,
       "summary": "Russian vendor Irteya planned to start testing its own 5G base stations in Belarus in summer 2025; a Belarusian operator source said Huawei, Ericsson and Nokia are main suppliers, with Samsung and ZTE partly used.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -93,7 +118,8 @@
           "publisher": "3DNews",
           "source_tier": "S2",
           "date": "2025-06-05",
-          "retrieved_at": "2026-10-22T10:15:00Z"
+          "retrieved_at": "2026-10-22T10:15:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -106,10 +132,17 @@
       "pole": "prc",
       "controller": "ZTE",
       "local_actor": "A1 Belarus",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2020",
+      "still_current": null,
       "summary": "A1 Belarus tested 5G Standalone technology with ZTE in 2020; DCD noted it was unknown whether the planned single 5G network would use domestic or foreign vendors.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -119,7 +152,8 @@
           "publisher": "DatacenterDynamics",
           "source_tier": "S2",
           "date": "2025-04-08",
-          "retrieved_at": "2026-10-22T10:15:00Z"
+          "retrieved_at": "2026-10-22T10:15:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -132,10 +166,17 @@
       "pole": "us",
       "controller": "Amazon Web Services",
       "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 5,
       "reversal": true,
       "reversal_of": "AWS availability to new customers in Belarus",
+      "reversal_reason": "sanctions",
       "date": "2022-03-09",
+      "still_current": null,
       "summary": "AWS stopped accepting new customers from Russia and Belarus in March 2022, per a DCD headline.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -146,7 +187,8 @@
           "source_tier": "S2",
           "date": "2022-03-09",
           "retrieved_at": "2026-10-22T10:15:00Z",
-          "note": "headline and date read from the DCD Belarus tag page; article itself could not be fetched"
+          "note": "headline and date read from the DCD Belarus tag page; article itself could not be fetched",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -159,10 +201,17 @@
       "pole": "us",
       "controller": "Hewlett Packard Enterprise",
       "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 5,
       "reversal": true,
       "reversal_of": "HPE server/hardware business in Belarus",
+      "reversal_reason": "sanctions",
       "date": "2022-06-09",
+      "still_current": null,
       "summary": "HPE announced it would leave Russia and Belarus because of the war in Ukraine, per a DCD headline.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -173,7 +222,8 @@
           "source_tier": "S2",
           "date": "2022-06-09",
           "retrieved_at": "2026-10-22T10:15:00Z",
-          "note": "headline and date read from the DCD Belarus tag page; article itself could not be fetched"
+          "note": "headline and date read from the DCD Belarus tag page; article itself could not be fetched",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -186,10 +236,17 @@
       "pole": "domestic",
       "controller": "Synesis (24x7 Panoptes subsidiary)",
       "local_actor": "Government of Belarus (national public safety monitoring system)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 3,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2018",
+      "still_current": null,
       "summary": "Synesis subsidiary 24x7 Panoptes won the 2018 tender to run Belarus's national public-safety monitoring system on its Kipod facial-recognition platform; 13,000 cameras planned by 2021, 2,000 announced in 2019, mostly Minsk.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -199,7 +256,8 @@
           "publisher": "Euroradio",
           "source_tier": "S3",
           "date": null,
-          "retrieved_at": "2026-10-22T10:15:00Z"
+          "retrieved_at": "2026-10-22T10:15:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -212,10 +270,17 @@
       "pole": "prc",
       "controller": "National Development and Reform Commission (PRC)",
       "local_actor": "Ministry of Communications and Informatization of Belarus",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-10-07",
+      "still_current": null,
       "summary": "Belarus's communications minister said the ministry is working with China's NDRC to create a China-SCO-Belarus AI application cooperation centre; no launch date given. Belarus is also building domestic compute using open-source LLMs as a base.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -225,7 +290,8 @@
           "publisher": "Beshenkovichi District Executive Committee (Belarus state site)",
           "source_tier": "S4",
           "date": "2025-10-07",
-          "retrieved_at": "2026-10-22T10:15:00Z"
+          "retrieved_at": "2026-10-22T10:15:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -238,10 +304,17 @@
       "pole": null,
       "controller": "National Academy of Sciences of Belarus; Russian Academy of Sciences",
       "local_actor": "National Academy of Sciences of Belarus",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2026-05-15",
+      "still_current": null,
       "summary": "Belarusian and Russian academies of sciences discussed plans to jointly develop an AI language model, described by the outlet as ideologically correct; planning stage only, no timeline.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -251,7 +324,8 @@
           "publisher": "Belsat",
           "source_tier": "S4",
           "date": "2026-05-15",
-          "retrieved_at": "2026-10-22T10:15:00Z"
+          "retrieved_at": "2026-10-22T10:15:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -281,6 +355,14 @@
       "null_reason": "no AI- or data-centre-specific power evidence surfaced; search budget spent on other layers"
     }
   },
+  "corrections": [
+    {
+      "date": "2026-10-22",
+      "audit": "AUDIT-2026-10-22.md",
+      "ids": [],
+      "note": "Migrated to spec v0.2 (scale, reversal_reason, still_current, builder/financier, base model, opened flags; corroboration recomputed on opened sources) and audit corrections applied."
+    }
+  ],
   "research_gaps": [
     "Which vendor(s) supply RAN/core for beCloud's 2026 5G single network (Huawei, ZTE, Irteya or mixed), and was it financed by Chinese concessional loans?",
     "Second independent source confirming Huawei as beCloud LTE supplier.",

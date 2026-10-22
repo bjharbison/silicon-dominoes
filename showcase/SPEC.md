@@ -1,4 +1,10 @@
-# Showcase desk pass — coding spec v0.1
+# Showcase desk pass — coding spec v0.2
+
+> **v0.2 (2026-10-22)**, after the audit in `AUDIT-2026-10-22.md`. Changes: new finding
+> fields `scale`, `reversal_reason`, `still_current`, `builder`, `financier`, `base_model`,
+> `base_model_pole`; per-source `opened`; a clearer controller rule for equipment, civil
+> builders and fine-tuned models; corroboration counts only sources the run opened; a
+> record-level `corrections` list.
 
 This is the fixed instruction set for the global showcase desk pass. Every scheduled run
 reads this file first and follows it exactly, so that the 200th country is coded the same
@@ -66,16 +72,23 @@ normal: code them quickly with nulls and move on. Prioritise S1/S2 sources.
   "pole": "prc",
   "controller": "Huawei",
   "local_actor": "Viettel",
+  "builder": null,
+  "financier": null,
+  "base_model": null,
+  "base_model_pole": null,
+  "scale": "national",
   "instrument_tier": 3,
   "reversal": false,
   "reversal_of": null,
+  "reversal_reason": null,
   "date": "2025-06",
+  "still_current": null,
   "summary": "Own-words description, at most 40 words.",
   "announced_value_usd": null,
   "verified_value_usd": null,
   "sources": [
     {"url": "https://...", "publisher": "DatacenterDynamics", "source_tier": "S2",
-     "date": "2025-06-12", "retrieved_at": "2026-10-20T07:10:00Z"}
+     "date": "2025-06-12", "retrieved_at": "2026-10-20T07:10:00Z", "opened": true}
   ],
   "corroborated": false,
   "confidence": "medium",
@@ -89,6 +102,33 @@ normal: code them quickly with nulls and move on. Prioritise S1/S2 sources.
   Gulf, India…), or `domestic` (controller is from this same country = sovereign). A US
   model hosted by a Gulf firm in Kenya: the model finding is `us`, the facility finding is
   `third`. If control is genuinely unclear, `pole: null` and say why in `analyst_inference`.
+  - **Equipment vs buildings (v0.2).** For networks, cables and IT equipment, the
+    controller is the **equipment vendor**, because it supplies firmware and updates
+    (Huawei-built backbone owned by a state telco: `prc`). For buildings, campuses and power
+    plants, the controller is the **owner-operator**; a foreign civil contractor goes in
+    `builder` and a foreign lender in `financier`, and neither sets the pole (Chinese-built,
+    AfDB-financed state data centre: `domestic`). If a vendor is documented as operating or
+    holding access to the system, it is the controller.
+  - **Models (v0.2).** A model whose weights a national actor controls is `domestic` even if
+    fine-tuned from foreign open weights. Record the base in `base_model` (e.g.
+    "Qwen3-32B") and its pole in `base_model_pole`. A model used only through a foreign
+    provider's API or service is that provider's pole. `base_model` and `base_model_pole`
+    are required (may be null) on every `models` finding.
+- **scale** (v0.2, required): `national` (a national government, national operator or
+  nationally significant facility), `subnational` (a province, state or large city
+  system), or `municipal` (one town or a small pilot).
+- **still_current** (v0.2): `true` if the run confirmed the thing is still in force or in
+  use as of the run date, `false` if it confirmed it has ended, otherwise `null`. Always
+  check this for anything dated before 2020; the map halves pre-2020 findings unless
+  `still_current` is `true`.
+- **reversal_reason** (v0.2, required when `reversal` is true, else null): `geopolitical`
+  (security, alignment or foreign pressure), `sanctions` (exits forced by sanctions or
+  export controls), `commercial` (business decision, financing failure, product switch),
+  or `regulatory` (permits, environment, procurement integrity, law enforcement). Only
+  `geopolitical` and `sanctions` reversals move the map.
+- **Enforcement is not adoption.** A prosecution, inspection or export-control compliance
+  action is not a deployment of the stack being enforced; code it with `pole: null` and
+  explain in `analyst_inference`, or leave it out.
 - **instrument_tier** (from SYSTEM_PROMPT §2.1): 1 statement/MOU/LOI · 2 framework, pilot,
   feasibility study · 3 signed contract or binding award (needs counterparty, ideally value)
   · 4 financing closed, construction started, licence issued · 5 operational at scale,
@@ -100,9 +140,14 @@ normal: code them quickly with nulls and move on. Prioritise S1/S2 sources.
   S2 specialist trade press · S3 general press, wires · S4 state-affiliated media of any
   government, corporate marketing, think-tank advocacy · S5 aggregators, social, blogs —
   S5 may be used to find leads but is **never cited** in `sources`.
-- **corroborated**: `true` only if there are ≥2 independent sources of tier S3 or better,
-  at least one S1 or S2, and they are not two state announcements. Tier ≥3 findings that are
-  not corroborated stay in the record but must carry `"confidence": "low"`.
+- **opened** (v0.2, required on every source): `true` only if the run actually read the
+  page; `false` if it saw only the search-result title or snippet. Unopened sources may be
+  cited but never count towards corroboration.
+- **corroborated**: `true` only if there are ≥2 independent **opened** sources of tier S3
+  or better, at least one S1 or S2, and they are not two state announcements. Tier ≥3
+  findings that are not corroborated stay in the record but must carry
+  `"confidence": "low"` — unless their single opened source is S1 (a filing, gazette or
+  official notice), which may carry `"medium"`.
 - **values**: `announced_value_usd` is what was announced; `verified_value_usd` only from a
   filing, award notice or audited figure. Convert at the rate on the source date and say so
   in `analyst_inference` if converted. Otherwise null.
@@ -115,8 +160,8 @@ normal: code them quickly with nulls and move on. Prioritise S1/S2 sources.
 
 ```json
 {
-  "schema": "sd-showcase-country/0.1",
-  "spec_version": "0.1",
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
   "iso3": "VNM",
   "name": "Vietnam",
   "review_status": "unreviewed",
@@ -131,6 +176,7 @@ normal: code them quickly with nulls and move on. Prioritise S1/S2 sources.
     "applications": {"result": "null", "null_reason": "..."},
     "power": {"result": "not_searched", "null_reason": "no AI-specific power evidence surfaced"}
   },
+  "corrections": [],
   "research_gaps": ["specific questions a human should chase"],
   "searches_run": 8
 }
@@ -139,6 +185,11 @@ normal: code them quickly with nulls and move on. Prioritise S1/S2 sources.
 `layers_searched` must list all six gap-fill layers (cloud is covered by the global layers).
 `result` is `coded` (≥1 finding), `null` (searched, nothing found — give the reason), or
 `not_searched` (give the reason). An empty `findings` array is valid and honest.
+
+`corrections` is always `[]` in a new record. It is filled only by supervised correction
+passes, each entry `{"date", "audit", "ids", "note"}`. `review_status` is `"unreviewed"`
+for every new record; a supervised pass may set `"audited"` (checked by Claude against
+an audit) and Brian alone sets `"reviewed"`.
 
 Write JSON with 2-space indentation, UTF-8, keys in the order shown.
 

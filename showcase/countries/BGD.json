@@ -1,9 +1,9 @@
 {
-  "schema": "sd-showcase-country/0.1",
-  "spec_version": "0.1",
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
   "iso3": "BGD",
   "name": "Bangladesh",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-22T10:30:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -13,10 +13,17 @@
       "pole": "prc",
       "controller": "Huawei",
       "local_actor": "Bangladesh Telecommunications Company Ltd (BTCL)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 3,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2023-11-19",
+      "still_current": null,
       "summary": "BTCL signed an equipment-supply contract with Huawei for its 5G Readiness Project after Huawei bid lowest (Tk 3.26bn) against ZTE and Nokia in a tender opened August 2022; press reported procedural irregularities in the evaluation.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -26,14 +33,16 @@
           "publisher": "The Financial Express (Bangladesh)",
           "source_tier": "S3",
           "date": null,
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         },
         {
           "url": "https://bangla.thedailystar.net/business/news-538386",
           "publisher": "The Daily Star (Bangla edition)",
           "source_tier": "S3",
           "date": "2023-12-03",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -46,10 +55,17 @@
       "pole": "prc",
       "controller": "Huawei",
       "local_actor": "BTCL; Anti-Corruption Commission; Posts and Telecom Division",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 3,
       "reversal": true,
       "reversal_of": "BGD-001 BTCL 5G Readiness Project equipment contract with Huawei",
+      "reversal_reason": "regulatory",
       "date": "2025-08-02",
+      "still_current": null,
       "summary": "By August 2025 the BTCL 5G Readiness Project had stalled: the ACC sought suspension citing irregularities and a Tk 3bn letter of credit was cancelled, though a court later let it proceed.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -59,7 +75,8 @@
           "publisher": "The Financial Express (Bangladesh)",
           "source_tier": "S3",
           "date": "2025-08-02",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -72,10 +89,17 @@
       "pole": "prc",
       "controller": "Huawei",
       "local_actor": "Teletalk Bangladesh",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 3,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2021-12-10",
+      "still_current": null,
       "summary": "State operator Teletalk signed an agreement with Huawei for its initial 5G network; Huawei said it would supply over 65% of initial 5G sites, with launch planned for 12 December 2021.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -85,7 +109,8 @@
           "publisher": "Prothom Alo (relaying a Huawei press release)",
           "source_tier": "S4",
           "date": "2021-12-10",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -98,10 +123,17 @@
       "pole": "prc",
       "controller": "Huawei",
       "local_actor": "Grameenphone (Telenor subsidiary)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 3,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2010-11-19",
+      "still_current": null,
       "summary": "Grameenphone, the largest operator, made Huawei its exclusive vendor under a three-year agreement to expand radio and core network with SingleRAN base stations nationwide.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -111,7 +143,8 @@
           "publisher": "Light Reading",
           "source_tier": "S2",
           "date": "2010-11-19",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -124,10 +157,17 @@
       "pole": "us",
       "controller": "SpaceX (Starlink)",
       "local_actor": "Starlink Services Bangladesh Limited; BTRC",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 4,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-04-29",
+      "still_current": null,
       "summary": "BTRC issued Starlink's local entity a 10-year non-geostationary satellite operator licence and a radio-equipment licence, authorising commercial satellite internet service in Bangladesh.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -137,14 +177,16 @@
           "publisher": "Prothom Alo",
           "source_tier": "S3",
           "date": "2025-04-29",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         },
         {
           "url": "https://www.dhakatribune.com/bangladesh/379992/btrc-issues-licenses-to-starlink-to-operate-in",
           "publisher": "Dhaka Tribune",
           "source_tier": "S3",
           "date": "2025-04-29",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -157,11 +199,18 @@
       "pole": "prc",
       "controller": "ZTE (builder and equipment supplier)",
       "local_actor": "Bangladesh Computer Council / ICT Division",
-      "instrument_tier": 4,
+      "builder": "ZTE",
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2015-03",
-      "summary": "Cabinet purchase committee cleared ZTE to build the Tier IV National Data Centre at Kaliakair Hi-Tech Park, financed by China Exim Bank; later reporting said ZTE's work was about 70% complete with Uptime Institute certification.",
+      "still_current": true,
+      "summary": "Cabinet purchase committee cleared ZTE to build and equip the Tier IV National Data Centre at Kaliakair Hi-Tech Park, financed by China Exim Bank; it was certified to a Tier IV design and reported operational in 2019.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -170,19 +219,21 @@
           "publisher": "DatacenterDynamics",
           "source_tier": "S2",
           "date": "2015-03-23",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         },
         {
           "url": "https://online91.thedailystar.net/bytes/bangladesh-wins-global-certification-national-data-centre-1420564",
           "publisher": "The Daily Star",
           "source_tier": "S3",
           "date": null,
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Owner/operator is the Bangladesh state; coded prc because ZTE built and equipped the facility and is the likely maintenance/update dependency. DCD gave US$155.4M (Tk 12bn); Daily Star gave Tk 1,516 crore total cost — figures differ, so values left null. Current operational status not verified (tier 4, not 5)."
+      "analyst_inference": "Owner/operator is the Bangladesh state; coded prc because ZTE built and equipped the facility and is the likely maintenance/update dependency. DCD gave US$155.4M (Tk 12bn); Daily Star gave Tk 1,516 crore total cost — figures differ, so values left null. Current operational status not verified (tier 4, not 5). Audit 2026-10-22: Operating since 2019 (tier 5); 70% figure was for the whole project and certification was of the design."
     },
     {
       "id": "BGD-007",
@@ -190,10 +241,17 @@
       "pole": "prc",
       "controller": "Huawei",
       "local_actor": "Bangladesh Computer Council; Sylhet Metropolitan Police",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2019-07",
+      "still_current": null,
       "summary": "Huawei supplied the 'Digital Sylhet City' system: about 110 AI cameras with face and number-plate recognition feeding a police control room, plus public Wi-Fi; pilot systems were inaugurated in late July 2019.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -203,7 +261,8 @@
           "publisher": "Dhaka Tribune",
           "source_tier": "S3",
           "date": "2019-07-29",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -216,10 +275,17 @@
       "pole": "us",
       "controller": "Google",
       "local_actor": "Government of Bangladesh (ministerial delegation)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2026-09-28",
+      "still_current": null,
       "summary": "A Bangladeshi ministerial delegation met Google for Education in Mountain View to explore cooperation including AI-supported teacher training and Bangla-language AI; both sides expressed interest in forming working groups, with no agreement signed.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -229,7 +295,8 @@
           "publisher": "United News of Bangladesh (UNB)",
           "source_tier": "S3",
           "date": "2026-09-29",
-          "retrieved_at": "2026-10-22T10:00:00Z"
+          "retrieved_at": "2026-10-22T10:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -259,6 +326,16 @@
       "null_reason": "no AI- or data-centre-specific power evidence surfaced; search budget spent on other layers"
     }
   },
+  "corrections": [
+    {
+      "date": "2026-10-22",
+      "audit": "AUDIT-2026-10-22.md",
+      "ids": [
+        "BGD-006"
+      ],
+      "note": "Migrated to spec v0.2 (scale, reversal_reason, still_current, builder/financier, base model, opened flags; corroboration recomputed on opened sources) and audit corrections applied."
+    }
+  ],
   "research_gaps": [
     "Current RAN and core vendors for Grameenphone, Robi and Banglalink, especially for their 2025 5G launches (Huawei vs Ericsson/Nokia/ZTE shares).",
     "Final status of the BTCL-Huawei 5G Readiness Project after the ACC review and court ruling; was the contract terminated, re-tendered or resumed?",

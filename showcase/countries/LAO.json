@@ -1,9 +1,9 @@
 {
-  "schema": "sd-showcase-country/0.1",
-  "spec_version": "0.1",
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
   "iso3": "LAO",
   "name": "Laos",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-21T09:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -11,12 +11,19 @@
       "id": "LAO-001",
       "layer": "networks",
       "pole": "prc",
-      "controller": "China Academy of Space Technology / China Asia-Pacific Mobile Telecommunications Satellite Co.",
+      "controller": "China Great Wall Industry Corporation; APMT (PRC state contractors)",
       "local_actor": "Lao government (NAST/MTC); Lao Asia Pacific Satellite Co.",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 5,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2016-03-08",
+      "still_current": null,
       "summary": "LaoSat-1 communications satellite, built by a PRC state space contractor under a ~$259M EPC deal and financed by China Exim loans, was delivered in orbit in 2016 and is run by a Lao-PRC joint venture.",
       "announced_value_usd": 258900000,
       "verified_value_usd": null,
@@ -26,19 +33,21 @@
           "publisher": "AidData (William & Mary)",
           "source_tier": "S2",
           "date": null,
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         },
         {
           "url": "https://spaceflightnow.com/2015/11/22/china-launches-first-satellite-for-laos/",
           "publisher": "Spaceflight Now",
           "source_tier": "S2",
           "date": "2015-11-22",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Pole prc: PRC-built bus, PRC state lender and PRC state co-owner of the operating JV; exact shareholding not stated in sources. Value is the EPC contract figure (AidData), not a verified outturn."
+      "analyst_inference": "Pole prc: PRC-built bus, PRC state lender and PRC state co-owner of the operating JV; exact shareholding not stated in sources. Value is the EPC contract figure (AidData), not a verified outturn. Audit 2026-10-22: Contractors per AidData are China Great Wall Industry Corporation and APMT, not CAST."
     },
     {
       "id": "LAO-002",
@@ -46,10 +55,17 @@
       "pole": "third",
       "controller": "Nokia (via Nokia Shanghai Bell)",
       "local_actor": "Lao Telecom (LTC)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 3,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2017-08",
+      "still_current": null,
       "summary": "Lao Telecom signed network-expansion contracts and a strategic cooperation MoU, including a 5G alliance, with Nokia Shanghai Bell for LTE products, IP and services; value undisclosed.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -59,7 +75,8 @@
           "publisher": "The Nation (Thailand)",
           "source_tier": "S3",
           "date": "2017-08-21",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -72,10 +89,17 @@
       "pole": "prc",
       "controller": "Satellite Technology Co., Ltd. (PRC)",
       "local_actor": "Ministry of Technology and Communications",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2024-07-24",
+      "still_current": null,
       "summary": "Laos and a Chinese firm agreed to establish a national satellite data management and service centre in Vang Vieng, including a BeiDou ground station; financing undisclosed, construction not reported.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -85,7 +109,8 @@
           "publisher": "US-ASEAN Business Council",
           "source_tier": "S4",
           "date": "2024-07-24",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -98,10 +123,17 @@
       "pole": "domestic",
       "controller": "Phounphonnakhone Co., Ltd. (Phongsavanh Group)",
       "local_actor": "Ministry of Technology and Communications",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-07",
+      "still_current": null,
       "summary": "The ministry signed an MoU with a Lao IT firm to run a six-month feasibility study for a National Data Centre, Government Data Exchange System and groundwork for a national cloud.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -111,7 +143,8 @@
           "publisher": "Vientiane Times",
           "source_tier": "S4",
           "date": "2025-07-14",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -124,10 +157,17 @@
       "pole": null,
       "controller": "Silicon Tech Park (Lao) Sole Co., Ltd.",
       "local_actor": "National Data Center, Ministry of Technology and Communications",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-05-30",
+      "still_current": null,
       "summary": "MoU for a feasibility study on green-powered AI infrastructure: an AI Innovation Center pilot and a proposed 150-hectare AI special economic zone in Vientiane; no value or construction reported.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -137,7 +177,8 @@
           "publisher": "KPL (Lao News Agency)",
           "source_tier": "S4",
           "date": "2025-06-03",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -150,10 +191,17 @@
       "pole": null,
       "controller": "ALO Technology Group with China-Lao Information Communication Centre / China-ASEAN Information Harbor",
       "local_actor": "Ministry of Technology and Communications; National University of Laos",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-10",
+      "still_current": null,
       "summary": "Laos launched a Lao National Large Language Model project led by ALO Technology Group with Chinese partners; an initial prototype is being trialled while Lao-language datasets are collected. Base model not named.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -163,7 +211,8 @@
           "publisher": "Vientiane Times",
           "source_tier": "S4",
           "date": "2025-10-16",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -176,10 +225,17 @@
       "pole": null,
       "controller": "Ministry of Technology and Communications (vendor not named)",
       "local_actor": "Ministry of Technology and Communications",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2026-07-14",
+      "still_current": null,
       "summary": "The technology minister announced a Lao AI platform, a large language model trained on official Lao-language data for translation, writing and news analysis; still being improved. No vendor or base model named.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -189,7 +245,8 @@
           "publisher": "Vientiane Times",
           "source_tier": "S4",
           "date": "2026-07",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -202,10 +259,17 @@
       "pole": "prc",
       "controller": "Huawei",
       "local_actor": "Presidents Office; Lao Party Central Committee Office",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2021-05",
+      "still_current": null,
       "summary": "Under an 'In Laos For Laos' programme, Huawei Laos supplied IT equipment to upgrade office systems at the Presidents Office and Party Central Committee Office, and offered digital-economy consulting.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -215,7 +279,8 @@
           "publisher": "Vientiane Times",
           "source_tier": "S4",
           "date": "2021-05-16",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -228,10 +293,17 @@
       "pole": "third",
       "controller": "Gentop Co., Ltd. (Republic of Korea)",
       "local_actor": "Ministry of Public Security",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2022-11-15",
+      "still_current": null,
       "summary": "A Korean manufacturer and a Lao partner donated a small 360-degree CCTV system worth about $51,000 to the Ministry of Public Security for road safety and city security.",
       "announced_value_usd": 51000,
       "verified_value_usd": null,
@@ -241,7 +313,8 @@
           "publisher": "Vientiane Times",
           "source_tier": "S4",
           "date": "2022-11-17",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -271,6 +344,16 @@
       "null_reason": "one search found only crypto-mining power suspensions (not AI-related); hydropower is pitched for data centres but no dedicated AI supply deal found"
     }
   },
+  "corrections": [
+    {
+      "date": "2026-10-22",
+      "audit": "AUDIT-2026-10-22.md",
+      "ids": [
+        "LAO-001"
+      ],
+      "note": "Migrated to spec v0.2 (scale, reversal_reason, still_current, builder/financier, base model, opened flags; corroboration recomputed on opened sources) and audit corrections applied."
+    }
+  ],
   "research_gaps": [
     "Current RAN/core vendor for Lao Telecom, Unitel (Viettel) and ETL 4G/5G networks; Huawei and ZTE presence is unconfirmed by S1/S2 sources.",
     "Base model and ownership behind the Lao National LLM (ALO Technology Group, China-ASEAN Information Harbor) and whether the July 2026 MTC Lao AI platform is the same system.",

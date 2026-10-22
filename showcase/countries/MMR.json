@@ -1,9 +1,9 @@
 {
-  "schema": "sd-showcase-country/0.1",
-  "spec_version": "0.1",
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
   "iso3": "MMR",
   "name": "Myanmar",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-21T09:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -13,10 +13,17 @@
       "pole": "prc",
       "controller": "Huawei",
       "local_actor": "Naypyidaw Safe City (Myanmar government; integrators Linn IT Solutions, Nang Yoe)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
       "instrument_tier": 5,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2020-12-14",
+      "still_current": null,
       "summary": "First phase of Naypyidaw Safe City went live with 335 cameras across eight townships, equipment mostly Huawei, with facial and licence-plate recognition alerting authorities; HRW cites a US$1.2 million project value.",
       "announced_value_usd": 1200000,
       "verified_value_usd": null,
@@ -26,14 +33,16 @@
           "publisher": "Human Rights Watch",
           "source_tier": "S3",
           "date": "2021-03-12",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         },
         {
           "url": "https://kathmandupost.com/world/2022/07/11/myanmar-s-junta-rolls-out-chinese-camera-surveillance-systems-in-more-cities",
           "publisher": "Reuters (via The Kathmandu Post)",
           "source_tier": "S3",
           "date": "2022-07-11",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -46,11 +55,18 @@
       "pole": "prc",
       "controller": "Huawei",
       "local_actor": "Mandalay Region government",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
       "instrument_tier": 4,
       "reversal": false,
       "reversal_of": null,
-      "date": "2022-07",
-      "summary": "Mandalay Safe City camera system agreed with Huawei before the 2021 coup; Reuters reported at least 300 Huawei cameras installed by mid-2022 with hundreds more planned and the junta pressing for faster rollout.",
+      "reversal_reason": null,
+      "date": "2021-02",
+      "still_current": null,
+      "summary": "Mandalay Safe City camera system agreed with Huawei before the 2021 coup; Reuters reported at least 300 Huawei cameras installed before the coup, with hundreds more planned and the junta pressing for faster rollout.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -59,19 +75,21 @@
           "publisher": "Reuters (via The Kathmandu Post)",
           "source_tier": "S3",
           "date": "2022-07-11",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         },
         {
           "url": "https://www.hrw.org/news/2021/03/12/myanmar-facial-recognition-system-threatens-rights",
           "publisher": "Human Rights Watch",
           "source_tier": "S3",
           "date": "2021-03-12",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "HRW gives the Mandalay project as announced in 2019 at about US$1.24 million; not entered as a value because HRW reports it second-hand. Reuters could not verify installations on site."
+      "analyst_inference": "HRW gives the Mandalay project as announced in 2019 at about US$1.24 million; not entered as a value because HRW reports it second-hand. Reuters could not verify installations on site. Audit 2026-10-22: Cameras were installed before the Feb 2021 coup, not by mid-2022."
     },
     {
       "id": "MMR-003",
@@ -79,10 +97,17 @@
       "pole": "prc",
       "controller": "Zhejiang Dahua Technology",
       "local_actor": "Myanmar junta city administrations; integrators Fisca Security & Communication, Naung Yoe Technologies",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
       "instrument_tier": 4,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2022",
+      "still_current": null,
       "summary": "After the coup, camera-surveillance tenders in Mawlamyine, Taunggyi and Dawei went to local integrators installing hundreds of Dahua cameras; Dahua cameras also reported in Myitkyina, with plans for every state and region.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -92,7 +117,8 @@
           "publisher": "Reuters (via The Kathmandu Post)",
           "source_tier": "S3",
           "date": "2022-07-11",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -105,10 +131,17 @@
       "pole": "prc",
       "controller": "Geedge Networks",
       "local_actor": "Myanmar junta / Ministry of Transport and Communications; 13 operators incl. MPT, ATOM, Mytel, Ooredoo Myanmar",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 3,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-09-09",
+      "still_current": null,
       "summary": "Leaked Geedge Networks data, reviewed by a media and NGO coalition, indicates the firm supplied the junta a commercial censorship and subscriber-tracking system tied into Myanmar operators' networks, covering tens of millions of internet users.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -118,21 +151,24 @@
           "publisher": "Justice For Myanmar",
           "source_tier": "S4",
           "date": "2025-09-09",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         },
         {
           "url": "https://investigativejournalismforeu.net/projects/the-great-firewall-export/",
           "publisher": "Follow the Money / Great Firewall Export project",
           "source_tier": "S3",
           "date": null,
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         },
         {
           "url": "https://www.rfa.org/english/news/myanmar/china-helping-junta-to-control-internet-with-censorship-and-location-tracking-06242024141339.html",
           "publisher": "Radio Free Asia",
           "source_tier": "S4",
           "date": "2024-06-24",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -145,10 +181,17 @@
       "pole": "third",
       "controller": "Telenor Group (Norway)",
       "local_actor": "Telenor Myanmar (now ATOM; buyers M1 Group, Lebanon, and Shwe Byain Phyu)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 5,
       "reversal": true,
       "reversal_of": "Telenor's ownership and operation of Telenor Myanmar, a nationwide mobile operator",
+      "reversal_reason": "geopolitical",
       "date": "2022-03",
+      "still_current": null,
       "summary": "Telenor got final regulatory approval to sell its Myanmar unit to Lebanon's M1 Group with local partner Shwe Byain Phyu, citing the post-coup security situation and conflict between local and European law.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -158,14 +201,16 @@
           "publisher": "Developing Telecoms",
           "source_tier": "S2",
           "date": "2022-03-18",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         },
         {
           "url": "https://www.mobileworldlive.com/asia/asia-news/ooredoo-reaches-deal-to-exit-myanmar/",
           "publisher": "Mobile World Live",
           "source_tier": "S2",
           "date": "2022-09-08",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
@@ -178,10 +223,17 @@
       "pole": "third",
       "controller": "Ooredoo Group (Qatar)",
       "local_actor": "Ooredoo Myanmar (buyer Nine Communications, Singapore)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 5,
       "reversal": true,
       "reversal_of": "Ooredoo's ownership and operation of Ooredoo Myanmar, a nationwide mobile operator",
+      "reversal_reason": "geopolitical",
       "date": "2022-09-08",
+      "still_current": null,
       "summary": "Ooredoo agreed to sell its Myanmar unit, founded 2014, to Singapore-based Nine Communications, making it the second foreign-owned operator to leave post-coup Myanmar; closing was subject to Myanmar regulatory approval.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -191,19 +243,21 @@
           "publisher": "Mobile World Live",
           "source_tier": "S2",
           "date": "2022-09-08",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         },
         {
           "url": "https://developingtelecoms.com/telecom-business/operator-news/13955-ooredoo-inks-deal-to-exit-myanmar.html",
           "publisher": "Developing Telecoms",
           "source_tier": "S2",
           "date": null,
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": false
         }
       ],
-      "corroborated": true,
-      "confidence": "medium",
-      "analyst_inference": "Reported price about US$576 million (estimate), not entered. Closing date not confirmed in sources seen. Developing Telecoms item seen in search results, not fetched."
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reported price about US$576 million (estimate), not entered. Closing date not confirmed in sources seen. Developing Telecoms item seen in search results, not fetched. Audit 2026-10-22: the sale is reported completed and the operator rebranded as U9 on 20 Sep 2025 (lead only; closing date unconfirmed). Audit 2026-10-22: no longer corroborated, because a second source was seen only as a search-result headline."
     },
     {
       "id": "MMR-007",
@@ -211,10 +265,17 @@
       "pole": "us",
       "controller": "SpaceX (Starlink)",
       "local_actor": "Scam compounds on the Thai-Myanmar border (unlicensed users)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 2,
       "reversal": true,
       "reversal_of": "Starlink service to terminals operating at suspected scam centres in Myanmar",
+      "reversal_reason": "regulatory",
       "date": "2025-10",
+      "still_current": null,
       "summary": "SpaceX said it identified and disabled more than 2,500 Starlink kits near suspected scam centres in Myanmar, after a military raid on KK Park seized Starlink terminals.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -224,26 +285,29 @@
           "publisher": "NBC News",
           "source_tier": "S3",
           "date": null,
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         },
         {
           "url": "https://heise.de/-10824123",
           "publisher": "heise online",
           "source_tier": "S2",
           "date": null,
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": false
         },
         {
           "url": "https://myanmar-now.org/en/news/spacex-cuts-off-2500-starlink-devices-at-myanmar-scam-centres/",
           "publisher": "Myanmar Now",
           "source_tier": "S3",
           "date": null,
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": false
         }
       ],
-      "corroborated": true,
+      "corroborated": false,
       "confidence": "medium",
-      "analyst_inference": "Tier 2 assigned because the reversed service was unlicensed, small-scale use rather than a sanctioned deployment; Starlink's licensing status in Myanmar is not stated in the sources. Only NBC fetched; others seen in search results."
+      "analyst_inference": "Tier 2 assigned because the reversed service was unlicensed, small-scale use rather than a sanctioned deployment; Starlink's licensing status in Myanmar is not stated in the sources. Only NBC fetched; others seen in search results. Audit 2026-10-22: no longer corroborated, because a second source was seen only as a search-result headline."
     },
     {
       "id": "MMR-008",
@@ -251,10 +315,17 @@
       "pole": "prc",
       "controller": "DeepSeek (via a Chinese-built translation platform)",
       "local_actor": "Earthquake rescue responders and local authorities",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-03",
+      "still_current": null,
       "summary": "After the March 2025 earthquake, a DeepSeek-based Chinese–Burmese translation platform was used to help international rescuers communicate with local authorities, reportedly assisting over 700 people.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -265,7 +336,8 @@
           "source_tier": "S4",
           "date": "2025-04-02",
           "retrieved_at": "2026-10-21T09:20:00Z",
-          "relays_prc_state_media": true
+          "relays_prc_state_media": true,
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -296,6 +368,18 @@
       "null_reason": "no AI- or data-centre-specific power evidence surfaced; budget spent on surveillance and network layers"
     }
   },
+  "corrections": [
+    {
+      "date": "2026-10-22",
+      "audit": "AUDIT-2026-10-22.md",
+      "ids": [
+        "MMR-002",
+        "MMR-006",
+        "MMR-007"
+      ],
+      "note": "Migrated to spec v0.2 (scale, reversal_reason, still_current, builder/financier, base model, opened flags; corroboration recomputed on opened sources) and audit corrections applied."
+    }
+  ],
   "research_gaps": [
     "Radio/core vendors for MPT, ATOM, Mytel and U9 (ex-Ooredoo) are unconfirmed; check for Huawei/ZTE awards since 2021",
     "Did the Ooredoo Myanmar sale to Nine Communications close, and when?",

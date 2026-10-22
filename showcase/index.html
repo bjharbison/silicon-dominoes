@@ -133,9 +133,17 @@ function lean(iso){
   const rec=REC.get(iso);
   if(rec) for(const f of rec.findings||[]){
     if(!f.pole) continue;
-    let w=TIER_W[f.instrument_tier]||0; if(f.confidence==="low") w/=2; if(f.reversal) w=-w;
-    add(f.pole==="domestic"||f.pole==="third"?"sov":f.pole,w,f.id+" "+f.layer+(f.reversal?" (reversal)":""),!f.reversal&&f.instrument_tier<=2);
+    // lean rule v0.2 (showcase/README.md): only geopolitical/sanctions reversals move the map;
+    // municipal findings and unconfirmed pre-2020 findings count half; confirmed-ended count zero.
+    if(f.reversal&&!["geopolitical","sanctions"].includes(f.reversal_reason)) continue;
+    if(!f.reversal&&f.still_current===false) continue;
+    let w=TIER_W[f.instrument_tier]||0; if(f.confidence==="low") w/=2;
+    if(f.scale==="municipal") w/=2;
+    const old=!f.reversal&&f.date&&String(f.date).slice(0,4)<"2020"&&f.still_current!==true; if(old) w/=2;
+    if(f.reversal) w=-w;
+    add(f.pole==="domestic"||f.pole==="third"?"sov":f.pole,w,f.id+" "+f.layer+(f.reversal?" (reversal)":"")+(f.scale==="municipal"?" (municipal)":"")+(old?" (pre-2020)":""),!f.reversal&&f.instrument_tier<=2);
   }
+
   const tot={us:0,prc:0,sov:0}, low={us:0,prc:0,sov:0};
   for(const e of ev){
     if(e.lowTier&&e.w>0){const room=Math.max(0,.30-low[e.pole]);const used=Math.min(room,e.w);low[e.pole]+=used;tot[e.pole]+=used;e.capped=used<e.w}
@@ -207,7 +215,7 @@ function drawMap(){
   gRoot.selectAll("path.country").data(GEO.features,isoOf).join("path").attr("class","country").attr("d",path)
     .on("mousemove",(e,f)=>{const iso=isoOf(f);const tt=document.getElementById("tooltip");
       const v=VIEWS[view],c=v.of(iso),lab=v.cats[c]?v.cats[c][0]:"—";
-      tt.innerHTML=`<b>${esc(nameOf(iso,f))}</b><br><span class="dim">${esc(v.label)}:</span> ${esc(lab)}${REC.has(iso)?'<br><span class="dim">desk pass: unreviewed draft</span>':""}`;
+      tt.innerHTML=`<b>${esc(nameOf(iso,f))}</b><br><span class="dim">${esc(v.label)}:</span> ${esc(lab)}${REC.has(iso)?('<br><span class="dim">desk pass: '+(REC.get(iso).review_status==='unreviewed'?'unreviewed draft':esc(REC.get(iso).review_status))+'</span>'):""}`;
       tt.style.display="block";tt.style.left=(e.clientX+12)+"px";tt.style.top=(e.clientY+12)+"px";})
     .on("mouseleave",()=>{document.getElementById("tooltip").style.display="none"})
     .on("click",(e,f)=>select(isoOf(f),f));
@@ -237,7 +245,7 @@ function select(iso,f){
   const L=lean(iso), rec=REC.get(iso), P=document.getElementById("panel");
   const pct=k=>L.sum?(100*L.tot[k]/L.sum):0;
   let h=`<h2>${esc(nameOf(iso,f))}</h2><span class="dim">${esc(iso)}</span><div>`+
-    (rec?`<span class="badge">desk pass · unreviewed</span>`:`<span class="badge grey">desk pass pending</span>`)+`</div>`;
+    (rec?`<span class="badge">desk pass · ${esc(rec.review_status==='audited'?'Claude-audited, not yet reviewed':rec.review_status)}</span>`:`<span class="badge grey">desk pass pending</span>`)+`</div>`;
   h+=`<h3>Stack lean (derived)</h3><div>${esc(VIEWS.lean.cats[L.cell][0])}</div>
     <div class="leanbar"><span style="width:${pct("us")}%;background:var(--us)"></span><span style="width:${pct("sov")}%;background:var(--sov)"></span><span style="width:${pct("prc")}%;background:var(--prc)"></span></div>
     <div class="ev">US ${L.tot.us.toFixed(2)} · sovereign/third ${L.tot.sov.toFixed(2)} · PRC ${L.tot.prc.toFixed(2)}</div>
@@ -287,7 +295,7 @@ async function getJSON(u){const r=await fetch(u,{cache:"no-store"});if(!r.ok)thr
   try{GEO=await getJSON(GEO_URL)}catch(e){st.textContent="could not load world map geometry";return}
   buildNav(); drawMap(); overview();
   st.textContent=`${REC.size} desk-pass records · layers: ${Object.keys(FILES).filter(k=>D[k]).length}/${Object.keys(FILES).length}`+(missing.length?` · missing: ${missing.join(", ")}`:"");
-  document.getElementById("stamp").textContent="spec 0.1 · lean rule v0.1 · generated in browser "+new Date().toISOString().slice(0,10);
+  document.getElementById("stamp").textContent="spec 0.2 · lean rule v0.2 · generated in browser "+new Date().toISOString().slice(0,10);
   window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(drawMap,150)});
 })();
 </script>

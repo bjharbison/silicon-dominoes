@@ -1,9 +1,9 @@
 {
-  "schema": "sd-showcase-country/0.1",
-  "spec_version": "0.1",
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
   "iso3": "KHM",
   "name": "Cambodia",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-21T09:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -13,10 +13,17 @@
       "pole": "prc",
       "controller": "Huawei",
       "local_actor": "Smart Axiata; Metfone; Cellcard",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2019-11",
+      "still_current": null,
       "summary": "All three main Cambodian mobile operators ran 5G trials on Huawei equipment in 2019, following a government agreement with Huawei signed in April 2019; Smart Axiata awaited spectrum and a licence before launch.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -26,14 +33,16 @@
           "publisher": "Light Reading",
           "source_tier": "S2",
           "date": "2019-11-18",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         },
         {
           "url": "https://english.cambodiadaily.com/?p=152883",
           "publisher": "The Cambodia Daily (republishing Nikkei Asia)",
           "source_tier": "S3",
           "date": "2019-09-06",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
@@ -46,10 +55,17 @@
       "pole": "prc",
       "controller": "China Unicom Global; HMN Tech (supplier)",
       "local_actor": "Ministry of Posts and Telecommunications",
+      "builder": "HMN Tech",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 4,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2026-07",
+      "still_current": null,
       "summary": "The Sihanoukville-Hong Kong (SHV-HK) submarine cable, about 2,900 km, built by HMN Tech for China Unicom Global and co-funded by Cambodia's telecoms ministry, completed landing in late July 2026.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -59,14 +75,16 @@
           "publisher": "Telecom Review Asia",
           "source_tier": "S2",
           "date": "2026-07-29",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         },
         {
           "url": "https://www.datacenterdynamics.com/en/news/china-unicom-lands-shv-hk-submarine-cable-connecting-hong-kong-to-cambodia/",
           "publisher": "DatacenterDynamics",
           "source_tier": "S2",
           "date": "2026-08-05",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
@@ -79,10 +97,17 @@
       "pole": "prc",
       "controller": "Huawei",
       "local_actor": "Cellcard",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2026-09",
+      "still_current": null,
       "summary": "Cellcard signed an MoU with Huawei reported at US$300 million covering investment in 5G and AI, marking a partnership the article dates to 1999.",
       "announced_value_usd": 300000000,
       "verified_value_usd": null,
@@ -92,7 +117,8 @@
           "publisher": "Cambodia Investment Review",
           "source_tier": "S3",
           "date": "2026-09-28",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": false
         }
       ],
       "corroborated": false,
@@ -105,10 +131,17 @@
       "pole": "prc",
       "controller": "Huawei Cloud",
       "local_actor": "ByteDC",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-03-03",
+      "still_current": null,
       "summary": "Data-centre firm ByteDC signed an MoU with Huawei Cambodia on hybrid cloud, aiming to become a Huawei public cloud distributor while investing in private cloud infrastructure.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -118,7 +151,8 @@
           "publisher": "Cambodia Investment Review",
           "source_tier": "S3",
           "date": "2025-03-03",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -131,10 +165,17 @@
       "pole": "prc",
       "controller": "ZTE",
       "local_actor": "Royal Government of Cambodia (Prime Minister Hun Manet)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2026-07",
+      "still_current": null,
       "summary": "Prime Minister Hun Manet met ZTE executives at WAIC 2026 in Shanghai; both sides agreed to deepen cooperation on 5G deployment, AI applications and ICT talent. No signed documents, projects or values reported.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -144,7 +185,8 @@
           "publisher": "Intelligent CIO APAC",
           "source_tier": "S4",
           "date": "2026-07-24",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -154,14 +196,21 @@
     {
       "id": "KHM-006",
       "layer": "applications",
-      "pole": null,
-      "controller": null,
+      "pole": "prc",
+      "controller": "PRC government (donor)",
       "local_actor": "Phnom Penh authorities / police",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
       "instrument_tier": 5,
       "reversal": false,
       "reversal_of": null,
-      "date": null,
-      "summary": "More than 200 surveillance cameras donated by China were switched on in Phnom Penh about five months after installation began. Vendor, value and date not stated in the page read.",
+      "reversal_reason": null,
+      "date": "2015-12-23",
+      "still_current": null,
+      "summary": "More than 200 surveillance cameras donated by China were switched on in Phnom Penh in December 2015, about five months after installation began; camera vendor and value not stated.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -170,12 +219,13 @@
           "publisher": "Open Development Cambodia (republishing The Cambodia Daily)",
           "source_tier": "S3",
           "date": null,
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Donor is the PRC government but the camera vendor and system operator are not named, so the controller pole is unclear; a related headline reports China gave $3m for a city surveillance system (not fetched). Likely late-2010s."
+      "analyst_inference": "Donor is the PRC government but the camera vendor and system operator are not named, so the controller pole is unclear; a related headline reports China gave $3m for a city surveillance system (not fetched). Likely late-2010s. Audit 2026-10-22: Date given on the page (23 Dec 2015); pole set prc on the donor, vendor still unknown."
     },
     {
       "id": "KHM-007",
@@ -183,10 +233,17 @@
       "pole": null,
       "controller": "HUADING DEVELOPMENT (CAMBODIA) CO., LTD.",
       "local_actor": "Royal Government of Cambodia (designation)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 5,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2026-09-02",
+      "still_current": null,
       "summary": "Nasdaq-listed KIDZ AI agreed to take a 2% stake in Phnom Penh's operational Tier III facility, which the government has designated the national cloud data centre, with first refusal on up to 1 MW.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -196,7 +253,8 @@
           "publisher": "Finviz (KIDZ AI press release)",
           "source_tier": "S4",
           "date": "2026-09-02",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -209,10 +267,17 @@
       "pole": "domestic",
       "controller": "Ministry of Post and Telecommunications",
       "local_actor": "Ministry of Post and Telecommunications",
+      "builder": null,
+      "financier": null,
+      "base_model": "Llama 3",
+      "base_model_pole": "us",
+      "scale": "national",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025-02",
+      "still_current": null,
       "summary": "Cambodia's telecoms ministry reported it is developing a Khmer-language large language model built on Meta's open-weight Llama 3, to ease AI adoption including content creation. Still in development as of February 2025.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -222,7 +287,8 @@
           "publisher": "Cambodia Academy of Digital Technology",
           "source_tier": "S1",
           "date": "2025-02-08",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -235,10 +301,17 @@
       "pole": null,
       "controller": null,
       "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": "Qwen, Gemma and GPT-OSS variants",
+      "base_model_pole": null,
+      "scale": "national",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
+      "reversal_reason": null,
       "date": "2025",
+      "still_current": null,
       "summary": "KIDAI-A, billed as a sovereign Khmer-language AI agent for document processing, locally hosts open-weight models including Qwen, Gemma and GPT-OSS variants; listed as under development with a working prototype.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -248,7 +321,8 @@
           "publisher": "OECD.AI Policy Navigator",
           "source_tier": "S2",
           "date": "2026-08-03",
-          "retrieved_at": "2026-10-21T09:20:00Z"
+          "retrieved_at": "2026-10-21T09:20:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -278,6 +352,16 @@
       "null_reason": "no AI- or data-centre-specific power evidence surfaced; search budget spent on other layers"
     }
   },
+  "corrections": [
+    {
+      "date": "2026-10-22",
+      "audit": "AUDIT-2026-10-22.md",
+      "ids": [
+        "KHM-006"
+      ],
+      "note": "Migrated to spec v0.2 (scale, reversal_reason, still_current, builder/financier, base model, opened flags; corroboration recomputed on opened sources) and audit corrections applied."
+    }
+  ],
   "research_gaps": [
     "Which vendors supply RAN and core for Smart Axiata, Metfone and Cellcard today, and has commercial 5G launched (a 2026 launch was announced; article redirect not fetched)?",
     "Is SHV-HK in commercial service, and what was the ministry's co-funding share?",
