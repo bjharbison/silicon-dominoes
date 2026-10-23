@@ -1,0 +1,80 @@
+# Publishes the GitHub Pages site from TWO branches:
+#   main      -> the site as it is today (map.html, index.html, everything else)
+#   showcase  -> only its showcase/ folder, served at /silicon-dominoes/showcase/
+# so the daily desk pass shows up publicly without ever merging showcase into main.
+#
+# Requires: Settings -> Pages -> Build and deployment -> Source = "GitHub Actions".
+# Roll back: set Source back to "Deploy from a branch" (main, / root); this file is then inert.
+#
+# The site is built with the same Jekyll step Pages used for branch publishing, so the
+# main part of the site renders exactly as before.
+name: Publish site (main + showcase)
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Every 6h (UTC). 12:17 UTC catches the 06:58 ET daily desk pass;
+    # 18:17 UTC catches the Sunday 11:55 ET weekly audit.
+    - cron: "17 0,6,12,18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: site
+
+      - name: Check out the showcase branch
+        uses: actions/checkout@v4
+        with:
+          ref: showcase
+          path: showcase-src
+          sparse-checkout: showcase
+
+      - name: Add the latest showcase/ folder to the site
+        run: |
+          set -euo pipefail
+          test -f showcase-src/showcase/index.html || { echo "showcase branch has no showcase/index.html"; exit 1; }
+          # If main ever carries its own showcase/ (e.g. after a merge), the branch copy is newer.
+          rm -rf site/showcase
+          cp -r showcase-src/showcase site/showcase
+          echo "main:     $(git -C site log -1 --format='%h %cs %s')"
+          echo "showcase: $(git -C showcase-src log -1 --format='%h %cs %s')"
+          echo "country records: $(ls site/showcase/countries 2>/dev/null | wc -l)"
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll (same as branch publishing)
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./site
+          destination: ./_site
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
