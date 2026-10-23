@@ -47,6 +47,19 @@ than 15 countries. The push is a plain fast-forward of `showcase` only. `main` i
 `backup/main-2026-10-19` as an extra copy. A GitHub ruleset blocking deletions and force
 pushes on all branches is the backstop that does not depend on any of this code.
 
+## Simple and Advanced views
+
+The page opens in **Simple** (the switch is top right; the choice is remembered per browser).
+Simple shows the derived-lean map with plain legend labels, a country list, and a plain
+summary per country. Advanced is the full layer-by-layer page with every source.
+
+Every Simple sentence about a country is assembled mechanically from the `LEX` object in
+`index.html` plus the data: the lean cell, the two strongest pieces of evidence (by weight),
+whether the evidence is mostly announcements (Tier 1-2) or contracts and built projects
+(Tier 3-5), and whether the desk pass has reached the country. There is no hand-written text
+about any country. A wording change edits `LEX` and bumps `LEX.version`, which is stamped in
+the footer. Simple mode never changes the lean rule below; it only words its output.
+
 ## Derived lean (the default map colour)
 
 Display-only, recomputed in the browser from the files above, never stored.

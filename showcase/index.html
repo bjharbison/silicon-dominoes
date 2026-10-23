@@ -75,15 +75,67 @@
   #tooltip{position:fixed;pointer-events:none;display:none;z-index:9;background:var(--panel);border:1px solid var(--line);
     padding:6px 9px;font-size:11px;max-width:260px;line-height:1.5}
   footer{border-top:1px solid var(--line);padding:6px 16px;font-size:10.5px;color:var(--ink-dim);display:flex;gap:16px;flex-wrap:wrap}
+  /* ---- simple / advanced mode ---- */
+  #modeToggle{display:flex;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+  #modeToggle button{background:none;border:none;color:var(--ink-dim);font:inherit;font-size:10px;
+    letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;cursor:pointer}
+  #modeToggle button.active{color:var(--ground);background:var(--ink-dim)}
+  #modeToggle button:focus-visible{outline:1px solid var(--ink)}
+  #mapwrap[hidden],#cardsview[hidden]{display:none}
+  #cardsview{flex:1;min-width:0;min-height:0;overflow-y:auto;padding:16px}
+  #cardsearch{width:100%;max-width:420px;background:var(--panel);border:1px solid var(--line);color:var(--ink);
+    font:inherit;font-size:12px;padding:7px 9px}
+  .grp{font-family:'Space Grotesk',sans-serif;font-size:13px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--ink-dim);margin:18px 0 8px;display:flex;align-items:center;gap:8px}
+  .grp .sw{width:14px;height:10px;border:1px solid var(--line);flex:none}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:10px}
+  .scard{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px;cursor:pointer}
+  .scard:hover,.scard:focus-visible{border-color:var(--ink-dim);outline:none}
+  .scard h4{font-family:'Space Grotesk',sans-serif;font-size:14px;margin-bottom:4px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chips button{background:repeating-linear-gradient(45deg,#242b38,#242b38 6px,#1c222e 6px,#1c222e 12px);
+    border:1px solid var(--line);color:var(--ink);font:inherit;font-size:11px;padding:4px 8px;cursor:pointer;border-radius:3px}
+  .pchip{display:inline-block;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ground);
+    border-radius:3px;padding:2px 7px;font-weight:600}
+  .pchip.hatch{background:repeating-linear-gradient(45deg,#2a3140,#2a3140 4px,#3a4356 4px,#3a4356 8px);color:var(--ink)}
+  .s-sent{font-size:12.5px;line-height:1.65;margin:9px 0}
+  .scard .s-sent{font-size:12px;margin:0}
+  .sbarrow{display:flex;align-items:center;gap:8px;margin:4px 0}
+  .sbl{width:86px;color:var(--ink-dim);font-size:10.5px;text-align:right;flex:none}
+  .sbar{flex:1;height:9px;background:var(--nodata);border-radius:2px;overflow:hidden}
+  .sbar>div{height:100%}
+  .sbv{width:34px;font-size:11px;flex:none}
+  ul.onfile{list-style:none}
+  ul.onfile li{font-size:11.5px;line-height:1.5;margin-bottom:5px;padding-left:15px;position:relative}
+  ul.onfile li::before{content:"";position:absolute;left:0;top:.42em;width:8px;height:8px;border-radius:50%;
+    background:var(--dot);border:2px solid var(--dot);box-sizing:border-box}
+  ul.onfile li.neg::before{background:none}
+  .note{color:var(--ink-dim);font-size:11px;line-height:1.55;margin-top:6px}
+  .fullrec{margin-top:14px;background:none;border:1px solid var(--ink-dim);color:var(--ink);font:inherit;font-size:10.5px;
+    letter-spacing:.1em;text-transform:uppercase;padding:7px 12px;cursor:pointer;width:100%}
+  .fullrec:hover{background:var(--ground)}
+  /* Phones: the whole page scrolls (as in map.html v5.1) instead of squeezing map, panel and
+     footer into one fixed-height screen, where the footer was drawn over the panel; the legend
+     sits below the map instead of covering half of it. */
   @media (max-width:820px){
-    main{flex-direction:column} #mapwrap{height:58vh;flex:none} aside{width:auto;border-left:none;border-top:1px solid var(--line)}
-    #legend{left:8px;bottom:8px;max-width:200px}
+    html,body{height:auto} body{min-height:100%}
+    main{flex-direction:column;flex:none}
+    #mapwrap{flex:none}
+    #map{height:56vw;min-height:200px;max-height:60vh;touch-action:pan-y} /* world map is ~2:1 */
+    #legend{position:static;margin:8px 12px;max-width:none}
+    aside{width:auto;border-left:none;border-top:1px solid var(--line);overflow-y:visible}
+    .stamp{margin-left:0}
+    #cardsview{overflow-y:visible;padding:12px} .cards{grid-template-columns:1fr}
+    body.cardsmode aside{display:none}
   }
 </style>
 </head>
 <body>
 <header>
   <h1>Silicon Dominoes<small>global showcase</small></h1>
+  <div id="modeToggle" role="group" aria-label="Detail level" title="Simple: plain-language summaries generated from the data. Advanced: the full evidence record.">
+    <button data-mode="simple">Simple</button><button data-mode="advanced">Advanced</button>
+  </div>
   <span class="stamp">Draft · unreviewed</span>
 </header>
 <div id="banner"><b>DRAFT.</b> Every value on this page is a Claude-drafted coding from public sources, not yet audited.
@@ -94,6 +146,7 @@ The default colour is a mechanical rule over those codings (see showcase/README.
     <svg id="map" role="img" aria-label="World map"></svg>
     <div id="legend"></div>
   </div>
+  <section id="cardsview" hidden aria-label="Country list"></section>
   <aside id="panel"><p class="dim">Loading data…</p></aside>
 </main>
 <footer><span id="status">loading</span><span id="stamp"></span></footer>
@@ -107,29 +160,92 @@ const TIER_W={1:.15,2:.35,3:.70,4:.85,5:1.0};
 const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl=u=>/^https?:\/\//i.test(u||"")?esc(u):"#";
-let D={}, REC=new Map(), GEO=null, selected=null, view="lean";
+let D={}, REC=new Map(), GEO=null, selected=null, view="lean", uiMode="simple", drawnW=0;
+
+/* ---------------- plain-language lexicon (Simple mode) ----------------
+   Every Simple-mode sentence about a country is assembled mechanically from this object plus
+   the data; there is no hand-written text about any country anywhere on the page. A wording
+   change edits this object and bumps its version, which is stamped in the footer. */
+const LEX={version:"0.1",
+  cell:{
+    pole_us:{legend:"Home of the US stack",sent:"is the home of the US technology stack, the reference point the map measures against"},
+    pole_prc:{legend:"Home of China's stack",sent:"is the home of China's technology stack, the reference point the map measures against"},
+    lean_us:{legend:"Leans US",sent:"leans toward the US technology stack"},
+    lean_prc:{legend:"Leans China",sent:"leans toward China's technology stack"},
+    lean_sov:{legend:"Own or other suppliers",sent:"leans toward its own technology or suppliers outside the US and China"},
+    contested:{legend:"Takes from both",sent:"is taking substantial technology from both the US and China"},
+    mixed:{legend:"Mixed",sent:"has a mixed record, with no single side clearly ahead"},
+    insufficient:{legend:"Not enough evidence yet",sent:"does not have enough sourced evidence yet to say which way it leans"}},
+  pole_adj:{us:"American",prc:"Chinese",domestic:"home-grown",third:"non-US, non-Chinese"},
+  pole_name:{us:"US",prc:"China",sov:"Own or other"},
+  layer_nouns:{power:"electricity supply",facilities:"data centers",silicon:"chips",networks:"telecom networks",
+    cloud:"cloud services",models:"AI models",applications:"apps and services"},
+  tier:{1:"announced plans for {x}",2:"a pilot or framework deal for {x}",3:"a signed contract for {x}",
+    4:"financed or under-construction {x}",5:"operating {x}"},
+  reversal:"a step back from {x}",
+  mods:{municipal:" at city level",old:" (before 2020)"},
+  global:{pax:"membership in the US-led Pax Silica group",waico:"membership in China's WAICO group",
+    usc_live:"American cloud data centers operating in the country",usc_ann:"announced American cloud data centers",
+    prcc_live:"Chinese cloud data centers operating in the country",prcc_ann:"announced Chinese cloud data centers",
+    block:"a national ban on Chinese AI models",limit:"official limits on Chinese AI models"},
+  signals_one:"The strongest signal is {a}.",
+  signals_two:"The strongest signals are {a} and {b}.",
+  traj:{talk:"Most of this evidence is announcements, not signed deals.",
+    done:"Most of this evidence is signed contracts and working projects, not just talk.",
+    mix:"The evidence is a mix of announcements and signed deals."},
+  pending:"Only the global source lists have been checked so far; the country-by-country review has not reached it yet.",
+  coded_one:"Based on 1 finding from the country-by-country review plus the global source lists.",
+  coded:"Based on {n} findings from the country-by-country review plus the global source lists.",
+  coded_zero:"The country-by-country review found nothing beyond the global source lists.",
+  bars_title:"How the evidence divides",
+  bars_note:"Each bar is that side's share of the evidence found so far. A short record can swing on a single item.",
+  onfile_title:"What counts",
+  dots_note:"Filled dot: pulls toward that side. Hollow dot: pulls away from it.",
+  status:{unreviewed:"Drafted by Claude from public sources; not yet reviewed by a person.",
+    audited:"Drafted and checked by Claude from public sources; not yet reviewed by a person.",
+    pending:"Not yet reached by the country-by-country review."},
+  full_record:"Show full record \u2192 Advanced",
+  nav:{map:"Map",cards:"Country list"},
+  cap:"Colour shows which stack each country's evidence leans toward. Striped means not enough evidence yet, never balanced.",
+  search:"Find a country",
+  cards_intro:"Grouped by which way the evidence leans. Tap a country to open it on the map.",
+  ov:{title:"Which way is each country leaning?",
+    lede:"Each country is coloured by which AI technology stack its evidence leans toward: American, Chinese, or its own and other suppliers. Every sentence about a country is generated from its data; none is written by hand.",
+    progress:"{d} of {t} countries reviewed one by one so far; the rest rely on global source lists only.",
+    howto:["Tap a country to see why it is coloured that way.","Country list shows every country with a short summary.",
+      "Striped means not enough evidence yet, never balanced.","Advanced (top right) shows every source and the full working.",
+      "Everything here is an unreviewed draft."]}};
+const fill=(s,o)=>s.replace(/\{(\w+)\}/g,(m,k)=>o[k]!=null?o[k]:m);
+const cap1=s=>s.charAt(0).toUpperCase()+s.slice(1);
+function plainFinding(f,old){
+  const x=(LEX.pole_adj[f.pole]||"")+" "+(LEX.layer_nouns[f.layer]||f.layer);
+  let p=f.reversal?fill(LEX.reversal,{x}):fill(LEX.tier[f.instrument_tier]||"{x}",{x});
+  if(f.scale==="municipal") p+=LEX.mods.municipal;
+  if(old) p+=LEX.mods.old;
+  return p;
+}
 
 /* ---------------- derived lean (rule: showcase/README.md) ---------------- */
 function lean(iso){
   const ev=[]; // {pole, w, label, capped}
-  const add=(pole,w,label,lowTier)=>ev.push({pole,w,label,lowTier:!!lowTier});
+  const add=(pole,w,label,lowTier,plain)=>ev.push({pole,w,label,lowTier:!!lowTier,plain:plain||null});
   const dip=D.dip&&D.dip.countries[iso];
   if(dip){
-    if(dip.pax_silica&&["signatory","convener","non_signatory_participant"].includes(dip.pax_silica.status)) add("us",.15,"Pax Silica",true);
-    if(dip.waico&&["founding","acceded","convener"].includes(dip.waico.status)) add("prc",.15,"WAICO",true);
+    if(dip.pax_silica&&["signatory","convener","non_signatory_participant"].includes(dip.pax_silica.status)) add("us",.15,"Pax Silica",true,LEX.global.pax);
+    if(dip.waico&&["founding","acceded","convener"].includes(dip.waico.status)) add("prc",.15,"WAICO",true,LEX.global.waico);
   }
   const uc=D.usc&&D.usc.countries[iso];
   if(uc){const st=["aws","azure","gcp"].map(p=>uc[p]&&uc[p].status);
-    if(st.includes("ga")) add("us",1,"US hyperscaler region live");
-    else if(st.includes("announced")) add("us",.35,"US hyperscaler region announced",true);}
+    if(st.includes("ga")) add("us",1,"US hyperscaler region live",false,LEX.global.usc_live);
+    else if(st.includes("announced")) add("us",.35,"US hyperscaler region announced",true,LEX.global.usc_ann);}
   const pc=D.prcc&&D.prcc.countries[iso];
   if(pc){const st=["alibaba","huawei","tencent"].map(p=>pc[p]&&pc[p].status);
-    if(st.includes("live")) add("prc",1,"PRC cloud region live");
-    else if(st.includes("announced")) add("prc",.35,"PRC cloud region announced",true);}
+    if(st.includes("live")) add("prc",1,"PRC cloud region live",false,LEX.global.prcc_live);
+    else if(st.includes("announced")) add("prc",.35,"PRC cloud region announced",true,LEX.global.prcc_ann);}
   const rs=D.rest&&D.rest.countries[iso];
   if(rs&&rs.actions){const live=rs.actions.filter(a=>a.current_status==="in_force");
-    if(live.some(a=>a.scope==="national_block")) add("prc",-.70,"PRC-model national block");
-    else if(live.length) add("prc",-.35,"PRC-model restriction ("+live.map(a=>a.scope).join(", ")+")");}
+    if(live.some(a=>a.scope==="national_block")) add("prc",-.70,"PRC-model national block",false,LEX.global.block);
+    else if(live.length) add("prc",-.35,"PRC-model restriction ("+live.map(a=>a.scope).join(", ")+")",false,LEX.global.limit);}
   const rec=REC.get(iso);
   if(rec) for(const f of rec.findings||[]){
     if(!f.pole) continue;
@@ -141,7 +257,7 @@ function lean(iso){
     if(f.scale==="municipal") w/=2;
     const old=!f.reversal&&f.date&&String(f.date).slice(0,4)<"2020"&&f.still_current!==true; if(old) w/=2;
     if(f.reversal) w=-w;
-    add(f.pole==="domestic"||f.pole==="third"?"sov":f.pole,w,f.id+" "+f.layer+(f.reversal?" (reversal)":"")+(f.scale==="municipal"?" (municipal)":"")+(old?" (pre-2020)":""),!f.reversal&&f.instrument_tier<=2);
+    add(f.pole==="domestic"||f.pole==="third"?"sov":f.pole,w,f.id+" "+f.layer+(f.reversal?" (reversal)":"")+(f.scale==="municipal"?" (municipal)":"")+(old?" (pre-2020)":""),!f.reversal&&f.instrument_tier<=2,plainFinding(f,old));
   }
 
   const tot={us:0,prc:0,sov:0}, low={us:0,prc:0,sov:0};
@@ -208,13 +324,16 @@ function isoOf(f){const p=f.properties||{};let id=f.id||p.iso_a3||p.ISO_A3||p.ad
   if(!id||id==="-99"){const nm=(p.name||"").toLowerCase();if(nm.includes("kosovo"))id="XKX";else if(nm==="france")id="FRA";else if(nm==="norway")id="NOR";}
   return id;}
 function drawMap(){
-  const box=document.getElementById("mapwrap").getBoundingClientRect();
+  // Measure the map itself, not #mapwrap: on phones the legend sits inside #mapwrap below the map.
+  const box=document.getElementById("map").getBoundingClientRect();
+  if(box.width<10||box.height<10) return; // hidden (country list showing): redraw when shown
+  drawnW=box.width;
   svg.attr("viewBox",`0 0 ${box.width} ${box.height}`);
   const proj=d3.geoNaturalEarth1().fitExtent([[8,8],[box.width-8,box.height-8]],{type:"Sphere"});
   const path=d3.geoPath(proj);
   gRoot.selectAll("path.country").data(GEO.features,isoOf).join("path").attr("class","country").attr("d",path)
     .on("mousemove",(e,f)=>{const iso=isoOf(f);const tt=document.getElementById("tooltip");
-      const v=VIEWS[view],c=v.of(iso),lab=v.cats[c]?v.cats[c][0]:"—";
+      const v=VIEWS[mapView()],c=v.of(iso),lab=catLabel(mapView(),c);
       tt.innerHTML=`<b>${esc(nameOf(iso,f))}</b><br><span class="dim">${esc(v.label)}:</span> ${esc(lab)}${REC.has(iso)?('<br><span class="dim">desk pass: '+(REC.get(iso).review_status==='unreviewed'?'unreviewed draft':esc(REC.get(iso).review_status))+'</span>'):""}`;
       tt.style.display="block";tt.style.left=(e.clientX+12)+"px";tt.style.top=(e.clientY+12)+"px";})
     .on("mouseleave",()=>{document.getElementById("tooltip").style.display="none"})
@@ -224,17 +343,37 @@ function drawMap(){
 }
 function nameOf(iso,f){return (D.names&&D.names[iso])||(f&&f.properties&&f.properties.name)||iso}
 function recolor(){
-  const v=VIEWS[view], counts={};
+  const v=VIEWS[mapView()], counts={};
   gRoot.selectAll("path.country").attr("fill",f=>{const c=v.of(isoOf(f));counts[c]=(counts[c]||0)+1;return v.cats[c]?fillFor(v.cats[c][1]):css("--nodata")})
     .classed("selected",f=>isoOf(f)===selected);
-  document.getElementById("legend").innerHTML=`<div class="title">${esc(v.label)}</div>`+
-    Object.entries(v.cats).map(([k,[lab,col]])=>`<div class="row"><span class="sw" style="background:${col==="hatch"?"repeating-linear-gradient(45deg,#1c222e,#1c222e 3px,#3a4356 3px,#3a4356 5px)":css(col)}"></span>${esc(lab)}<span class="count">${counts[k]||0}</span></div>`).join("")+
-    `<div class="cap">${esc(v.cap)}</div>`;
+  document.getElementById("legend").innerHTML=`<div class="title">${esc(uiMode==="simple"?LEX.nav.map:v.label)}</div>`+
+    Object.entries(v.cats).map(([k,[lab,col]])=>`<div class="row"><span class="sw" style="background:${swatch(col)}"></span>${esc(catLabel(mapView(),k))}<span class="count">${counts[k]||0}</span></div>`).join("")+
+    `<div class="cap">${esc(uiMode==="simple"?LEX.cap:v.cap)}</div>`;
+}
+const mapView=()=>view==="cards"?"lean":view;
+const swatch=col=>col==="hatch"?"repeating-linear-gradient(45deg,#1c222e,#1c222e 3px,#3a4356 3px,#3a4356 5px)":css(col);
+function catLabel(vk,k){
+  if(uiMode==="simple"&&vk==="lean"&&LEX.cell[k]) return LEX.cell[k].legend;
+  const c=VIEWS[vk].cats[k]; return c?c[0]:"\u2014";
 }
 function buildNav(){
   const nav=document.getElementById("views");
-  nav.innerHTML=Object.entries(VIEWS).map(([k,v])=>`<button data-v="${k}" class="${k===view?"active":""}">${esc(v.label)}</button>`).join("");
-  nav.querySelectorAll("button").forEach(b=>b.onclick=()=>{view=b.dataset.v;nav.querySelectorAll("button").forEach(x=>x.classList.toggle("active",x===b));recolor();});
+  if(uiMode==="simple"&&view!=="cards") view="lean";
+  if(uiMode==="advanced"&&view==="cards") view="lean";
+  const items=uiMode==="simple"?[["lean",LEX.nav.map],["cards",LEX.nav.cards]]:Object.entries(VIEWS).map(([k,v])=>[k,v.label]);
+  nav.innerHTML=items.map(([k,l])=>`<button data-v="${k}" class="${k===view?"active":""}">${esc(l)}</button>`).join("");
+  nav.querySelectorAll("button").forEach(b=>b.onclick=()=>setView(b.dataset.v));
+  showPane();
+}
+function setView(v){
+  view=v; document.querySelectorAll("#views button").forEach(x=>x.classList.toggle("active",x.dataset.v===v));
+  showPane(); if(v==="cards") renderCards(); else recolor();
+}
+function showPane(){
+  const cards=view==="cards", wrap=document.getElementById("mapwrap");
+  wrap.hidden=cards; document.getElementById("cardsview").hidden=!cards;
+  document.body.classList.toggle("cardsmode",cards);
+  if(!cards&&GEO&&wrap.getBoundingClientRect().width!==drawnW) drawMap();
 }
 
 /* ---------------- panel ---------------- */
@@ -242,6 +381,7 @@ const srcLinks=s=>(s||[]).map(x=>`<a href="${safeUrl(x.url)}" target="_blank" re
 const hostOf=u=>{try{return new URL(u).hostname.replace(/^www\./,"")}catch(e){return "link"}};
 function select(iso,f){
   selected=iso; recolor();
+  if(uiMode==="simple"){simplePanel(iso,f);return;}
   const L=lean(iso), rec=REC.get(iso), P=document.getElementById("panel");
   const pct=k=>L.sum?(100*L.tot[k]/L.sum):0;
   let h=`<h2>${esc(nameOf(iso,f))}</h2><span class="dim">${esc(iso)}</span><div>`+
@@ -275,12 +415,98 @@ function select(iso,f){
   P.innerHTML=h;
 }
 function overview(){
+  if(uiMode==="simple"){simpleOverview();return;}
   const q=D.queue||{pending:[],done:[]};
   const done=q.done.length,total=done+q.pending.length;
   document.getElementById("panel").innerHTML=`<h2>Global showcase</h2><p class="dim" style="line-height:1.55;margin-top:6px">Which AI technology stack is each country building on? Five global layers from public source lists, plus a country-by-country desk pass running ten countries a day.</p>
     <h3>Progress</h3><div>${done} of ${total} countries desk-passed</div>
     <h3>How to read it</h3><ul class="plain"><li>Tap a country for its evidence and sources.</li><li>The buttons above switch layers. "Stack lean" combines them by a fixed rule; the others are single sources.</li><li>Hatched means not enough evidence, never "balanced".</li><li>Every value is an unreviewed draft.</li></ul>`;
 }
+
+/* ---------------- simple mode ---------------- */
+function simpleSentences(iso,name){
+  const L=lean(iso), rec=REC.get(iso), out=[name+" "+LEX.cell[L.cell].sent+"."];
+  const sig=[], seen=new Set();
+  L.ev.filter(e=>e.plain&&e.w!==0).sort((a,b)=>Math.abs(b.w)-Math.abs(a.w))
+    .forEach(e=>{if(sig.length<2&&!seen.has(e.plain)){seen.add(e.plain);sig.push(e.plain)}});
+  if(sig.length===1) out.push(fill(LEX.signals_one,{a:sig[0]}));
+  if(sig.length===2) out.push(fill(LEX.signals_two,{a:sig[0],b:sig[1]}));
+  let talk=0,done=0; for(const e of L.ev){if(e.w<=0)continue; if(e.lowTier)talk+=e.w; else done+=e.w}
+  const tt=talk+done; if(tt>0) out.push(talk/tt>=.65?LEX.traj.talk:done/tt>=.65?LEX.traj.done:LEX.traj.mix);
+  if(!rec) out.push(LEX.pending);
+  else{const n=(rec.findings||[]).length; out.push(n===0?LEX.coded_zero:n===1?LEX.coded_one:fill(LEX.coded,{n:String(n)}));}
+  return {L,text:out.join(" ")};
+}
+function cellChip(cell){
+  const col=VIEWS.lean.cats[cell][1];
+  return col==="hatch"?`<span class="pchip hatch">${esc(LEX.cell[cell].legend)}</span>`
+    :`<span class="pchip" style="background:${css(col)}">${esc(LEX.cell[cell].legend)}</span>`;
+}
+const sbar=(lbl,v,col)=>`<div class="sbarrow"><span class="sbl">${esc(lbl)}</span><div class="sbar"><div style="width:${Math.max(0,Math.min(100,v))}%;background:${col}"></div></div><span class="sbv">${v}%</span></div>`;
+const dotCol=p=>p==="us"?"var(--us)":p==="prc"?"var(--prc)":"var(--sov)";
+function simplePanel(iso,f){
+  const name=nameOf(iso,f), S=simpleSentences(iso,name), L=S.L, rec=REC.get(iso);
+  const pct=k=>L.sum?Math.round(100*L.tot[k]/L.sum):0;
+  let h=`<h2>${esc(name)}</h2><div style="margin-top:6px">${cellChip(L.cell)}</div><div class="s-sent">${esc(S.text)}</div>`;
+  if(L.sum>0) h+=`<h3>${esc(LEX.bars_title)}</h3>`+sbar(LEX.pole_name.us,pct("us"),"var(--us)")+
+    sbar(LEX.pole_name.sov,pct("sov"),"var(--sov)")+sbar(LEX.pole_name.prc,pct("prc"),"var(--prc)")+`<div class="note">${esc(LEX.bars_note)}</div>`;
+  // Identical phrases merge into one line with a count; strongest first.
+  const grp=new Map();
+  for(const e of L.ev){if(!e.plain||e.w===0)continue;const k=e.pole+"|"+(e.w<0)+"|"+e.plain;
+    const g=grp.get(k)||{pole:e.pole,neg:e.w<0,plain:e.plain,n:0,w:0};g.n++;g.w+=Math.abs(e.w);grp.set(k,g);}
+  const items=[...grp.values()].sort((a,b)=>b.w-a.w);
+  if(items.length) h+=`<h3>${esc(LEX.onfile_title)}</h3><ul class="onfile">`+
+    items.map(g=>`<li class="${g.neg?"neg":""}" style="--dot:${dotCol(g.pole)}">${esc(cap1(g.plain))}${g.n>1?` <span class="dim">\u00d7${g.n}</span>`:""}</li>`).join("")+
+    `</ul><div class="note">${esc(LEX.dots_note)}</div>`;
+  const st=rec?(rec.review_status==="audited"?LEX.status.audited:LEX.status.unreviewed):LEX.status.pending;
+  h+=`<p class="note" style="margin-top:12px">${esc(st)}</p><button class="fullrec" id="goAdv">${esc(LEX.full_record)}</button>`;
+  const P=document.getElementById("panel"); P.innerHTML=h; P.scrollTop=0;
+  document.getElementById("goAdv").onclick=()=>setMode("advanced");
+}
+function simpleOverview(){
+  const q=D.queue||{pending:[],done:[]}, d=q.done.length, t=d+q.pending.length;
+  document.getElementById("panel").innerHTML=`<h2>${esc(LEX.ov.title)}</h2><p class="s-sent">${esc(LEX.ov.lede)}</p>
+    <h3>Progress</h3><div class="note">${esc(fill(LEX.ov.progress,{d:String(d),t:String(t)}))}</div>
+    <h3>How to read it</h3><ul class="plain">${LEX.ov.howto.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>`;
+}
+function renderCards(){
+  const el=document.getElementById("cardsview"), groups={};
+  for(const iso of Object.keys(D.names||{})){const c=lean(iso).cell;(groups[c]=groups[c]||[]).push(iso)}
+  const order=["pole_us","pole_prc","lean_us","lean_prc","lean_sov","contested","mixed","insufficient"];
+  let h=`<input id="cardsearch" type="search" placeholder="${esc(LEX.search)}" aria-label="${esc(LEX.search)}"><p class="note">${esc(LEX.cards_intro)}</p>`;
+  for(const k of order){
+    const list=(groups[k]||[]).sort((a,b)=>nameOf(a).localeCompare(nameOf(b))); if(!list.length) continue;
+    h+=`<div class="grp"><span class="sw" style="background:${swatch(VIEWS.lean.cats[k][1])}"></span>${esc(LEX.cell[k].legend)} <span>(${list.length})</span></div>`;
+    h+=k==="insufficient"
+      ?`<div class="chips grpbody">`+list.map(iso=>`<button data-iso="${esc(iso)}" data-name="${esc(nameOf(iso).toLowerCase())}">${esc(nameOf(iso))}</button>`).join("")+`</div>`
+      :`<div class="cards grpbody">`+list.map(iso=>{const n=nameOf(iso);return `<div class="scard" role="button" tabindex="0" data-iso="${esc(iso)}" data-name="${esc(n.toLowerCase())}"><h4>${esc(n)}</h4><div class="s-sent">${esc(simpleSentences(iso,n).text)}</div></div>`}).join("")+`</div>`;
+  }
+  el.innerHTML=h;
+  el.querySelectorAll("[data-iso]").forEach(c=>{c.onclick=()=>openCountry(c.dataset.iso);
+    c.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openCountry(c.dataset.iso)}}});
+  document.getElementById("cardsearch").oninput=e=>{
+    const q=e.target.value.trim().toLowerCase();
+    el.querySelectorAll(".grpbody").forEach(b=>{let n=0;
+      b.querySelectorAll("[data-iso]").forEach(c=>{const on=!q||c.dataset.name.includes(q);c.style.display=on?"":"none";if(on)n++});
+      b.style.display=n?"":"none"; b.previousElementSibling.style.display=n?"":"none";});
+  };
+}
+function openCountry(iso){
+  setView("lean");
+  const f=GEO&&GEO.features.find(x=>isoOf(x)===iso);
+  select(iso,f);
+  if(window.innerWidth<=820) document.getElementById("panel").scrollIntoView({behavior:"smooth",block:"start"});
+}
+function setMode(m){
+  uiMode=m;
+  document.querySelectorAll("#modeToggle button").forEach(b=>b.classList.toggle("active",b.dataset.mode===m));
+  buildNav(); if(view==="cards") renderCards(); else recolor();
+  if(selected){const f=GEO&&GEO.features.find(x=>isoOf(x)===selected); select(selected,f);} else overview();
+  try{localStorage.setItem("sd_showcase_mode",m)}catch(e){}
+}
+document.querySelectorAll("#modeToggle button").forEach(b=>b.onclick=()=>setMode(b.dataset.mode));
+try{const s=localStorage.getItem("sd_showcase_mode");if(s==="advanced"||s==="simple")uiMode=s;}catch(e){}
+document.querySelectorAll("#modeToggle button").forEach(b=>b.classList.toggle("active",b.dataset.mode===uiMode));
 
 /* ---------------- load ---------------- */
 async function getJSON(u){const r=await fetch(u,{cache:"no-store"});if(!r.ok)throw new Error(u+" "+r.status);return r.json()}
@@ -295,7 +521,7 @@ async function getJSON(u){const r=await fetch(u,{cache:"no-store"});if(!r.ok)thr
   try{GEO=await getJSON(GEO_URL)}catch(e){st.textContent="could not load world map geometry";return}
   buildNav(); drawMap(); overview();
   st.textContent=`${REC.size} desk-pass records · layers: ${Object.keys(FILES).filter(k=>D[k]).length}/${Object.keys(FILES).length}`+(missing.length?` · missing: ${missing.join(", ")}`:"");
-  document.getElementById("stamp").textContent="spec 0.2 · lean rule v0.2 · generated in browser "+new Date().toISOString().slice(0,10);
+  document.getElementById("stamp").textContent="spec 0.2 · lean rule v0.2 · plain-language lexicon v"+LEX.version+" · generated in browser "+new Date().toISOString().slice(0,10);
   window.addEventListener("resize",()=>{clearTimeout(window._rz);window._rz=setTimeout(drawMap,150)});
 })();
 </script>
