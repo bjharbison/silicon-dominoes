@@ -1,0 +1,330 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "DZA",
+  "name": "Algeria",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "DZA-001",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Haut-Commissariat à la Numérisation (High Commission for Digitisation)",
+      "local_actor": "Haut-Commissariat à la Numérisation",
+      "builder": "Huawei consortium",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-04",
+      "still_current": null,
+      "summary": "The Council of Ministers approved a direct-negotiation contract with Huawei to build a national digital-services data centre for the High Commission for Digitisation; the agreement with a Huawei consortium was signed in Algiers in April 2024. Value undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://algerie-eco.com/2024/03/24/realisation-dun-data-center-un-marche-par-negociation-directe-entre-le-haut-commissariat-a-la-numerisation-et-huawei/",
+          "publisher": "Algérie Eco",
+          "source_tier": "S3",
+          "date": "2024-03-24",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://algerie-eco.com/2024/04/21/realisation-dun-data-center-signature-dun-accord-avec-huawei-consortium/",
+          "publisher": "Algérie Eco",
+          "source_tier": "S3",
+          "date": "2024-04-21",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://news.radioalgerie.dz/fr/node/42746",
+          "publisher": "Radio Algérie (Algerian state radio)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole domestic because the state body owns and operates the centre; Huawei is recorded as builder. If Huawei also supplies the IT equipment, cloud stack or operations (likely for a Huawei-consortium turnkey build, but not stated in the sources), the equipment would be a prc-controlled finding. Both opened sources are one outlet; Radio Algérie page was rejected on fetch."
+    },
+    {
+      "id": "DZA-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ooredoo Algérie",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-03-11",
+      "still_current": null,
+      "summary": "Ooredoo Group signed a partnership agreement with Huawei to modernise its core network towards 5.5G in several markets, named as including Algeria and Tunisia. No value or binding terms disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://algerie-eco.com/2024/03/14/telecoms-ooredoo-confie-a-huawei-la-preparation-de-son-reseau-central-a-la-5-5g-en-algerie-et-en-tunisie/",
+          "publisher": "Algérie Eco",
+          "source_tier": "S3",
+          "date": "2024-03-14",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/le-qatari-ooredoo-confie-a-huawei-la-preparation-de-son-reseau-central-a-la-5.html",
+          "publisher": "OSIRIS (republishing Agence Ecofin)",
+          "source_tier": "S3",
+          "date": "2024-03-12",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both reports trace to a Qatar News Agency release (Qatari state agency, S4), so they are not independent of each other. Coded tier 2 because only a partnership agreement is described. Pole is the core-network vendor's (Huawei), not the Qatari operator's."
+    },
+    {
+      "id": "DZA-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Mobilis (Algérie Télécom group)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-11-13",
+      "still_current": null,
+      "summary": "Mobilis ran a 5G test in Oran with Huawei as technical partner; Mobilis said it planned further tests with ZTE and Ericsson. No supply contract was reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ecofinagency.com/telecom/1511-39275-algeria-mobilis-successfully-tests-5g-network-in-oran-with-technical-support-from-huawei",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S3",
+          "date": "2018-11-15",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "A pilot only. Mobilis's commercial 5G (launched December 2025) vendor is not identified in any source this run opened; an April 2025 Mobilis test report named no vendor. still_current null: the vendor of the live network was not confirmed."
+    },
+    {
+      "id": "DZA-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Algérie Télécom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-10-06",
+      "still_current": null,
+      "summary": "Algérie Télécom awarded Huawei a commercial agreement to deploy a very-high-speed fixed network for one million customers within a year; separately ZTE won a fibre-network contract with a national young-entrepreneurs federation.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://osiris.sn/Algerie-Huawei-et-ZTE-decrochent.html",
+          "publisher": "OSIRIS (republishing Agence Ecofin)",
+          "source_tier": "S3",
+          "date": "2017-10-06",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pre-2020; whether Huawei still supplies and maintains the Algérie Télécom access network was not confirmed, so still_current is null. Value not disclosed."
+    },
+    {
+      "id": "DZA-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Algerian state security services",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-08-16",
+      "still_current": null,
+      "summary": "A 2019 Wall Street Journal investigation, reported by TSA, said Huawei supported Algerian surveillance systems presented as a model to other African states; an Open Technology Fund report cited Huawei safe-city, facial-recognition and censorship technology. Huawei denied the allegations.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.tsa-algerie.com/accuse-daider-le-pouvoir-a-espionner-lopposition-huawei-algerie-reagit/",
+          "publisher": "TSA Algérie",
+          "source_tier": "S3",
+          "date": "2019-08-16",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.tsa-algerie.com/lalgerie-utilise-des-outils-de-surveillance-russe-et-chinois/",
+          "publisher": "TSA Algérie",
+          "source_tier": "S3",
+          "date": "2019-09-21",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Secondary reporting of investigative claims; no procurement record, location, date of award or value found. Tier 3 is a conservative placeholder for a reportedly deployed system. Same outlet for both sources. Pre-2020 and still_current unconfirmed. A Russian vendor (SpeechPro) was also named, not coded."
+    },
+    {
+      "id": "DZA-006",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (named project partner; vendor role unconfirmed)",
+      "local_actor": "Algérie Télécom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-01",
+      "still_current": null,
+      "summary": "The ORVAL/ALVAL submarine cable linking Algiers and Oran to Valencia, Spain, went into service as Algérie Télécom-run infrastructure, with IslaLink and ASN named as project partners.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://capacitymedia.com/article/29ot42ikril15nn36mnch/news/algeria-goes-live-with-orval-subsea-cable",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://algerie-eco.com/2021/01/12/internet-le-cable-sous-marin-orval-alval-en-exploitation-effective/",
+          "publisher": "Algérie Eco",
+          "source_tier": "S3",
+          "date": "2021-01-12",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Capacity names ASN only as a partner, not explicitly as supplier; pole third (French vendor) is an inference. Date from the Algérie Eco headline seen in search only. Not PRC-built on available evidence."
+    },
+    {
+      "id": "DZA-007",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Algerian government (inter-ministerial AI roadmap)",
+      "local_actor": "Ministry of Higher Education and Scientific Research",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-12",
+      "still_current": null,
+      "summary": "Algeria adopted an inter-ministerial roadmap to implement its national AI strategy, prioritising sovereign open-source models for public services, national high-performance computing and domestic data storage. No model, base weights or vendor named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/algeria-launches-public-service-ai/lwrKxv3Y1oyMmg1o",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2026-08-12",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2026/08/13/algeria-adopts-inter-ministerial-ai-roadmap-focused-on-sovereign-models-compute-and-public-services/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S2",
+          "date": "2026-08-13",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "A policy statement (tier 1), not a deployed model. Base model unknown, so base_model and base_model_pole are null. Corroborated as a statement having been made, not as anything built."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no confirmed accelerator purchase or licence found; an April 2026 Huawei-ministry discussion of AI GPU acquisition was reported only by an outlet of unclear standing (algeriatech.news) and not coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced; budget spent on networks and facilities"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendors supply RAN and core for Mobilis, Djezzy and Ooredoo commercial 5G (licences December 2025, about US$492m)? No source opened named them.",
+    "Does Huawei supply the IT equipment, cloud stack or operations of the High Commission for Digitisation data centre (2024 contract)? Contract value and status?",
+    "April 2026 Ministry of Knowledge Economy - Huawei talks on AI GPU acquisition (reported via AL24 News / algeriatech.news): find a primary or S2 source; are Ascend accelerators involved?",
+    "Medex branch cable (about US$32m) vendor: the Capacity link redirected; not resolved.",
+    "Algerian safe-city / surveillance deployments: any procurement record (Huawei, Hikvision, Dahua, ZTE) and whether still in service.",
+    "Sonatrach - Huawei MoU (June 2024) seen in search results only; scope not checked.",
+    "WAICO founding membership rests on an S5 roster in the global layer; needs an S1-S3 confirmation."
+  ],
+  "searches_run": 10
+}

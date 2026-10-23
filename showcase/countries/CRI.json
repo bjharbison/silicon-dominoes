@@ -1,0 +1,406 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "CRI",
+  "name": "Costa Rica",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T01:21:49Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "CRI-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "MICITT / Ministerio de Seguridad Pública (Decree 44196-MSP-MICITT)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Huawei's eligibility to supply 5G and later networks in public procurement",
+      "reversal_reason": "geopolitical",
+      "date": "2023-08-31",
+      "still_current": null,
+      "summary": "Decree 44196-MSP-MICITT, published 31 August 2023 days after a Chaves-Biden meeting, classes 5G suppliers from countries outside the Budapest cybercrime convention as high risk and bars them from 5G procurement, effectively excluding Huawei.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nearshoreamericas.com/following-washington-meeting-costa-rica-excludes-china-from-5g-contracts/",
+          "publisher": "Nearshore Americas",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://dplnews.com/costa-rica-exclusion-de-huawei-para-concurso-de-super-internet-5g-es-detenida-por-tribunal/",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2024-02-08",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://semanariouniversidad.com/pais/decreto-5g-de-chaves-que-excluye-a-huawei-hunde-a-kolbi-ice-mientras-claro-y-liberty-avanzan-sin-restricciones/",
+          "publisher": "Semanario Universidad",
+          "source_tier": "S3",
+          "date": "2025-01-22",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://delfino.cr/2024/12/huawei-chaves-opa-ice-ee-uu-ue-y-5g-una-necesaria-linea-de-tiempo",
+          "publisher": "Delfino.cr",
+          "source_tier": "S3",
+          "date": "2024-12-15",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.nacion.com/el-pais/tribunal-rechaza-medida-cautelar-contra-decreto-de/6USL6ZZXZJHZJPS6SOOHOJD3LY/story/",
+          "publisher": "La Nación",
+          "source_tier": "S3",
+          "date": "2025-02-26",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 2 is the tier of what was reversed: Huawei's prospective eligibility as a 5G vendor; no Huawei 5G contract existed. A provisional court suspension (Feb 2024) was lifted in Feb 2025 (La Nación); Sala IV rejected Huawei's challenges in Jan-Feb 2024, and admitted a union unconstitutionality action in Dec 2024 whose outcome was not found. Sources report a five-year transition for existing equipment. Reason coded geopolitical because the decree is framed as cybersecurity and followed US engagement; the sources do not establish causation. still_current null: in force as of Feb 2025, not confirmed for Oct 2026."
+    },
+    {
+      "id": "CRI-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "ICE (Kölbi)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04-28",
+      "still_current": null,
+      "summary": "ICE awarded Ericsson lots 1-3 (RAN and core) of its Open RAN standalone 5G tender for about US$97.8m; Samsung and Huawei had been disqualified on technical grounds. The award could still be appealed.",
+      "announced_value_usd": 97761433,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://crhoy.com/tecnologia/adjudicacion-de-red-5g-del-ice-a-ericsson-se-puede-apelar",
+          "publisher": "CRHoy",
+          "source_tier": "S3",
+          "date": "2026-04-29",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://semanariouniversidad.com/pais/ice-adjudica-a-ericsson-su-red-5g-basada-en-tecnologia-que-casi-ningun-operador-en-el-mundo-elige/",
+          "publisher": "Semanario Universidad",
+          "source_tier": "S3",
+          "date": "2026-04-29",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://mobiletime.la/noticias/30/04/2026/costa-rica-red-5g-ericsson/",
+          "publisher": "Mobile Time Latinoamérica",
+          "source_tier": "S2",
+          "date": "2026-04-30",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Value is as reported from SICOP by CRHoy (US$97,761,433), not read from the award notice itself, so it is recorded as announced. Semanario's Feb 2026 report describes lots 1-3 as RAN and core; its April report mentions RAN only. Whether an appeal was lodged was not checked. Ericsson is Swedish, so pole third."
+    },
+    {
+      "id": "CRI-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia (via local partner Coasin)",
+      "local_actor": "ICE (Kölbi)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04-28",
+      "still_current": null,
+      "summary": "In the same ICE 5G tender, the Coasin-Nokia consortium was selected for the backhaul and connectivity lots (4-6), worth about US$24m.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://crhoy.com/tecnologia/adjudicacion-de-red-5g-del-ice-a-ericsson-se-puede-apelar",
+          "publisher": "CRHoy",
+          "source_tier": "S3",
+          "date": "2026-04-29",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://semanariouniversidad.com/pais/ice-adjudica-a-ericsson-su-red-5g-basada-en-tecnologia-que-casi-ningun-operador-en-el-mundo-elige/",
+          "publisher": "Semanario Universidad",
+          "source_tier": "S3",
+          "date": "2026-04-29",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://mobiletime.la/noticias/30/04/2026/costa-rica-red-5g-ericsson/",
+          "publisher": "Mobile Time Latinoamérica",
+          "source_tier": "S2",
+          "date": "2026-04-30",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Semanario gives about US$24.67m (₡12,222m converted by the outlet); CRHoy says about US$24m as a recommended amount, so value left null. CRHoy calls it a recommendation, Semanario an award. Nokia is Finnish, so pole third."
+    },
+    {
+      "id": "CRI-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "ICE (Kölbi)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Huawei's bid in ICE 5G tender 2025XE-000492-0000400001",
+      "reversal_reason": "regulatory",
+      "date": "2026-02-23",
+      "still_current": null,
+      "summary": "ICE's technical report disqualified Huawei (and Samsung) from the RAN/core lots, and Huawei from the backhaul lots, of its 5G tender before the price round, citing technical non-compliance; Huawei had bid among the lowest prices.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://semanariouniversidad.com/pais/ice-descalifica-de-licitacion-5g-a-samsung-y-huawei-continuan-nokia-ericsson-y-datasys/",
+          "publisher": "Semanario Universidad",
+          "source_tier": "S3",
+          "date": "2026-02-23",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://crhoy.com/tecnologia/adjudicacion-de-red-5g-del-ice-a-ericsson-se-puede-apelar",
+          "publisher": "CRHoy",
+          "source_tier": "S3",
+          "date": "2026-04-29",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Reported grounds are technical (ICE report 7111-86-2026); the sources do not cite the Budapest Convention decree, so the reason is coded regulatory (procurement) rather than geopolitical. Whether the decree influenced the technical evaluation is unknown. Tier 2 because only a bid was rejected. Two S3 sources, no S1/S2, so not corroborated."
+    },
+    {
+      "id": "CRI-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "ICE (Kölbi)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-16",
+      "still_current": null,
+      "summary": "ICE extended its Huawei contract for strengthening the 3G and 4G networks, including site refarming and preparing the EPC core for 5G integration, with estimated annual spend of about US$50m; the original award (2023) was US$42.6m.",
+      "announced_value_usd": 50000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://semanariouniversidad.com/pais/ice-aprueba-prorroga-de-contrato-a-huawei-para-4g-estimada-en-50-millones-adicionales/",
+          "publisher": "Semanario Universidad",
+          "source_tier": "S3",
+          "date": "2026-03-19",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://semanariouniversidad.com/pais/compras-del-ice-a-huawei-en-2023-suman-mas-de-30-millones-lo-mismo-que-le-contrato-en-toda-una-decada/",
+          "publisher": "Semanario Universidad",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Shows Huawei remains embedded in ICE's legacy 3G/4G network and EPC core even after the 5G decree. ICE had notified Huawei in Jan 2025 that it would not extend, then extended in March 2025 and again in March 2026. Huawei's share of ICE RAN/core is not quantified. The US$50m is an estimate, not verified spend. Single outlet, so uncorroborated."
+    },
+    {
+      "id": "CRI-006",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Liberty Costa Rica",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07",
+      "still_current": null,
+      "summary": "Liberty Costa Rica announced a six-year strategic alliance with Ericsson to build a standalone 5G network from the second half of 2025, after spectrum was awarded around April 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telesemana.com/blog/2025/07/21/nokia-y-ericsson-se-disputan-los-despliegues-5g-de-costa-rica/",
+          "publisher": "TeleSemana",
+          "source_tier": "S2",
+          "date": "2025-07-21",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded tier 3 as an announced vendor agreement; value and contract terms not disclosed. Liberty told legislators (Semanario, Jan 2025) that it also uses Cisco, HP and Huawei elements, and said all mobile operators have some Huawei equipment. Claro's Costa Rica vendor was not identified."
+    },
+    {
+      "id": "CRI-007",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Quantum Development Inc.",
+      "local_actor": "Limón free zone",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09",
+      "still_current": null,
+      "summary": "A proposed Quantum AI Free Zone Campus in Limón plans seven buildings and up to 200 MW for AI and GPU services; permits and financing are unverified, and the developer reportedly lost free-zone status in May 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.revistaeyn.com/empresasymanagement/proyecto-de-data-center-de-ia-en-costa-rica-plantea-retos-en-energia-y-agua-CG32074071",
+          "publisher": "Revista E&N",
+          "source_tier": "S3",
+          "date": "2026-09-19",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the nationality of Quantum Development Inc. is not stated. Tier 1 because only plans are described. A full 200 MW IT load would be roughly 14.6% of 2025 national demand per the article's hypothetical. The free-zone loss comes from a UNED analysis cited in the article."
+    },
+    {
+      "id": "CRI-008",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "MICITT",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-12-20",
+      "still_current": null,
+      "summary": "MICITT and Microsoft Costa Rica signed a memorandum of understanding on digital transformation, government interoperability, cybersecurity, and AI training for public servants and citizens.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://news.microsoft.com/es-xl/?p=123590",
+          "publisher": "Microsoft News Center Latinoamérica",
+          "source_tier": "S4",
+          "date": "2023-12-20",
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://revistasumma.com/?p=217475",
+          "publisher": "Revista Summa",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:21:49Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Non-binding MOU focused on skills and training; no model deployment or cloud migration is described. Corporate release is S4."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no public accelerator purchases or export-licence reporting surfaced; no dedicated search spent (Intel's assembly/test operations are not accelerator deployments)"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "no government partnership with a frontier model provider or sovereign model found in 1 search; only a Microsoft skills MOU (coded under applications)"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power supply evidence surfaced beyond the Quantum campus demand estimate"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current legal status of Decree 44196-MSP-MICITT: outcome of the FIT unconstitutionality action admitted by Sala IV in Dec 2024.",
+    "Was the ICE 5G award to Ericsson appealed by Huawei or Samsung, and has the contract been signed?",
+    "Which vendor supplies Claro Costa Rica's 5G network?",
+    "Huawei's share of ICE's 3G/4G RAN and EPC core, and whether the five-year transition requires replacement.",
+    "Outcome of the government's Dec 2024 criminal complaints against Huawei and ICE officials (enforcement, not coded).",
+    "Nationality and status of Quantum Development Inc.; other large data-centre projects (e.g. hyperscaler or colocation builds) not searched in depth.",
+    "Safe-city or police surveillance systems (Hikvision, Dahua, Huawei) in Costa Rica: no evidence found in one search.",
+    "Any MICITT AI strategy (ENIA) implementation involving foreign model providers."
+  ],
+  "searches_run": 9
+}

@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "CRI",
-  "CUB",
-  "DEU",
-  "DMA",
-  "DZA",
-  "ETH",
-  "FIN",
-  "GBR",
-  "GEO",
-  "GRC",
   "IND",
   "IRN",
   "ISR",
@@ -254,6 +244,16 @@
   "CHL",
   "CHN",
   "CMR",
-  "COG"
+  "COG",
+  "CRI",
+  "CUB",
+  "DEU",
+  "DMA",
+  "DZA",
+  "ETH",
+  "FIN",
+  "GBR",
+  "GEO",
+  "GRC"
  ]
 }

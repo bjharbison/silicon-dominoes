@@ -1,0 +1,492 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ETH",
+  "name": "Ethiopia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T01:26:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ETH-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "Ethio Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-05",
+      "still_current": null,
+      "summary": "Ethio Telecom launched pre-commercial 5G on six sites in Addis Ababa using Huawei and ZTE equipment, under temporary spectrum approval, planning up to 150 sites within a year.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/?p=201266",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2022-05-10",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/?p=345611",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2022-05-10",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 because the launch was pre-commercial on a handful of sites. RCR names Huawei and ZTE; Mobile World Live names only Huawei. Current 5G vendor split across the national network is not established."
+    },
+    {
+      "id": "ETH-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ethio Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-04",
+      "still_current": null,
+      "summary": "Huawei was reported as main contractor for Ethio Telecom's latest 4G/LTE expansion, including the eastern part of the country; no site count or value given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://satelliteprome.com/vertical-markets/telcos-vertical-markets/ethio-telecom-expands-4g-with-huawei-plans-5g-for-2022/",
+          "publisher": "SatellitePro ME",
+          "source_tier": "S2",
+          "date": "2021-04-22",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/ethiopie-ethio-telecom-s-associe-a-huawei-pour-renforcer-ses-capacites-4g.html",
+          "publisher": "OSIRIS (republishing)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded tier 3 as a reported contract award; counterparty named but no value or award notice. OSIRIS item seen in search results only."
+    },
+    {
+      "id": "ETH-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "Ethio Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "Huawei and ZTE shared a roughly US$1.6bn deal to build LTE in Addis Ababa and 3G nationwide for state monopoly Ethio Telecom, backed by low-interest vendor-linked loans from state-linked banks.",
+      "announced_value_usd": 1600000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.fierce-network.com/europe/ethiopia-benefits-from-vendor-financing-1-6b-deal-zte-huawei",
+          "publisher": "Fierce Network",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://capacitymedia.com/article/29ot42ikril15nmoxt5d7/news/zte-could-lose-ethio-telecom-contract",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "The opened page gives no year (it refers to Ethio Telecom as the only operator, so pre-2022); date left null rather than inferred. Pre-2020 in all likelihood, so still_current is null. Financier is described only as Chinese state-linked banks, so not named. Capacity headline (ZTE could lose the contract) seen in search only; a possible partial reversal not verified."
+    },
+    {
+      "id": "ETH-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Ethio Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03",
+      "still_current": null,
+      "summary": "At MWC 2026 Ethio Telecom signed a network expansion agreement with Ericsson covering about 1,500 sites: 4G capacity, new 5G, 75 off-grid rural sites and 3G-to-4G upgrades. Huawei and ZTE talks were reported concluded in principle only.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techtrendske.co.ke/2026/03/09/ethio-telecom-mwc26-network-deals/",
+          "publisher": "TechTrends Kenya",
+          "source_tier": "S3",
+          "date": "2026-03-09",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened S3 source; no value disclosed. Ericsson is Swedish, so third. Signals Ethio Telecom adding a non-PRC RAN vendor alongside its Huawei/ZTE base, not replacing it; the Huawei/ZTE in-principle deals are not coded as findings since unsigned."
+    },
+    {
+      "id": "ETH-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Safaricom Telecommunications Ethiopia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-03-07",
+      "still_current": null,
+      "summary": "Safaricom Ethiopia reportedly picked Nokia for its core network and Addis Ababa coverage, as part of a planned US$8.5bn ten-year investment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://capacityglobal.com/news/exclusive-safaricom-picks-huawei-and-nokia-for-ethiopia-network/",
+          "publisher": "Capacity",
+          "source_tier": "S2",
+          "date": "2022-03-07",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://capitalethiopia.com/2022/04/11/safaricom-ethiopia-nokia-strike-500-million-usd-infrastructure-mega-deal/",
+          "publisher": "Capital Ethiopia",
+          "source_tier": "S3",
+          "date": "2022-04-11",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Capacity's report was labelled exclusive (unnamed sourcing). Capital Ethiopia headline (US$500m Nokia deal) seen in search only, so the value is not recorded. Nokia is Finnish, so third."
+    },
+    {
+      "id": "ETH-006",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Safaricom Telecommunications Ethiopia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-03-07",
+      "still_current": null,
+      "summary": "Safaricom Ethiopia reportedly picked Huawei to supply network coverage for the country outside Addis Ababa, with Nokia handling the core and the capital.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://capacityglobal.com/news/exclusive-safaricom-picks-huawei-and-nokia-for-ethiopia-network/",
+          "publisher": "Capacity",
+          "source_tier": "S2",
+          "date": "2022-03-07",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened S2 source with unnamed sourcing; whether Huawei's role is RAN only is not stated. If accurate, Huawei RAN covers most of Safaricom Ethiopia's geography."
+    },
+    {
+      "id": "ETH-007",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Raxio Data Centres (parent Roha Group)",
+      "local_actor": "Ethio ICT Park",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-11-22",
+      "still_current": null,
+      "summary": "Raxio opened its ET1 data centre in Ethio ICT Park, Addis Ababa, with up to 3MW of IT load and 800 racks.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/raxio-launches-data-center-in-addis-ababa-ethiopia",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-11-22",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.connectingafrica.com/data-centers/raxio-launches-flagship-data-center-in-ethiopia",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/data-centres-networks/15848-raxio-s-addis-ababa-data-centre-is-officially-launched.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole us rests on DCD describing Raxio's parent Roha Group as a US-based investment firm; Raxio's own corporate domicile was not checked and other investors may hold stakes. Pole should be re-checked."
+    },
+    {
+      "id": "ETH-008",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Wingu.Africa",
+      "local_actor": "Ethio ICT Park",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-01-11",
+      "still_current": null,
+      "summary": "Wingu.Africa broke ground on a data centre on a 15,000 sq m site at Ethio ICT Park, billed as Ethiopia's first hyperscale facility; capacity and value undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/winguafrica-breaks-ground-hyperscale-data-center-addis-ababa-ethiopia/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2021-01-18",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://thetechcapital.com/ethiopias-first-hyperscale-data-centre-breaks-ground-2/",
+          "publisher": "The Tech Capital",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the source calls Wingu.Africa pan-African without stating its home jurisdiction or ownership. Tier 4 for construction started; operational status not confirmed in this pass."
+    },
+    {
+      "id": "ETH-009",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Ethio Telecom",
+      "local_actor": "Ethio Telecom",
+      "builder": "Huawei",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-05",
+      "still_current": null,
+      "summary": "State-owned Ethio Telecom opened a Tier-III-ready modular data centre in Addis Ababa supplied by Huawei, holding up to 800 servers, for mobile money and business systems, with colocation and cloud planned.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/ethio-telecom-opens-new-huawei-built-modular-data-center-in-addis-ababa-ethiopia",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2021-05-24",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://capacitymedia.com/articles/3828634/ethio-telecom-opens-huawei-built-modular-data-center",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://shega.co/news/ethio-telecom-launched-tier-iii-ready-modular-data-center-powered-by-huawei",
+          "publisher": "Shega",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded domestic as an owner-operated building with Huawei as builder. A prefabricated modular data centre is close to IT equipment (Huawei supplies power, cooling and management systems), so a reviewer could argue for prc; whether Huawei holds O&M access is not stated."
+    },
+    {
+      "id": "ETH-010",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ethio Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-15",
+      "still_current": null,
+      "summary": "Ethio Telecom and Huawei signed a partnership to co-develop enterprise digital solutions spanning connectivity, cloud, AI, cybersecurity, IoT and data centres, including integration with Telebirr.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/partnerships/ethio-telecom-huawei-to-accelerate-digital-transformation",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2026-07-15",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded tier 1 because the agreement's binding nature and value are undisclosed; it reads as a partnership framework. Layer applications chosen for enterprise solutions; cloud elements overlap the global cloud layer."
+    },
+    {
+      "id": "ETH-011",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Addis Ababa City Administration",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12-04",
+      "still_current": null,
+      "summary": "Addis Ababa's city administration entered a strategic partnership with Huawei to digitise public services and modernise urban-management technology; no value or contract terms published.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://osiris.sn/ethiopie-addis-abeba-choisit-huawei-pour-sa-transformation-numerique.html",
+          "publisher": "OSIRIS (republishing Agence Ecofin)",
+          "source_tier": "S3",
+          "date": "2024-12-04",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Republished Ecofin item; no surveillance or safe-city scope is stated, so this is not evidence of a Huawei safe-city system in Addis."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no public accelerator purchases, GPU clusters or export-licence reporting for Ethiopia found in 1 targeted search; Addis Fortune mentions planned GPU clusters in Digital Ethiopia 2030 without vendor"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "no government partnership with a frontier model provider or sovereign national model found in 1 search; the EAII tripartite MoU page (Fana, state-affiliated) was blocked; Addis AI is a private Amharic assistant with undisclosed base model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "power deals found are bitcoin-mining PPAs with EEP (e.g. Bitdeer 50MW Oromia, SEC 6-K May 2025) and EEP's Aug 2025 phase-out of crypto mining; none AI- or data-centre-specific"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current RAN/core vendor split for Ethio Telecom 4G/5G after the 2026 Ericsson agreement; did Huawei/ZTE in-principle deals at MWC26 get signed?",
+    "Confirm Safaricom Ethiopia vendors from primary sources (Safaricom IR/annual report) and whether Huawei supplies RAN only.",
+    "Year, value and financier of the US$1.6bn Huawei/ZTE Ethio Telecom deal, and whether ZTE's share was cut (Capacity headline).",
+    "Huawei or other safe-city/surveillance deployments for Addis Ababa police or INSA: no credible source found in this pass.",
+    "EAII tripartite MoU (Fana) parties and any foreign AI partners; EAII's 16,000 TB data centre vendor stack.",
+    "Raxio and Wingu.Africa corporate domicile and current operational status of Wingu's Addis campus.",
+    "Whether Ethio Telecom's Tele Cloud runs on a Huawei stack.",
+    "EEP crypto-mining phase-out (Aug 2025): any re-allocation of power to AI/data-centre loads."
+  ],
+  "searches_run": 9
+}

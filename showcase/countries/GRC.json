@@ -1,0 +1,459 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GRC",
+  "name": "Greece",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GRC-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Cosmote (OTE Group, Deutsche Telekom)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-03-25",
+      "still_current": null,
+      "summary": "Cosmote, Greece's largest mobile operator, chose Ericsson as its sole 5G radio access network vendor; the deal also covers replacing its 2G/3G/4G access equipment. Core network scope was not stated.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://computerweekly.com/news/252480588/Ericsson-wins-exclusive-5G-contract-with-Cosmote-Greece",
+          "publisher": "Computer Weekly",
+          "source_tier": "S2",
+          "date": "2020-03-25",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://rcrwireless.com/20200325/business/ericsson-secures-new-5g-contract-greece",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2020-03-25",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Ericsson is Swedish, so pole third. Coded tier 3 (contract award); commercial 5G launch and current RAN share were not confirmed in an opened source, so not tier 5. Neither source mentions Huawei, so whether the access swap displaced Huawei gear at Cosmote is unknown."
+    },
+    {
+      "id": "GRC-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Wind Hellas",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-12-01",
+      "still_current": null,
+      "summary": "Wind Hellas signed a five-year deal for Ericsson to supply its standalone and non-standalone 5G core, cloud infrastructure, virtual IMS and BSS charging, upgrading its existing packet core and signalling.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/2020/12/ericsson-brings-5g-to-greece-with-wind-hellas",
+          "publisher": "Ericsson (press release)",
+          "source_tier": "S1",
+          "date": "2020-12-01",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/ericsson/ericsson-inks-latest-greek-5g-deal/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2020-12-01",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Core only; the RAN vendor for Wind/Nova is not named here (see GRC-003, which reports Huawei as its main access supplier in 2020). Vendor press release treated as S1 counterparty disclosure; no contract value disclosed. Its relationship to the current operator Nova was not verified in this pass."
+    },
+    {
+      "id": "GRC-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Vodafone Greece; Wind Hellas",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-09-22",
+      "still_current": null,
+      "summary": "Greek business press reported that Huawei was the main access-network supplier to both Vodafone Greece and Wind Hellas, while Vodafone Greece used no Huawei equipment in its core, following Vodafone Group's European core decision.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.businessdaily.gr/english-edition/26575_common-vodafone-wind-company-and-decisions-huawei",
+          "publisher": "Business Daily (Greece)",
+          "source_tier": "S3",
+          "date": "2020-09-22",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 reflects an installed, operating access network as of 2020; whether Huawei remains in Vodafone Greece or Nova RAN after 5G rollout is unverified (still_current null). Vodafone Group's removal of Huawei from European cores is a group-level decision, not a Greek reversal, so it is not coded separately."
+    },
+    {
+      "id": "GRC-004",
+      "layer": "networks",
+      "pole": "us",
+      "controller": null,
+      "local_actor": "Government of Greece",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-07-24",
+      "still_current": null,
+      "summary": "US Secretary of State Pompeo announced that Greece had joined the US Clean Network initiative while Washington pressed Athens to bar Huawei from 5G; no formal Greek Huawei ban was reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.thenationalherald.com/?p=149134",
+          "publisher": "The National Herald",
+          "source_tier": "S3",
+          "date": "2020-10-05",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole us as an alignment statement led by the US; controller null because no system is controlled. Single S3 source relaying a US government announcement. No Greek legal exclusion of Huawei was found; the operator vendor picks (GRC-001, GRC-002) are commercial decisions, not documented as mandated."
+    },
+    {
+      "id": "GRC-005",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "Government of Greece; Onassis Foundation; Endeavor Greece",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-05",
+      "still_current": null,
+      "summary": "Greece signed an 'OpenAI for Greece' MOU at the Thessaloniki Expo: a ChatGPT Edu pilot for upper-secondary teachers led by the Onassis Foundation, plus an AI startup accelerator with Endeavor Greece and the Development Ministry offering OpenAI credits.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://openai.com/ca-ES/global-affairs/openai-for-greece/",
+          "publisher": "OpenAI",
+          "source_tier": "S1",
+          "date": "2025-09-05",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.greeknewsagenda.gr/?p=22772",
+          "publisher": "Greek News Agenda (Secretariat General for Communication)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://kr.tradingview.com/news/reuters.com%2C2025%3Anewsml_L8N3US0SL%3A0-greece-openai-agree-deal-to-boost-innovation-in-schools-small-businesses",
+          "publisher": "Reuters (via TradingView)",
+          "source_tier": "S3",
+          "date": "2025-09",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1 (MOU and pilot intent); the school pilot itself would be tier 2 once confirmed running. Greek News Agenda is a government outlet (S4). Reuters seen only as a search-result headline. Service-only use of OpenAI, so base_model fields are null."
+    },
+    {
+      "id": "GRC-006",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Institute for Language and Speech Processing, Athena Research Center",
+      "local_actor": "Athena RC",
+      "builder": null,
+      "financier": null,
+      "base_model": "Mistral-7B v0.1",
+      "base_model_pole": "third",
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-07",
+      "still_current": null,
+      "summary": "Athena RC's ILSP released Meltemi, an open Greek large language model built by continual pretraining of Mistral-7B on Greek and English text, under Apache-2.0; a v1.5 has since superseded the first version.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://huggingface.co/ilsp/Meltemi-7B-v1",
+          "publisher": "ILSP model card (Hugging Face)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://arxiv.org/html/2407.20743v1",
+          "publisher": "arXiv (Meltemi paper)",
+          "source_tier": "S2",
+          "date": "2024-07-30",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Domestic because ILSP controls the released weights; base is Mistral-7B, French (EU) open weights, so base_model_pole third. Date is the paper's; the model card gives none. Tier 5 means public release, not measured adoption. Single opened source is the developer's own model card (treated as S1)."
+    },
+    {
+      "id": "GRC-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "GRNET (National Infrastructures for Research and Technology)",
+      "local_actor": "Ministry of Digital Governance",
+      "builder": "MainSys (data centre); HPE (system integrator)",
+      "financier": "EuroHPC Joint Undertaking; Greek Recovery and Resilience Facility",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-28",
+      "still_current": null,
+      "summary": "EuroHPC signed with HPE for the Daedalus supercomputer (over 89 petaflops, EUR 36m system cost, 35% EuroHPC, 65% Greek recovery plan) at Lavrio's former power station; GRNET operates it, and the PM inaugurated it on 19 October 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://eurohpc-ju.europa.eu/eurohpc-ju-signs-procurement-contract-daedalus-supercomputer-2025-03-28_en",
+          "publisher": "EuroHPC Joint Undertaking",
+          "source_tier": "S1",
+          "date": "2025-03-28",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://en.protothema.gr/2026/10/19/daedalus-supercomputer-unveiled-in-greece-today-the-technological-powerhouse-to-transform-everyday-life/",
+          "publisher": "Proto Thema (English)",
+          "source_tier": "S3",
+          "date": "2026-10-19",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Owner-operator GRNET is Greek, so domestic; HPE (US) is the system vendor and MainSys (Greek) built the data centre. Kept at tier 4 because the inauguration report did not confirm full user operation. Proto Thema gives EUR 58.9m total (HPE EUR 41m, MainSys EUR 17.9m); values not converted to USD.",
+      "bundle_id": "GRC-B1"
+    },
+    {
+      "id": "GRC-008",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "NVIDIA (accelerator vendor), via HPE",
+      "local_actor": "GRNET",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-28",
+      "still_current": null,
+      "summary": "Daedalus, supplied by HPE, uses NVIDIA GH200 Grace Hopper superchips; power was switched on in October 2026 ahead of its inauguration. Total accelerator count was not reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://en.protothema.gr/2026/10/19/daedalus-supercomputer-unveiled-in-greece-today-the-technological-powerhouse-to-transform-everyday-life/",
+          "publisher": "Proto Thema (English)",
+          "source_tier": "S3",
+          "date": "2026-10-19",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://eurohpc-ju.europa.eu/eurohpc-ju-signs-procurement-contract-daedalus-supercomputer-2025-03-28_en",
+          "publisher": "EuroHPC Joint Undertaking",
+          "source_tier": "S1",
+          "date": "2025-03-28",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "The NVIDIA GH200 attribution appears only in Proto Thema; the EuroHPC release names HPE but no accelerator, so the chip claim rests on one S3 source and is not corroborated. Tier 4 as contracted and powered on.",
+      "bundle_id": "GRC-B1"
+    },
+    {
+      "id": "GRC-009",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "GRNET",
+      "local_actor": "Ministry of Digital Governance",
+      "builder": null,
+      "financier": "EuroHPC Joint Undertaking (EUR 15m) and Greek state",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-04-01",
+      "still_current": null,
+      "summary": "The Pharos AI Factory, coordinated by GRNET in Athens and built around the Daedalus supercomputer, runs April 2025 to March 2028 with a EUR 30m budget, half from the EU via EuroHPC, for startups, SMEs, researchers and public bodies.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://cordis.europa.eu/project/id/101234269",
+          "publisher": "CORDIS (European Commission)",
+          "source_tier": "S1",
+          "date": "2025-04-01",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ekt.gr/en/news/30578",
+          "publisher": "National Documentation Centre (EKT)",
+          "source_tier": "S1",
+          "date": "2024-12-19",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 4 because the EU grant agreement is signed and funding committed. Controller GRNET is Greek; EU co-financing does not set the pole. EUR figures not converted to USD.",
+      "bundle_id": "GRC-B1"
+    },
+    {
+      "id": "GRC-010",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "Koropi and Spata municipalities (Attica)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10",
+      "still_current": null,
+      "summary": "Microsoft says its Attica datacentre campus, drawing water from Koropi and Spata, is under construction and not yet operational, with about 340 peak construction jobs and evaporative cooling; no investment figure is given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://local.microsoft.com/wp-content/uploads/2025/10/Microsoft-datacenters-in-Greece.pdf",
+          "publisher": "Microsoft (local fact sheet)",
+          "source_tier": "S1",
+          "date": "2025-10",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.tovima.com/finance/microsoft-data-center-in-spata-on-course/",
+          "publisher": "To Vima",
+          "source_tier": "S3",
+          "date": "2025-01-30",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4 for construction started, from Microsoft's own fact sheet (single opened S1). The roughly EUR 1bn figure appears only in an unopened To Vima headline, so value fields are null. The Azure region itself is covered in the global layer."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "no safe-city, surveillance or foreign-stack e-government AI evidence surfaced in this pass's searches; not searched directly"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced; budget spent on other layers"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Is Huawei still the RAN vendor for Vodafone Greece and Nova after 5G rollout, or was it swapped? Need operator or EETT evidence.",
+    "Did Greece formally restrict high-risk vendors (EU 5G Toolbox transposition) or only rely on operator choice?",
+    "Submarine cables (GR-Medusa, East to Med Data Corridor, others): supplier and owner not searched.",
+    "Microsoft Attica campus value, opening date and Azure Greece Central go-live; Google Athens region status.",
+    "Safe-city or police AI / camera systems (Hikvision, Dahua, Huawei) in Greek municipalities: not searched.",
+    "Has the OpenAI ChatGPT Edu teacher pilot actually started, and at what scale?",
+    "Number of NVIDIA GH200 accelerators in Daedalus; confirm from EuroHPC or GRNET."
+  ],
+  "searches_run": 10
+}

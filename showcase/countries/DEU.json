@@ -1,0 +1,542 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "DEU",
+  "name": "Germany",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T01:25:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "DEU-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei and ZTE",
+      "local_actor": "Federal Ministry of the Interior; Deutsche Telekom, Vodafone, Telefónica Deutschland",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei and ZTE critical components in German operators' 5G core and network-management systems",
+      "reversal_reason": "geopolitical",
+      "date": "2024-07-11",
+      "still_current": null,
+      "summary": "The federal interior ministry agreed binding public-law contracts with Deutsche Telekom, Vodafone and Telefónica requiring critical Huawei and ZTE components out of 5G core networks by end-2026 and Huawei/ZTE network-management functions replaced by end-2029.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomtv.com/content/5g/germany-finally-unveils-huawei-zte-ban-plan-50809/",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2024-07-12",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://mobileworldlive.com/huawei/germany-to-phase-out-huawei-zte-from-5g-by-end-2029",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2024-07-11",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 5 is the tier of the thing reversed (Huawei/ZTE equipment operating at scale in live networks). 1&1 was not party because it reportedly uses no Chinese technology. Whether the end-2026 core deadline has been met was not verified in this pass; no cost figure was reported."
+    },
+    {
+      "id": "DEU-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Deutsche Telekom, Vodafone, Telefónica Deutschland",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05-20",
+      "still_current": null,
+      "summary": "Analyst estimates cited in May 2024 put Huawei at roughly 65% of Deutsche Telekom's, 55% of Vodafone's and 50% of Telefónica's 4G radio access network, present at about half of the three operators' ~91,000 sites.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/germany-still-looks-toothless-on-huawei-as-telcos-hedge-bets",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2024-05-20",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Shares are third-party estimates (Strand Consult, Barclays) relayed by Light Reading, not operator disclosures, and refer to 4G RAN before the July 2024 agreement. The 2024 agreement (DEU-001) does not require removing Huawei radio hardware itself before 2029 per the sources read, so a large installed Huawei RAN base likely persists; that is inference."
+    },
+    {
+      "id": "DEU-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia (with Fujitsu, open RAN)",
+      "local_actor": "Deutsche Telekom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05",
+      "still_current": null,
+      "summary": "Deutsche Telekom chose Nokia, partly with Fujitsu on open RAN interfaces, to supply about 3,000 sites currently served by Huawei; Telefónica tests Ericsson and Samsung cloud RAN, and Vodafone Germany runs Ericsson.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/germany-still-looks-toothless-on-huawei-as-telcos-hedge-bets",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2024-05-20",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded tier 3 as a vendor award, but contract value and date were not given in the source read. Nokia is Finnish and Fujitsu Japanese, so pole is third. Vodafone and Telefónica details are mentioned for context only and are not separately coded."
+    },
+    {
+      "id": "DEU-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Deutsche Telekom (AI factory operator); Polarise (data-centre operator)",
+      "local_actor": "T-Systems; SAP; Siemens",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-09",
+      "still_current": null,
+      "summary": "Deutsche Telekom launched its Industrial AI Cloud in a Polarise-operated data centre in Munich's Tucherpark, with SAP and Siemens as partners; over a third of its compute was already in customer use at launch.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/deutsche-telekom-launches-nvidia-powered-ai-factory-in-munichs-tucherpark/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-02-09",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://heise.de/-11056781",
+          "publisher": "heise online",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Both controllers are German, so pole is domestic. Heise reports the project costs about EUR 1bn; not converted to USD here. Heise does not name Tucherpark or Polarise, so the site detail rests on DCD alone.",
+      "bundle_id": "DEU-B1"
+    },
+    {
+      "id": "DEU-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "NVIDIA (accelerator vendor)",
+      "local_actor": "Deutsche Telekom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-09",
+      "still_current": null,
+      "summary": "About 10,000 Nvidia Blackwell GPUs, including DGX B200 systems and RTX PRO servers, power Deutsche Telekom's Munich Industrial AI Cloud, launched in February 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/deutsche-telekom-launches-nvidia-powered-ai-factory-in-munichs-tucherpark/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-02-09",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://heise.de/-11056781",
+          "publisher": "heise online",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Pole is the chip vendor's; the operator is domestic (see DEU-004). Heise's undated article gives the EUR 1bn figure for the whole project, not the GPUs alone.",
+      "bundle_id": "DEU-B1"
+    },
+    {
+      "id": "DEU-006",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Dietzenbach and Hanau (Hesse)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-11",
+      "still_current": null,
+      "summary": "Google announced EUR 5.5bn of German investment for 2026-2029, including construction of a new Dietzenbach data centre with heat reuse into local district heating, and continued expansion of its Hanau campus opened in 2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.googlecloudpresscorner.com/2025-11-11-Google-Announces-EUR5-5-Billion-Investment-in-Germany%2C-including-AI-Infrastructure%2C-through-2029",
+          "publisher": "Google Cloud Press Corner",
+          "source_tier": "S1",
+          "date": "2025-11-11",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/europe/google-commits-e5-5b-in-germany-ai-data-centre-push/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2025-11-12",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4 rests on the release announcing Dietzenbach construction and Hanau already operating; a construction-start date was not independently confirmed. EUR 5.5bn is a corporate commitment covering offices too, not verified spend, and is not converted to USD. Microsoft and AWS German DC investments were not searched in this pass."
+    },
+    {
+      "id": "DEU-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Schwarz Digits / STACKIT",
+      "local_actor": "Lübbenau (Brandenburg)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-17",
+      "still_current": null,
+      "summary": "Schwarz Digits broke ground on an EUR 11bn, roughly 200 MW data centre on a former power-plant site in Lübbenau, to be run by its STACKIT cloud; phase one due end-2027, capacity for up to 100,000 GPUs.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/lidl-owner-schwarz-breaks-ground-on-200mw-data-center-in-germany/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://schwarz-digits.de/en/presse/archive/2025/ground-breaking-ceremony-in-luebbenau-schwarz-digits-invests-11-billion-euros-in-europe-s-digital-sovereignty",
+          "publisher": "Schwarz Digits",
+          "source_tier": "S1",
+          "date": "2025-11-17",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 4 because construction has started (groundbreaking). The EUR 11bn is the owner's announced figure, not verified spend, and is not converted to USD. GPU vendor for the site is not stated."
+    },
+    {
+      "id": "DEU-008",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "SAP / Delos Cloud; German public administrations",
+      "builder": null,
+      "financier": null,
+      "base_model": "OpenAI models (unspecified)",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-24",
+      "still_current": null,
+      "summary": "SAP and OpenAI announced OpenAI for Germany, a sovereign offering for public-sector employees on SAP's Delos Cloud, which runs Microsoft Azure technology in German data centres; launch planned for 2026, with Delos expanding to 4,000 GPUs.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://openai.com/global-affairs/openai-for-germany",
+          "publisher": "OpenAI",
+          "source_tier": "S1",
+          "date": "2025-09-24",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/openai-partners-with-sap-and-microsoft-in-germany/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-09-25",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Model access is through OpenAI's service, so pole is us. Coded tier 2 as an announced partnership; no signed government procurement or confirmed 2026 launch was found in this pass. Delos is SAP-operated but built on Microsoft Azure technology, so cloud-layer control is mixed."
+    },
+    {
+      "id": "DEU-009",
+      "layer": "models",
+      "pole": "third",
+      "controller": "Cohere",
+      "local_actor": "Aleph Alpha (Heidelberg); Schwarz Group",
+      "builder": null,
+      "financier": "Schwarz Group",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04-24",
+      "still_current": null,
+      "summary": "Canada's Cohere agreed to take over German model developer Aleph Alpha, with Cohere shareholders reportedly holding about 90%; Schwarz Group to provide about EUR 500m and expects the group to run on STACKIT. Definitive agreement reported September 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/",
+          "publisher": "TechCrunch",
+          "source_tier": "S2",
+          "date": "2026-04-25",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://tech.eu/2026/04/24/aleph-alpha-to-be-acquired-by-cohere/",
+          "publisher": "Tech.eu",
+          "source_tier": "S2",
+          "date": "2026-04-24",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.leadersleague.com/de/news/cohere-and-german-ai-company-aleph-alpha-sign-definitive-agreement-to-create-transatlantic-sovereign-ai-group",
+          "publisher": "Leaders League",
+          "source_tier": "S4",
+          "date": "2026-09-22",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Germany's main domestic model developer moves under a Canadian-led group, so pole is third (Canada); planned HQs are Toronto and Berlin. Not closed: awaits regulatory approval. Tier 3 rests on the definitive agreement, reported only by a relayed corporate release (S4). Aleph Alpha's PhariaAI base models were not identified, so base_model is null."
+    },
+    {
+      "id": "DEU-010",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Palantir (Gotham)",
+      "local_actor": "State police of Hesse (HessenDATA), North Rhine-Westphalia (DAR) and Bavaria (VeRA)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017",
+      "still_current": true,
+      "summary": "Palantir Gotham-based police data-analysis platforms are in use in Hesse since 2017, North Rhine-Westphalia since 2019/20 and Bavaria since 2024; legal challenges to the underlying police laws are pending.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.thelocal.de/20250805/what-is-palantirs-gotham-software-and-why-do-german-police-want-it",
+          "publisher": "The Local Germany",
+          "source_tier": "S3",
+          "date": "2025-08-05",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://european.cloud/2026/08/baden-wurttemberg-palantir/",
+          "publisher": "European Cloud",
+          "source_tier": "S3",
+          "date": "2026-08-11",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "still_current true because the August 2026 article describes Hesse as still using HessenDATA. Both sources are S3, so the S1/S2 corroboration requirement is not met. The Constitutional Court found Hesse's legal basis unconstitutional in February 2023; the law was reformed and challenged again."
+    },
+    {
+      "id": "DEU-011",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Palantir (Gotham)",
+      "local_actor": "Baden-Württemberg Interior Ministry / state police",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-20",
+      "still_current": null,
+      "summary": "Baden-Württemberg's interior ministry signed a five-year Palantir contract worth about EUR 25m without exit clauses; the state reaffirmed it in 2026 despite a Green membership vote to halt it, while planning a European alternative by 2030.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://european.cloud/2026/08/baden-wurttemberg-palantir/",
+          "publisher": "European Cloud",
+          "source_tier": "S3",
+          "date": "2026-08-11",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.thelocal.de/20250805/what-is-palantirs-gotham-software-and-why-do-german-police-want-it",
+          "publisher": "The Local Germany",
+          "source_tier": "S3",
+          "date": "2025-08-05",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Not operational as of August 2026; deployment expected by end-2026 after a November 2025 police-law amendment. EUR value not converted to USD. Both sources S3, so not corroborated."
+    },
+    {
+      "id": "DEU-012",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Palantir",
+      "local_actor": "Federal Ministry of the Interior",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Planned federal-level Palantir police data-analysis project",
+      "reversal_reason": "regulatory",
+      "date": "2023",
+      "still_current": null,
+      "summary": "Then interior minister Nancy Faeser stopped a federal-level Palantir project in 2023; her successor Alexander Dobrindt has said he is open to extending Gotham to federal police and criminal investigation agencies.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://european.cloud/2026/08/baden-wurttemberg-palantir/",
+          "publisher": "European Cloud",
+          "source_tier": "S3",
+          "date": "2026-08-11",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.thelocal.de/20250805/what-is-palantirs-gotham-software-and-why-do-german-police-want-it",
+          "publisher": "The Local Germany",
+          "source_tier": "S3",
+          "date": "2025-08-05",
+          "retrieved_at": "2026-10-23T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier of the reversed project is unknown; coded 2 as a planned federal deployment. The reason for the 2023 halt was not stated in the sources read; coded regulatory as the conservative choice (it does not move the map), not as an established motive."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no dedicated AI/data-centre power plant surfaced; Google's renewable PPAs (Engie, Ørsted) are general supply, and search budget went to other layers"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Have Telekom, Vodafone and Telefónica actually removed Huawei/ZTE from 5G cores by the end-2026 deadline? Get BSI/BMI or operator confirmation.",
+    "Current (post-2024) Huawei share of each operator's RAN, and what the 2029 stage requires for radio hardware versus management software.",
+    "Microsoft (reported multi-billion German DC investment) and AWS Brandenburg sovereign-cloud facility investments: not searched; code controller and tier.",
+    "Has OpenAI for Germany launched on Delos Cloud in 2026, and is any federal or Land procurement signed?",
+    "Cohere-Aleph Alpha: closing status, regulatory (incl. foreign-investment) review, and what base models PhariaAI uses.",
+    "Why was the 2023 federal Palantir project stopped, and has the federal government since procured Gotham or a European alternative?",
+    "Hikvision/Dahua or Huawei safe-city deployments by German municipalities: not searched.",
+    "GPU vendor for the STACKIT Lübbenau campus and SAP Delos Cloud's 4,000-GPU expansion."
+  ],
+  "searches_run": 10
+}

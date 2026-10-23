@@ -1,0 +1,298 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GEO",
+  "name": "Georgia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T01:20:12Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GEO-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Cellfie Mobile (formerly Beeline/Veon Georgia)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-08-01",
+      "still_current": null,
+      "summary": "Cellfie chose Nokia to modernise its 4G radio network nationwide and prepare 5G, using AirScale baseband and remote radio heads plus MantaRay management; 3.5 GHz 5G sites were to follow its August 2023 spectrum win.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/georgias-cellfie-pairs-with-nokia-for-4g-modernization-and-5g-launch",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-08-01",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://cellfie.ge/en/about-us/media/selfi-mobailma-nokia-stan-4g-kselis-ganakhlebasa-da-5g-kselis-danergvaze-motsulobiti-khelshekruleba-gaaforma-rats-selfis-momkhmareblistvis-maghali-khariskhis-internets-da-dafarvas-uzrunvelqofs",
+          "publisher": "Cellfie Mobile (company release)",
+          "source_tier": "S1",
+          "date": "2023-08-01",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/georgias-cellfie-secures-5g-spectrum-as-sole-bidder",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-08-25",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "RAN only; neither source names Cellfie's core vendor or the vendor Nokia replaced, so this is not coded as a Huawei swap-out. Value undisclosed. Whether the 5G sites are now live was not confirmed. The two DCD items share a host, so corroboration rests on DCD plus the company release. Nokia is Finnish, so the pole is third."
+    },
+    {
+      "id": "GEO-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Mavenir",
+      "local_actor": "MagtiCom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05",
+      "still_current": null,
+      "summary": "Mavenir won a contract to deploy 4G and 5G small cells across MagtiCom's network, supplying hardware, software and orchestration after a trial earlier in 2026; beta deployments were set to begin in the second quarter.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://telecomlead.com/news/telecom-news-mavenir-magticom-ericsson-telekom-slovenije-125813",
+          "publisher": "TelecomLead",
+          "source_tier": "S2",
+          "date": "2026-05-13",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Small-cell densification layer only; MagtiCom's macro RAN and core vendors are not identified here. Mavenir is US-headquartered, so the pole is us. Single trade-press source; value not disclosed."
+    },
+    {
+      "id": "GEO-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Silknet",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019",
+      "still_current": null,
+      "summary": "A Civic IDEA brief says Huawei has long supplied Silknet's network hardware, software and services, including a 2019 'Gigabit LTE' launch in western Georgia, and that Huawei helped develop MagtiCom's 4.5G network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://civicidea.ge/wp-content/uploads/2022/11/The-security-risks-carried-by-the-Chinese-tech-frontrunner-Huawei.pdf",
+          "publisher": "Civic IDEA (advocacy brief)",
+          "source_tier": "S4",
+          "date": "2022-11",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single advocacy source (S4) that cites no source for the Silknet claims, so this is evidence that the claim was made, not that the deployment is current. Tier 3 is a cautious reading of an ongoing supply relationship; RAN versus core is unspecified. Silknet's December 2023 5G launch vendor was not found. Pre-2020 and still_current not confirmed."
+    },
+    {
+      "id": "GEO-004",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "US Department of State",
+      "local_actor": "Government of Georgia (Ministry of Foreign Affairs)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-01-14",
+      "still_current": null,
+      "summary": "The US and Georgia signed a 5G security memorandum committing to protect next-generation networks from disruption or manipulation and to evaluate suppliers rigorously on rule of law, security and ethics; no vendor was named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://georgiatoday.ge/us-georgia-sign-memorandum-of-understanding-on-5g-security",
+          "publisher": "Georgia Today",
+          "source_tier": "S3",
+          "date": "2021-01-15",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://1tv.ge/lang/en/news/us-georgia-memorandum-of-understanding-on-5g-security/",
+          "publisher": "Georgian Public Broadcaster (1TV)",
+          "source_tier": "S4",
+          "date": "2021-01-14",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://cbw.ge/economy/us-deputy-secretary-of-state-five-benefits-that-georgia-will-get-from-clean-network-lines-membership",
+          "publisher": "Caucasus Business Week",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Non-binding MOU (tier 1), so it decays. Dated January 2021, not 2023 as the brief hint suggested. GPB treated as state-affiliated (S4). The cbw.ge headline (seen in search only) indicates Georgia also joined the Clean Network; not verified. No Georgian 5G security law or vendor exclusion was found, and the July 2026 WAICO accession (global layer) suggests the MOU's direction has not been sustained."
+    },
+    {
+      "id": "GEO-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Dahua Technology",
+      "local_actor": "Ministry of Internal Affairs (Emergency Response Centre 112); Tbilisi City Hall",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02",
+      "still_current": null,
+      "summary": "Interior Ministry and Tbilisi bodies bought Dahua PTZ cameras during the 2024-25 protests: a December 2024 tender for 30 and a February 2025 purchase of 100; procurement records show 251 Dahua cameras and licences worth about US$1.2m.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.occrp.org/en/news/georgias-surveillance-surge-chinese-cameras-spark-protest-crackdown-fears",
+          "publisher": "OCCRP / Governance Monitoring Center",
+          "source_tier": "S2",
+          "date": "2025-03-28",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://oc-media.org/georgian-dream-is-watching-how-ai-powered-surveillance-is-used-against-tbilisi-protesters",
+          "publisher": "OC Media",
+          "source_tier": "S3",
+          "date": "2025-05-29",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://civicidea.ge/wp-content/uploads/2025/01/EMERGING-CONCERN-Chinese-Surveillance-Cameras-in-Georgia.pdf",
+          "publisher": "Civic IDEA (advocacy brief)",
+          "source_tier": "S4",
+          "date": "2025-01",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "The US$1.2m comes from procurement records relayed by OCCRP, not seen first-hand, so it is left out of the value fields. Whether these cameras run facial recognition is not confirmed. Civic IDEA reports state spending on Chinese surveillance gear above 2m lari in 2024 (relayed by OCCRP). Coded subnational because the deployment is centred on Tbilisi."
+    },
+    {
+      "id": "GEO-006",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "NEC Corporation",
+      "local_actor": "Ministry of Internal Affairs",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017",
+      "still_current": null,
+      "summary": "According to the Interior Ministry, as relayed by OC Media, NEC supplied an advanced facial-recognition system in 2017 for surveillance cameras in Tbilisi and other cities.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://oc-media.org/georgian-dream-is-watching-how-ai-powered-surveillance-is-used-against-tbilisi-protesters",
+          "publisher": "OC Media",
+          "source_tier": "S3",
+          "date": "2025-05-29",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "NEC is Japanese, so the pole is third. Pre-2020; whether the NEC system still runs the ministry's facial recognition today is not confirmed, so still_current is null. Single secondary source relaying a 2017 ministry statement."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search returned only data-centre directory listings (S5, not citable) of small Tbilisi colocation sites; no large 2023+ DC or AI campus found"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks and applications; no accelerator deployments surfaced incidentally"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks and applications; no government frontier-model partnership or sovereign Georgian model surfaced incidentally"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "the Georgia-Romania Black Sea submarine cable surfaced but is primarily an electricity interconnector, not AI/DC-specific power; not coded"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendors supply MagtiCom's and Silknet's macro RAN and core today (including Silknet's December 2023 5G launch)? Seek operator or ComCom S1 evidence; Huawei's role rests on one advocacy brief.",
+    "Did Georgia formally join the US Clean Network (cbw.ge headline seen only) and did any 5G security regulation or vendor screening follow the January 2021 MOU?",
+    "Black Sea submarine cable (Georgia-Romania, World Bank/EU): confirm whether it carries a fibre-optic data component, its vendor and status.",
+    "Anaklia deep-sea port (Chinese-led consortium per the brief lead; not searched in this pass): verify the award and check for any digital component (port IT, telecom, safe-city) before coding.",
+    "Is the 2017 NEC facial-recognition system still in use, or has it been supplemented or replaced by Dahua/Hikvision analytics?",
+    "Silicon and models layers not searched: any Georgian-language model work, government AI partnerships, or accelerator purchases.",
+    "Large data-centre projects (including crypto-mining sites converted to AI hosting) and their controllers."
+  ],
+  "searches_run": 10
+}

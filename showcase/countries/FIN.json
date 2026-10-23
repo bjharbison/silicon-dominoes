@@ -1,0 +1,525 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "FIN",
+  "name": "Finland",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T01:22:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "FIN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Elisa; DNA (Telenor subsidiary)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-12-08",
+      "still_current": null,
+      "summary": "As of December 2020 Huawei was reported to supply network equipment to Elisa and DNA, two of Finland's three 5G operators, when parliament passed a law allowing security-based exclusion of core network equipment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://telecoms.com/507766/finland-passes-new-5g-security-law-to-ban-risky-equipment/",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2020-12-08",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reporting does not specify which network domains (RAN vs core) or regions Huawei supplies at each operator, nor whether that remains true in 2026. The December 2020 law (Traficom sets requirements) names no vendor and no exclusion decision under it was found in this pass, so it is not coded as a reversal. Tier 5 assumes deployed equipment in live networks."
+    },
+    {
+      "id": "FIN-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Suomen Yhteisverkko (Telia Finland / DNA shared network)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei LTE/2G/3G radio access network at Suomen Yhteisverkko (2015 contract)",
+      "reversal_reason": "commercial",
+      "date": "2020-10-26",
+      "still_current": null,
+      "summary": "Shared-network operator Suomen Yhteisverkko chose Nokia to swap out the Huawei LTE radio network deployed under a 2015 contract across northern and eastern Finland, roughly half the land mass and 15% of the population.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://telecoms.com/507102/nokia-chosen-to-swap-out-huawei-at-finlands-shared-networks/",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2020-10-26",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reason stated by the operator was Nokia's expertise, security and managed services; no government order was cited, so reversal_reason is commercial. A security motive is plausible given timing (two months before the 2020 equipment law) but is not documented."
+    },
+    {
+      "id": "FIN-003",
+      "layer": "networks",
+      "pole": "domestic",
+      "controller": "Nokia",
+      "local_actor": "Suomen Yhteisverkko (Telia Finland / DNA shared network)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-10-26",
+      "still_current": null,
+      "summary": "Nokia won a three-year contract to deploy 5G RAN, upgrade 2G-4G and provide managed services for Suomen Yhteisverkko's shared network in northern and eastern Finland, replacing Huawei.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://telecoms.com/507102/nokia-chosen-to-swap-out-huawei-at-finlands-shared-networks/",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2020-10-26",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia is Finnish, so the pole is domestic. Contract value not disclosed. Completion of the swap (expected around 2024) not verified."
+    },
+    {
+      "id": "FIN-004",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "City of Hamina; Haminan Energia (heat recovery)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05",
+      "still_current": true,
+      "summary": "Google announced a further €1bn expansion of its Hamina data-centre campus, operating since 2009 in a former paper mill, with heat recovery to supply about 80% of Hamina's district heating; total Finland investment then €3.5bn.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.businessfinland.com/news/2024/google-to-expand-its-data-center-in-finland",
+          "publisher": "Business Finland",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://siliconangle.com/2024/05/20/google-invest-e1b-finland-data-center-expansion/",
+          "publisher": "SiliconANGLE",
+          "source_tier": "S2",
+          "date": "2024-05-20",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://www.itpro.com/infrastructure/data-centres/google-announces-eur13-billion-infrastructure-build-out-in-burgeoning-european-data-center-hub",
+          "publisher": "ITPro",
+          "source_tier": "S2",
+          "date": "2026-09-10",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 5 reflects the operating Hamina campus (ITPro 2026 describes it as a live hub serving Nokia and Elisa among others), not the 2024 expansion, whose construction status was not verified. Date from SiliconANGLE URL (seen only). €1bn not converted to USD."
+    },
+    {
+      "id": "FIN-005",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Government of Finland (PM Orpo welcomed); municipalities of Hamina, Kajaani, Muhos, Vaala",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09-09",
+      "still_current": null,
+      "summary": "Google announced at least €13bn over about two years for data centres in Hamina, Kajaani, Muhos and Vaala, its largest single European investment, with construction slated for 2027-2028.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.euronews.com/2026/09/09/google-to-invest-13bn-in-finnish-ai-data-centres-its-biggest-european-push-yet",
+          "publisher": "Euronews",
+          "source_tier": "S3",
+          "date": "2026-09-09",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.itpro.com/infrastructure/data-centres/google-announces-eur13-billion-infrastructure-build-out-in-burgeoning-european-data-center-hub",
+          "publisher": "ITPro",
+          "source_tier": "S2",
+          "date": "2026-09-10",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://w.media/google-to-invest-us-15-billion-in-finland/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2026-09",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Coded tier 1: a corporate investment announcement; construction not started per Euronews. The €13bn is not converted here; W.Media's headline (seen only) gives about US$15bn. Bundled with the Loviisa power purchase (FIN-012).",
+      "bundle_id": "FIN-B1"
+    },
+    {
+      "id": "FIN-006",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "Fortum (waste-heat district heating for Espoo, Kauniainen, Kirkkonummi)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-03-17",
+      "still_current": null,
+      "summary": "Microsoft announced intent to build a Finland data-centre region in the Helsinki area, with Fortum recovering its waste heat for district heating; size, investment and opening date were not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/microsoft-announces-new-finland-cloud-region-with-district-heating-by-fortum",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-03-17",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://news.microsoft.com/europe/2022/03/17/microsoft-announces-intent-to-build-a-new-datacenter-region-in-finland-accelerating-sustainable-digital-transformation-and-enabling-large-scale-carbon-free-district-heating/",
+          "publisher": "Microsoft",
+          "source_tier": "S1",
+          "date": "2022-03-17",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Construction status of the Espoo/Kirkkonummi/Vihti sites in 2026 was not verified in this pass. The €1bn figure in DCD was Fortum's earlier cost ceiling, not a Microsoft commitment, so it is not recorded. Azure region status is in the global layer."
+    },
+    {
+      "id": "FIN-007",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "AMD (MI250X GPUs, EPYC CPUs) via HPE Cray EX",
+      "local_actor": "CSC – IT Center for Science (host, Kajaani); EuroHPC JU co-funder",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-06-14",
+      "still_current": null,
+      "summary": "LUMI, an HPE Cray EX system with AMD EPYC CPUs and AMD MI250X GPUs across 4,112 nodes, launched at CSC's Kajaani data centre, co-funded by EuroHPC, at a reported cost of about US$211m.",
+      "announced_value_usd": 211000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/lumi-launches-becomes-europes-most-powerful-supercomputer",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-06-14",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.tomshardware.com/news/amd-lumi-european-supercomputer",
+          "publisher": "Tom's Hardware",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole is the accelerator vendor (US). The system is EU/EuroHPC-owned and CSC-hosted, so facility control is European/domestic. Reported cost recorded as announced. Poro 34B was trained on LUMI's GPU partition (FIN-010)."
+    },
+    {
+      "id": "FIN-008",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "AMD (Instinct MI430X GPUs, EPYC CPUs); Bull (France) system integrator",
+      "local_actor": "EuroHPC JU (owner); LUMI AI Factory consortium (Finland, Czechia, Denmark, Estonia, Norway, Poland); CSC",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-31",
+      "still_current": null,
+      "summary": "EuroHPC signed a €387.8m contract with Bull for LUMI-AI, built on AMD Instinct MI430X GPUs and EPYC CPUs, to be installed at CSC's new Kajaani data centre with deployment planned for the second half of 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.unite.ai/amd-instinct-mi430x-gpus-epyc-cpus-power-e387-8m-lumi-ai-supercomputer/",
+          "publisher": "Unite.AI",
+          "source_tier": "S2",
+          "date": "2026-08-31",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.storagenewsletter.com/2026/09/22/amd-instinct-gpus-and-epyc-cpus-to-power-europes-next-generation-lumi-ai-supercomputer/",
+          "publisher": "StorageNewsletter (press release reprint)",
+          "source_tier": "S4",
+          "date": "2026-09-22",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "StorageNewsletter reprints a vendor press release, so S4 and not independent. Funding is split equally between EuroHPC and the consortium. Bull is the integrator; the chip vendor (AMD, US) sets the pole. €387.8m not converted to USD."
+    },
+    {
+      "id": "FIN-009",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "CSC – IT Center for Science",
+      "local_actor": "City of Kajaani (Renforsin Ranta business park)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-01",
+      "still_current": null,
+      "summary": "CSC began building a new data centre in Kajaani's Renforsin Ranta business park in January 2026 to host LUMI-AI, with completion expected in summer 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.unite.ai/amd-instinct-mi430x-gpus-epyc-cpus-power-e387-8m-lumi-ai-supercomputer/",
+          "publisher": "Unite.AI",
+          "source_tier": "S2",
+          "date": "2026-08-31",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "CSC is a Finnish state-owned company, so the owner-operator is domestic. Construction start rests on a single trade-press report; investment value not found."
+    },
+    {
+      "id": "FIN-010",
+      "layer": "models",
+      "pole": null,
+      "controller": "Silo AI (AMD subsidiary since 2024) with TurkuNLP, University of Turku",
+      "local_actor": "CSC (LUMI compute); University of Helsinki; Aalto University",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-04",
+      "still_current": null,
+      "summary": "Poro 34B, a Finnish-English-code model trained from scratch on LUMI's AMD GPUs by Silo AI and the University of Turku's TurkuNLP group, was released with open weights, data and scripts.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2404.01856v2",
+          "publisher": "arXiv (Poro 34B paper)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://venturebeat.com/ai/silo-ai-unveils-poro-a-new-open-source-language-model-for-europe/",
+          "publisher": "VentureBeat",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null because control is split: open weights co-developed by a Finnish public university and Silo AI, which became US-owned (AMD) in August 2024 (FIN-011). Successor Viking models not verified here. Trained from scratch, so no base model. Date inferred from the arXiv ID (April 2024); the model was unveiled earlier per VentureBeat (seen only). arXiv treated as the authors' primary publication."
+    },
+    {
+      "id": "FIN-011",
+      "layer": "models",
+      "pole": "us",
+      "controller": "AMD",
+      "local_actor": "Silo AI (Helsinki)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-08-12",
+      "still_current": null,
+      "summary": "AMD completed its roughly US$665m all-cash acquisition of Helsinki-based Silo AI, developer of the Poro and Viking open multilingual models; the team joined AMD's AI Group under CEO Peter Sarlin.",
+      "announced_value_usd": 665000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nasdaq.com/press-release/amd-completes-acquisition-silo-ai-accelerate-development-and-deployment-ai-models-amd",
+          "publisher": "AMD press release (via Nasdaq)",
+          "source_tier": "S1",
+          "date": "2024-08-12",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://tech.eu/2024/07/10/amd-acquires-europes-largest-private-ai-lab-silo-ai-in-665m-deal/",
+          "publisher": "Tech.eu",
+          "source_tier": "S2",
+          "date": "2024-07-10",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Coded as a transfer of Finland's largest private AI lab to US corporate control. This concerns ownership of a model developer, not a model the Finnish state uses. Value is the announced deal price."
+    },
+    {
+      "id": "FIN-012",
+      "layer": "power",
+      "pole": "domestic",
+      "controller": "Fortum (Loviisa nuclear plant)",
+      "local_actor": "Google",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09-10",
+      "still_current": null,
+      "summary": "As part of its Finland data-centre package, Google agreed a life-extension power purchase agreement for Fortum's Loviisa nuclear plant and backed two onshore wind projects, bringing its contracted Finnish onshore wind to 629 MW.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.itpro.com/infrastructure/data-centres/google-announces-eur13-billion-infrastructure-build-out-in-burgeoning-european-data-center-hub",
+          "publisher": "ITPro",
+          "source_tier": "S2",
+          "date": "2026-09-10",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Fortum is Finnish (state majority-owned), so the plant operator is domestic; Google is the offtaker. PPA terms and signing status not verified; tier 3 assumes a signed PPA as reported. Wind developers Valorem and Suomen Hyötytuuli are not separately coded.",
+      "bundle_id": "FIN-B1"
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks, facilities, silicon and models; no surveillance or e-government AI leads surfaced"
+    },
+    "power": {
+      "result": "coded"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Do Elisa and DNA still use Huawei RAN or core in 2026? Has Traficom issued any decision under the December 2020 critical-network-equipment law?",
+    "Was the Suomen Yhteisverkko Huawei-to-Nokia swap completed, and what are Telia Finland's main RAN/core vendors?",
+    "Construction status of Microsoft's Espoo/Kirkkonummi/Vihti data-centre sites and the Azure Finland Central region.",
+    "Status of Google's Muhos, Kajaani and Vaala sites (land, permits) and an S1 source for the €13bn package.",
+    "Control of Viking/Poro successors after AMD's acquisition: do weights remain under LumiOpen with University of Turku, and does any Finnish ministry deploy them?",
+    "Other large AI data-centre projects (e.g. atNorth, Verne, Nebius Mäntsälä) and their controllers: not searched.",
+    "Safe-city, police or e-government AI deployments on foreign stacks: not searched."
+  ],
+  "searches_run": 10
+}

@@ -1,0 +1,491 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GBR",
+  "name": "United Kingdom",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T01:22:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GBR-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "35 UK telecoms network operators (incl. BT/EE, Vodafone)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei supply of UK 5G radio access and core equipment",
+      "reversal_reason": "geopolitical",
+      "date": "2022-10-13",
+      "still_current": null,
+      "summary": "Following the July 2020 high-risk-vendor decision, the government issued legal directions under the Telecommunications (Security) Act 2021: no new Huawei 5G kit, removal from the core by end-2023, and full removal from 5G networks by end-2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ispreview.co.uk/index.php/2022/10/gov-hands-huawei-legal-notices-to-uk-mobile-and-broadband-isps.html",
+          "publisher": "ISPreview",
+          "source_tier": "S2",
+          "date": "2022-10-13",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.cnbc.com/2022/10/13/uk-gives-telco-firms-more-time-to-remove-huawei-5g-equipment.html",
+          "publisher": "CNBC",
+          "source_tier": "S3",
+          "date": "2022-10-13",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 5 because Huawei RAN was operational at scale in UK networks before the ban. Dated to the 2022 binding Designated Vendor Direction; the policy decision was 2020. Progress towards the 2027 deadline was not checked in this pass, so still_current is null. Also caps Huawei at 35% of full-fibre access networks."
+    },
+    {
+      "id": "GBR-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (with Nokia for the other half)",
+      "local_actor": "BT / EE",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-10-28",
+      "still_current": null,
+      "summary": "BT signed with Ericsson to supply 5G radio equipment carrying about half its RAN traffic, mainly in major cities, replacing Huawei; Nokia supplies the remainder, and Ericsson already had a BT core contract.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/security/bt-inks-deal-to-ditch-huawei-use-ericsson-ran/d/d-id/765005",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-10-28",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson (Sweden) and Nokia (Finland) are both non-US foreign vendors, so pole third. Single source; contract value not disclosed. Current vendor shares after 2020 not verified."
+    },
+    {
+      "id": "GBR-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Samsung",
+      "local_actor": "Vodafone UK",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06-15",
+      "still_current": null,
+      "summary": "Vodafone UK picked Samsung's vRAN software and O-RAN radios for a wide-scale Open RAN deployment, starting with 2,600 sites in south-west England and Wales.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://silicon.co.uk/5g/vodafone-chooses-samsung-for-5g-open-ran-402405",
+          "publisher": "Silicon UK",
+          "source_tier": "S2",
+          "date": "2021-06-15",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Samsung is Korean, so pole third. The source does not tie the 2,600 sites to Huawei replacement, though that is widely reported context. Single source; value not disclosed. Status after the Vodafone-Three merger not checked."
+    },
+    {
+      "id": "GBR-004",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Chinese surveillance-camera vendors subject to China's National Intelligence Law (e.g. Hikvision, Dahua)",
+      "local_actor": "Cabinet Office / UK government departments",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Use of PRC-made visual surveillance systems on sensitive UK government sites",
+      "reversal_reason": "geopolitical",
+      "date": "2022-11-24",
+      "still_current": null,
+      "summary": "After a security review, Cabinet Office minister Oliver Dowden told departments to stop deploying such Chinese-made cameras at sensitive sites, disconnect them from core networks and consider removing them before scheduled upgrades.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://globalnews.ca/news/9302641/uk-restricts-chinese-surveillance-cameras",
+          "publisher": "Reuters (via Global News)",
+          "source_tier": "S3",
+          "date": "2022-11-24",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.malaymail.com/news/world/2022/11/25/uk-clamps-down-on-chinese-surveillance-cameras/41807",
+          "publisher": "Malay Mail",
+          "source_tier": "S3",
+          "date": "2022-11-25",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded tier 5 because the reversed thing is installed, operating cameras on the government estate. It is a restriction at sensitive sites, not a national ban. Both sources are S3 (likely wire copy), so the S1/S2 requirement is not met; the written ministerial statement was not opened."
+    },
+    {
+      "id": "GBR-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "NVIDIA (accelerator vendor)",
+      "local_actor": "Bristol Centre for Supercomputing, University of Bristol (DSIT/UKRI AI Research Resource)",
+      "builder": "HPE",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07",
+      "still_current": null,
+      "summary": "Isambard-AI, a £225m government-funded supercomputer in Bristol with 5,448 NVIDIA GH200 Grace Hopper superchips on HPE Cray EX systems, launched in July 2025 and has served AIRR and Sovereign AI users since August.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://insidehpc.com/2025/07/225m-hpe-nvidia-isambard-ai-supercomputer-launched-in-uk",
+          "publisher": "insideHPC",
+          "source_tier": "S2",
+          "date": "2025-07",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.bristol.ac.uk/research/centres/bristol-supercomputing/articles/2026/inside-isambard-ai.html",
+          "publisher": "University of Bristol",
+          "source_tier": "S1",
+          "date": "2026",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Pole is the chip vendor's; the facility is domestically owned and operated. HPE is the system integrator. The £225m is not converted to USD because no rate source was checked."
+    },
+    {
+      "id": "GBR-006",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Nscale (UK infrastructure provider), with OpenAI as offtaker and NVIDIA as GPU supplier",
+      "local_actor": "AI Growth Zone, north-east England (Cobalt Park, Blyth)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": true,
+      "reversal_of": "Stargate UK AI data-centre announcement (September 2025, Tech Prosperity Deal)",
+      "reversal_reason": "commercial",
+      "date": "2026-04-09",
+      "still_current": null,
+      "summary": "OpenAI paused Stargate UK, announced in September 2025 with Nscale and NVIDIA for about 8,000 GPUs scaling to 31,000 in north-east AI Growth Zones, citing high energy costs and unsettled copyright rules; no planning applications had been lodged.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://thenextweb.com/news/openai-pauses-stargate-uk-energy-costs-regulation",
+          "publisher": "The Next Web",
+          "source_tier": "S2",
+          "date": "2026-04-09",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.hl.co.uk/shares/stock-market-news/company--news/openai-puts-stargate-uk-data-centre-project-on-ice",
+          "publisher": "Sharecast News (via Hargreaves Lansdown)",
+          "source_tier": "S3",
+          "date": "2026-04-09",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://thenextweb.com/news/openai-apparently-never-visited-the-site-of-its-flagship-uk-ai-project",
+          "publisher": "The Next Web",
+          "source_tier": "S2",
+          "date": "2026-07-04",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the operator split between Nscale (UK, would be domestic) and OpenAI (US offtaker) was not documented. Tier 1 because nothing beyond an announcement was evidenced. Reason coded commercial (energy cost and regulatory climate, not geopolitics). Corroboration false because both TNW items are one host; Sharecast is the only other."
+    },
+    {
+      "id": "GBR-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Nscale",
+      "local_actor": "Microsoft (anchor tenant, withdrawn); Loughton, Essex",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Microsoft lease of AI capacity at Nscale's Loughton campus",
+      "reversal_reason": "commercial",
+      "date": "2026-10-19",
+      "still_current": null,
+      "summary": "Microsoft confirmed it withdrew from leasing capacity at Nscale's planned Loughton AI campus, billed as the UK's largest sovereign AI data centre, after reports the grid could not power it until the 2030s; Nscale says it will proceed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://kuwaittimes.com/article/51935/business/microsoft-exits-data-centre-deal-in-blow-to-uk/",
+          "publisher": "AFP (via Kuwait Times)",
+          "source_tier": "S3",
+          "date": "2026-10-19",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://computing.co.uk/news/2026/ai/microsoft-exits-nscale-deal-ipo-at-risk",
+          "publisher": "Computing",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://thenextweb.com/news/openai-apparently-never-visited-the-site-of-its-flagship-uk-ai-project",
+          "publisher": "The Next Web",
+          "source_tier": "S2",
+          "date": "2026-07-04",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nscale is UK-headquartered, so domestic. Tier 3 is the reversed lease agreement; terms reported elsewhere as 50MW and 23,040 NVIDIA GB300 GPUs, not verified from an opened S1-S3 page. TNW (July) reports the site was still a scaffolding yard in March 2026. Computing page failed to load. Reason commercial (grid capacity)."
+    },
+    {
+      "id": "GBR-008",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Broxbourne, Hertfordshire",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-16",
+      "still_current": null,
+      "summary": "Google opened its Waltham Cross data centre in Hertfordshire, opened by Chancellor Rachel Reeves, as part of a £5bn two-year UK investment covering capex, R&D and DeepMind.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.googlecloudpresscorner.com/2025-09-16-Google-Opens-Waltham-Cross-Data-Centre-as-Part-of-Two-year-GBP5-Billion-Investment-in-the-UK-to-Help-Power-its-AI-Economy",
+          "publisher": "Google Cloud Press Corner",
+          "source_tier": "S4",
+          "date": "2025-09-16",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.uktech.news/ai/google-opens-waltham-cross-data-centre-20250916",
+          "publisher": "UKTN",
+          "source_tier": "S2",
+          "date": "2025-09-16",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Only one opened S1-S3 source (UKTN) plus Google's own release (S4), so not corroborated despite low doubt. Cost of the site itself not stated; the £5bn is a multi-purpose corporate pledge and is not converted."
+    },
+    {
+      "id": "GBR-009",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "NVIDIA",
+      "local_actor": "UK government (US-UK Tech Prosperity Deal)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-17",
+      "still_current": null,
+      "summary": "Alongside the US-UK Tech Prosperity Deal, NVIDIA pledged up to 120,000 advanced GPUs across the UK, its largest European rollout; Microsoft (£22bn), Google (£5bn) and CoreWeave (£1.5bn, with DataVita) made parallel pledges.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://thequantuminsider.com/2025/09/17/uk-and-us-seal-tech-pact-with-31-billion-ai-and-quantum-push/",
+          "publisher": "The Quantum Insider",
+          "source_tier": "S2",
+          "date": "2025-09-17",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: corporate pledges under a non-binding bilateral partnership. GBR-006 and GBR-007 show parts of the package have since paused or lost an anchor tenant. A smaller Nscale-BT-NVIDIA project at three BT sites is reported as proceeding (TNW, July 2026) but not separately coded."
+    },
+    {
+      "id": "GBR-010",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "Department for Science, Innovation and Technology",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-22",
+      "still_current": null,
+      "summary": "DSIT and OpenAI signed a voluntary, explicitly non-binding memorandum to explore deploying advanced models in public services, build on OpenAI's AI Security Institute work and possibly participate in AI Growth Zones; no money changed hands.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.theregister.com/2025/07/22/openai_to_help_fix_nhs/",
+          "publisher": "The Register",
+          "source_tier": "S2",
+          "date": "2025-07-22",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Model used through a US provider's service, so pole us; no fine-tuned national weights involved, so base_model null."
+    },
+    {
+      "id": "GBR-011",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Anthropic",
+      "local_actor": "Department for Science, Innovation and Technology",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02-14",
+      "still_current": null,
+      "summary": "Anthropic and DSIT signed an MOU to explore using Claude to help people find and use government information and services, alongside public-sector AI practice, research and AI Security Institute evaluation work.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/mou-uk-government",
+          "publisher": "Anthropic",
+          "source_tier": "S4",
+          "date": "2025-02-14",
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.techmonitor.ai/digital-economy/ai-and-automation/uk-ai-integration-public-services-anthropic-partnership",
+          "publisher": "Tech Monitor",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Only the provider's own announcement (S4) was opened. Search results also showed a later Anthropic 'gov.UK partnership' item (assistant launch) that was not opened; deployment status unverified. Pole us via provider service; base_model null."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "no dedicated AI/data-centre power plant found; grid-capacity constraints appear only as causes in GBR-006 and GBR-007"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Progress of operators towards the end-2027 Huawei 5G removal deadline (Ofcom/DSIT reports) and whether any extension has been granted.",
+    "Get the S1 written ministerial statement (Nov 2022) on Chinese surveillance cameras, and whether the 2023 Procurement Act-era restrictions extended it.",
+    "Who would own and operate Stargate UK sites (Nscale vs OpenAI) and whether any planning application has since been lodged.",
+    "Status of the £1.9bn government-Nscale investment contract reported as unsigned in March 2026.",
+    "Microsoft's £22bn UK pledge: which sites and GPUs are actually under construction or operational.",
+    "Whether the Anthropic gov.uk assistant and OpenAI public-sector deployments moved beyond MOUs to contracts.",
+    "UK sovereign model efforts (e.g. models trained on Isambard-AI under the Sovereign AI programme) and their base models.",
+    "Alibaba Cloud London region remains live per the global layer; any UK public-sector restriction on PRC cloud use was not searched.",
+    "PRC-built submarine cables (HMN Tech) landing in the UK: not searched."
+  ],
+  "searches_run": 10
+}

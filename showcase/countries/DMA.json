@@ -1,0 +1,44 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "DMA",
+  "name": "Dominica",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T01:18:59Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [],
+  "layers_searched": {
+    "networks": {
+      "result": "null",
+      "null_reason": "3 searches (Huawei government/broadband network, Digicel and Flow vendors) surfaced no source naming a RAN/core or backbone vendor for Dominica; results were dominated by Dominican Republic and Guyana (Huawei e-government network is Guyana's, AidData 56119)"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "no data-centre or AI-campus project since 2023 found; World Bank CARDTP results gave no Dominica-specific data-centre controller or award"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchase or export-licence reporting found; none expected for a state of this size"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search for government AI partnerships returned only Dominican Republic items (e.g. its NVIDIA agreement), nothing for Dominica"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "2 searches for safe-city/CCTV found no Dominica surveillance system; Chinese grants to Dominica found on AidData (2013 police motorcycles, solar street lights, playing field) are not AI-stack items"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendors supply Digicel Dominica's and Flow (Liberty Latin America) Dominica's RAN, core and fibre? Seek operator or NTRC evidence.",
+    "Is there any Chinese-funded government ICT/e-government network in Dominica (the brief's lead)? Not found in this pass; AidData's Huawei national broadband project with that profile is Guyana's.",
+    "Does Dominica's CARDTP (World Bank) component procure a government data centre or cloud, and from which provider?",
+    "Any police CCTV or safe-city cameras in Roseau and their vendor: not found."
+  ],
+  "searches_run": 9
+}

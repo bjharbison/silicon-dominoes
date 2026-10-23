@@ -1,0 +1,206 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "CUB",
+  "name": "Cuba",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T01:20:19Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "CUB-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei (with ZTE also named)",
+      "local_actor": "ETECSA",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-12",
+      "still_current": null,
+      "summary": "ETECSA, Cuba's sole state telecom and internet provider, names Huawei, ZTE and TP-Link as its main technology suppliers per its own magazine; OONI's 2017 measurements found Huawei access points in Cuba's internet infrastructure.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecoi.net/de/dokument/2042706.html",
+          "publisher": "Institute for War and Peace Reporting (republished by ecoi.net)",
+          "source_tier": "S3",
+          "date": "2020-12-18",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://ooni.org/post/cuba-internet-censorship-2017",
+          "publisher": "OONI (Open Observatory of Network Interference)",
+          "source_tier": "S2",
+          "date": "2017-08-28",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Two opened sources on different hosts (IWPR S3, OONI S2 technical measurement) both place Huawei equipment in ETECSA's network; neither identifies which RAN/core elements Huawei or ZTE supply, so share and layer depth are unknown. The supplier list traces to ETECSA's corporate magazine (S4) relayed by IWPR. Tier 5 because the equipment is in operational use; still_current not confirmed for 2026. A 'possible' Huawei web-filtering product (Qurium) is unconfirmed and not coded."
+    },
+    {
+      "id": "CUB-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "ETECSA",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-02",
+      "still_current": null,
+      "summary": "ETECSA launched a home fibre broadband pilot in Old Havana run with Huawei, letting residents and small businesses order fixed internet connections for the first time.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.khaosodenglish.com/news/international/2016/02/01/1454298972/amp/",
+          "publisher": "Associated Press (via Khaosod English)",
+          "source_tier": "S3",
+          "date": "2016-02-01",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sbs.com.au/news/article/cuba-to-launch-broadband-project/91q7gplm7",
+          "publisher": "AAP (via SBS News)",
+          "source_tier": "S3",
+          "date": "2016-02-01",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pre-2020 pilot; whether it was scaled up to the later Nauta Hogar service on Huawei gear was not confirmed, so still_current is null. Both wire stories relay the same ETECSA/state-media announcement and are not S1/S2, so the corroboration rule is not met."
+    },
+    {
+      "id": "CUB-003",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Alcatel-Lucent Shanghai Bell (turnkey supplier)",
+      "local_actor": "Telecomunicaciones Gran Caribe (Telecom Venezuela 60% / Transbit, Cuba)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2013-01",
+      "still_current": null,
+      "summary": "The ALBA-1 submarine cable, 1,860 km from Siboney (Santiago de Cuba) to La Guaira with a Jamaica branch, was completed in 2012 and carried traffic from January 2013; final cost about US$70m.",
+      "announced_value_usd": 70000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.submarinenetworks.com/en/systems/brazil-us/alba-1",
+          "publisher": "Submarine Networks",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.nbcnews.com/id/wbna41209380",
+          "publisher": "NBC News",
+          "source_tier": "S3",
+          "date": "2011-01",
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the equipment vendor was Alcatel-Lucent's Chinese joint-venture subsidiary Alcatel-Lucent Shanghai Bell (now Nokia Shanghai Bell), so firmware/update control sits between a European parent and a PRC state-held JV; not resolved here. Owner-operator is a Venezuelan-Cuban state JV. Pre-2020 and still_current unconfirmed, though ALBA-1 is widely reported as Cuba's main international link. Not an HMN Tech cable. NBC seen in search results only."
+    },
+    {
+      "id": "CUB-004",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Universidad de La Habana (Faculty of Mathematics and Computing)",
+      "local_actor": "Unión de Informáticos de Cuba / Ministerio de Comunicaciones",
+      "builder": null,
+      "financier": null,
+      "base_model": "Salamandra",
+      "base_model_pole": "third",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10",
+      "still_current": null,
+      "summary": "University of Havana researchers presented CecilIA, a Cuban-Spanish language model built on the existing Salamandra model and trained on a roughly 207 GB local corpus including literature, the Official Gazette and speeches.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mincom.gob.cu/en/printpdf/6915",
+          "publisher": "Ministerio de Comunicaciones de Cuba (republishing UIC)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-23T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 2 as a research presentation with no evidence of deployment. Salamandra is assumed to be the Barcelona Supercomputing Center's open model (Spain, hence base_model_pole third); the page does not name its developer. Date inferred from the Cibersociedad 2025 congress (image filename suggests 7 October 2025). Single government page; state-affiliated framing possible."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "no large data-centre or AI-campus project since 2023 found in 2 searches; Chinese donations surfaced were for power-grid and telecom solar backup, not data centres"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "comprehensive US embargo (global layer); no accelerator deployment (Nvidia or Ascend) surfaced in searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "reporting on police video surveillance (e.g. Varadero) names no vendor; Huawei web-filtering product reported only as 'possible'"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced; search budget spent on other layers"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendor supplies ETECSA's 3G/4G RAN and core (Huawei vs ZTE share)? Seek ETECSA tender records or vendor filings.",
+    "Is Huawei or ZTE equipment used for ETECSA's DPI/web filtering? Qurium's report claimed only a 'possible' Huawei product; obtain and assess it.",
+    "Did Cuba and China sign telecom/AI instruments at the September 2025 meeting with MIIT minister Li Lecheng (DPL News reported a working meeting, no signed instrument)?",
+    "Status of the 2019 Hebei-Camagüey university AI centre agreement (tier 1, academic) — not coded.",
+    "Is ALBA-1 still Cuba's primary international link, and who supplies upgrades (Nokia Shanghai Bell)? Any newer cable (e.g. PRC-built) planned?",
+    "Reported PRC signals/intelligence facilities in Cuba were deliberately not coded: not stack adoption without network/facility sourcing.",
+    "Vendor of police video-surveillance cameras in Havana and Varadero (Hikvision/Dahua?) is unverified."
+  ],
+  "searches_run": 10
+}
