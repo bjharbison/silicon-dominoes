@@ -1,0 +1,603 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "IND",
+  "name": "India",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T09:19:58Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "IND-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "Department of Telecommunications (DoT); all licensed operators",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Eligibility of Huawei and ZTE to supply new equipment to Indian mobile operators",
+      "reversal_reason": "geopolitical",
+      "date": "2021-03",
+      "still_current": null,
+      "summary": "DoT amended operator licences so that, from 15 June 2021, operators may buy designated network equipment only from government-approved trusted sources; trade press reported Huawei and ZTE were unlikely to qualify on security grounds.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/huawei/india-moves-to-block-huawei-zte/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2021-03-12",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.moneylife.in/article/to-keep-china-out-india-mandates-trusted-sources-for-telecom-networks/63181.html",
+          "publisher": "Moneylife",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.orissapost.com/end-of-road-for-chinese-telecom-vendors-in-india-as-dot-mandates-trusted-source/amp/",
+          "publisher": "Orissa Post",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://www.fierce-network.com/wireless/bharti-airtel-awards-5g-network-deals-ericsson-nokia-and-also-samsung",
+          "publisher": "Fierce Network",
+          "source_tier": "S2",
+          "date": "2022-08-03",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a reversal of Chinese vendors' eligibility for new procurement (tier 3, contract level), not a rip-and-replace: no source found requires removal of installed Huawei/ZTE 4G gear. The rule names no country; the exclusion of Huawei/ZTE is reported, not stated in an order seen by this run. Fierce (Aug 2022) reports Chinese vendors still lacked trusted-vendor certification. The DoT Trusted Telecom Portal brief (S1) appeared in search but failed to load. Moneylife page showed no date."
+    },
+    {
+      "id": "IND-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "Department of Telecommunications (DoT)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Participation of Huawei and ZTE in India's 5G trials",
+      "reversal_reason": "geopolitical",
+      "date": "2021-05-04",
+      "still_current": null,
+      "summary": "DoT approved 13 operator applications for six-month non-commercial 5G trials using vendors the operators nominated (Ericsson, Nokia, Samsung, C-DOT, Jio in-house); no Chinese vendor was included, and China's embassy publicly regretted the exclusion.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecoms.com/5g-6g/indian-telcos-choose-non-chinese-vendors-for-5g-trials",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2021-05-05",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.deccanherald.com/amp/story/business/china-expresses-concern-over-indias-decision-to-keep-huawei-zte-out-of-5g-trials-982739.html",
+          "publisher": "Deccan Herald",
+          "source_tier": "S3",
+          "date": "2021-05-05",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.itwire.com/technology-regulation/84523-india-bans-huawei,-zte-from-5g-trials.html",
+          "publisher": "iTWire",
+          "source_tier": "S2",
+          "date": "2018-09-17",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Trial-level (pilot, tier 2) exclusion. DoT framed it as operators' own vendor choices, but Airtel and Vi had earlier planned trials with Huawei/ZTE and dropped them on resubmission. iTWire shows an earlier 2018 exclusion from DoT use-case trials, cited as context. Overlaps with IND-001; both are kept because they are separate government actions."
+    },
+    {
+      "id": "IND-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson; Nokia",
+      "local_actor": "Reliance Jio",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-10-17",
+      "still_current": null,
+      "summary": "Reliance Jio signed 5G standalone RAN deals with Nokia (AirScale base stations, massive MIMO antennas, radios, SON software) and Ericsson (its first Jio RAN contract, plus E-band microwave transport); values were not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/nokia-ericsson-announce-jio-5g-sa-deals",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2022-10-20",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sdxcentral.com/articles/news/jio-taps-ericsson-nokia-for-5g-sa-build/2022/10",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2022-10-18",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden) and Nokia (Finland) make the pole third. Jio's 5G core supplier is not identified in these sources (Jio claims in-house technology; Samsung and Cisco listed as other partners). Vendor shares of the RAN not stated. 5G is very likely now at scale, but tier 5 was not confirmed in this run."
+    },
+    {
+      "id": "IND-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson; Nokia; Samsung",
+      "local_actor": "Bharti Airtel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-08-03",
+      "still_current": null,
+      "summary": "Bharti Airtel awarded 5G network agreements to Ericsson, Nokia (AirScale equipment plus deployment and optimisation services) and, for the first time, Samsung; values undisclosed. Huawei, a long-time Airtel supplier, was not among them.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.fierce-network.com/wireless/bharti-airtel-awards-5g-network-deals-ericsson-nokia-and-also-samsung",
+          "publisher": "Fierce Network",
+          "source_tier": "S2",
+          "date": "2022-08-03",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened trade-press source. Samsung is Korean; all three are third-pole vendors. Vodafone Idea's 5G vendors were not researched in this run. Whether residual Huawei 4G equipment remains in Airtel's network is unknown."
+    },
+    {
+      "id": "IND-005",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Bharti Airtel (Nxtra); AdaniConneX; Government of Andhra Pradesh",
+      "builder": "AdaniConneX (co-developer)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04-28",
+      "still_current": null,
+      "summary": "Google announced a US$15bn, gigawatt-scale AI hub in Visakhapatnam with Airtel and AdaniConneX, to be built 2026-2030; Airtel adds a cable landing station. A foundation stone for the planned 1 GW site was laid in April 2026.",
+      "announced_value_usd": 15000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/data-centres-networks/19196-google-airtel-and-adaniconnex-to-build-us-15b-ai-hub-in-india.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2025-10-15",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.tribuneindia.com/news/business/foundation-stone-laid-for-google-cloud-india-ai-hub-in-visakhapatnam-under-adani-google-airtel-data-centre-project/",
+          "publisher": "The Tribune",
+          "source_tier": "S3",
+          "date": "2026-04-28",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://indbiz.gov.in/google-adani-and-airtel-join-forces-to-build-indias-largest-ai-data-centre-in-vizag",
+          "publisher": "IndBiz (Ministry of External Affairs)",
+          "source_tier": "S4",
+          "date": "2025-10-15",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ownership split not stated: Google is the announcing investor and the hub is branded a Google Cloud AI hub, so Google is treated as controller (us); AdaniConneX co-develops core infrastructure and Airtel supplies connectivity, either could hold building ownership. Tier 4 reads the foundation-stone ceremony as construction start. US$15bn is announced, described variously as Google's and as Airtel-plus-Google combined."
+    },
+    {
+      "id": "IND-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Reliance Industries",
+      "local_actor": "Reliance Industries (tenant: Meta)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06-10",
+      "still_current": null,
+      "summary": "Reliance will build and fully operate a 168 MW AI-ready data centre at its Jamnagar campus for Meta under a built-to-suit lease, Meta's first in India; operation is expected within about two years. Value undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomreviewasia.com/news/industry-news/29486-reliance-meta-partner-on-168-mw-ai-enabled-data-center-project-in-gujarat/",
+          "publisher": "Telecom Review Asia",
+          "source_tier": "S2",
+          "date": "2026-06-16",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://solarquarter.com/2026/06/10/meta-partners-with-reliance-for-168-mw-ai-data-center-in-india-backed-by-nearly-1-gw-of-new-renewable-energy-capacity/",
+          "publisher": "SolarQuarter",
+          "source_tier": "S2",
+          "date": "2026-06-10",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator rule: Reliance (Indian) builds and runs the facility, so pole domestic; Meta (US) is the tenant and its workloads are not coded here. Tier 3 = signed lease; construction start not confirmed. Reliance's wider ~US$110bn AI infrastructure pledge is not tied to this project in the sources."
+    },
+    {
+      "id": "IND-007",
+      "layer": "power",
+      "pole": "domestic",
+      "controller": "CleanMax; Fourth Partner Energy",
+      "local_actor": "Meta (offtaker)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06-10",
+      "still_current": null,
+      "summary": "Alongside the Jamnagar lease, Meta contracted 837 MW of new solar and wind from CleanMax and 88 MW from Fourth Partner Energy across several states; Meta pays the data centre's full energy and water costs.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://solarquarter.com/2026/06/10/meta-partners-with-reliance-for-168-mw-ai-data-center-in-india-backed-by-nearly-1-gw-of-new-renewable-energy-capacity/",
+          "publisher": "SolarQuarter",
+          "source_tier": "S2",
+          "date": "2026-06-10",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded as AI-linked power because it was announced with the Jamnagar AI data centre, though the PPAs are not stated to feed that site exclusively. CleanMax and Fourth Partner are Indian developers (owner-operators), so pole domestic. Single opened source."
+    },
+    {
+      "id": "IND-008",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia; AMD",
+      "local_actor": "IndiaAI Mission (MeitY); Yotta, NxtGen, E2E Networks, Cyfuture, Jio Platforms, CtrlS",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-24",
+      "still_current": null,
+      "summary": "Under the IndiaAI Mission's first two GPU tenders, about 17,300 accelerators had reportedly been installed by June 2025, mainly Nvidia H100/H200/B200 plus AMD MI300X, operated by Indian providers; Yotta held the largest share, including H100s for Sarvam.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://indianinfrastructure.com/2025/06/24/more-than-17000-gpus-installed-under-indiaai-mission-in-the-first-two-bidding-rounds/",
+          "publisher": "Indian Infrastructure",
+          "source_tier": "S2",
+          "date": "2025-06-24",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://tele.net.in/bidders-assigned-ai-workloads-under-indiaai-gpu-tender/",
+          "publisher": "tele.net",
+          "source_tier": "S2",
+          "date": "2025-04-28",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://inc42.com/buzz/indiaai-to-add-over-3800-gpus-via-third-tender-report",
+          "publisher": "Inc42",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Chip vendor is the controller (firmware/drivers), so pole us. tele.net confirms workload allocation to Yotta, NxtGen and E2E but not GPU makes, so it does not corroborate the GPU details; marked uncorroborated. Installation counts are 'reported'. No Huawei Ascend deployment found. Business Standard (Feb 2026) cites nearly 40,000 GPUs nationally."
+    },
+    {
+      "id": "IND-009",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Sarvam AI",
+      "local_actor": "IndiaAI Mission (MeitY)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-20",
+      "still_current": null,
+      "summary": "Sarvam AI, selected by the government to build India's sovereign LLM, unveiled ~30B and ~105B-parameter models at the February 2026 AI Impact Summit, reported as trained from scratch on domestic compute.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.freepressjournal.in/amp/tech/ai-summit-2026-meet-the-3-sovereign-ai-llm-models-that-were-unveiled-in-delhi-to-rival-global-tech-giants",
+          "publisher": "Free Press Journal",
+          "source_tier": "S3",
+          "date": "2026-02-20",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.business-standard.com/india-news/ai-impact-summit-to-showcase-indigenous-development-of-slm-and-llms-126021201348_1.html",
+          "publisher": "Business Standard",
+          "source_tier": "S3",
+          "date": "2026-02-12",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sarvam.ai/indias-sovereign-large-language-model",
+          "publisher": "Sarvam AI (corporate page)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Two opened S3 sources but no S1/S2, so uncorroborated. Base model left null because sources claim training from scratch; not independently verified. Business Standard pre-summit described a 120B open-source model, so parameter counts vary by source. Training compute reportedly IndiaAI-tendered Nvidia H100s via Yotta (see IND-008)."
+    },
+    {
+      "id": "IND-010",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "BharatGen (IIT Bombay consortium)",
+      "local_actor": "Government of India (IndiaAI / DST-supported)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02",
+      "still_current": null,
+      "summary": "Government-backed BharatGen released Param2, a 17B-parameter mixture-of-experts model covering 22 Indian languages, openly on Hugging Face around the February 2026 AI Impact Summit; it was developed with Nvidia.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.freepressjournal.in/amp/tech/ai-summit-2026-meet-the-3-sovereign-ai-llm-models-that-were-unveiled-in-delhi-to-rival-global-tech-giants",
+          "publisher": "Free Press Journal",
+          "source_tier": "S3",
+          "date": "2026-02-20",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.business-standard.com/india-news/ai-impact-summit-to-showcase-indigenous-development-of-slm-and-llms-126021201348_1.html",
+          "publisher": "Business Standard",
+          "source_tier": "S3",
+          "date": "2026-02-12",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://analyticsindiamag.com/ai-news-updates/bharatgen-tech-mahindra-and-fractal-selected-for-phase-2-of-indiaai-mission/",
+          "publisher": "Analytics India Magazine",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Business Standard says Param2 was built fully in India; whether it reuses any foreign open weights is not stated, so base_model is null. Nvidia's role (likely tooling/compute) is unspecified. Exact funding ministry not confirmed in opened sources. No S1/S2 opened, so uncorroborated."
+    },
+    {
+      "id": "IND-011",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "ByteDance (TikTok); Alibaba (UC Browser); others",
+      "local_actor": "Ministry of Electronics and IT (MeitY)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Availability of TikTok and other Chinese-origin apps in India",
+      "reversal_reason": "geopolitical",
+      "date": "2020-06-29",
+      "still_current": null,
+      "summary": "MeitY blocked 59 Chinese-origin apps, including TikTok, UC Browser and Shareit, citing threats to national security and unauthorised transfer of user data abroad; 118 more, including PUBG Mobile, followed in September 2020, and the bans were continued in 2021.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2020/06/29/india-bans-tiktok-dozens-of-other-chinese-apps",
+          "publisher": "TechCrunch",
+          "source_tier": "S2",
+          "date": "2020-06-29",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.deccanherald.com/india/modi-govt-to-continue-ban-on-chinese-apps-including-tiktok-942533.html",
+          "publisher": "Deccan Herald",
+          "source_tier": "S3",
+          "date": "2021-01-23",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://m.gsmarena.com/india_confirms_permanent_ban_over_59_chinese_apps_including_tiktok_and_wechat-news-47400.php",
+          "publisher": "GSMArena",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 5 because TikTok and the others were in mass use before the block. GSMArena headline (search only) says the ban was made permanent. Not re-confirmed as of 2026, so still_current is null, though TikTok is widely understood to remain blocked. Consumer apps rather than state AI stack; included because the brief asks for app bans."
+    },
+    {
+      "id": "IND-012",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision; Dahua",
+      "local_actor": "Ministry of Electronics and IT (MeitY); STQC Directorate",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "New sales of Hikvision/Dahua internet-connected CCTV cameras in India",
+      "reversal_reason": "geopolitical",
+      "date": "2026-04-01",
+      "still_current": null,
+      "summary": "MeitY's CCTV rules require internet-connected cameras to pass STQC lab testing, including source code and component-origin disclosure; from April 2026 certification denials for Chinese chipsets or firmware reportedly locked Hikvision and Dahua out of new sales.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.medianama.com/2026/04/223-india-bans-chinese-cctv-makers-april-2026/",
+          "publisher": "MediaNama",
+          "source_tier": "S2",
+          "date": "2026-04-01",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://bdnews24.com/technology/01b1a8631e64",
+          "publisher": "Reuters (via bdnews24)",
+          "source_tier": "S3",
+          "date": "2025-05-28",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.91mobiles.com/hub/india-bans-chinese-cctv-brands-april-1st-security-rules/",
+          "publisher": "91mobiles",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "No order naming Hikvision or Dahua was seen; the exclusion works through certification, which officials told Reuters was partly driven by China concerns, so reason coded geopolitical rather than regulatory. Tier 5 reflects their ~30% installed market share (Counterpoint via Reuters). Existing installations are not ordered removed per the sources."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "coded"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Obtain the DoT licence amendment / NSDTT text (S1) and confirm whether Huawei or ZTE ever received trusted-source status; is any Huawei/ZTE 4G equipment still in Airtel or Vodafone Idea networks?",
+    "Vodafone Idea and BSNL 5G/4G vendors (BSNL uses TCS/Tejas/C-DOT domestic stack, not researched here).",
+    "Who owns the Visakhapatnam AI hub buildings (Google vs AdaniConneX vs Airtel Nxtra) and is construction under way?",
+    "IndiaAI GPU tender rounds 3+ : final GPU counts, makes and any Huawei/other non-US accelerators; US export-licence conditions on B200 shipments.",
+    "Sarvam and BharatGen: S1 confirmation (MeitY/IndiaAI releases) of selection, funding and training-from-scratch claims; Phase 2 foundation-model awardees (Tech Mahindra, Fractal, others).",
+    "Government adoption of US frontier models (e.g. OpenAI/Anthropic/Google partnerships with ministries) not researched.",
+    "Confirm 2020 app bans still in force in 2026 and whether DeepSeek faced any national block beyond the Finance Ministry advisory.",
+    "Reliance Jamnagar: Reliance-Google cloud and Reliance-Nvidia partnerships, and construction status of the wider campus."
+  ],
+  "searches_run": 9
+}

@@ -1,0 +1,263 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "LSO",
+  "name": "Lesotho",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T09:19:02Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "LSO-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE Corporation",
+      "local_actor": "Government of Lesotho (national telecom network)",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2010-03",
+      "still_current": null,
+      "summary": "China Eximbank lent about US$32.8m, signed May 2008, for Phase 1 of Lesotho's National Telecom Network Project, implemented by ZTE; AidData records work from January 2009 to completion in March 2010.",
+      "announced_value_usd": 32825081,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/752",
+          "publisher": "AidData (Chinese development finance dataset)",
+          "source_tier": "S2",
+          "date": "2008-05-09",
+          "retrieved_at": "2026-10-23T09:19:02Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "AidData is a research dataset compiling official sources; treated as S2, single opened source, so uncorroborated and low confidence. Value as recorded at signing (LSL 228m). AidData's linked Phase 2 record (project 53047: RMB 200m Eximbank loan signed December 2011, handed over May 2013, on-lent to state-owned Econet Telecom Lesotho, contractor Anhui Telecommunications Engineering) names no equipment vendor, so it is not coded separately. Pre-2020; whether ZTE gear remains in Econet's network today was not confirmed."
+    },
+    {
+      "id": "LSO-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Lesotho Communications Authority; Starlink Lesotho",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-04-14",
+      "still_current": null,
+      "summary": "The Lesotho Communications Authority granted Starlink Lesotho a ten-year licence to run a satellite network and sell satellite internet, after a 2024 application and revised licensing rules gazetted in January 2025; civil-society objections were overruled.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/lesotho-joins-starlink-race-with-a-10-year-licence/KzQenMjykoR7Zd2r",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2025-04-15",
+          "retrieved_at": "2026-10-23T09:19:02Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.businessday.co.za/bd/national/2025-04-15-lesotho-grants-10-year-operating-licence-to-elon-musks-starlink/",
+          "publisher": "BusinessDay",
+          "source_tier": "S3",
+          "date": "2025-04-15",
+          "retrieved_at": "2026-10-23T09:19:02Z",
+          "opened": true
+        },
+        {
+          "url": "https://allafrica.com/stories/202504150179.html",
+          "publisher": "allAfrica",
+          "source_tier": "S3",
+          "date": "2025-04-15",
+          "retrieved_at": "2026-10-23T09:19:02Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Licence issued is coded tier 4; whether service is commercially live at scale was not confirmed. Both sources note the grant coincided with Lesotho seeking trade talks after a US tariff, but neither attributes the decision to US pressure. allAfrica (headline 'Lesotho Gives in') seen in search only."
+    },
+    {
+      "id": "LSO-003",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Convalt Energy (ACO Investment Group)",
+      "local_actor": "Ministry of Energy",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06",
+      "still_current": null,
+      "summary": "Lesotho's Energy Ministry signed a non-binding MOU with US firm Convalt Energy for the Kobong hydropower and AI data-centre project in eastern Lesotho; Convalt is to fund feasibility studies, with construction expected from 2029.",
+      "announced_value_usd": 6200000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/us-energy-company-plots-12gw-hydropower-plant-and-ai-data-center-in-lesotho-report/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-06-08",
+          "retrieved_at": "2026-10-23T09:19:02Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.connectingafrica.com/data-centers/lesotho-s-first-ai-data-center-set-to-shape-the-country-s-digital-economy",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2026-06-30",
+          "retrieved_at": "2026-10-23T09:19:02Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-infrastructures/0606-56226-lesotho-secures-record-6-2-billion-u-s-investment-for-hydropower-and-ai-hub",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S3",
+          "date": "2026-06-06",
+          "retrieved_at": "2026-10-23T09:19:02Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Neither source states who would own or operate the data centre; Convalt is coded as controller because it is the developer funding the project, which is an inference. Announced US$6.2bn (Connecting Africa) covers the whole package incl. solar and storage; DCD gives about US$5.92bn (M98bn) construction cost. No tenant or chip vendor disclosed. MOU only, so tier 1.",
+      "bundle_id": "LSO-B1"
+    },
+    {
+      "id": "LSO-004",
+      "layer": "power",
+      "pole": "us",
+      "controller": "Convalt Energy (ACO Investment Group)",
+      "local_actor": "Ministry of Energy",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06",
+      "still_current": null,
+      "summary": "The same Convalt MOU covers a 1.2GW hydropower plant integrated with the AI data centre at Kobong; Connecting Africa adds 4.6GW solar and up to 4GWh battery storage to the package.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/us-energy-company-plots-12gw-hydropower-plant-and-ai-data-center-in-lesotho-report/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-06-08",
+          "retrieved_at": "2026-10-23T09:19:02Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.connectingafrica.com/data-centers/lesotho-s-first-ai-data-center-set-to-shape-the-country-s-digital-economy",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2026-06-30",
+          "retrieved_at": "2026-10-23T09:19:02Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-infrastructures/0606-56226-lesotho-secures-record-6-2-billion-u-s-investment-for-hydropower-and-ai-hub",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S3",
+          "date": "2026-06-06",
+          "retrieved_at": "2026-10-23T09:19:02Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Power coded because the plant is explicitly tied to the AI data centre. Owner-operator not stated; Convalt as controller is an inference. Value recorded once on LSO-003 to avoid double counting.",
+      "bundle_id": "LSO-B1"
+    },
+    {
+      "id": "LSO-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Lesotho; Lesotho Mounted Police Service",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021",
+      "still_current": null,
+      "summary": "Lesotho Times reports the government resolved in 2021 to award Huawei the Lesotho Safe City Project: cameras, data and command centres and police communications, phase one in Maseru, financed by a CNY600m (about US$83m) Eximbank concessional loan.",
+      "announced_value_usd": 83000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://lestimes.com/?p=52599",
+          "publisher": "Lesotho Times",
+          "source_tier": "S3",
+          "date": "2022-11-16",
+          "retrieved_at": "2026-10-23T09:19:02Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened S3 source, so uncorroborated and low confidence. USD figure is the article's own conversion. Whether the loan was signed, construction began, or the system is operational was not confirmed; tier 3 reflects the reported award only."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks, facilities and applications; no accelerator purchases surfaced incidentally"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "search budget spent elsewhere; no government frontier-model partnership or national AI strategy surfaced incidentally"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "coded"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies Vodacom Lesotho's and Econet Telecom Lesotho's current RAN and core? Vodacom's US$40m upgrade (ITWeb, March 2026), ETL's 2025 Maseru RAN upgrade and Vodacom's 2018 5G FWA launch reports name no vendor.",
+    "Lesotho Safe City Project (Huawei, CNY600m Eximbank): was the loan signed, and is the Maseru phase built and operational? Seek S1 (Finance ministry, parliament) evidence.",
+    "Is ZTE equipment from the 2008-2013 Eximbank National Telecom Network phases still in service at Econet Telecom Lesotho?",
+    "Kobong/Convalt project: ownership structure, feasibility-study progress, any tenant or chip vendor.",
+    "AfDB Digital Transformation and Inclusive Connectivity Project (US$15.1m, approved June 2026 per GTAI notice): vendors and scope (national data centre?).",
+    "Models and silicon layers not searched; any national AI strategy or government model partnerships."
+  ],
+  "searches_run": 10
+}

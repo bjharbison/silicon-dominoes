@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "IND",
-  "IRN",
-  "ISR",
-  "ITA",
-  "JPN",
-  "KAZ",
-  "KEN",
-  "KGZ",
-  "KOR",
-  "LSO",
   "MOZ",
   "MWI",
   "NIC",
@@ -254,6 +244,16 @@
   "FIN",
   "GBR",
   "GEO",
-  "GRC"
+  "GRC",
+  "IND",
+  "IRN",
+  "ISR",
+  "ITA",
+  "JPN",
+  "KAZ",
+  "KEN",
+  "KGZ",
+  "KOR",
+  "LSO"
  ]
 }

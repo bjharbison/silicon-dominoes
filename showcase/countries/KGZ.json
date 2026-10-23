@@ -1,0 +1,329 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "KGZ",
+  "name": "Kyrgyzstan",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "KGZ-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei Technologies",
+      "local_actor": "Government of the Kyrgyz Republic",
+      "builder": null,
+      "financier": "Huawei; Beijing China Veterans Lingxin Capital Management; Aka Minerals and Mining (investors, per Times of Central Asia)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-01-11",
+      "still_current": false,
+      "summary": "The government signed a US$60m investment agreement with Huawei for a Smart City camera and monitoring-centre system covering Bishkek, Osh and main highways, to be repaid from traffic fines over five years.",
+      "announced_value_usd": 60000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://timesca.com/china-s-huawei-to-implement-smart-city-project-in-kyrgyzstan/",
+          "publisher": "The Times of Central Asia",
+          "source_tier": "S3",
+          "date": "2018-01-12",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://economist.kg/novosti/2018/01/10/ustanavlivat-videokameryi-na-ulitsah-kr-budet-kitayskaya-huawei/",
+          "publisher": "Economist.kg",
+          "source_tier": "S3",
+          "date": "2018-01-10",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Co-investors named as Beijing China Veterans Lingxin Capital Management and Kyrgyz firm Aka Minerals and Mining, which were to do the work. Both sources are general/regional press (S3), so not corroborated under the S1/S2 rule. The government exited in March 2018 (KGZ-002), so still_current is false and the agreement was never implemented."
+    },
+    {
+      "id": "KGZ-002",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei Technologies",
+      "local_actor": "Government of the Kyrgyz Republic",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "KGZ-001 Huawei Smart City investment agreement (Jan 2018)",
+      "reversal_reason": "commercial",
+      "date": "2018-03",
+      "still_current": null,
+      "summary": "In March 2018 the government decided to withdraw from the January Huawei Smart City investment agreement and pursue the project itself, later via a public-private partnership; no reason was given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://24.kg/obschestvo/88157_laquobezopasnyiy_gorodraquo_kotorogo_net_pochemu_chinovniki_opyat_perekraivayut_proekt/",
+          "publisher": "24.kg",
+          "source_tier": "S3",
+          "date": "2018-06-19",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://timesca.com/china-s-huawei-to-implement-smart-city-project-in-kyrgyzstan/",
+          "publisher": "The Times of Central Asia",
+          "source_tier": "S3",
+          "date": "2018-01-12",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reason for the exit is not stated in the source; coded commercial (government chose to self-implement) as the least-assumptive category, which does not move the map. Any corruption-related or geopolitical motive is unverified. Corroboration not met: only one S3 source documents the exit itself."
+    },
+    {
+      "id": "KGZ-003",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Vega Radio Engineering Corporation (Rostec / Roselectronics, Russia)",
+      "local_actor": "Government of the Kyrgyz Republic (Safe City project)",
+      "builder": "Spec Project Montazh (Kyrgyzstan), design and installation; Shvabe-Moscow technical support",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-09-04",
+      "still_current": null,
+      "summary": "Russian state-owned Vega won the Safe City phase-one auction, supplying its Prizma neural-network traffic-violation camera system; equipment arrived December 2018 and Vega operated phase one until contracts expired in September 2024.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://kaktus.media/doc/379363_koncern_vega_o_bezopasnom_gorode:_my_gotovy_primenit_noveyshie_razrabotki.html",
+          "publisher": "Kaktus.media",
+          "source_tier": "S3",
+          "date": "2018-09-06",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://24.kg/english/104171_Safe_City_project_First_batch_of_equipment_delivered",
+          "publisher": "24.kg",
+          "source_tier": "S3",
+          "date": "2018-12-18",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://m.akipress.com/news:798650:Safe_City_cameras_continue_to_work_-_Interior_Ministry_of_Kyrgyzstan",
+          "publisher": "AKIpress",
+          "source_tier": "S3",
+          "date": "2024-10-02",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://24.kg/english/102822_Safe_City_Experts_from_Moscow_examine_Bishkek_crossroads_",
+          "publisher": "24.kg",
+          "source_tier": "S3",
+          "date": "2018-12-01",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Russia is a foreign non-US, non-PRC controller, so pole is third. Vega operated the system under investment contracts, so it is treated as controller. Lot bids of about 1.1bn som each were reported but which lot is phase one is unclear, so values are left null. AKIpress (paywalled beyond the lede) says contracts expired 17 Sept 2024 while cameras still work; who now operates them is unknown, so still_current is null. All sources S3: not corroborated. Consortium partners Shvabe-Moscow (Russia) and local Spec Project Montazh."
+    },
+    {
+      "id": "KGZ-004",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Shenzhen Sunwin Intelligent Co. Ltd",
+      "local_actor": "Government of the Kyrgyz Republic (Safe City project)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-08-21",
+      "still_current": null,
+      "summary": "Chinese firm Shenzhen Sunwin won the Safe City phase-two tender for hardware-software camera complexes at 306 points; by August 2021 installation was under way in Bishkek and Tokmak.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://24.kg/english/204674_New_Safe_City_cameras_to_be_installed_in_Bishkek_and_Tokmak_cities",
+          "publisher": "24.kg",
+          "source_tier": "S3",
+          "date": "2021-08-21",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://24.kg/english/121999_Safe_City_project_Four_companies_ready_to_install_cameras_in_Kyrgyzstan",
+          "publisher": "24.kg",
+          "source_tier": "S3",
+          "date": "2019-06-27",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 4 because installation had started; whether all 306 points went live is unconfirmed. Single host (24.kg), S3 only: not corroborated. Funding source and contract value not stated. Bidders in 2019 also included Vega and two others. Underlying camera OEM (e.g. Hikvision/Dahua) not identified."
+    },
+    {
+      "id": "KGZ-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Digital Development of the Kyrgyz Republic",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-07-19",
+      "still_current": null,
+      "summary": "The digital development minister announced a 5G pilot with Huawei from 1 August 2022, saying test preparations were complete; no operator or scope was named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://economist.kg/novosti/2022/07/19/v-kyrgyzstane-s-1-avgusta-nachnut-testirovat-5g-v-pilote-budet-uchastvovat-huawei/",
+          "publisher": "Economist.kg",
+          "source_tier": "S3",
+          "date": "2022-07-19",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Announcement of a pilot (tier 2); whether it ran, and the RAN/core vendors of MegaCom, Beeline (Veon) and O! today, were not established in this pass."
+    },
+    {
+      "id": "KGZ-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Ministry of Digital Development and Innovative Technologies",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-11",
+      "still_current": null,
+      "summary": "The digital ministry requested commercial proposals for high-performance server nodes with Nvidia H100 or H200 SXM5 accelerators for AI, machine learning and big-data workloads.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.akchabar.kg/en/news/minczifry-sobiraet-predlozheniya-na-postavku-ai-oborudovaniya",
+          "publisher": "Akchabar",
+          "source_tier": "S3",
+          "date": "2025-06-11",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "A request for proposals is intent, not an award, so tier 1. No quantity, budget, supplier or award found. Kyrgyzstan is in BIS group D:1 (licence required, presumption of approval) per the global layer; no licence decision found."
+    },
+    {
+      "id": "KGZ-007",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Inspur Yunzhou Industrial Internet Co., Ltd (counterparty)",
+      "local_actor": "Ministry of Digital Development of the Kyrgyz Republic",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-13",
+      "still_current": null,
+      "summary": "The digital ministry and Inspur Yunzhou signed a memorandum on digital cooperation covering data-centre construction, cloud, AI and industrial internet, including a planned regional data-centre hub.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.akchabar.kg/en/news/kirgizstan-i-inspur-podpisali-memorandum-o-sotrudnichestve-v-sfere-tsifrovikh-tekhnologij-cscmtyjsopsbvrjr",
+          "publisher": "Akchabar",
+          "source_tier": "S3",
+          "date": "2025-08-13",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: a non-binding MOU; who would own and operate the planned data centre (Inspur, the state or a JV) is not stated, and under SPEC the building's owner-operator sets the pole. If Inspur supplies the IT stack, an equipment finding would be prc. No value disclosed."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "no government frontier-model partnership or sovereign Kyrgyz model found; Feb 2026 National AI Center announcement names no partner, hardware or model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "no AI/data-centre-specific power arrangement (e.g. Kambarata-linked) surfaced in data-centre searches"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "RAN and core vendors of MegaCom, Beeline (Veon) and O! (NurTelecom) and whether 5G has launched commercially; did the July 2022 Huawei 5G pilot run?",
+    "Who operates the Safe City phase-one cameras after Vega's contracts expired on 17 Sept 2024, and was phase two (Shenzhen Sunwin) completed at all 306 points? Seek Interior Ministry or procurement-portal (S1) records and camera OEM.",
+    "Why did the government exit the January 2018 Huawei agreement, and how does it relate to the later prosecution of ex-PM Isakov (not verified here)?",
+    "Was the June 2025 Nvidia H100/H200 server procurement awarded, to whom, and in what quantity; is it tied to the Feb 2026 National AI Center?",
+    "Inspur Yunzhou MOU (Aug 2025) and 2026 National Investment Agency talks with Chinese data-centre firms (Ivan Xu, Asman city; an unnamed operator): any binding agreement, site, ownership or hydropower link?",
+    "State Data Processing Center and Tunduk e-government platform: hardware vendor and controller (24.kg headlines seen, not opened)."
+  ],
+  "searches_run": 11
+}

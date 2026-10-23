@@ -1,0 +1,363 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "KOR",
+  "name": "South Korea",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T09:19:11Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "KOR-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "LG Uplus",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-05",
+      "still_current": null,
+      "summary": "LG Uplus, alone among Korea's three big carriers, built part of its 5G network with Huawei gear, reportedly about 30% of base stations, alongside Samsung, Ericsson and Nokia, and refused repeated US calls to drop Huawei.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.koreajoongangdaily.com/business/lg-u-says-it-hasnt-been-told-to-drop-huawei/11603381",
+          "publisher": "Korea JoongAng Daily",
+          "source_tier": "S3",
+          "date": "2019-05-23",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.asiae.co.kr/en/article/2020072307415177083",
+          "publisher": "Asia Economy (English)",
+          "source_tier": "S3",
+          "date": "2020-07-23",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightreading.com/5g/south-korea-pushes-back-against-us-pressure-on-huawei-report",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-10-15",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "The 30% share is a press estimate, not an operator disclosure, and RAN versus core is not specified (sources speak of base stations). Light Reading notes SKT and KT also use Huawei in fixed-line networks; not coded separately. Seoul in 2020 said vendor choice is up to private operators. No 2024-26 evidence on whether LG Uplus has reduced Huawei's share was found, so still_current is null."
+    },
+    {
+      "id": "KOR-002",
+      "layer": "networks",
+      "pole": "domestic",
+      "controller": "Samsung Electronics (with Ericsson and Nokia)",
+      "local_actor": "SK Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-09-14",
+      "still_current": null,
+      "summary": "SK Telecom named Samsung Electronics, Ericsson and Nokia as its 5G equipment suppliers ahead of the March 2019 launch, leaving Huawei off the list; KT's existing 4G vendors were the same three.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20180914/5g/korea-sk-telecom-selects-potential-vendors-5g-networks",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2018-09-14",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/asia-pacific/skt-omits-huawei-from-5g-vendor-list/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2018-09-17",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Multi-vendor award; Samsung (Korean) is coded as controller because it is listed first and is the domestic lead vendor, but Ericsson and Nokia (third pole) hold an undisclosed share. KT's 5G vendor award was not confirmed in this pass (Light Reading 2020 describes both SKT and KT 5G as free of Chinese suppliers). Huawei was never selected, so this is not coded as a reversal. Pre-2020 and still_current not confirmed."
+    },
+    {
+      "id": "KOR-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "SK Group (SK Telecom, SK Broadband)",
+      "local_actor": "SK Group; Ulsan Metropolitan City; Amazon Web Services (partner/investor)",
+      "builder": "SK Ecoplant",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-29",
+      "still_current": null,
+      "summary": "SK Group and AWS are building an AI data centre in Ulsan's Mipo industrial complex: 41MW first phase due late 2027, 103MW by 2029, about 60,000 GPUs; ground was broken in August 2025.",
+      "announced_value_usd": 5110000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/sk-group-and-aws-to-build-ai-data-center-in-ulsan-south-korea/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-06-16",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/amp/business/companies/20250622/sk-targets-4th-quantum-leap-with-ulsan-ai-center",
+          "publisher": "The Korea Times",
+          "source_tier": "S3",
+          "date": "2025-06-22",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://v.daum.net/v/20250829182005265",
+          "publisher": "Korea JoongAng Daily (republished on Daum)",
+          "source_tier": "S3",
+          "date": "2025-08-29",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Announced value is the Science Ministry's 7 trillion won total as converted by DCD (~US$5.11bn); Chosun-reported AWS share ~US$4bn. Ownership split is not disclosed; SK is described as developer and operator of construction and energy, AWS as investor and anchor partner, so the pole is domestic with substantial US tenant control of the compute. If AWS turns out to own or operate the halls, recode as us. Tier 4 rests on the groundbreaking report (JoongAng via Daum portal)."
+    },
+    {
+      "id": "KOR-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "SK Telecom; Samsung SDS",
+      "local_actor": "OpenAI (Stargate Korea partner)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-01",
+      "still_current": null,
+      "summary": "OpenAI agreed 'Stargate Korea' with Samsung and SK in October 2025: memory-supply LOIs and an SK Telecom MOU for an AI data centre in the southwest. By September 2026 the firms reported no construction, funding or confirmed site.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/openai-plans-stargate-data-center-in-south-korea-samsung-electronics-sk-hynix-to-supply-memory-chips/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-10-01",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.koreajoongangdaily.com/business/openais-stargate-project-in-korea-stuck-at-starting-gate-as-samsung-sk-report-little-progress/12856484",
+          "publisher": "Korea JoongAng Daily",
+          "source_tier": "S3",
+          "date": "2026-09-07",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Non-binding LOI/MOU (tier 1). Controller coded as the Korean prospective operators (SK Telecom and Samsung SDS, per the presidential briefing relayed by JoongAng) with OpenAI as tenant; control terms are undisclosed. Stalled but not formally cancelled, so not coded as a reversal. The memory-chip LOIs are Korean exports to OpenAI and are not coded as Korean adoption."
+    },
+    {
+      "id": "KOR-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Ministry of Science and ICT; Naver Cloud, NHN Cloud, Kakao (hosts)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12-01",
+      "still_current": null,
+      "summary": "The Science Ministry's 1.46 trillion won programme to buy 13,000 Nvidia GPUs for a national AI computing resource began receiving shipments in December 2025, hosted by Naver Cloud, NHN Cloud and Kakao for industry, universities and research.",
+      "announced_value_usd": 993000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.koreajoongangdaily.com/business/first-batch-of-nvidia-gpus-arrive-in-korea-as-part-of-governments-146-trillion-won-ai-chip-drive/12040737",
+          "publisher": "Korea JoongAng Daily",
+          "source_tier": "S3",
+          "date": "2025-12-02",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/nvidia-to-deploy-more-than-250000-gpus-across-south-korea-with-samsung-sk-group-and-hyundai-all-announcing-ai-factories/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-10-31",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Value is the programme budget converted by JoongAng (~US$993m), not a verified award. DCD describes the 13,000 as Blackwell GPUs and the first tranche of up to 50,000 government GPUs. Tier 4 = deliveries under way; whether all 13,000 are installed and in service was not confirmed.",
+      "bundle_id": "KOR-B1"
+    },
+    {
+      "id": "KOR-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Samsung Electronics; SK Group; Hyundai Motor Group; Naver Cloud; Ministry of Science and ICT",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-31",
+      "still_current": null,
+      "summary": "At APEC in Gyeongju, Nvidia announced plans to supply over 250,000 GPUs to Korea: about 50,000 each to the government, Samsung, SK Group and Hyundai, and 60,000 to Naver Cloud, for AI factories and sovereign AI compute.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/nvidia-to-deploy-more-than-250000-gpus-across-south-korea-with-samsung-sk-group-and-hyundai-all-announcing-ai-factories/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-10-31",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.koreaherald.com/article/10606193",
+          "publisher": "The Korea Herald",
+          "source_tier": "S3",
+          "date": "2025-10-31",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.techrepublic.com/article/news-nvidia-south-korea-ai-chips/",
+          "publisher": "TechRepublic",
+          "source_tier": "S3",
+          "date": "2025-11-03",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 2 (framework-level supply plan) because no contracts, values or delivery schedules were disclosed; TechRepublic cites local reports of up to US$10bn, not used. Allocations vary slightly across sources (SK's count is omitted by TechRepublic). The government share overlaps KOR-005.",
+      "bundle_id": "KOR-B1"
+    },
+    {
+      "id": "KOR-007",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "LG AI Research; SK Telecom; Upstage",
+      "local_actor": "Ministry of Science and ICT (national AI foundation model project)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-01-15",
+      "still_current": null,
+      "summary": "Korea's state-run sovereign foundation-model contest requires models trained from scratch with newly initialised weights; in January 2026 LG AI Research, SK Telecom and Upstage advanced, while Naver Cloud and NC AI were cut.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.koreatimes.co.kr/business/tech-science/20260115/naver-cloud-nc-ai-cut-from-national-ai-foundation-model-race",
+          "publisher": "The Korea Times",
+          "source_tier": "S3",
+          "date": "2026-01-15",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.koreaherald.com/article/10656367",
+          "publisher": "The Korea Herald",
+          "source_tier": "S3",
+          "date": "2026-01-15",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Government-funded development programme with compute and data support, coded tier 2. The Herald reports Naver was cut partly because its vision encoder reused pretrained weights from Alibaba's Qwen2.5-VL 32B; this is a programme eligibility ruling, not a national restriction on PRC models, so it is not coded as a reversal. base_model null because the rule requires from-scratch training. Two S3 sources, no S1/S2, so not corroborated. Budget and later-round results not found."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks, facilities, silicon and models; no PRC-vendor safe-city or e-government AI deployment surfaced incidentally"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced beyond SK Group's in-house energy supply for the Ulsan campus (folded into KOR-003)"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Does LG Uplus still run Huawei 5G RAN in 2026, and at what share? Seek operator disclosures or MSIT/KCC S1 evidence; current evidence is 2019-2020 press estimates.",
+    "Confirm KT's 5G vendor award and the extent of Huawei gear in SKT/KT fixed-line networks.",
+    "Ulsan SK-AWS campus: ownership and operating split between SK and AWS (determines pole).",
+    "Stargate Korea: any binding contract, site or cancellation after the September 2026 stall report.",
+    "Sovereign foundation model project: budget, round-two results (mid-2026) and the added fourth team.",
+    "Applications layer unsearched: Hikvision/Dahua cameras in public CCTV networks and any government procurement exclusions."
+  ],
+  "searches_run": 10
+}

@@ -1,0 +1,463 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "KEN",
+  "name": "Kenya",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T09:20:06Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "KEN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Safaricom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "Safaricom picked Huawei as one of two 5G vendors, alongside Nokia, launching in Nairobi, Kisumu, Kisii and Kakamega; ICT Cabinet Secretary Joe Mucheru publicly endorsed Huawei despite US security objections.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nation.africa/kenya/business/kenya-backs-safaricom-huawei-5g-rollout-deal-3339802",
+          "publisher": "Nation (Kenya)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.citizen.digital/article/huawei-gets-govt-nod-as-safaricom-launches-5g-trial-network-8899612",
+          "publisher": "Citizen Digital",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Neither opened article shows a date; the launch context (ICT CS Mucheru, first regional 5G) points to 2021, so date left null rather than guessed. Two S3 sources only, no S1/S2, so not corroborated. RAN/core split between Huawei and Nokia not stated; Huawei's long role in Safaricom's earlier 3G/4G network not verified here. Government endorsement of a Huawei contract against US pressure is a notable signal."
+    },
+    {
+      "id": "KEN-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Safaricom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "Nokia is Safaricom's second 5G technology partner alongside Huawei, supplying equipment for the initial four-city launch and a planned 150-site, nine-town expansion.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nation.africa/kenya/business/kenya-backs-safaricom-huawei-5g-rollout-deal-3339802",
+          "publisher": "Nation (Kenya)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.citizen.digital/article/huawei-gets-govt-nod-as-safaricom-launches-5g-trial-network-8899612",
+          "publisher": "Citizen Digital",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia is Finnish, so the pole is third. Same undated S3 pair as KEN-001; share of sites per vendor unknown."
+    },
+    {
+      "id": "KEN-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Kenya (Ministry of ICT; Konza Technopolis Development Authority)",
+      "local_actor": "Konza Technopolis Development Authority",
+      "builder": "Huawei",
+      "financier": "Chinese state concessional loan (lender not named in opened sources)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-07-24",
+      "still_current": null,
+      "summary": "Phase one of the Konza National Data Centre, delivered by Huawei under a 2019 KES 17.5bn deal with Chinese concessional financing, was declared ready for government use in July 2020; phase two adds smart-city services.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.the-star.co.ke/news/realtime/2020-07-24-ict-ministry-puts-final-touches-to-national-data-centre",
+          "publisher": "The Star (Kenya)",
+          "source_tier": "S3",
+          "date": "2020-07-24",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/huawei-build-konza-data-center-and-smart-city-kenya-chinese-concessional-loan",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2019-04-30",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecompaper.com/news/kenyan-govt-signs-kes-17-5-bln-deal-to-develop-konza-data-centre-and-smart-cities-project-with-huawei--1290513",
+          "publisher": "Telecompaper",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is the Kenyan state, so pole is domestic under the building rule; Huawei is builder. China Exim as lender is the brief's lead but not confirmed in opened sources. KES 17.5bn was about US$172.7m per DCD; not entered in value fields because no award notice was seen. Current utilisation not confirmed.",
+      "bundle_id": "KEN-B1"
+    },
+    {
+      "id": "KEN-004",
+      "layer": "cloud",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Kenya (Ministry of ICT)",
+      "builder": "Huawei",
+      "financier": "Chinese state concessional loan (lender not named in opened sources)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-04-30",
+      "still_current": null,
+      "summary": "The 2019 Konza deal had Huawei deliver a national cloud data centre, government cloud and enterprise services, a smart ICT network and a safe-city and smart-traffic package, financed by Chinese concessional loans.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/huawei-build-konza-data-center-and-smart-city-kenya-chinese-concessional-loan",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2019-04-30",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.the-star.co.ke/news/realtime/2020-07-24-ict-ministry-puts-final-touches-to-national-data-centre",
+          "publisher": "The Star (Kenya)",
+          "source_tier": "S3",
+          "date": "2020-07-24",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecompaper.com/news/kenyan-govt-signs-kes-17-5-bln-deal-to-develop-konza-data-centre-and-smart-cities-project-with-huawei--1290513",
+          "publisher": "Telecompaper",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded prc under the equipment rule: Huawei supplies the IT stack and government-cloud platform and so holds update access. The Star confirms Huawei as contractor but not the cloud-platform scope, so the cloud-specific claim rests on DCD alone; not corroborated. Whether the safe-city/smart-traffic component at Konza was built is unverified.",
+      "bundle_id": "KEN-B1"
+    },
+    {
+      "id": "KEN-005",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "G42",
+      "local_actor": "Ministry of Information, Communications and the Digital Economy; KenGen (Olkaria)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05-22",
+      "still_current": null,
+      "summary": "G42 and Microsoft announced a US$1bn Kenya package: a G42-built geothermal data-centre campus at Olkaria hosting a new Azure East Africa region, plus Swahili model work and skills, under a letter of intent with the ICT ministry.",
+      "announced_value_usd": 1000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.g42.ai/resources/news/g42-and-microsoft-announce-1-billion-comprehensive-digital-ecosystem-initiative-kenya",
+          "publisher": "G42 (company release)",
+          "source_tier": "S1",
+          "date": "2024-05-22",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.aljazeera.com/features/2026/8/19/can-kenyas-ai-ambitions-coexist-with-naivashas-water-needs",
+          "publisher": "Al Jazeera",
+          "source_tier": "S3",
+          "date": "2026-08",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.thinkgeoenergy.com/kenya-suspends-plans-for-microsofts-geothermal-powered-data-centre/",
+          "publisher": "ThinkGeoEnergy",
+          "source_tier": "S2",
+          "date": "2026-05-08",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator of the campus is G42 (UAE), so the facility pole is third; the Azure region itself is covered in the global cloud layer (us). Letter of intent only, so tier 1. See KEN-006 for the 2026 stall; the LOI has not been formally cancelled per the sources, so still_current is null."
+    },
+    {
+      "id": "KEN-006",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "G42",
+      "local_actor": "Government of Kenya; KenGen",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": true,
+      "reversal_of": "KEN-005 G42/Microsoft Olkaria geothermal data-centre campus (2024 letter of intent)",
+      "reversal_reason": "commercial",
+      "date": "2026-05",
+      "still_current": null,
+      "summary": "President Ruto said the US$1bn Olkaria data centre was suspended because its roughly 1GW demand would strain a 3GW grid; Treasury declined a concept note and talks reportedly broke down over a government capacity-lease commitment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.thinkgeoenergy.com/kenya-suspends-plans-for-microsofts-geothermal-powered-data-centre/",
+          "publisher": "ThinkGeoEnergy",
+          "source_tier": "S2",
+          "date": "2026-05-08",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/microsoft-and-g42-data-center-in-kenya-stalled-due-to-lack-of-power-capacity/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.aljazeera.com/features/2026/8/19/can-kenyas-ai-ambitions-coexist-with-naivashas-water-needs",
+          "publisher": "Al Jazeera",
+          "source_tier": "S3",
+          "date": "2026-08",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.the-star.co.ke/news/2026-04-29-why-kenya-must-raise-power-output-to-10000mw-ruto",
+          "publisher": "The Star (Kenya)",
+          "source_tier": "S3",
+          "date": "2026-04-29",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reason coded commercial (power capacity, Treasury funding, capacity-lease terms), not geopolitical: no opened source cites US-China or security pressure. Al Jazeera (Aug 2026) says KenGen reports it still at design stage and it may be scaled back, so this is a pause, not a confirmed cancellation. The Star Ruto speech (29 Apr 2026) was seen only in search."
+    },
+    {
+      "id": "KEN-007",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Safaricom (integrator); National Police Service",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-10-14",
+      "still_current": null,
+      "summary": "Huawei's Safe City system, implemented with Safaricom, runs in Nairobi and Mombasa as the first phase of Kenya's National Surveillance, Communication and Control System, with a cross-agency video cloud, command centre and 4G trunking.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/ict-collaboration-adds-layer-of-safety-to-nairobi-mombasa/xnklOqzL1ea74Ymz",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2016-10-14",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/safaricom-s-security-system-live-in-nairobi-mombasa--2087858",
+          "publisher": "Business Daily Africa",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Huawei's role rests on ITWeb (S2); Business Daily confirms the KES 14.9bn system is live in both cities but does not name Huawei, so not counted as corroboration of the vendor. Contract signed around 2014 per the brief lead (not confirmed). Pre-2020 evidence; whether Huawei still supports it is unconfirmed, so still_current null. KES value not converted."
+    },
+    {
+      "id": "KEN-008",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "NVIDIA",
+      "local_actor": "Atlancis Technologies (Servernah Cloud); iXAfrica Data Centres",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-10",
+      "still_current": null,
+      "summary": "Kenyan firm Atlancis Technologies launched a GPU 'AI factory' on NVIDIA hardware at iXAfrica's Nairobi NBOX1 campus, billed as the region's first; the government's tech envoy endorsed it as sovereign AI infrastructure.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/news-digital/1011-50320-atlancis-technologies-deploys-gpu-powered-ai-factory-in-kenya",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S2",
+          "date": "2025-11-10",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://citizen.digital/article/kenya-unveils-regions-first-gpu-powered-ai-infrastructure-n372958",
+          "publisher": "Citizen Digital",
+          "source_tier": "S3",
+          "date": "2025-11-13",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole us because NVIDIA supplies the accelerators and software stack; the operator is Kenyan. GPU count undisclosed, so scale coded municipal (single commercial facility). No government ownership or funding stated."
+    },
+    {
+      "id": "KEN-009",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Anthropic",
+      "local_actor": "Ministry of Foreign and Diaspora Affairs; Office of the Prime Cabinet Secretary",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09-22",
+      "still_current": null,
+      "summary": "Kenya and Anthropic signed a joint declaration at UNGA covering AI skills, research, safety evaluation and responsible public-sector use in education and health, with pilots to follow under Kenyan data-protection law.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://citizen.digital/article/kenya-anthropic-strike-historic-ai-deal-at-unga-n390739",
+          "publisher": "Citizen Digital",
+          "source_tier": "S3",
+          "date": "2026-09-22",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.standardmedia.co.ke/sports/amp/sci-tech/2001558501/kenya-signs-ai-deal-with-claude",
+          "publisher": "The Standard (Kenya)",
+          "source_tier": "S3",
+          "date": "2026-09-23",
+          "retrieved_at": "2026-10-23T09:00:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Non-binding declaration, tier 1. No deployment of Claude in government is yet evidenced. Two S3 outlets, no S1/S2, so not corroborated. Search also surfaced an ITWeb headline on Kenya pursuing an OpenAI partnership (not opened)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "the only AI-specific power evidence is Olkaria geothermal supply for the stalled G42/Microsoft campus, coded under facilities (KEN-005/006); no dedicated plant contract found"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Exact date and S1 confirmation (Safaricom IR) of the Safaricom 5G vendor awards to Huawei and Nokia; Huawei's share of Safaricom's 4G/core; Airtel Kenya's RAN/core vendors (not searched).",
+    "Lender and loan terms for the 2019 Konza data centre/smart city deal (China Exim per lead, unconfirmed) and current utilisation of phase one; whether the Konza safe-city/smart-traffic component was built.",
+    "Huawei Safe City Nairobi/Mombasa: original 2014 contract date and value from an S1 source; whether it is still Huawei-maintained or has been expanded to counties.",
+    "Microsoft/G42 Olkaria: any definitive agreement, scaled-back revival, or formal cancellation after May 2026; whether the Azure East Africa region proceeds elsewhere.",
+    "EcoCloud 'Project Eagle' at KenGen Green Energy Park (ground broken 2023) and Airtel Nxtra 44MW Tatu City data centre: controller, status and financier (seen in DCD only, not coded).",
+    "Kenya National AI Strategy 2025-2030 and any OpenAI or Google government partnership (ITWeb headline seen only); G42 Swahili/English LLM status and whether Kenya controls weights.",
+    "Verify Kenya's WAICO founding membership (global layer rests on an S5 roster)."
+  ],
+  "searches_run": 9
+}

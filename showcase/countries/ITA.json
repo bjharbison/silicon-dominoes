@@ -1,0 +1,642 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ITA",
+  "name": "Italy",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ITA-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "TIM (Telecom Italia)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Huawei participation in TIM's 5G core network",
+      "reversal_reason": "geopolitical",
+      "date": "2020-07",
+      "still_current": null,
+      "summary": "TIM left Huawei out of the tender for its 5G core network, inviting other vendors only; Reuters later described Huawei as already excluded from TIM's core, where sensitive data is processed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/italy-vetoes-fastweb-s-huawei-5g-deal-report",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-10-26",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.euronews.com/next/2021/04/29/us-telecom-it-5g-huawei",
+          "publisher": "Euronews (Reuters)",
+          "source_tier": "S3",
+          "date": "2021-04-29",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 is a cautious reading: the thing reversed is Huawei's eligibility for a core tender, not a signed core contract, and whether Huawei supplied TIM's earlier 4G core was not checked. Reason coded geopolitical because sources frame the core exclusion around sensitive data and US pressure; TIM gave no public reason. Both sources rely on Reuters reporting."
+    },
+    {
+      "id": "ITA-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "TIM (Telecom Italia)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Huawei 5G RAN supply contract with TIM",
+      "reversal_reason": "commercial",
+      "date": "2021-04-29",
+      "still_current": null,
+      "summary": "TIM reportedly wrote to Huawei saying it intended to cancel Huawei's supply contract for part of its 5G radio network, with Ericsson and Nokia to split the work instead.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.euronews.com/next/2021/04/29/us-telecom-it-5g-huawei",
+          "publisher": "Euronews (Reuters)",
+          "source_tier": "S3",
+          "date": "2021-04-29",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecoms.com/5g-6g/tim-reportedly-says-arrivederci-to-huawei",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2021-04-30",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://totaltele.com/italian-govt-approves-vodafones-use-of-huawei-5g-ran-kit/",
+          "publisher": "Total Telecom",
+          "source_tier": "S2",
+          "date": "2021-06",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Based on Reuters' anonymous sources and Il Sole 24 Ore; neither company commented, and completion of the termination was not confirmed. Reuters cited a supply-policy review including cost-benefit analysis, so the reason is coded commercial, though security and the extended golden-power regime are the evident context; a reviewer may prefer geopolitical."
+    },
+    {
+      "id": "ITA-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson; Nokia",
+      "local_actor": "TIM (Telecom Italia)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-04-29",
+      "still_current": null,
+      "summary": "According to Reuters sources, Ericsson and Nokia, already part of TIM's 5G radio rollout, were to share the entire contract after Huawei's removal, replacing an earlier three-vendor plan.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.euronews.com/next/2021/04/29/us-telecom-it-5g-huawei",
+          "publisher": "Euronews (Reuters)",
+          "source_tier": "S3",
+          "date": "2021-04-29",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecoms.com/5g-6g/tim-reportedly-says-arrivederci-to-huawei",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2021-04-30",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Swedish and Finnish vendors, so pole third. Contract value undisclosed. Reported via anonymous sources; current RAN vendor shares not verified."
+    },
+    {
+      "id": "ITA-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Fastweb",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Fastweb 5G core supply deal with Huawei",
+      "reversal_reason": "geopolitical",
+      "date": "2020-10-22",
+      "still_current": null,
+      "summary": "Italy's cabinet reportedly used its golden-power vetting rights to block Fastweb's deal to use Huawei equipment in its 5G core network, asking the operator to diversify suppliers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/italy-vetoes-fastweb-s-huawei-5g-deal-report",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-10-26",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecoms.com/5g-6g/italy-reportedly-blocks-huawei-5g-deal-as-bulgaria-joins-us-clean-network-scheme",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2020-10-26",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://totaltele.com/italian-govt-approves-vodafones-use-of-huawei-5g-ran-kit/",
+          "publisher": "Total Telecom",
+          "source_tier": "S2",
+          "date": "2021-06",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "All three outlets relay one Reuters report from anonymous sources; the government did not confirm publicly. Golden-power reviews apply to signed supply contracts, hence tier 3. Coded geopolitical: the stated pretext was supplier concentration, but sources frame it as a response to US pressure."
+    },
+    {
+      "id": "ITA-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Vodafone Italia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-05-20",
+      "still_current": null,
+      "summary": "The government authorised Vodafone Italia to use Huawei gear in its 5G radio access network, subject to conditions including limits on remote intervention by Huawei staff and stronger security measures.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://totaltele.com/italian-govt-approves-vodafones-use-of-huawei-5g-ran-kit/",
+          "publisher": "Total Telecom",
+          "source_tier": "S2",
+          "date": "2021-06",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Conditional approval, not a reversal. Single opened source. Vodafone Italia has since changed ownership; whether Huawei RAN remains in that network was not checked."
+    },
+    {
+      "id": "ITA-006",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-10-02",
+      "still_current": null,
+      "summary": "Microsoft announced a EUR 4.3bn, two-year programme to expand its hyperscale cloud and AI data-centre capacity in its operating Italy North region, plus training for over one million Italians.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://news.microsoft.com/it-it/2024/10/02/microsoft-invests-e4-3b-to-boost-ai-infrastructure-and-cloud-capacity-in-italy/",
+          "publisher": "Microsoft Italia (company release)",
+          "source_tier": "S1",
+          "date": "2024-10-02",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.silicon.co.uk/cloud/ai/microsoft-invests-e4-3-billion-in-italy-for-ai-cloud-582712",
+          "publisher": "Silicon UK",
+          "source_tier": "S2",
+          "date": "2024-10-03",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Announced capex, so tier 1; no site, construction start or capacity figure was found. Value left null in USD because the conversion rate on the date was not verified (EUR 4.3bn announced). Italy North cloud region itself is covered by the global layer."
+    },
+    {
+      "id": "ITA-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Polo Strategico Nazionale S.p.A. (TIM 45%, Leonardo 25%, CDP Equity 20%, Sogei 10%)",
+      "local_actor": "Department for Digital Transformation",
+      "builder": null,
+      "financier": "Project finance facility (lenders not named); PNRR migration funding",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12-31",
+      "still_current": true,
+      "summary": "Italy's state cloud hub, under a 13-year concession signed August 2022, had completed migrations for 97 public administrations by end-2024, with 232 more under way and about EUR 2.6bn in cumulative orders.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.polostrategiconazionale.it/app/uploads/2025/06/PSN_Bilancio_esercizio_2024-25-LowRes.pdf",
+          "publisher": "Polo Strategico Nazionale S.p.A. (annual report 2024)",
+          "source_tier": "S1",
+          "date": "2025-03-21",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Owners are Italian, so domestic. Data-centre space is leased; sites not named in the report. Financing: EUR 222m project finance (lenders not named) and PNRR migration funds. Single opened S1 source."
+    },
+    {
+      "id": "ITA-008",
+      "layer": "cloud",
+      "pole": "us",
+      "controller": "Google; Microsoft",
+      "local_actor": "Polo Strategico Nazionale",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-04",
+      "still_current": null,
+      "summary": "Within the state cloud hub, Secure Public Cloud services from Google and Microsoft Azure were qualified by the cybersecurity agency in April 2024; AWS joined as a fourth provider, qualification pending.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.polostrategiconazionale.it/app/uploads/2025/06/PSN_Bilancio_esercizio_2024-25-LowRes.pdf",
+          "publisher": "Polo Strategico Nazionale S.p.A. (annual report 2024)",
+          "source_tier": "S1",
+          "date": "2025-03-21",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Shows the sovereign hub resells US hyperscaler public cloud alongside its own infrastructure; uptake by administrations of the SPC tier was not quantified. Oracle managed service also pending qualification. Tier 3 reads the partnerships as contracted service offerings."
+    },
+    {
+      "id": "ITA-009",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "NVIDIA (system by Dell Technologies, integrated by E4 Computer Engineering)",
+      "local_actor": "CINECA (IT4LIA AI Factory, Bologna)",
+      "builder": "E4 Computer Engineering; Dell Technologies",
+      "financier": "EuroHPC JU (50%, Digital Europe Programme); Italian Ministry of University and Research",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04-22",
+      "still_current": null,
+      "summary": "EuroHPC signed a EUR 290m contract for the IT4LIA AI supercomputer at Bologna's Tecnopolo, built by Dell and E4 on Nvidia GB200 NVL4, with a separate inference partition using Axelera AI and SiPearl chips.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-signs-contract-boost-ai-capabilities-it4lia-ai-factory-2026-04-22_en",
+          "publisher": "EuroHPC Joint Undertaking",
+          "source_tier": "S1",
+          "date": "2026-04-22",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/eurohpc-ju-signs-deal-with-dell-and-e4-computer-engineering-for-it4lia-ai-supercomputer/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-04",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Accelerator vendor sets the pole (us). The inference partition is European (Axelera, SiPearl: third) but secondary. Half EU-funded, co-financed by the Italian research ministry. No go-live date. USD value not converted. DCD seen in search only."
+    },
+    {
+      "id": "ITA-010",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "NVIDIA",
+      "local_actor": "Fastweb (NeXXt AI Factory, hosted at Aruba data centre, Ponte San Pietro)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-07-09",
+      "still_current": null,
+      "summary": "Fastweb switched on a DGX SuperPOD of 31 Nvidia DGX H100 systems (248 H100 GPUs) near Bergamo, offered as a service and used to train its Italian-language model MIIA.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/fastweb-launches-nvidia-dgx-superpod-supercomputer-in-italy/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-07-09",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomtv.com/content/telcos-and-ai-channel/fastweb-fires-up-its-ai-factory-50785/",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2024-07-09",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Cost undisclosed. Operational at launch in July 2024; current status not rechecked."
+    },
+    {
+      "id": "ITA-011",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Fastweb",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-07-09",
+      "still_current": null,
+      "summary": "Fastweb released the first version of MIIA, an Italian-language model trained on about 1.5 trillion tokens on its own Nvidia cluster, offered to firms, universities and public bodies.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/fastweb-launches-nvidia-dgx-superpod-supercomputer-in-italy/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-07-09",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomtv.com/content/telcos-and-ai-channel/fastweb-fires-up-its-ai-factory-50785/",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2024-07-09",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.fortuneita.com/2024/06/07/intelligenza-artificiale-a-che-punto-sono-gli-llm-italiani/",
+          "publisher": "Fortune Italia",
+          "source_tier": "S3",
+          "date": "2024-06-07",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Fortune Italia reports the model built from scratch, so base_model null. Fastweb is an Italian operator whose parent is Swisscom; coded domestic as the Italian entity controls the weights, though a reviewer may prefer third. Tier 2: launched product without documented government adoption."
+    },
+    {
+      "id": "ITA-012",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Sapienza University of Rome",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05",
+      "still_current": null,
+      "summary": "Sapienza's team released Minerva, a family of Italian-language models at 350 million, 1 billion and 3 billion parameters trained from scratch on Italian content, in early May 2024.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.fortuneita.com/2024/06/07/intelligenza-artificiale-a-che-punto-sono-gli-llm-italiani/",
+          "publisher": "Fortune Italia",
+          "source_tier": "S3",
+          "date": "2024-06-07",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Academic model, not evidenced as government-adopted. Compute not stated in the source. Later, larger Minerva versions were not checked."
+    },
+    {
+      "id": "ITA-013",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "iGenius",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06",
+      "still_current": null,
+      "summary": "iGenius trained a 9-billion-parameter Italian model from scratch on the Leonardo supercomputer at Cineca over five months, released openly under MIT licence and aimed at regulated sectors and public administration.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.fortuneita.com/2024/06/07/intelligenza-artificiale-a-che-punto-sono-gli-llm-italiani/",
+          "publisher": "Fortune Italia",
+          "source_tier": "S3",
+          "date": "2024-06-07",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Single source; public-administration uptake not evidenced. The later 'Colosseum' model and its compute were not checked. Almawave's Velvet (trained on Leonardo, base not stated) left uncoded."
+    },
+    {
+      "id": "ITA-014",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Dahua Technology",
+      "local_actor": "Presidency of the Council of Ministers (Palazzo Chigi)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-09-30",
+      "still_current": null,
+      "summary": "Panorama reported 19 Dahua cameras with thermal screening and facial recognition installed at Palazzo Chigi entrance turnstiles from autumn 2020, bought under the Conte government; a 2021 parliamentary question went unanswered.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.panorama.it/attualita/esteri/videosorveglianza-cinese-palazzo-chigi",
+          "publisher": "Panorama",
+          "source_tier": "S3",
+          "date": "2021-04-30",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened S3 source; no removal or official decision found. Whether the cameras remain installed is unknown."
+    },
+    {
+      "id": "ITA-015",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Ministry of Justice (prosecutors' offices, wiretap archives)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017",
+      "still_current": null,
+      "summary": "Reporting relayed by Panorama said the Justice Ministry bought 1,105 Hikvision cameras in a 2017 tender for wiretap-storage rooms across about 140 prosecutors' offices.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.panorama.it/attualita/esteri/videosorveglianza-cinese-palazzo-chigi",
+          "publisher": "Panorama",
+          "source_tier": "S3",
+          "date": "2021-04-30",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Panorama relays earlier Wired Italia reporting, not seen first-hand. Pre-2020 and current status unknown; the lead that Hikvision cameras were removed from government offices was not confirmed in this pass."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on other layers; no AI-specific power evidence surfaced incidentally"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Hikvision/Dahua removal from Italian government offices: no removal order found. May 2023 reporting (Decode39 relaying Il Sole 24 Ore) said stricter rules for cameras at critical sites were under evaluation; did a law or removal follow?",
+    "Did TIM's April 2021 termination of Huawei RAN supply complete, and what share of TIM's RAN remains Huawei today?",
+    "Post-merger Fastweb + Vodafone (Swisscom ownership): current 5G RAN/core vendors and the fate of Vodafone's conditionally approved Huawei RAN.",
+    "Wind Tre (CK Hutchison) 5G vendors and any golden-power prescriptions on Huawei/ZTE deals; any formal 5G vendor-security legislation.",
+    "Microsoft EUR 4.3bn: site(s), construction start and capacity; other large AI campuses (e.g. hyperscaler or Gulf-backed projects) not searched.",
+    "Leonardo SpA davinci-1 supercomputer and Cineca Leonardo system accelerator vendors (not searched separately).",
+    "Government adoption of sovereign models (Velvet/Almawave, iGenius Colosseum, Minerva) or of foreign frontier models by ministries.",
+    "Uptake of US hyperscaler Secure Public Cloud versus PSN's own infrastructure among migrated administrations."
+  ],
+  "searches_run": 11
+}

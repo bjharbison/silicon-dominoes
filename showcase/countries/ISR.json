@@ -1,0 +1,354 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ISR",
+  "name": "Israel",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T09:19:30Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ISR-001",
+      "layer": "cloud",
+      "pole": "us",
+      "controller": "Google; Amazon Web Services",
+      "local_actor": "Ministry of Finance (Government Procurement Administration) for government ministries and the defence establishment",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-04-21",
+      "still_current": null,
+      "summary": "Google and AWS won Israel's Project Nimbus government cloud tender, worth about NIS 4bn (US$1.2bn), beating Microsoft, Oracle and IBM; both committed to in-country data centres keeping government data inside Israel.",
+      "announced_value_usd": 1200000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.timesofisrael.com/google-aws-win-1-2-billion-israel-tender-for-cloud-services/",
+          "publisher": "The Times of Israel",
+          "source_tier": "S3",
+          "date": "2021-04-21",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/project-nimbus-national-cloud-infrastructure-3871",
+          "publisher": "OECD.AI Policy Navigator (entry by Israel's national contact point)",
+          "source_tier": "S1",
+          "date": "2025-12-25",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.business-standard.com/world-news/israel-project-nimbus-google-amazon-winking-mechanism-data-leak-125103000892_1.html",
+          "publisher": "Business Standard (relaying The Guardian / +972 / Local Call)",
+          "source_tier": "S3",
+          "date": "2025-10-30",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 3 (binding award with value and counterparties) rather than 5 to avoid double-counting the live AWS/GCP Tel Aviv regions already in the global layer, though the OECD.AI entry lists the programme as active with local sites established (updated December 2025). Leaked contract terms reported by The Guardian say the providers may not suspend Israeli access; that clause is relayed, not seen first-hand. still_current left null because active status was confirmed only as of December 2025. US$1.2bn is the Finance Ministry's own conversion, not an award notice, so verified_value_usd is null."
+    },
+    {
+      "id": "ISR-002",
+      "layer": "cloud",
+      "pole": "us",
+      "controller": "Microsoft (Azure)",
+      "local_actor": "Israel Ministry of Defense / IDF Unit 8200",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Microsoft Azure storage and AI services used by IMOD/Unit 8200",
+      "reversal_reason": "commercial",
+      "date": "2025-09-25",
+      "still_current": null,
+      "summary": "Microsoft disabled specified Azure cloud-storage and AI subscriptions used by the Israeli Defense Ministry after a review supported reporting that Unit 8200 stored mass-surveillance data on Palestinians in Azure; Microsoft's wider Israeli cybersecurity work continues.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://en.globes.co.il/en/article-1001522657",
+          "publisher": "Globes",
+          "source_tier": "S3",
+          "date": "2025-09-25",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://theregister.com/2025/09/25/microsoft_cuts_off_azure_phone/",
+          "publisher": "The Register",
+          "source_tier": "S2",
+          "date": "2025-09-25",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Partial reversal: only specified IMOD subscriptions were cut, not Microsoft's Israeli business or the Azure israelcentral region. Tier 5 is the tier of the operational service reversed. reversal_reason coded commercial because the vendor enforced its own terms of service; it was not an Israeli or foreign-government alignment decision, so it does not move the map. The Register reports the workload reportedly moved to AWS, which would leave the controller pole unchanged (US); unconfirmed."
+    },
+    {
+      "id": "ISR-003",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Nebius",
+      "local_actor": "Israel Innovation Authority (Telem National Program for AI R&D Infrastructure)",
+      "builder": null,
+      "financier": "Israel Innovation Authority (US$45m)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-01",
+      "still_current": true,
+      "summary": "Nebius won the Innovation Authority's tender to build and operate Israel's national AI supercomputer (about US$140m, including US$45m from the Authority); the first phase is live and GPU time is allocated 70% to industry, 30% to research.",
+      "announced_value_usd": 140000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://innovationisrael.org.il/en/press_release/supercomputer-access-2026/",
+          "publisher": "Israel Innovation Authority (press release)",
+          "source_tier": "S1",
+          "date": "2026-01-18",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/nebius-to-build-and-operate-140m-israeli-national-supercomputer",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-05-15",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/first-phase-of-israels-nvidia-b200-powered-national-ai-supercomputer-goes-live/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nebius operates the system, so it is the controller under the v0.2 vendor-operates rule; Nebius Group is headquartered in the Netherlands, so pole third. The Authority does not name an owner, and the hosting building is not identified (DCD mentions Mega Or sites in Masmiyya and Beit Shemesh without tying them to this system). The Innovation Authority is the domestic co-funder, recorded as financier. Value is announced, not from an award notice.",
+      "bundle_id": "ISR-B1"
+    },
+    {
+      "id": "ISR-004",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Nebius / Israel Innovation Authority national supercomputer",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-01",
+      "still_current": true,
+      "summary": "The national supercomputer runs on Nvidia Blackwell GPUs: 4,000 announced at award, of which 1,000 B200 accelerators are allocated through the Innovation Authority's programme; the infrastructure was declared live in January 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://innovationisrael.org.il/en/press_release/supercomputer-access-2026/",
+          "publisher": "Israel Innovation Authority (press release)",
+          "source_tier": "S1",
+          "date": "2026-01-18",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/nebius-to-build-and-operate-140m-israeli-national-supercomputer",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-05-15",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/first-phase-of-israels-nvidia-b200-powered-national-ai-supercomputer-goes-live/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Same deal as ISR-003, coded per layer. Whether all 4,000 GPUs are installed is not confirmed; 1,000 B200 are confirmed as allocatable. No Huawei Ascend deployment was found in Israel.",
+      "bundle_id": "ISR-B1"
+    },
+    {
+      "id": "ISR-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Dahua Technology (also Hikvision)",
+      "local_actor": "Israel Police ('Hawk-Eye' traffic enforcement project)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06-27",
+      "still_current": null,
+      "summary": "Israel Police were deploying mainly Dahua, plus Hikvision, licence-plate-recognition cameras in the Hawk-Eye traffic enforcement project; the cameras lacked facial recognition at the time and no number or value was disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://en.globes.co.il/en/article-1001482805",
+          "publisher": "Globes",
+          "source_tier": "S3",
+          "date": "2024-06-27",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://jpost.com/israel-news/article-808323",
+          "publisher": "The Jerusalem Post (syndicated Globes article via TNS)",
+          "source_tier": "S3",
+          "date": "2024-06-30",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.inss.org.il/?p=126380",
+          "publisher": "INSS (Institute for National Security Studies) Insight No. 2143",
+          "source_tier": "S4",
+          "date": "2026-05-24",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "The JPost piece is the same Globes report syndicated, so it is not independent, and INSS is think-tank (S4); corroboration therefore fails. Tier 4 reflects deployment under way, not confirmed completion. INSS (May 2026) still lists Hawk Eye as using Dahua and Hikvision systems and says Israel has no comprehensive policy on Chinese cameras; it relays a 2021 Top10VPN count of about 65,830 Hikvision/Dahua cameras in Israel (not coded)."
+    },
+    {
+      "id": "ISR-006",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "DICTA (Jerusalem) with Bar-Ilan University and OriginAI",
+      "local_actor": "DICTA",
+      "builder": null,
+      "financier": null,
+      "base_model": "Mistral-Small-3.1-24B-Base-2503 (also NVIDIA-Nemotron-Nano-12B-v2-Base and Qwen3-1.7B-Base for smaller sizes)",
+      "base_model_pole": "third",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-02",
+      "still_current": null,
+      "summary": "DICTA released Dicta-LM 3.0, a Hebrew sovereign LLM family (24B, 12B, 1.7B) with permissive open weights, built by continued pre-training of foreign open-weight base models on Nvidia cloud GPUs.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.arxiv.org/pdf/2602.02104",
+          "publisher": "DICTA / Bar-Ilan University (technical report, arXiv)",
+          "source_tier": "S1",
+          "date": "2026-02-02",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Weights are controlled by an Israeli non-profit, so domestic. Base models: 24B Mistral-Small-3.1 (third, recorded as the flagship base), 12B NVIDIA Nemotron-Nano-v2 (us), 1.7B Qwen3 (prc). Training used 80 H200s on NVIDIA DGX Cloud Lepton, not the national supercomputer. Acknowledges IMOD DDR&D / National Program for NLP in Hebrew and Arabic but no funding stated. Tier 2 because no government adoption was found."
+    },
+    {
+      "id": "ISR-007",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Mavenir",
+      "local_actor": "Partner Communications",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-12-18",
+      "still_current": null,
+      "summary": "Partner Communications chose US vendor Mavenir to upgrade its mobile core, adding VoLTE, Wi-Fi calling, expanded data core and IoT over several years; the deal excluded 5G.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://en.globes.co.il/en/article-1001265265",
+          "publisher": "Globes",
+          "source_tier": "S3",
+          "date": "2018-12-18",
+          "retrieved_at": "2026-10-23T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Core network only and pre-2020; whether Mavenir still runs Partner's core (and who supplies its 5G RAN/core) was not confirmed, so still_current is null. Single source. Israel's 5G RAN vendors for Partner, Cellcom and Pelephone were not identified in this pass."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power project surfaced; Globes notes the planned Nvidia Kiryat Tivon campus will need dedicated substations, but nothing contracted"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Did Israel ever formally exclude Huawei/ZTE from 5G? 2020 reports (Globes citing Channel 12; Reuters via Mobile World Live) describe a Defense Ministry recommendation and an expected US 'trusted vendors' MOU, but no signed decision was found. Seek an S1 government or Ministry of Communications record.",
+    "Which vendors supply the 5G RAN and core of Partner, Cellcom, Pelephone and HOT Mobile today?",
+    "Nvidia data-centre lease near Yokneam/Mevo Carmel (~US$1.5bn, Calcalist via eWEEK, Dec 2025, negotiations) and reported Nvidia-Mega Or talks: confirm owner-operator, status and tier. The Kiryat Tivon campus (construction from 2027) is offices/labs, not a data centre.",
+    "Project Nimbus: confirm current status and whether Unit 8200 workloads moved from Azure to AWS after September 2025.",
+    "Any Israeli government policy on Chinese cameras (Hikvision/Dahua) in sensitive sites; INSS says none as of May 2026. Is Hawk-Eye still running on Dahua?",
+    "Government adoption of frontier model providers (OpenAI, Anthropic, Google) by ministries or the IDF was not searched."
+  ],
+  "searches_run": 11
+}

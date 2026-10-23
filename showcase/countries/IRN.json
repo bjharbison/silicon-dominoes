@@ -1,0 +1,423 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "IRN",
+  "name": "Iran",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "IRN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Telecommunication Company of Iran (TCI)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2010",
+      "still_current": null,
+      "summary": "Reuters reported, via documents and interviews, that ZTE sold TCI a 2010 networking contract worth EUR 98.6m that included ZXMT, a monitoring system able to track voice calls, texts and internet traffic using deep packet inspection.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.theregister.com/2012/03/28/zte_iran_sanctions/",
+          "publisher": "The Register (relaying Reuters)",
+          "source_tier": "S2",
+          "date": "2012-03-28",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.technologyreview.com/2021/12/15/1042142/chinese-company-tiandy-video-surveillance-iran/amp/",
+          "publisher": "MIT Technology Review",
+          "source_tier": "S2",
+          "date": "2021-12-15",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.business-humanrights.org/en/special-report-chinese-firm-helps-iran-spy-on-citizens",
+          "publisher": "Business & Human Rights Resource Centre (relaying Reuters special report)",
+          "source_tier": "S4",
+          "date": "2012-03",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both opened sources relay the same Reuters special report (MIT Technology Review cites the deal as about US$130m), so they are not independent and corroboration is not claimed. The EUR value is relayed, not from an award notice, so the value fields are left null. Pre-2020 and whether ZXMT remains in TCI's network today was not confirmed. ZTE later said it complied with laws; it reportedly divested its surveillance subsidiary in 2012 (headline seen only)."
+    },
+    {
+      "id": "IRN-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Iranian state-run telecom operators; MTN Irancell named",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Huawei new-customer and new-contract business in Iranian telecom networks",
+      "reversal_reason": "sanctions",
+      "date": "2011-12-09",
+      "still_current": null,
+      "summary": "Huawei said it would voluntarily restrict Iranian business: no new customers, limited dealings with existing ones, while completing current deployments and maintaining networks already installed, citing an increasingly complex situation in Iran.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.industryweek.com/leadership/companies-executives/article/21947480/huawei-limits-business-activity-in-complex-iran",
+          "publisher": "IndustryWeek (AFP)",
+          "source_tier": "S3",
+          "date": "2011-12-12",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.fierce-network.com/europe/huawei-limits-iran-operations",
+          "publisher": "Fierce Network",
+          "source_tier": "S2",
+          "date": "2011-12-12",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a sanctions-driven reversal of new Huawei business in Iran, per the brief's convention; Huawei itself cited only a 'complex situation', and the sources set it against tightening Western sanctions and monitoring-equipment allegations. Partial: installed Huawei networks kept being supported, and later reporting (Atalayar 2020) suggests Huawei remained a candidate 5G supplier, so whether this restriction still holds is unknown (still_current null). Tier 3 reflects new contracts foregone, not the installed base."
+    },
+    {
+      "id": "IRN-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Mobile Communications Company of Iran (MCI); MTN Irancell",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Ericsson supply and support of MCI and Irancell mobile networks",
+      "reversal_reason": "sanctions",
+      "date": "2018-05",
+      "still_current": null,
+      "summary": "After US sanctions returned in May 2018, Ericsson wound down in Iran; its reported Iran revenue fell from SEK 820m (2018) to SEK 95m (2019), honouring only pre-May-2018 commitments to MCI and Irancell.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.atalayar.com/en/articulo/economy-and-business/how-us-sanctions-led-iran-arms-huawei/20201030152614148187.html",
+          "publisher": "Atalayar (republishing The Diplomat)",
+          "source_tier": "S3",
+          "date": "2020-10-30",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened source citing Ericsson annual reports (not seen first-hand). Ericsson attributed the decline to currency and banking sanctions rather than telecom sanctions, so reason coded sanctions. Ericsson is Swedish, so pole third. Tier 5 because Ericsson equipment was operational at scale in both main mobile networks; the residual installed base is not quantified. The article's claim that Huawei filled the gap for 5G is the author's assessment, not coded."
+    },
+    {
+      "id": "IRN-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Iran's largest mobile operator (unnamed in source)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2010-12",
+      "still_current": null,
+      "summary": "Internal Huawei records reviewed by Reuters show Huawei shipped Hewlett-Packard servers and switches plus US software to Iran's largest mobile operator in late 2010 for a multimillion-dollar telecom project, delivered to Tehran awaiting customs clearance by early 2011.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://scmp.com/news/world/middle-east/article/3064686/documents-show-huawei-role-shipping-prohibited-us-gear-iran",
+          "publisher": "South China Morning Post (Reuters)",
+          "source_tier": "S3",
+          "date": "2020-03",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Evidence of Huawei acting as integrator on a major operator project; the source does not name the operator (largest by subscribers is MCI, but this is not stated) or the project scope. The documents surfaced through the US criminal case against Huawei, which is enforcement, not coded here. Pre-2020; still_current not confirmed. Source date approximate (article id dates it to March 2020)."
+    },
+    {
+      "id": "IRN-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Tiandy Technologies",
+      "local_actor": "Islamic Revolutionary Guard Corps; police (incl. Khomam); military; Sairan",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-12",
+      "still_current": null,
+      "summary": "IPVM reported that Tiandy sells cameras and AI software, including facial recognition, to Iran's Revolutionary Guard, police and military, signed a five-year contract in Iran and planned local staff; its recorders reportedly run on Intel chips.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.technologyreview.com/2021/12/15/1042142/chinese-company-tiandy-video-surveillance-iran/amp/",
+          "publisher": "MIT Technology Review (relaying IPVM)",
+          "source_tier": "S2",
+          "date": "2021-12-15",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://ipvm.com/reports/tiandy-iran-business",
+          "publisher": "IPVM",
+          "source_tier": "S2",
+          "date": "2021-12-06",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "IPVM is the original investigation and MIT Technology Review relays it; IPVM's body was paywalled (only headline visible), so corroboration is not claimed. The contract counterparty and value are not stated. IPVM separately relays an activist map naming Tiandy the most common camera brand in Tehran. Coded national because customers are national security bodies; deployment footprint is unquantified."
+    },
+    {
+      "id": "IRN-006",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Tehran municipal and government camera systems",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022",
+      "still_current": null,
+      "summary": "A 2022 hack of 5,100+ Tehran cameras exposed Hikvision feeds alongside legacy Bosch, Axis, Milestone, Panasonic and IDIS gear; Axis, Bosch and Milestone say they stopped Iran sales in 2019-2020. Domestic firms reportedly supply facial recognition for hijab enforcement.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ipvm.com/reports/iran-hijab-analytics",
+          "publisher": "IPVM",
+          "source_tier": "S2",
+          "date": "2025-04",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single source. Shows Chinese (Hikvision, and per an activist map Tiandy) cameras in operational use in Tehran, but not their share or which feed hijab analytics. Western vendors' exits (Axis 2020, Bosch and Milestone 2019) are not coded as reversals because no reason is stated in the source. Domestic face-recognition vendors (FANAP Behnama, Dibarayan, Rayvarz) are reported, not confirmed, and reportedly rely on Chinese suppliers."
+    },
+    {
+      "id": "IRN-007",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Vice-Presidency for Science, Technology and Knowledge-Based Economy; Sharif University of Technology",
+      "local_actor": "Advanced ICT Research Institute; Sharif Rapid Processing Center",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-15",
+      "still_current": null,
+      "summary": "Iran unveiled a prototype national AI platform built with Sharif University, described as open-source, running on domestic infrastructure on the national internet without foreign APIs, with phased rollout toward a final version planned for March 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://iranintl.com/en/202503158253",
+          "publisher": "Iran International",
+          "source_tier": "S3",
+          "date": "2025-03-15",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Base model not disclosed; 'open-source' suggests fine-tuning of foreign open weights, possibly Chinese or US, but this is unconfirmed, so base_model is null. Whether the March 2026 final version shipped was not checked. Iran International is a London-based opposition-leaning outlet relaying official statements; treated as S3 but a human reviewer may prefer S4."
+    },
+    {
+      "id": "IRN-008",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Iran (Vice-Presidency for Science, Technology and Knowledge-Based Economy)",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12-06",
+      "still_current": null,
+      "summary": "Vice-President Hossein Afshin announced plans for Iran's first GPU data centre, targeted for 2025, to host a national AI operating system locally; GPU supplier, size and site were not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/iran-plans-gpu-data-center-to-host-national-ai-system/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-12-06",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Announcement only (tier 1). Under the comprehensive US embargo the GPUs would have to be grey-market US parts or Chinese accelerators; no evidence either way was found, so the silicon pole is unknown. Whether the facility opened in 2025 was not confirmed."
+    },
+    {
+      "id": "IRN-009",
+      "layer": "silicon",
+      "pole": null,
+      "controller": "Unknown US chip vendor (black-market supply)",
+      "local_actor": "Amirkabir University of Technology (Iranian High Performance Computing Research Center)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-05-17",
+      "still_current": null,
+      "summary": "Iran launched the Simorgh supercomputer at Amirkabir University, claimed at about 0.56 petaflops rising to 1, built on US-made chips that DCD says must have come through the black market; local firms were to use it for cloud hosting.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/iran-launches-its-most-powerful-supercomputer-built-with-black-market-tech",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2021-05-17",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the chips are US-made but obtained illicitly under embargo, so no US vendor supplies updates or can switch them off, and the operator is domestic; it is neither a US adoption nor clearly sovereign silicon. Performance figures are Iranian state claims, unverified. Chip vendor not named."
+    },
+    {
+      "id": "IRN-010",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Government of Iran (Majlis; Supreme National Cyberspace Council)",
+      "local_actor": "Starlink users and importers",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-23",
+      "still_current": true,
+      "summary": "A June 2025 espionage law criminalised unlicensed communication tools including Starlink; by October 2026 officials called Starlink a tool of war, using jamming, seizures and raids, with prison terms for users and importers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.intellinews.com/iranian-parliament-outlaws-use-of-elon-musk-s-starlink-internet-services-388391/",
+          "publisher": "bne IntelliNews",
+          "source_tier": "S3",
+          "date": "2025-06-29",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.aljazeera.com/amp/news/2026/10/14/iran-targets-starlink-as-tool-of-war-with-hints-at-internet-restrictions",
+          "publisher": "Al Jazeera",
+          "source_tier": "S4",
+          "date": "2026-10-14",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Enforcement, not adoption: Starlink was never licensed in Iran, so this is not a reversal of a US-pole deployment and is coded pole null. Tier 3 records a binding law, not a contract. Al Jazeera is Qatari state-funded, treated conservatively as S4. still_current true per the October 2026 report."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks, applications and AI layers; no AI- or data-centre-specific power evidence surfaced incidentally"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies MCI's, Irancell's and Rightel's current 4G/5G RAN and core? No source in this pass names a 5G vendor; Huawei is widely assumed but unconfirmed (Irancell's CEO said in 2020 it uses several unnamed 5G suppliers).",
+    "Does ZTE's ZXMT monitoring system (2010 TCI contract) remain in TCI's network, and what equipment underpins the National Information Network and its filtering?",
+    "Is Huawei's December 2011 restriction on new Iranian business still in force, or has Huawei resumed new contracts (e.g. under the 2021 China-Iran 25-year agreement)?",
+    "What is the base model of Iran's national AI platform, and did the planned March 2026 final version and the 2025 GPU data centre materialise? Which accelerators (grey-market Nvidia or Huawei Ascend) were used?",
+    "Tiandy's five-year contract in Iran: counterparty, value and current status; scale of Hikvision/Dahua/Tiandy deployment in hijab-enforcement camera networks.",
+    "Rightel (third operator) was not searched at all.",
+    "AI-related power supply was not searched."
+  ],
+  "searches_run": 10
+}

@@ -1,0 +1,513 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "KAZ",
+  "name": "Kazakhstan",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T09:35:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "KAZ-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Kcell (Kazakhtelecom group)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-09-05",
+      "still_current": null,
+      "summary": "Kcell chose Ericsson as its 5G radio access partner for a seven-year deal to 2030, using single RAN integrated with existing 2G-4G, targeting coverage of at least half the country including Almaty and Shymkent.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/3/2023/kcell-and-ericsson-strengthen-partnership-with-5g-agreement",
+          "publisher": "Ericsson (company release)",
+          "source_tier": "S1",
+          "date": "2023-09-05",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/ericsson-extends-network-agreement-with-kazakhstans-kcell/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-09-07",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/ericsson/ericsson-kcell-cement-ties-with-5g-ran-deal/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "RAN only; Kcell's core vendor not identified. Value undisclosed. Ericsson is Swedish, so pole third. The other operators' (Kazakhtelecom/Tele2-Altel, Beeline) 5G RAN vendors were not identified in this pass."
+    },
+    {
+      "id": "KAZ-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Digital Development, Innovations and Aerospace Industry",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07",
+      "still_current": null,
+      "summary": "The digital development ministry and Huawei Technologies Kazakhstan signed an ICT cooperation memorandum at Huawei's Shanghai headquarters, setting up a joint working group to propose digital-infrastructure modernisation for 2025-2030; no projects or values named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dknews.kz/en/articles-in-english/366184-partnership-with-huawei-how-kazakhstan-plans-to",
+          "publisher": "DKNews",
+          "source_tier": "S3",
+          "date": "2025-07-29",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Non-binding MOU, tier 1. DKNews is a Kazakh outlet; whether it is state-affiliated was not checked. Coded networks because 5G and network modernisation lead the stated scope; it also mentions cloud and AI."
+    },
+    {
+      "id": "KAZ-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Tele2/Altel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-08",
+      "still_current": null,
+      "summary": "Huawei Technologies Kazakhstan and operator Tele2/Altel signed a cooperation memorandum, according to a Kazakh business outlet headline; terms were not seen.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://bizmedia.kz/2025-10-08-kompaniya-huawei-technologies-kazakhstan-i-operator-tele2-altel-zaklyuchili-memorandum-o-sotrudnichestve/",
+          "publisher": "Bizmedia.kz",
+          "source_tier": "S3",
+          "date": "2025-10-08",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Search-result title only; fetch failed, so the memorandum's scope (RAN, core, AI) is unknown. Whether Huawei already supplies Tele2/Altel's radio network was not established; that would be the more important fact."
+    },
+    {
+      "id": "KAZ-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of AI and Digital Development; Samruk-Kazyna",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07",
+      "still_current": null,
+      "summary": "During President Tokayev's July 2026 Shanghai visit Huawei signed a telecommunications agreement with the digital ministry and an equipment-and-technology purchase agreement with sovereign fund Samruk-Kazyna, among 70+ deals; no individual values disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://en.orda.kz/data-center-hub-and-humanoid-robots-what-kazakhstan-and-china-agreed-on-10941/",
+          "publisher": "Orda.kz",
+          "source_tier": "S3",
+          "date": "2026-07-17",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded at tier 1 because neither agreement's content, value or layer is stated; the Samruk-Kazyna purchase agreement could be tier 3 if it is a binding procurement, but the equipment type is not known, so the layer is a guess. Single source. The visit coincided with WAICO's founding (global layer)."
+    },
+    {
+      "id": "KAZ-005",
+      "layer": "facilities",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Kazakhtelecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07",
+      "still_current": null,
+      "summary": "Chinese cable and network group Hengtong signed an agreement with Kazakhtelecom to develop a data-centre hub during the July 2026 Shanghai visit; no value, site or capacity reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://en.orda.kz/data-center-hub-and-humanoid-robots-what-kazakhstan-and-china-agreed-on-10941/",
+          "publisher": "Orda.kz",
+          "source_tier": "S3",
+          "date": "2026-07-17",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the source does not say whether Hengtong would own/operate the hub, build it, or supply equipment. If Kazakhtelecom owns it the facility is domestic with Hengtong as builder or vendor. Single source; instrument read as tier 1."
+    },
+    {
+      "id": "KAZ-006",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Firebird",
+      "local_actor": "Kazakhtelecom; Ministry of AI and Digital Development",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06",
+      "still_current": null,
+      "summary": "US infrastructure firm Firebird signed a strategic cooperation agreement with the AI ministry and a binding term sheet with Kazakhtelecom for 'Data Center Valley' at Ekibastuz: two 125 MW AI data centres planned for 2027-28, about US$10bn announced.",
+      "announced_value_usd": 10000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.investmentmonitor.ai/news/kazakhstan-ai-infrastructure-deals-firebird-nvidia/?.tsrc=rss",
+          "publisher": "Investment Monitor",
+          "source_tier": "S2",
+          "date": "2026-06-16",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://timesca.com/kazakhstan-data-center-valley-firebird-nvidia/",
+          "publisher": "The Times of Central Asia",
+          "source_tier": "S3",
+          "date": "2026-06-29",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomreviewasia.com/news/industry-news/29755-kazakhstan-advances-gigawatt-ai-data-center-valley-vision/",
+          "publisher": "Telecom Review Asia",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "low",
+      "analyst_inference": "Tier 2: a term sheet and framework agreement, no financing or construction start reported. Pole us is a tentative reading from the Prime Minister's attribution of the US$10bn investment to Firebird; ownership/operation is not stated, and Kazakhtelecom could be co-owner. Nvidia is named as Firebird's partner but no chip order is identified. 300 MW of power available, 1 GW target."
+    },
+    {
+      "id": "KAZ-007",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia (GPUs); Hewlett Packard Enterprise (nodes)",
+      "local_actor": "JSC National Information Technologies (NIT); Alem.cloud national supercomputer centre",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-09",
+      "still_current": null,
+      "summary": "Kazakhstan launched its national supercomputer Alem.cloud at a digital ministry data centre: 496 Nvidia H200 GPUs in HPE Cray XD670 nodes with Intel Xeon CPUs, claimed up to 2 exaflops FP8; President Tokayev attended.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nitec.kz/en/proekty/national-supercomputer",
+          "publisher": "National Information Technologies JSC (NIT)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://interfax.com/newsroom/top-stories/112603/",
+          "publisher": "Interfax",
+          "source_tier": "S3",
+          "date": "2025-07-09",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://forklog.com/en/news/kazakhstan-launches-supercomputer-at-national-centre",
+          "publisher": "ForkLog",
+          "source_tier": "S3",
+          "date": "2025-07-10",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "GPU count and node model come from the NIT project page; launch date from Interfax/ForkLog. Value and integrator not disclosed. Facility is state-owned (domestic) but the equipment controller for the silicon layer is US (Nvidia/HPE). Export licence for the H200s not seen."
+    },
+    {
+      "id": "KAZ-008",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "Freedom Holding Corp.; Bilim Group; ministries of AI and Digital Development, Education, Science and Higher Education",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04",
+      "still_current": null,
+      "summary": "Under OpenAI's Education for Countries programme, an OpenAI-Freedom Holding-Bilim Group agreement gives 165,000 free ChatGPT Edu licences to Kazakh teachers and university staff; activation via BilimClass began in a nationwide rollout in 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://timesca.com/kazakhstan-joins-openais-education-for-countries-initiative/",
+          "publisher": "The Times of Central Asia",
+          "source_tier": "S3",
+          "date": "2026-01-22",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://dknews.kz/en/articles-in-english/390624-kazakhstan-rolls-out-ai-in-schools-165-000-teachers",
+          "publisher": "DKNews",
+          "source_tier": "S3",
+          "date": "2026-04-15",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://astanahub.com/en/article/kazakhstan-prisoediniaetsia-k-pervoi-mezhdunarodnoi-kogorte-openai-edu-for-countries",
+          "publisher": "Astana Hub",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Agreements reached during Tokayev's November 2025 US visit; signatories are private (Freedom Holding sponsors, privately funded), with ministries as partners. Used through OpenAI's service, so pole us. Two opened S3 sources but no opened S1/S2, so not corroborated. Tier 3 for the signed licence agreement; actual activation numbers not reported."
+    },
+    {
+      "id": "KAZ-009",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Astana Hub (licensee); ISSAI, Nazarbayev University (developer)",
+      "local_actor": "ISSAI / Nazarbayev University",
+      "builder": null,
+      "financier": null,
+      "base_model": "Llama 3.1 (8B and 70B)",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12",
+      "still_current": null,
+      "summary": "ISSAI at Nazarbayev University built KazLLM, government-requested 8B and 70B models on Llama 3.1, trained on 8 Nvidia DGX H100 nodes; released December 2024 with a non-exclusive licence to Astana Hub and public weights.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://issai.nu.edu.kz/2026/02/13/issai-explains-kazllm-why-kazakhstan-built-its-own-large-language-model/",
+          "publisher": "ISSAI, Nazarbayev University",
+          "source_tier": "S1",
+          "date": "2026-02-13",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://sv7.thediplomat.com/2025/03/kazakhstans-bid-for-ai-sovereignty",
+          "publisher": "The Diplomat",
+          "source_tier": "S2",
+          "date": "2025-03",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 (built and released, but ISSAI says it knows of no current operational deployment). Weights held domestically, so pole domestic. AlemLLM (the Alem.ai model) was not researched; its base model is unknown."
+    },
+    {
+      "id": "KAZ-010",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Presight AI (G42)",
+      "local_actor": "Astana city akimat",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02-14",
+      "still_current": null,
+      "summary": "Astana approved a 2025-2030 public-private partnership handing its city video-surveillance system to G42 subsidiary Presight, which funds 53bn tenge for about 22,000 cameras, 732 intersection units and a situation centre.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://bes.media/amp/sergek-uhodit-iz-astani-upravlenie-sistemoy-videonablyudeniya-peredadut-kompanii-presignt-iz-oae/",
+          "publisher": "BES.media",
+          "source_tier": "S3",
+          "date": "2025-02-14",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://digitalbusiness.kz/2025-02-14/presight-ai-polnostyu-zamenit-sergek-v-astane-uznali-skolko-deneg-videlit-chastniy-investor/",
+          "publisher": "Digital Business (digitalbusiness.kz)",
+          "source_tier": "S2",
+          "date": "2025-02-14",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://digitalbusiness.kz/2025-05-13/arabskaya-kompaniya-otkrila-regionalniy-ofis-v-kazahstane-ona-zamenit-sergek-v-astane/",
+          "publisher": "Digital Business (digitalbusiness.kz)",
+          "source_tier": "S2",
+          "date": "2025-05-13",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Presight is Emirati, so pole third. 53bn tenge not converted (no source-date rate seen). Camera counts differ between sources (10,000 new plus 8,000 integrated vs 22,000). Camera hardware vendor (Hikvision/Dahua or other) not identified; Kazakh firms to do 60% of work. Installation progress not confirmed."
+    },
+    {
+      "id": "KAZ-011",
+      "layer": "applications",
+      "pole": "domestic",
+      "controller": "Korkem Telecom (Sergek)",
+      "local_actor": "Astana city akimat",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Sergek city video-surveillance PPP, Astana (Korkem Telecom consortium)",
+      "reversal_reason": "commercial",
+      "date": "2025-03-13",
+      "still_current": false,
+      "summary": "Astana's public-private partnership with Korkem Telecom for the domestic Sergek surveillance system expired on 13 March 2025 and was not renewed; management passed to Emirati firm Presight.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://digitalbusiness.kz/2025-02-14/presight-ai-polnostyu-zamenit-sergek-v-astane-uznali-skolko-deneg-videlit-chastniy-investor/",
+          "publisher": "Digital Business (digitalbusiness.kz)",
+          "source_tier": "S2",
+          "date": "2025-02-14",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://bes.media/amp/sergek-uhodit-iz-astani-upravlenie-sistemoy-videonablyudeniya-peredadut-kompanii-presignt-iz-oae/",
+          "publisher": "BES.media",
+          "source_tier": "S3",
+          "date": "2025-02-14",
+          "retrieved_at": "2026-10-23T09:30:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a reversal (non-renewal) of a domestic operational system; reason recorded as commercial because sources give only contract expiry, no security or political reason. Sergek continues in other Kazakh cities and is exported to Uzbekistan (not verified here)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "only AI-linked power evidence is the 300 MW available at Ekibastuz for Data Center Valley (captured in KAZ-006); no dedicated plant or utility filing found"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendors supply 5G/4G RAN and core for Kazakhtelecom/Tele2-Altel and Beeline (Veon)? Is Huawei an incumbent RAN supplier, and what does the October 2025 Huawei-Tele2/Altel memorandum cover?",
+    "Huawei-Samruk-Kazyna purchase agreement (July 2026): what equipment, value and binding status?",
+    "Hengtong-Kazakhtelecom data-centre hub: owner/operator, site, capacity, and whether Hengtong is builder, vendor or owner.",
+    "Data Center Valley (Ekibastuz): who owns and operates the facilities, financing close, construction start, chip supply and US export licences.",
+    "AlemLLM / Alem.ai model: base model and weight control; any government deployment of KazLLM.",
+    "Astana Presight system: camera hardware vendor and installation progress; Almaty and other cities' safe-city vendors (Hikvision/Dahua/Huawei) and current Sergek footprint.",
+    "Export licence for the 496 Nvidia H200s in Alem.cloud, and any further accelerator purchases (including Huawei Ascend)."
+  ],
+  "searches_run": 11
+}

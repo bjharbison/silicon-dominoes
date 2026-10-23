@@ -1,0 +1,572 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "JPN",
+  "name": "Japan",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T09:19:15Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "JPN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "Government of Japan (central ministries and agencies)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Eligibility of Huawei and ZTE network equipment for Japanese government procurement",
+      "reversal_reason": "geopolitical",
+      "date": "2018-12",
+      "still_current": null,
+      "summary": "In December 2018 Japan adopted new security procedures for government IT and network equipment purchases; reporting said they effectively bar Huawei and ZTE from government contracts, though officials said no company was targeted.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://edition.cnn.com/2018/12/13/tech/softbank-huawei-5g",
+          "publisher": "CNN Business",
+          "source_tier": "S3",
+          "date": "2018-12-13",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://toyokeizai.net/articles/-/255135",
+          "publisher": "Reuters (republished by Toyo Keizai)",
+          "source_tier": "S3",
+          "date": "2018-12-13",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/ericsson/softbank-names-ericsson-nokia-as-5g-suppliers/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2019-05-30",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "The guideline names no vendor; the Huawei/ZTE effect rests on press reporting and sources, and the Chief Cabinet Secretary denied targeting any firm. Tier 2 is a notional tier for the prospective government supply that was closed off, since no prior Huawei/ZTE government contract was identified. Pre-2020; whether the guideline is still applied was not confirmed this run."
+    },
+    {
+      "id": "JPN-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "SoftBank Corp. (also NTT Docomo and KDDI)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Huawei and ZTE as prospective 5G RAN suppliers to Japan's mobile operators (post-trial)",
+      "reversal_reason": "geopolitical",
+      "date": "2018-12",
+      "still_current": null,
+      "summary": "SoftBank, the only major Japanese operator using Huawei and ZTE in its 4G network, said it would not deploy their gear in 5G after trialling both; Docomo and KDDI announced the same stance in December 2018.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/ericsson/softbank-names-ericsson-nokia-as-5g-suppliers/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2019-05-30",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://toyokeizai.net/articles/-/255135",
+          "publisher": "Reuters (republished by Toyo Keizai)",
+          "source_tier": "S3",
+          "date": "2018-12-13",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://edition.cnn.com/2018/12/13/tech/softbank-huawei-5g",
+          "publisher": "CNN Business",
+          "source_tier": "S3",
+          "date": "2018-12-13",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a reversal of the Huawei/ZTE 5G trials (tier 2), not of the installed 4G base: Nikkei reported SoftBank would also replace Huawei 4G gear, but SoftBank called that speculation and in May 2019 still used both vendors in 4G, so no 4G swap-out is coded. Core-network vendors are not covered by any source. Followed the government procurement guideline, so coded geopolitical."
+    },
+    {
+      "id": "JPN-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson; Nokia",
+      "local_actor": "SoftBank Corp.",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-05",
+      "still_current": null,
+      "summary": "SoftBank named Ericsson and Nokia as its 5G radio suppliers, with Nokia AirScale to be deployed across Japan and Ericsson radio gear rolled out in several regions.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/ericsson/softbank-names-ericsson-nokia-as-5g-suppliers/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2019-05-30",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://toyokeizai.net/articles/-/255135",
+          "publisher": "Reuters (republished by Toyo Keizai)",
+          "source_tier": "S3",
+          "date": "2018-12-13",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Only Mobile World Live reports the actual selection; the Reuters/Nikkei item reports an earlier denied plan, so it does not corroborate the award. Value undisclosed. Ericsson (Sweden) and Nokia (Finland) are third pole. RAN only; Docomo, KDDI and Rakuten vendors were not researched this run."
+    },
+    {
+      "id": "JPN-004",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "National Institute of Advanced Industrial Science and Technology (AIST)",
+      "builder": "Hewlett Packard Enterprise",
+      "financier": "METI (Economic Security Fund)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-01",
+      "still_current": null,
+      "summary": "AIST's ABCI 3.0 AI supercomputer, with 6,128 Nvidia H200 GPUs on HPE Cray XD systems and funded through METI's economic security fund, became fully operational in January 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2411.09134v1",
+          "publisher": "AIST researchers (arXiv technical report)",
+          "source_tier": "S1",
+          "date": "2024-11-14",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.storagereview.com/news/japan-integrating-thousands-of-nvidia-h200s-into-ai-bridging-cloud-infrastructure-3-0",
+          "publisher": "StorageReview",
+          "source_tier": "S2",
+          "date": "2024-07-12",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/abci-aist",
+          "publisher": "Nvidia (corporate blog)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "The arXiv paper is written by the operator's own staff, treated as S1. Its January 2025 operational date was a plan at submission (Nov 2024); later confirmation was not fetched. GPU count from arXiv; HPE integrator and METI funding from StorageReview. The facility itself is domestically owned (AIST); only the accelerator layer is coded."
+    },
+    {
+      "id": "JPN-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "SoftBank Corp. (SB Intuitions)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-22",
+      "still_current": null,
+      "summary": "SoftBank deployed a DGX SuperPOD of more than 4,000 Nvidia Blackwell GPUs (DGX B200) in July 2025, lifting its AI computing platform past 10,000 GPUs; METI certified it under the Economic Security Promotion Act cloud programme.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.softbank.jp/en/corp/news/press/sbkk/2025/20250723_01",
+          "publisher": "SoftBank Corp. (press release)",
+          "source_tier": "S1",
+          "date": "2025-07-23",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/softbank-deploys-4000-strong-nvidia-b200-dgx-superpod-cluster-for-japanese-llm-development/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07-24",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "The METI certification is a supply-assurance designation; neither source states a subsidy amount for this build. Platform first began operating in September 2023 (DCD)."
+    },
+    {
+      "id": "JPN-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Sakura Internet; KDDI; Highreso; RUTILEA; GMO Internet Group",
+      "local_actor": "Ministry of Economy, Trade and Industry (METI)",
+      "builder": null,
+      "financier": "Government of Japan (METI)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-04-19",
+      "still_current": null,
+      "summary": "In April 2024 METI approved subsidies of up to about 72.5 billion yen for five domestic GPU cloud projects, led by Sakura Internet (about 50.1 billion yen) and KDDI (about 10.2 billion yen).",
+      "announced_value_usd": 470000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.meti.go.jp/english/press/2024/0419_001.html",
+          "publisher": "METI (press release)",
+          "source_tier": "S1",
+          "date": "2024-04-19",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/japanese-government-to-fund-new-ai-supercomputer",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-04-19",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Owner-operators are Japanese firms, so domestic. Tier 4 reflects approved public financing; build-out status of each project was not checked. Amounts are maximum subsidies; the US$470m announced figure is DCD's conversion of 72.5bn yen. GPU vendor not named by METI (likely Nvidia, unverified)."
+    },
+    {
+      "id": "JPN-007",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "SB Intuitions (SoftBank Corp.)",
+      "local_actor": "SoftBank Corp.",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07",
+      "still_current": null,
+      "summary": "SoftBank subsidiary SB Intuitions built Japanese-language LLMs of about 460 billion parameters in FY2024 on SoftBank's Nvidia platform and planned a 70-billion-parameter commercial model, Sarashina mini, within FY2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.softbank.jp/en/corp/news/press/sbkk/2025/20250723_01",
+          "publisher": "SoftBank Corp. (press release)",
+          "source_tier": "S1",
+          "date": "2025-07-23",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/softbank-deploys-4000-strong-nvidia-b200-dgx-superpod-cluster-for-japanese-llm-development/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07-24",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Weights are controlled by a Japanese firm, so domestic. Whether Sarashina is trained from scratch or from foreign open weights is not stated, so base_model is null. Commercial release of Sarashina mini was not confirmed this run."
+    },
+    {
+      "id": "JPN-008",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "SoftBank Group; SoftBank Corp. (SB OpenAI Japan)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02-03",
+      "still_current": null,
+      "summary": "SoftBank and OpenAI formed SB OpenAI Japan, a 50:50 joint venture to sell OpenAI-based Cristal intelligence to large Japanese firms; SoftBank Group will spend about US$3 billion a year deploying OpenAI tools across its companies.",
+      "announced_value_usd": 3000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://group.softbank/en/news/press/20250203_0",
+          "publisher": "SoftBank Group (press release)",
+          "source_tier": "S1",
+          "date": "2025-02-03",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecoms.com/ai/softbank-and-openai-deepen-ties-and-launch-new-ai-jv-for-japan",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2025-02-03",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Models used through OpenAI's service, so pole us. The US$3bn is an annual announced spend, not a verified contract value. Operational status of the JV and scale of Cristal deployment were not confirmed this run."
+    },
+    {
+      "id": "JPN-009",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "Digital Agency",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-02",
+      "still_current": null,
+      "summary": "The Digital Agency and OpenAI announced a strategic collaboration in October 2025 under which the government AI environment Gennai would offer OpenAI-powered tools to civil servants, with OpenAI pursuing ISMAP certification.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://openai.com/global-affairs/strategic-collaboration-with-japan-digital-agency/",
+          "publisher": "OpenAI (company announcement)",
+          "source_tier": "S1",
+          "date": "2025-10-02",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.digital.go.jp/en/policies/genai",
+          "publisher": "Digital Agency of Japan",
+          "source_tier": "S1",
+          "date": "2025-10-02",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Exploratory, non-binding language, so tier 1. The Digital Agency page lists the collaboration only as a headline and does not name the models Gennai actually runs; ISMAP certification status unknown. Both sources are statements by the parties themselves."
+    },
+    {
+      "id": "JPN-010",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Digital Agency (Gennai); domestic LLM developers (unnamed)",
+      "local_actor": "Digital Agency",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-10",
+      "still_current": null,
+      "summary": "Gennai, built in-house by the Digital Agency for about 180,000 civil servants in FY2026, is trialling domestic LLMs: a call for candidates in December 2025, a domestic-cloud trial from July 2026, and a PLaMo Translate tool added.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.digital.go.jp/en/policies/genai",
+          "publisher": "Digital Agency of Japan",
+          "source_tier": "S1",
+          "date": "2026-07-10",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pilot stage, so tier 2. The page names no domestic LLM vendor; PLaMo is Preferred Networks' model family, but the page does not say so. base_model unknown. Gennai software itself was released open source in April 2026."
+    },
+    {
+      "id": "JPN-011",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "Microsoft Japan",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-04-09",
+      "still_current": null,
+      "summary": "Microsoft announced a US$2.9 billion, two-year investment to expand hyperscale cloud and AI infrastructure in Japan, including latest GPUs, its largest Japanese investment, plus a Tokyo research lab and skilling for 3 million people.",
+      "announced_value_usd": 2900000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://news.microsoft.com/source/asia/2024/04/09/microsoft-to-invest-us2.9-billion-in-ai-and-cloud-infrastructure-in-japan-while-boosting-the-nations-skills-research-and-cybersecurity/",
+          "publisher": "Microsoft (press release)",
+          "source_tier": "S1",
+          "date": "2024-04-09",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://aibusiness.com/companies/microsoft-invests-2-9-billion-to-enhance-cloud-ai-infrastructure-in-japan",
+          "publisher": "AI Business",
+          "source_tier": "S2",
+          "date": "2024-04-15",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Investment pledge with no named sites, so tier 1. Microsoft owns and operates its data centres, so pole us. Delivery against the two-year window (to ~April 2026) was not verified."
+    },
+    {
+      "id": "JPN-012",
+      "layer": "silicon",
+      "pole": "domestic",
+      "controller": "Rapidus",
+      "local_actor": "Rapidus (METI-backed; investors incl. Toyota, Sony, NTT, NEC, SoftBank, MUFG)",
+      "builder": null,
+      "financier": "Government of Japan (METI subsidies)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-18",
+      "still_current": null,
+      "summary": "Rapidus started its 2nm pilot line at the IIM-1 fab in Chitose, Hokkaido in April 2025 and validated Japan's first 2nm gate-all-around prototype in July 2025, targeting mass production in 2027 with heavy state funding.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nippon.com/en/news/yjj2025040101114",
+          "publisher": "Nippon.com (Jiji Press)",
+          "source_tier": "S3",
+          "date": "2025-04-01",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.electronicsforu.com/news/japans-rapidus-enters-elite-semiconductor-league-with-2nm-prototype",
+          "publisher": "Electronics For You",
+          "source_tier": "S2",
+          "date": "2025-07-24",
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://heise.de/-11253592",
+          "publisher": "heise online",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 4: construction and pilot production, not mass production. Public funding reported as over 1.7 trillion yen (EFY) and a planned total of about US$16bn (heise, undated); left out of value fields as figures differ by date. Process tech licensed from IBM (US) and EUV tools from ASML (Netherlands), so control is domestic but tool- and IP-dependent."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks, compute and models; no safe-city or PRC surveillance procurement surfaced incidentally"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced in the searches run"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current RAN and core vendors of NTT Docomo, KDDI and Rakuten Mobile (Rakuten's Open RAN suppliers), and whether SoftBank has since removed Huawei/ZTE from its 4G network.",
+    "Is the December 2018 government procurement guideline still applied, and has it been extended (e.g. to critical infrastructure under the Economic Security Promotion Act)?",
+    "GPU vendors and build-out status of the METI-subsidised Sakura Internet (Ishikari) and KDDI GPU clouds.",
+    "AWS and Oracle Japan investment commitments, and the OpenAI/SoftBank 'Stargate'-type facility plans in Japan (e.g. Sakai), not researched.",
+    "Sovereign models not covered: NTT tsuzumi, Preferred Networks PLaMo, Sakana AI, LLM-jp (NII), GENIAC funded developers and their base models.",
+    "Which models Gennai actually runs in production (OpenAI vs domestic LLMs) and whether OpenAI obtained ISMAP certification.",
+    "Applications layer: any Hikvision/Dahua use in public-sector surveillance and any restrictions."
+  ],
+  "searches_run": 10
+}
