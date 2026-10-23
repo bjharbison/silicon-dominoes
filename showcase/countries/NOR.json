@@ -1,0 +1,391 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "NOR",
+  "name": "Norway",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T17:19:04Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "NOR-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Telia Norway",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-10-08",
+      "still_current": null,
+      "summary": "Telia Norway named Ericsson sole supplier of its 5G radio network, with Ericsson eventually supplying RAN for all its technologies; rollout from 2020 with nationwide 5G coverage targeted by end-2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/telia-norway-goes-all-ericsson-on-5g-and-dumps-huawei",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2019-10-08",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecoms.com/5g-6g/ericsson-benefits-from-telia-norway-s-snub-of-huawei-and-nokia",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2019-10-08",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so the pole is third. RAN only; Light Reading says Nokia was earlier named Telia's Nordic-Baltic packet-core vendor (not coded separately). Value undisclosed. Whether the full swap finished by 2023 was not confirmed in this pass, so still_current is null."
+    },
+    {
+      "id": "NOR-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telia Norway",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei 4G radio access network at Telia Norway",
+      "reversal_reason": "commercial",
+      "date": "2019-10-08",
+      "still_current": null,
+      "summary": "Telia Norway dropped Huawei, its 4G radio supplier, from its 5G network and RAN plans; Ericsson was to replace Huawei radio equipment, with the swap expected complete by 2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/telia-norway-goes-all-ericsson-on-5g-and-dumps-huawei",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2019-10-08",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecoms.com/5g-6g/ericsson-benefits-from-telia-norway-s-snub-of-huawei-and-nokia",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2019-10-08",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a reversal of an operational (tier 5) Huawei 4G RAN. Telia gave no public reason; telecoms.com only speculates about parent-company ties to Ericsson, so the reason is coded commercial. Completion of the swap not confirmed in this pass."
+    },
+    {
+      "id": "NOR-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Telenor Norge",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-12-13",
+      "still_current": null,
+      "summary": "Telenor chose Ericsson as its main 5G radio-network supplier in Norway; Nokia and Ericsson were already its 5G core vendors, with Huawei given no core role.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sdxcentral.com/articles/news/5g-ran-vendor-choice-vexes-telenor-contradictions-ensue/2019/12/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2019-12-16",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.malaymail.com/news/money/2019/12/13/telenor-picks-ericsson-for-norway-5g-scaling-back-huawei/1818932",
+          "publisher": "Malay Mail (Reuters)",
+          "source_tier": "S3",
+          "date": "2019-12-13",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techxplore.com/news/2019-12-norway-telecom-snubs-huawei-5g.pdf",
+          "publisher": "TechXplore (AFP)",
+          "source_tier": "S3",
+          "date": "2019-12-13",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Swedish) and Nokia (Finnish) are both third-pole vendors. Telenor is Norway's largest operator, so scale is national. Value undisclosed."
+    },
+    {
+      "id": "NOR-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telenor Norge",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei 4G radio access network at Telenor Norge (majority phase-out)",
+      "reversal_reason": "commercial",
+      "date": "2019-12-13",
+      "still_current": null,
+      "summary": "Telenor began phasing out Huawei, its 4G partner of about a decade, replacing most Huawei radio gear over four to five years, while Huawei kept a limited role upgrading and maintaining parts of the network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.malaymail.com/news/money/2019/12/13/telenor-picks-ericsson-for-norway-5g-scaling-back-huawei/1818932",
+          "publisher": "Malay Mail (Reuters)",
+          "source_tier": "S3",
+          "date": "2019-12-13",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sdxcentral.com/articles/news/5g-ran-vendor-choice-vexes-telenor-contradictions-ensue/2019/12/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2019-12-16",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techxplore.com/news/2019-12-norway-telecom-snubs-huawei-5g.pdf",
+          "publisher": "TechXplore (AFP)",
+          "source_tier": "S3",
+          "date": "2019-12-13",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Partial reversal of an operational (tier 5) Huawei 4G RAN. Telenor's CEO cited a holistic evaluation covering security, technical quality, commercial terms and innovation, not politics; coded commercial, though the security element makes geopolitical arguable. A 4-5 year phase-out implies completion around 2023-24; not confirmed, and Huawei's residual role is unquantified."
+    },
+    {
+      "id": "NOR-005",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Aker-Nscale joint venture (Aker ASA 50% / Nscale 50%)",
+      "local_actor": "Aker ASA",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-31",
+      "still_current": null,
+      "summary": "Nscale and Aker formed a 50/50 joint venture to build Stargate Norway at Kvandal near Narvik: 230MW planned plus 290MW ambition, about US$1bn for the first phase, OpenAI as initial offtaker.",
+      "announced_value_usd": 1000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nscale.com/press-releases/stargate-norway-nscale-aker-openai",
+          "publisher": "Nscale (company release)",
+          "source_tier": "S1",
+          "date": "2025-07-31",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/openai-partners-with-nscale-and-aker-for-stargate-norway-data-center-with-100k-gpus/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07-31",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole left null because the owner-operator is an equal JV of a Norwegian firm (Aker, domestic) and a UK firm (Nscale, third); control is genuinely shared. Tier 3 rests on the JV agreement plus the binding Microsoft offtake (NOR-006); construction start and JV closing were not confirmed. Announced value is the initial-phase figure.",
+      "bundle_id": "NOR-B1"
+    },
+    {
+      "id": "NOR-006",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Aker-Nscale joint venture",
+      "local_actor": "Microsoft (customer)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-17",
+      "still_current": null,
+      "summary": "The Aker-Nscale joint venture signed a five-year binding agreement worth about US$6.2bn to provide Microsoft with GPU infrastructure at Narvik, with staged deployments from 2026.",
+      "announced_value_usd": 6200000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://tools.prnewswire.com/en-us/live/20823/release/20250917EN76002",
+          "publisher": "Aker / Nscale (PR Newswire release)",
+          "source_tier": "S1",
+          "date": "2025-09-17",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/microsoft/microsoft-inks-6-2b-deal-for-ai-infrastructure-in-norway/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2025-09-17",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Microsoft is the tenant, not the controller; the facility pole follows the shared Aker/Nscale owner-operator (null, see NOR-005). Only the company release was opened (S1), so confidence medium. Whether deployments have begun in 2026 was not confirmed.",
+      "bundle_id": "NOR-B1"
+    },
+    {
+      "id": "NOR-007",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Aker-Nscale joint venture (Stargate Norway)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-31",
+      "still_current": null,
+      "summary": "Stargate Norway targets 100,000 Nvidia GPUs at the Narvik site by the end of 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nscale.com/press-releases/stargate-norway-nscale-aker-openai",
+          "publisher": "Nscale (company release)",
+          "source_tier": "S1",
+          "date": "2025-07-31",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/openai-partners-with-nscale-and-aker-for-stargate-norway-data-center-with-100k-gpus/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07-31",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 1 because the GPU count is a stated target; no Nvidia purchase order, delivery or export documentation was found. The Microsoft release (NOR-006) does not name the GPU model.",
+      "bundle_id": "NOR-B1"
+    },
+    {
+      "id": "NOR-008",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "NTNU (NorwAI)",
+      "local_actor": "Norwegian University of Science and Technology",
+      "builder": null,
+      "financier": null,
+      "base_model": "Magistral-24B (also Mistral-7B, Mixtral-8x7B, Llama2-7B)",
+      "base_model_pole": "third",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025",
+      "still_current": null,
+      "summary": "NTNU's NorwAI released Norwegian-language models, including from-scratch NorGPT models (2023) and continually pretrained Mistral, Mixtral, Llama2 and Magistral variants (2024-25), trained on NTNU's own cluster and offered for Nordic research use.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2601.03034v2",
+          "publisher": "NorwAI / NTNU (technical report, arXiv)",
+          "source_tier": "S1",
+          "date": "2026-01",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Weights held by a Norwegian public university, so domestic. Base model recorded as the latest Magistral-24B (Mistral AI, French, third); the family also includes Llama2 (US) and from-scratch models. Coded tier 2 as a research release, not national government adoption. The National Library's Mimir project (17 models, 2024) is related but not separately coded."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found a January 2023 Storting written answer leaving Chinese camera risk to individual agencies; no ban, removal order or named safe-city/e-gov AI deployment found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no dedicated AI/DC power plant surfaced; Narvik site described as grid-connected renewable supply"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Did Telia Norway and Telenor Norge complete their Huawei RAN swap-outs (targets 2023 and ~2023-24), and does Huawei retain any maintenance or coverage role at Telenor?",
+    "Has Norway adopted any formal vendor-screening rule for telecoms (follow-up to Meld. St. 9 (2022-2023) or the new ekom law) that restricts Huawei/ZTE? Search found only 2019 deliberations and no ban.",
+    "Stargate Norway: has the Aker-Nscale JV closed, has construction started at Kvandal, and have Nvidia GPUs (model, count) been delivered for the Microsoft contract in 2026?",
+    "Ice (Lyse) network vendors: the third mobile operator's RAN and core suppliers were not searched.",
+    "Other large Norwegian data-centre projects since 2023 (Green Mountain, Bulk, Stack, Lefdal) and their controllers were not searched.",
+    "Has the Norwegian government entered a partnership with OpenAI under 'OpenAI for Countries' beyond the Stargate offtake, or with any other frontier provider?",
+    "Do Norwegian public bodies still operate Hikvision/Dahua cameras, and has any agency removed them after NSM warnings?"
+  ],
+  "searches_run": 10
+}

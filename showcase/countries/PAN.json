@@ -1,0 +1,273 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "PAN",
+  "name": "Panama",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T17:18:59Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "PAN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Public Security (Ministerio de Seguridad Pública)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei telecom equipment at 13 sites in Panama",
+      "reversal_reason": "geopolitical",
+      "date": "2025-06",
+      "still_current": null,
+      "summary": "The US Embassy announced that Huawei telecom equipment at 13 sites across Panama, used with the Ministry of Public Security, will be removed, with seven sites rebuilt with US technology over two years.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.bloomberglinea.com/latinoamerica/panama/eeuu-reemplaza-torres-de-huawei-en-panama-para-frenar-influencia-de-china/",
+          "publisher": "Bloomberg Línea",
+          "source_tier": "S3",
+          "date": "2025-06-11",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.prensa.com/politica/nuevo-quiebre-entre-panama-y-china-estados-unidos-anuncia-remocion-de-torres-chinas/",
+          "publisher": "La Prensa (Panama)",
+          "source_tier": "S3",
+          "date": "2025-06-11",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://insidetowers.com/?p=63734",
+          "publisher": "Inside Towers",
+          "source_tier": "S2",
+          "date": "2025-06-16",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2025-06-11/us-replacing-huawei-towers-in-panama-to-counter-china",
+          "publisher": "Bloomberg",
+          "source_tier": "S3",
+          "date": "2025-06-11",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reversal of installed (operational) Huawei equipment, so tier 5 is the tier of the thing reversed; the sources do not say whether the sites carried a public mobile network or a state security radio network. Announced by the US Embassy, not the Panamanian government; President Mulino objected to the framing but did not reject the project. Coded geopolitical because the stated purpose is countering Chinese influence. Execution status as of October 2026 not confirmed."
+    },
+    {
+      "id": "PAN-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Unnamed US equipment supplier(s) (\"trusted US technology\")",
+      "local_actor": "Ministry of Public Security",
+      "builder": null,
+      "financier": "US Government (US Embassy in Panama)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06",
+      "still_current": null,
+      "summary": "The US government is funding an US$8m two-year project with Panama's security ministry to build seven new communications towers in four provinces using US technology, replacing the Huawei sites.",
+      "announced_value_usd": 8000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.bloomberglinea.com/latinoamerica/panama/eeuu-reemplaza-torres-de-huawei-en-panama-para-frenar-influencia-de-china/",
+          "publisher": "Bloomberg Línea",
+          "source_tier": "S3",
+          "date": "2025-06-11",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://insidetowers.com/?p=63734",
+          "publisher": "Inside Towers",
+          "source_tier": "S2",
+          "date": "2025-06-16",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.prensa.com/politica/nuevo-quiebre-entre-panama-y-china-estados-unidos-anuncia-remocion-de-torres-chinas/",
+          "publisher": "La Prensa (Panama)",
+          "source_tier": "S3",
+          "date": "2025-06-11",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 2 (government-to-government framework with funding) rather than 3 because no equipment vendor or contract counterparty is named. Pole us rests on the embassy's statement that the replacement is US technology. US$8m is the announced US-financed amount."
+    },
+    {
+      "id": "PAN-003",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Sparkle (Telecom Italia) with Trans Ocean Network (Panama) joint venture",
+      "local_actor": "Panama Digital Gateway",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-06",
+      "still_current": true,
+      "summary": "Panama Digital Gateway, a carrier-neutral 5 MW, 600-rack colocation data centre in Corozal run by Italy's Sparkle with Panamanian telco Trans Ocean Network, opened in 2023; by 2026 it was adapting rooms for AI workloads.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/panama-digital-gateway-data-center-to-launch-in-june",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-05-26",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.tvn-2.com/nacionales/inaugura-panama-digital-gateway-empresa_1_2065391.amp.html",
+          "publisher": "TVN (Panama)",
+          "source_tier": "S3",
+          "date": "2023",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/es/noticias/panam%C3%A1-emerge-como-hub-de-data-centers-e-inteligencia-artificial/",
+          "publisher": "DatacenterDynamics (Spanish)",
+          "source_tier": "S2",
+          "date": "2026-02-25",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Joint venture with a domestic partner; coded third because Sparkle (Italian) leads the project in both sources, but the equity split was not found, so domestic control is possible. TVN gives an initial investment of 11.5 million with no currency, so value fields are left null. The TVN page did not show the exact inauguration date."
+    },
+    {
+      "id": "PAN-004",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Telconet",
+      "local_actor": "Telconet Panama",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06-26",
+      "still_current": null,
+      "summary": "Telconet announced a new Panama data centre, part of a US$550m regional programme through 2027, expected to be operational in Q4 2026; no capacity or Panama-specific investment was given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.intelligentcio.com/latam/2026/06/26/telconet-expands-latin-american-footprint-with-three-new-data-centres-and-100mw-ai-hub/",
+          "publisher": "Intelligent CIO LATAM",
+          "source_tier": "S2",
+          "date": "2026-06-26",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Telconet is an Ecuadorian company (not stated in the source), so the pole is third. Tier 1 because only a corporate plan is reported; construction status not confirmed. The 100 MW AI hub in the same release is in Quito, Ecuador, not Panama."
+    },
+    {
+      "id": "PAN-005",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Balboa (Panama City) landing",
+      "builder": "SubCom",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-11-20",
+      "still_current": null,
+      "summary": "Google began work on a Panama branch of its private Curie submarine cable (California to Chile), with SubCom installing a branching unit landing at Balboa, Panama City.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/es/noticias/google-comienza-a-trabajar-en-la-estaci%C3%B3n-de-aterrizaje-de-curie-en-panam%C3%A1/",
+          "publisher": "DatacenterDynamics (Spanish)",
+          "source_tier": "S2",
+          "date": "2019-11-20",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pre-2020; completion and current operation of the Panama branch were not confirmed in this pass, so still_current is null. Owner Google and installer SubCom are both US, so the pole is us. Tier 4 because work had started."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks, facilities and models; no accelerator purchases or export licences surfaced incidentally"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "two searches found a Panama-Chile AI cooperation agreement and national AI-hub plans, but no government partnership with a frontier model provider and no sovereign Panamanian model"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on safe-city/surveillance (Huawei, Hikvision) returned no citable Panama evidence; only retail listings and unrelated countries"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/DC-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendors supply the RAN and core of Panama's mobile operators (Tigo/Millicom, Claro, +Móvil/Cable & Wireless)? Reports relayed by China Global South say Panama ran 5G tests with Huawei in April 2024; did any 5G spectrum award or vendor selection follow?",
+    "What network did the 13 Huawei sites removed under the June 2025 US Embassy project carry (public mobile or state security radio), who owned them, which US vendor supplies the replacement, and how far along is it as of late 2026?",
+    "Huawei's regional Cybersecurity and Transparency Centre in Panama (announced 2024, La Prensa headline seen only): did it open, and is it still operating?",
+    "A Panama City municipal regulation reportedly bans tech purchases from firms in non-Budapest Convention countries, and SOUTHCOM signed a cybersecurity agreement with the Panama Canal Authority (both relayed by China Global South): verify with S1 sources.",
+    "Huawei–AIG cooperation agreement (2011, telepresence donation and training): is any Huawei e-government relationship still active?",
+    "Panama Digital Gateway equity split between Sparkle and Trans Ocean Network, and whether Tigo's planned fourth Panama data centre has started.",
+    "Did Google's Curie Panama branch at Balboa enter service, and is it in use today?",
+    "Any safe-city or police video-surveillance procurement (Hikvision, Dahua, Huawei) by the Ministry of Public Security or municipalities."
+  ],
+  "searches_run": 9
+}

@@ -1,0 +1,430 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "NLD",
+  "name": "Netherlands",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T17:19:22Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "NLD-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "KPN",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-03",
+      "still_current": null,
+      "summary": "KPN picked Huawei for its 5G radio access network through an RFQ, removing Ericsson radio gear; by January 2021 it had upgraded 2,800 of about 5,000 mobile sites and covered 70% of the population with 5G.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/kpn-stands-by-huawei-as-it-overhauls-networks",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2021-03-02",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecoms.com/wireless-networking/kpn-bans-huawei-from-its-5g-network-core",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2019-04-26",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 5 reflects the large-scale live RAN reported in 2021. Telecoms.com (2019) describes the preliminary Huawei RAN agreement as adjustable to future government policy. Whether Huawei still supplies KPN's RAN in 2026, after the 2021 confidential government vendor orders, was not confirmed, so still_current is null."
+    },
+    {
+      "id": "NLD-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "KPN",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei supply of KPN mobile core network",
+      "reversal_reason": "geopolitical",
+      "date": "2019-04-26",
+      "still_current": null,
+      "summary": "KPN said it would not use Huawei in its 5G core and would pick a Western vendor; Ericsson later took the core role and replaced some older Huawei core products.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecoms.com/wireless-networking/kpn-bans-huawei-from-its-5g-network-core",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2019-04-26",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightreading.com/5g/kpn-stands-by-huawei-as-it-overhauls-networks",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2021-03-02",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a reversal of Huawei's installed core-network role at KPN (tier of the installed base, 5). Reason coded geopolitical: Light Reading says the exclusion was to limit risk, in the context of Dutch policy allowing exclusion of suppliers from certain countries from critical network parts."
+    },
+    {
+      "id": "NLD-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "T-Mobile Netherlands (now Odido)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-07",
+      "still_current": null,
+      "summary": "T-Mobile Netherlands named Ericsson its exclusive mobile infrastructure supplier after a tender, covering the 5G radio network and renewal of its 3G and 4G equipment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/ericsson-to-replace-huawei-at-t-mobile-netherlands",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2022-07-04",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecomtv.com/content/5g/what-s-up-with-ericsson-t-mobile-netherlands-dt-and-kkr-onomondo-44881",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2022-07-05",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so the pole is third. Contract value not disclosed. T-Mobile Netherlands has since rebranded as Odido (not verified in these sources)."
+    },
+    {
+      "id": "NLD-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "T-Mobile Netherlands (now Odido)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei 4G radio access network at T-Mobile Netherlands",
+      "reversal_reason": "commercial",
+      "date": "2022-07",
+      "still_current": null,
+      "summary": "Huawei, which built T-Mobile Netherlands' 4G network, is to be replaced by Ericsson as main RAN supplier, including removal from the existing 4G infrastructure; the operator cited quality, performance and price.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/ericsson-to-replace-huawei-at-t-mobile-netherlands",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2022-07-04",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecomtv.com/content/5g/what-s-up-with-ericsson-t-mobile-netherlands-dt-and-kkr-onomondo-44881",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2022-07-05",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reason coded commercial because the operator framed it as a tender outcome on quality, performance and cost, with no stated security motive; a geopolitical element (2021 government vendor orders) is plausible but undocumented. TelecomTV only infers the Huawei swap, so corroboration rests on Light Reading alone. Completion of the swap-out not confirmed."
+    },
+    {
+      "id": "NLD-005",
+      "layer": "silicon",
+      "pole": "prc",
+      "controller": "Wingtech Technology",
+      "local_actor": "Nexperia (Nijmegen)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Wingtech (PRC) management control of Nexperia",
+      "reversal_reason": "geopolitical",
+      "date": "2025-10-13",
+      "still_current": null,
+      "summary": "The Economic Affairs ministry invoked the Goods Availability Act to block or reverse decisions at Wingtech-owned chipmaker Nexperia, citing governance failings and economic-security risk; the Enterprise Chamber removed the Chinese CEO. The ministerial order was suspended on 19 November 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.eenewseurope.com/en/dutch-government-intervention-taking-control-of-nexperia/",
+          "publisher": "eeNews Europe",
+          "source_tier": "S2",
+          "date": "2025-10-15",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://ioplus.nl/en/posts/dutch-government-suspends-intervention-at-chipmaker-nexperia",
+          "publisher": "IO+",
+          "source_tier": "S3",
+          "date": "2025-11-19",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a reversal of PRC (Wingtech, owner since 2018) control over a Dutch chip producer: a Dutch decision about its own domestic silicon base, not an export control on third countries. Reason geopolitical (economic-security framing; Wingtech on the US entity list since Dec 2024). The minister suspended the order after talks with China, but whether the court-imposed governance measures remain was not confirmed, so still_current is null."
+    },
+    {
+      "id": "NLD-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "SURF (consortium with TNO, Samenwerking Noord, AIC4NL)",
+      "local_actor": "SURF; Eurofiber Cloud Infra (host data centre, Groningen)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09",
+      "still_current": null,
+      "summary": "SURF chose Eurofiber's Groningen data centre to host the Dutch AI factory, backed by €201m public funding (EuroHPC, Dutch state, Nij Begun); hardware tender still open, installation 2027, full operation early 2028.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.techzine.eu/news/infrastructure/144429/the-netherlands-first-ai-factory-will-be-located-in-a-eurofiber-data-center/",
+          "publisher": "Techzine",
+          "source_tier": "S2",
+          "date": "2026-09-21",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://thenextweb.com/news/dutch-ai-supercomputer-groningen",
+          "publisher": "The Next Web",
+          "source_tier": "S3",
+          "date": "2026-09-23",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator SURF is a Dutch research cooperative, so domestic. EuroHPC co-funding (€71m) makes the EU a co-financier; recorded here rather than in financier because it is a grant to a joint undertaking in which NL participates. Tier 3: funding awarded and site chosen, but hardware not yet contracted. Accelerator vendor unknown. Value in EUR only; not converted."
+    },
+    {
+      "id": "NLD-007",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Groningen province (Winschoten)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11",
+      "still_current": null,
+      "summary": "Google launched its Winschoten data centre, expanding its europe-west4 cloud region; it was reported as a €600m investment at the December 2023 groundbreaking, alongside Google sites at Eemshaven and Middenmeer.",
+      "announced_value_usd": 655100000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/google-opens-data-center-in-winschoten-the-netherlands/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-11-19",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://nltimes.nl/2025/10/07/dutch-economy-faces-billions-losses-amsterdam-data-center-expansion-halts",
+          "publisher": "NL Times",
+          "source_tier": "S3",
+          "date": "2025-10-07",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "US owner-operator, so pole us. The USD figure (about $655.1m) is DCD's own conversion of €600m. NL Times only mentions that Google has a Winschoten site, not its opening, so it does not corroborate the launch. Overlaps with the global cloud-region layer (europe-west4) but is coded as a facility."
+    },
+    {
+      "id": "NLD-008",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "TNO, SURF and Netherlands Forensic Institute (NFI)",
+      "local_actor": "Ministry of Economic Affairs and Climate Policy (funder)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02",
+      "still_current": null,
+      "summary": "GPT-NL, a Dutch language model trained from scratch by TNO, SURF and NFI with €13.5m from the Economic Affairs ministry, was declared ready for use in February 2026; weights are released under a controlled licence.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://tno.nl/en/digital/artificial-intelligence/gpt-nl",
+          "publisher": "TNO (project page)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.tno.nl/en/newsroom/2023/11/netherlands-starts-realisation-gpt-nl",
+          "publisher": "TNO (press release)",
+          "source_tier": "S1",
+          "date": "2023-11-02",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.cio-platform.nl/en/weblog/nieuws-extern-detailpagina/2026/02/26/dutch-gpt-nl-is-ready-for-use-the-only-language-model-that-complies-with-the-gdpr",
+          "publisher": "CIO Platform Nederland",
+          "source_tier": "S3",
+          "date": "2026-02-26",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Trained from scratch, so base_model is null. Tier 4 (funded and released to first users) rather than 5, since scale of government use was not shown. Who legally holds the weights is not stated, but all three builders are Dutch public bodies, so domestic. Compute platform not identified."
+    },
+    {
+      "id": "NLD-009",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision / Dahua (Chinese-made cameras)",
+      "local_actor": "Municipality of Amsterdam",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Chinese-made municipal camera network in Amsterdam",
+      "reversal_reason": "geopolitical",
+      "date": "2024-06-11",
+      "still_current": null,
+      "summary": "Amsterdam decided to replace its 1,280 Chinese-made surveillance and traffic cameras within about five years, citing AIVD warnings about Chinese cyber activity and manufacturers' links to rights abuses.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.vrt.be/vrtnws/nl/2024/06/11/amsterdam-beslist-om-chinese-camera-s-weg-te-halen/",
+          "publisher": "VRT NWS",
+          "source_tier": "S3",
+          "date": "2024-06-11",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://nos.nl/l/2416279",
+          "publisher": "NOS",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reversal of an operational camera estate (tier 5), reason geopolitical. VRT names Hikvision and Dahua only as the brands used across Dutch municipalities, not specifically Amsterdam's 1,280 units, so the controller is approximate. NOS 2022 report (seen in search only) says such cameras also hang at ministries. Replacement progress not confirmed."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "only general grid-congestion reporting (Amsterdam grid full until ~2035) surfaced; no dedicated AI/DC power plant found"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "What do the confidential May 2021 Economic Affairs vendor orders to KPN, T-Mobile and VodafoneZiggo require (core only, or RAN too), and is Huawei still in KPN's 5G RAN in 2026?",
+    "VodafoneZiggo RAN and core vendors were not searched.",
+    "Nexperia: are the Enterprise Chamber measures (CEO removal, share custody) still in force after the November 2025 suspension of the ministerial order, and has Wingtech regained control?",
+    "Groningen AI factory hardware tender: which accelerator vendor wins (Nvidia/AMD/other) and when?",
+    "Microsoft Middenmeer and other hyperscale campuses since 2023 (incl. Meta Zeewolde cancellation, 2022) were not coded; check for 2023+ AI-specific expansions and any pauses.",
+    "Has the Alibaba Cloud Netherlands region (global layer: announced) gone live in October 2026?",
+    "ASML export controls were deliberately not coded (Dutch decision about third countries, i.e. enforcement, not NL stack choice); confirm this treatment on review.",
+    "Do Dutch ministries still operate Hikvision/Dahua cameras (NOS 2022), and how far has Amsterdam's replacement progressed?"
+  ],
+  "searches_run": 9
+}

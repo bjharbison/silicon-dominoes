@@ -1,0 +1,600 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "RUS",
+  "name": "Russian Federation",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T17:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "RUS-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "MTS; MegaFon; VEON (Beeline)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Ericsson supply and support of Russian operators' mobile networks",
+      "reversal_reason": "sanctions",
+      "date": "2022-04-11",
+      "still_current": null,
+      "summary": "Ericsson suspended deliveries to Russian customers in March 2022, then suspended its Russian business indefinitely in April, ending support and upgrades for operators' macro networks.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/russian-telcos-left-with-huawei-as-ericsson-and-nokia-down-tools/d/d-id/775746",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2022-03-02",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomtv.com/content/5g/nokia-the-latest-to-exit-russia-adding-to-the-woes-of-the-country-s-mobile-operators-44163/",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2022-04-12",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 5 is the tier of the thing reversed: installed, operating mobile network equipment whose vendor support was withdrawn. Ericsson cited sanctions analysis and 'recent events'; coded sanctions per the desk rule for post-2022 Western exits. Ericsson is Swedish, so pole third."
+    },
+    {
+      "id": "RUS-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "MTS; MegaFon; VEON (Beeline); Tele2 Russia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Nokia supply and support of Russian operators' mobile networks",
+      "reversal_reason": "sanctions",
+      "date": "2022-04-12",
+      "still_current": null,
+      "summary": "Nokia announced it would exit the Russian market, halting deliveries and new business and moving its R&D out, after pausing deliveries in March 2022 to comply with sanctions.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomtv.com/content/5g/nokia-the-latest-to-exit-russia-adding-to-the-woes-of-the-country-s-mobile-operators-44163/",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2022-04-12",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightreading.com/5g/russian-telcos-left-with-huawei-as-ericsson-and-nokia-down-tools/d/d-id/775746",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2022-03-02",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 5 reflects the installed operator networks losing vendor support. Nokia cited the invasion and sanctions compliance; coded sanctions per the desk rule. Nokia is Finnish, so pole third. Whether any residual Nokia support continues via third parties is not known."
+    },
+    {
+      "id": "RUS-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "MTS",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-04",
+      "still_current": null,
+      "summary": "Trade press described Huawei equipment as deeply embedded in Russia's 4G and 5G networks, with a strategic relationship with MTS, the largest operator; Huawei did not announce a halt to Russian deliveries.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sdxcentral.com/news/huawei-scales-back-russian-business-furloughs-workers/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2022-04-13",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightreading.com/5g/russian-telcos-left-with-huawei-as-ericsson-and-nokia-down-tools/d/d-id/775746",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2022-03-02",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/russia-outlines-plan-to-pilot-5g-networks-on-homegrown-equipment-in-2025/",
+          "publisher": "DatacenterDynamics (relaying TASS)",
+          "source_tier": "S4",
+          "date": "2023-03-08",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both opened S2 sources assert embeddedness without operator-level shares or contracts, so this is a cautious tier-5 reading of an installed base. DCD (2023, relaying TASS) says Huawei was still operating in Russia but had cut staff. Current Huawei RAN/core share by operator was not found."
+    },
+    {
+      "id": "RUS-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Russian operators (unspecified)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Huawei new equipment contracts and sales to Russian customers",
+      "reversal_reason": "sanctions",
+      "date": "2022-04",
+      "still_current": null,
+      "summary": "Reports in April 2022, citing Forbes Russia and Russian newspapers, said Huawei stopped taking new Russian contracts, paused sales and furloughed staff to avoid US sanctions exposure.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sdxcentral.com/news/huawei-scales-back-russian-business-furloughs-workers/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2022-04-13",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomtv.com/content/5g/nokia-the-latest-to-exit-russia-adding-to-the-woes-of-the-country-s-mobile-operators-44163/",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2022-04-12",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both trade-press items relay the same Forbes Russia report, so they are not independent. Tier 3 = new supply contracts paused, not the installed base. DCD (March 2023) reports Huawei still operating in Russia, so the pause may have been partial or temporary; still_current not confirmed."
+    },
+    {
+      "id": "RUS-005",
+      "layer": "networks",
+      "pole": "domestic",
+      "controller": "Domestic base-station manufacturers (not named in source)",
+      "local_actor": "Russian mobile operators (not named in source)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-01",
+      "still_current": null,
+      "summary": "Russian operators signed forward contracts in January 2023 with domestic manufacturers for 75,000 base stations through 2030, reported at over US$1.32bn; operators may buy only domestic base stations from 2028.",
+      "announced_value_usd": 1320000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/russia-outlines-plan-to-pilot-5g-networks-on-homegrown-equipment-in-2025/",
+          "publisher": "DatacenterDynamics (relaying TASS)",
+          "source_tier": "S4",
+          "date": "2023-03-08",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Rests on a minister's statement relayed by TASS (Russian state media), so treated as S4. Manufacturers and operators are not named, so tier 3 is generous. A mobile-review.com headline (not opened) says MegaFon and Rostelecom agreed supply of Russian base stations worth tens of billions of roubles. Delivery progress is unknown."
+    },
+    {
+      "id": "RUS-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia; AMD; Intel",
+      "local_actor": "Russian customers (all)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "US vendor sales of CPUs/GPUs/accelerators to Russia",
+      "reversal_reason": "sanctions",
+      "date": "2022-03",
+      "still_current": null,
+      "summary": "In early March 2022 AMD and Intel halted chip sales and shipments to Russia (and Belarus), and Nvidia confirmed it had stopped selling into Russia; TSMC also suspended sales.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/nvidia-suspends-all-sales-to-russia-joining-amd-and-intel",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-03-08",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.pcworld.com/article/619357/amd-officially-halts-chip-sales-to-russia.html",
+          "publisher": "PCWorld",
+          "source_tier": "S2",
+          "date": "2022-03-06",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 3 = ongoing supply/distribution relationships reversed; already-installed chips keep running. AMD explicitly cited sanctions; Intel cited the invasion; Nvidia gave no reason and went beyond what sanctions then required. Coded sanctions per the desk rule. Grey imports reportedly continued then collapsed (Novaya Gazeta, 2026)."
+    },
+    {
+      "id": "RUS-007",
+      "layer": "silicon",
+      "pole": "prc",
+      "controller": null,
+      "local_actor": "Sberbank (GigaChat)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-20",
+      "still_current": null,
+      "summary": "Sberbank CEO German Gref said during Putin's China visit that Sber hopes to power its GigaChat model with Chinese chips; no supplier, quantity or signed deal was reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/sectors/technology/articles/sberbank-seeks-chinese-chips-power-073711567.html",
+          "publisher": "Reuters (via Yahoo Finance)",
+          "source_tier": "S3",
+          "date": "2026-05-20",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://expansion.mx/tecnologia/2026/07/20/huawei-voltea-a-rusia-para-ser-el-socio-tecnologico-de-china-y-vencer-a-eu",
+          "publisher": "Expansion",
+          "source_tier": "S3",
+          "date": "2026-07-20",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://novayagazeta.eu/articles/2026/07/19/osobennosti-natsionalnogo-gigachata",
+          "publisher": "Novaya Gazeta Europe",
+          "source_tier": "S3",
+          "date": "2026-07-19",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Statement of intent (tier 1); made on Russian state TV. Expansion and Novaya Gazeta link the interest to Huawei's Ascend 950 but no source shows a Sber-Huawei order, so controller is left null. Two S3 hosts but no S1/S2, so not corroborated."
+    },
+    {
+      "id": "RUS-008",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Sberbank (Christofari Neo supercomputer)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021",
+      "still_current": null,
+      "summary": "Sber's Christofari Neo supercomputer, used for its AI work, runs on 2021-era Nvidia A100 accelerators bought before the 2022 embargo, according to a July 2026 analysis.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://novayagazeta.eu/articles/2026/07/19/osobennosti-natsionalnogo-gigachata",
+          "publisher": "Novaya Gazeta Europe",
+          "source_tier": "S3",
+          "date": "2026-07-19",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single S3 analysis; date reflects the hardware vintage, not a confirmed install date. The same article estimates Russia's whole AI accelerator fleet at about 15,000 H100-equivalents (upper bound). Nvidia retains no support role after its exit, so 'us' reflects hardware origin and firmware lineage."
+    },
+    {
+      "id": "RUS-009",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Yandex Cloud",
+      "local_actor": "Yandex Cloud",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-27",
+      "still_current": null,
+      "summary": "Yandex Cloud announced a new availability zone of over 40 MW in the Vladimir region, beside an existing Yandex data centre, slated to launch in 2026 with a claimed PUE of 1.1.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/yandex-to-launch-availability-zone-next-year-at-data-center-in-vladimir-russia/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-09-27",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Company plan relayed by trade press (tier 2: announced build, construction status not reported). AI/GPU use not stated. Whether it opened in 2026 was not checked. Yandex is Russian-controlled since the 2024 split from Nebius, so domestic."
+    },
+    {
+      "id": "RUS-010",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Yandex",
+      "local_actor": "Yandex Data Center Moscow Region",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-04-28",
+      "still_current": null,
+      "summary": "Yandex, via a subsidiary formed in 2024, plans a data centre near Mozhaisk in Moscow region worth about 16bn roubles, aimed to launch in 2027 for cloud services.",
+      "announced_value_usd": 193000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/yandex-to-develop-data-center-in-mozhaisk-russia/",
+          "publisher": "DatacenterDynamics (relaying Mozhaisk Media)",
+          "source_tier": "S2",
+          "date": "2025-04-28",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "US$193m is DCD's own conversion of 16bn roubles at the April 2025 rate. Capacity not stated; based on local-media reporting of a planning application. Tier 2 as a planned project without confirmed construction."
+    },
+    {
+      "id": "RUS-011",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Sberbank",
+      "local_actor": "Sberbank",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07",
+      "still_current": null,
+      "summary": "Sber's GigaChat family is described as pretrained from scratch for Russian with Sber-owned weights, though its architecture, compute kernels and training recipe closely follow DeepSeek V3 and Qwen designs.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://novayagazeta.eu/articles/2026/07/19/osobennosti-natsionalnogo-gigachata",
+          "publisher": "Novaya Gazeta Europe",
+          "source_tier": "S3",
+          "date": "2026-07-19",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Date is the analysis date; GigaChat launched earlier (2023 per a search snippet not opened). Weights domestic, so base_model null; architectural borrowing from DeepSeek/Qwen noted here rather than as a base model. Single S3 source citing Sber's arXiv paper. A July 2026 Duma law creates 'sovereign' and 'national' model categories."
+    },
+    {
+      "id": "RUS-012",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Yandex; T-Bank; MTS",
+      "local_actor": "Yandex (Alice); T-Bank (T-Pro); MTS (Cotype)",
+      "builder": null,
+      "financier": null,
+      "base_model": "Qwen (version not specified)",
+      "base_model_pole": "prc",
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07",
+      "still_current": null,
+      "summary": "Yandex's Alice, T-Bank's T-Pro and MTS's Cotype models were initialised from Alibaba's Qwen open weights, according to the companies' own technical posts as summarised in a July 2026 analysis.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://novayagazeta.eu/articles/2026/07/19/osobennosti-natsionalnogo-gigachata",
+          "publisher": "Novaya Gazeta Europe",
+          "source_tier": "S3",
+          "date": "2026-07-19",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "National actors control the fine-tuned weights, so domestic, with a PRC open-weight base. Qwen version not specified in the source. Single S3 source; the underlying Habr posts were not opened."
+    },
+    {
+      "id": "RUS-013",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Yandex; Sberbank",
+      "local_actor": "Ministry of Digital Development (Gosuslugi portal)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06-09",
+      "still_current": null,
+      "summary": "The digital ministry planned in 2024 to add a Russian language model to the Gosuslugi assistant, and by June 2024 was running closed tests of YandexGPT and GigaChat on the portal.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.comnews.ru/content/231376/2024-02-02/2024-w05/1009/cifrovoy-pomoschnik-gosuslugakh-poluchit-otechestvennyy-ii-2024-godu",
+          "publisher": "ComNews (citing Interfax)",
+          "source_tier": "S2",
+          "date": "2024-02-02",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www1.ru/news/2024/06/09/gigachat-ili-yandexgpt-dve-neiroseti-nacali-testirovat-na-portale-gosuslugi.amp.html",
+          "publisher": "www1.ru (relaying RIA Novosti)",
+          "source_tier": "S4",
+          "date": "2024-06-09",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pilot (tier 2). The June 2024 item relays RIA Novosti (Russian state media), so treated as S4. Outcome of the September 2024 evaluation and which model was chosen were not found."
+    },
+    {
+      "id": "RUS-014",
+      "layer": "applications",
+      "pole": "domestic",
+      "controller": "NtechLab",
+      "local_actor": "Moscow Department of Information Technologies",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-09-28",
+      "still_current": null,
+      "summary": "Moscow switched on NtechLab facial recognition for its city CCTV network of over 160,000 cameras in 2017; by 2022 the city and metro system was flagging protesters and alleged draft evaders for detention.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2017/09/28/moscow-officially-turns-on-facial-recognition-for-its-city-wide-camera-network/",
+          "publisher": "TechCrunch",
+          "source_tier": "S3",
+          "date": "2017-09-28",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.hrw.org/news/2022/10/26/russia-uses-facial-recognition-hunt-down-draft-evaders",
+          "publisher": "Human Rights Watch (advocacy)",
+          "source_tier": "S4",
+          "date": "2022-10-26",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "NtechLab is Russian, so domestic. HRW does not name the vendor in 2022, so NtechLab's continued role is not confirmed; pre-2020 and still_current not confirmed as of the run date. Value undisclosed."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks, silicon and models; no AI/DC-specific power project (e.g. Rosatom NPP-sited data centres) was researched"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current RAN/core vendor shares at MTS, MegaFon, Beeline and Tele2 (T2): how much Huawei/ZTE equipment is still being delivered after the 2022 pause, and how much legacy Ericsson/Nokia gear remains in service?",
+    "Domestic base-station programme (Rostec/Bulat, Yadro, others): named manufacturers, operator contracts (MegaFon-Rostelecom deal headline seen, not opened), delivery volumes and the status of the 2025 5G pilots on domestic gear.",
+    "Has Sberbank or any Russian buyer placed a documented order for Huawei Ascend or other Chinese AI accelerators since the May 2026 statement?",
+    "Scale of grey-market Nvidia accelerator imports into Russia since 2022 (customs/C4ADS data) and BIS enforcement actions.",
+    "Large AI data-centre projects beyond Yandex: Sber, MTS, Rostelecom/RTK-DPC and Rosatom campuses (including NPP-sited data centres) since 2023, with capacity and status.",
+    "Which model won the Gosuslugi assistant evaluation after the September 2024 test, and is it live?",
+    "Implementation of the July 2026 AI law: which models are certified 'sovereign' vs 'national', and does it restrict Qwen/DeepSeek-derived models?",
+    "Is NtechLab still the facial-recognition vendor for Moscow's city and metro systems, and has the system been extended to other regions? Any PRC (Hikvision/Dahua) camera hardware in Russian safe-city projects?"
+  ],
+  "searches_run": 10
+}

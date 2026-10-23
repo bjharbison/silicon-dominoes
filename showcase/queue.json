@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "MOZ",
-  "MWI",
-  "NIC",
-  "NLD",
-  "NOR",
-  "OMN",
-  "PAK",
-  "PAN",
-  "QAT",
-  "RUS",
   "SDN",
   "SEN",
   "SLV",
@@ -254,6 +244,16 @@
   "KEN",
   "KGZ",
   "KOR",
-  "LSO"
+  "LSO",
+  "MOZ",
+  "MWI",
+  "NIC",
+  "NLD",
+  "NOR",
+  "OMN",
+  "PAK",
+  "PAN",
+  "QAT",
+  "RUS"
  ]
 }

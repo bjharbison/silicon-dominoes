@@ -1,0 +1,390 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "OMN",
+  "name": "Oman",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T17:18:44Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "OMN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ooredoo Oman",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-03",
+      "still_current": null,
+      "summary": "Ooredoo Group picked Huawei to make its Oman network fully 5G-capable (SingleRAN radio, massive MIMO, 5G cloud core); a December 2021 five-year group frame deal covers radio, core and transport in Oman, extended for new 5G networks in 2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/20200309/5g/huawei-boost-ooredoo-5g-operations-four-markets",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2020-03-09",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-business/operator-news/12526-ooredoo-announces-five-year-supply-deal-with-huawei.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2021-12-16",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-business/operator-news/14644-ooredoo-expands-5g-partnership-with-huawei-across-mena-markets.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2023-03-02",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightreading.com:443/5g/huawei-picks-up-five-market-5g-deal-from-ooredoo",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Group-level agreements naming Oman among several markets, so tier 3 rather than an Oman-specific award notice; value undisclosed. Radio and core both named, so Huawei is the likely controller of Ooredoo Oman's mobile network, but current operational status was not confirmed. Corroboration rests on RCR Wireless plus Developing Telecoms (different hosts)."
+    },
+    {
+      "id": "OMN-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Omantel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-07-15",
+      "still_current": null,
+      "summary": "Omantel signed a multi-year deal for Ericsson Radio System hardware and software, including massive-MIMO antennas and 5G New Radio, for its 5G radio rollout in Salalah, Nizwa and Sur and other sites.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/2020/7/omantel-selects-ericsson-for-5g-network-expansion",
+          "publisher": "Ericsson (company release)",
+          "source_tier": "S1",
+          "date": "2020-07-15",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20200716/5g/ericsson-omantel-5g-network-expansion",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2020-07-16",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/wireless-networks/9772-omantel-taps-ericsson-for-5g-ran.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2020-07-15",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "RAN only; none of the sources names Omantel's core vendor. Ericsson is Swedish, so pole is third. Value undisclosed. RCR reported 77 new 5G sites by mid-2020, suggesting deployment was under way, but present-day scale was not confirmed. See OMN-003: Omantel may run a multi-vendor 5G network."
+    },
+    {
+      "id": "OMN-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Omantel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-02-26",
+      "still_current": null,
+      "summary": "Trade press reported that Omantel and Ooredoo both chose Huawei gear for 5G, Huawei already being a major 4G supplier in Oman; the regulator said vendor choice is the operator's decision under the telecoms law.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.developingtelecoms.com/telecom-business/vendor-news/9249-huawei-gets-the-green-light-for-5g-in-oman.html.md",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2020-02-26",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single trade-press source; the Omantel-Huawei claim was not corroborated and scope (RAN, core, which regions) is unspecified. Taken with OMN-002 this suggests a split-vendor Omantel 5G network (Ericsson in some cities), but that is inference. The regulator's statement is not a ban or exclusion; no Huawei restriction in Oman was found."
+    },
+    {
+      "id": "OMN-004",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Ooredoo (Qatar)",
+      "local_actor": "Ooredoo Oman",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-11",
+      "still_current": null,
+      "summary": "Ooredoo opened a 10MW Tier III data centre in Sohar with room for about 1,200 racks, first planned in 2022; the group plans to grow its Oman capacity past 120MW through a medium-to-long-term US$1bn programme.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sdxcentral.com/news/ooredoo-launches-10mw-sohar-data-center-in-oman/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2024-11-04",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://gulfnews.com/technology/ooredoo-launches-salalah-data-centre-to-strengthen-omans-role-regional-digital-hub-1.500236849",
+          "publisher": "Gulf News",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator is Ooredoo, a Qatari group, so pole is third (Ooredoo Oman is a listed local subsidiary; control rests with the group). Tier 5 because the site was launched, though 10MW is modest. The US$1bn refers to future expansion, not this facility, so value fields are null. The Gulf News headline (seen only) points to a separate Salalah data centre, not coded."
+    },
+    {
+      "id": "OMN-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "O-Green (Naqaa Sustainable Energy and OQ Alternative Energy)",
+      "local_actor": "O-Green",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09",
+      "still_current": null,
+      "summary": "State-backed Omani renewables firm O-Green, founded in 2025, says it is developing AI-ready data centres in Oman, Spain and elsewhere in Europe, targeting more than 200MW ready for service by 2028; no sites named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/omans-o-green-targets-200mw-of-data-center-capacity-by-2028/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-09-21",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "A stated target, so tier 1; it is unclear how much of the 200MW is in Oman. Both shareholders are Omani state-owned, so pole is domestic. No technology partner named."
+    },
+    {
+      "id": "OMN-006",
+      "layer": "facilities",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Ahlam Group",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-18",
+      "still_current": null,
+      "summary": "At Oman Sustainability Week, Omani firm Ahlam Group signed an agreement with Italian firms RINA, Vitali and Forte Secur and Dubai consultancy Corpolgia to pursue a roughly 150MW green hyperscale AI data centre in Oman; no site or value given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/oman-uae-and-italy-sign-green-data-center-agreement/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-05-18",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.tradearabia.com/News/462644/Italy-Oman-sign-150-MW-green-data-centre-project",
+          "publisher": "TradeArabia",
+          "source_tier": "S3",
+          "date": "2026-05-18",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: neither source says who will own or operate the facility, which sets the pole; the Italian parties look like engineering, contracting and security partners. Coded tier 1 because the agreement is a trade-show partnership without stated financing, site or binding terms."
+    },
+    {
+      "id": "OMN-007",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "NVIDIA",
+      "local_actor": "Oman Data Park",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09",
+      "still_current": null,
+      "summary": "Oman Data Park, a cloud, hosting and AI services provider, added NVIDIA H200 GPUs to its existing NVIDIA A10, A40 and A100 systems to support AI workloads in Oman; quantity and value not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://meatechwatch.com/2025/09/23/oman-data-park-deploys-nvidia-h200-gpus-to-power-nations-ai-future/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S3",
+          "date": "2025-09-23",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Date taken from the article URL path; the page itself carried none. Reads like a company release relayed by regional tech press. Tier 4 rather than 5 because the GPU count and scale are unknown. H200s to Oman need a US licence (D:4, global layer), so a licence was presumably granted, but no licence record was seen."
+    },
+    {
+      "id": "OMN-008",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Government of Oman (Ministry of Transport, Communications and Information Technology)",
+      "local_actor": "Omani government administrative apparatus",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-19",
+      "still_current": null,
+      "summary": "Oman's national AI model Mueen (also spelled Maeen) is presented as a local assistant for government staff, built on 3,000+ local datasets with 60 institutions, developed with an unnamed private partner; a pilot launched in the programme's 2021-25 phase.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://timesofoman.com/article/172023-digital-transition-session-focuses-on-role-of-ai-model-in-improving-government-performance",
+          "publisher": "Times of Oman",
+          "source_tier": "S3",
+          "date": "2026-05-19",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.omanobserver.om/article/1193458/oman/oman-eyes-robust-ai-future-with-world-standards",
+          "publisher": "Oman Observer",
+          "source_tier": "S4",
+          "date": "2026-09-10",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.omanobserver.om/article/1176266/oman/first-large-language-model-mueen-launched",
+          "publisher": "Oman Observer",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 2 (pilot). Domestic on the assumption that the government controls the weights, as described as a 'pure local' model; the developer, base model and hosting are not named, so base_model is null. Oman Observer is state-owned and treated as S4. Ministry attribution comes from the Oman Observer article on the national AI programme."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search returned only Hikvision vendor marketing for private hotels and dealerships (S4, not state systems) and a CSIS safe-city study that does not name Oman; no state surveillance or e-government AI on a foreign stack found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power evidence surfaced; O-Green's renewables portfolio is not tied to a specific data centre"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies Omantel's 5G core, and is its RAN split between Ericsson and Huawei by region? Seek Omantel or TRA S1 evidence to confirm or drop OMN-003.",
+    "Vodafone Oman (third operator, launched 2022): which RAN and core vendors?",
+    "Who developed Mueen/Maeen, what base model it uses, and where it is hosted?",
+    "Otech (Omantel) and DeepAstra launched a locally hosted 'sovereign AI' API in August 2026 serving open-source models (seen only in a newsletter, S5, not citable): which models, and on which hardware?",
+    "Oman Data Park: ownership (reportedly within the Omantel group) and how many H200s were licensed and deployed.",
+    "Ooredoo's Salalah data centre and its 120MW expansion: status, and any NVIDIA GPU deployments (DCD headline on Ooredoo housing NVIDIA chips seen only).",
+    "Royal Oman Police / safe-city CCTV and facial recognition: vendors and contracts.",
+    "Oman Investment Authority AI investments (e.g. reported stake in UK firm Salience Labs) and any hyperscaler or frontier-model government partnerships.",
+    "Confirm Oman's WAICO founding membership with an S1-S3 source (global layer rests on an S5 roster)."
+  ],
+  "searches_run": 10
+}

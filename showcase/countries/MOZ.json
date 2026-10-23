@@ -1,0 +1,255 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MOZ",
+  "name": "Mozambique",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T17:19:38Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MOZ-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Tmcel (Mocambique Telecom, state-owned)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06",
+      "still_current": null,
+      "summary": "State operator Tmcel signed a US$23 million deal with Huawei to extend 4G coverage nationwide, starting in Maputo and Matola, while testing 5G in the capital.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/wireless-networks/11398-tmcel-expanding-4g-with-huawei-as-5g-trials-commence.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2021-06-25",
+          "retrieved_at": "2026-10-23T17:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomreviewafrica.com/articles/telecom-operators/2739-mozambique-telecom-huawei-to-deploy-5g-in-the-country/",
+          "publisher": "Telecom Review Africa",
+          "source_tier": "S2",
+          "date": "2022-04-05",
+          "retrieved_at": "2026-10-23T17:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-business/200-buddecom-market-reports/13089-mozambique-telecom-contracts-vendor-for-national-5g-rollout.html",
+          "publisher": "Developing Telecoms (BuddeComm digest)",
+          "source_tier": "S2",
+          "date": "2022-03-09",
+          "retrieved_at": "2026-10-23T17:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "RAN expansion; core vendor not stated. The 2022 Telecom Review item frames the same US$23m contract as supporting 5G deployment with Huawei expertise. Value relayed by trade press, not a filing, so left out of value fields. Tmcel also signed a separate five-year network/mobile-money deal with Ericsson (per the BuddeComm digest), so Tmcel is not single-vendor. Vodacom Mozambique (5G launched May 2023) and Movitel (Viettel, Vietnam) RAN vendors were not identified."
+    },
+    {
+      "id": "MOZ-002",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Presidency military household (Casa Militar); Maputo and Matola",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2014-12-15",
+      "still_current": null,
+      "summary": "A China Eximbank-financed National Command Information Network, implemented by ZTE, covered 450 CCTV cameras in Maputo and Matola and a Presidential Guard monitoring centre for intercepting phone, SMS and internet traffic.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/40730",
+          "publisher": "AidData (William & Mary) Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": "2014-12-15",
+          "retrieved_at": "2026-10-23T17:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://globalvoices.org/2016/07/13/welcome-to-mozambique-where-the-government-will-soon-have-450-new-security-cameras-aimed-at-you/",
+          "publisher": "Global Voices (translating @Verdade)",
+          "source_tier": "S3",
+          "date": "2016-07-13",
+          "retrieved_at": "2026-10-23T17:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "AidData records a loan of about US$149.5m ratified December 2014, with ZTE as contractor, and says it reached implementation but completion is unclear; coded tier 4 (financing closed, implementation started), not 5. Global Voices says a firm owned by former President Guebuza's son held the contract and subcontracted ZTE. Pre-2020 and still_current not confirmed. Loan value comes from a research dataset, not a filing, so left out of value fields. Interception component makes this a surveillance capability, not just traffic CCTV."
+    },
+    {
+      "id": "MOZ-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Mozambique (national e-government data centre)",
+      "local_actor": "Government of Mozambique",
+      "builder": "Huawei Technologies",
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015-12",
+      "still_current": null,
+      "summary": "A China Eximbank concessional loan of RMB 230 million signed in 2012 funded a national data centre and shared e-government infrastructure built by Huawei; AidData records the data centre as completed in December 2015.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/105154",
+          "publisher": "AidData (William & Mary) Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": "2015-12-21",
+          "retrieved_at": "2026-10-23T17:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator is the state, so pole is domestic with Huawei as builder; if Huawei IT equipment or ongoing Huawei support is documented, the IT layer would be prc. AidData converts the loan to about US$35m at signing; not entered as a value. Which facility this is (possibly among the government data centres the US trade.gov guide lists, e.g. Maluana) and whether still in service is unconfirmed. Single source."
+    },
+    {
+      "id": "MOZ-004",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Raxio Group",
+      "local_actor": "Raxio Mozambique",
+      "builder": null,
+      "financier": "Proparco; Emerging Africa Infrastructure Fund",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05",
+      "still_current": null,
+      "summary": "Raxio Group opened its first carrier-neutral colocation data centre in Mozambique in May 2024, part of a US$290 million multi-country African build-out financed by equity and Proparco/EAIF debt.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterknowledge.com:443/data-center-construction/raxio-opens-mozambique-data-center-in-290m-africa-push",
+          "publisher": "Data Center Knowledge",
+          "source_tier": "S2",
+          "date": "2024-05-28",
+          "retrieved_at": "2026-10-23T17:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.news24.com/business/companies/global-group-opens-mozambique-data-centre-in-r5bn-africa-push-20240528",
+          "publisher": "News24",
+          "source_tier": "S3",
+          "date": "2024-05-28",
+          "retrieved_at": "2026-10-23T17:18:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/data-centres-networks/11487-raxio-building-carrier-neutral-colocation-data-centre-in-mozambique.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T17:18:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: Raxio is backed by US private-equity firm Roha Group and French fund Meridiam, and its controlling home jurisdiction was not established in this pass. Mozambique-specific capacity and cost not stated; the US$290m covers seven markets, so no value entered. Opening reported but operational scale unconfirmed; tier 5 is a cautious reading of a live facility. Only one source opened."
+    },
+    {
+      "id": "MOZ-005",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Ministry of the Interior / police (PRM); Maputo and Nampula",
+      "builder": null,
+      "financier": "Export-Import Bank of Korea (EDCF)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-09-21",
+      "still_current": null,
+      "summary": "Mozambique's Council of Ministers ratified an US$88.7 million Korea Eximbank loan for a public-security project: CCTV, fingerprint identification, a Maputo central operations room and regional rooms in Nampula province, running to end-2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://clubofmozambique.com/news/mozambique-us88-7m-loan-from-exim-bank-of-korea-for-public-security-enhancement-carta/",
+          "publisher": "Club of Mozambique",
+          "source_tier": "S3",
+          "date": "2021-09-29",
+          "retrieved_at": "2026-10-23T17:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null because the equipment vendor (the controller under SPEC v0.2) is not named; Korean financing suggests but does not establish a Korean supplier, which would make it third. Loan value relayed by press, not a filing, so left out of value fields. Delivery status after 2021 unknown. Single opened source."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or export-licence reporting surfaced in searches on AI and data-centre activity; not searched separately"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found a draft national AI strategy (UNESCO-supported) and a new AI association, but no government frontier-model partnership or sovereign model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power project surfaced; budget spent on networks, facilities and applications"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendors supply Vodacom Mozambique's 5G RAN/core (launched May 2023) and Movitel's (Viettel) RAN/core?",
+    "Did Tmcel's US$200m 2020 modernisation financing come from China Eximbank (reported by @Verdade, unconfirmed) and which vendor did it fund?",
+    "Was the ZTE National Command Information Network (450 cameras plus Casa Militar interception centre) completed, and is it still in use?",
+    "Which firm supplies the Korea Eximbank-financed public-security CCTV/AFIS project (2021-2025), and was it delivered?",
+    "Is the 2015 Huawei-built e-government data centre the Maluana facility, and does Huawei still supply or support its IT equipment?",
+    "Raxio Group's controlling shareholder and home jurisdiction, and Raxio Mozambique capacity.",
+    "Does the final national AI strategy (draft mid-2026) name foreign AI or cloud partners? Any vendor of the 2Africa landing or other cables (HMN Tech involvement)?"
+  ],
+  "searches_run": 9
+}

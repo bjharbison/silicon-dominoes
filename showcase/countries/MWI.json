@@ -1,0 +1,376 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MWI",
+  "name": "Malawi",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T17:18:55Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MWI-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei Technologies",
+      "local_actor": "Government of Malawi; Electricity Supply Corporation of Malawi (ESCOM)",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06",
+      "still_current": null,
+      "summary": "Phase II of Malawi's National Fibre Backbone, launched June 2021 and implemented by Huawei, covers nearly 3,000 km of fibre; AidData records a China Eximbank concessional loan (signed August 2020) financing it, on-lent to ESCOM.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/malawi-launches-second-phase-of-national-fibre-backbone-project/GxwQDM1Z6r5qlPVo",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2021-06-28",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/optical-fixed-networks/11420-malawi-announces-continuation-of-national-fibre-project.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2021-06-29",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/69285",
+          "publisher": "AidData (William & Mary) Chinese development finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor Huawei sets the pole. Tier 4 = loan signed and construction launched; completion not confirmed. AidData (research dataset, treated as S2) gives RMB 693m, World Bank DRS face value about US$100.5m, disbursed RMB 299m by June 2023 amid Malawi debt-distress rescheduling talks; value fields left null because this is the loan, not a verified project award. Phase I (2017-18, 28 districts, about $23m) was also Huawei-built with ESCOM per Developing Telecoms.",
+      "bundle_id": "MWI-B1"
+    },
+    {
+      "id": "MWI-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Malawi",
+      "local_actor": "Government of Malawi (Department of e-Government)",
+      "builder": "Huawei Technologies",
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-07",
+      "still_current": null,
+      "summary": "Malawi's first National Data Centre, in Blantyre, was launched in July 2022 to host government-wide systems; it was built by Huawei as part of the National Fibre Backbone project.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/malawi-launches-national-data-center/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-07-28",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/69285",
+          "publisher": "AidData (William & Mary) Chinese development finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.capacitymedia.com/article/2aeqpgcjxgwy6v88pw64g/data-economy-news/malawi-government-sets-up-national-data-centre-with-huawei",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is the Malawian government, so the pole is domestic; Huawei is builder and China Eximbank the financier (Phase II loan per AidData). The IT equipment inside is likely Huawei but no source names it, so no silicon/IT finding is coded. The 2026 PPPC item describes Blantyre as the disaster-recovery site for the new Lilongwe centre; this role assignment is inferred from that article.",
+      "bundle_id": "MWI-B1"
+    },
+    {
+      "id": "MWI-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Malawi (Department of e-Government)",
+      "local_actor": "Ministry of ICT / Public Private Partnership Commission",
+      "builder": null,
+      "financier": "World Bank (IDA)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04",
+      "still_current": null,
+      "summary": "A World Bank-funded National Data Centre in Lilongwe, begun under the Digital Malawi Foundation Project, was reported fully completed in April 2026, already hosting eleven government systems and six co-locating ministries, linked to the Blantyre site.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dmap.pppc.mw/news/national-data-centre-ll-completed-set-to-strengthen-malawi-s-digital-infrastructure",
+          "publisher": "Public Private Partnership Commission, Digital Malawi Acceleration Project",
+          "source_tier": "S1",
+          "date": "2026-04-28",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://dmap.pppc.mw/procurement/expansion-of-the-national-data-centre",
+          "publisher": "Public Private Partnership Commission, Digital Malawi Acceleration Project",
+          "source_tier": "S1",
+          "date": "2025-10",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Single S1 host (both items are PPPC pages). Contractor and IT equipment vendor not named. A World Bank IDA-funded expansion (RFB MW-PPPC-494042-GO-RFB) was at early-market-engagement stage in October 2025; no award found, so not coded separately. Tier 5 reflects reported operational hosting, at modest scale."
+    },
+    {
+      "id": "MWI-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telekom Networks Malawi (TNM)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-05",
+      "still_current": null,
+      "summary": "TNM switched on Malawi's first 5G pilot sites in Blantyre and Lilongwe in May 2023 with Huawei as rollout partner, after a roughly US$5m, two-year packet-core modernisation.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/tnm-claims-first-5g-pilot-in-malawi/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-05-24",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/wireless-networks/15019-tnm-begins-malawi-s-first-5g-pilot.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2023-05-23",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pilot = tier 2. Developing Telecoms says the MWK5.2bn (US$5m) investment was made with Huawei, implying a Huawei packet core, but whether Huawei supplied core as well as RAN is not stated explicitly. DCD (Nov 2025) reports TNM went commercially live with 5G around July 2025; the vendor for that launch was not confirmed. Value not entered because the $5m is not clearly a Huawei contract value."
+    },
+    {
+      "id": "MWI-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei Technologies",
+      "local_actor": "Telekom Networks Malawi (TNM)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019",
+      "still_current": null,
+      "summary": "TNM's CEO described a close relationship with Huawei as a major supplier, said TNM should not be wholly dependent on it, and its 2014 US$20m deferred-payment facility with Huawei covered equipment purchases.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://mwnation.com/tnm-not-affected-by-us-huawei-row-ceo/",
+          "publisher": "The Nation (Malawi)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Article undated; context (2018 annual report, US-Huawei row) suggests 2019. Pre-2020; the 2023 Huawei 5G pilot suggests the relationship continued but still_current is not confirmed. Article wording calls Huawei a 'client', read here as supplier. US$20m facility is a financing line, not a verified contract value, so value fields are null."
+    },
+    {
+      "id": "MWI-006",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "StarLink Lilongwe Ltd; Malawi Communications Regulatory Authority (MACRA)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-10",
+      "still_current": null,
+      "summary": "MACRA issued SpaceX's local subsidiary network facilities, network services and application service licences, the first satellite broadband licence of its kind in Malawi, pending gazetting and spectrum assignment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/regulation/malawi-grants-starlink-license-to-operate",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2022-10-23",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://spaceinafrica.com/2022/11/15/spacexs-starlink-licensed-in-malawi/",
+          "publisher": "Space in Africa",
+          "source_tier": "S2",
+          "date": "2022-11-15",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Licence issued = tier 4. Single opened source. Satellite access network, controlled by the US operator."
+    },
+    {
+      "id": "MWI-007",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Malawi Communications Regulatory Authority (MACRA)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": true,
+      "reversal_of": "Starlink new-subscription sales under the 2022 MACRA licence (MWI-006)",
+      "reversal_reason": "commercial",
+      "date": "2024-10-30",
+      "still_current": null,
+      "summary": "Starlink suspended new residential and most business subscriptions in Malawi after MACRA rejected a price increase meant to offset the kwacha's devaluation; existing subscribers were not affected.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techzim.co.zw/starlink-suspends-new-kit-sales-and-subscriptions-in-malawi-due-to-currency-pricing-and-regulatory-issues-similar-problems-in-nigeria",
+          "publisher": "Techzim",
+          "source_tier": "S2",
+          "date": "2024-10-30",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Partial pause, not an exit. Coded commercial: the suspension was Starlink's response to pricing and foreign-exchange constraints, not a security or alignment decision, though a regulator's price ruling triggered it. Whether new sales have resumed was not checked."
+    },
+    {
+      "id": "MWI-008",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Government of Malawi (Malawi Low Resource Language Data Trust Initiative)",
+      "local_actor": "Ministry of ICT",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06",
+      "still_current": null,
+      "summary": "Malawi's government launched a Chichewa AI initiative through a national language data trust, backed by the World Bank and Gates Foundation, to assemble licensed Chichewa content and core AI frameworks for local-language tools.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techafricanews.com/2026/06/24/malawi-launches-chichewa-ai-initiative-to-drive-digital-inclusion-and-innovation/",
+          "publisher": "TechAfrica News",
+          "source_tier": "S3",
+          "date": "2026-06-24",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "A data and capability initiative, not yet a model; no base model or model provider named, so base_model is null. Coded domestic on the expectation that the data trust is nationally controlled; tier 1 because only a launch and intentions are reported."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks, facilities, models and applications; no accelerator purchases or export licences surfaced incidentally"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "two searches found an IDS report saying Malawi spent over $27m on interception and biometric-ID contracts with US, UK, Chinese, EU and Israeli firms, but no vendor named; China's 2021 police donation was non-digital gear; no safe-city contract found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendor supplied Airtel Malawi's 5G (56 sites, Nov 2025) and its RAN/core generally? DCD says the vendor is unknown.",
+    "Which vendor supported TNM's commercial 5G launch (~July 2025), and is Huawei TNM's core as well as RAN supplier today?",
+    "Status of National Fibre Backbone Phase II (Huawei, China Eximbank loan): completed? Outcome of the Malawi-China Eximbank rescheduling talks?",
+    "Who won the World Bank-funded National Data Centre expansion (RFB MW-PPPC-494042-GO-RFB), and which IT vendors equip the Lilongwe and Blantyre centres?",
+    "Vendor names behind Malawi's ~$27m interception and biometric-ID surveillance contracts (IDS 'Mapping the Supply of Surveillance Technologies to Africa' report).",
+    "Has Starlink resumed new subscriptions in Malawi since the October 2024 suspension?",
+    "WAICO status is unconfirmed in the global layer (single S3 roster); confirm or deny.",
+    "Silicon layer not searched."
+  ],
+  "searches_run": 9
+}

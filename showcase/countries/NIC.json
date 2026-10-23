@@ -1,0 +1,229 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "NIC",
+  "name": "Nicaragua",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T17:18:58Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "NIC-001",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Empresa Nacional de Transmisión Eléctrica (ENATREL)",
+      "builder": null,
+      "financier": "Zhengzhou Coal Mining Machinery Group Co., Ltd. (ZMJ), PRC",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06",
+      "still_current": null,
+      "summary": "Nicaragua signed two credit agreements with Chinese firm ZMJ, 612m yuan (about US$84.2m), funding a 4G/5G Digital Connectivity Project executed by state utility ENATREL; the National Assembly ratified them in June 2025.",
+      "announced_value_usd": 84200000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://mobiletime.la/noticias/20/06/2025/nicaragua-china-redes-4g-y-5g/",
+          "publisher": "Mobile Time Latinoamérica",
+          "source_tier": "S2",
+          "date": "2025-06-20",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://dplnews.com/?p=278848",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2025-06-20",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://diario.elmundo.sv/el-mundo/china-prestara-a-nicaragua-2149-millones-de-dolares-para-conectividad-digital-y-puertos",
+          "publisher": "Diario El Mundo (EFE)",
+          "source_tier": "S3",
+          "date": "2025-05-29",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole left null: the controller rule needs the equipment vendor, and no source names the RAN/core vendor (Huawei/ZTE not mentioned). ZMJ, a coal-machinery firm, is the PRC lender and contracted supplier, likely acting as a financing/EPC vehicle; recorded as financier. A PRC vendor is plausible but unconfirmed. Value: US$84.2m as stated by Mobile Time/DPL; EFE (citing La Gaceta) gives US$85.7m at authorisation stage. Tier 3 = signed and ratified loan/supply agreements; disbursement and construction not confirmed. Phase 1 Managua and Ciudad Sandino, phase 2 cities in 14 departments; sources say it would create a state-owned third mobile operator."
+    },
+    {
+      "id": "NIC-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Nicaragua (Telcor, ENATREL, presidency)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-11",
+      "still_current": null,
+      "summary": "Nicaragua's government announced a Digital Transformation and 5G Technologies Plan with Huawei in late 2023; in April 2025 Ortega met Huawei's Latin America president with Telcor and ENATREL heads to review joint projects and expand telecom cooperation.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.bloomberglinea.com/2025/04/10/huawei-afianza-su-presencia-en-nicaragua-con-respaldo-directo-de-daniel-ortega/",
+          "publisher": "Bloomberg Línea",
+          "source_tier": "S3",
+          "date": "2025-04-10",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.laprensani.com/2025/04/09/politica/3459031-ortega-se-reune-con-presidente-de-huawei-en-medio-de-censura-y-control-digital",
+          "publisher": "La Prensa (Nicaragua)",
+          "source_tier": "S3",
+          "date": "2025-04-09",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://revistasumma.com/nicaragua-continuara-ampliando-la-cooperacion-con-empresas-chinas-dice-daniel-ortega",
+          "publisher": "Revista Summa (EFE)",
+          "source_tier": "S3",
+          "date": "2025-04-10",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://semanariouniversidad.com/?p=300218",
+          "publisher": "Semanario Universidad (AFP)",
+          "source_tier": "S3",
+          "date": "2023-12-20",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Statement/plan level only (tier 1); no contract, value or deployment found. Accounts differ: La Prensa and Bloomberg Línea say the plan was signed/announced Nov 2023, while AFP (Dec 2023) described Nicaragua as still seeking a 5G plan with Huawei. All details trace to Nicaraguan government statements. No S1/S2 source opened, so not corroborated. Whether this plan underlies the ENATREL 4G/5G project (NIC-001) is not established."
+    },
+    {
+      "id": "NIC-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Consejo Nacional de Universidades (CNU)",
+      "local_actor": "Consejo Nacional de Universidades (CNU)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-11",
+      "still_current": null,
+      "summary": "The state National Council of Universities inaugurated a Managua data centre for the national education information system, built in collaboration with Huawei, with investment of over 120m córdobas (about US$3.2m); specifications were not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/nicaraguas-national-council-of-universities-launches-data-center",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-11-12",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/es/noticias/consejo-nacional-de-universidades-de-nicaragua-inaugura-centro-de-datos/",
+          "publisher": "DatacenterDynamics (Spanish)",
+          "source_tier": "S2",
+          "date": "2024-11-13",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Facility owner-operator is the state CNU, so pole domestic. Huawei's role (IT/network equipment vendor vs builder) is unspecified; if it supplied the servers/network gear, an IT-layer PRC finding would also apply, but this is not confirmed so it is not coded. Small facility (~US$3.2m), not an AI campus. Both items are DCD (same host) relaying a TN8 report, so not corroborated. Value is DCD's conversion, not put in value fields."
+    },
+    {
+      "id": "NIC-004",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "PRC Ministry of Public Security",
+      "local_actor": "Policía Nacional de Nicaragua",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09",
+      "still_current": null,
+      "summary": "Nicaragua's police chief and China's Minister of Public Security signed a security cooperation agreement at a September 2024 forum in Lianyungang, covering officer training and provision of police techniques and technologies against terrorism, drug trafficking and cybercrime.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.laprensani.com/2024/09/18/english/3381076-what-can-china-teach-nicaragua-about-its-methods-of-security-and-surveillance",
+          "publisher": "La Prensa (Nicaragua)",
+          "source_tier": "S3",
+          "date": "2024-09-18",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Non-binding cooperation agreement (tier 1); no named surveillance vendor, system or procurement found. Agreement content relayed from a state press release (origin government unspecified). Opposition claims of a Managua surveillance centre using Chinese technology are unverified and not coded."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or export-licence reporting surfaced in data-centre/AI searches; country is D:5 presumption of denial per global layer"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "no government frontier-model partnership or sovereign Nicaraguan model surfaced in the China AI-cooperation search"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power evidence surfaced; ENATREL appears only as telecom executor"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendor supplies equipment for the ENATREL/ZMJ 4G/5G Digital Connectivity Project, and has disbursement or construction started? Check La Gaceta decrees and the loan text.",
+    "Was a Huawei Digital Transformation and 5G plan actually signed in Nov 2023 (text, signatories), and what projects were reviewed at the April 2025 Ortega-Huawei meeting?",
+    "Which RAN/core vendors serve Claro (América Movil) and Tigo (Millicom) Nicaragua today?",
+    "What did Huawei supply for the CNU data centre (servers, storage, network)?",
+    "Does the Policía Nacional or Managua surveillance centre run Chinese (Hikvision/Dahua/Huawei) camera or facial-recognition systems? Seek procurement or investigative sources.",
+    "WAICO founding membership (global layer) rests on an S5 roster; seek S1-S3 confirmation for Nicaragua.",
+    "No reversals found in this pass: check for any cancelled or stalled Chinese telecom or digital projects since relations resumed in December 2021."
+  ],
+  "searches_run": 10
+}

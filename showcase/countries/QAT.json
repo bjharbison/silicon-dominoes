@@ -1,0 +1,312 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "QAT",
+  "name": "Qatar",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T17:18:42Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "QAT-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Ooredoo Qatar",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02",
+      "still_current": null,
+      "summary": "Ooredoo Qatar picked Ericsson to supply and install its latest radio access network and microwave backhaul, including Massive MIMO radios, a nationwide 2.3 GHz 5G layer, NR 700 coverage and mmWave hotspots. Value undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20250204/featured/ooredoo-qatar-ericsson",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2025-02-04",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightreading.com/5g/eurobites-ericsson-elbows-its-way-into-ooredoos-5g-ran/d/d-id/766382",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2021-01-05",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "RAN and backhaul only; core is separately Huawei-supplied (QAT-002). Light Reading (2021) reports a five-year Ericsson RAN deal across Ooredoo's ten markets, with Ericsson already deploying 5G Massive MIMO in Qatar; it corroborates Ericsson as Ooredoo Qatar's RAN vendor rather than the 2025 award itself. Ericsson is Swedish, so the pole is third."
+    },
+    {
+      "id": "QAT-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ooredoo Group (incl. Ooredoo Qatar)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-03-11",
+      "still_current": null,
+      "summary": "At MWC 2024 Ooredoo Group signed an agreement with Huawei to modernise its core networks in seven markets, Qatar among them, upgrading all to a 5G service-based core in preparation for 5.5G. No value disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomtv.com/content/5g/ooredoo-partners-with-huawei-to-prepare-core-networks-to-transition-to-5-5g-49896/",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2024-03-12",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://gulf-times.com/article/678738/qatar/ooredoo-gears-up-for-transition-to-55g-era-partners-with-huawei-to-evolve-core-network",
+          "publisher": "Gulf Times",
+          "source_tier": "S3",
+          "date": "2024-03-11",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://rcrwireless.com/20240312/5g/ooredoo-partners-huawei-transition-5g",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2024-03-12",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Neither opened source says whether this is binding or a framework, so coded tier 2 (group-level framework) rather than a tier-3 award. Core network is the higher-control layer, so this matters more than its tier suggests: Huawei would supply firmware and updates for Ooredoo Qatar's 5G core while Ericsson supplies RAN. Whether the Qatar core migration is complete was not confirmed. Gulf Times is a Qatari private daily, treated as S3."
+    },
+    {
+      "id": "QAT-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Vodafone Qatar",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-02",
+      "still_current": null,
+      "summary": "Vodafone Qatar expanded its Nokia partnership in a modernisation deal covering Nokia multi-cloud core software (packet core, charging, analytics), IP/optical network automation and a five-year managed-services agreement for core operations.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nokia.com/newsroom/vodafone-qatar-selects-nokia-in-major-network-modernization-deal-to-drive-expanded-5g-coverage-reliability-and-services/",
+          "publisher": "Nokia (company release)",
+          "source_tier": "S1",
+          "date": "2025-06-02",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Single opened S1 company release, so medium confidence but not corroborated. Vodafone Qatar's RAN vendor is not named in the release. No vendor replacement stated. Nokia is Finnish, so the pole is third. Value undisclosed."
+    },
+    {
+      "id": "QAT-004",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Ooredoo (hosted and operated by Syntys)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-01",
+      "still_current": null,
+      "summary": "Ooredoo launched sovereign AI cloud services in Qatar running on Nvidia Hopper GPUs and Nvidia AI Enterprise software, hosted in its local data centres operated by Syntys, aimed at energy, finance, healthcare and smart-city users.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ooredoo.qa/web/en/press-release/ooredoo-deploys-nvidia-accelerated-computing-in-qatar-ushers-in-the-countrys-next-wave-of-innovation/",
+          "publisher": "Ooredoo Qatar (company release)",
+          "source_tier": "S1",
+          "date": "2025-07-01",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecoms.com/ai/ooredoo-launches-sovereign-ai-cloud-services-in-qatar",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2025-07-02",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "GPU model and quantity not disclosed, so 'at scale' is unverified; tier 5 reflects a launched commercial service. Syntys is described in sources as hosting the data centres; that it is an Ooredoo subsidiary is analyst understanding, not confirmed in the sources opened. Controller is the accelerator vendor (US). The data-centre facility itself (domestic owner) is not coded separately."
+    },
+    {
+      "id": "QAT-005",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Brookfield-Qai joint venture",
+      "local_actor": "Qai (Qatar Investment Authority AI subsidiary)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12",
+      "still_current": null,
+      "summary": "Brookfield and Qai, the new AI arm of the Qatar Investment Authority, formed a US$20bn joint venture to fund AI infrastructure in Qatar, including an integrated compute centre, and to explore projects abroad. No site, capacity or chip vendor named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.middleeastainews.com/p/brookfield-qai-form-20b-ai-infrastructure",
+          "publisher": "Middle East AI News",
+          "source_tier": "S2",
+          "date": "2025-12-09",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://w.media/brookfield-and-qai-form-us-20-billion-jv-to-drive-ai-infrastructure-in-qatar/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2025-12-15",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://irei.com/news/brookfield-and-qai-forge-20b-strategic-investment-partnership-for-ai-infrastructure-in-qatar-and-beyond",
+          "publisher": "IREI",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the owner-operator is a JV between a domestic sovereign vehicle (Qai) and Brookfield (Canadian-headquartered), and the ownership split is not disclosed, so control cannot be assigned. The US$20bn is a headline programme size, not a closed financing or verified value, and is left out of value fields. Coded tier 2: a JV/partnership with no site or construction reported; neither source says whether definitive agreements were signed. Source dates differ (9 vs 15 Dec 2025)."
+    },
+    {
+      "id": "QAT-006",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Qatar Computing Research Institute (HBKU)",
+      "local_actor": "Ministry of Communications and Information Technology (sponsor)",
+      "builder": null,
+      "financier": null,
+      "base_model": "Gemma-2 9B (Fanar Prime)",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12",
+      "still_current": null,
+      "summary": "QCRI built Fanar, an ICT-ministry-sponsored Arabic generative AI platform: Fanar Star (7B, from scratch) and Fanar Prime (9B, continually pre-trained on Gemma-2 9B), trained on 168 Nvidia H100s. A 27B Fanar 2.0 followed in December 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://arxiv.org/pdf/2501.13944",
+          "publisher": "QCRI technical report (arXiv)",
+          "source_tier": "S1",
+          "date": "2025-01-18",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.middleeastainews.com/p/qatar-announces-fanar-20-arabic-ai",
+          "publisher": "Middle East AI News",
+          "source_tier": "S2",
+          "date": "2025-12-09",
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.middleeastainews.com/p/qatar-fanar-large-language-model-llm",
+          "publisher": "Middle East AI News",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T17:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Weights held by a Qatari state-funded institute, so domestic. base_model records Fanar Prime's Gemma-2 9B base (US); Fanar Star is from scratch, and Fanar 2.0's base was not stated. Middle East AI News reports Google Cloud as technology provider for the original Fanar, a possible US dependency at the cloud layer. Tier 5 reflects a launched public platform with named institutional partners; scale of government adoption is not quantified. Launch date of December 2024 is from Middle East AI News."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on safe-city/surveillance vendors (Huawei, Hikvision, Dahua) returned only Wikipedia, a Qatari list of approved installers and unrelated foreign items; nothing citable on Qatar's state surveillance stack"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power evidence surfaced; budget spent on other layers"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Is the Ooredoo-Huawei 5G core agreement (March 2024) binding, and has Ooredoo Qatar's core migration to Huawei 5GC completed? Seek Ooredoo filings or CRA evidence.",
+    "Who supplies Vodafone Qatar's RAN (the June 2025 Nokia release covers core and transport only)?",
+    "Brookfield-Qai JV: ownership split, site, capacity, accelerator vendor and whether construction has started; also any Qai deals with US hyperscalers or model providers.",
+    "Ooredoo AI cloud: GPU model, quantity and any US export licence for the Hopper deployment; any planned Blackwell expansion.",
+    "Qatar's safe-city / Ministry of Interior surveillance stack (2022 World Cup security systems) and vendors; not resolved in one search.",
+    "Fanar 2.0 base model (from scratch or fine-tuned) and which ministries run Fanar in production.",
+    "Submarine cables landing in Qatar and their supply vendors (HMN Tech or otherwise) were not searched."
+  ],
+  "searches_run": 10
+}
