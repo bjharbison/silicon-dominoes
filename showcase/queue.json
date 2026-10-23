@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "SDN",
-  "SEN",
-  "SLV",
-  "SRB",
-  "SWE",
-  "TGO",
-  "TJK",
-  "TWN",
-  "TZA",
-  "USA",
   "UZB",
   "VEN",
   "ZAF",
@@ -254,6 +244,16 @@
   "PAK",
   "PAN",
   "QAT",
-  "RUS"
+  "RUS",
+  "SDN",
+  "SEN",
+  "SLV",
+  "SRB",
+  "SWE",
+  "TGO",
+  "TJK",
+  "TWN",
+  "TZA",
+  "USA"
  ]
 }

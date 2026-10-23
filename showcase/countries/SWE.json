@@ -1,0 +1,379 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SWE",
+  "name": "Sweden",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SWE-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei and ZTE",
+      "local_actor": "Swedish Post and Telecom Authority (PTS); 5G auction bidders",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei and ZTE equipment in Swedish mobile networks (central functions and new 5G installations)",
+      "reversal_reason": "geopolitical",
+      "date": "2020-10",
+      "still_current": null,
+      "summary": "PTS barred Huawei and ZTE equipment from new 5G use by auction winners and required existing central-function equipment to be removed by January 2025; Sweden's highest administrative court let the auction proceed in January 2021.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://silicon.co.uk/5g/swedish-court-rejects-huawei-appeal-5g-350049",
+          "publisher": "Silicon UK",
+          "source_tier": "S2",
+          "date": "2021-01-15",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightreading.com/5g/huawei-swap-out-starts-after-sweden-s-5g-auction",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2021-01-20",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Reversal of installed Huawei/ZTE equipment, so tier 5 is the tier of the thing reversed. Coded geopolitical: the exclusion followed security-service advice. Huawei's separate appeals against the condition itself were still pending in January 2021; their outcome and whether removal was completed by the 2025 deadline were not checked in this pass."
+    },
+    {
+      "id": "SWE-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Net4Mobility (Tele2/Telenor joint venture); Telia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-05",
+      "still_current": null,
+      "summary": "Net4Mobility picked Nokia, alongside Ericsson, for its 5G radio rollout under a five-year deal, replacing incumbent Huawei 4G gear; Telia uses Nokia as sole 5G standalone core supplier in Sweden.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecoms.com/5g-6g/nokia-confirms-it-s-replacing-the-incumbent-vendor-in-swedish-5g-deal",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2021-05-19",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightreading.com/5g/huawei-swap-out-starts-after-sweden-s-5g-auction",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2021-01-20",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nokia is Finnish, so pole third. Value not disclosed. The Telia core element rests on Light Reading only."
+    },
+    {
+      "id": "SWE-003",
+      "layer": "networks",
+      "pole": "domestic",
+      "controller": "Ericsson",
+      "local_actor": "Telia; Net4Mobility",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-01",
+      "still_current": null,
+      "summary": "Ericsson supplies Telia's Swedish 5G radio network and was named with Nokia as a 5G RAN partner by Net4Mobility after the January 2021 spectrum auction.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/huawei-swap-out-starts-after-sweden-s-5g-auction",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2021-01-20",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecoms.com/5g-6g/nokia-confirms-it-s-replacing-the-incumbent-vendor-in-swedish-5g-deal",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2021-05-19",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so pole domestic. Hi3G Access (Tre) reportedly ran a Huawei/ZTE mix in its RAN; its replacement vendor was not identified in this pass."
+    },
+    {
+      "id": "SWE-004",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "National Supercomputer Centre, Linköping University",
+      "builder": "Atos",
+      "financier": "Knut and Alice Wallenberg Foundation",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-03-23",
+      "still_current": null,
+      "summary": "Berzelius, an Nvidia DGX SuperPOD of 60 DGX A100 systems delivered by Atos, went online at Linköping University, funded by a EUR 29.5m Knut and Alice Wallenberg Foundation donation.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://kaw.wallenberg.org/en/node/2982",
+          "publisher": "Knut and Alice Wallenberg Foundation",
+          "source_tier": "S1",
+          "date": "2021-03-23",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/swedens-fastest-supercomputer-installed-national-supercomputer-centre/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2021-03-23",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Equipment rule: controller is the accelerator vendor (Nvidia), so pole us; Atos (France) recorded as builder/integrator. Donation value left out of USD fields (EUR source; DCD gives about US$35m). Current operation not re-checked; an AI Business headline indicates a later Nvidia upgrade."
+    },
+    {
+      "id": "SWE-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Sferical AI (Ericsson, AstraZeneca, Saab, SEB, Wallenberg Investments; SKF strategic partner)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-10-15",
+      "still_current": true,
+      "summary": "Sferical One, an Nvidia DGX SuperPOD built on DGX GB300 systems, has run since late summer 2026 and was officially launched in October 2026 by a consortium of Swedish industrial firms; services will build on Nvidia Nemotron models.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/news/2026/10/ericsson-and-partners-launch-sferical-one-ai-supercomputer",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2026-10-15",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomtv.com/content/digital-platforms-services/sferical-one-ericsson-and-partners-make-ai-supercomputing-a-reality-in-sweden-56479/",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2026-10-16",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Pole us under the equipment rule (Nvidia hardware and software stack); the facility owner is a domestic consortium. System count, value and physical site not stated. still_current true because sources a week old report it running."
+    },
+    {
+      "id": "SWE-006",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "Microsoft data centres in Sandviken, Gävle and Staffanstorp",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06-03",
+      "still_current": null,
+      "summary": "Microsoft announced SEK 33.7bn (about US$3.2bn) over two years to expand cloud and AI capacity at its three Swedish data centres, including more than 20,000 GPUs, plus AI skills training.",
+      "announced_value_usd": 3200000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/microsoft-to-deploy-20000-gpus-in-sweden",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-06-03",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.thelocal.se/20240603/microsoft-to-invest-over-33-billion-kronor-in-ai-tech-in-sweden",
+          "publisher": "The Local Sweden",
+          "source_tier": "S3",
+          "date": "2024-06-03",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1 because only the investment commitment is evidenced; the three existing sites are operational but completion of the expansion was not checked. USD figure as given by DCD. GPU model not disclosed, so no separate silicon finding."
+    },
+    {
+      "id": "SWE-007",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Brookfield Asset Management",
+      "local_actor": "Strängnäs AI data centre (with Swedish government and authorities)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-05",
+      "still_current": null,
+      "summary": "Canada's Brookfield announced up to SEK 95bn (about US$10bn) for an AI data centre at Strängnäs near Stockholm, planned at up to 750 MW over a 10-15 year build, with a land allocation agreement to be signed.",
+      "announced_value_usd": 10000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20250605/data-center-2/brookfield-ai-infra",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2025-06-05",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://thelogic.co/briefing/brookfield-to-invest-up-to-us10b-in-ai-data-centre-in-sweden/",
+          "publisher": "The Logic",
+          "source_tier": "S3",
+          "date": "2025-06-04",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Brookfield is Canadian, so pole third (owner-operator). Tier 1: announced plan, no construction start reported. Tenants and chip vendor unknown. Current status as of October 2026 not checked."
+    },
+    {
+      "id": "SWE-008",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "AI Sweden (with RISE and WASP WARA Media & Language)",
+      "local_actor": "AI Sweden",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-11",
+      "still_current": null,
+      "summary": "GPT-SW3, a family of Nordic-language generative models from 126M to 40B parameters built by AI Sweden and partners, was openly released in November 2023; access is now limited to European researchers on application.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ai.se/en/project/gpt-sw3",
+          "publisher": "AI Sweden",
+          "source_tier": "S1",
+          "date": "2023-11",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/ai-sweden-nlp",
+          "publisher": "NVIDIA Blog",
+          "source_tier": "S4",
+          "date": "2022-06-19",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole domestic: weights held by AI Sweden. Trained from scratch, not fine-tuned, so base_model null; Nvidia's blog says training used Berzelius (SWE-004) and Nvidia NeMo Megatron, so the compute and framework are US. Tier 5 reflects release, not evidence of broad adoption; open download has since been withdrawn."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on Hikvision/Chinese surveillance cameras in Swedish authorities returned only UK, Danish and Irish cases; no Swedish safe-city or police procurement found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power evidence surfaced; budget spent on other layers"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Outcome of Huawei's 2020 appeals against the PTS licence condition (Administrative Court in Stockholm) and any later ruling.",
+    "Did Telia, Net4Mobility and Hi3G complete Huawei/ZTE removal by the January 2025 deadline? Which vendor replaced Hi3G (Tre)'s Huawei/ZTE RAN?",
+    "Is Berzelius still in service, and what did its later Nvidia upgrade add?",
+    "Status of Brookfield's Strängnäs campus (land agreement, permits, construction start, anchor tenant) and of Microsoft's 20,000-GPU expansion.",
+    "Any Swedish government or agency partnership with OpenAI, Anthropic, Google, Mistral or others; whether any Stargate-type project is planned in Sweden (searches surfaced only Stargate Norway, reportedly suspended in April 2026).",
+    "Chinese-made CCTV (Hikvision/Dahua) use by Swedish municipalities or agencies."
+  ],
+  "searches_run": 12
+}

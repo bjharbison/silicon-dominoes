@@ -1,0 +1,206 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SDN",
+  "name": "Sudan",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T21:18:51Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SDN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Sudatel (Sudan Telecom Group)",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2005-11-24",
+      "still_current": null,
+      "summary": "China Exim Bank and Sudatel signed an MOU for a US$200m loan to buy ZTE telecom equipment; a 2011 World Bank report cited by AidData said no disbursement had occurred.",
+      "announced_value_usd": 200000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/165",
+          "publisher": "AidData (William & Mary) Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1 because AidData lists the project at pledge stage with no disbursement by 2011; whether ZTE equipment was ultimately supplied under other terms, and what ZTE share of Sudatel/Sudani's network remains today, was not established. Pre-2020; still_current unknown. AidData is a .aiddata.org research dataset, not a PRC site."
+    },
+    {
+      "id": "SDN-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Sudatel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Huawei-built fibre metropolitan network for Khartoum",
+      "reversal_reason": "commercial",
+      "date": "2006-03",
+      "still_current": null,
+      "summary": "A 2006 industry report said Sudatel's planned Huawei fibre metro network in Khartoum had poor interfacing and that Sudatel was reportedly reverting to Siemens.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://sudantribune.com/?p=14948",
+          "publisher": "Sudan Tribune (republishing Balancing Act)",
+          "source_tier": "S3",
+          "date": "2006-03-07",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reported by unnamed sources; no contract, value or final outcome given, so coded tier 2 and low confidence. Reason coded commercial (technical/product problems). Two decades old; the current vendor mix of Sudatel's Khartoum backbone is unknown."
+    },
+    {
+      "id": "SDN-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Civilians, aid groups and volunteer emergency rooms (no licensed local partner)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-04",
+      "still_current": null,
+      "summary": "After the April 2023 war began, smuggled Starlink terminals became a key unlicensed connectivity channel for Sudanese civilians, remittances and humanitarian groups while terrestrial networks were damaged or shut down.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.dabangasudan.org/en/all-news/article/starlink-set-to-stop-services-in-sudan",
+          "publisher": "Radio Dabanga",
+          "source_tier": "S3",
+          "date": "2024-05-01",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techpoint.africa/2024/05/16/groups-sudan-telco-starlink-shutdown/",
+          "publisher": "Techpoint Africa",
+          "source_tier": "S2",
+          "date": "2024-05-16",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 5 reflects de facto operational use as a substitute network during the war, not any licence or contract; terminal counts are not reported. Use by the warring parties is not established in the sources opened. Whether use continues in October 2026 was not checked."
+    },
+    {
+      "id": "SDN-004",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Ministry of Communications and Digital Transformation; Sudanese mobile operators",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Unlicensed Starlink service in Sudan",
+      "reversal_reason": "regulatory",
+      "date": "2024-04-30",
+      "still_current": null,
+      "summary": "SpaceX told Sudanese users their service would end on 30 April 2024 after operators objected and the communications ministry complained that Starlink held no licence and demanded it stop.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techpoint.africa/2024/05/16/groups-sudan-telco-starlink-shutdown/",
+          "publisher": "Techpoint Africa",
+          "source_tier": "S2",
+          "date": "2024-05-16",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.dabangasudan.org/en/all-news/article/starlink-set-to-stop-services-in-sudan",
+          "publisher": "Radio Dabanga",
+          "source_tier": "S3",
+          "date": "2024-05-01",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://pulse.internetsociety.org/en/news/over-90-groups-call-for-sudan-telco-infrastructure-restoration-amid-starlink-shutdown-concerns/",
+          "publisher": "Internet Society Pulse",
+          "source_tier": "S4",
+          "date": "2024-05-16",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded regulatory (licensing) rather than geopolitical; Dabanga notes unconfirmed allegations of government pressure. The sources do not confirm the cut-off was actually carried out, so still_current is null. Internet Society is an advocacy organisation, hence S4."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "no data-centre or AI-campus project since 2023 found in 2 searches; Sudatel's own page describes an existing Tier IV-standard data centre with no date, vendor or partner, which is not a citable new project"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "Sudan is D:5 (presumption of denial) per global layer; wartime context and no accelerator purchases surfaced incidentally"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search on AI agreements returned only South Sudan and Gulf items; no frontier-model partnership or sovereign Sudanese model found"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on safe-city/surveillance returned no Sudan-specific procurement; a Sudan Tribune hit concerned Chinese-made drones used by the RSF (weapons, out of scope) and Rest of World's African surveillance study did not name Sudan"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendors supply the RAN and core of Zain Sudan, MTN Sudan and Sudani (Sudatel) today, and has wartime reconstruction since 2023 relied on Huawei/ZTE or others?",
+    "How much operator infrastructure (switches, data centres in Khartoum) was destroyed or captured during the war, and have any operators formally exited or written down Sudan operations (e.g. MTN Group impairments)? The February 2024 nationwide outage (Sudani, MTN down; Zain forced off in River Nile and Port Sudan, per Reuters via The New Arab) was attributed by SUNA and sector sources to the RSF, which denied it.",
+    "Did SpaceX actually terminate Starlink service in Sudan after April 2024, and has the regulator since licensed Starlink or any other satellite provider?",
+    "Was the 2005 China Exim/ZTE US$200m Sudatel loan ever disbursed or replaced by another financing?",
+    "Sudan's WAICO founding membership (July 2026, global layer): has it been followed by any concrete PRC AI, cloud or data-centre project?",
+    "Any safe-city or police CCTV procurement in Khartoum or Port Sudan (Huawei, Hikvision, Dahua, ZTE) before or since April 2023."
+  ],
+  "searches_run": 12
+}

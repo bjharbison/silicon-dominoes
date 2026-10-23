@@ -1,0 +1,485 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "TZA",
+  "name": "Tanzania",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T21:25:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "TZA-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Tanzania Telecommunications Company Ltd (TTCL), backbone manager",
+      "builder": "Huawei; China International Telecommunication Construction Corporation (CITCC)",
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-09",
+      "still_current": null,
+      "summary": "Huawei and CITCC built Phase II of the National ICT Broadband Backbone (about 3,230 km) on a RMB700m China Exim concessional loan, completed 2015; a Phase III loan added Zanzibar links and an IP-MPLS layer, operational September 2016.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/23150",
+          "publisher": "AidData (William & Mary), Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "AidData records Huawei and CITCC as contractors for Phase II; Phase III contractor not confirmed in this pass. Pole prc because Huawei supplies the transmission equipment and firmware. AidData converts the RMB700m commitment to about US$133m (constant 2023 USD), not used as announced value. The 2023 Huawei extension (TZA-002) suggests the backbone remains in service, but current status was not confirmed directly, so still_current is null."
+    },
+    {
+      "id": "TZA-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Tanzania Telecommunications Company Ltd (TTCL)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-04",
+      "still_current": null,
+      "summary": "TTCL signed a US$15.9m agreement with Huawei's local subsidiary to extend the national broadband backbone by 1,520 km to 23 more districts within six months.",
+      "announced_value_usd": 15900000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomreviewafrica.com/articles/telecom-vendor/3355-ttcl-signs-15-9m-agreement-for-broadband-infrastructure-extension-in-tanzania",
+          "publisher": "Telecom Review Africa",
+          "source_tier": "S2",
+          "date": "2023-04-24",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/telecom/1904-44441-tanzania-ttcl-inks-a-15-9-mln-agreement-for-broadband-infrastructure-extension",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2023-04-19",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://tanzaniainvest.com/?p=22027",
+          "publisher": "TanzaniaInvest",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Financing for the extension not stated in the opened source. Completion not confirmed."
+    },
+    {
+      "id": "TZA-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Vodacom Tanzania",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025",
+      "still_current": null,
+      "summary": "Vodacom Tanzania is replacing its Nokia radio access network with Huawei equipment in a major rip-and-replace; a US$100m+ modernisation had upgraded over 1,000 sites by September 2025, with Huawei named as supplier.",
+      "announced_value_usd": 100000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telcotitans.com/vodafonewatch/vodacom-tanzania-swaps-nokia-for-huawei-in-ran-overhaul/9487.article",
+          "publisher": "TelcoTitans (Vodafonewatch)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techafricanews.com/2025/09/16/vodacom-tanzania-commits-100m-to-modernize-networks-and-drive-digital-inclusion/",
+          "publisher": "TechAfrica News",
+          "source_tier": "S2",
+          "date": "2025-09-16",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.techinafrica.com/vodacom-tanzania-marks-25-years-with-100m-tech-overhaul-to-boost-connectivity-and-digital-inclusion/",
+          "publisher": "Tech In Africa",
+          "source_tier": "S3",
+          "date": "2025-09-25",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Vodacom group CEO attributed the swap to a more attractive Huawei offer (commercial). The TelcoTitans article is paywalled and undated; the two September 2025 reports name Huawei only for energy-saving radio technology and do not state Huawei supplies the whole $100m programme, so the two claims are linked by inference and corroborated is left false. Tier 4 because rollout is under way (1,000+ sites), not complete."
+    },
+    {
+      "id": "TZA-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Vodacom Tanzania",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Nokia radio access network at Vodacom Tanzania",
+      "reversal_reason": "commercial",
+      "date": "2025",
+      "still_current": null,
+      "summary": "Vodacom Tanzania's Nokia radio access network equipment is being removed and replaced by Huawei equipment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telcotitans.com/vodafonewatch/vodacom-tanzania-swaps-nokia-for-huawei-in-ran-overhaul/9487.article",
+          "publisher": "TelcoTitans (Vodafonewatch)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reversal of installed Nokia (Finland) RAN, so tier 5 is the tier of the thing reversed. Coded commercial because the stated driver is Huawei's price offer, not security policy; it does not move the map. Date approximate: the article is undated, listed among items from 2025."
+    },
+    {
+      "id": "TZA-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Tigo Tanzania (now Yas, Axian group)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-02-15",
+      "still_current": null,
+      "summary": "Tigo Tanzania and Ericsson announced a multi-year deal: Ericsson upgrades the 4G radio and microwave network, supplies 5G radios (live in Dar es Salaam, Dodoma, Zanzibar) and AI optimisation software.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g-and-beyond/tigo-tanzania-and-ericsson-launch-5g-and-upgrade-existing-network/d/d-id/783251",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2023-02-15",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/14553-tigo-tanzania-and-ericsson-announce-4g-and-5g-partnership.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2023-02-16",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so pole third. Value undisclosed; core network vendor not stated. Tigo Tanzania was rebranded Yas under Madagascar's Axian group; whether the Ericsson deal continues post-rebrand was not checked."
+    },
+    {
+      "id": "TZA-006",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Tanzania Telecommunications Company Ltd (TTCL)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-11",
+      "still_current": null,
+      "summary": "TTCL signed a ten-year partnership with Huawei to launch a 4.5G network; Huawei has also served as the government's official ICT adviser under a 2015 cooperation agreement.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/telecom/0911-35792-tanzania-ttcl-partners-with-huawei-to-launch-4-5g",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2016-11-09",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/tanzania-makes-bid-for-african-leadership-with-94m-site/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2015-06-24",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 because it is a long-term partnership with no value or rollout terms disclosed. Pre-2020 and current status unconfirmed, so still_current is null. DCD corroborates the Huawei adviser role, Ecofin the 4.5G partnership."
+    },
+    {
+      "id": "TZA-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Tanzania (Ministry of Communications) / TTCL",
+      "local_actor": "National Internet Data Centre, Dar es Salaam",
+      "builder": null,
+      "financier": "Export-Import Bank of China (NICTBB Phase III loan, per AidData)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-09",
+      "still_current": null,
+      "summary": "The government announced a US$93.6m national data centre with Huawei as ICT adviser and bandwidth provider; AidData records a China Exim-funded NICTBB Phase III data centre in Dar es Salaam, operational 2016.",
+      "announced_value_usd": 93600000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/tanzania-makes-bid-for-african-leadership-with-94m-site/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2015-06-24",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/23150",
+          "publisher": "AidData (William & Mary), Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is the Tanzanian state, so domestic; Huawei's role as builder or IT-equipment supplier is likely but not stated in the opened sources, so builder is null. Linking DCD's US$93.6m centre to AidData's Phase III data centre is an inference; the China Exim financier rests on AidData only. If Huawei IT equipment runs it, a separate prc equipment finding would apply."
+    },
+    {
+      "id": "TZA-008",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Raxio Group",
+      "local_actor": "Raxio TZ1, Dar es Salaam",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-14",
+      "still_current": null,
+      "summary": "Raxio is building TZ1, a 6 MW, 800-rack carrier-neutral Tier III colocation facility outside Dar es Salaam, planned to launch in 2026; backers Meridiam and Roha raised its funding pool to US$380m.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://w.media/raxios-tz1-to-add-6-mw-and-800-racks-to-tanzanias-data-center-market/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2026-07-14",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/raxio-invests-in-building-tanzania-data-center/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-03-23",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: Raxio is a pan-African operator whose headquarters and controlling shareholder were not established; its backers are Roha (an Africa-focused US investment firm) and Meridiam (French), so control is foreign but could be us or third. Tier 2 because launch is planned but construction status and opening are not confirmed; originally slated for 2023, so the project has slipped."
+    },
+    {
+      "id": "TZA-009",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Tanzania (Ministry of Communication and Information Technology)",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09-11",
+      "still_current": null,
+      "summary": "The communications minister said Tanzania is preparing to establish AI data centres and is assessing required infrastructure; no site, budget, partner or timeline was given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dailynews.co.tz/tanzania-plans-ai-data-centres/",
+          "publisher": "Daily News (Tanzania Standard Newspapers, state-owned)",
+          "source_tier": "S4",
+          "date": "2026-09-11",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "State-owned newspaper relaying a minister's statement, so S4. Controller provisionally domestic as a government plan; the actual builder, operator and equipment stack are unknown."
+    },
+    {
+      "id": "TZA-010",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Communication and Information Technology",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07",
+      "still_current": null,
+      "summary": "The communications ministry signed an MOU with Huawei Technologies Tanzania in Shanghai covering AI application, ICT infrastructure, digital public service infrastructure, local skills and device assembly and repair.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://tanzaniainvest.com/telecoms/huawei-digital-economy-mou",
+          "publisher": "TanzaniaInvest",
+          "source_tier": "S3",
+          "date": "2026-07-26",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Signed in Shanghai around the WAICO founding period (Tanzania acceded 31 July 2026 per global layer), which suggests a diplomatic package, but no bundle link is documented. Non-binding MOU; no projects or values named. A June 2025 Citizen headline says Huawei committed to modernising public services (body not readable)."
+    },
+    {
+      "id": "TZA-011",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Government of Tanzania (security agencies)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05-15",
+      "still_current": null,
+      "summary": "Tanzania plans to install 6,500 AI-equipped security cameras across Dar es Salaam, Dodoma, Arusha and Mwanza in commercial areas, streets and public gathering sites; no vendor, value or timeline was reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://thecitizen.co.tz/tanzania/news/national/tanzania-plans-to-install-6-500-security-cameras-in-four-major-cities-4623712",
+          "publisher": "The Citizen (Tanzania)",
+          "source_tier": "S3",
+          "date": "2024-05-15",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null because no vendor is named; only the article summary was readable. Whether Huawei, Hikvision, Dahua or another supplier is involved is a research gap."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks, facilities and applications; no accelerator purchases or export licences surfaced incidentally"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search on government AI partnerships found only the July 2026 Huawei MOU (coded under applications) and AI-data-centre plans; no frontier-model partnership or sovereign Tanzanian model found"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Date, scope and site count of Vodacom Tanzania's Nokia-to-Huawei RAN swap (TelcoTitans article paywalled and undated); does Huawei also supply Vodacom's core?",
+    "RAN/core vendors for Airtel Tanzania, Halotel (Viettel) and TTCL mobile; whether Yas (ex-Tigo) kept Ericsson after the Axian rebrand.",
+    "Contractor, IT-equipment vendor and current operator of the National Internet Data Centre; whether it hosts government cloud on Huawei stack.",
+    "Vendor and status of the 6,500-camera AI surveillance plan (2024) and any earlier Dar es Salaam police CCTV systems.",
+    "Raxio TZ1: controlling shareholder/headquarters (sets pole), construction status and opening; IFC US$100m loan (2024, ippmedia headline only).",
+    "Wing Africa US$50m data centre launched in Dar es Salaam March 2025 (The Citizen): owner nationality, capacity, status.",
+    "What, if any, projects followed the July 2026 Huawei MOU and the June 2025 Huawei public-services commitment; any links to WAICO accession.",
+    "Did the 2023 TTCL-Huawei backbone extension complete, and who financed it?",
+    "Halotel (Viettel, Vietnam) network vendor and any 2G/3G/4G build by Huawei or ZTE."
+  ],
+  "searches_run": 11
+}

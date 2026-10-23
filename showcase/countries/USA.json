@@ -1,0 +1,336 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "USA",
+  "name": "United States",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "USA-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "FCC Secure and Trusted Communications Networks Reimbursement Program recipients (small/rural carriers)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Installed Huawei and ZTE equipment in small US carriers' networks (FCC Covered List)",
+      "reversal_reason": "geopolitical",
+      "date": "2026-06",
+      "still_current": true,
+      "summary": "FCC's rip-and-replace programme reimburses small carriers to remove Huawei and ZTE gear; by June 2026, 53 of 126 funded projects had finished removal, up from 13 in December 2025, after Treasury borrowing fully funded it in 2025.",
+      "announced_value_usd": 4980000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://lightreading.com/regulatory-politics/fcc-rip-and-replace-picks-up-pace",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2026-06-18",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://broadbandbreakfast.com/nearly-half-of-rip-and-replace-projects-done-fcc-tells-congress/",
+          "publisher": "Broadband Breakfast",
+          "source_tier": "S2",
+          "date": "2026-06-17",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://docs.fcc.gov/public/attachments/DA-26-906A1.pdf",
+          "publisher": "FCC Wireline Competition Bureau (Public Notice DA 26-906)",
+          "source_tier": "S1",
+          "date": "2026-08-27",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.benton.org/headlines/fcc-announces-availability-additional-funding-rip-and-replace-program",
+          "publisher": "Benton Institute for Broadband & Society",
+          "source_tier": "S2",
+          "date": "2025-04-16",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 5 is the tier of the thing reversed (operational network equipment). announced_value_usd is the sum of the US$1.9bn 2021 appropriation and the US$3.08bn Treasury borrowing authorised in December 2024, as stated separately in the sources; it is not a verified spend. still_current true because the FCC's August 2026 notice shows removal work and 90-day status reporting continuing, with some extensions beyond May 2026. The US is treated as a pole on the map; this records a US decision against the PRC stack rather than US adoption."
+    },
+    {
+      "id": "USA-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE; Hytera; Hikvision; Dahua",
+      "local_actor": "Federal Communications Commission",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": true,
+      "reversal_of": "New FCC equipment authorizations (US import/marketing approval) for Covered List telecom and video-surveillance gear",
+      "reversal_reason": "geopolitical",
+      "date": "2022-11-25",
+      "still_current": true,
+      "summary": "FCC unanimously barred new equipment authorizations for Huawei, ZTE, Hytera, Hikvision and Dahua gear, blocking new models from US import or sale; previously authorized devices were not affected.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2022/november/fcc-announces-authorization-ban/",
+          "publisher": "ASIS Security Management",
+          "source_tier": "S2",
+          "date": "2022-11-28",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mayerbrown.com/en/perspectives-events/publications/2022/12/fcc-bans-approval-of-new-telecommunications-equipment-for-entities-on-the-covered-list",
+          "publisher": "Mayer Brown",
+          "source_tier": "S2",
+          "date": "2022-12-21",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://docs.fcc.gov/public/attachments/DOC-415068A1.txt",
+          "publisher": "FCC (press release)",
+          "source_tier": "S1",
+          "date": "2025-10-07",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Coded tier 4 because what is reversed is a licence-type approval (equipment authorization) for market access. Spans telecom (networks) and video surveillance (applications); filed under networks. still_current true: the FCC's October 2025 release treats the Covered List authorization bar as in force and announces a vote to extend it to previously authorized devices and to components; whether that order was adopted was not confirmed in this pass."
+    },
+    {
+      "id": "USA-003",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei; ZTE; Hytera; Hikvision; Dahua",
+      "local_actor": "US federal agencies and contractors (FAR, NDAA FY2019 s.889)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Federal procurement of, and contracting with users of, covered telecom and video-surveillance equipment",
+      "reversal_reason": "geopolitical",
+      "date": "2020-08-13",
+      "still_current": null,
+      "summary": "Under NDAA FY2019 section 889, agencies were barred from buying covered Huawei, ZTE, Hytera, Hikvision and Dahua equipment from August 2019, and from August 2020 from contracting with any firm using it substantially.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2020-07-14/html/2020-15293.htm",
+          "publisher": "Federal Register (DoD/GSA/NASA FAR interim rule)",
+          "source_tier": "S1",
+          "date": "2020-07-14",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.securitysales.com/news/federal-ban-chinese-video-telecom/99650/",
+          "publisher": "Security Sales & Integration",
+          "source_tier": "S2",
+          "date": "2019-08-19",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 3 is the tier of what is reversed (federal procurement contracts). Dated to the broader part (a)(1)(B) effective date; the purchase ban took effect 13 Aug 2019. Covers telecom as well as surveillance; filed under applications because the Hikvision/Dahua surveillance element is distinctive. Current status not re-checked in this run, so still_current is null, though no repeal was seen."
+    },
+    {
+      "id": "USA-004",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "PRC-linked connected-vehicle hardware and software suppliers (unnamed)",
+      "local_actor": "US Department of Commerce, BIS Office of Information and Communications Technology and Services",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Import and sale of connected vehicles and vehicle connectivity/automated-driving hardware and software linked to China or Russia",
+      "reversal_reason": "geopolitical",
+      "date": "2025-01-14",
+      "still_current": null,
+      "summary": "Commerce finalised an ICTS rule barring PRC- and Russia-linked vehicle connectivity and automated-driving software from model year 2027 and connectivity hardware from model year 2030, effective March 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.bis.gov/press-release/commerce-finalizes-rule-secure-connected-vehicle-supply-chains-foreign-adversary-threats",
+          "publisher": "US Department of Commerce, BIS",
+          "source_tier": "S1",
+          "date": "2025-01-14",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sidley.com/en/insights/newsupdates/2025/01/us-department-of-commerce-finalizes-connected-vehicles-supply-chain-restrictions",
+          "publisher": "Sidley Austin",
+          "source_tier": "S2",
+          "date": "2025-01-16",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "A prospective market exclusion rather than removal of an installed base; coded tier 3 (commercial sales and imports) as the tier of what is foreclosed, a judgment call. Layer applications because the rule targets vehicle software and connectivity systems; it also touches networks. Covers Russia as well as the PRC; pole prc reflects the main target. Commercial vehicles were left to a separate rulemaking not checked here."
+    },
+    {
+      "id": "USA-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "ByteDance (prior controller of TikTok US)",
+      "local_actor": "TikTok USDS Joint Venture LLC (Oracle, Silver Lake, MGX managing investors)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "ByteDance ownership and control of TikTok's US operations",
+      "reversal_reason": "geopolitical",
+      "date": "2026-01-22",
+      "still_current": null,
+      "summary": "TikTok closed a divestiture creating a US joint venture: Oracle, Silver Lake and MGX hold 15% each, ByteDance keeps 19.9%, Oracle stores US user data, and a licensed algorithm is retrained on US data.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://axios.com/2026/01/23/tiktok-deal-trump-app-ban",
+          "publisher": "Axios",
+          "source_tier": "S3",
+          "date": "2026-01-23",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.gpb.org/news/2026/01/22/tiktok-finalizes-deal-form-new-american-entity",
+          "publisher": "Associated Press (via Georgia Public Broadcasting)",
+          "source_tier": "S3",
+          "date": "2026-01-22",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mactrast.com/2025/12/tiktok-u-s-sale-to-oracle-led-group-set-to-close-in-january/",
+          "publisher": "MacTrast",
+          "source_tier": "S3",
+          "date": "2025-12",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Partial reversal: ByteDance keeps a 19.9% stake and licenses the recommendation algorithm, so some PRC-origin dependency remains; AP notes uncertainty over how the licence fits the law's bar on algorithm cooperation. MGX is Emirati, so the new controller is not purely US. Not corroborated under the rule because no S1/S2 source was opened; MacTrast relays Axios and is not independent. Reason coded geopolitical (national-security divestiture law)."
+    },
+    {
+      "id": "USA-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Oracle (owner per Epoch AI); Crusoe (developer)",
+      "local_actor": "OpenAI (Stargate tenant)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09",
+      "still_current": true,
+      "summary": "Stargate Abilene, Texas, a planned 1.2 GW eight-building campus for Oracle and OpenAI on Nvidia GB200-class GPUs, had two buildings live in September 2025; by July 2026 about 421 MW was estimated operational.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/openai-and-oracle-to-deploy-450000-gb200-gpus-at-stargate-abilene-data-center/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-10-15",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/crusoe-tops-out-final-building-at-openai-stargate-data-center-campus-in-abilene-texas",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://epoch.ai/data/ai-data-centers/directory/openai-stargate-abilene",
+          "publisher": "Epoch AI (data-centre directory)",
+          "source_tier": "S2",
+          "date": "2026-07-28",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "All parties (Oracle, Crusoe, OpenAI, Nvidia) are US firms, so pole domestic; the exact owner-operator split between Oracle and Crusoe differs by source. The 421 MW figure is Epoch AI's satellite-based estimate, not a company disclosure. still_current true on Epoch's July 2026 operational status. Included as a domestic flagship; the US is treated as a pole on the map."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "the US is treated as a pole on the map, not scored; the run focused on US reversals against the PRC stack, and US chip-export posture is in the global layer"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "the US is treated as a pole on the map, not scored; US restrictions on PRC models (DeepSeek bans, NDAA FY2026 s.1532, DHS FASCSA order) are already in the global PRC-model-restrictions layer and were not recoded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "the US is treated as a pole on the map, not scored; domestic AI power supply was out of scope for this pole-focused pass"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Did the FCC adopt the October 2025 order closing the previously-authorized-device and component loopholes for Covered List equipment, and has it been applied to Hikvision or Dahua models?",
+    "Rip-and-replace completion count after the September 2026 status updates, and how many recipients missed their extended deadlines.",
+    "Primary S1 source (court or Treasury/CFIUS, or company filing) for the TikTok USDS Joint Venture terms, and how the ByteDance algorithm licence is reconciled with the divestiture law.",
+    "Has BIS issued the separate connected-vehicle rule for commercial vehicles (trucks, buses), and have any specific authorizations been granted under the passenger-vehicle rule?",
+    "Section 889 current status and any waivers in force as of 2026.",
+    "Commerce ICTS actions on PRC drones (DJI) and FCC Covered List additions since 2025 were not researched in this pass."
+  ],
+  "searches_run": 10
+}

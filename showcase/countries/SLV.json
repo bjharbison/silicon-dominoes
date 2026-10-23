@@ -1,0 +1,372 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SLV",
+  "name": "El Salvador",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SLV-001",
+      "layer": "cloud",
+      "pole": "us",
+      "controller": "Google (Google Cloud / Google Distributed Cloud)",
+      "local_actor": "Government of El Salvador (Legislative Assembly; state institutions via affiliation agreements)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-09-05",
+      "still_current": null,
+      "summary": "A seven-year Google Cloud alliance to digitise government, health and education on a Google Distributed Cloud instance was formalised by the Ley General de Modernización Digital del Estado, committing at least US$500m to Google contracts.",
+      "announced_value_usd": 500000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/latin-america/google-cloud-moves-to-cover-el-salvador/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2023-08-30",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://bnamericas.com/en/news/google-and-el-salvador-sign-cloud-agreement",
+          "publisher": "BNamericas",
+          "source_tier": "S2",
+          "date": "2023-08-31",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://diario.elmundo.sv/politica/aprueban-ley-de-modernizacion-digital-del-estado-contratos-con-google-costaran-al-menos-500-millones",
+          "publisher": "Diario El Mundo (El Salvador)",
+          "source_tier": "S3",
+          "date": "2023-09-05",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.revistaeyn.com/centroamericaymundo/google-se-asegura-contrato-de-por-al-menos-us-500-millones-para-digitalizar-al-estado-salvadoreno-DF15231406",
+          "publisher": "Estrategia & Negocios",
+          "source_tier": "S3",
+          "date": "2023-09-06",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.intelligentcio.com/latam/2023/10/30/google-partners-with-el-salvador-to-make-it-a-tech-hub-in-central-america/",
+          "publisher": "Intelligent CIO LATAM",
+          "source_tier": "S2",
+          "date": "2023-10-30",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 3 because a statute formalises the alliance and fixes a minimum US$500m spend with Google as named counterparty; the law text itself (S1) was not opened. Google Distributed Cloud runs Google-controlled infrastructure on premises, so pole us. Actual spend, GDC deployment status and still_current not confirmed; Spanish press reported the Foreign Ministry classified the agreement text as reserved (headline seen only)."
+    },
+    {
+      "id": "SLV-002",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "National Bitcoin Office (ONBTC) / National AI Lab",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07",
+      "still_current": null,
+      "summary": "El Salvador's government, via the National Bitcoin Office, announced what was billed as the first sovereign purchase of Nvidia B300 GPUs, facilitated by Hydra Host, to be housed at a National AI Lab; quantity and value undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/el-salvador-becomes-first-country-to-receive-sovereign-quota-of-nvidia-b300-chips/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07-04",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 3 treats the announced purchase as a binding buy with Nvidia (via intermediary Hydra Host, US) as counterparty; no quantity, value, export-licence or delivery confirmation found. Single opened source. Whether the National AI Lab is operational is unknown."
+    },
+    {
+      "id": "SLV-003",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "National Bitcoin Office (ONBTC), Government of El Salvador",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-04-21",
+      "still_current": null,
+      "summary": "The government signed a letter of intent with Nvidia on sovereign AI: Nvidia to provide tools and expertise, El Salvador to build domestic AI infrastructure and train developers and officials, with weather-forecasting as an example use.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://cointelegraph.com/news/el-salvador-nvidia-boost-ai-national-development",
+          "publisher": "Cointelegraph",
+          "source_tier": "S3",
+          "date": "2025-04-21",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.cryptopolitan.com/el-salvador-signs-ai-loi-with-nvidia/",
+          "publisher": "Cryptopolitan",
+          "source_tier": "S3",
+          "date": "2025-04-21",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Non-binding LOI, tier 1. Coded silicon because Nvidia is the counterparty and the LOI preceded the B300 purchase (SLV-002); it also covers models/skills. Both sources are crypto-focused outlets relaying an ONBTC post on X; no S1/S2 source opened."
+    },
+    {
+      "id": "SLV-004",
+      "layer": "models",
+      "pole": "us",
+      "controller": "xAI",
+      "local_actor": "Government of El Salvador (public school system)",
+      "builder": null,
+      "financier": null,
+      "base_model": "Grok",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12-11",
+      "still_current": null,
+      "summary": "xAI and the government announced a two-year programme deploying Grok as an AI tutor across more than 5,000 public schools and over a million students, co-developing curricula, datasets and safety frameworks.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://x.ai/news/el-salvador-partnership",
+          "publisher": "xAI",
+          "source_tier": "S1",
+          "date": "2025-12-11",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.standard-journal.com/ap/business/article_b7ab80c7-a41a-56fc-ab64-e3b054d1cdd1.html",
+          "publisher": "Associated Press (via Standard-Journal)",
+          "source_tier": "S3",
+          "date": "2025-12",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://babl.ai/xai-and-el-salvador-launch-national-ai-tutoring-initiative-for-public-schools/",
+          "publisher": "BABL AI",
+          "source_tier": "S2",
+          "date": "2025-12-17",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 (announced national programme, no contract value or counterparty terms published). Grok is accessed as xAI's service, so pole us. Hosting location and rollout status as of Oct 2026 not confirmed. xAI page treated as S1 company announcement."
+    },
+    {
+      "id": "SLV-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Secretaría de Innovación de la Presidencia (Government of El Salvador)",
+      "local_actor": "Secretaría de Innovación",
+      "builder": null,
+      "financier": "Inter-American Development Bank (IDB) — US$60m loan programme",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-22",
+      "still_current": null,
+      "summary": "A Tier III-certified state data centre (Centro de Datos del Estado) to centralise government data received a US$9m budget allocation, within an IDB-financed US$60m programme; a consultancy is to design and adapt the building.",
+      "announced_value_usd": 9000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/?p=282412",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2025-07-22",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 2: budget reform and design stage, no construction or equipment vendor reported. Owner-operator is the state, so domestic; IDB is lender only. That the US$9m comes from the IDB loan is implied, not stated."
+    },
+    {
+      "id": "SLV-006",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Education (MINED)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-03-15",
+      "still_current": null,
+      "summary": "The Education Ministry and Huawei El Salvador signed an agreement under which Huawei donates IdeaHub interactive smart screens to an unspecified number of public schools.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://elsalvadorinenglish.com/2024/03/19/huawei-and-el-salvador-sign-agreement-to-benefit-schools/?amp=1",
+          "publisher": "El Salvador in English",
+          "source_tier": "S3",
+          "date": "2024-03-19",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded tier 2 as a donation agreement of unquantified scale. Huawei supplies the device firmware, so pole prc. Separate 2023–24 reporting shows Huawei Seeds for the Future programmes and a vice-minister's August 2024 Shenzhen visit seeking energy and technology cooperation, but no further signed agreement was found."
+    },
+    {
+      "id": "SLV-007",
+      "layer": "applications",
+      "pole": null,
+      "controller": "Radio Comunicaciones S.A. de C.V. (Radiocomp) – Bolide consortium",
+      "local_actor": "Unidad del Programa BCIE-2244 / Ministry of Public Works (MOPT) monitoring centre",
+      "builder": null,
+      "financier": "Central American Bank for Economic Integration (CABEI/BCIE) loan",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-13",
+      "still_current": null,
+      "summary": "A US$19.2m contract for nationwide public-transport video surveillance (four cameras per bus, about 5,000 bus-stop cameras, GPS, panic buttons, MOPT monitoring centre) was awarded to a Radiocomp–Bolide consortium, financed by a CABEI loan.",
+      "announced_value_usd": 19200000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://diario.elmundo.sv/politica/adjudican-por-19-2-millones-sistema-de-videovigilancia-para-el-sistema-de-transporte",
+          "publisher": "Diario El Mundo (El Salvador)",
+          "source_tier": "S3",
+          "date": "2026-02-17",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the camera/platform manufacturer is not named, and the nationality of 'Bolide' is not stated in the source. Integrator Radiocomp appears to be Salvadoran (S.A. de C.V.). Award notice on Comprasal (S1) not opened."
+    },
+    {
+      "id": "SLV-008",
+      "layer": "applications",
+      "pole": null,
+      "controller": "Alcaldía de San Salvador (vendor not named)",
+      "local_actor": "Alcaldía de San Salvador (Sivar Seguro)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-09-18",
+      "still_current": null,
+      "summary": "San Salvador's city government launched the Sivar Seguro video-surveillance network of 500 cameras plus mobile camera towers, costing US$6.7m and linked to municipal agents, police and military.",
+      "announced_value_usd": 6700000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://elsalvadorinenglish.com/2023/09/19/san-salvador-city-hall-inaugurates-sivar-seguro-surveillance-system/",
+          "publisher": "El Salvador in English",
+          "source_tier": "S3",
+          "date": "2023-09-19",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null because the camera and VMS vendor is not identified in the source; the municipality operates it. Whether Chinese-made cameras (Hikvision/Dahua) are used is an open question."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "null",
+      "null_reason": "three searches: Tigo launched 5G in Oct 2025 and Telefónica won AWS spectrum, but no source named the RAN/core vendor of Tigo, Claro or Digicel, and no Huawei/ZTE ban or exclusion was found"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendors supply the RAN and core of Tigo (Millicom), Claro (América Móvil) and Digicel El Salvador, and which vendor built Tigo's 5G network launched October 2025?",
+    "Status of Google Distributed Cloud deployment and actual spend under the Ley General de Modernización Digital del Estado (min US$500m); the agreement text was reportedly classified by the Foreign Ministry.",
+    "Quantity, value, export-licence status and delivery of the Nvidia B300 purchase; is the National AI Lab operational and who operates it (Hydra Host role)?",
+    "Rollout status of the xAI/Grok school tutoring programme as of late 2026 and where the service is hosted.",
+    "Camera/VMS manufacturers for the CABEI-financed public-transport surveillance award (Radiocomp–Bolide, Feb 2026) and San Salvador's Sivar Seguro network; any Hikvision/Dahua/Huawei components; national police/prison (CECOT) surveillance vendors.",
+    "Bridge4Digital's planned AI operations hub (DPL News, July 2025): company nationality, size and whether anything was signed.",
+    "Any Huawei agreements following the vice-foreign-minister's August 2024 Shenzhen visits (energy and technology)."
+  ],
+  "searches_run": 11
+}

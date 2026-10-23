@@ -1,0 +1,568 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SRB",
+  "name": "Serbia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T21:30:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SRB-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Interior (MUP)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017",
+      "still_current": true,
+      "summary": "Huawei has supplied the Interior Ministry's Safe City video-surveillance system since a 2017 partnership, covering Belgrade, Novi Sad and Nis; leaked files show a 2024 order expanding its private eLTE police network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rferl.org/a/exclusive-safe-city-china-surveillance-huawei-facial-recognition/33501155.html",
+          "publisher": "Radio Free Europe/Radio Liberty",
+          "source_tier": "S4",
+          "date": "2025-08-13",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecoi.net/en/document/2082534.html",
+          "publisher": "Radio Free Europe/Radio Liberty (via ecoi.net)",
+          "source_tier": "S4",
+          "date": "2022-11-22",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://en.ilsole24ore.com/art/chinese-video-surveillance-and-cctv-cameras-are-a-key-factor-in-the-eus-expansion-into-the-balkans-AJyD4zc",
+          "publisher": "Il Sole 24 Ore",
+          "source_tier": "S3",
+          "date": "2026-08-03",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://n1info.rs/english/news/a456797-Belgarde-will-have-1000-new-survillance-cameras/",
+          "publisher": "N1 Serbia",
+          "source_tier": "S3",
+          "date": "2019-02-01",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.slobodnaevropa.org/a/srbija-5g-mreza-sad-amerika-telekom-kina-huawei/33815930.html",
+          "publisher": "Radio Slobodna Evropa (RFE/RL Serbian service)",
+          "source_tier": "S4",
+          "date": "2026-07-28",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 because cameras have been deployed since 2019 and the system was expanded in 2024. Not corroborated under the spec: the only opened S1/S2-grade evidence is absent; opened S3 sources are Il Sole 24 Ore and N1 (which in 2019 only said the cameras were 'believed' to be Huawei). Authorities say facial recognition is not activated for lack of a legal basis. The leaked 2024 order lists a discounted price of about US$1.2m, not coded as a value because it is one order, not the programme. RFE/RL is tiered S4 here because it is funded by the US government (USAGM), applying the 'state-affiliated outlets of any government' rule strictly; a reviewer may re-tier it S3."
+    },
+    {
+      "id": "SRB-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telekom Srbija",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017",
+      "still_current": null,
+      "summary": "State-majority Telekom Srbija signed a strategic broadband agreement with Huawei in 2017 and relied on Huawei equipment in earlier mobile network generations, according to RFE/RL.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.slobodnaevropa.org/a/srbija-5g-mreza-sad-amerika-telekom-kina-huawei/33815930.html",
+          "publisher": "Radio Slobodna Evropa (RFE/RL Serbian service)",
+          "source_tier": "S4",
+          "date": "2026-07-28",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://n1info.rs/english/news/a652949-ECFR-Serbias-5G-deal-with-Washington-The-art-of-muddling-through/",
+          "publisher": "N1 Serbia (relaying ECFR analysis)",
+          "source_tier": "S3",
+          "date": "2020",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 reflects installed legacy equipment; the share of Huawei in Telekom Srbija's current 2G-4G RAN and core was not found, nor whether any of it is being swapped out. ECFR (relayed by N1, 2020) also implies Huawei supplied Telekom Srbija. RFE/RL is tiered S4 here because it is funded by the US government (USAGM), applying the 'state-affiliated outlets of any government' rule strictly; a reviewer may re-tier it S3."
+    },
+    {
+      "id": "SRB-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson and Nokia",
+      "local_actor": "Telekom Srbija, Yettel Serbia, A1 Serbia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12",
+      "still_current": true,
+      "summary": "All three operators launched commercial 5G in December 2025. Telekom Srbija uses Ericsson and Nokia equipment, Yettel builds with Ericsson, and A1 uses Nokia and says it never used Chinese RAN equipment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.slobodnaevropa.org/a/srbija-5g-mreza-sad-amerika-telekom-kina-huawei/33815930.html",
+          "publisher": "Radio Slobodna Evropa (RFE/RL Serbian service)",
+          "source_tier": "S4",
+          "date": "2026-07-28",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-business/operator-news/20227-telekom-srbija-secures-50m-exim-loan-for-serbia-5g-rollout.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-05-11",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Vendor attributions rest only on operators' replies to RFE/RL (S4 under the strict rule); Developing Telecoms confirms only the December 2025 launch. Coded third because Ericsson (Sweden) and Nokia (Finland) are the equipment controllers. Whether Huawei/ZTE supply any 5G core is not stated. RFE/RL is tiered S4 here because it is funded by the US government (USAGM), applying the 'state-affiliated outlets of any government' rule strictly; a reviewer may re-tier it S3."
+    },
+    {
+      "id": "SRB-004",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Unnamed US equipment and software vendors (reportedly Cisco and Juniper)",
+      "local_actor": "Telekom Srbija",
+      "builder": null,
+      "financier": "Export-Import Bank of the United States",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-08",
+      "still_current": null,
+      "summary": "US EXIM Bank gave final approval to a US$50m loan to Telekom Srbija to buy 5G network equipment and services from US technology companies, following a preliminary approval in December 2024.",
+      "announced_value_usd": 50000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://mts.rs/About-Telekom/Media-center/a130115-Telekom-Srbija-secures-financing-from-U.S.-EXIM-bank-to-speed-up-5G-network-development.html",
+          "publisher": "Telekom Srbija (company release)",
+          "source_tier": "S1",
+          "date": "2026-05-08",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-business/operator-news/20227-telekom-srbija-secures-50m-exim-loan-for-serbia-5g-rollout.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-05-11",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://txfnews.com/news/73750/US-Ex-Im-approves-loan-to-Telekom-Srbija-for-5G-expansion",
+          "publisher": "TXF News",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://www.slobodnaevropa.org/a/srbija-5g-mreza-sad-amerika-telekom-kina-huawei/33815930.html",
+          "publisher": "Radio Slobodna Evropa (RFE/RL Serbian service)",
+          "source_tier": "S4",
+          "date": "2026-07-28",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4 as financing closed (Telekom Srbija release and Developing Telecoms both report it secured). Vendor names Cisco and Juniper come only from Telekom Srbija's statement to RFE/RL; Telekom says the loan carries no restrictive clauses. Likely core/IP equipment rather than RAN (inference)."
+    },
+    {
+      "id": "SRB-005",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "US Government",
+      "local_actor": "Government of Serbia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-09-04",
+      "still_current": null,
+      "summary": "In the September 2020 White House economic-normalisation commitments, Serbia pledged to bar 5G equipment from untrusted vendors and remove any installed; a July 2026 US-Serbia strategic-dialogue statement again stressed trusted 5G suppliers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://n1info.rs/english/news/a652949-ECFR-Serbias-5G-deal-with-Washington-The-art-of-muddling-through/",
+          "publisher": "N1 Serbia (relaying ECFR analysis)",
+          "source_tier": "S3",
+          "date": "2020",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://seenews.com/news/us-to-sign-secure-5g-infrastructure-mou-with-serbia-govt-official-714119",
+          "publisher": "SeeNews",
+          "source_tier": "S2",
+          "date": "2020-09-18",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.slobodnaevropa.org/a/srbija-5g-mreza-sad-amerika-telekom-kina-huawei/33815930.html",
+          "publisher": "Radio Slobodna Evropa (RFE/RL Serbian service)",
+          "source_tier": "S4",
+          "date": "2026-07-28",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Non-binding political commitment, so tier 1. ECFR predicted Serbia would not act on it; Serbia has not joined the Clean Network initiative and its ministry says vendor choice is the operators' business decision, with a national 5G risk assessment under way. Whether the separate bilateral 5G MoU flagged by SeeNews in September 2020 was ever signed was not confirmed."
+    },
+    {
+      "id": "SRB-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Office for IT and eGovernment (Government of Serbia)",
+      "local_actor": "State Data Centre, Kragujevac",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-12-06",
+      "still_current": true,
+      "summary": "The state-owned Kragujevac State Data Centre, about 14,000 sqm across two Tier IV sites, hosts state data, the National AI Platform and commercial tenants; its new modules 3 and 4 opened in April 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.srbija.gov.rs/vest/en/182080/national-platform-for-artificial-intelligence-launched.php",
+          "publisher": "Government of Serbia",
+          "source_tier": "S1",
+          "date": "2021-12-06",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/serbian-govt-signs-contact-with-eviden-for-50m-supercomputer",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-04-07",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.tanjug.rs/english/politics/248766/titolo-supercomputer-launch-in-kragujevac-confirms-new-era-in-us-serbia-relations/vest",
+          "publisher": "Tanjug (Serbian state news agency)",
+          "source_tier": "S4",
+          "date": "2026-04-30",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ite.gov.rs/tekst/en/35/government-data-centredr-location-in-kragujevac.php",
+          "publisher": "Office for IT and eGovernment (Serbia)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Controller is the Serbian government (owner-operator), so domestic. Opening of the facility itself is not dated in the opened sources (AidData says construction completed December 2020); the date used is the National AI Platform launch there. The 30 million capital figure has no currency in the government release, so values are null."
+    },
+    {
+      "id": "SRB-007",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Office for IT and eGovernment (National AI Platform)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-12-06",
+      "still_current": true,
+      "summary": "Serbia's National AI Platform at Kragujevac runs on Nvidia hardware: four DGX A100 systems launched in 2021, an upgrade of six DGX H200 systems, and a second Nvidia-based supercomputer launched in April 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.srbija.gov.rs/vest/en/182080/national-platform-for-artificial-intelligence-launched.php",
+          "publisher": "Government of Serbia",
+          "source_tier": "S1",
+          "date": "2021-12-06",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ite.gov.rs/tekst/en/35/government-data-centredr-location-in-kragujevac.php",
+          "publisher": "Office for IT and eGovernment (Serbia)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/serbian-govt-signs-contact-with-eviden-for-50m-supercomputer",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-04-07",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.tanjug.rs/english/politics/248766/titolo-supercomputer-launch-in-kragujevac-confirms-new-era-in-us-serbia-relations/vest",
+          "publisher": "Tanjug (Serbian state news agency)",
+          "source_tier": "S4",
+          "date": "2026-04-30",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "DCD reports the first system cost EUR30m and a EUR5m upgrade contract; not coded as values because the scopes differ between sources. Tanjug (S4, state agency) frames the April 2026 launch as a sign of closer US-Serbia ties and gives no chip model; it may be the DGX H200 upgrade. A US ambassador attended the 2021 launch."
+    },
+    {
+      "id": "SRB-008",
+      "layer": "silicon",
+      "pole": "third",
+      "controller": "Eviden (Atos group)",
+      "local_actor": "Government of Serbia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06",
+      "still_current": null,
+      "summary": "Serbia's government signed a EUR50m deal with France's Eviden for a BullSequana supercomputer (EUR36m) plus AI projects, part of a wider Serbia-France agreement, with delivery expected by end-2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/serbian-govt-signs-contact-with-eviden-for-50m-supercomputer",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-04-07",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sdxcentral.com/news/serbian-govt-signs-contact-with-eviden-for-50m-supercomputer/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2025-04",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://www.ite.gov.rs/tekst/en/35/government-data-centredr-location-in-kragujevac.php",
+          "publisher": "Office for IT and eGovernment (Serbia)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third because Eviden (France) supplies and maintains the system; chip vendor not stated by DCD. The Office for IT page mentions a third system based on Nvidia superchips planned for 2026, which may be this Eviden machine (inference), in which case the silicon is US. Delivery status not confirmed. Value in euros, so USD fields left null (DCD's US$55m conversion not adopted)."
+    },
+    {
+      "id": "SRB-009",
+      "layer": "cloud",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Serbia / Kragujevac State Data Centre",
+      "builder": null,
+      "financier": "China International Development Cooperation Agency (CIDCA)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-11-06",
+      "still_current": null,
+      "summary": "After a November 2019 MoU with Huawei on an AI platform, China's aid agency CIDCA granted about US$13m for Huawei-implemented cloud infrastructure at the Kragujevac State Data Centre; Huawei also became a commercial tenant hosting HPC there.",
+      "announced_value_usd": 13000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.seenews.com/news/huawei-to-back-development-of-ai-platform-in-serbia-675301",
+          "publisher": "SeeNews",
+          "source_tier": "S2",
+          "date": "2019-11-06",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/95863",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://seenews.com/news/huawei-to-use-capacity-at-serbias-kragujevac-data-centre-723883",
+          "publisher": "SeeNews",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 3 rests on AidData recording a committed CIDCA grant with Huawei as implementer; AidData does not say whether the cloud platform was delivered, and no opened Serbian source confirms it. The SeeNews tenancy item is datelined 9 December with no year shown. This sits uneasily beside SRB-007: both Huawei cloud and Nvidia compute appear to be housed in the same state facility."
+    },
+    {
+      "id": "SRB-010",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Office for IT and eGovernment (Government of Serbia)",
+      "local_actor": "11 Serbian institutions incl. National Library, RTS, Tanjug, SASA Institute for the Serbian Language",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04-29",
+      "still_current": null,
+      "summary": "Serbia's IT Office signed a cooperation protocol with 11 libraries, media and research bodies to build a national Serbian-language large language model, trained on supercomputers in Serbia with data at Kragujevac.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.undp.org/node/581891",
+          "publisher": "UNDP Serbia",
+          "source_tier": "S1",
+          "date": "2026-05-04",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.srbija.gov.rs/vest/en/276422/preserving-cultural-heritage-serbian-language-in-digital-era.php",
+          "publisher": "Government of Serbia",
+          "source_tier": "S1",
+          "date": "2026-04-29",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.novosti.rs/ekonomija/preduzetnik/1581910/menadzment-mistrala-beogradu-srbija-zapocinje-razvoj-suverenog-modela",
+          "publisher": "Večernje novosti",
+          "source_tier": "S3",
+          "date": "2026-03-04",
+          "retrieved_at": "2026-10-23T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: a cooperation protocol on data and development, not a build contract. No developer or base model is named in the official sources, so base_model is null. Vecernje novosti (March 2026) says France's Mistral AI would give expert support to a parallel Chamber of Commerce/Gitex AI Serbia sovereign-model effort; whether that is the same project is unclear."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power evidence surfaced beyond solar panels mentioned at Kragujevac (Tanjug, April 2026)"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Source tier for RFE/RL (US-government-funded): coded S4 here under the strict state-affiliated rule; if re-tiered S3, SRB-001 (Huawei Safe City) may qualify as corroborated with an S2 source added.",
+    "S1/S2 confirmation of the Huawei Safe City programme scope (camera count, cities, contract value) and of the March 2024 eLTE expansion order.",
+    "Huawei/ZTE share in Telekom Srbija's current RAN and core, and whether any 5G core is Chinese; outcome of Serbia's national 5G risk assessment and EU 5G Toolbox alignment.",
+    "Was the CIDCA-funded, Huawei-implemented cloud/AI platform at Kragujevac delivered and is it in use? Year and terms of Huawei's commercial tenancy there.",
+    "Was a bilateral US-Serbia 5G MoU ever signed after September 2020?",
+    "Delivery status and chip vendor of the Eviden BullSequana supercomputer; whether it is the 'third system' based on Nvidia superchips.",
+    "Developer and base model of the national Serbian LLM, and Mistral AI's actual role.",
+    "Blocked fetch: https://www.undp.org/serbia/news/cooperation-protocol-development-national-large-language-model (permission timeout); the same page was read via https://www.undp.org/node/581891."
+  ],
+  "searches_run": 13
+}

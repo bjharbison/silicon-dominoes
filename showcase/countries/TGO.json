@@ -1,0 +1,488 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "TGO",
+  "name": "Togo",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "TGO-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Togocom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-11-30",
+      "still_current": null,
+      "summary": "Nokia signed a three-year deal to roll out Togocom's 5G nationally and upgrade its 2G/3G/4G radio network with AirScale base stations and massive MIMO antennas, after the 5G launch in Lomé; Nokia also supplied its 3G and 4G.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/5g-networks/nokia-announced-5g-deals-in-kenya-togo",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2020-11-30",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-business/vendor-news/10363-nokia-outlines-its-role-in-togocom-s-5g-plans.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2020-11-30",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/telecom/2611-42104-togocom-launches-the-1st-5g-network-from-west-africa-in-togo",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2020-11-26",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nokia (Finland) is the radio vendor, so third. Neither source names Togocom's core-network vendor. Three-year term would have run to about 2023; current status not confirmed. Moov Africa Togo (Maroc Telecom group) vendors were not established in this pass."
+    },
+    {
+      "id": "TGO-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Togo (e-government network)",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-04-24",
+      "still_current": null,
+      "summary": "A Huawei-built e-government fibre network of about 200 km in Lomé, financed by China Exim Bank, was inaugurated in April 2017, connecting roughly 560 public buildings including ministries, hospitals, universities and the airport.",
+      "announced_value_usd": 25000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/telecom/1706-34656-200-km-of-optic-fiber-laid-in-lome-under-e-government-project",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2016-06-17",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.financialafrik.com/2017/04/24/togo-560-batiments-desormais-connectes-par-fibre-optique",
+          "publisher": "Financial Afrik",
+          "source_tier": "S3",
+          "date": "2017-04-24",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techcabal.com/2015/04/02/togo-hires-huawei-to-connect-its-public-infrastructure-to-fibre-optics-cable-network/",
+          "publisher": "TechCabal",
+          "source_tier": "S3",
+          "date": "2015-04-02",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Huawei as vendor is stated by Ecofin and TechCabal; Financial Afrik confirms inauguration and Exim financing but does not name the vendor. Ecofin gives about US$25m; Financial Afrik gives 15bn FCFA. Pre-2020 and continued operation not confirmed, so still_current null."
+    },
+    {
+      "id": "TGO-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Togo (digital ministry)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09-04",
+      "still_current": null,
+      "summary": "Togo signed a memorandum of understanding with Huawei in Beijing during FOCAC 2024 to strengthen national digital infrastructure under the Togo Digital 2025 strategy; no value or specific projects were disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.wearetech.africa/fr/fils/actualites/gestion-publique/le-togo-signe-avec-huawei-pour-ameliorer-ses-infrastructures-numeriques",
+          "publisher": "We Are Tech Africa",
+          "source_tier": "S2",
+          "date": "2024-09",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://ecofinagency.com/public-management/1209-45879-togo-partners-with-huawei-to-boost-digital-infrastructure",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2024-09-12",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.riotimesonline.com/togo-huawei-digital-transformation-deal/",
+          "publisher": "Rio Times",
+          "source_tier": "S3",
+          "date": "2024-09",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Not marked corroborated because We Are Tech Africa and Agence Ecofin belong to the same publishing group. The year 2024 is inferred from publication dates and the FOCAC reference. No follow-on contract was found."
+    },
+    {
+      "id": "TGO-004",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Société d'Infrastructures Numériques (SIN) and CSquared, via landing JV CSquared Woezon",
+      "builder": "Alcatel Submarine Networks",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-03",
+      "still_current": null,
+      "summary": "Google's privately owned Equiano subsea cable landed in Lomé in March 2022, its first African stop; the landing station is run by CSquared Woezon, a joint venture of CSquared (56%) and state asset company SIN.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/googles-equiano-cable-lands-in-togo",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-03-18",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://itpro.com/business-strategy/it-infrastructure/367136/google-subsea-cable-links-up-to-africa",
+          "publisher": "ITPro",
+          "source_tier": "S3",
+          "date": "2022-03-21",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://technext.ng/2022/03/21/google-funded-internet-cable-equiano-has-landed-in-togo/",
+          "publisher": "Technext",
+          "source_tier": "S3",
+          "date": "2022-03-21",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded us on owner-operator Google, following the treatment of Google-owned cables elsewhere; the builder, Alcatel Submarine Networks, is French, so pole could be argued third under the equipment-vendor rule. Tier 4 because the landing is documented; ready-for-service date not confirmed, though TGO-005 implies it was carrying traffic by October 2023."
+    },
+    {
+      "id": "TGO-005",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Adtran",
+      "local_actor": "CSquared (Togo)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-10-10",
+      "still_current": null,
+      "summary": "CSquared built new backbone and metro fibre networks in Togo on Adtran FSP 3000 open optical transport and FSP 150 access gear, with 400Gbit/s capacity, linked to the Equiano cable.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://businesswire.com/news/home/20231010496368/en/5532999/CSquared-delivers-high-speed-connectivity-to-Togo-with-Adtran-open-optical-solution",
+          "publisher": "Business Wire (Adtran press release)",
+          "source_tier": "S4",
+          "date": "2023-10-10",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Vendor press release only (S4). Adtran Holdings is US-headquartered, but the FSP product line comes from its German subsidiary (ex-ADVA), so third is arguable. Tier 5 rests on the release's description of the network as in service; no independent confirmation."
+    },
+    {
+      "id": "TGO-006",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Africa Data Centres (Liquid Intelligent Technologies / Cassava)",
+      "local_actor": "Société d'Infrastructures Numériques (SIN), state-held owner",
+      "builder": null,
+      "financier": "World Bank (WARCIP loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06",
+      "still_current": true,
+      "summary": "Lomé Data Centre, Togo's first carrier-neutral colocation facility, owned by state company SIN and operated by Africa Data Centres, opened in June 2021 at a reported cost of US$23.7m financed by the World Bank; it was later Tier III-certified.",
+      "announced_value_usd": 23700000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/togo-opens-first-carrier-neutral-colocation-facility-in-lom%C3%A9",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2021-06-08",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://connectingafrica.com/data-centers/togo-s-sin-st-digital-to-deploy-cloud-services-at-lom-data-center",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2026-06-02",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-digital/2011-50665-togo-to-deploy-ai-agents-to-transform-schools-government-services",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2025-11-20",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded third because the spec makes a documented operator the controller, and DCD names Africa Data Centres (Liquid group, Mauritius-domiciled, Zimbabwean-founded) as operator. The 2026 source describes the facility as government-owned through SIN and does not mention ADC; if the operating contract has ended, the pole would be domestic. still_current true for the facility itself."
+    },
+    {
+      "id": "TGO-007",
+      "layer": "cloud",
+      "pole": null,
+      "controller": "ST Digital",
+      "local_actor": "Société d'Infrastructures Numériques (SIN)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06-02",
+      "still_current": null,
+      "summary": "SIN and ST Digital Togo signed a strategic partnership to launch private and sovereign cloud and AI services hosted at the Lomé Data Centre, keeping Togolese companies' data in country.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://connectingafrica.com/data-centers/togo-s-sin-st-digital-to-deploy-cloud-services-at-lom-data-center",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2026-06-02",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: ST Digital's nationality and ownership are not stated in the source, and no underlying cloud software or hardware vendor is named. Coded tier 2 as a partnership with no contract value."
+    },
+    {
+      "id": "TGO-008",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Atos and IDEMIA",
+      "local_actor": "ANID-Togo (Agence Nationale d'Identification)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-06-01",
+      "still_current": null,
+      "summary": "ANID-Togo chose France's Atos and IDEMIA to design, build and run a national biometric eID system on the open-source MOSIP platform, with iris, face and fingerprint capture, enrolment kits and card personalisation, under the World Bank-backed WURI programme.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://atos.net/en/2023/newsroom-africa_2023_06_01/togo-government-selects-atos-and-idemia-to-build-its-national-eid-system-as-part-of-a-project-supported-by-the-world-bank",
+          "publisher": "Atos (company release)",
+          "source_tier": "S1",
+          "date": "2023-06-01",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/public-management/0106-44586-togo-government-selects-atos-and-idemia-to-build-its-national-eid-system",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2023-06-01",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://cio-mag.com/identite-biometrique-le-togo-choisit-atos-et-idemia-pour-son-systeme-national",
+          "publisher": "CIO Mag",
+          "source_tier": "S2",
+          "date": "2023-06",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Both vendors are French, so third; MOSIP itself is open source (India-originated), but the vendors build and run the system. Contract value not stated; the US$500m figure is the regional WURI budget, so values are null. World Bank financing of this specific contract not confirmed, so financier null. An ID4Africa 2026 Togo presentation was seen in search but not opened."
+    },
+    {
+      "id": "TGO-009",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "NSO Group",
+      "local_actor": "Government of Togo (reported NSO client)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021",
+      "still_current": null,
+      "summary": "Reporters Without Borders found Pegasus spyware on two Togolese journalists' phones in 2021, confirmed by Amnesty's Security Lab, which says Togo's government was an NSO client then; Citizen Lab had found Togolese clergy and activists targeted in 2019.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://securitylab.amnesty.org/latest/2024/04/partner-research-update-new-cases-of-pegasus-in-jordan-and-togo/",
+          "publisher": "Amnesty International Security Lab",
+          "source_tier": "S2",
+          "date": "2024-04",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://cpj.org/2024/01/pegasus-spyware-used-to-target-togolese-journalists-loic-lawson-and-anani-sossou/",
+          "publisher": "Committee to Protect Journalists",
+          "source_tier": "S3",
+          "date": "2024-01-23",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third: NSO Group is Israeli and licenses and can cut off Pegasus access. Tier 3 infers a government licence from the client attribution; no contract, date or value is public. Not marked corroborated because CPJ relays the RSF/Amnesty forensic findings rather than providing independent evidence. Current use unknown."
+    },
+    {
+      "id": "TGO-010",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Togo AI Lab and Umbaji (with Zindi)",
+      "local_actor": "Ministry of Digital Economy and Transformation",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-08",
+      "still_current": null,
+      "summary": "Togo launched a project with Togo AI Lab, local firm Umbaji and the platform Zindi to build open speech recognition, text-to-speech and translation models for its 50 national languages, using open data-collection and competitions.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://capitalfm.africa/togo-launches-ai-project-to-build-models-for-50-languages/",
+          "publisher": "Capital FM (Kenya)",
+          "source_tier": "S3",
+          "date": "2026-07-08",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded domestic because the work is led by the Togolese government and Togolese organisations, with outputs intended to be open; who will hold the weights is not stated. Zindi is a pan-African platform from outside Togo. No base model named. Tier 2 because this is a launched pilot or competition, not a deployment."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or export-licence reporting for Togo surfaced in AI and data-centre searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendors supply Moov Africa Togo's RAN and core (Maroc Telecom group), and Togocom's core network? Is Nokia still Togocom's sole RAN vendor after the 2020-2023 deal?",
+    "Did the September 2024 Togo-Huawei MoU produce any contracts (data centres, cybersecurity, e-government)? Is the 2017 Huawei/China Exim e-government fibre network still Huawei-maintained?",
+    "Does Africa Data Centres still operate the Lomé Data Centre, or has SIN taken over operations? Who owns ST Digital, and which cloud stack does it run?",
+    "Was the Atos/IDEMIA eID contract continued after Atos's restructuring, and what is its value and enrolment status (ID4Africa 2026 Togo deck seen but not opened)?",
+    "Is there any police video-surveillance or safe-city system in Lomé, and from which vendor? No citable evidence was found; AidData project pages appeared in search but were not opened.",
+    "Equiano Togo ready-for-service date, and whether Togo's 2026 WAICO accession is tied to any PRC infrastructure package.",
+    "Has Togo licensed Pegasus or other spyware since 2021?"
+  ],
+  "searches_run": 10
+}

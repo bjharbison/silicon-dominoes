@@ -1,0 +1,387 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "TJK",
+  "name": "Tajikistan",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T21:19:22Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "TJK-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Internal Affairs of Tajikistan",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015-10",
+      "still_current": null,
+      "summary": "Huawei installed a Safe City traffic and public-order CCTV system in Dushanbe (about 855-1,000 cameras), financed mainly by two China Eximbank loans totalling about US$20.9m, repaid from traffic fines; completed around October 2015.",
+      "announced_value_usd": 20900000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/46215",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": "2013",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/71411",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": "2013",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://eurasianet.org/tajikistan-cracks-down-on-pop-idol-traffic-rule-breakers",
+          "publisher": "Eurasianet",
+          "source_tier": "S3",
+          "date": "2015-08-16",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://kaktus.media/doc/369119_ymnyy_gorod_v_centralnoy_azii._v_tadjikistane_huawei_potratil_20_mln.html",
+          "publisher": "Kaktus.media",
+          "source_tier": "S3",
+          "date": "2018-01-24",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pre-2020 deployment; current operation not confirmed, though a 2024 interior-ministry item on a second stage (TJK-002) suggests the system persists. US$20.9m is the combined loan (AidData splits it 8.36m concessional + 12.54m buyer's credit); Kaktus gives a US$22m total budget and dates launch to autumn 2014. Eurasianet does not name Huawei; vendor rests on AidData and Kaktus. AidData is a research dataset drawing on MVD, Huawei and Asia-Plus reporting."
+    },
+    {
+      "id": "TJK-002",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Unnamed (PRC government counterparty; vendor not named)",
+      "local_actor": "Ministry of Internal Affairs of Tajikistan",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-04-04",
+      "still_current": null,
+      "summary": "Tajikistan's interior minister and the Chinese ambassador met on the second stage of the Safe City traffic-management and public-order system and signed exchange letters toward its implementation.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mvd.tj/1195-a-productive-meeting-on-the-implementation-of-the-second-stage-of-safe-city.html",
+          "publisher": "Ministry of Internal Affairs of Tajikistan",
+          "source_tier": "S1",
+          "date": "2024-04-04",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 2 as a government-to-government framework (exchange of letters) with no vendor, value or contract named. Pole prc inferred from the Chinese state counterparty and the Huawei-built first stage; equipment vendor unconfirmed. Exchange letters often signal PRC grant financing, but that is not stated."
+    },
+    {
+      "id": "TJK-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei (Huawei Technologies Tajikistan)",
+      "local_actor": "State Communications Service of Tajikistan",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-12",
+      "still_current": null,
+      "summary": "The telecoms regulator signed a memorandum with Huawei's Tajik subsidiary for Huawei to lead supply/upgrade of 7,600 GSM/UMTS/LTE/5G base stations under the 2024-2028 mobile development programme, plus technician training.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://timesca.com/tajikistan-to-connect-to-chinese-internet/",
+          "publisher": "The Times of Central Asia",
+          "source_tier": "S3",
+          "date": "2023-12-13",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://eurasianet.org/tajikistan-looks-to-china-russia-for-internet-services-and-security",
+          "publisher": "Eurasianet",
+          "source_tier": "S3",
+          "date": "2024-01-10",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Memorandum only; no value or binding contract found, and no confirmation of deployment. Which operators' networks the base stations belong to is not stated. Not corroborated because both opened sources are S3 (no S1/S2). The same period saw Russian firms (Cifra, Piter IX) sign training/consultancy memoranda for 4G/5G management."
+    },
+    {
+      "id": "TJK-004",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "darya.ai",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06",
+      "still_current": null,
+      "summary": "darya.ai launched what is described as Tajikistan's first Nvidia H200 GPU cluster in June 2025, under the patronage of President Rahmon; cluster size not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://yotta.com/media/darya-ai-and-yotta-data-services-sign-strategic-collaboration-agreement-to-develop-tajikistans-first-green-ai-data-center/",
+          "publisher": "Yotta Data Services (press release)",
+          "source_tier": "S4",
+          "date": "2025-10-25",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://w.media/yotta-partners-with-darya-ai-to-build-green-data-center-in-tajikistan/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2025-10-29",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both sources derive from the same Yotta/darya.ai announcement, so they are not independent. GPU count, supplier channel and any US export licence are unknown; Tajikistan is in Country Group D:1 so a licence would normally be required for H200-class chips."
+    },
+    {
+      "id": "TJK-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "darya.ai",
+      "local_actor": "darya.ai / Government of Tajikistan (Area AI technopark)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-25",
+      "still_current": null,
+      "summary": "President Rahmon inaugurated an AI cluster and 'Area AI' technopark in Dushanbe's Darvoz district built by local company darya.ai, focused on Tajik-language models and high-performance computing.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://caspianpolicy.org/research/tajikistan/code-of-the-steppe-tajikistans-push-to-shape-ai-in-central-asia",
+          "publisher": "Caspian Policy Center",
+          "source_tier": "S4",
+          "date": "2025-08-01",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://w.media/yotta-partners-with-darya-ai-to-build-green-data-center-in-tajikistan/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2025-10-29",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ownership of darya.ai not found; coded domestic on its description as a local company. Same physical deployment as TJK-004 (silicon layer). Caspian Policy Center is a think tank (S4). Capacity in MW not disclosed."
+    },
+    {
+      "id": "TJK-006",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "darya.ai with Yotta Data Services (India)",
+      "local_actor": "darya.ai",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-25",
+      "still_current": null,
+      "summary": "darya.ai and India's Yotta Data Services signed a strategic collaboration agreement to develop a hydro-powered green AI data centre in Darvoz with the latest Nvidia GPUs; capacity, value and timeline undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://yotta.com/media/darya-ai-and-yotta-data-services-sign-strategic-collaboration-agreement-to-develop-tajikistans-first-green-ai-data-center/",
+          "publisher": "Yotta Data Services (press release)",
+          "source_tier": "S4",
+          "date": "2025-10-25",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://w.media/yotta-partners-with-darya-ai-to-build-green-data-center-in-tajikistan/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2025-10-29",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.voicendata.com/industry/yotta-to-build-green-ai-data-centre-in-tajikistan-with-daryaai-10596561",
+          "publisher": "Voice&Data",
+          "source_tier": "S2",
+          "date": "2025-10",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the release says the two companies will deliver the facility but does not allocate ownership or operation between darya.ai (domestic) and Yotta (India, third). Tier 2 because it is an intent-to-develop collaboration agreement with no value or construction start reported."
+    },
+    {
+      "id": "TJK-007",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Presight (Abu Dhabi; majority-owned by G42)",
+      "local_actor": "Ministry of Industry and New Technologies of Tajikistan",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-21",
+      "still_current": null,
+      "summary": "Presight signed a non-binding MoU with Tajikistan's industry ministry to pilot AI government and enterprise solutions in smart cities, energy and cybersecurity, including operations at Dushanbe International Airport.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.presight.ai/news/presight-signs-strategic-mou-with-the-tajikistan-ministry-of-industry-and-new-technologies-to-accelerate-national-ai-development",
+          "publisher": "Presight (press release)",
+          "source_tier": "S4",
+          "date": "2025-07-21",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.intelligentcio.com/me/2025/07/21/presight-and-tajikistan-ink-ai-deal-to-drive-smart-infrastructure-and-governance/",
+          "publisher": "Intelligent CIO Middle East",
+          "source_tier": "S2",
+          "date": "2025-07-21",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: the company describes the MoU as non-binding. No pilots confirmed as started. Pole third (UAE controller)."
+    },
+    {
+      "id": "TJK-008",
+      "layer": "models",
+      "pole": null,
+      "controller": "Soro authors (institutional affiliation not stated)",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": "Gemma 3 (open weights)",
+      "base_model_pole": "us",
+      "scale": "municipal",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05",
+      "still_current": null,
+      "summary": "Soro, a lightweight Tajik-language foundation model and chatbot built by continued pretraining of open-weight Gemma 3 on a 1.9bn-token Tajik corpus, is reported in an education-sector pilot with planned scale-out to Tajik schools.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://scale.stanford.edu/ai/repository/soro-lightweight-foundation-model-and-chatbot-tajik",
+          "publisher": "Stanford SCALE AI repository (listing of arXiv paper)",
+          "source_tier": "S2",
+          "date": "2026-05",
+          "retrieved_at": "2026-10-23T21:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null because who holds the weights is unclear: the listing gives no author institutions or government role. If a Tajik actor holds the weights it would be domestic under spec v0.2. Whether this is linked to darya.ai's Tajik-language work is unverified."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-dedicated power plant surfaced; Darvoz AI data-centre plans cite grid hydropower generally"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "RAN/core vendors of Tcell, MegaFon Tajikistan, ZET-Mobile and Babilon-M: a ZTE corporate page (not fetched, PRC vendor site) appeared in search about Tcell's 3G network (2012); confirm current vendors with S1/S2 sources.",
+    "Did the December 2023 Huawei 7,600-base-station memorandum become a binding contract, with what financing, and which operators are covered?",
+    "Is the Huawei-built Dushanbe Safe City still operating, and who is the vendor and financier of the second stage discussed with China in April 2024?",
+    "Ownership of darya.ai, size of its Nvidia H200 cluster, and whether a US export licence was issued.",
+    "Status of the darya.ai-Yotta Darvoz green AI data centre (construction start, ownership split).",
+    "Affiliation of the Soro model team and whether any Tajik state body deploys it.",
+    "Presence of Russian SORM-type lawful-intercept systems on Tajik networks and Russian/Chinese role in internet gateways (state monopoly gateway)."
+  ],
+  "searches_run": 9
+}

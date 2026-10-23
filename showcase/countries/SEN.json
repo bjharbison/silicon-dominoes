@@ -1,0 +1,419 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SEN",
+  "name": "Senegal",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SEN-001",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Agence de l'Informatique de l'Etat (ADIE), Senegal's state IT agency",
+      "local_actor": "ADIE",
+      "builder": "Huawei",
+      "financier": "China Eximbank (per AidData; DCD says only 'a Chinese loan')",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06-22",
+      "still_current": null,
+      "summary": "Senegal's national Tier-3 data centre in the Diamniadio technology park, built with Huawei equipment on a Chinese loan, was commissioned in June 2021; the president ordered all state data and platforms migrated to it.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/senegal-to-migrate-all-government-data-and-applications-to-new-government-data-center",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2021-06-23",
+          "retrieved_at": "2026-10-23T21:08:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/73114",
+          "publisher": "AidData (William & Mary) Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:08:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://uschinadialogue.georgetown.edu/responses/chinese-huawei-group-and-the-building-of-senegalese-digital-grammar-from-2006-to-2024",
+          "publisher": "Georgetown University US-China Dialogue (commentary)",
+          "source_tier": "S4",
+          "date": "2024",
+          "retrieved_at": "2026-10-23T21:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Building is state-owned and operated, so pole is domestic; Huawei (builder/equipment) and China Exim (financier) do not set the pole under SPEC v0.2. Huawei-supplied IT equipment inside is captured in SEN-002 bundle. DCD's 46bn CFA figure converts to roughly US$80m, not the US$18.2m it states, so value left null. Georgetown commentary instead ties the data centre to an earlier US$85m Exim broadband loan (2016); attribution between the two loans unresolved. ADIE has since been reorganised (Sénégal Numérique SA reported); current operation not confirmed in this pass.",
+      "bundle_id": "SEN-B1"
+    },
+    {
+      "id": "SEN-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Senegal (Smart Senegal programme)",
+      "builder": null,
+      "financier": "China Eximbank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06-22",
+      "still_current": null,
+      "summary": "Smart Senegal Phase 1, a China Exim concessional loan (RMB 1.05bn) contracted to Huawei, delivered a submarine cable landing, public WiFi, school networks, citizen service centres and the Diamniadio data-centre hub, completed June 2021.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/73114",
+          "publisher": "AidData (William & Mary) Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:08:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://uschinadialogue.georgetown.edu/responses/chinese-huawei-group-and-the-building-of-senegalese-digital-grammar-from-2006-to-2024",
+          "publisher": "Georgetown University US-China Dialogue (commentary)",
+          "source_tier": "S4",
+          "date": "2024",
+          "retrieved_at": "2026-10-23T21:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "AidData records the project as completed; Georgetown commentary (S4) describes the same components. Only one opened S1-S3 source, so uncorroborated. Coded under networks as the dominant component; equipment vendor Huawei sets the pole. RMB 1.05bn not converted (AidData's constant-2023 figure of about US$160m is a deflated estimate, not an announced value).",
+      "bundle_id": "SEN-B1"
+    },
+    {
+      "id": "SEN-003",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "ADIE with the Defence and Security Forces",
+      "builder": null,
+      "financier": "China Eximbank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06",
+      "still_current": null,
+      "summary": "Senegal's Safe City programme, a Huawei-contracted component of Smart Senegal, installed roughly 500 surveillance cameras with command centres across Dakar, Thiès, Touba, Saint-Louis, Kaolack and other cities.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/73114",
+          "publisher": "AidData (William & Mary) Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:08:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://cio-mag.com/securite-au-senegal-le-projet-safe-city-mis-a-contribution-a-deja-installe-473-cameras/",
+          "publisher": "CIO Mag",
+          "source_tier": "S2",
+          "date": "2020-03-04",
+          "retrieved_at": "2026-10-23T21:08:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://uschinadialogue.georgetown.edu/responses/chinese-huawei-group-and-the-building-of-senegalese-digital-grammar-from-2006-to-2024",
+          "publisher": "Georgetown University US-China Dialogue (commentary)",
+          "source_tier": "S4",
+          "date": "2024",
+          "retrieved_at": "2026-10-23T21:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "CIO Mag (March 2020) confirms 473 of 500 planned cameras installed by ADIE but does not name the vendor; Huawei as contractor rests on AidData alone, so the controller attribution is uncorroborated. Georgetown commentary alleges facial-recognition use against opposition members 2021-2024; that is the author's claim, not verified here.",
+      "bundle_id": "SEN-B1"
+    },
+    {
+      "id": "SEN-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Senegal (state intranet / ADIE)",
+      "builder": null,
+      "financier": "China Eximbank (third phase, per source)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-01",
+      "still_current": null,
+      "summary": "Huawei built Senegal's government intranet in successive phases from 2006 (E-gov 1 and 2, about 3,000 km of fibre), extended by a national broadband project financed by a US$85m China Exim loan launched in 2016.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://uschinadialogue.georgetown.edu/responses/chinese-huawei-group-and-the-building-of-senegalese-digital-grammar-from-2006-to-2024",
+          "publisher": "Georgetown University US-China Dialogue (commentary)",
+          "source_tier": "S4",
+          "date": "2024",
+          "retrieved_at": "2026-10-23T21:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single S4 commentary source; values (US$49.6m, US$100m, US$85m) come from that author and were not verified, so left null. Pre-2016 phases are pre-2020; current use of Huawei equipment in the state backbone not confirmed (still_current null)."
+    },
+    {
+      "id": "SEN-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Sonatel (Orange Senegal)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-11",
+      "still_current": null,
+      "summary": "Sonatel partnered with Huawei for its 5G trials, including a live test in Dakar in November 2020 and the Orange 5G Lab opened in Dakar in 2022 with Huawei as main partner.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/senegals-sonatel-moves-ahead-on-5g/kLgB1Me8lpa759N4",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2020-12-09",
+          "retrieved_at": "2026-10-23T21:08:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/Huawei-accompagne-Sonatel-pour-l.html",
+          "publisher": "OSIRIS (Senegal ICT observatory)",
+          "source_tier": "S2",
+          "date": "2022-07-08",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/telecom/2205-45537-orange-senegal-to-launch-5g-mobile-services-on-june-1",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2024-05-22",
+          "retrieved_at": "2026-10-23T21:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 2 (pilot/trial partnership): Sonatel launched commercial 5G on 1 June 2024 after a CFA34.5bn licence, but no source opened names the vendor of its commercial RAN or core, so Huawei supplying the live 5G network is plausible but unconfirmed. Ecofin is cited for the commercial launch context only."
+    },
+    {
+      "id": "SEN-006",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Tigo Senegal (later Free, now Yas / Axian)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-12-20",
+      "still_current": null,
+      "summary": "Tigo Senegal chose Ericsson as preferred supplier for a three-year modernisation of more than 1,000 sites, covering radio (2G-4G, IoT), microwave backhaul, cloud packet core, OSS and transport.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/connectivity/tigo-senegal-plans-network-boost-with-ericsson",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2018-12-20",
+          "retrieved_at": "2026-10-23T21:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so pole third. Pre-2020 and the operator has since changed hands and rebranded (Free, then Yas under Axian); whether Ericsson remains the RAN/core vendor was not confirmed. The source does not say whether a previous vendor was replaced. Rebrand chain is background knowledge, not stated in the source."
+    },
+    {
+      "id": "SEN-007",
+      "layer": "cloud",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Ministry of Communication, Telecommunications and Digital Economy",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09",
+      "still_current": null,
+      "summary": "Senegal's digital ministry signed a memorandum of understanding with Google to create a sovereign cloud keeping critical government and business data in local infrastructure, plus cloud skills training.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ecofinagency.com/telecom/0410-45971-senegal-launches-sovereign-cloud-initiative-with-google",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2024-10-04",
+          "retrieved_at": "2026-10-23T21:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://osiris.sn/le-senegal-s-associe-a-google-pour-la-creation-d-un-cloud-souverain.html",
+          "publisher": "OSIRIS (Senegal ICT observatory)",
+          "source_tier": "S2",
+          "date": "2024-10-03",
+          "retrieved_at": "2026-10-23T21:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Neither source says who would own or operate the sovereign cloud or whether Google technology (e.g. a distributed/air-gapped offering) would run it; coded us on the assumption Google supplies the platform. If the state operates it on its own hardware the pole could become domestic. No implementation evidence found as of October 2026."
+    },
+    {
+      "id": "SEN-008",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Stellarix (Axian Group, Madagascar-based)",
+      "local_actor": "Stellarix Senegal",
+      "builder": "Snef, SERTEM Groupe, Kent Data Centres",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-10",
+      "still_current": null,
+      "summary": "Axian's data-centre arm Stellarix is expanding its Senegal facility to meet AI demand, with French engineering firm Snef among contributors; capacity, site and investment were not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.billionaires.africa/2026/10/03/madagascar-billionaire-hassanein-hiridjee-expands-senegal-data-center-to-meet-ai-demand/",
+          "publisher": "Billionaires.Africa",
+          "source_tier": "S3",
+          "date": "2026-10-03",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 4 because the source describes the expansion as underway, but no construction milestone is documented; could be tier 2-3. Axian is headquartered in Madagascar, so pole third. Single source."
+    },
+    {
+      "id": "SEN-009",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Senegal",
+      "local_actor": "Ministry of Communication, Telecommunications and Digital Economy (New Deal Technologique)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-03",
+      "still_current": null,
+      "summary": "Senegal unveiled a planned 'Senegal AI Factory', a national compute and applied-research infrastructure under its New Deal Technologique, at a Tokyo event; funding, partners and GPU supplier remain undetermined.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.osiris.sn/le-senegal-presente-sa-senegal-ai-factory-a-tokyo.html",
+          "publisher": "OSIRIS (Senegal ICT observatory)",
+          "source_tier": "S2",
+          "date": "2026-08-03",
+          "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Stated intent only; the source mentions possible Japanese, European or Gulf partners without naming any. Pole domestic as a planned state facility; controller will depend on financing and hardware choices."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "AI-data-centre and Senegal AI Factory searches surfaced no accelerator purchases, GPU vendor or export licence; the AI Factory source says the GPU supplier is undecided"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search on national AI partnerships found a UNDP accord and a Sénégal Numérique-GalsenAI tie-up (snippets only) but no frontier-model provider partnership or sovereign Senegalese model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced; Axian's NEA Kolda solar plant was mentioned alongside the data-centre business but not documented as dedicated supply"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendor(s) supply Sonatel's commercial 5G (launched June 2024) RAN and core, and Expresso's network? Is Huawei the incumbent at Sonatel beyond the trials?",
+    "Senegal-Huawei strategic agreement reported around June 2025 during PM Sonko's China visit (data-centre modernisation, IT assembly plant, AI/cloud/5G training): seen only via AllAfrica (aggregator, not citable); find the original APS or ministry release and the instrument type.",
+    "Does Huawei still operate or maintain the Diamniadio national data centre and Safe City system, and has Sénégal Numérique SA moved any government workloads elsewhere (e.g. the Google sovereign-cloud MoU)?",
+    "Has the Google sovereign-cloud MoU (Sept 2024) produced a contract, operator or hosting site?",
+    "Which loan financed the Diamniadio data centre: the 2016 US$85m Exim broadband loan or the 2018 Smart Senegal RMB 1.05bn loan? Reconcile DCD's 46bn CFA / US$18.2m figures.",
+    "Is Ericsson still the RAN/core vendor at Yas (ex-Free/Tigo) after the Axian takeover?",
+    "Verify the Safe City camera vendor (Huawei vs Hikvision/Dahua) with S1 procurement records, and the facial-recognition allegations.",
+    "Senegal AI Factory: any GPU purchase, partner or financing announced after August 2026?"
+  ],
+  "searches_run": 10
+}

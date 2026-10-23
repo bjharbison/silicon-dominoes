@@ -1,0 +1,394 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "TWN",
+  "name": "Taiwan",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-23T21:19:12Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "TWN-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia (RAN) and Ericsson (5G core, radio, transport)",
+      "local_actor": "Chunghwa Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-03",
+      "still_current": null,
+      "summary": "Chunghwa Telecom, Taiwan's largest operator, contracted Nokia for 5G radio access and Ericsson for 5G core, cloud VoLTE, radio base stations and transport for its 5G launch.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/chunghwa-telecom-firma-contratos-con-nokia-y-ericsson-que-desplegar-5g-en-taiwan/",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2020-03-18",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20200605/5g/chunghwa-telecom-secures-first-5g-license-taiwan",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2020-06-05",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia (Finland) and Ericsson (Sweden) are both EU-based, so pole third. No contract value found. Whether Chunghwa's legacy 4G network contains any PRC equipment was not checked. Current status not re-confirmed in this pass."
+    },
+    {
+      "id": "TWN-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Taiwan Mobile",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-06-29",
+      "still_current": null,
+      "summary": "Taiwan Mobile signed a three-year contract making Nokia the sole supplier of its 5G radio access, standalone core and IMS, valued at about EUR 400 million.",
+      "announced_value_usd": 449000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.fierce-network.com/5g/nokia-scores-450m-5g-contract-taiwan-mobile",
+          "publisher": "Fierce Network",
+          "source_tier": "S2",
+          "date": "2020-06-29",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sdxcentral.com/news/nokia-wins-exclusive-450m-5g-deal-with-taiwan-mobile/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2020-06",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://www.mobileworldlive.com/nokia/nokia-lands-taiwan-mobile-5g-deal/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2020-06",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "EUR 400m converted by the source to about US$449m at the 2020 rate; recorded as announced. Pole third (Finland). FarEasTone's 5G vendor was not established in this pass."
+    },
+    {
+      "id": "TWN-003",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "PRC-made ICT vendors (incl. DJI, TP-Link, Hikvision, Huawei)",
+      "local_actor": "Executive Yuan (all government agencies and public schools)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "China-made ICT products (drones, networking gear, surveillance cameras) in government agencies and public schools",
+      "reversal_reason": "geopolitical",
+      "date": "2021-08",
+      "still_current": null,
+      "summary": "The Cabinet told all government bodies to phase out China-made ICT products by end-2021, after finding about 19,000 such items, mainly DJI, TP-Link and Hikvision, across roughly 2,600 agencies and schools.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.taiwannews.com.tw/en/news/4266333",
+          "publisher": "Taiwan News",
+          "source_tier": "S3",
+          "date": "2021-08-08",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://news.ltn.com.tw/news/focus/breakingnews/4100303",
+          "publisher": "Taipei Times (Liberty Times site)",
+          "source_tier": "S3",
+          "date": "2022-10-25",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reversal of installed (operational) PRC equipment, so tier 5. Taipei Times (2022) dates the underlying Executive Yuan prohibition to December 2020 and says it covers software, hardware and services. Completion of removal by agency not confirmed; still_current of the prohibition not re-verified for 2026. Both sources are general press, so not corroborated under the S1/S2 rule."
+    },
+    {
+      "id": "TWN-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Foxconn (Hon Hai) via Big Innovation Company / Visonbay.ai",
+      "local_actor": "National Science and Technology Council (investor and user)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-21",
+      "still_current": null,
+      "summary": "Foxconn, with Nvidia and Taiwan's science council, is building a 27 MW AI supercomputing centre of about 10,000 Blackwell GB300 GPUs worth US$1.4 billion, targeted for the first half of 2026.",
+      "announced_value_usd": 1400000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2025/Foxconn-Builds-AI-Factory-in-Partnership-With-Taiwan-and-NVIDIA/default.aspx",
+          "publisher": "NVIDIA Investor Relations",
+          "source_tier": "S1",
+          "date": "2025-05-18",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/nvidia-and-foxconn-plan-taiwanese-ai-supercomputer/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-05-19",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.thestandard.com.hk/finance/article/317480/Foxconn-Nvidia-US14-billion-Taiwan-supercomputing-cluster-to-be-ready-by-H1-2026-Foxconn-says",
+          "publisher": "The Standard (Hong Kong), Reuters copy",
+          "source_tier": "S3",
+          "date": "2025-11-21",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.asiafinancial.com/?p=109021",
+          "publisher": "Asia Financial",
+          "source_tier": "S3",
+          "date": "2025-11-21",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is a Foxconn (Taiwanese) subsidiary, so domestic. The May 2025 Big Innovation 'AI factory' and the November 2025 Visonbay.ai US$1.4bn cluster are treated as one project because both describe ~10,000 Blackwell GB300 GPUs; this identity is an inference. Tier 3 (committed investment with named partners); whether it went live in H1 2026 was not confirmed. NSTC is described as investing but its share is not given.",
+      "bundle_id": "TWN-B1"
+    },
+    {
+      "id": "TWN-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Foxconn / Big Innovation Company; NSTC",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05-18",
+      "still_current": null,
+      "summary": "The Foxconn–government AI factory is specified with 10,000 Nvidia Blackwell GPUs in GB300 NVL72 racks with Nvidia InfiniBand and Spectrum-X networking; TSMC researchers are to use it.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2025/Foxconn-Builds-AI-Factory-in-Partnership-With-Taiwan-and-NVIDIA/default.aspx",
+          "publisher": "NVIDIA Investor Relations",
+          "source_tier": "S1",
+          "date": "2025-05-18",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/nvidia-and-foxconn-plan-taiwanese-ai-supercomputer/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-05-19",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.theregister.com/2025/05/19/taiwan_nvidia_ai_factory/",
+          "publisher": "The Register",
+          "source_tier": "S2",
+          "date": "2025-05-19",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.asiafinancial.com/?p=109021",
+          "publisher": "Asia Financial",
+          "source_tier": "S3",
+          "date": "2025-11-21",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Accelerator layer of the same project as TWN-004. Delivery and installation status not confirmed in this pass.",
+      "bundle_id": "TWN-B1"
+    },
+    {
+      "id": "TWN-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "National Center for High-Performance Computing (NCHC)",
+      "builder": "Asus",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06",
+      "still_current": true,
+      "summary": "NCHC's national Nano4 supercomputer, built by Asus on Nvidia H200 GPUs (plus GB200 NVL72 racks per earlier plans), launched in 2026 at 33rd on the Top500, replacing Taiwania 2 for academic, government and SME use.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/taiwans-new-nano4-supercomputer-comes-online/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-06-29",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.theregister.com/2025/05/19/taiwan_nvidia_ai_factory/",
+          "publisher": "The Register",
+          "source_tier": "S2",
+          "date": "2025-05-19",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.nchc.org.tw/Message/Print/4999?mid=92",
+          "publisher": "NCHC",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "The Register (2025) gives the plan (>1,700 H200 plus GB200 NVL72 and B300); DCD (2026) confirms launch with H200 but no total count. Asus (Taiwanese) is builder only; GPU vendor Nvidia supplies firmware/software stack, hence us. Full operations were scheduled from July 2026."
+    },
+    {
+      "id": "TWN-007",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "National Science and Technology Council / Taiwan AI Center of Excellence (TAIDE project)",
+      "local_actor": "NSTC",
+      "builder": null,
+      "financier": null,
+      "base_model": "Llama 2 (TAIDE-LX-7B); Llama 3 8B (TAIDE-LX-8B)",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-04",
+      "still_current": null,
+      "summary": "Taiwan's government-initiated TAIDE traditional-Chinese model was released as TAIDE-LX-7B on Meta's Llama 2, then upgraded to an 8B version on Llama 3, trained largely on government and academic texts.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ai.taiwan.gov.tw/news/taiwan-developed-generative-ai-system-set-to-benefit-all-sectors/",
+          "publisher": "Taiwan AI Action Plan portal (government; Focus Taiwan copy)",
+          "source_tier": "S1",
+          "date": "2024-04-30",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://the-decoder.com/taiwans-trustworthy-ai-dialogue-engine-aims-to-counter-chinas-grip-on-ai-ecosystem/",
+          "publisher": "The Decoder",
+          "source_tier": "S2",
+          "date": "2024-01-26",
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://ai.pdis.tw/news/taiwans-version-of-chatgpt-taide-downloaded-over-170000-times/",
+          "publisher": "Taiwan AI portal (PDIS mirror)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-23T21:05:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Weights controlled by a Taiwanese government project, so domestic; base Llama is US (Meta). Tier 2 because it is a released research/pilot model; no binding government deployment found. The 2024-04-30 government page republishes Focus Taiwan (CNA, state-owned wire); coded S1 as an official government publication. Current version (post-Llama 3) not checked."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power evidence surfaced; budget spent on other layers"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "FarEasTone's 5G RAN/core vendor(s) and whether any Taiwanese operator's legacy 2G-4G network still contains Huawei/ZTE equipment; locate the NCC/legal basis barring PRC equipment from operator core networks (lead, not verified).",
+    "Did the Foxconn/Visonbay.ai GB300 cluster (TWN-004/005) go live in H1 2026, where is it sited, and what is NSTC's financial stake?",
+    "Is the Executive Yuan prohibition on PRC ICT products in government still in force in 2026 and was the removal completed? Find the S1 Executive Yuan/MODA text.",
+    "Undersea cable damage by PRC-linked vessels (e.g. Hong Tai 58 captain sentenced 2025) was seen in search results but not coded: it is enforcement, not adoption. A human may want a pole-null record.",
+    "Current TAIDE version and base model, and whether any agency deploys TAIDE or a foreign frontier model (OpenAI, Google, Microsoft) under a government agreement.",
+    "Sovereign AI data-centre plans by Chunghwa Telecom or other domestic firms since 2023."
+  ],
+  "searches_run": 10
+}
