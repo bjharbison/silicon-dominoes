@@ -1,0 +1,455 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "HKG",
+  "name": "Hong Kong",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T17:15:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "HKG-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "HKT, Three Hong Kong and Hong Kong arms of China Mobile, China Telecom, China Unicom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-01-25",
+      "still_current": null,
+      "summary": "Asia Times reported that almost all Hong Kong mobile and broadband operators, naming HKT and Three, used Huawei switches and base stations; SmarTone was the reported exception, using Ericsson.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://asiatimes.com/2019/01/huawei-has-hk-covered-govt-businesses-using-its-gear/",
+          "publisher": "Asia Times",
+          "source_tier": "S3",
+          "date": "2019-01-25",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 inferred from installed base described in general terms; network domains (RAN vs core, 4G vs 5G) and operator-by-operator vendor shares not established. Pre-2020 finding; current status not confirmed (still_current null). Mainland carriers' HK arms and Huawei both treated as prc per the controller rule (equipment vendor)."
+    },
+    {
+      "id": "HKG-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "MTR Corporation",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016",
+      "still_current": null,
+      "summary": "MTR Corporation awarded Huawei orders worth about HK$140 million in 2016 for a wireless backbone system along metro lines; government departments also bought about 190 sets of Huawei network products in 2016-2018.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://asiatimes.com/2019/01/huawei-has-hk-covered-govt-businesses-using-its-gear/",
+          "publisher": "Asia Times",
+          "source_tier": "S3",
+          "date": "2019-01-25",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment vendor Huawei sets the pole even though MTR is HK-government majority-owned. HK$140m not converted (no dated rate taken). Single opened S3 source; pre-2020 and current use not confirmed."
+    },
+    {
+      "id": "HKG-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "SmarTone",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-03-19",
+      "still_current": null,
+      "summary": "SmarTone signed a five-year contract with Ericsson to deploy 5G in Hong Kong, including Ericsson's dual-mode 5G core, orchestration and spectrum-sharing technology; it launched 5G on Ericsson DSS in May 2020.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/20200319/5g/5g-strides-in-hong-kong-hkt-to-deploy-network-smartone-selects-ericsson",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2020-03-19",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20200528/5g/smartone-launches-5g-hong-kong-via-ericsson-dss-technology",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2020-05-28",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so third pole. SmarTone is HK-controlled (local actor). Contract value not disclosed. Second RCR article not opened; the May 2020 launch detail rests on its search-result title."
+    },
+    {
+      "id": "HKG-004",
+      "layer": "facilities",
+      "pole": "prc",
+      "controller": "Range Intelligent Computing Technology (ultimate parent Runze/Range Intelligent Computing Technology Group, Shenzhen-listed)",
+      "local_actor": "Hong Kong Range Intelligent Computing Technology Company Limited; HK SAR Government (ITIB, land grantor)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03",
+      "still_current": null,
+      "summary": "A mainland data-centre group, sole bidder, won the 50-year Sandy Ridge data facility cluster site for HK$581m premium, planning HK$23.8bn investment and 180,000 PFLOPS by 2032; groundbreaking was held March 2026.",
+      "announced_value_usd": 3000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.info.gov.hk/gia/general/202603/02/P2026030200249.htm",
+          "publisher": "HKSAR Government press release (ITIB)",
+          "source_tier": "S1",
+          "date": "2026-03-02",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.news.gov.hk/eng/2026/03/20260302/20260302_172856_632.html",
+          "publisher": "news.gov.hk",
+          "source_tier": "S1",
+          "date": "2026-03-02",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/construction-begins-for-data-center-in-new-hong-kong-tech-hub/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-03-30",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.scmp.com/news/hong-kong/society/article/3345158/mainland-chinese-firm-build-northern-metropolis-data-cluster-facility",
+          "publisher": "South China Morning Post",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Judgement: owner-operator's ultimate parent is a Shenzhen-listed mainland group operating data centres around Beijing-Tianjin-Hebei, so prc rather than domestic, despite the HK-incorporated subsidiary. Tier 4 on construction start. announced_value_usd is DCD's own conversion (about US$3bn) of HK$23.8bn, which covers development plus three operating years. No GPU vendor or tenants named. SCMP is Alibaba-owned; treated as S3."
+    },
+    {
+      "id": "HKG-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Hong Kong Cyberport Management Company",
+      "local_actor": "Cyberport AI Supercomputing Centre",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12",
+      "still_current": true,
+      "summary": "Government-owned Cyberport opened the first phase of its AI Supercomputing Centre in December 2024, at 1,300 petaflops, with a further 1,700 petaflops due by end-2025; a HK$3bn three-year subsidy scheme supports users.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.cyberport.hk/en/development/aisc",
+          "publisher": "Hong Kong Cyberport Management Company",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.scmp.com/tech/article/3325469/cyberport-may-use-chinese-gpus-hong-kong-supercomputing-hub-cut-reliance-nvidia",
+          "publisher": "South China Morning Post",
+          "source_tier": "S3",
+          "date": "2025-09",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Cyberport is wholly owned by the HK SAR Government, so domestic (HK-controlled). Capacity figures come from SCMP only; Cyberport's page confirms the December 2024 start and subsidy scheme. Whether the 1,700 PFLOPS second phase was delivered was not confirmed. SCMP date inferred from photo captions (September 2025)."
+    },
+    {
+      "id": "HKG-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Cyberport AI Supercomputing Centre",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09",
+      "still_current": null,
+      "summary": "SCMP reported that all of the Cyberport AI Supercomputing Centre's planned 3,000 petaflops ran on Nvidia H800 chips, and its CEO said relying solely on Nvidia was no longer an option.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.scmp.com/tech/article/3325469/cyberport-may-use-chinese-gpus-hong-kong-supercomputing-hub-cut-reliance-nvidia",
+          "publisher": "South China Morning Post",
+          "source_tier": "S3",
+          "date": "2025-09",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "H800 is the China-market export variant. Chip count, purchase channel and licensing status not reported. Single opened S3 source. Date is the approximate reporting date (photo captions, September 2025), not purchase date."
+    },
+    {
+      "id": "HKG-007",
+      "layer": "silicon",
+      "pole": "prc",
+      "controller": "Undisclosed mainland Chinese GPU makers (four)",
+      "local_actor": "Cyberport AI Supercomputing Centre",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09",
+      "still_current": null,
+      "summary": "Cyberport bought four GPUs from four different mainland Chinese chipmakers and was testing them, considering adding mainland GPUs to the supercomputing centre to reduce reliance on Nvidia, with cost to decide the choice.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.scmp.com/tech/article/3325469/cyberport-may-use-chinese-gpus-hong-kong-supercomputing-hub-cut-reliance-nvidia",
+          "publisher": "South China Morning Post",
+          "source_tier": "S3",
+          "date": "2025-09",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 2 (evaluation/pilot). Vendors not named by Cyberport's CEO; whether Huawei Ascend is among them is unknown. No purchase decision found in this pass."
+    },
+    {
+      "id": "HKG-008",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Hong Kong Generative AI Research and Development Center (HKGAI, HKUST-led, AIR@InnoHK-funded)",
+      "local_actor": "Digital Policy Office; HK government bureaux and departments",
+      "builder": null,
+      "financier": null,
+      "base_model": "DeepSeek (version not stated)",
+      "base_model_pole": "prc",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02-25",
+      "still_current": null,
+      "summary": "HKGAI launched HKGAI V1, a local large language model built on DeepSeek technology, integrating it into HKPilot, a drafting and translation copilot on trial across government since mid-2024; reportedly used by over 70 departments.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.info.gov.hk/gia/general/202504/02/P2025040200265.htm",
+          "publisher": "HKSAR Government (LegCo written reply, ITIB)",
+          "source_tier": "S1",
+          "date": "2025-04-02",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.thestandard.com.hk/news/article/228540/Hong-Kong-unveils-HKGAI-V1-A-milestone-in-local-AI-development",
+          "publisher": "The Standard",
+          "source_tier": "S3",
+          "date": "2025-02-25",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Weights held by an HK-government-funded university centre, so domestic; base is DeepSeek (version not stated), prc. Tier 2 because the government describes HKPilot as still in R&D and trial; the '70+ departments' figure is from The Standard and was not confirmed in the LegCo reply. Public HKChat launch status not checked."
+    },
+    {
+      "id": "HKG-009",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "Hong Kong developers and users",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": true,
+      "reversal_of": "OpenAI API access from Hong Kong",
+      "reversal_reason": "geopolitical",
+      "date": "2024-07-09",
+      "still_current": null,
+      "summary": "OpenAI notified developers it would block API traffic from unsupported regions from 9 July 2024; Hong Kong, like mainland China, is unsupported. Microsoft said Azure OpenAI service for eligible Hong Kong customers was unchanged, served from other regions.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.theregister.com/2024/06/25/openai_unsupported_countries/",
+          "publisher": "The Register",
+          "source_tier": "S2",
+          "date": "2024-06-25",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://scmp.com/tech/policy/article/3267971/tech-war-openai-further-block-access-mainland-china-hong-kong-based-developers",
+          "publisher": "South China Morning Post",
+          "source_tier": "S3",
+          "date": "2024-06-25",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.scmp.com/tech/big-tech/article/3268233/microsoft-maintains-ai-services-hong-kong-openai-curbs-api-access-china",
+          "publisher": "South China Morning Post",
+          "source_tier": "S3",
+          "date": "2024-06-27",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1 because the reversed thing was informal API access in an officially unsupported territory, not a contracted deployment. Reason coded geopolitical as judgement: OpenAI gave no public reason in these sources; commercial/compliance is possible. US-model access persists via Microsoft Azure OpenAI, which partly offsets the block. Not re-coded under global PRC-model layers."
+    },
+    {
+      "id": "HKG-010",
+      "layer": "applications",
+      "pole": null,
+      "controller": "Hong Kong Police Force (operator); camera/AI vendors not identified",
+      "local_actor": "Hong Kong Police Force (SurveilHK)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-03",
+      "still_current": null,
+      "summary": "Hong Kong's police CCTV network, using AI for crowd control and licence-plate recognition, is to grow by over 20,000 cameras a year to about 60,000 by 2028; facial recognition was being studied.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.thestandard.com.hk/news/article/313207/Police-consider-facial-recognition-technology-in-expanding-surveillance-network-Chris-Tang",
+          "publisher": "The Standard",
+          "source_tier": "S3",
+          "date": "2025-10-03",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3319503/hong-kong-police-could-deploy-facial-recognition-technology-cctv-system-end-year",
+          "publisher": "South China Morning Post",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: under the equipment-vendor rule the controller is the camera/analytics vendor, which no opened source names. Police operate it, so it is HK-controlled operationally. Tier 5 for the existing AI functions; the expansion and facial recognition are plans. Single opened S3 source."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power supply arrangement surfaced in facilities searches; not given a dedicated search"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current RAN/core vendors for HKT, CSL, China Mobile Hong Kong and 3HK 5G networks (S1/S2 confirmation; 2019 Asia Times picture is dated).",
+    "US export-control enforcement involving Hong Kong (Entity List additions, chip-smuggling prosecutions using HK shell firms): searched once, not coded because enforcement is not adoption; a reviewer may want a pole-null note.",
+    "Which mainland GPU vendors Cyberport tested and whether it bought any; whether its second phase (1,700 PFLOPS) was delivered and on which chips.",
+    "Sandy Ridge: GPU vendor, tenants, and any power arrangement; confirm Range/Runze ownership chain via filings.",
+    "Camera and analytics vendors for the police SurveilHK network, and whether facial recognition has been deployed.",
+    "HKGAI: exact DeepSeek base model version, HKChat public launch status, and scale of HKPilot use across departments.",
+    "Large HK data-centre campuses by other operators since 2023 (e.g. hyperscaler-adjacent builds in Tseung Kwan O) and submarine cable vendors (any HMN Tech landings)."
+  ],
+  "searches_run": 9
+}

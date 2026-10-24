@@ -1,0 +1,324 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BWA",
+  "name": "Botswana",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T17:15:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BWA-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Botswana Police Service",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-11",
+      "still_current": null,
+      "summary": "Botswana Police Service contracted Huawei in November 2017 for a Safe City CCTV system feeding a police command centre; about 500 cameras in Gaborone and Francistown were later reported operational.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/content/Kjlyrvw1N6VMk6am",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2019-09-02",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://yourbotswana.com/botswana-safe-city-project-in-gaborone-francistown-now-operational/",
+          "publisher": "Your Botswana (republishing Xinhua)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true,
+          "relays_prc_state_media": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 rests on the operational report, which is a Xinhua republication (S4); ITWeb independently supports only a signed contract (tier 3) with Gaborone first and Francistown due by end-2019. Date is the contract date; operational report likely early 2020 (image-folder hint only). Value undisclosed; financing unknown. Current operation not confirmed."
+    },
+    {
+      "id": "BWA-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Botswana Fibre Networks (BoFiNet), Government of Botswana",
+      "local_actor": "BoFiNet",
+      "builder": "China Jiangxi International Economic and Technical Cooperation (CJIC); DCD 2025 names contractor Zhong Gan",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-25",
+      "still_current": true,
+      "summary": "Botswana's first national data centre, a government-owned Tier III colocation facility of about 1,000 sq m and roughly 400 racks at the Botswana Innovation Hub, run by BoFiNet and Chinese-built, was inaugurated in November 2025 after two years' delay.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/botswana-launches-first-national-data-center/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-12-03",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/botswana-to-get-chinese-built-data-center-in-october/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-09-26",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-digital/2711-50891-botswana-opens-its-first-national-data-centre",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S2",
+          "date": "2025-11-27",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is the state, so domestic; the Chinese builder does not set the pole. DCD 2025 says the build had 'backing' from CJIC, which may or may not be financing, so financier left null. Zhong Gan is probably CJIC's short name (unverified). Tier 5 on inauguration; tenancy and load not reported. IT equipment vendor not named. Not AI-specific."
+    },
+    {
+      "id": "BWA-003",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "AAAS Energy / ChillMine (controller not finalised)",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-02",
+      "still_current": null,
+      "summary": "Netherlands-based AAAS Energy and US data-centre operator ChillMine signed an MoU to develop a solar-powered data-centre campus near Palapye aimed at hyperscalers and AI computing, within a planned energy hub and industrial park.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/data-centers/chillmine-aaas-energy-to-launch-data-center-in-botswana",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2025-10-02",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-digital/0310-49256-botswana-aaas-energy-and-chillmine-to-build-green-powered-data-center-campus",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the source says ownership and control are not finalised between a Dutch energy firm and a US operator; if ChillMine operates, the pole would be us. No IT capacity, value or government counterparty given. MoU only (tier 1).",
+      "bundle_id": "BWA-B1"
+    },
+    {
+      "id": "BWA-004",
+      "layer": "power",
+      "pole": "third",
+      "controller": "AAAS Energy",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-02",
+      "still_current": null,
+      "summary": "AAAS Energy's 250MW solar PV project with 100-400MW battery storage near Palapye, under development, is to power the planned AAAS-ChillMine data-centre campus under their MoU, possibly combined with third-party gas projects.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/data-centers/chillmine-aaas-energy-to-launch-data-center-in-botswana",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2025-10-02",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "AAAS Energy described as Netherlands-based, so third pole as owner-developer. Tier 1 reflects the MoU tying the plant to the data-centre campus; the solar project's own development status beyond 'under development' was not established.",
+      "bundle_id": "BWA-B1"
+    },
+    {
+      "id": "BWA-005",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Ribbon Communications",
+      "local_actor": "Botswana Fibre Networks (BoFiNet)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-07-26",
+      "still_current": null,
+      "summary": "BoFiNet selected Ribbon to upgrade its national backbone with a DWDM/OTN optical network (Apollo platform) across about 10,600 km of fibre serving over 200 towns and villages, with 200G channels and a path to 400G.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/broadband/bofinet-builds-national-dwdm-backbone-network-with-ribbons-advanced-solutions/d/d-id/779284",
+          "publisher": "Ribbon Communications press release (via Light Reading)",
+          "source_tier": "S4",
+          "date": "2022-07-26",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://totaltele.com/bofinet-builds-national-dwdm-backbone-network-with-ribbons-advanced-solutions/",
+          "publisher": "Total Telecom (press release)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ribbon is headquartered in the US, so us pole. Analyst inference: the Apollo optical line originates from Ribbon's acquisition of Israel's ECI. Only vendor press releases found (corporate marketing, S4). Tier 3 on selection and supply; operational status and value not stated."
+    },
+    {
+      "id": "BWA-006",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Orange Botswana",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2014-10-13",
+      "still_current": null,
+      "summary": "Ericsson signed a multi-year managed services agreement to take over operation and field maintenance of Orange Botswana's network infrastructure.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/ericsson-seals-orange-botswana-network-management-deal/O2rQGMAn5Dgqd1ea",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2014-10-13",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson operates the network, so it is coded as controller (Swedish, third). Pre-2020; whether the agreement is still in force, and which vendor supplies Orange Botswana's RAN/core, were not established. Term and value undisclosed."
+    },
+    {
+      "id": "BWA-007",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Communications and Innovation",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-08",
+      "still_current": null,
+      "summary": "At Huawei's 2026 ICT Congress in Gaborone, an assistant minister praised a longstanding government partnership with Huawei and urged its expansion into broadband, cloud and AI, linking it to the Village Connectivity Project; no specific deal was announced.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/botswana-taps-huawei-for-ai-rural-connectivity/GxwQDq1DOk9MlPVo",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2026-05-08",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Statement of intent only (tier 1). Layer set to networks because the only concrete programme named is rural connectivity; the headline overstates the body, which names no Huawei AI or cloud project. What Huawei supplies to the Village Connectivity Project is unconfirmed."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or export-licence reporting surfaced in data-centre and AI searches; no dedicated silicon search run"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search on government AI partnerships found no frontier-model or sovereign-model adoption; only a Korea ICT/AI cooperation lead (unopened) and Huawei general remarks"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "coded"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendors supply RAN and core for Mascom (5G launched 2022), Orange Botswana (5G) and BTC (5G due October 2026)? No vendor named in any source found.",
+    "Is the Huawei Safe City system still operating, was it extended beyond Gaborone and Francistown, and how was it financed (Chinese loan or budget)?",
+    "Did CJIC or a Chinese lender finance the national data centre, and who supplied its IT equipment?",
+    "Has the AAAS Energy/ChillMine Palapye campus progressed beyond the MoU, and who will control it?",
+    "South Korea-Botswana AI/ICT cooperation (samsearch.co lead, unopened): any binding instrument?",
+    "Orange Botswana's December 2023 Gaborone data centre (DCD headline only, not opened): controller Orange (France, third)?"
+  ],
+  "searches_run": 8
+}

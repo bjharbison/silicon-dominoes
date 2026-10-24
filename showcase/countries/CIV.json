@@ -1,0 +1,311 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "CIV",
+  "name": "Côte d'Ivoire",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T17:15:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "CIV-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "ANSUT (National Broadband Project)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2013",
+      "still_current": null,
+      "summary": "Huawei built Section 1 (San Pedro to Ferkessedougou, about 1,400 km) of the roughly 7,000 km national fibre backbone managed by ANSUT; in 2016 the government asked Huawei to repair about 1,000 km of substandard fibre.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://oxfordbusinessgroup.com/reports/cote-divoire/2017-report/economy/cabling-the-land-a-new-fibre-optic-network-is-linking-up-the-country",
+          "publisher": "Oxford Business Group",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/La-Cote-d-Ivoire-a-engage-la.html",
+          "publisher": "OSIRIS (Observatoire sur les systemes d'information, Senegal)",
+          "source_tier": "S2",
+          "date": "2016-04-21",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Huawei is described as contractor; it is inferred, not stated, that Huawei also supplied the transmission equipment. Tier 4 (construction under way, completion expected 2017); completion and current vendor of maintenance not confirmed. Pre-2020 finding. A further 620 km section was built by China's CITCC (not coded; equipment vendor unknown)."
+    },
+    {
+      "id": "CIV-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Bouygues / Sagemcom / Polyconseil consortium",
+      "local_actor": "ANSUT (National Broadband Project)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-04",
+      "still_current": null,
+      "summary": "A French consortium of Bouygues, Sagemcom and Polyconseil began work in April 2016 on Section 3, about 5,000 km, the largest phase of the national fibre backbone; total programme cost was put at CFA106.8bn.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.osiris.sn/La-Cote-d-Ivoire-a-engage-la.html",
+          "publisher": "OSIRIS (Observatoire sur les systemes d'information, Senegal)",
+          "source_tier": "S2",
+          "date": "2016-04-21",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://oxfordbusinessgroup.com/reports/cote-divoire/2017-report/economy/cabling-the-land-a-new-fibre-optic-network-is-linking-up-the-country",
+          "publisher": "Oxford Business Group",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "French consortium, so third pole; which member supplies the active equipment is not stated. CFA106.8bn is the whole programme, not this section, so no value recorded. Completion and still_current not confirmed. Pre-2020 finding."
+    },
+    {
+      "id": "CIV-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Cote d'Ivoire (Ministry of Digital Transition)",
+      "local_actor": "Ministry of Digital Transition and Digitalisation; AIGF site, Marcory-Anoumabo, Abidjan",
+      "builder": "Porteo (per Digital Mag); Construct Africa names Cybastion as builder",
+      "financier": "Cybastion (US) under a US-Cote d'Ivoire partnership",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-12-14",
+      "still_current": null,
+      "summary": "Works began on a state-owned Tier III national data centre in Abidjan, about US$60m, 800 racks and 1 MW, backed by a US partnership; due in 12 months, it missed its December 2024 delivery date.",
+      "announced_value_usd": 60000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fr.allafrica.com/stories/202312150416.html",
+          "publisher": "AllAfrica (French)",
+          "source_tier": "S3",
+          "date": "2023-12-15",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://constructafrica.com/news/cote-divoire-launches-work-national-data-centre",
+          "publisher": "Construct Africa",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://digitalmag.ci/hebergement-des-donnees-publiques-a-raxio-la-cote-divoire-a-t-elle-renonce-au-data-center-national-et-a-sa-souverainete-numerique/",
+          "publisher": "Digital Mag Cote d'Ivoire",
+          "source_tier": "S2",
+          "date": "2025-07-03",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is the Ivorian state, so domestic; Cybastion (US) is named as financier/builder by Construct Africa and as financier by Digital Mag, with Porteo as builder (nationality not checked). Digital Mag (July 2025) suggests the project may be shelved but does not confirm it, so not coded as a reversal; still_current null."
+    },
+    {
+      "id": "CIV-004",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Raxio Group",
+      "local_actor": "Ministry of Digital Transition and Digitalisation; ARTCI",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-26",
+      "still_current": null,
+      "summary": "The digital ministry signed an agreement to host public-service data at Raxio's CIV1 Tier III data centre (3 MW, VITIB, Grand-Bassam, inaugurated 2024), after ARTCI agreed in May 2025 to place the CIVIX exchange point there.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://digitalmag.ci/hebergement-des-donnees-publiques-a-raxio-la-cote-divoire-a-t-elle-renonce-au-data-center-national-et-a-sa-souverainete-numerique/",
+          "publisher": "Digital Mag Cote d'Ivoire",
+          "source_tier": "S2",
+          "date": "2025-07-03",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techafricanews.com/2024/09/25/raxio-group-unveils-first-tier-iii-data-centre-in-cote-divoire-expanding-west-african-footprint/",
+          "publisher": "TechAfrica News",
+          "source_tier": "S2",
+          "date": "2024-09-25",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: Raxio Group's home jurisdiction and owners were not established in this pass. Only Digital Mag reports the hosting agreements; TechAfrica News supports only the facility's inauguration, so not corroborated. Tier 3 assumes a signed hosting agreement; value undisclosed."
+    },
+    {
+      "id": "CIV-005",
+      "layer": "models",
+      "pole": "third",
+      "controller": "Mistral AI",
+      "local_actor": "Ministry of Digital Transition and Technological Innovation (MTNIT)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-17",
+      "still_current": null,
+      "summary": "Cote d'Ivoire's digital ministry signed a strategic partnership with France's Mistral AI, with Artefact Cote d'Ivoire, starting with an audit of the AI ecosystem, a roadmap and planned pilots in administration, health, education and agriculture.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.capmad.com/post/abidjan-signs-strategic-partnership-with-mistral-to-structure-cote-divoires-ai-ecosystem",
+          "publisher": "CAPMAD",
+          "source_tier": "S2",
+          "date": "2026-09-03",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techafricanews.com/2026/09/03/cote-divoire-partners-with-mistral-ai-to-drive-national-digital-transformation/",
+          "publisher": "TechAfrica News",
+          "source_tier": "S2",
+          "date": "2026-09-03",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.aip.ci/aip-le-ministere-de-la-transition-numerique-et-mistral-annoncent-un-partenariat-strategique-pour-une-ia-au-service-des-ivoiriens/",
+          "publisher": "Agence Ivoirienne de Presse",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Mistral is French, so third pole. Tier 1: a strategic partnership whose first deliverable is an audit; pilots are planned, not started, and no binding procurement or value is reported. No specific model or hosting arrangement named, so base_model null. Signing date from CAPMAD; TechAfrica gives only the publication date."
+    },
+    {
+      "id": "CIV-006",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Cote d'Ivoire (Abidjan video surveillance platform)",
+      "builder": null,
+      "financier": "China Exim Bank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-02-28",
+      "still_current": null,
+      "summary": "Huawei implemented Phase 1 of Abidjan's video surveillance platform (safe city): about 1,000 cameras, 270 km of fibre and traffic-control systems, financed by a China Exim Bank preferential buyer's credit signed June 2016 and completed February 2021.",
+      "announced_value_usd": 56700000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/53273",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/finance/0209-35171-china-exim-bank-lends-56-mln-to-cote-d-ivoire-for-video-surveillance-system-in-abidjan",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2016-09-02",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Huawei as implementer is from AidData only; Ecofin names no vendor, so the Huawei attribution rests on one source. Announced value US$56.7m per Ecofin (CFA33.35bn as reported); AidData gives US$57.1m with noted discrepancies. Current operation not confirmed (still_current null)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or GPU vendor named in facilities or models searches; silicon not given a dedicated search"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced; budget spent on other layers"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Mobile RAN/core vendors for Orange CI, MTN CI and Moov Africa: three searches found 5G pilots and an Orange 5G lab but no named vendor.",
+    "Is the Marcory national data centre still under way, paused or abandoned after the move to host public data at Raxio CIV1? A confirmed cancellation would be a reversal.",
+    "Raxio Group ownership and home jurisdiction (needed for the CIV-004 pole).",
+    "Equipment vendor for CITCC's 620 km backbone section, and whether Huawei's Section 1 was completed and remains Huawei-maintained.",
+    "Phase 2 of the Abidjan video surveillance platform and extension to interior cities (2019 reporting) - vendor and financing; independent confirmation of Huawei as implementer.",
+    "Whether the Mistral partnership has produced pilots or procurement after IMPACT IA (September 2026)."
+  ],
+  "searches_run": 10
+}

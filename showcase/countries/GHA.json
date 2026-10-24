@@ -1,0 +1,421 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GHA",
+  "name": "Ghana",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T17:15:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GHA-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Radisys (Reliance Industries) and Nokia",
+      "local_actor": "Next-Gen Infrastructure Company (NGIC)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-11",
+      "still_current": null,
+      "summary": "A government joint venture with Radisys, Nokia and Tech Mahindra, NGIC received a ten-year exclusive 5G wholesale licence and launched in November 2024, but had only 49 live 5G sites by March 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-business/telecom-regulation/20513-mtn-ghana-and-telecel-ghana-to-bid-for-5g-licences-after-ngic-loses-concession.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-07-10",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://yen.com.gh/business-economy/308026-nca-removes-ngics-exclusive-rights-operate-ghanas-wholesale-5g-network/",
+          "publisher": "Yen.com.gh",
+          "source_tier": "S3",
+          "date": "2026-07-16",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/ghana-awards-5g-licenses-to-telecel-mtn/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-10-07",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Radisys is a Reliance Jio (India) subsidiary and Nokia is Finnish, so third pole; Radisys is named as the main infrastructure supplier. Tier 4 (licence issued, operating) rather than 5 because the network never reached scale. Shareholdings not disclosed; other listed participants (Ascend Digital, K-NET, AT Ghana, Telecel Ghana) not coded."
+    },
+    {
+      "id": "GHA-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Radisys (Reliance Industries) and Nokia",
+      "local_actor": "Next-Gen Infrastructure Company (NGIC); National Communications Authority",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": true,
+      "reversal_of": "NGIC's exclusive 5G wholesale network concession",
+      "reversal_reason": "regulatory",
+      "date": "2026-07-15",
+      "still_current": true,
+      "summary": "The National Communications Authority amended NGIC's licence, ending its exclusive 5G wholesale concession years before its 2034 expiry, citing slow rollout and a public interest in competition; MTN and Telecel then received their own 5G licences.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://yen.com.gh/business-economy/308026-nca-removes-ngics-exclusive-rights-operate-ghanas-wholesale-5g-network/",
+          "publisher": "Yen.com.gh",
+          "source_tier": "S3",
+          "date": "2026-07-16",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-business/telecom-regulation/20513-mtn-ghana-and-telecel-ghana-to-bid-for-5g-licences-after-ngic-loses-concession.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-07-10",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/ghana-awards-5g-licenses-to-telecel-mtn/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-10-07",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded regulatory: the stated motive is rollout delay and competition, not security or alignment. The reversal ends exclusivity, not NGIC's network, so it does not move the map. Effective date per Yen.com.gh; Developing Telecoms reported the revocation earlier (10 July), consistent with a decided-then-effective sequence."
+    },
+    {
+      "id": "GHA-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telecel Ghana (Telecel Group)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-11",
+      "still_current": null,
+      "summary": "Telecel Group signed an MoU with Huawei in Shenzhen to modernise Telecel Ghana's network, reported as a phased US$70 million project expanding 4G to 2,500 sites within three years and extending Huawei's existing role in Telecel's 4G.",
+      "announced_value_usd": 70000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/news-digital/1311-50447-telecel-ghana-launches-70-million-network-upgrade-with-huawei",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S3",
+          "date": "2025-11-13",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://thebftonline.com/2025/11/12/telecel-group-huawei-sign-mou-for-advance-network-modernization-digital-transformation/",
+          "publisher": "Business & Financial Times",
+          "source_tier": "S3",
+          "date": "2025-11-12",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: an MoU; the US$70m is an announced figure, not shown to be contracted. Ecofin cites the Ghana News Agency. Huawei's existing supply of Telecel Ghana 4G is implied but not separately coded (installed scope unknown). Reported Orange talks to buy Telecel Ghana (Oct 2026) could affect this."
+    },
+    {
+      "id": "GHA-004",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of National Security; Ministry of Finance",
+      "builder": "China Machinery Engineering Corporation (CMEC)",
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-12-04",
+      "still_current": null,
+      "summary": "China Eximbank financed 85% of a US$234.6m contract with Huawei and CMEC for ALPHA Phase 2, expanding national-security CCTV from about 800 to roughly 10,000 cameras, with eLTE, plate recognition and data centres; reported substantially completed by 2024.",
+      "announced_value_usd": 234600000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/86361",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ids.ac.uk/press-releases/ghanas-democracy-at-risk-due-to-use-of-surveillance-technology-warns-new-report",
+          "publisher": "Institute of Development Studies / African Digital Rights Network",
+          "source_tier": "S3",
+          "date": "2023-09-27",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "AidData is a research dataset compiled from secondary sources, tiered S2 as a judgement call. The IDS release describes a Huawei-powered safe-city CCTV project with facial recognition but does not name ALPHA Phase 2, so it is not counted as corroboration. Loan agreement US$199.4m per AidData; not converted or verified."
+    },
+    {
+      "id": "GHA-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of National Security; Ministry of Finance",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": true,
+      "reversal_of": "China Eximbank financing of ALPHA Phase 2 (GHA-004)",
+      "reversal_reason": "commercial",
+      "date": "2023",
+      "still_current": null,
+      "summary": "AidData reports China Eximbank suspended the ALPHA Phase 2 security-network project in 2023 after Ghana suspended debt repayments following its December 2022 default.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/86361",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded commercial (financing failure tied to sovereign default), so it does not move the map. Whether the suspension was lifted after Ghana's debt restructuring, and whether it halted any work given 'substantially completed' status, was not established."
+    },
+    {
+      "id": "GHA-006",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "ZTE and Huawei",
+      "local_actor": "Government of Ghana (National Security Council); Ghana Police",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-12-15",
+      "still_current": null,
+      "summary": "A US$123.4m China Eximbank loan (2013) financed Phase 2 of Ghana's Dedicated Security Information System: a ZTE supply contract plus Huawei CCTV and a 253-base-station eLTE network for the Police Command Centre, inaugurated December 2017.",
+      "announced_value_usd": 123409273,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/30956",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 on reported completion and inauguration. Controller split between ZTE (supply) and Huawei (CCTV/eLTE); both prc. Pre-2020 finding; current operation not confirmed. Likely the base that ALPHA Phase 2 (GHA-004) extended, but not linked in the source as a bundle."
+    },
+    {
+      "id": "GHA-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Ghana",
+      "local_actor": "Government of Ghana (Cabinet)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04-01",
+      "still_current": null,
+      "summary": "Cabinet approved a US$250 million investment to establish a national AI computing centre, announced alongside the planned April 2026 launch of Ghana's National AI Strategy; no site, operator, vendor or financing structure was given.",
+      "announced_value_usd": 250000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://isd.gov.gh/?p=15252",
+          "publisher": "Information Services Department, Government of Ghana",
+          "source_tier": "S1",
+          "date": "2026-04-01",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://citinewsroom.com/2026/04/mahama-ghana-to-invest-270m-in-ai-computing-centre-strategy-rollout/",
+          "publisher": "Citi Newsroom",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://gna.org.gh/2026/04/ghana-to-invest-250m-in-ai-centre-launch-national-strategy/",
+          "publisher": "Ghana News Agency",
+          "source_tier": "S4",
+          "date": "2026-04",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: a cabinet approval and statement of intent, no contract or procurement shown. Pole domestic on the assumption the state will own it; operator undetermined. Citi Newsroom headline gives US$270m (unopened); figure discrepancy unresolved."
+    },
+    {
+      "id": "GHA-008",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Africa Data Centres (Cassava Technologies)",
+      "local_actor": "Onix Data Centres",
+      "builder": "Onix Data Centres",
+      "financier": "US International Development Finance Corporation (partial, per DCD)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06-14",
+      "still_current": null,
+      "summary": "Africa Data Centres, part of Cassava Technologies, partnered with Onix Data Centres to build a planned 30MW facility in Accra on land bought in 2023, with partial US DFC funding mentioned; no completion date set.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/africa-data-centres-and-onix-partner-for-data-center-build-in-accra-ghana",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-06-14",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Cassava is controlled by Zimbabwean-born Strive Masiyiwa and headquartered outside Ghana, so third pole (home jurisdiction judgement for reviewer). Not AI-specific. Tier 2: land and build partnership, construction not confirmed; 2026 status not checked. DFC amount not stated."
+    },
+    {
+      "id": "GHA-009",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Ministry of Education",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-01-23",
+      "still_current": null,
+      "summary": "Education Minister Haruna Iddrisu announced a partnership with Google to deploy zero-rated, curriculum-aligned AI education tools in Twi, Ewe, Dagbani and Hausa nationwide, with the University of Ghana and GDI Hub on language tools.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.graphic.com.gh/news/education/ghana-partners-with-google-to-introduce-ai-education-tools-in-local-languages-haruna-iddrisu.html",
+          "publisher": "Graphic Online",
+          "source_tier": "S3",
+          "date": "2026-01-25",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-services/2601-52257-ghana-partners-with-google-to-expand-ai-driven-education-in-local-languages",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S3",
+          "date": "2026-01-26",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: announced via the minister's social-media post; Ecofin calls it a strategic partnership agreement but Graphic names no instrument. No specific Google model named, so base_model null; used as a Google service, hence us pole."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases, GPU vendor or export-licence reporting surfaced; the AI compute centre announcement names no vendor; no dedicated silicon search run"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced in other searches"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies MTN Ghana's RAN and core (72% market share)? No vendor evidence found in this pass.",
+    "Was China Eximbank's 2023 suspension of ALPHA Phase 2 lifted after Ghana's debt restructuring, and is the ~10,000-camera system operational?",
+    "National AI computing centre: operator, site, GPU vendor, financing; reconcile US$250m vs US$270m figures.",
+    "Status in 2026 of Africa Data Centres' 30MW Accra build and the size of DFC financing.",
+    "Did Telecel–Huawei MoU become a contract, and does a possible Orange acquisition of Telecel Ghana change vendor choice?",
+    "Which vendors supply MTN and Telecel 5G under their new 2026 licences?"
+  ],
+  "searches_run": 10
+}

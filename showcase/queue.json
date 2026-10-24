@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "JAM",
-  "GHA",
-  "CIV",
-  "RWA",
-  "UGA",
-  "AGO",
-  "NAM",
-  "BWA",
-  "ZWE",
-  "HKG",
   "MAC",
   "AFG",
   "ALB",
@@ -254,6 +244,16 @@
   "URY",
   "BOL",
   "PRY",
-  "DOM"
+  "DOM",
+  "JAM",
+  "GHA",
+  "CIV",
+  "RWA",
+  "UGA",
+  "AGO",
+  "NAM",
+  "BWA",
+  "ZWE",
+  "HKG"
  ]
 }

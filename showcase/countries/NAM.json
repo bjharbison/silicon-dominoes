@@ -1,0 +1,221 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "NAM",
+  "name": "Namibia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T17:15:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "NAM-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telecom Namibia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06-17",
+      "still_current": null,
+      "summary": "Telecom Namibia announced a five-year partnership to buy Huawei mobile radio access equipment, adding and upgrading base stations for 4G, 4.5G and 5G coverage, including underserved rural areas, under its strategic plan to 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://telecom.na/media-centre/788-telecom-namibia-to-improve-tn-mobile-network-through-5-year-huawei-partnership",
+          "publisher": "Telecom Namibia (media release)",
+          "source_tier": "S1",
+          "date": "2024-06-17",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://thebrief.com.na/2024/06/telecom-namibia-partners-huawei-to-expand-mobile-coverage-and-deploy-5g/",
+          "publisher": "The Brief (Namibia)",
+          "source_tier": "S3",
+          "date": "2024-06-17",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 3 on a stated equipment-purchase partnership; value and site count not disclosed, and no formal contract document seen. Core network not covered by this release (see NAM-002). The Brief largely relays the operator's release, so independence is limited."
+    },
+    {
+      "id": "NAM-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telecom Namibia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023",
+      "still_current": null,
+      "summary": "Telecom Namibia signed a deal reported at US$5.3 million with Huawei for a fixed-mobile convergence core network; it began 5G testing with Huawei in March 2024 and targets commercial 5G in 2026.",
+      "announced_value_usd": 5300000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/telecom-namibia-aims-to-launch-5g-in-2026/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-08-28",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Signing year 2023 inferred from the article's 'last year' wording (article dated 2024-08-28). Value as reported in USD; no award notice seen."
+    },
+    {
+      "id": "NAM-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Mobile Telecommunications Company (MTC)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-28",
+      "still_current": null,
+      "summary": "MTC, Namibia's largest mobile operator, launched commercial 5G in Windhoek, Walvis Bay, Swakopmund and Ongwediva, with Huawei named as a 5G partner under an agreement signed the previous year.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/mtc-launches-5g-commercial-services-in-namibia/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-08-28",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Huawei is named as one 5G partner, not confirmed as sole RAN/core vendor; tier 3 for the signed agreement rather than tier 5, since launch covers four towns. Commercial launch implies Namibia's earlier 5G moratorium (reasons unstated in sources) was lifted. A 2022 MTC-Huawei-NUST cooperation agreement and Global Voices' description of Huawei as long-time 3G/4G supplier to MTC and Telecom Namibia were seen but not coded separately."
+    },
+    {
+      "id": "NAM-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Namibia (Ministry of Information and Communication Technology)",
+      "local_actor": "Ministry of Information and Communication Technology; Office of the Prime Minister",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09",
+      "still_current": null,
+      "summary": "Namibia plans a national data centre under its 2025-2029 digital strategy; the ICT ministry and Prime Minister's office are finalising a concept note, with capacity, builder, financier and cost not yet disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/news-digital/2209-48897-namibia-to-build-national-data-center-under-2025-2029-digital-strategy",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S3",
+          "date": "2025-09-22",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: planning statement only. Domestic on the assumption the state will own and operate it; no builder, financier or equipment vendor named, so a foreign controller cannot be ruled out."
+    },
+    {
+      "id": "NAM-005",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "City of Windhoek; Mobile Telecommunications Company (MTC)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05-07",
+      "still_current": null,
+      "summary": "MTC donated about 200 CCTV cameras to the City of Windhoek, to be installed on MTC infrastructure and at more than 40 crime-prone sites including the central business district.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.namibian.com.na/big-brother-will-be-watching-you/",
+          "publisher": "The Namibian",
+          "source_tier": "S3",
+          "date": "2024-05-08",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: camera vendor not stated. Tier 3 for a completed donation; installation not confirmed. Scale municipal (one city). Whether the cameras are Huawei/Hikvision/Dahua or other was not established."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no accelerator purchases surfaced in facilities or AI searches; no dedicated silicon search given budget"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only a Deloitte AI-strategy advisory engagement (Aug 2026) and a national AI institute; no model-provider partnership or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who imposed Namibia's 5G moratorium (c. 2020-2022), on what grounds (environmental, security, Huawei?), and when was it formally lifted?",
+    "Is Huawei MTC's sole 5G RAN/core vendor, and which vendor supplies MTC's legacy 3G/4G network (S1/S2 confirmation)?",
+    "Vendor of the ~200 CCTV cameras MTC donated to the City of Windhoek, and of other city/police CCTV (City of Windhoek-PowerCom MoU; earlier N$25m city cameras).",
+    "Owner and status of Paratus Armada data centre (Windhoek) and any post-2023 AI/large data-centre projects; national data centre builder and financier.",
+    "Submarine cable landings (WACS, Equiano) and any HMN Tech involvement in Namibian cable projects."
+  ],
+  "searches_run": 8
+}

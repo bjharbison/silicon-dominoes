@@ -1,0 +1,345 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "RWA",
+  "name": "Rwanda",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T17:15:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "RWA-001",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Anthropic (Claude)",
+      "local_actor": "Government of Rwanda (Ministry of ICT and Innovation; Ministry of Health)",
+      "builder": null,
+      "financier": null,
+      "base_model": "Claude (Anthropic; version not specified)",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-17",
+      "still_current": null,
+      "summary": "Rwanda and Anthropic signed a three-year non-binding MOU covering health goals (cervical cancer, malaria, maternal mortality), Claude and Claude Code access with API credits for government developers, and formalising an earlier educator and AI-literacy programme.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/anthropic-rwanda-mou",
+          "publisher": "Anthropic",
+          "source_tier": "S1",
+          "date": "2026-02-17",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.minict.gov.rw/news-detail/government-of-rwanda-and-anthropic-strengthen-partnership-to-advance-ai-for-health-education-and-the-public-sector",
+          "publisher": "Rwanda Ministry of ICT and Innovation",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techpolicy.press/anthropic-is-becoming-the-backbone-of-rwandas-government-but-who-is-accountable",
+          "publisher": "Tech Policy Press",
+          "source_tier": "S3",
+          "date": "2026-03-17",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Used through Anthropic's own service/API, so us pole; base_model given as the Claude family because no specific model version is named. Tier 1: non-binding MOU, no value. Anthropic's post is the counterparty's own announcement, coded S1 as a company release. No hosting or data-residency detail in any source."
+    },
+    {
+      "id": "RWA-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Airtel Rwanda",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2012-04-02",
+      "still_current": null,
+      "summary": "Airtel picked Ericsson, rather than Nokia Siemens, to manage its new Rwandan network end-to-end, including OSS/BSS and managed services, as Airtel pledged about US$100m investment over three years.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecoms.com/fixed-networks/airtel-chooses-ericsson-for-rwanda-build-out",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2012-04-02",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so third pole. Contract value undisclosed; the US$100m is Airtel's investment pledge, not the contract, so not recorded as a value. RAN/core split not stated. Airtel Rwanda later merged with Tigo Rwanda; current vendor arrangement not checked. Pre-2020 finding."
+    },
+    {
+      "id": "RWA-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "MTN Rwanda",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-11",
+      "still_current": null,
+      "summary": "MTN Rwanda deployed Ericsson multi-band, multi-sector energy-efficient radios to expand and modernise its Kigali network, adding coverage and capacity and making it 5G-ready.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/17575-ericsson-preps-mtn-rwanda-s-network-in-kigali-for-5g.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2024-11-06",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so third pole. Tier 5 because the source describes the radios as deployed; site count and value not given. Scale subnational (Kigali). MTN Rwanda's vendors outside Kigali and for its core were not established."
+    },
+    {
+      "id": "RWA-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "KT Corporation (Korea Telecom)",
+      "local_actor": "KT Rwanda Networks (KTRN; Government of Rwanda 49%)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2013",
+      "still_current": null,
+      "summary": "Under a 2013 joint venture, Korea Telecom (51%) and Rwanda's government (49%) formed KTRN, which built and runs the national wholesale 4G LTE network with access to national fibre; KT was expected to invest about US$140m.",
+      "announced_value_usd": 140000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nation.africa/rwanda/business/govt-and-korea-telcoms-in-talks-to-end-contract-dispute-4136176",
+          "publisher": "The EastAfrican / Nation Africa",
+          "source_tier": "S3",
+          "date": "2023-02-24",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-business/telecom-regulation/14505-rwanda-cuts-korea-telecom-monopoly-over-4g-spectrum.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2023-02-06",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/business/tech-science/20130310/kt-to-build-lte-network-in-rwanda",
+          "publisher": "Korea Times",
+          "source_tier": "S3",
+          "date": "2013-03-10",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third (Korean) on the basis that KT, as majority owner and operator, controls the network; the RAN/core equipment vendor was not identified in any opened source, so under the v0.2 equipment-vendor rule the pole could differ. Date is year of JV only. US$140m is an expected investment, recorded as announced."
+    },
+    {
+      "id": "RWA-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "KT Corporation (Korea Telecom)",
+      "local_actor": "Rwanda Utilities Regulatory Authority (RURA); KT Rwanda Networks",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "KTRN's 25-year exclusive wholesale 4G licence",
+      "reversal_reason": "regulatory",
+      "date": "2023-02",
+      "still_current": null,
+      "summary": "RURA moved to end KTRN's 25-year exclusive right to wholesale 4G, to remove regulatory barriers under the national broadband policy and open 4G to rival operators; compensation was negotiated and a Korean firm later filed an arbitration claim.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-business/telecom-regulation/14505-rwanda-cuts-korea-telecom-monopoly-over-4g-spectrum.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2023-02-06",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "http://capacityglobal.com/news/rwanda-to-end-4g-wholesale-deal-for-kt-partner/",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": "2023-02-09",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.nation.africa/rwanda/business/govt-and-korea-telcoms-in-talks-to-end-contract-dispute-4136176",
+          "publisher": "The EastAfrican / Nation Africa",
+          "source_tier": "S3",
+          "date": "2023-02-24",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://globalarbitrationreview.com/article/korean-telecoms-company-brings-claim-against-rwanda",
+          "publisher": "Global Arbitration Review",
+          "source_tier": "S2",
+          "date": "2026-04-02",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reversal of exclusivity only: KTRN may keep selling wholesale 4G non-exclusively. Coded regulatory (market liberalisation), not geopolitical, so it should not move the map. The GAR article does not name the claimant in its text (tagged KT) or the forum; outcome unknown."
+    },
+    {
+      "id": "RWA-006",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Rwanda",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-03",
+      "still_current": null,
+      "summary": "During talks between President Kagame and Huawei's chairwoman, Huawei signed an MOU with Rwanda's government to help build regional data centres, national broadband, smart grid and smart-education infrastructure; no value was stated.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://pctechmag.com/2017/03/huawei-signs-an-mou-with-the-government-of-rwanda-to-open-all-round-cooperation-in-the-ict-industry/",
+          "publisher": "PC Tech Magazine",
+          "source_tier": "S4",
+          "date": "2017-03-20",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded S4: the article quotes Huawei and credits photos to Huawei, suggesting company-supplied material. Layer set to networks as broadband is the main named scope; the MOU also touches facilities and power. Tier 1, pre-2020; no evidence found of what, if anything, was delivered under it."
+    },
+    {
+      "id": "RWA-007",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Africa Data Centres (Cassava Technologies)",
+      "local_actor": "Kigali",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-11-28",
+      "still_current": null,
+      "summary": "Africa Data Centres, a Cassava Technologies unit, announced a purpose-built 2MW data centre in Kigali, its first in Rwanda, with groundbreaking planned for the first quarter of 2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/africa-data-centres-to-build-first-data-center-in-kigali-rwanda",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-11-28",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.intelligentcio.com/africa/2022/12/06/africa-data-centres-to-build-its-first-data-centre-in-kigali-rwanda/",
+          "publisher": "Intelligent CIO Africa",
+          "source_tier": "S2",
+          "date": "2022-12-06",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third: Cassava is a pan-African group founded by Zimbabwean Strive Masiyiwa (analyst inference on home jurisdiction; not stated in source). Tier 1 announcement; whether construction started or the site operates was not confirmed. A DFC loan to ADC is mentioned but not tied to Kigali, so financier left null."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "one dedicated search found no accelerator purchases or deployments in Rwanda; Cassava/Nvidia AI-factory reporting lists South Africa, Egypt, Kenya, Morocco and Nigeria, not Rwanda"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found a 2018 plan to spend Rwf5bn on Kigali public CCTV but no named vendor; no safe-city or surveillance supplier identified"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced in other searches"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendor supplied KTRN's 4G LTE RAN and core, and what is the outcome of the 2026 Korean arbitration claim over the revoked exclusivity?",
+    "Huawei's actual installed footprint in Rwanda (e.g. a reported 2008 US$35m Rwandatel deal, MTN/Airtel legacy RAN or core, national fibre backbone) — only headlines or company-supplied material surfaced.",
+    "Who supplied the Kigali public CCTV system funded in 2018 (Rwf5bn), and is it AI/analytics-enabled?",
+    "Did Africa Data Centres' Kigali facility break ground or open? Ownership and builder of the AOS-operated National Data Centre (reported JV with Korea Telecom).",
+    "Any concrete Claude deployments (systems, volumes, hosting) under the Anthropic MOU, and any other government AI model adoptions (e.g. Rwanda's AI scaling hub)."
+  ],
+  "searches_run": 9
+}

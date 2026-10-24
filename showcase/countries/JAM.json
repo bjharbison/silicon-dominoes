@@ -1,0 +1,204 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "JAM",
+  "name": "Jamaica",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T17:15:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "JAM-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Jamaican mobile operators (not named)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-10-21",
+      "still_current": null,
+      "summary": "At the opening of Huawei's new Kingston offices, Prime Minister Holness credited Huawei, active in Jamaica since 2007, with a key role in the move from GSM to UMTS and with ongoing LTE deployments.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://jis.gov.jm/prime-minister-welcomes-300-million-investment-by-huawei/",
+          "publisher": "Jamaica Information Service",
+          "source_tier": "S1",
+          "date": "2022-10-21",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://jamaicaobserver.com/2022/10/21/pm-welcomes-300-m-investment-by-huawei",
+          "publisher": "Jamaica Observer",
+          "source_tier": "S3",
+          "date": "2022-10-21",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 5 inferred from the PM describing an installed base; neither source names the operator(s), network domain (RAN/core) or share, so national scale is an upper bound. Date is the statement date, not deployment dates. The $300-million office investment has no stated currency and is not recorded as a value."
+    },
+    {
+      "id": "JAM-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Digicel (Jamaica)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2007-03-14",
+      "still_current": null,
+      "summary": "Huawei partnered with Digicel Group to deliver a CDMA2000 1xEV-DO network across five Caribbean markets in a first stage, Jamaica among them, enabling roaming and mobile data for CDMA customers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/2g-3g-4g/huawei-digicel-team",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2007-03-14",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pre-2020 finding; whether this CDMA overlay remains in service was not checked and is likely legacy. Value not disclosed. Does not establish Huawei as Digicel Jamaica's current GSM/LTE/5G vendor."
+    },
+    {
+      "id": "JAM-003",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Ministry of National Security / Jamaica Constabulary Force (JamaicaEye)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-04-16",
+      "still_current": null,
+      "summary": "South Korea's government funded about 210 surveillance cameras, costing US$400,000, handed over to the Ministry of National Security for integration into the JamaicaEye centralised CCTV system used by police.",
+      "announced_value_usd": 400000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://mns.gov.jm/sites/default/files/Press/Press%20Release-%20Government%20will%20continue%20expanding%20the%20capacity%20of%20the%20JCF%20with%20the%20building-out%20of%20the%20CCTV%20network%20%E2%80%93%20Minister%20Chang%2016.04.2024.pdf",
+          "publisher": "Ministry of National Security (press release)",
+          "source_tier": "S1",
+          "date": "2024-04-16",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://jcf.gov.jm/jamaica-bolsters-national-security-with-advanced-surveillance-technology-from-south-korea/",
+          "publisher": "Jamaica Constabulary Force",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://jamaicaobserver.com/2024/04/17/jamaicaeye-boosted-215-cctv-cameras-korea",
+          "publisher": "Jamaica Observer",
+          "source_tier": "S3",
+          "date": "2024-04-17",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: no source names the camera manufacturer, so the equipment controller is unknown; the donor (Korea) is a financier, not the controller. JamaicaEye is operated domestically. Observer reports 215 cameras, government sources 210. Tier 4 = equipment delivered, integration pending. US$400,000 is a government-stated cost, kept as announced."
+    },
+    {
+      "id": "JAM-004",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Ministry of National Security (JamaicaEye)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-21",
+      "still_current": null,
+      "summary": "Government awarded two restricted-tender JamaicaEye contracts worth about J$790 million: Sitewatch Electronic Security to supply and install 300 CCTV cameras in Portmore, and Konnexx Services for islandwide maintenance.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://jamaica-gleaner.com/article/business/20260816/government-awards-790m-new-jamaicaeye-contracts-major-buildout-portmore",
+          "publisher": "Jamaica Gleaner",
+          "source_tier": "S3",
+          "date": "2026-08-16",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: contractors are local integrators and the article names no camera or platform vendor. Value in Jamaican dollars, not converted. Ministry declined to give deployment details."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search for Jamaican data-centre or AI-campus projects since 2023 found none; ministerial AI speeches named no facilities"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or export-licence reporting surfaced in facilities/models searches; silicon not given a dedicated search"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "two searches and two government pages (AI task force directive May 2026, Minister Vaz April 2025) named no frontier model provider partnership or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies Flow Jamaica's (Liberty Latin America) 5G RAN/core launched June 2026, and Digicel Jamaica's current LTE/5G RAN and core? Is Huawei still a supplier to either?",
+    "Which operators and network domains does the PM's 2022 credit to Huawei (UMTS, LTE) refer to?",
+    "Camera manufacturers and video-management platform behind JamaicaEye, including the Korean-funded cameras and the 2026 Sitewatch Portmore contract.",
+    "Any government adoption of a frontier model (e.g. Microsoft Copilot, OpenAI, Google) following the National AI Task Force's work and the pending National AI Policy.",
+    "Submarine cable landings in Jamaica and their system vendors (any HMN Tech involvement)."
+  ],
+  "searches_run": 8
+}

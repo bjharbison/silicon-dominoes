@@ -1,0 +1,423 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ZWE",
+  "name": "Zimbabwe",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T17:15:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ZWE-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "TelOne",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-02",
+      "still_current": null,
+      "summary": "State-owned TelOne began a Huawei-supplied national broadband upgrade covering exchanges, core network, backbone links and billing, funded by a roughly US$98.6 million China Exim Bank facility; Huawei was awarded the contract in 2010.",
+      "announced_value_usd": 98600000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techzim.co.zw/2017/02/telone-begins-rollout-us98-million-network-project-promises-better-services-new-products-like-social-media-bundles/?amp=1",
+          "publisher": "Techzim",
+          "source_tier": "S2",
+          "date": "2017-02-01",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/zimbabwe-launches-two-data-centers-in-partnership-with-huawei/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2017-03-24",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4: financing drawn (US$33m by March 2017 per DCD) and phase one under way; completion not confirmed in this pass. Pre-2020 finding; current status not checked (still_current null).",
+      "bundle_id": "ZWE-B1"
+    },
+    {
+      "id": "ZWE-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "TelOne",
+      "local_actor": "TelOne (Harare and Mazowe data centres)",
+      "builder": "Huawei",
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-03-24",
+      "still_current": null,
+      "summary": "TelOne opened two colocation and cloud data centres in Harare and Mazowe, developed with Huawei under the first phase of the Exim-financed national broadband project, at a reported cost of US$1.6 million.",
+      "announced_value_usd": 1600000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/zimbabwe-launches-two-data-centers-in-partnership-with-huawei/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2017-03-24",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techzim.co.zw/2017/02/telone-begins-rollout-us98-million-network-project-promises-better-services-new-products-like-social-media-bundles/?amp=1",
+          "publisher": "Techzim",
+          "source_tier": "S2",
+          "date": "2017-02-01",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://advox.globalvoices.org/2023/01/10/how-zimbabwe-is-building-a-big-brother-surveillance-state/",
+          "publisher": "Global Voices Advox",
+          "source_tier": "S3",
+          "date": "2023-01-10",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator TelOne is Zimbabwean state-owned, so domestic; Huawei recorded as builder. Huawei's exact role (construction vs IT equipment) not specified; if Huawei supplies and maintains the IT stack, an equipment finding would be prc. Small facilities; pre-2020, still_current null.",
+      "bundle_id": "ZWE-B1"
+    },
+    {
+      "id": "ZWE-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "NetOne",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2013-12",
+      "still_current": null,
+      "summary": "Huawei's NetOne mobile network upgrade, announced in July 2013 and cut from US$298.6 million to about US$218 million, was approved by the State Procurement Board despite overpricing concerns and a court challenge; Exim Bank financing was envisaged.",
+      "announced_value_usd": 218000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/how-cars-and-smartphones-inflated-huaweis-netone-zimbabwe-upgrade-deal/j5alrvQlk9dqpYQk",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2013-12-11",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened S2 source. Tier 3 on SPB approval; whether the contract was executed at the reduced value and the outcome of the court challenge were not established. Pre-2020; still_current null."
+    },
+    {
+      "id": "ZWE-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "NetOne",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-12-31",
+      "still_current": null,
+      "summary": "NetOne signed a US$71 million agreement with Huawei Technologies International for network expansion and modernisation, including about 250 rural base stations in the first 100 days.",
+      "announced_value_usd": 71000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techzim.co.zw/2018/01/netone-signs-a-71-million-deal-with-huawei",
+          "publisher": "Techzim",
+          "source_tier": "S2",
+          "date": "2018-01-03",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://nextbillion.net/news/netone-signs-71-million-deal-huawei/",
+          "publisher": "NextBillion",
+          "source_tier": "S3",
+          "date": "2018-01-09",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/zimbabwes-netone-to-launch-5g-services-next-month/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-09-19",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://advox.globalvoices.org/2023/01/10/how-zimbabwe-is-building-a-big-brother-surveillance-state/",
+          "publisher": "Global Voices Advox",
+          "source_tier": "S3",
+          "date": "2023-01-10",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Described as a funding agreement; lender not named. Global Voices (2023) says NetOne was upgrading to 4G/5G with Huawei; DCD (2024) says NetOne's 5G vendor was unconfirmed, so 5G vendor is not coded. Econet's RAN/core vendor not found."
+    },
+    {
+      "id": "ZWE-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "CloudWalk Technology",
+      "local_actor": "Government of Zimbabwe",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-04",
+      "still_current": null,
+      "summary": "Zimbabwe's government agreed with Guangzhou-based CloudWalk on a mass facial-recognition programme reportedly extending to transport hubs and a national facial database, with face data shared to train CloudWalk's systems; reported on hold pending 2018 elections.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://foreignpolicy.com/2018/07/24/beijings-big-brother-tech-needs-african-faces/",
+          "publisher": "Foreign Policy",
+          "source_tier": "S3",
+          "date": "2018-07-24",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techzim.co.zw/2018/04/mnangagwas-govt-getting-facial-recognition-tech-from-china",
+          "publisher": "Techzim",
+          "source_tier": "S2",
+          "date": "2018-04-13",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2: cooperation agreement with no disclosed value or contract terms. Foreign Policy partly relays a PRC state outlet (Science and Technology Daily) on scope. Implementation after 2018 unconfirmed; Global Voices (2023) alleges CloudWalk holds voter-registration biometrics, not independently verified. still_current null."
+    },
+    {
+      "id": "ZWE-006",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei (lead), with CloudWalk and Hikvision",
+      "local_actor": "Zimbabwe Republic Police",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020",
+      "still_current": null,
+      "summary": "Advocacy reporting says Huawei leads a police surveillance grid under a reported US$100 million contract running to 2025, with US$20 million spent in a first tranche in 2020, and CloudWalk and Hikvision supplying facial recognition.",
+      "announced_value_usd": 100000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://advox.globalvoices.org/2023/01/10/how-zimbabwe-is-building-a-big-brother-surveillance-state/",
+          "publisher": "Global Voices Advox",
+          "source_tier": "S3",
+          "date": "2023-01-10",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://adf-magazine.com/2023/01/zimbabwe-turns-to-chinese-technology-to-expand-surveillance-of-citizens/",
+          "publisher": "ADF Magazine (US Africa Command)",
+          "source_tier": "S4",
+          "date": "2023-01",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Only one opened source, itself secondary; ADF is US-military-affiliated (S4) and unopened. Contract counterparty and value unverified; tier 3 is provisional. Global Voices also reports Hikvision facial recognition at airports and border posts (not coded separately)."
+    },
+    {
+      "id": "ZWE-007",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Unnamed Chinese firm (Hikvision per Techzim commentary)",
+      "local_actor": "Office of the President / Harare",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-08",
+      "still_current": null,
+      "summary": "President Mnangagwa reportedly approved a Chinese company installing night-vision surveillance cameras on some Harare streets to curb road accidents and crime.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techzim.co.zw/2018/08/chinese-firm-to-install-surveillance-cameras-in-harare",
+          "publisher": "Techzim",
+          "source_tier": "S2",
+          "date": "2018-08-31",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://newsday.co.zw/2018/08/chinese-company-to-mount-surveillance-cameras",
+          "publisher": "NewsDay",
+          "source_tier": "S3",
+          "date": "2018-08",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Vendor identity inferred: Techzim's commentary names Hikvision but its news summary does not; NewsDay original not opened. Tier 1 (approval only, no contract). Scale subnational (one city). Pre-2020; still_current null."
+    },
+    {
+      "id": "ZWE-008",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Zimbabwe",
+      "local_actor": "National Data Centre (Harare)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-02-26",
+      "still_current": null,
+      "summary": "President Mnangagwa commissioned a National Data Centre in Harare, built in partnership with the Chinese government, to link databases of state institutions and economic actors.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://advox.globalvoices.org/2023/01/10/how-zimbabwe-is-building-a-big-brother-surveillance-state/",
+          "publisher": "Global Voices Advox",
+          "source_tier": "S3",
+          "date": "2023-01-10",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened S3 source; builder, financier and IT-equipment vendor not named, so builder left null despite reported Chinese partnership. If a PRC vendor supplies and operates the IT stack, a prc equipment finding would apply."
+    },
+    {
+      "id": "ZWE-009",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Google (Gemini)",
+      "local_actor": "Econet Wireless Zimbabwe",
+      "builder": null,
+      "financier": null,
+      "base_model": "Gemini",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04",
+      "still_current": null,
+      "summary": "Econet launched a dedicated AI unit offering customers six months' free access to Google Gemini from May 2026, alongside Cassava AiCloud compute on Nvidia GPUs hosted at Cassava's AI Factory in South Africa.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techafricanews.com/2026/04/20/econet-wireless-zimbabwe-launches-dedicated-ai-unit-to-drive-nationwide-digital-transformation/",
+          "publisher": "TechAfrica News",
+          "source_tier": "S2",
+          "date": "2026-04-20",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Model used via Google's service, so us pole. Tier 3 assumes a commercial distribution agreement; terms not disclosed. Nvidia compute sits outside Zimbabwe, so no silicon finding. Cassava and Econet are Strive Masiyiwa-linked; Cassava's AI Factory is in South Africa."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator deployments in Zimbabwe found; Cassava/Nvidia GPUs used by Econet are hosted in South Africa (1 search)"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies Econet Wireless's RAN and core (Econet launched 5G in 2022), and NetOne's 5G vendor?",
+    "Was the 2013 Huawei-NetOne upgrade executed, at what value, and how did the Muguti court challenge end? Lender for the 2017 US$71m deal?",
+    "Primary evidence (procurement, budget lines) for the reported US$100m Huawei police surveillance contract and its status after 2025.",
+    "Did the 2018 CloudWalk facial-recognition programme proceed, and is it still in use?",
+    "Builder, financier and equipment vendor of the 2021 National Data Centre in Harare.",
+    "Any PRC-built submarine/terrestrial cable or HMN Tech involvement; any Zimbabwean government adoption of a frontier model."
+  ],
+  "searches_run": 9
+}

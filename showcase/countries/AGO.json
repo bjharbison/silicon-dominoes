@@ -1,0 +1,373 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "AGO",
+  "name": "Angola",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T17:15:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "AGO-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Unitel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-07",
+      "still_current": null,
+      "summary": "Ericsson completed modernising Unitel's core network with its dual-mode 5G Core, IMS and cloud-native infrastructure, letting 4G and 5G run on one platform; this follows a 2021 three-year Ericsson framework for radio and core upgrades.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomtv.com/content/digital-platforms-services/unitel-and-ericsson-strengthen-angolas-connectivity-with-network-modernization-52516/",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2025-03-07",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.connectingafrica.com/5g-networks/ericsson-modernizes-unitel-s-network-in-angola",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2025-03-11",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://itweb.africa/amp/content/lLn147mjbNYMJ6Aa/LPp6V7r4yxQqDKQz",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2021-10-20",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so third pole. TelecomTV and Connecting Africa likely both relay the same Ericsson release; ITWeb (2021) is independent reporting of the April 2021 Ericsson radio-and-core framework at 400+ sites. Tier 5 because the core transformation is reported complete. Value not disclosed; Unitel's US$25m 2021 upgrade budget not explicitly tied to Ericsson."
+    },
+    {
+      "id": "AGO-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Unitel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-06-01",
+      "still_current": null,
+      "summary": "Unitel signed a three-year partnership agreement with Huawei covering its radio access network, transmission network and customer-experience management, described as also helping incubate 5G innovation.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/13562-unitel-taps-huawei-for-range-of-services-in-angola.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2022-06-01",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 2: a partnership agreement with no value or deployment scale stated. Unitel appears multi-vendor (Ericsson also supplies RAN, AGO-001); the Huawei share of Unitel's RAN and whether the agreement was renewed after 2025 are unknown."
+    },
+    {
+      "id": "AGO-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Africell Angola",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-07-12",
+      "still_current": null,
+      "summary": "Nokia signed to build Africell's new Angolan network: AirScale Single RAN at up to 700 Luanda sites, cloud packet and voice core, microwave and IP transport, plus planning and managed care.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomtv.com/content/5g/nokia-and-africell-to-deploy-a-brand-new-5g-ready-network-in-angola-41952/",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2021-07-12",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://itweb.africa/article/angola-nokia-pens-telecoms-deal-with-africell/VgZeyvJoZ1k7djX9",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2021-07-12",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nokia is Finnish, so third pole. Both reports likely derive from the same Nokia announcement. Value undisclosed; current operational extent not checked. Africell Angola is the market's newest mobile entrant, so scale coded national though deployment is Luanda-centred."
+    },
+    {
+      "id": "AGO-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "NEC",
+      "local_actor": "Angola Cables",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-09-28",
+      "still_current": null,
+      "summary": "NEC was contracted in 2014 as system supplier for Angola Cables' South Atlantic Cable System linking Luanda and Fortaleza, Brazil, at about US$160 million and 40 Tb/s design capacity; the cable was ready for service in 2018.",
+      "announced_value_usd": 160000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nec.com/en/press/201411/global_20141104_04.html",
+          "publisher": "NEC (press release)",
+          "source_tier": "S1",
+          "date": "2014-11-04",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/angola-cables-lights-up-worlds-first-submarine-cable-linking-africa-to-the-americas/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2018-09-28",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "NEC is Japanese, so third pole under the equipment-vendor rule; Angola Cables (owner) is Angolan. US$160m is NEC's stated approximate contract value. Pre-2020 finding; current service not confirmed in this pass (still_current null)."
+    },
+    {
+      "id": "AGO-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "CEIEC with Huawei",
+      "local_actor": "Ministry of the Interior (Integrated Public Security Centres, CISP)",
+      "builder": "CEIEC",
+      "financier": "Chinese credit line (lender not named in opened sources)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-01",
+      "still_current": null,
+      "summary": "Angola's first Integrated Public Security Centre opened in Luanda in January 2020 with over 700 cameras on a Chinese credit line; a Benguela centre followed in November 2020, funded via China and delivered by CEIEC with Huawei and Govec.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.verangola.net/va/en/012020/Defense/17812/First-Integrated-Public-Security-Center-in-the-country-opened-on-Monday.htm",
+          "publisher": "Ver Angola",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.verangola.net/va/en/112020/Defense/22694/Inaugurated-Integrated-Public-Security-Center-in-Benguela.htm",
+          "publisher": "Ver Angola",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/92519",
+          "publisher": "AidData (William & Mary) Chinese development finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Controller coded as CEIEC (state-owned PRC integrator) with Huawei as equipment partner; no camera vendor is named in opened sources. Dates from the article URLs (January and November 2020); Benguela article gives 'Monday, November 9' without year. AidData relays that Phase 1 may have been Chinese-financed via a CEIEC contract (unverified there). Project plans extension to 16 other provinces.",
+      "bundle_id": "AGO-B1"
+    },
+    {
+      "id": "AGO-006",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "CEIEC with Huawei",
+      "local_actor": "Government of Angola (Ministry of the Interior)",
+      "builder": "CEIEC",
+      "financier": "China Eximbank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-12-17",
+      "still_current": null,
+      "summary": "China Eximbank signed a US$79.7 million loan with Angola's government for Phase 2 of the Public Security Project, to extend CCTV networks in Luanda and provincial centres with CEIEC and Huawei as implementing contractors.",
+      "announced_value_usd": 79700000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/92519",
+          "publisher": "AidData (William & Mary) Chinese development finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 4 as a closed loan agreement; AidData gives no completion status. Single opened source, so uncorroborated. Linked to AGO-005 as the same programme's second phase.",
+      "bundle_id": "AGO-B1"
+    },
+    {
+      "id": "AGO-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Angola (MINTTICS / INFOSI)",
+      "local_actor": "INFOSI",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04-28",
+      "still_current": null,
+      "summary": "Angola's state national data centre and unified government cloud, about US$90 million combined, was some 75% built in November 2025 with a 336-rack modular design; the ministry announced its launch in April 2026.",
+      "announced_value_usd": 90000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/news-digital/1411-50505-angola-nears-completion-of-national-data-center-set-for-2026-launch",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S3",
+          "date": "2025-11-14",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-digital/2904-55113-angola-launches-national-data-center-to-support-digital-strategy",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S3",
+          "date": "2026-04-29",
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "State owner-operator, so domestic. Builder, equipment vendor and financier not named; the US$300m World Bank PADA programme is mentioned but not tied to the centre. Tier 4 (construction well advanced); whether it is operational at scale was not confirmed. Both sources are the same outlet."
+    },
+    {
+      "id": "AGO-008",
+      "layer": "models",
+      "pole": "third",
+      "controller": "UAE Artificial Intelligence Office (Prime Minister's Office)",
+      "local_actor": "Institute for Administrative Modernization (IMA)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08",
+      "still_current": null,
+      "summary": "Angola's Institute for Administrative Modernization signed an MoU with the UAE's AI Office covering policy exchange, algorithms for intelligent public services, joint research and training; IMA is drafting a national AI strategy for public services.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.verangola.net/va/en/092025/Technology/46003/Government-wants-to-improve-and-modernize-public-services-using-artificial-intelligence.htm",
+          "publisher": "Ver Angola",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded under models as the nearest layer for government AI adoption; no specific model or provider is named, so base_model null. Same article reports an Angolan delegation shown Huawei Atlas 900 infrastructure at Huawei Connect 2025 (not coded: a visit, not adoption)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or export-licence reporting surfaced in data-centre or AI searches; no dedicated silicon search"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplied cameras and command systems for the CISP programme (Huawei, Hikvision, Dahua?), and how far has Phase 2 (China Eximbank 2021) progressed across provinces, including the 2026 Lunda Sul CISP?",
+    "Huawei's share of Unitel's RAN versus Ericsson, and Movicel's network vendor (not searched).",
+    "Builder, equipment vendor and financier of the national data centre; is it operational?",
+    "Huawei's announced Angolan R&D centre and 7,000-specialist AI training plan (Oct 2025): any signed instrument?",
+    "Africell's 2021 Luanda data centre (Dell, Oracle infrastructure): controller jurisdiction not established; not coded.",
+    "Is SACS still in service, and does Angola Cables' 2Africa/Equiano landing involve PRC-supplied gear?"
+  ],
+  "searches_run": 8
+}
