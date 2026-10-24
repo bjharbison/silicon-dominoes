@@ -1,0 +1,365 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ZAF",
+  "name": "South Africa",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ZAF-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "rain",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-07-24",
+      "still_current": null,
+      "summary": "Huawei supplied rain's end-to-end 5G network, launched commercially in Johannesburg in 2019, then a 5G standalone convergent core deployed in Cape Town in 2020, with Johannesburg due to migrate to it.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/huawei-helps-rain-launch-africas-first-5g-sa-convergent-core-network/d/d-id/762777",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-07-24",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20190228/5g/rain-huawei-announce-launch-first-5g-network-south-africa",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2019-02-28",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Equipment rule: Huawei is the vendor, so pole prc. rain is a smaller data-focused operator, but its 5G core is Huawei. Whether Johannesburg migration completed and current vendor mix were not checked."
+    },
+    {
+      "id": "ZAF-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "MTN South Africa",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-11-14",
+      "still_current": null,
+      "summary": "MTN South Africa picked Ericsson as its 5G modernisation vendor covering radio, transport and cloud core, plus a separate three-year deal to modernise its LTE and legacy radio networks.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/20191114/5g/ericsson-wins-5g-network-contract-south-africa",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2019-11-14",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so pole third. Single opened source; value undisclosed. Huawei had run 5G trials with MTN the same week; whether Huawei retains a share of MTN's RAN was not established."
+    },
+    {
+      "id": "ZAF-003",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Cassava Technologies / Africa Data Centres; CSIR NICIS (partner)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-18",
+      "still_current": null,
+      "summary": "Cassava began deploying its Nvidia-based AI Factory at its South African data centres in March 2026; a 2025 plan put 3,000 Nvidia GPUs in South Africa within a continental build-out of up to US$720m.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/ai/cassava-deploys-ai-factory-in-sa-more-countries-in-the-pipeline",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2026-03-18",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sdxcentral.com/news/cassava-technologies-brings-nvidia-powered-ai-supercomputer-to-south-africa/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2025-03-24",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment rule: Nvidia accelerators, so pole us. Tier 4 because deployment has started but full operation is not reported. GPU model and actual installed count in South Africa not confirmed; the US$720m is continental, so left out of value fields.",
+      "bundle_id": "ZAF-B1"
+    },
+    {
+      "id": "ZAF-004",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Cassava Technologies (Africa Data Centres)",
+      "local_actor": "Africa Data Centres sites in Johannesburg and Cape Town",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-18",
+      "still_current": null,
+      "summary": "Cassava, through its Africa Data Centres unit, is hosting its AI Factory in its own South African data centres, with deployment begun in March 2026 and expansion to Nigeria, Kenya, Egypt and Morocco planned.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/ai/cassava-deploys-ai-factory-in-sa-more-countries-in-the-pipeline",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2026-03-18",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sdxcentral.com/news/cassava-technologies-brings-nvidia-powered-ai-supercomputer-to-south-africa/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2025-03-24",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator rule: SDxCentral describes Cassava as London-headquartered, so pole third (founder is Zimbabwean). Exact site not named.",
+      "bundle_id": "ZAF-B1"
+    },
+    {
+      "id": "ZAF-005",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "Microsoft Azure data centres in Johannesburg and Cape Town",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-06",
+      "still_current": null,
+      "summary": "Microsoft pledged R5.4bn (about US$298m) by end-2027 to expand Azure cloud and AI infrastructure in South Africa, announced with President Ramaphosa present, plus funding for 50,000 skills certifications.",
+      "announced_value_usd": 298000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/investment/microsoft-pledges-major-ai-cloud-investment-in-south-africa",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2025-03-07",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterknowledge.com/investing/microsoft-plans-297m-south-africa-ai-investment",
+          "publisher": "Data Center Knowledge",
+          "source_tier": "S2",
+          "date": "2025-03-06",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: investment pledge only; completion not checked. USD figure as given by Connecting Africa (DCK says about US$297m). Builds on earlier R20.4bn data-centre investment; the Azure regions themselves are in the global cloud layer."
+    },
+    {
+      "id": "ZAF-006",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Lelapa AI",
+      "local_actor": "Lelapa AI",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-08-01",
+      "still_current": null,
+      "summary": "South African lab Lelapa AI released InkubaLM, a 0.4B-parameter small language model trained from scratch on 1.9 billion tokens for isiZulu, isiXhosa, Swahili, Yoruba and Hausa, published via Hugging Face.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://lelapa.ai/inkubalm-a-small-language-model-for-low-resource-african-languages",
+          "publisher": "Lelapa AI",
+          "source_tier": "S1",
+          "date": "2024",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://itweb.co.za/article/local-ai-model-is-melting-pot-for-african-languages/j5alr7QABQo7pYQk",
+          "publisher": "ITWeb",
+          "source_tier": "S2",
+          "date": "2024-08-01",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole domestic: weights held by a South African firm; trained from scratch so base_model null. Tier 5 reflects public release, not evidence of broad or government adoption. Licence terms not confirmed. A private start-up, not a state model."
+    },
+    {
+      "id": "ZAF-007",
+      "layer": "cloud",
+      "pole": null,
+      "controller": "Huawei, IBM and Gijima (partners)",
+      "local_actor": "State Information Technology Agency (SITA)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-11",
+      "still_current": null,
+      "summary": "SITA launched a government private cloud in November 2018, implemented with private-sector partners Gijima, IBM and Huawei; a 2025 report again describes it as a SITA partnership with Huawei.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.itweb.co.za/article/ndabeni-abrahams-welcomes-new-govt-cloud/wbrpOqgP3a9vDLZn",
+          "publisher": "ITWeb",
+          "source_tier": "S2",
+          "date": "2018-11-26",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://iol.co.za/news/south-africa/kwazulu-natal/2025-11-20-durbans-smart-city-plan-is-aimed-at-enhancing-public-safety/",
+          "publisher": "IOL",
+          "source_tier": "S3",
+          "date": "2025-11-20",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "low",
+      "analyst_inference": "Pole null: three partners from three poles (Huawei prc, IBM us, Gijima domestic) and the split of hardware, software and operation is not documented. Confidence low on control, though the partnership itself is corroborated. Current operation not confirmed."
+    },
+    {
+      "id": "ZAF-008",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "eThekwini Municipality (Durban)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-20",
+      "still_current": null,
+      "summary": "Huawei presented a digital strategy to eThekwini's executive committee proposing a smart-city platform with AI video surveillance, intelligent traffic management and infrastructure monitoring; no contract was reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://iol.co.za/news/south-africa/kwazulu-natal/2025-11-20-durbans-smart-city-plan-is-aimed-at-enhancing-public-safety/",
+          "publisher": "IOL",
+          "source_tier": "S3",
+          "date": "2025-11-20",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: a vendor proposal presented to the council, not an adopted plan. Single S3 source."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific dedicated power evidence surfaced; a September 2026 civil-society call to pause data-centre construction over water and power was found but names no halted project"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Vodacom South Africa's RAN and core vendors: TechCentral (2019) calls Huawei a large Vodacom supplier, but Vodafone's 2019 Huawei core pause was Europe-only; current split unknown.",
+    "Does Huawei hold any share of MTN South Africa or Cell C/Telkom radio networks?",
+    "Who controls the SITA government private cloud stack today (Huawei vs IBM vs Gijima), and is it still operational?",
+    "Teraco (part-owned by US Digital Realty, Nvidia DGX-Ready certified 2023): AI-specific builds such as JB4/JB7 and their tenants and accelerators.",
+    "Did eThekwini adopt Huawei's smart-city proposal? Any Hikvision/Dahua supply to Vumacam or SAPS CCTV?",
+    "Any South African government partnership with a frontier model provider (OpenAI, Google, Anthropic, Mistral, DeepSeek); none found in one search.",
+    "Outcome of the SAHRC data-centre inquiry and the civil-society call for a construction pause (Business Day/AP, 2026-09-05)."
+  ],
+  "searches_run": 12
+}

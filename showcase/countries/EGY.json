@@ -1,0 +1,446 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "EGY",
+  "name": "Egypt",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "EGY-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Telecom Egypt",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-07-15",
+      "still_current": null,
+      "summary": "Nokia agreed to supply AirScale 5G radio equipment, including Massive MIMO radios and baseband, for state-controlled Telecom Egypt's first 5G rollout in Cairo, Giza, Alexandria, Luxor and Aswan.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/nokia-to-deploy-telecom-egypts-5g-network-later-this-year/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-07-15",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://connectingafrica.com/5g-networks/telecom-egypt-partners-with-nokia-to-deploy-5g",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2024-07-15",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nokia is Finnish, so pole third under the equipment rule. Value undisclosed. Core-network vendor for Telecom Egypt not identified in this pass."
+    },
+    {
+      "id": "EGY-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "e& Egypt",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-10",
+      "still_current": null,
+      "summary": "Ericsson signed an agreement with e& Egypt to supply its 5G radio access network portfolio for a nationwide 5G launch after the operator won its licence.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techpoint.africa/news/ericsson-eamp-egypt-5g/",
+          "publisher": "Techpoint Africa",
+          "source_tier": "S2",
+          "date": "2024-10-29",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2024/10/31/ericsson-partners-with-e-egypt-to-roll-out-nationwide-5g-technology/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S2",
+          "date": "2024-10-31",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so pole third. Only one source opened; terms and value undisclosed; whether the deal is a binding contract was not stated."
+    },
+    {
+      "id": "EGY-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Orange Egypt",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-18",
+      "still_current": null,
+      "summary": "Orange Egypt extended its partnership with Huawei for its nationwide 5G rollout: Huawei Massive MIMO radio equipment, E-band microwave backhaul and Huawei's AI-based network energy-management platform.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.communicationstoday.co.in/orange-partners-with-huawei-to-deploy-5g-in-egypt/",
+          "publisher": "Communications Today",
+          "source_tier": "S2",
+          "date": "2025-06-18",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.zawya.com/en/economy/north-africa/orange-egypt-partners-with-huawei-to-launch-5g-network-nationwide-f5pugyuu",
+          "publisher": "Zawya (Arab Finance)",
+          "source_tier": "S3",
+          "date": "2025-06",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole prc under the equipment rule. Both reports derive from the same company press release, so independence is limited. Core network vendor and value not disclosed. Vodafone Egypt's 5G vendor was not identified."
+    },
+    {
+      "id": "EGY-004",
+      "layer": "networks",
+      "pole": null,
+      "controller": "PEACE Cable International Network Co.",
+      "local_actor": "Telecom Egypt",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-04-27",
+      "still_current": null,
+      "summary": "Telecom Egypt signed a US$45m lifetime landing-party agreement with PEACE Cable International Network and PCCW Global, providing new Zafarana and Abu Talat landing stations and terrestrial crossing for the 12,000 km PEACE cable.",
+      "announced_value_usd": 45000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ir.te.eg/en/CorporateNews/PressRelease/105/Telecom-Egypt-signs-landing-party-agreement-for-PEACE-cable-system",
+          "publisher": "Telecom Egypt Investor Relations",
+          "source_tier": "S1",
+          "date": "2019-04-27",
+          "retrieved_at": "2026-10-24T01:13:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/telecom-egypt-signs-landing-agreement-for-peace-cable/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2019-05-07",
+          "retrieved_at": "2026-10-24T01:13:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: neither opened source names the cable's owner-parent or equipment supplier, so the controller's home jurisdiction is not documented here; PCCW Global is Hong Kong-based (HKT). still_current not checked for this pre-2020 item. The US$45m is Telecom Egypt's announced lifetime value."
+    },
+    {
+      "id": "EGY-005",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Vodafone Business, Cassava Technologies and Elsewedy Electric (partnership)",
+      "local_actor": "Ministry of Communications and IT (backing)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09-09",
+      "still_current": null,
+      "summary": "Vodafone Business, Cassava Technologies and Elsewedy Electric signed an agreement for a ministry-backed sovereign AI data centre offering GPU-as-a-service: 20 MW (about US$200m) within three years, scaling to 200 MW and about US$1bn.",
+      "announced_value_usd": 1000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/data-centers/vodafone-cassava-elsewedy-electric-unveil-1b-egypt-data-center-project",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2026-09-09",
+          "retrieved_at": "2026-10-24T01:13:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.khaleejtimes.com/world/mena/egypt-to-build-first-large-scale-ai-data-centre-nvidia?amp=1",
+          "publisher": "Khaleej Times (AFP)",
+          "source_tier": "S3",
+          "date": "2026-09-09",
+          "retrieved_at": "2026-10-24T01:13:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://macaubusiness.com/egypt-moves-to-build-1-bn-ai-data-centre-with-nvidia-tech/",
+          "publisher": "Macau Business (AFP)",
+          "source_tier": "S3",
+          "date": "2026-09",
+          "retrieved_at": "2026-10-24T01:13:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the owner-operator is not stated; partners mix a UK-parented Vodafone unit, pan-African Cassava and Egyptian Elsewedy, so control could be third or domestic. Tier 2: partner agreement only, no financing close or construction reported. US$1bn is the full-build projection.",
+      "bundle_id": "EGY-B1"
+    },
+    {
+      "id": "EGY-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Cassava Technologies; Vodafone Business; Elsewedy Electric",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09-09",
+      "still_current": null,
+      "summary": "The planned Egyptian sovereign AI data centre is to use Nvidia accelerated computing, per Cassava, Nvidia's main African partner; no chip order, quantity or export licence was reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/data-centers/vodafone-cassava-elsewedy-electric-unveil-1b-egypt-data-center-project",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2026-09-09",
+          "retrieved_at": "2026-10-24T01:13:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.khaleejtimes.com/world/mena/egypt-to-build-first-large-scale-ai-data-centre-nvidia?amp=1",
+          "publisher": "Khaleej Times (AFP)",
+          "source_tier": "S3",
+          "date": "2026-09-09",
+          "retrieved_at": "2026-10-24T01:13:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: stated intent to use Nvidia technology only. Egypt is licence_required for advanced US chips (global layer), so a BIS licence would be needed; none reported. Likely the US-favoured alternative to Huawei's bid (EGY-007), but the sources do not link them explicitly.",
+      "bundle_id": "EGY-B1"
+    },
+    {
+      "id": "EGY-007",
+      "layer": "silicon",
+      "pole": "prc",
+      "controller": "Huawei (with iFlytek)",
+      "local_actor": "Government of Egypt (tender)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-26",
+      "still_current": null,
+      "summary": "Bloomberg reported Huawei bid to build Egyptian government AI data centres with 2,008 Ascend chips on a 12-month timeline, paired with iFlytek recognition and city-monitoring tools; Washington sought a rival Nvidia/AMD/Microsoft offer.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://thenextweb.com/news/huawei-egypt-ai-data-centres-ascend-us-consortium",
+          "publisher": "The Next Web",
+          "source_tier": "S2",
+          "date": "2026-08-26",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.khaleejtimes.com/world/mena/egypt-to-build-first-large-scale-ai-data-centre-nvidia?amp=1",
+          "publisher": "Khaleej Times (AFP)",
+          "source_tier": "S3",
+          "date": "2026-09-09",
+          "retrieved_at": "2026-10-24T01:13:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://chinaglobalsouth.com/2026/08/27/huawei-egypt-ai-data-centers-china-us-tech-rivalry/",
+          "publisher": "China-Global South Project",
+          "source_tier": "S2",
+          "date": "2026-08-27",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "A vendor bid, not an Egyptian commitment; coded tier 1 as an offer only. Both opened sources relay Bloomberg's single report, so marked not corroborated. AFP says Xi and Sisi agreed broader AI cooperation without concrete deals; no Egyptian decision found as of the run date."
+    },
+    {
+      "id": "EGY-008",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Applied Innovation Center (MCIT affiliate)",
+      "local_actor": "Ministry of Communications and IT",
+      "builder": null,
+      "financier": null,
+      "base_model": "Qwen3-30B-A3B-Instruct-2507",
+      "base_model_pole": "prc",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-24",
+      "still_current": null,
+      "summary": "MCIT announced a pilot launch of Karnak Chat, built on Karnak, a roughly 40B-parameter Arabic model from its Applied Innovation Center, released Apache-2.0 and derived from Alibaba's Qwen3-30B-A3B.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://egyptinnovate.com/en/news/launch-of-karnak-chat-an-intelligent-assistant-built-on-an-egyptian-large-language-model",
+          "publisher": "Egypt Innovate (ITIDA/MCIT)",
+          "source_tier": "S1",
+          "date": "2026-08-24",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://huggingface.co/Applied-Innovation-Center/Karnak/blob/main/README.md",
+          "publisher": "Applied Innovation Center (Hugging Face model card)",
+          "source_tier": "S1",
+          "date": "2026",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2026/04/09/egypt-microsoft-explore-integration-of-arabic-llm-karnak-with-azure-cloud/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S2",
+          "date": "2026-04-09",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole domestic: weights held by a state body; base model PRC (Qwen3-30B-A3B-Instruct-2507), so derived dependence on PRC open weights. Tier 2: pilot. Separate exploratory talks on hosting Karnak on Microsoft Azure (April 2026) had no agreement."
+    },
+    {
+      "id": "EGY-009",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Honeywell",
+      "local_actor": "New Administrative Capital (Egyptian government); MTI (local partner)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-02",
+      "still_current": null,
+      "summary": "Honeywell, with partner MTI, signed to deliver a surveillance and command system for Egypt's New Administrative Capital: over 6,000 IP cameras feeding an integrated command centre with video analytics, reportedly worth US$31m.",
+      "announced_value_usd": 31000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://egyptianstreets.com/2019/02/22/city-wide-security-cameras-to-cover-egypts-new-capital",
+          "publisher": "Egyptian Streets",
+          "source_tier": "S3",
+          "date": "2019-02-22",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.context.news/surveillance/cctv-cameras-will-watch-over-egyptians-in-new-high-tech-capital",
+          "publisher": "Context (Thomson Reuters Foundation)",
+          "source_tier": "S3",
+          "date": "2023-01-04",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole us (Honeywell as system vendor). No S1/S2 source opened, so not corroborated. Camera hardware makers are not named; Context (2023) says Honeywell had issued no updates since 2019. Operational status not confirmed, so still_current null."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced; Elsewedy Electric's energy role in EGY-005 not detailed; budget spent on other layers"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Outcome of the Egyptian government AI data-centre tender: did Huawei's Ascend bid or a US-backed Nvidia/AMD/Microsoft offer win?",
+    "Who will own and operate the Vodafone/Cassava/Elsewedy sovereign AI data centre, its site, financing close and any BIS licence for Nvidia chips.",
+    "Vodafone Egypt's 5G RAN and core vendor; core-network vendors for Telecom Egypt, Orange Egypt and e& Egypt.",
+    "Owner-parent and equipment supplier of the PEACE cable (reported elsewhere as PRC-linked) and whether HMN Tech built any other Egyptian landings.",
+    "Whether the Honeywell New Administrative Capital system is operational and which camera vendors supplied it; any Hikvision/Dahua municipal deployments.",
+    "Huawei's role in the government data centre at the New Administrative Capital and any Egyptian government use of Huawei Cloud (cloud layer covered globally)."
+  ],
+  "searches_run": 11
+}

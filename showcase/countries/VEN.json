@@ -1,0 +1,364 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "VEN",
+  "name": "Venezuela",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T01:19:26Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "VEN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei and ZTE",
+      "local_actor": "CANTV; Movilnet; CONATEL; PDVSA private LTE",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017",
+      "still_current": true,
+      "summary": "Huawei and ZTE supply Venezuela's public macro mobile networks, whose 4G rollout began in 2017; Huawei is a main CANTV infrastructure supplier and also supplied PDVSA's private LTE gear. No public 5G yet.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.fierce-network.com/broadband/venezuelan-infrastructure-how-could-private-networking-develop",
+          "publisher": "Fierce Network",
+          "source_tier": "S2",
+          "date": "2026-01-22",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.latintimes.com/us-telecom-licenses-could-open-venezuela-american-companies-chinas-expense-experts-say-598819",
+          "publisher": "Latin Times",
+          "source_tier": "S3",
+          "date": "2026-08-27",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole prc under the equipment rule. still_current true because both 2026 sources describe the vendors as still embedded. Per-operator vendor split (Digitel, Movistar) not established; a journalist quoted by Latin Times estimates CANTV owes Huawei about US$600m, left out of value fields as it is a debt estimate, not a contract value."
+    },
+    {
+      "id": "VEN-002",
+      "layer": "networks",
+      "pole": null,
+      "controller": "US Treasury OFAC (General Licenses 61 and 62)",
+      "local_actor": "CANTV; Movilnet; CONATEL",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-21",
+      "still_current": null,
+      "summary": "OFAC general licences authorise supplying US goods and services to maintain or upgrade Venezuelan telecoms, and contingent contracts for new investment, while excluding persons from China, Russia, Iran, North Korea and Cuba and entities they own or control.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.clearygottlieb.com/news-and-insights/publication-listing/ofac-issues-general-licenses-authorizing-activity-in-venezuelan-telecommunications-sector",
+          "publisher": "Cleary Gottlieb",
+          "source_tier": "S2",
+          "date": "2026-08-27",
+          "retrieved_at": "2026-10-24T01:17:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3365115/us-targets-chinas-telecoms-grip-venezuela-new-sanctions-carve-out",
+          "publisher": "South China Morning Post",
+          "source_tier": "S3",
+          "date": "2026-08-25",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.latintimes.com/us-telecom-licenses-could-open-venezuela-american-companies-chinas-expense-experts-say-598819",
+          "publisher": "Latin Times",
+          "source_tier": "S3",
+          "date": "2026-08-27",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Policy enabler, not adoption: pole null because no US vendor contract is evidenced yet; tier 4 reflects a licence issued. Not coded as a reversal of VEN-001: the licences restrict which transactions the US authorises, they do not order removal of installed Huawei/ZTE gear. Analyst view: this creates a sanctions-shaped path toward Western vendors (Ericsson/Nokia named as beneficiaries) and is a leading indicator to watch."
+    },
+    {
+      "id": "VEN-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "SpaceX VZ; CONATEL",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-10",
+      "still_current": true,
+      "summary": "CONATEL granted SpaceX's local subsidiary a general authorisation and seven Ku-band concessions for nationwide commercial Starlink service, with local billing; previously users had to contract and pay from abroad.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telesemana.com/blog/2026/10/13/despues-de-los-terremotos-venezuela-habilita-a-starlink-para-operar-comercialmente-en-todo-el-pais/",
+          "publisher": "TeleSemana",
+          "source_tier": "S2",
+          "date": "2026-10-13",
+          "retrieved_at": "2026-10-24T01:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.portafolio.co/internacional/venezuela-autoriza-a-starlink-a-operar-en-el-pais-tras-la-caida-de-maduro-504229",
+          "publisher": "Portafolio (with AFP)",
+          "source_tier": "S3",
+          "date": "2026-10-10",
+          "retrieved_at": "2026-10-24T01:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 4 (licence issued); scale of subscriptions after authorisation unknown, though Portafolio cites APNIC at about 3.6% of internet users already on Starlink gear. Exact CONATEL decision date not given; Portafolio implies about 9 October 2026."
+    },
+    {
+      "id": "VEN-004",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Liberty Networks; CANTV",
+      "local_actor": "CANTV",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-04",
+      "still_current": null,
+      "summary": "Liberty Networks and state operator CANTV announced the Fénix submarine cable, about 380 km from Curaçao to Camurí near Caracas; investment cost and timeline undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.curacaochronicle.com/post/local/new-submarine-fiber-optic-cable-to-connect-curacao-and-venezuela",
+          "publisher": "Curaçao Chronicle",
+          "source_tier": "S3",
+          "date": "2026-08-05",
+          "retrieved_at": "2026-10-24T01:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sdxcentral.com/tags/subsea-cable_2/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2026-08-04",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: under the equipment rule the cable controller is the equipment vendor, which is not named. Liberty Networks is part of Liberty Latin America (assumed US-headquartered, not verified this pass), so the project would lean non-PRC if confirmed. Tier 1: announced partnership only."
+    },
+    {
+      "id": "VEN-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "CANTV (special unit managing the Carnet de la Patria database); Government of Venezuela",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017",
+      "still_current": null,
+      "summary": "Per a Reuters investigation, ZTE was contracted to build the national database and mobile payment system behind the Carnet de la Patria ID card, with ZTE staff embedded in a CANTV unit, under a US$70m national-security effort.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://expansion.mx/mundo/2018/11/14/como-la-china-zte-ayudo-a-venezuela-a-construir-un-mecanismo-de-control-social",
+          "publisher": "Expansión (relaying Reuters)",
+          "source_tier": "S3",
+          "date": "2018-11-14",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://amp.cbc.ca/lite/story/1.4927185",
+          "publisher": "CBC (citing Reuters)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-rubio-urge-administration-to-investigate-zte-business-with-venezuelan-government",
+          "publisher": "Office of Sen. Chris Van Hollen",
+          "source_tier": "S4",
+          "date": "2018-11-28",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both S3 sources relay the same Reuters investigation, which was not opened directly, so not corroborated. The US$70m is the overall programme (CANTV and a state bank), not ZTE's share, so value fields left null. Senators' letter is advocacy (S4). Pre-2020 and current status unchecked, so still_current null."
+    },
+    {
+      "id": "VEN-006",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Government of Venezuela; VEN 911 emergency and video-surveillance system",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016",
+      "still_current": null,
+      "summary": "Reuters-based reporting says ZTE has centralised Venezuela's nationwide video surveillance since 2016 and helped build six emergency-response centres monitoring major cities; an EU asylum-agency report counted over 7,000 operational 911 cameras in December 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://expansion.mx/mundo/2018/11/14/como-la-china-zte-ayudo-a-venezuela-a-construir-un-mecanismo-de-control-social",
+          "publisher": "Expansión (relaying Reuters)",
+          "source_tier": "S3",
+          "date": "2018-11-14",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.euaa.europa.eu/venezuela-country-focus/172-cctv",
+          "publisher": "European Union Agency for Asylum",
+          "source_tier": "S1",
+          "date": "2026-07",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-rubio-urge-administration-to-investigate-zte-business-with-venezuelan-government",
+          "publisher": "Office of Sen. Chris Van Hollen",
+          "source_tier": "S4",
+          "date": "2018-11-28",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Not corroborated: the EUAA report (S1 as an EU agency publication, but secondary to DFRLab) confirms the 911 CCTV network is operating and 'partly enabled by Chinese technical assistance', with Belarusian analytics software, but does not name ZTE. ZTE's continued role in 2026 therefore unverified; still_current null. Confidence kept low because the S1 source does not support the vendor claim."
+    },
+    {
+      "id": "VEN-007",
+      "layer": "models",
+      "pole": "prc",
+      "controller": "iFlytek",
+      "local_actor": "Government of Venezuela",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-04",
+      "still_current": null,
+      "summary": "Venezuela's government and China's iFlytek signed a memorandum of understanding on joint AI development at a China-Venezuela expo in Caracas; stated application areas included tourism, agriculture, hydrocarbons, health, education and telecoms. No value disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.elcaribe.com.do/panorama/internacionales/venezuela-y-china-firman-acuerdo-para-desarrollo-de-ia/",
+          "publisher": "El Caribe (EFE)",
+          "source_tier": "S3",
+          "date": "2025-07-04",
+          "retrieved_at": "2026-10-24T01:17:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://diariolibre.com/mundo/america-latina/2025/07/05/venezuela-firma-memorando-para-desarrollo-de-ia/3173119",
+          "publisher": "Diario Libre (EFE)",
+          "source_tier": "S3",
+          "date": "2025-07-05",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Layer models chosen because iFlytek is a model/speech-AI provider, but the MOU names no specific model, so base_model null. Both sources are the same EFE wire drawing on Venezuelan state broadcaster VTV, so not independent. Signed under the Maduro government; whether it survives the 2026 change of government is unknown."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search on AI data centres in Venezuela found only a think-tank advocacy piece on gas-flaring-powered data centres and no announced or built project"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "Venezuela is in D:5 with presumption of denial for advanced chips (global layer); no accelerator deployment surfaced in other searches, so budget went to networks and applications"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power project surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Open the original Reuters investigation (November 2018) on ZTE and the Carnet de la Patria to corroborate VEN-005 and VEN-006, and establish whether ZTE still operates or maintains VEN 911 and the Patria database in 2026.",
+    "Name the vendor behind the DFRLab-reported Chinese technical assistance to the 911 CCTV network (DFRLab, March 2026) and the Belarusian analytics supplier.",
+    "Have any contracts with Ericsson, Nokia or US vendors been signed under OFAC GL 61/62, and has any specific licence under GL 62 been granted? Has CANTV/Movilnet begun replacing Huawei/ZTE equipment?",
+    "Read the OFAC GL 61 and 62 texts and FAQ 1266 on ofac.treasury.gov directly (S1).",
+    "Per-operator radio and core vendors for Digitel and Movistar Venezuela.",
+    "Equipment supplier and status of the Fénix cable (Liberty Networks/CANTV), and the vendor of the existing ALBA-1 cable to Cuba.",
+    "Status of the 2025 iFlytek AI MOU and of the National AI Plan after the 2026 change of government; what the vice-ministry for AI created in May 2026 has procured.",
+    "WAICO founding membership (global layer) still rests on an uncorroborated roster; National Review (Aug 2026, opinion) also names Venezuela as a founding signatory, but no S1-S2 source was found in this pass."
+  ],
+  "searches_run": 8
+}

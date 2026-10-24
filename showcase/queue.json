@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "UZB",
-  "VEN",
-  "ZAF",
-  "ZMB",
-  "SAU",
-  "TUR",
-  "EGY",
-  "NGA",
-  "MEX",
-  "CAN",
   "FRA",
   "ESP",
   "POL",
@@ -254,6 +244,16 @@
   "TJK",
   "TWN",
   "TZA",
-  "USA"
+  "USA",
+  "UZB",
+  "VEN",
+  "ZAF",
+  "ZMB",
+  "SAU",
+  "TUR",
+  "EGY",
+  "NGA",
+  "MEX",
+  "CAN"
  ]
 }

@@ -1,0 +1,498 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ZMB",
+  "name": "Zambia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ZMB-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Ministry of Home Affairs (Lusaka CCTV / Safe City, Public Security Network Project phase III)",
+      "builder": null,
+      "financier": "China Development Bank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-08",
+      "still_current": null,
+      "summary": "ZTE is general contractor for Zambia's US$210m Lusaka CCTV 'safe city' system, financed by a US$178.5m China Development Bank loan; government said in August 2022 it was 98% complete and would proceed.",
+      "announced_value_usd": 210000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/content/RgeVDMPRY1bvKJN3/ap6GxRKqYaqb3Wjr",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2022-08-31",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/57033",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": "2022-02",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4 not 5: construction started December 2017 and reported 98% complete, but full operation not confirmed (AidData found no completion evidence as of Feb 2022). Equipment rule: ZTE as vendor sets pole prc. AidData also records a separate US$78.6m Citi UK loan (2017). Announced value is the 2013 contract figure; the minister called the cost too high and promised a review."
+    },
+    {
+      "id": "ZMB-002",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Ministry of Home Affairs",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "January 2013 US$210m Ministry of Home Affairs - ZTE CCTV contract",
+      "reversal_reason": "regulatory",
+      "date": "2013-09",
+      "still_current": false,
+      "summary": "Zambia's government cancelled the original single-sourced US$210m ZTE CCTV contract for Lusaka in September 2013 over corruption allegations; the project was later re-tendered and returned to ZTE with CDB financing.",
+      "announced_value_usd": 210000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/zambia-cancels-210mn-cctv-contract/kYbe97XxJ4V7AWpG",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2013-09-09",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/57033",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": "2022-02",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reversal coded regulatory (procurement integrity), so it does not move the map; it was effectively undone when ZTE resumed as contractor (ZMB-001). Tier 3 because a signed contract was reversed."
+    },
+    {
+      "id": "ZMB-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Zambia (ZICTA / Smart Zambia; Zambia National Data Centre)",
+      "local_actor": "ZICTA; Smart Zambia Institute",
+      "builder": "Huawei Technologies Zambia",
+      "financier": "Chinese government concessional loans (Chinese state-owned banks)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-02",
+      "still_current": null,
+      "summary": "Huawei built Zambia's Tier III national data centre in Lusaka under the US$75m Smart Zambia phase 1, financed by Chinese concessional loans; it opened at ZICTA in early 2017 to host government and commercial data.",
+      "announced_value_usd": 75000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/zambia-smartens-up-with-new-national-data-centre/raYAyModNanqJ38N",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2017-02-24",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/huaweis-75m-zambian-data-center-readies-for-launch/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2017-02-03",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lusakatimes.com/2019/08/15/huawei-technicians-helped-zambian-and-ugandan-governments-spy-on-political-opponents/",
+          "publisher": "Lusaka Times (relaying Wall Street Journal)",
+          "source_tier": "S3",
+          "date": "2019-08-15",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator rule gives domestic; Huawei is builder, Chinese state lenders financier. But the WSJ (via Lusaka Times) reported in 2019, from anonymous officials, that about half the ~40 staff at the ZICTA data centre were Huawei employees who helped trace opposition bloggers' phones; Huawei denied it. If confirmed, Huawei operating access would make the controller prc. IT equipment vendor inside not stated explicitly. Current status not checked; pre-2020."
+    },
+    {
+      "id": "ZMB-004",
+      "layer": "facilities",
+      "pole": "prc",
+      "controller": "Huawei Technologies Zambia",
+      "local_actor": "Smart Zambia (Cabinet Office)",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Smart Zambia phase II (Huawei-implemented, China EXIM-financed e-government programme)",
+      "reversal_reason": "commercial",
+      "date": "2022-08",
+      "still_current": null,
+      "summary": "Zambia stopped Smart Zambia phase II, a US$333.2m e-government project to be implemented by Huawei with China EXIM Bank funding, in August 2022, cancelling undisbursed Chinese loans to contain debt.",
+      "announced_value_usd": 333200000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/content/GxwQDM1DARb7lPVo",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2022-08-02",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.theeastafrican.co.ke/tea/business/zambia-cancels-1-6b-loans-from-chinese-banks--3908408",
+          "publisher": "The EastAfrican",
+          "source_tier": "S3",
+          "date": "2022-08-09",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Layer coded facilities because phase II reportedly included further national data centres (per 2017 ITWeb); exact scope mix (e-services, network, facilities) not confirmed, and pole prc reflects Huawei as implementer of the cancelled package. Reversal coded commercial (debt management), so it does not move the map. Not corroborated: The EastAfrican confirms ~US$1.6bn of undisbursed China EXIM/ICBC loans cancelled incl. ICT projects but does not name Smart Zambia. Tier 3 assumes a contracted package; loan signature not verified. ITWeb says some components will be finished from the budget."
+    },
+    {
+      "id": "ZMB-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "MTN Zambia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-11",
+      "still_current": null,
+      "summary": "MTN Zambia launched Zambia's first commercial 5G network in November 2022 with Huawei, after an 11-month trial, covering parts of Lusaka, Kitwe, Ndola, Chingola, Solwezi and Kalumbila.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://technext.ng/2022/11/28/mtn-zambia-launches-5g-network-in-zambia/",
+          "publisher": "Technext",
+          "source_tier": "S3",
+          "date": "2022-11-28",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.capitalfm.co.ke/business/2022/01/mtn-huawei-pilots-zambias-first-ever-5g-network",
+          "publisher": "Capital FM (Kenya)",
+          "source_tier": "S3",
+          "date": "2022-01",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment rule: Huawei as 5G vendor gives prc. Whether Huawei is sole RAN/core vendor for MTN Zambia is not stated. Further reports seen only in search results were on PRC state-media hosts and were not fetched or cited. Corroboration fails because the second source was not opened."
+    },
+    {
+      "id": "ZMB-006",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Zamtel (state-owned operator)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-05",
+      "still_current": null,
+      "summary": "Zambia's communications minister said in 2019 Huawei was contracted to upgrade state-owned Zamtel's radio network and government towers to 5G-capable equipment; Huawei was already building Zamtel towers. Huawei donated 25 more towers, passed to Zamtel, in August 2024.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/5g-networks/zambia-preps-5g-upgrade-with-huawei",
+          "publisher": "Connecting Africa (Light Reading)",
+          "source_tier": "S2",
+          "date": "2019-05-15",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://itweb.africa/content/lwrKx73Y5B2qmg1o",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2024-08-30",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Two opened S2 sources, but they evidence different events (2019 upgrade contract claim; 2024 tower donation), so not counted as corroboration of the tier-3 contract. No contract value, timescale or award notice found. Towers are passive infrastructure; the 2024 donation shows continuing Huawei-Zamtel ties rather than a new active-equipment award."
+    },
+    {
+      "id": "ZMB-007",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Airtel Zambia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-03",
+      "still_current": null,
+      "summary": "Ericsson won a contract in March 2016 to modernise Airtel Zambia's radio access network nationwide, transforming its 2G and swapping out its 3G sites, with software and services.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/2016/3/ericsson-chosen-by-airtel-zambia-for-network-transformation",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2016-03-21",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.fiercewireless.com/europe/airtel-zambia-picks-ericsson-for-network-upgrade",
+          "publisher": "FierceWireless",
+          "source_tier": "S2",
+          "date": "2016-03",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so pole third. Pre-2020 and still_current not checked; Airtel Zambia's current 4G/5G RAN and core vendors not identified in this pass. Value undisclosed. Medium on the single opened S1 company release."
+    },
+    {
+      "id": "ZMB-008",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Paratus Group",
+      "local_actor": "Paratus Zambia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-07",
+      "still_current": null,
+      "summary": "Paratus Zambia opened a carrier-neutral 1 MW data centre in Lusaka in July 2021, with redundant connectivity, power and cooling.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/paratus-zambia-opens-new-datacentre-in-lusaka/KPNG878Kmz8v4mwD",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2021-07-26",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/paratus-zambia-close-to-completing-lusaka-data-center/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2021",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Paratus is a Namibia-headquartered group, so owner-operator pole third (analyst knowledge of headquarters, not stated in the opened source). Small facility; investment value not stated."
+    },
+    {
+      "id": "ZMB-009",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Liquid Intelligent Technologies (Cassava Technologies)",
+      "local_actor": "Government of Zambia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-03-07",
+      "still_current": null,
+      "summary": "Liquid Intelligent Technologies signed an MOU with Zambia's government on 7 March 2023 at the LDC5 conference in Doha to build a data centre for local businesses and hyperscalers; no value, capacity or timeline given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techcabal.com/2023/04/05/liquid-intelligent-technologies-data-centre-zambia/",
+          "publisher": "TechCabal",
+          "source_tier": "S3",
+          "date": "2023-04-05",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Liquid is part of Cassava Technologies (pan-African group founded by Zimbabwean Strive Masiyiwa), so pole third; home jurisdiction not stated in source. Year of signing inferred from the article URL date and the LDC5 conference timing. Construction status unknown."
+    },
+    {
+      "id": "ZMB-010",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Undetermined (SMART Zambia with Huawei)",
+      "local_actor": "SMART Zambia Institute",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05",
+      "still_current": null,
+      "summary": "SMART Zambia and Huawei signed an MOU at the May 2026 Zambia Mobile Congress to jointly support a National AI Data Centre, plus training 5,000 ICT professionals through Huawei programmes by 2028; no value or site disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/data-centres-networks/20315-smart-zambia-and-huawei-support-ai-data-centre-development.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-05-28",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: owner-operator not stated. If SMART Zambia owns and operates it, the facility pole is domestic; Huawei's role (equipment vendor, builder, operator) is unspecified, and Huawei-supplied IT or accelerators would be a prc silicon/equipment finding. Follows the Huawei-built 2017 national data centre (ZMB-003)."
+    },
+    {
+      "id": "ZMB-011",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Ministry of Technology and Science; University of Zambia (ZAMREN)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06",
+      "still_current": null,
+      "summary": "Google and Zambia's government signed an MoU in mid-2024 to set up an AI Centre of Excellence at the University of Zambia, hosted by the ZAMREN research network, for young innovators; no funding figure disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/ai/google-to-open-ai-hub-in-zambia-malawi-plans-smart-village-initiative",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2024-09-06",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://itweb.africa/content/nWJad7bNdrQ7bjO1/Olx4z7kgl69756km",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2024-09-06",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Layer models is approximate: a capacity hub, not adoption of a Google model by government. Tier 1 (MoU). Whether the centre has opened was not checked."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases, GPU deployments or export-licence reporting for Zambia surfaced in data-centre and AI searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power evidence surfaced; budget spent on other layers"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Is the ZTE Lusaka CCTV/safe city system now fully operational, and did the 2022 Home Affairs cost review change it?",
+    "Did Huawei staff operate or hold access to the ZICTA national data centre (WSJ 2019 allegation), and who operates it today?",
+    "Exact scope and contract status of Smart Zambia phase II before its 2022 cancellation, and which components were completed from the budget.",
+    "Current RAN/core vendors for MTN, Airtel and Zamtel 4G/5G; whether Huawei is sole 5G vendor at MTN Zambia.",
+    "Owner, site, value and equipment vendor of the planned National AI Data Centre under the 2026 SMART Zambia-Huawei MOU.",
+    "Status of Liquid's Zambia data centre and the Google AI Centre of Excellence at UNZA.",
+    "Any national AI model, government LLM adoption, or accelerator purchases in Zambia."
+  ],
+  "searches_run": 10
+}

@@ -1,0 +1,391 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MEX",
+  "name": "Mexico",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T01:19:04Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MEX-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telcel (América Móvil)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-02",
+      "still_current": null,
+      "summary": "At Telcel's 5G launch, its network used Huawei equipment in southern Mexico and Ericsson equipment in the north.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/am-rica-m-vil-launches-5g-in-mexico",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2022-02-23",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Telcel is Mexico's largest mobile operator, so scale national even though Huawei covers only the southern region. Tier 5 because the network was launched commercially. Single opened source; DPL News (2019) says Huawei supplies America Movil generally but does not confirm the 5G regional split."
+    },
+    {
+      "id": "MEX-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Telcel (América Móvil)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-02",
+      "still_current": null,
+      "summary": "Ericsson supplied Telcel's 5G network in northern Mexico at its February 2022 commercial launch, with Huawei covering the south.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/am-rica-m-vil-launches-5g-in-mexico",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2022-02-23",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so pole third. Single opened source; contract value and date not disclosed."
+    },
+    {
+      "id": "MEX-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "AT&T Mexico",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-07-11",
+      "still_current": null,
+      "summary": "Nokia agreed to supply AT&T Mexico with AirScale radio equipment covering 3G, 4G and an upgrade path to 5G, and to partner on its 5G innovation lab.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20220711/5g/nokia-collaborates-att-mexico-boost-5g-tech",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2022-07-11",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia is Finnish, so pole third. Value not disclosed. Whether Nokia displaced Huawei in AT&T Mexico's radio network is not stated."
+    },
+    {
+      "id": "MEX-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "AT&T Mexico",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei equipment in AT&T Mexico's core data network",
+      "reversal_reason": "commercial",
+      "date": "2019-04",
+      "still_current": null,
+      "summary": "AT&T replaced Huawei equipment in its Mexican core data network with its US vendors, citing design consistency and purchasing scale, and said it expected to do the same at the 5G upgrade; its 4G radio network still used Huawei.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fierce-network.com/wireless/at-t-may-phase-out-huawei-equipment-network-upgrades-mexico",
+          "publisher": "Fierce Network",
+          "source_tier": "S2",
+          "date": "2019-04-16",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://dplnews.com/?p=8444",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2019-04-19",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reversal of installed core equipment, so tier 5. Coded commercial because AT&T gave design and procurement reasons; US security pressure was ongoing at the time, so a geopolitical motive is plausible but not stated. Replacement vendors not named. No Mexican government restriction on Huawei was found."
+    },
+    {
+      "id": "MEX-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Altán Redes (Red Compartida wholesale network)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-05",
+      "still_current": null,
+      "summary": "Huawei supplied Altán's Red Compartida shared 4G network in central and southern Mexico, while Nokia held the core and northern-border sites; the article reports no Mexican government restriction on Huawei.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/campana-de-eu-vs-huawei-se-topa-con-trabas-en-mexico/",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2019-05-09",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Red Compartida is a state-backed national wholesale network, so scale national. Pre-2020 and still_current not checked; Altán's later restructuring and current vendors were not researched."
+    },
+    {
+      "id": "MEX-006",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Altán Redes (Red Compartida wholesale network)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-05",
+      "still_current": null,
+      "summary": "Nokia supplied the core system and northern-border radio sites of Altán's Red Compartida shared network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/campana-de-eu-vs-huawei-se-topa-con-trabas-en-mexico/",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2019-05-09",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia is Finnish, so pole third. Pre-2020 and not re-checked; single opened source."
+    },
+    {
+      "id": "MEX-007",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Agencia de Transformación Digital y Telecomunicaciones (ATDT); Secihti; Coatlicue public supercomputer",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06-01",
+      "still_current": null,
+      "summary": "Nvidia's Latin America enterprise director said Nvidia will supply 14,480 GPUs for the Coatlicue public supercomputer and co-designs its architecture and software training.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.elimparcial.com/tecnologia/2026/06/01/nvidia-co-disena-coatlicue-la-supercomputadora-estatal-que-convertira-a-mexico-en-el-lider-tecnologico-de-america-latina/",
+          "publisher": "El Imparcial",
+          "source_tier": "S3",
+          "date": "2026-06-01",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://oem.com.mx/elsoldemexico/finanzas/nvidia-surtira-chips-a-la-supercomputadora-coatlicue-30297721",
+          "publisher": "El Sol de México",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 2: vendor role stated by an Nvidia executive, but no signed contract, chip model or value was found. The El Sol de México headline says Nvidia will supply the chips, but the page could not be opened. Earlier government reporting (Nov 2025, Jan 2026) did not name the GPU vendor."
+    },
+    {
+      "id": "MEX-008",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Mexican federal government (ATDT and Secihti)",
+      "local_actor": "Coatlicue public supercomputer (Infotec, IPN, IPICYT coordinating)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-26",
+      "still_current": null,
+      "summary": "The government announced Coatlicue, a public supercomputer of about 14,480 GPUs and 314 petaflops, costing about MXN 6bn over a 24-month build, run by Mexican staff trained at the Barcelona Supercomputing Center.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.xataka.com.mx/robotica-e-ia/coatlicue-sera-supercomputadora-publica-14-480-gpus-pagada-mexico-potente-todo-latinoamerica",
+          "publisher": "Xataka México",
+          "source_tier": "S2",
+          "date": "2025-11-26",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://forbes.com.mx/gobierno-invertira-6000-mdd-en-supercomputadora-publica/",
+          "publisher": "Forbes México",
+          "source_tier": "S3",
+          "date": "2025-11-26",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.elespanol.com/invertia/disruptores-americas/20260112/coatlicue-supercomputador-promete-transformar-clima-energia-movilidad-seguridad-mexico/1003744043663_0.html",
+          "publisher": "El Español",
+          "source_tier": "S3",
+          "date": "2026-01-12",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is the Mexican state, so pole domestic. Tier 1: in January 2026 the site was undecided; El Imparcial (June 2026) reports construction began in January 2026, uncorroborated, so not upgraded. USD value of about 326m is Forbes México's conversion; Forbes' headline says 6,000m dollars, which contradicts its body, so announced_value_usd left null. Advisers: Barcelona Supercomputing Center (Spain) and India's C-DAC. A Spain-Mexico digital MoU of 4 Sept 2026 (La Moncloa, S1) cites BSC cooperation on Coatlicue."
+    },
+    {
+      "id": "MEX-009",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "CloudHQ",
+      "local_actor": "Querétaro data-centre campus",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-25",
+      "still_current": null,
+      "summary": "US developer CloudHQ announced US$4.8bn for a six-building, 900 MW AI and cloud data-centre campus in Querétaro, with operations targeted for 2027 and a long-term lease planned with an unnamed global technology firm.",
+      "announced_value_usd": 4800000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://mexicobusiness.news/trade-and-investment/news/cloudhq-invests-us48-billion-queretaros-data-center-campus",
+          "publisher": "Mexico Business News",
+          "source_tier": "S2",
+          "date": "2025-09-25",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://heise.de/-10678892",
+          "publisher": "heise online",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator CloudHQ is US-based (heise), so pole us. Tier 1: sources are inconsistent on whether construction has started, beyond about US$250m of pre-construction spending. Tenant and chip vendor unknown. heise article date not shown on the page."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search on government AI model partnerships (ATDT) found only a general Spain-Mexico digital MoU (Sept 2026) with no named model or provider"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "two searches on safe-city/C5 camera vendors found only PRC vendor marketing pages (not fetched, not citable) and Mexico City C5 expansion coverage without vendor names"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced beyond CloudHQ's planned private substation (recorded in MEX-009)"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Has Coatlicue signed a procurement contract with Nvidia (chip model, value, integrator), where is the site, and has construction started?",
+    "Current Telcel 5G RAN vendor split and whether Huawei remains in the southern network; AT&T Mexico's current RAN vendors.",
+    "Altán/Red Compartida current vendors after its restructuring.",
+    "Vendors of Mexico City C5 and state C5 camera systems (Hikvision/Dahua presence) from procurement records.",
+    "Whether US pressure in the 2026 USMCA review (telecom testing standards, Huawei) has produced any Mexican restriction.",
+    "Any government adoption of OpenAI, Google, Meta, DeepSeek or Qwen models, or a sovereign Mexican Spanish model; scope of the Sept 2026 Spain-Mexico MoU on open models.",
+    "CloudHQ Querétaro tenant and construction status; other Querétaro hyperscaler campuses (Microsoft, AWS, Google) build-out."
+  ],
+  "searches_run": 10
+}

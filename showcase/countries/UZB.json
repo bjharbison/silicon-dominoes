@@ -1,0 +1,379 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "UZB",
+  "name": "Uzbekistan",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "UZB-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei and ZTE",
+      "local_actor": "Uzbektelecom (state operator, incl. Uzmobile)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-09-15",
+      "still_current": null,
+      "summary": "Uzbektelecom signed eight contracts with Huawei and ZTE covering four projects worth over US$506.8m: thousands of new and upgraded 3G/4G base stations, 713 new 5G sites, and DWDM and IP/MPLS transport expansion in two stages.",
+      "announced_value_usd": 506800000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://kun.uz/en/news/2022/09/15/uzbekistan-develops-its-telecommunication-infrastructure-in-cooperation-with-china",
+          "publisher": "Kun.uz",
+          "source_tier": "S3",
+          "date": "2022-09-15",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/uzbektelecom-pens-huawei-and-zte-deals-worth-506m-for-major-network-expansion",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Equipment rule: Huawei/ZTE supply radio and transport, so pole prc. Kun.uz relays the Uzbek ICT ministry press service, not PRC state media. Value split between Huawei and ZTE and financing source not given; delivery status not checked. Vendors of private operators Ucell, Beeline and Mobiuz not identified."
+    },
+    {
+      "id": "UZB-002",
+      "layer": "applications",
+      "pole": null,
+      "controller": "Uzbek-Chinese joint venture (general contractor; Chinese investor unnamed in source)",
+      "local_actor": "Tashkent city authorities (Safe City programme)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-06",
+      "still_current": null,
+      "summary": "Tashkent's Safe City system (CCTV, eco-sensors, smart traffic lights) was to be built by an Uzbek-Chinese joint venture, 58% state-owned, recovering its investment from fines; commissioning was scheduled for late 2020. Huawei was reported as broker of Chinese involvement.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://jch.kun.uz/en/news/2019/08/21/safe-city-project-implementation-in-tashkent-to-be-completed-in-2020",
+          "publisher": "Kun.uz",
+          "source_tier": "S3",
+          "date": "2019-08-21",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://jamestown.org/program/tracking-the-digital-component-of-the-bri-in-central-asia-part-one-exporting-safe-cities-to-uzbekistan/",
+          "publisher": "Jamestown Foundation (China Brief)",
+          "source_tier": "S4",
+          "date": "2021-02-11",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the operator is a majority-state JV and neither opened source names the camera/software vendor, so the controller cannot be fixed; Jamestown (think tank, S4) describes Huawei as intermediary and names CITIC, Costar and China South Industries as expected participants. Kun.uz date taken from URL. Completion and current operation not confirmed; pre-2020 finding."
+    },
+    {
+      "id": "UZB-003",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "DataVolt (Saudi Arabia)",
+      "local_actor": "DataVolt Uzbekistan, Tashkent",
+      "builder": null,
+      "financier": "EBRD; DEG (Germany); Proparco (France); OPEC Fund for International Development",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06-17",
+      "still_current": null,
+      "summary": "A lender group of EBRD, DEG, Proparco (US$23m) and the OPEC Fund announced up to US$150m to finance DataVolt's 12 MW AI-ready data centre in Tashkent, first phase of a planned 300 MW programme expected operational by end-2026.",
+      "announced_value_usd": 150000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://proparco.fr/en/news/uzbekistan-proparco-supports-digitalization-economy-through-financing-sustainable-data-center",
+          "publisher": "Proparco",
+          "source_tier": "S1",
+          "date": "2026-06-17",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.euronews.com/2026/09/24/ai-infrastructure-draws-6bn-in-data-centre-commitments",
+          "publisher": "Euronews",
+          "source_tier": "S3",
+          "date": "2026-09-24",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ebrd.com/content/dam/ebrd_dxp/documents/project/56480/nts.pdf",
+          "publisher": "EBRD (project non-technical summary)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator DataVolt is Saudi-based (per Euronews), so pole third; lenders are European/multilateral and do not set the pole. Tier 4 assumes the announced package is a committed financing; signing/first disbursement not confirmed. US$150m is the debt package, not total project cost. Chip vendor not disclosed."
+    },
+    {
+      "id": "UZB-004",
+      "layer": "facilities",
+      "pole": "prc",
+      "controller": "Shanghai LinkWise Data Intelligence Co., Ltd.",
+      "local_actor": "IT Park Uzbekistan; Government of Karakalpakstan; LINKWISE LLC (planned subsidiary)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-04",
+      "still_current": null,
+      "summary": "Shanghai LinkWise and Karakalpakstan authorities agreed to set up a local subsidiary for a 300 MW AI and advanced computing centre in Takhiatash near the thermal power plant: about US$700m first phase, up to US$2.8bn more later.",
+      "announced_value_usd": 700000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.it-park.uz/index.php/en/itpark/news/a-center-for-artificial-intelligence-and-advanced-computing-technologies-to-be-established-in-karakalpakstan",
+          "publisher": "IT Park Uzbekistan",
+          "source_tier": "S1",
+          "date": "2025-11-04",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.euronews.com/2026/09/24/ai-infrastructure-draws-6bn-in-data-centre-commitments",
+          "publisher": "Euronews",
+          "source_tier": "S3",
+          "date": "2026-09-24",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "PRC owner-operator via a local subsidiary, so pole prc. Tier 1: no signed agreement or construction reported; Euronews (Sept 2026) says only that it is being developed. announced_value_usd is the first-phase figure only. GPU vendor unstated; if Nvidia, US export licensing for a PRC-headquartered operator would be a constraint (inference). Sited next to the Takhiatash thermal plant."
+    },
+    {
+      "id": "UZB-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Ministry of Digital Technologies of Uzbekistan",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-07",
+      "still_current": null,
+      "summary": "Uzbekistan's digital ministry announced plans with Nvidia for knowledge exchange, an Nvidia-based AI Centre of Excellence, university supercomputer procurement, and two national AI clusters of up to about 1 MW combined targeted for 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.it-park.uz/en/itpark/news/the-republic-of-uzbekistan-launches-major-ai-initiative-with-nvidia",
+          "publisher": "IT Park Uzbekistan",
+          "source_tier": "S1",
+          "date": "2025-11-09",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://timesca.com/uzbekistan-partners-with-nvidia-to-build-national-ai-infrastructure-and-training-centers/",
+          "publisher": "The Times of Central Asia",
+          "source_tier": "S3",
+          "date": "2025-11-13",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Statement of intent: items are conditional on separate agreements and export-control requirements, so tier 1. Includes a US$3m government Industrial AI Centre, not entered as a value since it is not a Nvidia purchase."
+    },
+    {
+      "id": "UZB-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Ministry of Digital Technologies of Uzbekistan (government computing cluster)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026",
+      "still_current": null,
+      "summary": "The digital technologies minister said a government computing cluster built on Nvidia hardware launched in summer 2026 and reached 90% utilisation within a month; procurement of the next stage is under way.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.euronews.com/2026/09/24/ai-infrastructure-draws-6bn-in-data-centre-commitments",
+          "publisher": "Euronews",
+          "source_tier": "S3",
+          "date": "2026-09-24",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Likely the first of the clusters planned in UZB-005 (inference). Single opened S3 source relaying the minister; GPU model, count, value and export-licence status unknown. Tier 5 reflects reported operation, uncorroborated."
+    },
+    {
+      "id": "UZB-007",
+      "layer": "models",
+      "pole": "third",
+      "controller": "Technology Innovation Institute / ATRC (UAE)",
+      "local_actor": "Ministry of Digital Technologies of Uzbekistan",
+      "builder": null,
+      "financier": null,
+      "base_model": "Falcon",
+      "base_model_pole": "third",
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-02",
+      "still_current": null,
+      "summary": "Uzbekistan's digital ministry signed an MoU with Abu Dhabi's Advanced Technology Research Council to explore and promote adoption of Falcon LLMs across its digital ecosystem and government services, at the 2024 World Governments Summit.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.businesswire.com/news/home/53898094/en",
+          "publisher": "ATRC via Business Wire",
+          "source_tier": "S1",
+          "date": "2024",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.wam.ae/en/article/b1rcute-uzbekistan-uae’s-advanced-technology-research",
+          "publisher": "WAM (Emirates News Agency)",
+          "source_tier": "S4",
+          "date": "2024",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole third: Falcon weights are controlled by the UAE's TII. Tier 1 MoU; no deployment evidence found. ATRC release treated as S1 for the fact of signing."
+    },
+    {
+      "id": "UZB-008",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "Presidential Administration department for fintech, AI and digitalisation",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10",
+      "still_current": null,
+      "summary": "Uzbek officials and OpenAI held talks and agreed to draft a roadmap for ChatGPT Edu at universities, mass AI education under the One Million AI Leaders programme, startup support, and an Uzbek-language data corpus. No signed agreement reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.spot.uz/ru/2025/10/27/openai-uzb/",
+          "publisher": "Spot.uz",
+          "source_tier": "S3",
+          "date": "2025-10-27",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://daryo.uz/en/2025/10/27/uzbekistan-and-openai-partner-to-bring-chatgpt-edu-to-schools/",
+          "publisher": "Daryo",
+          "source_tier": "S3",
+          "date": "2025-10-27",
+          "retrieved_at": "2026-10-24T01:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Use would be via OpenAI's service, so pole us; base_model null because no specific model is named. Statement of intent only (tier 1)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power deal surfaced; LinkWise site adjacency to Takhiatash thermal plant noted in UZB-004 only"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Vendors for private operators Ucell, Beeline and Mobiuz (RAN and core); split of the 2022 Uzbektelecom contracts between Huawei and ZTE and their financing.",
+    "Tashkent Safe City: identity of the Chinese JV partner and camera/platform vendor; whether it was commissioned and extended nationwide.",
+    "Has DataVolt's Tashkent financing been signed/disbursed, and which accelerators will it use?",
+    "Status of Shanghai LinkWise's Karakalpakstan project (registration of LINKWISE LLC, construction, GPU vendor and any export-licence issue).",
+    "GPU model, count and export-licence basis of the 2026 government Nvidia cluster; any second cluster.",
+    "Whether the OpenAI roadmap or Falcon MoU led to signed agreements or deployments; any domestic Uzbek LLM.",
+    "No reversals (bans, exclusions, cancellations) were found; none specifically searched beyond the layers above."
+  ],
+  "searches_run": 11
+}

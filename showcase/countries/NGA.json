@@ -1,0 +1,352 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "NGA",
+  "name": "Nigeria",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T01:19:09Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "NGA-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "MTN Nigeria",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-09",
+      "still_current": null,
+      "summary": "MTN Nigeria launched commercial 5G in selected Lagos and other areas on an Ericsson-supplied 5G radio access network and non-standalone packet core, extending a roughly 21-year Ericsson-MTN Nigeria partnership.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20220920/5g/mtn-ericsson-launch-5g-network-nigeria",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2022-09-20",
+          "retrieved_at": "2026-10-24T01:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightreading.com/5g/mtn-nigeria-and-ericsson-launch-5g-services",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2022-09-19",
+          "retrieved_at": "2026-10-24T01:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so pole third under the equipment rule. Tier 5 reflects a live commercial launch, though only a first-phase footprint. Neither source mentions Huawei; MTN Nigeria's 2G-4G vendor mix and Airtel/Globacom 5G suppliers were not established in this pass. Contract value not disclosed."
+    },
+    {
+      "id": "NGA-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Galaxy Backbone Limited (state-owned)",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-07",
+      "still_current": null,
+      "summary": "Galaxy Backbone and Huawei agreed in 2018 to build phase II of the national ICT backbone (NICTIB II), fibre to 19 northern states, on a US$328m China Exim credit; federal approval followed in July 2020.",
+      "announced_value_usd": 328000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://thisdaylive.com/index.php/2018/09/01/nigeria-china-to-sign-328m-ict-agreement",
+          "publisher": "ThisDay",
+          "source_tier": "S3",
+          "date": "2018-09-01",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techpoint.africa/news/internet-fibre-northern-nigeria/",
+          "publisher": "Techpoint Africa",
+          "source_tier": "S2",
+          "date": "2020-07-21",
+          "retrieved_at": "2026-10-24T01:17:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techcabal.com/2020/07/22/techcabal-daily-a-328-million-chinese-loan-to-expand-nigerias-broadband-access/",
+          "publisher": "TechCabal",
+          "source_tier": "S3",
+          "date": "2020-07-22",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.capacitymedia.com/articles/3826042/china-to-lend-nigeria-325m-to-build-northern-fibre-backbone",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T01:17:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole prc: Huawei as equipment vendor/contractor per the 2018 agreement (ThisDay, Techpoint); Techpoint notes the contractor was not formally confirmed. Tier 2 because only the MoU and government approval are evidenced; loan closing, construction and completion were not found. Capacity Media supports the loan but does not name Huawei."
+    },
+    {
+      "id": "NGA-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Kasi Cloud Datacentres",
+      "local_actor": "Kasi Cloud LOS1 campus, Lekki, Lagos; Nigeria Sovereign Investment Authority (foundational investor)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-20",
+      "still_current": null,
+      "summary": "Kasi Cloud launched its LOS1 AI-oriented data-centre campus in Lekki, Lagos in May 2026, moving into commissioning; it is designed to scale to about 100 MW, with the sovereign wealth fund NSIA as a foundational investor.",
+      "announced_value_usd": 250000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/nigeria-gets-ai-ready-lagos-data-centre/rxP3jMBEVGX7A2ye",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2026-05-20",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techcabal.com/2026/01/08/will-nigeria-get-its-first-ai-data-centre-in-2026/",
+          "publisher": "TechCabal",
+          "source_tier": "S3",
+          "date": "2026-01-08",
+          "retrieved_at": "2026-10-24T01:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole domestic: owner-operator is a Nigerian company backed by NSIA; full shareholding not disclosed. Tier 4 (built, commissioning) rather than 5, as operation at scale is not evidenced. The US$250m value is from TechCabal only. Chip vendor and builder not stated."
+    },
+    {
+      "id": "NGA-004",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Airtel Africa (Nxtra)",
+      "local_actor": "Airtel Nigeria; Eko Atlantic, Lagos",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-08",
+      "still_current": null,
+      "summary": "Airtel Nigeria plans a 38 MW, 3,000-plus-rack hyperscale data centre in Eko Atlantic, Lagos, under its Nxtra brand, costing over US$120m and pitched at GPU-powered AI workloads; completion was targeted for Q1 2026.",
+      "announced_value_usd": 120000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/data-centres-networks/18888-airtel-nigeria-to-build-38mw-hyperscale-data-centre-in-eko-atlantic.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2025-08-08",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techcabal.com/2026/01/08/will-nigeria-get-its-first-ai-data-centre-in-2026/",
+          "publisher": "TechCabal",
+          "source_tier": "S3",
+          "date": "2026-01-08",
+          "retrieved_at": "2026-10-24T01:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third: Airtel Africa is London-listed and controlled by India's Bharti Airtel. Tier 1 as Developing Telecoms reports a plan; TechCabal (Jan 2026) says early GPU shipments arrived in late 2025, implying construction, but this rests on one S3 source. Go-live and GPU vendor unconfirmed."
+    },
+    {
+      "id": "NGA-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Cassava Technologies (Africa Data Centres)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-18",
+      "still_current": null,
+      "summary": "Cassava Technologies' Nvidia-powered AI factory rollout, which began in South Africa, is slated to expand to Nigeria, Kenya, Egypt and Morocco; no Nigerian GPU count, value or timetable was given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://businessday.ng/technology/article/cassava-technologies-expands-ai-infrastructure-across-africa-with-nvidia-powered-ai-factories/",
+          "publisher": "BusinessDay Nigeria",
+          "source_tier": "S3",
+          "date": "2026-03-18",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment rule: Nvidia is the controller, so pole us. Tier 1: Nigeria named only as a planned expansion site. The pan-African programme was reported at US$700m, not apportioned to Nigeria."
+    },
+    {
+      "id": "NGA-006",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Federal Ministry of Communications, Innovation and Digital Economy / NCAIR with Awarri Technologies",
+      "local_actor": "Awarri Technologies; National Centre for Artificial Intelligence and Robotics",
+      "builder": null,
+      "financier": null,
+      "base_model": "Llama-3 8B",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-20",
+      "still_current": null,
+      "summary": "Nigeria's government unveiled N-ATLAS at UNGA80, an open multilingual model for Yoruba, Hausa, Igbo and Nigerian-accented English built with Awarri and NCAIR; free for research, with commercial deployments above 1,000 users needing a licence.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fmcide.gov.ng/?p=3786",
+          "publisher": "Federal Ministry of Communications, Innovation and Digital Economy",
+          "source_tier": "S1",
+          "date": "2025-09-21",
+          "retrieved_at": "2026-10-24T01:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://techcabal.com/2025/09/25/nigerian-government-awarri-launch-n-atlas/",
+          "publisher": "TechCabal",
+          "source_tier": "S3",
+          "date": "2025-09-25",
+          "retrieved_at": "2026-10-24T01:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.opensourceforu.com/2025/09/nigeria-unveils-open-source-n-atlas-ai-model-to-champion-african-languages-at-unga80/",
+          "publisher": "Open Source For You",
+          "source_tier": "S3",
+          "date": "2025-09",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Pole domestic: released by the Nigerian government with a Nigerian partner; exact weights holder not stated but the licence terms imply national control. Base model Llama-3 8B (Meta, us) per Open Source For You only; speech component reportedly fine-tuned from Whisper Small (OpenAI). Tier 5 reflects release, not proven adoption."
+    },
+    {
+      "id": "NGA-007",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Federal Government of Nigeria (National Public Security Communications System); Abuja, Lagos and other cities",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2010",
+      "still_current": false,
+      "summary": "ZTE was contracted for the roughly US$470m National Public Security Communications System, including CCTV in Abuja and other cities, on a China Exim loan; lawmakers in 2025 called it failed and abandoned while repayments continue.",
+      "announced_value_usd": 470000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://blueprint.ng/?p=489149",
+          "publisher": "Blueprint",
+          "source_tier": "S3",
+          "date": "2022-12",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://allafrica.com/stories/202510220508.html",
+          "publisher": "allAfrica",
+          "source_tier": "S3",
+          "date": "2025-10-22",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole prc (equipment vendor ZTE). Award reported as 2008 with the MoU/loan in 2010; date set to 2010. still_current false based on October 2025 House of Representatives characterisation; Blueprint reports a post-2019 revival via an Indian concessionaire (NPS Technology), not verified. Not coded as a reversal: failure appears operational/procurement-related, not geopolitical. No S1/S2 source opened."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power evidence surfaced; budget spent on other layers"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Was the NICTIB II China Exim loan closed and the Huawei-built northern fibre backbone constructed or completed?",
+    "Radio and core vendors for Airtel Nigeria, Globacom and 9mobile, and MTN Nigeria's legacy 2G-4G mix (Huawei/ZTE share).",
+    "Status of the ZTE National Public Security Communications System contract, the Indian NPS Technology concession, and the 2025 House probe outcome.",
+    "Did Airtel/Nxtra's Eko Atlantic facility go live, and with which GPU vendor? Kasi Cloud LOS1 tenants and chip vendor.",
+    "Any Nigerian government adoption of OpenAI, Google, Microsoft, Anthropic or PRC model services; Google AI fund grants were seen but not coded as stack adoption.",
+    "Who holds the N-ATLAS weights (Awarri vs NCAIR/ministry) and is the Llama-3 8B base confirmed by a primary source (e.g. the model card)?"
+  ],
+  "searches_run": 10
+}

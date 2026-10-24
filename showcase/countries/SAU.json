@@ -1,0 +1,558 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SAU",
+  "name": "Saudi Arabia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SAU-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "stc (Saudi Telecom Company)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-10-12",
+      "still_current": null,
+      "summary": "stc signed an agreement with Huawei for a 5G-ready network at GITEX 2017, alongside separate Nokia capacity and Ericsson managed-services deals; Huawei signed a further 5G technology agreement with stc in early 2018.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://telecomreview.com/articles/telecom-operators/1706-stc-signs-mutual-agreements-with-nokia-ericsson-and-huwawei-to-boost-mobile-broadband-capacity",
+          "publisher": "Telecom Review",
+          "source_tier": "S2",
+          "date": "2017-10-12",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://venturebeat.com/mobile/saudi-telecom-commits-to-2018-5g-launch-with-nokia-and-huawei-gear",
+          "publisher": "VentureBeat",
+          "source_tier": "S2",
+          "date": "2018-03-05",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2: framework-type agreements, no value or binding scope disclosed. Neither source states Huawei's share of stc's current RAN or core; pre-2020 and still_current not checked, so the map will halve it. Huawei almost certainly remains a major stc vendor, but that is inference."
+    },
+    {
+      "id": "SAU-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "stc (Saudi Telecom Company)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-03-05",
+      "still_current": null,
+      "summary": "stc named Nokia as main partner for its 2018 5G launch, deploying hundreds of 5G base stations in western Saudi Arabia; Nokia had earlier signed a 4.5G-Pro capacity deal with stc in 2017.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://venturebeat.com/mobile/saudi-telecom-commits-to-2018-5g-launch-with-nokia-and-huawei-gear",
+          "publisher": "VentureBeat",
+          "source_tier": "S2",
+          "date": "2018-03-05",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecomreview.com/articles/telecom-operators/1706-stc-signs-mutual-agreements-with-nokia-ericsson-and-huwawei-to-boost-mobile-broadband-capacity",
+          "publisher": "Telecom Review",
+          "source_tier": "S2",
+          "date": "2017-10-12",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/featured-content/top-three/stc-partners-with-nokia-for-2018-5g-launch/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2018-03",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia is Finnish, so pole third. Coded uncorroborated: Telecom Review covers only the 2017 4.5G deal, not the 2018 5G deployment, and Mobile World Live was seen only as a search result. No value disclosed; current status not checked."
+    },
+    {
+      "id": "SAU-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Zain KSA",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-03",
+      "still_current": null,
+      "summary": "Huawei and Zain KSA signed a memorandum of understanding to develop '5.5G' (5G-Advanced) capabilities, including MetaAAU, carrier aggregation and LampSite indoor coverage, for individual, enterprise and government customers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/20230316/featured/huawei-zain-ksa-partner-build-5g-city-saudi-arabia",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2023-03-16",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "MoU only. Zain launched commercial 5G-Advanced in Riyadh and Jeddah in July 2026 (Telco Magazine, opened) but that article does not name the network vendor, so the Huawei link to the commercial launch is unconfirmed."
+    },
+    {
+      "id": "SAU-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Mobily (Etihad Etisalat)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-10",
+      "still_current": null,
+      "summary": "Mobily signed a five-year 'Network 2023' memorandum with Huawei covering an end-to-end network review, the 4.5G-to-5G transition, network cloudification, and IT and data-centre strategy.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/?p=178671",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2018-10-17",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "MoU, pre-2020; the plan's horizon (2023) has passed and its outcome was not checked, so still_current null."
+    },
+    {
+      "id": "SAU-005",
+      "layer": "cloud",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Saudi Arabia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-12-08",
+      "still_current": null,
+      "summary": "During Xi Jinping's December 2022 Riyadh visit, Saudi Arabia signed a memorandum with Huawei on cloud computing and building high-tech complexes in Saudi cities.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://newsinfo.inquirer.net/1703274/saudi-arabia-signs-huawei-deal-deepening-china-ties-on-xi-visit",
+          "publisher": "Inquirer.net (Reuters)",
+          "source_tier": "S3",
+          "date": "2022-12-09",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Counterpart on the Saudi side not named precisely in the article. Huawei's Riyadh cloud region (Sept 2023) is already in the global PRC cloud layer; this finding records the government-level MoU only."
+    },
+    {
+      "id": "SAU-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "HUMAIN (PIF subsidiary)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05",
+      "still_current": null,
+      "summary": "Nvidia agreed in May 2025 to sell HUMAIN an initial 18,000 GB300 Blackwell chips, with several hundred thousand more planned, for its Riyadh and Dammam data centres; delivery depended on US export approval.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/humain-breaks-ground-two-data-centers-with-first-facilities-expected-to-go-live-in-q2-2026/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-08-26",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.silicon.co.uk/cloud/ai/saudi-ai-data-centres-626453",
+          "publisher": "Silicon UK",
+          "source_tier": "S2",
+          "date": "2025-08-26",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 3: purchase agreed with named counterparty and quantity, no value. Commerce's 19 Nov 2025 authorisation (up to 35,000 GB300 equivalent) is in the global US chip layer; actual delivery and installation not confirmed in this pass."
+    },
+    {
+      "id": "SAU-007",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "AMD",
+      "local_actor": "HUMAIN (PIF subsidiary)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05-14",
+      "still_current": null,
+      "summary": "AMD and HUMAIN announced a US$10bn joint effort to deploy 500 MW of AI compute over five years, using AMD Instinct GPUs, Epyc CPUs and ROCm software, at sites in Saudi Arabia and the US.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/amd-and-saudi-arabias-humain-agree-500mw-compute-deal-across-the-kingdom-and-us/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-05-14",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.silicon.co.uk/cloud/ai/saudi-ai-data-centres-626453",
+          "publisher": "Silicon UK",
+          "source_tier": "S2",
+          "date": "2025-08-26",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: described as a partnership/investment, no binding instrument identified. The US$10bn covers both countries; the Saudi share is unknown."
+    },
+    {
+      "id": "SAU-008",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "AMD and Cisco",
+      "local_actor": "HUMAIN (PIF subsidiary)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11",
+      "still_current": null,
+      "summary": "HUMAIN, AMD and Cisco formed a joint venture to deliver 1 GW of AI infrastructure in Saudi Arabia by 2030, with a 100 MW first phase on AMD Instinct MI450 GPUs and Cisco networking.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/amd-cisco-and-humain-set-up-jv-for-1gw-of-ai-infrastructure-in-saudi-arabia/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-11",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 2: JV formed but not operational; ownership shares undisclosed. DCD says it is unclear whether this is separate from SAU-007. Date inferred from the article's reference to the November 2025 chip-approval report."
+    },
+    {
+      "id": "SAU-009",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "HUMAIN (PIF subsidiary)",
+      "local_actor": "HUMAIN",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08",
+      "still_current": null,
+      "summary": "HUMAIN broke ground on two data centres in Riyadh and Dammam, about 100 MW each, targeted to go live in Q2 2026 as the first step toward multi-gigawatt national capacity.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/humain-breaks-ground-two-data-centers-with-first-facilities-expected-to-go-live-in-q2-2026/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-08-26",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.silicon.co.uk/cloud/ai/saudi-ai-data-centres-626453",
+          "publisher": "Silicon UK",
+          "source_tier": "S2",
+          "date": "2025-08-26",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator HUMAIN is PIF-owned, so pole domestic. Tier 4 (construction started). Builders and financiers not named. Go-live in 2026 could not be confirmed in two searches."
+    },
+    {
+      "id": "SAU-010",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "HUMAIN and xAI (ownership split undisclosed)",
+      "local_actor": "HUMAIN",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-19",
+      "still_current": null,
+      "summary": "xAI and HUMAIN announced at the US-Saudi Investment Forum a 500 MW AI data centre in Saudi Arabia, possibly the first of several; location, terms and value were not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/xai-humain-data-center-elon-musk/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-11",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://w.media/elon-musks-xai-to-build-500-mw-data-center-in-saudi-arabia/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2025-11-20",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: neither source says whether xAI (us) or HUMAIN (domestic) will own-operate; DCD notes xAI had sought to lease rather than build. W.Media names Nvidia as principal chip supplier."
+    },
+    {
+      "id": "SAU-011",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "DataVolt",
+      "local_actor": "NEOM / Oxagon",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025",
+      "still_current": null,
+      "summary": "DataVolt plans a US$5bn, 1.5 GW net-zero AI campus at NEOM's Oxagon, expected online in 2028; NEOM itself was paused in 2025 and is reportedly being refocused toward data centres.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacentrereview.com/2026/01/saudi-arabia-pivots-neom-gigaproject-to-ai-data-centre-hub/",
+          "publisher": "Data Centre Review",
+          "source_tier": "S2",
+          "date": "2026-01-29",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "DataVolt treated as Saudi-headquartered (domestic); not verified in this pass. Announcement date only known to be 2025. NEOM rethink rests on an FT report via Mobile Europe; whether it affects the campus is unknown. NEOM pause not coded as a reversal: not an AI-stack decision."
+    },
+    {
+      "id": "SAU-012",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "HUMAIN (PIF subsidiary)",
+      "local_actor": "HUMAIN; Saudi Data and AI Authority (SDAIA)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-26",
+      "still_current": null,
+      "summary": "HUMAIN launched HUMAIN Chat powered by ALLaM 34B, an Arabic model building on SDAIA-originated work; in August 2026 Microsoft agreed to offer ALLaM on Foundry and integrate it with Microsoft 365 Copilot.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/middle-east-and-north-africa/saudi-arabias-humain-launches-arabic-trained-ai-model/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2025-08-26",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.agbi.com/ai/2026/08/microsoft-puts-saudi-arabic-language-ai-model-on-global-platform/",
+          "publisher": "AGBI",
+          "source_tier": "S2",
+          "date": "2026-08",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.channelinsider.com/channel-business/mergers-and-acquisitions/news-microsoft-humain-allam-arabic-ai-partnership-saudi-arabia-apac/",
+          "publisher": "Channel Insider",
+          "source_tier": "S2",
+          "date": "2026-08-27",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole domestic: HUMAIN controls the model; no source names a foreign base model, so base_model null (unknown, not confirmed from-scratch). Training compute not stated. Microsoft distribution puts a domestic model on a US platform; it does not change model control."
+    },
+    {
+      "id": "SAU-013",
+      "layer": "models",
+      "pole": "us",
+      "controller": "xAI",
+      "local_actor": "HUMAIN; Government of Saudi Arabia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-19",
+      "still_current": null,
+      "summary": "Alongside the 500 MW data-centre plan, Elon Musk described a partnership to deploy xAI's Grok models across the whole of Saudi Arabia.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/xai-humain-data-center-elon-musk/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-11",
+          "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Grok accessed as an xAI service, so pole us. Tier 1: a stated intent; no contract, scope or adopting agencies named. W.Media (opened) did not confirm the Grok element."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on Huawei/Hikvision safe-city or surveillance contracts in Saudi Arabia returned only general Huawei MoU coverage and a CSIS safe-city overview that does not name Saudi Arabia"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced; budget spent on other layers"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current RAN and core vendor shares at stc, Mobily and Zain KSA, and which vendor built Zain's July 2026 commercial 5G-Advanced network.",
+    "Did HUMAIN's Riyadh and Dammam sites go live in 2026, and have Nvidia GB300 deliveries under the November 2025 Commerce authorisation actually arrived?",
+    "Ownership and location of the xAI-HUMAIN 500 MW site; whether any Grok government deployment contract exists.",
+    "Is ALLaM trained from scratch or fine-tuned from an open-weight base (SDAIA lineage), and on what compute?",
+    "DataVolt's ownership/jurisdiction and the Oxagon campus status after the NEOM review.",
+    "Saudi safe-city or police surveillance procurement (Huawei, Hikvision, Dahua) and any HMN Tech submarine-cable landings.",
+    "Any use of PRC models (DeepSeek, Qwen) by Saudi government or Aramco; search returned only China-side DeepSeek/Huawei chip news."
+  ],
+  "searches_run": 10
+}

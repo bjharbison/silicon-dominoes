@@ -1,0 +1,479 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "CAN",
+  "name": "Canada",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "CAN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei and ZTE",
+      "local_actor": "Bell, Telus, Rogers, Shaw (Freedom Mobile), SaskTel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei and ZTE equipment and managed services in Canadian 4G and 5G mobile networks",
+      "reversal_reason": "geopolitical",
+      "date": "2022-05-19",
+      "still_current": null,
+      "summary": "Ottawa announced Huawei and ZTE must be excluded from Canadian 4G and 5G networks: no new purchases after September 2022, 5G gear removed by June 2024, 4G gear by end-2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomtv.com/content/5g/canada-bans-huawei-and-zte-from-4g-and-5g-networks-44514",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2022-05-20",
+          "retrieved_at": "2026-10-24T01:08:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://therecord.media/huawei-zte-banned-from-providing-tech-to-canadian-5g-networks/",
+          "publisher": "The Record (Recorded Future News)",
+          "source_tier": "S2",
+          "date": "2022-05-20",
+          "retrieved_at": "2026-10-24T01:08:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://search.open.canada.ca/qpnotes/record/ic,IND-2026-QP-00010",
+          "publisher": "Innovation, Science and Economic Development Canada (Question Period note)",
+          "source_tier": "S1",
+          "date": "2025-09-15",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Reversal of installed Huawei/ZTE 4G equipment, so tier 5. Coded geopolitical (national-security grounds). Caveat: an ISED Question Period note received 15 Sep 2025 says the removal timelines were tied to Bill C-26, which died without Royal Assent, and that successor Bill C-8 (June 2025) 'would provide' prohibition authority, implying the exclusion rests on a policy statement rather than binding orders. Whether 5G removal completed by June 2024 was not confirmed."
+    },
+    {
+      "id": "CAN-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telus; Bell Canada",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-06",
+      "still_current": null,
+      "summary": "As of mid-2020 Huawei still supplied much of Telus's 4G radio network, and Bell also used Huawei 4G gear, though both chose other vendors for 5G.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itworldcanada.com/?p=431601",
+          "publisher": "IT World Canada",
+          "source_tier": "S2",
+          "date": "2020-06",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightreading.com/5g/telus-launches-5g-and-picks-samsung-as-third-vendor",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-06-19",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Installed-base finding dated to 2020 reporting. Under CAN-001 this 4G equipment is to be removed by end-2027; how much remains as of October 2026 was not checked, so still_current null."
+    },
+    {
+      "id": "CAN-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson, Nokia and Samsung",
+      "local_actor": "Telus; Bell Canada",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-06",
+      "still_current": null,
+      "summary": "Telus chose Ericsson and Nokia for 5G and added Samsung as a third supplier in June 2020; Bell signed with Ericsson and Nokia for its 5G radio network, both dropping Huawei.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/telus-launches-5g-and-picks-samsung-as-third-vendor",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-06-19",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://itworldcanada.com/?p=431601",
+          "publisher": "IT World Canada",
+          "source_tier": "S2",
+          "date": "2020-06",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden), Nokia (Finland) and Samsung (Korea) are all non-US, non-PRC foreign vendors, so pole third. Contract values not disclosed. Rogers' 5G vendor not covered in sources opened (ITWC says Rogers also avoided Huawei for 5G)."
+    },
+    {
+      "id": "CAN-004",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "CoreWeave",
+      "local_actor": "Cohere (tenant); Innovation, Science and Economic Development Canada",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12-06",
+      "still_current": null,
+      "summary": "Ottawa committed up to C$240m, the first award under its C$2bn Sovereign AI Compute Strategy, toward a multibillion-dollar Canadian AI data centre built by US firm CoreWeave on Nvidia GPUs for Cohere.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://betakit.com/cohere-secures-federal-backing-to-build-multibillion-dollar-canadian-ai-data-centre/",
+          "publisher": "BetaKit",
+          "source_tier": "S2",
+          "date": "2024-12-06",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://thelogic.co/news/cohere-to-build-multibillion-dollar-ai-data-centre-in-canada/",
+          "publisher": "The Logic",
+          "source_tier": "S3",
+          "date": "2024-12-06",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole us on the assumption that CoreWeave owns and operates the facility; sources say CoreWeave will 'build' it, so ownership is inferred, not stated. Ottawa is a co-funder, recorded in summary rather than financier because the funding was a commitment not shown to have closed. Tier 1: site undisclosed and no construction reported in sources. C$ figure not converted. Current status not checked."
+    },
+    {
+      "id": "CAN-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Telus",
+      "local_actor": "Telus Sovereign AI Factory, Rimouski, Quebec",
+      "builder": "HPE",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-25",
+      "still_current": null,
+      "summary": "Telus launched what it calls Canada's first fully sovereign AI factory in Rimouski, Quebec, built with HPE on Nvidia GPUs and serving customers; Kamloops, B.C. is named as a next site.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/20250926/ai-infrastructure/telus-ai-factory",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2025-09-26",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/nvidia/telus-nvidia-team-on-canada-sovereign-ai-factory/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2025-09-25",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Owner-operator Telus is Canadian, so domestic. HPE (US) designed the infrastructure; recorded as builder. No value disclosed."
+    },
+    {
+      "id": "CAN-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Telus Sovereign AI Factory, Rimouski",
+      "builder": "HPE",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-25",
+      "still_current": null,
+      "summary": "Telus's Rimouski AI factory runs on Nvidia GPUs and Nvidia's software stack in HPE-designed infrastructure; GPU model and count were not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/20250926/ai-infrastructure/telus-ai-factory",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2025-09-26",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/nvidia/telus-nvidia-team-on-canada-sovereign-ai-factory/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2025-09-25",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Equipment rule: accelerator vendor Nvidia sets pole us, even though the facility (CAN-005) is domestic."
+    },
+    {
+      "id": "CAN-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Bell Canada (BCE)",
+      "local_actor": "Bell AI Fabric sites in Kamloops, Merritt and Thompson Rivers University, B.C.",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05-28",
+      "still_current": null,
+      "summary": "Bell announced Bell AI Fabric: six hydro-powered AI data centres in British Columbia totalling about 500 MW, starting with a 7 MW Kamloops inference site slated for June 2025, with US inference firm Groq as partner.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.bnnbloomberg.ca/business/company-news/2025/05/28/bell-announces-plans-to-open-six-ai-data-centres-in-bc-as-part-of-bell-ai-fabric/",
+          "publisher": "BNN Bloomberg (Canadian Press)",
+          "source_tier": "S3",
+          "date": "2025-05-28",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.verdict.co.uk/bell-canada-ai-data/",
+          "publisher": "Verdict",
+          "source_tier": "S2",
+          "date": "2025-05-29",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator Bell is Canadian, so domestic. Tier 1: announcement; whether the Kamloops site opened as scheduled was not checked. No investment value disclosed. Groq's role points to US inference silicon (see CAN-008)."
+    },
+    {
+      "id": "CAN-008",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Groq",
+      "local_actor": "Bell Canada (Bell AI Fabric, Kamloops)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05-28",
+      "still_current": null,
+      "summary": "Bell named US AI-inference company Groq as partner for the first Bell AI Fabric facility in Kamloops, B.C.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.bnnbloomberg.ca/business/company-news/2025/05/28/bell-announces-plans-to-open-six-ai-data-centres-in-bc-as-part-of-bell-ai-fabric/",
+          "publisher": "BNN Bloomberg (Canadian Press)",
+          "source_tier": "S3",
+          "date": "2025-05-28",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.verdict.co.uk/bell-canada-ai-data/",
+          "publisher": "Verdict",
+          "source_tier": "S2",
+          "date": "2025-05-29",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "low",
+      "analyst_inference": "Analyst inference: Groq supplies its own LPU inference chips, so the partnership implies US silicon at Kamloops, but the sources opened do not state the hardware, the contract form or any volume. Low confidence for that reason."
+    },
+    {
+      "id": "CAN-009",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Cohere",
+      "local_actor": "Government of Canada (ISED; Minister of AI and Digital Innovation)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-19",
+      "still_current": null,
+      "summary": "Ottawa signed a non-binding MOU with Toronto-based Cohere to explore deploying its AI across federal government operations and to build Canada's capacity to use and export AI; no value stated.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2025/08/canada-partners-with-cohere-to-accelerate-world-leading-artificial-intelligence.html",
+          "publisher": "Innovation, Science and Economic Development Canada",
+          "source_tier": "S1",
+          "date": "2025-08-19",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2025/08/19/ottawa-signs-agreement-with-toronto-based-artificial-intelligence-company/",
+          "publisher": "BNN Bloomberg (Canadian Press)",
+          "source_tier": "S3",
+          "date": "2025-08-19",
+          "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Cohere is Canadian and controls its own model weights, so domestic; base_model null (Cohere's Command models are trained in-house as far as these sources show). Tier 1: MOU to explore, not a deployment."
+    },
+    {
+      "id": "CAN-010",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Hikvision Canada Inc.; federal departments, agencies and Crown corporations",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Hikvision Canada operations and federal procurement/use of Hikvision surveillance equipment",
+      "reversal_reason": "geopolitical",
+      "date": "2025-06-28",
+      "still_current": null,
+      "summary": "After an Investment Canada Act security review, Industry Minister Joly ordered Hikvision Canada to wind up, barred federal bodies from buying or using Hikvision products, and began auditing federal sites for existing devices.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.securityinfowatch.com/video-surveillance/article/55300419/canada-orders-hikvision-to-cease-operations-cites-national-security-concerns",
+          "publisher": "SecurityInfoWatch",
+          "source_tier": "S2",
+          "date": "2025-06-30",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.infosecurity-magazine.com/news/canada-bans-chinese-cctv-hikvision",
+          "publisher": "Infosecurity Magazine",
+          "source_tier": "S2",
+          "date": "2025-06-30",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.cp24.com/news/world/2025/07/09/ottawas-national-security-review-shutdown-order-procedurally-unfair-hikvision/",
+          "publisher": "CP24 (Canadian Press)",
+          "source_tier": "S3",
+          "date": "2025-07-09",
+          "retrieved_at": "2026-10-24T01:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Reversal coded at tier 3 (federal procurement of Hikvision equipment); the scale of the installed federal base is unknown, so tier 5 was not assumed. Coded geopolitical (national security). Private purchases are not barred. Hikvision filed a legal challenge in July 2025 calling the review procedurally unfair; no ruling or stay was found, so still_current null."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power plant evidence surfaced; Bell AI Fabric's hydro supply is noted under CAN-007 but no dedicated plant or utility filing was found"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Are Huawei/ZTE exclusions legally binding? Bill C-26 died; status of Bill C-8 and of any orders issued to operators; was 5G removal actually complete by June 2024?",
+    "How much Huawei 4G equipment remains in Telus, Bell and other networks ahead of the end-2027 deadline? Rogers' 5G RAN vendors.",
+    "Did the Cohere/CoreWeave sovereign compute facility proceed (site, owner, construction, GPU model), and what other Sovereign AI Compute Strategy awards have been made?",
+    "Did Bell AI Fabric's Kamloops site open, and what hardware does Groq supply there? Any Bell partnership with Cohere or other model providers.",
+    "Outcome of Hikvision's legal challenge to the June 2025 wind-up order; any provincial or municipal Hikvision/Dahua removals.",
+    "Any federal adoption of US model providers (OpenAI, Anthropic, Google, Microsoft Copilot) in the public service, and any OpenAI-for-Countries or Stargate-type project in Canada.",
+    "Any PRC-built submarine cable landings (HMN Tech) in Canada."
+  ],
+  "searches_run": 9
+}

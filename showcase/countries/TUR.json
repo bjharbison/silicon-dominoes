@@ -1,0 +1,308 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "TUR",
+  "name": "Türkiye",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T01:25:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "TUR-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Turkcell",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-02",
+      "still_current": null,
+      "summary": "Turkcell's CEO said the operator had no plans to replace Huawei, its long-time partner; Turkcell's 4G network leaned heavily on Huawei and it had verified a Huawei 5G base station on its commercial network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/mobile-core/turkcell-leaps-to-huawei-s-defense",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2019-02-06",
+          "retrieved_at": "2026-10-24T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 reflects Huawei's role in Turkcell's operational 4G RAN as described by Light Reading; Huawei's share of the RAN and any core role were not stated. Single opened source, so uncorroborated. Pre-2020 and not re-confirmed as current; Turkiye Today (Aug 2025, opened) says much of Turkish telecom infrastructure of the past decade relies on Huawei, which suggests continuity but is not operator-specific."
+    },
+    {
+      "id": "TUR-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Turkcell",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-02",
+      "still_current": null,
+      "summary": "At MWC 2026 Turkcell and Huawei signed three MoUs covering 5G-Advanced and standalone 5G expansion, 6G and autonomous-network research, and AI infrastructure, cloud platforms and model training in Türkiye. No value disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20260302/5g/turkcell-huawei-mwc-2026",
+          "publisher": "RCR Wireless (Huawei-sponsored content)",
+          "source_tier": "S4",
+          "date": "2026-03-02",
+          "retrieved_at": "2026-10-24T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Source is labelled as Huawei-sponsored content, so treated as S4 corporate marketing: evidence the MoUs were announced, not of deployment. Tier 1 (non-binding MoUs). A DCD product-news item on an earlier Turkcell-Huawei strategic cooperation agreement appeared in search but was not opened."
+    },
+    {
+      "id": "TUR-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Turkcell",
+      "builder": null,
+      "financier": "China Development Bank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2011-12-22",
+      "still_current": null,
+      "summary": "China Development Bank lent Turkcell US$250m in two collateral-free tranches (five- and seven-year), to be spent in 2012-2013 on Huawei products and services, per a disclosure to the Istanbul Stock Exchange.",
+      "announced_value_usd": 250000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://hurriyetdailynews.com/china-to-give-hefty-loan-to-turkcell-9897",
+          "publisher": "Hürriyet Daily News",
+          "source_tier": "S3",
+          "date": "2011-12-26",
+          "retrieved_at": "2026-10-24T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 4: financing closed (exchange disclosure reported). Pole prc because the financed equipment is Huawei's; China Development Bank recorded as financier. Pre-2020 and not re-checked as current; loans would have matured by about 2019. The underlying KAP/ISE filing was not opened."
+    },
+    {
+      "id": "TUR-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Turkcell",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03",
+      "still_current": null,
+      "summary": "At MWC 2026 Turkcell selected Ericsson to co-develop, integrate and deploy advanced RAN toward 5G-Advanced, and signed MoUs on cloud RAN/automation and 6G research; it also signed a Mavenir MoU on AI services in its IMS core.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-business/operator-news/19907-turkcell-sets-sights-on-5g-a-6g-and-ai-with-ericsson-and-mavenir-deals.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-03-06",
+          "retrieved_at": "2026-10-24T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2026/03/09/turkcell-sets-sights-on-5g-a-6g-and-ai-with-ericsson-and-mavenir-deals/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S2",
+          "date": "2026-03-09",
+          "retrieved_at": "2026-10-24T01:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so pole third. Coded tier 2 because the source does not say the RAN selection is a signed contract or give a value; if it is a binding award this is tier 3. Mavenir (US) MoU is tier 1 and folded in here rather than coded separately. Whether Ericsson and Huawei split Turkcell's 5G RAN is unknown."
+    },
+    {
+      "id": "TUR-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Turkcell",
+      "local_actor": "Turkcell; Google Cloud (region partner)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-25",
+      "still_current": null,
+      "summary": "Turkcell and Google Cloud announced Türkiye's first hyperscale data centre, to host a Google Cloud region: about US$3bn in total, Google US$2bn over ten years and Turkcell about US$1bn to 2032, with clusters planned for 2028-2029.",
+      "announced_value_usd": 3000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://f.invest.gov.tr/en/news/news-from-turkey/pages/turkcell-and-google-cloud-to-establish-turkiyes-first-hyperscale-regional-data-center.aspx",
+          "publisher": "Investment Office of the Presidency of Türkiye",
+          "source_tier": "S1",
+          "date": "2025-11-25",
+          "retrieved_at": "2026-10-24T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.agbi.com/telecoms/2025/11/turkcell-and-google-to-build-hyperscale-data-centre",
+          "publisher": "AGBI",
+          "source_tier": "S3",
+          "date": "2025-11-13",
+          "retrieved_at": "2026-10-24T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole domestic because AGBI describes Turkcell as the infrastructure provider (owner-operator); Google's cloud region inside it is a us cloud-layer fact covered by the global layers. Ownership split is not stated explicitly, so if Google co-owns the building the pole could be us. Tier 1: announcement only, no construction start found. Site and MW capacity not disclosed."
+    },
+    {
+      "id": "TUR-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "TÜBİTAK ULAKBİM (TRUBA national HPC)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-18",
+      "still_current": null,
+      "summary": "TÜBİTAK ULAKBİM added 192 Nvidia H200 GPUs to its ARF-ACC system in 2025 (it began with H100s in 2024); the system ranked 145th on the November 2025 TOP500 and serves research, public and private AI workloads.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ulakbim.tubitak.gov.tr/en/performance-boost-from-our-arf-acc-supercomputers/",
+          "publisher": "TÜBİTAK ULAKBİM",
+          "source_tier": "S1",
+          "date": "2025-11-18",
+          "retrieved_at": "2026-10-24T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Equipment rule: accelerator vendor Nvidia, so pole us; operator is the state research council. Total GPU count and integrator not stated. Operational as of November 2025; not re-confirmed for October 2026, so still_current left null."
+    },
+    {
+      "id": "TUR-007",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "TÜBİTAK; HAVELSAN; T3 Foundation with Baykar",
+      "local_actor": "Government of Türkiye (AI Vision and Action Plan 2026-2030)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06-26",
+      "still_current": null,
+      "summary": "Türkiye's 2026-2030 AI action plan reaffirmed a Turkish large language model effort, citing TÜBİTAK, the T3 Foundation with Baykar, and HAVELSAN's 9-billion-parameter model, and made the public sector primary customer for domestic AI.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://f.invest.gov.tr/en/news/news-from-turkey/pages/turkiye-unveils-ai-action-plan-artificial-intelligence-summit.aspx",
+          "publisher": "Investment Office of the Presidency of Türkiye",
+          "source_tier": "S1",
+          "date": "2026-06-26",
+          "retrieved_at": "2026-10-24T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://aa.com.tr/en/economy/turkiye-officially-announces-ai-action-plan/4030356",
+          "publisher": "Anadolu Agency",
+          "source_tier": "S4",
+          "date": "2026",
+          "retrieved_at": "2026-10-24T01:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole domestic on the assumption that weights are held by Turkish state-linked bodies; whether the models are trained from scratch or fine-tuned from foreign open weights is not stated, so base_model and base_model_pole are null. Tier 1: policy commitment. Anadolu is state-affiliated (S4) and its page could not be fetched. Separately, New Mind AI (Turkish firm) holds a June 2025 EuroHPC MareNostrum5 allocation for a Turkish LLM (opened, not coded)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on Hikvision/Dahua safe-city or police use in Türkiye returned only vendor marketing, market reports and non-Turkish projects; no Turkish procurement found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power evidence surfaced; budget spent on other layers"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendors supply Turkcell, Türk Telekom and Vodafone Türkiye 5G RAN and core after the October 2025 auction and April 2026 launch? Huawei vs Ericsson/Nokia split per operator.",
+    "What domestic-equipment (e.g. ULAK) share do the 5G licence conditions require, and has any operator deployed ULAK 5G base stations?",
+    "Is Ericsson's March 2026 Turkcell RAN selection a binding contract (value, scope)?",
+    "Ownership structure and site of the Turkcell-Google hyperscale data centre; construction start.",
+    "Huawei Cloud Istanbul region and Alibaba Cloud's announced Turkey region (global layer): any government or Turkcell tenancy?",
+    "Base model and weights control of HAVELSAN's 9B model and the TÜBİTAK / T3-Baykar Turkish LLMs.",
+    "Odine-Supermicro AI infrastructure partnership (June 2026, TelecomTV): any concrete GPU deployment and chip vendor.",
+    "Chinese-made CCTV (Hikvision/Dahua) in Turkish municipal or police systems; any Huawei safe-city contract.",
+    "Did US pressure (Pompeo-era warnings) produce any formal Huawei restriction in Turkish networks?"
+  ],
+  "searches_run": 11
+}
