@@ -1,0 +1,337 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BFA",
+  "name": "Burkina Faso",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BFA-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei (with CITCC)",
+      "local_actor": "Ministry of Security, Burkina Faso",
+      "builder": "China International Telecommunication Construction Corporation (CITCC)",
+      "financier": "China Eximbank (RMB 560m government concessional loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-07-08",
+      "still_current": true,
+      "summary": "Smart Burkina: Huawei and CITCC installed a city video-surveillance and security-radio system with over 900 cameras at 300+ sites in Ouagadougou and Bobo-Dioulasso, financed by a China Eximbank concessional loan; phase 1 ended April 2025.",
+      "announced_value_usd": 94000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/86748",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://ecofinagency.com/telecom/1307-42836-burkinabe-govt-to-build-800km-of-optical-fiber-and-install-900-surveillance-cameras",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2021-07-13",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://afrique.le360.ma/autres-pays/societe/2021/07/08/34847-burkina-faso-900-cameras-de-videosurveillance-pour-renforcer-la-securite-34847",
+          "publisher": "Le360 Afrique",
+          "source_tier": "S3",
+          "date": "2021-07-08",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://gouvernement.gov.bf/wp-content/uploads/2026/01/Chronique-du-8.pdf",
+          "publisher": "Government of Burkina Faso information service",
+          "source_tier": "S1",
+          "date": "2026-01-08",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://fr.apanews.net/news/burkina-faso-ouagadougou-placee-sous-surveillance-en-temps-reel/",
+          "publisher": "APA News",
+          "source_tier": "S3",
+          "date": "2025-04",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://chinaglobalsouth.com/2021/07/15/burkina-faso-launches-new-huawei-powered-smart-city-initiative-using-loan-from-the-china-exim-bank/",
+          "publisher": "China Global South Project",
+          "source_tier": "S2",
+          "date": "2021-07-15",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Pole prc: Huawei is the equipment vendor. Launch date 2021-07-08; loan signed 2020-09-29 per AidData. Tier 5 because the January 2026 government note reports a 900+ camera network and phase 1 finished (88.71% physical execution at 30 April 2025); APA reports real-time surveillance operational from April 2025 but names no vendor, so linking it to Smart Burkina is inference. US$94m is Ecofin's conversion of CFA 52bn; AidData gives the contract as about US$80m. Phase 2 (AI predictive analytics, automated fines) is still under financing negotiation. AidData coded S2 as a specialist research dataset.",
+      "bundle_id": "BFA-B1"
+    },
+    {
+      "id": "BFA-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei (with CITCC)",
+      "local_actor": "Ministry of Security, Burkina Faso",
+      "builder": "China International Telecommunication Construction Corporation (CITCC)",
+      "financier": "China Eximbank (RMB 560m government concessional loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-07-08",
+      "still_current": null,
+      "summary": "The same Smart Burkina package funds about 650 km of Huawei-built national fibre backbone plus 150 km of metropolitan fibre linking cities, alongside a professional radio network for security forces.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/86748",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://ecofinagency.com/telecom/1307-42836-burkinabe-govt-to-build-800km-of-optical-fiber-and-install-900-surveillance-cameras",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2021-07-13",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://gouvernement.gov.bf/wp-content/uploads/2026/01/Chronique-du-8.pdf",
+          "publisher": "Government of Burkina Faso information service",
+          "source_tier": "S1",
+          "date": "2026-01-08",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor Huawei, so prc. Tier 4 (construction under way, phase 1 near complete per the government note); not coded 5 because operational status of the fibre itself is not stated. Value carried on BFA-001 to avoid double-counting the single package. Ecofin gives 800 km in total, consistent with 650+150.",
+      "bundle_id": "BFA-B1"
+    },
+    {
+      "id": "BFA-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Burkina Faso",
+      "builder": "Huawei International",
+      "financier": "Bank of China (60%); BNP Paribas (40%)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-12-10",
+      "still_current": null,
+      "summary": "Huawei began building phase one of Burkina Faso's 2,001 km national fibre backbone in December 2017, under French supervisor Tactis, funded by a 12-year Bank of China/BNP Paribas loan; phase one cost about CFA 50bn.",
+      "announced_value_usd": 180000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/construction-begins-on-burkina-fasos-us180m-fibre-optic-backbone/LPwQ5Ml6YgovNgkj",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2017-12-14",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/telecom/1112-37829-burkina-faso-huawei-international-launches-construction-works-for-national-backbone-project",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2017-12",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "US$180m is ITWeb's estimate for the full backbone (CFA 100bn); phase one about US$90m. Pre-2020; completion and current operation not confirmed. A 2014 CIO Mag piece described a larger 5,000 km Huawei backbone at CFA 120bn, so scope changed over time. Both sources may derive from one release."
+    },
+    {
+      "id": "BFA-004",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Security, Burkina Faso",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018",
+      "still_current": null,
+      "summary": "A 2018 Safe City pilot with Huawei Technologies began with 45 camera sites, two years before the Smart Burkina project was formally created.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gouvernement.gov.bf/wp-content/uploads/2026/01/Chronique-du-8.pdf",
+          "publisher": "Government of Burkina Faso information service",
+          "source_tier": "S1",
+          "date": "2026-01-08",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 (pilot). City not named in the note; scale subnational assumed (Ouagadougou likely). Superseded by BFA-001."
+    },
+    {
+      "id": "BFA-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel-Lucent (now Nokia)",
+      "local_actor": "ANPTIC (national ICT promotion agency)",
+      "builder": null,
+      "financier": "Danida Business Finance with Nordea Bank (partial)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015-09-17",
+      "still_current": null,
+      "summary": "Works began in September 2015 on the G-Cloud government cloud: eight nodes in six localities with servers, storage and e-trust services, linked by 741 km of fibre, delivered by Alcatel-Lucent and partly Danish-financed; CFA 36bn, 27-month schedule.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://burkina24.com/?p=93764",
+          "publisher": "Burkina24",
+          "source_tier": "S3",
+          "date": "2015-09-14",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://cio-mag.com/burkina-faso-le-g-cloud-pour-fournir-des-solutions-informatiques-a-valeur-ajoutee",
+          "publisher": "CIO Mag",
+          "source_tier": "S2",
+          "date": "2014-10-09",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor Alcatel-Lucent (French, absorbed by Finnish Nokia in 2016), so third. Cost given as CFA 47bn in 2014 and CFA 36bn in 2015; not converted. Layer networks because fibre and network nodes dominate, though it is also a government cloud. Pre-2020; completion and current status not confirmed; the 2026 modular data centres are labelled 'Cloud gouvernemental' and may be its successor."
+    },
+    {
+      "id": "BFA-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Ministry of Digital Transition, Burkina Faso",
+      "local_actor": "Ministry of Digital Transition, Burkina Faso",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-01-23",
+      "still_current": null,
+      "summary": "The prime minister inaugurated two modular government-cloud data centres in Ouagadougou (3,000 TB storage, 28,800 CPU cores, 7,000+ VMs, about CFA 15bn) under a 'zero data abroad' repatriation policy; a larger national data centre is planned for 2028.",
+      "announced_value_usd": 28600000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fr.apanews.net/news/le-burkina-inaugure-deux-datacenters-pour-securiser-ses-donnees-publiques/",
+          "publisher": "APA News",
+          "source_tier": "S3",
+          "date": "2026-01-23",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://burkina24.com/?p=430691",
+          "publisher": "Burkina24",
+          "source_tier": "S3",
+          "date": "2026-01",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://afriqueitnews.com/tech-media/burkina-faso-deux-datacenters-inaugures-pour-renforcer-souverainete-numerique/",
+          "publisher": "Afrique IT News",
+          "source_tier": "S2",
+          "date": "2026-01-28",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "State-owned and operated, so domestic. Equipment vendor, builder and financier not named in any source, so those stay null; under the equipment rule the IT-equipment vendor could warrant a separate finding. US$28.6m is Afrique IT News's own conversion. Afrique IT News coded S2 as specialist tech press; if a reviewer treats it as S3 this falls to uncorroborated/low."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in network, data-centre or AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one AI/Russia search found an AI roadmap, parliamentary AI training and an April 2026 Russian public-diplomacy audience on AI/cyber skills training, but no model-provider adoption or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "Rosatom nuclear-plant agreements (2023 MOU, 2025 accord) surfaced but are not AI- or data-centre-specific"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendors of Orange Burkina, Moov Africa Burkina (Maroc Telecom) and Telecel Faso were not established; one search and the Orange 4G launch article named none.",
+    "Who supplied the IT equipment and built the two January 2026 modular government data centres, and who is contracted for the planned 2028 national data centre?",
+    "Was the 2017 Huawei/Bank of China national backbone and the 2015 Alcatel-Lucent G-Cloud completed, and are they still in service?",
+    "Smart Burkina phase 2 (AI predictive analytics, automated traffic fines): financier and vendor under negotiation; check for a new China Eximbank loan.",
+    "Russian digital cooperation (Russian Centre for Public Diplomacy, Novosibirsk university schooling programme) is training-only so far; watch for any equipment or platform deal. A UAE digital-expertise lead (osiris.sn headline) was not opened."
+  ],
+  "searches_run": 11
+}

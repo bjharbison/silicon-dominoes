@@ -1,0 +1,346 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MAC",
+  "name": "Macao",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MAC-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "CTM (Companhia de Telecomunicações de Macau)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-11",
+      "still_current": null,
+      "summary": "Huawei is named as CTM's 5G technology supplier; CTM reported territory-wide outdoor 5G coverage in 2020 and, after an eight-year 5G licence was issued in November 2022, launched commercial 5G with about MOP206m planned investment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.macaubusiness.com/macau-local-5g-network-in-testing-commercial-use-in-h1-2020-ctm/",
+          "publisher": "Macau Business",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.macaubusiness.com/macau-to-be-one-of-the-first-cities-in-the-world-to-have-full-5g-coverage-ctm/",
+          "publisher": "Macau Business",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ctm.net/en-US/person/T1-010030080010/202011/a9dd6fd6b01b4c6586b8178523ada977.html",
+          "publisher": "CTM",
+          "source_tier": "S1",
+          "date": "2020-11-17",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/macau-government-issues-5g-licenses-to-ctm-and-china-telecom/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-11-08",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Huawei-as-vendor rests on two undated (c. 2019) Macau Business articles plus CTM's own 2020 note of a long-term Huawei partnership in 'infrastructure, internet and mobile equipment'; no contract, value or RAN/core split found. Tier 5: network operational territory-wide. MOP206m is CTM's own investment plan, not a contract value, so not recorded. CTM's ownership chain was not checked in this run; pole is set by the equipment vendor regardless. Convention (as HKG): Macao-controlled entities are domestic; mainland-PRC controllers are prc."
+    },
+    {
+      "id": "MAC-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "CTM",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-07-22",
+      "still_current": null,
+      "summary": "CTM launched Huawei-developed 5.5G (5G-Advanced) service in Macao on 22 July 2024, initially in busy commercial areas such as Senado Square and some border ports, with further expansion promised.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://macaonews.org/news/business/macau-ctm-internet-speed-huawei-5-5g-macao/",
+          "publisher": "Macao News",
+          "source_tier": "S3",
+          "date": "2024-08-05",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment supplied by Huawei is implied ('Huawei-developed service') rather than itemised. Tier 5 for the limited live deployment; scale subnational because coverage is a few hotspots. Single source. Convention (as HKG): Macao-controlled entities are domestic; mainland-PRC controllers are prc."
+    },
+    {
+      "id": "MAC-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "CTM; Macau University of Science and Technology (MUST)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-11",
+      "still_current": null,
+      "summary": "CTM, Huawei and MUST launched Macao's first 5G smart-campus network using a Huawei 5G mobile VPN, giving university users secure intranet access from Macao, the mainland and Hong Kong.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://macaonews.org/community/ctm-must-huawei-5g-campus-network/",
+          "publisher": "Macao News",
+          "source_tier": "S3",
+          "date": "2023-11-27",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single-institution deployment, so municipal scale. Described as the first mainland-Macao cross-regional data solution; it won a PRC MIIT-run 5G application prize. No user counts or value. Convention (as HKG): Macao-controlled entities are domestic; mainland-PRC controllers are prc."
+    },
+    {
+      "id": "MAC-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Macao SAR Government",
+      "local_actor": "Macao SAR Government (smart-city programme)",
+      "builder": "Alibaba Group / Alibaba Cloud (technical support)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-08-04",
+      "still_current": null,
+      "summary": "Under a 2017 strategic smart-city framework with Alibaba Group, Macao's government had a cloud computing data centre built on government premises, retaining ownership of the facility, equipment, systems and all data, which must stay in Macao.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gcs.gov.mo/news/detail/en/N17HN4XH2R",
+          "publisher": "Macao SAR Government Information Bureau",
+          "source_tier": "S1",
+          "date": "2017-08-14",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.gov.mo/en/?p=64532",
+          "publisher": "Macao SAR Government Portal",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.macaubusiness.com/proud-of-the-cloud/",
+          "publisher": "Macau Business",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is the Macao government, so domestic; Alibaba (technical contractor) recorded as builder. Tier 3: government says the contract was awarded directly without tender. Macau Business's 'likely MOP400m over two years' is the magazine's estimate, not an announced value, so not recorded. Phases were due June 2019/June 2021; completion not confirmed. A 2026 report of a 'government-exclusive cloud computing centre' hosting local LLMs may be this facility — unconfirmed. Pre-2020. Convention (as HKG): Macao-controlled entities are domestic; mainland-PRC controllers are prc.",
+      "bundle_id": "MAC-B1"
+    },
+    {
+      "id": "MAC-005",
+      "layer": "cloud",
+      "pole": "prc",
+      "controller": "Alibaba Cloud (Alibaba Group)",
+      "local_actor": "Macao SAR Government",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-08-04",
+      "still_current": null,
+      "summary": "The government said only Alibaba Cloud technology would be used for its new cloud computing centre and big-data platform, with Alibaba providing technical support but, per the government, no access to government data.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.macaubusiness.com/proud-of-the-cloud/",
+          "publisher": "Macau Business",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.gcs.gov.mo/news/detail/en/N17HN4XH2R",
+          "publisher": "Macao SAR Government Information Bureau",
+          "source_tier": "S1",
+          "date": "2017-08-14",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Cloud stack (software/firmware) vendor treated as controller under the equipment rule, so prc (Alibaba is Hangzhou-headquartered). The 'only Alibaba Cloud technology' wording is from Macau Business; the government release confirms Alibaba as technical partner. Not a public-cloud region, so not covered by the global cloud layer. Whether Alibaba still supports the platform is unknown. Pre-2020. Convention (as HKG): Macao-controlled entities are domestic; mainland-PRC controllers are prc.",
+      "bundle_id": "MAC-B1"
+    },
+    {
+      "id": "MAC-006",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Macao SAR Government (SAFP)",
+      "local_actor": "Public Administration and Civil Service Bureau (SAFP); 28 departments",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02",
+      "still_current": null,
+      "summary": "SAFP deployed several locally hosted large language models in the government-exclusive cloud centre; a trial internal office platform had about 5,000 registered users across 28 departments and 460,000 uses by February 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://macaudailytimes.com.mo/one-account-and-business-associations-platform-to-undergo-an-ai-upgrade.html",
+          "publisher": "Macau Daily Times",
+          "source_tier": "S3",
+          "date": "2026-04-10",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.al.gov.mo/uploads/attachment/2025-06/34986685d10061f45a.pdf",
+          "publisher": "SAFP reply to Legislative Assembly interpellation",
+          "source_tier": "S1",
+          "date": "2025-06-17",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Locally deployed weights under government control, so domestic per v0.2; base model never named in any source (DeepSeek or Qwen plausible given regional practice, but that is speculation, so null). Tier 2: trial platform. SAFP's June 2025 reply confirms trials (AI phone service, 11 departments) but not the specific local-LLM deployment. Convention (as HKG): Macao-controlled entities are domestic; mainland-PRC controllers are prc."
+    },
+    {
+      "id": "MAC-007",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Public Security Police Force (CPSP); Secretary for Security",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-11-26",
+      "still_current": null,
+      "summary": "Macao's 'Sky Eye' citywide police camera network was being built in six phases toward about 2,600 cameras by 2023, with a 100-camera facial and number-plate recognition trial; no equipment vendor was disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gcs.gov.mo/detail/en/N19KYQvp3l",
+          "publisher": "Macao SAR Government Information Bureau",
+          "source_tier": "S1",
+          "date": "2019-11-26",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.macaubusiness.com/police-to-start-facial-recognition-surveillance-camera-tests-in-q3/",
+          "publisher": "Macau Business",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: camera/analytics vendor not named in any opened source, and under the equipment rule the vendor is the controller. Tier 5 for earlier operational phases; government target was 4,200 cameras by 2028. Convention (as HKG): Macao-controlled entities are domestic; mainland-PRC controllers are prc."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or deployments surfaced in cloud, data-centre or government-AI searches; no dedicated silicon search run"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced in other searches"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendor(s) supply the 'Sky Eye' cameras and facial-recognition analytics (Hikvision, Dahua, Huawei or others)? Check Boletim Oficial procurement notices.",
+    "Base model(s) of SAFP's locally deployed government LLMs and whether they run in the Alibaba-built government cloud centre.",
+    "Was the Alibaba-built government cloud centre completed (phases to June 2021), and is Alibaba still the technical provider?",
+    "RAN/core vendors for China Telecom (Macau), 3 Macau and SmarTone 4G/5G networks; CTM core network vendor and CITIC ownership chain.",
+    "Casino-sector face recognition (Cognitec reported in older trade press) and any current casino AI surveillance vendors."
+  ],
+  "searches_run": 10
+}

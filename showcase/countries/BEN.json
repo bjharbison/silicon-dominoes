@@ -1,0 +1,316 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BEN",
+  "name": "Benin",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BEN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Benin Telecom S.A. / Government of Benin",
+      "builder": null,
+      "financier": "China Eximbank (government concessional loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-06",
+      "still_current": null,
+      "summary": "Huawei, under a 2014 contract with Benin Telecom and a China Eximbank concessional loan, rehabilitated the 1,060 km Cotonou–Malanville fibre backbone, built a Cotonou metro loop and an IMS/MPLS core with 4G base stations (PDI2T phase 1).",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/58955",
+          "publisher": "AidData (William & Mary) Chinese development finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "AidData is a US university research dataset (not Chinese-hosted despite the subdomain), coded S2; it cites the signed loan agreement. Loan RMB 496m; not converted to a contemporaneous USD figure, so values left null. Completion date given as June 2018 in narrative, 30 Sept 2018 in key dates. Pre-2020; current operator (SBIN, successor to Benin Telecom) and ongoing Huawei maintenance not confirmed.",
+      "bundle_id": "BEN-B1"
+    },
+    {
+      "id": "BEN-002",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Not named (phase 2 contractor unidentified)",
+      "local_actor": "Government of Benin",
+      "builder": null,
+      "financier": "China Eximbank (government concessional loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-04-15",
+      "still_current": null,
+      "summary": "Benin signed a China Eximbank concessional loan (about RMB 260–265m) for national broadband phase 2: a 484 km fibre backbone in Mono, Zou and Collines plus 205 km of metro fibre in over ten towns.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/91638",
+          "publisher": "AidData (William & Mary) Chinese development finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: AidData names no contractor for phase 2, so the equipment vendor (the controller under the v0.2 rule) is unknown; Huawei delivered phase 1 and continuity is plausible but unverified. Tier 4 because the loan agreement is signed (financing closed); no implementation evidence found. RMB amount inconsistent in source and not converted.",
+      "bundle_id": "BEN-B1"
+    },
+    {
+      "id": "BEN-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "MTN Benin",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-10-24",
+      "still_current": null,
+      "summary": "MTN Benin signed a roughly US$120m (CFA 71bn) deal with Ericsson to expand and modernise its national network: 213 new and 853 upgraded radio sites, wider 4G, consolidated 2G/3G and 5G readiness.",
+      "announced_value_usd": 120000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/telecom/2910-40616-mtn-benin-tasks-ericsson-to-upgrade-mobile-phone-network",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2019-10-29",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so third pole. Single opened source; value as reported. Whether Ericsson also supplies MTN Benin's core, and the vendor for MTN's November 2024 5G launch in Cotonou/Abomey-Calavi (DCD says vendor not disclosed), remain unknown. Pre-2020 contract; current status not checked."
+    },
+    {
+      "id": "BEN-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (ASN)",
+      "local_actor": "Benin ACE grouping (Bénin Télécoms, MTN, Etisalat, Libercom and ISPs)",
+      "builder": null,
+      "financier": "World Bank IDA; State of Benin; Benin ACE grouping",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015-04-01",
+      "still_current": null,
+      "summary": "Benin was connected to the ACE submarine cable in April 2015 via a Cotonou (Fidjorossè) landing station; ASN was the equipment maker and the US$35m Benin component was funded by IDA, the state and local operators.",
+      "announced_value_usd": 35000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/telecom/1710-32540-benin-commissions-sub-marine-fibre-optic-cable-ace",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2015-10",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "ASN is French, so third pole as equipment vendor. US$35m recorded as announced (funding figure for Benin's landing), not verified. Pre-2020; still in service not confirmed this run. Benin's older SAT-3 landing not coded."
+    },
+    {
+      "id": "BEN-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (ASN)",
+      "local_actor": "Government of Benin (Council of Ministers)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-12-23",
+      "still_current": null,
+      "summary": "Benin's Council of Ministers approved contracting for a branching unit on the Meta-backed 2Africa cable to enable a future Benin landing; no landing party, site or later progress was stated.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://cio-mag.com/?p=26821",
+          "publisher": "CIO Mag",
+          "source_tier": "S2",
+          "date": "2020-12-27",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.businesswire.com/news/home/20200514005389/en/2Africa-A-Transformative-Subsea-Cable-for-Future-Internet-Connectivity-in-Africa-Announced-by-Global-and-African-Partners",
+          "publisher": "2Africa consortium (Business Wire release)",
+          "source_tier": "S1",
+          "date": "2020-05-14",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 2: a cabinet approval to contract, not a confirmed contract or landing. Controller set to ASN as 2Africa's builder per the consortium release, which does not mention Benin, so it does not corroborate the Benin decision. Consortium includes China Mobile International alongside Meta and others; vendor-based pole is third. Whether the Benin branch was built is unconfirmed."
+    },
+    {
+      "id": "BEN-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Benin (ASSI oversight; operated by state telco SBIN per DCD)",
+      "local_actor": "Agence des services et systèmes d'information (ASSI)",
+      "builder": "TMI (Tunisia) - fit-out and equipment installation",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06-01",
+      "still_current": true,
+      "summary": "Benin's 300 m² national data centre at Abomey-Calavi, fitted out over nine months by Tunisian firm TMI, began technical tests in June 2021 and is described in 2026 as the existing state facility, now seeking a backup site.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://cio-mag.com/benin-premiers-tests-techniques-sur-le-datacenter-national",
+          "publisher": "CIO Mag",
+          "source_tier": "S2",
+          "date": "2021-06-02",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://managers.tn/2021/06/02/lentreprise-tunisienne-tmi-installe-le-datacenter-national-du-benin/",
+          "publisher": "Managers (Tunisia)",
+          "source_tier": "S3",
+          "date": "2021-06-02",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/benin-wants-to-establish-a-secondary-national-data-center/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-03-27",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Domestic owner-operator; TMI recorded as builder (fit-out). DCD names the operator 'SBIM', read as SBIN (state telco) - analyst inference. Equipment vendors unnamed in all sources, so IT-stack pole unknown. still_current true because DCD (2026) treats it as the operating primary site. A World Bank-funded (WARDIP) feasibility study for a secondary national data centre, possibly outside Benin, was tendered in March 2026."
+    },
+    {
+      "id": "BEN-007",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "China National Technical Import-Export Corporation (CNTIC), reported",
+      "local_actor": "Ministry of the Interior and Public Security",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-04",
+      "still_current": null,
+      "summary": "Benin's cabinet approved a CFA 41.6bn video-protection programme for Cotonou, Porto-Novo, Parakou, Abomey-Calavi, Ouidah and two border crossings, with automated traffic fines; one outlet reports Chinese state firm CNTIC as contractor.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://beninwebtv.bj/videosurveillance-le-benin-engage-un-programme-securitaire-de-grande-ampleur-a-plus-de-41-milliards-fcfa/",
+          "publisher": "Benin Web TV",
+          "source_tier": "S3",
+          "date": "2026-04-15",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-infrastructures/0503-53493-benin-plans-surveillance-camera-network-to-strengthen-security-and-traffic-control",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2026-03-05",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Programme approval is corroborated (Ecofin + Benin Web TV) but the CNTIC contractor claim rests on one S3 outlet relaying another local outlet (La Marina), so not corroborated. Pole prc rests on CNTIC as supplier; camera/platform vendor (e.g. Huawei, Hikvision, Dahua) not identified, so the equipment controller may differ. Tier 2 as no signed contract is documented. Value not converted to USD. A separate 2024 headline cites CFA 32.17bn spent on video surveillance (not opened in full). No AI/facial recognition mentioned."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no accelerator purchase or deployment evidence surfaced in network, data-centre or AI searches; search budget spent on higher-yield layers"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found no national partnership with a frontier model provider; a snippet on a Beninese local-language AI project was not opened, and ASIN's June 2025 accords (ODS, Quality Corporate, IIDiA) are cybersecurity/innovation-lab deals, not model adoption"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who is the contractor for national broadband phase 2 (China Eximbank 2022 loan) and has construction started? Is Huawei still maintaining the phase 1 backbone/core for SBIN?",
+    "Confirm CNTIC's role in the 2026 CFA 41.6bn video-protection programme (award notice, decree) and identify the camera/platform vendor and any analytics/facial-recognition features.",
+    "Radio and core vendors for MTN Benin's 2024 5G launch and for Moov Africa Benin; any Huawei/ZTE presence in either operator's RAN or core.",
+    "Equipment vendors (servers, storage, network) inside the Abomey-Calavi national data centre; outcome of the WARDIP secondary data-centre feasibility study.",
+    "Did the 2Africa Benin branching unit and landing get built, and who operates the landing?",
+    "Any government AI model adoption or partnership (Sèmè City, ASIN, national AI and big data strategy) with a named foreign provider."
+  ],
+  "searches_run": 13
+}

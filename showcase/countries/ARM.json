@@ -1,0 +1,463 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ARM",
+  "name": "Armenia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ARM-001",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Firebird, Inc. (US-based AI cloud company; offices San Francisco and Yerevan)",
+      "local_actor": "Government of Armenia; Team Group (Team Telecom Armenia)",
+      "builder": null,
+      "financier": "Ameriabank (Armenian; US$60m per DCD); Armenian government via a reported US$500m public-private partnership",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-08",
+      "still_current": null,
+      "summary": "Firebird opened DC-1 of its Hrazdan AI factory, about 15 MW and liquid-cooled, with Armenia's prime minister and the US chargé present; Perplexity is the first named customer and much larger phases are planned to 2027.",
+      "announced_value_usd": 500000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://thenextweb.com/news/firebird-armenia-ai-factory-export-licence-compute-diplomacy",
+          "publisher": "The Next Web",
+          "source_tier": "S3",
+          "date": "2026-08-08",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://armenpress.am/en/article/1256630/amp",
+          "publisher": "Armenpress",
+          "source_tier": "S4",
+          "date": "2026-07-28",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://arkatelecom.am/en/news/telecom/firebird-ai-factory-is-of-strategic-importance-for-armenia-s-technological-development-prime-ministe/",
+          "publisher": "ARKA News Agency",
+          "source_tier": "S3",
+          "date": "2026-06-19",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomarmenia.am/en/news/2025/06/11/team-ը-nvidia-ն-և-firebird-ը-հայտարարում-են-տարածաշրջանային-աբ-սուպերհամակարգչային-կենտրոն-կառուցել/1274",
+          "publisher": "Team Telecom Armenia",
+          "source_tier": "S1",
+          "date": "2025-06-11",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/armenian-bank-ameriabank-invests-60m-in-firebirdais-planned-100mw-data-center/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-03-26",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole us: Firebird is described as US-based (founded by diaspora Armenians, Afeyan Foundation founding investor; Nvidia intends to invest; CoreWeave early backer) — a reviewer may judge it domestic given its Yerevan base and Armenian-government PPP. Tier 5 rests only on TNW for the opening; ARKA (June) and Armenpress (July) show construction then pre-commissioning. ARKA gives 18 MW for phase 1 vs TNW 15 MW. US$500m is phase-1 announced investment; US$4bn phase-2 total not recorded. Financier per DCD.",
+      "bundle_id": "ARM-B1"
+    },
+    {
+      "id": "ARM-002",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia (Blackwell GPUs); Dell Technologies (PowerEdge servers)",
+      "local_actor": "Firebird, Inc.",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-19",
+      "still_current": null,
+      "summary": "Firebird received US government export authorisation to bring Nvidia Blackwell GPUs and Dell AI servers into Armenia for the first, US$500m phase of its AI supercomputing project; no quantity or conditions were published.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.hpcwire.com/off-the-wire/firebird-secures-us-export-authorization-for-armenia-ai-supercomputing-project/",
+          "publisher": "Firebird (press release via HPCwire)",
+          "source_tier": "S1",
+          "date": "2025-11-20",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://eurasianet.org/armenia-nvidia-chip-transfer-approved-major-ai-project-confidently-moving-forward",
+          "publisher": "Eurasianet",
+          "source_tier": "S3",
+          "date": "2025-11-21",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://oc-media.org/us-approves-nvidia-chip-exports-for-ai-supercomputer-project-in-armenia-bloomberg-reports",
+          "publisher": "OC Media (relaying Bloomberg)",
+          "source_tier": "S3",
+          "date": "2025-11-19",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://arkatelecom.am/en/news/telecom/firebird-has-received-a-us-government-license-to-import-nvidia-chips-to-armenia",
+          "publisher": "ARKA News Agency",
+          "source_tier": "S3",
+          "date": "2025-11-20",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2025-11-19/ai-startup-firebird-gets-us-approval-to-use-nvidia-chips-in-armenian-data-center",
+          "publisher": "Bloomberg",
+          "source_tier": "S3",
+          "date": "2025-11-19",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Licence granted for a named Armenian project, so coded tier 4 (licence issued). Issuing agency not named in any opened source (BIS listed only as a supporter). Value is the project phase, not chip value; recorded as announced in ARM-001 only, so null here.",
+      "bundle_id": "ARM-B1"
+    },
+    {
+      "id": "ARM-003",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia (GB300)",
+      "local_actor": "Firebird, Inc.",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02",
+      "still_current": null,
+      "summary": "During US Vice President Vance's Yerevan visit, Firebird and the US government announced phase 2, with a US export licence covering about 41,000 Nvidia GB300 GPUs, scaling the project toward roughly US$4bn.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/armenian-bank-ameriabank-invests-60m-in-firebirdais-planned-100mw-data-center/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-03-26",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://thenextweb.com/news/firebird-armenia-ai-factory-export-licence-compute-diplomacy",
+          "publisher": "The Next Web",
+          "source_tier": "S3",
+          "date": "2026-08-08",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Both sources agree on a February 2026 licence for 41,000 GB300 units; DCD says 50,000 GB300 procured in total. Exact licence date not given. Phase-2 GPUs not yet confirmed as delivered.",
+      "bundle_id": "ARM-B1"
+    },
+    {
+      "id": "ARM-004",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia (B200)",
+      "local_actor": "Firebird, Inc.",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-08",
+      "still_current": null,
+      "summary": "Firebird's first Hrazdan data hall went live with 6,144 Nvidia B200 GPUs on Nvidia's reference architecture.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://thenextweb.com/news/firebird-armenia-ai-factory-export-licence-compute-diplomacy",
+          "publisher": "The Next Web",
+          "source_tier": "S3",
+          "date": "2026-08-08",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://armenpress.am/en/article/1256630/amp",
+          "publisher": "Armenpress",
+          "source_tier": "S4",
+          "date": "2026-07-28",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Armenpress (state agency, S4) confirms 6,144 Blackwell-generation GPUs for phase 1 but before commissioning; operational status rests on TNW alone, hence uncorroborated and low.",
+      "bundle_id": "ARM-B1"
+    },
+    {
+      "id": "ARM-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Ucom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-02-09",
+      "still_current": true,
+      "summary": "Ucom signed with Nokia to modernise its base-station and IP network with 5G-ready radio access, starting in the regions; by 2026 Ucom reported Nokia-backed 5G in 48 cities covering about 94.6% of the population.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://telecom.arka.am/en/news/telecom/ucom_and_nokia_sign_cooperation_agreement_to_build_5g_network_in_armenia/",
+          "publisher": "ARKA Telecom",
+          "source_tier": "S3",
+          "date": "2024-02-09",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://armenpress.am/en/article/1260120/amp",
+          "publisher": "Armenpress",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://itwire.com/business-telecoms/ucom-picks-nokia-for-network-upgrade-and-future-transition-to-5g-in-armenia.html",
+          "publisher": "iTWire",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia is Finnish, so third. Year 2024 inferred from page stamp. Armenpress update (image path suggests Sept 2026) supports still_current but is S4 and undated in text. Core vendor not identified; value undisclosed."
+    },
+    {
+      "id": "ARM-006",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Team Telecom Armenia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03",
+      "still_current": null,
+      "summary": "Team Telecom Armenia signed a strategic-cooperation memorandum with Ericsson on mobile network modernisation, base-station upgrades, 5G and network security, alongside a planned 2025 mobile investment above AMD 10bn.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://armenpress.am/en/article/1214902/amp",
+          "publisher": "Armenpress",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so third. Date inferred from image path (2025-03-19). MoU, tier 1; the AMD 10bn is Team's capex plan, not the MoU value, so not recorded. Team's legacy RAN/core vendor (ex-Beeline/VimpelCom network) not established."
+    },
+    {
+      "id": "ARM-007",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia (Yerevan); Ericsson (regional towns)",
+      "local_actor": "Viva Armenia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-15",
+      "still_current": null,
+      "summary": "Viva launched what it calls Armenia's first 5G+ network, available across Yerevan and in towns of six regions, with Nokia supporting the Yerevan build and Ericsson the regional towns; all cities targeted by year-end.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.viva.am/en/business-solutions/news/detail/2026/07/15/feel-5g-plus-in-yerevan-and-six-regions-viva-launched-armenia's-first-and-only-5g-network",
+          "publisher": "Viva Armenia",
+          "source_tier": "S1",
+          "date": "2026-07-15",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Both vendors European, so third. Single opened S1 operator release, so medium. Whether a standalone 5G core is live, and its vendor, is not stated. Viva's 2023 Yerevan 5G launch (ARKA) named no vendor."
+    },
+    {
+      "id": "ARM-008",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Transport, Communications and IT; City of Yerevan",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-12",
+      "still_current": null,
+      "summary": "Armenia signed a Huawei 'Smart City' agreement for Yerevan in December 2017; by early 2019 talks were still unresolved, with Huawei reportedly willing to fund only a pilot and no installation confirmed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://eurasianet.org/armenia-mulls-chinese-surveillance-tech",
+          "publisher": "Eurasianet",
+          "source_tier": "S3",
+          "date": "2019-02-20",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded tier 1: agreement signed but terms in negotiation, no evidence of deployment. Pre-2020 and outcome unknown; not coded as a reversal because no cancellation was found. Facial-recognition capability is Freedom House's general description of the platform, not a documented Yerevan feature."
+    },
+    {
+      "id": "ARM-009",
+      "layer": "models",
+      "pole": "third",
+      "controller": "Mistral AI",
+      "local_actor": "Ministry of High-Tech Industry",
+      "builder": null,
+      "financier": null,
+      "base_model": "Mistral (models not specified)",
+      "base_model_pole": "third",
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02-10",
+      "still_current": null,
+      "summary": "Armenia's high-tech ministry and Mistral AI signed an MOU in Paris to strengthen AI infrastructure, support AI business solutions and deploy GovTech assistants for civil servants, with Mistral providing expertise, training and customised solutions.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://eufordigital.eu/armenia-and-mistral-ai-partner-to-boost-ai-innovation/",
+          "publisher": "EU4Digital (EU-funded)",
+          "source_tier": "S4",
+          "date": "2025-02-19",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://mistral.ai/customers/ministry-of-high-tech-industry-of-armenia/",
+          "publisher": "Mistral AI",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://arkatelecom.am/en/news/telecom/french-startup-mistral-ai-helps-develop-ai-in-armenia/",
+          "publisher": "ARKA News Agency",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Mistral is French, so third. Hosting and whether weights are held locally not stated; treated as provider-controlled. No products or deployments named; tier 1."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced; Firebird power supply arrangements not found in searches"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Independent confirmation (S1/S2) that Firebird DC-1 is operational, and the actual equity split in Firebird (Afeyan Foundation, Nvidia, CoreWeave, Armenian government PPP).",
+    "Which agency issued the Nov 2025 and Feb 2026 licences and any end-use conditions (e.g. Russia-diversion safeguards); Russian accusations of intelligence gathering were reported by JAMnews but not opened.",
+    "Legacy RAN/core vendors of Team Telecom (ex-Beeline) and Ucom/Viva cores; any Huawei installed base.",
+    "Outcome of the 2017 Huawei Yerevan Smart City agreement, and vendors of Yerevan street/traffic cameras under the 2024 Interior Ministry surveillance law.",
+    "Any Armenian national LLM, and what the Mistral MOU and the Virtual Institute of AI have delivered."
+  ],
+  "searches_run": 9
+}

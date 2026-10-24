@@ -1,0 +1,404 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "AZE",
+  "name": "Azerbaijan",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "AZE-001",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "AzInTelecom (AZCON Holding, state-linked)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12",
+      "still_current": null,
+      "summary": "Deputy digital minister said AzInTelecom deployed AI infrastructure built on 32 Nvidia H200 GPUs; reporting says procurement of further GPUs to expand the centre is under way. No value disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://report.az/en/amp/ict/nvidia-based-ai-infrastructure-launched-in-azerbaijan",
+          "publisher": "Report.az",
+          "source_tier": "S3",
+          "date": "2025-12-08",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.trend.az/azerbaijan/society/4129979.html",
+          "publisher": "Trend News Agency",
+          "source_tier": "S3",
+          "date": "2025-12-15",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://jam-news.net/what-could-azerbaijans-planned-national-supercomputing-centre-deliver/",
+          "publisher": "JAMnews",
+          "source_tier": "S3",
+          "date": "2026-06-24",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole us: Nvidia supplies the accelerators. JAMnews says Lenovo supplied the underlying server infrastructure; Lenovo's controller pole (Hong Kong/Beijing HQ) is ambiguous and not coded separately. All three opened sources are S3 (Report.az and Trend are Azerbaijani outlets generally seen as government-friendly), so no S1/S2 and not corroborated. Small (32-GPU) deployment, but it is the national AI compute facility."
+    },
+    {
+      "id": "AZE-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "AzInTelecom (AZCON Holding)",
+      "local_actor": "Ministry of Digital Development and Transport",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12",
+      "still_current": null,
+      "summary": "AzInTelecom set up Azerbaijan's first supercomputer centre for AI work by innovators, businesses and government projects, framed as letting state data be processed domestically under the 2025-2028 AI strategy.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.trend.az/azerbaijan/society/4129979.html",
+          "publisher": "Trend News Agency",
+          "source_tier": "S3",
+          "date": "2025-12-15",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://report.az/en/amp/ict/nvidia-based-ai-infrastructure-launched-in-azerbaijan",
+          "publisher": "Report.az",
+          "source_tier": "S3",
+          "date": "2025-12-08",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator is state-linked AzInTelecom, so domestic. Building size, power and builder not reported. Pairs with AZE-001 (same site, silicon layer)."
+    },
+    {
+      "id": "AZE-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Azerbaijan (AzInTelecom as lead)",
+      "local_actor": "AzInTelecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026",
+      "still_current": null,
+      "summary": "The 2026-2028 digital development action plan provides for a National Supercomputing Centre led by AzInTelecom; foreign partners, capacity, data handling and export-control questions remain open.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://jam-news.net/what-could-azerbaijans-planned-national-supercomputing-centre-deliver/",
+          "publisher": "JAMnews",
+          "source_tier": "S3",
+          "date": "2026-06-24",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: a government plan item, no contract or construction reported. Date is the action-plan period start; JAMnews article dated 2026-06-24. Whether it supersedes or expands the Dec 2025 centre is unclear."
+    },
+    {
+      "id": "AZE-004",
+      "layer": "models",
+      "pole": "us",
+      "controller": "SpaceXAI (Grok)",
+      "local_actor": "Ministry of Digital Development and Transport",
+      "builder": null,
+      "financier": null,
+      "base_model": "Grok (SpaceXAI; version not specified)",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-10-01",
+      "still_current": null,
+      "summary": "The digital ministry signed a memorandum with SpaceXAI to explore Grok-based AI for public services across government institutions, including mygov, with a roadmap of pilots; specific projects need separate agreements.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://report.az/en/ict/azerbaijan-spacexai-sign-memorandum-on-ai-cooperation",
+          "publisher": "Report.az",
+          "source_tier": "S3",
+          "date": "2026-10-01",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://en.apa.az/finance/azerbaijan-signs-mou-with-spacexai-on-artificial-intelligence-cooperation-527525",
+          "publisher": "APA",
+          "source_tier": "S3",
+          "date": "2026-10-01",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Grok would be used via the provider's service, so us pole. Tier 1 MoU, no value. Only one opened source. Reviewer may wish to confirm the counterparty name and corporate status of 'SpaceXAI' from a primary source."
+    },
+    {
+      "id": "AZE-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Azercell",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-12",
+      "still_current": null,
+      "summary": "After a Baku 5G pilot zone, Azercell and Ericsson signed a three-year 5G MoU for 2020-22 covering further pilots, use cases and IoT; Azercell was still preparing its 5G licence application in October 2022.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/20191204/business/ericsson-reaches-new-5g-agreement-asia",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2019-12-04",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/azerbaijans-azercell-gearing-up-for-5g-launch/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-10-10",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://convergedigest.com/azercell-and-ericsson-to-develop-5g-in/",
+          "publisher": "Converge Digest",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so third pole. Tier 1 non-binding MoU; MoU term has lapsed and no commercial 5G vendor award for Azercell was found. Azercell's 4G RAN and core vendor not established. Pre-2020."
+    },
+    {
+      "id": "AZE-006",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Bakcell",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2013-10-17",
+      "still_current": null,
+      "summary": "Bakcell completed a core-network unification project with Huawei, moving all voice traffic onto new redundant LTE-ready switching, after modernising its transmission network with Huawei OSN equipment earlier in 2013.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://bakcell.com/en/news/bakcell-has-finalized-core-network-unification",
+          "publisher": "Bakcell",
+          "source_tier": "S1",
+          "date": "2013-10-17",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Operator's own release, coded S1. Huawei as equipment vendor, so prc. Pre-2020 and still_current unknown: no evidence found on Bakcell's current core or RAN vendor or 5G supplier."
+    },
+    {
+      "id": "AZE-007",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Digital Development and Transport; ADA University",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "The digital ministry, ADA University and Huawei signed an MoU for a joint R&D centre for ICT products and Huawei-certified training of local specialists in 5G, GPON and IP technologies.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://mincom.gov.az/en/media-en/news/ministry-of-digital-development-transport-ada-university-and-huawei-sign-memorandum-of-understanding1368",
+          "publisher": "Ministry of Digital Development and Transport",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Signing date not stated on the page (date null). Mainly skills and R&D, not deployment; coded networks as the named technologies are network ones."
+    },
+    {
+      "id": "AZE-008",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Digital Development and Transport",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09-10",
+      "still_current": null,
+      "summary": "The digital minister and a Huawei senior vice-president discussed raising cooperation to a strategic partnership, with possible joint AI, data-centre, 5G and cloud projects and a possible Huawei regional operations centre; no agreement reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://report.az/en/ict/azerbaijan-huawei-mull-expanding-cooperation-to-strategic-partnership",
+          "publisher": "Report.az",
+          "source_tier": "S3",
+          "date": "2026-09-10",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Discussion only, below even an MoU; tier 1 is the floor. Layer networks chosen because 5G/cloud dominate; it spans facilities and cloud. Notable alongside AZE-004 as a near-simultaneous approach from both poles."
+    },
+    {
+      "id": "AZE-009",
+      "layer": "networks",
+      "pole": null,
+      "controller": "CaspiLink (Azertelecom-Kazakhtelecom JV)",
+      "local_actor": "AzerTelecom (NEQSOL Holding)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08",
+      "still_current": null,
+      "summary": "Laying began on the 380 km, 400 Tbps Trans-Caspian subsea cable from Sumgait to Aktau, built by Azertelecom and Kazakhtelecom's CaspiLink JV under US-based Pioneer Consulting's supervision; commissioning targeted end-2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/optical-fixed-networks/20625-trans-caspian-subsea-cable-connecting-azerbaijan-and-kazakhstan-now-being-laid.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-08-04",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://interfax.com/newsroom/top-stories/113098/",
+          "publisher": "Interfax",
+          "source_tier": "S3",
+          "date": "2025-08-06",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: under the v0.2 rule a cable's controller is its equipment vendor, and no source names the cable supplier or installer (no HMN Tech mention). Value and financier undisclosed. Part of the Digital Silk Way corridor; Developing Telecoms also links it to China's Digital Silk Road, which is a framing, not evidence of PRC control."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one dedicated search found no Azerbaijan-specific safe-city or surveillance vendor reporting; results concerned other countries"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced in other searches"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplied Azercell's and Bakcell's commercial 5G RAN and core (Ericsson, Nokia, Huawei, ZTE), and what does Nar (Azerfon) use?",
+    "Vendor of Baku's public CCTV / 'safe city' system (Ministry of Internal Affairs) and whether it has facial recognition.",
+    "Cable supplier and marine installer for the Trans-Caspian cable (CaspiLink), and its financing.",
+    "Lenovo's role at the AzInTelecom supercomputer centre and size of the follow-on GPU procurement; any BIS licence for H200s.",
+    "Primary-source confirmation of the SpaceXAI MoU, and any Microsoft, OpenAI or other model-provider agreements with the government."
+  ],
+  "searches_run": 11
+}

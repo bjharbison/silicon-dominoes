@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "MAC",
-  "AFG",
-  "ALB",
-  "AND",
-  "ARM",
-  "ATG",
-  "AZE",
-  "BDI",
-  "BEN",
-  "BFA",
   "BGR",
   "BHS",
   "BIH",
@@ -254,6 +244,16 @@
   "NAM",
   "BWA",
   "ZWE",
-  "HKG"
+  "HKG",
+  "MAC",
+  "AFG",
+  "ALB",
+  "AND",
+  "ARM",
+  "ATG",
+  "AZE",
+  "BDI",
+  "BEN",
+  "BFA"
  ]
 }

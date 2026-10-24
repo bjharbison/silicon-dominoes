@@ -1,0 +1,336 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ALB",
+  "name": "Albania",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ALB-001",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "US Department of State (Clean Network initiative)",
+      "local_actor": "Government of Albania",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-08",
+      "still_current": null,
+      "summary": "Albania joined the US-led Clean Network, whose members pledge not to use untrusted vendors such as Huawei and ZTE in 5G; in October 2020 US officials called Albania a 5G Clean Path country.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://exit.al/en/albania-joins-us-the-clean-network-pledges-not-to-use-huawei-5g",
+          "publisher": "Exit News",
+          "source_tier": "S3",
+          "date": "2020-08-13",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://kryeministria.al/en/?p=40069",
+          "publisher": "Albanian Government (Office of the Prime Minister)",
+          "source_tier": "S1",
+          "date": "2020-10-03",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole us as a US-led alignment pledge; no system is controlled, so tier 1 and it decays. Joining was announced by the US ambassador; no Albanian signed instrument or vendor-exclusion law was found. The government page records a separate economic MoU and Krach expecting a later 5G MoU (see ALB-002). Not coded as a Huawei reversal: no Albanian Huawei 5G contract was found to have been reversed."
+    },
+    {
+      "id": "ALB-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "US Government",
+      "local_actor": "Government of Albania (PM Edi Rama)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06-13",
+      "still_current": null,
+      "summary": "Prime Minister Rama and Secretary of State Blinken signed a memorandum committing both countries to use only trusted 5G equipment suppliers and to coordinate on secure 4G/5G networks abroad; the text did not name China.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fedscoop.com/us-albania-5g-network-agreement/",
+          "publisher": "FedScoop",
+          "source_tier": "S3",
+          "date": "2021-06-14",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Non-binding MoU, tier 1. Single opened S3 source. Whether Albania subsequently legislated a high-risk-vendor exclusion was not established. Vendor outcome to date is Ericsson for One Albania 5G (ALB-003), consistent with the pledge but not shown to be mandated by it."
+    },
+    {
+      "id": "ALB-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "One Albania (4iG Group)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-01",
+      "still_current": null,
+      "summary": "One Albania, owned by Hungary's 4iG, chose Ericsson for 5G standalone radio access and core, an investment of over EUR50m, after buying spectrum for EUR5.4m and launching commercial 5G in November 2024; nationwide midband coverage targeted by 2028.",
+      "announced_value_usd": 51500000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/17847-4ig-and-ericsson-join-forces-for-albanian-5g-rollout.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2025-01-15",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://4ig.hu/4ig-group-partners-with-ericsson-to-develop-future-5g-network-in-albania",
+          "publisher": "4iG Group",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Ericsson is Swedish, so third pole. US$51.5m is Developing Telecoms' own conversion of the EUR50m+ figure, recorded as announced (network investment, not necessarily Ericsson's contract value). Tier 3 rather than 5: rollout runs to 2028-2030. 4iG calls Ericsson a long-time partner, implying no vendor swap. Vodafone Albania's and ALBtelecom's vendors were not established."
+    },
+    {
+      "id": "ALB-004",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Microsoft (Azure OpenAI Service)",
+      "local_actor": "National Agency for Information Society / e-Albania (Diella)",
+      "builder": null,
+      "financier": null,
+      "base_model": "OpenAI GPT family via Azure OpenAI (version not specified)",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-01-19",
+      "still_current": null,
+      "summary": "Diella, the e-Albania virtual assistant launched in 2024 and given voice and avatar in January 2025, was presented as built with Azure OpenAI and Microsoft AI models; in September 2025 the PM proposed making it a 'minister' for public procurement.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.a2news.com/english/shqiperia/aktualitet/diella-rama-prezanton-asistenten-e-re-virtuale-me-ze-dhe-fi-i1138185",
+          "publisher": "A2 CNN (A2news)",
+          "source_tier": "S3",
+          "date": "2025-01-19",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.theregister.com/2025/09/12/albania_ai_minister/",
+          "publisher": "The Register",
+          "source_tier": "S3",
+          "date": "2025-09-12",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Used through Microsoft's hosted Azure OpenAI service, so us pole; base model presumably an OpenAI GPT model, version unnamed. Tier 5 as an operational national e-government service, but uncorroborated (no S1/S2 opened), so low confidence. The Register attributes the Azure claim to local reports only. Agency attribution (AKSHI) is analyst inference. Actual procurement-decision role of Diella not verified."
+    },
+    {
+      "id": "ALB-005",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Presight (G42 Group, UAE)",
+      "local_actor": "Albanian Ministry of Interior / State Police",
+      "builder": null,
+      "financier": "Abu Dhabi Fund for Development (reported loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02-23",
+      "still_current": null,
+      "summary": "During the UAE President's visit, the Interior Ministry engaged G42's Presight for an AI smart-city and traffic platform in 20 cities: about 2,239 ANPR cameras, 2,602 PTZ cameras, 3,816 body cameras, 100 radars; reported cost rose from US$60m to US$118.5m.",
+      "announced_value_usd": 118500000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.middleeastainews.com/p/albania-presight-smart-cities",
+          "publisher": "Middle East AI News",
+          "source_tier": "S2",
+          "date": "2025-02-24",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.tiranatimes.com/albanian-government-doubles-cost-of-smart-city-project-without-transparency/",
+          "publisher": "Tirana Times",
+          "source_tier": "S3",
+          "date": "2025-03-17",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://mia.gov.al/en/agreement-for-the-development-of-the-smart-city-project-in-abu-dhabi-is-signed/",
+          "publisher": "Albanian Ministry of Interior",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.agbi.com/ai/2025/02/g42s-presight-agrees-albania-smart-city-deal/",
+          "publisher": "AGBI",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Presight operates the platform, so controller and pole follow it: third (UAE/G42). Tier 1: letter of engagement plus a ministry MoU signed in Abu Dhabi (undated on page). US$118.5m is a reported total cost financed by an Abu Dhabi Fund for Development loan (Albanian media via Tirana Times); parliamentary ratification not confirmed. Camera hardware vendors not named."
+    },
+    {
+      "id": "ALB-006",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Presight (G42 Group, UAE)",
+      "local_actor": "Albanian Ministry of Internal Affairs",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12-22",
+      "still_current": null,
+      "summary": "Presight and Albania's Interior Ministry signed a multi-year agreement to deploy an AI smart-city platform and command-and-control centre covering 20 cities and 28 border crossings, for traffic, operations management and emergency response; no value disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://en.aletihad.ae/news/ai/4631874/javasxript:",
+          "publisher": "Aletihad (UAE)",
+          "source_tier": "S4",
+          "date": "2025-12-22",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Follows ALB-005 engagement. Aletihad is UAE state-affiliated, so S4; no counterpart S1/S2 source opened for the December contract, hence low confidence despite tier 3. No value in source; rollout status unknown. Odd URL suffix is as returned by search."
+    },
+    {
+      "id": "ALB-007",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "ADC (Israeli; Happy Technologies 80%, DIT 20%)",
+      "local_actor": "TEDA free trade zone, Tirana",
+      "builder": null,
+      "financier": "EBRD (reported credit line, 75% of cost)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-04",
+      "still_current": null,
+      "summary": "Israeli firm ADC was selected to build a 32MW data centre (expandable to 100MW, about EUR100m) on government land in the TEDA zone near Tirana, using Nvidia GPUs, with EBRD credit and a utility-built dedicated substation.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.jpost.com/business-and-innovation/article-885545",
+          "publisher": "Jerusalem Post",
+          "source_tier": "S3",
+          "date": "2026-02-04",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://israeldesks.com/israeli-company-adc-to-build-albanias-first-data-center/",
+          "publisher": "Israel Desks",
+          "source_tier": "S3",
+          "date": "2026-02-05",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third on reported Israeli ownership; owners' home jurisdiction is analyst inference from 'Israeli company'. Tier 2: selection and permit expected, construction not confirmed. EBRD financing (75%) reported only by JPost. EUR100m not converted (no source rate), so values null. Planned Nvidia (reported 'Robin', likely Rubin) GPUs not coded separately as silicon."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchase or licence found; only planned Nvidia GPUs in the ADC data-centre project, noted in ALB-007"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; only a utility-built substation for the ADC data centre surfaced (ALB-007)"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendors of Vodafone Albania and ALBtelecom (now part of One/4iG?) and any legacy Huawei RAN or core in Albania; any Albanian law or AKEP rule excluding high-risk 5G vendors.",
+    "Primary (AKSHI/government or Microsoft) confirmation that Diella runs on Azure OpenAI, the model version, data hosting location, and whether Diella actually takes procurement decisions.",
+    "Value, ratification status and rollout progress of the Presight smart-city contract (Dec 2025), the Abu Dhabi Fund loan terms, and which camera manufacturers supply it.",
+    "Construction status, ownership nationality and GPU volume of the ADC TEDA data centre; confirm EBRD financing.",
+    "Any earlier Chinese safe-city or CCTV deployments in Tirana (Huawei/Hikvision/Dahua) not surfaced in this pass."
+  ],
+  "searches_run": 10
+}

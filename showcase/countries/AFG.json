@@ -1,0 +1,270 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "AFG",
+  "name": "Afghanistan",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "AFG-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Taliban Ministry of Interior",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-08-14",
+      "still_current": null,
+      "summary": "Taliban interior officials met Huawei in August 2023 about a nationwide camera surveillance network extending Kabul's existing 62,000-camera system over four years. Bloomberg's source cited a verbal agreement; the Taliban called it a simple chat and Huawei denied any plan.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.tbsnews.net/node/706750",
+          "publisher": "Reuters (via The Business Standard)",
+          "source_tier": "S3",
+          "date": "2023-09-25",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/the-taliban-reportedly-meets-with-huawei-over-afghanistan-surveillance-plan/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-09-28",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2023-08-25/taliban-says-huawei-to-install-cameras-to-locate-militants",
+          "publisher": "Bloomberg",
+          "source_tier": "S3",
+          "date": "2023-08-25",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://kabulnow.com/2023/08/huawei-to-provide-the-taliban-with-advanced-surveillance-systems/",
+          "publisher": "KabulNow",
+          "source_tier": "S3",
+          "date": "2023-08-18",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "low",
+      "analyst_inference": "Corroboration covers only that a Huawei-Taliban meeting on surveillance took place; whether any deal exists is disputed (verbal agreement per an anonymous Bloomberg source vs. Taliban and Huawei denials). Tier 1 is generous; confidence low for that reason. The vendor of the existing Kabul camera system (last substantially updated 2008, per the former government) was not identified. Bloomberg page was only partly readable (excerpt)."
+    },
+    {
+      "id": "AFG-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Roshan (Telecom Development Company Afghanistan)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2012-10",
+      "still_current": null,
+      "summary": "In a 2012 interview, Roshan's CEO described Huawei as the operator's primary network supplier for its 3G plans and said Roshan was looking to bring in ZTE for parts of the network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://telecomlead.com/latest-news/after-selecting-huawei-roshan-telecom-looks-for-zte-to-complement-3g-network-in-afghanistan-21246",
+          "publisher": "TelecomLead",
+          "source_tier": "S2",
+          "date": "2012-10-14",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 inferred from 'primary network supplier' implying an operating network; RAN/core split, contract value and whether ZTE was added are not stated. Pre-2020 and not re-confirmed, so still_current null. Roshan is a major (historically largest) Afghan operator; its current vendor mix under Taliban rule is unknown."
+    },
+    {
+      "id": "AFG-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Protey (NTC Protey, Russia) with Rostelecom",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024",
+      "still_current": null,
+      "summary": "Vedomosti reported that US-sanctioned Russian vendor Protey, with Rostelecom, installed a 4G core network at base stations in four unnamed Afghan provinces in 2024; Rostelecom said it could serve up to 10 million people.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.themoscowtimes.com/2026/08/03/russia-builds-4g-network-in-afghanistan-as-ties-with-taliban-deepen",
+          "publisher": "The Moscow Times",
+          "source_tier": "S3",
+          "date": "2025-06-05",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://biz.liga.net/en/telekom/news/russia-has-begun-providing-4g-mobile-communications-to-the-taliban-in-afghanistan",
+          "publisher": "LIGA.net",
+          "source_tier": "S3",
+          "date": "2025-06-06",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Russia coded third pole (neither US nor PRC). Both sources relay the same Vedomosti report, so not independent, and neither is S1/S2. Afghan operator not named (possibly state-owned Salaam/Afghan Telecom, unconfirmed). The Moscow Times URL path carries 2026/08/03 but the page reads as published 5 June 2025; reviewer should check. 10 million is a projected capacity, not usage."
+    },
+    {
+      "id": "AFG-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "MTN Group (South Africa)",
+      "local_actor": "MTN Afghanistan (now ATOMA, owned by M1 Group, Lebanon)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "MTN Group ownership and operation of MTN Afghanistan",
+      "reversal_reason": "commercial",
+      "date": "2025-04",
+      "still_current": null,
+      "summary": "MTN agreed in 2022 to sell its Afghan unit to Lebanon's M1 Group for a reported US$35m, under a 2020 plan to leave the Middle East; completion was confirmed in April 2025, rebranded ATOMA.",
+      "announced_value_usd": 35000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-business/operator-news/14180-mtn-exits-afghanistan-with-sale-to-m1.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2022-11-04",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/mtn-finally-completes-afghanistan-exit",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-04-23",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "An operator-ownership exit, not an equipment change; pole is the exiting owner's (South Africa, third) and the buyer is also third-pole (Lebanon). Coded commercial because the exit plan predates the 2021 Taliban takeover and sources give strategic refocus only; no source cites sanctions. Network equipment vendor of MTN/ATOMA not identified."
+    },
+    {
+      "id": "AFG-005",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Afghan Telecom; Ministry of Communications and IT",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-04-20",
+      "still_current": null,
+      "summary": "Afghanistan and China signed a 2017 agreement for a Kashgar-Wakhan-Badakhshan fibre link; in 2018 Kabul sought about US$50m of Chinese financing, pending approval, and in 2019 Afghan Telecom said it was building the route.",
+      "announced_value_usd": 50000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://pajhwok.com/2017/04/20/china-afghanistan-sign-agreement-optic-fiber-link/",
+          "publisher": "Pajhwok Afghan News",
+          "source_tier": "S3",
+          "date": "2017-04-20",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://mcit.gov.af/en/node/7035",
+          "publisher": "Afghanistan Ministry of Communications and IT",
+          "source_tier": "S1",
+          "date": "2018-11-08",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://capacityglobal.com/news/afghanistan-building-new-fibre-route-to-china/",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": "2019-01-08",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: under the equipment-vendor rule the controller is whoever supplies the cable's transmission equipment, which no source names (the 2017 article notes the minister met ZTE and Huawei leaders but does not link them to the link). US$50m is the Afghan financing request, recorded as announced. Chinese financing approval and completion not confirmed; a Feb 2025 Afghanistan International report on Wakhan design work does not mention fibre. Pre-2020."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "not_searched",
+      "null_reason": "budget spent on networks and surveillance; no data-centre or AI-campus project surfaced in any search"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "US chip-export posture covered by global layer; no accelerator purchase evidence surfaced in other searches"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "no national model partnership or government model adoption surfaced in other searches"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplied Kabul's existing ~62,000-camera CCTV network and central control room, and did any Huawei (or Hikvision/Dahua) contract follow the August 2023 meeting?",
+    "Current radio/core vendors of AWCC, Roshan, Etisalat Afghanistan, ATOMA (ex-MTN) and Salaam since 2021; did Roshan add ZTE after 2012?",
+    "Which Afghan operator hosts the Protey/Rostelecom 4G core, in which provinces, and has any S1/S2 source confirmed it?",
+    "Was the Wakhan fibre link to China financed and built, and by which equipment vendor?",
+    "Vendor of the Afghan Telecom national optical fibre backbone ring."
+  ],
+  "searches_run": 9
+}

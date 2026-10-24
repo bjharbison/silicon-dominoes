@@ -1,0 +1,196 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "AND",
+  "name": "Andorra",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "AND-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Andorra Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-03-08",
+      "still_current": null,
+      "summary": "Andorra Telecom chose Huawei as sole vendor to swap its nationwide FTTH network from EPON to GPON, using Huawei MA5800 OLTs, ONTs and home Wi-Fi routers, with rollout scheduled March 2017 to about January 2018.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomtv.com/content/tracker/andorra-telecom-selects-huawei-to-build-the-next-generation-ultra-broadband-ftth-network-25951/amp/",
+          "publisher": "TelecomTV (republished Huawei Corporate News)",
+          "source_tier": "S4",
+          "date": "2017-03-09",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://bbcmag.com/andorra-telecom-selects-huawei-to-build-ftth-network/",
+          "publisher": "Broadband Communities",
+          "source_tier": "S2",
+          "date": "2017-03-09",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole prc under the equipment-vendor rule (Huawei supplies OLT firmware). Tier 3 as a sole-vendor award with named counterparty but no value. Not corroborated: the Broadband Communities piece appears to rewrite the same Huawei release, so the sources are not independent. Pre-2020; whether Huawei OLTs remain in service (Andorra Telecom later advertised 10 Gbps fibre) was not confirmed."
+    },
+    {
+      "id": "AND-002",
+      "layer": "cloud",
+      "pole": "us",
+      "controller": "Google Cloud, Amazon Web Services, Microsoft, Oracle (plus T-Systems)",
+      "local_actor": "Andorra Digital (public company)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06-10",
+      "still_current": null,
+      "summary": "Andorra Digital launched a sovereign-cloud framework giving public and private bodies access to Google Cloud, AWS, Microsoft, T-Systems and Oracle at nationally negotiated rates, requiring European data residency and client-held encryption keys; no cost figures were disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.alto.ad/politics/2026/06/andorra-cloud-data-security-outsourcing",
+          "publisher": "Altaveu (alto.ad)",
+          "source_tier": "S3",
+          "date": "2026-06-11",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.alto.ad/business/2026/05/andorra-digital-launch-transformation-cloud",
+          "publisher": "Altaveu (alto.ad)",
+          "source_tier": "S3",
+          "date": "2026-05-15",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole us because four of five listed providers are US hyperscalers; T-Systems (German) is a third-pole option within the same framework. Tier 2 as a negotiated framework with no individual contracts reported. Not corroborated: both sources are the same S3 outlet and no S1/S2 source was opened. 'Sovereign key' is the government's claim; hosting is in Europe, not Andorra."
+    },
+    {
+      "id": "AND-003",
+      "layer": "cloud",
+      "pole": "us",
+      "controller": "Google Cloud",
+      "local_actor": "Government of Andorra (Andorra Digital)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-04-01",
+      "still_current": null,
+      "summary": "Andorra's government, through Andorra Digital, signed a strategic agreement with Google Cloud to speed public- and private-sector digital transformation, including sovereign-cloud services and AI; no value, instrument type or hosting location was given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.vilaweb.cat/noticies/andorra-signa-un-acord-amb-google-per-a-crear-un-nuvol-sobira/",
+          "publisher": "VilaWeb",
+          "source_tier": "S3",
+          "date": "2025-04-01",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded Tier 1 because the source calls it a strategic agreement without binding terms or value; it appears to be the precursor to the 2026 multi-provider framework (AND-002). No AI model named, so no models finding."
+    },
+    {
+      "id": "AND-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Andorra Telecom",
+      "local_actor": "Andorra Telecom (national operator)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05-29",
+      "still_current": true,
+      "summary": "Andorra Telecom, the national operator, runs three own data centres (La Massana, La Comella, Nexus) and received a CEEDA Operations energy-efficiency plaque for them at DCD Connect Madrid in May 2025; capacity not stated.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/es/noticias/andorra-telecom-recibe-nueva-placa-ceeda-operations/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-05-29",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole domestic: Andorra Telecom is understood to be state-owned (analyst inference, not stated in the source). Tier 5 because the award recognises the sites' current operations, hence still_current true as of May 2025. Not an AI campus; general-purpose telco/hosting facilities of unknown MW."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or deployments surfaced in data-centre and AI-partnership searches; none expected at this scale"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "an April 2026 report says the government plans a Copilot-like AI tool for public workers by 2027, but names no vendor or model provider"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "no safe-city or surveillance vendor found; an Encamp council AI platform surfaced only as a headline and was not opened"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced in other searches"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendor supplies Andorra Telecom's 5G RAN and core (44 sites, 3.5 GHz, 91% coverage by Dec 2025)? No search named Ericsson, Nokia, Huawei or ZTE.",
+    "Are Huawei OLTs from the 2017 FTTH swap still in service after the later 10 Gbps fibre upgrade, and who supplied that upgrade?",
+    "Which vendor or model provider will power the planned 2027 public-administration AI tool (reporting hints at Microsoft)?",
+    "What is the Encamp council AI platform (Dec 2025) and on whose stack is it built?",
+    "Which individual contracts have been signed under the Andorra Digital sovereign-cloud framework, and with which providers?"
+  ],
+  "searches_run": 9
+}

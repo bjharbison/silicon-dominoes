@@ -1,0 +1,152 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ATG",
+  "name": "Antigua and Barbuda",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ATG-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "APUA iNet (Antigua Public Utilities Authority telecom arm); Government of Antigua and Barbuda",
+      "builder": null,
+      "financier": "Huawei (Chinese-facilitated loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": true,
+      "reversal_of": "Proposed US$40m, 2%, 20-year Huawei-facilitated loan to upgrade APUA iNet's handset retail component",
+      "reversal_reason": "geopolitical",
+      "date": "2020-01-30",
+      "still_current": null,
+      "summary": "Prime Minister Gaston Browne said the government declined a US$40m low-interest Huawei loan for APUA iNet's handset retail business out of caution over US-China tensions, despite calling the terms the market's best.",
+      "announced_value_usd": 40000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://antiguaobserver.com/?p=203383",
+          "publisher": "Antigua Observer",
+          "source_tier": "S3",
+          "date": "2020-01-30",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1 because the offer appears never to have been signed; reversal of a proposal. Coded geopolitical as the PM cited US-China tensions, one week after Pompeo's Jamaica warning. The PM said the deal had no telecoms-network component, so layer 'networks' is approximate (handsets/retail of the state telco); reviewer should judge whether it should move the map. US$40m is the announced loan size."
+    },
+    {
+      "id": "ATG-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Antigua and Barbuda",
+      "local_actor": "Ministry of Information, Communication Technologies (Minister Melford Nicholas)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12-13",
+      "still_current": null,
+      "summary": "In the 2025 budget the government said it would fit out a new Tier-4, EN 50600 government data centre, in an already-built undisclosed building, replacing the one under Parliament, citing AI and storage demand.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://antiguaobserver.com/?p=300984",
+          "publisher": "Antigua Observer",
+          "source_tier": "S3",
+          "date": "2024-12-13",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Domestic owner-operator (government). Tier 4 on the basis that the building exists, but fit-out and commissioning were not confirmed; could be argued as tier 2. Vendor, builder and financier not named."
+    },
+    {
+      "id": "ATG-003",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Royal Police Force of Antigua and Barbuda; Government of Antigua and Barbuda",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-29",
+      "still_current": null,
+      "summary": "Government is rolling out an island-wide public CCTV network of over 200 high-definition cameras for real-time police monitoring at 43-plus traffic, commercial and tourist sites; equipment was shipped by March 2026 and installation began by late May.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://antiguaobserver.com/?p=331125",
+          "publisher": "Antigua Observer",
+          "source_tier": "S3",
+          "date": "2026-03-05",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://antiguaobserver.com/?p=335973",
+          "publisher": "Antigua Observer",
+          "source_tier": "S3",
+          "date": "2026-05-29",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: neither article names the camera vendor, donor or financier, and no AI or facial-recognition capability is mentioned. Not corroborated: both sources are one S3 publisher, no S1/S2. Tier 4 as installation had begun; completion not confirmed."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or deployments surfaced in any of the searches; no dedicated search spent given small-state budget"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search on government AI partnerships found only general AI-ethics discussion and diplomatic advocacy; no frontier-model or sovereign-model adoption found"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced in other searches"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies the RAN and core of APUA, Flow (Liberty Latin America) and Digicel in Antigua? Digicel's 2017 ZTE Uni-RAN deal covered its 26 Caribbean/Central American markets but did not name Antigua; APUA's 2021 FTTH and subsea upgrades named no vendor.",
+    "Vendor, donor and financier of the 2026 island-wide CCTV system (over 200 cameras); does it have analytics or facial recognition?",
+    "PRC-funded customs/port inspection equipment (China MOFCOM grant, about US$5-6m, handed over December 2019, per AidData) - not coded as it is X-ray/inspection hardware rather than an AI-stack layer; reviewer to decide.",
+    "Vendor and builder of the new Tier-4 government data centre, and whether it is commissioned."
+  ],
+  "searches_run": 9
+}

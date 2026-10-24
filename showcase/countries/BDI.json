@@ -1,0 +1,239 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BDI",
+  "name": "Burundi",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BDI-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Onatel (state-owned operator; Government of Burundi)",
+      "builder": null,
+      "financier": "China Eximbank (buyer's credit; African Trade Insurance guarantee)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2014-11",
+      "still_current": null,
+      "summary": "A China Eximbank buyer's credit of about US$7.9m, signed in 2004, paid for Huawei to expand Onatel's GSM mobile network from 30,000 to 60,000 lines in three phases, starting in Bujumbura; all phases were reported complete in November 2014.",
+      "announced_value_usd": 7910000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/91/",
+          "publisher": "AidData (William & Mary) Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": "2014-11",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Huawei as equipment vendor under the service contract, so prc. AidData is a research dataset compiled from official and press sources; coded S2. US$7.91m is the loan amount, not a verified contract figure. Whether Onatel's mobile network still runs this Huawei equipment was not checked; a 2017 report says it had not been upgraded since 2009-2010 (see BDI-004)."
+    },
+    {
+      "id": "BDI-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Burundi; Onatel (operator after handover)",
+      "builder": null,
+      "financier": "China Eximbank (concessional loan per AidData; press described Chinese government funding as a grant or loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-12-16",
+      "still_current": null,
+      "summary": "Huawei built a roughly 220 km fibre Metropolitan Area Network in Bujumbura linking the presidency, parliament, courts, hospitals and ministries; construction began October 2014 and the network was handed to Onatel in December 2016.",
+      "announced_value_usd": 14980000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/56892",
+          "publisher": "AidData (William & Mary) Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": "2016-12-16",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/huawei-to-build-fiber-networks-in-burundi/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2014-10-31",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.iwacu-burundi.org/englishnews/?p=2026",
+          "publisher": "Iwacu",
+          "source_tier": "S3",
+          "date": "2014",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://pctechmag.com/2014/10/the-government-of-burundi-officially-commissions-the-bujumbura-metropolitan-area-network-installations/",
+          "publisher": "PC Tech Magazine",
+          "source_tier": "S4",
+          "date": "2014-10-30",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Huawei as builder and equipment vendor of a government network, so prc. Financing is inconsistent across sources: DCD and PC Tech say a Chinese government grant, Iwacu a Chinese loan, AidData a US$14.98m China Eximbank loan (1%, 28 years); value recorded is that loan. PC Tech coded S4 as it leans on Huawei statements. Current operation not confirmed."
+    },
+    {
+      "id": "BDI-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Burundi Backbone System (BBS) consortium",
+      "builder": null,
+      "financier": "World Bank (grant)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2011-05",
+      "still_current": null,
+      "summary": "ZTE reportedly won the tender to lay about 1,300 km of national fibre backbone for Burundi, a roughly US$10.5m World Bank grant-funded project, with a first phase expected in early 2012.",
+      "announced_value_usd": 10500000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.computerwoche.de/a/east-africa-invests-a-combined-us-400m-in-fiber,2487003,2",
+          "publisher": "Computerwoche (IDG News Service)",
+          "source_tier": "S2",
+          "date": "2011-05-30",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "ZTE as fibre and equipment contractor, so prc under the equipment-vendor rule, although the backbone is owned by the BBS operator consortium. Single opened source, so low confidence. A ZTE corporate release on an IT infrastructure agreement with BBS appeared in search but was not fetched or cited (PRC vendor site). Completion and current vendor not confirmed. Pre-2020."
+    },
+    {
+      "id": "BDI-004",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Huawei International (lender; equipment vendor not named)",
+      "local_actor": "Onamob / Onatel (Government of Burundi)",
+      "builder": null,
+      "financier": "Huawei International Limited (US$30m loan, 10-year repayment)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-09-13",
+      "still_current": null,
+      "summary": "Burundi's government announced plans to modernise and extend the state operator's mobile network, unchanged since 2009-2010, financed by a US$30m loan from Huawei International repayable over ten years.",
+      "announced_value_usd": 30000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.osiris.sn/Burundi-Onamob-modernisera-et.html",
+          "publisher": "OSIRIS (relaying Agence Ecofin)",
+          "source_tier": "S3",
+          "date": "2017-09-13",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole left null: the source names Huawei only as lender, not as equipment supplier. Vendor financing of this kind usually comes with Huawei equipment (analyst inference), which would make it prc. Tier 1 as a government announcement; whether the loan closed or the upgrade was delivered was not found. Pre-2020."
+    },
+    {
+      "id": "BDI-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Burundi",
+      "local_actor": "Government of Burundi",
+      "builder": "China National Electronics Import & Export Corporation (CEIEC) (named implementer)",
+      "financier": "China Ministry of Commerce (grant)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-07-28",
+      "still_current": null,
+      "summary": "China pledged to build a 'Big Data Center' for Burundi under a grant-based economic and technical cooperation agreement, with CEIEC named as implementer; AidData records no funding figure and says construction had not begun.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/57289",
+          "publisher": "AidData (William & Mary) Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": "2016-07-28",
+          "retrieved_at": "2026-10-24T21:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole domestic on the assumption the government would own and operate the centre; CEIEC as builder. Tier 1 pledge only. AidData's 'not started' status reflects its data cut-off, not the run date, so still_current is null. Whether a national data centre was later built, and by whom, is unknown."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no accelerator purchases or deployments surfaced in any of the run's searches; no dedicated search spent given Burundi's market size"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found Burundi validated a national AI strategy (reported April 2026; a UNDP page on the roadmap appeared in search results only) but no named frontier-model provider partnership or government model adoption"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "two searches (English and French) found no reporting of a safe-city or CCTV system in Bujumbura or a named surveillance vendor"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "RAN and core vendors of Lumitel (Viettel), Econet Leo and Onatel today; Lumitel's 2016-2018 4G rollout reporting names no equipment vendor.",
+    "Was the Burundi Backbone System fibre actually built by ZTE and completed, and who maintains its equipment now? (ZTE's own release on a BBS IT agreement was not fetched.)",
+    "Did the 2017 US$30m Huawei International loan to Onamob/Onatel close, and was Huawei the equipment supplier?",
+    "Was the China-pledged national 'Big Data Center' built, by whom (CEIEC?), and who operates it?",
+    "Financing of the Bujumbura MAN: grant or China Eximbank loan? Sources conflict.",
+    "Content of the April 2026 national AI strategy and the September 2026 Burundi-US digital/telecom cooperation (article bodies not retrievable); any CCTV/safe-city procurement in Bujumbura or Gitega."
+  ],
+  "searches_run": 9
+}
