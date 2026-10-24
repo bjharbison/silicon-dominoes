@@ -1,0 +1,422 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MAR",
+  "name": "Morocco",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T09:19:54Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MAR-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Orange Maroc",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06",
+      "still_current": null,
+      "summary": "Orange Maroc contracted Ericsson to modernise and expand its core network with a dual-mode, cloud-native 5G core ahead of a standalone 5G launch; no contract value was disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/18595-orange-maroc-taps-ericsson-to-prep-core-for-standalone-5g.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2025-06-09",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telquel.ma/2025/07/18/5g-in-morocco-operators-race-against-time-before-the-2030-world-cup_1939884",
+          "publisher": "TelQuel",
+          "source_tier": "S3",
+          "date": "2025-07-18",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://fr.le360.ma/economie/5g-au-maroc-les-equipementiers-se-frottent-les-mains_WMLXGK5HIVAELM6FS4CW25UCDA/",
+          "publisher": "Le360",
+          "source_tier": "S3",
+          "date": "2025-10-14",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so third pole. Scope is the core network; Orange Maroc's 5G RAN vendor was not established (Le360 also reports Nokia modernising Orange's network). Tier 3 on a named counterparty without value."
+    },
+    {
+      "id": "MAR-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Maroc Telecom; Orange Maroc (reportedly also inwi)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10",
+      "still_current": null,
+      "summary": "Moroccan press reports Huawei already supplies Maroc Telecom and Orange Maroc, with Le360 saying over half of Moroccan telecom infrastructure reportedly runs on Huawei; no 5G equipment contract for the Maroc Telecom/inwi joint rollout was reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fr.le360.ma/economie/5g-au-maroc-les-equipementiers-se-frottent-les-mains_WMLXGK5HIVAELM6FS4CW25UCDA/",
+          "publisher": "Le360",
+          "source_tier": "S3",
+          "date": "2025-10-14",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://fr.hespress.com/409661-la-5g-au-maroc-attise-la-concurrence-des-leaders-mondiaux.html",
+          "publisher": "Hespress FR",
+          "source_tier": "S3",
+          "date": "2025-02-06",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telquel.ma/2025/07/18/5g-in-morocco-operators-race-against-time-before-the-2030-world-cup_1939884",
+          "publisher": "TelQuel",
+          "source_tier": "S3",
+          "date": "2025-07-18",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded tier 3 as an existing supply relationship; the share claim is hedged ('reportedly') and unquantified by layer, so tier 5 was not coded. TelQuel (July 2025) says the Maroc Telecom/inwi consortium had not announced its 5G equipment winner. Only S3 sources, so not corroborated."
+    },
+    {
+      "id": "MAR-003",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Nexus Core Systems-led consortium (with Naver Cloud, Nvidia, Lloyds Capital)",
+      "local_actor": "Maroc Telecom (go-to-market partner); TAQA Morocco (power); Casablanca-Settat region",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07",
+      "still_current": null,
+      "summary": "A 500 MW AI data hub led by Nexus Core Systems, operated on Naver Cloud's platform with renewable power from TAQA Morocco, valued at US$1.2bn; sited at Nouaceur, permits obtained, design and procurement underway, first 40 MW phase delayed.",
+      "announced_value_usd": 1200000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://en.hespress.com/113208-113208.html",
+          "publisher": "Hespress English",
+          "source_tier": "S3",
+          "date": "2025-06-13",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.intelligentcio.com/africa/2025/07/28/nexus-core-systems-to-build-500-mw-ai-factory-in-morocco-backed-by-naver-cloud-and-powered-by-renewable-energy/",
+          "publisher": "Intelligent CIO Africa",
+          "source_tier": "S2",
+          "date": "2025-07-28",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://fr.hespress.com/468263-data-center-ia-le-maroc-capte-un-megaprojet-de-12-milliard-de-dollars.html",
+          "publisher": "Hespress FR",
+          "source_tier": "S3",
+          "date": "2026-04-03",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://fr.le360.ma/economie/data-centers-au-maroc-une-nouvelle-vague-dinvestissements-portee-par-lia-et-la-souverainete_5AWWI6OH7FFILPLGYDSUGMU2IA/",
+          "publisher": "Le360 (citing BMI/Fitch Solutions)",
+          "source_tier": "S3",
+          "date": "2026-07-09",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: nationality of Nexus Core Systems and Lloyds Capital not stated in sources opened; Naver Cloud (Korean, third) operates the platform but ownership is unclear. Tier 2 because permits and procurement are reported but not construction or closed financing (works expected 2027-28 per BMI via Le360). The Q1 2026 phase-1 slip is a delay, not coded as a reversal. Nouaceur site attributed to Africa Intelligence via Hespress.",
+      "bundle_id": "MAR-B1"
+    },
+    {
+      "id": "MAR-004",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Nexus Core Systems / Naver Cloud AI hub",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04",
+      "still_current": null,
+      "summary": "Nvidia is named as the GPU supplier for the planned Moroccan AI hub, with latest-generation Blackwell GB200 GPUs slated for the first 40 MW phase.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://en.hespress.com/113208-113208.html",
+          "publisher": "Hespress English",
+          "source_tier": "S3",
+          "date": "2025-06-13",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://fr.hespress.com/468263-data-center-ia-le-maroc-capte-un-megaprojet-de-12-milliard-de-dollars.html",
+          "publisher": "Hespress FR",
+          "source_tier": "S3",
+          "date": "2026-04-03",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://fr.le360.ma/economie/data-centers-au-maroc-une-nouvelle-vague-dinvestissements-portee-par-lia-et-la-souverainete_5AWWI6OH7FFILPLGYDSUGMU2IA/",
+          "publisher": "Le360 (citing BMI/Fitch Solutions)",
+          "source_tier": "S3",
+          "date": "2026-07-09",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: GPU supply is stated as a plan; no purchase order, licence or delivery found. Only S3 sources opened mention Nvidia. US chip-export posture is covered by the global layer.",
+      "bundle_id": "MAR-B1"
+    },
+    {
+      "id": "MAR-005",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Iozera",
+      "local_actor": "Moroccan government (investment roadshow)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05-06",
+      "still_current": null,
+      "summary": "US startup Iozera announced a US$500m, 386 MW data centre and AI hub in Tetouan; a 2026 BMI-based report says commissioning is targeted for the second half of 2026.",
+      "announced_value_usd": 500000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://northafricapost.com/77106-artificial-intelligence-u-s-firm-iozera-to-invest-500-mln-in-data-center-and-ai-hub-in-morocco.html",
+          "publisher": "North Africa Post",
+          "source_tier": "S3",
+          "date": "2024-05-06",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://fr.le360.ma/economie/data-centers-au-maroc-une-nouvelle-vague-dinvestissements-portee-par-lia-et-la-souverainete_5AWWI6OH7FFILPLGYDSUGMU2IA/",
+          "publisher": "Le360 (citing BMI/Fitch Solutions)",
+          "source_tier": "S3",
+          "date": "2026-07-09",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: an announcement made during a government roadshow; no contract, financing or construction start found in sources opened. Pole us from the owner's reported US domicile (North Africa Post); Le360 does not state nationality."
+    },
+    {
+      "id": "MAR-006",
+      "layer": "facilities",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Ministry of Digital Transition and Administrative Reform",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07",
+      "still_current": null,
+      "summary": "Morocco's digital transition minister told Reuters the country intends to build a 500 MW renewable-powered data centre in Dakhla; no developer, value or timeline was given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/morocco-plans-to-build-500mw-renewable-energy-data-center/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07-16",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telquel.ma/2026/04/22/le-pari-risque-du-maroc-sur-les-mega-data-centers-dia_1985558",
+          "publisher": "TelQuel",
+          "source_tier": "S3",
+          "date": "2026-04-22",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: no owner-operator named. Hespress links the Dakhla project to the Mistral MoU context (MAR-007), but no Mistral role in the facility is stated. Dakhla is in Western Sahara, whose status is disputed; coded under MAR as reported."
+    },
+    {
+      "id": "MAR-007",
+      "layer": "models",
+      "pole": "third",
+      "controller": "Mistral AI",
+      "local_actor": "Ministry Delegate for Digital Transition and Administrative Reform",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-12",
+      "still_current": null,
+      "summary": "Morocco's digital transition minister and Mistral AI's CEO signed an MoU on AI skills, applied research, startup support, Moroccan-language work and better administrative services; no value disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://en.hespress.com/120630-morocco-signs-mou-with-mistral-ai-to-advance-digital-transformation.html",
+          "publisher": "Hespress English",
+          "source_tier": "S3",
+          "date": "2025-09-12",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.moroccoworldnews.com/2025/09/259106/morocco-partners-with-french-ai-firm-mistral-ai-to-boost-local-innovation/",
+          "publisher": "Morocco World News",
+          "source_tier": "S3",
+          "date": "2025-09",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Mistral is French, so third pole. Tier 1 (non-binding MoU). No deployment of Mistral models in Moroccan government found."
+    },
+    {
+      "id": "MAR-008",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei (consortium lead)",
+      "local_actor": "City of Marrakech",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015",
+      "still_current": null,
+      "summary": "Per a 2020 Le360 fact-check, Huawei won one urban video-surveillance contract in Morocco, in Marrakech in 2015 as consortium lead; Casablanca's contracts went to non-Chinese firms and the DGSN does not procure city systems.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fr.le360.ma/politique/abdellatif-hammouchi-ne-fait-pas-affaire-avec-huawei-222474/",
+          "publisher": "Le360",
+          "source_tier": "S3",
+          "date": "2020-09-03",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telquel.ma/2025/04/08/surveillance-cameras-in-rabat-casa-marrakech-a-deployment-caught-between-acceleration-and-slowdown_1924656",
+          "publisher": "TelQuel",
+          "source_tier": "S3",
+          "date": "2025-04-08",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pre-2020; still_current null. TelQuel (April 2025) says a newer Marrakech smart-camera project stalled and the city relies on the existing DGSN network, without naming its vendor. Le360's piece rebuts an Africa Intelligence claim of large-scale Huawei surveillance; contract value not given."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "TAQA Morocco renewable supply for the AI hub surfaced only as part of MAR-003; no dedicated AI power plant searched"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendor won the Maroc Telecom/inwi joint 5G equipment contract, and who supplies their RAN and core?",
+    "Is the 'over half of infrastructure on Huawei' claim documented by any S1/S2 source, by operator and layer?",
+    "Nexus Core Systems and Lloyds Capital: nationality and equity shares (sets MAR-003 facility pole); has construction or financing closed?",
+    "Iozera Tetouan: any binding agreement, financing or construction since 2024?",
+    "Dakhla 500 MW: developer, financing and any foreign partner.",
+    "April 2026 Huawei Maroc MoU with the judiciary council (MJCC) and July 2026 Vertiv MoU seen only in search titles; scope unknown.",
+    "Is the 2015 Huawei Marrakech surveillance system still in use; which vendors supply Rabat and Casablanca cameras (integrators named are Moroccan)?",
+    "Any Mistral or other frontier-model deployment in Moroccan government services; any Moroccan sovereign model?"
+  ],
+  "searches_run": 10
+}

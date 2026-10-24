@@ -1,0 +1,338 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "JOR",
+  "name": "Jordan",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "JOR-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Zain Jordan",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-04-08",
+      "still_current": null,
+      "summary": "Zain Jordan signed a multi-year deal for Nokia to supply 5G RAN (AirScale baseband, Massive MIMO, remote radio heads) at over 3,000 sites nationwide and upgrade its existing 4G network, with most deployment planned in 2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://telecomtalk.info/?p=692652",
+          "publisher": "TelecomTalk",
+          "source_tier": "S2",
+          "date": "2023-04-08",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/orange/nokia-bags-orange-jordan-5g-ran-deal/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2023-05-04",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nokia is Finnish, so third pole. Coded tier 3 (signed supply contract); rollout completion not verified in this pass. Nokia describes modernising the complete RAN, implying replacement of a prior vendor not named in sources; whether that was Huawei is unknown. Core-network vendor not established. No value disclosed."
+    },
+    {
+      "id": "JOR-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Orange Jordan",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-05-04",
+      "still_current": null,
+      "summary": "Nokia won a nationwide RAN supply agreement with Orange Jordan covering AirScale equipment, Massive MIMO and single-RAN base stations delivering 2G through 5G.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/orange/nokia-bags-orange-jordan-5g-ran-deal/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2023-05-04",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia is Finnish, so third pole. Single opened S2 source, so not corroborated. Core-network vendor and prior RAN vendor not stated. No value disclosed."
+    },
+    {
+      "id": "JOR-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Umniah",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-02-10",
+      "still_current": null,
+      "summary": "Umniah named Ericsson its main equipment supplier for 5G, providing radio access products plus integration and support services for its 5G network launch.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-business/operator-news/14528-umniah-taps-ericsson-for-5g-launch-in-jordan.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2023-02-10",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/orange/nokia-bags-orange-jordan-5g-ran-deal/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2023-05-04",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://mobile-magazine.com/mobile-operators/national-operator-umniah-launches-jordans-first-5g-services",
+          "publisher": "Mobile Magazine",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so third pole. Mobile World Live independently reports Umniah's first 5G phase is with Ericsson. A search result (not opened) reports Umniah launched Jordan's first 5G services, which would support tier 5, but not verified. Core vendor not stated."
+    },
+    {
+      "id": "JOR-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Aqaba Digital Hub",
+      "local_actor": "Aqaba Digital Hub; Aqaba Special Economic Zone Authority",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-21",
+      "still_current": null,
+      "summary": "The Crown Prince inaugurated the Aqaba Digital Hub: Jordan's largest data centre (about 17,000 square metres, up to 12MW), described as AI-ready, with the country's first open-access submarine cable landing station and a neutral exchange.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rhc.jo/en/news/crown-prince-inaugurates-aqaba-digital-hub",
+          "publisher": "Office of the Crown Prince (rhc.jo)",
+          "source_tier": "S1",
+          "date": "2025-10-21",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2025/10/23/jordan-launches-aqaba-digital-hub-one-of-the-middle-easts-largest-data-centers/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S3",
+          "date": "2025-10-23",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Coded domestic: the operator is a Jordanian company led by chairman/CEO Eyad Abu Khorma; shareholders were not stated in sources opened (a search snippet mentioned funding from Jordan's JCIF fund, not verified). No IT-equipment vendors named. 'AI-ready' is a claim, not evidence of AI workloads."
+    },
+    {
+      "id": "JOR-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Aqaba Digital Hub",
+      "local_actor": "Aqaba Digital Hub",
+      "builder": null,
+      "financier": "EBRD (with EU support); Capital Bank of Jordan (parallel lender)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-08",
+      "still_current": null,
+      "summary": "The EBRD, with EU support, is lending JOD 10m to Aqaba Digital Hub, alongside Capital Bank of Jordan, to fit out the existing data centre and build a second data hall.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://solarquarter.com/2026/05/08/ebrd-and-eu-provide-jod-10-million-loan-to-expand-jordans-largest-carrier-neutral-data-centre-and-boost-regional-digital-connectivity/",
+          "publisher": "SolarQuarter",
+          "source_tier": "S3",
+          "date": "2026-05-08",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2026/05/11/eu-supports-145-2-million-loan-for-expansion-of-jordans-aqaba-digital-hub-data-centre/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S3",
+          "date": "2026-05-11",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator domestic; EBRD (multilateral, EU-supported) is financier and does not set the pole. Tier 4 assumes the loan is committed; disbursement/financial close not confirmed. Sources conflict on size: SolarQuarter gives JOD 10m (about US$14.1m, its own conversion), MEA Tech Watch says US$145.2m; announced value left null pending the EBRD project page. Two S3 sources, no S1/S2, so not corroborated."
+    },
+    {
+      "id": "JOR-006",
+      "layer": "models",
+      "pole": "third",
+      "controller": "HUMAIN",
+      "local_actor": "Ministry of Digital Economy and Entrepreneurship",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026",
+      "still_current": null,
+      "summary": "Jordan's digital economy ministry signed an MoU with Saudi Arabia's HUMAIN at LEAP 2026 covering Arabic AI models including ALLaM, public-sector AI adoption, possible access to dedicated AI compute, startups and talent.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.modee.gov.jo/En/NewsDetails/Jordan_and_HUMAIN_Sign_MoU_to_Strengthen_AI_Ecosystem",
+          "publisher": "Ministry of Digital Economy and Entrepreneurship (modee.gov.jo)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.zawya.com/en/press-release/companies-news/jordan-and-saudi-arabias-humain-sign-strategic-mou-to-advance-ai-development-and-innovation-479237",
+          "publisher": "Zawya (joint press release)",
+          "source_tier": "S4",
+          "date": "2026-09-06",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.jordannews.jo/Section-113/All/Jordan-and-Saudi-Arabia-s-HUMAIN-Partner-to-Advance-Arabic-AI-Models-55363",
+          "publisher": "Jordan News",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "HUMAIN is Saudi (PIF-owned), so third pole; ALLaM weights are Saudi-controlled, so base_model/base_model_pole left null as no Jordanian-controlled model exists in sources. Non-binding MoU, tier 1. Signing date not given beyond LEAP 2026; Zawya copy dated 2026-09-06. The Zawya item is a press release (S4) and the ministry page is the same announcement, so not independently corroborated."
+    },
+    {
+      "id": "JOR-007",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Greater Amman Municipality",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-03",
+      "still_current": null,
+      "summary": "Greater Amman Municipality tendered supply, installation and five-year operation of about 3,100 AI-enabled traffic and CCTV cameras, including facial recognition, with backend servers and a real-time dashboard; no vendor or value reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.jordannews.jo/Section-109/News/Greater-Amman-Municipality-Issues-Tender-to-Operate-More-Than-3-000-Smart-Cameras-to-Monitor-Traffic-and-Violations-48586",
+          "publisher": "Jordan News",
+          "source_tier": "S3",
+          "date": "2026-02-03",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the tender names no vendor and no award was found, so the controlling stack is unknown. Tier 2 because a tender is a procurement step short of a binding award. Worth tracking: the award would show whether Hikvision/Dahua or another vendor supplies Amman's facial-recognition cameras."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "one search found no public accelerator purchases, GPU clusters or licence decisions for Jordan"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced in other searches"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplied Zain Jordan's and Orange Jordan's RAN before Nokia, and was Huawei swapped out? Who supplies each operator's 5G core?",
+    "Has Umniah's Ericsson 5G network launched commercially (would raise JOR-003 to tier 5)?",
+    "Aqaba Digital Hub: shareholders (JCIF or other state funds?), IT vendors, and the correct EBRD loan size (JOD 10m vs US$145.2m).",
+    "Which vendor wins the Greater Amman Municipality AI camera tender, and what equipment do Jordanian police/Public Security Directorate CCTV systems use?",
+    "Huawei Jordan signed an ICT MoU with the private Hourani Group / Al-Ahliyya Amman University (Aug 2026) covering cloud, data centres and AI training; not coded as it is a private education tie-up. Does Huawei Cloud have a Jordan node or government customers?",
+    "Does the Jordanian government cloud run on a foreign provider's stack, and has any Arabic or national LLM been deployed in Jordanian public services?",
+    "Submarine cables landing at Aqaba: suppliers (any HMN Tech)?"
+  ],
+  "searches_run": 9
+}

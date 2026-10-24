@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "ROU",
-  "HUN",
-  "UKR",
-  "MAR",
-  "TUN",
-  "JOR",
-  "BHR",
-  "KWT",
-  "IRQ",
-  "LKA",
   "NPL",
   "MNG",
   "NZL",
@@ -254,6 +244,16 @@
   "IRL",
   "DNK",
   "PRT",
-  "CZE"
+  "CZE",
+  "ROU",
+  "HUN",
+  "UKR",
+  "MAR",
+  "TUN",
+  "JOR",
+  "BHR",
+  "KWT",
+  "IRQ",
+  "LKA"
  ]
 }

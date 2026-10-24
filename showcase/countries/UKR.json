@@ -1,0 +1,380 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "UKR",
+  "name": "Ukraine",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T09:19:56Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "UKR-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "Kyivstar, Vodafone Ukraine, lifecell",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-07",
+      "still_current": null,
+      "summary": "Chinese vendors supply most Ukrainian mobile radio access networks (officials cite at least 70% of networks); Kyivstar's core uses Ericsson and ZTE. Ukraine has not banned Chinese vendors; replacement estimated above US$1bn.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/security/kyivstar-expects-to-phase-out-chinese-kit-in-future",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2024-07-10",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://cepa.org/article/ukraine-telecom-conundrum-cheap-china-or-expensive-western-kit/",
+          "publisher": "CEPA",
+          "source_tier": "S4",
+          "date": "2023-10-20",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 because the equipment is operational nationwide. Per-operator RAN shares (Kyivstar near-entirely Chinese, Vodafone ~75%, lifecell ~50%) are Strand Consult estimates relayed by Light Reading. CEPA is think-tank analysis (S4), so not corroborating. VEON says phase-out can be anticipated but gave no timeline; no reversal coded."
+    },
+    {
+      "id": "UKR-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia; Ericsson",
+      "local_actor": "Vodafone Ukraine (Nokia), lifecell (Ericsson), Kyivstar (Ericsson)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-22",
+      "still_current": null,
+      "summary": "Kyiv's 5G pilot launched July 2026: Vodafone Ukraine's roughly 150 sites use only Nokia equipment, lifecell uses Ericsson, and Kyivstar uses a mix of Ericsson and Huawei. Earlier pilots ran in Lviv.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dev.ua/en/news/tekhnichni-detali-5g-v-kyievi-1784895810",
+          "publisher": "dev.ua",
+          "source_tier": "S2",
+          "date": "2026-07-24",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://lightreading.com/5g/ukrainian-5g-pilot-launches-in-lviv",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2026-01-12",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Nokia (Finland) and Ericsson (Sweden) are third pole. Pilot, so tier 2. Light Reading's Lviv report confirms multi-operator pilots but Kyivstar declined to name vendors there, so the vendor split rests on dev.ua alone; corroborated false. Kyivstar's Huawei share is coded separately in UKR-003."
+    },
+    {
+      "id": "UKR-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Kyivstar; Vodafone Ukraine",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-22",
+      "still_current": null,
+      "summary": "Huawei equipment is part of Kyivstar's 5G pilot in Kyiv alongside Ericsson, and Vodafone Ukraine ran 2025 5G trials with Huawei in Kropyvnytskyi, Ivano-Frankivsk and Vynnyky.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dev.ua/en/news/tekhnichni-detali-5g-v-kyievi-1784895810",
+          "publisher": "dev.ua",
+          "source_tier": "S2",
+          "date": "2026-07-24",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://lightreading.com/5g/ukrainian-5g-pilot-launches-in-lviv",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2026-01-12",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Two opened S2 sources from different hosts each document Huawei in Ukrainian 5G pilots (different operators). No high-risk-vendor framework was reported in sources opened; a Nikkei-reported auction without such a framework was seen only via an aggregator and is not cited."
+    },
+    {
+      "id": "UKR-004",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Kyivstar",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-24",
+      "still_current": null,
+      "summary": "Kyivstar launched Starlink direct-to-cell service, first in Europe, in an SMS-only phase for areas without terrestrial coverage, free to subscribers; 304,000 users registered within a day. Voice and data are planned later.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/kyivstar-launches-starlink-direct-to-cell-service-in-ukraine/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-11-24",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.kyivpost.com/post/64962",
+          "publisher": "Kyiv Post",
+          "source_tier": "S3",
+          "date": "2025-11-25",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://dev.ua/en/news/over-3-million-kyivstar-subscribers-have-used-the-starlink-direct-to-cell-service",
+          "publisher": "dev.ua",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Satellite layer controlled by SpaceX (US), so pole us. Coded tier 4 rather than 5: agreement signed December 2024 and service live, but limited to an SMS testing phase. A dev.ua headline (not opened) reports over 3 million users. Broader military/civil Starlink terminal dependence was not coded in this pass."
+    },
+    {
+      "id": "UKR-005",
+      "layer": "cloud",
+      "pole": "us",
+      "controller": "Amazon Web Services; Microsoft",
+      "local_actor": "Ministry of Digital Transformation; SE Diia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-05",
+      "still_current": null,
+      "summary": "After Ukraine amended its law barring cloud storage of public data, critical government data moved to Microsoft and Amazon clouds abroad within about ten weeks; Diia keeps a backup copy in AWS with daily backups.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dev.ua/en/news/aws-1743756767",
+          "publisher": "dev.ua (citing Ministry of Digital Transformation)",
+          "source_tier": "S2",
+          "date": "2025-04-04",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.newamerica.org/insights/digital-public-infrastructure-ukraine-war/",
+          "publisher": "New America",
+          "source_tier": "S4",
+          "date": "2023-02-22",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Hosting control rests with the US hyperscalers, so pole us. Date approximate (ten weeks after the February 2022 invasion). AWS provided Snowball devices and about 10 PB of storage for state register backups. New America is a think tank (S4), so not corroborating. Still in place as of April 2025 per dev.ua; not confirmed at run date."
+    },
+    {
+      "id": "UKR-006",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Kyivstar with WINWIN AI Center of Excellence (Ministry of Digital Transformation)",
+      "local_actor": "Kyivstar; Ministry of Digital Transformation",
+      "builder": null,
+      "financier": null,
+      "base_model": "Gemma",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12-01",
+      "still_current": null,
+      "summary": "Kyivstar and the Ministry of Digital Transformation selected Google's open Gemma as the base for Ukraine's national LLM, to be adapted for Ukrainian and trained on curated national data using Google Vertex AI; not yet released.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.veon.com/newsroom/press-releases/kyivstar-and-ukrainian-ministry-of-digital-transformation-select-google-gemma-as-the-foundation-for-ukraines-national-llm",
+          "publisher": "VEON (press release)",
+          "source_tier": "S1",
+          "date": "2025-12-01",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/operators/kyivstar-taps-google-gemma-to-power-sovereign-ai-model/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2025-12-02",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Weights to be developed by Kyivstar and a ministry centre, so domestic, though Kyivstar is owned by VEON (Netherlands-listed, Dubai-headquartered), which arguably adds a third-pole element. Training on Google Vertex AI adds US compute dependence. Tier 2: in development."
+    },
+    {
+      "id": "UKR-007",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Government of Ukraine (Ministry of Digital Transformation)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-17",
+      "still_current": null,
+      "summary": "Ukraine's government announced a partnership with Nvidia to build national AI infrastructure on Nvidia technology, train specialists and develop Diia AI LLM, a sovereign model for public services; no value given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://en.ain.ua/2025/11/17/ukraine-and-nvidia-will-work-on-creating-sovereign-ai/",
+          "publisher": "AIN.UA",
+          "source_tier": "S2",
+          "date": "2025-11-17",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: a partnership announcement with no stated instrument, quantities or value. Relationship of Diia AI LLM to the Gemma-based Kyivstar national LLM (UKR-006) is unclear from sources opened."
+    },
+    {
+      "id": "UKR-008",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Kyivstar (VEON subsidiary)",
+      "local_actor": "Kyivstar; Ministry of Economy",
+      "builder": null,
+      "financier": "VEON",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06",
+      "still_current": null,
+      "summary": "Kyivstar and the Economy Ministry signed an MoU at the Ukraine Recovery Conference in Gdansk to build domestic AI computing capacity, initial phase 3-5MW costing tens of millions of dollars, financed by parent VEON.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/europe/ukraine-kyivstar-plot-domestic-ai-compute-build/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2026-06-26",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/06/26/ukraine-plans-domestic-ai-computing-capacity-with-kyivstar",
+          "publisher": "The Star (wire)",
+          "source_tier": "S3",
+          "date": "2026-06-26",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator Kyivstar is Ukrainian-operated, so domestic, though VEON ownership is foreign (third) and is the financier. No GPU vendor named; value too vague to record. Rationale stated as keeping military computing in-country."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "no verified safe-city or foreign-stack e-gov AI deployment found; NAZK listed Hikvision and Dahua as 'international sponsors of war' (June 2023), a designation without stated legal effect and not a ban or adoption; claims of widespread Hikvision/Dahua use come only from an advocacy op-ed"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced; wartime grid context only"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current per-operator RAN and core vendor shares (Huawei/ZTE vs Ericsson/Nokia) from a primary source; has any operator begun replacing Chinese core components?",
+    "Does Ukraine's planned 5G auction impose any high-risk-vendor restriction (Nikkei Asia report seen only via aggregator)?",
+    "Scale and contract terms of state/military Starlink terminal dependence (terminals count, who pays, Poland/US funding).",
+    "Does NAZK's 2023 listing of Hikvision/Dahua carry any procurement consequence on Prozorro, and are they in police or city CCTV systems?",
+    "Status of the Kyivstar-Gemma national LLM release and Diia AI LLM; are they the same model, and on what compute?",
+    "Has the Kyivstar AI compute MoU progressed to a contract or GPU order, and with which vendor?",
+    "Is government data still hosted in AWS/Microsoft clouds abroad as of 2026, and was Google Cloud also used?"
+  ],
+  "searches_run": 8
+}

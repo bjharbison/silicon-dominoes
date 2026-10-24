@@ -1,0 +1,507 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "HUN",
+  "name": "Hungary",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T09:19:46Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "HUN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Vodafone Hungary (now One Hungary, 4iG/state-owned)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-10",
+      "still_current": null,
+      "summary": "Vodafone Hungary built its 4G network on Huawei equipment and launched a limited Budapest commercial 5G service in October 2019 that Huawei said used its equipment; Vodafone did not name its 5G vendor.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.direkt36.hu/en/?p=6258",
+          "publisher": "Direkt36",
+          "source_tier": "S3",
+          "date": "2020-07-03",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 for the Huawei 4G network as reported operational; the 5G vendor was unconfirmed in 2020. Vodafone Group's plan to remove Huawei from European core networks may affect Hungary, but Vodafone Hungary was sold to 4iG and the Hungarian state in 2022-23 (RCR Wireless snippet), so that plan may no longer apply. Current RAN/core vendor not established in this pass; single opened S3 source."
+    },
+    {
+      "id": "HUN-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Telenor Hungary (now Yettel Hungary)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-07",
+      "still_current": null,
+      "summary": "Telenor Hungary used ZTE equipment for its 4G network; its 5G vendor tender was still open in mid-2020, with Huawei reportedly favoured by the majority owner.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.direkt36.hu/en/?p=6258",
+          "publisher": "Direkt36",
+          "source_tier": "S3",
+          "date": "2020-07-03",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Date is the reporting date, not the deployment date. Whether Yettel still runs ZTE 4G equipment and which vendor won its 5G tender were not established; single opened S3 source."
+    },
+    {
+      "id": "HUN-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Magyar Telekom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-04",
+      "still_current": null,
+      "summary": "Magyar Telekom chose Ericsson as its 5G network supplier, announced in early April 2020, rather than Huawei, which had reportedly been under consideration.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.direkt36.hu/en/?p=6258",
+          "publisher": "Direkt36",
+          "source_tier": "S3",
+          "date": "2020-07-03",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so third pole. Direkt36 links the choice to US pressure over Huawei and Ericsson's ability to upgrade Telekom's 4G network; not coded as a reversal because no Huawei 5G contract was documented. Tier 3 inferred from announced vendor selection; contract value not disclosed. Single opened S3 source."
+    },
+    {
+      "id": "HUN-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Hytera",
+      "local_actor": "Pro-M Zrt. (subsidiary of state-owned NISZ)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021",
+      "still_current": null,
+      "summary": "Pro-M, a subsidiary of the state infocommunications company NISZ, ordered Hytera radio terminals and accessories worth HUF 9 billion for the national emergency and disaster-relief network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://english.atlatszo.hu/?p=33023",
+          "publisher": "Átlátszó",
+          "source_tier": "S3",
+          "date": "2023-08-15",
+          "retrieved_at": "2026-10-24T09:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://vsquare.org/hungary-chinese-security-systems-ukraine-war-russia-spying/",
+          "publisher": "VSquare (republication of Átlátszó)",
+          "source_tier": "S3",
+          "date": "2023-08-22",
+          "retrieved_at": "2026-10-24T09:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Hytera is a PRC vendor of digital radio equipment. Value not converted to USD. VSquare is a republication of the same Átlátszó article, so not independent; treated as uncorroborated."
+    },
+    {
+      "id": "HUN-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia (HPE-built system)",
+      "local_actor": "KIFÜ (Government IT Development Agency), University of Debrecen",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-01",
+      "still_current": null,
+      "summary": "Komondor, Hungary's most powerful supercomputer, built by HPE on Cray EX with a GPU partition of Nvidia A100s plus HPE Apollo AI nodes, was inaugurated in Debrecen, operated by KIFÜ, costing about HUF 4.7bn.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/hungary-inaugurates-128-million-komondor-supercomputer",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-01",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.hpcwire.com/2023/01/19/hungary-launches-komondor-its-most-powerful-supercomputer/",
+          "publisher": "HPCwire",
+          "source_tier": "S2",
+          "date": "2023-01-19",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "About 216 A100 GPUs (200 in 50 GPU nodes plus about 16 in two AI nodes) derived from node counts, not stated outright. Facility controller is KIFÜ (domestic); GPU vendor sets the silicon pole. DCD's ~US$12.8m conversion not coded as a value since the headline/body figures were ambiguous."
+    },
+    {
+      "id": "HUN-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia (HPE-built system)",
+      "local_actor": "University of Szeged",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-08",
+      "still_current": null,
+      "summary": "The University of Szeged unveiled a 1.75-petaflop AI supercomputer built from HPE nodes and HPE Cray storage with Nvidia H100 GPUs, supplied locally by PC Trade Systems.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://u-szeged.hu/news-and-events/2025/new-era-in-research",
+          "publisher": "University of Szeged",
+          "source_tier": "S1",
+          "date": "2025-07-15",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Single opened S1 source (operator's own release). GPU count and price not stated. Scale national as a nationally significant research AI system."
+    },
+    {
+      "id": "HUN-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "DKF (Digital Government Development and Project Management Company)",
+      "local_actor": "DKF; EuroHPC Joint Undertaking",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-09",
+      "still_current": null,
+      "summary": "EuroHPC JU signed a hosting agreement with Hungary's DKF for LEVENTE, a mid-range EuroHPC supercomputer of at least 23 petaflops in Budapest, part of the AI Factories initiative; EUR 42m cost, 35% EU-funded.",
+      "announced_value_usd": 49000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://eurohpc-ju.europa.eu/way-open-building-eurohpc-world-class-supercomputer-hungary-2025-07-09_en",
+          "publisher": "EuroHPC Joint Undertaking",
+          "source_tier": "S1",
+          "date": "2025-07-09",
+          "retrieved_at": "2026-10-24T09:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/eurohpc-ju-signs-hosting-agreement-with-hungarian-govt-for-levente-supercomputer/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07-11",
+          "retrieved_at": "2026-10-24T09:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a facility with DKF (Hungarian state) as host-operator, so domestic; EuroHPC JU typically co-owns such systems pro rata (35% here), which would be third pole minority. Tier 3 for a signed hosting agreement with value; procurement of the system had not begun, so the GPU vendor is unknown. Announced value is DCD's US$49m conversion of EUR 42m."
+    },
+    {
+      "id": "HUN-008",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Not stated (ParTec AG and 3D Lézertechnika Zrt. partnership)",
+      "local_actor": "3D Lézertechnika Zrt.",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-08",
+      "still_current": null,
+      "summary": "ParTec and Hungary's 3D Lézertechnika signed a letter of intent for a modular AI data centre of up to 96MW near the Paks nuclear plant, with a 530-hectare agro-photovoltaic park and battery storage; multi-billion-euro volume.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://webdisclosure.com/press-release/partec-ag-etr-partec-ag-and-3d-lezertechnika-zrt-sign-a-letter-of-intent-for-a-modular-hyperscale-ai-data-center-a-solar-park-and-energy-storage-as-part-of-a-european-flagship-project-qwcPaHno2qm",
+          "publisher": "ParTec AG (company release)",
+          "source_tier": "S1",
+          "date": "2025-07-08",
+          "retrieved_at": "2026-10-24T09:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://u-szeged.hu/news-and-events/2025/new-era-in-research",
+          "publisher": "University of Szeged",
+          "source_tier": "S1",
+          "date": "2025-07-15",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the release does not say who will own or operate the campus; ParTec is German (third) and 3D Lézertechnika Hungarian (domestic). The release's value statements are inconsistent; the Szeged article cites EUR 3bn. Not converted. GPU vendor not named. Power component (solar, BESS, Paks proximity) not coded separately."
+    },
+    {
+      "id": "HUN-009",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "HUN-REN Hungarian Research Centre for Linguistics (NYTK)",
+      "local_actor": "NYTK; University of Pécs",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-11-22",
+      "still_current": null,
+      "summary": "Researchers at Hungary's state research network linguistics centre released PULI GPT-3SX and HILANCO-GPTX, GPT-3-type Hungarian language models trained on research-network supercomputers, free for non-profit research.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://hun-ren.hu/en/news/a-new-level-in-artificial-intelligence-based-research-for-the-hungarian-language",
+          "publisher": "HUN-REN (formerly ELKH)",
+          "source_tier": "S1",
+          "date": "2022-11-22",
+          "retrieved_at": "2026-10-24T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Weights held by a Hungarian state research body, so domestic. Base model not named (described only as GPT-3 type), so base_model null. Tier 2 because availability is research-only with no documented government deployment. Later PULI variants (e.g. ChatPULI, PULI Trio) seen only in search titles."
+    },
+    {
+      "id": "HUN-010",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Hungarian Police (ORFK)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021",
+      "still_current": null,
+      "summary": "In 2021 the Hungarian police ordered Hikvision dome and tube cameras through two public procurement contracts; universities, the Academy of Sciences and several municipalities also buy Hikvision equipment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://english.atlatszo.hu/?p=33023",
+          "publisher": "Átlátszó",
+          "source_tier": "S3",
+          "date": "2023-08-15",
+          "retrieved_at": "2026-10-24T09:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://vsquare.org/hungary-chinese-security-systems-ukraine-war-russia-spying/",
+          "publisher": "VSquare (republication of Átlátszó)",
+          "source_tier": "S3",
+          "date": "2023-08-22",
+          "retrieved_at": "2026-10-24T09:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Values not given. VSquare republishes the same Átlátszó article, so not independent corroboration. Scale of camera deployment unknown; coded national because the buyer is the national police."
+    },
+    {
+      "id": "HUN-011",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Dahua",
+      "local_actor": "National Police Headquarters (ORFK)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017",
+      "still_current": null,
+      "summary": "The national police's 2017 contract list includes two contracts with Dahua's Hungarian subsidiary: a server migration for border-guard tasks and work on Robotzsaru, the police case-management system.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://english.atlatszo.hu/?p=33023",
+          "publisher": "Átlátszó",
+          "source_tier": "S3",
+          "date": "2023-08-15",
+          "retrieved_at": "2026-10-24T09:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://vsquare.org/hungary-chinese-security-systems-ukraine-war-russia-spying/",
+          "publisher": "VSquare (republication of Átlátszó)",
+          "source_tier": "S3",
+          "date": "2023-08-22",
+          "retrieved_at": "2026-10-24T09:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pre-2020 item; whether Dahua still supports these systems was not established, so still_current null. Values not given. Same-article republication, not independent."
+    },
+    {
+      "id": "HUN-012",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "YLi (Chinese security-equipment supplier)",
+      "local_actor": "Zalaegerszeg military-industrial plant (N7 Holding / Ministry of Defence)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Planned Chinese (YLi) security/camera system purchase at Zalaegerszeg defence plant",
+      "reversal_reason": "geopolitical",
+      "date": "2023-07",
+      "still_current": null,
+      "summary": "A planned purchase of test chambers, a firing-range camera system and access control from Chinese suppliers for the state-owned Zalaegerszeg Lynx vehicle plant was vetoed by German partner Rheinmetall over security risks.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://english.atlatszo.hu/?p=33023",
+          "publisher": "Átlátszó",
+          "source_tier": "S3",
+          "date": "2023-08-15",
+          "retrieved_at": "2026-10-24T09:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://vsquare.org/hungary-chinese-security-systems-ukraine-war-russia-spying/",
+          "publisher": "VSquare (republication of Átlátszó)",
+          "source_tier": "S3",
+          "date": "2023-08-22",
+          "retrieved_at": "2026-10-24T09:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded as a reversal of a planned (not contracted) procurement, tier 2. Reason geopolitical (security risk). Originally reported by HVG, relayed by Átlátszó; HVG not opened. The veto came from a foreign partner, not the Hungarian state."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "only AI-tied power evidence surfaced is the Paks solar/BESS component of the ParTec LOI, recorded in HUN-008"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current RAN and core vendors of One Hungary (ex-Vodafone, now 4iG/state), Yettel and Magyar Telekom; did Yettel's 5G tender go to Huawei?",
+    "Has Hungary adopted any measure under the EU 5G Toolbox, or has the government formally declined to restrict Huawei/ZTE?",
+    "Huawei's Biatorbágy supply centre and Budapest R&D centre: scale, and any AI/cloud activity in Hungary (search titles only).",
+    "LEVENTE: vendor and GPU selected in DKF's procurement, and delivery date.",
+    "ParTec/3D Lézertechnika Paks campus: binding contracts, financing partner, owner-operator, GPU vendor.",
+    "Any government deployment of PULI or of a foreign frontier model (OpenAI, Google, DeepSeek) in Hungarian e-government.",
+    "Scale and vendor of municipal or police CCTV/facial recognition beyond the 2021 Hikvision orders."
+  ],
+  "searches_run": 10
+}

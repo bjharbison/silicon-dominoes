@@ -1,0 +1,271 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BHR",
+  "name": "Bahrain",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T09:19:14Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BHR-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "VIVA Bahrain (now stc Bahrain)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-03",
+      "still_current": null,
+      "summary": "VIVA Bahrain, the STC subsidiary, signed to use Huawei products in its 5G rollout; the telecoms minister said no foreign supplier was restricted and operators choose their own vendors.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gulfnews.com/technology/bahrain-to-use-huawei-in-5g-rollout-despite-us-warning-1.62924058",
+          "publisher": "Gulf News (Reuters)",
+          "source_tier": "S3",
+          "date": "2019-03-26",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://defenseone.com/threats/2025/05/china-tech-giants-wired-gulf/405283",
+          "publisher": "Defense One",
+          "source_tier": "S2",
+          "date": "2025-05-13",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 3 for a signed supply agreement; value and RAN/core scope not given. still_current null: not confirmed, though the 2025 stc Bahrain-Huawei 5G-Advanced agreement (BHR-002) and Defense One's 2025 description of Huawei provisioning VIVA's nationwide 5G suggest the relationship persists. Defense One relays the Reuters report, so independence of the two sources is partial. Bahrain hosts the US Fifth Fleet; no Huawei restriction found."
+    },
+    {
+      "id": "BHR-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "stc Bahrain",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-16",
+      "still_current": null,
+      "summary": "stc Bahrain and Huawei signed a strategic agreement on joint R&D and market development for 5G-Advanced, AI-driven network operations, enterprise private 5G networks, cloud/edge computing and AI training.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.tradearabia.com/News/296222/stc-Bahrain-boosts-5G-network-AI-leadership-with-Huawei-deal",
+          "publisher": "TradeArabia",
+          "source_tier": "S3",
+          "date": "2025-06-16",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20250617/5g/stc-huawei-5g",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2025-06-17",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 1: described as a strategic/partnership agreement with no value, counterparty obligations or binding procurement stated. Both sources derive from the companies' press release. Signals continued Huawei centrality at stc Bahrain."
+    },
+    {
+      "id": "BHR-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Batelco (Beyon)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019",
+      "still_current": null,
+      "summary": "Ericsson supplied 5G New Radio, transport and core equipment for Batelco's commercial 5G launch in 2019; in April 2022 the pair signed an MoU extending into cloud-native 5G core, standalone 5G and NB-IoT.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://arabianbusiness.com/industries/technology/416703-batelco-partners-with-ericsson-to-deploy-5g-across-bahrain",
+          "publisher": "Arabian Business",
+          "source_tier": "S3",
+          "date": "2019",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20220418/featured/ericsson-secures-new-5g-deal-middle-east",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2022-04-18",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://gulfnews.com/technology/bahrain-to-use-huawei-in-5g-rollout-despite-us-warning-1.62924058",
+          "publisher": "Gulf News (Reuters)",
+          "source_tier": "S3",
+          "date": "2019-03-26",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so third pole. Tier 5 rests on RCR's reference to an Ericsson-built commercial non-standalone 5G network in 2019. still_current null: the 2022 MoU implies continuity but current RAN vendor status was not confirmed. Arabian Business article is undated; 2019 inferred from its reference to March licensing."
+    },
+    {
+      "id": "BHR-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Zain Bahrain",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-11-11",
+      "still_current": null,
+      "summary": "Zain Bahrain selected Ericsson to build its 5G network, covering 5G New Radio with Massive MIMO plus Ericsson Cloud Packet Core and VoLTE, upgrading its existing LTE network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/2019/11/zain-selects-ericsson-for-5g-in-bahrain",
+          "publisher": "Ericsson (press release)",
+          "source_tier": "S1",
+          "date": "2019-11-11",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/ericsson/ericsson-secures-zain-bahrain-5g-deal/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2019-11-11",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Third pole (Sweden). Contract value undisclosed; tier 3 for a vendor selection covering RAN and core. still_current null: not checked beyond 2019; launch status not confirmed in sources opened. Corporate press release treated as S1 company filing/IR per spec, though it is also vendor marketing."
+    },
+    {
+      "id": "BHR-005",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Amazon Web Services",
+      "local_actor": "Information & eGovernment Authority (iGA)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12-19",
+      "still_current": null,
+      "summary": "AWS and Bahrain's iGA announced Amazon Bedrock generative-AI services integrated into the government AWS cloud in Bahrain, giving public entities early access; iGA's Innovation Lab will use it to test and develop AI applications.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.iga.gov.bh/en/article/aws-bahrain-launches-amazon-bedrock-in-partnership-with-information-and-egovernment-authority",
+          "publisher": "Information & eGovernment Authority (iga.gov.bh)",
+          "source_tier": "S1",
+          "date": "2025-12-19",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://cairoscene.com/Business/AWS-Extends-Generative-AI-Capabilities-to-Bahrain-with-Amazon-Bedrock",
+          "publisher": "CairoScene",
+          "source_tier": "S3",
+          "date": "2025-12-21",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2025/12/22/aws-bahrain-launches-amazon-bedrock-in-partnership-with-iga/",
+          "publisher": "Middle East Africa Tech Watch",
+          "source_tier": "S3",
+          "date": "2025-12-22",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Model access through a US provider's managed service, so pole us. No specific model families (e.g. Claude, Llama) named. Tier 2: iGA wording is a plan/early-access pilot rather than adoption at scale. Builds on the AWS government cloud already covered by the global cloud layer; this finding is the model-access layer only."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found no Bahrain-specific large AI data-centre or campus project since 2023 with a named controller; results concerned Saudi/UAE"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "one search found no Bahrain accelerator purchase, Nvidia/AMD/Ascend deployment or export-licence report; results concerned Saudi HUMAIN and UAE"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found only a Huawei safe-city showcase event in Bahrain (not adoption) and no Hikvision/Dahua/Huawei surveillance contract"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Is Huawei still stc Bahrain's 5G RAN and core vendor in 2026, and is any US pressure (Fifth Fleet at Mina Salman) driving a swap?",
+    "Batelco/Beyon and Zain Bahrain current RAN vendors: confirm Ericsson remains sole supplier and whether any Huawei 4G legacy remains.",
+    "C-SIPA science/technology pillar: any binding AI, chip or data-centre commitments since 2024 (none found in the 2024 Washington Institute review)?",
+    "gdnonline report 'Bahrain taking pragmatic path on AI partnerships' could not be opened (CAPTCHA) - check for named partners.",
+    "Which models are exposed through iGA's Bedrock deployment, and has any ministry moved beyond the Innovation Lab pilot?",
+    "Any Bahrain sovereign/Arabic LLM effort or Nvidia GPU cluster (e.g. Beyon data centres) not surfaced in this pass."
+  ],
+  "searches_run": 9
+}

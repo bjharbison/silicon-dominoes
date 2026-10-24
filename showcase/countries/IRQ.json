@@ -1,0 +1,274 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "IRQ",
+  "name": "Iraq",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T09:19:05Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "IRQ-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Vodafone (Vodafone International)",
+      "local_actor": "National mobile company (Ministry of Communications, public pensions fund, Trade Bank of Iraq); Al-Salam Telecommunications",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09",
+      "still_current": null,
+      "summary": "Iraq set up a state-owned national mobile company, owned by the communications ministry, a public pension fund and a state bank, to roll out 5G nationwide, with Vodafone named as operator of the national 5G licence.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.agbi.com/telecoms/2025/09/iraq-launches-5g-company-with-vodafone-partnership/",
+          "publisher": "AGBI",
+          "source_tier": "S3",
+          "date": "2025-09",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.intellinews.com/iraq-establishes-national-mobile-company-with-vodafone-partnership-371123/",
+          "publisher": "bne IntelliNews",
+          "source_tier": "S3",
+          "date": "2025-09",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/wireless-networks/17514-iraq-in-talks-with-foreign-companies-to-operate-its-first-5g-network.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2024-10-24",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded third (UK) because Vodafone is documented as the network operator, which under the controller rule makes it the controller; the radio/core equipment vendor for the 5G network was not named in any source seen and would set the pole if Vodafone only manages it. Tier 2: cabinet approval (Dec 2024) and company formation, no signed operating contract or value seen. The Developing Telecoms piece (Oct 2024) gives background on the state-held licence via Al-Salam but does not name Vodafone, so it does not corroborate."
+    },
+    {
+      "id": "IRQ-002",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Ericsson, Huawei, Nokia",
+      "local_actor": "Zain Iraq",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-01",
+      "still_current": null,
+      "summary": "Zain Iraq launched nationwide 4G-LTE service in January 2021, naming Ericsson, Huawei and Nokia as its equipment vendors.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.iq.zain.com/en/4g-press-release",
+          "publisher": "Zain Iraq",
+          "source_tier": "S1",
+          "date": "2021-01",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://trade.gov/country-commercial-guides/iraq-telecommunications",
+          "publisher": "US International Trade Administration (Country Commercial Guide)",
+          "source_tier": "S1",
+          "date": "2021-11-02",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null because the 4G network is multi-vendor (Huawei PRC; Ericsson and Nokia third) and regional or RAN/core shares were not found. The US commercial guide says Iraqi mobile operators generally use Ericsson and Huawei for 4G LTE, which suggests Huawei presence is wider than Zain alone. Asiacell and Korek 4G vendors were not established."
+    },
+    {
+      "id": "IRQ-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Zain Iraq (Kurdistan region)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-03-28",
+      "still_current": null,
+      "summary": "Zain Iraq reported completing a USD 46 million network modernisation with Huawei in the Kurdistan region, upgrading backhaul from towers to core and expanding microwave and fibre transmission.",
+      "announced_value_usd": 46000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.iq.zain.com/en/-zain-partners-with-huawei-to-modernize-its-network-in-kurdistan-to-provide-the-latest-communication-technology-to-more-than-one-million-subscribers-i",
+          "publisher": "Zain Iraq",
+          "source_tier": "S1",
+          "date": "2018-03-28",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Transmission/backhaul equipment, so vendor Huawei sets the pole. Pre-2020; no source confirmed the equipment is still in service, so still_current null. Single opened S1 company release, so medium."
+    },
+    {
+      "id": "IRQ-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "General Communications and Information Company (Ministry of Communications)",
+      "local_actor": "General Communications and Information Company",
+      "builder": "Nokia (role not stated)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09",
+      "still_current": null,
+      "summary": "Iraq's state General Communications and Information Company signed a contract with Nokia for the country's first government data centres for commercial use, at the Al-Tansar and Al-Rashid (Sinak) sites, to serve public and private customers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techafricanews.com/2025/09/18/iraq-signs-landmark-deal-to-launch-first-government-data-centers-for-commercial-use/",
+          "publisher": "TechAfrica News",
+          "source_tier": "S3",
+          "date": "2025-09-18",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator appears to be the state company, hence domestic; Nokia (Finnish) is the counterparty but its role (builder, equipment supplier or operator) was not stated, so it is recorded as builder only provisionally. Capacity, value and equipment vendors not found. Single opened S3 source."
+    },
+    {
+      "id": "IRQ-005",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "icetana AI",
+      "local_actor": "High Tech Enterprise / HTE Electronics Trading (Baghdad Safe City)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-19",
+      "still_current": null,
+      "summary": "Australian firm icetana AI won a roughly USD 1.7 million order for AI video-analytics software (facial and Arabic licence-plate recognition, loitering detection) for a new Baghdad Safe City camera system, via Iraqi partner High Tech Enterprise.",
+      "announced_value_usd": 1700000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.smallcaps.com.au/article/icetana-ai-contract-video-analytics-iraq-baghdad-safe-city",
+          "publisher": "Small Caps",
+          "source_tier": "S3",
+          "date": "2025-03-19",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "icetana is Australian, so the analytics software layer is coded third. Camera hardware and network vendors for Baghdad Safe City, and the prime contractor, were not named; Chinese hardware could sit underneath. Announced value is the order value reported (perpetual licence about USD 1.37m plus first-year maintenance); icetana's ASX announcement would be the S1 source."
+    },
+    {
+      "id": "IRQ-006",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": null,
+      "local_actor": "Baghdad provincial council / Government of Iraq",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2012-01-20",
+      "still_current": null,
+      "summary": "Iraqi authorities reported a preliminary agreement and talks with unnamed Chinese companies on about 250,000 surveillance cameras and a control centre for Baghdad, with about IQD 10 billion allocated.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.iraq-businessnews.com/2012/01/20/iraq-to-use-chinese-surveillance-systems/",
+          "publisher": "Iraq Business News (citing AKnews)",
+          "source_tier": "S3",
+          "date": "2012-01-20",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: a preliminary agreement only; no vendor named, no contract confirmed. Pre-2020 and no evidence it proceeded, so still_current null. Controller unknown; pole prc rests only on the reported Chinese counterparties."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "one data-centre/AI search found no accelerator purchase, deployment or licence reporting for Iraq"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found a Sept 2026 Iraqi News headline on free Google Gemini Pro access but the page failed to load, so terms are unknown; no national model or ministry partnership confirmed"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power project surfaced; Oct 2026 reporting cites chronic power shortages as a barrier to data centres"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which equipment vendor (Huawei, Nokia, Ericsson, ZTE) will supply the national 5G network operated by Vodafone, and has a binding operating contract been signed?",
+    "Asiacell and Korek 4G RAN/core vendors and any 2024-25 licence renewal terms.",
+    "Baghdad Safe City: prime contractor and camera/network hardware vendors (Huawei/Hikvision/Dahua?) beneath icetana analytics; icetana ASX announcement as S1.",
+    "Nokia's role and the capacity/value of the GCIC government data centres (Al-Tansar, Al-Rashid).",
+    "Iraq Business News/Light Reading items on a Huawei USD 275m Iraq order and a Nokia broadband backbone deal were seen only as snippets with no dates; establish what and when.",
+    "Terms of the reported Sept 2026 Google Gemini Pro free-access arrangement (who signed, scope).",
+    "Kurdistan region: Korek/Asiacell/Newroz vendors and any KRG surveillance or data-centre projects.",
+    "Sixth submarine cable landing contract at Al-Fao (Aug 2025): Bahraini counterparty and cable supplier (HMN Tech?)."
+  ],
+  "searches_run": 10
+}

@@ -1,0 +1,205 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "TUN",
+  "name": "Tunisia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T09:19:23Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "TUN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ooredoo Tunisie",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-03",
+      "still_current": null,
+      "summary": "Ooredoo Group announced a partnership with Huawei to upgrade its core networks toward 5G core / 5.5G readiness across several markets including Tunisia, where Ooredoo is the market leader.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomtv.com/content/5g/ooredoo-partners-with-huawei-to-prepare-core-networks-to-transition-to-5-5g-49896/",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2024-03-12",
+          "retrieved_at": "2026-10-24T09:25:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://algerie-eco.com/2024/03/14/telecoms-ooredoo-confie-a-huawei-la-preparation-de-son-reseau-central-a-la-5-5g-en-algerie-et-en-tunisie/",
+          "publisher": "Algerie Eco (relaying QNA / Agence Ecofin)",
+          "source_tier": "S3",
+          "date": "2024-03-14",
+          "retrieved_at": "2026-10-24T09:25:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 because the sources call it a partnership without stating a binding contract or value; core network only, RAN vendor not established. Both sources relay the same Ooredoo/QNA announcement, so not treated as independent corroboration. Ooredoo is Qatari-controlled but equipment vendor sets the pole."
+    },
+    {
+      "id": "TUN-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Tunisie Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-10",
+      "still_current": null,
+      "summary": "At a 2022 strategy summit marking 20 years of partnership, Tunisie Telecom and Huawei signed an MoU and agreed to set up an innovation lab to support 5G development.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.zawya.com/en/projects/bri/tunisie-telecom-and-huawei-to-launch-innovation-laboratory-j34raopo",
+          "publisher": "Zawya Projects",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T09:25:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.tuniscope.com/article/340862/high-tech/tech/tunisie-telecom-et-huawei-ensemble-pour-la-creation-de-l-avenir-215511",
+          "publisher": "Tuniscope",
+          "source_tier": "S3",
+          "date": "2022-10-03",
+          "retrieved_at": "2026-10-24T09:25:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Date from Tuniscope URL/snippet (not opened); Zawya page undated. A 20-year partnership suggests Huawei is a long-standing Tunisie Telecom supplier, but the 5G RAN vendor for the February 2025 launch was not named in sources opened."
+    },
+    {
+      "id": "TUN-003",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "NVIDIA",
+      "local_actor": "Ooredoo Tunisie",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10",
+      "still_current": null,
+      "summary": "At its first AI Summit, Ooredoo Tunisia announced a collaboration with NVIDIA to acquire high-performance GPUs for a sovereign AI-as-a-Service platform aimed at government bodies, startups and business clients.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://menastartupdigest.com/?p=16809",
+          "publisher": "MENA Startup Digest",
+          "source_tier": "S3",
+          "date": "2025-10-05",
+          "retrieved_at": "2026-10-24T09:25:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://arabianmarketer.ae/?p=41096",
+          "publisher": "Arabian Marketer",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T09:25:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: an announced collaboration and intent to buy GPUs; no quantity, value, contract or deployment found. 'Sovereign' branding notwithstanding, accelerator vendor sets the pole. Neither source is S1/S2."
+    },
+    {
+      "id": "TUN-004",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "NVIDIA",
+      "local_actor": "Novation City technology park, Sousse",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09-17",
+      "still_current": null,
+      "summary": "NVIDIA announced an AI innovation centre at Novation City in Sousse offering Tunisian developers training, technology access and networks to encourage AI adoption.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.wearetech.africa/fr/fils/actualites/tech/nvidia-lance-un-centre-d-innovation-en-intelligence-artificielle-en-tunisie",
+          "publisher": "We Are Tech Africa",
+          "source_tier": "S2",
+          "date": "2024-09-18",
+          "retrieved_at": "2026-10-24T09:25:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Coded silicon as an NVIDIA ecosystem/developer programme; no hardware deployment or scale stated, so tier 2 (pilot-type programme). Ecosystem signal rather than installed compute."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search surfaced only a planned 20MW Solecrypt solar data centre in Bizerte (status unclear, possibly not proceeding) and commentary; no large DC/AI campus with confirmed controller and stage found"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found national AI strategy coverage but no government partnership with a frontier model provider or sovereign model"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "surveillance search found municipal CCTV expansion (Grand Tunis 2018-19, Monastir smart-city video surveillance under review June 2026) with no vendor named"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendors (Huawei, Ericsson, Nokia, ZTE) built the 5G RAN for Tunisie Telecom, Ooredoo Tunisie and Orange Tunisie at the February 2025 launch?",
+    "Is the Ooredoo-Huawei 5G core upgrade a binding contract and has it been deployed in Tunisia?",
+    "Has Ooredoo Tunisia actually purchased/deployed NVIDIA GPUs for its sovereign AI-as-a-Service platform; where are they hosted?",
+    "Vendor for Grand Tunis and Monastir municipal video surveillance systems (Huawei/Hikvision/Dahua?).",
+    "Any Tunisian government LLM/e-government AI deployment and its model provider.",
+    "Status of Solecrypt Bizerte data centre and any other large data-centre projects."
+  ],
+  "searches_run": 8
+}

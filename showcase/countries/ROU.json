@@ -1,0 +1,313 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ROU",
+  "name": "Romania",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T09:24:54Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ROU-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Romanian Government / CSAT; operators Vodafone, Orange, Telekom Romania, Digi",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei (and likely ZTE) equipment in Romanian operators' mobile core and radio networks",
+      "reversal_reason": "geopolitical",
+      "date": "2024-02",
+      "still_current": null,
+      "summary": "Under Romania's June 2021 5G security law, only CSAT-cleared vendors may supply 5G gear; in early 2024 the government rejected Huawei's authorisation and its appeal, forcing removal from cores within five years and RAN within seven.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://telecoms.com/5g-6g/romania-rejects-huawei-appeal-against-5g-ban",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2024-03-04",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://WWW.LIGHTREADING.COM/5g/vodafone-orange-face-5g-rip-and-replace-as-romania-bans-huawei",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2024-03-04",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://romania-insider.com/huawei-sues-romania-authorization-5g-2024",
+          "publisher": "Romania Insider",
+          "source_tier": "S3",
+          "date": "2024-04-10",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-business/telecom-regulation/10980-romania-approves-law-that-could-block-chinese-vendors-from-5g.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2021-04-16",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://SeeNews.com/news/huawei-suing-romania-over-ban-on-5g-infrastructure-deployment-854407",
+          "publisher": "SeeNews",
+          "source_tier": "S2",
+          "date": "2024-04-11",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Coded as reversal of operational (tier 5) Huawei network equipment: Developing Telecoms (2021) reports Digi, Orange, Telekom Romania and Vodafone all used Huawei/ZTE alongside Nokia/Ericsson. Reason geopolitical (national-security assessment by CSAT). Huawei sued CSAT, the digitisation ministry and the PM in 2024; outcome not established in sources opened, so still_current null. A Romania-US 5G memorandum is mentioned by Romania Insider (2023) as context but was not separately coded because no dated primary source was opened."
+    },
+    {
+      "id": "ROU-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (about 80% of urban sites); Samsung (about 20%)",
+      "local_actor": "Vodafone Romania",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-03",
+      "still_current": null,
+      "summary": "Vodafone Romania, which per Strand Consult relied entirely on Chinese vendors for 4G RAN, is replacing Huawei with Ericsson on about 80% of urban sites and Samsung on about 20%; rural sites shared with Orange face a separate tender.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://WWW.LIGHTREADING.COM/5g/vodafone-orange-face-5g-rip-and-replace-as-romania-bans-huawei",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2024-03-04",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson (Sweden) and Samsung (Korea) are both third pole; combined in one finding because the split is a single replacement programme. Tier 3 assumes vendor awards were signed; no contract value or date found. Orange Romania's replacement vendor was not named in sources opened. Ericsson, Samsung and Nokia hold CSAT 5G authorisations (Romania Insider, Aug 2023), which is a regulatory clearance, not coded as adoption."
+    },
+    {
+      "id": "ROU-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "ClusterPower (Romanian-founded)",
+      "local_actor": "ClusterPower",
+      "builder": null,
+      "financier": "Accelerated Infrastructure Capital (AIC), equity partner",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12",
+      "still_current": null,
+      "summary": "ClusterPower and equity partner AIC announced an 800MW AI data-centre region near Craiova: 512MW in three phases at Mischii (70MW ready end-2026) plus about 300MW at Fauresti from 2029; ClusterPower already operates a Mischii facility.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/accelerated-infrastructure-capital-partners-with-romanias-clusterpower-on-800mw-data-center-build-out/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-12-19",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/clusterpower-breaks-ground-on-hyperscale-campus-in-romania",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2021-10-20",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole domestic because ClusterPower was founded by Romanian entrepreneurs (DCD 2021); AIC's stake size and nationality were not stated, so control could shift. Tier 3 for a signed equity partnership with no disclosed value; the expansion's construction start was not confirmed. First Mischii phase launched April 2022 per DCD. Both sources are one host, so not corroborated. DCD describes the infrastructure as Nvidia-certified; no GPU deployment coded."
+    },
+    {
+      "id": "ROU-004",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "ICI Bucharest with Politehnica Bucharest, co-funded under EuroHPC JU",
+      "local_actor": "National Institute for Research and Development in Informatics (ICI Bucharest)",
+      "builder": null,
+      "financier": "EuroHPC Joint Undertaking (EU)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10",
+      "still_current": null,
+      "summary": "Romania was selected in October 2025 for a EuroHPC AI Factory hosted by ICI Bucharest with Politehnica Bucharest, to acquire an AI-optimised supercomputer; the institute's director expected operation around spring 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.romania-insider.com/romania-ai-facotory-european-network-oct-2025",
+          "publisher": "Romania Insider",
+          "source_tier": "S3",
+          "date": "2025-10-10",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.thediplomat.ro/2025/10/10/ici-bucharest-and-politehnica-bucharest-to-build-romanias-first-ai-factory/",
+          "publisher": "The Diplomat Bucharest",
+          "source_tier": "S3",
+          "date": "2025-10-10",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://romania-insider.com/romania-first-ai-factory-operational-2027",
+          "publisher": "Romania Insider",
+          "source_tier": "S3",
+          "date": "2026-05-05",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/romania_en",
+          "publisher": "EuroHPC Joint Undertaking",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: hosted by a Romanian state institute but EuroHPC AI Factory systems are typically co-owned by the EU joint undertaking, so control sits between domestic and third (EU); ownership split not found. Tier 2 because selection/project start only, no procurement award seen. Budget and accelerator vendor not stated in any source opened; no silicon finding coded."
+    },
+    {
+      "id": "ROU-005",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "OpenLLM-Ro (Politehnica Bucharest, University of Bucharest, Institute for Logic and Data Science)",
+      "local_actor": "OpenLLM-Ro research consortium (funded by BRD Groupe Societe Generale)",
+      "builder": null,
+      "financier": null,
+      "base_model": "Llama-2-7B (also Mistral-7B for RoMistral)",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05",
+      "still_current": null,
+      "summary": "Romanian researchers released OpenLLM-Ro, open-weight Romanian-language models (RoLlama2-7b, RoMistral-7b) fine-tuned from Llama 2 and Mistral, with datasets and code on Hugging Face; no government deployment is described.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2405.07703v4",
+          "publisher": "OpenLLM-Ro technical report (arXiv)",
+          "source_tier": "S1",
+          "date": "2024-05-16",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Weights released by Romanian academic bodies, so domestic; academic rather than state-run, and scale 'national' only as the reference Romanian-language model. Main base is Llama 2 (Meta, us); RoMistral's base is Mistral (EU, third). Search results show a later RoLlama3.1-8b, not opened. Tier 2: research release, no adoption found. BRD is a Societe Generale subsidiary (funder only)."
+    },
+    {
+      "id": "ROU-006",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision; Dahua",
+      "local_actor": "Romanian public bodies incl. at least 28 army units, SRI, county police, Border Police, Gendarmerie, prisons, Senate",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-02",
+      "still_current": null,
+      "summary": "RFE/RL found Hikvision or Dahua cameras bought through public procurement by hundreds of Romanian institutions, including military units at Deveselu and Cyber Defence Command; no ban exists, and about 200,000 such devices were internet-connected in 2021.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://romania.europalibera.org/a/tara-in-service-camere-de-supraveghere-chinezesti-armata/32821111.html",
+          "publisher": "Radio Free Europe/Radio Liberty Romania (Europa Libera)",
+          "source_tier": "S4",
+          "date": "2024-02-18",
+          "retrieved_at": "2026-10-24T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded as tier 5 (widely operational) but these are mostly small direct purchases, not an integrated safe-city system. RFE/RL is US-government funded, so coded S4 under the state-affiliated rule even though it is investigative reporting citing procurement records; reviewer may reclassify. Defence ministry says its systems are closed-circuit."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no named accelerator purchase found; AI Factory hardware vendor and ClusterPower GPU deployments not disclosed in sources opened"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific plant surfaced beyond ClusterPower's onsite gas generation and substation, recorded in ROU-003"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Status of Huawei's lawsuit against CSAT/government over the 2024 5G authorisation denial, including any Constitutional Court (CCR) referral and a court order to disclose classified documents (RFE/RL page could not be opened).",
+    "Date, text and current status of the Romania-US 5G security memorandum (reported as 2019).",
+    "Orange Romania, Telekom/Digi replacement vendors for Huawei RAN/core and progress against the 2026 core / 2028 RAN deadlines.",
+    "ZTE: was any authorisation request filed or denied?",
+    "EuroHPC RO AI Factory: budget, EU/national split, ownership of the system, and accelerator vendor once procured.",
+    "ClusterPower/AIC: AIC stake and domicile; whether MSC1 70MW phase construction has started; tenants and GPU vendor.",
+    "Any Romanian government adoption of a frontier model provider (OpenAI, Anthropic, Google, Mistral) or a state-backed national LLM.",
+    "Whether any Romanian authority has acted to restrict Hikvision/Dahua cameras since February 2024."
+  ],
+  "searches_run": 10
+}

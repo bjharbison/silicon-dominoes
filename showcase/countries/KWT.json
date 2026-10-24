@@ -1,0 +1,365 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "KWT",
+  "name": "Kuwait",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T09:19:14Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "KWT-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Zain Kuwait; CITRA (trial supervision)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-01",
+      "still_current": null,
+      "summary": "Zain Kuwait ran a 5.5G trial with Huawei under CITRA supervision, reporting 10 Gbps speeds and URLLC tests; this followed a 2021 Zain Kuwait–Huawei MoU on 5G standalone, coverage and FWA upgrades.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20240104/5g/zain-kuwait-completes-5g-test-huawei",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2024-01-04",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-business/operator-news/12122-zain-kuwait-and-huawei-sign-mou-to-advance-5g-infrastructure.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2021-10-19",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 for a pilot/trial; the 2021 MoU alone would be tier 1. Neither source states Huawei is Zain Kuwait's incumbent RAN/core vendor, though repeated 5G/5.5G work with Huawei suggests it; not coded as an operational deployment. Sources evidence two related events, so not counted as corroboration."
+    },
+    {
+      "id": "KWT-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "stc Kuwait",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-03",
+      "still_current": null,
+      "summary": "stc Kuwait announced a commercial 5G RedCap fixed-wireless-access service built on Huawei network equipment, presented at an MWC 2024 side forum as a Middle East first.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://techblog.comsoc.org/?p=1071869",
+          "publisher": "IEEE ComSoc Techblog (relaying Huawei news release)",
+          "source_tier": "S4",
+          "date": "2024-03",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://stc.com.kw/en/news/07-03-2023-stc-Kuwait-and-Huawei-Sign-MoU",
+          "publisher": "stc Kuwait",
+          "source_tier": "S1",
+          "date": "2023-03-07",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Opened page republishes Huawei's own release (vendor marketing, S4); claim of commercial operation is not independently verified. Whether Huawei supplies stc Kuwait's RAN, core or only FWA elements is unstated. The 2023 stc Kuwait–Huawei MoU was seen only as a search title."
+    },
+    {
+      "id": "KWT-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ooredoo Kuwait",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-03-02",
+      "still_current": null,
+      "summary": "Ooredoo Group updated its 2021 five-year strategic 5G agreement with Huawei, under which Huawei will deploy new networks for Ooredoo in Kuwait, Oman and Iraq.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.developingtelecoms.com/telecom-business/operator-news/14644-ooredoo-expands-5g-partnership-with-huawei-across-mena-markets.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2023-03-02",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Group-level framework agreement with no Kuwait-specific scope, value or RAN/core split, hence tier 2. Deployment progress in Kuwait not confirmed."
+    },
+    {
+      "id": "KWT-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "CITRA (Communications and Information Technology Regulatory Authority)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07",
+      "still_current": null,
+      "summary": "Kuwait's telecom regulator CITRA signed an MoU with Huawei Kuwait on knowledge exchange, AI, cloud and advanced 5G applications and capacity building, alongside a white paper on Kuwait in the 5G-Advanced and AI era.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.aljarida.com/article/137445",
+          "publisher": "Al-Jarida",
+          "source_tier": "S3",
+          "date": "2026-07-12",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Non-binding cooperation MoU (tier 1) spanning several layers; coded under networks as the 5G-Advanced emphasis is clearest. Exact signing date not given; date is the July 2026 reporting month."
+    },
+    {
+      "id": "KWT-005",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Ooredoo Kuwait (Ooredoo Group, Qatar)",
+      "local_actor": "Ooredoo Kuwait",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11",
+      "still_current": null,
+      "summary": "Ooredoo Kuwait announced the launch of what it calls Kuwait's first sovereign AI data centre, developed with Nvidia and running H200 GPUs for generative AI and HPC workloads.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.middleeastainews.com/p/ooredoo-kuwait-launches-countrys",
+          "publisher": "Middle East AI News",
+          "source_tier": "S2",
+          "date": "2025-11-10",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://menastartupdigest.com/kuwaits-ooredoo-launches-nations-first-sovereign-ai-data-centre-with-nvidia/",
+          "publisher": "MENA Startup Digest",
+          "source_tier": "S3",
+          "date": "2025-11-11",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator is Ooredoo Kuwait, majority-held by Qatar's Ooredoo Group, so third pole (Gulf) rather than domestic. Capacity, GPU count and value undisclosed; 'launched' coded as tier 5 but scale may be small. Both opened sources appear to relay the same company announcement, so not treated as independent corroboration.",
+      "bundle_id": "KWT-B1"
+    },
+    {
+      "id": "KWT-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Ooredoo Kuwait",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11",
+      "still_current": null,
+      "summary": "Ooredoo Kuwait's sovereign AI data centre runs Nvidia H200 Tensor Core GPUs; the GPU count was not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.middleeastainews.com/p/ooredoo-kuwait-launches-countrys",
+          "publisher": "Middle East AI News",
+          "source_tier": "S2",
+          "date": "2025-11-10",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://menastartupdigest.com/kuwaits-ooredoo-launches-nations-first-sovereign-ai-data-centre-with-nvidia/",
+          "publisher": "MENA Startup Digest",
+          "source_tier": "S3",
+          "date": "2025-11-11",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Deployment likely falls under Ooredoo Group's 2024 Nvidia Cloud Partner deal for thousands of GPUs across MENA (per Middle East AI News); Kuwait share unknown. Same single-announcement caveat as KWT-005.",
+      "bundle_id": "KWT-B1"
+    },
+    {
+      "id": "KWT-007",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "Central Agency for Information Technology (CAIT); CITRA",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03",
+      "still_current": null,
+      "summary": "Kuwait's CAIT and CITRA signed a strategic partnership with Microsoft covering an AI data centre, a digital-economy centre, cloud-audit excellence centre, Microsoft 365 Copilot access for civil servants, and AI/cyber training for officials.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://kuwaittimes.com/article/25220/kuwait/other-news/kuwait-partners-with-microsoft-to-drive-ai-and-digital-transformation/amp",
+          "publisher": "Kuwait Times",
+          "source_tier": "S3",
+          "date": "2025-03-06",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.citra.gov.kw/sites/en/Pages/NewsDetails.aspx?NewsID=95",
+          "publisher": "CITRA",
+          "source_tier": "S1",
+          "date": "2025-03",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://gulfbase.com/news/kuwait-partners-with-microsoft-to-drive-ai-and-digital-transformation/207033",
+          "publisher": "Gulfbase",
+          "source_tier": "S3",
+          "date": "2025-03-06",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Coded on the models layer for government Copilot adoption (Microsoft-controlled service, US pole); tier 2 because the agreement is a framework partnership with no value or binding terms reported. The 'AI data centre' element likely overlaps the Azure AI region already in the global layer and is not coded separately. CITRA page seen only in search results; its NewsID date is assumed to match."
+    },
+    {
+      "id": "KWT-008",
+      "layer": "cloud",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Zain Group",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-10",
+      "still_current": null,
+      "summary": "Huawei selected Zain Group as a strategic partner to offer Huawei Cloud services, launching first in Kuwait and across MENA, under an MoU signed in Shanghai.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://kuwaittimes.com/zain-group-selected-by-huawei-to-offer-huawei-cloud-services-in-kuwait-mena/",
+          "publisher": "Kuwait Times",
+          "source_tier": "S3",
+          "date": "2018-10-28",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reseller/partner MoU, not a Huawei Cloud region (regions are in the global layer). Pre-2020; no evidence found that the service launched or remains active, so still_current null."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on Interior Ministry/safe-city cameras found camera-mandate laws and MoI CCTV stories with no named vendor; no Huawei/Hikvision/Dahua deployment found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies Zain Kuwait, Ooredoo Kuwait and stc Kuwait 4G/5G RAN and core today (Huawei share vs Nokia/Ericsson)? Operator filings or vendor awards needed.",
+    "Ooredoo Kuwait AI data centre: GPU count, MW capacity, location and whether it is operational at scale.",
+    "Is the 'AI data centre' in the March 2025 CAIT/CITRA–Microsoft agreement the same as the announced Azure region; is Copilot deployed government-wide and on what contract?",
+    "Kuwait Ministry of Interior / municipal CCTV and safe-city vendors.",
+    "Did the 2018 Zain–Huawei Cloud partnership ever launch services in Kuwait, and is it still active?",
+    "Any national Arabic LLM or OpenAI/Google government partnership in Kuwait (not found in this pass)."
+  ],
+  "searches_run": 9
+}

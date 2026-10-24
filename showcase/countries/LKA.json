@@ -1,0 +1,288 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "LKA",
+  "name": "Sri Lanka",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T09:19:24Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "LKA-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Dialog Axiata",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-05",
+      "still_current": null,
+      "summary": "Ericsson agreed at MWC 2026 to supply Dialog Axiata's 5G radio access network, including 3.5GHz Massive MIMO radios, AI-driven RAN automation software and cloud-native infrastructure for network management, plus rollout and optimisation services, for nationwide 5G expansion.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/2/2026/ericsson-to-deploy-5g-ran-in-sri-lanka-with-dialog-axiata",
+          "publisher": "Ericsson (press release)",
+          "source_tier": "S1",
+          "date": "2026-03-05",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://lmd.lk/ericsson-signs-agreement-with-dialog-axiata-to-deploy-5g-ran-in-sri-lanka/",
+          "publisher": "LMD (Lanka Monthly Digest)",
+          "source_tier": "S3",
+          "date": "2026-03-07",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so third pole. Contract value not disclosed. Neither source says whether Ericsson replaces an incumbent RAN vendor or names Dialog's 4G/core suppliers; no exclusion of Huawei/ZTE is implied. Dialog Axiata is majority-owned by Malaysia's Axiata (operator, not controller under the equipment rule)."
+    },
+    {
+      "id": "LKA-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SubCom",
+      "local_actor": "SLT-Mobitel (Matara landing station)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12-29",
+      "still_current": null,
+      "summary": "SLT-Mobitel completed the Sri Lankan landing of the 130Tbps SEA-ME-WE 6 submarine cable at Matara with US cable maker SubCom; commercial operation was expected by mid-2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/slt-mobitel-completes-submarine-cable-landing-in-matara/",
+          "publisher": "Submarine Telecoms Forum",
+          "source_tier": "S2",
+          "date": "2025-01-13",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://businesstoday.lk/slt-mobitel-completes-historic-sea-me-we-6-submarine-cable-landing-in-matara/?pdf=28125",
+          "publisher": "Business Today (Sri Lanka)",
+          "source_tier": "S3",
+          "date": "2025-01",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2025/01/08/slt-mobitel-successfully-lands-sea-me-we-6-submarine-cable-in-sri-lanka-boosting-global-connectivity/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S3",
+          "date": "2025-01-08",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Sources describe SubCom as collaborating on the landing rather than explicitly as the system supplier; coded us on that basis. Tier 4 (cable landed/construction) rather than 5 because commercial operation by mid-2026 was not confirmed in this pass. Sri Lankan investment value not stated. Whether HMN Tech was ever in contention for this system was not checked."
+    },
+    {
+      "id": "LKA-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "SLT-Mobitel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025",
+      "still_current": null,
+      "summary": "SLT-Mobitel trialled 5G-Advanced earlier in 2025 using ZTE radio equipment, before it and Dialog launched commercial 5G in December 2025 on 3.5GHz spectrum won at auction.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/19518-dialog-axiata-and-slt-mobitel-launch-commercial-5g-services.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2025-12-19",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 2 (trial). The source does not confirm ZTE supplies SLT-Mobitel's commercial 5G network; if it does, this would be a tier 3-5 PRC networks finding at the state-majority operator."
+    },
+    {
+      "id": "LKA-004",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Government of India (grant funder; procurement limited to Indian firms on India-origin MOSIP platform)",
+      "local_actor": "Ministry of Digital Economy, Sri Lanka (SL-UDI)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08",
+      "still_current": null,
+      "summary": "India is funding Sri Lanka's Unique Digital Identity system, built on the MOSIP open-source platform; bidding was restricted to Indian firms, with TCS, Infosys and Protean under final evaluation in August 2026 and no award yet reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.biometricupdate.com/202608/sri-lanka-digital-id-rollout-advances-as-procurement-nears-completion",
+          "publisher": "Biometric Update",
+          "source_tier": "S2",
+          "date": "2026-08-17",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://idtechwire.com/sri-lanka-taps-indian-firms-for-mosip-based-digital-id-eyes-pilot-launch-by-mid-2026/",
+          "publisher": "ID Tech Wire",
+          "source_tier": "S2",
+          "date": "2025-07-02",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ft.lk/news/Five-Indian-firms-shortlisted-for-digital-ID-project/56-784223",
+          "publisher": "Daily FT",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded third (India) because funding, the eligible vendor pool and the platform's origin are Indian; once live, the operator will be the Sri Lankan state and the pole could arguably become domestic (MOSIP is open source). Tier 2 pending a signed system-integrator award. Grant amounts differ across sources (Rs 10.4bn total grant in 2025 reporting; INR 3bn cited in August 2026); not coded as a value."
+    },
+    {
+      "id": "LKA-005",
+      "layer": "facilities",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Sri Lanka Telecom (SLT)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-16",
+      "still_current": null,
+      "summary": "SLT says four to five parties are discussing data-centre operations with it and it has issued a request for information; AWS, Azure, Oracle, Alibaba and Huawei reportedly held talks with the government about AI data centres.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sundaytimes.lk/260816/business-times/slt-aiming-to-set-up-data-centres-with-global-hyperscalers-652432.html",
+          "publisher": "Sunday Times (Sri Lanka)",
+          "source_tier": "S3",
+          "date": "2026-08-16",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: no counterparty is named for SLT's own talks, and the hyperscaler talks with government span both US and PRC firms. Tier 1 (talks/RFI only). No Colombo Port City data-centre project was confirmed in this pass."
+    },
+    {
+      "id": "LKA-006",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Sigiri.Ai",
+      "local_actor": "Sigiri.Ai",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-11-19",
+      "still_current": null,
+      "summary": "Sigiri.Ai, founded by Lasitha Gunasinghe, announced what it called the first Sinhala and native Tamil large language models; no availability, users or government role were described.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.dailymirror.lk/business-news/Sigiri-Ai-launches-first-ever-Sinhala-and-Tamil-Large-Language-Models/273-296239",
+          "publisher": "Daily Mirror (Sri Lanka)",
+          "source_tier": "S3",
+          "date": "2024-11-19",
+          "retrieved_at": "2026-10-24T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded domestic on the inference that Sigiri.Ai is a Sri Lankan firm (not stated in the source). Base model not disclosed. Tier 2 because deployment scale is unknown; scale municipal as a private small-scale launch with no government adoption."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or deployments surfaced in data-centre and network searches; silicon not given a dedicated search"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power project surfaced; reporting mentions electricity concessions/subsidy proposals for data centres only"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies SLT-Mobitel's commercial 5G RAN and core (ZTE, Huawei or other), and Hutch Sri Lanka's network vendors?",
+    "Is Huawei an incumbent RAN/core vendor at Dialog that Ericsson is replacing or supplementing?",
+    "Was Lanka Government Cloud (ICTA) built or expanded by Huawei or other PRC vendors, and under what financing?",
+    "Do Sri Lanka Police or Colombo city CCTV/safe-city systems use Huawei, Hikvision or Dahua equipment? Only pre-2015 local reports with no named vendor surfaced.",
+    "Has SEA-ME-WE 6 entered commercial service in Sri Lanka, and does Sri Lanka host any PRC-built (HMN Tech) cable landing?",
+    "Which Indian firm wins the SL-UDI system-integrator award and on what terms; does India retain any operational access?",
+    "Any concrete Colombo Port City or other data-centre projects (controller, tier) beyond SLT's RFI and hyperscaler talks?"
+  ],
+  "searches_run": 10
+}
