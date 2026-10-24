@@ -1,0 +1,532 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "POL",
+  "name": "Poland",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T05:25:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "POL-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "High-risk vendors (Huawei widely cited; none formally designated)",
+      "local_actor": "Ministry of Digital Affairs",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Chinese-vendor (chiefly Huawei) equipment in operators and essential entities, via high-risk-vendor designation",
+      "reversal_reason": "geopolitical",
+      "date": "2026-02-19",
+      "still_current": true,
+      "summary": "Amended National Cybersecurity System (KSC) Act, signed February 2026, lets the digital minister designate high-risk suppliers (criteria include non-NATO control); state-critical entities must stop buying and remove their products within seven years.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://notesfrompoland.com/2026/02/21/poland-tightens-cybersecurity-rules-targeting-non-nato-suppliers/",
+          "publisher": "Notes from Poland",
+          "source_tier": "S3",
+          "date": "2026-02-21",
+          "retrieved_at": "2026-10-24T05:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://grupapolsatplus.pl/sites/default/files/documents/2026/polsat_plus_group_ir_newsletter_4_2026.pdf",
+          "publisher": "Polsat Plus Group (IR newsletter, relaying PAP)",
+          "source_tier": "S1",
+          "date": "2026-02-02",
+          "retrieved_at": "2026-10-24T05:14:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.cliffordchance.com/briefings/2026/03/poland--delayed-implementation-of-the-nis2-directive-.html",
+          "publisher": "Clifford Chance (legal briefing)",
+          "source_tier": "S2",
+          "date": "2026-03",
+          "retrieved_at": "2026-10-24T05:14:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a prospective reversal of operational Chinese network equipment: no vendor had been designated in sources seen, though press dubs it 'Lex Huawei'. In force from 2 April 2026 per Clifford Chance, but the president referred the high-risk-vendor provisions to the Constitutional Tribunal, so they could lapse. Tier 5 is the tier of the installed kit that would be removed."
+    },
+    {
+      "id": "POL-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "P4 (Play)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-19",
+      "still_current": null,
+      "summary": "Play told GSMONLINE that Huawei equipment makes up about half of its network, down from a ministry estimate of roughly 90% Chinese kit, with Ericsson's share rising.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gsmonline.pl/artykuly/ministestwo-cyfryzacji-nie-zna-aktualnych-udzialow-huawei-w-polskich-sieciach",
+          "publisher": "GSMONLINE",
+          "source_tier": "S2",
+          "date": "2025-03-19",
+          "retrieved_at": "2026-10-24T05:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://gsmonline.pl/artykuly/huawei-zostaje-w-polskich-sieciach-komorkowych",
+          "publisher": "GSMONLINE",
+          "source_tier": "S2",
+          "date": "2025-03-19",
+          "retrieved_at": "2026-10-24T05:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both sources are GSMONLINE on one day (one host), so not corroborated. Share is operator-reported and approximate; RAN vs core split not stated."
+    },
+    {
+      "id": "POL-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "P4 (Play)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-11-03",
+      "still_current": null,
+      "summary": "Ericsson extended its 5G radio-network partnership with Iliad-owned Play, covering modernisation of RAN sites across Poland; Play holds about a third of the mobile market.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/eurobites-ericsson-extends-5g-ran-partnership-with-play-in-poland/d/d-id/773222",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2021-11-03",
+          "retrieved_at": "2026-10-24T05:13:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://gsmonline.pl/artykuly/ministestwo-cyfryzacji-nie-zna-aktualnych-udzialow-huawei-w-polskich-sieciach",
+          "publisher": "GSMONLINE",
+          "source_tier": "S2",
+          "date": "2025-03-19",
+          "retrieved_at": "2026-10-24T05:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so third pole. Value undisclosed. GSMONLINE (2025) infers Ericsson's share at Play grew as Huawei fell to ~50%; that is an inference, so not counted as corroboration."
+    },
+    {
+      "id": "POL-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Orange Polska",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-19",
+      "still_current": null,
+      "summary": "Orange Polska aimed during 2025 to cut Huawei's share of its network to 50%; GSMONLINE estimated it near 60%, against a ministry figure of about 70% Chinese equipment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gsmonline.pl/artykuly/ministestwo-cyfryzacji-nie-zna-aktualnych-udzialow-huawei-w-polskich-sieciach",
+          "publisher": "GSMONLINE",
+          "source_tier": "S2",
+          "date": "2025-03-19",
+          "retrieved_at": "2026-10-24T05:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://gsmonline.pl/artykuly/huawei-zostaje-w-polskich-sieciach-komorkowych",
+          "publisher": "GSMONLINE",
+          "source_tier": "S2",
+          "date": "2025-03-19",
+          "retrieved_at": "2026-10-24T05:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single host. Orange gave no current share; the reduction target suggests a deliberate but unstated vendor rebalancing, not coded as a reversal. Orange and T-Mobile share radio sites via the NetWorkS! JV (not verified in this pass)."
+    },
+    {
+      "id": "POL-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "T-Mobile Polska",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-19",
+      "still_current": null,
+      "summary": "Ministry of Digital Affairs figures put Chinese equipment at about 70% of T-Mobile Polska's network; GSMONLINE said the ministry's data were outdated and T-Mobile gave no update.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gsmonline.pl/artykuly/ministestwo-cyfryzacji-nie-zna-aktualnych-udzialow-huawei-w-polskich-sieciach",
+          "publisher": "GSMONLINE",
+          "source_tier": "S2",
+          "date": "2025-03-19",
+          "retrieved_at": "2026-10-24T05:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://gsmonline.pl/artykuly/huawei-zostaje-w-polskich-sieciach-komorkowych",
+          "publisher": "GSMONLINE",
+          "source_tier": "S2",
+          "date": "2025-03-19",
+          "retrieved_at": "2026-10-24T05:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Share is a ministry figure the reporting outlet itself flagged as unreliable; Huawei not named explicitly in the ministry figure (Chinese equipment generally). Plus (Polkomtel) reportedly uses no Chinese equipment; its vendors were not established in this pass."
+    },
+    {
+      "id": "POL-006",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "Government of Poland",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02-17",
+      "still_current": null,
+      "summary": "Microsoft announced nearly PLN 3bn (including a US$700m second phase) to expand data-centre capacity in Mazovia, alongside AI, Armed Forces cybersecurity cooperation and hosting Polish models Bielik and PLLuM.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gov.pl/web/primeminister/microsoft-invests-pln-3-billion-in-a-new-data-center-in-poland",
+          "publisher": "Chancellery of the Prime Minister (gov.pl)",
+          "source_tier": "S1",
+          "date": "2025-02-17",
+          "retrieved_at": "2026-10-24T05:17:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator Microsoft, so us. Coded tier 1 as an announced investment; construction or contract evidence not found. USD value left null because the PLN total was not converted and the US$700m covers only one phase. Cloud region itself is in the global layer."
+    },
+    {
+      "id": "POL-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Poznań Supercomputing and Networking Center (PCSS)",
+      "local_actor": "PCSS / Poznań universities",
+      "builder": null,
+      "financier": "EuroHPC Joint Undertaking (EU) and Polish state budget",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-12",
+      "still_current": null,
+      "summary": "PIAST AI in Poznań, run by PCSS with three universities, was selected as an EuroHPC AI Factory with a PLN 420m budget split equally between the Polish budget and the EuroHPC Joint Undertaking.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itwiz.pl/pcss-w-poznaniu-zbuduje-ai-factory-za-420-mln-zl/",
+          "publisher": "ITwiz",
+          "source_tier": "S2",
+          "date": "2025-03-12",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is a Polish public research centre, so domestic; EuroHPC is co-financier and does not set the pole. Tier 2 as a funded selection; hardware vendor and procurement not found. PLN value not converted."
+    },
+    {
+      "id": "POL-008",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Undetermined private consortium (EuroHPC tender)",
+      "local_actor": "Ministry of Digital Affairs",
+      "builder": null,
+      "financier": "Polish state and EU (EuroHPC) as anchor offtakers",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-28",
+      "still_current": null,
+      "summary": "Poland signed the EU joint procurement agreement to bid for an AI gigafactory of at least 25,000 accelerators rising to 75,000, worth over PLN 10bn, pledging PLN 400m and EUR 100m of compute purchases.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://notesfrompoland.com/2026/07/28/poland-enters-race-to-host-eu-backed-ai-gigafactory/",
+          "publisher": "Notes from Poland",
+          "source_tier": "S3",
+          "date": "2026-07-28",
+          "retrieved_at": "2026-10-24T05:17:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null because the operating consortium will be chosen by EuroHPC tender (contracts expected early 2027), so the controller is unknown. Site not chosen. Values left in local currency."
+    },
+    {
+      "id": "POL-009",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "ACK Cyfronet AGH (Helios supercomputer)",
+      "builder": "Hewlett Packard Enterprise",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-04-26",
+      "still_current": true,
+      "summary": "Cyfronet's HPE-built Helios supercomputer in Kraków runs 440 Nvidia GH200 Grace Hopper superchips plus 24 H100 GPUs; Cyfronet's older Athena system uses 384 Nvidia A100s.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://cyfronet.krakow.pl/en/computers",
+          "publisher": "ACK Cyfronet AGH",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/hpe-to-build-new-35-petaflop-supercomputer-in-poland",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-04-26",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://huggingface.co/speakleash/Bielik-11B-v2",
+          "publisher": "SpeakLeash / ACK Cyfronet AGH (model card, Hugging Face)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T05:21:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 5 because Cyfronet lists Helios as an operating system and the Bielik model card reports training on 256 of its GH200s. HPE (US) is the system builder."
+    },
+    {
+      "id": "POL-010",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Wrocław Centre for Networking and Supercomputing (WCSS) / CLARIN-PL",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023",
+      "still_current": null,
+      "summary": "A new Wrocław cluster with over 300 Nvidia H100 GPUs, added in 2023 at WCSS and CLARIN-PL, provided compute for the government-funded PLLuM Polish language models.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://arxiv.org/pdf/2511.03823",
+          "publisher": "PLLuM consortium (technical report, arXiv)",
+          "source_tier": "S1",
+          "date": "2025-11",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Single opened S1 source (the consortium's own technical report). Operational status inferred from its use for PLLuM training."
+    },
+    {
+      "id": "POL-011",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "PLLuM consortium (Wrocław University of Science and Technology, NASK, OPI, IPI PAN, IS PAN, University of Łódź)",
+      "local_actor": "Ministry of Digital Affairs",
+      "builder": null,
+      "financier": null,
+      "base_model": "Mistral / Mixtral / Llama families (some from scratch)",
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02",
+      "still_current": null,
+      "summary": "The digital ministry funded PLLuM, a family of 18 open Polish models released from early 2025; an mObywatel citizen assistant and an mUrzędnik civil-servant assistant are planned, with PLN 19m more for deployment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://arxiv.org/pdf/2511.03823",
+          "publisher": "PLLuM consortium (technical report, arXiv)",
+          "source_tier": "S1",
+          "date": "2025-11",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.bankier.pl/wiadomosc/Polski-model-jezykowy-PLLuM-w-mObywatelu-Usprawni-zalatwianie-spraw-urzedowych-8902139.html",
+          "publisher": "Bankier.pl (Newseria)",
+          "source_tier": "S3",
+          "date": "2025-03-09",
+          "retrieved_at": "2026-10-24T05:21:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Weights held by Polish public institutions, so domestic. Models were trained from scratch or continually pretrained on Mistral, Mixtral and Llama, so base pole is mixed (third and us) and left null. Tier 2: released and piloted, not deployed at scale in mObywatel as of March 2025."
+    },
+    {
+      "id": "POL-012",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "SpeakLeash / ACK Cyfronet AGH",
+      "local_actor": "SpeakLeash",
+      "builder": null,
+      "financier": null,
+      "base_model": "Mistral-7B-v0.2",
+      "base_model_pole": "third",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-08",
+      "still_current": null,
+      "summary": "Bielik-11B-v2, an Apache-licensed Polish model from SpeakLeash and Cyfronet, was initialised from Mistral-7B-v0.2 and trained on Cyfronet's Helios; Microsoft later pledged to offer Bielik on its platform.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://huggingface.co/speakleash/Bielik-11B-v2",
+          "publisher": "SpeakLeash / ACK Cyfronet AGH (model card, Hugging Face)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T05:21:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.gov.pl/web/primeminister/microsoft-invests-pln-3-billion-in-a-new-data-center-in-poland",
+          "publisher": "Chancellery of the Prime Minister (gov.pl)",
+          "source_tier": "S1",
+          "date": "2025-02-17",
+          "retrieved_at": "2026-10-24T05:17:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Weights released by a Polish community group with a public HPC centre, so domestic; base is Mistral (French, third). Date approximate: the model card cites an access date of August 2024. Tier 2 as an open release without documented government deployment."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search for Hikvision/Dahua bans or removals returned no Poland-specific evidence; no safe-city or foreign-stack e-government AI deployment found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power arrangement surfaced in facilities searches"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Has the Minister of Digital Affairs designated any vendor (Huawei, ZTE) as high-risk under the amended KSC Act, and has the Constitutional Tribunal ruled on those provisions?",
+    "Current Huawei vs Ericsson/Nokia shares at Play, Orange Polska and T-Mobile Polska (2025 figures are approximate and partly from data the ministry admitted were wrong); vendors used by Plus (Polkomtel).",
+    "Who supplies the shared NetWorkS! (Orange/T-Mobile) radio network, and is any operator running a formal Huawei swap-out?",
+    "Gaia AI Factory (Cyfronet, ~PLN 300m, launch 2H 2027) and PIAST AI: hardware vendor and GPU procurement awards.",
+    "Microsoft Mazovia expansion: construction start or completion evidence; Google, AWS or other hyperscaler data-centre builds in Poland since 2023.",
+    "Has PLLuM actually gone live in mObywatel or mUrzędnik, and has the government partnered with OpenAI, Anthropic or Google on public-sector AI?",
+    "Do Polish public bodies operate Hikvision/Dahua surveillance systems, and has any removal been ordered?"
+  ],
+  "searches_run": 10
+}

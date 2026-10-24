@@ -1,0 +1,357 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "PRT",
+  "name": "Portugal",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T05:20:40Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "PRT-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "CSSC Security Assessment Commission; MEO, NOS, Vodafone Portugal",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei equipment in Portuguese operators' 5G and supporting 4G networks",
+      "reversal_reason": "geopolitical",
+      "date": "2023-05",
+      "still_current": true,
+      "summary": "Portugal's cybersecurity council issued deliberation 1/2023 barring high-risk suppliers from 5G networks and supporting 4G layers; Huawei was understood as the target, sued in Lisbon's administrative court, and the government reaffirmed the policy in 2024 without compensation.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://lightreading.com/regulatory-politics/huawei-fights-back-over-5g-ban-in-portugal",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2023-09-05",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/portuguese-telecom-watchdog-working-with-carriers-to-implement-huawei-ban",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-09-19",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telesemana.com/blog/2024/09/10/portugal-extiende-la-prohibicion-de-los-equipos-de-huawei-en-las-redes-5g-pese-al-elevado-costo-de-recambio/",
+          "publisher": "TeleSemana",
+          "source_tier": "S2",
+          "date": "2024-09-10",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://observador.pt/2026/05/25/meo-reclama-82-milhoes-de-euros-em-acao-contra-o-estado-por-exclusao-da-huawei/",
+          "publisher": "Observador (Lusa)",
+          "source_tier": "S3",
+          "date": "2026-05-25",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Coded as a reversal of operational (tier 5) Huawei equipment in operators' 4G/5G radio networks; Strand Consult (cited by Light Reading) estimated 34% of 5G RAN had Chinese elements. The deliberation names no vendor. Reason geopolitical (security assessment). Huawei's 2023 court case appears unresolved in sources seen. In April 2026 MEO sued the state for about EUR 82m compensation (Observador). still_current true because 2024 and October 2026 reporting show the exclusion still in force."
+    },
+    {
+      "id": "PRT-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Vodafone Portugal (and other operators)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei WDM transport-network equipment at Portuguese operators",
+      "reversal_reason": "geopolitical",
+      "date": "2026-10-15",
+      "still_current": null,
+      "summary": "The Security Assessment Commission decided operators must remove Huawei entirely from their WDM optical transport networks; Vodafone Portugal publicly contested the decision as disproportionate in October 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rtp.pt/noticias/economia/vodafone-contesta-decisao-de-retirada-total-de-frabricantes-de-alto-risco-da-sua-rede_n1771854",
+          "publisher": "RTP (Lusa)",
+          "source_tier": "S3",
+          "date": "2026-10-15",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reversal of operational (tier 5) Huawei transport equipment; extends the 2023 5G exclusion (PRT-001) beyond radio/core. The decision date and removal deadline were not given; date is the reporting date. Single opened S3 source, so confidence low."
+    },
+    {
+      "id": "PRT-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "MEO (Altice Portugal)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024",
+      "still_current": null,
+      "summary": "Nokia has been MEO's 5G network supplier since 2024, following the exclusion of high-risk vendors; MEO's compensation claim covers replacing equipment and changing investment plans.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://observador.pt/2026/05/25/meo-reclama-82-milhoes-de-euros-em-acao-contra-o-estado-por-exclusao-da-huawei/",
+          "publisher": "Observador (Lusa)",
+          "source_tier": "S3",
+          "date": "2026-05-25",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia is Finnish, so third pole. Scope (RAN vs core) and contract value not stated; tier 3 inferred from an active supply relationship. NOS and Vodafone 5G RAN vendors were not established in this pass. Single opened S3 source."
+    },
+    {
+      "id": "PRT-004",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Start Campus (owned by Davidson Kempner Capital Management and Pioneer Point Partners)",
+      "local_actor": "Start Campus",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-04-04",
+      "still_current": null,
+      "summary": "Start Campus inaugurated SIN01 in Sines, the largest data centre ever commissioned in Portugal, first of six buildings in a planned 1.2GW campus with over EUR 8.5bn construction investment; 180MW SIN02 under development.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.silicon.co.uk/press-release/start-campus-inaugurates-sin01-data-center",
+          "publisher": "Start Campus (Business Wire release via Silicon UK)",
+          "source_tier": "S1",
+          "date": "2025-04-08",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://epoch.ai/data/ai-data-centers/directory/start-campus-sines-data-campus",
+          "publisher": "Epoch AI (AI data centers directory)",
+          "source_tier": "S2",
+          "date": "2026-07-25",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/microsoft-to-spend-10bn-on-ai-data-centers-in-portugal/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-11",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the owner-operator is a Portuguese company held by Davidson Kempner (US fund) and Pioneer Point Partners (UK firm); relative stakes not found, so the controlling pole is unclear (us or third). Announced value is the euro campus figure, not converted. Microsoft announced about US$10bn for AI data centres in Sines (Nov 2025) as a customer via Nscale/Start Campus; tenant, not controller.",
+      "bundle_id": "PRT-B1"
+    },
+    {
+      "id": "PRT-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Nscale (for Microsoft) at Start Campus SIN01",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03",
+      "still_current": null,
+      "summary": "Nscale selected Start Campus SIN01 for 12,600 Nvidia GB300 (Blackwell Ultra) GPUs serving Microsoft, targeted live by Q1 2026; Epoch AI reports the first deployment completed and operational for AI.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.businesswire.com/news/home/20251014968719/en",
+          "publisher": "Start Campus / Nscale (Business Wire release)",
+          "source_tier": "S1",
+          "date": "2025-10-14",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://epoch.ai/data/ai-data-centers/directory/start-campus-sines-data-campus",
+          "publisher": "Epoch AI (AI data centers directory)",
+          "source_tier": "S2",
+          "date": "2026-07-25",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/microsoft-to-spend-10bn-on-ai-data-centers-in-portugal/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-11",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 5 rests on Epoch AI's report that the deployment was completed in Q1 2026; the release itself only gave a Q1 2026 target. Date is approximate (Q1 2026). Nscale is UK-based; GPU vendor sets the pole. No value disclosed for the GPU deployment.",
+      "bundle_id": "PRT-B1"
+    },
+    {
+      "id": "PRT-006",
+      "layer": "silicon",
+      "pole": "third",
+      "controller": "Fujitsu",
+      "local_actor": "FCT / Minho Advanced Computing Centre (MACC), Guimarães",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-09-07",
+      "still_current": null,
+      "summary": "Deucalion, a EuroHPC petascale supercomputer built by Fujitsu around Arm-based A64FX processors (over 10 petaflops), was inaugurated at MACC in Guimarães with a EUR 20m budget from EuroHPC and FCT.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/eurohpcs-deucalion-supercomputer-inaugurated-in-portugal/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-09-07",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://portugal.gov.pt/gc22/comunicacao/comunicados/deucalion-o-novo-supercomputador-verde-de-classe-mundial-em-portugal",
+          "publisher": "Portuguese Government (portugal.gov.pt)",
+          "source_tier": "S1",
+          "date": "2021-02-05",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Fujitsu is Japanese, so third pole; DCD also notes Eviden (French) Bull Sequana technology. The 2021 government release cites EUR 50m total project investment versus DCD's EUR 20m system budget; values not converted or coded. Any GPU partition was not confirmed in sources opened."
+    },
+    {
+      "id": "PRT-007",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Portuguese State (FCT and AMA-led consortium of Portuguese universities)",
+      "local_actor": "Fundação para a Ciência e a Tecnologia",
+      "builder": null,
+      "financier": null,
+      "base_model": "EuroLLM-9B",
+      "base_model_pole": "third",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-01",
+      "still_current": null,
+      "summary": "Portugal released AMALIA, an open-source European-Portuguese language model built by about 60 researchers from national universities, with public administration (gov.pt assistants, document analysis, education) as its first planned application.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://digital.gov.pt/en/noticias/amalia-versao-multimodal-lancada-no-dia-1-de-julho",
+          "publisher": "Portuguese Government (digital.gov.pt)",
+          "source_tier": "S1",
+          "date": "2026-07-02",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://cybernews.com/ai-news/portugal-ai-model/",
+          "publisher": "Cybernews",
+          "source_tier": "S3",
+          "date": "2026-06-30",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Weights held and openly released by Portuguese public bodies, so domestic. Cybernews reports it is built on EuroLLM-9B; EuroLLM is an EU-funded open model developed by a consortium including Portuguese partners, coded base_model_pole third (EU) though partly domestic. Tier 2 because government use cases are described as explored/planned, not deployed at scale."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found municipal CCTV contracts (Sintra, Porto) with no named vendor and a 2023 story on Chinese embassy cameras (not adoption); no safe-city or foreign-stack e-gov AI deployment found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no dedicated AI/DC power plant surfaced; Start Campus describes grid access for renewable supply"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "What is the status of Huawei Portugal's August 2023 administrative-court challenge to CSSC deliberation 1/2023, and what removal deadlines apply to 4G/5G RAN?",
+    "When was the Security Assessment Commission's WDM transport-network Huawei removal decision issued, what is its deadline, and do NOS and MEO also carry Huawei transport gear?",
+    "Who are NOS's and Vodafone Portugal's current 5G RAN vendors, and how far has Huawei RAN replacement progressed?",
+    "Start Campus: what are Davidson Kempner's and Pioneer Point's relative stakes (sets facility pole), and has SIN02 construction started?",
+    "Microsoft's ~US$10bn Sines commitment (Nov 2025): which contracts are binding and what share is GPUs vs facilities?",
+    "Portugal's EuroHPC AI Factory / AI Gigafactory bids and any Deucalion GPU upgrade were not searched.",
+    "AMALIA: confirm base model (EuroLLM-9B), compute used for training, and any production deployment on gov.pt.",
+    "Does any Portuguese police or municipal CCTV system use Hikvision/Dahua/Huawei equipment?"
+  ],
+  "searches_run": 10
+}

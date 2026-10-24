@@ -1,0 +1,400 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "FRA",
+  "name": "France",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T05:25:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "FRA-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Bouygues Telecom and SFR",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei radio access network equipment at Bouygues Telecom and SFR",
+      "reversal_reason": "geopolitical",
+      "date": "2020-07",
+      "still_current": null,
+      "summary": "ANSSI granted Huawei radio equipment only short (mostly three-to-five-year) licences and signalled non-renewal, a de facto phase-out by 2028; Bouygues (~3,000 antennas) and SFR (8,000+) began replacing gear from 2021 and sued for compensation.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://theglobeandmail.com/business/international-business/european-business/article-frances-huawei-restrictions-amount-to-de-facto-ban-by-2028-sources/",
+          "publisher": "The Globe and Mail (Reuters)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://totaltele.com/france-may-bid-adieu-to-huawei-by-2028/",
+          "publisher": "Total Telecom",
+          "source_tier": "S2",
+          "date": "2020-07-22",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sdxcentral.com/news/bouygues-telecom-and-sfr-to-take-legal-action-after-forced-huawei-removal/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2023-04-12",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reversal of operational (tier 5) Huawei 4G/5G RAN at the two exposed operators, coded geopolitical (security-agency licensing under a 2019 order). The Globe and Mail page gave no explicit date; finding dated by Total Telecom's 22 July 2020 piece (paywalled; only its summary was readable). Orange and Iliad mainly use Nokia/Ericsson per the Globe and Mail. Completion of removal not confirmed, so still_current null."
+    },
+    {
+      "id": "FRA-002",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Campus IA joint venture (MGX, Bpifrance, Mistral AI, Nvidia)",
+      "local_actor": "Bpifrance",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05-20",
+      "still_current": null,
+      "summary": "MGX, Bpifrance, Mistral AI and Nvidia formed a joint venture to build a 1.4 GW AI campus outside Paris, with construction expected from H2 2026 and operations by 2028; EDG, Sipartech, RTE, Bouygues and Polytechnique are also partners.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/mgx-bpifrance-nvidia-and-mistral-ai-plan-14gw-paris-data-center-campus",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-05-20",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://polytechnique.edu/en/press-room/press-releases/mgx-bpifrance-mistral-ai-and-nvidia-launch-joint-venture-build-europes-largest-ai-campus-france",
+          "publisher": "Ecole Polytechnique (partner release)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://www.wam.ae/en/article/1792zxu-mgx-strategic-partners-expand-campus-france-with",
+          "publisher": "WAM (UAE state news agency)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: owner-operator is a JV mixing an Emirati fund (MGX, third), French state bank and firm (domestic) and Nvidia (us); stakes not found. Tier 2 because the JV is formed but construction start was not confirmed. A WAM headline (unopened) reports a second site; not coded. Investment undisclosed."
+    },
+    {
+      "id": "FRA-003",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Fluidstack",
+      "local_actor": "French government",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02-18",
+      "still_current": null,
+      "summary": "Fluidstack signed an MoU with the French government for a 1 GW AI supercomputer, about EUR 10bn in phase one with close to 500,000 AI chips, targeting go-live in 2026 and scaling beyond 1 GW by 2028.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/gpu-cloud-provider-fluidstack-signs-mou-for-1gw-ai-supercomputer-in-france",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-02-18",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.fluidstack.io/post/1gw-ai-supercomputer-france",
+          "publisher": "Fluidstack (company release)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole third on the basis that Fluidstack is a UK company (DCD says only that it was founded at Oxford University; nationality not confirmed in an opened source). No site, construction or financing confirmed in this pass. EUR 10bn not converted to USD."
+    },
+    {
+      "id": "FRA-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Eclairion",
+      "local_actor": "Mistral AI",
+      "builder": null,
+      "financier": "Bank consortium incl. Bpifrance, BNP Paribas, Credit Agricole CIB, HSBC, La Banque Postale, MUFG, Natixis",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03",
+      "still_current": null,
+      "summary": "Mistral AI raised US$830m in debt from Bpifrance, BNP Paribas, Credit Agricole CIB, HSBC, La Banque Postale, MUFG and Natixis for a 44 MW site at Bruyeres-le-Chatel, owned and run by French operator Eclairion.",
+      "announced_value_usd": 830000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/mistral-ai-raises-830m-in-debt-financing-for-data-center-in-paris-france",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://siecledigital.fr/2026/03/31/mistral-ai-leve-830-millions-pour-batir-son-datacenter-francais/",
+          "publisher": "Siecle Digital",
+          "source_tier": "S2",
+          "date": "2026-03-31",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://bebeez.eu/2026/03/30/mistral-ai-raises-830m-in-debt-financing-for-data-center-in-paris-france/",
+          "publisher": "BeBeez",
+          "source_tier": "S3",
+          "date": "2026-03-30",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator Eclairion is French, so domestic; tenant Mistral AI is also French. Tier 4 = financing closed. Date from the unopened sources' URLs (late March 2026); DCD page undated in fetch. Lenders include foreign banks (HSBC, MUFG); recorded as financier only.",
+      "bundle_id": "FRA-B1"
+    },
+    {
+      "id": "FRA-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Mistral AI (Bruyeres-le-Chatel site)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03",
+      "still_current": null,
+      "summary": "The debt-financed Mistral compute site at Bruyeres-le-Chatel is to house 13,800 Nvidia GB300 Grace Blackwell GPUs, with operations planned to start by end of June.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/mistral-ai-raises-830m-in-debt-financing-for-data-center-in-paris-france",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 3 inferred from GPUs tied to a closed financing; no Nvidia order or delivery documentation found. Year of the end-June start not stated in fetched text (presumably 2026); whether operational not confirmed.",
+      "bundle_id": "FRA-B1"
+    },
+    {
+      "id": "FRA-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "GENCI / CNRS-IDRIS (Jean Zay)",
+      "builder": "Eviden",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-03-28",
+      "still_current": null,
+      "summary": "GENCI and CNRS chose Eviden to add 1,456 Nvidia H100 GPUs to the Jean Zay public supercomputer, funded by a EUR 40m France 2030 grant, with installation in April 2024 and user availability expected early summer 2024.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.cnrs.fr/en/press/genci-and-cnrs-choose-eviden-make-jean-zay-supercomputer-one-most-powerful-france",
+          "publisher": "CNRS (press release)",
+          "source_tier": "S1",
+          "date": "2024-03-28",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/eviden-to-upgrade-frances-jean-zay-supercomputer-with-nvidia-h100-gpus",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-03-29",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Accelerator vendor Nvidia (us) sets the pole; integrator Eviden (French) recorded as builder. Coded tier 4 (award plus installation scheduled); full operation not confirmed in this pass. EUR 40m grant includes EUR 10m for staffing per CNRS, so not entered as a hardware value."
+    },
+    {
+      "id": "FRA-007",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Mistral AI",
+      "local_actor": "DINUM (Assistant IA, formerly Albert)",
+      "builder": null,
+      "financier": null,
+      "base_model": "Mistral AI models (unnamed)",
+      "base_model_pole": "domestic",
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-12",
+      "still_current": null,
+      "summary": "The French state signed a contract with Mistral AI to improve its public-servant assistant (formerly Albert, now Assistant IA), run by DINUM; Albert had previously used open models Mistral supplied free. Value undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://acteurspublics.fr/articles/letat-signe-un-contrat-avec-mistral-pour-booster-son-chatbot/",
+          "publisher": "Acteurs publics",
+          "source_tier": "S2",
+          "date": "2025-06-12",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.generation-nt.com/actualites/ia-albert-etat-francais-mistral-dinum-echec-2069044",
+          "publisher": "Generation NT",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Mistral AI is French and controls its weights, so domestic. Specific model names not stated. Acteurs publics (Jan 2026) says Assistant IA was deployed in October 2025; scale of use not confirmed."
+    },
+    {
+      "id": "FRA-008",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Mistral AI",
+      "local_actor": "Ministere des Armees (AMIAD)",
+      "builder": null,
+      "financier": null,
+      "base_model": "Mistral AI models (unnamed)",
+      "base_model_pole": "domestic",
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-01-09",
+      "still_current": null,
+      "summary": "The Armed Forces ministry signed a framework agreement letting its entities, plus CEA, ONERA and SHOM, deploy Mistral AI models and tools on state-controlled infrastructure, steered by the defence AI agency AMIAD. Value and duration undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://acteurspublics.fr/articles/le-ministere-des-armees-signe-un-accord-cadre-avec-le-champion-francais-de-lia-mistral/",
+          "publisher": "Acteurs publics",
+          "source_tier": "S2",
+          "date": "2026-01-09",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.solutions-numeriques.com/ia-generative-le-ministere-des-armees-securise-un-cadre-avec-mistral-ai/",
+          "publisher": "Solutions Numeriques",
+          "source_tier": "S2",
+          "date": "2026-01-09",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Weights from a French provider, deployed on ministry infrastructure, so domestic. Framework agreement with a named counterparty coded tier 3; call-off orders not seen."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on Hikvision/algorithmic video-surveillance found only advocacy and parliamentary amendment documents; no named PRC-vendor safe-city deployment or removal order found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no dedicated AI/data-centre power plant surfaced; only general reporting on France offering nuclear power to AI firms (snippet only)"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Exact ANSSI decision date and text (July 2020 reporting) and the 2019 law basis; progress of Bouygues/SFR Huawei antenna removal toward 2028 and outcome of their compensation suits.",
+    "Which vendors replaced Huawei at Bouygues and SFR, and confirmation of Orange/Iliad (Free) RAN and core vendors (Nokia/Ericsson).",
+    "Campus IA (Fouju area?): JV shareholdings, whether construction started in H2 2026, and the reported second site.",
+    "Fluidstack 1 GW project: site, financing, construction status; any reversal or pause.",
+    "Mistral Bruyeres-le-Chatel site: confirm operational start date and GB300 delivery.",
+    "Jean Zay: confirm H100 partition operational; any later GENCI/EuroHPC exascale (Alice Recoque) accelerator vendor choice.",
+    "Assistant IA (ex-Albert): contract value, models used, deployment scale; France Travail adoption of Mistral (snippet only).",
+    "Any Hikvision/Dahua presence or removal in French public-sector video surveillance, and vendors of 2024 Olympics algorithmic video-surveillance trials.",
+    "US-pole data-centre campuses in France since 2023 (e.g. Microsoft, Amazon, Digital Realty, Brookfield) were not searched."
+  ],
+  "searches_run": 9
+}

@@ -1,0 +1,532 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ESP",
+  "name": "Spain",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T05:19:44Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ESP-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (5G core control plane) and Nokia (5G core user plane)",
+      "local_actor": "Telefónica España",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-01-23",
+      "still_current": null,
+      "summary": "Telefónica España completed awarding its 5G core: Ericsson took the control plane in 2021 and Nokia the user plane in January 2025 (about €15m over six years), with region-by-region migration.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/spanish/telefonica-espana-sustituye-el-nucleo-huawei-de-su-red-5g-por-el-de-nokia/",
+          "publisher": "Mobile World Live (citing Expansión)",
+          "source_tier": "S2",
+          "date": "2025-01-23",
+          "retrieved_at": "2026-10-24T05:06:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.xatakamovil.com/movistar/caida-tecnologia-china-5g-espana-telefonica-culmina-largo-adios-huawei",
+          "publisher": "Xataka Móvil",
+          "source_tier": "S2",
+          "date": "2025-01-24",
+          "retrieved_at": "2026-10-24T05:06:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden) and Nokia (Finland) are third-pole vendors. The €15m Nokia figure is a press estimate, not converted to USD. Migration completion was not confirmed in this pass."
+    },
+    {
+      "id": "ESP-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telefónica España",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Huawei 5G core network at Telefónica España (2019 award)",
+      "reversal_reason": "geopolitical",
+      "date": "2025-01-23",
+      "still_current": null,
+      "summary": "Telefónica removed Huawei, awarded its 5G core in 2019, from the core network after international pressure, completing the replacement with Ericsson and Nokia; Orange and Vodafone had already dropped Huawei from their 5G cores.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/spanish/telefonica-espana-sustituye-el-nucleo-huawei-de-su-red-5g-por-el-de-nokia/",
+          "publisher": "Mobile World Live (citing Expansión)",
+          "source_tier": "S2",
+          "date": "2025-01-23",
+          "retrieved_at": "2026-10-24T05:06:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.xatakamovil.com/movistar/caida-tecnologia-china-5g-espana-telefonica-culmina-largo-adios-huawei",
+          "publisher": "Xataka Móvil",
+          "source_tier": "S2",
+          "date": "2025-01-24",
+          "retrieved_at": "2026-10-24T05:06:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as reversal of the 2019 Huawei 5G core award (tier 3). Sources attribute it to international/US pressure and an indirect Spanish ban via exclusion of high-risk suppliers from 5G subsidies, so geopolitical. Euronews reports Huawei sued in the Audiencia Nacional over exclusion from rural 5G aid."
+    },
+    {
+      "id": "ESP-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Vodafone España",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-01-23",
+      "still_current": null,
+      "summary": "Vodafone in Spain still ran about 70% of its radio network on Huawei equipment in early 2025, mostly pre-5G layers, though its 5G core went to Nokia in 2023 and 5G radio is Nokia/Ericsson.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/spanish/telefonica-espana-sustituye-el-nucleo-huawei-de-su-red-5g-por-el-de-nokia/",
+          "publisher": "Mobile World Live (citing Expansión)",
+          "source_tier": "S2",
+          "date": "2025-01-23",
+          "retrieved_at": "2026-10-24T05:06:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.xatakamovil.com/movistar/caida-tecnologia-china-5g-espana-telefonica-culmina-largo-adios-huawei",
+          "publisher": "Xataka Móvil",
+          "source_tier": "S2",
+          "date": "2025-01-24",
+          "retrieved_at": "2026-10-24T05:06:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Operational legacy RAN (2G-4G), so tier 5. Vodafone España has since changed ownership (Zegona); any later swap plan was not checked."
+    },
+    {
+      "id": "ESP-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "MasOrange",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei radio access network at MasOrange (phase-out planned by 2028)",
+      "reversal_reason": "commercial",
+      "date": "2025-01-23",
+      "still_current": null,
+      "summary": "MasOrange plans to cut Huawei's share of its radio network from 54% to 39% by 2027 and remove it entirely from 2028; 5G radio and core are already supplied by European vendors.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/spanish/telefonica-espana-sustituye-el-nucleo-huawei-de-su-red-5g-por-el-de-nokia/",
+          "publisher": "Mobile World Live (citing Expansión)",
+          "source_tier": "S2",
+          "date": "2025-01-23",
+          "retrieved_at": "2026-10-24T05:06:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.xatakamovil.com/movistar/caida-tecnologia-china-5g-espana-telefonica-culmina-largo-adios-huawei",
+          "publisher": "Xataka Móvil",
+          "source_tier": "S2",
+          "date": "2025-01-24",
+          "retrieved_at": "2026-10-24T05:06:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a planned reversal of operational Huawei legacy RAN. Neither source gives MasOrange's own reason; coded commercial for lack of a stated geopolitical rationale, though the general context sources describe is a de facto Huawei exclusion."
+    },
+    {
+      "id": "ESP-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "RedIRIS (Red.es / Ministry for Digital Transformation)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "RedIRIS capacity upgrade contract specifying Huawei routers (Telefónica as bidder)",
+      "reversal_reason": "geopolitical",
+      "date": "2025-09-01",
+      "still_current": null,
+      "summary": "The government cancelled a roughly €10m tender, proposed for award to Telefónica, to upgrade the RedIRIS research backbone with Huawei routing equipment, citing digital strategy and strategic autonomy; a new tender is planned.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.elindependiente.com/economia/2025/09/01/el-gobierno-da-marcha-atras-y-cancela-un-contrato-de-telefonica-con-equipos-de-huawei/",
+          "publisher": "El Independiente",
+          "source_tier": "S3",
+          "date": "2025-09-01",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.silicon.co.uk/networks/networks-management/spain-huawei-cancel-626502",
+          "publisher": "Silicon UK",
+          "source_tier": "S2",
+          "date": "2025-09-01",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "The contracting board had proposed Telefónica's bid; formalisation status at cancellation is unclear, so tier 3 is an upper bound. The stated rationale (European/Spanish sovereignty) and reported US/EU warnings support geopolitical. Existing RedIRIS IP gear remains Huawei, near end of life."
+    },
+    {
+      "id": "ESP-006",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of the Interior (SITEL lawful interception)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07",
+      "still_current": null,
+      "summary": "The Interior Ministry awarded Huawei €12.3m in contracts to store judicially authorised wiretaps for police and intelligence use on Huawei OceanStor storage, under a 2021-2025 framework and CCN security guidelines.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://therecord.media/spain-awards-contracts-huawei-intelligence-agency-wiretaps",
+          "publisher": "The Record (Recorded Future News)",
+          "source_tier": "S2",
+          "date": "2025-07-11",
+          "retrieved_at": "2026-10-24T05:06:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.euronews.com/next/2025/07/13/huaweis-paradox-in-spain-no-to-5g-but-yes-to-wiretap-storage",
+          "publisher": "Euronews",
+          "source_tier": "S3",
+          "date": "2025-07-13",
+          "retrieved_at": "2026-10-24T05:06:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor is the controller under the v0.2 rule. USD figure (~$14.3m) is The Record's conversion and left null here. No cancellation found. A Dec 2025 Vozpópuli report of a small (€17,916) Policía Nacional purchase of Huawei-compatible storage expansion suggests Huawei storage was still in use, but it was not tied to SITEL specifically."
+    },
+    {
+      "id": "ESP-007",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision and Dahua",
+      "local_actor": "Guardia Civil (Benasal barracks), Ministry of the Interior",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09",
+      "still_current": null,
+      "summary": "An Interior Ministry contract for the Guardia Civil barracks in Benasal specified Hikvision mini-dome cameras and Dahua video recorders; The Objective reports dozens of similar Interior and Defence surveillance contracts.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://theobjective.com/espana/politica/2025-09-19/gobierno-camaras-chinas-cuarteles-comisarias/",
+          "publisher": "The Objective",
+          "source_tier": "S3",
+          "date": "2025-09-19",
+          "retrieved_at": "2026-10-24T05:17:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single site, so municipal scale; the wider 'dozens of contracts' claim was not individually verified. Supplier was a Spanish integrator (Alarmas Llorca); value not given."
+    },
+    {
+      "id": "ESP-008",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Amazon Web Services",
+      "local_actor": "Government of Aragón",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05-22",
+      "still_current": null,
+      "summary": "AWS pledged €15.7bn through 2033 to expand its data-centre footprint in Spain, centred on its existing Aragón region sites.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/ai-cloud/aws-to-pump-e15-7b-into-spanish-facilities/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2024-05-22",
+          "retrieved_at": "2026-10-24T05:14:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.investinspain.org/en/news/2024/aws",
+          "publisher": "ICEX-Invest in Spain",
+          "source_tier": "S1",
+          "date": "2024-06-03",
+          "retrieved_at": "2026-10-24T05:14:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ultimahora.es/noticias/comunidades/2025/08/25/2456559/centros-datos-amazon-tienen-camino-despejado-para-ampliacion-aragon.html",
+          "publisher": "Última Hora",
+          "source_tier": "S3",
+          "date": "2025-08-25",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Investment pledge, so tier 1; the existing AWS region is covered by the global cloud layer. An Aug 2025 headline (not opened) says the expansion's path was cleared; construction status not confirmed. EUR value not converted."
+    },
+    {
+      "id": "ESP-009",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "Government of Aragón",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-14",
+      "still_current": null,
+      "summary": "Aragón's government gave initial approval to Microsoft's plan for three data-centre campuses (La Muela, Villamayor de Gállego, Zaragoza; ~284 ha) with building costs above €5.3bn; construction awaits final approval.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/microsoft-gets-initial-approval-for-data-center-campuses-in-arag%C3%B3n-spain/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-11-14",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Initial planning approval coded as tier 2 (pre-construction). The $6.17bn conversion is DCD's and is a building-cost estimate; left null. Final approval and construction start after Nov 2025 not checked."
+    },
+    {
+      "id": "ESP-010",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Blackstone",
+      "local_actor": "Government of Aragón",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-10-15",
+      "still_current": null,
+      "summary": "Aragón declared Blackstone's €7.5bn 'Proyecto Rodes' data-centre campus at Calatorao (224 ha) a project of regional general interest, opening permitting; not yet under construction.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.xataka.com/empresas-y-economia/blackstone-le-ha-echado-ojo-a-aragon-7-500-millones-euros-inversion-para-su-centro-datos-calatorao",
+          "publisher": "Xataka",
+          "source_tier": "S3",
+          "date": "2024-10-15",
+          "retrieved_at": "2026-10-24T05:17:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Blackstone is a US fund, so us as owner-operator; tenant unknown. Planning declaration coded tier 2. A later snippet (ecosistemastartup, S5, not cited) mentions a larger €11.8bn figure; not verified."
+    },
+    {
+      "id": "ESP-011",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia (H100 accelerated partition); Intel CPUs",
+      "local_actor": "Barcelona Supercomputing Center (MareNostrum 5)",
+      "builder": "Atos (Eviden)",
+      "financier": "EuroHPC Joint Undertaking and Spain-Portugal-Turkey consortium",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09",
+      "still_current": null,
+      "summary": "MareNostrum 5, an Atos-built EuroHPC supercomputer hosted at BSC, uses Nvidia H100 GPUs with Intel Sapphire Rapids CPUs in its main accelerated partition; it was in production use training Spain's ALIA models from 2024.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.hpcwire.com/2022/06/16/nvidia-superchips-to-grace-atos-built-marenostrum-5-supercomputer/",
+          "publisher": "HPCwire",
+          "source_tier": "S2",
+          "date": "2022-06-16",
+          "retrieved_at": "2026-10-24T05:17:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.xataka.com/robotica-e-ia/asi-alia-modelo-ia-espanola-que-puede-quiere-competir-chatgpt",
+          "publisher": "Xataka",
+          "source_tier": "S3",
+          "date": "2025-01-23",
+          "retrieved_at": "2026-10-24T05:17:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Hardware is from HPCwire's 2022 procurement report (€151.4m, split between EuroHPC JU and a Spain/Portugal/Turkey consortium); operational use is from Xataka's ALIA report. The sources cover different facts, so not counted as corroboration. H100 count not found."
+    },
+    {
+      "id": "ESP-012",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Barcelona Supercomputing Center (ALIA)",
+      "local_actor": "Government of Spain",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-01-20",
+      "still_current": null,
+      "summary": "Prime Minister Sánchez launched ALIA, a publicly funded family of Spanish and co-official-language models (2B-40B) trained from scratch on MareNostrum 5 and released under Apache 2.0; first uses include a Tax Agency chatbot pilot.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.elindependiente.com/futuro/inteligencia-artificial/2025/01/20/sanchez-anuncia-chatgpt-espanol-esta-listo/amp/",
+          "publisher": "El Independiente",
+          "source_tier": "S3",
+          "date": "2025-01-20",
+          "retrieved_at": "2026-10-24T05:17:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.xataka.com/robotica-e-ia/asi-alia-modelo-ia-espanola-que-puede-quiere-competir-chatgpt",
+          "publisher": "Xataka",
+          "source_tier": "S3",
+          "date": "2025-01-23",
+          "retrieved_at": "2026-10-24T05:17:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Weights held by a Spanish public centre, so domestic. Llama-style architecture but trained from zero-initialised weights, so base_model null. Tier 2 because government uses were announced as initial pilots; deployment at scale not confirmed. No S1/S2 opened (BSC page blocked)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-dedicated power plant surfaced in facilities searches; budget spent on higher-priority layers"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Is the Interior Ministry's Huawei wiretap-storage (SITEL) arrangement still in force after the 2021-2025 framework ended, and was it re-tendered without Huawei following US/EU warnings?",
+    "Was the RedIRIS router tender re-issued, and which vendor won?",
+    "Has Spain published the high-risk 5G supplier list provided for in its 5G cybersecurity law, and what happened to Huawei's Audiencia Nacional lawsuit over rural 5G aid exclusion?",
+    "Vodafone España (Zegona) plans for its ~70% Huawei legacy RAN; MasOrange progress against its 2027/2028 Huawei phase-out targets.",
+    "Microsoft Aragón campuses: final PIGA approval and construction start; Blackstone Calatorao and ACS Zaragoza campuses: status, controller and tenants.",
+    "MareNostrum 5 AI upgrades or Spanish AI Factory (EuroHPC) accelerator purchases since 2025, and any other large Nvidia/AMD deployments (e.g. Telefónica, Meta Talavera).",
+    "Any national-government agreement with OpenAI, Anthropic, Google, Mistral or others; actual scale of ALIA adoption in public administration.",
+    "Extent of Hikvision/Dahua cameras across Interior and Defence sites (The Objective's 'dozens of contracts') and any municipal safe-city deployments."
+  ],
+  "searches_run": 10
+}

@@ -1,0 +1,446 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "CHE",
+  "name": "Switzerland",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T05:18:47Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "CHE-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Sunrise",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-01-29",
+      "still_current": null,
+      "summary": "Sunrise, Switzerland's second operator, built its 5G network with Huawei (launch in about 150 localities in 2019) and told shareholders Huawei technology was key to its infrastructure, with replacement potentially very difficult or costly.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.cash.ch/news/politik/salt-wahlt-nokia-fur-bau-des-5g-netzes-418993",
+          "publisher": "cash.ch",
+          "source_tier": "S3",
+          "date": "2019-01-29",
+          "retrieved_at": "2026-10-24T05:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://kr-asia.com/aided-by-huawei-sunrise-is-to-roll-out-switzerlands-first-5g-networks-in-march",
+          "publisher": "KrASIA",
+          "source_tier": "S3",
+          "date": "2019-02-27",
+          "retrieved_at": "2026-10-24T05:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecompaper.com/news/sunrise-sterk-afhankelijk-van-huawei-apparatuur-zoekt-mogelijk-naar-alternatieven--1315669",
+          "publisher": "Telecompaper",
+          "source_tier": "S2",
+          "date": "2019-11-11",
+          "retrieved_at": "2026-10-24T05:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.netzwoche.ch/news/2023-12-18/wie-der-bundesrat-digitale-infrastrukturen-vor-huawei-und-co-absichern-will",
+          "publisher": "Netzwoche",
+          "source_tier": "S2",
+          "date": "2023-12-18",
+          "retrieved_at": "2026-10-24T05:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Huawei supplies equipment and maintenance, so pole prc. Tier 3 inferred from deployment reporting; no contract value found. A December 2023 Federal Council report (Netzwoche) says one of three mobile operators depends heavily on Huawei, without naming it; consistent with Sunrise but not confirmed, so still_current is null. Sunrise absorbed UPC Switzerland; effect on vendor mix not checked."
+    },
+    {
+      "id": "CHE-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Swisscom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-04-12",
+      "still_current": null,
+      "summary": "Swisscom, the state-majority incumbent, signed a new three-year Ericsson deal for 5G radio (dual-band radios, RAN compute, Massive MIMO), cloud-native infrastructure and automation software, extending a long Ericsson partnership.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/news/2024/4/swisscom-selects-ericsson-to-future-proof-mobile-network",
+          "publisher": "Ericsson (company release)",
+          "source_tier": "S1",
+          "date": "2024-04-12",
+          "retrieved_at": "2026-10-24T05:17:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://computerweekly.com/news/366580935/Swisscom-taps-Ericsson-for-5G-RAN-framework",
+          "publisher": "Computer Weekly",
+          "source_tier": "S2",
+          "date": "2024-04-15",
+          "retrieved_at": "2026-10-24T05:17:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so third. Value undisclosed. The 2019 cash.ch report already names Ericsson as Swisscom's 5G supplier; this 2024 contract is the most recent evidence. Dell and Extreme Networks (US) supply components, not coded separately."
+    },
+    {
+      "id": "CHE-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Salt",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-01-29",
+      "still_current": null,
+      "summary": "Salt, the third Swiss mobile operator and an existing Nokia customer, signed a letter of intent for Nokia to build its 5G network, citing technology, reliability and security.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.cash.ch/news/politik/salt-wahlt-nokia-fur-bau-des-5g-netzes-418993",
+          "publisher": "cash.ch",
+          "source_tier": "S3",
+          "date": "2019-01-29",
+          "retrieved_at": "2026-10-24T05:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia is Finnish, so third. Coded tier 1 because the source describes a letter of intent; no follow-on contract was opened in this pass. Only one opened source."
+    },
+    {
+      "id": "CHE-004",
+      "layer": "cloud",
+      "pole": "prc",
+      "controller": "Alibaba Cloud",
+      "local_actor": "Swiss Federal Office of Information Technology (BIT)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06",
+      "still_current": null,
+      "summary": "Alibaba was one of five winners of the federal 'Public Clouds Bund' framework, worth up to CHF110 million in total, alongside four US providers; its inclusion was the most controversial part of the award.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://swissinfo.ch/eng/politics/google-challenges-swiss-data-cloud-contract-decision/46806254",
+          "publisher": "SWI swissinfo.ch",
+          "source_tier": "S3",
+          "date": "2021-07-21",
+          "retrieved_at": "2026-10-24T05:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.netzwoche.ch/news/2026-10-20/bund-schreibt-cloud-auftraege-fuer-bis-zu-7-milliarden-franken-aus",
+          "publisher": "Netzwoche",
+          "source_tier": "S2",
+          "date": "2026-10-20",
+          "retrieved_at": "2026-10-24T05:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Framework award to federal departments; the CHF110m ceiling covers all five vendors, so no per-vendor value is recorded. Actual call-off usage by any agency of Alibaba was not found. A successor Swiss Government Cloud tender (up to CHF7bn, awards planned 2027) was launched October 2026; still_current null."
+    },
+    {
+      "id": "CHE-005",
+      "layer": "cloud",
+      "pole": "us",
+      "controller": "Amazon Web Services; Microsoft; IBM; Oracle",
+      "local_actor": "Swiss Federal Office of Information Technology (BIT)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06",
+      "still_current": null,
+      "summary": "AWS, Microsoft, IBM and Oracle won four of five slots in the federal public-cloud framework worth up to CHF110 million; Google, which lost, appealed to the Federal Administrative Court.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://swissinfo.ch/eng/politics/google-challenges-swiss-data-cloud-contract-decision/46806254",
+          "publisher": "SWI swissinfo.ch",
+          "source_tier": "S3",
+          "date": "2021-07-21",
+          "retrieved_at": "2026-10-24T05:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.netzwoche.ch/news/2026-10-20/bund-schreibt-cloud-auftraege-fuer-bis-zu-7-milliarden-franken-aus",
+          "publisher": "Netzwoche",
+          "source_tier": "S2",
+          "date": "2026-10-20",
+          "retrieved_at": "2026-10-24T05:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Grouped as one finding because the four US providers share one framework award. The CHF110m ceiling (about US$120m per swissinfo) covers all five winners, so values left null. Swissinfo search titles indicate Google later conceded; not opened, so not stated in summary."
+    },
+    {
+      "id": "CHE-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Swiss National Supercomputing Centre (CSCS, ETH Zurich)",
+      "local_actor": "CSCS",
+      "builder": "HPE (Cray)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024",
+      "still_current": null,
+      "summary": "CSCS's Alps supercomputer in Lugano, built with HPE/Cray, came online at end-2024 and ranked seventh on the November 2024 TOP500; it hosts AI, HPC and MeteoSwiss weather workloads.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.computerweekly.com/feature/The-story-behind-Alps-Europes-second-largest-computer",
+          "publisher": "Computer Weekly",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T05:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator is CSCS, a public ETH Zurich unit funded via the ETH Domain, so domestic. HPE (US) is the system vendor, recorded under silicon (CHE-007) rather than as builder. Single opened S2 source; cost not stated."
+    },
+    {
+      "id": "CHE-007",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "CSCS (Alps)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024",
+      "still_current": null,
+      "summary": "Alps uses Nvidia Grace Hopper GH200 nodes, alongside some AMD MI300A accelerators; Apertus training consumed over 10 million GPU hours on the machine.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.computerweekly.com/feature/The-story-behind-Alps-Europes-second-largest-computer",
+          "publisher": "Computer Weekly",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T05:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://ai.epfl.ch/apertus-a-fully-open-transparent-multilingual-language-model/",
+          "publisher": "EPFL AI Center",
+          "source_tier": "S1",
+          "date": "2025-09-02",
+          "retrieved_at": "2026-10-24T05:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Both opened sources (Computer Weekly S2, EPFL S1) confirm Alps operation; only Computer Weekly names GH200. GH200 count not found in opened sources. AMD (also US) is a minor component."
+    },
+    {
+      "id": "CHE-008",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Swiss AI Initiative (EPFL, ETH Zurich, CSCS)",
+      "local_actor": "EPFL / ETH Zurich",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-02",
+      "still_current": null,
+      "summary": "Switzerland's public research institutions released Apertus, an open multilingual model (8B and 70B) trained on 15 trillion tokens on Alps, with weights, data and code published; Swisscom offers it to business customers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ai.epfl.ch/apertus-a-fully-open-transparent-multilingual-language-model/",
+          "publisher": "EPFL AI Center",
+          "source_tier": "S1",
+          "date": "2025-09-02",
+          "retrieved_at": "2026-10-24T05:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Weights controlled by Swiss public institutions, so domestic. The opened page does not state whether a foreign base model was used, so base_model is null; it describes training on its own corpus. Tier 2: public research release with commercial availability; no federal government adoption found."
+    },
+    {
+      "id": "CHE-009",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Swisscom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-11-29",
+      "still_current": null,
+      "summary": "Swisscom launched its Swiss AI Platform on an Nvidia DGX SuperPOD in its Swiss data centres, after a January 2024 deal to build Nvidia-based AI supercomputers with up to CHF100 million investment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/swisscom-launches-nvidia-superpod-ai-platform/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-11-29",
+          "retrieved_at": "2026-10-24T05:17:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecoms.com/ai/swisscom-drafts-nvidia-for-generative-ai-push",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2024-01-17",
+          "retrieved_at": "2026-10-24T05:17:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "GPU model and count not disclosed. The CHF100m is a planned group investment spanning Switzerland and Italy (Fastweb), not converted or recorded as a value. Swisscom is the operator; Nvidia controls the accelerator stack."
+    },
+    {
+      "id": "CHE-010",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "City of Zurich police",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-05-19",
+      "still_current": null,
+      "summary": "SRF found Zurich city police operating 35 Hikvision cameras on the city network, with Basel-Stadt and Zug cantonal police also using Hikvision or Dahua; the federal administration said it used none, citing no national procurement rules.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.srf.ch/news/schweiz/sicherheitsmaengel-schweizer-behoerden-setzen-auf-chinesische-sicherheitskameras",
+          "publisher": "SRF",
+          "source_tier": "S3",
+          "date": "2022-05-19",
+          "retrieved_at": "2026-10-24T05:17:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment vendor sets the pole. Camera installations, not an AI safe-city platform. Single opened S3 source; whether cameras remain in use not checked (still_current null)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific dedicated power supply surfaced in network, facility or silicon searches"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Does Sunrise (now merged with UPC) still run Huawei RAN/core, and has it begun any swap-out? The 2023 Federal Council report names an unnamed operator as heavily Huawei-dependent.",
+    "Status of the Telecommunications Act (FMG) revision giving the government power to bar high-risk vendors, and of the 'Lex Huawei' procurement motion in the Council of States.",
+    "Has any federal office actually called off services from Alibaba Cloud under the 2021 framework, and will Alibaba be eligible in the October 2026 Swiss Government Cloud tender?",
+    "Alps: GH200 count, total cost, and any later expansion; large commercial AI data-centre projects in Switzerland since 2023 were not searched.",
+    "Any federal adoption of a frontier model provider (OpenAI, Microsoft Copilot, Mistral) or of Apertus in government.",
+    "Do Zurich, Basel-Stadt and Zug police still use Hikvision/Dahua cameras after 2022?"
+  ],
+  "searches_run": 10
+}

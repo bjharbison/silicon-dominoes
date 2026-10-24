@@ -1,0 +1,510 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "DNK",
+  "name": "Denmark",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T05:20:29Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "DNK-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "TDC",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-12-01",
+      "still_current": null,
+      "summary": "TDC, Denmark's largest operator, picked Ericsson in March 2019 for 4G/5G radio and core plus managed services, then completed nationwide Ericsson 5G across 3,800 masts on 1 December 2020.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sdxcentral.com/news/ericsson-ousts-huawei-as-tdcs-5g-vendor-in-denmark/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2019-03-19",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://phys.org/news/2019-03-danish-telecom-group-shuns-china.html",
+          "publisher": "Phys.org (AFP)",
+          "source_tier": "S3",
+          "date": "2019-03",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20201202/5g/tdc-completes-5g-network-deployment-denmark",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2020-12-02",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Ericsson is Swedish, so third pole. Tier 5 rests on RCR's report of completed nationwide deployment. Deal value undisclosed. Whether the Ericsson contract was renewed after its stated 2023 end was not checked; still_current left null."
+    },
+    {
+      "id": "DNK-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "TDC",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei LTE (4G) network supply at TDC (2014 contract)",
+      "reversal_reason": "commercial",
+      "date": "2019-03-19",
+      "still_current": null,
+      "summary": "TDC replaced Huawei, its LTE network supplier since a 2014 six-year deal reportedly worth US$609m, choosing Ericsson for 5G and for maintaining and expanding its LTE network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sdxcentral.com/news/ericsson-ousts-huawei-as-tdcs-5g-vendor-in-denmark/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2019-03-19",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://phys.org/news/2019-03-danish-telecom-group-shuns-china.html",
+          "publisher": "Phys.org (AFP)",
+          "source_tier": "S3",
+          "date": "2019-03",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as reversal of an operational (tier 5) Huawei LTE network. TDC's CEO cited price as significant while saying TDC was not blind to security concerns, and Danish defence officials had warned against Huawei; coded commercial, though geopolitical is arguable. Physical swap-out completion not confirmed."
+    },
+    {
+      "id": "DNK-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "TT-Netværket (Telia-Telenor network JV)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06-17",
+      "still_current": null,
+      "summary": "TT-Network, the shared network company of Telia and Telenor in Denmark, named Nokia sole 5G RAN supplier including Massive MIMO, starting in the four largest cities before national expansion; Nokia already supplied its core and RAN.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecoms.com/5g-6g/nokia-bags-5g-ran-deal-in-denmark",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2021-06-17",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia is Finnish, so third pole. Single opened source, so confidence low under the tier-3 rule. Value undisclosed. Rollout completion not checked."
+    },
+    {
+      "id": "DNK-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Danish Centre for AI Innovation A/S (DCAI)",
+      "local_actor": "Novo Nordisk Foundation; EIFO (15%)",
+      "builder": "Eviden (system integrator); hosted in a Digital Realty data centre",
+      "financier": "Novo Nordisk Foundation; EIFO",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-10-23",
+      "still_current": null,
+      "summary": "Denmark's Gefion AI supercomputer, owned and operated by DCAI with Novo Nordisk Foundation funding (about DKK 600m) and EIFO (DKK 100m, 15% stake), was launched in a Digital Realty data centre, assembled by Eviden.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://novonordiskfonden.dk/en/news/denmarks-first-ai-supercomputer-is-now-operational/",
+          "publisher": "Novo Nordisk Foundation (owner release)",
+          "source_tier": "S1",
+          "date": "2024-10-23",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/denmark-sovereign-ai-supercomputer/",
+          "publisher": "Nvidia (company blog)",
+          "source_tier": "S1",
+          "date": "2024-10-23",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Owner-operator DCAI is Danish (foundation plus state fund), so domestic. The host building belongs to Digital Realty (US colocation firm) and Eviden (French) installed the system; neither sets the pole but Digital Realty controls the shell. Tier 5 given launch and pilot users; full production use not separately confirmed. DKK not converted.",
+      "bundle_id": "DNK-B1"
+    },
+    {
+      "id": "DNK-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Danish Centre for AI Innovation (Gefion)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-10-23",
+      "still_current": null,
+      "summary": "Gefion is an Nvidia DGX SuperPOD with 1,528 H100 GPUs on Nvidia Quantum-2 InfiniBand, launched in Copenhagen in October 2024.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/denmark-sovereign-ai-supercomputer/",
+          "publisher": "Nvidia (company blog)",
+          "source_tier": "S1",
+          "date": "2024-10-23",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://novonordiskfonden.dk/en/news/denmarks-first-ai-supercomputer-is-now-operational/",
+          "publisher": "Novo Nordisk Foundation (owner release)",
+          "source_tier": "S1",
+          "date": "2024-10-23",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Nvidia accelerators and interconnect, so US pole. Both opened sources are S1 but from different hosts (vendor and owner); treated as corroborated. Denmark is not covered here for export-licence terms (global layer).",
+      "bundle_id": "DNK-B1"
+    },
+    {
+      "id": "DNK-006",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "atNorth",
+      "local_actor": "Varde/Ølgod",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09-04",
+      "still_current": null,
+      "summary": "Iceland-headquartered atNorth announced DEN02, a planned 250MW data-centre campus at Ølgod near Varde on 176 hectares, aimed at hyperscale, AI and HPC colocation and targeted for completion by end-2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/atnorth-plans-250mw-data-center-in-olgod-denmark/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-09-04",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third on atNorth's Icelandic headquarters; its ultimate owner was not stated in the source. Coded tier 1 as an announced plan; construction start not confirmed."
+    },
+    {
+      "id": "DNK-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Thylander",
+      "local_actor": "Copenhagen Infrastructure Partners (collaborator)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05-28",
+      "still_current": null,
+      "summary": "Danish property firm Thylander announced plans for a Danish-owned hyperscale data centre in Esbjerg, starting at 10-20MW with a first phase up to 200MW, opening targeted for 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenter-forum.com/datacenter-forum/thylander-unveils-plans-for-denmarks-first-fully-danish-hyperscale-data-center",
+          "publisher": "Datacenter Forum",
+          "source_tier": "S2",
+          "date": "2025-05-28",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Danish owner, so domestic. Announced plan only (tier 1); no AI tenant named."
+    },
+    {
+      "id": "DNK-008",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Prime Data Centers (with Brunswick Real Estate)",
+      "local_actor": "Esbjerg Municipality (land seller)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-31",
+      "still_current": null,
+      "summary": "Prime Data Centers bought a 64-hectare Esbjerg site for a planned 550MW campus, first phase 160MW and DKK 15bn; construction could begin in 2027 pending environmental assessment and grid talks with Energinet.",
+      "announced_value_usd": 2300000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://w.media/prime-data-centers-to-build-550-mw-data-center-campus-in-demark/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2026-03-31",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null because the source does not state Prime Data Centers' home jurisdiction (believed US-based, not verified in this pass) and the Brunswick partnership share is unknown. Tier 1: land acquired, plans announced. Announced value DKK 15bn (source gives about US$2.3bn)."
+    },
+    {
+      "id": "DNK-009",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Danish Foundation Models (Univ. Copenhagen, SDU, Aarhus Univ., Alexandra Institute)",
+      "local_actor": "Ministry of Digital Affairs (funder)",
+      "builder": null,
+      "financier": null,
+      "base_model": "Mistral open-weight model (via DFM 'Munin'; checkpoint not confirmed)",
+      "base_model_pole": "third",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12-02",
+      "still_current": null,
+      "summary": "Denmark's Ministry of Digital Affairs granted DKK 30.7m to the Danish Foundation Models consortium for a 2024-27 platform to train and maintain open, documented Danish-language foundation models for public and commercial use.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://di.ku.dk/english/news/2024/ministry-of-digital-affairs-grants-30-7-million-to-ambitious-danish-language-model-project/",
+          "publisher": "University of Copenhagen (grantee release)",
+          "source_tier": "S1",
+          "date": "2024-12-02",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.computerweekly.com/news/366609032/Government-backs-Danish-version-of-ChatGPT",
+          "publisher": "Computer Weekly",
+          "source_tier": "S2",
+          "date": "2024-08-27",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Weights controlled by Danish universities, so domestic. Computer Weekly says DFM's Munin model is influenced by Mistral AI's open model, and the separate Dansk Erhverv/IBM/Alexandra Institute consortium (DLMC) builds on Munin; exact base checkpoint not confirmed. Tier 2: funded R&D platform, not government adoption."
+    },
+    {
+      "id": "DNK-010",
+      "layer": "applications",
+      "pole": "domestic",
+      "controller": "Aarhus Kommune / OS2",
+      "local_actor": "43 municipalities and 3 regions",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-09",
+      "still_current": null,
+      "summary": "OS2ai, an AI assistant built by Aarhus Municipality for the public-sector IT cooperation OS2 as an alternative to ChatGPT and Microsoft Copilot, had 43 municipalities and three regions signed up as rollout proceeded.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ing.dk/artikel/100-gange-billigere-end-microsoft-copilot-dansk-ai-assistent-indtager-snart-kommuner-og-regioner",
+          "publisher": "Ingeniøren",
+          "source_tier": "S2",
+          "date": "2025-10-09",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Operated by a Danish public cooperation, so domestic for the application layer; the underlying model is not stated in the article (a reader comment claims Google Gemma 3, unverified), so model pole unknown. Article largely paywalled; tier 2 as rollout in progress. Scale subnational though coverage approaches half of municipalities."
+    },
+    {
+      "id": "DNK-011",
+      "layer": "applications",
+      "pole": "domestic",
+      "controller": "Netcompany (EASLEY AI)",
+      "local_actor": "Danish Centre for AI Innovation (Gefion)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12-08",
+      "still_current": null,
+      "summary": "Danish IT firm Netcompany activated its EASLEY AI assistant platform on the Gefion supercomputer, aimed at government, health and education, and plans to move all its AI services there.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://cfotech.co.uk/story/denmark-launches-sovereign-ai-on-gefion-to-boost-public-sector",
+          "publisher": "CFOtech UK",
+          "source_tier": "S3",
+          "date": "2025-12-08",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Danish platform on Danish-owned compute, so domestic. No named public-sector customer or underlying model was given; tier 2 pending evidence of contracted deployments."
+    },
+    {
+      "id": "DNK-012",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Vejdirektoratet (Danish Road Directorate)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Hikvision roadside camera network at Vejdirektoratet",
+      "reversal_reason": "geopolitical",
+      "date": "2024-08-08",
+      "still_current": null,
+      "summary": "The Danish Road Directorate decided to stop using Chinese-sourced roadside camera equipment, including about 170 Hikvision cameras bought in late 2022 for about DKK 5m, citing cybersecurity and Centre for Cybersecurity guidelines.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.thelocal.dk/20240808/denmark-to-scrap-use-of-chinese-camera-equipment-on-roads",
+          "publisher": "The Local Denmark",
+          "source_tier": "S3",
+          "date": "2024-08-08",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.worldhighways.com/wh12/news/denmark-pulls-plug-hikvision-cameras",
+          "publisher": "World Highways",
+          "source_tier": "S2",
+          "date": "2024-08-22",
+          "retrieved_at": "2026-10-24T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reversal of an operational national road-camera deployment; coded geopolitical because the stated basis is security guidance against a PRC vendor. Both outlets relay Altinget's original reporting. Removal completion not confirmed. Region Hovedstaden and Frederiksberg also stopped buying Hikvision/Dahua (TV2 Kosmopol, undated) - not coded."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-dedicated power plant surfaced; Gefion described as running in a renewable-powered colocation facility"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendor supplies 3 Denmark's (Hi3G) RAN and core, and did it ever use Huawei?",
+    "Did TDC fully remove Huawei LTE equipment, and was the Ericsson contract renewed beyond 2023?",
+    "Danish investment-screening act (proposed 2019-20; Huawei Denmark letter to the PM) and any telecom supplier-screening rules: date in force and whether they have excluded PRC vendors.",
+    "Faroe Islands (FRO, separate record): Føroya Tele dropped Huawei for Ericsson 5G (KVF, 2021) amid reported Chinese ambassador pressure; code under FRO, not DNK.",
+    "Have the atNorth Ølgod, Thylander Esbjerg and Prime Esbjerg campuses started construction, who are the tenants, and what is Prime Data Centers' home jurisdiction?",
+    "Which base model does OS2ai use (claimed Gemma 3, unverified), and has any Danish ministry contracted Microsoft Copilot, OpenAI or another frontier provider?",
+    "Date and scope of Region Hovedstaden and Frederiksberg decisions to stop buying Hikvision/Dahua; has the PET December assessment led to wider removals?",
+    "Hyperscaler data centres (Microsoft, Google, Meta, Apple) in Denmark and any AI-specific expansions since 2023 were not searched."
+  ],
+  "searches_run": 10
+}

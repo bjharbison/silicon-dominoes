@@ -1,0 +1,405 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "IRL",
+  "name": "Ireland",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T05:25:02Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "IRL-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Eir",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-09-11",
+      "still_current": null,
+      "summary": "Eir, Ireland's largest telco, said it would keep Huawei as supplier of its 5G radio access network despite EU vendor-risk guidance, citing confidence in Huawei's security and the cost and delay of removal.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2020/09/11/irish-telco-eir-says-it-will-stick-with-huawei.html",
+          "publisher": "CNBC",
+          "source_tier": "S3",
+          "date": "2020-09-11",
+          "retrieved_at": "2026-10-24T05:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://rcrwireless.com/20200911/network-infrastructure/eir-to-stick-with-huawei",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2020-09-11",
+          "retrieved_at": "2026-10-24T05:24:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 5 because Eir's 5G network was already live in 21 towns and cities using Huawei RAN. still_current is null: no post-2020 source in this pass confirmed whether Huawei remains Eir's RAN vendor or whether any relevant-vendor measure under the 2023 Act (IRL-004) has applied to Eir."
+    },
+    {
+      "id": "IRL-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Eir",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-09-11",
+      "still_current": null,
+      "summary": "Ericsson supplies the core of Eir's 5G network, while Huawei supplies the radio access equipment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2020/09/11/irish-telco-eir-says-it-will-stick-with-huawei.html",
+          "publisher": "CNBC",
+          "source_tier": "S3",
+          "date": "2020-09-11",
+          "retrieved_at": "2026-10-24T05:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://rcrwireless.com/20200911/network-infrastructure/eir-to-stick-with-huawei",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2020-09-11",
+          "retrieved_at": "2026-10-24T05:24:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so third pole. Eir's network is thus split: PRC radio, EU core. Value undisclosed; current status after 2020 not confirmed."
+    },
+    {
+      "id": "IRL-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Three Ireland",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-12-05",
+      "still_current": null,
+      "summary": "Three Ireland was reported (via the Irish Independent) to plan an Ericsson deal for its 5G network rather than Huawei; neither Three nor Huawei commented.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://siliconrepublic.com/?p=853754",
+          "publisher": "Silicon Republic",
+          "source_tier": "S2",
+          "date": "2019-12-05",
+          "retrieved_at": "2026-10-24T05:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1 because only a reported plan was found, not a signed award; scope (RAN, core or both) unstated. Silicon Republic also notes Ericsson supplies Vodafone Ireland's 5G (not separately coded). Whether Three previously ran Huawei RAN, which would make this a reversal, was not confirmed."
+    },
+    {
+      "id": "IRL-004",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Minister for the Environment, Climate and Communications (Ireland)",
+      "local_actor": "Irish electronic communications providers",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-03-02",
+      "still_current": null,
+      "summary": "The Communications Regulation and Digital Hub Development Agency (Amendment) Act 2023 lets the Minister assess vendors for third-country interference and impose measures, including excluding or capping their critical components; no vendor is named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.irishstatutebook.ie/eli/2023/act/4/enacted/en/html",
+          "publisher": "Irish Statute Book",
+          "source_tier": "S1",
+          "date": "2023-03-02",
+          "retrieved_at": "2026-10-24T05:24:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.techzine.eu/news/privacy-compliance/92833/irish-government-seeks-to-ban-high-risk-vendors-from-the-internet/",
+          "publisher": "Techzine",
+          "source_tier": "S2",
+          "date": "2022-10-31",
+          "retrieved_at": "2026-10-24T05:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20211129/5g/ireland-exclude-high-risk-vendors-5g-networks",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2021-11-29",
+          "retrieved_at": "2026-10-24T05:24:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: this is an enabling security framework, not an adoption or an exclusion of any named vendor; the government said in 2021 no decision had been taken on individual vendors. Tier 3 reflects a binding enacted instrument; commencement of Part 3 and any relevant-vendor designation (e.g. of Huawei) were not found. If a designation is later made against Huawei it would be a geopolitical reversal of IRL-001."
+    },
+    {
+      "id": "IRL-005",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "EirGrid / Commission for Regulation of Utilities",
+      "local_actor": "Data-centre developers in the Greater Dublin area",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "new data-centre grid connections in the Greater Dublin area",
+      "reversal_reason": "regulatory",
+      "date": "2021-11",
+      "still_current": false,
+      "summary": "After a November 2021 CRU direction, EirGrid stopped granting new Dublin data-centre grid connections, a de facto moratorium reportedly to 2028; a CRU framework from 12 December 2025 ended it, requiring on-site dispatchable generation and new renewables.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/eirgrid-says-no-new-applications-for-data-centers-in-dublin-till-2028",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-01",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.williamfry.com/knowledge/irelands-data-centre-connections-back-online/",
+          "publisher": "William Fry (law-firm briefing)",
+          "source_tier": "S2",
+          "date": "2026-06-24",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a regulatory pause (reversal of new grid connections for planned projects, tier 3 by analogy to projects with planning consent). Pole null because the rule is grid-wide, not aimed at any pole, though the affected controllers were largely US hyperscalers and colocation firms (IRL-006). still_current false: William Fry reports the moratorium ended with the December 2025 framework, though Dublin capacity remains tight and the policy faces an NGO legal challenge (hearing May 2027). DCD article date approximate (January 2022)."
+    },
+    {
+      "id": "IRL-006",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Microsoft; Amazon Web Services; Equinix",
+      "local_actor": "Dublin data-centre projects (Grange Castle DUB14/15, Clonshaugh, Profile Park DB8)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "planned Microsoft, AWS and Equinix data centres in Dublin",
+      "reversal_reason": "regulatory",
+      "date": "2022-08-22",
+      "still_current": null,
+      "summary": "Microsoft, AWS and Equinix paused or redirected planned Dublin data centres after failing to secure EirGrid connections; Microsoft eyed London, Frankfurt and Madrid, AWS chose a site near London, and Equinix paused DB8.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/microsoft-aws-equinix-join-list-of-companies-pausing-data-center-projects-in-dublin/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-08-22",
+          "retrieved_at": "2026-10-24T05:22:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 because the projects held planning permission but no grid connection or confirmed construction. Reason regulatory: the trigger was the grid-connection moratorium (IRL-005), not geopolitics. Several reports are attributed to 'reportedly'; whether any project later resumed was not checked."
+    },
+    {
+      "id": "IRL-007",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Amazon Web Services",
+      "local_actor": "An Coimisiún Pleanála (planning consent)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-01",
+      "still_current": null,
+      "summary": "Ireland's planning body again approved three AWS data-centre buildings on Cruiserath Road, north Dublin (about 73MW combined), conditional on a renewable PPA; the site holds a 2019 EirGrid connection.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://bebeez.eu/2026/01/02/aws-gets-greenlight-for-three-data-centers-in-dublin-ireland-again/",
+          "publisher": "BeBeez International (relaying DCD)",
+          "source_tier": "S3",
+          "date": "2026-01-02",
+          "retrieved_at": "2026-10-24T05:22:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/aws-gets-greenlight-for-three-data-centers-in-dublin-ireland-again/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T05:22:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator AWS is US, so pole us. Tier 2: planning consent only, construction start not confirmed. The DCD original could not be opened (fetch blocked), so only the BeBeez reprint was read; the exact decision date is not given, so the finding is dated to the reprint month. Fingal approved in 2023; five appeals intervened."
+    },
+    {
+      "id": "IRL-008",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "Department of Enterprise, Tourism and Employment",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-14",
+      "still_current": null,
+      "summary": "OpenAI launched 'OpenAI for Ireland' with the government, including a 2026 SME Booster AI-training programme co-run with the Department of Enterprise, Tourism and Employment, plus founder-programme partnerships.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://openai.com/index/openai-for-ireland",
+          "publisher": "OpenAI (company release)",
+          "source_tier": "S1",
+          "date": "2025-11-14",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 as a programme partnership; no MOU, contract value, government adoption of ChatGPT or data-centre component was stated. Model accessed only via OpenAI's service, so pole us; base model not specified, so base_model fields null. A company release is S1 for what the company announced, not independent confirmation of government commitment."
+    },
+    {
+      "id": "IRL-009",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Houses of the Oireachtas / Office of Public Works",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-02-14",
+      "still_current": null,
+      "summary": "The Irish Council for Civil Liberties reported Hikvision cameras inside and around Leinster House; the Tánaiste said Defence had found Hikvision cameras at a Civil Defence building, and the OPW began a CCTV best-practice review.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://thejournal.ie/article.php?id=5995312",
+          "publisher": "TheJournal.ie",
+          "source_tier": "S3",
+          "date": "2023-02-14",
+          "retrieved_at": "2026-10-24T05:22:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://siliconrepublic.com/?p=1020678",
+          "publisher": "Silicon Republic",
+          "source_tier": "S2",
+          "date": "2023-02-13",
+          "retrieved_at": "2026-10-24T05:22:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 5 because the cameras were installed and in use; scale municipal because evidence covers individual buildings with no count. Hikvision is the equipment vendor (firmware/updates), so pole prc. No removal decision was reported; still_current null pending the OPW review outcome."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no searches spent; no accelerator purchase or export-licence item surfaced in facilities or models results"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "CRU December 2025 policy requires large data centres to supply matching dispatchable generation (noted in IRL-005), but no specific dedicated plant for a named AI/DC campus was found"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Does Huawei still supply Eir's RAN in 2026, and has the Minister made any relevant-vendor assessment or measure under Part 3 of the 2023 Act (commencement status unknown)?",
+    "Three Ireland and Vodafone Ireland: confirm current RAN/core vendors and whether Three previously used Huawei RAN (which would make its Ericsson move a reversal).",
+    "Has the OPW CCTV review led to removal of Hikvision cameras from Leinster House or other state buildings?",
+    "Large post-2023 data-centre/AI campuses outside Dublin (e.g. Microsoft Naas, Google Dublin expansion) and any connection offers under the December 2025 CRU framework were not coded.",
+    "Any Nvidia/AMD accelerator deployments in Ireland (e.g. national HPC/ICHEC AI infrastructure) were not searched.",
+    "Did the AWS Cruiserath buildings start construction after the 2025/26 re-approval?"
+  ],
+  "searches_run": 10
+}

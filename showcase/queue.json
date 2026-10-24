@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "FRA",
-  "ESP",
-  "POL",
-  "BEL",
-  "CHE",
-  "AUT",
-  "IRL",
-  "DNK",
-  "PRT",
-  "CZE",
   "ROU",
   "HUN",
   "UKR",
@@ -254,6 +244,16 @@
   "EGY",
   "NGA",
   "MEX",
-  "CAN"
+  "CAN",
+  "FRA",
+  "ESP",
+  "POL",
+  "BEL",
+  "CHE",
+  "AUT",
+  "IRL",
+  "DNK",
+  "PRT",
+  "CZE"
  ]
 }

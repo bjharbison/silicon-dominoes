@@ -1,0 +1,482 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "CZE",
+  "name": "Czechia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T05:20:39Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "CZE-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "NÚKIB (regulated critical-infrastructure, essential-service and significant-system operators)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei and ZTE products in Czech critical-infrastructure and significant information systems",
+      "reversal_reason": "geopolitical",
+      "date": "2018-12-17",
+      "still_current": null,
+      "summary": "NÚKIB issued a formal cybersecurity-act warning that Huawei and ZTE hardware and software pose a security threat, citing Chinese intelligence law; regulated system operators had to address the risk and adopt measures.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lupa.cz/aktuality/huawei-a-zte-jsou-bezpecnostni-hrozbou-varuje-narodni-urad-pro-kybernetickou-bezpecnost/",
+          "publisher": "Lupa.cz",
+          "source_tier": "S2",
+          "date": "2018-12-17",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lupa.cz/clanky/cesko-chysta-pravidla-pro-vyrazeni-huawei-ze-siti-a-urcovani-rizikovych-dodavatelu/",
+          "publisher": "Lupa.cz",
+          "source_tier": "S2",
+          "date": "2021-07-30",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://ct24.ceskatelevize.cz/ekonomika/2682797-cesky-urad-pro-kybernetickou-bezpecnost-varuje-pred-produkty-cinskych-firem-huawei",
+          "publisher": "Česká televize (ČT24)",
+          "source_tier": "S3",
+          "date": "2018-12",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded as a reversal of operational Huawei/ZTE equipment in regulated systems, but it is a binding risk-mitigation warning, not a ban or removal order. Lupa (2021) says the warnings remained in force; current status not reconfirmed this run, so still_current null. Both opened sources are the same host, so not corroborated."
+    },
+    {
+      "id": "CZE-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "CETIN",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020",
+      "still_current": null,
+      "summary": "CETIN, the largest Czech telecom infrastructure owner and holder of O2 Czech Republic's mobile infrastructure, signed a five-year contract with Ericsson to build 5G and modernise its mobile networks after a tender with security criteria.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://english.radio.cz/node/8700506",
+          "publisher": "Radio Prague International",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lupa.cz/aktuality/ericsson-dokoncuje-velkou-modernizaci-site-pro-cetin-a-letos-spusti-prvni-samostatne-5g-jadro",
+          "publisher": "Lupa.cz",
+          "source_tier": "S2",
+          "date": "2024-07-10",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so third pole. Radio Prague's piece is undated; the 2020 date follows its reference to the 5G auction the week before and Lupa's 'after 2020'. Lupa (2024) says the RAN modernisation was nearing completion and a standalone 5G core was planned for 2024; value undisclosed."
+    },
+    {
+      "id": "CZE-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "CETIN",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei radio access network at CETIN (O2 Czech Republic's mobile infrastructure)",
+      "reversal_reason": "geopolitical",
+      "date": "2024-07-10",
+      "still_current": null,
+      "summary": "Lupa reported that CETIN's Ericsson RAN modernisation was part of a move away from Huawei, with the swap expected to be finished across most of CETIN's infrastructure in 2024.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lupa.cz/aktuality/ericsson-dokoncuje-velkou-modernizaci-site-pro-cetin-a-letos-spusti-prvni-samostatne-5g-jadro",
+          "publisher": "Lupa.cz",
+          "source_tier": "S2",
+          "date": "2024-07-10",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reversal of an operational Huawei RAN at CETIN. No public reason found; coded geopolitical because it followed the 2018 NÚKIB warning and the tender scored security, but commercial is arguable. Completion not confirmed this run."
+    },
+    {
+      "id": "CZE-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "T-Mobile Czech Republic; Vodafone Czech Republic",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-07-10",
+      "still_current": null,
+      "summary": "T-Mobile said in 2022 it would keep Huawei in its Czech radio network, as Vodafone did; by mid-2024 both were finishing modernisation but still relied on Huawei for parts of their RAN.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lupa.cz/aktuality/vlastnik-ceskeho-t-mobilu-v-jadru-site-nahradi-huawei-technologii-vyvijenou-i-v-brne/",
+          "publisher": "Lupa.cz",
+          "source_tier": "S2",
+          "date": "2022-09-14",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lupa.cz/aktuality/ericsson-dokoncuje-velkou-modernizaci-site-pro-cetin-a-letos-spusti-prvni-samostatne-5g-jadro",
+          "publisher": "Lupa.cz",
+          "source_tier": "S2",
+          "date": "2024-07-10",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both sources are Lupa.cz, so not corroborated. The share of Huawei kit remaining at each operator is not stated, and whether it persists in 2026 was not checked; core-network vendors for these operators were not confirmed."
+    },
+    {
+      "id": "CZE-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "IT4Innovations (VŠB-TU Ostrava)",
+      "builder": "Hewlett Packard Enterprise",
+      "financier": "EuroHPC JU (35%) and EU structural funds (OP RDE)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-10-02",
+      "still_current": null,
+      "summary": "IT4Innovations, EuroHPC and HPE signed a contract for a petascale supercomputer with 560 Nvidia A100 GPUs, worth almost EUR 15 million, for installation in Q1 2021 and service until 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.e-infra.cz/en/news/it4innovations-one-step-closer-to-launching-the-most-powerful-supercomputer-in-the-czech-republic",
+          "publisher": "e-INFRA CZ (IT4Innovations news)",
+          "source_tier": "S1",
+          "date": "2020-10-14",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.businesswire.com/news/home/20201015006020/en/Hewlett-Packard-Enterprise-Selected-to-Build-Czech-Republic%E2%80%99s-Most-Powerful-Supercomputer-to-Advance-RD-in-Science-and-Engineering",
+          "publisher": "Hewlett Packard Enterprise (Business Wire release)",
+          "source_tier": "S1",
+          "date": "2020-10-15",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Both opened sources are S1 releases by contract parties, so not counted as independent corroboration. The working title EURO_IT4I is taken to be the Karolina system that Lupa (2025) calls existing; tier 5 rests on that inference. Value EUR ~15m (about US$17.6m) not converted into the field."
+    },
+    {
+      "id": "CZE-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "IT4Innovations (VŠB-TU Ostrava), Czech AI Factory consortium",
+      "local_actor": "IT4Innovations",
+      "builder": null,
+      "financier": "EuroHPC JU (50%); Czech Ministry of Education (remainder)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-10",
+      "still_current": null,
+      "summary": "The European Commission approved a Czech AI Factory led by IT4Innovations, about CZK 1 billion, half from EuroHPC; it plans a roughly 850-petaflop AI supercomputer, with a EuroHPC tender expected from late summer 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lupa.cz/aktuality/v-ostrave-pobezi-jedna-z-evropskych-tovaren-na-umelou-inteligenci-vyjde-na-miliardu/",
+          "publisher": "Lupa.cz",
+          "source_tier": "S2",
+          "date": "2025-10-10",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lupa.cz/aktuality/cesko-bude-mit-novy-superpocitac-s-hromadou-grafickych-karet-nebude-je-lehke-sehnat/",
+          "publisher": "Lupa.cz",
+          "source_tier": "S2",
+          "date": "2026-05-14",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 because Czech co-funding was unapproved in October 2025 and no hardware tender had been awarded by May 2026. The GPU vendor is not chosen, so no silicon finding. Both sources are Lupa.cz."
+    },
+    {
+      "id": "CZE-007",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "České Radiokomunikace (CRA Prague Gateway DC)",
+      "local_actor": "České Radiokomunikace",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-10",
+      "still_current": null,
+      "summary": "Construction began on CRA's 26 MW Prague Gateway data centre at Zbraslav (about CZK 2 billion, operation targeted end-2027); CRA also filed it with IT4Innovations as a candidate EU AI gigafactory expandable to 100 MW.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lupa.cz/clanky/na-zbraslavi-zacala-stavba-nejvetsiho-datacentra-u-nas-a-dalsi-se-chysta-v-severnich-cechach/",
+          "publisher": "Lupa.cz",
+          "source_tier": "S2",
+          "date": "2025-09-10",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://forbes.cz/cesko-planuje-vystavbu-ai-gigafactory-ma-vyrust-v-praze-na-zbraslavi/",
+          "publisher": "Forbes Česko",
+          "source_tier": "S3",
+          "date": "2025-06-20",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lupa.cz/clanky/v-cr-vznikaji-ctyri-velka-datacentra-pro-ai-stavi-se-v-moste-ci-atomovem-krytu-a-rusove-rozjeli-vyvoj-v-praze/",
+          "publisher": "Lupa.cz",
+          "source_tier": "S2",
+          "date": "2025-11-25",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: CRA is a Czech company, but Lupa says it is owned by Cordiant Digital Infrastructure without giving that owner's jurisdiction, so the ultimate controller's pole was not confirmed. The gigafactory filing (June 2025) is tier 1; the EU decision was not checked. Value ~CZK 2bn not converted."
+    },
+    {
+      "id": "CZE-008",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "MasterDC (Master Internet group)",
+      "local_actor": "MasterDC",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-25",
+      "still_current": null,
+      "summary": "Brno firm MasterDC plans an AI data centre in a former military nuclear shelter at Kanice, starting at 4 MW and expandable to 25 MW, with first construction expected in autumn 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lupa.cz/clanky/v-cr-vznikaji-ctyri-velka-datacentra-pro-ai-stavi-se-v-moste-ci-atomovem-krytu-a-rusove-rozjeli-vyvoj-v-praze/",
+          "publisher": "Lupa.cz",
+          "source_tier": "S2",
+          "date": "2025-11-25",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Planned project only; construction start not confirmed."
+    },
+    {
+      "id": "CZE-009",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Bluesio Technologies (majority-owned by Blue Bridge Invest)",
+      "local_actor": "Bluesio Technologies",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-25",
+      "still_current": null,
+      "summary": "Bluesio Technologies, backed by UAE investors, bought land in Most for about CZK 1 billion for the planned Iris DC, roughly 50 MW across two buildings; no construction start reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lupa.cz/clanky/v-cr-vznikaji-ctyri-velka-datacentra-pro-ai-stavi-se-v-moste-ci-atomovem-krytu-a-rusove-rozjeli-vyvoj-v-praze/",
+          "publisher": "Lupa.cz",
+          "source_tier": "S2",
+          "date": "2025-11-25",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the source names UAE investors but not the controlling company's jurisdiction or the investors' share. Land purchase is not counted as financing closed, so tier 1."
+    },
+    {
+      "id": "CZE-010",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Czech Police, Ministries of Defence and Interior, cities, state enterprises",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-04-17",
+      "still_current": null,
+      "summary": "Lupa reported that Czech state bodies and critical-infrastructure operators, including the police, defence and interior ministries, cities and state firms, have long bought mainly Hikvision cameras; no removal order was reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lupa.cz/clanky/take-vnitro-chce-zakazovat-dodavatele-do-kriticke-infrastruktury-drimaji-v-ni-rizikove-kamery-z-ciny/",
+          "publisher": "Lupa.cz",
+          "source_tier": "S2",
+          "date": "2024-04-17",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Camera vendor treated as controller because it supplies firmware. An industry source in the article puts Chinese makers at 60-70% of the Czech security-camera market (estimate, not measured). NÚKIB published a document on Chinese IP camera systems in September 2025 (not opened); any removals since were not checked."
+    },
+    {
+      "id": "CZE-011",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "Czech Ministry of Justice",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-06",
+      "still_current": null,
+      "summary": "The Czech Ministry of Justice uses Copilot Chat, the chatbot bundled with its Microsoft 365 licence, alongside its own Justína chatbot and further AI tools being rolled out.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://advokatnidenik.cz/2025/03/06/umela-inteligence-je-novym-pomocnikem-na-ministerstvu-spravedlnosti/",
+          "publisher": "Advokátní deník",
+          "source_tier": "S3",
+          "date": "2025-03-06",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Used through Microsoft's service, so US pole. The underlying model and number of users are not stated; Justína's model is not identified, so not coded. Tier 3 reflects use under an existing licence rather than a dedicated contract."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power plant surfaced; data-centre sources only mention grid substations"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Has the government adopted the supply-chain regulation under Act 264/2025 (in force 1 Nov 2025) and restricted any named high-risk vendor (Huawei, ZTE, Hikvision)?",
+    "Did CETIN finish its Huawei RAN swap in 2024, and how much Huawei RAN remains at T-Mobile CZ and Vodafone CZ in 2026? Who supplies their 5G cores?",
+    "NÚKIB's September 2025 'High' warning on data transfer and remote administration from China names no vendor; which product categories did regulated entities act on?",
+    "Is the 2018 Huawei/ZTE warning still formally in force, and did the government-office Huawei phone ban that followed it survive?",
+    "Who won the CZAI 'KarolAIna' supercomputer tender, and with Nvidia or AMD GPUs?",
+    "Ultimate ownership jurisdiction of České Radiokomunikace (Cordiant) and of Bluesio/Blue Bridge Invest; outcome of the Zbraslav AI gigafactory bid.",
+    "Ministry of Education-backed Czech large language model: builder, base model and compute were not confirmed (source page blocked).",
+    "Have any Czech public bodies removed Hikvision/Dahua cameras since NÚKIB's 2025 camera document?"
+  ],
+  "searches_run": 8
+}

@@ -1,0 +1,346 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "AUT",
+  "name": "Austria",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T05:21:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "AUT-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "A1 Telekom Austria",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-02-18",
+      "still_current": null,
+      "summary": "Nokia won a multi-year contract to supply A1's 5G radio access (AirScale) and 5G core in Austria; in January 2026 A1 again named Nokia as its 5G partner.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20210218/5g/nokia-secures-multi-year-5g-radio-core-deal-a1-austria",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2021-02-18",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://orf.at/stories/3417822/",
+          "publisher": "ORF",
+          "source_tier": "S3",
+          "date": "2026-01-21",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nokia (Finnish) is third pole. Value and duration undisclosed. ORF reports Huawei and ZTE components are also present in A1's network without saying where; that residual role is not coded. A1 is majority-owned by America Movil (Mexico), which does not change the equipment-vendor pole."
+    },
+    {
+      "id": "AUT-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Hutchison Drei Austria",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-11-03",
+      "still_current": null,
+      "summary": "ZTE is Drei Austria's long-standing network equipment supplier and partner for its 5G rollout, from the 2019 Linz launch through upgrading all sites to 5G and work on 5G standalone in 2022.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20221103/5g/drei-austria-zte-collaborate-on-award-winning-5g-network",
+          "publisher": "RCR Wireless News (ZTE sponsored content)",
+          "source_tier": "S4",
+          "date": "2022-11-03",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sdxcentral.com/articles/news/hutchison-drei-austria-taunts-rivals-with-real-5g/2019/06/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2019-06-21",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20190814/business/zte-drei-partner-5g-project-austria-carinthia-region",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2019-08-14",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://orf.at/stories/3417822/",
+          "publisher": "ORF",
+          "source_tier": "S3",
+          "date": "2026-01-21",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 5 because Drei's 5G network is operational nationally with ZTE as named equipment supplier; the 2022 RCR piece is ZTE-sponsored and treated as S4, so corroboration rests on SDxCentral, RCR 2019 and ORF. No source states ZTE's exact RAN/core share; ORF (2026) says Drei uses both ZTE and Huawei components. still_current null: no explicit 2026 confirmation of ZTE as main vendor beyond ORF's statement that ZTE components are in use."
+    },
+    {
+      "id": "AUT-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Magenta Telekom (formerly T-Mobile Austria)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-01-21",
+      "still_current": null,
+      "summary": "Magenta's 4G network was built by Huawei under its T-Mobile Austria name; for 5G it uses Nokia, Ericsson and Cisco and reportedly still Huawei, while saying its core is free of Chinese vendors.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://orf.at/stories/3417822/",
+          "publisher": "ORF",
+          "source_tier": "S3",
+          "date": "2026-01-21",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened S3 source; tier 5 reflects the operational Huawei-built 4G RAN. Date is the reporting date, not the original build. Whether Huawei RAN is being replaced, and Huawei's 5G share, are unknown. Nokia/Ericsson/Cisco 5G role not coded separately."
+    },
+    {
+      "id": "AUT-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Austrian Scientific Computing consortium (TU Wien lead)",
+      "local_actor": "TU Wien, University of Innsbruck, JKU Linz and partner universities",
+      "builder": null,
+      "financier": "EU Recovery and Resilience Facility / Quantum Austria / Austrian science ministry",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-03",
+      "still_current": true,
+      "summary": "MUSICA, Austria's new national research supercomputer across Vienna, Innsbruck and Linz (about 40 petaflops), run by a university consortium led by TU Wien, was officially inaugurated in July 2026 after phased operation from 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.tuwien.at/alle-news/news/musica-oesterreichs-naechster-supercomputer",
+          "publisher": "TU Wien",
+          "source_tier": "S1",
+          "date": "2024-08-22",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://interestingengineering.com/science/musica-supercomputer-calculations-nvidia-chips",
+          "publisher": "Interesting Engineering",
+          "source_tier": "S3",
+          "date": "2026-07",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is a domestic public university consortium, so domestic. TU Wien cites EUR 36m investment funded by the EU Recovery and Resilience Facility, Quantum Austria and the science ministry; not converted. Lenovo (hardware) and MEGWARE (storage) are IT suppliers, not civil builders. Inauguration date per Interesting Engineering (day not independently checked)."
+    },
+    {
+      "id": "AUT-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Austrian Scientific Computing consortium (MUSICA)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-03",
+      "still_current": true,
+      "summary": "MUSICA uses Nvidia H100 GPUs (four per node, roughly 1,088 in total across three sites) with AMD EPYC CPUs, supplied in Lenovo hardware.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.tuwien.at/alle-news/news/musica-oesterreichs-naechster-supercomputer",
+          "publisher": "TU Wien",
+          "source_tier": "S1",
+          "date": "2024-08-22",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://interestingengineering.com/science/musica-supercomputer-calculations-nvidia-chips",
+          "publisher": "Interesting Engineering",
+          "source_tier": "S3",
+          "date": "2026-07",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "GPU total: TU Wien's node counts (112+80+80 nodes x 4) give 1,088, matching Interesting Engineering. CPUs from AMD (also US). No export-licence issue expected for an EU state."
+    },
+    {
+      "id": "AUT-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Advanced Computing Austria (ACA) GmbH consortium, hosted at TU Wien",
+      "local_actor": "AIT Austrian Institute of Technology, TU Wien and partners",
+      "builder": null,
+      "financier": "EuroHPC Joint Undertaking / Republic of Austria",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-01",
+      "still_current": null,
+      "summary": "AI Factory Austria (AI:AT), an EuroHPC-backed project led by ACA with TU Wien hosting, began in July 2025 with a EUR 30m project budget; reporting cites EUR 80m overall, mostly for 650-700 GPUs.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://cordis.europa.eu/project/id/101253078",
+          "publisher": "CORDIS (European Commission)",
+          "source_tier": "S1",
+          "date": "2025-07-01",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.trendingtopics.eu/ai-factory-austria/",
+          "publisher": "Trending Topics",
+          "source_tier": "S2",
+          "date": "2025-03-12",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 3: EU grant agreement in force (CORDIS: start 1 July 2025, total cost EUR ~30m, EU share ~EUR 15m); the EUR 80m (EU 40m / Austria 40m) figure from Trending Topics covers hardware procurement. GPU vendor not named and procurement not confirmed, so no silicon finding. Values not converted."
+    },
+    {
+      "id": "AUT-007",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Bundesrechenzentrum (Federal Computing Centre)",
+      "local_actor": "Federal Chancellery (Public AI programme)",
+      "builder": null,
+      "financier": null,
+      "base_model": "Mistral AI model (unspecified)",
+      "base_model_pole": "third",
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-20",
+      "still_current": null,
+      "summary": "Austria began rolling out GovGPT to federal ministries in July 2026, aiming at over 180,000 federal staff; it runs on the federal computing centre's AI infrastructure, currently using a Mistral AI model with no provider data access.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/07/proell-public-ai-launcht-govgpt-fuer-die-bundesverwaltung.html",
+          "publisher": "Bundeskanzleramt Österreich",
+          "source_tier": "S1",
+          "date": "2026-07-20",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.trend.at/news/neue-ki-anwendung-soll-verwaltung-unterstutzen",
+          "publisher": "trend.",
+          "source_tier": "S3",
+          "date": "2026-07",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded domestic because the model runs on BRZ servers and the provider is said to have no data access, implying self-hosted weights; the government release does not name Mistral (trend. does). Exact Mistral model and licence unknown. Tier 4 = production rollout begun ministry by ministry, not yet at full scale. Provider described as swappable."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found no Austrian Hikvision/Dahua removal, safe-city procurement or foreign-stack e-government AI beyond GovGPT (coded under models)"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power project surfaced in facilities searches"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Has Austria used TKG 2021 s.45 to classify any vendor as high-risk? futurezone (March 2023) reported the government was examining a Huawei/ZTE exclusion; no decision found.",
+    "Austrian response to the EU Commission's January 2026 push to exclude Huawei and ZTE: any national implementation or operator swap-out timeline?",
+    "Exact Huawei/ZTE share in A1, Magenta and Drei RAN and core; whether Magenta is replacing its Huawei-built 4G RAN.",
+    "AI Factory Austria GPU procurement: vendor, model, count and award date.",
+    "Commercial data-centre projects since 2023 (Microsoft Austria East build-out, Digital Realty, AtlasEdge, others) and controllers were not researched individually.",
+    "Which Mistral model GovGPT uses, under what licence, and whether the BRZ holds the weights.",
+    "Public-sector use of Hikvision/Dahua cameras in Austria."
+  ],
+  "searches_run": 10
+}

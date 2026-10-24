@@ -1,0 +1,474 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BEL",
+  "name": "Belgium",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T05:20:12Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BEL-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia (RAN); Ericsson (5G core)",
+      "local_actor": "Proximus and Orange Belgium (shared network)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-10-09",
+      "still_current": null,
+      "summary": "Proximus and Orange Belgium chose Nokia to renew their shared radio access network across 2G-5G, with Ericsson supplying the 5G core; the overhaul was due to finish by 2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/belgian-telcos-drop-huawei-for-nokia",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-10-09",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecoms.com/5g-6g/belgium-says-bye-bye-huawei-hello-nokia",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2020-10-09",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/orange/nokia-seals-belgian-deals-as-huawei-faces-axe/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2020-10-09",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nokia (Finnish) and Ericsson (Swedish) are both third-pole vendors. Proximus said the tender would save about EUR80m capex over 2021-23 versus plan; contract value undisclosed. Completion of the 2023 overhaul was not confirmed in this pass, so still_current is null."
+    },
+    {
+      "id": "BEL-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Proximus and Orange Belgium",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei single-RAN (2G/3G/4G) at Proximus and Orange Belgium",
+      "reversal_reason": "geopolitical",
+      "date": "2020-10-09",
+      "still_current": null,
+      "summary": "Both leading Belgian operators are removing Huawei, their sole radio-network supplier (Proximus since 2009), replacing it with Nokia so the networks would be free of Chinese equipment by 2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/belgian-telcos-drop-huawei-for-nokia",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-10-09",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecoms.com/5g-6g/belgium-says-bye-bye-huawei-hello-nokia",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2020-10-09",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/orange/nokia-seals-belgian-deals-as-huawei-faces-axe/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2020-10-09",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reversal of an operational (tier 5) Huawei single-RAN at both operators. Operators cited technical, operational and financial criteria and Huawei called it a free-market tender, but the swap followed the June 2020 high-risk-vendor decision (BEL-003) and Orange's former CEO cited the risk of a network being stopped; coded geopolitical, though commercial is arguable. Completion not confirmed."
+    },
+    {
+      "id": "BEL-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei and other 'high-risk' vendors",
+      "local_actor": "Belgian National Security Council",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "High-risk vendors' (Huawei) eligibility for Belgian 5G core and >35% of RAN",
+      "reversal_reason": "geopolitical",
+      "date": "2020-06-22",
+      "still_current": null,
+      "summary": "Belgium's National Security Council barred high-risk suppliers from 5G core networks, capped them at 35% of non-core network parts and kept them out of sensitive areas such as near military sites, while declining an outright Huawei ban.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://bipt.be/operators/publication/consultation-on-the-bill-and-draft-royal-decree-introducing-additional-security-measures-for-the-provision-of-mobile-5g-services",
+          "publisher": "BIPT (regulator)",
+          "source_tier": "S1",
+          "date": "2020-06-22",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://brusselstimes.com/121568/belgium-will-not-join-uk-in-banning-huawei-from-its-telecom-networks",
+          "publisher": "The Brussels Times",
+          "source_tier": "S3",
+          "date": "2020-07-14",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightreading.com/5g/belgian-telcos-drop-huawei-for-nokia",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-10-09",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "An exclusion, so coded as a reversal of Huawei's eligibility. Huawei held no 5G core role (Ericsson supplied core), so tier 3 is a conservative stand-in rather than the tier of an installed system; the operators' tier-5 RAN swap is BEL-002. BIPT opened page gives only the NSC approval date; content from Brussels Times and Light Reading (citing Politico). A law of 17 Feb 2022 created a ministerial 5G authorisation regime (Stibbe), but whether high-risk-vendor rules were codified was not confirmed."
+    },
+    {
+      "id": "BEL-004",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Wallonia / Saint-Ghislain",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-08",
+      "still_current": true,
+      "summary": "Google's Saint-Ghislain data-centre campus in Hainaut is operating with about 600 staff; Google reports over EUR11bn invested there since 2007 and lists it among its Google Cloud locations.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.googlecloudpresscorner.com/2025-10-07-Google-Announces-New-EUR5-Billion-AI-Infrastructure-Investment-in-Belgium-through-2027",
+          "publisher": "Google Cloud (company release)",
+          "source_tier": "S1",
+          "date": "2025-10-08",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.vrt.be/vrtnws/nl/2025/10/08/google-investeert-5-miljard-euro-aan-ai-infrastructuur-in-belgie/",
+          "publisher": "VRT NWS",
+          "source_tier": "S3",
+          "date": "2025-10-08",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is Google (US). The EUR11bn cumulative figure is from VRT and is not converted or coded as a value. Date is the status observation date, not the opening date.",
+      "bundle_id": "BEL-B1"
+    },
+    {
+      "id": "BEL-005",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Saint-Ghislain campus",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-08",
+      "still_current": null,
+      "summary": "Google announced a new EUR5bn investment over 2026-27 to expand its Saint-Ghislain campus for AI and Google Cloud, adding 300 full-time jobs.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.googlecloudpresscorner.com/2025-10-07-Google-Announces-New-EUR5-Billion-AI-Infrastructure-Investment-in-Belgium-through-2027",
+          "publisher": "Google Cloud (company release)",
+          "source_tier": "S1",
+          "date": "2025-10-08",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.vrt.be/vrtnws/nl/2025/10/08/google-investeert-5-miljard-euro-aan-ai-infrastructuur-in-belgie/",
+          "publisher": "VRT NWS",
+          "source_tier": "S3",
+          "date": "2025-10-08",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 1: an announced investment programme; no construction start or permit was confirmed. EUR5bn is about US$5.8bn at Oct 2025 rates, but the value field is left null because the conversion rate on the source date was not checked in this pass.",
+      "bundle_id": "BEL-B1"
+    },
+    {
+      "id": "BEL-006",
+      "layer": "power",
+      "pole": null,
+      "controller": "Eneco, Luminus and Renner (project owners)",
+      "local_actor": "Google (offtaker, Saint-Ghislain)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-08",
+      "still_current": null,
+      "summary": "Google signed new carbon-free energy deals with Eneco, Luminus and Renner totalling over 110 MW for its Belgian operations, and says it has supported 365 MW of new clean energy in Belgium overall.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.googlecloudpresscorner.com/2025-10-07-Google-Announces-New-EUR5-Billion-AI-Infrastructure-Investment-in-Belgium-through-2027",
+          "publisher": "Google Cloud (company release)",
+          "source_tier": "S1",
+          "date": "2025-10-08",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.vrt.be/vrtnws/nl/2025/10/08/google-investeert-5-miljard-euro-aan-ai-infrastructuur-in-belgie/",
+          "publisher": "VRT NWS",
+          "source_tier": "S3",
+          "date": "2025-10-08",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the plants are controlled by several developers (Eneco and Luminus have foreign parents; Renner's ownership not checked), and Google is only the offtaker. Tier 3 assumes the deals are signed PPAs; terms and values were not disclosed.",
+      "bundle_id": "BEL-B1"
+    },
+    {
+      "id": "BEL-007",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "EuroHPC Joint Undertaking (LUMI and JUPITER AI Factories)",
+      "local_actor": "imec-led BE-AIFA consortium (23 partners), Belnet",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-13",
+      "still_current": null,
+      "summary": "EuroHPC selected Belgium's AI Factory Antenna (BE-AIFA), a EUR10m imec-coordinated hub linking Belgian users to the LUMI (Finland) and JUPITER (Germany) AI supercomputers; full services expected by September 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-selects-ai-factory-antennas-broaden-ai-factories-initiative-2025-10-13_en",
+          "publisher": "EuroHPC Joint Undertaking",
+          "source_tier": "S1",
+          "date": "2025-10-13",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://belnet.be/en/news-events/news/ai-factory-antenna-connects-belgian-organisations-european-ai-infrastructure",
+          "publisher": "Belnet (federal research network)",
+          "source_tier": "S1",
+          "date": "2026-06-12",
+          "retrieved_at": "2026-10-24T05:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Compute is controlled by EU-level EuroHPC and hosted in Finland and Germany, so third pole; Belgium hosts no AI Factory itself. Tier 3 as a binding EU selection with co-funding; EUR10m budget not converted. Underlying GPU vendors not stated in sources."
+    },
+    {
+      "id": "BEL-008",
+      "layer": "models",
+      "pole": "third",
+      "controller": "Mistral AI",
+      "local_actor": "Proximus NXT",
+      "builder": null,
+      "financier": null,
+      "base_model": "Mistral AI models (Le Chat, Mistral Code)",
+      "base_model_pole": "third",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-27",
+      "still_current": null,
+      "summary": "Proximus NXT partnered with Mistral AI to offer Le Chat, AI Studio and Mistral Code as a managed, Proximus-hosted service for organisations in the Benelux and wider Europe.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.proximus.com/news/2025/202511-pxs-nxt-and-mistral-ai-deploy-european-artificial-intelligence-at-scale.html",
+          "publisher": "Proximus (company release)",
+          "source_tier": "S1",
+          "date": "2025-11-27",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://en.paperjam.lu/article/proximus-nxt-joins-forces-with-mistral-ai-for-sovereign-ai-in-europe",
+          "publisher": "Paperjam",
+          "source_tier": "S3",
+          "date": "2025-11",
+          "retrieved_at": "2026-10-24T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Mistral (French) supplies and updates the models, so third pole even though Proximus hosts. Coded tier 2 as a commercial partnership with no named customers or value; not government adoption."
+    },
+    {
+      "id": "BEL-009",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision and Dahua",
+      "local_actor": "Belgian Ministry of Defence",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-01",
+      "still_current": null,
+      "summary": "Belgium's defence minister told parliament that about 30 Hikvision and Dahua surveillance cameras used by Defence posed limited espionage risk because they were not internet-connected.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://brusselstimes.com/215899/controversy-as-belgian-defense-uses-chinese-huawei-to-access-the-internet",
+          "publisher": "The Brussels Times",
+          "source_tier": "S3",
+          "date": "2022-04-08",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Small deployment inside a national ministry; scale coded municipal for its size. Single opened S3 source; whether the cameras remain in use was not checked."
+    },
+    {
+      "id": "BEL-010",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Belgian Ministry of Defence",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022",
+      "still_current": null,
+      "summary": "After a December 2021 cyberattack, Belgian Defence bought hundreds of Huawei wifi routers for a temporary internet-research network; military intelligence said it carried no sensitive data and parliamentarians demanded a correction.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://brusselstimes.com/215899/controversy-as-belgian-defense-uses-chinese-huawei-to-access-the-internet",
+          "publisher": "The Brussels Times",
+          "source_tier": "S3",
+          "date": "2022-04-08",
+          "retrieved_at": "2026-10-24T05:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Small, temporary procurement; scale coded municipal for size. No replacement decision was reported in the source; whether the routers were withdrawn was not checked."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no Belgian accelerator purchase or export-licence evidence surfaced; one Proximus/Mistral/Nvidia search returned none, and BE-AIFA sources name no GPU vendor"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "coded"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Did Proximus and Orange Belgium complete the Huawei-to-Nokia RAN swap by 2023, and does Huawei retain any role?",
+    "Telenet/Wyre (Liberty Global) and DIGI Belgium RAN and core vendors were not found; one search returned only Norwegian results.",
+    "Were the June 2020 National Security Council high-risk-vendor rules (core exclusion, 35% cap) codified in the 17 Feb 2022 law or a royal decree, and is a high-risk vendor list in force?",
+    "Google Saint-Ghislain: has the EUR5bn 2026-27 expansion started construction, and which accelerators (TPU/Nvidia) are deployed?",
+    "Other large Belgian data-centre projects since 2023 (e.g. Microsoft Belgium Central region facilities, AWS sovereign Local Zone) and their controllers.",
+    "Were Defence's Huawei routers and Hikvision/Dahua cameras removed, and is there any federal rule on Chinese cameras?",
+    "Any Belgian sovereign LLM or government adoption of a frontier model provider beyond the DeepSeek device ban already in the global layer."
+  ],
+  "searches_run": 10
+}
