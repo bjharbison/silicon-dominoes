@@ -1,0 +1,363 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "NPL",
+  "name": "Nepal",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T13:19:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "NPL-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Nepal Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017",
+      "still_current": true,
+      "summary": "Huawei built state-owned Nepal Telecom's 3G and 4G radio infrastructure; the operator's 2G-4G networks run on Chinese radio and core equipment, and Huawei is to keep supporting existing services.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://kathmandupost.com/money/2025/12/12/nepal-telecom-may-shift-away-from-huawei-for-5g",
+          "publisher": "The Kathmandu Post",
+          "source_tier": "S3",
+          "date": "2025-12-12",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://thehimalayantimes.com/business/nts-4g-expansion-to-gather-momentum/",
+          "publisher": "The Himalayan Times",
+          "source_tier": "S3",
+          "date": "2019-10-01",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2025/12/15/nepal-telecom-considers-independent-5g-rollout-potentially-ending-huawei-partnership/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S3",
+          "date": "2025-12-15",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Date 2017 is the 4G launch in Kathmandu/Pokhara; Huawei's 3G build predates it. still_current true because December 2025 reporting says Huawei will continue supporting 2G-4G services. Not corroborated: all opened sources are S3, no S1/S2."
+    },
+    {
+      "id": "NPL-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Nepal Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-02",
+      "still_current": null,
+      "summary": "Nepal Telecom signed three contracts in February 2019 for a Rs19bn nationwide 4G expansion: ZTE supplied the core network and Hong Kong-based CCSI the radio access network with Huawei; service expanded to 20+ cities from October 2019.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://kathmandupost.com/money/2019/04/20/nepal-telecom-to-expand-4g-coverage-nationwide",
+          "publisher": "The Kathmandu Post",
+          "source_tier": "S3",
+          "date": "2019-04-20",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://thehimalayantimes.com/business/nts-4g-expansion-to-gather-momentum/",
+          "publisher": "The Himalayan Times",
+          "source_tier": "S3",
+          "date": "2019-10-01",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://kathmandupost.com/money/2025/12/12/nepal-telecom-may-shift-away-from-huawei-for-5g",
+          "publisher": "The Kathmandu Post",
+          "source_tier": "S3",
+          "date": "2025-12-12",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 on reported nationwide launch in October 2019. ZTE's core quote was Rs1.56bn; total project Rs19bn (not converted). CCSI is a China Communications Services subsidiary, so the RAN side is also PRC-linked. still_current not confirmed in this pass for the ZTE core specifically. Not corroborated: no opened S1/S2 source."
+    },
+    {
+      "id": "NPL-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "Nepal Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Nepal Telecom 5G trials on Huawei/ZTE equipment (trial permit November 2021)",
+      "reversal_reason": "regulatory",
+      "date": "2023-10",
+      "still_current": null,
+      "summary": "Nepal Telecom's 5G trials with Huawei and ZTE equipment, held in Kathmandu, Pokhara and Birgunj, were called off after it could not obtain a permit to import Chinese equipment; US and Indian officials reportedly objected to non-competitive vendor selection.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://telecoms.com/524134/us-china-spat-spills-over-into-nepal-hits-5g-rollout/",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2023-10-05",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded regulatory because the stated proximate cause is an unresolved import permit between operator and regulator; the geopolitical explanation (US/Indian embassy concerns) is reported as attributed or speculative. A reviewer may reclassify as geopolitical. Scale subnational because trials covered selected cities."
+    },
+    {
+      "id": "NPL-004",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Nepal Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12-12",
+      "still_current": null,
+      "summary": "Nepal Telecom decided to launch 5G in standalone mode with a new cloud-native core and dedicated radio network bought through open competitive bidding, which would effectively end Huawei's role for 5G; no tender timeline was given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://kathmandupost.com/money/2025/12/12/nepal-telecom-may-shift-away-from-huawei-for-5g",
+          "publisher": "The Kathmandu Post",
+          "source_tier": "S3",
+          "date": "2025-12-12",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2025/12/15/nepal-telecom-considers-independent-5g-rollout-potentially-ending-huawei-partnership/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S3",
+          "date": "2025-12-15",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: no vendor selected. Not coded as a reversal because no Huawei 5G contract existed to cancel; it is a statement of procurement intent. Whether any 5G tender has since been issued or awarded was not established in this pass."
+    },
+    {
+      "id": "NPL-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Nepal Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Nepal Telecom convergent real-time billing and customer support system tender (Huawei expected shortlist)",
+      "reversal_reason": "geopolitical",
+      "date": "2026-01",
+      "still_current": null,
+      "summary": "Nepal Telecom's board cancelled a roughly Rs5.5bn tender for a new real-time billing and customer-support system in January 2026; only Huawei and Whale Cloud bid, Huawei was reportedly to be shortlisted, and the US Embassy reportedly objected.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://myrepublica.nagariknetwork.com/amp/news/nepal-telecom-cancels-controversial-new-billing-system-tender-amid-diplomat-46-49.html",
+          "publisher": "Republica",
+          "source_tier": "S3",
+          "date": "2026-01-20",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://nepalitimes.com/ntc-cancels-tender",
+          "publisher": "Nepali Times",
+          "source_tier": "S3",
+          "date": "2026-01-22",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://ekantipur.com/business/2026/01/19/en/nepal-telecom-cancels-contract-process-related-to-billing-system-58-03.html",
+          "publisher": "Kantipur (English)",
+          "source_tier": "S3",
+          "date": "2026-01-19",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2026/01/19/nepal-telecom-cancels-rs5-billion-billing-system-bid-ousts-huawei/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S3",
+          "date": "2026-01-19",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 2 because the reversed item was a tender at technical evaluation with no award. reversal_reason geopolitical rests on Republica's unnamed sources and its report of US Embassy concerns; Kantipur and Nepali Times give no reason, and the minister cited controversy. The incumbent billing system is from Chinese firm AsiaInfo, so the stack stays PRC-supplied for now. Not corroborated: no opened S1/S2."
+    },
+    {
+      "id": "NPL-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Nepal Telecom",
+      "local_actor": "Nepal Telecom",
+      "builder": "Huawei",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-01",
+      "still_current": null,
+      "summary": "Nepal Telecom signed a letter of intent with Huawei to build a NPR 484m primary data centre in Kathmandu and a disaster-recovery site in Bhairahawa; specifications and final terms were undisclosed.",
+      "announced_value_usd": 3500000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/huawei-to-build-35m-data-center-for-nepal-telecom/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-01-27",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2025/02/03/huawei-to-build-3-5m-data-center-for-nepal-telecom/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S3",
+          "date": "2025-02-03",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole domestic under the owner-operator rule (state-owned Nepal Telecom); Huawei is recorded as builder. If Huawei also supplies the IT equipment, a separate PRC equipment finding would apply. Value USD 3.5m as reported by DCD (converted by the source). Tier 1 (LOI only); whether a contract followed was not checked."
+    },
+    {
+      "id": "NPL-007",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Yotta Data Services / BLC Holding joint venture",
+      "local_actor": "BLC Holding",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-04-29",
+      "still_current": null,
+      "summary": "India's Yotta Data Services and Nepal's BLC Holding formed a joint venture to build K1, a Tier III data centre of up to 4MW near Kathmandu airport, pitched for cloud and AI workloads and targeted for completion within 24 months.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://yotta.com/press-releases/nepals-blc-and-indias-yotta-data-services-partner-to-build-nepals-first-supercloud-data-center/",
+          "publisher": "Yotta Data Services (press release)",
+          "source_tier": "S1",
+          "date": "2024-04-29",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/data-centres-networks/16634-yotta-partners-blc-for-data-centre-project-in-nepal.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2024-04-30",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: ownership split and day-to-day operator of the JV are not stated, so control could be third (India) or domestic. Tier 2 (JV formed, no financing close or construction start confirmed). Investment described only as multi-million dollar. The 24-month target (about April 2026) has passed; completion not checked."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no accelerator purchases surfaced in network, data-centre or AI-policy searches; no dedicated silicon search within budget"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "National AI Policy 2025 approved by cabinet (August 2025) sets up a National AI Centre but names no model provider or national model; no government model partnership found"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced; AI policy mentions cold-climate data-centre siting only"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies Ncell's RAN and core network? Only pre-2016 reports of Huawei work for Ncell surfaced.",
+    "Has Nepal Telecom issued or awarded a standalone 5G tender since December 2025, and to which vendor?",
+    "Was the Huawei-built Nepal Telecom data centre contracted after the January 2025 LOI, and does Huawei supply its IT equipment?",
+    "Which vendor supplies Kathmandu Valley police and Budhanilkantha AI CCTV (181 cameras, Feb 2024)? A Uniview (PRC) case-study page about Nepal appeared in results but was not fetched (PRC vendor site).",
+    "Government Integrated Data Centre (GIDC): builder, equipment vendor and any upgrade financing — nothing surfaced in this pass.",
+    "Is Yotta-BLC K1 operational, and who controls the JV?",
+    "Is the US Embassy objection to the billing tender documented in any S1/S2 source?"
+  ],
+  "searches_run": 9
+}

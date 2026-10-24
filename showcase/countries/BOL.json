@@ -1,0 +1,373 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BOL",
+  "name": "Bolivia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T13:22:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BOL-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "China National Electronics Import & Export Corporation (CEIEC)",
+      "local_actor": "Ministerio de Gobierno / Policía Boliviana (BOL-110)",
+      "builder": null,
+      "financier": "China Eximbank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-08-20",
+      "still_current": null,
+      "summary": "BOL-110 citizen-security command-and-control system, built by Chinese state firm CEIEC on two China Eximbank concessional loans, went live in La Paz and El Alto with facial-recognition cameras, drones and patrol links; phase two covered six further cities.",
+      "announced_value_usd": 105000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/54576/",
+          "publisher": "AidData (William & Mary) - Phase I",
+          "source_tier": "S2",
+          "date": "2016-12-09",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/54577",
+          "publisher": "AidData (William & Mary) - Phase II",
+          "source_tier": "S2",
+          "date": "2018-06-19",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://eju.tv/2019/08/arranca-el-sistema-bol-110-con-camaras-y-patrullas-inteligentes-drones-y-alarmas-comunitarias/",
+          "publisher": "eju.tv (relaying La Razon)",
+          "source_tier": "S3",
+          "date": "2019-08-20",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://elpais.bo/nacional/20190821_inauguran-nuevo-sistema-para-combatir-inseguridad.html",
+          "publisher": "El Pais (Tarija)",
+          "source_tier": "S3",
+          "date": "2019-08-21",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://dialogo-americas.com/articles/china-exports-citizen-control-model-to-bolivia/",
+          "publisher": "Dialogo Americas (US Southern Command)",
+          "source_tier": "S4",
+          "date": "2019-10-22",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "AidData (research database, treated S2) names CEIEC as contractor and China Eximbank as lender (two RMB 350m loans, 2016 and 2018) and records both phases complete on 2019-08-20; eju.tv/La Razon confirm 'a Chinese firm' built it. Announced total ~US$105m (US$50m phase 1 + US$55m phase 2) per Bolivian press. Coded prc on the equipment/integrator rule; camera brand not identified. Pre-2020 and still_current unconfirmed: no source checked whether CEIEC still maintains the system or whether the Paz government (from Nov 2025) has reviewed it."
+    },
+    {
+      "id": "BOL-002",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Government of China (donor)",
+      "local_actor": "Policía Boliviana",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-05-31",
+      "still_current": null,
+      "summary": "China donated 570 video-surveillance cameras to Bolivia's national police for monitoring centres in La Paz, El Alto, Cochabamba and Santa Cruz; brand and value were not reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://eju.tv/?p=949293",
+          "publisher": "eju.tv (credited to ABI, Bolivian state news agency)",
+          "source_tier": "S4",
+          "date": "2017-05-31",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Sole source is Bolivian state news agency ABI via eju.tv, so S4. Tier 4 (equipment delivered) as operational scale is not shown. Camera vendor unknown; likely PRC-made but not stated. Pre-2020; still_current not checked."
+    },
+    {
+      "id": "BOL-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "China Academy of Space Technology / China Great Wall Industry Corporation",
+      "local_actor": "Agencia Boliviana Espacial (ABE)",
+      "builder": "China Great Wall Industry Corporation (prime contractor, per ASP)",
+      "financier": "China Development Bank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2014-04",
+      "still_current": null,
+      "summary": "Bolivia's Tupac Katari (TKSat-1) communications satellite, built by CAST on the DFH-4 bus and launched from Xichang in December 2013 with China Development Bank loan support, is operated by state agency ABE from two Bolivian ground stations.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nasaspaceflight.com/2013/12/long-march-3b-tksat-1-boliva/",
+          "publisher": "NASASpaceFlight",
+          "source_tier": "S2",
+          "date": "2013-12-20",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://dplnews.com/?p=232252",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2024-04-24",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.americansecurityproject.org/national-security-and-space/chinas-space-infrastructure-diplomacy/chinas-footprint-in-bolivian-space/",
+          "publisher": "American Security Project",
+          "source_tier": "S4",
+          "date": "2025-07-14",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded networks/prc on the equipment-vendor rule (Chinese builder supplies satellite firmware); ABE is the operator. NASASpaceFlight names CAST and CDB; DPL News (2024) confirms China launch, ABE operation and ~US$302m investment, revenue still flowing in 2024. ASP (think tank, S4) says CGWIC was prime contractor, CDB lent ~85% over 16 years, ground stations were CGWIC-built and the satellite retires ~2028; it also relays expert claims of persistent Beijing access, unverified. Value figures conflict (US$290m vs US$302m) so not coded. still_current null: operation in 2026 not confirmed in this pass."
+    },
+    {
+      "id": "BOL-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Entel Bolivia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-09-20",
+      "still_current": null,
+      "summary": "State operator Entel and Huawei ran Bolivia's first 5G tests at the Expocruz fair in Santa Cruz in September 2019, reaching about 1.1 Gbit/s.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.urgente.bo/noticia/entel-inicio-plan-piloto-para-la-tecnologia-5g-con-huawei",
+          "publisher": "Urgente.bo",
+          "source_tier": "S3",
+          "date": "2019-09-23",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 2 (pilot/demonstration). No source opened in this pass names the vendor of Entel's 2025 commercial 5G rollout (100+ sites in nine capitals, US$47.5m projected by Dec 2025 per DPL News), nor its 4G RAN/core vendor; Huawei is plausible incumbent but unconfirmed. A 2019 DPL News report relays a businessman's allegation that Entel's 2014 LTE router tender was steered to Huawei (no investigation reported); not coded."
+    },
+    {
+      "id": "BOL-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Tigo Bolivia (Millicom)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-07",
+      "still_current": null,
+      "summary": "Millicom picked Ericsson to modernise Tigo's mobile networks in three Latin American markets including Bolivia, covering Ericsson Radio System equipment, replacement of the 4G core and a 5G dual-mode core.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/?p=106867",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2021-07-08",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecoms.com/wireless-networking/millicom-brings-lte-to-bolivia",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so third pole. The article gives no Bolivia-specific breakdown, so the scope in Bolivia is inferred from the three-country programme. Value undisclosed. Viva (NuevaTel) vendor not found."
+    },
+    {
+      "id": "BOL-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Entel Bolivia",
+      "local_actor": "Entel Bolivia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02",
+      "still_current": null,
+      "summary": "State telco Entel opened a roughly 4,500 sqm, US$52 million data centre in El Alto, which President Arce said would host public and private data; the builder and equipment vendors were not reported.",
+      "announced_value_usd": 52000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/entel-bolivia-launches-data-center-in-el-alto/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-02-25",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator Entel is Bolivian state-owned, so domestic. Tier 5 on the reported launch; not an AI-specific facility. IT equipment vendor (possibly Huawei, given Entel's history) unknown."
+    },
+    {
+      "id": "BOL-007",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Amazon / Oracle / Tesla (named by President Paz)",
+      "local_actor": "Government of Bolivia (MOPSV)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12-29",
+      "still_current": null,
+      "summary": "President Rodrigo Paz said Tesla, Amazon, Oracle and other foreign firms would from January 2026 invest in the first government-promoted data centres in El Alto and Cochabamba; no agreement, value or operator was reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/?p=300414",
+          "publisher": "DPL News (citing MOPSV release)",
+          "source_tier": "S2",
+          "date": "2025-12-29",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1 statement of intent only; coded us because all named firms are US, but no controller is confirmed. No follow-up announcement found in this pass. Read as part of the Paz government's US-facing pivot (analyst inference)."
+    },
+    {
+      "id": "BOL-008",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink) / Amazon (Kuiper); also Eutelsat OneWeb",
+      "local_actor": "Ministerio de Obras Publicas, Servicios y Vivienda",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12-29",
+      "still_current": null,
+      "summary": "Supreme Decree 5509, promulgated under President Paz, authorised Starlink, OneWeb and Amazon's Kuiper to operate satellite internet in Bolivia.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/?p=300414",
+          "publisher": "DPL News (citing MOPSV release)",
+          "source_tier": "S2",
+          "date": "2025-12-29",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded tier 4 as an operating authorisation (licence-equivalent); actual service launch not confirmed. Mixed pole: Starlink and Kuiper are US, OneWeb third (UK/France); coded us as dominant. Analyst inference: opening to US LEO providers sits alongside the PRC-built Tupac Katari (BOL-003) but is not a reversal of it."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or deployments surfaced in data-centre and AI searches; no dedicated silicon search"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "no national model or government frontier-model partnership found; AGETIC June 2026 bulletin mentions 'ethical AI sovereignty' and a C.E.R.E.B.R.O. platform with no named provider"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power project surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies Entel's commercial 5G RAN/core (2025 rollout) and its 4G network: Huawei, ZTE or other? Same for Viva (NuevaTel).",
+    "Is BOL-110 still operating and maintained by CEIEC in 2026, and has the Paz government reviewed it? Which brand are the cameras?",
+    "Paz government has reviewed or cancelled Chinese lithium (CATL), zinc and Mutun contracts; has any review extended to telecom, surveillance or satellite contracts? None found in this pass.",
+    "Is Tupac Katari still in service in 2026, is a replacement satellite planned, and with which builder?",
+    "Did any Tesla/Amazon/Oracle data-centre investment materialise in El Alto or Cochabamba after the Dec 2025 statement?",
+    "Has Starlink actually launched service in Bolivia under Decree 5509?",
+    "The Diplomat (June 2026) 'Bolivia's troubled path with China' could not be fetched; may contain relevant reversals."
+  ],
+  "searches_run": 10
+}

@@ -1,0 +1,170 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MNG",
+  "name": "Mongolia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T13:19:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MNG-001",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Egune AI",
+      "local_actor": "Egune AI",
+      "builder": null,
+      "financier": "Golomt Bank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025",
+      "still_current": null,
+      "summary": "Ulaanbaatar startup Egune AI runs its own Mongolian-language LLMs (up to 70B parameters) behind Egune Chat, reported at about 24,000 daily users and used by a bank, a telecom firm and several government agencies; Golomt Bank invested $3.5M.",
+      "announced_value_usd": 3500000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://restofworld.org/2025/mongolia-egune-ai-llm/",
+          "publisher": "Rest of World",
+          "source_tier": "S2",
+          "date": "2025",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://theaiinsider.tech/?p=34728",
+          "publisher": "The AI Insider",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded domestic because a Mongolian firm holds the weights; neither source says whether the models are trained from scratch or fine-tuned from open weights, so base_model is null. Tier 5 because the service is live and used by public bodies, though absolute scale is modest and no named government contract was found. Rest of World reports the firm buys gaming-grade GPUs in Berlin because US approval for Nvidia data-centre chips is complicated; not coded as a silicon finding (vendor not stated, and chip-export posture is covered globally). The $3.5M is an equity investment, not a contract value."
+    },
+    {
+      "id": "MNG-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Mongolia",
+      "local_actor": "Government of Mongolia (e-government programme)",
+      "builder": "KT Corp. (South Korea)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2007-12",
+      "still_current": null,
+      "summary": "KT Corp. won an order to build an internet data centre for the Mongolian government, with IT systems, networks, training and seconded experts; completion was scheduled for February 2009.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/mongolia-internet-data-center-to-be-established-by-kt-corp/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2007-12-10",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded domestic on the owner-operator rule, assuming the government operates the facility (the source does not name an operator); KT recorded as builder. If KT also supplied and maintains the IT systems and networks, an equipment finding would be third (Korea). Pre-2020 and not confirmed current; completion not verified."
+    },
+    {
+      "id": "MNG-003",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Unitel, Mobicom, Skytel, G-Mobile, Ondo (5G licensees)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05",
+      "still_current": null,
+      "summary": "The regulator granted five operators 100MHz 5G spectrum blocks in May 2025; Unitel and Mobicom launched commercial 5G in Ulaanbaatar and all 21 provincial centres, with 4G-to-5G migration due by 2027. No equipment vendor was named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ikon.mn/n/3eob",
+          "publisher": "ikon.mn",
+          "source_tier": "S3",
+          "date": "2025-05-16",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://ikon.mn/n/3epj",
+          "publisher": "ikon.mn (Mobicom sponsored content)",
+          "source_tier": "S4",
+          "date": "2025-05-19",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://ikon.mn/n/3jnt",
+          "publisher": "ikon.mn",
+          "source_tier": "S3",
+          "date": "2025-11-27",
+          "retrieved_at": "2026-10-24T13:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: no source opened in this pass names the RAN or core vendor for any Mongolian operator, so the controller cannot be assigned. Recorded to document that 5G is live. Mobicom is KDDI-linked (Japanese CEO; KDDI named as a 5G partner), but an operator's shareholder is not the equipment controller. Operators reportedly plan MNT 1.4 trillion of combined five-year network spending; not converted or coded as a value. Not corroborated: all sources are from one host."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchase or deployment found; only a report that Egune AI buys gaming-grade GPUs in Europe (vendor unstated)"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "Ulaanbaatar CCTV/Safe City reporting found (2016) names no vendor, value or financing; no other surveillance or e-government AI on a foreign stack surfaced"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power evidence surfaced; data-centre search results were about China's Inner Mongolia region, not Mongolia"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies RAN and core for Unitel, Mobicom, Skytel and G-Mobile 4G/5G (Huawei, ZTE, Ericsson, Nokia, Samsung)? No opened source named a vendor.",
+    "Which vendor supplied Ulaanbaatar's Safe City / police CCTV network and any later centralised upgrade?",
+    "Is Egune AI trained from scratch or fine-tuned from open weights (Llama, Qwen, etc.), and which government agencies use it under what contracts?",
+    "Is the KT-built 2007-09 government data centre still in use, and who supplies the current national government cloud/data centre?",
+    "Any terrestrial fibre transit dependency on PRC or Russian carriers, and any Mongolian AI data-centre or AI-campus projects since 2023?",
+    "No reversals were found; confirm none (e.g. any Huawei/ZTE exclusion or cancelled data-centre project)."
+  ],
+  "searches_run": 10
+}

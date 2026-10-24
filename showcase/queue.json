@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "NPL",
-  "MNG",
-  "NZL",
-  "PER",
-  "COL",
-  "ECU",
-  "URY",
-  "BOL",
-  "PRY",
-  "DOM",
   "JAM",
   "GHA",
   "CIV",
@@ -254,6 +244,16 @@
   "BHR",
   "KWT",
   "IRQ",
-  "LKA"
+  "LKA",
+  "NPL",
+  "MNG",
+  "NZL",
+  "PER",
+  "COL",
+  "ECU",
+  "URY",
+  "BOL",
+  "PRY",
+  "DOM"
  ]
 }

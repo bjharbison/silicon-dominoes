@@ -1,0 +1,371 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ECU",
+  "name": "Ecuador",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T13:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ECU-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "CEIEC (China National Electronics Import & Export Corp.)",
+      "local_actor": "ECU 911 Integrated Security Service",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2012",
+      "still_current": true,
+      "summary": "CEIEC designed and installed Ecuador's ECU 911 national emergency and video-surveillance platform, financed by a 2012 Chinese loan; a 2024 report says the closed-protocol system still depends on CEIEC technology and lacks planned upgrades.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ipvm.com/reports/china-ecuador",
+          "publisher": "IPVM",
+          "source_tier": "S2",
+          "date": "2018-03-13",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.vistazo.com/portada/ecu911-depende-plataforma-china-modernizar-BK6840175",
+          "publisher": "Vistazo",
+          "source_tier": "S3",
+          "date": "2024-02-18",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.scmp.com/news/china/diplomacy-defence/article/2129912/ecuador-fighting-crime-using-chinese-surveillance",
+          "publisher": "South China Morning Post",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "IPVM reports a USD 240m Chinese loan (2012), 4,145 cameras and 16 centres, and 225 Huawei PTZ cameras bought in 2016; Vistazo (2024) reports CEIEC contracts of USD 171m (platform) and USD 38m (six centres), about 6,500-7,000 cameras, and that CEIEC (US-sanctioned 2020) never delivered planned upgrades. Values not coded because the loan and contract figures differ in kind. still_current true on the 2024 Vistazo report plus Feb 2025 Extra reporting describing ECU 911 technology as dating from 2011; no replacement vendor has been reported. Lender not named in sources (financier left null). Comptroller overcharging allegations against CEIEC/CAMC were not proven."
+    },
+    {
+      "id": "ECU-002",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "ECU 911; municipal governments (GADs) and their public enterprises",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09-20",
+      "still_current": null,
+      "summary": "Under Executive Decree 397, President Noboa ordered municipal and public-enterprise camera systems, at least 50,000 cameras, to give ECU 911 access for a unified national surveillance system; implementation was announced, not confirmed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://primicias.ec/seguridad/camaras-gad-empresas-publicas-sistema-vigilancia-ecu911-ecuador-79401",
+          "publisher": "Primicias",
+          "source_tier": "S3",
+          "date": "2024-09-20",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.extra.ec/noticia/ecuador/alcalde-guayaquil-responde-noboa-ecu911-tecnologia-2011-121522.html",
+          "publisher": "Diario Extra",
+          "source_tier": "S3",
+          "date": "2025-02-19",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: no camera or integration vendor is named. Analyst inference: if integration proceeds onto the existing CEIEC-built ECU 911 platform (ECU-001), it would widen the reach of a PRC-built system, but this is not evidenced. In Feb 2025 Guayaquil's mayor resisted transferring control of the city's 34,000 Segura EP cameras, so implementation is contested."
+    },
+    {
+      "id": "ECU-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei (and other PRC telecom vendors)",
+      "local_actor": "Government of Ecuador",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Huawei/PRC vendor eligibility for Ecuador 5G (Huawei 5G trials with CNT, 2019)",
+      "reversal_reason": "geopolitical",
+      "date": "2020-11",
+      "still_current": null,
+      "summary": "Ecuador joined the US Clean Network initiative in November 2020, which bars Huawei from 5G networks; reporting tied this to a USD 3.5bn DFC financing framework agreed in January 2021, though Ecuadorian officials denied any such condition.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dialogue.earth/en/business/39714-ecuadors-election-influenced-by-us-china-frictions/",
+          "publisher": "Dialogue Earth",
+          "source_tier": "S3",
+          "date": "2021-02-04",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.expreso.ec/actualidad/economia/nokia-desplaza-huawei-desplegar-red-5g-ecuador-100008.html",
+          "publisher": "Expreso",
+          "source_tier": "S3",
+          "date": "2021-03-05",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.bu.edu/pardeeschool/2021/03/09/heine-comments-on-dfc-ecuador-lending-agreement",
+          "publisher": "Boston University Pardee School",
+          "source_tier": "S4",
+          "date": "2021-03-09",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded as a reversal of PRC vendor eligibility for 5G; tier 2 is the tier of the thing reversed (Huawei's 2019 5G trials with CNT, per Expreso; Huawei had also worked on CNT's 4G). The exclusion itself is a Tier-1-style pledge, and no Ecuador government primary text was opened. The DFC USD 3.5bn framework (mainly oil/refinery projects) is not an AI-stack finding and its value is not coded here. Whether the Clean Network commitment survived the 2021 change of government is unverified (still_current null)."
+    },
+    {
+      "id": "ECU-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "CNT E.P. (state operator)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-30",
+      "still_current": true,
+      "summary": "Nokia, under a 2021 deal to modernise CNT's 3G/4G and deploy 5G, launched Ecuador's first commercial 5G network with CNT in October 2025: 188 sites on 3.5GHz with Nokia radio, IP and optical transport, targeting nationwide coverage by mid-2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nokia.com/newsroom/nokia-and-cnt-launch-ecuadors-first-5g-network-bringing-ultra-fast-connectivity-to-more-ecuadorians/?did=D00000010138",
+          "publisher": "Nokia (press release)",
+          "source_tier": "S1",
+          "date": "2025-10-30",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20210301/5g/nokia-secures-new-5g-deal-ecuador",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2021-03-01",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.expreso.ec/actualidad/economia/nokia-desplaza-huawei-desplegar-red-5g-ecuador-100008.html",
+          "publisher": "Expreso",
+          "source_tier": "S3",
+          "date": "2021-03-05",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Nokia is Finnish, so third pole. CNT core-network vendor not stated. Expreso framed the 2021 award as Nokia displacing Huawei (which had trialled 5G and worked on CNT 4G), but CNT gave no reason. Contract value undisclosed (Expreso Dec 2025 cites a USD 30m CNT 5G investment, not opened as a Nokia contract value). still_current true: August 2026 Expreso reporting describes CNT's 5G as live."
+    },
+    {
+      "id": "ECU-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Claro Ecuador (Conecel, America Movil)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-09-13",
+      "still_current": null,
+      "summary": "Claro presented 5G technology in Guayaquil in September 2019 and planned 5G tests in Quito with Huawei as technology provider; Claro launched commercial 5G in December 2025 but its vendor was not reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.eluniverso.com/noticias/2019/09/13/nota/7515913/conecel-inicio-pruebas-5g-guayaquil",
+          "publisher": "El Universo",
+          "source_tier": "S3",
+          "date": "2019-09-13",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.expreso.ec/actualidad/economia/claro-inaugura-el-servicio-5g-en-ecuador-como-operara-266572.html",
+          "publisher": "Expreso",
+          "source_tier": "S3",
+          "date": "2025-12-03",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 2 (trial). Pre-2020 and not shown to be current. Whether Huawei supplies Claro's commercial 5G or 4G RAN is unknown; if so this would be a tier 3-5 PRC networks finding at Ecuador's largest operator, sitting in tension with the 2020 Clean Network commitment (ECU-003)."
+    },
+    {
+      "id": "ECU-006",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Google (Google Cloud)",
+      "local_actor": "Presidency of Ecuador; CNT E.P.",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-01-27",
+      "still_current": null,
+      "summary": "The Noboa government, state telco CNT and Google signed a digital-transformation alliance covering cloud processing for AI and over 30 public projects in health, education, security and fraud detection; the US ambassador endorsed it. No value disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.vistazo.com/actualidad/nacional/2025-01-27-ecuador-google-cierran-acuerdo-transformacion-digital-pais-en-que-consiste-LL8692926",
+          "publisher": "Vistazo",
+          "source_tier": "S3",
+          "date": "2025-01-27",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.elcomercio.com/actualidad/negocios/cnt-google-acuerdo-ia-ecuador.html",
+          "publisher": "El Comercio",
+          "source_tier": "S3",
+          "date": "2025-01-17",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://blog.google/intl/es-419/actualizaciones-de-producto/informacion/ecuador-se-sube-a-la-nube-google-cloud-y-cnt-se-unen-para-impulsar-la-transformacion-digital-del-pais",
+          "publisher": "Google (blog)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 (framework alliance; no contract terms or value seen). Not corroborated because no S1/S2 source was opened. The agreement's language on clean, secure networks and trusted providers reads as aligned with US Clean Network framing (analyst inference). GDP impact figures (USD 9.5-16.5bn by 2030) are projections, not deal values."
+    },
+    {
+      "id": "ECU-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Telconet",
+      "local_actor": "Telconet",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04-13",
+      "still_current": null,
+      "summary": "Telconet plans a Quito AI, cloud and storage data centre of 10MW, expandable to 100MW, within a USD 550m programme to 2027 also covering edge sites and the CSN-1 subsea cable; one report says it is under evaluation.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/telconet-invertira-550-mdd-para-posicionar-a-ecuador-como-nodo-digital-clave-en-america-latina/",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2026-04-13",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.intelligentcio.com/latam/2026/06/26/telconet-expands-latin-american-footprint-with-three-new-data-centres-and-100mw-ai-hub/",
+          "publisher": "Intelligent CIO Latam",
+          "source_tier": "S2",
+          "date": "2026-06-26",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded domestic on the inference that Telconet is an Ecuadorian company (not stated in either source). Tier 1: DPL News says under evaluation; Intelligent CIO gives Q3 2028 commissioning. The USD 550m covers the whole programme across several countries, so it is not coded as this facility's value. No equipment vendor or GPU supplier named."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or deployments surfaced in data-centre and AI searches; silicon not given a dedicated search"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "no national LLM or government frontier-model partnership found in 1 search; the Google AI/cloud alliance is coded under applications (ECU-006)"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power project surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies Claro's and Tigo (ex-Movistar)'s 4G/5G RAN and core: Huawei, Ericsson, Nokia or ZTE?",
+    "Does Ecuador's 2020 Clean Network commitment remain in force under the Lasso and Noboa governments, and was it ever written into a regulation or spectrum condition?",
+    "Has ECU 911 tendered or awarded a replacement or upgrade of the CEIEC platform (the 2023 storage tender winner, 2022 camera purchase vendor)?",
+    "Which vendors supply the municipal camera networks (e.g. Guayaquil Segura EP's 34,000 cameras) being integrated under Decree 397?",
+    "Who builds and supplies the CSN-1 subsea cable landing in Ecuador, and is Telconet's ownership fully Ecuadorian?",
+    "Status and controller of the roughly USD 100m Epicentro (Puntonet) data centre in Quito (seen only as a search title).",
+    "Content of Ecuador's national AI strategy (reported in Registro Oficial) and any model-provider partnerships under it."
+  ],
+  "searches_run": 9
+}

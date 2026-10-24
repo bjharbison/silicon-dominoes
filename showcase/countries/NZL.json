@@ -1,0 +1,480 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "NZL",
+  "name": "New Zealand",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T13:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "NZL-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Spark New Zealand",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Spark's proposed use of Huawei 5G RAN equipment",
+      "reversal_reason": "geopolitical",
+      "date": "2018-11-28",
+      "still_current": null,
+      "summary": "GCSB's Director-General, acting under the Telecommunications (Interception Capability and Security) Act 2013, found Spark's proposal to use Huawei 5G radio access equipment posed significant national security risks, barring Spark from implementing it.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nzx.com/announcements/327529",
+          "publisher": "Spark New Zealand (NZX announcement)",
+          "source_tier": "S1",
+          "date": "2018-11-28",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.1news.co.nz/2018/11/28/gcsb-shuts-down-sparks-proposed-5g-partnership-with-huawei-over-significant-network-security-risk",
+          "publisher": "1News",
+          "source_tier": "S3",
+          "date": "2018-11-28",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecoms.com/493838/new-zealand-joins-the-march-against-huawei/",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2018-11-28",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 2 because Huawei was on Spark's 5G preferred-supplier list (framework), not under signed contract. This is a decision on one operator's proposal under TICSA, not a statutory nationwide ban; whether it remains the operative position was not confirmed in this pass (still_current null). Pre-2020 finding."
+    },
+    {
+      "id": "NZL-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Samsung",
+      "local_actor": "Spark New Zealand",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-03",
+      "still_current": null,
+      "summary": "Samsung was contracted to supply 5G New Radio and Massive MIMO radio equipment to Spark, alongside Nokia, after Huawei, also on Spark's preferred list, was blocked by GCSB; Spark's 5G core uses Cisco and Ericsson.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.capacitymedia.com/articles/3825058/samsung-beats-huawei-to-sparks-5g-radio-contract-in-new-zealand",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20200305/business/samsung-sings-5g-contract-spark-new-zealand",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2020-03-05",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Samsung is Korean, so third pole. Contract value not disclosed. Date taken from the RCR Wireless URL (not opened). Spark's core vendors Cisco (us) and Ericsson (third) were not coded separately."
+    },
+    {
+      "id": "NZL-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Spark New Zealand",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09-24",
+      "still_current": null,
+      "summary": "Spark named Nokia its majority 5G RAN supplier, deploying AirScale baseband, remote radio heads and Massive MIMO radios at more than 700 sites to expand its 4G and 5G network in New Zealand cities.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20240924/featured/spark-new-zealand-selects-nokia-as-majority-5g-ran-partner",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2024-09-24",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia is Finnish, so third pole. Share of RAN and contract value not stated; the source does not say which vendor, if any, is displaced."
+    },
+    {
+      "id": "NZL-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "2degrees",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-04-14",
+      "still_current": null,
+      "summary": "Trade press reporting 2degrees' 2021 Ericsson 5G deal described 2degrees as a long-term Huawei customer, indicating Huawei supplied its existing mobile network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.reseller.co.nz/?p=1296086",
+          "publisher": "Reseller News",
+          "source_tier": "S2",
+          "date": "2021-04-14",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 inferred from 'long-term customer' (installed base); which network domains (RAN, core, 4G) Huawei supplied and whether that gear remains in service were not established. Date is the reporting date, not the original contract date."
+    },
+    {
+      "id": "NZL-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "2degrees",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-04-14",
+      "still_current": null,
+      "summary": "2degrees chose Ericsson to build its 5G network, covering radio access and a doubling of 4G capacity, starting in Auckland and Wellington with about 700 sites planned; the partnership was extended five years in 2024.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.reseller.co.nz/?p=1296086",
+          "publisher": "Reseller News",
+          "source_tier": "S2",
+          "date": "2021-04-14",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.stuff.co.nz/business/350510995/2degrees-launching-5g-network-in-2021-with-ericsson",
+          "publisher": "Stuff (via Newshub)",
+          "source_tier": "S3",
+          "date": "2021-04-14",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecomtalk.info/?p=979386",
+          "publisher": "TelecomTalk",
+          "source_tier": "S2",
+          "date": "2024-07-24",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so third pole. Analyst inference: the deal displaces a long-term Huawei incumbent (NZL-004), but no source describes a rip-and-replace or security motive, so it is not coded as a reversal. Value not disclosed."
+    },
+    {
+      "id": "NZL-006",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Datagrid New Zealand",
+      "local_actor": "Datagrid New Zealand (Makarewa, Southland)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03",
+      "still_current": null,
+      "summary": "Datagrid won resource consents in March 2026 for a 280MW AI data-centre campus at Makarewa near Invercargill, reported at about NZ$3.5 billion, with a 2028 opening targeted; Mercury bought a 12% stake.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://w.media/datagrid-secures-approval-for-new-zealands-first-ai-factory-in-southland/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2026-03-11",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://channellife.co.nz/story/datagrid-signs-140mw-deal-to-power-southland-ai-campus",
+          "publisher": "ChannelLife NZ",
+          "source_tier": "S2",
+          "date": "2026-03-19",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.1news.co.nz/2026/07/24/southand-community-has-questions-about-35b-ai-data-centre/",
+          "publisher": "1News",
+          "source_tier": "S3",
+          "date": "2026-07-24",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.es.govt.nz/repository/libraries/id:26gi9ayo517q9stt81sd/hierarchy/environment/consents/documents/Datagrid%20resource%20consents/Resource%20Consent%20Decision%20APP-20252550.pdf",
+          "publisher": "Environment Southland (consent decision)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: Datagrid New Zealand's shareholders other than Mercury (12%, NZ state-majority) and their home jurisdictions were not identified; the CEO is Remi Galasso. Tier 3 on consents plus a signed power agreement; construction start not confirmed. NZ$3.5bn not converted to USD. No tenants or GPU vendor named.",
+      "bundle_id": "NZL-B1"
+    },
+    {
+      "id": "NZL-007",
+      "layer": "power",
+      "pole": "domestic",
+      "controller": "Mercury NZ",
+      "local_actor": "Datagrid New Zealand",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-19",
+      "still_current": null,
+      "summary": "Mercury signed a 15-year power purchase option agreement to supply 140MW, about 1.2TWh a year, to Datagrid's planned Southland AI campus, roughly 3% of national electricity demand by Datagrid's estimate.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://channellife.co.nz/story/datagrid-signs-140mw-deal-to-power-southland-ai-campus",
+          "publisher": "ChannelLife NZ",
+          "source_tier": "S2",
+          "date": "2026-03-19",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.1news.co.nz/2026/07/24/southand-community-has-questions-about-35b-ai-data-centre/",
+          "publisher": "1News",
+          "source_tier": "S3",
+          "date": "2026-07-24",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://itbrief.co.nz/story/datagrid-signs-140mw-deal-to-power-southland-ai-campus",
+          "publisher": "IT Brief NZ",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Mercury is a listed New Zealand generator in which the NZ Government holds a legislated minimum 51% stake, so domestic. An option agreement may not be fully binding on volumes; tier 3 is an upper bound.",
+      "bundle_id": "NZL-B1"
+    },
+    {
+      "id": "NZL-008",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI (GPT-4o via Microsoft Azure OpenAI)",
+      "local_actor": "Callaghan Innovation",
+      "builder": null,
+      "financier": null,
+      "base_model": "GPT-4o",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09-11",
+      "still_current": null,
+      "summary": "Callaghan Innovation, with Microsoft and the Whariki Maori Business Network, piloted GovGPT, a public chatbot for government information announced by Minister Judith Collins, running OpenAI's GPT-4o through Azure OpenAI on Microsoft Azure.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fyi.org.nz/request/28357/response/110046/attach/html/5/1a.GovGPT%20Impact%20Assessment.pdf.html",
+          "publisher": "Callaghan Innovation GovGPT Impact Assessment (OIA release via FYI)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.interest.co.nz/technology/129681/callaghan-innovation-and-wh%C4%81riki-maori-business-network-develop-govgpt-ai-chatbot",
+          "publisher": "interest.co.nz",
+          "source_tier": "S3",
+          "date": "2024-09-11",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Used through a foreign provider's API, so us pole. Tier 2 (pilot). The impact assessment says GPT-4o was called from a global deployment because it was unavailable in an Australian data centre. The interest.co.nz report names Microsoft but not the model. Whether GovGPT continued past the pilot was not checked."
+    },
+    {
+      "id": "NZL-009",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Ministry of Business, Innovation and Employment (Auckland offices)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-10-11",
+      "still_current": null,
+      "summary": "Hikvision CCTV cameras were reported in use at MBIE's Auckland office reception areas, with Hikvision cameras also used by Tauranga and Whanganui councils; MBIE said it would consider an audit but saw no cause for concern.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.newsroom.co.nz/nz-government-using-cameras-banned-in-us",
+          "publisher": "Newsroom",
+          "source_tier": "S3",
+          "date": "2018-10-11",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://ipvm.com/reports/nz-gov-usa-ban",
+          "publisher": "IPVM",
+          "source_tier": "S2",
+          "date": "2018-10-12",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Scale municipal: a few office sites plus two councils' crime cameras; no camera counts given. MBIE said the cameras were not networked. Pre-2020 finding; current use not confirmed (still_current null)."
+    },
+    {
+      "id": "NZL-010",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Ministry of Business, Innovation and Employment",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "further MBIE purchases of Hikvision CCTV",
+      "reversal_reason": "geopolitical",
+      "date": null,
+      "still_current": null,
+      "summary": "MBIE decided not to buy further Hikvision cameras over human-rights concerns about how the technology was developed, while central procurement and GCSB said vendor risk is assessed case by case with no company-specific decision.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.newstalkzb.co.nz/news/world/nz-not-taking-action-over-chinese-made-surveillance-cameras/",
+          "publisher": "Newstalk ZB",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reversal reason coded geopolitical as the nearest category; the stated motive is human rights (Xinjiang-linked) rather than security. Article undated; a stop on further purchases, not a removal of installed cameras. No national ban."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or GPU vendor named for Datagrid or other NZ projects in facilities searches; silicon not given a dedicated search"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "coded"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Is the 2018 GCSB decision still the operative position, and has any NZ operator's remaining Huawei equipment (e.g. 2degrees legacy RAN/core, Spark 4G) been removed?",
+    "One NZ vendors: Ericsson reportedly replacing Nokia core (2025) and Nokia RAN; only a blog source surfaced, needs S1/S2 confirmation.",
+    "Who owns Datagrid New Zealand beyond Mercury's 12% stake, has construction started, and which GPU vendor and tenants are committed?",
+    "Large data-centre campuses by CDC (Infratil, Hobsonville/Silverdale) and others in Auckland: controller, capacity, tier; and the Tasman Ring cable vendor.",
+    "Date and current status of MBIE's decision to stop buying Hikvision; any wider central-government audit of PRC-made CCTV.",
+    "Did GovGPT continue after the 2024 pilot, and are there other government model adoptions (e.g. Microsoft Copilot across the public service)?"
+  ],
+  "searches_run": 10
+}

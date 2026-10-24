@@ -1,0 +1,238 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "COL",
+  "name": "Colombia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T13:19:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "COL-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Claro Colombia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06-26",
+      "still_current": null,
+      "summary": "Nokia completed the first stage of Claro's Colombian 5G rollout, over 1,000 sites in six major cities, supplying AirScale radio, 5G Core, transport and security software; a further deal covers 400 more sites.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nokia.com/newsroom/nokia-and-claro-deploy-colombias-largest-5g-network/",
+          "publisher": "Nokia (press release)",
+          "source_tier": "S1",
+          "date": "2024-06-26",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20240627/featured/nokia-claro-complete-first-phase-5g-deployments-colombia",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2024-06-27",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/claro-taps-nokia-for-5g-deployment-in-colombia",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nokia is Finnish, so third pole; it supplies both RAN and 5G core, the strongest control position. RCR largely relays the Nokia release, so independence is limited. Contract value undisclosed. Claro is owned by Mexico's America Movil (operator, not controller under the equipment rule). Tier 5 because the first stage was reported complete and operational; whether Claro's legacy 3G/4G includes PRC kit was not established."
+    },
+    {
+      "id": "COL-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Tigo (Colombia Movil) and WOM Colombia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "A Colombia Risk Analysis report, relayed by Nearshore Americas, says Tigo and WOM run networks built entirely on Huawei equipment, and that Claro and Movistar source about half their 3G/4G gear from Chinese suppliers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nearshoreamericas.com/colombian-government-under-pressure-to-keep-china-away-from-its-telecom-networks/",
+          "publisher": "Nearshore Americas",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened S3 source relaying a consultancy report; article undated in the fetched text, so date null. Tier 5 reflects a claim of operational installed base, not a documented contract. Whether Huawei also supplies their 5G RAN/core (and the Tigo-Movistar shared 5G network) is not confirmed. No Colombian exclusion of Huawei was found; a 2019 El Espectador piece described existing infrastructure as Huawei-based without naming operators."
+    },
+    {
+      "id": "COL-003",
+      "layer": "facilities",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Atlantico Governor's Office",
+      "builder": null,
+      "financier": "US Trade and Development Agency (USTDA)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-10",
+      "still_current": null,
+      "summary": "USTDA agreed to fund a feasibility study for a hyperscale data centre and fibre broadband network in Atlantico department, covering sites, energy capacity and land costs, with the aim of drawing financing and US-made equipment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://w.media/?p=44045",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2026-10-05",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: no owner-operator is identified yet; the US agency is a financier of the study, which does not set the pole under the spec, though the stated intent is to favour US equipment. Grant amount not stated. Tier 2 (feasibility study)."
+    },
+    {
+      "id": "COL-004",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "ODATA",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "Search-result headline reports that data-centre operator ODATA plans to invest US$1.3bn in two data centres in Colombia; details, timing and status were not read.",
+      "announced_value_usd": 1300000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://capacitymedia.com/article/odata-to-invest-1-3b-in-two-data-centres-in-colombia",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Snippet only (page redirected and was not read), so tier 1 as an announced plan and date null. Pole null: ODATA's current ownership was not verified in this pass (it is believed, unverified, to be part of US-based Aligned Data Centers, which would make it us). Value is the headline figure."
+    },
+    {
+      "id": "COL-005",
+      "layer": "models",
+      "pole": "third",
+      "controller": "CENIA (Centro Nacional de Inteligencia Artificial, Chile)",
+      "local_actor": "MinTIC (Colombia)",
+      "builder": null,
+      "financier": null,
+      "base_model": "Llama 3",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02",
+      "still_current": null,
+      "summary": "MinTIC describes Colombia as co-leading, with Chile, the 15-country Latam GPT open model project; Colombian documents feed its training corpus. CENIA leads technically, with CAF and AWS as allies; the roughly 50bn-parameter model uses Llama 3 architecture.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/427552:Colombia-y-Chile-impulsan-Latam-GPT-una-alianza-regional-para-fortalecer-soberania-digital-con-IA-en-la-region",
+          "publisher": "MinTIC (Colombia)",
+          "source_tier": "S1",
+          "date": "2026-02-12",
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/437889:Latinoamerica-unida-en-Latam-GPT-el-modelo-de-inteligencia-artificial-alimentado-con-nuestra-cultura",
+          "publisher": "MinTIC (Colombia)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Coded third because technical control of the weights sits with Chile's CENIA, not a Colombian actor; if Colombia holds the open weights jointly it could be argued domestic/regional-sovereign. Date is the page's last-updated date (12 Feb 2026), not a confirmed launch date. Tier 2: Colombia's role is collaborative participation with no named instrument or funding. AWS involvement may mean US cloud hosting (not verified)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or deployments surfaced in data-centre and AI searches; silicon not given a dedicated search"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "Bogota camera searches returned only vendor-unnamed city CCTV reports and Hikvision marketing with no government contract; no PRC-built safe-city or Bogota metro surveillance system documented"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power project surfaced; DCD reporting notes data-centre growth needs more energy, without a dedicated plant"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies 5G RAN/core for Movistar, Tigo and their shared network company, and for WOM? Is the Nearshore Americas claim that Tigo and WOM are all-Huawei current, and when was it published?",
+    "Does Claro's or Movistar's legacy 3G/4G (about 50% Chinese per one report) include Huawei/ZTE core equipment?",
+    "Who supplies Bogota's police/city CCTV (C4/SDSCJ) and the Bogota Metro Line 1 CCTV and signalling systems?",
+    "ODATA's US$1.3bn Colombia plan: owner (Aligned?), sites, MW, construction status and date.",
+    "Any reversal: has Colombia excluded or restricted Huawei/ZTE in any procurement or 5G condition? None found in this pass.",
+    "Colombia's formal role in Latam GPT (instrument, funding, weights access) and any national AI compute or government LLM adoption (OpenAI, Google, Microsoft partnerships with MinTIC)."
+  ],
+  "searches_run": 10
+}

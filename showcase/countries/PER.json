@@ -1,0 +1,263 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "PER",
+  "name": "Peru",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T13:19:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "PER-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Bitel (Viettel Peru)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-01-20",
+      "still_current": null,
+      "summary": "ZTE announced a long-term collaboration with Bitel: next-generation baseband units, AWS/B40 band products and FDD Massive MIMO upgrading Bitel's 4G network, with ZTE also supporting Bitel's early 5G rollout towards nationwide coverage.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/?p=262870",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2025-01-22",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://gestion.pe/economia/empresas/china-zte-y-bitel-firman-alianza-en-peru-tecnologias-y-servicios-que-asoman-comunicaciones-telecomunicaciones-5g-internet-novil-peru-noticia/",
+          "publisher": "Gestion",
+          "source_tier": "S3",
+          "date": "2025-01-20",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/zte-and-bitel-revolutionize-perus-telecom-landscape-with-groundbreaking-collaboration/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Both opened sources relay a ZTE announcement; Gestion links ZTE only to 4G upgrades, DPL News also to 5G. Tier 3 as a vendor supply relationship with equipment already deployed; value and site count undisclosed. Bitel is owned by Vietnam's Viettel (operator, not controller under the equipment rule). Core network vendor not stated. The Mobile World Live piece could not be fetched and may be sponsored content."
+    },
+    {
+      "id": "PER-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Claro Peru (America Movil); Chancay port (COSCO Shipping)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-08-16",
+      "still_current": null,
+      "summary": "Claro Peru's CEO said the 5G network at Chancay port, built together with Huawei, was already installed and would automate the terminal's autonomous machinery; Claro later cited the Chancay 5G deployment as an enterprise private-network showcase.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/?p=245814",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2024-08-16",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://dplnews.com/?p=325485",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2026-08-04",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Only one source names Huawei; the second (same publisher) confirms the Claro deployment but names no vendor, so not corroborated. Tier 4 (installed); likely operational since the port opened in late 2024 but this pass did not confirm Huawei equipment is in service. Scale national because Chancay is a nationally significant facility. A Claro PDF on enterprise 5G appeared in search but was not opened."
+    },
+    {
+      "id": "PER-003",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "COSCO Shipping Ports",
+      "local_actor": "Chancay port terminal",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-01",
+      "still_current": null,
+      "summary": "Chancay port, operated by COSCO Shipping, runs an automated terminal: ZPMC automated cranes, Chinese driverless trucks, OCR camera recognition, AI yard management and a COSCO terminal operating system over 5G.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gestion.pe/tecnologia/chancay-sera-el-primer-puerto-inteligente-de-sudamerica-las-tecnologias-que-usara-cosco-shipping-noticia/",
+          "publisher": "Gestion",
+          "source_tier": "S3",
+          "date": "2024-06-23",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.hellenicshippingnews.com/?p=1070041",
+          "publisher": "Hellenic Shipping News (credited to Xinhua)",
+          "source_tier": "S4",
+          "date": "2025-01-02",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true,
+          "relays_prc_state_media": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Controller is COSCO Shipping as operator of the terminal operating system and automation (PRC state-owned). Tier 5 inferred from the port opening and the January 2025 report of systems in operation, which relays Xinhua (S4); Gestion (June 2024) describes planned deployment. Vendors: ZPMC cranes (Gestion), Yutopilot/SAIC driverless trucks (Xinhua relay); Gestion names Pilot Technology for vehicles. Not corroborated by an opened S1/S2 source."
+    },
+    {
+      "id": "PER-004",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Gtd (Chile)",
+      "local_actor": "Gtd Peru",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-10-04",
+      "still_current": null,
+      "summary": "Chilean telecom firm Gtd inaugurated a data centre in Lurin, Lima, planned at 20 MW and 960 racks across four phases, described as the largest in Peru.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://bnamericas.com/en/news/chiles-gtd-cuts-ribbon-on-biggest-datacenter-in-peru",
+          "publisher": "BNamericas",
+          "source_tier": "S2",
+          "date": "2024-10-04",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/es/noticias/gtd-inaugurara-un-data-center-en-lurin-en-agosto/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-01-31",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 5 for the inaugurated first phase; the full 20 MW is a multi-phase target. DCD reports about $10m for phase one and over $50m across four phases; currency not confirmed as USD and these are plans, so no value coded. No AI-specific use mentioned."
+    },
+    {
+      "id": "PER-005",
+      "layer": "models",
+      "pole": "third",
+      "controller": "CENIA / Chile Ministry of Science (Latam-GPT)",
+      "local_actor": "Presidency of the Council of Ministers, Secretariat of Government and Digital Transformation (SGTD)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11",
+      "still_current": null,
+      "summary": "Peru signed a memorandum of understanding with Chile's science ministry to join the regional Latam-GPT language model, sharing data and practices and training officials; CENIA and Peru's SGTD coordinate the technical work.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/?p=296858",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2025-11-25",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://mobiletime.la/noticias/26/11/2025/peru-se-integra-a-latam-gpt/",
+          "publisher": "Mobile Time Latinoamerica",
+          "source_tier": "S2",
+          "date": "2025-11-26",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded third on the inference that Latam-GPT weights are held by Chile's CENIA (not stated in the sources). Tier 1 (MOU). Base model not named in sources."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or deployments surfaced in data-centre, network or AI searches; silicon not given a dedicated search"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power project surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies Claro, Movistar/Integratel and Entel Peru RAN and core (Huawei, ZTE, Ericsson, Nokia) for the 3.5GHz 5G networks launched December 2025?",
+    "Confirm Huawei is the equipment vendor of the Chancay port 5G network and that it is in service.",
+    "Vendors of municipal safe-city CCTV in Lima (Villa El Salvador 550-camera expansion, Ancon centre) and any Hikvision/Dahua/Huawei national police systems; vendor names not found.",
+    "Owner/controller and status of Cirion LIM2 (20 MW, Lurin, construction started 2023) and other Lima data-centre campuses (ODATA, KIO, Ascenty).",
+    "Has AWS announced a specific Peru infrastructure investment beyond the 2022 Lima Local Zone? Mid-2025 reporting says only that it is evaluating.",
+    "Latam-GPT base model, compute host and who holds the weights.",
+    "Any US-pressured exclusion of Huawei/ZTE from Peruvian networks or Chancay-related reversals; none found in this pass."
+  ],
+  "searches_run": 10
+}

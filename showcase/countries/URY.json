@@ -1,0 +1,407 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "URY",
+  "name": "Uruguay",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T13:21:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "URY-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Antel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-04",
+      "still_current": null,
+      "summary": "State operator Antel began its first 5G deployment in April 2019, for fixed wireless internet in Barra de Maldonado and Nueva Palmira, with Finland's Nokia as vendor.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/gobierno-uruguayo-evalua-si-mantiene-o-no-contratos-con-huawei/",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2019-05-30",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.elobservador.com.uy/nota/antel-lanzo-internet-5g-y-pone-a-uruguay-a-la-vanguardia-regional-201949201424",
+          "publisher": "El Observador",
+          "source_tier": "S3",
+          "date": "2019-04-09",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia is Finnish, so third pole. The vendor of Antel's 2023 commercial 3.5GHz 5G build (300 sites by May 2024 per RCR Wireless) was not named in any source opened; this finding covers only the 2019 28GHz FWA launch. Tier 3 assumed from a live deployment with a named vendor; no contract or value seen."
+    },
+    {
+      "id": "URY-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei and ZTE",
+      "local_actor": "Antel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-05-30",
+      "still_current": null,
+      "summary": "Antel's president said in May 2019 that Antel had worked with Huawei and ZTE for years and that the government was evaluating whether to keep contracting them after the US ban; no decision was reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/gobierno-uruguayo-evalua-si-mantiene-o-no-contratos-con-huawei/",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2019-05-30",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "The source does not name the network layers or contracts Huawei/ZTE supply; tier 3 is assumed from an ongoing multi-year supplier relationship. No later exclusion or reversal was found, so this is not coded as a reversal. Pre-2020; current status unchecked."
+    },
+    {
+      "id": "URY-003",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Google (Parque de las Ciencias, Canelones)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-08-30",
+      "still_current": null,
+      "summary": "Google said it would invest more than US$850 million in a data centre in Canelones, its second in Latin America; BNamericas reported construction had begun. The design was reworked to air cooling after earlier water-use objections.",
+      "announced_value_usd": 850000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://bnamericas.com/en/news/google-starts-construction-of-us850mn-uruguay-datacenter",
+          "publisher": "BNamericas",
+          "source_tier": "S2",
+          "date": "2024-08-30",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://mobileworldlive.com/latin-america/google-to-spend-850m-on-uruguay-data-centre",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2024-08-30",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ultimahora.com/google-anuncia-en-uruguay-su-segundo-centro-de-datos-en-latinoamerica-por-usd-850-millones",
+          "publisher": "Ultima Hora",
+          "source_tier": "S3",
+          "date": "2024-08-30",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Sources disagree on construction status in August 2024: BNamericas' headline says construction started, Ultima Hora describes an announcement of construction. Tier 4 follows BNamericas; no 2026 status or opening date was confirmed in this pass. Google mentions improving regional AI access but no AI-specific capacity."
+    },
+    {
+      "id": "URY-004",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Ministry of Environment, Uruguay",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Environmental licence for Google's original water-cooled Canelones data-centre design",
+      "reversal_reason": "regulatory",
+      "date": null,
+      "still_current": null,
+      "summary": "Uruguay's environment ministry refused the original Google data-centre licence over its water use for cooling, forcing Google to redesign the project before the 2024 relaunch.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://bnamericas.com/en/news/google-starts-construction-of-us850mn-uruguay-datacenter",
+          "publisher": "BNamericas",
+          "source_tier": "S2",
+          "date": "2024-08-30",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Seen only in the BNamericas page description; the refusal date and formal instrument were not found. Tier 2 assumes the reversed item was a pre-construction permit application. Regulatory and since superseded by the redesigned project (URY-003), so it should not move the map."
+    },
+    {
+      "id": "URY-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Antel",
+      "local_actor": "Antel (Pando data centre, Canelones)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-18",
+      "still_current": null,
+      "summary": "Antel is spending US$8 million to add an AI-focused data centre with high-performance processors inside its Pando site; procurement had begun in February 2026, with operation targeted before end-2026.",
+      "announced_value_usd": 8000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gub.uy/presidencia/comunicacion/noticias/antel-implementara-2026-nuevo-centro-datos-inteligencia-artificial",
+          "publisher": "Presidencia de la Republica (Uruguay)",
+          "source_tier": "S1",
+          "date": "2026-02-18",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telesemana.com/blog/2026/02/23/antel-invertira-us-8-millones-en-su-propio-data-center-de-inteligencia-artificial-y-proyecta-un-segundo-centro-de-datos-para-2026/",
+          "publisher": "TeleSemana",
+          "source_tier": "S2",
+          "date": "2026-02-23",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 because procurement was under way but no award was reported. Accelerator vendor not named in either source, so no silicon finding. Antel's president framed it as sovereignty."
+    },
+    {
+      "id": "URY-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Antel",
+      "local_actor": "Antel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-11",
+      "still_current": null,
+      "summary": "The government announced Antel will invest US$70 million in a new AI data centre in Canelones near Routes 5 and 48, with works due to start in Q1 2027 and operation in 2028-2029.",
+      "announced_value_usd": 70000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gub.uy/presidencia/comunicacion/noticias/antel-invertira-70-millones-dolares-para-construir-centro-datos-inteligencia",
+          "publisher": "Presidencia de la Republica (Uruguay)",
+          "source_tier": "S1",
+          "date": "2026-08-11",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/es/noticias/antel-invertir%C3%A1-70-millones-de-d%C3%B3lares-en-un-data-center-de-ia-en-uruguay/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-08-17",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: an announcement after a Council of Ministers meeting, with no contract or construction. Capacity, builder and equipment vendors not stated. Unclear whether this is the same as the Montevideo redundancy site Antel mentioned in February 2026."
+    },
+    {
+      "id": "URY-007",
+      "layer": "cloud",
+      "pole": "us",
+      "controller": "Google Cloud",
+      "local_actor": "Antel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-25",
+      "still_current": null,
+      "summary": "Antel and Google Cloud agreed that Antel will host Google Distributed Cloud infrastructure at its Pando data centre and sell a hybrid cloud service to Uruguayan businesses, keeping data in-country.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gub.uy/ministerio-industria-energia-mineria/comunicacion/noticias/antel-google-cloud-sellan-acuerdo-para-alojar-infraestructura-nube-hibrida",
+          "publisher": "Ministerio de Industria, Energia y Mineria (Uruguay)",
+          "source_tier": "S1",
+          "date": "2026-02-26",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telesemana.com/blog/2026/02/26/mas-nube-mas-telco-antel-y-google-cloud-se-aliaron-para-ofrecer-una-nube-hibrida-y-robustecer-los-servicios-b2b/",
+          "publisher": "TeleSemana",
+          "source_tier": "S2",
+          "date": "2026-02-26",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded us because Google supplies the GDC software stack and updates, although TeleSemana says Antel staff manage it. Tier 2: described as a strategic alliance with no value, contract type or go-live date. This is an in-country sovereign-style cloud, distinct from a Google public cloud region."
+    },
+    {
+      "id": "URY-008",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "LATU (Laboratorio Tecnologico del Uruguay)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-12",
+      "still_current": null,
+      "summary": "LATU and Microsoft set up an 'AI for Good Lab' for public-interest AI projects in health, environment and public management over an initial three years, backed by Agesic, Antel and innovation agencies.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.elobservador.com.uy/ciencia-y-tecnologia/uruguay-crea-microsoft-un-laboratorio-ia-aplicar-tecnologia-salud-ambiente-y-gestion-publica-n6037166",
+          "publisher": "El Observador",
+          "source_tier": "S3",
+          "date": "2026-03-12",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Uruguay contributes US$400,000 via its innovation agencies; Microsoft's contribution is expertise and unquantified co-financing, so no deal value is coded. Which models or cloud the lab uses was not stated. Tier 2 (framework programme). A 2021 Microsoft AI cooperation and AWS cloud alliance (DPL News) preceded it."
+    },
+    {
+      "id": "URY-009",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Ministerio del Interior",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-03-06",
+      "still_current": null,
+      "summary": "China's government donated about 2,000 surveillance cameras plus servers and computers, worth about US$4.78 million, to Uruguay's interior ministry for departments bordering Brazil, following a 2018 agreement for 1,000 cameras.",
+      "announced_value_usd": 4780000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gub.uy/agencia-uruguaya-cooperacion-internacional/comunicacion/noticias/china-dona-equipos-de-video-vigilancia",
+          "publisher": "Agencia Uruguaya de Cooperacion Internacional",
+          "source_tier": "S1",
+          "date": "2019-03-06",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.gub.uy/presidencia/comunicacion/noticias/uruguay-recibira-1000-camaras-videovigilancia-china-para-instalar-frontera",
+          "publisher": "Presidencia de la Republica (Uruguay)",
+          "source_tier": "S1",
+          "date": "2018-04-19",
+          "retrieved_at": "2026-10-24T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null because neither page names the camera or video-management vendor; the donor is the PRC state, and a Chinese vendor is likely but unconfirmed. If Hikvision, Dahua or Huawei is confirmed, recode prc. The 2018 page cites 1,000 cameras in a US$5m, 3,956-item package; the 2019 page 2,000 cameras; whether these are one donation or two phases is unclear. Both sources share the gub.uy host, so not corroborated. Pre-2020; still_current unchecked."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchase or vendor named; Antel's AI data-centre sources mention only unnamed high-performance processors"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "no national frontier-model partnership or sovereign Uruguayan model found in 1 dedicated search; Microsoft AI lab coded under applications"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power project surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendor supplies Antel's commercial 3.5GHz 5G RAN and core (Nokia, Huawei, Ericsson or ZTE), and which layers do Huawei/ZTE still supply at Antel?",
+    "RAN/core vendors at Claro Uruguay and Movistar Uruguay (now under Millicom ownership?) were not identified.",
+    "Brand/manufacturer of the PRC-donated border surveillance cameras and video-management system (2018-2019); still in service?",
+    "Current construction status and expected opening of Google's Canelones data centre as of 2026.",
+    "Which accelerators Antel is procuring for its Pando AI data centre, and whether the US$70m Canelones AI data centre has a builder or equipment partner.",
+    "Did the Interior Ministry award its 2019 facial-recognition software purchase (DNIC database matching), and to which vendor?",
+    "Any Uruguayan government adoption of OpenAI, Anthropic, Google, Meta or PRC models (e.g. through Agesic)?"
+  ],
+  "searches_run": 10
+}

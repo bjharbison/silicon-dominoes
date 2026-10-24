@@ -1,0 +1,422 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "DOM",
+  "name": "Dominican Republic",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T13:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "DOM-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of the Dominican Republic",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Huawei connectivity/ICT development projects with the Dominican government",
+      "reversal_reason": "geopolitical",
+      "date": "2020-11",
+      "still_current": null,
+      "summary": "In November 2020 the Dominican government dropped previously agreed Huawei connectivity and ICT-development projects and, per later trade reporting, barred Huawei equipment from telecom networks, ports and airports.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.elcaribe.com.do/panorama/pais/rd-y-ee-uu-se-unen-para-excluir-a-china-y-lanzar-5g/",
+          "publisher": "El Caribe",
+          "source_tier": "S3",
+          "date": "2020-11",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://dplnews.com/republica-dominicana-se-inclina-por-excluir-a-huawei-de-5g/",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2020-11-18",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://totaltele.com/huawei-gets-5g-green-light-in-the-dominican-republic/",
+          "publisher": "Total Telecom",
+          "source_tier": "S2",
+          "date": "2021-02-18",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 is a guess at the stage of the cancelled Huawei project: sources say it was 'previously agreed' but give no instrument, value or agency. Reason coded geopolitical because the cancellation coincided with the US Clean Network declaration (DOM-002). The broader ban on Huawei equipment is reported only by Total Telecom; DOM-003 reports that it was relaxed for the 5G auction in February 2021."
+    },
+    {
+      "id": "DOM-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "US Department of State (Clean Network initiative)",
+      "local_actor": "Ministry of Foreign Affairs (MIREX)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-11-17",
+      "still_current": null,
+      "summary": "After President Abinader met US Under Secretary Keith Krach, the two foreign ministries issued a joint declaration under which the Dominican Republic joined the Clean Network and agreed to exclude high-risk 5G equipment suppliers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://acento.com.do/actualidad/republicadominicana-se-suma-a-iniciativa-de-eeuu-sobre-red-5g-y-da-la-espalda-a-china-8884226.html",
+          "publisher": "Acento (EFE)",
+          "source_tier": "S3",
+          "date": "2020-11-17",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.elcaribe.com.do/panorama/pais/rd-y-ee-uu-se-unen-para-excluir-a-china-y-lanzar-5g/",
+          "publisher": "El Caribe",
+          "source_tier": "S3",
+          "date": "2020-11",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://dplnews.com/republica-dominicana-se-inclina-por-excluir-a-huawei-de-5g/",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2020-11-18",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: a non-binding joint declaration. Huawei is not named in the declaration, though press framed it as aimed at China. DPL News reports the related Abinader statement and the Krach tour rather than the declaration text itself."
+    },
+    {
+      "id": "DOM-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "US Department of State (Clean Network initiative)",
+      "local_actor": "Government of the Dominican Republic",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": true,
+      "reversal_of": "DOM-002 Clean Network pledge to exclude high-risk 5G vendors",
+      "reversal_reason": "regulatory",
+      "date": "2021-02",
+      "still_current": null,
+      "summary": "Trade press reported in February 2021, citing local sources quoting President Abinader, that the specifications for the 700MHz/3.5GHz 5G spectrum auction would not exclude Huawei, reversing the November 2020 position.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://totaltele.com/huawei-gets-5g-green-light-in-the-dominican-republic/",
+          "publisher": "Total Telecom",
+          "source_tier": "S2",
+          "date": "2021-02-18",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.tvn-2.com/entretenimiento/tecnologia/republica-dominicana-dejara-operadoras-huawei_1_1145430.html",
+          "publisher": "TVN (Panama)",
+          "source_tier": "S3",
+          "date": "2020-10-09",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded as a partial reversal of the US-aligned exclusion pledge (DOM-002). The reason is not stated; coded regulatory (auction-specification decision) rather than geopolitical to stay conservative. The TVN source predates the declaration: in October 2020 Abinader already said operators, not the government, would choose 5G vendors. Whether Claro or Altice actually use Huawei for 5G was not established."
+    },
+    {
+      "id": "DOM-004",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Government of the People's Republic of China (donor; equipment vendor not named)",
+      "local_actor": "Sistema Nacional de Atención a Emergencias y Seguridad 9-1-1",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2014",
+      "still_current": null,
+      "summary": "The 911 emergency system has used video-surveillance cameras and other equipment donated by the Chinese government since 2014; in 2019 it defended this after US Senator Rubio criticised Chinese facial and plate recognition technology.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.elcaribe.com.do/2019/11/15/el-sistema-911-defiende-el-uso-tecnologia-china/",
+          "publisher": "El Caribe",
+          "source_tier": "S3",
+          "date": "2019-11-15",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 because the donated cameras were operational in the national 911 system, but the size of the Chinese-donated share and the vendor (Hikvision/Dahua/Huawei?) are unknown. Pre-2020 and still_current not confirmed in this pass. The article says the system is also expanding with equipment from several suppliers."
+    },
+    {
+      "id": "DOM-005",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "US Embassy Bureau of International Narcotics and Law Enforcement Affairs (INL) (funder; equipment vendor not named)",
+      "local_actor": "Ministry of the Presidency (MINPRE) / Sistema 9-1-1",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12-19",
+      "still_current": null,
+      "summary": "The Ministry of the Presidency and the US Embassy's INL office signed a letter of implementation, under the Caribbean Basin Security Initiative, to roughly double 911 surveillance cameras nationwide, prioritising border provinces.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://eldia.com.do/la-videovigilancia-9-1-1-sera-ampliada/",
+          "publisher": "El Día",
+          "source_tier": "S3",
+          "date": "2024-12-20",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://presidencia.gob.do/noticias/embajada-de-ee-uu-y-minpre-firman-carta-de-implementacion-para-expansion-del-sistema",
+          "publisher": "Presidencia de la República Dominicana",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": false
+        },
+        {
+          "url": "https://revistamercado.do/nacional/como-funcionara-el-plan-del-911-en-republica-dominicana-para-instalar-mas-de-10400-camaras-de-seguridad/",
+          "publisher": "Revista Mercado",
+          "source_tier": "S3",
+          "date": "2026-08-11",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole us on the funder, following the LKA precedent where the vendor is unnamed; the camera vendor is not identified, so the equipment-controller pole may differ. Revista Mercado (August 2026) describes the plan to go from about 5,200 to over 10,400 cameras but names no vendor, financing or US role. The presidencia.gob.do page failed to load. Tier 2 as an implementation letter without a named supplier contract."
+    },
+    {
+      "id": "DOM-006",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Government of the Dominican Republic (Decree 113-26)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02",
+      "still_current": null,
+      "summary": "Google announced a US$500 million, roughly 7,000 sqm international digital exchange hub in the Dominican Republic, declared a high national priority by Decree 113-26; works were slated for March 2026 to early 2027.",
+      "announced_value_usd": 500000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/google-invests-500-million-in-its-digital-port-in-the-dominican-republic/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-02-23",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/google-invests-500m-in-dominican-republic-digital-port/",
+          "publisher": "Submarine Telecoms Forum",
+          "source_tier": "S2",
+          "date": "2026-02-27",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://newenergyevents.com/?p=19687",
+          "publisher": "New Energy Events",
+          "source_tier": "S3",
+          "date": "2026-03-05",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: announcement and government priority decree; start of construction not confirmed in this pass. The $500m figure appears to cover hub and cable together. Location within the country not stated.",
+      "bundle_id": "DOM-B1"
+    },
+    {
+      "id": "DOM-007",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Government of the Dominican Republic",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02",
+      "still_current": null,
+      "summary": "Google's project includes a new submarine cable system linking the Dominican Republic directly to two US landing points, reportedly South Carolina and Virginia, tripling direct US cable links and multiplying fibre pairs tenfold.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/google-invests-500-million-in-its-digital-port-in-the-dominican-republic/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-02-23",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/google-invests-500m-in-dominican-republic-digital-port/",
+          "publisher": "Submarine Telecoms Forum",
+          "source_tier": "S2",
+          "date": "2026-02-27",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Same announcement as DOM-006; value not split between hub and cable. Cable supplier not named; Google coded as controller as the investor/owner.",
+      "bundle_id": "DOM-B1"
+    },
+    {
+      "id": "DOM-008",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Ministry of the Presidency (MINPRE)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-14",
+      "still_current": null,
+      "summary": "The Ministry of the Presidency signed an MOU with Nvidia to support the National AI Strategy: an AI Centre of Excellence within 12 months, an AI academy, and a national AI factory built on Nvidia technology.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://diariolibre.com/politica/gobierno/2025/10/14/gobierno-aplicara-inteligencia-artificial-en-transito-educacion-y-sal/3277394",
+          "publisher": "Diario Libre",
+          "source_tier": "S3",
+          "date": "2025-10-14",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.revistaeyn.com/empresasymanagement/nvidia-ayudara-a-republica-dominicana-a-implementar-estrategia-de-inteligencia-artificial-PG27740960",
+          "publisher": "Revista E&N",
+          "source_tier": "S3",
+          "date": "2025-10-15",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.elcaribe.com.do/sin-categoria/gobierno-impulsa-primera-generacion-de-docentes-en-ia-tras-alianza-estrategica-con-nvidia/",
+          "publisher": "El Caribe",
+          "source_tier": "S3",
+          "date": "2026-02-24",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://presidencia.gob.do/noticias/gobierno-de-la-republica-dominicana-acelerara-sus-planes-soberanos-de-inteligencia",
+          "publisher": "Presidencia de la República Dominicana",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1 (MOU); no GPU quantities, systems or value disclosed. By February 2026 a first teacher cohort (INTEC, PUCMM, ITLA) was being trained with the Nvidia Deep Learning Institute, and the plan also mentions strengthening the State Data Centre with NAP del Caribe. Not corroborated: no S1/S2 source opened (the presidencia.gob.do page failed to load). A presidencia.gob.do headline also reports 911/US Embassy cooperation with Nvidia on AI for emergencies; not opened."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "no frontier-model partnership or sovereign national model surfaced in AI-strategy and Nvidia searches"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI/data-centre-specific power project surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies Claro (América Movil), Altice Dominicana and Viva 5G/4G radio and core networks? No vendor was named in any source found.",
+    "What exactly was the Huawei connectivity/ICT project cancelled in November 2020 (agency, value, stage)? El Día is cited as the original report.",
+    "Was a formal ban on Huawei equipment in networks, ports and airports ever issued, and was it formally rescinded in 2021?",
+    "Which vendor supplied the Chinese-donated 911 cameras (Hikvision, Dahua, Huawei?) and are they still in service? Which vendor supplies the INL-funded 911 expansion?",
+    "Has construction of Google's digital exchange hub and US cable started, and where is it sited?",
+    "What came of the 911 / US Embassy / Nvidia cooperation reported on presidencia.gob.do, and has the national AI factory procured GPUs?",
+    "Do any PRC-built (HMN Tech) submarine cables land in the Dominican Republic?"
+  ],
+  "searches_run": 10
+}

@@ -1,0 +1,406 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "PRY",
+  "name": "Paraguay",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-24T13:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "PRY-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "CONATEL (5G spectrum tenders)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Eligibility of Huawei/ZTE as RAN suppliers for Paraguayan 5G networks",
+      "reversal_reason": "geopolitical",
+      "date": "2025-08",
+      "still_current": true,
+      "summary": "CONATEL's 5G tenders required a commercial-reciprocity certificate from Paraguay's mission in the RAN vendor's home country; with no relations with Beijing, this barred Huawei and ZTE. The rule was reaffirmed for the 2026 second tender.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20250826/5g/paraguay-awards-5g",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2025-08-26",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://dplnews.com/estados-unidos-aplaude-licitacion-5g-paraguay-huawei/",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2025-08-16",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telesemana.com/blog/2026/07/14/paraguay-denuncia-ciberespionaje-chino-en-plena-expansion-de-su-red-5g-pero-el-gobierno-asiatico-niega-las-acusaciones/",
+          "publisher": "TeleSemana",
+          "source_tier": "S2",
+          "date": "2026-07-14",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telesemana.com/blog/2026/07/10/paraguay-avanza-con-la-segunda-subasta-5g-y-tigo-y-personal-aceptan-las-reglas-contra-equipos-de-origen-chino/",
+          "publisher": "TeleSemana",
+          "source_tier": "S2",
+          "date": "2026-07-10",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://scmp.com/news/china/article/3371214/paraguays-tech-minister-defies-beijing-sanctions-says-taiwan-ties-not-negotiation",
+          "publisher": "South China Morning Post",
+          "source_tier": "S3",
+          "date": "2026-10-17",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a reversal (exclusion) of PRC RAN supply; tier 3 is the tier of the binding vendor contracts the rule forecloses, a judgement since no specific Huawei contract was cancelled. Reason geopolitical: the mechanism turns on diplomatic recognition (Taiwan), and the US Embassy publicly praised it. Legal instrument (resolution number) not identified. Tigo and Personal abstained from the 2025 tender over the rule but bid under it in July 2026. still_current true: reaffirmed July 2026 and cited by minister Villate in October 2026 after Beijing sanctioned him, which he linked to the exclusion. A July 2026 MITIC/US statement alleging PRC-linked intrusions into state systems is context, not coded."
+    },
+    {
+      "id": "PRY-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Claro Paraguay (América Móvil)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12-18",
+      "still_current": null,
+      "summary": "Claro launched Paraguay's first commercial 5G on 3.5GHz in December 2025 with Nokia AirScale radio equipment, an initial US$35 million investment covering 12 metropolitan localities including Gran Asunción and Ciudad del Este.",
+      "announced_value_usd": 35000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/?p=299702",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2025-12-18",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telesemana.com/blog/2026/07/10/paraguay-avanza-con-la-segunda-subasta-5g-y-tigo-y-personal-aceptan-las-reglas-contra-equipos-de-origen-chino/",
+          "publisher": "TeleSemana",
+          "source_tier": "S2",
+          "date": "2026-07-10",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia (Finland) is third pole. Only DPL News names Nokia; TeleSemana confirms Claro's December 2025 5G switch-on but not the vendor, so the vendor claim is uncorroborated. Tier 4 not 5: commercial service is live but limited to 12 localities. Claro's 4G and core vendors not established."
+    },
+    {
+      "id": "PRY-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Tigo Paraguay (Millicom)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-12-07",
+      "still_current": null,
+      "summary": "Ericsson agreed to deploy its Ericsson Radio System at about 1,000 Tigo sites across Paraguay and Honduras from 2018, modernising 2G/3G/4G sites and adding indoor and small-cell capacity.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/8210-tigo-upgrading-paraguay-and-honduras-networks-with-ericsson.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2018-12-07",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ltv.hn/2021/07/14/millicom-invertira-us135-millones-para-modernizar-sus-redes-moviles-en-honduras-paraguay-y-bolivia-en-alianza-con-ericsson",
+          "publisher": "LTV (Honduras)",
+          "source_tier": "S3",
+          "date": "2021-07-14",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson (Sweden) is third pole. Pre-2020 contract; still_current not confirmed, though a 2021 headline (unopened) reports a further Millicom-Ericsson US$135m modernisation covering Paraguay, suggesting continuity. Split of the ~1,000 sites between Paraguay and Honduras not given. Core vendor and Personal's (Núcleo) vendors not established."
+    },
+    {
+      "id": "PRY-004",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Yguazú Digital (proposed Paraguay-Taiwan binational entity)",
+      "local_actor": "MITIC; Taiwan ICDF",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05",
+      "still_current": null,
+      "summary": "During President Peña's May 2026 Taiwan visit, the two governments signed a non-binding MOU for a sovereign AI computing centre run by a 50/50 binational entity, Yguazú Digital: a 10MW pilot, then ~100MW, up to 1GW.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.abc.com.py/economia/2026/05/11/paraguay-y-taiwan-crearan-yguazu-digital-un-gigante-de-ia-que-consumira-una-turbina-y-media-de-itaipu/",
+          "publisher": "ABC Color",
+          "source_tier": "S3",
+          "date": "2026-05-11",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://econojournal.com.ar/2026/05/un-acuerdo-entre-paraguay-y-taiwan-para-armar-un-centro-de-ia-provoca-una-crisis-diplomatica-con-china/",
+          "publisher": "EconoJournal",
+          "source_tier": "S3",
+          "date": "2026-05-13",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.hoy.com.py/nacionales/2026/05/20/mitic-liderara-fase-piloto-del-ambicioso-plan-de-ia-junto-a-taiwan",
+          "publisher": "Diario HOY",
+          "source_tier": "S3",
+          "date": "2026-05-20",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the owner-operator is to be a 50/50 Paraguay-Taiwan binational entity (needing congressional approval), with MITIC leading the pilot, so control is genuinely shared between domestic and third (Taiwan). Factors toward third: Taiwan is to supply the AI processing equipment, and the MOU contemplates embassy-like immunities for the facility. Tier 1 (MOU; feasibility/due diligence next). HOY cites US$300-500m for phase one; not coded as a single announced value. Chips, site and timeline unstated. Not corroborated: no S1/S2 source opened. China's foreign ministry condemned the visit."
+    },
+    {
+      "id": "PRY-005",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "X8 Cloud Infrastructure",
+      "local_actor": "ANDE",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12",
+      "still_current": null,
+      "summary": "Los Angeles-based start-up X8 Cloud signed an agreement with state utility ANDE to build an Itaipú-powered AI data centre in Paraguay; phase one reportedly about US$260m with over 4,000 Nvidia H100-class GPUs.",
+      "announced_value_usd": 260000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/x8-cloud-will-develop-ia-infrastructure-in-paraguay-with-itaipu-energy/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://dplnews.com/?p=298467",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2025-12-08",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "low",
+      "analyst_inference": "Pole us on DCD's description of X8 as Los Angeles-based (CEO calls it multinational). Tier 2: the ANDE agreement's nature (power supply vs framework) is unclear and no construction is reported. Sources conflict on capacity (DCD 50MW rising to 500MW in 2027; DPL 6MW phase one, up to 250MW), so confidence low despite two sources. Phase-one target of early-2026 operations not confirmed. DCD article date not shown; dated to December 2025 from DPL.",
+      "bundle_id": "PRY-B1"
+    },
+    {
+      "id": "PRY-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "X8 Cloud Infrastructure",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12-08",
+      "still_current": null,
+      "summary": "X8 Cloud's Paraguay plan names more than 4,000 Nvidia H100 or equivalent GPUs for phase one and 165,000 Nvidia GPUs for a later phase; no purchase or delivery is reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/?p=298467",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2025-12-08",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: stated plan only. No export licence or delivery evidence found. Linked to the X8 facility finding.",
+      "bundle_id": "PRY-B1"
+    },
+    {
+      "id": "PRY-007",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "HIVE Digital Technologies",
+      "local_actor": "Yguazú site (Alto Paraná)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-22",
+      "still_current": null,
+      "summary": "HIVE Digital has completed two phases (300MW) of Itaipú-hydro-powered data-centre capacity at Yguazú and signed a definitive agreement for a further 100MW, with construction from early 2026, mainly for Bitcoin mining with planned HPC/AI growth.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.modernpowersystems.com/news/hive-digital-to-add-100-mw-hydro-data-centre-in-paraguay/",
+          "publisher": "Modern Power Systems",
+          "source_tier": "S2",
+          "date": "2025-10-22",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.renewableenergyworld.com/hydro-power/hive-hydro-expansion/",
+          "publisher": "Renewable Energy World",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third assumes HIVE is Canadian-headquartered (not stated in the opened source, which lists operations in Paraguay, Canada and Sweden). Tier 5 for the completed 300MW; the operational load appears to be predominantly crypto-mining rather than AI, so its weight as AI stack evidence is limited. Phase 3 completion (target Q3 2026) not confirmed."
+    },
+    {
+      "id": "PRY-008",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Policía Nacional (911 system)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-06",
+      "still_current": null,
+      "summary": "The National Police added facial recognition to the 911 monitoring network in mid-2023, with about 250 360-degree cameras across Central department to flag people with arrest warrants; the supplier was not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ultimahora.com/policia-nacional-moderniza-sistema-de-reconocimiento-facial",
+          "publisher": "Última Hora",
+          "source_tier": "S3",
+          "date": "2023-07-04",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.tedic.org/en/not-with-my-face-the-paraguayan-state-deploys-facial-recognition/",
+          "publisher": "TEDIC",
+          "source_tier": "S4",
+          "date": "2025-04",
+          "retrieved_at": "2026-10-24T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: no vendor named in either opened source. TEDIC (digital-rights NGO, treated S4) reports at least 13 state bodies hold facial-recognition cameras, partly funded via CONATEL's Universal Service Fund since 2016; its full PDF may name vendors and was not opened."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "no national model or government frontier-model partnership surfaced in a government-AI search; Yguazú Digital is compute, not a model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "Itaipú/ANDE supply recorded within facility findings; no dedicated AI power plant surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which CONATEL resolution sets the 5G reciprocity rule, and does it apply to existing 4G networks or only new 5G RAN?",
+    "Do Tigo or Personal (Núcleo) run Huawei/ZTE in their 4G RAN or core, and will the rule force any swap-out?",
+    "Who won Licitación 01/2026 (2.3/3.7GHz) and which vendors will Tigo and Personal use for 5G?",
+    "Yguazú Digital: has Congress approved the binational entity, is the 10MW pilot sited/started, and which chips will Taiwan supply?",
+    "Is X8 Cloud's Paraguay facility under construction or operating, and what exactly did it sign with ANDE?",
+    "Vendors of Policía Nacional 911 and other state facial-recognition/CCTV systems (check TEDIC PDF and DNCP procurement records).",
+    "What exactly are Beijing's October 2026 sanctions on MITIC minister Gustavo Villate?"
+  ],
+  "searches_run": 9
+}
