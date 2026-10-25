@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "GNQ",
-  "GRD",
-  "GTM",
-  "GUY",
-  "HND",
-  "HRV",
-  "HTI",
-  "ISL",
-  "KIR",
-  "KNA",
   "LBN",
   "LBR",
   "LBY",
@@ -254,6 +244,16 @@
   "GAB",
   "GIN",
   "GMB",
-  "GNB"
+  "GNB",
+  "GNQ",
+  "GRD",
+  "GTM",
+  "GUY",
+  "HND",
+  "HRV",
+  "HTI",
+  "ISL",
+  "KIR",
+  "KNA"
  ]
 }

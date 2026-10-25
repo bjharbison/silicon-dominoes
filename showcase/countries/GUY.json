@@ -1,0 +1,357 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GUY",
+  "name": "Guyana",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T09:22:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GUY-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "National Data Management Authority (E-Government network)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-01",
+      "still_current": null,
+      "summary": "Huawei built Guyana's state e-government network (Georgetown fibre and a coastal 4G LTE network, about US$32m); in January 2017 Cabinet approved a Huawei programme to replace hardware, update software and provide remote support.",
+      "announced_value_usd": 32000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dpi.gov.gy/govt-huawei-to-work-on-strengthening-e-gov-network",
+          "publisher": "Department of Public Information, Guyana",
+          "source_tier": "S1",
+          "date": "2017-01-06",
+          "retrieved_at": "2026-10-25T09:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://stabroeknews.com/?p=510670",
+          "publisher": "Stabroek News",
+          "source_tier": "S3",
+          "date": "2018-12-17",
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://hgptv.com/jagdeo-defends-use-of-blacklisted-chinese-tech-companys-equipment-in-guyana-despite-security-concerns",
+          "publisher": "HGPTV",
+          "source_tier": "S3",
+          "date": "2023-08-01",
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor and ongoing software/support provider is Huawei, so prc. Tier 5: the 2018 editorial describes the network as in use serving schools and agencies. Original build date not established (under the pre-2015 PPP/C government); finding dated to the 2017 support approval. US$32m is the editorial's figure. HGPTV (2023) reports the Vice-President defending continued Huawei ICT use, suggesting but not confirming still_current."
+    },
+    {
+      "id": "GUY-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Guyana (Ministry of Public Communications) / NDMA",
+      "builder": null,
+      "financier": "China Eximbank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-10-26",
+      "still_current": null,
+      "summary": "National Broadband Expansion Project: Huawei's US$37.6m contract to expand the state LTE network and e-government services, financed by a China Eximbank concessional loan signed October 2018; about 96% disbursed by end-2020.",
+      "announced_value_usd": 37600000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://stabroeknews.com/?p=457248",
+          "publisher": "Stabroek News",
+          "source_tier": "S3",
+          "date": "2017-11-05",
+          "retrieved_at": "2026-10-25T09:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/56119",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4 because the loan is signed and largely disbursed (AidData); completion of the LTE component not confirmed. Huawei is equipment vendor, so prc. AidData compiles the loan agreement and official sources; tiered S2 as a specialist research dataset.",
+      "bundle_id": "GUY-B1"
+    },
+    {
+      "id": "GUY-003",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Guyana / Guyana Police Force",
+      "builder": null,
+      "financier": "China Eximbank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-10-26",
+      "still_current": null,
+      "summary": "The same Huawei broadband contract covered a safe-city component: more CCTV cameras nationwide, a CCTV command centre, a police patrol-tracking centre and a unified emergency call centre; AidData reports the safe-city part largely complete by late 2019.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://stabroeknews.com/?p=457248",
+          "publisher": "Stabroek News",
+          "source_tier": "S3",
+          "date": "2017-11-05",
+          "retrieved_at": "2026-10-25T09:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/56119",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Huawei supplies and integrates the system, so prc. Coded tier 4 (financing closed); 'largely complete' rests on AidData alone, so tier 5 not claimed. Camera brand not named. AidData notes local concern over facial recognition and possible Huawei access to government data.",
+      "bundle_id": "GUY-B1"
+    },
+    {
+      "id": "GUY-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "National Data Management Authority",
+      "local_actor": "National Data Management Authority",
+      "builder": "Huawei",
+      "financier": "China Eximbank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-10-26",
+      "still_current": null,
+      "summary": "The Huawei broadband project included upgrading the government data centre at Castellani House and building a second, backup government data centre, financed by the China Eximbank loan.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://stabroeknews.com/?p=457248",
+          "publisher": "Stabroek News",
+          "source_tier": "S3",
+          "date": "2017-11-05",
+          "retrieved_at": "2026-10-25T09:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/56119",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Building owner-operator is the Guyanese state (NDMA), so domestic per v0.2; Huawei is builder/equipment supplier and China Eximbank the financier. Backup data centre completion not confirmed.",
+      "bundle_id": "GUY-B1"
+    },
+    {
+      "id": "GUY-005",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Guyana Police Force (Safe Country programme)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-22",
+      "still_current": null,
+      "summary": "Government-run Safe Country surveillance network: about 6,000 cameras installed, regional command centres operating, AI traffic cameras deployed; President Ali plans 20,000 more cameras plus facial recognition and predictive policing by 2030. Vendor not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://guyanachronicle.com/?p=713028",
+          "publisher": "Guyana Chronicle",
+          "source_tier": "S4",
+          "date": "2026-05-24",
+          "retrieved_at": "2026-10-25T09:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.cbc.bb/main-stories/guyana-outlines-plan-for-nationwide-cctv-network/",
+          "publisher": "Caribbean Broadcasting Corporation",
+          "source_tier": "S3",
+          "date": "2026-05-23",
+          "retrieved_at": "2026-10-25T09:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.guyana-hc-south-africa.co.za/?p=8571",
+          "publisher": "Guyana High Commission, South Africa (reprint)",
+          "source_tier": "S4",
+          "date": "2024-01-17",
+          "retrieved_at": "2026-10-25T09:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: no camera, software or integrator vendor named in any opened source. Guyana Chronicle is state-owned, so S4; the High Commission page reprints domestic state reporting (January 2024: command centres in Regions 3 and 6 partly operating). Relation to the Huawei safe-city component (GUY-003) not established. Budget figures are in Guyana dollars and not converted."
+    },
+    {
+      "id": "GUY-006",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Cerebras Systems",
+      "local_actor": "Government of Guyana",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-12",
+      "still_current": null,
+      "summary": "Government of Guyana and Cerebras signed an MOU for Cerebras to build and operate an AI data centre of up to 100MW at Wales, beside a gas-to-energy plant with behind-the-meter power; no value or timeline given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.businesswire.com/news/home/20251112747179/en/Guyana-and-Cerebras-Forge-Historic-AI-Partnership-to-Launch-a-100MW-Data-Center-and-Ignite-Regional-Innovation",
+          "publisher": "Cerebras Systems via Business Wire",
+          "source_tier": "S1",
+          "date": "2025-11-12",
+          "retrieved_at": "2026-10-25T09:09:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/cerebras-signs-mou-for-100mw-data-center-in-guyana/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-11-13",
+          "retrieved_at": "2026-10-25T09:09:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Cerebras (US) to build and operate, so us; ownership structure undisclosed. Tier 1 (MOU). A February 2026 ministerial speech (DPI) said data-centre letters of intent were still under review, so no advance beyond MOU is evidenced.",
+      "bundle_id": "GUY-B2"
+    },
+    {
+      "id": "GUY-007",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Cerebras Systems",
+      "local_actor": "Government of Guyana",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-12",
+      "still_current": null,
+      "summary": "Under the same MOU Cerebras said it would deploy its CS-3 AI systems in the planned Wales data centre, framed under its Cerebras for Nations sovereign-AI programme.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.businesswire.com/news/home/20251112747179/en/Guyana-and-Cerebras-Forge-Historic-AI-Partnership-to-Launch-a-100MW-Data-Center-and-Ignite-Regional-Innovation",
+          "publisher": "Cerebras Systems via Business Wire",
+          "source_tier": "S1",
+          "date": "2025-11-12",
+          "retrieved_at": "2026-10-25T09:09:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/cerebras-signs-mou-for-100mw-data-center-in-guyana/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-11-13",
+          "retrieved_at": "2026-10-25T09:09:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "US accelerator vendor, so us. Tier 1; no shipment or export licence evidenced.",
+      "bundle_id": "GUY-B2"
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search and a February 2026 ministerial speech found no frontier-provider partnership or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "the Wales gas-to-energy plant is a grid project; behind-the-meter data-centre supply exists only as part of the Cerebras MOU (GUY-006)"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendors of commercial operators GTT and Digicel Guyana not established (one search found nothing).",
+    "Is the Huawei e-government network still Huawei-supported, and was the NBEP LTE and backup data centre completed?",
+    "Camera, video-analytics and integrator vendors of the Safe Country network (about 6,000 cameras, AI traffic cameras); link to the Huawei safe-city component?",
+    "Has the Cerebras Wales MOU progressed to a contract, site works or export licence; who owns the facility?",
+    "Submarine cables (HMN Tech involvement) not searched; no Huawei/ZTE ban or reversal found in one search."
+  ],
+  "searches_run": 9
+}

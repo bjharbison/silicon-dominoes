@@ -1,0 +1,397 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "HND",
+  "name": "Honduras",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T09:27:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "HND-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Tigo Honduras (Millicom)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-07-15",
+      "still_current": null,
+      "summary": "Millicom picked Ericsson to upgrade Tigo's radio network in Honduras, Paraguay and Bolivia and replace its 4G packet core with Ericsson's dual-mode 5G core, within a US$135m three-country investment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/news/4/2021/ericsson-and-millicom---tigo-drive-digital-inclusion-in-latin-america",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2021-07-15",
+          "retrieved_at": "2026-10-25T09:23:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ltv.hn/2021/07/14/millicom-invertira-us135-millones-para-modernizar-sus-redes-moviles-en-honduras-paraguay-y-bolivia-en-alianza-con-ericsson",
+          "publisher": "LTV Honduras",
+          "source_tier": "S3",
+          "date": "2021-07-14",
+          "retrieved_at": "2026-10-25T09:23:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so third. Tier 3 as announced vendor contract; completion not confirmed. US$135m covers three countries with no Honduras split, so announced_value_usd left null. Ericsson release treated as company disclosure (S1); LTV appears to relay it, so independence is weak."
+    },
+    {
+      "id": "HND-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Tigo Honduras (Millicom)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-12-07",
+      "still_current": null,
+      "summary": "Ericsson won a multi-year contract to modernise radio access at about 1,000 Tigo sites across Paraguay and Honduras, including 2G/3G/4G upgrades and 4x4 MIMO radios; Honduras was in the first phase.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomtv.com/content/radio-access-network/tigo-selects-ericsson-to-upgrade-its-network-in-paraguay-and-honduras-33530",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2018-12-10",
+          "retrieved_at": "2026-10-25T09:23:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telesemana.com/blog/2018/12/14/tigo-se-apoyara-en-ericsson-para-preparar-sus-redes-en-honduras-y-paraguay-para-5g/",
+          "publisher": "TeleSemana",
+          "source_tier": "S2",
+          "date": "2018-12-14",
+          "retrieved_at": "2026-10-25T09:23:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so third. Value undisclosed; no per-country site split. Pre-2020; superseded or extended by the 2021 deal (HND-001), still_current not separately checked."
+    },
+    {
+      "id": "HND-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Honduran telecom operators (not named)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-07-19",
+      "still_current": null,
+      "summary": "Huawei, present in Honduras for 12 years, was reported as main supplier to the country's telecom operators with about 70% of their equipment, and operators were running first 5G tests with it.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dplnews.com/huawei-tecnologia-5g-lista-para-funcionar-en-honduras/",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": "2019-07-19",
+          "retrieved_at": "2026-10-25T09:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.laprensa.hn/economia/1302318-410/huawei-tecnologia-5g-lista-funcionar-honduras",
+          "publisher": "La Prensa (Honduras)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:19:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 as installed operational equipment, but the 70% share appears to be Huawei's own claim relayed by press, so treat as weak. Operators not named; Tigo uses Ericsson (HND-001/002), so the Huawei share likely sits with Claro and/or Hondutel, unconfirmed. Pre-2020; a May 2026 review of Huawei telecom equipment (HND-005) suggests it remains in use, but not confirmed."
+    },
+    {
+      "id": "HND-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Hondutel (Empresa Hondureña de Telecomunicaciones)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-08",
+      "still_current": null,
+      "summary": "After the 2023 switch to PRC recognition, state telco Hondutel had only a confidential MOU with Huawei, described as a partnership in which Huawei would lend core-network and last-mile fibre equipment; no contract or value disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.expedientepublico.org/top-secret-this-is-how-the-relationship-will-be-between-huawei-and-the-honduran-telecommunications-company/",
+          "publisher": "Expediente Público",
+          "source_tier": "S3",
+          "date": "2023-08-16",
+          "retrieved_at": "2026-10-25T09:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.elheraldo.hn/elheraldoplus/investigaciones/hondutel-huawei-china-acceso-datos-telecomunicaciones-EG13732969",
+          "publisher": "El Heraldo",
+          "source_tier": "S3",
+          "date": "2023-06-02",
+          "retrieved_at": "2026-10-25T09:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "MOU signing date not stated; date is the reporting date. Hondutel denied Huawei would get data-centre access but called it a strategic partner. Two opened S3 sources, no S1/S2, so not corroborated. Whether a binding contract followed is unknown."
+    },
+    {
+      "id": "HND-005",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Cisco Systems",
+      "local_actor": "Government of Honduras",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-07",
+      "still_current": null,
+      "summary": "President Asfura ordered a review of agreements made with China under his predecessor, covering Huawei-supplied telecom equipment, while discussing with the US government possible use of Cisco technology in Honduran networks.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.bloomberglinea.com/latinoamerica/honduras/honduras-revisa-sus-acuerdos-con-china-mientras-busca-atraer-inversion-de-estados-unidos/",
+          "publisher": "Bloomberg Línea",
+          "source_tier": "S3",
+          "date": "2026-05-07",
+          "retrieved_at": "2026-10-25T09:21:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.taiwannews.com.tw/news/6357898",
+          "publisher": "Taiwan News",
+          "source_tier": "S3",
+          "date": "2026-05-08",
+          "retrieved_at": "2026-10-25T09:21:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-05-07/honduras-reviews-china-ties-amid-push-to-court-us-investment",
+          "publisher": "Bloomberg",
+          "source_tier": "S3",
+          "date": "2026-05-07",
+          "retrieved_at": "2026-10-25T09:21:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: talks only, no Cisco contract found. The review is not a reversal: no cancellation, suspension or ban of Huawei equipment was reported as of the latest opened sources, and no restoration of Taiwan ties (Taiwan described 'cautious and gradual' contacts in April 2026). Taiwan News may relay Bloomberg, so independence is weak; no S1/S2."
+    },
+    {
+      "id": "HND-006",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Sistema Nacional de Emergencia 911 (SNE-911)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-11-14",
+      "still_current": null,
+      "summary": "SNE-911 directly awarded new 911 software to Honduran integrator Innova Solutions, which bid about L49.1m; Innova partners with Huawei and Huawei-branded boxes appeared at delivery, and an anonymous source said the software is Dahua's.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.expedientepublico.org/?p=52050",
+          "publisher": "Expediente Público",
+          "source_tier": "S3",
+          "date": "2023-11",
+          "retrieved_at": "2026-10-25T09:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: integrator is domestic and the underlying vendor (Huawei hardware, possibly Dahua software) is not confirmed. If Dahua software were confirmed the controller would be prc. L49.1m bid, about US$2m per the source; final contract amount not stated, so values left null."
+    },
+    {
+      "id": "HND-007",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Sistema Nacional de Emergencia 911 (SNE-911)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-10-23",
+      "still_current": null,
+      "summary": "SNE-911 signed a tendered contract with Innova Solutions for cameras in a 5,000-camera, 100-municipality surveillance expansion; cameras about L121.7m, whole project estimated at L430.9m; camera brand not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.elheraldo.hn/elheraldoplus/investigaciones/camaras-sne-911-muncipios-contrato-compra-honduras-OH23605193",
+          "publisher": "El Heraldo",
+          "source_tier": "S3",
+          "date": "2025-01-15",
+          "retrieved_at": "2026-10-25T09:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: camera manufacturer not named; Innova is the same integrator linked to Huawei/Dahua in HND-006, but brand unconfirmed. Lempira values not converted (rate on source date not verified). Installation status after January 2025 unknown."
+    },
+    {
+      "id": "HND-008",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "IFX",
+      "local_actor": "IFX (country manager Javier Falck)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09-27",
+      "still_current": null,
+      "summary": "IFX, described as Latin American-capital, announced US$22m for 2026-2027 to reinforce its two operating data centres in San Pedro Sula and Tegucigalpa, part of a US$400m+ regional plan, citing AI demand.",
+      "announced_value_usd": 22000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.bloomberglinea.com/latinoamerica/honduras/el-avance-de-la-ia-empuja-una-nueva-inversion-en-infraestructura-digital-en-honduras/",
+          "publisher": "Bloomberg Línea",
+          "source_tier": "S3",
+          "date": "2026-09-27",
+          "retrieved_at": "2026-10-25T09:21:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the source gives no home jurisdiction beyond 'Latin American capital'; if IFX is foreign-headquartered it would be third. Tier 1 for the announced investment; the two sites themselves are already operating. MW not disclosed."
+    },
+    {
+      "id": "HND-009",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Secretaría de Educación; Dirección de Gobierno Digital (DIGER)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-10-20",
+      "still_current": null,
+      "summary": "Education ministry and the digital-government directorate launched with Google an AI training programme for 60,000 teachers using Google Gemini, billed as Google's largest teacher-training programme in Latin America.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.latribuna.hn/2026/10/20/honduras-junto-a-google-capacitara-a-60000-maestros-en-inteligencia-artificial/",
+          "publisher": "La Tribuna",
+          "source_tier": "S3",
+          "date": "2026-10-20",
+          "retrieved_at": "2026-10-25T09:21:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Used through Google's service, so us. Tier 2 as a programme; agreement type not stated. Training rather than deployment of Gemini in government systems."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or export-licence reporting surfaced in data-centre, AI and network searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced; Patuca dam (PRC-financed) not AI-tied"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendors of Claro Honduras and Hondutel today; is Huawei's reported ~70% share (2019) still current?",
+    "Did the Huawei-Hondutel MOU (2023) lead to a contract, and is it covered by Asfura's 2026 review of China agreements? Any outcome (suspension, Cisco contract)?",
+    "Camera brand and software vendor of SNE-911's 2023 software award and 2024 5,000-camera contract (Innova Solutions; Huawei/Dahua alleged).",
+    "Has Honduras restored relations with Taiwan or cancelled any PRC tech agreement since May 2026?",
+    "Tigo's reported US$1bn Honduras infrastructure investment (DCD, March 2026): does it include data centres, and with which vendors?",
+    "IFX's home jurisdiction (controller pole for its Honduran data centres)."
+  ],
+  "searches_run": 9
+}

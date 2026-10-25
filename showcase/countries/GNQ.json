@@ -1,0 +1,229 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GNQ",
+  "name": "Equatorial Guinea",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GNQ-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "GETESA (state-owned operator)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-09",
+      "still_current": null,
+      "summary": "State operator GETESA signed a six-month agreement with Huawei, overseen by the Vice President, to optimise and upgrade its mobile and internet network: capacity, data speeds, stability and equipment. Value undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/news-digital/1407-57361-equatorial-guinea-taps-huawei-to-upgrade-state-telecom-network",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S2",
+          "date": "2026-07-14",
+          "retrieved_at": "2026-10-25T09:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://techafricanews.com/2026/07/14/getesa-and-huawei-partner-to-upgrade-equatorial-guineas-telecom-network/",
+          "publisher": "TechAfrica News",
+          "source_tier": "S2",
+          "date": "2026-07-14",
+          "retrieved_at": "2026-10-25T09:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.capmad.com/post/equatorial-guinea-taps-huawei-to-modernise-getesa-within-six-months",
+          "publisher": "Capmad",
+          "source_tier": "S3",
+          "date": "2026-07-14",
+          "retrieved_at": "2026-10-25T09:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor Huawei, so prc. Tier 3: Capmad calls it a signed contract with a named counterparty; Ecofin and TechAfrica only say 'agreement', and no value is disclosed, so tier 2 is arguable. Sources disagree on the signing date (9 vs 12 July 2026). Huawei is also mentioned as a possible partner for commercialising SEGESA's 2,000 km fibre network; not coded, as that is undecided."
+    },
+    {
+      "id": "GNQ-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei Marine Networks (now HMN Tech)",
+      "local_actor": "Government of Equatorial Guinea; GITGE (state telecom infrastructure manager)",
+      "builder": "Huawei Marine Networks",
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-06-04",
+      "still_current": null,
+      "summary": "Government contracted Huawei Marine in 2015 to build the Ceiba-2 submarine cable linking Malabo and Bata with a branch to Kribi, Cameroon; financed by China Eximbank, it was inaugurated in June 2018 and is operated by GITGE.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/63government-of-equatorial-guinea-awards-huawei-marine-contract-to-build-ceiba-2-submarine-cable-system/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2015-03-11",
+          "retrieved_at": "2026-10-25T09:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://techcabal.com/?p=28568",
+          "publisher": "TechCabal",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/la-guinee-equatoriale-inaugure-le-cable-sous-marin-de-fibre-optique-ceiba-2-le.html",
+          "publisher": "Osiris",
+          "source_tier": "S3",
+          "date": "2018-06-01",
+          "retrieved_at": "2026-10-25T09:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/91837",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Cable vendor Huawei Marine, so prc. Tier 5: AidData records completion (March 2017) and inauguration on 4 June 2018; Osiris reported the inauguration as scheduled. AidData gives a China Eximbank loan of about US$402m (face value), recorded here only as financing, not contract value. Length reported as 290 km (2015) or about 400 km (later). SubTel Forum item likely relays a Huawei release. Pre-2020; current service not confirmed this run."
+    },
+    {
+      "id": "GNQ-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "GECOMSA (Muni), 51% Government of Equatorial Guinea / 49% ZTE",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2012-02-01",
+      "still_current": null,
+      "summary": "GECOMSA, a telecom operator jointly owned by the government (51%) and ZTE (49%), opened in February 2012, funded by a China Eximbank buyer's credit; by 2016 it was reportedly near bankruptcy and indebted in 2020.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/30542",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "ZTE is co-owner and, presumably, network vendor, so prc; ZTE's role as equipment supplier is inferred from the joint venture, not stated. Tier 5 as an operating national operator. Loan face value unknown. Pre-2020; current status of GECOMSA/Muni and ZTE's stake not confirmed."
+    },
+    {
+      "id": "GNQ-004",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Equatorial Guinea (ministries and courts)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-11-28",
+      "still_current": null,
+      "summary": "Government contracted Huawei to install video surveillance in ministries and courts, announced by state broadcaster TVGE; first phase of about 18 months to cover Malabo and Bata. Value not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.seneweb.com/fr/news/10/apres-l-affaire-baltasar-engonga-la-guinee-equatoriale-deploie-la-videosurveillance-dans-des-administrations_n_457018.html",
+          "publisher": "Seneweb (AFP)",
+          "source_tier": "S3",
+          "date": "2024-11-28",
+          "retrieved_at": "2026-10-25T09:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://afrique.le360.ma/societe/sextapes-de-baltasar-ebang-engonga-la-guinee-equatoriale-deploie-la-videosurveillance-dans-des_LSS3XBBBKBCNHJUSMYJPPJYIXQ/",
+          "publisher": "Le360 Afrique",
+          "source_tier": "S3",
+          "date": "2024-11-28",
+          "retrieved_at": "2026-10-25T09:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Huawei named as contractor and presumed system vendor, so prc. Tier 3 as a reported contract, but both sources relay the same Equatorial Guinean state TV (TVGE) announcement, no S1/S2 source, so not corroborated. Deployment progress unknown. Framed in reporting as following the Baltasar Ebang Engonga leak scandal."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "two searches (English, Spanish) found no data-centre or AI-campus project since 2023"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in network, data-centre or AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only a January 2026 Davos meeting between the President and Amini AI's Kate Kallot with no confirmed agreement; no frontier-provider partnership or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Was the GETESA-Huawei July 2026 agreement a binding contract, what is its value and financing, and does it cover RAN, core or both?",
+    "Radio/core vendor of GETESA's existing network and of GECOMSA (Muni); is GECOMSA still operating and does ZTE still hold 49%?",
+    "Who supplies Ceiba-1 and the ACE landing, and is Ceiba-2 still in service under GITGE?",
+    "Progress, value and financier of the Huawei ministries-and-courts video-surveillance contract (Nov 2024); any S1 award notice?",
+    "Outcome of the January 2026 Davos contact with Amini AI on sovereign data/AI: any MOU or project in Malabo?",
+    "Whether Huawei becomes technical partner for the planned SEGESA fibre-commercialisation company."
+  ],
+  "searches_run": 10
+}

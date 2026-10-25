@@ -1,0 +1,237 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "KNA",
+  "name": "Saint Kitts and Nevis",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T09:19:38Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "KNA-001",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "VIVOTEK",
+      "local_actor": "Government of St Kitts and Nevis (Ministry of National Security / police)",
+      "builder": "Secure Guard Ltd",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-06",
+      "still_current": null,
+      "summary": "Phase one of the Cities and Roadways Surveillance System, over 300 CCTV cameras supplied by Taiwanese firm VIVOTEK with partner Secure Guard, was handed to the national security ministry; phase one cost over EC$5m.",
+      "announced_value_usd": 1850000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nationnews.com/2018/07/01/cctv-command-centre-handed-over-to-national-security-ministry/",
+          "publisher": "Nation News (Barbados)",
+          "source_tier": "S3",
+          "date": "2018-07-01",
+          "retrieved_at": "2026-10-25T09:19:38Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sknis.gov.kn/2017/05/23/cctv-surveillance-system-moving-apace",
+          "publisher": "SKN Information Service (SKNIS)",
+          "source_tier": "S1",
+          "date": "2017-05-23",
+          "retrieved_at": "2026-10-25T09:19:38Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Camera vendor VIVOTEK is Taiwanese, so pole third. Equipment sales agreement signed 14 Dec 2016 after a 2016 Taiwan police-cooperation agreement; sources do not state Taiwan paid. US$ value approximate from EC$5m at the fixed 2.70 peg. Tier 5 as handed over and operating at phase-one scale. Pre-2020; still_current unconfirmed."
+    },
+    {
+      "id": "KNA-002",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Nevis Island Administration",
+      "builder": null,
+      "financier": "Government of the Republic of China (Taiwan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-09-07",
+      "still_current": null,
+      "summary": "Nevis Island Administration commissioned a CCTV command centre launching an island-wide surveillance programme with licence-plate-recognition, PTZ, fixed and infrared cameras; Taiwan contributed 1,865,093 (currency unstated) to equip and furnish it.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nia.gov.kn/nia-commissions-state-of-the-art-cctv-command-centre",
+          "publisher": "Nevis Island Administration",
+          "source_tier": "S1",
+          "date": "2021-09-07",
+          "retrieved_at": "2026-10-25T09:19:38Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: camera manufacturer and integrator not named; Taiwan is financier only, which does not set the pole. Value left null because the currency is unstated (likely EC$). Tier 5 as commissioned; camera count unknown."
+    },
+    {
+      "id": "KNA-003",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "International Integrated Systems, Inc. (IISI)",
+      "local_actor": "Ministry of Information and Communications Technology",
+      "builder": "International Integrated Systems, Inc. (IISI)",
+      "financier": "Taiwan ICDF",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-12-20",
+      "still_current": null,
+      "summary": "ICT ministry and Taiwan ICDF signed a technical cooperation agreement for a national Digital Identity Authentication Project (centralised e-ID, digital signatures, ID cards); IISI is the technical team, development began 2023, launch expected 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.skncgtoronto.gov.kn/?p=6388",
+          "publisher": "Consulate General of St Kitts and Nevis, Toronto",
+          "source_tier": "S1",
+          "date": "2022-12-21",
+          "retrieved_at": "2026-10-25T09:19:38Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sknis.gov.kn/2024/07/03/e-id-stakeholders-consultation",
+          "publisher": "SKN Information Service (SKNIS)",
+          "source_tier": "S1",
+          "date": "2024-07-02",
+          "retrieved_at": "2026-10-25T09:19:38Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "IISI identified as the technical implementer; its Taiwanese base is from general knowledge, not the opened sources, hence pole third with that caveat. Both sources are SKN government outlets relaying official statements, so not treated as independent corroboration. Tier 3 (signed agreement); development under way per 2024 consultation. Value undisclosed; launch status in 2026 unchecked."
+    },
+    {
+      "id": "KNA-004",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "DZS",
+      "local_actor": "St Kitts-Nevis Cable Communications Ltd (The Cable)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-04-18",
+      "still_current": null,
+      "summary": "The Cable deployed DZS Velocity optical line terminals and Helix customer terminals for an island-wide fibre rollout on St Kitts; initial deployment finished within six weeks, with rollout continuing.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.stocktitan.net/news/DZSI/st-kitts-nevis-cable-communications-ltd-leverages-dzs-velocity-ojbkohe9wyks.html",
+          "publisher": "DZS press release (via Stock Titan)",
+          "source_tier": "S4",
+          "date": "2023-04-18",
+          "retrieved_at": "2026-10-25T09:19:38Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "DZS is a US-listed vendor datelined Dallas/Plano, so pole us. Vendor press release only (S4). Tier 4 as rollout under way; full completion unconfirmed. The Cable extended to Nevis over the NIA fibre backbone in April 2025 (NIA release), vendor unnamed. DZS's corporate status after 2024 not checked."
+    },
+    {
+      "id": "KNA-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of St Kitts and Nevis",
+      "local_actor": "Government of St Kitts and Nevis",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-03",
+      "still_current": null,
+      "summary": "Then-Prime Minister Timothy Harris told a party convention the government would build a state-of-the-art data centre to attract business; no site, owner, builder, financier, value or timeline was given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/st-kitts-pm-we-will-build-state-of-the-art-data-center-to-bring-big-business/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-03-30",
+          "retrieved_at": "2026-10-25T09:19:38Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/data-centres-networks/13275-st-kitts-angling-for-business-with-new-data-centre.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2022-04-01",
+          "retrieved_at": "2026-10-25T09:19:38Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1 campaign-style statement of intent. Harris's government lost the August 2022 election (general knowledge), so the plan may have lapsed; no follow-up found. Existing Government ICT Centre in Basseterre was upgraded in 2007 and 2015 with Taiwan Embassy help per DCD."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in network, data-centre or AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found no model-provider partnership or national model; only a Nov 2024 government statement evaluating unnamed AI traffic-monitoring proposals"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core network vendors of Flow (Liberty Latin America) and Digicel in St Kitts and Nevis not established; any Huawei/ZTE presence or exclusion unknown.",
+    "Is the VIVOTEK Cities and Roadways CCTV system still in service, and were later phases built? Who supplied the Nevis CCTV command-centre cameras?",
+    "Did the Taiwan ICDF/IISI e-ID system launch in 2026 as planned, and what is its value?",
+    "Was any data centre built after the 2022 announcement; who operates the Government ICT Centre's equipment?",
+    "Vendor of the AI traffic-monitoring system the government was evaluating in November 2024."
+  ],
+  "searches_run": 9
+}

@@ -1,0 +1,170 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "HTI",
+  "name": "Haiti",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T09:19:18Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "HTI-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Viettel",
+      "local_actor": "National Telecom S.A. (Natcom)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2011-09",
+      "still_current": true,
+      "summary": "Natcom, a joint venture of Vietnam's Viettel and the Haitian state, has run a national fixed and mobile network since 2011; by 2018 it reported about 1,800 2G/3G/4G sites, 6,000 km of fibre and 35% market share.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.capacitymedia.com/article/29ot4oe12l25efyg7u5ts/news/natcom-launches-in-haiti-for-fixed-and-mobile-business",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:19:18Z",
+          "opened": true
+        },
+        {
+          "url": "https://lenouvelliste.com/en/article/271678/prime-minister-alix-didier-fils-aime-celebrates-15-years-of-natcom-and-the-arrival-of-5g-in-haiti",
+          "publisher": "Le Nouvelliste",
+          "source_tier": "S3",
+          "date": "2026-09-07",
+          "retrieved_at": "2026-10-25T09:19:18Z",
+          "opened": true
+        },
+        {
+          "url": "https://vneconomy.vn/natcom-duoc-cap-phep-bang-tan-4g-vang.htm",
+          "publisher": "VnEconomy",
+          "source_tier": "S4",
+          "date": "2018-10-12",
+          "retrieved_at": "2026-10-25T09:19:18Z",
+          "opened": true
+        },
+        {
+          "url": "https://en.qdnd.vn/economy/military-businesses/natcom-reaps-outcomes-in-haiti-497978",
+          "publisher": "Quan Doi Nhan Dan (People's Army Newspaper, Vietnam)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:19:18Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third: Viettel (Vietnamese state/military-owned) operates the network, which per SPEC makes it the controller; the RAN/core equipment vendor is not named in any opened source, so a PRC or other vendor layer underneath cannot be excluded. Ownership stakes not stated. Vietnamese outlets are state-owned, tiered S4; site/fibre figures come from them. Capacity Media article undated. still_current true: 15th anniversary marked September 2026."
+    },
+    {
+      "id": "HTI-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Viettel",
+      "local_actor": "National Telecom S.A. (Natcom)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09-07",
+      "still_current": null,
+      "summary": "At Natcom's 15th-anniversary event, attended by the Prime Minister, the Viettel-owned operator began a pilot launch of 5G in Haiti; vendor, value and coverage were not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://lenouvelliste.com/en/article/271678/prime-minister-alix-didier-fils-aime-celebrates-15-years-of-natcom-and-the-arrival-of-5g-in-haiti",
+          "publisher": "Le Nouvelliste",
+          "source_tier": "S3",
+          "date": "2026-09-07",
+          "retrieved_at": "2026-10-25T09:19:18Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 2 as a pilot. Pole follows operator Viettel because the 5G equipment vendor is not named; recheck if a vendor surfaces."
+    },
+    {
+      "id": "HTI-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Digicel Haiti",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2005-11-08",
+      "still_current": null,
+      "summary": "Digicel selected Ericsson to supply its GSM mobile network in Haiti, with GPRS data, prepaid billing and roaming; contract terms were not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/?p=8752",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2005-11-08",
+          "retrieved_at": "2026-10-25T09:19:18Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson (Sweden) as equipment vendor, so third. Pre-2020 and still_current unchecked; Digicel's later 2017 ZTE 4G RAN deal covered its 26 Caribbean/Central American markets without naming Haiti (TelecomTV relaying a ZTE press release), so Haiti's current RAN vendor may have changed. Not coded as a separate finding because Haiti is not named."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found no data-centre or AI-campus project since 2023; only a 2011 Cisco-equipped private data-centre announcement (Maison Henri Deschamps), out of scope"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in network, data-centre or AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search (French, incl. Taiwan cooperation) found no model-provider partnership or national model"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found only UN-agency CCTV tenders for UN premises and a Dominican border-camera item; no Haitian state surveillance or e-government AI system with a named vendor"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies Natcom's RAN and core (Viettel High Tech, Huawei, ZTE, Ericsson, Nokia), including the 2026 5G pilot?",
+    "Does Digicel Haiti now run ZTE Uni-RAN under Digicel's 2017 region-wide 4G deal, or still Ericsson? Digicel's ownership after its 2023 restructuring should be confirmed.",
+    "Vendor of the Haiti domestic/international submarine cable funded by Digicel (2012 RCR report, not opened) and any HMN Tech involvement.",
+    "Whether Taiwan (ICDF) funds any Haitian government data centre or e-government platform."
+  ],
+  "searches_run": 10
+}

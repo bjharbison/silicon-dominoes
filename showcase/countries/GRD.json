@@ -1,0 +1,45 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GRD",
+  "name": "Grenada",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T09:19:03Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [],
+  "layers_searched": {
+    "networks": {
+      "result": "null",
+      "null_reason": "four searches: Digicel (LTE since Dec 2018) and Flow are the operators, but no RAN/core vendor, Huawei/ZTE ban or HMN Tech cable surfaced; World Bank CARCIP regional cable found with no vendor named"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "two searches; CTU-hosted digital transformation agenda mentions a planned second data centre and data embassy with no controller, vendor, financier or date"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in network, data-centre or AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "two searches; Parliament announced AI tools for 2025 (Nov 2024) without naming a provider; no frontier-provider partnership or national model found"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "two searches; no safe-city or surveillance system found; China-related police items were anti-epidemic supply donations, and a 2005 PRC grant for a government IT project names no vendor"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "RAN/core vendors of Digicel Grenada (700 MHz LTE, Dec 2018) and Flow Grenada; any 5G deployment and its vendor.",
+    "Who supplied and owns the World Bank CARCIP fibre linking Grenada, St Lucia and St Vincent; any other submarine cable landings and their suppliers.",
+    "Vendor and status of China's 2005 US$500,000 grant for the Government of Grenada Information Technology Project (AidData record 54670, no source URL); is any resulting system still in use?",
+    "Which AI tools Grenada's Parliament adopted in 2025 and from which provider; any vendor or financier for the planned second government data centre/data embassy.",
+    "Whether any of the 13 cooperation agreements signed with China (reported) or the EC$40m January 2025 aid package include ICT, telecom or surveillance components."
+  ],
+  "searches_run": 9
+}

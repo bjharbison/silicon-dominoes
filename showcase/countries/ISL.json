@@ -1,0 +1,430 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ISL",
+  "name": "Iceland",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ISL-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Nova",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-10",
+      "still_current": null,
+      "summary": "Mobile operator Nova had already switched on 5G transmitters using Huawei equipment and planned a rapid 5G build-out; Sýn (Vodafone Iceland) had used Huawei kit in 5G testing.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://icelandmonitor.mbl.is/news/news/2020/10/22/two_telecom_companies_in_iceland_use_huawei_product",
+          "publisher": "Iceland Monitor (Morgunblaðið)",
+          "source_tier": "S3",
+          "date": "2020-10-22",
+          "retrieved_at": "2026-10-25T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment vendor Huawei, so prc. Tier 5 because transmitters were in service, but scale of Nova's Huawei 5G footprint today, and whether RAN and/or core, is unconfirmed; single opened S3 source. Sýn's continued Huawei use unclear, not coded separately."
+    },
+    {
+      "id": "ISL-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Síminn",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-10",
+      "still_current": null,
+      "summary": "Síminn, Iceland's incumbent operator, uses Ericsson rather than Huawei equipment for its network, according to Morgunblaðið reporting in October 2020.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://icelandmonitor.mbl.is/news/news/2020/10/22/two_telecom_companies_in_iceland_use_huawei_product",
+          "publisher": "Iceland Monitor (Morgunblaðið)",
+          "source_tier": "S3",
+          "date": "2020-10-22",
+          "retrieved_at": "2026-10-25T09:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson is Swedish, so third. Tier 5 inferred from in-service network; scope (RAN/core, 5G) not specified in the opened source and still_current unchecked."
+    },
+    {
+      "id": "ISL-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SubCom",
+      "local_actor": "Farice",
+      "builder": "SubCom",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-11-15",
+      "still_current": null,
+      "summary": "Farice's IRIS submarine cable linking Iceland to Ireland was completed by US contractor SubCom and handed to Farice, with ready-for-service expected in Q1 2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://convergedigest.com/iris-subsea-cable-completed-linking/",
+          "publisher": "Converge Digest",
+          "source_tier": "S2",
+          "date": "2022-11-15",
+          "retrieved_at": "2026-10-25T09:13:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenter-forum.com/farice-ehf/iris-farices-iceland-dublin-subsea-cable-ready-for-service",
+          "publisher": "Datacenter Forum",
+          "source_tier": "S2",
+          "date": "2023-03-06",
+          "retrieved_at": "2026-10-25T09:14:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "SubCom supplied and installed the system, so us under the equipment rule. Datacenter Forum confirms completion and RFS milestone but does not name the supplier, so corroboration of the vendor is not met. Farice ownership (understood to be Icelandic state) not confirmed in opened sources."
+    },
+    {
+      "id": "ISL-004",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "atNorth (Partners Group)",
+      "local_actor": "atNorth ICE02, Keflavík",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-26",
+      "still_current": null,
+      "summary": "atNorth agreed a further 24 MW for Crusoe Cloud at its ICE02 Keflavík campus, taking Crusoe's capacity there to 57 MW, building on a 33 MW deal from December 2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.atnorth.com/news/crusoe-expands-partnership-with-atnorth/",
+          "publisher": "atNorth",
+          "source_tier": "S1",
+          "date": "2025-08-26",
+          "retrieved_at": "2026-10-25T09:11:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://convergedigest.com/crusoe-expands-ai-cloud-capacity-to-57mw-at-atnorths-iceland-data-center/",
+          "publisher": "Converge Digest",
+          "source_tier": "S2",
+          "date": "2025-08-26",
+          "retrieved_at": "2026-10-25T09:11:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.partnersgroup.com/en/news-views/press-releases/investment-news/detail/partners-group-to-acquire-atnorth-the-largest-data-center-operator-in-iceland/",
+          "publisher": "Partners Group",
+          "source_tier": "S1",
+          "date": "2021-12-21",
+          "retrieved_at": "2026-10-25T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator atNorth was acquired by Swiss-based Partners Group (announced December 2021), so third. US tenant Crusoe does not set the facility pole. Tier 3 for the signed expansion; operational status of the 24 MW tranche not confirmed. Converge Digest may relay the atNorth release.",
+      "bundle_id": "ISL-B1"
+    },
+    {
+      "id": "ISL-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Crusoe Cloud at atNorth ICE02",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-26",
+      "still_current": null,
+      "summary": "The Crusoe expansion at atNorth's ICE02 includes installing Nvidia GB200 NVL72 systems alongside Blackwell and Hopper GPUs for Crusoe's AI cloud.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.atnorth.com/news/crusoe-expands-partnership-with-atnorth/",
+          "publisher": "atNorth",
+          "source_tier": "S1",
+          "date": "2025-08-26",
+          "retrieved_at": "2026-10-25T09:11:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://convergedigest.com/crusoe-expands-ai-cloud-capacity-to-57mw-at-atnorths-iceland-data-center/",
+          "publisher": "Converge Digest",
+          "source_tier": "S2",
+          "date": "2025-08-26",
+          "retrieved_at": "2026-10-25T09:11:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nvidia accelerators operated by US firm Crusoe, so us. GPU counts and value not disclosed. Tier 3 as part of a contracted expansion; deployment completion unconfirmed.",
+      "bundle_id": "ISL-B1"
+    },
+    {
+      "id": "ISL-006",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Ardian",
+      "local_actor": "Verne Global Keflavík campus",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-11",
+      "still_current": null,
+      "summary": "UK-listed Digital 9 Infrastructure agreed to sell Icelandic data-centre operator Verne Global, which runs an HPC and colocation campus in Keflavík, to French private-equity firm Ardian; closing awaited FDI and merger clearance.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/private-equity-company-ardian-acquires-verne-global-from-digital-9",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-11",
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://sharesmagazine.co.uk/news/market/LSE20231127164034_4983427/verne-global-sale",
+          "publisher": "Shares Magazine (LSE RNS)",
+          "source_tier": "S1",
+          "date": "2023-11-27",
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Controller changes from a UK owner to French Ardian, so third either way. Tier 3 as a signed sale; completion (expected by end Q1 2024) not confirmed in opened sources. Date month from the RNS search title. DCD gives inconsistent capacity (24 MW vs 40 MW)."
+    },
+    {
+      "id": "ISL-007",
+      "layer": "power",
+      "pole": "domestic",
+      "controller": "Landsvirkjun",
+      "local_actor": "Borealis Data Center, Blönduós",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06-23",
+      "still_current": null,
+      "summary": "State power company Landsvirkjun signed a long-term 12 MW firm-power agreement with Borealis Data Center for its Blönduós campus, citing rising AI and high-performance-computing demand.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.landsvirkjun.com/news/borealis-and-landsvirkjun-sign-a-12-mw-power-purchasing-agreement",
+          "publisher": "Landsvirkjun",
+          "source_tier": "S1",
+          "date": "2026-06-23",
+          "retrieved_at": "2026-10-25T09:13:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Power owner-operator is Iceland's state utility, so domestic. Borealis ownership not established. Single opened S1 notice, so medium."
+    },
+    {
+      "id": "ISL-008",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "Government of Iceland, Almannarómur, Miðeind",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-03-14",
+      "still_current": null,
+      "summary": "Iceland's government, led by the President's initiative, partnered with OpenAI to improve GPT-4's Icelandic; Miðeind volunteers trained the model via human feedback with language centre Almannarómur.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://government.is/news/article/2023/03/14/Head-start-for-Icelandic",
+          "publisher": "Government of Iceland",
+          "source_tier": "S1",
+          "date": "2023-03-14",
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.arctictoday.com/how-iceland-is-using-gpt-4-to-preserve-its-language/",
+          "publisher": "Arctic Today (OpenAI press release)",
+          "source_tier": "S4",
+          "date": "2023-03-14",
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Model used through OpenAI's service, so us. Tier 2 as a development collaboration with no disclosed contract or payment. Arctic Today republishes an OpenAI release, so S4 and not corroborating."
+    },
+    {
+      "id": "ISL-009",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Anthropic",
+      "local_actor": "Ministry of Education and Children",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11",
+      "still_current": null,
+      "summary": "Anthropic and Iceland's Ministry of Education and Children launched a national pilot giving teachers nationwide access to Claude, with training and mentorship for hundreds of teachers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.techrepublic.com/article/news-anthropic-iceland-ai-education/",
+          "publisher": "TechRepublic",
+          "source_tier": "S3",
+          "date": "2025-11-04",
+          "retrieved_at": "2026-10-25T09:14:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "API/service model from a US provider, so us. Tier 2 as a pilot; duration, terms and value not disclosed."
+    },
+    {
+      "id": "ISL-010",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "Government of Iceland (Ministry of Finance and Economic Affairs)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-15",
+      "still_current": null,
+      "summary": "The finance ministry announced a phased, government-wide rollout of Microsoft Copilot under a recent three-year state agreement with Microsoft, with data stored in Europe; value and staff numbers not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2026/07/15/Innleiding-gervigreindarlausnar-thvert-a-rikid-/",
+          "publisher": "Government of Iceland (Stjórnarráðið)",
+          "source_tier": "S1",
+          "date": "2026-07-15",
+          "retrieved_at": "2026-10-25T09:14:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Microsoft controls the service, so us. Tier 3 for a signed state agreement; rollout is phased and not yet at scale. Single opened S1 notice."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "coded"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Is Nova's 5G RAN/core still Huawei, and did Sýn (Vodafone Iceland) adopt Huawei or another vendor after 2020 testing? Any swap-out since?",
+    "Did Iceland adopt a 5G/electronic-communications security law (c. 2021) restricting high-risk vendors? One search found no Icelandic text.",
+    "Did Ardian's acquisition of Verne Global close, and what AI/GPU tenants does the Keflavík campus host?",
+    "Ownership and AI tenants of Borealis Data Center; any other Landsvirkjun allocations or curbs for data centres (2021 curtailment to heavy users and bitcoin miners reported by Bloomberg, unopened).",
+    "Confirm Farice ownership and IRIS RFS date (Q1 2023 planned)."
+  ],
+  "searches_run": 11
+}

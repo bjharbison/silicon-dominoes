@@ -1,0 +1,254 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "HRV",
+  "name": "Croatia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "HRV-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (via Ericsson Nikola Tesla)",
+      "local_actor": "Hrvatski Telekom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-06-24",
+      "still_current": null,
+      "summary": "Hrvatski Telekom, holding about 45% of Croatian subscribers, named Ericsson Nikola Tesla its sole 5G radio access network supplier until 2024, covering Ericsson Radio System and Spectrum Sharing.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/2020/6/hrvatski-telekom-croatia-selects-ericsson-as-sole-5g-ran-supplier",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2020-06-24",
+          "retrieved_at": "2026-10-25T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/9687-hrvatski-telekom-signs-5g-ran-deal-with-ericsson-for-croatia.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2020-06-24",
+          "retrieved_at": "2026-10-25T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor Ericsson is Swedish, so pole third (EU); Ericsson Nikola Tesla is its Croatian-listed associate. Hrvatski Telekom is Deutsche Telekom-controlled. Ericsson release tiered S1 as vendor IR on a named contract; no value disclosed. Superseded by the 2024 extension (HRV-002)."
+    },
+    {
+      "id": "HRV-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (via Ericsson Nikola Tesla)",
+      "local_actor": "Hrvatski Telekom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-01-23",
+      "still_current": null,
+      "summary": "Hrvatski Telekom extended Ericsson Nikola Tesla's role as exclusive supplier of its mobile radio access network through end-2027, continuing deployment of Ericsson 5G radio products begun in 2018.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.t.ht.hr/en/Press/press-releases/7205/Hrvatski-Telekom-and-Ericsson-Nikola-Tesla-continue-to-cooperate-in-the-5G-radio-network-segment.html",
+          "publisher": "Hrvatski Telekom",
+          "source_tier": "S1",
+          "date": "2024-01-23",
+          "retrieved_at": "2026-10-25T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Single opened S1 (operator press release), so medium. Ericsson is Swedish, so pole third. Value undisclosed. Core vendor separately reported as Ericsson dual-mode 5G Core (search snippet only, not opened, not coded)."
+    },
+    {
+      "id": "HRV-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (via Ericsson Nikola Tesla)",
+      "local_actor": "A1 Hrvatska",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-09-19",
+      "still_current": null,
+      "summary": "A1 Hrvatska signed an exclusive frame agreement with Ericsson Nikola Tesla to upgrade and expand its radio access network with Ericsson Radio System equipment, described as 5G-ready, through end-2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ericssonnikolatesla.com/en/news/20190919-agreement-a1/",
+          "publisher": "Ericsson Nikola Tesla",
+          "source_tier": "S1",
+          "date": "2019-09-19",
+          "retrieved_at": "2026-10-25T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://seenews.com/news/croatias-ericsson-nikola-tesla-extends-ran-cooperation-with-a1-hrvatska-until-2023-669650",
+          "publisher": "SeeNews",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Single opened S1 (vendor company release), so medium. A1 Hrvatska is owned by Austria's A1 Group (America Movil-controlled); pole set by equipment vendor Ericsson (Sweden) = third. Agreement expired end-2023; renewal or successor vendor not found, so still_current null."
+    },
+    {
+      "id": "HRV-004",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Pantheon Atlas LLC",
+      "local_actor": "Topusko site (Sisak-Moslavina county)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-05",
+      "still_current": null,
+      "summary": "Pantheon Atlas announced Pantheon AI, a planned campus of up to 1 GW (800 MW IT) at Topusko, with on-site solar and batteries; construction targeted for early 2027 and full operation by Q1 2029.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://w.media/pantheon-atlas-plans-e50bn-ai-data-center-campus-in-croatia/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2026-05-05",
+          "retrieved_at": "2026-10-25T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacentremagazine.com/news/pantheon-ai-inside-europes-next-hyperscale-campus",
+          "publisher": "Data Centre Magazine",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.intelligentcio.com/eu/2026/05/14/pantheon-ai-unveils-e50-billion-hyperscale-ai-data-centre-campus-in-croatia/",
+          "publisher": "Intelligent CIO Europe",
+          "source_tier": "S2",
+          "date": "2026-05-14",
+          "retrieved_at": "2026-10-25T09:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: announcement only, no permits, financing or construction reported. Pole us is inferred: Pantheon Atlas is described as a transatlantic group and one of the largest private US investors in Europe, with US DoE envoy support; a Croatian founding partner (Jako Andabak) is named, so control could be mixed. Headline EUR 50bn includes tenants' IT spend (campus EUR 12bn); USD conversions in sources differ (54bn vs 58bn), so announced_value_usd left null. Design cites Nvidia GW-scale AI factory standards; no chips ordered."
+    },
+    {
+      "id": "HRV-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "HPE / Nvidia",
+      "local_actor": "University of Zagreb University Computing Centre (SRCE)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-03-29",
+      "still_current": true,
+      "summary": "SRCE launched Supek, Croatia's most powerful supercomputer, an HPE Cray system of about 1.25 PFLOPS with roughly 80 Nvidia A100 GPUs; SRCE's separate Vrancic cloud adds 16 A100s.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.srce.unizg.hr/en/advanced-computing",
+          "publisher": "SRCE (University of Zagreb)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://dnevnik.hr/vijesti/tech/predstavljeno-najjace-superracunalo-u-hrvatskoj-nazvano-po-uglednom-znanstveniku---773847.html",
+          "publisher": "Dnevnik.hr",
+          "source_tier": "S3",
+          "date": "2023-03-29",
+          "retrieved_at": "2026-10-25T09:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendors HPE and Nvidia are US, so pole us. SRCE page states 80 GPUs in its table and 81 in text. still_current true because SRCE's current documentation lists Supek as in service. Modest scale; funding source not stated (minister cited EU recovery and cohesion research programmes)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only academic work on Croatian-language LLMs; no government model-provider partnership or sovereign national model"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found a police facial-recognition tender (about EUR 376,000, classified secret) with no vendor, award or calendar date; too thin to code"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "only AI-tied power evidence is the solar and battery component of the Pantheon AI announcement (HRV-004), not coded separately"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio and core vendor for Telemach Hrvatska (United Group) after its 2022 replacement of about 1,200 base stations; not named in opened sources.",
+    "Did A1 Hrvatska renew its RAN deal with Ericsson Nikola Tesla after end-2023, or switch vendor?",
+    "Has Croatia adopted binding high-risk-vendor restrictions under the EU 5G Toolbox or its NIS2 transposition? Only a 2020 US request (Pompeo) with no Croatian decision was found.",
+    "Vendor, award and date of the Interior Ministry facial-recognition tender (EUR 376,000, classified).",
+    "Whether Croatia hosts or joins any EuroHPC AI Factory or Antenna; none surfaced in one search.",
+    "Ownership structure and permitting status of Pantheon Atlas's Topusko campus; true controller nationality."
+  ],
+  "searches_run": 11
+}

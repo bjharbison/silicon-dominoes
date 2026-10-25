@@ -1,0 +1,194 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "KIR",
+  "name": "Kiribati",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T09:19:28Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "KIR-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "HMN Technologies (formerly Huawei Marine Networks)",
+      "local_actor": "Government of Kiribati (East Micronesia Cable partner)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "HMN Tech low bid in the World Bank/ADB-backed East Micronesia Cable tender (Kiribati, Nauru, FSM)",
+      "reversal_reason": "geopolitical",
+      "date": "2021-06",
+      "still_current": true,
+      "summary": "The US$72.6m World Bank-led East Micronesia Cable tender, where HMN Tech bid over 20% below ASN and NEC, ended without award after US security warnings over the Guam-linked HANTRU1 connection; all bids were deemed non-compliant.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/east-micronesia-cable-stalls-after-u-s-security-concerns/",
+          "publisher": "SubTel Forum (Reuters republication)",
+          "source_tier": "S2",
+          "date": "2021-06-18",
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.capacitymedia.com/articles/3828876/us-chinese-equipment-ban-halts-subsea-cable-bid",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightreading.com/cable-technology/us-is-winning-the-pacific-cable-wars",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2021-06-21",
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/us-and-taiwan-warn-over-low-huawei-marine-bid-for-pacific-islands-submarine-internet-cable",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2020-12-18",
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2: a lowest bid in an open tender, never a signed contract. All three 2021 outcome reports derive from one Reuters scoop, so not coded as independently corroborated; DCD (Dec 2020) independently covers the US warning only. US$72.6m is project value, not HMN's bid, so values left null. still_current true because the cable was later rebuilt by NEC (KIR-002). Capacity article date not shown on page."
+    },
+    {
+      "id": "KIR-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "NEC Corporation",
+      "local_actor": "BwebwerikiNet Limited (BNL)",
+      "builder": "NEC Corporation; DXN (landing stations)",
+      "financier": "Governments of Australia, Japan and the United States (grants)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05",
+      "still_current": null,
+      "summary": "NEC built the 2,250 km East Micronesia Cable System linking Tarawa to Nauru and FSM, Tarawa's first submarine cable, co-owned by state-owned BNL and grant-funded by Australia, Japan and the US; NEC announced completion in May 2026.",
+      "announced_value_usd": 95000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nec.com/en/press/202306/global_20230606_02.html",
+          "publisher": "NEC Corporation",
+          "source_tier": "S1",
+          "date": "2023-06-06",
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/east-micronesia-cable-system-lands-at-kiribati/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07-28",
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/optical-fixed-networks/20253-nec-completes-emcs-cable-linking-fsm-kiribati-and-nauru.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-05-15",
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Cable equipment vendor NEC (Japan), so pole third despite US co-funding. Tier 4: construction completed per May 2026 report; ready-for-service in Kiribati not confirmed in opened sources. US$95m is DCD's conversion of the AUD 135m total three-country project estimate, not a Kiribati-only figure. Effectively replaces the HMN bid (KIR-001)."
+    },
+    {
+      "id": "KIR-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Communications Commission of Kiribati",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06-14",
+      "still_current": null,
+      "summary": "Kiribati's telecom regulator announced Starlink had launched internet service in the country and dropped apparatus licensing for Starlink users, while still requiring type approval of imported terminals.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://cck.ki/news/starlink-launches-internet-service-operations-in-kiribati",
+          "publisher": "Communications Commission of Kiribati",
+          "source_tier": "S1",
+          "date": "2026-06-14",
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.cck.ki/news-and-update/strategic-partnership-announced-enhanced-rural-connectivity",
+          "publisher": "Communications Commission of Kiribati",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Both sources are the same regulator, so not corroborated; single opened S1 permits medium. Tier 4 as regulatory authorisation plus service launch; subscriber scale unknown, so not tier 5."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found only a Digital Government Master Plan and World Bank connectivity project; no data-centre or AI-campus project"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced and none plausible at this scale"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one digital-government/AI search found no model-provider partnership or national model"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "two searches: PRC police donations (2022, 2023) were phones, tablets, vests and band gear, and a PRC police team works on a crime database; no surveillance system or vendor deployment documented"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendor for ATHKL (Vodafone Kiribati) 3G/LTE networks not established; no vendor award found.",
+    "What is the 'crime database programme' Chinese police support in Kiribati (Feb 2024 reporting), whose software and hosting does it use?",
+    "Has EMCS entered commercial service in Tarawa, and is Kiritimati (Christmas Island) on any PRC-linked connectivity project?",
+    "Any PRC-funded or Huawei-supplied e-government, ICT or broadcast equipment since the 2019 recognition switch (AidData lists further Kiribati projects not reviewed)."
+  ],
+  "searches_run": 8
+}

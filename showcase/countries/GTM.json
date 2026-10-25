@@ -1,0 +1,205 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GTM",
+  "name": "Guatemala",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T09:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GTM-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision; Dahua",
+      "local_actor": "At least 12 municipalities plus USAC, IGSS, Ministry of Health (MSPAS) and Empresa Portuaria Quetzal",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-08",
+      "still_current": null,
+      "summary": "Agencia Ocote/Sociedad.info investigation found Hikvision and Dahua cameras, some with facial or plate recognition, bought or specified by at least 12 municipalities and several national public bodies, mostly via small direct purchases.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://pulitzercenter.org/stories/chinese-companies-sanctioned-human-rights-violations-carry-out-video-surveillance-guatemala",
+          "publisher": "Pulitzer Center (republishing Agencia Ocote / Sociedad.info)",
+          "source_tier": "S3",
+          "date": "2026-07-16",
+          "retrieved_at": "2026-10-25T09:14:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Camera vendors control firmware, so prc. Tier 3 as procurement awards in Guatecompras; individual deployments are small (tens of cameras) and fragmented, so scale coded subnational as an aggregate. Single investigation, one host; a companion Pulitzer/Ocote story (same host) reports Q69m (~US$9.1m) in AI video-surveillance awards 2022-2026 without naming brands. Article reports government said it lacks legislation to extend cybersecurity procurement controls to other agencies; no ban found."
+    },
+    {
+      "id": "GTM-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Ministerio de Finanzas Públicas (Minfin)",
+      "local_actor": "Ministerio de Finanzas Públicas (Minfin)",
+      "builder": "Chunghwa Telecom (Taiwan)",
+      "financier": "Government of Taiwan (ROC)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04",
+      "still_current": null,
+      "summary": "Minfin and Taiwan signed technical cooperation for an alternate high-availability government data centre with disaster recovery, a national-jurisdiction 'sovereign cloud', cybersecurity and training; Chunghwa Telecom later signed to support the backup data-centre project.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://lahora.gt/nacionales/jveliz/2026/04/15/taiwan-impulsa-mejoras-en-tecnologia-y-datos-del-ministerio-de-finanzas/",
+          "publisher": "La Hora",
+          "source_tier": "S3",
+          "date": "2026-04-15",
+          "retrieved_at": "2026-10-25T09:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-business/operator-news/20925-chunghwa-telecom-expands-into-latin-america-with-guatemala-base.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-10-06",
+          "retrieved_at": "2026-10-25T09:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is the Guatemalan finance ministry, so domestic; Taiwanese state and Chunghwa Telecom are support/builder. Financier coded as Taiwan because the instrument is bilateral cooperation, but funding is not stated explicitly. If Chunghwa operates or retains access to the facility, pole would become third. Tier 2 (cooperation/framework agreement); no value, timeline or construction reported. Chunghwa set up a Guatemala City regional ICT/cybersecurity subsidiary on 1 Oct 2026."
+    },
+    {
+      "id": "GTM-003",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Aurum Equity Partners (with Bold Capital Group and Innovative Strategies)",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-12",
+      "still_current": null,
+      "summary": "Aurum Equity Partners, with Bold Capital Group and Innovative Strategies, confirmed a planned US$300m, 50 MW data centre in Guatemala City, first floated in May 2025 and targeted for mid-2026 operation; possible expansion to US$1bn.",
+      "announced_value_usd": 300000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/guatemala-to-receive-300-million-international-investment-dollars-for-new-data-center/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-08-12",
+          "retrieved_at": "2026-10-25T09:13:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telesemana.com/blog/2025/08/12/confirman-inversion-de-us-300-millones-en-guatemala-para-un-nuevo-centro-de-datos/",
+          "publisher": "TeleSemana",
+          "source_tier": "S2",
+          "date": "2025-08-12",
+          "retrieved_at": "2026-10-25T09:13:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the eventual owner-operator is not named and investors' home jurisdictions are not established in opened sources (DCD may describe Aurum as Indian-founded; unverified). Tier 1: investment announcement only, no site, financing close or construction reported; whether mid-2026 operation happened is unchecked. A marcasur headline calls it an AI data centre; opened sources give no AI/GPU detail. US ambassador publicly welcomed it."
+    },
+    {
+      "id": "GTM-004",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "KIO Data Centers (Mexico)",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-07",
+      "still_current": null,
+      "summary": "Mexican operator KIO announced more than US$20m for GTM2, a carrier-neutral Guatemala data centre starting at 1 MW (versus ~385 kW at GTM1), with 12-16 months' construction and operations targeted for Q1 2027.",
+      "announced_value_usd": 20000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/br/not%C3%ADcias/kio-data-centers-investira-mais-de-20-milhoes-de-dolares-em-seu-novo-data-center-gtm2-na-guatemala/",
+          "publisher": "DatacenterDynamics (Brasil)",
+          "source_tier": "S2",
+          "date": "2025-10-07",
+          "retrieved_at": "2026-10-25T09:14:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://dplnews.com/?p=290938",
+          "publisher": "DPL News",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T09:11:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator KIO is Mexican, so third. Tier 1 as an announced plan; construction start not confirmed. Announced value is a floor ('more than'). Small facility; no AI-specific capacity reported."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "null",
+      "null_reason": "4 searches (Tigo/Claro vendors, Huawei/Clean Network) found 5G launch coverage but no named RAN/core vendor, no Huawei/ZTE exclusion and no HMN Tech cable"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in data-centre or AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search surfaced only a UN Joint SDG Fund responsible-AI item and regional AI-cooperation news (unopened) but no frontier-provider partnership or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "RAN/core vendors for Tigo (Millicom) and Claro (America Movil) Guatemala, including their 2022 5G launches; any Huawei/ZTE presence or exclusion.",
+    "Second independent source for the Hikvision/Dahua municipal procurement findings (Guatecompras award records).",
+    "Who owns/operates the Aurum Equity 50 MW Guatemala City data centre, investors' home jurisdictions, and whether construction started or mid-2026 operation occurred.",
+    "Funding, value and operator of the Taiwan/Chunghwa-supported Minfin backup data centre and sovereign cloud; whether Chunghwa retains operational access.",
+    "Vendor of Guatemala City municipality's C4 AI crowd-counting and facial-recognition services (Oct 2025, Mar 2026).",
+    "Any Taiwan-funded cybersecurity operations centre for Guatemalan government networks (reported by Dialogo Americas citing Taipei Times)."
+  ],
+  "searches_run": 11
+}
