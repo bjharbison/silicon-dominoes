@@ -1,0 +1,380 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MRT",
+  "name": "Mauritania",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T17:20:16Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MRT-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Chinguitel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11",
+      "still_current": null,
+      "summary": "Chinguitel announced it had modernised its base stations in Nouakchott with Huawei technical support, aiming to improve coverage and service quality, and planned to extend the upgrade to other cities by end-2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/news-digital/1311-50440-chinguitel-huawei-partner-to-upgrade-mauritania-network",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2025-11-13",
+          "retrieved_at": "2026-10-25T17:17:37Z",
+          "opened": true
+        },
+        {
+          "url": "https://osiris.sn/qualite-de-service-chinguitel-modernise-son-reseau-avec-le-soutien-de-huawei.html",
+          "publisher": "OSIRIS (republication of Agence Ecofin)",
+          "source_tier": "S3",
+          "date": "2025-11-13",
+          "retrieved_at": "2026-10-25T17:18:36Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "OSIRIS republishes the Ecofin piece, so not independent; uncorroborated. Sources say 'technical support' and do not specify Huawei equipment; coded prc on the inference that Huawei is the RAN vendor being upgraded. Tier 3 assumed for an executed vendor engagement; no contract or value seen. Rollout beyond Nouakchott not confirmed."
+    },
+    {
+      "id": "MRT-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Mattel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-09",
+      "still_current": null,
+      "summary": "Mattel and Huawei signed a framework contract described as a strategic partnership to reinforce Mattel's telecom infrastructure, expanding broadband capacity and coverage, including '4G Ready' equipment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.webmanagercenter.com/2019/09/05/438445/mattel-et-huawei-signent-un-accord-de-partenariat-strategique/",
+          "publisher": "WebManagerCenter",
+          "source_tier": "S3",
+          "date": "2019-09-05",
+          "retrieved_at": "2026-10-25T17:17:49Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Framework contract (contrat-cadre), so tier 2; value undisclosed. Pre-2020 and current status not confirmed, so still_current null. Single opened S3 source. Mattel is majority-owned by Tunisie Telecom."
+    },
+    {
+      "id": "MRT-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Mattel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-11",
+      "still_current": null,
+      "summary": "Mattel ran 5G demonstration tests with Huawei around the November 2023 independence anniversary, reaching about 2 Gb/s; in April 2026 Mattel ranked first of four technically compliant bidders in the regulator's 5G licence tender.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://meatechwatch.com/2023/11/29/mattel-spearheads-5g-revolution-in-mauritania/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S3",
+          "date": "2023-11-29",
+          "retrieved_at": "2026-10-25T17:17:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://osiris.sn/mauritanie-quatre-candidats-en-lice-pour-les-licences-5g.html",
+          "publisher": "OSIRIS",
+          "source_tier": "S3",
+          "date": "2026-04-04",
+          "retrieved_at": "2026-10-25T17:18:36Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pilot, so tier 2. Two S3 sources but no S1/S2, so not corroborated. MEA Tech Watch tiered S3 provisionally; reviewer may downgrade. 5G licence award outcome (financial opening 7 April 2026) and Mattel's commercial 5G vendor not established."
+    },
+    {
+      "id": "MRT-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "International Mauritania Telecom (IMT)",
+      "local_actor": "Ministry of Digital Transformation (MTNIMA); IMT",
+      "builder": null,
+      "financier": "European Investment Bank (EUR 15m loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05-08",
+      "still_current": null,
+      "summary": "Mauritania inaugurated its Tier III national data centre in Nouakchott in May 2025, financed by a EUR 15m EIB loan, to be operated by IMT, owned by the state via Mauripost and the three mobile operators.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.eib.org/en/press/all/2025-202-inauguration-du-centre-d-hebergement-de-donnees-numeriques-de-nouakchott",
+          "publisher": "European Investment Bank",
+          "source_tier": "S1",
+          "date": "2025-05-09",
+          "retrieved_at": "2026-10-25T17:17:37Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.eeas.europa.eu/delegations/mauritanie/inauguration-du-centre-d%E2%80%99h%C3%A9bergement-de-donn%C3%A9es-num%C3%A9riques-de-nouakchott_fr",
+          "publisher": "EU Delegation to Mauritania (EEAS)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T17:17:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-digital/3006-56943-mauritania-launches-national-cloud-to-strengthen-digital-sovereignty",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2026-06-30",
+          "retrieved_at": "2026-10-25T17:17:37Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator rule: IMT (state via Mauripost plus Mattel, Mauritel, Chinguitel, which are majority foreign-owned by Tunisian, Moroccan and Sudanese groups) runs it, so coded domestic; reviewer may weigh operator stakes. Builder and IT equipment vendors not named. Tier 4: built and inaugurated; Ecofin (June 2026) calls it Tier III-certified and hosting the national cloud. EUR 15m is the loan, not project cost; values null. EIB says WARCIP, Ecofin says WARDIP."
+    },
+    {
+      "id": "MRT-005",
+      "layer": "cloud",
+      "pole": "domestic",
+      "controller": "Government of Mauritania (national cloud)",
+      "local_actor": "Ministry of Digital Transformation (MTNIMA)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06-29",
+      "still_current": null,
+      "summary": "Mauritania launched a national government cloud hosted at the Nouakchott National Data Center; no technology vendor, capacity, or migration timetable for government applications was announced.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/news-digital/3006-56943-mauritania-launches-national-cloud-to-strengthen-digital-sovereignty",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2026-06-30",
+          "retrieved_at": "2026-10-25T17:17:37Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Operator not explicitly named; domestic coding inferred from hosting in the state data centre (MRT-004). Software/hardware vendor unknown, which under the equipment rule could change the pole. Tier 4: launched, but no migrated workloads reported. Cloud is a global layer; coded because this is a sovereign platform, not a public cloud region."
+    },
+    {
+      "id": "MRT-006",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "G42 (G42 Cloud, Presight)",
+      "local_actor": "Ministry of Digital Transformation, Innovation and Modernisation (MTNIMA)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-05-31",
+      "still_current": null,
+      "summary": "Mauritania's digital ministry signed an MoU with Abu Dhabi's G42, through G42 Cloud and Presight, at GITEX Africa to develop the national data centre, a national sovereign cloud, AI and digital transformation projects, and local skills.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.presight.ai/news/ministry-of-digital-transformation-and-modernization-of-the-administration-of-republic-islamic-of-mauritania-signs-mou-with-g42-at-gitex-africa",
+          "publisher": "Presight",
+          "source_tier": "S4",
+          "date": "2023-06-07",
+          "retrieved_at": "2026-10-25T17:18:54Z",
+          "opened": true
+        },
+        {
+          "url": "https://itweb.africa/article/uaes-group-42-to-drive-mauritanias-digital-journey/kYbe97Xb4LQqAWpG",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2023-06-08",
+          "retrieved_at": "2026-10-25T17:18:15Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Non-binding MoU, tier 1, value undisclosed; UAE controller so pole third. Presight is corporate (S4), so not corroborated. No later evidence that G42 built or operates the national data centre or cloud, which opened sources tie to EIB financing and IMT operation (MRT-004/005); likely superseded or dormant, not confirmed."
+    },
+    {
+      "id": "MRT-007",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (system supplier); EllaLink (operator)",
+      "local_actor": "Ministry of Digital Transformation (MTNIMA)",
+      "builder": "Alcatel Submarine Networks",
+      "financier": "European Investment Bank (EUR 25m loan); EU Connecting Europe Facility; World Bank (WARCIP, per 2023 tender)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07",
+      "still_current": null,
+      "summary": "Mauritania contracted EllaLink to build, operate and maintain a 500 km branch from the Europe-Brazil EllaLink cable to a new Nouadhibou landing station, its second international cable; ASN builds it, EIB and EU co-finance, ready early 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/es/noticias/ellalink-ampliar%C3%A1-su-cable-submarino-a-mauritania/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07-31",
+          "retrieved_at": "2026-10-25T17:19:26Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.eeas.europa.eu/delegations/mauritania/deployment-second-high-speed-submarine-cable-mauritania_en",
+          "publisher": "EU Delegation to Mauritania (EEAS)",
+          "source_tier": "S1",
+          "date": "2025-08-20",
+          "retrieved_at": "2026-10-25T17:18:54Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/public-management/2408-44798-mauritania-seeks-an-international-partner-to-connect-to-second-subsea-cable",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2023-08-24",
+          "retrieved_at": "2026-10-25T17:18:54Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.globenewswire.com/news-release/2019/07/08/1879404/0/en/Government-of-Mauritania-and-EllaLink-sign-agreement-to-deliver-connectivity-on-the-EllaLink-Submarine-Cable-System.html",
+          "publisher": "GlobeNewswire (EllaLink release)",
+          "source_tier": "S4",
+          "date": "2019-07-08",
+          "retrieved_at": "2026-10-25T17:19:26Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment rule: ASN (France) supplies the system, EllaLink (EU-based) operates it, so pole third. Tier 4: construction reported begun (DCD). EEAS names EllaLink and the EUR 25m EIB loan but not ASN, so ASN rests on DCD alone. Ecofin reports the 2023 tender with World Bank EUR 10m plus EIB EUR 25m under WARCIP. A 2019 EllaLink branching-unit agreement preceded it. Values null: loans, not contract price."
+    },
+    {
+      "id": "MRT-008",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "General Directorate of National Security (DGSN)",
+      "builder": null,
+      "financier": "People's Republic of China (described as collaboration; grant per AidData lead, unverified)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-05-04",
+      "still_current": null,
+      "summary": "Mauritania's president laid the foundation stone for a Nouakchott security and surveillance system built in collaboration with China: a central control centre, three regional centres, police-station control points, junction cameras and radios, due in fifteen months.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://mauritaniaembassy.co.za/?p=2851",
+          "publisher": "Embassy of Mauritania in South Africa",
+          "source_tier": "S1",
+          "date": "2021-05-04",
+          "retrieved_at": "2026-10-25T17:18:15Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the opened source names no equipment vendor or operator, only PRC collaboration (Chinese ambassador present). AidData (lead only, not cited) lists it as a China MOFCOM grant, contractor Zhejiang Post & Telecommunication Construction, 316 cameras, about US$16m; camera/platform vendor (Huawei, Hikvision, Dahua?) unconfirmed. Tier 4: construction started. Completion and operation not confirmed. Single opened S1 permits medium."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases or export-licence reporting surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one AI-partnership search found a 2024-2029 national AI strategy and a July 2026 Oman digital/AI agreement (snippet only), but no frontier-model provider partnership or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendor supplies the Nouakchott surveillance cameras and command platform (MRT-008), and was the system completed and handed to the DGSN?",
+    "Mauritel (Maroc Telecom) RAN/core vendor not established; Mattel and Chinguitel Huawei relationships rest on thin or single-source reporting.",
+    "Outcome of the April 2026 5G licence tender and vendor choices of the winners.",
+    "Technology stack (hardware, virtualisation, cloud software vendor) of the national data centre and national cloud; who built the data centre?",
+    "Did the 2023 G42 MoU lead to any contract, and what does the July 2026 Mauritania-Oman AI/cybersecurity agreement cover?",
+    "Domestic fibre backbone vendors (WARCIP/WARDIP) and any Huawei e-government or ICT projects not reviewed."
+  ],
+  "searches_run": 8
+}

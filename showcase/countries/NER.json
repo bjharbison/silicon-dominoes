@@ -1,0 +1,136 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "NER",
+  "name": "Niger",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T17:18:38Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "NER-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Government of Niger",
+      "builder": "ITS Solutions (network design partner)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-07",
+      "still_current": null,
+      "summary": "Hikvision's West Africa team, with ITS Solutions, installed over 100 cameras on 12 main Niamey roads and government and hotel entrances, with a central control room and mobile viewing, for the 2019 African Union summit and lasting city use.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.securityworldmarket.com/int/newsarchive/hikvision-empowering-public-safety-in-a-challenging-environment",
+          "publisher": "Security World Market (Hikvision case study)",
+          "source_tier": "S4",
+          "date": "2019-12-09",
+          "retrieved_at": "2026-10-25T17:17:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://internationalsecurityjournal.com/?p=7024",
+          "publisher": "International Security Journal (Hikvision case study)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-25T17:18:15Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both pages carry the same vendor-produced case study, so tiered S4 and not corroborating. Tier 5 assumed from 'operational' description; summit date (July 2019) inferred as the go-live month. Pre-2020 and current status not checked, so still_current null. Value and contracting body not stated."
+    },
+    {
+      "id": "NER-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Niger (Ministry of Communication, Posts and Digital Economy)",
+      "local_actor": "Ministry of Communication, Posts and Digital Economy",
+      "builder": null,
+      "financier": "African Development Bank (support reported; terms not stated)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03",
+      "still_current": null,
+      "summary": "Niger's digital-economy minister said the Tier III national data centre, costing about FCFA 9bn, was 13% built in early 2025 and due for handover by 30 September; one outlet reported African Development Bank support.",
+      "announced_value_usd": 14300000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.wearetech.africa/fr/fils/actualites/gestion-publique/niger-le-datacenter-national-a-environ-14-3-millions-est-realise-a-13",
+          "publisher": "We Are Tech Africa",
+          "source_tier": "S2",
+          "date": "2025-03-02",
+          "retrieved_at": "2026-10-25T17:17:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://fr.apanews.net/news/niger-digitalisation-et-datacenter-les-priorites-du-ministre-du-numerique/",
+          "publisher": "APA News",
+          "source_tier": "S3",
+          "date": "2025-02-27",
+          "retrieved_at": "2026-10-25T17:18:15Z",
+          "opened": true
+        },
+        {
+          "url": "https://yop.l-frii.com/niger-loin-de-la-cedeao-et-de-la-france-tiani-va-doter-le-pays-dun-data-center-et-de-1-000-km-de-fibre-optique/",
+          "publisher": "Yop L-Frii",
+          "source_tier": "S3",
+          "date": "2025-03-01",
+          "retrieved_at": "2026-10-25T17:18:15Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "All three outlets relay the same ministerial television statements, so not treated as independent. Pole domestic on the owner-operator rule, assuming state ownership; operator and builder are not named. US$14.3m is the outlet's own conversion of FCFA 9bn. AfDB role appears in one S3 source only. Completion (Sept 2025 target) not confirmed."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "null",
+      "null_reason": "three searches returned mostly Nigeria results; no RAN/core vendor award, Huawei/ZTE ban or HMN Tech cable for Niger operators found"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced and none plausible at this scale"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one AI-partnership search returned only Nigeria results; no Niger model-provider partnership or national model found"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core network vendors for Airtel Niger, Moov Africa Niger, Zamani Com and state-owned Niger Telecoms are not established.",
+    "Who is building and equipping the national data centre (contractor, IT/network vendor), was AfDB financing confirmed, and was it delivered after the Sept 2025 target?",
+    "Is the 2019 Hikvision Niamey camera network still operating or expanded since the July 2023 coup, and who contracted it?",
+    "Any post-2023 junta digital or surveillance deals with PRC, Russian or Turkish vendors (e.g. Huawei, ZTE) for backbone, e-government or the 1,031 km fibre programme?",
+    "Search results conflate Niger with Nigeria; French-language and S1 (ARCEP Niger, ministry) searches needed."
+  ],
+  "searches_run": 10
+}

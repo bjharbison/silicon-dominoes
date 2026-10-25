@@ -1,0 +1,319 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MLT",
+  "name": "Malta",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T17:19:40Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MLT-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Melita",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-05",
+      "still_current": null,
+      "summary": "Melita agreed with Ericsson to deploy the Ericsson Radio System and to modernise and expand its virtual Evolved Packet Core, preparing its Maltese mobile network for 5G.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://businesschief.eu/technology/ericsson-adds-leading-malta-network-melita-growing-list-5g-partners",
+          "publisher": "Business Chief",
+          "source_tier": "S3",
+          "date": "2020-05-19",
+          "retrieved_at": "2026-10-25T17:17:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://wpstaging.mobileeurope.co.uk/?p=12512",
+          "publisher": "Mobile Europe",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T17:18:11Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ericsson.com/en/press-releases/2018/3/melita-chooses-ericsson-as-strategic-5g-partner",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T17:18:11Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden) supplies RAN and core, so pole third. Both opened reports likely trace to the same vendor announcement; treated as corroborated on the LUX-002 precedent, reviewer may disagree. Previous vendor and value not stated. A 2018 Ericsson 'strategic 5G partner' release was seen in search only. Mobile Europe page undated."
+    },
+    {
+      "id": "MLT-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Epic Communications (formerly Vodafone Malta)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-04-07",
+      "still_current": null,
+      "summary": "Epic, the former Vodafone Malta, selected Ericsson as its exclusive 5G radio access network provider to fully modernise its existing network, including spectrum sharing, antennas and Massive MIMO.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/2021/4/epic-partners-with-ericsson-to-enhance-its-network-and-prepare-malta-for-5g",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2021-04-07",
+          "retrieved_at": "2026-10-25T17:17:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20210408/wireless/epic-preps-for-5g-in-malta-selects-ericsson-as-ran-provider",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2021-04-08",
+          "retrieved_at": "2026-10-25T17:17:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ericsson.com/en/news/3/2025/epic-malta-recognized-for-best-mobile-network-in-the-country-powered-by-ericsson-5g-technology",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2025-03",
+          "retrieved_at": "2026-10-25T17:18:11Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "RAN only; core vendor not stated. Previous RAN vendor not named, so no reversal coded. A 2025 Ericsson item (search title only) suggests the network is live on Ericsson 5G, but not opened, so tier kept at 3. Value and duration undisclosed."
+    },
+    {
+      "id": "MLT-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "GO plc (majority-owned by Tunisie Telecom)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-01-19",
+      "still_current": null,
+      "summary": "GO Malta chose Nokia as sole strategic partner for a seven-year nationwide 5G radio access deal using AirScale equipment, extending a relationship dating from its 2007 3G launch; GO planned EUR 16m of 5G investment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nokia.com/newsroom/nokia-selected-by-go-malta-for-nationwide-5g-deployment-in-seven-year-deal/",
+          "publisher": "Nokia",
+          "source_tier": "S1",
+          "date": "2022-01-19",
+          "retrieved_at": "2026-10-25T17:17:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/nokia/nokia-is-go-with-new-5g-contract-in-malta/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2022-01-19",
+          "retrieved_at": "2026-10-25T17:17:41Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nokia (Finland), so pole third. RAN only; core vendor not stated. Nokia is the incumbent, not a replacement. EUR 16m is GO's planned 5G investment, not the contract value, and is not converted. Operator's majority owner is Tunisian (Tunisie Telecom), which does not change the equipment pole."
+    },
+    {
+      "id": "MLT-004",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Safe City Malta Ltd (state-owned; tourism ministry)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Huawei technology-partner agreement (MoU) for the Safe City Malta surveillance project, including lab trials",
+      "reversal_reason": "commercial",
+      "date": "2023-01",
+      "still_current": true,
+      "summary": "The government said its expired agreement with Huawei, technology partner for the Safe City Malta video-surveillance scheme, would not be renewed and began dissolving the state company; no public-space deployment was reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.maltatoday.com.mt/news/national/120627/state_ditches_controversial_huawei_cctv",
+          "publisher": "MaltaToday",
+          "source_tier": "S3",
+          "date": "2023-01-09",
+          "retrieved_at": "2026-10-25T17:18:11Z",
+          "opened": true
+        },
+        {
+          "url": "https://maltatoday.com.mt/news/national/94927/huawei_link_in_safe_city_carries_risk",
+          "publisher": "MaltaToday",
+          "source_tier": "S3",
+          "date": "2019-05-13",
+          "retrieved_at": "2026-10-25T17:18:11Z",
+          "opened": true
+        },
+        {
+          "url": "https://theshiftnews.com/2025/03/13/huawei-at-centre-of-eu-corruption-probe-as-malta-drops-safe-city-project/",
+          "publisher": "The Shift News",
+          "source_tier": "S3",
+          "date": "2025-03-13",
+          "retrieved_at": "2026-10-25T17:19:40Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 2: per 2019 reporting the Huawei MoU covered lab-condition Safe City work and 5G testing, never a public-space contract. Reason coded commercial on the only stated reason (agreement expiry); privacy objections and a 2019 US warning preceded it, so a reviewer may judge regulatory or geopolitical. No S1/S2 source opened, so not corroborated. The Shift dates the dissolution announcement to 2024, MaltaToday to January 2023; the earlier date is used. EUR 400,000 annual budget not coded as a value."
+    },
+    {
+      "id": "MLT-005",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI (ChatGPT Plus); Microsoft (Microsoft 365 Personal Copilot)",
+      "local_actor": "Malta Digital Innovation Authority; Ministry for the Economy, Enterprise and Strategic Projects",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-16",
+      "still_current": null,
+      "summary": "Under the government's AI for All programme, residents aged 14+ who complete a two-hour MDIA and University of Malta AI literacy course receive a free year of ChatGPT Plus or Microsoft 365 Copilot, via e-ID.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gov.mt/en/Government/DOI/Press%20Releases/Pages/2026/05/16/pr260871en.aspx",
+          "publisher": "Department of Information, Government of Malta",
+          "source_tier": "S1",
+          "date": "2026-05-16",
+          "retrieved_at": "2026-10-25T17:17:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.techradar.com/pro/openai-is-giving-everyone-in-this-country-free-access-to-chatgpt-plus-for-a-year?rand=100",
+          "publisher": "TechRadar",
+          "source_tier": "S3",
+          "date": "2026-05-18",
+          "retrieved_at": "2026-10-25T17:17:41Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Models used only through US providers' services, so pole us. Tier 3 judged from a launched, government-run national distribution with named counterparties; the release does not say whether a contract or MoU was signed, so reviewer may prefer tier 2. TechRadar places it under OpenAI for Countries. Value undisclosed."
+    },
+    {
+      "id": "MLT-006",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Malta Digital Innovation Authority (antenna); compute host not stated",
+      "local_actor": "Malta Digital Innovation Authority",
+      "builder": null,
+      "financier": "EuroHPC Joint Undertaking (EU share of ~EUR 55m antenna programme, matched nationally)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-15",
+      "still_current": null,
+      "summary": "EuroHPC selected Malta to host CALYPSO, an EUR 10m AI Factory Antenna led by MDIA and linked to Greece's PHAROS AI Factory, giving local users access to EuroHPC AI supercomputing; not yet operational.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://maltainvest.mt/malta-to-host-e10-million-ai-factory-antenna/",
+          "publisher": "Malta Invest",
+          "source_tier": "S3",
+          "date": "2025-10-15",
+          "retrieved_at": "2026-10-25T17:17:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.maltatoday.com.mt/news/national/137586/malta_chosen_to_host_one_of_europes_ai_factories",
+          "publisher": "MaltaToday",
+          "source_tier": "S3",
+          "date": "2025-10-15",
+          "retrieved_at": "2026-10-25T17:19:40Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: an antenna provides access to compute hosted elsewhere, and neither source names the machine or its controller (likely EU/Greek, i.e. third). Tier 2: selection with a collaboration MoU expected by mid-2026; no hardware named. No S1/S2 opened, so not corroborated. EUR 10m not converted."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase surfaced in facilities or models searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Core-network vendors for Epic and GO are not established; were any Huawei or ZTE elements in Maltese mobile or fixed networks before the 2020-22 5G awards?",
+    "What did the Huawei-Malta MoU (5G testing, Safe City, joint innovation centre) commit, when was it signed, and was any Huawei equipment left in state use after Safe City Malta's dissolution?",
+    "Which supercomputer and controller serve the CALYPSO AI Factory Antenna, and was the antenna-factory MoU signed in 2026?",
+    "Is the AI for All programme a signed contract with OpenAI and Microsoft, and what does it cost the state?",
+    "Data-centre build-out since 2023 (BMIT, other operators, any hyperscaler) not found; BMIT's Zejtun facility dates from 2019 and is not AI-specific.",
+    "Submarine cable vendors for Malta's links (e.g. to Sicily) not checked for HMN Tech involvement."
+  ],
+  "searches_run": 9
+}

@@ -1,0 +1,332 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MDG",
+  "name": "Madagascar",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T17:19:02Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MDG-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Digital Development, Posts and Telecommunications (MNDPT)",
+      "builder": "Huawei",
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-08",
+      "still_current": null,
+      "summary": "Huawei was technical partner for the Exim Bank of China-financed MRTM project (agreed Dec 2019, launched 2020), building government fibre and LTE networks, inter-ministry links and secure 4G radios; cabinet recorded completion in August 2022.",
+      "announced_value_usd": 47200000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://lexpress.mg/19/08/2022/telecommunications-bouclage-du-projet-de-modernisation-des-reseaux-de-telecommunications/",
+          "publisher": "L'Express de Madagascar",
+          "source_tier": "S3",
+          "date": "2022-08-19",
+          "retrieved_at": "2026-10-25T17:17:52Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/madagascar-bouclage-du-projet-de-modernisation-des-reseaux-de.html",
+          "publisher": "OSIRIS (republication of L'Express de Madagascar)",
+          "source_tier": "S3",
+          "date": "2022-08-19",
+          "retrieved_at": "2026-10-25T17:18:11Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/telecom/0412-40729-madagascar-will-benefit-from-china-s-expertise-to-upgrade-its-telecom-network",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S3",
+          "date": "2019-12-04",
+          "retrieved_at": "2026-10-25T17:17:52Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/madagascar-souverainete-numerique-des-infrastructures-en-cours-de-mise-en-place.html",
+          "publisher": "OSIRIS (republication of Midi Madagasikara interview)",
+          "source_tier": "S3",
+          "date": "2023-07-22",
+          "retrieved_at": "2026-10-25T17:18:11Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Huawei as equipment vendor sets pole prc. OSIRIS 2022 is a republication of L'Express, not independent; Ecofin 2019 covers the China framework agreement but names no vendor; Midi 2023 names Huawei for the data centre only. No S1/S2 source opened, so not corroborated. USD 47.2m is the announced whole-project figure (L'Express also gives 179.5bn ariary, inconsistent); recorded once here as bundle anchor to avoid double counting.",
+      "bundle_id": "MDG-B1"
+    },
+    {
+      "id": "MDG-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Madagascar",
+      "local_actor": "Ministry of Digital Development, Posts and Telecommunications (MNDPT)",
+      "builder": "Huawei",
+      "financier": "Export-Import Bank of China (MRTM); state budget per 2023 interview",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-08",
+      "still_current": null,
+      "summary": "The MRTM project included a national government data centre for administration data; in 2023 the digital minister described a state-owned Tier II central data centre with Huawei as partner, funded with USD 50m of state money.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://lexpress.mg/19/08/2022/telecommunications-bouclage-du-projet-de-modernisation-des-reseaux-de-telecommunications/",
+          "publisher": "L'Express de Madagascar",
+          "source_tier": "S3",
+          "date": "2022-08-19",
+          "retrieved_at": "2026-10-25T17:17:52Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/madagascar-souverainete-numerique-des-infrastructures-en-cours-de-mise-en-place.html",
+          "publisher": "OSIRIS (republication of Midi Madagasikara interview)",
+          "source_tier": "S3",
+          "date": "2023-07-22",
+          "retrieved_at": "2026-10-25T17:18:11Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/madagascar-bouclage-du-projet-de-modernisation-des-reseaux-de.html",
+          "publisher": "OSIRIS (republication of L'Express de Madagascar)",
+          "source_tier": "S3",
+          "date": "2022-08-19",
+          "retrieved_at": "2026-10-25T17:18:11Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator is the state, so domestic; Huawei goes in builder (whether Huawei retains operating access is not established). Tier 3 rather than 4/5 because the 2022 report lists the data centre within a completed project while the 2023 interview speaks of it largely in future terms; operational status unresolved. Both sources S3, no S1/S2, so not corroborated. USD 50m state allocation not recorded as a value as its scope (data centre vs whole network) is unclear.",
+      "bundle_id": "MDG-B1"
+    },
+    {
+      "id": "MDG-003",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "National Police / Ministry of Public Security",
+      "builder": "Huawei",
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-08",
+      "still_current": true,
+      "summary": "MRTM installed about 1,100 surveillance cameras at 300 sites with National Police command centres; later reporting cites about 1,200 cameras in Antananarivo linked to the government data centre and police district stations.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://lexpress.mg/19/08/2022/telecommunications-bouclage-du-projet-de-modernisation-des-reseaux-de-telecommunications/",
+          "publisher": "L'Express de Madagascar",
+          "source_tier": "S3",
+          "date": "2022-08-19",
+          "retrieved_at": "2026-10-25T17:17:52Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/madagascar-souverainete-numerique-des-infrastructures-en-cours-de-mise-en-place.html",
+          "publisher": "OSIRIS (republication of Midi Madagasikara interview)",
+          "source_tier": "S3",
+          "date": "2023-07-22",
+          "retrieved_at": "2026-10-25T17:18:11Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/madagascar-les-cameras-quadrillent-les-axes-strategiques.html",
+          "publisher": "OSIRIS (republication of L'Express de Madagascar)",
+          "source_tier": "S3",
+          "date": "2025-04-19",
+          "retrieved_at": "2026-10-25T17:18:11Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Vendor attributed to Huawei because L'Express names Huawei as MRTM technical partner; the 2023 and 2025 pieces do not name a camera vendor, so camera brand (Huawei vs Hikvision/Dahua) is unconfirmed. still_current true: April 2025 reporting describes the cameras in active police use. Scale subnational (Antananarivo-centred). No S1/S2 source, so not corroborated.",
+      "bundle_id": "MDG-B1"
+    },
+    {
+      "id": "MDG-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Telma (Axian Telecom)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-03-06",
+      "still_current": null,
+      "summary": "Axian Telecom expanded its Ericsson partnership with a nationwide upgrade of Telma's radio access, microwave transport and core networks, following a 2019 Ericsson deal for a virtualised core, radio and about 2,000 new sites ahead of 5G.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-business/operator-news/14659-axian-telecom-upgrades-madagascan-unit-telma-with-ericsson.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2023-03-06",
+          "retrieved_at": "2026-10-25T17:17:32Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomtv.com/content/5g/telma-madagascar-selects-ericsson-for-next-generation-core-and-radio-network-upgrade-36514",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2019-10-06",
+          "retrieved_at": "2026-10-25T17:17:32Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ericsson.com/fr/press-releases/2020/6/telma-and-ericsson-launch-commercial-5g-services-in-madagascar",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2020-06",
+          "retrieved_at": "2026-10-25T17:18:57Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden) is the RAN and core vendor, so pole third. The two opened S2 reports cover successive contracts (2019, 2023) of one continuing vendor relationship; coded as one finding and treated as corroborating Ericsson's role. Contract values undisclosed. Ericsson 2020 5G launch release seen in search only. Whether any Huawei kit remains in Telma's network not established."
+    },
+    {
+      "id": "MDG-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks",
+      "local_actor": "Telma (with Vodafone)",
+      "builder": "Alcatel Submarine Networks",
+      "financier": "2Africa consortium (Meta-backed; partners incl. China Mobile International, MTN GlobalConnect, Orange, Vodafone/Vodacom, WIOCC)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-02",
+      "still_current": null,
+      "summary": "The 2Africa submarine cable, built by Alcatel Submarine Networks for a Meta-backed consortium, landed at Mahajanga in February 2023 through a Telma-Vodafone partnership, with service expected late 2023 or 2024.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://connectingafrica.com/connectivity/2africa-reaches-the-shores-of-madagascar",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2023-02-15",
+          "retrieved_at": "2026-10-25T17:18:57Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/telma-vodafone-to-connect-madagascar-to-2africa/",
+          "publisher": "SubTel Forum (republication of Agence Ecofin)",
+          "source_tier": "S2",
+          "date": "2023-02-14",
+          "retrieved_at": "2026-10-25T17:18:57Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Cable equipment vendor ASN (France, Nokia-owned) sets pole third; Meta's consortium role noted as financier, so a reviewer might weigh a us reading. Both reports relay the same Telma/Vodafone announcement, so not treated as independent. Tier 4 (landed); ready-for-service in Madagascar not confirmed."
+    },
+    {
+      "id": "MDG-006",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Economy and Finance",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09-07",
+      "still_current": null,
+      "summary": "At a Beijing signing attended by President Rajoelina, Madagascar's finance ministry and Huawei signed an MoU on digital transformation covering the national fibre network, e-government, solar microgrids, exploring a national cloud, rural connectivity and ICT training.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lexpress.mg/2024/09/madagascar-et-huawei-renforcent-leur.html",
+          "publisher": "L'Express de Madagascar",
+          "source_tier": "S3",
+          "date": "2024-09-07",
+          "retrieved_at": "2026-10-25T17:17:52Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: non-binding MoU, no value. Coded on networks as the fibre network is its most concrete element; it also touches cloud and e-government. Single S3 source. No follow-on contract found."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one AI-strategy search found only a May 2024 feasibility-study agreement for an applied AI institute with French consultants (DATUM/ESTIA); no model-provider partnership or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Camera vendor for the Antananarivo police surveillance network (Huawei, Hikvision or Dahua) is not named in opened sources; check MRTM procurement records.",
+    "Is the MRTM/central government data centre operational, who operates it, and does Huawei retain remote access? 2022 and 2023 reports conflict on status.",
+    "RAN/core vendors for Orange Madagascar and Airtel Madagascar not established (Airtel Africa had group-level Huawei deals in 2011).",
+    "Did the Sept 2024 Huawei MoU lead to any national cloud or fibre contract?",
+    "Vendors and operator of the World Bank-financed PRODIGY identity data centres (Tsimbazaza, Iavoloha), under construction per June 2026 Ecofin report.",
+    "Madagascar's participation at WAIC 2026 (newsmada report could not be fetched); any WAICO-adjacent commitment?",
+    "Has 2Africa entered service at Mahajanga?"
+  ],
+  "searches_run": 8
+}

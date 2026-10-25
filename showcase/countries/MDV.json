@@ -1,0 +1,347 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MDV",
+  "name": "Maldives",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T17:20:22Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MDV-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Dhiraagu",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-07-31",
+      "still_current": null,
+      "summary": "Dhiraagu launched the first commercial 5G service in the Maldives and South Asia in selected areas of Malé, Hulhumalé, the airport, Addu City and Kulhudhuffushi, with Huawei supplying the equipment and implementation services.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.dhiraagu.com.mv/about-us/media-centre/press-releases/dhiraagu-launches-the-first-commercial-5g-service-in-maldives-and-south-asia",
+          "publisher": "Dhiraagu",
+          "source_tier": "S1",
+          "date": "2019-07-31",
+          "retrieved_at": "2026-10-25T17:18:47Z",
+          "opened": true
+        },
+        {
+          "url": "https://totaltele.com/dhiraagu-launches-the-first-5g-service-in-maldives-and-south-asia/",
+          "publisher": "Total Telecom (press release republication)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T17:17:34Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecomtv.com/content/5g/maldives-gets-5g-but-its-not-for-the-locals-35949",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2019-08-06",
+          "retrieved_at": "2026-10-25T17:18:47Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Total Telecom reproduces Dhiraagu's own release, and TelecomTV confirms the launch but does not name the network vendor, so the Huawei award is not independently corroborated; single opened S1 permits medium. Tier 4 rather than 5 because coverage was limited to selected locations at launch. Whether Huawei also supplies Dhiraagu's 4G RAN/core is not established."
+    },
+    {
+      "id": "MDV-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ooredoo Maldives",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-03",
+      "still_current": null,
+      "summary": "Ooredoo Group chose Huawei to supply 5G SingleRAN radio and 5G cloud core equipment over five years in five markets, including the Maldives, to modernise its existing mobile networks.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com:443/5g/huawei-picks-up-five-market-5g-deal-from-ooredoo",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-03-09",
+          "retrieved_at": "2026-10-25T17:17:34Z",
+          "opened": true
+        },
+        {
+          "url": "https://rcrwireless.com/20200309/5g/huawei-boost-ooredoo-5g-operations-four-markets",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2020-03-09",
+          "retrieved_at": "2026-10-25T17:18:47Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both reports appear to derive from the same Huawei announcement (vendor marketing), so not treated as independent; uncorroborated tier 3, low. Group-level sourcing deal; no Maldives-specific award notice or value. Ooredoo Maldives' parent is Qatar's Ooredoo, but the equipment-vendor rule makes this prc."
+    },
+    {
+      "id": "MDV-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "HMN Technologies (Huawei Marine Networks)",
+      "local_actor": "Dhiraagu; Ooredoo Maldives; Dialog Axiata (Sri Lanka) consortium",
+      "builder": "HMN Technologies",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-02",
+      "still_current": null,
+      "summary": "HMN Tech built the 840 km, four-fibre-pair Maldives Sri Lanka Cable (MSC) from Hulhumalé to Mount Lavinia for a Dhiraagu, Ooredoo Maldives and Dialog Axiata consortium; the contract was announced February 2020 and completion reported February 2021.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/huawei-to-construct-cable-between-maldives-sri-lanka/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2020-02-18",
+          "retrieved_at": "2026-10-25T17:17:34Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/optical-fixed-networks/10776-dialog-axiata-connects-sri-lanka-and-maldives-with-new-cable.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2021-02-25",
+          "retrieved_at": "2026-10-25T17:18:47Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Two independent S2 outlets covering the award (HMN release) and completion (Dialog release). Tier 4: system completion reported, ready-for-service date not confirmed in opened sources. Equipment vendor sets pole prc. Value not disclosed."
+    },
+    {
+      "id": "MDV-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei Marine Networks (now HMN Technologies)",
+      "local_actor": "Ooredoo Maldives",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-12",
+      "still_current": null,
+      "summary": "Ooredoo Maldives inaugurated its 1,200 km national submarine cable linking six main islands, built by Huawei Marine using 100G technology with 3.2 Tbps design capacity.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://oceannews.com/?p=43527",
+          "publisher": "Ocean News & Technology",
+          "source_tier": "S2",
+          "date": "2016-12-20",
+          "retrieved_at": "2026-10-25T17:19:45Z",
+          "opened": true
+        },
+        {
+          "url": "https://capacitymedia.com/article/29ot7pralxfqmdjvryq68/news/ooredoo-maldives-and-huawei-marine-partner-for-subsea-cable",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T17:19:45Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Capacity covers only the earlier partnership announcement (undated on page), so it does not corroborate the inauguration; uncorroborated tier 5, low. Pre-2020 and current operating status not checked, so still_current null (map halves it). Value not disclosed."
+    },
+    {
+      "id": "MDV-005",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Communications Authority of Maldives; Ministry of Environment, Climate Change and Technology",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-08-24",
+      "still_current": null,
+      "summary": "The Communications Authority of Maldives issued an ISP licence to Starlink Services Maldives, a SpaceX-incorporated company, making it the country's fourth licensed ISP for nationwide satellite internet including outer islands and vessels.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.cam.gov.mv/news23001.html",
+          "publisher": "Communications Authority of Maldives",
+          "source_tier": "S1",
+          "date": "2023-08-24",
+          "retrieved_at": "2026-10-25T17:19:45Z",
+          "opened": true
+        },
+        {
+          "url": "https://hoteliermaldives.com/starlink-granted-license-to-provide-internet-services-in-maldives/",
+          "publisher": "Hotelier Maldives",
+          "source_tier": "S3",
+          "date": "2023-08-24",
+          "retrieved_at": "2026-10-25T17:19:45Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4: licence issued. A later service-launch report (Adhadhu) appeared in search results but was not opened, so tier 5 not coded; subscriber scale unknown."
+    },
+    {
+      "id": "MDV-006",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Government of Maldives (President's Office); Dhiraagu; Ooredoo Maldives",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-17",
+      "still_current": null,
+      "summary": "The President's Office announced Google's decision to invest in an international cable landing station and network hub at Hithadhoo, Addu City, part of Google's Dhivaru cable linking Oman, the Maldives and Christmas Island, with local operators as partners.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://presidency.gov.mv/Press/Article/35701",
+          "publisher": "President's Office of the Maldives",
+          "source_tier": "S1",
+          "date": "2025-11-17",
+          "retrieved_at": "2026-10-25T17:19:45Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/google-announces-plans-for-subsea-cable-linking-oman-to-the-christmas-islands/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-11-18",
+          "retrieved_at": "2026-10-25T17:19:45Z",
+          "opened": true
+        },
+        {
+          "url": "https://adhadhu.com/75427",
+          "publisher": "Adhadhu",
+          "source_tier": "S3",
+          "date": "2025-11-19",
+          "retrieved_at": "2026-10-25T17:19:45Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: an announced investment decision; no signed instrument, timeline or capacity disclosed. 'Tens of millions of dollars' too vague to record as a value. Adhadhu reports opposition MDP criticism and questions over ownership of the station; not a reversal."
+    },
+    {
+      "id": "MDV-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Dhiraagu",
+      "local_actor": "Dhiraagu",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02",
+      "still_current": null,
+      "summary": "Dhiraagu opened a Hulhumalé data centre it describes as the Maldives' first Uptime Institute Tier IV certified facility, inaugurated by the Minister of Homeland Security and Technology.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://edition.mv/ict/39728",
+          "publisher": "The Edition",
+          "source_tier": "S3",
+          "date": "2025-02-26",
+          "retrieved_at": "2026-10-25T17:19:45Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened S3 source; uncorroborated, low. Owner-operator Dhiraagu is Maldives-incorporated, so domestic; its shareholding (widely reported as majority Batelco, Bahrain) was not verified in opened sources and could make it third. Equipment vendors and AI use not stated."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search: Microsoft 2023 summit and police collaboration had no signed instrument; MINDCo-Bank of Maldives MoU for a national AI and Data Competency Centre names no model provider"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on safe-city/CCTV returned only AidData project pages (lead-only, not citable); no surveillance vendor deployment documented"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies Dhiraagu's and Ooredoo Maldives' 4G RAN and core (Huawei suspected from 5G awards, not established)?",
+    "India Asia Express (IAX) cable, operated by India's Jio, landed at Hulhumalé with partial government funding under President Solih (Adhadhu, single S3); landing date, owner and supplier not established.",
+    "AidData lists PRC-financed Maldives projects possibly including police/CCTV or ICT equipment; check primary records for any Huawei/Hikvision/Dahua surveillance deployment.",
+    "Dhiraagu ownership (Batelco share) and whether its Tier IV data centre or HDC's Hulhumalé container data centre (undated, Smartcom) host government or AI workloads.",
+    "Has the Google Dhivaru Addu landing station reached a signed agreement or construction, and who will own it?",
+    "Microsoft-Maldives Police collaboration (2023): any contract or Azure/AI deployment?"
+  ],
+  "searches_run": 9
+}

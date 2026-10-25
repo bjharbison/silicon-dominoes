@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "MDG",
-  "MDV",
-  "MHL",
-  "MKD",
-  "MLI",
-  "MLT",
-  "MNE",
-  "MRT",
-  "MUS",
-  "NER",
   "NRU",
   "PLW",
   "PNG",
@@ -254,6 +244,16 @@
   "LUX",
   "LVA",
   "MCO",
-  "MDA"
+  "MDA",
+  "MDG",
+  "MDV",
+  "MHL",
+  "MKD",
+  "MLI",
+  "MLT",
+  "MNE",
+  "MRT",
+  "MUS",
+  "NER"
  ]
 }

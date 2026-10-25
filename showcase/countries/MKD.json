@@ -1,0 +1,263 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MKD",
+  "name": "North Macedonia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T17:19:50Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MKD-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "Makedonski Telekom; A1 Makedonija",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-01",
+      "still_current": null,
+      "summary": "Huawei and ZTE supplied equipment for the existing 3G and 4G networks of both North Macedonian mobile operators; contract dates were undisclosed and one operator was expected to keep Chinese 3G/4G gear into part of 2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://globalvoices.org/2023/01/05/the-construction-of-the-5g-network-brings-the-demise-of-the-chinese-domination-in-north-macedonias-telecommunications/",
+          "publisher": "Global Voices (republishing Meta.mk / Metamorphosis Foundation)",
+          "source_tier": "S3",
+          "date": "2023-01-05",
+          "retrieved_at": "2026-10-25T17:19:09Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 as operational installed base. Single opened S3 source (an NGO fact-checking outlet), so uncorroborated and low confidence. Which operator uses which vendor, and in which segments (RAN, core, transport), is not stated. Date is the reporting date, not deployment date; retirement status after 2023 not established."
+    },
+    {
+      "id": "MKD-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Makedonski Telekom; A1 Makedonija",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-01",
+      "still_current": null,
+      "summary": "Ericsson won the 5G infrastructure procurements of both Makedonski Telekom and A1 Makedonija and was installing base stations, with Makedonski Telekom expecting its Ericsson-led modernisation to finish in early 2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://globalvoices.org/2023/01/05/the-construction-of-the-5g-network-brings-the-demise-of-the-chinese-domination-in-north-macedonias-telecommunications/",
+          "publisher": "Global Voices (republishing Meta.mk / Metamorphosis Foundation)",
+          "source_tier": "S3",
+          "date": "2023-01-05",
+          "retrieved_at": "2026-10-25T17:19:09Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson (Sweden) is an EU vendor, so pole third. Single opened S3 source; no operator or Ericsson release opened, so uncorroborated and low. Contract values and award dates not found. Whether the modernisation removed Huawei/ZTE from 4G (a de facto swap) is implied by the source's framing but not confirmed, so no reversal coded."
+    },
+    {
+      "id": "MKD-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "United States Government (Department of State, Clean Network)",
+      "local_actor": "Government of North Macedonia (PM Zoran Zaev)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-10-23",
+      "still_current": null,
+      "summary": "North Macedonia and the United States signed a memorandum of understanding on 5G security stressing trusted suppliers, reported as joining the US Clean Network initiative; the electronic communications law was amended in April 2021 to add network-security powers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://globalvoices.org/2023/01/05/the-construction-of-the-5g-network-brings-the-demise-of-the-chinese-domination-in-north-macedonias-telecommunications/",
+          "publisher": "Global Voices (republishing Meta.mk / Metamorphosis Foundation)",
+          "source_tier": "S3",
+          "date": "2023-01-05",
+          "retrieved_at": "2026-10-25T17:19:09Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.intellinews.com/us-signs-mous-on-5g-cyber-security-protection-with-three-see-states-194945/",
+          "publisher": "bne IntelliNews",
+          "source_tier": "S3",
+          "date": "2020-10-25",
+          "retrieved_at": "2026-10-25T17:19:09Z",
+          "opened": true
+        },
+        {
+          "url": "https://chinaobservers.eu/fortifying-5g-networks-in-north-macedonia-the-need-for-western-partners/",
+          "publisher": "CHOICE (China Observers in Central and Eastern Europe)",
+          "source_tier": "S4",
+          "date": "2021-01-12",
+          "retrieved_at": "2026-10-25T17:19:09Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: non-binding MOU. Pole us as alignment with the US trusted-vendor framework; it is not an equipment deployment. Opened sources are S3 and S4 (think tank), no S1/S2, so not corroborated. The April 2021 amendment and autumn 2021 regulator supplier-risk rules are not shown to name or exclude any vendor, so no ban is coded."
+    },
+    {
+      "id": "MKD-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (Ericsson AB, Sweden; Ericsson Macedonia)",
+      "local_actor": "One Macedonia Telecommunications DOOEL (4iG Group, Hungary)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-04",
+      "still_current": null,
+      "summary": "One Macedonia, a 4iG Group subsidiary and the country's newest mobile operator, signed supply and service contracts with Ericsson for a greenfield 5G Standalone network, RAN and core, over 500 base stations across 2026-2029.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.4ig.hu/sw/static/file/4iG_sajtokozlemeny_onemacedonia_ericsson_20260304.pdf",
+          "publisher": "4iG Group",
+          "source_tier": "S1",
+          "date": "2026-03-04",
+          "retrieved_at": "2026-10-25T17:19:09Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.vg.hu/penz-es-tokepiac/2026/03/eszak-macedoniaban-a-4ig",
+          "publisher": "Világgazdaság",
+          "source_tier": "S3",
+          "date": "2026-03-04",
+          "retrieved_at": "2026-10-25T17:19:09Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.intellinews.com/hungary-s-4ig-unit-in-north-macedonia-and-ericsson-sign-100mn-deal-to-build-standalone-5g-network-429563/",
+          "publisher": "bne IntelliNews",
+          "source_tier": "S3",
+          "date": "2026-03-04",
+          "retrieved_at": "2026-10-25T17:19:09Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.4ig.hu/sw/static/file/OneMKandEricssonSignLetterofIntentPR29092025.pdf",
+          "publisher": "4iG Group",
+          "source_tier": "S1",
+          "date": "2025-09-29",
+          "retrieved_at": "2026-10-25T17:19:09Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor Ericsson sets pole third; operator owner 4iG is Hungarian. Világgazdaság and IntelliNews appear to restate the 4iG release, so not treated as independent corroboration; single opened S1 permits medium. EUR 100m is 4iG's country investment strategy, not the contract price, so values null. Follows a Sept 2025 LOI; spectrum licence awarded 23 Jan 2026."
+    },
+    {
+      "id": "MKD-005",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "EuroHPC JU / European AI Factories network (host supercomputers outside North Macedonia)",
+      "local_actor": "Faculty of Computer Science and Engineering (FINKI), Ss. Cyril and Methodius University; Ministry of Digital Transformation",
+      "builder": null,
+      "financier": "EU (Horizon Europe / EuroHPC, ~EUR 3.1m) and Government of North Macedonia (co-financing)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06-24",
+      "still_current": null,
+      "summary": "North Macedonia launched Vezilka, a EUR 6.2m national AI centre led by FINKI with the digital ministry, half EU-funded, affiliated to Greece's Pharos AI Factory to give local users access to European supercomputers over three years.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.bta.bg/en/news/1154432-skopje-launches-national-a52i-center-project",
+          "publisher": "BTA (Bulgarian News Agency)",
+          "source_tier": "S4",
+          "date": "2026-06-24",
+          "retrieved_at": "2026-10-25T17:19:09Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ansa.it/nuova_europa/en/news/sections/politics/2025/10/14/north-macedonia-launches-first-ai-center_4ea407e9-4315-454d-aae4-5a45b117bcc6.html",
+          "publisher": "ANSA",
+          "source_tier": "S3",
+          "date": "2025-10-14",
+          "retrieved_at": "2026-10-25T17:19:09Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2: a funded project launch with no local compute specified. Pole third because the compute is accessed from EU-hosted supercomputers (Pharos, Greece), not owned locally; reviewer may prefer domestic for the centre itself. BTA is a state news agency, so S4; not corroborated. Values in EUR not converted. Hardware vendor unknown."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in facilities/AI-centre searches (Vezilka names no hardware)"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "two searches found no frontier-provider partnership or national model; a 2023 government AI assistant ('Ada') names no underlying model or vendor, and Macedonian-language model plans name no partner"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on safe-city/surveillance found no documented Huawei/Hikvision/Dahua system in North Macedonia; regional reporting opened covers Serbia, not North Macedonia"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendor (Huawei or ZTE) serves which operator's 4G RAN and core, and has Chinese equipment been fully removed from Makedonski Telekom and A1 Makedonija since 2023?",
+    "CHOICE (Jan 2021) relays local reports that Huawei was top-ranked in a Makedonski Telekom 5G tender that was put on hold; was that tender cancelled for security reasons (a possible reversal)?",
+    "Do the April 2021 electronic-communications amendments or AEK's 2021 supplier risk-profile rules designate any high-risk vendor?",
+    "Who are the 5-6 data-centre investors the PM cited (Aug 2026), and the status and contractor of the reported EUR 20m state data centre targeted for 2027?",
+    "What model or vendor underlies the government's 'Ada' digital assistant (2023)?",
+    "Any Chinese-supplied safe-city or police CCTV in Skopje or other municipalities (not found in one search)."
+  ],
+  "searches_run": 8
+}

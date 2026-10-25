@@ -1,0 +1,408 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MLI",
+  "name": "Mali",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T17:19:40Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MLI-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Mali",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015-10",
+      "still_current": null,
+      "summary": "Mali's cabinet approved awarding Huawei a 15-month, roughly FCFA 35.2bn contract, fully financed by China Exim Bank, for 1,300+ km of fibre on three corridors plus government network modernisation, a Bamako data centre and videoconferencing.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/telecom/2210-32579-mali-huawei-awarded-national-broadband-network-contract-worth-fcfa-34-billion",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S2",
+          "date": "2015-10-22",
+          "retrieved_at": "2026-10-25T17:18:03Z",
+          "opened": true
+        },
+        {
+          "url": "https://osiris.sn/la-realisation-du-reseau-large-bande-national-evaluee-a-34-milliard-fcfa.html",
+          "publisher": "OSIRIS (republishing Agence Ecofin)",
+          "source_tier": "S2",
+          "date": "2015-10-20",
+          "retrieved_at": "2026-10-25T17:18:49Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "OSIRIS republishes the same Ecofin story, so not independent; uncorroborated tier 3 is low. Body gives FCFA 35,213,172,169 vs headline 34bn; not converted to USD (no source-date rate taken). Pre-2020 and completion/operation not confirmed, so still_current null. Bundled with MLI-002 (same contract).",
+      "bundle_id": "MLI-B1"
+    },
+    {
+      "id": "MLI-002",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Mali",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015-10",
+      "still_current": null,
+      "summary": "The same Huawei broadband contract, financed by China Exim Bank, included a security and road-traffic video surveillance system and associated monitoring rooms.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/telecom/2210-32579-mali-huawei-awarded-national-broadband-network-contract-worth-fcfa-34-billion",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S2",
+          "date": "2015-10-22",
+          "retrieved_at": "2026-10-25T17:18:03Z",
+          "opened": true
+        },
+        {
+          "url": "https://osiris.sn/la-realisation-du-reseau-large-bande-national-evaluee-a-34-milliard-fcfa.html",
+          "publisher": "OSIRIS (republishing Agence Ecofin)",
+          "source_tier": "S2",
+          "date": "2015-10-20",
+          "retrieved_at": "2026-10-25T17:18:49Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Same single-origin reporting as MLI-001. Whether the surveillance component was delivered, and its scale, is not established; still_current null.",
+      "bundle_id": "MLI-B1"
+    },
+    {
+      "id": "MLI-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "China International Telecommunication Construction Corporation (CITCC)",
+      "local_actor": "Government of Mali (Mali Numérique 2020)",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-09-28",
+      "still_current": null,
+      "summary": "Mali signed a XOF 93.8bn concessional China Exim Bank loan for Mali Numérique 2020: an 817 km fibre backbone, government GPON and a secure state wireless network, built by CITCC; parliament authorised it in November 2018.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/telecom/2111-39304-mali-national-assembly-authorizes-government-to-borrow-xof93-billion-for-mali-digital-2020",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S2",
+          "date": "2018-11-21",
+          "retrieved_at": "2026-10-25T17:18:03Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 4: financing agreement signed and ratified; build completion not confirmed. Source names CITCC (Chinese state-owned telecom contractor) and '12 OSN 3500 terminals' - OSN 3500 is, to the analyst's knowledge, a Huawei OptiX product line, suggesting Huawei equipment, but no source states the vendor, so controller is CITCC. Value not converted."
+    },
+    {
+      "id": "MLI-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "China International Telecommunication Construction Corporation (CITCC)",
+      "local_actor": "Government of Mali",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-01",
+      "still_current": null,
+      "summary": "Mali's cabinet approved a US$117.3m contract with CITCC to extend the national fibre network to Mopti, Koro, Timbuktu, Gao, Ansongo and Labenzanga over two years.",
+      "announced_value_usd": 117300000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/optical-fixed-networks/16040-mali-awards-citcc-117m-contract-to-expand-fibre-network.html",
+          "publisher": "Developing Telecoms (citing Ecofin)",
+          "source_tier": "S2",
+          "date": "2024-01-10",
+          "retrieved_at": "2026-10-25T17:18:03Z",
+          "opened": true
+        },
+        {
+          "url": "https://ecofinagency.com/public-management/0409-45846-mali-partners-with-huawei-to-speed-up-digital-transformation",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S2",
+          "date": "2024-09-04",
+          "retrieved_at": "2026-10-25T17:17:39Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Developing Telecoms cites Ecofin, so the two are not independent. Equipment vendor and financier not stated; pole prc on CITCC as integrator, reviewer may prefer null until vendor known. Completion not confirmed."
+    },
+    {
+      "id": "MLI-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Société Malienne de Transmission et de Diffusion (SMTD)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09-03",
+      "still_current": null,
+      "summary": "At FOCAC, state broadcaster-transmitter SMTD signed an MOU with Huawei for the Mali Numérique programme covering camera monitoring in Bamako and regional capitals, 1,000 km more fibre and a Tier III national data centre.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ecofinagency.com/public-management/0409-45846-mali-partners-with-huawei-to-speed-up-digital-transformation",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S2",
+          "date": "2024-09-04",
+          "retrieved_at": "2026-10-25T17:17:39Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Non-binding MOU, tier 1. Coded on applications as the surveillance component is the most specific; fibre and data-centre components overlap MLI-006, where Huawei's role is unconfirmed. Date inferred from 'yesterday' in a 4 Sept 2024 article."
+    },
+    {
+      "id": "MLI-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Mali (Ministry of Communication, Digital Economy and Modernisation of Administration)",
+      "local_actor": "Government of Mali",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-01-31",
+      "still_current": null,
+      "summary": "Malian authorities inaugurated a Tier III national data centre in Bamako on 31 January 2026 to host e-government platforms and state databases; builder, financier, size and cost were not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/government-of-mali-launches-data-center-in-bamako/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-02-05",
+          "retrieved_at": "2026-10-25T17:17:39Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.connectingafrica.com/data-centers/mali-inaugurates-a-tier-iii-data-center",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2026-02-03",
+          "retrieved_at": "2026-10-25T17:17:39Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-digital/0202-52488-mali-opens-tier-iii-data-center-in-bamako-amid-regional-push-to-keep-data-at-home",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S2",
+          "date": "2026-02-02",
+          "retrieved_at": "2026-10-25T17:18:49Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "State owner-operator, so domestic. DCD notes Huawei had earlier been linked to a Tier III centre (MLI-005) but was not mentioned at launch; builder left null. Tier 4 (in service at launch; utilisation at scale unconfirmed). Corroboration may rest on one government announcement."
+    },
+    {
+      "id": "MLI-007",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Centre de coordination et de gestion des crises (CECOGEC), Prime Minister's Office / Ministry of Security",
+      "builder": null,
+      "financier": "Huawei (financial support, terms undisclosed)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09-21",
+      "still_current": null,
+      "summary": "A modernised national crisis-management operations room, backed technically and financially by Huawei, opened in September 2026, aggregating over 74 video feeds with a video wall, radio geolocation and emergency-call handling, with video coverage extended to Ségou, Sikasso and Mopti.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://lanouvelletribune.info/2026/09/mali-huawei-apporte-une-capacite-de-surveillance-au-dispositif-national-de-gestion-des-crises/",
+          "publisher": "La Nouvelle Tribune (citing AMAP)",
+          "source_tier": "S3",
+          "date": "2026-09-22",
+          "retrieved_at": "2026-10-25T17:17:39Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened S3 source relaying Malian state agency AMAP. Pole prc on equipment rule, assuming Huawei-supplied system; exact equipment and terms (donation or sale) not stated. Possibly the delivery of MLI-005's camera component - not established."
+    },
+    {
+      "id": "MLI-008",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Government of Mali (transitional military government)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Unlicensed Starlink terminal use in Mali",
+      "reversal_reason": "geopolitical",
+      "date": "2024-03-20",
+      "still_current": false,
+      "summary": "Mali's junta ordered Starlink terminals dismantled and banned nationwide, citing unauthorised use by NGOs, individuals and armed separatist and jihadist groups in the north and east.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://afrique.le360.ma/politique/mali-la-junte-leve-linterdiction-des-kits-starlink_B2X7OZGSUFC5LNLCDIOKEJE4WI/",
+          "publisher": "Le360 Afrique (with AFP)",
+          "source_tier": "S3",
+          "date": "2024-10-10",
+          "retrieved_at": "2026-10-25T17:18:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://techpoint.africa/2024/10/11/mali-lifts-starlink-ban/",
+          "publisher": "Techpoint Africa",
+          "source_tier": "S2",
+          "date": "2024-10-11",
+          "retrieved_at": "2026-10-25T17:18:03Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 assigned to the reversed thing: unlicensed informal Starlink use, never an authorised service. Security rationale coded geopolitical. still_current false: lifted October 2024 (MLI-009). Both reports may share wire origin."
+    },
+    {
+      "id": "MLI-009",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Government of Mali (Council of Ministers)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-10-09",
+      "still_current": null,
+      "summary": "Mali's Council of Ministers lifted the Starlink ban, allowing kit import and sale for six months while a regulatory framework and user registration platform are set up.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://afrique.le360.ma/politique/mali-la-junte-leve-linterdiction-des-kits-starlink_B2X7OZGSUFC5LNLCDIOKEJE4WI/",
+          "publisher": "Le360 Afrique (with AFP)",
+          "source_tier": "S3",
+          "date": "2024-10-10",
+          "retrieved_at": "2026-10-25T17:18:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://techpoint.africa/2024/10/11/mali-lifts-starlink-ban/",
+          "publisher": "Techpoint Africa",
+          "source_tier": "S2",
+          "date": "2024-10-11",
+          "retrieved_at": "2026-10-25T17:18:03Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 as a time-limited provisional authorisation, not a licence. Whether a licence or framework followed after April 2025 not checked; still_current null."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search for government AI partnerships (OpenAI, Google, Microsoft, DeepSeek, Huawei) returned no Mali-specific result"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "RAN/core vendors for Orange Mali, Malitel (Sotelma/Maroc Telecom) and Telecel not established; one search found nothing Mali-specific.",
+    "Was the 2015 Huawei broadband contract (incl. video surveillance and Bamako data centre) completed, and is that system still in use?",
+    "Who built and equipped the January 2026 national data centre, and is it the Tier III centre in the 2024 SMTD-Huawei MOU?",
+    "Confirm vendor of OSN 3500 terminals in the CITCC Mali Numérique 2020 project and whether the 2024 CITCC extension is China Exim-financed.",
+    "Did Mali issue a Starlink licence or regulatory framework after the six-month window from October 2024?",
+    "AidData lists further PRC-financed Mali ICT projects not reviewed in this pass."
+  ],
+  "searches_run": 8
+}

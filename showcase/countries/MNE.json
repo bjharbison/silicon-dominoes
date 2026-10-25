@@ -1,0 +1,252 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MNE",
+  "name": "Montenegro",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T17:19:24Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MNE-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (via Ericsson Nikola Tesla, Croatia)",
+      "local_actor": "Crnogorski Telekom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-10-24",
+      "still_current": null,
+      "summary": "Crnogorski Telekom signed a five-year EUR 12.5m agreement with Ericsson Nikola Tesla to maintain and modernise its whole mobile radio network and introduce 5G nationwide; the partnership was extended at MWC in March 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ericssonnikolatesla.com/en/news/20221024-cooperation/",
+          "publisher": "Ericsson Nikola Tesla",
+          "source_tier": "S1",
+          "date": "2022-10-24",
+          "retrieved_at": "2026-10-25T17:17:37Z",
+          "opened": true
+        },
+        {
+          "url": "https://ericssonnikolatesla.com/en/news/mobile-world-congress-crnogorski-telekom-and-ericsson-nikola-tesla-continue-cooperation-and-intensify-the-modernization-and-improvement-of-telekoms-5g-network/",
+          "publisher": "Ericsson Nikola Tesla",
+          "source_tier": "S1",
+          "date": "2026-03-04",
+          "retrieved_at": "2026-10-25T17:18:23Z",
+          "opened": true
+        },
+        {
+          "url": "https://ericssonnikolatesla.com/en/news/20220310-5g-cg-en",
+          "publisher": "Ericsson Nikola Tesla",
+          "source_tier": "S1",
+          "date": "2022-03-10",
+          "retrieved_at": "2026-10-25T17:17:37Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden) is the RAN vendor, so pole third. All three sources are the vendor's own releases, so not corroborated; single-issuer S1 permits medium. Core-network vendor not stated. EUR 12.5m not converted (no source-date rate applied). Crnogorski Telekom is a Magyar Telekom/Deutsche Telekom subsidiary per general knowledge, not verified in opened sources."
+    },
+    {
+      "id": "MNE-002",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "4iG International Digital Infrastructure Zrt. (4iG Group, Hungary)",
+      "local_actor": "Government of Montenegro",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-25",
+      "still_current": null,
+      "summary": "Montenegro's government selected Hungary's 4iG Group to negotiate design and operation of a Tier III state data centre under a July 2025 Hungary-Montenegro cooperation agreement; costs and financing were still to be defined by a working group.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.4ig.hu/extraordinary-announcement-of-4ig-plc---2026_03_25_",
+          "publisher": "4iG Plc (exchange announcement)",
+          "source_tier": "S1",
+          "date": "2026-03-25",
+          "retrieved_at": "2026-10-25T17:17:37Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.4ig.hu/digitalization-projects-montenegro",
+          "publisher": "4iG Plc",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T17:17:37Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/hungarys-4ig-to-build-montenegro-state-data-center/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T17:17:37Z",
+          "opened": true
+        },
+        {
+          "url": "https://new.intellinews.com/articles/montenegro-selects-hungary-s-4ig-group-for-54mn-ict-and-data-centre-projects-434012",
+          "publisher": "bne IntelliNews",
+          "source_tier": "S3",
+          "date": "2026-03-26",
+          "retrieved_at": "2026-10-25T17:17:37Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: 4iG states the government decision to negotiate is not a contractual commitment; no data-centre contract seen as of October 2026. Pole third because 4iG IDI is to operate the facility; ultimate ownership (state vs 4iG) not stated. DCD and IntelliNews both relay 4iG's announcement, so not coded as independent corroboration; single S1 issuer permits medium."
+    },
+    {
+      "id": "MNE-003",
+      "layer": "applications",
+      "pole": null,
+      "controller": "4iG Informatika Zrt. (4iG IT, Hungary) as system integrator; equipment vendors not named",
+      "local_actor": "Ministry of Public Works of Montenegro (for law enforcement and border police)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-10-20",
+      "still_current": null,
+      "summary": "4iG IT signed a definitive contract with Montenegro's Ministry of Public Works for a EUR 54.25m law-enforcement technology programme: IT and telecom system integration, equipment supply and installation, training and ongoing support for police and border police.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.4ig.hu/digitalization-projects-montenegro",
+          "publisher": "4iG Plc",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T17:17:37Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.4ig.hu/extraordinary-announcement-of-4ig-plc---2026_03_25_",
+          "publisher": "4iG Plc (exchange announcement)",
+          "source_tier": "S1",
+          "date": "2026-03-25",
+          "retrieved_at": "2026-10-25T17:17:37Z",
+          "opened": true
+        },
+        {
+          "url": "https://new.intellinews.com/articles/montenegro-selects-hungary-s-4ig-group-for-54mn-ict-and-data-centre-projects-434012",
+          "publisher": "bne IntelliNews",
+          "source_tier": "S3",
+          "date": "2026-03-26",
+          "retrieved_at": "2026-10-25T17:17:37Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: 4iG is the integrator, and the spec assigns IT equipment to its vendor, which no source names; ongoing support may give 4iG access (then third), so a reviewer may recode. IntelliNews covers only the March selection, not the October signing, so the signed contract rests on 4iG's own S1 statements. EUR 54.25m is the government-set budget, not converted. Whether it includes video surveillance or AI analytics is not stated."
+    },
+    {
+      "id": "MNE-004",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Presight (Abu Dhabi, UAE)",
+      "local_actor": "Ministry of the Interior of Montenegro",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05",
+      "still_current": null,
+      "summary": "Presight and Montenegro's Interior Ministry signed an MoU for a long-term framework to build an AI-enabled Smart Nation platform unifying real-time traffic, public-safety, environmental and emergency-response data, during the Prime Minister's visit to Abu Dhabi.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gccbusinessnews.com/?p=144921",
+          "publisher": "GCC Business News",
+          "source_tier": "S3",
+          "date": "2026-05-15",
+          "retrieved_at": "2026-10-25T17:18:49Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.zawya.com/en/business/technology-and-telecom/presight-montenegro-sign-deal-to-advance-ai-enabled-national-infrastructure-j7kg3qk7",
+          "publisher": "Zawya (press-release republication)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-25T17:18:23Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.wam.ae/en/article/c07iskc-presight-montenegro-sign-mou-advance-ai-enabled",
+          "publisher": "WAM (Emirates News Agency)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-25T17:18:23Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1 non-binding MoU; value undisclosed. Presight is a UAE (G42-group) AI firm, so pole third. Month inferred from the 15 May 2026 publication date; signing date not stated. 'Public safety' and 'situational awareness' suggest possible surveillance use, not confirmed. WAM page fetched but returned no article text, so marked unopened. No S1/S2 source opened."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in facilities or AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one government-AI search found only an AI-strategy working group and a UNDP AI landscape assessment; no model-provider partnership or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "only a PM statement on 'green data centres' surfaced in search snippets; no AI-specific power project evidenced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "RAN/core vendors for One Montenegro (4iG) and m:tel not established; does either run Huawei or ZTE equipment, and has Montenegro adopted the EU 5G Toolbox restrictions?",
+    "Core-network vendor at Crnogorski Telekom not stated in Ericsson releases.",
+    "Which equipment vendors (and any video-surveillance or AI analytics) are in 4iG's EUR 54.25m law-enforcement contract, and how is it financed (Hungarian credit?)",
+    "Has the 4iG state data-centre deal reached a contract, and will the state or 4iG own the facility?",
+    "Does Montenegro's police run Huawei/Hikvision/Dahua safe-city cameras? One search returned only Serbian and regional reporting.",
+    "Status of the Presight Smart Nation MoU: any follow-on contract or Montenegro government (gov.me) release with signing date?"
+  ],
+  "searches_run": 9
+}

@@ -1,0 +1,212 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MUS",
+  "name": "Mauritius",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T17:19:22Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MUS-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei (Huawei Technologies (Mauritius) Co Ltd)",
+      "local_actor": "Mauritius Police Force / Mauritius Telecom (prime contractor)",
+      "builder": "Mauritius Telecom (prime contractor; five subcontractors incl. Huawei)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-08",
+      "still_current": null,
+      "summary": "The Safe City programme, about 4,000 intelligent CCTV cameras plus police radio trunking, was implemented by state-linked Mauritius Telecom with Huawei among subcontractors under a 20-year operating lease of roughly Rs 21bn, operational since August 2019.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fr.allafrica.com/stories/202503190228.html",
+          "publisher": "AllAfrica (French; original Mauritian outlet not named)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T17:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://stratnewsglobal.com/world-news/mauritius-sherry-singh-controversy-analysed-through-the-huawei-prism-2/",
+          "publisher": "StratNews Global (republishing Le Matinal)",
+          "source_tier": "S3",
+          "date": "2022-08-04",
+          "retrieved_at": "2026-10-25T17:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://africlaw.com/2023/12/04/falling-short-of-expectations-safe-city-project-and-the-unsolved-murder-in-mauritius/",
+          "publisher": "AfricLaw (human-rights advocate commentary)",
+          "source_tier": "S4",
+          "date": "2023-12-04",
+          "retrieved_at": "2026-10-25T17:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole prc on the equipment rule: Huawei is described as key partner for the all-cloud video platform (StratNews/Le Matinal) and as a named subcontractor (AllAfrica); exact Huawei scope vs other subcontractors not established, and Huawei's own case studies were not fetched (banned). No opened S1/S2 source, so not corroborated; low. Rs 21bn not converted (no source-date rate); AfricLaw lease schedule (USD 13m then 18.9m/23.9m a year) not used as a value. AllAfrica story id suggests March 2025, when the PM said he envisaged an independent evaluation; no cancellation found, but continued operation as of the run date not confirmed, so still_current null. Pre-2020 date: map will halve unless confirmed current."
+    },
+    {
+      "id": "MUS-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei Marine Networks (now HMN Technologies)",
+      "local_actor": "Mauritius Telecom",
+      "builder": "PCCW Global (installation and maintenance partner)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-11",
+      "still_current": null,
+      "summary": "Huawei Marine built the 700-730 km, 16 Tbps Mauritius and Rodrigues Submarine cable (MARS) with PCCW Global for Mauritius Telecom, using Huawei 100G WDM transmission; the project was reported completed ahead of schedule in 2019.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/news/pccw-global-and-huawei-marine-networks-to-connect-rodrigues-and-mauritius/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2018-03-09",
+          "retrieved_at": "2026-10-25T17:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/huawei-mars-cable-rodrigues-island/",
+          "publisher": "SubTel Forum (republished Huawei Marine/PCCW press release)",
+          "source_tier": "S4",
+          "date": "2019-11-19",
+          "retrieved_at": "2026-10-25T17:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Cable equipment vendor Huawei Marine, so pole prc; owner Mauritius Telecom inferred from DCD quote. SubTel item is a vendor press release, so S4 and not counted; uncorroborated, low. Tier 5 = completion reported in the release; RFS date and current status not independently confirmed. Domestic link to Rodrigues, not an international route."
+    },
+    {
+      "id": "MUS-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Juniper Networks (core)",
+      "local_actor": "Emtel",
+      "builder": "NEC XON (integrator; cell-site 5G upgrades, 100G backbone)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024",
+      "still_current": null,
+      "summary": "NEC XON, Emtel's integration partner since 2011, upgraded cell sites for 5G and the backbone to 100G, with Juniper equipment forming the network core; radio vendor not named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://totaltele.com/nec-xon-spearheads-emtels-ascent-to-becoming-mauritius-fastest-mobile-network/",
+          "publisher": "Total Telecom",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T17:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://itweb.co.za/office/necxon/content/raYAyqorpG8MJ38N",
+          "publisher": "ITWeb (NEC XON press office)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": null,
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Appears to be NEC XON marketing material republished; Total Telecom coded S2 but may be a press release, reviewer may downgrade. Juniper (US) core sets pole us; NEC XON (South African arm of Japan's NEC) is integrator. Date approximate: article cites Q2-Q3 2023 Ookla award and 2024 plans, no publication date shown. Tier 3 assumed for an operating vendor relationship; no award notice seen. Single opened source; low."
+    },
+    {
+      "id": "MUS-004",
+      "layer": "models",
+      "pole": null,
+      "controller": "Mauritius Telecom (mytGPT); underlying model provider not stated",
+      "local_actor": "Ministry of Education / Mauritius Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-25",
+      "still_current": null,
+      "summary": "Mauritius's Education Ministry launched mytGPT for Education, built with Mauritius Telecom for students, teachers and parents, after an August-October 2025 pilot with about 70 Grade 12 students.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/news-digital/2510-49827-mauritius-launches-ai-platform-for-education-with-telecom-partner",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S3",
+          "date": "2025-10-25",
+          "retrieved_at": "2026-10-25T17:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the opened source does not say which model underlies mytGPT or who holds the weights; it may be a domestic wrapper over a foreign API. Tier 2: pilot completed and launch announced; national usage not shown. Mauritius Telecom is state-linked with Orange holding a 40% stake (DCD tag page, June 2024), which complicates any domestic coding."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search plus DCD Mauritius tag page: only opinion pieces on a digital-hub ambition and cable/operator items since 2023; no data-centre or AI-campus project with a named controller"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase surfaced in facilities or models searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "only an opinion piece on energy constraints for AI surfaced; no AI-specific power project"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio-access and core vendor for Mauritius Telecom (my.t) 4G/5G, and RAN vendor for Emtel and MTML/CHiLi; no vendor named in opened sources (Huawei long present on the island).",
+    "Exact Huawei scope in Safe City (cameras, video cloud, storage) versus the other four subcontractors; outcome of the PM's proposed independent evaluation (c. 2025) and whether the 20-year lease continues.",
+    "Who installed traffic-monitoring equipment at the SAFE cable landing station at Baie Jacotet (2022 Sherry Singh allegation, hinted Indian involvement); code only if sourced.",
+    "Underlying model of mytGPT, and whether Mauritius Telecom's 40% Orange stake sale (DCD, June 2024) went ahead.",
+    "T3 subsea cable (Liquid Intelligent Technologies, 2023): equipment vendor not established.",
+    "Mauritius national AI unit (Dec 2025) and any provider partnerships; Ecofin items not opened."
+  ],
+  "searches_run": 9
+}

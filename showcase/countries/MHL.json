@@ -1,0 +1,120 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MHL",
+  "name": "Marshall Islands",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T17:18:27Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MHL-001",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Google (Halaihai trunk, Pacific Connect)",
+      "local_actor": "National Telecommunications Authority (NTA)",
+      "builder": null,
+      "financier": "US Government (USTDA-funded feasibility study; further US support stated)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-23",
+      "still_current": null,
+      "summary": "NTA announced the Marshall Islands will join Google's Pacific Connect via Iokwe, a nationally owned subsea branch of Google's Halaihai trunk landing at Majuro and Ebeye, with US government support after a USTDA-funded feasibility study.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/marshall-islands-advances-pacific-connect-cable-project/",
+          "publisher": "SubTel Forum (NTA press release)",
+          "source_tier": "S2",
+          "date": "2026-03-23",
+          "retrieved_at": "2026-10-25T17:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/marshall-islands-to-connect-to-googles-halaihai-subsea-cable/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-03",
+          "retrieved_at": "2026-10-25T17:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole us because international transit rides Google's Halaihai trunk; the Iokwe branch is to be RMI-owned and its equipment vendor is not named, so the branch alone could be domestic or another vendor's pole. Tier 2: feasibility study plus announced agreement, no signed supply contract seen. Both sources relay the same NTA release, so not independent. No project cost given."
+    },
+    {
+      "id": "MHL-002",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Tecore Networks",
+      "local_actor": "Blue Arcus Technologies (integrator); end operator not named in source",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-10-19",
+      "still_current": null,
+      "summary": "Integrator Blue Arcus selected Tecore Networks' virtualised mobility platform to supply the 4G LTE core (MME, gateways, HSS, VoLTE, fallback to GSM) for deployment in the Marshall Islands after an evaluation.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/6771-tecore-networks-supplying-4g-lte-core-to-blue-arcus-in-the-marshall-islands.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2016-10-19",
+          "retrieved_at": "2026-10-25T17:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the opened source does not state Tecore's home jurisdiction (believed US-based, unverified in this run). Tier 2: vendor selection, no contract or go-live reported. Pre-2020 and still_current unchecked, so the map halves it. Operator presumed to be NTA (sole national carrier) but not stated. RAN vendor unknown."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found no data-centre or AI-campus project in the Marshall Islands"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced and none plausible at this scale"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found no government partnership with a frontier model provider or national model"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "two searches (PRC vendor equipment; e-government/CCTV) found no surveillance or foreign-stack e-government deployment"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies NTA's mobile RAN and current LTE core? Was the 2016 Tecore core deployed and is it still in service?",
+    "Starlink's status: only aggregator/S5 pages surfaced; is there an NTA or government authorisation or service launch notice?",
+    "HANTRU1 (2010, Majuro/Kwajalein to Guam) ownership and whether it remains the sole cable; who will build the Iokwe branch and on what timeline?",
+    "Any Taiwan-funded e-government or ICT systems (RMI recognises Taiwan) and their vendor stack."
+  ],
+  "searches_run": 8
+}
