@@ -1,0 +1,319 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SLE",
+  "name": "Sierra Leone",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T21:20:04Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SLE-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "SALCAB / LeoneCom (state fibre company)",
+      "builder": "Huawei",
+      "financier": "Export-Import Bank of China (USD 30m loan, on-lent by Ministry of Finance to SALCAB)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-08-17",
+      "still_current": null,
+      "summary": "Huawei built and in August 2023 handed over phase two of the National Fibre Optic Backbone, 690 km reaching 19 cities, financed by a USD 30m China Exim loan on-lent to SALCAB over 15 years.",
+      "announced_value_usd": 30000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/content/P3gQ2MGx9beqnRD1",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2019-09-02",
+          "retrieved_at": "2026-10-25T21:17:44Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.wearetech.africa/fr/fils/actualites/telecom/sierra-leone-huawei-livre-avec-succes-le-reseau-national-de-fibre-optique",
+          "publisher": "We Are Tech Africa",
+          "source_tier": "S2",
+          "date": "2023-08-23",
+          "retrieved_at": "2026-10-25T21:17:44Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/sierra-leone-huawei-livre-avec-succes-le-reseau-national-de-fibre-optique.html",
+          "publisher": "OSIRIS",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:17:44Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Huawei is the equipment vendor, so pole prc. Tier 5 on the reported handover of a completed, nationwide phase. USD 30m is the loan amount, not a verified contract value. Phase one of the backbone (also reportedly Huawei/China Exim) was not researched. Corroboration: two opened S2 reports from different hosts, 2019 award and 2023 handover."
+    },
+    {
+      "id": "SLE-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Orange Sierra Leone",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-03-27",
+      "still_current": null,
+      "summary": "Orange Sierra Leone launched 4G in Freetown on 60 sites using Ericsson Radio System equipment, with plans to extend Ericsson radio nationwide across 2G to 5G under a longstanding partnership.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/5/2019/ericsson-and-orange-launch-4g-network-in-sierra-leone",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2019-04-01",
+          "retrieved_at": "2026-10-25T21:17:44Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.itnewsafrica.com/2019/03/ericsson-and-orange-launch-4g-network-in-sierra-leone/",
+          "publisher": "IT News Africa",
+          "source_tier": "S2",
+          "date": "2019-03",
+          "retrieved_at": "2026-10-25T21:17:44Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden), so pole third. RAN only; core vendor not stated. Tier 5 for a launched commercial 4G service, though only 60 sites in the capital at the time. Pre-2020 and not reconfirmed as current. Single opened source (S1 vendor release), so medium per spec."
+    },
+    {
+      "id": "SLE-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "National Communications Authority (NATCA), licensing",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06",
+      "still_current": true,
+      "summary": "Starlink received an operating licence from NATCA around June 2023 and launched retail satellite broadband in Sierra Leone about a year later, its 100th market, with hardware and monthly subscriptions sold directly.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://spaceinafrica.com/2024/06/13/spacexs-starlink-licensed-in-sierra-leone/",
+          "publisher": "Space in Africa",
+          "source_tier": "S2",
+          "date": "2024-06-13",
+          "retrieved_at": "2026-10-25T21:18:05Z",
+          "opened": true
+        },
+        {
+          "url": "https://connectingafrica.com/broadband/spacex-s-starlink-goes-live-in-sierra-leone",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2024-06-12",
+          "retrieved_at": "2026-10-25T21:18:05Z",
+          "opened": true
+        },
+        {
+          "url": "https://techpoint.africa/2024/06/12/starlink-available-sierra-leone/",
+          "publisher": "Techpoint Africa",
+          "source_tier": "S2",
+          "date": "2024-06-12",
+          "retrieved_at": "2026-10-25T21:18:05Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "SpaceX controls the constellation and terminals, so pole us. Tier 5 as a live commercial service; subscriber numbers unknown, so national scale reflects licence coverage, not adoption. still_current true only in that no withdrawal surfaced; not separately confirmed for 2026."
+    },
+    {
+      "id": "SLE-004",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Orange Sierra Leone (Orange group, France)",
+      "local_actor": "Orange Sierra Leone",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-29",
+      "still_current": null,
+      "summary": "Orange Sierra Leone opened a EUR 23m data centre in Bo, a replica of its Freetown facility serving as a disaster-recovery site and spreading network traffic to southern and eastern regions.",
+      "announced_value_usd": 26700000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/news-digital/0312-51084-sierra-leone-orange-opens-26-6m-data-center-as-disaster-recovery-hub",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S2",
+          "date": "2025-12-03",
+          "retrieved_at": "2026-10-25T21:18:05Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.wearetech.africa/fr/fils/actualites/telecom/orange-sierra-leone-inaugure-un-datacenter-pour-renforcer-la-disponibilite-du-reseau-telecoms",
+          "publisher": "We Are Tech Africa",
+          "source_tier": "S2",
+          "date": "2025-12-02",
+          "retrieved_at": "2026-10-25T21:18:52Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is the local subsidiary of France's Orange group, so pole third. Operator data centre, not an AI campus; no accelerators reported. USD 26.7m is the sources' own conversion of EUR 23m. Both reports likely derive from Orange's own statement; reviewer may discount corroboration."
+    },
+    {
+      "id": "SLE-005",
+      "layer": "applications",
+      "pole": null,
+      "controller": "Not stated (cameras described as Chinese-manufactured; Huawei monitors, Lenovo laptops)",
+      "local_actor": "Sierra Leone Police (Safe City project)",
+      "builder": null,
+      "financier": "Embassy of the People's Republic of China (donor)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08",
+      "still_current": null,
+      "summary": "The Chinese Embassy donated 45 CCTV cameras plus Huawei monitors and Lenovo laptops to the Sierra Leone Police Safe City project, extending coverage beyond about 36 cameras already installed in Freetown to other police regions.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.premiermedia-sl.com/?p=24769",
+          "publisher": "Premier Media SL",
+          "source_tier": "S3",
+          "date": "2025-08",
+          "retrieved_at": "2026-10-25T21:18:05Z",
+          "opened": true
+        },
+        {
+          "url": "https://awokonewspapersl.com/chinese-embassy-boosts-sierra-leones-safe-city-project-with-high-tech-surveillance-equipment/",
+          "publisher": "Awoko Newspaper",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:18:05Z",
+          "opened": false
+        },
+        {
+          "url": "https://moice.gov.sl/installation-of-cctv-cameras-in-strategic-locations-in-freetown/",
+          "publisher": "Ministry of Information and Civic Education, Sierra Leone",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:18:05Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: camera vendor not named; only monitors are identified as Huawei, and Chinese manufacture or a PRC donor does not establish the controller. Likely prc if cameras are Hikvision/Dahua/Huawei, which a reviewer should check. Tier 4 for delivered equipment; installation not confirmed. Ministry page is undated and names no vendor or funder. Small, so subnational."
+    },
+    {
+      "id": "SLE-006",
+      "layer": "models",
+      "pole": "third",
+      "controller": "NITDA and Awarri (Nigeria)",
+      "local_actor": "Ministry of Communication, Technology and Innovation; Christex Foundation",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11",
+      "still_current": null,
+      "summary": "Sierra Leone's ICT ministry signed an AI partnership with Nigeria's NITDA, Awarri and the Christex Foundation covering AI research, talent, local datasets, testbeds and localisation of AI models, alongside a wider digital cooperation framework.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/news-digital/2411-50772-nigeria-and-sierra-leone-sign-two-digital-cooperation-agreements",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S2",
+          "date": "2025-11",
+          "retrieved_at": "2026-10-25T21:18:52Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.premiermedia-sl.com/?p=26658",
+          "publisher": "Premier Media SL",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:18:52Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third on the Nigerian counterparties (NITDA, Awarri, developer of Nigeria's N-ATLAS model); no specific model named, so base_model null. Tier 1: cooperation partnership with no deployment. Legal form of the instrument not stated."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in facilities or models searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Phase one of the National Fibre Optic Backbone: vendor, financier and date (AidData lists China Exim projects, including a CDMA network loan, not opened).",
+    "Africell Sierra Leone and Sierratel radio/core vendors not established; Africell is US-headquartered but equipment vendor unknown.",
+    "Vendor of the Safe City CCTV cameras (Freetown, Bo, Makeni) and who operates the police monitoring centre.",
+    "ACE submarine cable landing (2012) supplier and any second cable not checked for HMN Tech involvement.",
+    "Any national government data centre (state-owned) project, its builder and financier, not found.",
+    "MoU with Kenyan firm Qhala (Oct 2025) on civil-service AI adoption seen but not coded: training only, no model provider named."
+  ],
+  "searches_run": 9
+}

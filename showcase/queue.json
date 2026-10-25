@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "NRU",
-  "PLW",
-  "PNG",
-  "PRK",
-  "PSE",
-  "SLB",
-  "SLE",
-  "SMR",
-  "SOM",
-  "SSD",
   "STP",
   "SUR",
   "SVK",
@@ -254,6 +244,16 @@
   "MNE",
   "MRT",
   "MUS",
-  "NER"
+  "NER",
+  "NRU",
+  "PLW",
+  "PNG",
+  "PRK",
+  "PSE",
+  "SLB",
+  "SLE",
+  "SMR",
+  "SOM",
+  "SSD"
  ]
 }

@@ -1,0 +1,456 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "PNG",
+  "name": "Papua New Guinea",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T21:21:14Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "PNG-001",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Papua New Guinea (owner)",
+      "local_actor": "PNG government departments; National Cyber Security Centre",
+      "builder": "Huawei",
+      "financier": "Export-Import Bank of China (US$53m loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018",
+      "still_current": null,
+      "summary": "Huawei-built, China Exim-financed national data centre for all government departments opened in 2018; a DFAT-funded 2019 review found broken encryption, end-of-life firewalls and unprotected core switches, with the facility barely used and decaying.",
+      "announced_value_usd": 53000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/australia-huaweis-papua-new-guinea-data-center-security-openly-broken-making-potential-spying-easy",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2020-08-12",
+          "retrieved_at": "2026-10-25T21:17:56Z",
+          "opened": true
+        },
+        {
+          "url": "https://computing.co.uk/news/4018843/huawei-centre-papua-guinea-exposes-government-secret-spying-report-warns",
+          "publisher": "Computing",
+          "source_tier": "S2",
+          "date": "2020-08-11",
+          "retrieved_at": "2026-10-25T21:17:56Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole domestic under the v0.2 building rule (state owner; Huawei builder, China Exim financier). REVIEWER CALL: the security findings concern Huawei-supplied IT equipment (firewalls, switches, encryption), which under the equipment rule would be prc. Tier 4 not 5: opened but only a handful of departments moved in, licences lapsed, and the review said a full rebuild was needed. still_current unknown; no later remediation or replacement found. US$53m is the loan, entered as announced value. Both reports trace to the same leaked review."
+    },
+    {
+      "id": "PNG-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei (construction, landing and terminal equipment, maintenance); China National Machinery Import and Export Corp (cable supply)",
+      "local_actor": "PNG DataCo Ltd (state-owned)",
+      "builder": null,
+      "financier": "Export-Import Bank of China (85% preferential buyer's credit); PNG government (15%)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-12",
+      "still_current": true,
+      "summary": "Huawei built the 5,457 km Kumul Submarine Cable Network linking 14 provinces and the Port Moresby and Madang data centres, Exim-financed; System 2 finished in 2018, now part of DataCo's national transmission backbone.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.thenational.com.pg/?p=289808",
+          "publisher": "The National (PNG)",
+          "source_tier": "S3",
+          "date": "2020-03-02",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/kumul-submarine-cable-network-lands-in-pngs-vanimo/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2020-03-05",
+          "retrieved_at": "2026-10-25T21:17:56Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/optical-fixed-networks/9554-png-s-kumul-submarine-cable-lands-in-kokopo.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2020-05-18",
+          "retrieved_at": "2026-10-25T21:17:56Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.businessadvantagepng.com/png-dataco-chief-executive-on-ntn-oracle-and-the-possibilities-of-ai/",
+          "publisher": "Business Advantage PNG",
+          "source_tier": "S3",
+          "date": "2026-02-05",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.thenational.com.pg/?p=414901",
+          "publisher": "The National (PNG)",
+          "source_tier": "S3",
+          "date": "2022-11-08",
+          "retrieved_at": "2026-10-25T21:20:18Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor Huawei (Huawei Marine/HMN Tech era), so prc. Tier 5: System 2 complete Dec 2018; System 1 Jayapura leg was outstanding in 2021 and its completion is not confirmed. still_current true from DataCo's 2026 description of 14 KSCN landing stations. After the Sept 2022 earthquake broke both systems, repair ships were not Chinese-named, but China reportedly gave US$3.47m for repairs (DCD 2023). Total project value not stated."
+    },
+    {
+      "id": "PNG-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telikom PNG and bmobile (state-owned operators)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-08-13",
+      "still_current": null,
+      "summary": "The State Enterprises Minister called Huawei PNG's preferred telecom equipment vendor, noting state-owned Telikom's 4G and bmobile's 2G/3G networks run on Huawei gear and that Exim-funded national broadband and Kumul cable works were Huawei-built.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.thenational.com.pg/?p=308024",
+          "publisher": "The National (PNG)",
+          "source_tier": "S3",
+          "date": "2020-08-13",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened S3 source relaying a ministerial statement, so uncorroborated. Tier 5 because the networks are described as operating on Huawei equipment. Exact network elements and any later vendor change unknown. The minister said replacing Huawei with Nokia or Ericsson would need someone to fund it. Telikom and bmobile have since merged under Telikom."
+    },
+    {
+      "id": "PNG-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Digicel PNG (Telstra-owned since 2022)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-09-01",
+      "still_current": null,
+      "summary": "After buying Digicel Pacific, whose PNG network holds most of the market, Telstra said it would keep the Huawei equipment running Digicel's 3G and 4G networks, only aligning with Australian vendor standards at future refreshes.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.channelnews.com.au/telstra-to-keep-huawei-infrastructure-for-digicel/",
+          "publisher": "ChannelNews",
+          "source_tier": "S3",
+          "date": "2022-09-01",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        },
+        {
+          "url": "https://pina.com.fj/2022/09/09/telstra-to-tear-out-digicels-huawei-equipment-in-next-refresh/",
+          "publisher": "Pacific Islands News Association (relaying AFR/PACNEWS)",
+          "source_tier": "S3",
+          "date": "2022-09-09",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lowyinstitute.org/external-publications/telstra-s-digicel-pacific-challenge",
+          "publisher": "Lowy Institute (republishing AFR)",
+          "source_tier": "S4",
+          "date": "2021-10-29",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.thenational.com.pg/?p=308024",
+          "publisher": "The National (PNG)",
+          "source_tier": "S3",
+          "date": "2020-08-13",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Two opened S3 reports from different hosts but no S1/S2, so not corroborated. Sources describe Digicel Pacific generally; The National (2020) names Digicel among PNG operators using Huawei. The Australian government financed most of the US$1.6bn acquisition (Lowy), which does not change the equipment pole. Telstra's pledge to remove Huawei 'at the next refresh' is NOT coded as a reversal: it is a stated intention with no date, and no removal was found. REVIEWER CALL whether to code it as a tier-1 intent."
+    },
+    {
+      "id": "PNG-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Vocus Group (Australian prime contractor); submarine equipment supplier not named in opened sources",
+      "local_actor": "PNG DataCo Ltd (co-owner with the Commonwealth of Australia and Solomon Islands Submarine Cable Co)",
+      "builder": "Vocus Group",
+      "financier": "Government of Australia (majority), with PNG and Solomon Islands co-funding",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-02",
+      "still_current": true,
+      "summary": "The Australia-funded 4,700 km Coral Sea Cable linking Port Moresby, Honiara and Sydney, built by Vocus at about AUD 200m, has carried PNG traffic since early 2020 and is co-owned by DataCo and Australia.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://png.embassy.gov.au/pmsb/1148.html",
+          "publisher": "Australian High Commission, Port Moresby",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:17:56Z",
+          "opened": true
+        },
+        {
+          "url": "https://itwire.com/it-industry-news/telecoms-and-nbn/final-splice-of-coral-sea-cable-system-completed",
+          "publisher": "iTWire",
+          "source_tier": "S3",
+          "date": "2019-09-30",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/kumul-submarine-cable-network-nears-completion/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2021-02-05",
+          "retrieved_at": "2026-10-25T21:20:18Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.businessadvantagepng.com/png-dataco-chief-executive-on-ntn-oracle-and-the-possibilities-of-ai/",
+          "publisher": "Business Advantage PNG",
+          "source_tier": "S3",
+          "date": "2026-02-05",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third (Australia): opened sources name only Vocus as prime contractor and Australia as main funder and co-owner; the wet-plant supplier is not named, so the equipment-rule controller is inferred. iTWire notes the cable was first awarded to Huawei by Solomon Islands and reversed; that reversal belongs to SLB, not PNG. PGK480m/AUD 200m total cost not converted. High Commission page undated."
+    },
+    {
+      "id": "PNG-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Datec PNG (subsidiary of state-owned Telikom PNG)",
+      "local_actor": "Telikom PNG",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08",
+      "still_current": null,
+      "summary": "Datec PNG, a Telikom subsidiary, launched Kumul Cloud Infinity in Port Moresby, billed as PNG's first sovereign cloud and AI-ready data centre, with CloudSigma as cloud partner and a second Lae site planned.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/ai-data-center-and-sovereign-cloud-launched-in-papua-new-guinea/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-08-26",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/data-centres-networks/20726-datec-launches-pngs-first-sovereign-cloud-and-ai-data-centre.html.md",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-08-25",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is a state-owned PNG group, so domestic. Tier 4 not 5: launched, but capacity, GPU count and investment undisclosed. CloudSigma (cloud software partner) home jurisdiction not established here, so no separate cloud finding. Geogas PNG provides gas-based power; terms unknown. Both reports likely draw on the same launch.",
+      "bundle_id": "PNG-B1"
+    },
+    {
+      "id": "PNG-007",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia (H200 GPUs); Hewlett Packard Enterprise (equipment)",
+      "local_actor": "Datec PNG (Telikom PNG)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08",
+      "still_current": null,
+      "summary": "PNG's first AI-ready data centre, Datec's Kumul Cloud Infinity, runs on Nvidia H200 GPUs, with Hewlett Packard Enterprise supplying equipment, according to the operator's chairman at the August 2026 launch.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/ai-data-center-and-sovereign-cloud-launched-in-papua-new-guinea/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-08-26",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/data-centres-networks/20726-datec-launches-pngs-first-sovereign-cloud-and-ai-data-centre.html.md",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-08-25",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "US chip vendor, so pole us. Number of GPUs and value undisclosed; tier 4 as a deployed but unsized installation. HPE is named only in Developing Telecoms.",
+      "bundle_id": "PNG-B1"
+    },
+    {
+      "id": "PNG-008",
+      "layer": "cloud",
+      "pole": "us",
+      "controller": "Oracle (Oracle Cloud Infrastructure)",
+      "local_actor": "PNG DataCo Ltd (state-owned)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-05",
+      "still_current": null,
+      "summary": "DataCo's chief executive described a recently agreed partnership under which Oracle supplies cloud hardware and software run under the DataCo brand, plus planned digitalisation work for five state enterprises not yet signed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.businessadvantagepng.com/png-dataco-chief-executive-on-ntn-oracle-and-the-possibilities-of-ai/",
+          "publisher": "Business Advantage PNG",
+          "source_tier": "S3",
+          "date": "2026-02-05",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Cloud layer used because PNG has no global cloud row and this is clearly a cloud platform. Pole us: Oracle supplies and controls the OCI stack even under DataCo branding. Tier 2: partnership 'agreed', no signed contract or value reported; SOE work explicitly unsigned. Single S3 interview."
+    },
+    {
+      "id": "PNG-009",
+      "layer": "applications",
+      "pole": null,
+      "controller": "Not named (Chinese-government-funded system)",
+      "local_actor": "Royal PNG Constabulary; National Capital District",
+      "builder": null,
+      "financier": "Government of China (form of funding not stated)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-10-29",
+      "still_current": null,
+      "summary": "A Chinese-government-funded K33.9m city surveillance network of short- and long-range cameras along Port Moresby's main roads, monitored from police headquarters, was installed ahead of the 2018 APEC meetings.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.thenational.com.pg/?p=228553",
+          "publisher": "The National (PNG)",
+          "source_tier": "S3",
+          "date": "2018-10-29",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the camera and system vendor is not named, and funding origin does not set the controller (a PRC vendor is plausible but unconfirmed). Tier 4 as installed. Pre-2020 and still_current unknown; a 2025 government CCTV command centre in Port Moresby (pmnec.gov.pg) names no vendor and may or may not reuse this system. K33.9m not converted."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "no national model or government frontier-model partnership surfaced in data-centre and AI searches; no dedicated models search run"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "only AI-tied item is Geogas PNG named as gas-power partner for Datec's AI data centre, with no plant, capacity or contract details"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who controls the IT equipment in the Huawei-built National Data Centre today, and was it rebuilt, remediated or replaced after the 2019 DFAT-funded review?",
+    "Has Telstra/Digicel PNG begun replacing Huawei RAN or core equipment, and with which vendor? Has Vodafone PNG (launched 2022, ~500+ sites) disclosed its RAN vendor?",
+    "Was KSCN System 1 (including the Jayapura link) completed, and who holds the maintenance contract (Huawei/HMN Tech)?",
+    "Who supplied the Port Moresby 2018 APEC surveillance cameras, and does the 2025 CCTV command centre reuse them?",
+    "What is the Coral Sea Cable's wet-plant supplier (opened sources name only Vocus)?",
+    "Is the Oracle-DataCo OCI partnership a signed contract, and what is CloudSigma's role and jurisdiction at Kumul Cloud Infinity?",
+    "Phase 1 National Broadband Network (Exim-funded, Huawei) scope and status not independently sourced."
+  ],
+  "searches_run": 9
+}

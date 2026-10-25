@@ -1,0 +1,303 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SLB",
+  "name": "Solomon Islands",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T21:20:36Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SLB-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei Marine (Huawei Technologies)",
+      "local_actor": "Solomon Islands government (Solomon Island Submarine Cable Company)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "2017 agreement with Huawei Marine to build the Solomon Islands international submarine cable (Sydney landing)",
+      "reversal_reason": "geopolitical",
+      "date": "2018-01",
+      "still_current": true,
+      "summary": "After the Solomons agreed a cable deal with Huawei in 2017, Australia, citing security concerns, refused it a Sydney landing; Vocus, on Australia's behalf, replaced Huawei and the Australia-funded Coral Sea Cable was built instead.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itwire.com/business-it-news/business-technology/vocus-replaces-huawei-for-solomon-islands-cable-project",
+          "publisher": "iTWire",
+          "source_tier": "S2",
+          "date": "2018-01-17",
+          "retrieved_at": "2026-10-25T21:18:07Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.odt.co.nz/news/world/australia-fund-internet-cables-pacific-neighbours",
+          "publisher": "Otago Daily Times",
+          "source_tier": "S3",
+          "date": "2018-07-31",
+          "retrieved_at": "2026-10-25T21:18:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/pacific-island-now-turns-to-australia-for-subsea-cable/",
+          "publisher": "SubTel Forum (Reuters republication)",
+          "source_tier": "S2",
+          "date": "2021-06-24",
+          "retrieved_at": "2026-10-25T21:18:07Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 3 assumes the 2017 Huawei agreement was a signed contract (iTWire: contract 'awarded'; ODT: deal 'agreed'); value undisclosed. Dated to the January 2018 Vocus replacement; the decision itself was late 2017. Still current: SubTel Forum (2021) reports the Australian-built system was completed in 2019."
+    },
+    {
+      "id": "SLB-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (then part of Nokia)",
+      "local_actor": "Solomon Island Submarine Cable Company Ltd (government-owned)",
+      "builder": "Vocus Group (Australia)",
+      "financier": "Australian Government, DFAT (A$91m, about two-thirds of cost)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019",
+      "still_current": null,
+      "summary": "The Coral Sea Cable system, about 4,700 km linking Sydney with Papua New Guinea and Honiara, was completed in 2019; Australia paid most of the cost, Vocus delivered it and Alcatel Submarine Networks laid the cable.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.odt.co.nz/news/world/australia-fund-internet-cables-pacific-neighbours",
+          "publisher": "Otago Daily Times",
+          "source_tier": "S3",
+          "date": "2018-07-31",
+          "retrieved_at": "2026-10-25T21:18:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/pacific-island-now-turns-to-australia-for-subsea-cable/",
+          "publisher": "SubTel Forum (Reuters republication)",
+          "source_tier": "S2",
+          "date": "2021-06-24",
+          "retrieved_at": "2026-10-25T21:18:07Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor ASN, so pole third (French/Finnish at the time), though the financier and builder are Australian; a reviewer may weigh the Australian funder and Vocus operating role. ODT names Vocus as cable operator; the Solomons landing is held by the state-owned SISCC. A$91m is funding for the whole PNG-Solomons system, not converted, and not a Solomons-only value. Current operating status not checked this run."
+    },
+    {
+      "id": "SLB-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Communication and Aviation (Solomon Islands National Broadband Infrastructure Project)",
+      "builder": "China Harbour Engineering Company (CHEC)",
+      "financier": "Export-Import Bank of China (20-year loan at 1%)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-08",
+      "still_current": true,
+      "summary": "The government borrowed from China Exim to build 161 Huawei mobile broadband towers nationwide with CHEC, despite a KPMG warning of losses; by July 2025 about 40 sites were on air, with completion targeted for 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/solomon-islands-to-borrow-nearly-100m-from-china-to-deploy-more-than-100-mobile-towers",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-08-19",
+          "retrieved_at": "2026-10-25T21:18:07Z",
+          "opened": true
+        },
+        {
+          "url": "https://solomons.gov.sb/?p=50438",
+          "publisher": "Office of the Prime Minister and Cabinet, Solomon Islands Government",
+          "source_tier": "S1",
+          "date": "2025-05-01",
+          "retrieved_at": "2026-10-25T21:18:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sibconline.com.sb/?p=64453",
+          "publisher": "Solomon Islands Broadcasting Corporation",
+          "source_tier": "S4",
+          "date": "2025-07-31",
+          "retrieved_at": "2026-10-25T21:18:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rfa.org/english/news/china/solomons_huawei-11012022123951.html",
+          "publisher": "Radio Free Asia / BenarNews",
+          "source_tier": "S4",
+          "date": "2022-11-01",
+          "retrieved_at": "2026-10-25T21:18:07Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomstechnews.com/news/solomon-islands-secures-66m-china-huawei-towers/",
+          "publisher": "Telecoms Tech News",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:17:46Z",
+          "opened": false
+        },
+        {
+          "url": "https://www.lightreading.com/asia/solomon-islands-hands-contract-to-huawei-despite-financial-warning/d/d-id/779784",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:17:46Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4: loan closed and sites partly operational (about 40 of 161 by July 2025, per state broadcaster SIBC), not yet at scale. Value left null because sources conflict: DCD gives CNY 449m reported as about US$96m, RFA US$65m, a search title US$66m. Operating operator not named in any opened source; Huawei is the equipment vendor, so pole prc."
+    },
+    {
+      "id": "SLB-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Malaita Provincial Government",
+      "builder": "China Harbour Engineering Company (CHEC)",
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": true,
+      "reversal_of": "Malaita's share (27 towers) of the China Exim-financed Huawei national tower rollout",
+      "reversal_reason": "geopolitical",
+      "date": "2022-11",
+      "still_current": false,
+      "summary": "Malaita's provincial assembly refused the 27 Huawei towers planned for the province, citing the Auki Communiqué banning Chinese-funded projects after the 2019 switch from Taiwan to Beijing; sites in Malaita later went on air.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rfa.org/english/news/china/solomons_huawei-11012022123951.html",
+          "publisher": "Radio Free Asia / BenarNews",
+          "source_tier": "S4",
+          "date": "2022-11-01",
+          "retrieved_at": "2026-10-25T21:18:07Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sibconline.com.sb/three-sites-of-sinbip-on-air-in-choiseul-province-and-malaita-province/embed/",
+          "publisher": "Solomon Islands Broadcasting Corporation",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:19:03Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2023/2/7/china-sceptic-leader-of-solomon-islands-largest-province-ousted",
+          "publisher": "Al Jazeera",
+          "source_tier": "S3",
+          "date": "2023-02-07",
+          "retrieved_at": "2026-10-25T21:18:41Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "RFA/BenarNews is US-government funded, so treated as S4; reviewer may rate it S3. still_current false: the China-sceptic premier was ousted in February 2023 (search title only) and an undated SIBC item reports SINBIP sites on air in Malaita, so the refusal appears to have lapsed."
+    },
+    {
+      "id": "SLB-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Chinese police (PRC police liaison team in Solomon Islands)",
+      "local_actor": "Royal Solomon Islands Police Force",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09",
+      "still_current": null,
+      "summary": "Chinese police piloted China's Fengqiao village-monitoring model in Fighter 1 near Honiara, collecting fingerprints, palm prints and household data, with plans to expand nationally; it was also promoted in 16 Malaita villages.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://srnnews.com/china-pilots-village-surveillance-in-solomon-islands-seeking-stability/",
+          "publisher": "SRN News (Reuters republication)",
+          "source_tier": "S3",
+          "date": "2025-09-11",
+          "retrieved_at": "2026-10-25T21:19:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.hawaiipublicradio.org/pacific-news-minute/2025-10-15/pacific-news-minute-china-starts-controversial-surveillance-plan-in-solomon-islands",
+          "publisher": "Hawai'i Public Radio",
+          "source_tier": "S3",
+          "date": "2025-10-15",
+          "retrieved_at": "2026-10-25T21:19:03Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pilot so tier 2. Both opened sources trace to one Reuters report and neither is S1/S2, so not corroborated. No technology vendor, camera system or data-storage location is named; pole prc because Chinese police run the collection. Reviewer may judge this a policing practice rather than an AI-stack application. Builds on the 2022 security pact and 2023 policing agreement."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found only a May 2025 PM-office mention of a proposed national data centre (no controller, vendor or tier); no data-centre project coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced; very small market"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; only a passing mention of AI in meteorological services in the May 2025 PM-office release surfaced"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who operates the SINBIP Huawei towers (Our Telekom, bmobile-Vodafone, or a state entity), and what is the loan value in USD (sources give US$65m, US$66m and US$96m)?",
+    "RAN/core vendors of Our Telekom and bmobile-Vodafone were not established (Our Telekom's 2017 4G release names no vendor).",
+    "Was the 2017 Huawei Marine cable agreement a signed contract, and what was its value?",
+    "Proposed national data centre (May 2025 PM release): vendor, controller, financing?",
+    "What equipment did the 2023 China policing agreement supply (Honiara traffic control system, cyber), and from which vendors? Where is Fengqiao biometric data stored?",
+    "Is the Coral Sea Cable still the sole international link, and is any HMN Tech or PRC-built domestic cable present?"
+  ],
+  "searches_run": 9
+}

@@ -1,0 +1,281 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SSD",
+  "name": "South Sudan",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T21:20:25Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SSD-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of South Sudan (Ministry of Telecommunications and Postal Services)",
+      "builder": null,
+      "financier": "China Eximbank (USD 200m loan, 2013)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015-03-17",
+      "still_current": null,
+      "summary": "Huawei was contracted for a China Eximbank-financed national broadband backbone of about 1,607 km of fibre linking to undersea cables via Uganda and Tanzania; ground was broken in March 2015 but completion is not evidenced.",
+      "announced_value_usd": 200000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/69091",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:19:01Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 4 on the reported 2015 groundbreaking; AidData judges the project apparently never completed, and 2025 reporting describes a new national backbone still being designed, which suggests stall or abandonment, but no cancellation is documented, so no reversal coded. AidData also relays a 2013 ministerial complaint alleging Huawei overpricing. AidData treated as S2 research dataset; reviewer may prefer S1/S3. Single opened source, not corroborated."
+    },
+    {
+      "id": "SSD-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "MTN South Sudan (link unconfirmed)",
+      "builder": null,
+      "financier": "China Eximbank (EUR 200m loan to ZTE)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2009",
+      "still_current": null,
+      "summary": "China Eximbank lent EUR 200m to ZTE for a South Sudan mobile telecoms network, possibly as vendor financing for MTN's network expansion; AidData flags the MTN link and the 2009 versus 2012 date as unconfirmed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/58378",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:19:01Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 4 read as financing closed (loan commitment recorded); disbursement and build not confirmed. Date 2009 per a ZTE subsidiary representative; a law-firm note gives 2012 and may be the same loan. Value in EUR not converted, so announced_value_usd null. Pre-2020 and still_current unchecked. Which operator networks ZTE equips today is unestablished."
+    },
+    {
+      "id": "SSD-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Digitel South Sudan",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06",
+      "still_current": null,
+      "summary": "Digitel, the only South Sudanese-owned mobile operator, ran the country's first non-standalone 5G trial in Juba with ZTE, using 3.5 GHz spectrum; no commercial launch date was set.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/digitel-launches-south-sudans-first-5g-trial/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-06-18",
+          "retrieved_at": "2026-10-25T21:19:01Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/16866-digitel-launched-first-5g-trial-in-south-sudan.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2024-06-18",
+          "retrieved_at": "2026-10-25T21:19:01Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 (pilot). Both reports likely derive from the same operator announcement; treated as corroborated on the LUX-002 precedent. Digitel's 2G/3G/4G vendor not stated; ZTE as trial partner suggests but does not prove ZTE supplies its live network."
+    },
+    {
+      "id": "SSD-004",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink Services LLC)",
+      "local_actor": "National Communication Authority",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06-26",
+      "still_current": null,
+      "summary": "The NCA issued Starlink a satellite landing-rights licence and a provisional service licence, then approved its consumer tariffs, enabling nationwide satellite broadband sold via licensed local distributors.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.eyeradio.org/south-sudan-inks-satellite-internet-deal-with-elon-musks-starlink/",
+          "publisher": "Eye Radio",
+          "source_tier": "S3",
+          "date": "2024-06-27",
+          "retrieved_at": "2026-10-25T21:19:01Z",
+          "opened": true
+        },
+        {
+          "url": "https://techpoint.africa/2024/07/18/south-sudan-approves-starlink/",
+          "publisher": "Techpoint Africa",
+          "source_tier": "S2",
+          "date": "2024-07-18",
+          "retrieved_at": "2026-10-25T21:19:01Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4 on licence issued; take-up scale not known, so not tier 5. Starlink controls the satellite service, so pole us. Techpoint treated as specialist tech press (S2)."
+    },
+    {
+      "id": "SSD-005",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Verint Systems Ltd (Israeli subsidiary of US Verint Systems Inc.)",
+      "local_actor": "National Security Service; MTN South Sudan; Vivacell",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015",
+      "still_current": null,
+      "summary": "Amnesty found the NSS acquired communications-interception equipment and support services from Verint's Israeli unit between at least 2015 and 2017, with operators required to pay for it and NSS gaining direct access to their networks.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://cyberscoop.com/south-sudan-government-surveillance-verint-amnesty-international/",
+          "publisher": "CyberScoop",
+          "source_tier": "S2",
+          "date": "2021-02-02",
+          "retrieved_at": "2026-10-25T21:19:01Z",
+          "opened": true
+        },
+        {
+          "url": "https://mg.co.za/2021-02-03-state-surveillance-rife-in-south-sudan-amnesty-finds/",
+          "publisher": "Mail & Guardian",
+          "source_tier": "S3",
+          "date": "2021-02-03",
+          "retrieved_at": "2026-10-25T21:19:01Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third (Israel), the supplying subsidiary's jurisdiction; its parent was US-listed at the time, so a reviewer may prefer us (intercept unit since spun off as Cognyte, Israel). Tier 5 inferred from interception reportedly operational across operators. The Amnesty report is dated February 2021, not 2019 as the lead said. Both reports relay Amnesty, so effectively one origin. MTN says an Israeli firm installed a box in 2013. Pre-2020; still_current unchecked."
+    },
+    {
+      "id": "SSD-006",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Vivacell (Fattouch Investment Group, Lebanon); equipment vendor not identified",
+      "local_actor": "National Communication Authority",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Vivacell mobile operations and claimed operating licence",
+      "reversal_reason": "regulatory",
+      "date": "2018-03-20",
+      "still_current": null,
+      "summary": "The NCA suspended Lebanese-owned operator Vivacell, about 900,000 subscribers, over regulatory non-compliance and a tax dispute; an arbitration award later ordered South Sudan to pay about USD 1bn, which the government said it would appeal.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://mail.telecomreview.com/articles/telecom-operators/2168-lebanese-owned-mobile-operator-suspended-in-south-sudan",
+          "publisher": "Telecom Review",
+          "source_tier": "S2",
+          "date": "2018-03",
+          "retrieved_at": "2026-10-25T21:19:01Z",
+          "opened": true
+        },
+        {
+          "url": "https://itweb.africa/content/DZQ587V8oGPqzXy2",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2023-01-26",
+          "retrieved_at": "2026-10-25T21:19:01Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reversal of an operator's licence to operate, reason regulatory (tax/compliance). Pole null because the network equipment vendor is not stated; the operator's owner is Lebanese, which under the equipment rule does not set the pole. Tier 5 as the tier of the thing reversed: a nationally operating mobile network serving about 900,000 subscribers. Does not move the map."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search for a Juba or national data centre found only directory listings (Inflect) and no project since 2023"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase surfaced in other searches"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no model partnership surfaced in other searches"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Was the Huawei/China Eximbank national fibre backbone (2013 loan, 2015 groundbreaking) completed, abandoned or cancelled? Any formal termination would be a reversal.",
+    "Who is the contractor and financier for the 2,400 km national fibre backbone announced in 2025 (USD 67m programme, World Bank no-objection pending, construction slated from December 2025)?",
+    "Which vendors supply MTN South Sudan's and Zain South Sudan's radio and core networks today? No vendor evidence found for Zain.",
+    "Parallel Wireless (US, Open RAN) reported deployments in South Sudan in 2024 (DCD, 11 Jan 2024); which operator and how many sites?",
+    "Is the Verint/NSS interception capability still in use, and was any further surveillance procurement (incl. Chinese safe-city kit) made after 2017?",
+    "Outcome of South Sudan's appeal against the Vivacell arbitration award."
+  ],
+  "searches_run": 8
+}

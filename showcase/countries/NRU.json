@@ -1,0 +1,176 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "NRU",
+  "name": "Nauru",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T21:19:56Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "NRU-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "NEC",
+      "local_actor": "Cenpac Corporation (state-owned; Naoero Fibre Cable Division / Nauru Fibre Cable Corporation)",
+      "builder": null,
+      "financier": "Grant funding from Australia (AIFFP, up to AUD 65m), Japan and the United States",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06-24",
+      "still_current": true,
+      "summary": "NEC built the 2,250 km East Micronesia Cable linking Nauru, Kiribati and FSM towards Guam; it landed at Yaren in August 2025, passed to Cenpac in May 2026 and went live in June 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nec.com/en/press/202306/global_20230606_02.html",
+          "publisher": "NEC",
+          "source_tier": "S1",
+          "date": "2023-06-06",
+          "retrieved_at": "2026-10-25T21:18:11Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.nec.com/en/press/202605/global_20260515_02.html",
+          "publisher": "NEC",
+          "source_tier": "S1",
+          "date": "2026-05-15",
+          "retrieved_at": "2026-10-25T21:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/emcs-subsea-cable-lands-on-island-of-nauru/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-08-12",
+          "retrieved_at": "2026-10-25T21:18:44Z",
+          "opened": true
+        },
+        {
+          "url": "https://aiffp.gov.au/news/east-micronesia-cable-lands-second-pacific-location-nauru",
+          "publisher": "Australian Infrastructure Financing Facility for the Pacific",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:18:44Z",
+          "opened": true
+        },
+        {
+          "url": "https://islandtimes.org/naoeros-east-micronesia-cable-goes-live-ending-reliance-on-satellite-internet/",
+          "publisher": "Island Times",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://lightwaveonline.com/network-design/high-speed-networks/article/14294814/nec-named-supply-and-installation-contractor-for-the-east-micronesia-cable-system",
+          "publisher": "Lightwave",
+          "source_tier": "S2",
+          "date": "2023-06-06",
+          "retrieved_at": "2026-10-25T21:18:11Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "NEC (Japan) is the cable equipment vendor, so pole third under the equipment rule. Tier 5 from a go-live report (Island Times) after NEC's handover; the go-live date rests on one S3 source. Total project AUD 135m (DCD: about USD 95m) is a programme cost reported in press, not a verified award value, so not coded. Contract signed with Nauru Fibre Cable Corp; NEC 2026 names Cenpac as recipient, read as the same state entity. The cable replaced the HMN Tech-bid tender (NRU-002). Coded after Nauru's January 2024 switch to PRC recognition, with no change found."
+    },
+    {
+      "id": "NRU-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "HMN Technologies (formerly Huawei Marine Networks)",
+      "local_actor": "Government of Nauru (with Kiribati and FSM, World Bank-led tender)",
+      "builder": null,
+      "financier": "World Bank (lead), Asian Development Bank involved",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "HMN Technologies' lowest bid in the World Bank-led 2020 East Micronesia Cable tender",
+      "reversal_reason": "geopolitical",
+      "date": "2021-06",
+      "still_current": true,
+      "summary": "The World Bank closed the East Micronesia Cable tender without award after US security warnings about HMN Tech, the lowest bidder by over 20%; Nauru reportedly first raised concerns. All bids were ruled non-compliant.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://pina.com.fj/2021/06/22/pacific-undersea-cable-project-sinks-after-u-s-warns-against-chinese-bid/",
+          "publisher": "PINA (relaying Reuters/PACNEWS)",
+          "source_tier": "S3",
+          "date": "2021-06-22",
+          "retrieved_at": "2026-10-25T21:18:22Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/east-micronesia-subsea-cable-scrapped-as-us-says-chinese-firms-pose-threat",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2021-06-18",
+          "retrieved_at": "2026-10-25T21:18:22Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/pacific-island-of-nauru-considers-submarine-cable-to-australia-after-rejecting-chinese-bid",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2021-06-25",
+          "retrieved_at": "2026-10-25T21:18:11Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.nippon.com/en/news/reu20210618KCN2DU06V/",
+          "publisher": "Nippon.com (Reuters)",
+          "source_tier": "S3",
+          "date": "2021-06-18",
+          "retrieved_at": "2026-10-25T21:17:51Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "An exclusion of a PRC cable vendor, so pole prc, reversal geopolitical. Tier 2 is a judgment: the thing reversed was a bid in a binding procurement that never reached award, so tier 3 overstates it; reviewer may prefer tier 1. All sources trace to the same Reuters reporting; corroboration counted on separate hosts, reviewer may disagree. Reported USD 72.6m tender value not coded as announced. Confidence medium, not high, because of that single origin. Nauru was a Taiwan ally at the time."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "no data-centre or AI-campus project surfaced in 8 searches; cable landing station is covered under NRU-001"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase plausible or surfaced for a state of ~12,000 people"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no government model partnership surfaced in other searches"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search for Huawei/ZTE/PRC-aid ICT, e-government or CCTV projects found none; only a Taiwan ICT-training MoU (undated) surfaced"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio and core vendor for the Digicel Nauru (Telstra-owned) and Cenpac mobile networks is not established; 2016 Digicel 4G launch reporting names only O3b satellite backhaul.",
+    "Has the January 2024 switch from Taiwan to PRC recognition produced any PRC ICT aid, Huawei/ZTE contract or safe-city project? None found in one search.",
+    "Fate of the Taiwan Digital Opportunity Centre MoU at Nauru's ICT department (loopnauru.com/node/99871, undated) after the 2024 switch; not coded because undated.",
+    "Confirm EMCS go-live date (24 June 2026 per Island Times) from an S1/S2 source and the share of Nauru capacity held by Cenpac versus Digicel."
+  ],
+  "searches_run": 8
+}

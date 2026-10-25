@@ -1,0 +1,253 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "PLW",
+  "name": "Palau",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T21:20:24Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "PLW-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Palau National Communications Corporation (PNCC, state-owned; mobile arm PalauCel)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-02",
+      "still_current": null,
+      "summary": "A Senate committee chair wrote to state telco PNCC that it relied exclusively on Huawei service and equipment, particularly for mobile networking, and asked it to weigh security concerns raised in the US.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://islandtimes.org/committee-chair-to-pncc-consider-issue-on-prohibition-of-huawei-zte/",
+          "publisher": "Island Times",
+          "source_tier": "S3",
+          "date": "2018-02-16",
+          "retrieved_at": "2026-10-25T21:19:07Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 inferred from the letter's description of an operating national mobile network on Huawei kit; contract dates and values not found. Single opened S3, so not corroborated. PNCC is Palau's only mobile operator per Japan MIC country profile. Superseded in part by PLW-002/PLW-003; still_current left null because completion of the Huawei removal was not confirmed."
+    },
+    {
+      "id": "PLW-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "PNCC; President Surangel Whipps Jr.",
+      "builder": null,
+      "financier": "US Department of the Interior, Office of Insular Affairs (USD 2,684,500 Technical Assistance grant)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei equipment in PNCC's core mobile network",
+      "reversal_reason": "geopolitical",
+      "date": "2021-08",
+      "still_current": null,
+      "summary": "Palau's president announced Huawei technology would be removed from PNCC's core mobile network, funded by a US Interior grant of about USD 2.7m; the first replacement contract was cancelled over procurement lapses and re-tendered in January 2022.",
+      "announced_value_usd": 2684500,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://islandtimes.org/palau-to-remove-huawei-technology-from-pncc/",
+          "publisher": "Island Times",
+          "source_tier": "S3",
+          "date": "2021-08-24",
+          "retrieved_at": "2026-10-25T21:19:07Z",
+          "opened": true
+        },
+        {
+          "url": "https://pina.com.fj/2021/10/12/u-s-grant-for-contact-tracing-system-will-also-clean-palau-telecommunications-network/",
+          "publisher": "Pacific Islands News Association (PINA)",
+          "source_tier": "S3",
+          "date": "2021-10-12",
+          "retrieved_at": "2026-10-25T21:19:07Z",
+          "opened": true
+        },
+        {
+          "url": "https://islandtimes.org/pnccs-ceo-and-coo-resign-core-network-replacement-re-bid-out/",
+          "publisher": "Island Times",
+          "source_tier": "S3",
+          "date": "2022-01-04",
+          "retrieved_at": "2026-10-25T21:19:07Z",
+          "opened": true
+        },
+        {
+          "url": "https://ustda.gov/?p=25333",
+          "publisher": "US Trade and Development Agency",
+          "source_tier": "S1",
+          "date": "2023",
+          "retrieved_at": "2026-10-25T21:19:40Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded as a reversal on announcement plus a funded, tendered replacement; completion of the core swap was not confirmed in any source. Geopolitical: funded by the US government explicitly to remove Huawei. The 2023 USTDA solicitation (S1) plans replacing the core and 54 cell sites with 'secure and trusted' technology but does not name Huawei, so it is not counted as corroboration; no S1/S2 names Huawei. Tier 5 is the tier of the operating network reversed. Blue Arcus Technologies, first awardee, contract terminated by mutual agreement (regulatory, procurement), not separately coded. Grant value is an announced US grant, not a contract value."
+    },
+    {
+      "id": "PLW-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Dell Technologies, Groundhog Technologies, LotusFlare (US suppliers); Open RAN radio vendor not named",
+      "local_actor": "Palau National Communications Corporation (PNCC)",
+      "builder": null,
+      "financier": "USTDA (feasibility/technical assistance grant); US with Quad partners Australia, India and Japan pledged about USD 20m",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-20",
+      "still_current": null,
+      "summary": "Following a USTDA-funded study, PNCC selected US suppliers Dell, Groundhog and LotusFlare for a nationwide 4G/5G standalone Open RAN network, billed as the Pacific's first, under construction for full operation around Q1 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ustda.gov/palau-selects-trusted-u-s-digital-technology-providers-based-on-ustda-technical-assistance-findings/",
+          "publisher": "US Trade and Development Agency",
+          "source_tier": "S1",
+          "date": "2026-02-20",
+          "retrieved_at": "2026-10-25T21:18:02Z",
+          "opened": true
+        },
+        {
+          "url": "https://islandtimes.org/quad-supports-first-open-ran-deployment-in-palau/",
+          "publisher": "Island Times",
+          "source_tier": "S3",
+          "date": "2026-02-27",
+          "retrieved_at": "2026-10-25T21:18:29Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.businesswire.com/news/home/20260226869218/en/PNCC-Selects-LotusFlare-to-Power-Digital-BSS-and-Commerce-Platform-for-New-4G5G-Standalone-Network",
+          "publisher": "LotusFlare via Business Wire",
+          "source_tier": "S4",
+          "date": "2026-02-26",
+          "retrieved_at": "2026-10-25T21:19:07Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole us on the named suppliers (Dell servers/storage, Groundhog analytics, LotusFlare BSS); the radio units and core vendor are not named, and the release says 'including three U.S. suppliers', so other (possibly Japanese or Indian) vendors may be involved. Tier 4 because the network is described as under construction; reviewer may prefer 3 (vendor selection). Island Times likely relays the USTDA release. USD 20m is a Quad pledge, not a contract value, so not entered. Japan's MIC also planned an NTT/IIJ Open RAN effort in Palau (IEEE ComSoc tech blog, undated), relation unclear."
+    },
+    {
+      "id": "PLW-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "NEC (cable supplier)",
+      "local_actor": "Belau Submarine Cable Corporation (BSCC, state-owned)",
+      "builder": "NEC",
+      "financier": "Australia AIFFP (AUD 12.6m loan, AUD 2.1m grant); Japan; United States; Palau government",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-06",
+      "still_current": null,
+      "summary": "State-owned BSCC landed Palau's second submarine cable, a spur to the Google/Meta-backed Echo trans-Pacific system, at Ngardmau in 2022 with Australian, Japanese and US funding; service awaited Echo, delayed past early 2025.",
+      "announced_value_usd": 30000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.bluedot-network.org/case-studies/BDN-60EAYD-DQ3V",
+          "publisher": "Blue Dot Network",
+          "source_tier": "S1",
+          "date": "2025-02-10",
+          "retrieved_at": "2026-10-25T21:18:02Z",
+          "opened": true
+        },
+        {
+          "url": "https://aiffp.gov.au/sites/default/files/2024-12/AIFFP_DSN_Factsheet_%237_Expanding%20digital%20connectivity%20in%20Palau%20via%20a%20submarine%20cable%20system_20241108.pdf",
+          "publisher": "Australian Infrastructure Financing Facility for the Pacific",
+          "source_tier": "S1",
+          "date": "2024-11-08",
+          "retrieved_at": "2026-10-25T21:18:29Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/echo-branch-lands-in-ngardmau-palau/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2022-06-09",
+          "retrieved_at": "2026-10-25T21:18:02Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/palau-second-submarine-cable-faces-delay/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2024-06-21",
+          "retrieved_at": "2026-10-25T21:18:29Z",
+          "opened": true
+        },
+        {
+          "url": "https://islandtimes.org/palaus-2nd-submarine-cable-to-activate-in-2025/",
+          "publisher": "Island Times",
+          "source_tier": "S3",
+          "date": "2023-06-16",
+          "retrieved_at": "2026-10-25T21:18:47Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment rule: NEC (Japan) named as supplier only by Blue Dot Network, so pole third rests on one source; the project itself is corroborated. Tier 4 (financing in place 2020, construction 2022); ready-for-service not confirmed in any opened source, which is the key open question. Echo trunk is owned by US firms but the spur and landing station are BSCC's. USD 30m is Blue Dot's capital cost, not a verified figure; AUD amounts not converted. Blue Dot Network treated as S1 (multi-government certification body); reviewer may rate it S4 advocacy."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "no data-centre or AI-campus project found; only servers/storage within the PNCC Open RAN award (PLW-003)"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search for government AI agreements with US providers returned nothing Palau-specific"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "only a US-funded COVID contact-tracing system with a Huawei procurement bar surfaced; vendor not identified, not coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Was Huawei equipment actually removed from PNCC's mobile core, by which vendor, and when? Did Huawei RAN remain at the 54 cell sites until the Open RAN build?",
+    "Who supplies the Open RAN radio units and the 5G standalone core in PNCC's new network, and is any non-US Quad vendor (NTT, NEC, Fujitsu, Indian firms) involved?",
+    "Has the Palau Cable 2 spur to Echo entered service, and is the NEC supplier attribution confirmed by an S2 source?",
+    "Who supplied Palau's first submarine cable (ADB-funded spur to SEA-US) and is it still the primary link?",
+    "Any government AI adoption or e-government AI on a foreign stack in Palau; none found."
+  ],
+  "searches_run": 10
+}

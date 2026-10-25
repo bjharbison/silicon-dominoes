@@ -1,0 +1,256 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "PSE",
+  "name": "Palestine, State of",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T21:20:07Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "PSE-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Jawwal (Paltel Group); Ooredoo Palestine",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-01",
+      "still_current": null,
+      "summary": "Israel's Communications Ministry said it approved management agreements signed by West Bank operators Jawwal and Ooredoo with Ericsson, enabling a 4G upgrade expected to take up to six months under a 2022 framework.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.al-monitor.com/originals/2026/01/israel-approves-upgrade-4g-mobile-services-palestinians-west-bank",
+          "publisher": "Al-Monitor",
+          "source_tier": "S3",
+          "date": "2026-01-06",
+          "retrieved_at": "2026-10-25T21:18:29Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.communicationstoday.co.in/?p=389022",
+          "publisher": "Communications Today (Reuters republication)",
+          "source_tier": "S2",
+          "date": "2026-01-08",
+          "retrieved_at": "2026-10-25T21:18:29Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.algemeiner.com/2026/01/06/israel-approves-upgrade-4g-mobile-services-palestinians-west-bank/",
+          "publisher": "The Algemeiner",
+          "source_tier": "S3",
+          "date": "2026-01-06",
+          "retrieved_at": "2026-10-25T21:18:15Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden) is the named infrastructure counterparty, so pole third; agreements are called 'management agreements', so whether Ericsson supplies 4G RAN/core or managed services is not stated. All three reports relay one Reuters story citing the Israeli ministry; treated as corroborated on the MLT/LUX precedent, reviewer may disagree. Israel controls spectrum allocation and equipment entry, which gated 3G until 2018 and 4G until 2026; that Israeli approval is context, not Palestinian adoption, and is not coded separately. Rollout status as of run date unconfirmed; Gaza remains 2G per sources."
+    },
+    {
+      "id": "PSE-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Jawwal (Palestine Cellular Communications, Paltel Group)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2006-03-29",
+      "still_current": null,
+      "summary": "Jawwal signed a USD 23m contract with Ericsson to expand its GSM/GPRS network and add EDGE across it, plus charging and device-configuration products; Ericsson described itself as sole supplier of Jawwal's GSM network.",
+      "announced_value_usd": 23000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/2006/3/ericsson-and-jawwal-sign-edge-contract-in-palestine",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2006-03-29",
+          "retrieved_at": "2026-10-25T21:18:01Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Vendor press release, single opened S1, so medium. 'Sole supplier' claim sits uneasily with PSE-003 (Alcatel radio in Gaza, 2004); possibly scoped to West Bank or later swap, not resolved. Pre-2020 and still_current not confirmed, though PSE-001 suggests Ericsson remains Jawwal's vendor."
+    },
+    {
+      "id": "PSE-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel",
+      "local_actor": "Jawwal (Palestine Cellular Communications)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2004-12-16",
+      "still_current": null,
+      "summary": "Alcatel won a multimillion-dollar turnkey deal to supply, install and integrate its multi-standard GSM/GPRS/EDGE/WCDMA radio access equipment, replacing part of Jawwal's GSM network in the Gaza area.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/business-management/jawwal-picks-alcatel",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2004-12-16",
+          "retrieved_at": "2026-10-25T21:18:01Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Alcatel (France, now part of Nokia), so pole third. Subnational: Gaza portion only. Replaced vendor not named, so no reversal coded. Gaza network heavily damaged since 2023; still_current very doubtful but not confirmed, left null."
+    },
+    {
+      "id": "PSE-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Wataniya Palestine (now Ooredoo Palestine; Palestine Investment Fund and Wataniya Telecom/Qtel joint venture)",
+      "builder": null,
+      "financier": "IFC (planned USD 30m), Palestinian/international bank consortium (USD 85m), Ericsson Credit",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2008-08-28",
+      "still_current": null,
+      "summary": "Wataniya Palestine contracted Ericsson to build its new GSM network, including base stations, towers, documentation and training; launch was planned for 2009 with IFC, bank consortium and Ericsson Credit funding.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.fierce-network.com/europe/ericsson-secures-palestinian-network-deal",
+          "publisher": "Fierce Network",
+          "source_tier": "S2",
+          "date": "2008-08-28",
+          "retrieved_at": "2026-10-25T21:18:01Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/?p=18692",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2009-10-27",
+          "retrieved_at": "2026-10-25T21:18:01Z",
+          "opened": true
+        },
+        {
+          "url": "https://en.globes.co.il/en/article-1000367643",
+          "publisher": "Globes",
+          "source_tier": "S3",
+          "date": "2008-07-31",
+          "retrieved_at": "2026-10-25T21:18:01Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden), so pole third. Contract value undisclosed; IFC USD 30m and USD 85m bank financing are project financing, not contract value, and are planned not closed, so tier kept at 3. Globes reports Israel completed frequency allocation to the PA, illustrating Israeli spectrum control. Pre-2020; still_current not confirmed, though PSE-001 suggests continued Ericsson role."
+    },
+    {
+      "id": "PSE-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Palestine Telecommunications Co. (Paltel)",
+      "local_actor": "Paltel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-05",
+      "still_current": null,
+      "summary": "Paltel built a roughly USD 10m data centre in Ramallah offering co-location, cloud disaster recovery and back-office services, reportedly with capacity pre-sold to Palestinian banks and institutions before a planned 2019 opening.",
+      "announced_value_usd": 10000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterknowledge.com/cloud/palestinian-phone-company-offers-cloud-computing-ramallah",
+          "publisher": "Data Center Knowledge (Bloomberg republication)",
+          "source_tier": "S2",
+          "date": "2019-05-10",
+          "retrieved_at": "2026-10-25T21:18:47Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2019-05-08/palestinian-phone-company-offers-cloud-computing-from-ramallah",
+          "publisher": "Bloomberg",
+          "source_tier": "S3",
+          "date": "2019-05-08",
+          "retrieved_at": "2026-10-25T21:18:47Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Domestic owner-operator, so pole domestic; equipment vendors not named. Tier 4: built with opening planned; operation not confirmed by an opened source. Not AI-specific. Only one opened source (republished Bloomberg), so not corroborated. Pre-2020; still_current unconfirmed."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase surfaced in facilities, models or network searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search; 2023 national AI strategy (per US trade.gov, 2025) names only domestic bodies and no foreign model provider or sovereign model"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search; surveillance results concerned Israeli-operated systems (e.g. Hikvision cameras in the West Bank), which are not Palestinian adoption and were not coded; no PA-procured system found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "What exactly do the 2026 Ericsson management agreements with Jawwal and Ooredoo cover (RAN, core, managed services), and has 4G launched in the West Bank as of late 2026?",
+    "Core-network vendors for Jawwal and Ooredoo Palestine are not established; any Huawei/ZTE elements (e.g. Paltel fixed/backbone, Ooredoo group-level deals) not checked.",
+    "Paltel fixed backbone and international connectivity vendors (routes via Israel/Jordan) not researched.",
+    "Did the PA's on-premises government cloud planned under the World Bank Digital West Bank and Gaza project (2021 blog) get built, and on whose platform?",
+    "Is Paltel's Ramallah data centre operational and expanded since 2019; who supplied its equipment?",
+    "Any PA security-service or municipal CCTV procurement (Hikvision/Dahua or other) not found in one search; Israeli-operated West Bank surveillance should stay out of PSE coding.",
+    "Post-2023 status of Gaza mobile networks (Jawwal Gaza, Ooredoo Gaza) and any reconstruction vendor choices."
+  ],
+  "searches_run": 10
+}

@@ -1,0 +1,296 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "PRK",
+  "name": "North Korea",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T21:20:10Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "PRK-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei (equipment supplied via Panda International Information Technology)",
+      "local_actor": "Koryolink (CHEO Technology: Orascom and Korea Post and Telecommunications Corp.)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2008",
+      "still_current": null,
+      "summary": "Leaked internal documents reported by the Washington Post indicate Huawei, working through state-owned Panda International, supplied base stations and handled integration, software, managed services and encryption work for Koryolink over at least eight years.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://insidetowers.com/cell-tower-news-report-huawei-secretly-helped-north-korea-build-wireless-network",
+          "publisher": "Inside Towers",
+          "source_tier": "S2",
+          "date": "2019-07-23",
+          "retrieved_at": "2026-10-25T21:18:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://techradar.com/news/huawei-reportedly-helped-to-build-north-koreas-internet",
+          "publisher": "TechRadar",
+          "source_tier": "S3",
+          "date": "2019-07-22",
+          "retrieved_at": "2026-10-25T21:18:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://ia.acs.org.au/article/2019/huawei-secretly-built-north-korean-mobile-network.html",
+          "publisher": "Information Age (ACS)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:17:39Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Both opened sources relay the same Washington Post leak (the Post itself was not opened); corroborated on the mechanical rule only, reviewer may disagree. Huawei denied any business presence. Tier 5 because Koryolink operated nationally (~3m subscribers per 2015 reporting). TechRadar says Huawei no longer maintains Koryolink; still_current not confirmed, so the map halves this pre-2020 finding. Date 2008 is the JV launch; work reportedly ran from about 2006-08 for 8+ years."
+    },
+    {
+      "id": "PRK-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei (second-hand equipment imported via China)",
+      "local_actor": "Koryolink and Kang Song NET (Ministry of Information Industry)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-10",
+      "still_current": null,
+      "summary": "Reports from late 2023 say North Korea began importing used Huawei equipment through China to upgrade 3G base stations in Pyongyang and other cities; Kangsong's 4G service, launched in Pyongyang in September 2023, is reportedly built on it.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/north-korea-to-upgrade-telecoms-equipment-with-second-hand-huawei-gear/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-11-03",
+          "retrieved_at": "2026-10-25T21:19:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/15735-north-korea-commences-imports-of-huawei-gear-for-4g-upgrade.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2023-11-03",
+          "retrieved_at": "2026-10-25T21:19:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.northkoreatech.org/2024/03/07/north-koreas-kangsong-is-operating-a-4g-network/",
+          "publisher": "North Korea Tech (38 North affiliate)",
+          "source_tier": "S2",
+          "date": "2024-03-07",
+          "retrieved_at": "2026-10-25T21:18:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.dailynk.com/english/north-koreas-4g-launch-pyongyang-first-in-phased-rollout/",
+          "publisher": "Daily NK",
+          "source_tier": "S3",
+          "date": "2024-11-14",
+          "retrieved_at": "2026-10-25T21:19:27Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "low",
+      "analyst_inference": "Mechanically corroborated, but every opened source traces the Huawei claim to one anonymous Daily NK source; the Daily NK 4G launch article opened does not name a vendor. Confidence held low for that reason. Tier 4 for equipment being installed; tier 5 not claimed because the 4G-vendor link is unconfirmed. Grey-market gear likely gets no vendor updates, so prc control is weaker than the vendor rule implies; a reviewer may prefer pole null. Implies sanctions-evading import; coded as deployment, not enforcement."
+    },
+    {
+      "id": "PRK-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "China Unicom",
+      "local_actor": "Star JV (North Korean ISP)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2010",
+      "still_current": null,
+      "summary": "A China Unicom connection has carried North Korea's international internet traffic, via the ISP Star JV, since 2010; apart from a short Intelsat satellite route from 2012, it was the only link until October 2017.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.38north.org/2017/10/mwilliams100117/",
+          "publisher": "38 North",
+          "source_tier": "S2",
+          "date": "2017-10-01",
+          "retrieved_at": "2026-10-25T21:18:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecoms.com/485189/russian-telco-strengthens-north-korea-connection-to-the-world-wide-web/",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2017-10-02",
+          "retrieved_at": "2026-10-25T21:18:10Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Layer networks (international transit). Pole prc because China Unicom, a PRC state operator, can switch the uplink off. Only confirmed to 2017; still_current not checked this run, so the map halves it."
+    },
+    {
+      "id": "PRK-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "TransTeleCom (Russian Railways subsidiary)",
+      "local_actor": "Star JV (North Korean ISP)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-10-01",
+      "still_current": null,
+      "summary": "Russian carrier TransTeleCom began providing North Korea a second internet connection in October 2017, presumably over fibre along the railway crossing the Friendship Bridge between Khasan and Tumangang, ending China Unicom's monopoly on the uplink.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.38north.org/2017/10/mwilliams100117/",
+          "publisher": "38 North",
+          "source_tier": "S2",
+          "date": "2017-10-01",
+          "retrieved_at": "2026-10-25T21:18:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecoms.com/485189/russian-telco-strengthens-north-korea-connection-to-the-world-wide-web/",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2017-10-02",
+          "retrieved_at": "2026-10-25T21:18:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.theregister.co.uk/2017/10/04/north_korea_adds_second_internet_link/",
+          "publisher": "The Register",
+          "source_tier": "S3",
+          "date": "2017-10-04",
+          "retrieved_at": "2026-10-25T21:17:39Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Russia is coded third (neither US nor PRC). Tier 5 because routes were live in routing tables. Date taken from 38 North's URL date and its note of a Sunday appearance; the Telecoms.com piece is dated 2 October. Telecoms.com relies on 38 North, so independence is partial. still_current not checked this run."
+    },
+    {
+      "id": "PRK-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Orascom Telecom Media and Technology (Egypt), 75% owner-operator of Koryolink",
+      "local_actor": "Koryolink (CHEO Technology); Korea Post and Telecommunications Corp.",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Orascom's 75% control of the Koryolink 3G joint venture",
+      "reversal_reason": "commercial",
+      "date": "2015-11",
+      "still_current": null,
+      "summary": "Orascom reported losing control of its 75%-owned Koryolink venture and wrote it off after failing to repatriate profits; the state had launched a rival carrier and sought majority control of any merger.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.pcworld.com/article/3005838/how-a-telecom-investment-in-north-korea-went-horribly-wrong.html",
+          "publisher": "PCWorld",
+          "source_tier": "S3",
+          "date": "2015-11-17",
+          "retrieved_at": "2026-10-25T21:19:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-business/operator-news/6232-koryolink-no-longer-under-orascom-s-control.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2016-01-06",
+          "retrieved_at": "2026-10-25T21:19:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.northkoreatech.org/?p=8048",
+          "publisher": "North Korea Tech",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:17:39Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reversal of a foreign (Egyptian, third) operator's control, not of the equipment vendor; pole third on the operator-as-controller reading, reviewer may prefer pole null for networks. Reason coded commercial: sources cite blocked repatriation and currency rules, with sanctions only a partial factor, and the state's rival carrier, so it does not meet the brief's bar for sanctions. A reviewer may judge sanctions or geopolitical. Pre-2020; current status of Orascom's claim not checked."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no data-centre or AI-campus project surfaced in network or AI-research searches"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "38 North (opened) identifies no North Korean accelerator hardware and notes sanctions limit procurement; US embargo already covered by global layer"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "no named North Korean LLM or adoption of a foreign frontier model found in 2 searches; NK Pro (July 2025) argues Pyongyang will struggle to build LLMs"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "38 North reports only domestic claims of neural-network features in Azalea phones and Yalu River surveillance cameras, with no foreign stack or scale stated"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "TechRadar (relaying the Washington Post) says Kang Song launched in 2013 with ZTE support; not confirmed by any opened source. Who supplied Kangsong's original 3G network?",
+    "Is the China Unicom uplink still active, and is the TransTeleCom link still in use after 2017? Any newer satellite or Russian routes since 2023-24?",
+    "Can a second source independent of Daily NK confirm the 2023 used-Huawei upgrade and tie it to the 4G rollout?",
+    "Did Orascom ever regain control or sell its Koryolink stake, and did the Koryolink/Kangsong merger happen?",
+    "38 North (Aug 2024) on North Korea's international AI-research network, including Chinese co-authors, was seen in search only; does it show any foreign model or compute access?",
+    "Any domestic data centre for the Kwangmyong intranet, and its hardware origin?"
+  ],
+  "searches_run": 8
+}

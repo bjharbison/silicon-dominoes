@@ -1,0 +1,247 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SOM",
+  "name": "Somalia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T21:19:12Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SOM-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "HMN Tech (formerly Huawei Marine); cable owned by PEACE Cable International Network Co. (Hengtong Group)",
+      "local_actor": "SOMCABLE and MSG Group (Hargeisa-based landing partners)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-05",
+      "still_current": null,
+      "summary": "The PEACE submarine cable, supplied by HMN Tech and owned by a Hengtong Group subsidiary, was reported landed at Berbera in Somaliland, with Hargeisa firms SOMCABLE and MSG Group as local landing partners.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/peace-cable-lands-in-berbera-somaliland/",
+          "publisher": "SubTel Forum (repost of SomalilandSun)",
+          "source_tier": "S2",
+          "date": "2022-05-06",
+          "retrieved_at": "2026-10-25T21:18:07Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole prc: HMN Tech supplied the system and a PRC firm owns it. Scale subnational because the landing serves Somaliland, a self-declared state the federal government does not control; reviewer may prefer national. Tier 4: landing reported, ready-for-service date in Berbera not stated. Single opened source, so not corroborated."
+    },
+    {
+      "id": "SOM-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "TE SubCom (supplier)",
+      "local_actor": "Djibouti Telecom and unnamed Somali partners",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-01",
+      "still_current": null,
+      "summary": "The DARE submarine cable from Djibouti to Mombasa, supplied by TE SubCom under a contract in force, was planned with branches landing at Mogadishu, Berbera and Bosaso; construction was reported underway.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://convergedigest.com/dare-subsea-cable-to-link-east-africa/",
+          "publisher": "Converge Digest",
+          "source_tier": "S2",
+          "date": "2018-01-08",
+          "retrieved_at": "2026-10-25T21:18:07Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "SubCom is US-headquartered, so pole us. Tier 3 on a supply contract in force; later service status not verified in this run, so still_current null and the pre-2020 date applies. Somali landing partner not named in the source (Somtel suspected, unconfirmed). Single opened source."
+    },
+    {
+      "id": "SOM-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "National Communications Authority",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-04",
+      "still_current": null,
+      "summary": "Somalia's National Communications Authority granted Starlink an operating licence at a Mogadishu ceremony, saying the satellite service would expand national and rural internet access and soon be available nationwide.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/content/LPp6VMrBkGNMDKQz",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2025-04-14",
+          "retrieved_at": "2026-10-25T21:18:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.connectingafrica.com/connectivity/starlink-gets-greenlight-in-somalia",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2025-04-14",
+          "retrieved_at": "2026-10-25T21:18:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.dawan.africa/news/somalia-grants-operating-license-to-starlink-to-launch-internet-services",
+          "publisher": "Dawan Africa",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:17:48Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4 as licence issued; scale and uptake of service not verified. Lead brief said 2024; sources date the licence to April 2025. Whether the licence is honoured in Somaliland is not addressed. Both opened reports likely trace to the same NCA announcement."
+    },
+    {
+      "id": "SOM-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Federal Government of Somalia (Ministry of Communications and Technology)",
+      "local_actor": "Ministry of Communications and Technology; National Communications Authority",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-11-15",
+      "still_current": null,
+      "summary": "The federal communications minister marked the start of construction of a government national data centre in Mogadishu; builder, financier, equipment vendor and value were not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://mail.nca.gov.so/news/communications-minister-initiates-construction-of-national-data-center-paving-the-way-for-enhanced-digital-infrastructure",
+          "publisher": "National Communications Authority (Somalia)",
+          "source_tier": "S1",
+          "date": "2023-11-15",
+          "retrieved_at": "2026-10-25T21:18:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://constructafrica.com/news/somalia-breaks-ground-national-data-centre",
+          "publisher": "Construct Africa",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:18:41Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.dawan.africa/news/somalia-plans-national-data-centre-to-strengthen-digital-infrastructure",
+          "publisher": "Dawan Africa",
+          "source_tier": "S3",
+          "date": "2026-08-07",
+          "retrieved_at": "2026-10-25T21:18:41Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "low",
+      "analyst_inference": "Mechanically corroborated (NCA S1 + Construct Africa), but confidence lowered: an August 2026 Dawan report describes a national data centre as still being planned, so the 2023 groundbreaking may have stalled or the projects differ. Not AI-specific. An August 2024 ministerial visit to a Beijing data centre (MoCT, opened) produced no reported agreement and is not coded."
+    },
+    {
+      "id": "SOM-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Hormuud Telecom",
+      "local_actor": "Hormuud Telecom",
+      "builder": "Vertiv (US) with distributor Pure Earth International",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-11",
+      "still_current": null,
+      "summary": "Vertiv completed power and cooling installation for Hormuud Telecom's open-access cable landing station in Somalia, intended to host several submarine cables; location and connected cables not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/hormuud-telecom-cable-landing-station-construction-completed-in-somalia/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-11-02",
+          "retrieved_at": "2026-10-25T21:18:07Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator Hormuud is Somali, so domestic; Vertiv supplied facility power/cooling, not network equipment, so recorded as builder. Tier 5 judged from completion; operational use not confirmed. Single opened source, so not corroborated. Low strategic weight."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase surfaced; global US chip-export row covers posture"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no frontier-model or sovereign-model partnership surfaced in other searches"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "Mogadishu CCTV is government-operated per VOA, but no vendor named in 1 search and 2 opened pages; 2016 UNSOS EOI is the UN's own procurement with no awardee"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "RAN/core vendors for Hormuud (5G launched March 2024), Somtel, Golis and Telesom are not established; Huawei or ZTE suspected but no source found in 2 targeted searches.",
+    "Is the DARE1 cable in service with Somali landings at Mogadishu, Berbera and Bosaso, and who is the Somali landing partner?",
+    "Did 2Africa land in Somalia (Mogadishu/Berbera) and with which partner? Not checked.",
+    "Status of the 2023 national data centre groundbreaking versus the 2026 report that it is still in planning; builder and financier unknown.",
+    "Who supplied Mogadishu's government CCTV network (VOA reports installation, vendor unnamed)? Reported Turkish or Chinese involvement unverified.",
+    "Does the Starlink licence apply in Somaliland, which has its own regulator?"
+  ],
+  "searches_run": 9
+}

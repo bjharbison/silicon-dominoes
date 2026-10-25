@@ -1,0 +1,195 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SMR",
+  "name": "San Marino",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T21:20:10Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SMR-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "TIM (Telecom Italia) San Marino",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-12",
+      "still_current": null,
+      "summary": "TIM and Nokia completed 5G coverage of about 99% of San Marino using eight Nokia macro sites at 3.5 GHz and 26 GHz with massive MIMO; the government called it Europe's first fully 5G-covered state.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20181218/5g/tim-nokia-complete-full-5g-coverage-san-marino",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2018-12-18",
+          "retrieved_at": "2026-10-25T21:17:57Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecompaper.com/news/tim-and-nokia-on-course-to-make-san-marino-first-5g-state-in-europe--1259227",
+          "publisher": "Telecompaper",
+          "source_tier": "S2",
+          "date": "2018-09-04",
+          "retrieved_at": "2026-10-25T21:17:57Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecoms.com/5g-6g/san-marino-set-to-be-first-european-5g-state-tim",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T21:17:57Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nokia (Finland) supplies the end-to-end RAN, so pole third. Tier 5 judged from near-total territorial coverage; commercial uptake not stated. Core vendor and contract value not stated. Pre-2020 and still_current not confirmed by this run. Other San Marino operators' vendors not found."
+    },
+    {
+      "id": "SMR-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE (via ZTE Italia)",
+      "local_actor": "Secretariat of State for Telecommunications; Azienda Autonoma di Stato per i Servizi Pubblici (AASS)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-08",
+      "still_current": null,
+      "summary": "San Marino's telecoms secretariat and state utility AASS signed an MoU with ZTE Italia for a publicly owned national mobile network, fibre, an operations centre and training centre, with ZTE to hold 5% of a new company.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.corrierecomunicazioni.it/telco/zte-e-san-marino-nasce-la-newco-per-le-tlc",
+          "publisher": "CorCom (Corriere Comunicazioni)",
+          "source_tier": "S2",
+          "date": "2018-03-14",
+          "retrieved_at": "2026-10-25T21:18:21Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.corrierecomunicazioni.it/telco/san-marino-sceglie-zte-come-super-partner-per-le-tlc/",
+          "publisher": "CorCom (Corriere Comunicazioni)",
+          "source_tier": "S2",
+          "date": "2018-08-04",
+          "retrieved_at": "2026-10-25T21:19:12Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecompaper.com/news/zte-en-san-marino-lanceren-samenwerking-telecom--1255671",
+          "publisher": "Telecompaper",
+          "source_tier": "S2",
+          "date": "2018-08-06",
+          "retrieved_at": "2026-10-25T21:18:21Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.consigliograndeegenerale.sm/on-line/home/in-evidenza-in-home-page/documento17106934.html",
+          "publisher": "Consiglio Grande e Generale (San Marino parliament)",
+          "source_tier": "S1",
+          "date": "2019-01-16",
+          "retrieved_at": "2026-10-25T21:19:12Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: MoU and NewCo plan only; no rollout, contract or deployment found. Sources disagree on timing (CorCom March 2018 NewCo report vs August 2018 MoU signing; Telecompaper says JV launched 6 Aug 2018). Remark that the partnership could restart once ZTE regained operating capacity likely refers to the 2018 US denial order (inference). An opposition interpellation on its costs went to committee in January 2019; outcome unknown. EUR 135m 25-year revenue forecast not coded. ZTE's own site seen in search, not fetched."
+    },
+    {
+      "id": "SMR-003",
+      "layer": "cloud",
+      "pole": "us",
+      "controller": "Amazon Web Services",
+      "local_actor": "Secretariat of State for Industry, Republic of San Marino",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06-25",
+      "still_current": null,
+      "summary": "San Marino's industry secretary and Amazon signed an MoU under which AWS would help modernise state IT infrastructure, support cloud-based public-administration and smart-city projects, and offer AWS Educate and Activate programmes.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.corrierecomunicazioni.it/?p=200898",
+          "publisher": "CorCom (Corriere Comunicazioni)",
+          "source_tier": "S2",
+          "date": "2021-06-25",
+          "retrieved_at": "2026-10-25T21:18:53Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.fortuneita.com/?p=219483",
+          "publisher": "Fortune Italia",
+          "source_tier": "S3",
+          "date": "2021-06-25",
+          "retrieved_at": "2026-10-25T21:19:12Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Cloud layer used because SMR has no row in the global cloud data and this is clearly a cloud-platform commitment. Tier 1: non-binding MoU; no migration or contract found. No value disclosed. Signed in presence of the US Consul General."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "no data-centre or AI-campus project found; only planned data-centre technology in the 2018 ZTE MoU (2 searches)"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one government-AI search found no national model or frontier-provider partnership"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "smart-city services appear only as aims in the ZTE and AWS MoUs; no surveillance or e-government AI deployment found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Did the ZTE-AASS NewCo ever incorporate, build anything, or get wound up? Outcome of the January 2019 parliamentary motion on its costs is unknown.",
+    "Which vendors supply San Marino's other operators (e.g. San Marino Telecom, Telenet/TIM fixed) and the core of TIM San Marino's network?",
+    "Is the 2018 TIM/Nokia 5G network still the national mobile network as of 2026?",
+    "Did the 2021 AWS MoU lead to any government cloud migration or contract?",
+    "Do Italian Golden Power Huawei/ZTE restrictions or EU 5G Toolbox measures apply in San Marino in practice? Not found."
+  ],
+  "searches_run": 9
+}
