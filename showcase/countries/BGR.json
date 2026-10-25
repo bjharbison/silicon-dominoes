@@ -1,0 +1,346 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BGR",
+  "name": "Bulgaria",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BGR-001",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "US Department of State (Clean Network initiative)",
+      "local_actor": "Ministry of Transport, Information Technology and Communications, Bulgaria",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-10-23",
+      "still_current": null,
+      "summary": "Bulgaria's transport and communications minister and US Under Secretary Keith Krach signed a joint statement on 5G network security, which the US Embassy said brought Bulgaria into the Clean Network coalition against untrusted vendors.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.bta.bg/en/news/52521-Bulgaria-US-Sign-Key-documents-on-5G-Security-Civil-Nuclear-Power",
+          "publisher": "BTA (Bulgarian News Agency)",
+          "source_tier": "S4",
+          "date": "2020-10-23",
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-5g-regulation-and-law/bulgaria",
+          "publisher": "CMS (law firm expert guide)",
+          "source_tier": "S2",
+          "date": "2025-03-03",
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.orfonline.org/index.php/expert-speak/as-bulgaria-kosovo-north-macedonia-block-chinese-equipment-in-their-5g-networks-all-eyes-on-india",
+          "publisher": "Observer Research Foundation",
+          "source_tier": "S4",
+          "date": "2020-10-26",
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a Tier-1 US-aligned statement, not as a Huawei ban: CMS (March 2025) finds no explicit legal ban on Chinese vendors, and the February 2026 NIS2 Cybersecurity Act amendments add only generic supply-chain risk duties. ORF's 'block Chinese equipment' framing overstates a non-binding statement. BTA coded S4 as state news agency."
+    },
+    {
+      "id": "BGR-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia (5G RAN); Ericsson (core, per one source)",
+      "local_actor": "A1 Bulgaria (A1 Telekom Austria group)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-08-23",
+      "still_current": null,
+      "summary": "A1 Telekom Austria group picked Nokia to supply 5G radio access for A1 Bulgaria (with Serbia and Slovenia); one trade report says Ericsson takes the core network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/11746-nokia-and-ericsson-win-5g-contracts-with-a1-in-the-balkans.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2021-08-23",
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.economica.net/nokia-va-furniza-echipamente-pentru-retelele-5g-din-bulgaria-serbia-si-slovenia_528010.html",
+          "publisher": "Economica.net",
+          "source_tier": "S3",
+          "date": "2021-08-23",
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nokia (Finland) and Ericsson (Sweden) are EU-anchored vendors, so third. Economica.net says Nokia supplies core only in Serbia and Slovenia; the Ericsson core claim for Bulgaria rests on Developing Telecoms alone. No value disclosed; tier 3 as a vendor award."
+    },
+    {
+      "id": "BGR-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Globul (now Yettel Bulgaria)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2014-03-10",
+      "still_current": null,
+      "summary": "Capital reported that mobile operator Globul, now Yettel Bulgaria, chose Huawei to renew its network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.capital.bg/biznes/kompanii/2014/03/10/2258728_globul_izbra_huawei_za_obnoviavaneto_na_mrejata_si/",
+          "publisher": "Capital",
+          "source_tier": "S3",
+          "date": "2014-03-10",
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Known only from the search-result headline; the page refused fetching (robots). Scope (radio vs core), value and whether Huawei still equips Yettel's 4G/5G network are unconfirmed. Pre-2020 and still_current unknown, so it is halved on the map."
+    },
+    {
+      "id": "BGR-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Vivatel (BTC mobile arm, now Vivacom)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei GSM base-station equipment installed in Vivatel's mobile network",
+      "reversal_reason": "commercial",
+      "date": "2009-11-03",
+      "still_current": null,
+      "summary": "Vivatel said it would remove all its installed Huawei GSM base stations and replace them with Alcatel-Lucent equipment as part of a EUR 32m network upgrade.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mobileworldlive.com/huawei/vivatel-replaces-huawei/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2009-11-03",
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ffbham.bg/en/post/nokia-wins-radio-and-core-network-deal-with-bulgarian-operator-vivatel-x000d--158997845536525",
+          "publisher": "ffbham.bg (relayed news item)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "No reason given in the source; coded commercial because nothing points to security or foreign pressure in 2009, which predates the 5G vendor debate. Tier 5 as installed operational equipment. EUR 32m not converted (whole upgrade, not the Huawei portion). A second unopened headline says Nokia won a Vivatel radio and core deal; date unknown."
+    },
+    {
+      "id": "BGR-005",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "EuroHPC Joint Undertaking (system owner), hosted by Sofia Tech Park",
+      "local_actor": "Sofia Tech Park; INSAIT",
+      "builder": null,
+      "financier": "EuroHPC JU and Bulgarian state (co-financing)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-12",
+      "still_current": true,
+      "summary": "EuroHPC selected BRAIN++, a EUR 90m AI Factory at Sofia Tech Park built around a new AI-optimised supercomputer, Discoverer++; its EUR 54m hardware tender opened March 2026, closing October 2026, unawarded.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://eurohpc-ju.europa.eu/eurohpc-ju-selects-additional-ai-factories-strengthen-europes-ai-leadership-2025-03-12_en",
+          "publisher": "EuroHPC Joint Undertaking",
+          "source_tier": "S1",
+          "date": "2025-03-12",
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/acquisition-delivery-installation-and-maintenance-hardware-and-software-discoverer-ai-optimised_en",
+          "publisher": "EuroHPC Joint Undertaking (procurement notice)",
+          "source_tier": "S1",
+          "date": "2026-03-24",
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://insait.ai/bulgaria-will-have-its-own-ai-factory-a-project-for-90m-eur/",
+          "publisher": "INSAIT",
+          "source_tier": "S4",
+          "date": "2025-03-12",
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://bta.bg/en/news/850246-bulgaria-to-host-one-of-six-new-ai-factories-across-europe",
+          "publisher": "BTA (Bulgarian News Agency)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole third because the procurement notice says EuroHPC JU (an EU body) will own Discoverer++; Sofia Tech Park is the Bulgarian state host. Tier 2: selection and funded programme, hardware not yet contracted (deadline 16 Oct 2026, award not seen). EUR 90m and EUR 54.2m not converted. Both S1 pages share one issuer; INSAIT is a project partner (S4)."
+    },
+    {
+      "id": "BGR-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "NVIDIA (GPUs); Hewlett Packard Enterprise (servers)",
+      "local_actor": "Sofia Tech Park (Discoverer+ supercomputer)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-04-10",
+      "still_current": null,
+      "summary": "Sofia Tech Park unveiled the Discoverer+ upgrade to its EuroHPC supercomputer: four new HPE servers carrying 32 NVIDIA GPUs, with A1 Bulgaria, Eviden and NVIDIA named as partners.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.capital.bg/en/business/2025/04/10/4768338_sofia_tech_park_unveils_its_upgraded_supercomputer/",
+          "publisher": "Capital",
+          "source_tier": "S3",
+          "date": "2025-04-10",
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.capital.bg/biznes/tehnologii_i_nauka/2025/04/03/4765031_sofiia_teh_park_predstavi_nadgradeniia_superkompjutur/",
+          "publisher": "Capital (Bulgarian edition)",
+          "source_tier": "S3",
+          "date": "2025-04-03",
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Small deployment (32 GPUs) at a nationally significant facility; tier 5 assumes 'unveiled' means operational, which the article does not state. Cost undisclosed. The pending Discoverer++ tender (BGR-005) will decide the much larger accelerator choice."
+    },
+    {
+      "id": "BGR-007",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "INSAIT (Sofia University institute)",
+      "local_actor": "National Revenue Agency, Bulgaria",
+      "builder": null,
+      "financier": null,
+      "base_model": "Google Gemma 3 series (earlier BgGPT release on Gemma 2 27B)",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-19",
+      "still_current": true,
+      "summary": "The National Revenue Agency moved its BgGPT-based assistant from pilot to wider use across its central office and seven territorial directorates, running on its own hardware, with rollout to 7,000+ staff planned via state integrator Information Services.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://insait.ai/the-bulgarian-national-revenue-agency-adopts-ai-by-insait/",
+          "publisher": "INSAIT",
+          "source_tier": "S4",
+          "date": "2026-03-19",
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch/open-source-ai-bulgaria-insaits-bggpt-can-foster-public-and-private-sector-innovation",
+          "publisher": "European Commission, Interoperable Europe (Public Sector Tech Watch)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-2-27B-IT-v1.0/raw/main/README.md",
+          "publisher": "INSAIT (Hugging Face model card)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:19:55Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Domestic: INSAIT releases BgGPT weights openly (Apache 2.0) and the NRA runs it locally, so foreign providers cannot switch it off; the US base model is recorded separately. Tier 4 is a judgement: past pilot, not yet full-scale. The EC case study confirms the 2024 NRA pilot but is undated and names no base model."
+    }
+  ],
+  "layers_searched": {
+    "networks": {"result": "coded"},
+    "facilities": {"result": "coded"},
+    "silicon": {"result": "coded"},
+    "models": {"result": "coded"},
+    "applications": {"result": "null", "null_reason": "no dedicated search; no safe-city or surveillance procurement surfaced in network, AI-factory or model searches"},
+    "power": {"result": "not_searched", "null_reason": "only the 2020 US-Bulgaria civil nuclear MOU surfaced, which is not AI- or data-centre-specific"}
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current RAN/core vendors of Yettel Bulgaria and Vivacom for 4G/5G: is Huawei still in Yettel's network after the 2014 Globul award?",
+    "Who wins the Discoverer++ tender (closed 16 Oct 2026) and with which accelerators (NVIDIA vs other)?",
+    "Has Bulgaria adopted any binding high-risk-vendor rule under the EU 5G toolbox beyond the 2020 Clean Network statement and NIS2 supply-chain duties?",
+    "Safe-city or police video-analytics systems in Sofia or other cities and their vendors were not searched.",
+    "Commercial data-centre or AI-campus projects outside Sofia Tech Park (e.g. hyperscaler or Gulf investors) were not searched."
+  ],
+  "searches_run": 9
+}

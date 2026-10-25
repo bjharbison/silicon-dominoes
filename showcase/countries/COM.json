@@ -1,0 +1,195 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "COM",
+  "name": "Comoros",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "COM-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Comores Télécom (state-owned operator)",
+      "builder": "Huawei Technologies",
+      "financier": "China Eximbank (RMB 567m government concessional loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-12-11",
+      "still_current": null,
+      "summary": "Huawei is contractor for Comores Télécom's network modernisation and fixed-mobile convergence project, funded by a 2018 China Eximbank concessional loan; the operator migrated to the new Huawei system in July 2020 and launched Nafassi FTTH in 2022.",
+      "announced_value_usd": 85800000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/87222",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:19:01Z",
+          "opened": true
+        },
+        {
+          "url": "https://mail.lagazettedescomores.com/assets/pdfs/Lagazette_3677.pdf",
+          "publisher": "La Gazette des Comores",
+          "source_tier": "S3",
+          "date": "2020-07-20",
+          "retrieved_at": "2026-10-25T01:19:01Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor Huawei, so prc. Tier 5 because La Gazette reports the operator's migration to the FMC system completed (with Huawei optimising post-migration bugs) and AidData records FTTH service launched 22 March 2022; AidData still lists the project as in implementation, so a reviewer may prefer tier 4. US$85.8m is the loan face value per World Bank DRS via AidData; the Huawei commercial contract is about US$81m (2017)."
+    },
+    {
+      "id": "COM-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei Marine Networks (with Hengtong Marine)",
+      "local_actor": "Comores Télécom (state-owned operator)",
+      "builder": "Hengtong Marine Cable System; Huawei Marine Networks",
+      "financier": "China Eximbank (RMB 215m government concessional loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-01-09",
+      "still_current": null,
+      "summary": "Phase 1 of the national fibre backbone, China Eximbank-financed from 2010, delivered the 260 km Avassa inter-island submarine cable and the FLY-LION3 Mayotte–Anjouan link, built by Huawei Marine and Hengtong for Comores Télécom; completed January 2017.",
+      "announced_value_usd": 31760000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/53292",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:19:01Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/hengtong-and-huawei-deliver-avassa-submarine-cable-project/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2017-01-09",
+          "retrieved_at": "2026-10-25T01:19:01Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Cable/equipment vendor Huawei Marine (now HMN Tech), so prc. Loan signed December 2010; US$31.76m is AidData's face-value conversion of RMB 215m. Pre-2020 by completion date; current operation not confirmed by this run, though nothing suggests decommissioning. Comores Télécom reportedly also owns other cables on the same route."
+    },
+    {
+      "id": "COM-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Comorian mobile operators (unnamed)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-09-04",
+      "still_current": null,
+      "summary": "A Huawei release on a 2018 presidential visit says Huawei, present since 2005, helped build Comoros' 2G, 3G and 4G networks and claims its products serve about 80% of the population.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomtv.com/content/industry-announcements/president-of-comoros-expect-to-cooperate-with-huawei-to-achieve-the-2030-strategic-vision-in-comoros-32225/",
+          "publisher": "TelecomTV (Huawei industry announcement)",
+          "source_tier": "S4",
+          "date": "2018-09-04",
+          "retrieved_at": "2026-10-25T01:19:01Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "S4 corporate release: evidence the claim was made, not that it is true. Operators unnamed; likely overlaps COM-001 for Comores Télécom. The radio vendor of the second operator, Yas Comores (AXIAN, ex-Telma), was not established. Pre-2020 and not confirmed current."
+    },
+    {
+      "id": "COM-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of the Union of the Comoros",
+      "local_actor": "Government of the Union of the Comoros",
+      "builder": null,
+      "financier": "African Development Bank (AfDF and Transition Support Facility grants, about EUR 9.51m for the wider digitisation project)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-10-02",
+      "still_current": null,
+      "summary": "AfDB approved about EUR 9.5m in grants for digitising the Comorian economy, including a new government data centre and operationalising the existing secondary data centre, with a private firm to run them under a PPP.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/content/mYZRXv9gEayMOgA8",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2024-10-02",
+          "retrieved_at": "2026-10-25T01:19:01Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Owner presumed to be the state (not stated explicitly), so domestic; builder, equipment vendor and PPP operator not named. Tier 2 because the data centre is planned with grant financing approved but no build contract found; a reviewer could argue tier 4 for financing closed. Grant value covers the whole digitisation project, so no value assigned to the facility. A foreign PPP operator could change the pole."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in network, data-centre or AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one AI search found a public AI debate and a community Hugging Face page, but no government model-provider partnership or national model"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found no safe-city or AI surveillance procurement; a 2020 Indian Ocean Commission thermal-camera donation is pandemic health screening, not coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core and 5G vendor of Yas Comores (AXIAN; 5G launched Moroni 2025, IFC EUR 25m loan June 2025) not named in the operator release or Ecofin.",
+    "Who will build, equip and operate (PPP) the AfDB-funded government data centre, and has construction started?",
+    "Is the Huawei FMC/modernisation project (AidData 87222) formally complete, and are Avassa and FLY-LION3 still in service?",
+    "Any Comores Télécom privatisation or new cable (e.g. 2Africa landing) that could shift network control."
+  ],
+  "searches_run": 9
+}

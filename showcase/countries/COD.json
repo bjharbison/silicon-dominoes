@@ -1,0 +1,238 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "COD",
+  "name": "Democratic Republic of the Congo",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "COD-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "CITCC (builder); Huawei (later 10G-to-100G capacity upgrade)",
+      "local_actor": "SCPT (Société Congolaise des Postes et Télécommunications)",
+      "builder": "China International Telecommunication Construction Corporation (CITCC)",
+      "financier": "China Eximbank (government concessional loans)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-10-03",
+      "still_current": null,
+      "summary": "The national fibre backbone was built by Chinese state contractor CITCC with SCPT on China Eximbank loans: phase 1 Kinshasa–Muanda (650 km, completed 2010), phase 2 (3,300 km, US$221m) received final acceptance in October 2017.",
+      "announced_value_usd": 221000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/telecom/1210-37569-dr-congo-second-phase-of-national-fiber-optic-backbone-completed",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2017-10-12",
+          "retrieved_at": "2026-10-25T01:24:28Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/134",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:24:28Z",
+          "opened": true
+        },
+        {
+          "url": "https://fr.allafrica.com/stories/202002240648.html",
+          "publisher": "35Nord via AllAfrica",
+          "source_tier": "S3",
+          "date": "2020-02-21",
+          "retrieved_at": "2026-10-25T01:24:28Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole prc: no source names the original optical-equipment vendor; CITCC is a PRC state contractor, and 35Nord (2020) reports Huawei upgraded the SCPT backbone from 10G to 100G, making Huawei the current equipment supplier on one S3 source only. US$221m is phase 2 (Ecofin); phase 1 loan was RMB 245m (about US$42.5m per DRC Aid Management Platform, cited by AidData), subject of a parliamentary overpricing inquiry. Current operation not confirmed; still_current null."
+    },
+    {
+      "id": "COD-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Posts, Telecommunications and NTIC (PT-NTIC)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-02-20",
+      "still_current": null,
+      "summary": "At the first E-DRC forum in Kinshasa, Huawei DRC and the telecoms ministry signed a memorandum of understanding on ICT cooperation, infrastructure deployment, rural coverage and Huawei input to the national digital plan.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fr.allafrica.com/stories/202002240648.html",
+          "publisher": "35Nord via AllAfrica",
+          "source_tier": "S3",
+          "date": "2020-02-21",
+          "retrieved_at": "2026-10-25T01:24:28Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Non-binding MOU (tier 1); no follow-on contract found in this run."
+    },
+    {
+      "id": "COD-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Genew Technologies",
+      "local_actor": "Ministry of Posts and Telecommunications, DRC",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06",
+      "still_current": null,
+      "summary": "The DRC signed an MOU with Chinese firm Genew Technologies for a fibre network laid along the Congo River bed from Muanda to Kisangani (1,700 km plus 400 km junctions), announced at US$1.5bn; financing unclear, no construction reported.",
+      "announced_value_usd": 1500000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://w.media/genew-technologies-to-lay-1700-km-of-fiber-along-the-congo-river-bed/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2026-07-07",
+          "retrieved_at": "2026-10-25T01:24:28Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1 (MOU only). Genew as equipment supplier is assumed to be the controller under the equipment rule; whether Genew would supply equipment or only build is not stated. First phase stated at over US$400m."
+    },
+    {
+      "id": "COD-004",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Raxio Group",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-08",
+      "still_current": null,
+      "summary": "Raxio inaugurated a US$30m carrier-neutral Uptime Tier III colocation data centre in Limete, Kinshasa: 1,542 sq m, up to 400 racks, 1.5 MW IT load, described as the country's largest.",
+      "announced_value_usd": 30000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/data-centers/raxio-inaugurates-30m-drc-data-center",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2024-08-22",
+          "retrieved_at": "2026-10-25T01:24:28Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/data-centres-networks/10800-raxio-claims-a-data-centre-first-for-drc.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2021-03-03",
+          "retrieved_at": "2026-10-25T01:24:28Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: neither opened source states Raxio Group's home jurisdiction or shareholders, so the controller's pole is unresolved. The 2021 source is the project announcement (planned Q2 2022 commissioning); the 2024 source reports inauguration, hence tier 5 on one source for operation."
+    },
+    {
+      "id": "COD-005",
+      "layer": "power",
+      "pole": "domestic",
+      "controller": "Inga development agency (ADEPI), Government of DRC",
+      "local_actor": "Inga development agency (ADEPI)",
+      "builder": null,
+      "financier": "World Bank (US$1bn commitment to Inga, not data-centre specific)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-15",
+      "still_current": null,
+      "summary": "At a US–Congo investment forum in Washington, the head of Congo's Inga agency pitched the Inga hydro site to AI data-centre developers; no operator, investor or agreement was named, and an Inga law was still being drafted.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterknowledge.com/data-center-site-selection/congo-says-world-s-biggest-hydro-site-can-power-ai-data-centers",
+          "publisher": "Data Center Knowledge (Bloomberg)",
+          "source_tier": "S2",
+          "date": "2025-10-16",
+          "retrieved_at": "2026-10-25T01:24:28Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1 statement of intent only. Date is the forum Wednesday inferred from a 16 October 2025 article; agency name ADEPI is analyst knowledge, the article says Inga development agency. World Bank financing is for Inga generally, not tied to any data centre."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in data-centre, Inga or US-partnership searches"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks, surveillance and facilities; no model-provider partnership surfaced incidentally"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "two searches found no documented Kinshasa safe-city contract or vendor; a 2013 paper describes surveillance as a proposal only, and a Sept 2025 DRC–China security MOU report could not be opened"
+    },
+    "power": {
+      "result": "coded"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendors of Vodacom Congo, Orange RDC, Airtel Congo and Africell RDC were not established; Vodacom's November 2023 5G trial report names no vendor.",
+    "Who supplied the optical equipment for the CITCC-built national backbone, and is Huawei the current vendor (single 2020 source)?",
+    "Raxio Group's shareholders and home jurisdiction, needed to set the Kinshasa facility's pole; also whether OADC or others operate in DRC.",
+    "Actualite.cd (2025-09-20) reports a planned DRC–China security-cooperation MOU; check whether it includes surveillance technology (page not opened: fetch permission timed out). Matadi bridge cameras (mediacongo) vendor unknown.",
+    "Does the US–DRC Strategic Partnership Agreement (minerals; IEA policy listing seen in search) include any digital-infrastructure or data-centre component? Not opened this run.",
+    "Did the Genew Congo River fibre MOU (June 2026) progress to contract or financing?"
+  ],
+  "searches_run": 9
+}

@@ -1,0 +1,277 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BTN",
+  "name": "Bhutan",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BTN-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Bhutan Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-09-21",
+      "still_current": null,
+      "summary": "Ericsson, Bhutan Telecom's mobile vendor since the first network in 2004 and supplier of its 2G, 3G and 4G, was contracted in 2021 for 5G non-standalone radio, spectrum sharing and packet-core, IMS and OSS/BSS upgrades.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/news/2021/9/bhutan-telecom-gets-ericsson-5g",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2021-09-21",
+          "retrieved_at": "2026-10-25T01:19:15Z",
+          "opened": true
+        },
+        {
+          "url": "https://5gradar.com/news/ericsson-5g-to-be-deployed-in-eastern-himalayas-kingdom-of-bhutan",
+          "publisher": "5G Radar",
+          "source_tier": "S2",
+          "date": "2021-09-24",
+          "retrieved_at": "2026-10-25T01:19:15Z",
+          "opened": true
+        },
+        {
+          "url": "https://convergedigest.com/ericsson-to-supply-5g-to-bhutan-telecom/",
+          "publisher": "Converge Digest",
+          "source_tier": "S2",
+          "date": "2021-09-21",
+          "retrieved_at": "2026-10-25T01:19:15Z",
+          "opened": true
+        },
+        {
+          "url": "https://capacitymedia.com/article/29ot5l77j6rtrmgdfuj9c/news/ericsson-to-roll-out-4g-network-for-bhutan-telecom",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:19:15Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor Ericsson (Sweden), so third. Tier 5 rests on Ericsson having deployed Bhutan Telecom's operating 2G/3G/4G networks; the 5G element itself is a contract (tier 3) and Daily Bhutan's report of 5G launch in December 2021 (by TashiCell) does not name a vendor. Trade-press pieces likely derive from the Ericsson release, so independence is weak. Ericsson release coded S1 as a company announcement; a reviewer may treat it as S4 corporate marketing. 2019 JICA-funded emergency core network also Ericsson. Vendor of the second operator, TashiCell, not established."
+    },
+    {
+      "id": "BTN-002",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Bitdeer Technologies Group",
+      "local_actor": "Druk Holding and Investments (DHI)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-14",
+      "still_current": null,
+      "summary": "Bitdeer's Bhutan sites, built under a 2023 partnership with state holding company DHI, are listed online: Gedu (100 MW, running since August 2023) and Jigmeling, Sarpang (500 MW, fully energized by its September 2025 update). Hydropower-fed bitcoin mining.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0001899123/000121390025098957/ea026118901ex99-1_bitdeer.htm",
+          "publisher": "Bitdeer (SEC Form 6-K exhibit)",
+          "source_tier": "S1",
+          "date": "2025-10-14",
+          "retrieved_at": "2026-10-25T01:19:15Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.bbs.bt/bitdeers-500mw-jigmeling-facility-to-be-operational-mid-to-late-2025/",
+          "publisher": "Bhutan Broadcasting Service",
+          "source_tier": "S3",
+          "date": "2024-12-09",
+          "retrieved_at": "2026-10-25T01:19:15Z",
+          "opened": true
+        },
+        {
+          "url": "https://thebhutanese.bt/500-mw-bitcoin-mine-to-start-operation-in-phases-from-mid-2025-in-jigmeling/",
+          "publisher": "The Bhutanese",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:19:15Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a facility because it is the country's largest compute-hosting load, but it is bitcoin mining, not AI; neither source mentions AI/HPC conversion. Pole third: Bitdeer is Singapore-headquartered and Nasdaq-listed and operates the sites; DHI's equity share and control rights are not stated, so a reviewer could argue joint or domestic control. Up to USD 500m closed-end fund with DHI was still being raised in Dec 2024; not coded as a value. BBS is Bhutan's public broadcaster and was coded S3; if treated as state-affiliated S4, corroboration falls away (single S1 source, confidence medium stands)."
+    },
+    {
+      "id": "BTN-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "GovTech Agency and Druk Holding and Investments (DHI)",
+      "local_actor": "GovTech Agency, Bhutan",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-28",
+      "still_current": null,
+      "summary": "GovTech and DHI plan a 40-50 MW hydropower-fed AI data centre (about USD 450m before chips), pending a feasibility study, construction from 2027; DHI pitched it to investors in February 2026.",
+      "announced_value_usd": 450000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://thebhutanese.bt/bhutan-aims-to-build-usd-450-million-data-center/",
+          "publisher": "The Bhutanese",
+          "source_tier": "S3",
+          "date": "2025-06-28",
+          "retrieved_at": "2026-10-25T01:19:15Z",
+          "opened": true
+        },
+        {
+          "url": "https://thebhutanese.bt/dhi-proposes-ai-data-center-powered-entirely-by-renewable-energy/",
+          "publisher": "The Bhutanese",
+          "source_tier": "S3",
+          "date": "2026-02-14",
+          "retrieved_at": "2026-10-25T01:19:15Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: plan and investor pitch only; no partner, financier or feasibility result reported. Both sources are the same outlet, so not independent. Treating the June 2025 GovTech plan and the February 2026 DHI proposal as the same project is inference. Hyperscalers named only as hoped-for tenants; Nvidia financing mentioned as an option, no agreement."
+    },
+    {
+      "id": "BTN-004",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "SATO Technologies Corp",
+      "local_actor": "Gelephu Mindfulness City Authority (GMCA)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-06",
+      "still_current": null,
+      "summary": "Canadian former cryptominer SATO signed a letter of intent with the Gelephu Mindfulness City Authority to explore a phased hydropower-fed AI data-centre campus: 100 MW target, 5 MW first phase, possible path to 500 MW, subject to assessments.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/former-cryptominer-sato-inks-preliminary-agreement-to-develop-ai-data-center-in-bhutan/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-07-07",
+          "retrieved_at": "2026-10-25T01:19:15Z",
+          "opened": true
+        },
+        {
+          "url": "https://thebhutanese.bt/gmca-and-sato-sign-loi-for-renewable-energy-powered-ai-data-center-campus/",
+          "publisher": "The Bhutanese",
+          "source_tier": "S3",
+          "date": "2026-07-11",
+          "retrieved_at": "2026-10-25T01:19:15Z",
+          "opened": true
+        },
+        {
+          "url": "https://blockspace.media/insight/sato-bhutan-hydro-powered-ai-campus/",
+          "publisher": "Blockspace",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:19:15Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third: SATO (Canada) would be developer-operator; Canada is not the US pole under the spec. Tier 1 (LoI). No value or chips disclosed. GMC is a special administrative region with its own authority; GMC targets over 3 GW of data-centre capacity by 2035 per The Bhutanese."
+    },
+    {
+      "id": "BTN-005",
+      "layer": "models",
+      "pole": null,
+      "controller": null,
+      "local_actor": "DHI InnoTech",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "DHI InnoTech's Bhutan Sovereign LLM initiative proposes a national LLM plus National Data Lake; the phase-1 prototype is agent-based on unnamed leading AI APIs, with Bhutan-hosted GPUs (USD 0.5-1m) contingent on funding.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://innotech.dhi.bt/collaborate/projects/bhutan-llm-national-llm-data-lake",
+          "publisher": "DHI InnoTech",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:19:15Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the prototype runs on foreign provider APIs that are not named, so the controller is unknown; if sovereign GPUs and weights materialise it would become domestic. Tier 1: a collaboration call, not a funded project. Page undated; 2026 API-credit budget implies a 2025-26 concept. DHI page coded S1 as the owner's own notice."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or licences found; Nvidia appears only as a cost assumption in the GovTech data-centre plan (searched via data-centre queries, no dedicated search)"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one surveillance/CCTV search surfaced only a municipal Samdrup Jongkhar CCTV notice with no vendor; no safe-city or foreign-stack e-government AI found"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "hydropower supply to Bitdeer and planned AI campuses comes from the existing grid via DHI; no dedicated AI plant found, power context recorded in facility findings"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "RAN/core vendor of TashiCell (Tashi InfoComm), the second mobile operator, not established in two searches.",
+    "DHI's equity stake and control rights in the Bitdeer Gedu and Jigmeling sites; any plan to convert them to AI/HPC.",
+    "Outcome of the GovTech/DHI AI data-centre feasibility study and any partner or Nvidia financing deal.",
+    "Which foreign AI APIs underpin the DHI InnoTech sovereign LLM prototype.",
+    "Bhutan's international bandwidth runs through India; owner and vendor of cross-border fibre links not researched."
+  ],
+  "searches_run": 8
+}

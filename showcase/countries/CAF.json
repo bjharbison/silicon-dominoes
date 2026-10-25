@@ -1,0 +1,299 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "CAF",
+  "name": "Central African Republic",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "CAF-001",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Government of the Central African Republic (Ministry of Digital Economy, Posts and Telecommunications)",
+      "builder": "Burotop Iris (works), supervised by Taihan group",
+      "financier": "African Development Bank and European Union",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-02-06",
+      "still_current": null,
+      "summary": "The CAR segment of the Central African Backbone fibre network, about 935 km linking Bangui to Cameroon and Congo-Brazzaville, was handed to the government in February 2023 after AfDB/EU co-financing; Ecofin reports it operational since 2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/article/central-african-republics-333m-fibre-network-project-underway/nWJadMbe5gd7bjO1",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2018-04-06",
+          "retrieved_at": "2026-10-25T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.wearetech.africa/fr/fils/actualites/gestion-publique/centrafrique-la-premiere-couverture-par-fibre-optique-est-operationnelle",
+          "publisher": "We Are Tech Africa",
+          "source_tier": "S2",
+          "date": "2023-02-08",
+          "retrieved_at": "2026-10-25T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.financialafrik.com/2023/02/23/centrafrique-burotop-iris-acheve-les-travaux-de-la-fibre-optique/",
+          "publisher": "Financial Afrik",
+          "source_tier": "S3",
+          "date": "2023-02-23",
+          "retrieved_at": "2026-10-25T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/telecom/1109-45877-central-african-republic-new-digital-era-dawns-with-debut-of-high-speed-internet-cable",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2024-09-11",
+          "retrieved_at": "2026-10-25T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: under the equipment rule the controller is the transmission-equipment vendor, which no opened source names. Builder nationality not stated; Taihan is presumably the Korean cable maker, but that is unconfirmed. Values given as EUR 33.3m (2018) and CFA 22bn (about US$36m per We Are Tech); not converted here. Length variously 1,100 km (plan), 935 km and about 900 km. Operator PPP for capacity sales not yet selected in 2023."
+    },
+    {
+      "id": "CAF-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Government of the Central African Republic",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-16",
+      "still_current": null,
+      "summary": "After a convention with the government signed 18 December 2025, Starlink launched commercial satellite internet in the CAR in March 2026; the government plans to use it for prefectural administration, rural schools and telemedicine.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ecomatin.net/telecoms-starlink-lance-officiellement-ses-services-en-republique-centrafricaine",
+          "publisher": "EcoMatin",
+          "source_tier": "S3",
+          "date": "2026-03-17",
+          "retrieved_at": "2026-10-25T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://afriqueitnews.com/tech-media/connectivite-centrafrique-coupe-signal-kits-starlink-en-itinerance/",
+          "publisher": "Afrique IT News",
+          "source_tier": "S2",
+          "date": "2026-04-29",
+          "retrieved_at": "2026-10-25T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4 (authorisation in force and service launched) rather than 5, as subscriber scale is unknown. On 29 April 2026 the government suspended roaming kits bought abroad over homologation and user-traceability rules; that is enforcement of the licensing regime, not a reversal, so not coded separately. Afrique IT News coded S2 as specialist tech press; if treated as S3 this falls to uncorroborated."
+    },
+    {
+      "id": "CAF-003",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "GreenLine Technologies Inc.",
+      "local_actor": "SOCATEL (state telecom operator)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09",
+      "still_current": null,
+      "summary": "US firm GreenLine Technologies signed an MoU in September 2025 to take over the dormant state operator SOCATEL with a planned US$150m investment, including a Tier III data centre and national connectivity; definitive agreements were still pending in July 2026.",
+      "announced_value_usd": 150000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ecomatin.net/centrafrique-lamericain-greenline-engage-150-millions-usd-pour-racheter-loperateur-public-des-telecoms",
+          "publisher": "EcoMatin",
+          "source_tier": "S3",
+          "date": "2026-07-17",
+          "retrieved_at": "2026-10-25T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-business/operator-news/20574-troubled-guinea-and-car-operators-try-to-get-back-on-track.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole us on the assumption GreenLine would own and operate SOCATEL and the data centre after takeover; equipment vendors unknown. Tier 1: implementation launch and joint steering committee on 16 July 2026, but takeover agreements not finalised. MoU signed in Casablanca. SOCATEL ceased operations in 2019; earlier revival attempts failed (see CAF-005)."
+    },
+    {
+      "id": "CAF-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of the Central African Republic (public administration)",
+      "local_actor": "Ministry of Digital Economy, Posts and Telecommunications",
+      "builder": "Huawei",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05",
+      "still_current": null,
+      "summary": "A May 2026 working meeting between the digital ministry and a Huawei delegation discussed a China-backed administration-modernisation programme: a Tier III national data centre, a five-site microwave government network, IP telephony and an eLTE radio network for security forces.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.digitalbusiness.africa/centrafrique-bangui-accelere-la-modernisation-numerique-de-ladministration-avec-lappui-de-huawei/",
+          "publisher": "Digital Business Africa",
+          "source_tier": "S2",
+          "date": "2026-05-28",
+          "retrieved_at": "2026-10-25T01:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Detail comes from an Agence Ecofin article (27 May 2026) seen only as a republication on osiris.sn, which is not cited; the Digital Business Africa page body did not load. Tier 1: discussion only, no signed agreement, value or financier. Data centre coded domestic as a state facility with Huawei as presumed builder/equipment supplier; the network and eLTE components would be prc under the equipment rule (CAF-005 bundle).",
+      "bundle_id": "CAF-B1"
+    },
+    {
+      "id": "CAF-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Digital Economy, Posts and Telecommunications; defence and security forces",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05",
+      "still_current": null,
+      "summary": "The same proposed Huawei programme includes a dedicated microwave network with five radio sites interconnecting ministries and an eLTE radio transmission network for the armed forces, police and gendarmerie.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.digitalbusiness.africa/centrafrique-bangui-accelere-la-modernisation-numerique-de-ladministration-avec-lappui-de-huawei/",
+          "publisher": "Digital Business Africa",
+          "source_tier": "S2",
+          "date": "2026-05-28",
+          "retrieved_at": "2026-10-25T01:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Huawei as equipment vendor, so prc. Tier 1: working-meeting stage only. Described as following commitments from a Touadera-China meeting; financing (possibly China Eximbank) not stated and should not be assumed.",
+      "bundle_id": "CAF-B1"
+    },
+    {
+      "id": "CAF-006",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Global Technologies",
+      "local_actor": "SOCATEL (state telecom operator)",
+      "builder": null,
+      "financier": "Government of the Central African Republic (EUR 20m committed)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "2020 agreement for French firm Global Technologies to rehabilitate SOCATEL's microwave network",
+      "reversal_reason": "commercial",
+      "date": null,
+      "still_current": false,
+      "summary": "In November 2020 the government signed with French firm Global Technologies to repair SOCATEL's ageing microwave network; EcoMatin later reported the project abandoned because the state could not raise the roughly EUR 20m needed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itweb.africa/content/VgZeyqJo9aRvdjX9",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2020-11-25",
+          "retrieved_at": "2026-10-25T01:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://ecomatin.net/centrafrique-lamericain-greenline-engage-150-millions-usd-pour-racheter-loperateur-public-des-telecoms",
+          "publisher": "EcoMatin",
+          "source_tier": "S3",
+          "date": "2026-07-17",
+          "retrieved_at": "2026-10-25T01:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third: Global Technologies would have operated the rehabilitation; the underlying equipment vendor is unknown. Reversal date unknown, hence null. The abandonment rests on EcoMatin alone; Developing Telecoms says only that little is known of progress. Reason commercial (financing failure), so it does not move the map."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in network, data-centre or AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one AI search surfaced only an aggregator headline on a planned AI centre of excellence (not opened, S5); no model-provider adoption or national model found"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on surveillance/Russian-linked systems found no safe-city or surveillance deployment; Huawei IP telephony proposal folded into CAF-B1"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendor supplied transmission equipment for the CAB fibre backbone (and is Taihan the Korean Taihan Cable & Solution)? Which operator won the PPP to commercialise it?",
+    "Radio/core vendors of Orange Centrafrique, Telecel Centrafrique and Moov Africa for their 4G networks were not established.",
+    "Read the original Agence Ecofin article (27 May 2026) on the Huawei administration programme; check for a signed contract or China Eximbank loan.",
+    "Did GreenLine finalise the SOCATEL takeover after July 2026, and who will build and equip the Tier III data centre?",
+    "Any Russian-supplied digital, surveillance or AI systems linked to the Wagner/Africa Corps presence; none found in one search.",
+    "Planned AI centre of excellence (osiris.sn headline, not opened): partner and stack unknown."
+  ],
+  "searches_run": 9
+}

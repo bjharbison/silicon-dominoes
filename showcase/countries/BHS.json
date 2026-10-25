@@ -1,0 +1,162 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BHS",
+  "name": "Bahamas",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BHS-001",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "ShotSpotter (now SoundThinking)",
+      "local_actor": "Royal Bahamas Police Force",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-01",
+      "still_current": null,
+      "summary": "Government signed a US$1.9m phased contract with US-based ShotSpotter in January 2019 for gunshot-detection sensors and expanded police CCTV; by 2023 ShotSpotter sensors fed the RBPF Real-Time Crime Center in Nassau.",
+      "announced_value_usd": 1900000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ewnews.com/govt-signs-1-9-million-contract-to-upgrade-rbpfs-crime-fighting-arsenal",
+          "publisher": "Eyewitness News Bahamas",
+          "source_tier": "S3",
+          "date": "2019-01-24",
+          "retrieved_at": "2026-10-25T01:19:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://securityjournalamericas.com/the-smart-city-of-the-bahamas/",
+          "publisher": "Security Journal Americas",
+          "source_tier": "S2",
+          "date": "2023-07-12",
+          "retrieved_at": "2026-10-25T01:19:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://ewnews.com/improvements-loading-commissioner-of-police-paul-rolle-says-rbpf-royal-bahamas-police-force-need-more-body-cameras-shotspotter-technology-being-upgraded/",
+          "publisher": "Eyewitness News Bahamas",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:19:10Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 5 because the 2023 trade article describes ShotSpotter sensors operating within the crime centre; an unopened Eyewitness News headline says the technology is being upgraded, suggesting it is still in use, but still_current left null. Scale subnational (New Providence/Nassau). The 2019 article does not say whether the US$1.9m covers the 508 additional cameras or only ShotSpotter."
+    },
+    {
+      "id": "BHS-002",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Milestone Systems (VMS), Axis Communications (cameras), BriefCam (analytics)",
+      "local_actor": "Royal Bahamas Police Force",
+      "builder": "Proficient Business Services (Bahamas integrator)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-02",
+      "still_current": null,
+      "summary": "The RBPF Real-Time Crime Center in Nassau, operating since February 2021, runs Milestone XProtect video management over 500+ Axis cameras, with BriefCam facial recognition and licence-plate analytics, Rasilient servers and Cisco fibre networking.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://securityjournalamericas.com/the-smart-city-of-the-bahamas/",
+          "publisher": "Security Journal Americas",
+          "source_tier": "S2",
+          "date": "2023-07-12",
+          "retrieved_at": "2026-10-25T01:19:10Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third is analyst inference: the article gives no vendor nationalities; Milestone (Denmark), Axis (Sweden) and BriefCam (Israel-founded) are understood to be Canon (Japan) group companies. Cisco fibre components (US) and Rasilient servers (US) are minor parts not separately coded. Single opened trade source, possibly vendor-supplied case study; no PRC vendor named."
+    },
+    {
+      "id": "BHS-003",
+      "layer": "facilities",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Office of the Prime Minister, Bahamas; Bahamas Technological Services Ltd. (BTSL)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-28",
+      "still_current": null,
+      "summary": "The Prime Minister met an International Data Center Authority delegation, with Aton Path, the US-led Accessible Energy Bank and local partner BTSL, as a sovereign digital-hub initiative was signed; no terms, sites or values disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://opm.gov.bs/prime-minister-davis-meets-with-international-data-center-authority-idca/",
+          "publisher": "Office of the Prime Minister, The Bahamas",
+          "source_tier": "S1",
+          "date": "2026-07-29",
+          "retrieved_at": "2026-10-25T01:19:10Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: no facility owner-operator is identified; IDCA appears to be an advisory/standards body (an unopened Intellinews headline calls it US-based). Tier 1 because the instrument is an undefined 'initiative' with no disclosed binding terms. Meeting date inferred from 'yesterday' in the 29 July release."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "null",
+      "null_reason": "three searches found no named RAN/core vendor for BTC or Aliv and no Huawei/ZTE ban; a 2020 Ericsson-Liberty Latin America region-wide mobile core deal does not name the Bahamas"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in data-centre or AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "two searches found the minister engaging unnamed AI companies, AI legislation drafting and a tourism-site AI chat feature, but no named model-provider partnership or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio and core network vendors of BTC (Liberty Latin America-controlled) and Aliv (Cable Bahamas) are not established; does the 2020 Ericsson LLA mobile-core deal cover BTC?",
+    "What exactly was signed with IDCA/Aton Path/AEB/BTSL in July 2026, who would own and operate any data centre, and where? A Tribune headline reports the minister as cautious on large AI data centres (not opened).",
+    "Estonia and Singapore digital-government/AI-governance MOUs were agreed in principle in July 2026 but not yet signed; check for signature and any platform adoption.",
+    "Which 'world-leading AI companies' the Ministry of Innovation is engaging for government process automation (Nassau Guardian, June 2026).",
+    "Vendor of the 243 phase-one and 508 phase-two CCTV cameras under the 2019 contract; confirm Axis/Milestone attribution with a second source."
+  ],
+  "searches_run": 9
+}

@@ -1,0 +1,254 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BLZ",
+  "name": "Belize",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BLZ-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Belize Telemedia Limited (DigiCell)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-03",
+      "still_current": null,
+      "summary": "State-controlled BTL picked Huawei as sole vendor for Belize's first nationwide 4G LTE network on DigiCell, about US$20m with 60 new cell sites; Huawei also trains staff and provides managed services.",
+      "announced_value_usd": 20000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20160307/americas/belize-getting-20-million-nationwide-4g-lte-network-tag17",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2016-03-07",
+          "retrieved_at": "2026-10-25T01:19:18Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telesemana.com/blog/2016/03/03/btl-inicia-con-huawei-el-despliegue-de-la-primera-red-lte-de-belice/",
+          "publisher": "TeleSemana",
+          "source_tier": "S2",
+          "date": "2016-03-03",
+          "retrieved_at": "2026-10-25T01:19:18Z",
+          "opened": true
+        },
+        {
+          "url": "https://amandala.com.bz/news/trump-administration-huawei",
+          "publisher": "Amandala",
+          "source_tier": "S3",
+          "date": "2019-05-30",
+          "retrieved_at": "2026-10-25T01:19:18Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor Huawei, so prc; Huawei's managed-services role strengthens control. Tier 3 (vendor award with value); launch was planned for December 2016 but operation at scale not confirmed in opened sources. US$20m is BTL's figure (BZ$40m, fixed 2:1 peg). Pre-2020 and still_current unconfirmed; a November 2023 Channel 5 report says BTL ordered new 2G-5G equipment without naming its vendor."
+    },
+    {
+      "id": "BLZ-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei Marine Networks",
+      "local_actor": "Belize Telemedia Limited",
+      "builder": "Huawei Marine Networks",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-08-15",
+      "still_current": null,
+      "summary": "BTL contracted Huawei Marine to build SEUL, a 24 km, eight-fibre-pair submarine cable linking the Belize mainland to San Pedro (Ambergris Caye), with completion targeted for Q3 2017.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/0huawei-marine-partners-with-belize-telemedia-limited-to-deploy-new-undersea-cable-system/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2016-08-16",
+          "retrieved_at": "2026-10-25T01:19:18Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20160824/americas/huawei-belize-4g-fiber-tag17",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2016-08-24",
+          "retrieved_at": "2026-10-25T01:19:18Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Huawei Marine (now HMN Tech) is the cable vendor, so prc. Tier 3 as an announced vendor partnership; completion not confirmed. SubTel Forum item likely relays a Huawei release. Value undisclosed. Pre-2020, still_current unchecked."
+    },
+    {
+      "id": "BLZ-003",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Government of Belize (Belize Integral Security Programme)",
+      "builder": "Central TV and Internet Limited",
+      "financier": "Central American Bank for Economic Integration (CABEI)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-01-11",
+      "still_current": null,
+      "summary": "Government inaugurated 50 PTZ surveillance cameras across Belize City, first phase of a city emergency-response system under the CABEI-funded Belize Integral Security Programme; local firm Central TV and Internet holds the BZ$1.13m supply and maintenance contract.",
+      "announced_value_usd": 564093,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.pressoffice.gov.bz/wp-content/uploads/2024/01/Jan-11-PR004-24-Surveillance-Cameras-to-Boost-Public-Safety-and-Security-in-Belize-City.pdf",
+          "publisher": "Government of Belize Press Office",
+          "source_tier": "S1",
+          "date": "2024-01-11",
+          "retrieved_at": "2026-10-25T01:19:18Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sanpedrosun.com/?p=100317",
+          "publisher": "The San Pedro Sun",
+          "source_tier": "S3",
+          "date": "2024-01-15",
+          "retrieved_at": "2026-10-25T01:19:18Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: camera brand and software vendor are not named; the contractor is a Belizean integrator, not the equipment controller. US$ value from BZ$1,128,186.60 at the fixed 2:1 peg. San Pedro Sun appears to relay the press release, so independence is weak. Tier 5 as operational, though small (50 cameras)."
+    },
+    {
+      "id": "BLZ-004",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Biometrica",
+      "local_actor": "Belize Police Department",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Belize Police facial-recognition partnership with Biometrica",
+      "reversal_reason": "regulatory",
+      "date": "2024-10-01",
+      "still_current": null,
+      "summary": "Police put a facial-recognition agreement with Nevada-based Biometrica on hold because the system might require sending criminal databases to the company; talks continued, with police saying they may seek another vendor.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://idtechwire.com/belize-police-may-seek-new-facial-recognition-vendor-over-data-sharing-issue",
+          "publisher": "ID Tech Wire",
+          "source_tier": "S2",
+          "date": "2024-10-01",
+          "retrieved_at": "2026-10-25T01:19:18Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pause, not cancellation. Tier 2 because whether a binding contract was signed is unclear. Reason coded regulatory (data-protection/law-enforcement data custody); could be read as data sovereignty or commercial. Not geopolitical, so it does not move the map. Outcome unknown."
+    },
+    {
+      "id": "BLZ-005",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Belize Police Department",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-01-28",
+      "still_current": null,
+      "summary": "Police Commissioner announced 1,000 surveillance cameras nationwide, focused on Belize City, with facial recognition, licence-plate reading and motion detection, to be installed from March 2025; vendor, financier and value not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://idtechwire.com/belize-police-to-deploy-1000-ai-powered-surveillance-cameras-nationwide",
+          "publisher": "ID Tech Wire",
+          "source_tier": "S2",
+          "date": "2025-01-28",
+          "retrieved_at": "2026-10-25T01:19:18Z",
+          "opened": true
+        },
+        {
+          "url": "https://amandala.com.bz/news/1000-cameras-throughout-the-country",
+          "publisher": "Amandala",
+          "source_tier": "S3",
+          "date": "2025-01-29",
+          "retrieved_at": "2026-10-25T01:19:18Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: no vendor named. Tier 1 as an official statement of intent; installation not confirmed. Possibly linked to the paused Biometrica facial-recognition deal (BLZ-004), unconfirmed."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found no data-centre or AI-campus project; only a Bahamas-based Cloud Carib managed disaster-recovery service contract (2024) with no Belize facility named"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in network, data-centre or AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only domestic AI-ambition commentary; no model-provider partnership or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplied BTL/Digi's 2023 multi-band 2G-5G equipment order, and is the 2016 Huawei LTE network still in service? Radio/core vendor of private operator Smart (Speednet) not established.",
+    "Was the Huawei Marine SEUL mainland-San Pedro cable completed (target Q3 2017) and is it in service?",
+    "Vendor, camera brand and financier of the 1,000-camera facial-recognition rollout announced January 2025; did installation happen, and was Biometrica retained or replaced?",
+    "Camera brand behind the CABEI-funded Belize City PTZ system (Central TV and Internet contract).",
+    "Taiwan ICDF funds the National Digital Inclusion Programme (Digital Connect Centres, from April 2023); check whether Taiwan funds any government data centre or e-government platform."
+  ],
+  "searches_run": 10
+}

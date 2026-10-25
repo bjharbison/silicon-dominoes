@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "BGR",
-  "BHS",
-  "BIH",
-  "BLZ",
-  "BRB",
-  "BTN",
-  "CAF",
-  "COD",
-  "COM",
-  "CPV",
   "CYP",
   "DJI",
   "ERI",
@@ -254,6 +244,16 @@
   "AZE",
   "BDI",
   "BEN",
-  "BFA"
+  "BFA",
+  "BGR",
+  "BHS",
+  "BIH",
+  "BLZ",
+  "BRB",
+  "BTN",
+  "CAF",
+  "COD",
+  "COM",
+  "CPV"
  ]
 }

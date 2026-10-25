@@ -1,0 +1,189 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BRB",
+  "name": "Barbados",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BRB-001",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Barbados (Ministry of Industry, Innovation, Science and Technology; BIDC)",
+      "local_actor": "Barbados Investment and Development Corporation (BIDC)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-11",
+      "still_current": null,
+      "summary": "Government data centre at Greenland, St Andrew: 100 kW first, scaling to 15 MW for AI compute and cloud; the state owns the first 5 MW, 10 MW goes to private investors. Site clearing has begun.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://barbadostoday.bb/2026/03/11/minister-unveils-188m-plan-to-build-world-class-digital-economy-by-2030/",
+          "publisher": "Barbados Today",
+          "source_tier": "S3",
+          "date": "2026-03-11",
+          "retrieved_at": "2026-10-25T01:19:21Z",
+          "opened": true
+        },
+        {
+          "url": "https://barbadostoday.bb/2024/03/23/data-centre-to-open-new-tech-door-boost-cybersecurity-caddle",
+          "publisher": "Barbados Today",
+          "source_tier": "S3",
+          "date": "2024-03-23",
+          "retrieved_at": "2026-10-25T01:19:21Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "State-owned first phase, so domestic. Tier 4 rests on the report that site clearing has begun (construction start); a reviewer may prefer tier 2 until a build contract is shown. Linking the 2024 budget-speech 'National Data Centre' (Tier III) to the Greenland site is inference. The BBD 187.8m figure is the ministry's whole 2026-27 request, not the data centre's cost, so no value coded. Equipment vendor, builder and any private investors are unknown."
+    },
+    {
+      "id": "BRB-002",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Amini",
+      "local_actor": "Ministry of Industry, Innovation, Science and Technology (MIST)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-01-12",
+      "still_current": null,
+      "summary": "At a MIST fellowship launch, Amini's CEO said the firm had deployed a stack with the ministry, from small modular data centres up to applications, under a multi-year partnership the minister tied to high-performance computing and cloud capacity.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://barbadostoday.bb/2026/01/12/govt-deepens-digital-sovereignty-drive-with-ai-partnership/",
+          "publisher": "Barbados Today",
+          "source_tier": "S3",
+          "date": "2026-01-12",
+          "retrieved_at": "2026-10-25T01:19:21Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: unclear whether Amini or the government owns and operates the modular data centres, and Amini's home jurisdiction is not stated in opened sources (a May 2026 Amini release is datelined Nairobi, suggesting Kenya, i.e. third). Tier 2 because the deployment is a vendor claim with no contract, capacity or value; hardware vendor unknown (Amini partners with Foxconn and Bull elsewhere, not shown for Barbados).",
+      "bundle_id": "BRB-B1"
+    },
+    {
+      "id": "BRB-003",
+      "layer": "models",
+      "pole": null,
+      "controller": "Amini",
+      "local_actor": "Ministry of Industry, Innovation, Science and Technology (MIST)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-01-12",
+      "still_current": null,
+      "summary": "Amini stated plans to build a first layer of locally calibrated foundational models for Barbados and an AI productivity workspace for government, alongside a 12-week fellowship training ten young technologists to digitise government data.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://barbadostoday.bb/2026/01/12/govt-deepens-digital-sovereignty-drive-with-ai-partnership/",
+          "publisher": "Barbados Today",
+          "source_tier": "S3",
+          "date": "2026-01-12",
+          "retrieved_at": "2026-10-25T01:19:21Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: statement of intent only. Pole null because it is unknown who will control the weights (domestic if MIST holds them, Amini's pole otherwise) and no base model is named.",
+      "bundle_id": "BRB-B1"
+    },
+    {
+      "id": "BRB-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Flow (Cable & Wireless / Liberty Latin America)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-07-12",
+      "still_current": null,
+      "summary": "Ericsson held a three-year managed-services contract to run Flow's mobile network across 12 Caribbean markets including Barbados, through field services and a regional operations centre; terms undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://past.jamaica-gleaner.com/article/business/20160713/ericsson-will-continue-manage-flow-mobile-network",
+          "publisher": "The Gleaner",
+          "source_tier": "S3",
+          "date": "2016-07-12",
+          "retrieved_at": "2026-10-25T01:19:21Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson (Sweden) operates the network, so controller third under the operating-access rule; radio/core equipment vendor not stated. Pre-2020 three-year contract, likely expired or renewed; current status unconfirmed. Flow's 5G+ launch in Barbados (reported October 2025) named no vendor."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases or export licences surfaced in data-centre and AI searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found Royal Barbados Police Force CCTV expansion (2019, 2025) with no vendor, AI or facial recognition named; no Huawei/Hikvision/Dahua safe-city evidence"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "only mention of 'green electricity' at the Greenland data-centre site; no dedicated AI power project surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendors for Flow (incl. its October 2025 5G+ rollout) and Digicel Barbados were not established; no Huawei ban or exclusion found either way.",
+    "Who owns the Amini modular data centres deployed with MIST, what hardware they use, and is there a signed contract or value?",
+    "Greenland, St Andrew 15 MW data centre: builder, equipment vendor, financier and the private investors for the 10 MW tranche.",
+    "Vendor of Royal Barbados Police Force CCTV cameras and whether any analytics or facial recognition is used.",
+    "Zindi-GovTech Barbados year-long AI ecosystem partnership (April 2025) is community/training only; not coded."
+  ],
+  "searches_run": 8
+}

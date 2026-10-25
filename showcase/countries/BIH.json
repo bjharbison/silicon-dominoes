@@ -1,0 +1,230 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BIH",
+  "name": "Bosnia and Herzegovina",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BIH-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telekom Srpske (m:tel)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2009-05-08",
+      "still_current": null,
+      "summary": "Huawei was contracted to deploy Telekom Srpske's UMTS/HSPA 3G radio network and packet-switched core, using SingleRAN equipment designed to be upgradable to later generations.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightwaveonline.com/fttx/article/16667630/huawei-to-deploy-telekom-srpskes-3g-network",
+          "publisher": "Lightwave",
+          "source_tier": "S2",
+          "date": "2009-05-08",
+          "retrieved_at": "2026-10-25T01:19:24Z",
+          "opened": true
+        },
+        {
+          "url": "https://evertiq.com/news/14119",
+          "publisher": "Evertiq",
+          "source_tier": "S2",
+          "date": "2009-05-11",
+          "retrieved_at": "2026-10-25T01:19:24Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor Huawei, so prc. Value undisclosed. Pre-2020 and still_current not confirmed: whether Huawei still supplies m:tel's 4G (launched 2019) radio/core was not established. Both trade-press items likely derive from a single Huawei release, so corroboration is formally met but thin. m:tel is Republika Srpska-based but holds a national licence, hence scale national."
+    },
+    {
+      "id": "BIH-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (via Ericsson Nikola Tesla, Croatia)",
+      "local_actor": "HT Eronet (HT Mostar)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-07-12",
+      "still_current": null,
+      "summary": "Ericsson Nikola Tesla signed an HRK 34m frame agreement to expand HT Eronet's 800/1800 MHz LTE network across Bosnia, including integration and training; Ericsson is the operator's sole radio-access vendor, with 5G-ready equipment.",
+      "announced_value_usd": 5200000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ericssonnikolatesla.com/en/news/20190712-agreement-lte/",
+          "publisher": "Ericsson Nikola Tesla",
+          "source_tier": "S1",
+          "date": "2019-07-12",
+          "retrieved_at": "2026-10-25T01:19:24Z",
+          "opened": true
+        },
+        {
+          "url": "https://seenews.com/news/ericsson-nikola-tesla-ht-eronet-sign-46-mln-euro-deal-to-expand-lte-network-in-bosnia-661496",
+          "publisher": "SeeNews",
+          "source_tier": "S2",
+          "date": "2019-07-12",
+          "retrieved_at": "2026-10-25T01:19:24Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson is Swedish, so third. Tier 3 because it is a signed vendor supply contract with value and counterparty, though styled a frame agreement (tier 2 is arguable). US$5.2m is SeeNews's conversion (about EUR 4.6m). Pre-2020; current vendor status not re-confirmed."
+    },
+    {
+      "id": "BIH-003",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Dahua Technology",
+      "local_actor": "Ministry of the Interior of Republika Srpska; City of Istočno Sarajevo",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-02-21",
+      "still_current": null,
+      "summary": "The Republika Srpska interior ministry reported a city video-surveillance system of more than 230 cameras in Istočno Sarajevo, built by its ICT administration, which won a Dahua 2019 regional best-project award.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://mup.vladars.rs/eng/informisanje-javnosti/novost/22871",
+          "publisher": "Ministry of the Interior of Republika Srpska",
+          "source_tier": "S1",
+          "date": "2020-02-21",
+          "retrieved_at": "2026-10-25T01:19:24Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole prc on the inference that the cameras are Dahua equipment, implied by the vendor award but not stated outright on the page. Entity-level actor. Operational per the ministry; current status not re-confirmed."
+    },
+    {
+      "id": "BIH-004",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Dahua Technology",
+      "local_actor": "City of Banja Luka; Ministry of the Interior of Republika Srpska",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05-06",
+      "still_current": null,
+      "summary": "RFE/RL reported 265 of a planned 325 Dahua cameras already installed in Banja Luka's smart-city project, and that the Republika Srpska interior ministry bought 139 Dahua cameras in 2023 for about US$47,000.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.slobodnaevropa.org/a/kineske-kamere-nadzor-bih-srbija-kosovo-eu-kina-dahua-hikvision/32932234.html",
+          "publisher": "Radio Free Europe/Radio Liberty (Balkan Service)",
+          "source_tier": "S3",
+          "date": "2024-05-06",
+          "retrieved_at": "2026-10-25T01:19:24Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Date is the article date; install start not given. Tier 4 because rollout is under way but incomplete. The US$47k figure refers only to the 139-camera ministry purchase, so values left null. The article also notes Hikvision purchases by Canton 10 police and rising Chinese recording-equipment imports (US$3.4m 2018 to US$5.4m 2023). Entity-level actors."
+    },
+    {
+      "id": "BIH-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hytera",
+      "local_actor": "Ministry of the Interior of Sarajevo Canton",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-11",
+      "still_current": null,
+      "summary": "Sarajevo Canton police bought 200 Hytera body cameras with management software for about EUR 200,000 through local supplier MIBO Komunikacije; a traffic-police pilot began in July 2024. The ministry said procurement law did not let it exclude the bidder.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rferl.org/a/bosnia-sarajevo-hytera-chinese-bodycams-warnings/33108519.html",
+          "publisher": "Radio Free Europe/Radio Liberty",
+          "source_tier": "S3",
+          "date": "2024-09-06",
+          "retrieved_at": "2026-10-25T01:19:24Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Hytera is a partly state-owned Chinese vendor supplying device firmware, so prc. Not a reversal: no exclusion occurred. US$222k is RFE/RL's conversion. Cantonal (Federation) actor."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "two searches found only an unopenable FIPA investment-promotion PDF titled 'AI Ready Data Center Brcko' and an exploratory April 2026 FIPA meeting with Ciena; no committed project"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in network or data-centre searches"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; data-centre search surfaced only a UNDP AI summit and EU-project AI hub, no model-provider adoption"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "BH Telecom radio/core vendors and any 5G spectrum award or vendor selection (its 5G test was 'multi-vendor', unnamed).",
+    "Does Huawei still supply m:tel (Telekom Srpske) 4G radio and core? The 2009 3G contract is the latest evidence found.",
+    "FIPA 'AI Ready Data Center Brcko' investment profile (fipa.gov.ba PDF) could not be fetched: proponent, owner, capacity and status unknown.",
+    "Ciena-FIPA April 2026 talks on AI/data-centre infrastructure: any resulting project?",
+    "Full scope of Banja Luka smart-city camera system (value, analytics/AI features, completion) and any other Dahua/Hikvision/Huawei city systems in the Federation."
+  ],
+  "searches_run": 10
+}

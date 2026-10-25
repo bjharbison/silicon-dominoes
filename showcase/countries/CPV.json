@@ -1,0 +1,297 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "CPV",
+  "name": "Cabo Verde",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T01:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "CPV-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Cabo Verde / National Police",
+      "builder": null,
+      "financier": "Unspecified Chinese government institution (financing unclear per AidData)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-07-24",
+      "still_current": null,
+      "summary": "Cidade Segura phase 1: Huawei built a police command centre in Achada Grande Frente and a 300-camera urban surveillance system with intelligent alerts and 112 emergency number in Praia, operating 24 hours since July 2018.",
+      "announced_value_usd": 4500000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/56716",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:19:31Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.dnoticias.pt/mundo/videovigilancia-na-praia-previne-entre-40-a-50-crimes-por-mes-GD5036181",
+          "publisher": "DN Madeira (Agência Lusa)",
+          "source_tier": "S3",
+          "date": "2019-07-25",
+          "retrieved_at": "2026-10-25T01:19:31Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole prc: Huawei is the equipment vendor and installer. US$4.5m phase-1 cost is AidData's figure; AidData notes financing is unclear and may be co-funded by Cabo Verde government and Huawei. Lusa (2019) confirms operation a year after launch; current status in 2026 not confirmed."
+    },
+    {
+      "id": "CPV-002",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Cabo Verde / National Police",
+      "builder": "Huawei Technologies (contractor); Eleven Technology and Sichuan Huakai Project Management (management unit)",
+      "financier": "Unspecified Chinese government institution (grant)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06-01",
+      "still_current": null,
+      "summary": "Cidade Segura phase 2, a Chinese government grant with Huawei as contractor, extended pole-mounted surveillance cameras to Mindelo, Sal, Boa Vista and more of Praia (250 poles) plus a police LTE network; reported completed June 2021.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/88567",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:19:31Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.dnoticias.pt/mundo/videovigilancia-na-praia-previne-entre-40-a-50-crimes-por-mes-GD5036181",
+          "publisher": "DN Madeira (Agência Lusa)",
+          "source_tier": "S3",
+          "date": "2019-07-25",
+          "retrieved_at": "2026-10-25T01:19:31Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ipim.gov.mo/en/?p=375086",
+          "publisher": "Macao Trade and Investment Promotion Institute (IPIM)",
+          "source_tier": "S4",
+          "date": "2022-04-28",
+          "retrieved_at": "2026-10-25T01:19:31Z",
+          "opened": false,
+          "relays_prc_state_media": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Completion date relies on AidData citing Eleven Technology; Lusa 2019 only confirms phase 2 was planned for São Vicente, Sal and Boa Vista. AidData's 2018 note on phase 1 cites an RMB 92.5m grant for phase 2; not converted, value left null. Scale national because it spans four islands. IPIM (Macao SAR government) not opened.",
+      "bundle_id": "CPV-B1"
+    },
+    {
+      "id": "CPV-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "National Police, Cabo Verde",
+      "builder": "Huawei Technologies",
+      "financier": "Unspecified Chinese government institution (grant)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-06-01",
+      "still_current": null,
+      "summary": "The same Cidade Segura phase 2 package included a 4G (LTE) private network for police communications, delivered by Huawei.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/88567",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T01:19:31Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment vendor Huawei, so prc. Tier 4 not 5: AidData reports the phase complete but does not describe the LTE network's operational use. Single opened source.",
+      "bundle_id": "CPV-B1"
+    },
+    {
+      "id": "CPV-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (cable supplier)",
+      "local_actor": "Cabo Verde Telecom",
+      "builder": null,
+      "financier": "European Investment Bank (Cabo Verde segment); EU BELLA programme (system)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-06-06",
+      "still_current": null,
+      "summary": "The EllaLink Europe–Brazil cable, built by Alcatel Submarine Networks, went live in Cabo Verde in June 2022 via a Cabo Verde Telecom landing station in Praia, with EIB support.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/telecom/1306-43666-subsea-cable-ellalink-becomes-operational-in-cabo-verde",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2022-06-13",
+          "retrieved_at": "2026-10-25T01:19:31Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/cabo-verde-telecom-invest-ellalink-submarine-cable/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2018-12-17",
+          "retrieved_at": "2026-10-25T01:19:31Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/ellalink-connect-cabo-verde/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2018-06-12",
+          "retrieved_at": "2026-10-25T01:19:31Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third: equipment vendor ASN is French (Nokia subsidiary at build time). Values conflict (DCD: CVT to invest US$25m; Ecofin: US$60m total with EIB US$25m), so left null. Supplier named only in the 2018 SubTel Forum piece."
+    },
+    {
+      "id": "CPV-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Cabo Verde (TechPark CV)",
+      "local_actor": "TechPark CV",
+      "builder": null,
+      "financier": "African Development Bank (EUR 45.5m loans)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023",
+      "still_current": null,
+      "summary": "The AfDB-financed Cabo Verde Technology Park in Praia, with a data centre and a São Vicente disaster-recovery site, began operating in 2023 and was officially launched in May 2025; a second Praia data centre is planned.",
+      "announced_value_usd": 58780000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-business/telecom-investment-mergers/18446-tech-park-cape-verde-is-officially-launched.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2025-05-07",
+          "retrieved_at": "2026-10-25T01:19:31Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/br/not%C3%ADcias/cabo-verde-recebe-emprestimo-de-15-milhoes-para-dois-data-centers/",
+          "publisher": "DatacenterDynamics Brasil",
+          "source_tier": "S2",
+          "date": "2023-08-02",
+          "retrieved_at": "2026-10-25T01:19:31Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole domestic assumed: government-launched public-private park, but no source names the owner-operator, builder or IT-equipment vendor. Tier 5 applies to the park and existing data centre; the second data centre is only planned. US$58.78m is Developing Telecoms' conversion of EUR 51.85m total park cost."
+    },
+    {
+      "id": "CPV-006",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "Secretary of State for Digital Economy, Cabo Verde",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023",
+      "still_current": null,
+      "summary": "A Microsoft–Cabo Verde strategic agreement under the Digital Development Program provides Microsoft 365 for schools, Azure-based tools and Copilot AI for public administration, and startup access to AI tools including OpenAI GPT-4.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://websummit.com/wp-media/2024/11/PRESS-RELEASE-Microsoft-Cabo-Verde-EN-Version.docx.pdf",
+          "publisher": "Microsoft / Government of Cabo Verde joint press release (Web Summit)",
+          "source_tier": "S4",
+          "date": "2024-11",
+          "retrieved_at": "2026-10-25T01:19:31Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 2 as a framework agreement; no value or binding procurement shown. Signed 2023 at the UN General Assembly (likely September). Coded models because Copilot/GPT-4 via Microsoft's service is US-controlled; overlaps cloud layer. Single S4 corporate release. Deployment scale of Copilot unknown."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in data-centre, Huawei or AI searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendors for CV Telecom (Alou) and Unitel T+ mobile networks not established; one search named none.",
+    "Who supplied IT equipment for the TechPark CV data centre and who owns/operates it under the PPP; who is contracted for the second Praia data centre and São Vicente DR site?",
+    "Is the Huawei Cidade Segura system (phases 1 and 2) still operating in 2026, and was phase-2 completion independently confirmed?",
+    "NOSi–Huawei partnership (Jan 2024 meeting) and government–Huawei meeting (July 2026) mention unnamed 'nationally relevant projects'; identify any signed contracts (e.g. government data centre or network).",
+    "Did the Microsoft Copilot deployment in public administration go beyond pilot scale?"
+  ],
+  "searches_run": 9
+}
