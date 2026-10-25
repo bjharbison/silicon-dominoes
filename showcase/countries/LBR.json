@@ -1,0 +1,246 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "LBR",
+  "name": "Liberia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T13:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "LBR-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Orange Liberia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09",
+      "still_current": null,
+      "summary": "ZTE built 128 solar-powered rural base-station sites for Orange Liberia in about three months, on 800/900MHz bands offering 2G voice and 4G data; ZTE claims over 580,000 subscribers gain access.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/zte-deploys-128-rural-communication-sites-for-orange-liberia/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-09-02",
+          "retrieved_at": "2026-10-25T13:18:36Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sdxcentral.com/news/zte-deploys-128-rural-communication-sites-for-orange-liberia/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2024-09-02",
+          "retrieved_at": "2026-10-25T13:18:36Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both reports appear to rewrite the same ZTE announcement (identical figures and quotes), so not treated as independent corroboration. Tier 5 because the sites are reported completed and in service, but this is a rural coverage extension; the vendor for Orange Liberia's main RAN and core is not established, so national scale reflects the operator, not the whole network."
+    },
+    {
+      "id": "LBR-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink Liberia LLC)",
+      "local_actor": "Liberia Telecommunications Authority",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-10-10",
+      "still_current": null,
+      "summary": "Liberia's telecom regulator signed a one-year provisional licence with Starlink Liberia LLC, a SpaceX subsidiary, to assess the satellite service, with official service due to start in early November 2024 via authorised resellers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.liberianobserver.com/news/lta-starlink-sign-landmark-deal/article_002e1500-878a-11ef-89c6-63413a26715d.html",
+          "publisher": "Liberian Observer",
+          "source_tier": "S3",
+          "date": "2024-10-11",
+          "retrieved_at": "2026-10-25T13:18:36Z",
+          "opened": true
+        },
+        {
+          "url": "https://techpoint.africa/news/starlink-gets-licence-liberia/",
+          "publisher": "Techpoint Africa",
+          "source_tier": "S2",
+          "date": "2024-10-11",
+          "retrieved_at": "2026-10-25T13:18:36Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4 as a licence issued. The licence was provisional for one year (to about October 2025); whether it was renewed or converted to a full licence was not checked, so still_current is null. A later Liberian Observer piece (undated) describes the LTA as still 'in talks' with Starlink on rural telephony."
+    },
+    {
+      "id": "LBR-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Liberia Telecommunications Authority; Ministry of Posts and Telecommunications",
+      "builder": null,
+      "financier": "Huawei (equipment donation, per one report)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05",
+      "still_current": null,
+      "summary": "The government launched a Digital Village programme in Foya, Lofa County, run with Huawei, which reportedly donated ICT equipment; the model bundles an internet tower, connected school, smart classroom and household solar power.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://micat.gov.lr/node/4618",
+          "publisher": "Ministry of Information, Cultural Affairs and Tourism (Liberia)",
+          "source_tier": "S1",
+          "date": "2026-05-26",
+          "retrieved_at": "2026-10-25T13:18:36Z",
+          "opened": true
+        },
+        {
+          "url": "https://allafrica.com/stories/202504150147.html",
+          "publisher": "AllAfrica (republishing Liberian press)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:18:36Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-digital/1112-51299-liberia-turns-to-huawei-to-speed-up-digital-inclusion-drive",
+          "publisher": "Ecofin Agency",
+          "source_tier": "S2",
+          "date": "2025-12-11",
+          "retrieved_at": "2026-10-25T13:18:36Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 2 as a single-site pilot. Ecofin (Dec 2025) reports only exploratory LTA-Huawei talks with no signed agreement, so whether a binding agreement for a national roll-out exists is unknown. The AllAfrica item (April 2025 by URL; undated on page) is the only source naming Huawei as equipment donor."
+    },
+    {
+      "id": "LBR-004",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Cybastion Institute of Technology",
+      "local_actor": "Government of Liberia (Ministry of Foreign Affairs)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09-24",
+      "still_current": null,
+      "summary": "Liberia's foreign minister signed an MoU with Cybastion in New York covering a new data centre, a subsea cable and a five-year Digital Fast Track e-government programme; no cable or data-centre details or value were disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/liberia-and-cybastion-sign-mou-for-data-center-and-subsea-cable",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-09-30",
+          "retrieved_at": "2026-10-25T13:18:36Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the opened source does not state Cybastion's home jurisdiction (it notes its founder's work with the US government) nor who would own or operate the data centre. Reviewer should confirm Cybastion's domicile and whether anything progressed beyond the MoU."
+    },
+    {
+      "id": "LBR-005",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Liberia National Police; Liberia Telecommunications Corporation (LIBTELCO)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-06",
+      "still_current": null,
+      "summary": "Liberian police, working with state telco LIBTELCO under a 'Safe City Project', were installing street security cameras in Monrovia, aiming to monitor about 60% of the city initially; no equipment supplier or funder was named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://thenewdawnliberia.com/?p=16943",
+          "publisher": "The New Dawn (Liberia)",
+          "source_tier": "S3",
+          "date": "2017-06-14",
+          "retrieved_at": "2026-10-25T13:18:36Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null because the camera and platform vendor is unknown; the 'Safe City' label is suggestive of a vendor package but is not evidence of one. Tier 4 as installation under way. Pre-2020 and current status not confirmed."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in facilities/AI searches and none plausible at this scale"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one AI-strategy search found only UNDP AI Sprint training (Nov 2025, with Intel under a UNDP MoU) and LTA AI aspirations; no model-provider partnership or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendors for Orange Liberia's and Lonestar Cell MTN's main 3G/4G networks, and LIBTELCO's national fibre backbone vendor, not established.",
+    "Vendor and funder of the 2017 Monrovia Safe City cameras (LNP/LIBTELCO); AidData lists PRC-linked Liberian projects that were not reviewed.",
+    "World Bank WARDIP-SOP2 second submarine cable for Liberia: cable system, supplier and award status unknown.",
+    "Was Starlink's one-year provisional licence (Oct 2024) renewed or converted to a full licence?",
+    "Cybastion's domicile and whether the Sept 2024 data-centre/subsea-cable MoU produced any contract.",
+    "Whether a binding LTA-Huawei agreement exists for a national Digital Village roll-out beyond Foya."
+  ],
+  "searches_run": 10
+}

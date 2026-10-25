@@ -1,0 +1,297 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "LBN",
+  "name": "Lebanon",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T13:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "LBN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Mobile Interim Company No.2 (touch), state-owned mobile operator",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-21",
+      "still_current": null,
+      "summary": "touch awarded Huawei two direct-agreement contracts (equipment US$8.34m, services US$1.39m), signed July 2025 and running to August 2026, for end-of-support network upgrades covering carrier aggregation, microwave and packet core.",
+      "announced_value_usd": null,
+      "verified_value_usd": 9730376,
+      "sources": [
+        {
+          "url": "https://www.ppa.gov.lb/ar/tenders/details/8390",
+          "publisher": "Public Procurement Authority (Lebanon)",
+          "source_tier": "S1",
+          "date": "2025-06-25",
+          "retrieved_at": "2026-10-25T13:17:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ppa.gov.lb/ar/plan/details/8435",
+          "publisher": "Public Procurement Authority (Lebanon)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:17:30Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "verified_value_usd is the sum of the two USD award amounts on the PPA award notice (8,336,441 + 1,393,935); the page's Arabic amount-in-words for lot 2 appears garbled, numeric figure used. Packet-core scope suggests Huawei supplies at least part of touch's core, not just RAN. Single opened S1 source, so medium. Tender titled 'Phase 1.2', implying earlier Huawei phases not reviewed."
+    },
+    {
+      "id": "LBN-002",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Huawei and Nokia (split not disclosed)",
+      "local_actor": "touch (MIC2) and Alfa (MIC1); Ministry of Telecommunications",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07",
+      "still_current": null,
+      "summary": "Lebanon began a 150-station, three-year 5G rollout split between touch and Alfa; touch uses Huawei and Nokia technology, while Alfa's vendor is not named. Alfa 5G already live in parts of Beirut.",
+      "announced_value_usd": 1000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://today.lorientlejour.com/article/1543060/touch-alfa-roll-out-5g-network-in-lebanon.html",
+          "publisher": "L'Orient Today",
+          "source_tier": "S3",
+          "date": "2026-07-30",
+          "retrieved_at": "2026-10-25T13:18:40Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null because touch's 5G mixes a PRC (Huawei) and a Nordic (Nokia) vendor with no stated split, and Alfa's 5G vendor is unnamed. Tier 4 as rollout under way with live sites; not yet at scale. US$1m is an unnamed ministry source's total project cost, implausibly low for 150 sites; treat with caution. Article meta description says August 2025, body says 2026."
+    },
+    {
+      "id": "LBN-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson and Nokia",
+      "local_actor": "Alfa (MIC1), state-owned mobile operator",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-03-09",
+      "still_current": null,
+      "summary": "Alfa signed 4.5G LTE-Advanced deployment contracts with Ericsson and Nokia to re-equip about 1,300 radio sites nationwide, plus separate 5G-preparation MOUs with each vendor.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.alfa.com.lb/en/media-center/press-releases/alfa-signs-4.5g-lte-deployment-contracts-with-nokia-and-ericsson-in-all-of-lebanon-and-two-mous-on-5g",
+          "publisher": "Alfa",
+          "source_tier": "S1",
+          "date": "2016-03-01",
+          "retrieved_at": "2026-10-25T13:17:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://capacitymedia.com/article/29ot7v85op20oknbx12io/news/alfa-to-upgrade-lebanon-network-to-4-5g-with-nokia-and-ericsson",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:17:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/ericsson/ericsson-wins-in-lebanon/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:17:30Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pre-2020: still_current null because no opened source confirms Ericsson/Nokia remain Alfa's RAN vendors in 2026; Alfa's June 2025 statement on an 80% network modernisation names no vendor. Core-network vendor not stated."
+    },
+    {
+      "id": "LBN-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Alfa (MIC1)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-03-19",
+      "still_current": null,
+      "summary": "Alfa signed a deployment agreement for Nokia AirScale single-RAN equipment for 3G and LTE-Advanced Pro, with VoLTE and 2G spectrum refarming, plus an MOU on evolution toward 5G.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nokia.com/newsroom/alfa-and-nokia-partner-to-deploy-nokia-airscale-solution-sign-mou-for-network-evolution-toward-5g/",
+          "publisher": "Nokia",
+          "source_tier": "S1",
+          "date": "2018-03-19",
+          "retrieved_at": "2026-10-25T13:18:20Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.alfa.com.lb/en/media-center/press-releases/alfa-and-nokia-partner-to-deploy-nokia-airscale-solution-sign-5g-mou",
+          "publisher": "Alfa",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:18:20Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Vendor release is S1 for the fact of the agreement but self-interested; single opened source, so medium. Pre-2020, current status unconfirmed; value and site count not disclosed."
+    },
+    {
+      "id": "LBN-005",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Council of Ministers; Starlink Lebanon (local company); Telecommunications Regulatory Authority",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-11",
+      "still_current": null,
+      "summary": "Lebanon's cabinet licensed Starlink Lebanon to provide satellite internet, initially for businesses, over lobbying by state providers; scope widened in March 2026, but the regulator said in mid-2026 service had not commercially launched.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.newarab.com/news/lebanon-cabinet-grants-license-elon-musks-starlink",
+          "publisher": "The New Arab",
+          "source_tier": "S3",
+          "date": "2025-09-11",
+          "retrieved_at": "2026-10-25T13:19:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://smex.org/?p=226078",
+          "publisher": "SMEX (digital-rights NGO)",
+          "source_tier": "S4",
+          "date": "2026-08-17",
+          "retrieved_at": "2026-10-25T13:19:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2025/09/15/lebanon-grants-licence-to-starlink-for-satellite-internet-services/",
+          "publisher": "ME Tech Watch",
+          "source_tier": "S3",
+          "date": "2025-09-15",
+          "retrieved_at": "2026-10-25T13:19:10Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 4 as licence issued; not tier 5 because no commercial launch as of mid-2026 per SMEX (advocacy NGO, coded S4). New Arab relays Lebanon's state agency NNA (not PRC media). Only one opened S1-S3 source, so low."
+    },
+    {
+      "id": "LBN-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Ministry of Telecommunications (operator not stated; touch on site)",
+      "local_actor": "Ministry of Telecommunications; touch",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04-24",
+      "still_current": null,
+      "summary": "The telecom ministry is converting a Dekwaneh warehouse into a national data centre, merging the existing Karantina and Sawwar facilities; rehabilitation and equipment installation were under way in April 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/lebanons-govt-plans-to-transform-warehouse-into-national-data-center/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-04-24",
+          "retrieved_at": "2026-10-25T13:18:20Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator is Lebanese state, so domestic; equipment vendors, builder and financier not named. Tier 4 as works under way. Single opened S2 source, so low. Alfa separately reported its own new data centre completed in June 2025 (not coded; vendor unknown)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in facilities/AI searches, and Lebanon is in D:5 (presumption of denial) per global layer"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one AI-partnership search found Microsoft (Dec 2025) and Oracle (Dec 2025 MOU) AI-training/startup agreements and a Roland Berger strategy MOU, but no model-provider deployment or national model"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found no Huawei/Hikvision safe-city or surveillance deployment in Lebanon"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies Alfa's RAN and core today (2025 three-year 80% modernisation and 5G)? Ericsson/Nokia status since 2018 unconfirmed.",
+    "Earlier phases of touch's Huawei 'EOS Network Upgrades' and whether Huawei supplies touch's full packet core; check further PPA notices.",
+    "Ogero backbone/FTTx vendor (Huawei vs others) not established; fiber-optic project lead (fiberconnectmena) not opened.",
+    "Should the Dec 2025 Oracle MOU (training 50,000 in AI/ERP, US embassy attended) and Microsoft agreement be coded as tier-1 US application/models signals? Left uncoded as training, not deployment.",
+    "OMSAR Sept 2026 cloud-policy EOI and World Bank-backed US$285m IT modernisation: which cloud/hosting vendors?",
+    "Hosting stack and vendor for the new Dekwaneh national data centre and Alfa's data centre."
+  ],
+  "searches_run": 9
+}

@@ -1,0 +1,388 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "LTU",
+  "name": "Lithuania",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T13:22:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "LTU-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Lithuanian mobile operators (Seimas / Ministry of National Defence)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei and other non-trusted-vendor equipment in Lithuanian mobile networks",
+      "reversal_reason": "geopolitical",
+      "date": "2021-05-25",
+      "still_current": null,
+      "summary": "Seimas amended the Law on Communications and the national-security objects law to bar unreliable manufacturers and suppliers from electronic communications, especially 5G, with non-compliant equipment to be replaced by end-2025 before 5G frequency access.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lrt.lt/en/news-in-english/19/1417429/lithuania-bans-unreliable-technologies-from-its-5g-network",
+          "publisher": "LRT",
+          "source_tier": "S3",
+          "date": "2021-05-25",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://kam.lt/en/electronic-communications-services-for-national-security-objects-will-be-acquired-only-from-reliable-manufacturers-and-suppliers-says-minister-of-national-defence-a-anusauskas/",
+          "publisher": "Ministry of National Defence of Lithuania",
+          "source_tier": "S1",
+          "date": "2021-04-12",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "The law names no vendor; Huawei is inferred as the target from LRT's citation of military-intelligence warnings about Huawei and Telia's replacement of Huawei gear. Tier 5 because the reversal covers equipment already operating in networks. The KAM source describes the bill at the April 2021 presentation stage (31 Dec 2025 replacement deadline); LRT reports adoption. Whether Huawei RAN was fully removed by the deadline was not confirmed, so still_current null."
+    },
+    {
+      "id": "LTU-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Telia Lietuva",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-07",
+      "still_current": null,
+      "summary": "Telia Lietuva reached 99% geographic 5G coverage on Ericsson radio equipment under an exclusive RAN partnership signed in late 2020, which planned around 2,000 new base stations over three years from 2021.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomtv.com/content/5g/telia-achieves-99-5g-coverage-in-lithuania-with-ericsson-47937/",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2023-07-07",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/10970-telia-lietuva-upgrades-network-with-ericsson-gear-ahead-of-5g-launch.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2021-04-14",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Ericsson (Sweden) is the equipment vendor, so pole third. LRT (LTU-001 source) reports that the Ericsson rollout replaced Huawei equipment in Telia's network; the two trade sources do not mention Huawei. Deal value undisclosed."
+    },
+    {
+      "id": "LTU-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Bitė Lietuva (Bitė Group)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-05-17",
+      "still_current": null,
+      "summary": "Bitė Group signed a 2022-2028 frame agreement making Ericsson sole supplier of its nationwide 5G radio access network in Lithuania and Latvia, while continuing to supply core network technology.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/news/3/2022/bit-group-selects-ericsson-as-sole-network-supplier--bringing-5g-to-the-baltics",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2022-05-17",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-business/operator-news/13506-ericsson-takes-a-bite-of-baltics-5g-networks.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2022-05-18",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 3: signed frame agreement with named counterparty, value undisclosed. Neither opened source says which vendor Ericsson displaced in Bitė's Lithuanian network; a LETA wire seen via an aggregator mentioned Huawei replacement in Latvia only, not cited. Tele2 Lithuania's vendor not established."
+    },
+    {
+      "id": "LTU-004",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Nuctech",
+      "local_actor": "Lithuanian Airports (Lietuvos oro uostai)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Nuctech first-ranked bid to supply airport baggage scanners",
+      "reversal_reason": "geopolitical",
+      "date": "2021-02-17",
+      "still_current": null,
+      "summary": "Cabinet barred state-owned Nuctech, which had ranked first in a tender, from supplying baggage X-ray scanners to Vilnius, Kaunas and Palanga airports after a government vetting commission found the deal contrary to national security interests.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lrt.lt/en/news-in-english/19/1346778/lithuania-blocks-chinese-tech-at-airports-over-security-concerns",
+          "publisher": "LRT",
+          "source_tier": "S3",
+          "date": "2021-02-17",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.hstoday.us/subject-matter-areas/border-security/lithuania-set-to-block-chinese-security-firm-nuctech/",
+          "publisher": "Homeland Security Today (AP)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2: winning bid, contract never signed. Not corroborated: no S1/S2 source opened. Replacement vendor not identified. A Baltic Times headline seen in search reports Nuctech later got approval to install an X-ray machine for Lithuanian customs (not opened), so the exclusion may be airport-specific."
+    },
+    {
+      "id": "LTU-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Kaunas city municipality; Lithuanian police",
+      "builder": "Telia Lietuva",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019",
+      "still_current": null,
+      "summary": "About 240 Hikvision CCTV cameras, installed by Telia Lietuva under a roughly EUR 840,000 Kaunas municipal contract from autumn 2019, mainly for traffic monitoring with footage stored on police servers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lrt.lt/en/news-in-english/19/1146064/chinese-cctvs-in-lithuania-s-kaunas-raise-security-concerns",
+          "publisher": "LRT",
+          "source_tier": "S3",
+          "date": "2020-02-26",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lrt.lt/en/news-in-english/19/1960334/kaunas-reluctant-to-scrap-brand-new-cameras-after-lithuania-bans-chinese-tech",
+          "publisher": "LRT",
+          "source_tier": "S3",
+          "date": "2023-04-12",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 as an operating city camera system. Both sources are LRT (one host), so not corroborated. EUR value not converted. In April 2023 Kaunas sought an exemption to keep the cameras; whether they were removed under the 2025 phase-out (LTU-006) is unconfirmed, so still_current null."
+    },
+    {
+      "id": "LTU-006",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision and other vendors from untrusted countries (China, Russia, Belarus)",
+      "local_actor": "Lithuanian public institutions and critical-infrastructure operators",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Untrusted-country (incl. PRC) IT equipment and services in public-sector and critical-infrastructure procurement",
+      "reversal_reason": "geopolitical",
+      "date": "2022",
+      "still_current": null,
+      "summary": "Lithuania adopted rules in 2022 barring equipment from unfriendly countries, chiefly China, Russia and Belarus, from critical public infrastructure, giving institutions until 2025 to phase out equipment already in use, with no individual exemptions.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lrt.lt/en/news-in-english/19/1960334/kaunas-reluctant-to-scrap-brand-new-cameras-after-lithuania-bans-chinese-tech",
+          "publisher": "LRT",
+          "source_tier": "S3",
+          "date": "2023-04-12",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://kam.lt/en/?p=35321",
+          "publisher": "Ministry of National Defence of Lithuania",
+          "source_tier": "S1",
+          "date": "2021-11-15",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lrt.lt/en/news-in-english/19/1542279/lithuanian-mod-moves-to-ban-chinese-russian-tech",
+          "publisher": "LRT",
+          "source_tier": "S3",
+          "date": "2021-11-16",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Exact legal instrument and adoption date not confirmed: the KAM page (S1) is the November 2021 public-procurement amendment proposal (in force from July 2022 if passed; support for existing kit to January 2025); LRT (2023) reports a 2022 law. Coded as tier 5 because operating equipment (e.g. Kaunas cameras, LTU-005) is covered. Medium only on the opened S1 for the proposal."
+    },
+    {
+      "id": "LTU-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Vilnius University-led LitAI consortium",
+      "local_actor": "Vilnius University; Lithuanian Radio and Television Centre (LRTC); State Data Agency; Innovation Agency",
+      "builder": null,
+      "financier": "EuroHPC Joint Undertaking (EU) co-financing",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-10",
+      "still_current": null,
+      "summary": "EuroHPC selected Lithuania's LitAI AI Factory, led by Vilnius University and hosted at the LRTC VDC3 data centre in Vilnius; LRT reports a EUR 130 million project with EUR 65 million EU co-financing.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-selects-six-additional-ai-factories-expand-europes-ai-capabilities-2025-10-10_en",
+          "publisher": "EuroHPC Joint Undertaking",
+          "source_tier": "S1",
+          "date": "2025-10-10",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lrt.lt/en/news-in-english/19/2709522/lithuania-wins-eu-bid-to-set-up-eur130m-ai-factory",
+          "publisher": "LRT",
+          "source_tier": "S3",
+          "date": "2025-10-10",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 2: competitive selection for co-funding; no hardware procurement contract or supercomputer vendor found, so silicon pole unknown. Owner-operator is Lithuanian state/university bodies, so domestic; EU co-financing goes in financier. EUR values not converted."
+    },
+    {
+      "id": "LTU-008",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Neurotechnology (UAB)",
+      "local_actor": "Neurotechnology",
+      "builder": null,
+      "financier": null,
+      "base_model": "Llama 2 (7B/13B)",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-08-27",
+      "still_current": null,
+      "summary": "Vilnius firm Neurotechnology released open Lithuanian-language LLMs of 7 and 13 billion parameters, built on Llama 2 and pretrained on over 14 billion Lithuanian tokens, published with datasets on Hugging Face.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://neurotechnology.com/press_release_nlp_large_language_model_for_lithuanian.html",
+          "publisher": "Neurotechnology",
+          "source_tier": "S1",
+          "date": "2024-08-27",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://arxiv.org/pdf/2408.12963",
+          "publisher": "arXiv (Open Llama2 Model for the Lithuanian Language)",
+          "source_tier": "S2",
+          "date": "2024-08",
+          "retrieved_at": "2026-10-25T13:18:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Domestic firm holds the weights, so domestic; base Llama 2 (Meta, US). Tier 2 as an open research release; no government adoption or funding found. Scale coded national as a national-language foundation model, but it is a private release, not state policy."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "AI-factory search surfaced no accelerator vendor or purchase for LitAI; no other accelerator deployments found (no dedicated silicon search)"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "no AI/data-centre-specific power evidence; a Nov 2024 Law on Electricity amendment barring Chinese remote control of solar/wind/battery systems over 100 kW is grid-wide, not AI-specific, so not coded (see research_gaps)"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Exact legal instrument and adoption date of the 2022 untrusted-vendor procurement ban (Public Procurement Law amendment?) and the government list of risky countries.",
+    "Did all operators (Telia, Bite, Tele2) certify removal of Huawei equipment by the 31 Dec 2025 deadline? Tele2 Lithuania RAN/core vendor not established.",
+    "Were the Kaunas Hikvision cameras removed under the 2025 phase-out?",
+    "Which vendor replaced Nuctech at Lithuanian airports, and what was the later customs Nuctech approval (Baltic Times headline, not opened)?",
+    "LitAI supercomputer procurement: vendor and accelerator (Nvidia/AMD) once contracted.",
+    "Nov 2024 Law on Electricity amendment (79-1-6) barring PRC remote access to renewable control systems from 1 May 2025: reviewer to decide whether power layer should code it.",
+    "2021 NKSC advisory on Xiaomi/Huawei phones not coded (consumer-device advisory, not a deployment or binding instrument)."
+  ],
+  "searches_run": 9
+}

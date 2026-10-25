@@ -1,0 +1,457 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "LVA",
+  "name": "Latvia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T13:25:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "LVA-001",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "United States Department of State (joint declaration)",
+      "local_actor": "Ministry of Foreign Affairs of Latvia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-02-27",
+      "still_current": null,
+      "summary": "Latvia's foreign minister and the US Secretary of State signed a joint 5G security declaration urging supplier evaluation on rule of law and foreign-government control, and transition away from untrusted suppliers through normal replacement cycles.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mfa.gov.lv/en/article/latvian-foreign-minister-edgars-rinkevics-and-united-states-secretary-state-mike-pompeo-sign-united-states-latvia-joint-declaration-5g-security",
+          "publisher": "Ministry of Foreign Affairs of Latvia",
+          "source_tier": "S1",
+          "date": "2020-02-27",
+          "retrieved_at": "2026-10-25T13:17:50Z",
+          "opened": true
+        },
+        {
+          "url": "https://eng.lsm.lv/article/politics/diplomacy/latvia-and-us-sign-declaration-on-future-of-5g-communications.a349593/",
+          "publisher": "LSM (Latvian Public Broadcasting)",
+          "source_tier": "S3",
+          "date": "2020-02-27",
+          "retrieved_at": "2026-10-25T13:17:50Z",
+          "opened": true
+        },
+        {
+          "url": "https://eng.lsm.lv/article/society/defense/huawei-very-unlikely-to-get-involved-in-latvian-5g-infrastructure-says-report.a387776/",
+          "publisher": "LSM (Latvian Public Broadcasting)",
+          "source_tier": "S3",
+          "date": "2021-01-05",
+          "retrieved_at": "2026-10-25T13:17:50Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Non-binding declaration, tier 1; names no vendor or country. Coded as US-pole alignment statement rather than a Huawei ban: no Latvian law or regulatory exclusion of Huawei was found. LSM (Jan 2021, citing a CHOICE think-tank report) judges Huawei 5G participation in Latvia very unlikely. Reviewer call: whether a non-binding declaration belongs in networks at all."
+    },
+    {
+      "id": "LVA-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Bite Latvija",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-02-15",
+      "still_current": null,
+      "summary": "Bite Latvija's technical director said the operator would not suspend its Huawei partnership and would continue planning its 5G network with Huawei despite security concerns.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.baltictimes.com/bite_latvija_will_not_suspend_its_partnership_with_huawei",
+          "publisher": "The Baltic Times",
+          "source_tier": "S3",
+          "date": "2019-02-15",
+          "retrieved_at": "2026-10-25T13:19:04Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: a stated intention, not a contract. still_current left null: no explicit reversal found, but the May 2022 Ericsson sole-RAN deal for Bite (LVA-003) suggests Huawei did not become Bite's 5G RAN vendor. Huawei's actual installed role in Bite Latvija's legacy network is unconfirmed."
+    },
+    {
+      "id": "LVA-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Bite Group (Bite Latvija)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-05-17",
+      "still_current": null,
+      "summary": "Bite Group chose Ericsson as sole nationwide radio access network supplier for Latvia and Lithuania for 2022-2028, with Ericsson continuing to supply core technology and 5G rollout starting in major cities.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/news/3/2022/bit-group-selects-ericsson-as-sole-network-supplier--bringing-5g-to-the-baltics",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2022-05-17",
+          "retrieved_at": "2026-10-25T13:19:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-business/operator-news/13506-ericsson-takes-a-bite-of-baltics-5g-networks.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2022-05-18",
+          "retrieved_at": "2026-10-25T13:19:04Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden) is the equipment vendor, so pole third. Tier 3 as a signed multi-year supply deal; value undisclosed. Developing Telecoms likely derives from the Ericsson release, limiting independence. Neither source says Ericsson replaced Huawei."
+    },
+    {
+      "id": "LVA-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Tele2 Latvia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-01-04",
+      "still_current": null,
+      "summary": "Tele2 selected Nokia as its 5G radio access network partner across Estonia, Latvia and Lithuania, making Nokia its key Baltic 5G vendor.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/tele2-picks-nokia-for-5g-ran-in-baltics",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2022-01-04",
+          "retrieved_at": "2026-10-25T13:17:50Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia (Finland) is the equipment vendor, so pole third. Single opened source; value undisclosed. Article does not say Nokia replaced Huawei in Tele2's Baltic network."
+    },
+    {
+      "id": "LVA-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "LMT (Latvijas Mobilais Telefons)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-06-07",
+      "still_current": null,
+      "summary": "LMT selected Nokia's 5G standalone core, plus Nokia interconnect routers for data-centre fabric, to enable new 5G services.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/20220607/5g/latvian-telco-lmt-taps-nokia-for-5g-standalone-core",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2022-06-07",
+          "retrieved_at": "2026-10-25T13:17:50Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third (Finnish vendor). Single opened source; value undisclosed. LMT's RAN vendor not established in sources read. Overlaps in scope with LVA-006, which may supersede parts of this core work."
+    },
+    {
+      "id": "LVA-006",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "LMT (Latvijas Mobilais Telefons)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-09",
+      "still_current": null,
+      "summary": "LMT chose Ericsson to modernise its core network for nationwide 5G standalone, replacing legacy HLR/HSS with Ericsson UDM, moving IMS to Ericsson Cloud IMS and deploying Ericsson NFVI.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nasdaq.com/articles/ericsson-lmt-partner-cloud-native-core-network-transformation",
+          "publisher": "Nasdaq (Zacks)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:17:50Z",
+          "opened": true
+        },
+        {
+          "url": "https://business-news-today.com/lmt-partners-with-ericsson-to-modernize-core-network-and-enable-5g-standalone-deployment-in-latvia/",
+          "publisher": "Business News Today",
+          "source_tier": "S3",
+          "date": "2025-07-09",
+          "retrieved_at": "2026-10-25T13:19:04Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third (Swedish vendor). Two opened S3 sources but no S1/S2, so not corroborated; both likely derive from an Ericsson release. Nasdaq page undated; date taken from Business News Today. Value undisclosed."
+    },
+    {
+      "id": "LVA-007",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Delska (DEAC/DLC, part of Swiss Quaero European Infrastructure Fund II)",
+      "local_actor": "Delska",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04-15",
+      "still_current": null,
+      "summary": "Delska launched its EU North Riga LV DC1 data centre, 10 MW expandable to 30 MW and designed for AI and high-performance computing, after investing over EUR 30 million; infrastructure being prepared for first clients.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://business.gov.lv/en/news/one-most-powerful-data-centres-region-being-built-riga",
+          "publisher": "business.gov.lv (Investment and Development Agency of Latvia)",
+          "source_tier": "S1",
+          "date": "2025-01-16",
+          "retrieved_at": "2026-10-25T13:19:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacentrenews.uk/story/delska-begins-work-on-gbp-30m-data-centre-in-riga",
+          "publisher": "DataCentreNews UK",
+          "source_tier": "S2",
+          "date": "2024-11-07",
+          "retrieved_at": "2026-10-25T13:19:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.aap.com.au/aapreleases/cision20260415ae35121/",
+          "publisher": "Delska press release via AAP/Cision",
+          "source_tier": "S4",
+          "date": "2026-04-15",
+          "retrieved_at": "2026-10-25T13:19:04Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole is genuinely debatable: operator Delska is a Latvian-Lithuanian brand, but DEAC and DLC have belonged to the Swiss Quaero fund since 2020, so coded third on ultimate ownership. Reviewer call: domestic vs third. Tier 4: launched but no confirmed tenants. EUR value not converted."
+    },
+    {
+      "id": "LVA-008",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "EuroHPC Joint Undertaking / LUMI AI Factory consortium (Finland-led)",
+      "local_actor": "Riga Technical University (AIFA-LAT)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025",
+      "still_current": null,
+      "summary": "Latvia was selected to host an AI Factory Antenna (AIFA-LAT), led by Riga Technical University and linked to the Finland-led LUMI AI Factory, with an EUR 8.4 million 2026-2028 budget including EUR 3.98 million national co-funding.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.izm.gov.lv/en/article/latvia-joins-european-artificial-intelligence-factories-network-strengthening-science-innovation-and-digital-literacy",
+          "publisher": "Ministry of Education and Science of Latvia",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:19:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://lvportals.lv/dienaskartiba/381633-latvija-klust-par-dalu-no-eiropas-maksliga-intelekta-rupnicu-tikla-stiprinot-zinatni-inovacijas-un-digitalo-pratibu-2025",
+          "publisher": "LV portāls",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:17:50Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Antenna gives access to remote EU supercomputing (LUMI, Finland) rather than local hardware, so compute controller is EU (third). Tier 2: selection plus funded programme; partner MoU due mid-2026 not confirmed. Year inferred from the page ('this autumn', project 2026-2028) and lvportals URL; exact date unknown."
+    },
+    {
+      "id": "LVA-009",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Tilde",
+      "local_actor": "Tilde",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-04",
+      "still_current": null,
+      "summary": "Latvian company Tilde released TildeOpen, a 30-billion-parameter open model for European languages, trained on Finland's LUMI supercomputer under a European Commission Large AI Grand Challenge award and published on Hugging Face.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.researchlatvia.gov.lv/en/world-class-ai-model-european-languages-developed-latvia",
+          "publisher": "Research Latvia (Ministry of Education and Science)",
+          "source_tier": "S1",
+          "date": "2025-09-04",
+          "retrieved_at": "2026-10-25T13:19:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://tilde.ai/?p=20213",
+          "publisher": "Tilde",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:17:50Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Weights controlled by a Latvian firm, so domestic. Whether trained from scratch or on a foreign base is not stated in the opened source, so base_model null. Tier 4: released openly; government or at-scale adoption not established. Training compute was EU (LUMI)."
+    },
+    {
+      "id": "LVA-010",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "Ministry of Economics; Ministry of Smart Administration and Regional Development; LIAA; State Digital Development Agency",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12-03",
+      "still_current": null,
+      "summary": "Latvian ministries and agencies signed an MoU with Microsoft to use Azure AI services in public administration, starting with an AI pilot for LIAA project evaluation, and to support a planned National AI Centre.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.varam.gov.lv/en/article/latvia-and-microsoft-collaborate-advance-artificial-intelligence-innovation",
+          "publisher": "Ministry of Smart Administration and Regional Development",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:19:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.amcham.lv/en/communications/news/latvia-and-microsoft-collaborate-to-advance-artificial-intelligence-innovation",
+          "publisher": "AmCham Latvia",
+          "source_tier": "S4",
+          "date": "2024-12-17",
+          "retrieved_at": "2026-10-25T13:19:04Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Non-binding MoU, tier 1; no value. Coded models (Azure AI services/Model as a Service); no specific model (e.g. OpenAI) named. Year from AmCham page; ministry page gave only 3 December."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "AI-factory and data-centre searches surfaced no accelerator purchases or export-licence reporting for Latvia; Delska launch mentions no GPUs"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no safe-city or PRC surveillance deployment surfaced in network or government-AI searches"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Three searches (English, Latvian) found no Latvian government-device ban or formal restriction on DeepSeek, unlike Lithuania; confirm with CERT.LV or the Data State Inspectorate.",
+    "No Latvian law or regulator decision excluding Huawei/ZTE found; check the Electronic Communications Law amendments and any SPRK/NBS vendor-screening rules.",
+    "Was Huawei equipment present in Bite Latvija's or Tele2 Latvia's legacy RAN, and has it been removed?",
+    "Who is LMT's 5G RAN vendor?",
+    "Is TildeOpen used by Latvian government services, and was it trained from scratch?",
+    "Exact date of Latvia's AI Factory Antenna selection and whether the partner MoU was signed by mid-2026.",
+    "Applications layer unresearched: any Hikvision/Dahua municipal CCTV in Riga or other cities."
+  ],
+  "searches_run": 12
+}

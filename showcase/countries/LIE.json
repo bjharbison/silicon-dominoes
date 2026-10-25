@@ -1,0 +1,161 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "LIE",
+  "name": "Liechtenstein",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T13:18:33Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "LIE-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Telecom Liechtenstein AG (FL1)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-04",
+      "still_current": null,
+      "summary": "State-linked market leader Telecom Liechtenstein chose Nokia as its radio technology partner to modernise its mobile network and roll out 5G, extending an existing relationship under which Nokia had already built its fibre core.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nokia.com/customer-success/telecom-liechtenstein-selects-nokia-to-modernize-its-mobile-network-and-prepare-5g-rollout",
+          "publisher": "Nokia",
+          "source_tier": "S1",
+          "date": "2023-04-28",
+          "retrieved_at": "2026-10-25T13:18:33Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecomtalk.info/?p=699892",
+          "publisher": "TelecomTalk",
+          "source_tier": "S2",
+          "date": "2023-05-01",
+          "retrieved_at": "2026-10-25T13:18:33Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.landtag.li/printkleineanfrage/19908",
+          "publisher": "Landtag des Fürstentums Liechtenstein",
+          "source_tier": "S1",
+          "date": "2020-10-02",
+          "retrieved_at": "2026-10-25T13:18:33Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 3 as a named vendor selection; contract value and signing date not disclosed, and the Nokia page date comes from search metadata. TelecomTalk likely relays Nokia's release, but the 2020 government answer in the Landtag independently states Telecom Liechtenstein planned 5G with Nokia. Radio scope only; core vendor beyond the fibre roll-out not confirmed."
+    },
+    {
+      "id": "LIE-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Swisscom and Salt (Liechtenstein mobile operations)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-10",
+      "still_current": null,
+      "summary": "Answering a 2020 parliamentary question, the government stated Swisscom and Salt, active in Liechtenstein, use Huawei technology, that no law excludes any vendor, and that it expected US pushback if operators used Huawei.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.landtag.li/printkleineanfrage/19908",
+          "publisher": "Landtag des Fürstentums Liechtenstein",
+          "source_tier": "S1",
+          "date": "2020-10-02",
+          "retrieved_at": "2026-10-25T13:18:33Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Which network element is Huawei-supplied is not stated; Swiss reporting (snippets only, not opened) links Swisscom to Huawei for IP/fibre transport, while a 2019 cash.ch article says Salt kept Nokia for radio and core in Switzerland. Coded tier 3 conservatively rather than tier 5 because scope is unspecified. Single opened S1, so medium. Whether this still holds in 2026 is unverified."
+    },
+    {
+      "id": "LIE-003",
+      "layer": "models",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Liechtensteinische Landesverwaltung (state administration)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05",
+      "still_current": null,
+      "summary": "The state administration launched 'Libot', an AI chatbot on its llv.li portal answering citizen questions and guiding users to services, absorbing an earlier commercial-register bot; the model provider and hosting were not disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.netzwoche.ch/news/2026-05-27/fuerstentum-liechtenstein-setzt-auf-ki-chatbot",
+          "publisher": "Netzwoche",
+          "source_tier": "S2",
+          "date": "2026-05-27",
+          "retrieved_at": "2026-10-25T13:18:33Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "pole null because the underlying model and its controller are not named in the source; a reviewer should establish the vendor before this colours the map. Tier 5 as a live public service, but it is a single FAQ assistant, not a broad government model adoption."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "two searches found only directory listings and an Oct 2025 parliamentary interpellation asking whether LKW and Telecom Liechtenstein should build AI data-centre infrastructure; no project found"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced and none plausible at this scale"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on police video surveillance found no vendor named; a government Microsoft 365/cloud search returned only job ads"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which vendor and model power the government's Libot chatbot, and where is it hosted?",
+    "Do Swisscom and Salt still run Huawei equipment in their Liechtenstein networks in 2026, and in which element (RAN, core, transport)?",
+    "Government answer to the October 2025 FBP interpellation on AI (national AI strategy, AI-suitable data centres, LKW/Telecom Liechtenstein AI infrastructure).",
+    "Has Telecom Liechtenstein's Nokia 5G network reached nationwide commercial coverage?"
+  ],
+  "searches_run": 9
+}

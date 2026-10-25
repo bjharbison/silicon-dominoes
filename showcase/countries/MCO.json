@@ -1,0 +1,185 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MCO",
+  "name": "Monaco",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T13:19:19Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MCO-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei (Huawei France)",
+      "local_actor": "Monaco Telecom (sole licensed operator, state part-owned concession)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-07",
+      "still_current": null,
+      "summary": "Monaco Telecom, the principality's only mobile operator, launched nationwide 5G in July 2019 using Huawei equipment for all network elements, under a 2018 agreement signed in Beijing and welcomed by the government.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sdxcentral.com/news/monaco-telecom-5g-fully-based-on-huawei-equipment/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2019-07-10",
+          "retrieved_at": "2026-10-25T13:19:19Z",
+          "opened": true
+        },
+        {
+          "url": "https://en.gouv.mc/Portail-du-Gouvernement/A-la-Une-du-Portail/Government-welcomes-agreement-between-Monaco-Telecom-and-Huawei-on-5G-coverage-in-Monaco",
+          "publisher": "Gouvernement Princier de Monaco",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:19:19Z",
+          "opened": true
+        },
+        {
+          "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-5g-regulation-and-law/monaco",
+          "publisher": "CMS Expert Guide to 5G Regulation and Law",
+          "source_tier": "S2",
+          "date": "2025-03-03",
+          "retrieved_at": "2026-10-25T13:19:19Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 5: commercial nationwide service. Government release undated on page; appears to be Sept 2018 signing. CMS guide (Mar 2025) still describes the Huawei partnership and notes no high-risk-vendor rules, and no swap was found, but no source confirms the vendor as of the run date, so still_current left null. Partnership dates to 2012, so 4G likely also Huawei (unverified)."
+    },
+    {
+      "id": "MCO-002",
+      "layer": "cloud",
+      "pole": "us",
+      "controller": "Amazon Web Services",
+      "local_actor": "Monaco Cloud (state-majority company with Monaco Digital as industrial shareholder)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-09",
+      "still_current": true,
+      "summary": "The government chose AWS in 2019 to supply a hybrid sovereign cloud for e-government and business; state-majority Monaco Cloud launched it on AWS technology in September 2021, hosted in data centres inside Monaco with Luxembourg e-embassy backup.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://en.gouv.mc/News/Monaco-selects-Amazon-Web-Services-as-cloud-service-supplier2",
+          "publisher": "Gouvernement Princier de Monaco",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:19:19Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.solutions-numeriques.com/?p=89113",
+          "publisher": "Solutions Numeriques",
+          "source_tier": "S2",
+          "date": "2021-11-22",
+          "retrieved_at": "2026-10-25T13:19:19Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.monaco-tribune.com/en/2020/09/monaco-to-have-its-own-cloud/",
+          "publisher": "Monaco Tribune",
+          "source_tier": "S3",
+          "date": "2020-09-15",
+          "retrieved_at": "2026-10-25T13:19:19Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.hellomonaco.com/news/latest-news/how-monaco-built-europes-first-sovereign-cloud-a-blueprint-for-data-privacy/",
+          "publisher": "Hello Monaco",
+          "source_tier": "S3",
+          "date": "2026-04-24",
+          "retrieved_at": "2026-10-25T13:19:19Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole us under the equipment/stack rule: AWS supplies the cloud technology and updates, though ownership and data residency are Monegasque. Exact AWS product (e.g. Outposts) not stated in any opened source. Tier 5 as operational national government cloud; still_current from April 2026 reporting. Confidence medium because user/workload scale is not documented. Global cloud-region layer may not capture this on-premises arrangement."
+    },
+    {
+      "id": "MCO-003",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Dallmeier electronic (Germany)",
+      "local_actor": "Gouvernement Princier / Direction de la Surete Publique",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2005",
+      "still_current": null,
+      "summary": "German vendor Dallmeier designed and integrated Monaco's city-wide IP video surveillance system from a 2005 contract: about 520 cameras, police control-room recording and management software, later adding number-plate recognition on 30 traffic lanes.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.securityworldmarket.com/int/Newsarchive/monaco-residents-secured-by-dallmeier",
+          "publisher": "SecurityWorldMarket (vendor-supplied case study)",
+          "source_tier": "S4",
+          "date": "2013-09-27",
+          "retrieved_at": "2026-10-25T13:19:19Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Source reads as a Dallmeier case study relayed by trade press, so treated as S4. Pre-2020: Monaco Tribune (May and Dec 2023) reports 1,057 cameras but names no vendor, so the current vendor is unconfirmed and still_current null. A 2023 draft bill (No. 1087) would allow facial recognition; no vendor named."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "two searches found only Monaco Cloud's in-country data centres (coded under cloud) and a small Monaco Telecom basement data centre (DCD tag listing, Feb 2024); no AI campus or large foreign-controlled facility"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced at this scale"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "two searches on government AI found policy statements and a sovereignty push but no named model-provider partnership or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Is Monaco Telecom's 5G (and 5G SA core, reportedly being integrated per CMS 2025) still Huawei-supplied as of 2026, and is any vendor swap planned given EU 5G Toolbox pressure via France?",
+    "Who currently supplies Monaco's 1,057-camera public video-protection system and any facial-recognition software following draft bill No. 1087 (Dec 2023)? Was it enacted?",
+    "Which AWS product underlies Monaco Cloud (e.g. Outposts or dedicated local zone), and does AWS retain operational access?",
+    "Does the Monaco government use any frontier model provider (e.g. via Monaco Cloud) for e-government services?"
+  ],
+  "searches_run": 8
+}

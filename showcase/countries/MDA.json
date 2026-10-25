@@ -1,0 +1,269 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MDA",
+  "name": "Moldova",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T13:19:13Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MDA-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Moldtelecom (state-owned operator)",
+      "builder": null,
+      "financier": "Bank of China; Huawei (supplier credit)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2009-05",
+      "still_current": null,
+      "summary": "Huawei won state operator Moldtelecom's May 2009 3G equipment tender, reportedly at about half rivals' cost; Bank of China loans and Huawei supplier credits financed the 3G equipment and post-warranty services.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.old.ipn.md/en/moldtelecom-to-launch-3g-mobile-communications-network-7967_977994.html",
+          "publisher": "IPN News Agency",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:19:13Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/66618",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:19:13Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/66617",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:19:13Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 3: tender award plus financed equipment supply. Two opened S3 sources but no S1/S2, so not corroborated. AidData records two 2010 BOC loans (78.8m and 67.8m lei) and BOC+Huawei lending of 236.8m lei by end-2010; not converted to a contract value because loans may cover more than this award. IPN page undated; events dated from text (tender 14 May 2009). Pre-2020 and still_current unverified: whether Huawei still supplies Moldtelecom's radio/core (4G/5G) is unknown."
+    },
+    {
+      "id": "MDA-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (via Ericsson Nikola Tesla, Croatia)",
+      "local_actor": "Interdnestrcom (IDC), Tiraspol, Transnistria",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016",
+      "still_current": null,
+      "summary": "Ericsson Nikola Tesla disclosed to the Zagreb Stock Exchange a contract worth almost HRK 56 million with Tiraspol-based operator Interdnestrcom for a 4G/LTE network build, related services and software upgrades.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://eho.zse.hr/en/issuer-announcements/view/28414",
+          "publisher": "Zagreb Stock Exchange (Ericsson Nikola Tesla issuer announcement)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:19:13Z",
+          "opened": true
+        },
+        {
+          "url": "https://eho.zse.hr/en/issuer-announcements/view/29649",
+          "publisher": "Zagreb Stock Exchange (Ericsson Nikola Tesla issuer announcement)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:19:13Z",
+          "opened": true
+        },
+        {
+          "url": "https://evertiq.com/news/11400",
+          "publisher": "Evertiq",
+          "source_tier": "S2",
+          "date": "2008-06-06",
+          "retrieved_at": "2026-10-25T13:19:13Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Both ZSE notices show publication '09/03/2016' (day/month order ambiguous), so date coded as 2016. Evertiq (2008) covers an earlier, smaller Ericsson deal with the same operator (about EUR 600k, AXE modernisation), showing a longer relationship but not corroborating the 2016 contract. HRK value not converted. Transnistria is outside Chisinau's control, hence subnational; vendor for the Moldovan-controlled operators Orange Moldova and Moldcell not established. Pre-2020; still_current unverified."
+    },
+    {
+      "id": "MDA-003",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei (technology); Hebei Jianshe Construction Group (contractor)",
+      "local_actor": "Ministry of Internal Affairs, Information Technology Service (Traffic Monitoring and Control Center)",
+      "builder": "Hebei Jianshe Construction Group Co., Ltd",
+      "financier": "Government of China (grant)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2012-09-27",
+      "still_current": null,
+      "summary": "A China-grant-funded contract signed with Hebei Jianshe for the first stage of Moldova's national automated road-traffic surveillance system, covering 47 Chisinau intersections and national roads and using Huawei technology; a further roughly US$10m Chinese grant was later negotiated.",
+      "announced_value_usd": 4500000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://blackseanews.net/en/read/45749",
+          "publisher": "Black Sea News",
+          "source_tier": "S3",
+          "date": "2012-10-01",
+          "retrieved_at": "2026-10-25T13:19:13Z",
+          "opened": true
+        },
+        {
+          "url": "https://ipn.md/index.php/en/moldova-negotiates-new-grant-for-extending-video-traffic-monitoring-system-7967_1015930.html",
+          "publisher": "IPN News Agency",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:19:13Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/66237",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:19:13Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole prc because Huawei technology is reported as the system basis; operator is the Interior Ministry. IPN article (undated, apparently autumn 2015) confirms cameras operating and a US$10m extension grant under negotiation, not concluded; AidData title (unopened) mentions an RMB 30m grant. No S1/S2, so not corroborated. Pre-2020; still_current unverified."
+    },
+    {
+      "id": "MDA-004",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision; Dahua",
+      "local_actor": "Moldovan police, Ministry of Defence, Ministry of Foreign Affairs, National Bank, Central Election Commission, prison administration",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023",
+      "still_current": null,
+      "summary": "RFE/RL's review of Moldova's procurement portal found over 7,210 Hikvision and Dahua cameras bought by state bodies in 2018-2023, including police, a Defence Ministry air regiment, the National Bank, prisons and the election commission.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rferl.org/a/china-surveillance-cameras-europe-dahua-hikvision/32930737.html",
+          "publisher": "Radio Free Europe/Radio Liberty",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:19:13Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded S4 because RFE/RL is US-government funded (state-affiliated under SPEC); a reviewer may regrade to S3. Underlying data is the public procurement portal, not opened here. Tier 3 for procurement awards; many cameras are presumably operating but no system-level integration was documented. Finding date is the end of the procurement window; article date not captured. No removal decision found."
+    },
+    {
+      "id": "MDA-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "STISC (Information Technology and Cyber Security Service, state)",
+      "local_actor": "Agency for Electronic Governance; Ministry of Finance; Ministry of Internal Affairs IT service; Public Service Agency",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04",
+      "still_current": true,
+      "summary": "A 2026 draft government decision continues consolidating public-sector data centres into MCloud, the state-run common government platform operated by STISC, letting three agencies buy interim hardware until end-2028 before handing it to STISC.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gov.md/sites/default/files/media/documents/sedinte-de-guvern/2026-04/NU-40-MDED-STISC-2026.pdf",
+          "publisher": "Government of the Republic of Moldova",
+          "source_tier": "S1",
+          "date": "2026-04",
+          "retrieved_at": "2026-10-25T13:19:13Z",
+          "opened": true
+        },
+        {
+          "url": "https://stisc.gov.md/en/node/1225",
+          "publisher": "STISC",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:19:13Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is a Moldovan state body, so domestic. No foreign vendor, builder or financier named; underlying server/storage vendors unknown. Tier 4 chosen conservatively: platform is operating (consolidation under way since Decisions 414/2018 and 823/2020) but migration is incomplete. Both sources are government, so not corroborated; still_current true from the 2026 draft and a 2024 MCloud decommissioning entry."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases or licence decisions surfaced in facilities/models searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only a 2025 Google-supported AI skills training for ~500 civil servants (MEGA/ATIC), which is training, not model adoption; no provider partnership or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendors of Orange Moldova and Moldcell (4G and the 2024-25 5G rollout after ANRCETI's October 2024 multiband auction) not found; does Moldtelecom still run Huawei kit?",
+    "Does Moldova's new electronic communications law or 2023 cybersecurity law contain a high-risk-vendor (EU 5G Toolbox) mechanism, and has any Huawei/ZTE exclusion been applied? Not found in 4 network searches.",
+    "Is the Huawei-based national traffic surveillance system (SNASCR) still in use, and was the ~US$10m / RMB 30m Chinese extension grant concluded?",
+    "Verify RFE/RL Hikvision/Dahua procurement count against the achizitii.md/MTender portal, and whether any ban on PRC cameras in state institutions has been proposed.",
+    "US-funded (USAID/MCC) cybersecurity or e-government infrastructure and any commercial data-centre projects since 2023 not researched within budget."
+  ],
+  "searches_run": 10
+}

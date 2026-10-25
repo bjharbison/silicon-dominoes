@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "LBN",
-  "LBR",
-  "LBY",
-  "LCA",
-  "LIE",
-  "LTU",
-  "LUX",
-  "LVA",
-  "MCO",
-  "MDA",
   "MDG",
   "MDV",
   "MHL",
@@ -254,6 +244,16 @@
   "HTI",
   "ISL",
   "KIR",
-  "KNA"
+  "KNA",
+  "LBN",
+  "LBR",
+  "LBY",
+  "LCA",
+  "LIE",
+  "LTU",
+  "LUX",
+  "LVA",
+  "MCO",
+  "MDA"
  ]
 }

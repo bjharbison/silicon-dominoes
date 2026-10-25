@@ -1,0 +1,457 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "LUX",
+  "name": "Luxembourg",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T13:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "LUX-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Proximus Luxembourg (Tango / Telindus brands)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei radio access network at Proximus Luxembourg",
+      "reversal_reason": "commercial",
+      "date": "2020-12",
+      "still_current": null,
+      "summary": "Proximus Luxembourg, reported to run an all-Huawei radio access network, chose Nokia to replace its incumbent RAN vendor under a seven-year 5G deal announced December 2020, mirroring Proximus's Belgian swap.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/proximus-dumps-huawei-in-luxembourg-too",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-12-15",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecoms.com/507868/proximus-picks-nokia-to-replace-huawei-in-its-luxembourg-5g-ran/",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2020-12-15",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reversal of an operational (tier 5) Huawei 4G RAN. Neither company gave a security reason; Light Reading notes the PM had urged operators to weigh 'geostrategic sensitivity' and that Luxembourg had not banned Huawei. Coded commercial on stated reasons; reviewer may judge geopolitical. Completion of the swap not confirmed in opened sources."
+    },
+    {
+      "id": "LUX-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia (RAN); Ericsson (core)",
+      "local_actor": "Proximus Luxembourg (Tango / Telindus brands)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-12",
+      "still_current": null,
+      "summary": "Proximus Luxembourg signed a seven-year deal for Nokia AirScale radio equipment covering indoor and outdoor 5G coverage, with Ericsson supplying the 5G core, replacing Huawei in the radio network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/proximus-dumps-huawei-in-luxembourg-too",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-12-15",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecoms.com/507868/proximus-picks-nokia-to-replace-huawei-in-its-luxembourg-5g-ran/",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2020-12-15",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nokia (Finland) and Ericsson (Sweden) are EU/Nordic vendors, so pole third. Contract value not disclosed. Rollout was due to start in 2021; current status not checked."
+    },
+    {
+      "id": "LUX-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "POST Luxembourg",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-12",
+      "still_current": null,
+      "summary": "Light Reading reported that state-owned incumbent POST Luxembourg had not previously used Chinese vendors and kept Ericsson for its 5G radio network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/proximus-dumps-huawei-in-luxembourg-too",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-12-15",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened S2 source, so uncorroborated; tier 3 assumed for a continuing vendor relationship, no award notice seen. Note LUX-005: POST does run Huawei enterprise routers elsewhere in its network, so 'no Chinese vendors' applies at most to the radio network."
+    },
+    {
+      "id": "LUX-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Orange Luxembourg",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-12",
+      "still_current": null,
+      "summary": "Orange Luxembourg, which analysts at Strand Consult said relied fully on Huawei for its 4G radio network, selected Nokia for its 5G network, per Light Reading.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/proximus-dumps-huawei-in-luxembourg-too",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2020-12-15",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened S2 source relaying Strand Consult; no Orange or Nokia release opened. Whether Orange's Huawei 4G RAN was also removed is not established, so no reversal coded."
+    },
+    {
+      "id": "LUX-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "POST Luxembourg",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-23",
+      "still_current": true,
+      "summary": "A denial-of-service attack exploiting an undocumented flaw in Huawei enterprise routers used by POST Luxembourg caused a nationwide outage of over three hours on 23 July 2025, hitting fixed, mobile and emergency calls.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://en.paperjam.lu/article/huawei-at-the-heart-of-the-post-outage-though-not-necessarily-the-target",
+          "publisher": "Paperjam",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://securityaffairs.com/192431/hacking/alleged-huawei-zero-day-blamed-for-the-2025-luxembourg-telecom-crash.html",
+          "publisher": "Security Affairs",
+          "source_tier": "S2",
+          "date": "2026-05-20",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both opened sources relay The Record's reporting, so not independent; not corroborated. Evidences Huawei routing equipment operational in the national incumbent's network. still_current true: POST's CEO said (Paperjam, ~Sept 2026) it would not exclude a supplier without an explicit regulatory requirement. Which network segment the routers serve is not established."
+    },
+    {
+      "id": "LUX-006",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Commune of Bissen / Ministry of the Economy",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Google hyperscale data centre project at Bissen (land acquired 2017)",
+      "reversal_reason": "commercial",
+      "date": "2022-12",
+      "still_current": null,
+      "summary": "Google's planned EUR 1bn Bissen data centre, on land bought in 2017 and rezoned after a court challenge, stalled: Google missed environmental and permit steps, ministers said the decision lay with Google, and no construction has started.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/luxembourgs-ministry-of-environment-has-had-no-contact-with-google-over-delayed-data-center/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2022-12-09",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/luxembourg-minister-says-google-data-center-not-dead-but-still-no-sign-of-movement",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://en.paperjam.lu/article/there-needs-to-be-a-decision-o",
+          "publisher": "Paperjam",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as a pause, not a cancellation: no source opened shows Google formally abandoning the project. Tier 3 = completed land purchase from a state-arranged sale; no construction. Reason coded commercial: the minister suspected Google's 'new strategic considerations' amid Belgian expansion; zoning and litigation also delayed it. EUR 1bn announced value not converted (no source-date rate). Status in 2025-26 not established, so still_current null."
+    },
+    {
+      "id": "LUX-007",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "LuxProvide (MeluXina-AI, Luxembourg AI Factory)",
+      "builder": "E4 Computer Engineering (integrator); Dell Technologies (servers)",
+      "financier": "EuroHPC JU (50%, Digital Europe Programme); remainder not stated",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-22",
+      "still_current": null,
+      "summary": "EuroHPC signed the contract for MeluXina-AI: 252 nodes, 1,008 liquid-cooled Nvidia GB200 NVL4 Blackwell GPUs, integrated by E4 Computer Engineering with Dell servers, EUR 80m total budget, half EU-funded, installation from autumn 2026 in Bissen.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-signs-contract-meluxina-ai-new-ai-optimised-supercomputer-luxembourg-ai-factory-2026-07-22_en",
+          "publisher": "EuroHPC Joint Undertaking",
+          "source_tier": "S1",
+          "date": "2026-07-22",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://luxinnovation.lu/news/european-ai-factories-luxembourg-selected",
+          "publisher": "Luxinnovation",
+          "source_tier": "S1",
+          "date": "2024-12-13",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Accelerator vendor Nvidia sets pole us; integrator E4 (Italy) and Dell (US) noted. Luxinnovation (Dec 2024) cited 'more than 2,100' GPU accelerators at selection, versus 1,008 GPUs in the signed contract; the contract figure is used. Luxinnovation does not name the vendor, so it does not corroborate the Nvidia award; single opened S1 permits medium. EUR 80m is a budget, not a contract price; not converted."
+    },
+    {
+      "id": "LUX-008",
+      "layer": "models",
+      "pole": "third",
+      "controller": "Mistral AI",
+      "local_actor": "Government of Luxembourg (Prime Minister; ministries of economy, digitalisation, defence, research)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-17",
+      "still_current": null,
+      "summary": "Luxembourg signed a multi-year strategic partnership with French firm Mistral AI covering public-service AI adoption, defence, and research, with Mistral opening a local office and solutions hosted locally under state data control.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gouvernement.lu/en/actualites/agenda.gouvernement2024%2Ben%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2025%2B06-juin%2B17-frieden-mistral-ai.html",
+          "publisher": "Government of Luxembourg",
+          "source_tier": "S1",
+          "date": "2025-06-17",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://the-decoder.com/luxembourg-partners-with-mistral-ai-to-bring-artificial-intelligence-to-government-and-defense/",
+          "publisher": "The Decoder",
+          "source_tier": "S2",
+          "date": "2025-06-17",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2: a framework partnership; the government page does not call it binding. Mistral is French, so pole third. Local hosting suggests on-premise deployment, but who holds the weights is not established, so not coded domestic.",
+      "bundle_id": "LUX-B1"
+    },
+    {
+      "id": "LUX-009",
+      "layer": "models",
+      "pole": "third",
+      "controller": "Mistral AI",
+      "local_actor": "Luxembourg Ministry of Defence / Luxembourg Armed Forces",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-17",
+      "still_current": null,
+      "summary": "Under the Mistral partnership, Luxembourg's Defence Ministry signed a separate contract with Mistral AI to integrate AI tools into the armed forces' activities.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gouvernement.lu/en/actualites/agenda.gouvernement2024%2Ben%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2025%2B06-juin%2B17-frieden-mistral-ai.html",
+          "publisher": "Government of Luxembourg",
+          "source_tier": "S1",
+          "date": "2025-06-17",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://the-decoder.com/luxembourg-partners-with-mistral-ai-to-bring-artificial-intelligence-to-government-and-defense/",
+          "publisher": "The Decoder",
+          "source_tier": "S2",
+          "date": "2025-06-17",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Signed contract with named counterparty; value and scope not disclosed. Same announcement as LUX-008; bundled.",
+      "bundle_id": "LUX-B1"
+    },
+    {
+      "id": "LUX-010",
+      "layer": "cloud",
+      "pole": "us",
+      "controller": "Google (Google Distributed Cloud Hosted)",
+      "local_actor": "Clarence (JV of Proximus and state-owned LuxConnect)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-10",
+      "still_current": null,
+      "summary": "Proximus and state-owned LuxConnect launched Clarence, a joint venture offering Google Distributed Cloud Hosted, a disconnected sovereign cloud run from Belgian and Luxembourg facilities and aimed at governments and regulated firms.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/proximus-and-luxconnect-launch-clarence-jv-to-offer-google-cloud-services",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.luxconnect.lu/clarence-joint-venture-proximus-luxconnect-disconnected-sovereign-cloud/",
+          "publisher": "LuxConnect",
+          "source_tier": "S1",
+          "date": "2023-10-25",
+          "retrieved_at": "2026-10-25T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole us on the equipment rule: Google supplies the software stack and its updates, though the disconnected design removes run-time connectivity to Google; reviewer may prefer null. Year 2023 inferred from 'Wednesday, October 25' and the March 2023 Proximus-Google deal. Customers and ownership split not stated. Cloud is a global layer; coded here because Clarence is not a public cloud region."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "not_searched",
+      "null_reason": "budget spent on networks, facilities and models leads; no surveillance or e-government AI vendor evidence surfaced"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Has Google formally abandoned or sold back the Bissen land (state right of first refusal), and when? No 2025-26 status found.",
+    "Which segment of POST Luxembourg's network uses Huawei routers, and did the ILR or government order any vendor review after the July 2025 outage?",
+    "Has Orange Luxembourg removed Huawei from its 4G RAN, and was the Proximus Luxembourg Huawei swap completed?",
+    "Does the Mistral deployment run on state-controlled infrastructure (e.g. MeluXina or government data centres) with locally held weights?",
+    "Government sovereign cloud: DCD reports a 'Luxembourg govt launches sovereign cloud' item not reviewed; who supplies its stack? Any Microsoft sovereign-cloud deal?",
+    "MeluXina (2021) system vendor and Nvidia content not coded; check the 2,100 vs 1,008 GPU discrepancy for MeluXina-AI."
+  ],
+  "searches_run": 9
+}

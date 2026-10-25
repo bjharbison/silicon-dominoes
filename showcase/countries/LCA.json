@@ -1,0 +1,210 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "LCA",
+  "name": "Saint Lucia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T13:18:24Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "LCA-001",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Dahua Technology (camera manufacturer)",
+      "local_actor": "Government of Saint Lucia; KLED (St. Lucia) Limited",
+      "builder": "K&B Tech Solution (CCTV installation)",
+      "financier": "CIFI (senior and subordinated loans); MIGA guarantee",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-10",
+      "still_current": null,
+      "summary": "A 2019 public-private partnership with KLED to replace streetlights also installs, operates and maintains up to about 970 CCTV cameras at over 300 sites island-wide; MIGA's disclosure names Dahua as the camera manufacturer.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.miga.org/project/saint-lucia-led-street-lights-project-0",
+          "publisher": "Multilateral Investment Guarantee Agency (World Bank Group)",
+          "source_tier": "S1",
+          "date": "2021-05-07",
+          "retrieved_at": "2026-10-25T13:18:24Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.govt.lc/consultancies/installation-supervision-strl-cctv",
+          "publisher": "Government of Saint Lucia",
+          "source_tier": "S1",
+          "date": "2023-06-12",
+          "retrieved_at": "2026-10-25T13:18:24Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.cifi.com/en/solutions/investment-focus/success-stories/kled",
+          "publisher": "CIFI",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:18:24Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "The island-wide CCTV deployment is corroborated by two opened S1 sources on different hosts, but the Dahua attribution rests on MIGA alone; the government consultancy lists 'OLIX'-prefixed camera models without naming a manufacturer, which may be rebadged hardware. Pole follows the camera vendor per the equipment rule, though KLED (Irish-founded, BVI equity vehicle) operates the system. Tier 4: contract signed, financing closed, installation under supervision 2023-24; CIFI says the streetlights are operational but does not confirm the cameras are live. Project financing figures (MIGA up to US$11.7m guarantee; CIFI US$8.6m loans on US$10.3m cost) cover streetlights and CCTV together, so values left null."
+    },
+    {
+      "id": "LCA-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Flow (Cable & Wireless Communications, Liberty Latin America)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-07-12",
+      "still_current": null,
+      "summary": "Ericsson won a three-year managed-services deal to maintain the mobile core and radio equipment and run network operations for Flow's mobile networks in twelve northern Caribbean markets, including Saint Lucia.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/news/2016/7/ericsson-to-provide-world-class-managed-services-for-flow-mobile-networks-in-caribbean",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2016-07-12",
+          "retrieved_at": "2026-10-25T13:18:24Z",
+          "opened": true
+        },
+        {
+          "url": "https://lla.com/pdf/press-release/Ericsson-to-transform-LLA-mobile-network-across-region.pdf",
+          "publisher": "Liberty Latin America",
+          "source_tier": "S1",
+          "date": "2020-06-26",
+          "retrieved_at": "2026-10-25T13:18:24Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Managed services, not confirmed equipment supply; the 2016 release does not name the radio/core vendor. The 2020 LLA release makes Ericsson LLA's sole mobile core vendor region-wide but does not name Saint Lucia, so it supports but does not corroborate. The 2016 contract was three years; still_current not confirmed, though the 2020 core deal suggests continuing Ericsson control of Flow's core. Digicel's vendor not established."
+    },
+    {
+      "id": "LCA-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Saint Lucia (Ministry of the Public Service)",
+      "local_actor": "Ministry of the Public Service, Information and Broadcasting",
+      "builder": null,
+      "financier": "Republic of China (Taiwan) grant",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2013-03",
+      "still_current": null,
+      "summary": "Taiwan grant-funded a government Multi-Channel Data Centre project for Saint Lucia, with a US$2.5m approved sum disbursed in tranches from 2013 and further Taiwanese funding handed over in 2017.",
+      "announced_value_usd": 2500000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.govt.lc/news/taiwanese-assistance-for-multi-channel-data-centre-project2",
+          "publisher": "Government of Saint Lucia",
+          "source_tier": "S1",
+          "date": "2014-03-17",
+          "retrieved_at": "2026-10-25T13:18:24Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenternews.asia/story/taiwan-funds-new-data-center-saint-lucia-fuel-government-digitization",
+          "publisher": "DataCenterNews Asia Pacific",
+          "source_tier": "S2",
+          "date": "2017-08-24",
+          "retrieved_at": "2026-10-25T13:18:24Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Government-owned facility, so domestic; Taiwan is financier only. Tier 4 as funds disbursed and a digitisation centre opened under the project; completion and current operation not confirmed (pre-2020, still_current null). Whether the 2017 EC$1.3m cheque is part of the US$2.5m sum is unclear. Hardware vendors not named."
+    },
+    {
+      "id": "LCA-004",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Government Information and Technology Services Ltd (GITS); Ministry of the Public Service",
+      "builder": null,
+      "financier": "TaiwanICDF (US$3.2m) with Government of Saint Lucia counterpart funds",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-05",
+      "still_current": null,
+      "summary": "Taiwan's ICDF financed the Government Island-wide Network (GINet), a public wireless network of 63 hotspots at 33 locations; by April 2017 equipment had shipped and operations-centre gear was installed at GITS.",
+      "announced_value_usd": 3200000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://thevoiceslu.com/2017/05/taiwan-expands-c-t-sector-two-projects/",
+          "publisher": "The Voice (Saint Lucia)",
+          "source_tier": "S3",
+          "date": "2017-05-13",
+          "retrieved_at": "2026-10-25T13:18:24Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: equipment vendor not named, so the controller under the equipment rule is unknown. Coded because it is a Taiwan-financed state network in a Taiwan-recognising state. Tier 4 as equipment delivered and partly installed; completion (due end 2018) not confirmed."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced and none plausible at this scale"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one AI-partnership search found only a 2024 AI summit announcement and UNDP items; no model-provider partnership or national model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Confirm the CCTV camera manufacturer independently of MIGA (OLIX-branded models in the 2023 government consultancy) and whether the ~970 cameras are live, who hosts footage, and any analytics/ANPR software vendor.",
+    "Radio/core vendors for Digicel Saint Lucia and Flow's RAN (Flow 4G LTE launched 2017) not established.",
+    "Taiwan's 2023 grant included CCTV and security access systems for ministries; vendors not named.",
+    "Status of the Multi-Channel Data Centre and GINet: completed, operational, and whose hardware?"
+  ],
+  "searches_run": 8
+}

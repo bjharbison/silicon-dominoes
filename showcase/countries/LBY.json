@@ -1,0 +1,228 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "LBY",
+  "name": "Libya",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T13:18:29Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "LBY-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Eastern Libyan authorities (proposed 'Ozon' mobile network); General Authority for Communications and Informatics (GNU, Tripoli) as suspending body",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": true,
+      "reversal_of": "Reported USD 700m Huawei contract to build an eastern Libyan mobile network ('Ozon'), plus all Huawei activity in Libya",
+      "reversal_reason": "regulatory",
+      "date": "2025-08-17",
+      "still_current": null,
+      "summary": "Tripoli's telecom regulator suspended all Huawei activity in Libya and voided contracts made outside its licensing framework, after eastern authorities reportedly sought a USD 198m letter of credit toward a USD 700m Huawei deal for an eastern mobile network.",
+      "announced_value_usd": 700000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://libyasecuritymonitor.com/?p=8935",
+          "publisher": "Libya Security Monitor",
+          "source_tier": "S2",
+          "date": "2025-08-17",
+          "retrieved_at": "2026-10-25T13:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.agenzianova.com/en/news/Libya%27s-Communications-Authority-temporarily-suspends-Huawei%27s-operations/",
+          "publisher": "Agenzia Nova",
+          "source_tier": "S3",
+          "date": "2025-08-18",
+          "retrieved_at": "2026-10-25T13:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://gestion.pe/mundo/internacional/libia-suspende-las-actividades-de-la-empresa-china-huawei-en-el-pais-noticia/",
+          "publisher": "Gestion (AFP)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reviewer call: reason coded 'regulatory' because the stated grounds are licensing authority and the rival-government split (east vs Tripoli), not a foreign-alignment or security exclusion of PRC equipment; it should not move the map. Tier 3 is the reported contract reversed, but the contract's signature is unverified (only a USD 198m LC request is reported), so tier may be overstated. The USD 700m is a reported, not announced-by-party, figure. Agenzia Nova sidebar mentions a later 'agreement with Huawei for resumption of operations' not read, so still_current left null. Existing Huawei equipment in Libyana/Almadar networks not established."
+    },
+    {
+      "id": "LBY-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE Corporation",
+      "local_actor": "Libya Telecom & Technology (LTT)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03",
+      "still_current": null,
+      "summary": "State-owned LTT and ZTE signed a memorandum of understanding at MWC 2026 covering 4G/5G planning and deployment, fixed wireless access and customer devices, and joint digital services such as e-wallet and CDN; no value or timetable disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/oss-service-management/19919-ltt-and-zte-sign-libyan-network-infrastructure-modernisation-mou.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-03-10",
+          "retrieved_at": "2026-10-25T13:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: non-binding MOU. Signed after the August 2025 Huawei suspension (LBY-001), suggesting PRC vendor engagement with Tripoli-aligned state telcos continued; this is inference, not stated in the source."
+    },
+    {
+      "id": "LBY-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (Nokia)",
+      "local_actor": "Libyan United International for Telecommunication and Technology (LUIC), part of LPTIC",
+      "builder": "Alcatel Submarine Networks",
+      "financier": "AFR-IX Telecom, Orange and the European Union (system-level funding)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05",
+      "still_current": null,
+      "summary": "State-owned LUIC (LPTIC group) joined the EU-backed Medusa Mediterranean cable in 2023 to land it at Tripoli and Benghazi; LPTIC launched the Libyan landing project in May 2025, with full landing expected by end-2025. ASN supplies and installs the system.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/medusa-subsea-cable-to-land-in-libya/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-11-09",
+          "retrieved_at": "2026-10-25T13:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.wirecable.in/medusa-subsea-cable-system/",
+          "publisher": "Wire & Cable India",
+          "source_tier": "S2",
+          "date": "2025-05-11",
+          "retrieved_at": "2026-10-25T13:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/asn-signs-agreement-with-afr-ix-to-construct-medusa/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2022-02-17",
+          "retrieved_at": "2026-10-25T13:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2025/10/20/libya-marks-key-milestone-as-medusa-submarine-cable-reaches-marseille/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S2",
+          "date": "2025-10-20",
+          "retrieved_at": "2026-10-25T13:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third: equipment vendor ASN (Nokia, Finland/France); owner-developer AFR-IX is Spanish. The 2022 ASN contract predates Libya joining and does not list Libya, so ASN supplying the Libyan branch is inferred. Tier 4 = landing project launched (construction); ready-for-service in Libya not confirmed in opened sources."
+    },
+    {
+      "id": "LBY-004",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Smart Co for Technology Projects and Artificial Intelligence",
+      "local_actor": "Smart Co for Technology Projects and Artificial Intelligence",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10",
+      "still_current": null,
+      "summary": "A Libyan private firm launched LibiGPT (beta), billed as the first Libyan national LLM in 7B, 13B and 34B sizes tuned to local dialect, with data stored locally; ministers attended the Tripoli launch but no government role was stated.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.middleeastainews.com/p/first-libyan-national-large-language",
+          "publisher": "Middle East AI News",
+          "source_tier": "S2",
+          "date": "2025-11-22",
+          "retrieved_at": "2026-10-25T13:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://menastartupdigest.com/libya-debuts-national-llm-libigpt-tailored-for-local-dialect-and-culture/",
+          "publisher": "MENA Startup Digest",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T13:10:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 2 as a public beta/pilot. Base model undisclosed; the 7B/13B/34B size set is consistent with fine-tuning of a foreign open-weight family, but that is unconfirmed, so base_model null. 'National' scale reflects branding, not state adoption."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search surfaced only exchange-decommissioning and LITC connectivity items; no data-centre or AI-campus project with a named controller"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in other searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks; no surveillance or safe-city evidence surfaced incidentally"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendors for Libyana and Almadar Aljadid (including the January 2026 Tripoli 5G launch) are not established; the 2012 Ericsson/Alcatel-Lucent Almadar contract was paywalled and not coded.",
+    "Was the August 2025 Huawei suspension lifted? Agenzia Nova references an 'agreement with Huawei for resumption of operations' not read; was the eastern 'Ozon' network built?",
+    "Has Medusa reached ready-for-service at Tripoli and Benghazi, and which vendor built the Libyan branch?",
+    "Safe-city or surveillance deployments (Huawei, Hikvision, ZTE) in Tripoli or the east, including Haftar-controlled areas; not searched.",
+    "Base model and hosting of LibiGPT; any government adoption of foreign model providers under Libya's 2026 national AI strategy."
+  ],
+  "searches_run": 11
+}
