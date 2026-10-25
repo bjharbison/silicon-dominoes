@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "CHE",
   "name": "Switzerland",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-24T05:18:47Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -18,7 +18,7 @@
       "base_model": null,
       "base_model_pole": null,
       "scale": "national",
-      "instrument_tier": 3,
+      "instrument_tier": 5,
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
@@ -433,7 +433,16 @@
       "null_reason": "no AI-specific dedicated power supply surfaced in network, facility or silicon searches"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "CHE-001"
+      ],
+      "note": "Weekly audit 2026-10-25: 5 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "Does Sunrise (now merged with UPC) still run Huawei RAN/core, and has it begun any swap-out? The 2023 Federal Council report names an unnamed operator as heavily Huawei-dependent.",
     "Status of the Telecommunications Act (FMG) revision giving the government power to bar high-risk vendors, and of the 'Lex Huawei' procurement motion in the Council of States.",

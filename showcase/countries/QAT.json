@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "QAT",
   "name": "Qatar",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T17:18:42Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -169,6 +169,14 @@
           "date": "2025-07-02",
           "retrieved_at": "2026-10-23T17:10:00Z",
           "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/data-centres-networks/18752-ooredoo-taps-syntys-for-ai-cloud-data-centres-in-qatar.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2025-07-09",
+          "retrieved_at": "2026-10-25T16:06:46Z",
+          "opened": true
         }
       ],
       "corroborated": true,
@@ -190,7 +198,7 @@
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
-      "date": "2025-12",
+      "date": "2025-12-09",
       "still_current": null,
       "summary": "Brookfield and Qai, the new AI arm of the Qatar Investment Authority, formed a US$20bn joint venture to fund AI infrastructure in Qatar, including an integrated compute centre, and to explore projects abroad. No site, capacity or chip vendor named.",
       "announced_value_usd": null,
@@ -219,6 +227,14 @@
           "date": null,
           "retrieved_at": "2026-10-23T17:10:00Z",
           "opened": false
+        },
+        {
+          "url": "https://www.qia.qa/en/Newsroom/Pages/Brookfield-and-Qai-Form-$20-Billion-Strategic-Investment-Partnership-for-AI-Infrastructure.aspx",
+          "publisher": "Qatar Investment Authority (press release)",
+          "source_tier": "S4",
+          "date": "2025-12-09",
+          "retrieved_at": "2026-10-25T16:06:46Z",
+          "opened": true
         }
       ],
       "corroborated": true,
@@ -269,11 +285,27 @@
           "date": null,
           "retrieved_at": "2026-10-23T17:10:00Z",
           "opened": false
+        },
+        {
+          "url": "https://alt.qcri.org/~ndurrani/pubs/fanar.pdf",
+          "publisher": "QCRI (Fanar technical report PDF)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T16:06:46Z",
+          "opened": true
+        },
+        {
+          "url": "https://qcai.qcri.org/publications/fanar-2-0-arabic-generative-ai-stack",
+          "publisher": "QCRI (Fanar 2.0 publication page)",
+          "source_tier": "S1",
+          "date": "2026-03-18",
+          "retrieved_at": "2026-10-25T16:06:46Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Weights held by a Qatari state-funded institute, so domestic. base_model records Fanar Prime's Gemma-2 9B base (US); Fanar Star is from scratch, and Fanar 2.0's base was not stated. Middle East AI News reports Google Cloud as technology provider for the original Fanar, a possible US dependency at the cloud layer. Tier 5 reflects a launched public platform with named institutional partners; scale of government adoption is not quantified. Launch date of December 2024 is from Middle East AI News."
+      "analyst_inference": "Weights held by a Qatari state-funded institute, so domestic. base_model records Fanar Prime's Gemma-2 9B base (US); Fanar Star is from scratch, and Fanar 2.0's base was not stated. Middle East AI News reports Google Cloud as technology provider for the original Fanar, a possible US dependency at the cloud layer. Tier 5 reflects a launched public platform with named institutional partners; scale of government adoption is not quantified. Launch date of December 2024 is from Middle East AI News. Audit 2026-10-25: newer information - QCRI's Fanar 2.0 publication page (dated 2026-03-18, arXiv:2603.16397) says the Fanar 2.0 core model was continually pretrained from a Gemma-3-27B backbone (US base), which answers the analyst note that Fanar 2.0's base was not stated."
     }
   ],
   "layers_searched": {
@@ -298,7 +330,18 @@
       "null_reason": "no AI/data-centre-specific power evidence surfaced; budget spent on other layers"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "QAT-004",
+        "QAT-005",
+        "QAT-006"
+      ],
+      "note": "Weekly audit 2026-10-25: 3 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "Is the Ooredoo-Huawei 5G core agreement (March 2024) binding, and has Ooredoo Qatar's core migration to Huawei 5GC completed? Seek Ooredoo filings or CRA evidence.",
     "Who supplies Vodafone Qatar's RAN (the June 2025 Nokia release covers core and transport only)?",

@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "NIC",
   "name": "Nicaragua",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T17:18:58Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -215,7 +215,14 @@
       "null_reason": "no AI/data-centre-specific power evidence surfaced; ENATREL appears only as telecom executor"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [],
+      "note": "Weekly audit 2026-10-25: 2 selected finding(s) source-checked by independent checkers; no corrections needed."
+    }
+  ],
   "research_gaps": [
     "Which vendor supplies equipment for the ENATREL/ZMJ 4G/5G Digital Connectivity Project, and has disbursement or construction started? Check La Gaceta decrees and the loan text.",
     "Was a Huawei Digital Transformation and 5G plan actually signed in Nov 2023 (text, signatories), and what projects were reviewed at the April 2025 Ortega-Huawei meeting?",

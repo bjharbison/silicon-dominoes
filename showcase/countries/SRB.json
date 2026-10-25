@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "SRB",
   "name": "Serbia",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T21:30:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -71,7 +71,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Tier 5 because cameras have been deployed since 2019 and the system was expanded in 2024. Not corroborated under the spec: the only opened S1/S2-grade evidence is absent; opened S3 sources are Il Sole 24 Ore and N1 (which in 2019 only said the cameras were 'believed' to be Huawei). Authorities say facial recognition is not activated for lack of a legal basis. The leaked 2024 order lists a discounted price of about US$1.2m, not coded as a value because it is one order, not the programme. RFE/RL is tiered S4 here because it is funded by the US government (USAGM), applying the 'state-affiliated outlets of any government' rule strictly; a reviewer may re-tier it S3."
+      "analyst_inference": "Tier 5 because cameras have been deployed since 2019 and the system was expanded in 2024. Not corroborated under the spec: the only opened S1/S2-grade evidence is absent; opened S3 sources are Il Sole 24 Ore and N1 (which in 2019 only said the cameras were 'believed' to be Huawei). Authorities say facial recognition is not activated for lack of a legal basis. The leaked 2024 order lists a discounted price of about US$1.2m, not coded as a value because it is one order, not the programme. RFE/RL is tiered S4 here because it is funded by the US government (USAGM), applying the 'state-affiliated outlets of any government' rule strictly; a reviewer may re-tier it S3. Audit 2026-10-25: newer information - RFE/RL (2025-08-13) dates the leaked order to March 2024; pre-discount total over US$3m, discounted to about US$1.2m; experts say it could support up to 3,500 more cameras. Authorities say facial recognition is not deployed and has no legal basis."
     },
     {
       "id": "SRB-002",
@@ -113,7 +113,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Tier 5 reflects installed legacy equipment; the share of Huawei in Telekom Srbija's current 2G-4G RAN and core was not found, nor whether any of it is being swapped out. ECFR (relayed by N1, 2020) also implies Huawei supplied Telekom Srbija. RFE/RL is tiered S4 here because it is funded by the US government (USAGM), applying the 'state-affiliated outlets of any government' rule strictly; a reviewer may re-tier it S3."
+      "analyst_inference": "Tier 5 reflects installed legacy equipment; the share of Huawei in Telekom Srbija's current 2G-4G RAN and core was not found, nor whether any of it is being swapped out. ECFR (relayed by N1, 2020) also implies Huawei supplied Telekom Srbija. RFE/RL is tiered S4 here because it is funded by the US government (USAGM), applying the 'state-affiliated outlets of any government' rule strictly; a reviewer may re-tier it S3. Audit 2026-10-25: newer information - Same article says Telekom's 5G is now Ericsson/Nokia (see SRB-003)."
     },
     {
       "id": "SRB-003",
@@ -130,7 +130,7 @@
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
-      "date": "2025-12",
+      "date": "2025-12-02",
       "still_current": true,
       "summary": "All three operators launched commercial 5G in December 2025. Telekom Srbija uses Ericsson and Nokia equipment, Yettel builds with Ericsson, and A1 uses Nokia and says it never used Chinese RAN equipment.",
       "announced_value_usd": null,
@@ -151,10 +151,18 @@
           "date": "2026-05-11",
           "retrieved_at": "2026-10-23T21:20:00Z",
           "opened": true
+        },
+        {
+          "url": "https://n1info.rs/english/news/5g-network-becomes-operational-in-serbia/",
+          "publisher": "N1 Serbia",
+          "source_tier": "S3",
+          "date": "2025-12-02",
+          "retrieved_at": "2026-10-25T16:06:12Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
+      "corroborated": true,
+      "confidence": "medium",
       "analyst_inference": "Vendor attributions rest only on operators' replies to RFE/RL (S4 under the strict rule); Developing Telecoms confirms only the December 2025 launch. Coded third because Ericsson (Sweden) and Nokia (Finland) are the equipment controllers. Whether Huawei/ZTE supply any 5G core is not stated. RFE/RL is tiered S4 here because it is funded by the US government (USAGM), applying the 'state-affiliated outlets of any government' rule strictly; a reviewer may re-tier it S3."
     },
     {
@@ -317,11 +325,27 @@
           "date": null,
           "retrieved_at": "2026-10-23T21:20:00Z",
           "opened": true
+        },
+        {
+          "url": "https://ite.gov.rs/tekst/en/34/government-data-centre-in-kragujevac.php",
+          "publisher": "Office for IT and eGovernment (Serbia)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T16:06:12Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.srbija.gov.rs/vest/en/276647/state-data-centre-in-kragujevac-receives-new-supercomputer.php",
+          "publisher": "Government of Serbia",
+          "source_tier": "S1",
+          "date": "2026-04-30",
+          "retrieved_at": "2026-10-25T16:06:12Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Controller is the Serbian government (owner-operator), so domestic. Opening of the facility itself is not dated in the opened sources (AidData says construction completed December 2020); the date used is the National AI Platform launch there. The 30 million capital figure has no currency in the government release, so values are null."
+      "analyst_inference": "Controller is the Serbian government (owner-operator), so domestic. Opening of the facility itself is not dated in the opened sources (AidData says construction completed December 2020); the date used is the National AI Platform launch there. The 30 million capital figure has no currency in the government release, so values are null. Audit 2026-10-25: newer information - Government release (30 April 2026): capacity raised by 8 MW to 14 MW; third supercomputer planned, 720 GPUs by early 2027. ITE names Oracle, IBM and Huawei as tenants."
     },
     {
       "id": "SRB-007",
@@ -448,7 +472,7 @@
       "reversal_reason": null,
       "date": "2019-11-06",
       "still_current": null,
-      "summary": "After a November 2019 MoU with Huawei on an AI platform, China's aid agency CIDCA granted about US$13m for Huawei-implemented cloud infrastructure at the Kragujevac State Data Centre; Huawei also became a commercial tenant hosting HPC there.",
+      "summary": "After a November 2019 MoU with Huawei on an AI platform, China's aid agency CIDCA granted about US$13m for Huawei-implemented cloud infrastructure at the Kragujevac State Data Centre; Huawei agreed in December 2020 to use capacity there.",
       "announced_value_usd": 13000000,
       "verified_value_usd": null,
       "sources": [
@@ -479,7 +503,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Tier 3 rests on AidData recording a committed CIDCA grant with Huawei as implementer; AidData does not say whether the cloud platform was delivered, and no opened Serbian source confirms it. The SeeNews tenancy item is datelined 9 December with no year shown. This sits uneasily beside SRB-007: both Huawei cloud and Nvidia compute appear to be housed in the same state facility."
+      "analyst_inference": "Tier 3 rests on AidData recording a committed CIDCA grant with Huawei as implementer; AidData does not say whether the cloud platform was delivered, and no opened Serbian source confirms it. The SeeNews tenancy item is datelined 9 December with no year shown. This sits uneasily beside SRB-007: both Huawei cloud and Nvidia compute appear to be housed in the same state facility. Audit 2026-10-25: newer information - SeeNews tenancy item year is 2020 (2020-12-09)."
     },
     {
       "id": "SRB-010",
@@ -553,7 +577,20 @@
       "null_reason": "no AI/data-centre-specific power evidence surfaced beyond solar panels mentioned at Kragujevac (Tanjug, April 2026)"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "SRB-001",
+        "SRB-002",
+        "SRB-003",
+        "SRB-006",
+        "SRB-009"
+      ],
+      "note": "Weekly audit 2026-10-25: 7 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "Source tier for RFE/RL (US-government-funded): coded S4 here under the strict state-affiliated rule; if re-tiered S3, SRB-001 (Huawei Safe City) may qualify as corroborated with an S2 source added.",
     "S1/S2 confirmation of the Huawei Safe City programme scope (camera count, cities, contract value) and of the March 2024 eLTE expansion order.",

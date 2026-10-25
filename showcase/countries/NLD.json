@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "NLD",
   "name": "Netherlands",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T17:19:22Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -191,7 +191,7 @@
       "reversal_of": "Wingtech (PRC) management control of Nexperia",
       "reversal_reason": "geopolitical",
       "date": "2025-10-13",
-      "still_current": null,
+      "still_current": true,
       "summary": "The Economic Affairs ministry invoked the Goods Availability Act to block or reverse decisions at Wingtech-owned chipmaker Nexperia, citing governance failings and economic-security risk; the Enterprise Chamber removed the Chinese CEO. The ministerial order was suspended on 19 November 2025.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -211,11 +211,19 @@
           "date": "2025-11-19",
           "retrieved_at": "2026-10-23T17:10:00Z",
           "opened": true
+        },
+        {
+          "url": "https://evertiq.com/design/2026-02-12-dutch-court-orders-investigation-into-nexperia-governance",
+          "publisher": "Evertiq",
+          "source_tier": "S2",
+          "date": "2026-02-12",
+          "retrieved_at": "2026-10-25T16:05:05Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Coded as a reversal of PRC (Wingtech, owner since 2018) control over a Dutch chip producer: a Dutch decision about its own domestic silicon base, not an export control on third countries. Reason geopolitical (economic-security framing; Wingtech on the US entity list since Dec 2024). The minister suspended the order after talks with China, but whether the court-imposed governance measures remain was not confirmed, so still_current is null."
+      "analyst_inference": "Coded as a reversal of PRC (Wingtech, owner since 2018) control over a Dutch chip producer: a Dutch decision about its own domestic silicon base, not an export control on third countries. Reason geopolitical (economic-security framing; Wingtech on the US entity list since Dec 2024). The minister suspended the order after talks with China, but whether the court-imposed governance measures remain was not confirmed, so still_current is null. Audit 2026-10-25: newer information - Evertiq (2026-02-12): the Enterprise Chamber ordered a governance investigation and kept the October 2025 interim measures in place: Zhang Xuezheng still suspended, Wingtech's indirectly held voting rights under independent administration, Stefan Tilger interim CEO. So the court-imposed reversal of Wingtech control persisted into 2026 despite the ministerial suspension."
     },
     {
       "id": "NLD-006",
@@ -345,11 +353,19 @@
           "date": "2026-02-26",
           "retrieved_at": "2026-10-23T17:10:00Z",
           "opened": true
+        },
+        {
+          "url": "https://www.accountant.nl/nieuws/2026/2/overheidsinstanties-gaan-proefdraaien-met-nederlands-ai-model/",
+          "publisher": "Accountant.nl",
+          "source_tier": "S3",
+          "date": "2026-02-27",
+          "retrieved_at": "2026-10-25T16:05:05Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Trained from scratch, so base_model is null. Tier 4 (funded and released to first users) rather than 5, since scale of government use was not shown. Who legally holds the weights is not stated, but all three builders are Dutch public bodies, so domestic. Compute platform not identified."
+      "analyst_inference": "Trained from scratch, so base_model is null. Tier 4 (funded and released to first users) rather than 5, since scale of government use was not shown. Who legally holds the weights is not stated, but all three builders are Dutch public bodies, so domestic. Compute platform not identified. Audit 2026-10-25: newer information - Accountant.nl (2026-02-27): four government bodies and TNO are trialling GPT-NL (only NFI named); no scale given; available to organisations only."
     },
     {
       "id": "NLD-009",
@@ -387,6 +403,14 @@
           "date": null,
           "retrieved_at": "2026-10-23T17:10:00Z",
           "opened": false
+        },
+        {
+          "url": "https://www.lalibre.be/dernieres-depeches/2024/06/11/la-ville-damsterdam-nutilisera-plus-de-cameras-chinoises-VEGAXLQOIBGGLGWA4TPDRTRIQ4/",
+          "publisher": "La Libre Belgique",
+          "source_tier": "S3",
+          "date": "2024-06-11",
+          "retrieved_at": "2026-10-25T16:05:40Z",
+          "opened": true
         }
       ],
       "corroborated": false,
@@ -415,7 +439,18 @@
       "null_reason": "only general grid-congestion reporting (Amsterdam grid full until ~2035) surfaced; no dedicated AI/DC power plant found"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "NLD-005",
+        "NLD-008",
+        "NLD-009"
+      ],
+      "note": "Weekly audit 2026-10-25: 9 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "What do the confidential May 2021 Economic Affairs vendor orders to KPN, T-Mobile and VodafoneZiggo require (core only, or RAN too), and is Huawei still in KPN's 5G RAN in 2026?",
     "VodafoneZiggo RAN and core vendors were not searched.",

@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "CRI",
   "name": "Costa Rica",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T01:21:49Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -67,11 +67,19 @@
           "date": "2025-02-26",
           "retrieved_at": "2026-10-23T01:21:49Z",
           "opened": true
+        },
+        {
+          "url": "https://crhoy.com/tecnologia/la-cronologia-de-cuestionamientos-del-convenio-de-budapest-sobre-reglamento-de-ciberseguridad/",
+          "publisher": "CRHoy",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T16:06:21Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "high",
-      "analyst_inference": "Tier 2 is the tier of what was reversed: Huawei's prospective eligibility as a 5G vendor; no Huawei 5G contract existed. A provisional court suspension (Feb 2024) was lifted in Feb 2025 (La Nación); Sala IV rejected Huawei's challenges in Jan-Feb 2024, and admitted a union unconstitutionality action in Dec 2024 whose outcome was not found. Sources report a five-year transition for existing equipment. Reason coded geopolitical because the decree is framed as cybersecurity and followed US engagement; the sources do not establish causation. still_current null: in force as of Feb 2025, not confirmed for Oct 2026."
+      "analyst_inference": "Tier 2 is the tier of what was reversed: Huawei's prospective eligibility as a 5G vendor; no Huawei 5G contract existed. A provisional court suspension (Feb 2024) was lifted in Feb 2025 (La Nación); Sala IV rejected Huawei's challenges in Jan-Feb 2024, and admitted a union unconstitutionality action in Dec 2024 whose outcome was not found. Sources report a five-year transition for existing equipment. Reason coded geopolitical because the decree is framed as cybersecurity and followed US engagement; the sources do not establish causation. still_current null: in force as of Feb 2025, not confirmed for Oct 2026. Audit 2026-10-25: newer information - La Nacion (2025-02-26): tribunal rejected FIT/Aprodeco precautionary measure; the year-long provisional measure requested by Huawei was lifted, and a separate Huawei suspension request was rejected the week before."
     },
     {
       "id": "CRI-002",
@@ -117,11 +125,19 @@
           "date": "2026-04-30",
           "retrieved_at": "2026-10-23T01:21:49Z",
           "opened": true
+        },
+        {
+          "url": "https://delfino.cr/2026/07/contraloria-deja-en-firme-adjudicacion-de-red-5g-a-ericsson-pero-anula-partidas-de-backhaul",
+          "publisher": "Delfino.cr",
+          "source_tier": "S3",
+          "date": "2026-07-10",
+          "retrieved_at": "2026-10-25T16:06:21Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "high",
-      "analyst_inference": "Value is as reported from SICOP by CRHoy (US$97,761,433), not read from the award notice itself, so it is recorded as announced. Semanario's Feb 2026 report describes lots 1-3 as RAN and core; its April report mentions RAN only. Whether an appeal was lodged was not checked. Ericsson is Swedish, so pole third."
+      "analyst_inference": "Value is as reported from SICOP by CRHoy (US$97,761,433), not read from the award notice itself, so it is recorded as announced. Semanario's Feb 2026 report describes lots 1-3 as RAN and core; its April report mentions RAN only. Whether an appeal was lodged was not checked. Ericsson is Swedish, so pole third. Audit 2026-10-25: newer information - Delfino (2026-07-10): the Contraloria rejected Samsung and Nokia appeals and left lots 1-3 (RAN and 5G core) to Ericsson firm, so ICE can formalise the contract; the backhaul award (lots 4-6, to Coasin) was annulled over a price non-compliance."
     },
     {
       "id": "CRI-003",
@@ -209,11 +225,19 @@
           "date": "2026-04-29",
           "retrieved_at": "2026-10-23T01:21:49Z",
           "opened": true
+        },
+        {
+          "url": "https://semanariouniversidad.com/pais/huawei-desistio-de-lucha-en-licitacion-5g-del-ice-tras-obtener-prorroga-de-50-millones-en-contrato-de-4g/",
+          "publisher": "Semanario Universidad",
+          "source_tier": "S3",
+          "date": "2026-06-01",
+          "retrieved_at": "2026-10-25T16:06:21Z",
+          "opened": true
         }
       ],
       "corroborated": false,
       "confidence": "medium",
-      "analyst_inference": "Reported grounds are technical (ICE report 7111-86-2026); the sources do not cite the Budapest Convention decree, so the reason is coded regulatory (procurement) rather than geopolitical. Whether the decree influenced the technical evaluation is unknown. Tier 2 because only a bid was rejected. Two S3 sources, no S1/S2, so not corroborated."
+      "analyst_inference": "Reported grounds are technical (ICE report 7111-86-2026); the sources do not cite the Budapest Convention decree, so the reason is coded regulatory (procurement) rather than geopolitical. Whether the decree influenced the technical evaluation is unknown. Tier 2 because only a bid was rejected. Two S3 sources, no S1/S2, so not corroborated. Audit 2026-10-25: newer information - Semanario (2026-06-01): Huawei filed no appeal against the 29 April awards, unlike other bidders. CRHoy reports Huawei's offer at US$138,916,384."
     },
     {
       "id": "CRI-005",
@@ -255,7 +279,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Shows Huawei remains embedded in ICE's legacy 3G/4G network and EPC core even after the 5G decree. ICE had notified Huawei in Jan 2025 that it would not extend, then extended in March 2025 and again in March 2026. Huawei's share of ICE RAN/core is not quantified. The US$50m is an estimate, not verified spend. Single outlet, so uncorroborated."
+      "analyst_inference": "Shows Huawei remains embedded in ICE's legacy 3G/4G network and EPC core even after the 5G decree. ICE had notified Huawei in Jan 2025 that it would not extend, then extended in March 2025 and again in March 2026. Huawei's share of ICE RAN/core is not quantified. The US$50m is an estimate, not verified spend. Single outlet, so uncorroborated. Audit 2026-10-25: newer information - Semanario (2026-06-01): purchase orders under the extension began 30 Apr 2026; six orders 30 Apr-4 May 2026 totalled US$33.2m; a confidentiality agreement was signed 12 May. Same outlet, so still uncorroborated."
     },
     {
       "id": "CRI-006",
@@ -285,11 +309,19 @@
           "date": "2025-07-21",
           "retrieved_at": "2026-10-23T01:21:49Z",
           "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/liberty-and-ericsson-switch-on-5g-standalone-in-costa-rica/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07-16",
+          "retrieved_at": "2026-10-25T16:06:21Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
-      "analyst_inference": "Coded tier 3 as an announced vendor agreement; value and contract terms not disclosed. Liberty told legislators (Semanario, Jan 2025) that it also uses Cisco, HP and Huawei elements, and said all mobile operators have some Huawei equipment. Claro's Costa Rica vendor was not identified."
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded tier 3 as an announced vendor agreement; value and contract terms not disclosed. Liberty told legislators (Semanario, Jan 2025) that it also uses Cisco, HP and Huawei elements, and said all mobile operators have some Huawei equipment. Claro's Costa Rica vendor was not identified. Audit 2026-10-25: newer information - DCD (2025-07-16): six-year contract covering 1,400+ sites with Massive MIMO TDD, mmWave and 700 MHz/3.5 GHz/26 GHz radios plus Ericsson dual-mode 5G Core. Search results include a DCD Spanish headline that Liberty and Ericsson have activated 5G SA (not opened)."
     },
     {
       "id": "CRI-007",
@@ -391,7 +423,20 @@
       "null_reason": "no AI-specific power supply evidence surfaced beyond the Quantum campus demand estimate"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "CRI-001",
+        "CRI-002",
+        "CRI-004",
+        "CRI-005",
+        "CRI-006"
+      ],
+      "note": "Weekly audit 2026-10-25: 7 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "Current legal status of Decree 44196-MSP-MICITT: outcome of the FIT unconstitutionality action admitted by Sala IV in Dec 2024.",
     "Was the ICE 5G award to Ericsson appealed by Huawei or Samsung, and has the contract been signed?",

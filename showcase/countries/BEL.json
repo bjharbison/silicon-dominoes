@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "BEL",
   "name": "Belgium",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-24T05:20:12Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -174,7 +174,7 @@
       "reversal_reason": null,
       "date": "2025-10-08",
       "still_current": true,
-      "summary": "Google's Saint-Ghislain data-centre campus in Hainaut is operating with about 600 staff; Google reports over EUR11bn invested there since 2007 and lists it among its Google Cloud locations.",
+      "summary": "Google's Saint-Ghislain data-centre campus in Hainaut operates with about 600 staff; Google reports over EUR11bn invested in Belgium since breaking ground there in 2007 and plans a EUR5bn expansion for 2026-27.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -436,7 +436,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Small, temporary procurement; scale coded municipal for size. No replacement decision was reported in the source; whether the routers were withdrawn was not checked."
+      "analyst_inference": "Small, temporary procurement; scale coded municipal for size. No replacement decision was reported in the source; whether the routers were withdrawn was not checked. Audit 2026-10-25: newer information - Techzine (2 June 2022) reports the Belgian military was ordered to urgently replace some 300 Huawei wifi hotspots, saying they were bought 2016-2019 (conflicts with Brussels Times' early-2022 purchase timing); replacement completion not confirmed."
     }
   ],
   "layers_searched": {
@@ -460,7 +460,17 @@
       "result": "coded"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "BEL-004",
+        "BEL-010"
+      ],
+      "note": "Weekly audit 2026-10-25: 4 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "Did Proximus and Orange Belgium complete the Huawei-to-Nokia RAN swap by 2023, and does Huawei retain any role?",
     "Telenet/Wyre (Liberty Global) and DIGI Belgium RAN and core vendors were not found; one search returned only Norwegian results.",

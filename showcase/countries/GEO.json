@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "GEO",
   "name": "Georgia",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T01:20:12Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -180,7 +180,7 @@
       "layer": "applications",
       "pole": "prc",
       "controller": "Dahua Technology",
-      "local_actor": "Ministry of Internal Affairs (Emergency Response Centre 112); Tbilisi City Hall",
+      "local_actor": "Ministry of Internal Affairs (Emergency Response Centre 112)",
       "builder": null,
       "financier": null,
       "base_model": null,
@@ -192,7 +192,7 @@
       "reversal_reason": null,
       "date": "2025-02",
       "still_current": null,
-      "summary": "Interior Ministry and Tbilisi bodies bought Dahua PTZ cameras during the 2024-25 protests: a December 2024 tender for 30 and a February 2025 purchase of 100; procurement records show 251 Dahua cameras and licences worth about US$1.2m.",
+      "summary": "The Interior Ministry's 112 centre bought Dahua PTZ cameras during the 2024-25 protests: 30 tendered in December 2024, 100 more in February 2025. OCCRP counts 251 Dahua cameras within state camera and licence purchases totalling about US$1.2m.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -257,7 +257,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "NEC is Japanese, so the pole is third. Pre-2020; whether the NEC system still runs the ministry's facial recognition today is not confirmed, so still_current is null. Single secondary source relaying a 2017 ministry statement."
+      "analyst_inference": "NEC is Japanese, so the pole is third. Pre-2020; whether the NEC system still runs the ministry's facial recognition today is not confirmed, so still_current is null. Single secondary source relaying a 2017 ministry statement. Audit 2026-10-25: newer information - AlgorithmWatch (27 Jun 2026) reports the Interior Ministry uses Polyface from Moscow-based Papillon AO (algorithm by 3DiVi), perpetual licence Oct 2024, upgrade June 2025, and does not mention NEC. Suggests the current FR stack may be Russian rather than NEC."
     }
   ],
   "layers_searched": {
@@ -284,7 +284,17 @@
       "null_reason": "the Georgia-Romania Black Sea submarine cable surfaced but is primarily an electricity interconnector, not AI/DC-specific power; not coded"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "GEO-005",
+        "GEO-006"
+      ],
+      "note": "Weekly audit 2026-10-25: 3 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "Which vendors supply MagtiCom's and Silknet's macro RAN and core today (including Silknet's December 2023 5G launch)? Seek operator or ComCom S1 evidence; Huawei's role rests on one advocacy brief.",
     "Did Georgia formally join the US Clean Network (cbw.ge headline seen only) and did any 5G security regulation or vendor screening follow the January 2021 MOU?",

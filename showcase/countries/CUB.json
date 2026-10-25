@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "CUB",
   "name": "Cuba",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T01:20:19Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -127,11 +127,19 @@
           "date": "2011-01",
           "retrieved_at": "2026-10-23T01:10:00Z",
           "opened": false
+        },
+        {
+          "url": "https://circleid.com/posts/20130124_cuba_switches_on_subsea_cable_for_traffic",
+          "publisher": "CircleID",
+          "source_tier": "S2",
+          "date": "2013-01-24",
+          "retrieved_at": "2026-10-25T16:06:21Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
-      "analyst_inference": "Pole null: the equipment vendor was Alcatel-Lucent's Chinese joint-venture subsidiary Alcatel-Lucent Shanghai Bell (now Nokia Shanghai Bell), so firmware/update control sits between a European parent and a PRC state-held JV; not resolved here. Owner-operator is a Venezuelan-Cuban state JV. Pre-2020 and still_current unconfirmed, though ALBA-1 is widely reported as Cuba's main international link. Not an HMN Tech cable. NBC seen in search results only."
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the equipment vendor was Alcatel-Lucent's Chinese joint-venture subsidiary Alcatel-Lucent Shanghai Bell (now Nokia Shanghai Bell), so firmware/update control sits between a European parent and a PRC state-held JV; not resolved here. Owner-operator is a Venezuelan-Cuban state JV. Pre-2020 and still_current unconfirmed, though ALBA-1 is widely reported as Cuba's main international link. Not an HMN Tech cable. NBC seen in search results only. Audit 2026-10-25: newer information - CircleID (2013-01-24): latency analysis showed some Cuban international traffic moving from satellite to cable in January 2013; ETECSA had not confirmed it."
     },
     {
       "id": "CUB-004",
@@ -192,7 +200,16 @@
       "null_reason": "no AI- or data-centre-specific power evidence surfaced; search budget spent on other layers"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "CUB-003"
+      ],
+      "note": "Weekly audit 2026-10-25: 2 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "Which vendor supplies ETECSA's 3G/4G RAN and core (Huawei vs ZTE share)? Seek ETECSA tender records or vendor filings.",
     "Is Huawei or ZTE equipment used for ETECSA's DPI/web filtering? Qurium's report claimed only a 'possible' Huawei product; obtain and assess it.",

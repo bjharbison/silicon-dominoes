@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "GRD",
   "name": "Grenada",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-25T09:19:03Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [],
@@ -33,7 +33,14 @@
       "null_reason": "no AI-specific power evidence surfaced"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [],
+      "note": "Weekly audit 2026-10-25: 0 selected finding(s) source-checked by independent checkers; no corrections needed."
+    }
+  ],
   "research_gaps": [
     "RAN/core vendors of Digicel Grenada (700 MHz LTE, Dec 2018) and Flow Grenada; any 5G deployment and its vendor.",
     "Who supplied and owns the World Bank CARCIP fibre linking Grenada, St Lucia and St Vincent; any other submarine cable landings and their suppliers.",

@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "KGZ",
   "name": "Kyrgyzstan",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T09:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -24,7 +24,7 @@
       "reversal_reason": null,
       "date": "2018-01-11",
       "still_current": false,
-      "summary": "The government signed a US$60m investment agreement with Huawei for a Smart City camera and monitoring-centre system covering Bishkek, Osh and main highways, to be repaid from traffic fines over five years.",
+      "summary": "The government signed a US$60m investment agreement with a Huawei-led consortium for a Smart City camera and monitoring-centre system covering Bishkek, Osh and main highways, with investors repaid interest-free after five years.",
       "announced_value_usd": 60000000,
       "verified_value_usd": null,
       "sources": [
@@ -42,6 +42,14 @@
           "source_tier": "S3",
           "date": "2018-01-10",
           "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://24.kg/english/73647_Smart_City_Everything_you_wanted_to_know_about_project",
+          "publisher": "24.kg",
+          "source_tier": "S3",
+          "date": "2018-01-18",
+          "retrieved_at": "2026-10-25T16:05:20Z",
           "opened": true
         }
       ],
@@ -64,9 +72,9 @@
       "reversal": true,
       "reversal_of": "KGZ-001 Huawei Smart City investment agreement (Jan 2018)",
       "reversal_reason": "commercial",
-      "date": "2018-03",
+      "date": "2018-03-14",
       "still_current": null,
-      "summary": "In March 2018 the government decided to withdraw from the January Huawei Smart City investment agreement and pursue the project itself, later via a public-private partnership; no reason was given.",
+      "summary": "On 14 March 2018 the government withdrew from the January Huawei Smart City investment agreement, citing the consortium's missed feasibility-study deadline, substandard documents and unmet technical requirements, and said it would implement the project itself.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -84,6 +92,14 @@
           "source_tier": "S3",
           "date": "2018-01-12",
           "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://24.kg/english/78507__Government_of_Kyrgyzstan_withdraws_from_Smart_City_agreement",
+          "publisher": "24.kg",
+          "source_tier": "S3",
+          "date": "2018-03-14",
+          "retrieved_at": "2026-10-25T16:04:35Z",
           "opened": true
         }
       ],
@@ -184,6 +200,14 @@
           "source_tier": "S3",
           "date": "2019-06-27",
           "retrieved_at": "2026-10-23T09:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://24.kg/english/127370_Shenzhen_Sunwin_ready_to_implement_second_phase_of_Safe_City_project",
+          "publisher": "24.kg",
+          "source_tier": "S3",
+          "date": "2019-08-24",
+          "retrieved_at": "2026-10-25T16:05:20Z",
           "opened": true
         }
       ],
@@ -316,7 +340,18 @@
       "null_reason": "no AI/data-centre-specific power arrangement (e.g. Kambarata-linked) surfaced in data-centre searches"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "KGZ-001",
+        "KGZ-002",
+        "KGZ-004"
+      ],
+      "note": "Weekly audit 2026-10-25: 4 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "RAN and core vendors of MegaCom, Beeline (Veon) and O! (NurTelecom) and whether 5G has launched commercially; did the July 2022 Huawei 5G pilot run?",
     "Who operates the Safe City phase-one cameras after Vega's contracts expired on 17 Sept 2024, and was phase two (Shenzhen Sunwin) completed at all 306 points? Seek Interior Ministry or procurement-portal (S1) records and camera OEM.",

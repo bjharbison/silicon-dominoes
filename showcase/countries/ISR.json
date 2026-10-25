@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "ISR",
   "name": "Israel",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T09:19:30Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -249,7 +249,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "The JPost piece is the same Globes report syndicated, so it is not independent, and INSS is think-tank (S4); corroboration therefore fails. Tier 4 reflects deployment under way, not confirmed completion. INSS (May 2026) still lists Hawk Eye as using Dahua and Hikvision systems and says Israel has no comprehensive policy on Chinese cameras; it relays a 2021 Top10VPN count of about 65,830 Hikvision/Dahua cameras in Israel (not coded)."
+      "analyst_inference": "The JPost piece is the same Globes report syndicated, so it is not independent, and INSS is think-tank (S4); corroboration therefore fails. Tier 4 reflects deployment under way, not confirmed completion. INSS (May 2026) still lists Hawk Eye as using Dahua and Hikvision systems and says Israel has no comprehensive policy on Chinese cameras; it relays a 2021 Top10VPN count of about 65,830 Hikvision/Dahua cameras in Israel (not coded). Audit 2026-10-25: newer information - INSS May 2026 indicates Hawk Eye still uses Dahua/Hikvision systems, but does not clearly confirm current operational use, so still_current left null."
     },
     {
       "id": "ISR-006",
@@ -341,7 +341,16 @@
       "null_reason": "no AI-specific power project surfaced; Globes notes the planned Nvidia Kiryat Tivon campus will need dedicated substations, but nothing contracted"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "ISR-005"
+      ],
+      "note": "Weekly audit 2026-10-25: 6 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "Did Israel ever formally exclude Huawei/ZTE from 5G? 2020 reports (Globes citing Channel 12; Reuters via Mobile World Live) describe a Defense Ministry recommendation and an expected US 'trusted vendors' MOU, but no signed decision was found. Seek an S1 government or Ministry of Communications record.",
     "Which vendors supply the 5G RAN and core of Partner, Cellcom, Pelephone and HOT Mobile today?",

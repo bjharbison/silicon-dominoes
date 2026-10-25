@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "GBR",
   "name": "United Kingdom",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T01:22:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -42,6 +42,14 @@
           "source_tier": "S3",
           "date": "2022-10-13",
           "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.gov.uk/government/news/huawei-legal-notices-issued",
+          "publisher": "GOV.UK (DCMS/DSIT)",
+          "source_tier": "S1",
+          "date": "2022-10-13",
+          "retrieved_at": "2026-10-25T16:04:35Z",
           "opened": true
         }
       ],
@@ -174,7 +182,7 @@
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
-      "date": "2025-07",
+      "date": "2025-07-17",
       "still_current": null,
       "summary": "Isambard-AI, a £225m government-funded supercomputer in Bristol with 5,448 NVIDIA GH200 Grace Hopper superchips on HPE Cray EX systems, launched in July 2025 and has served AIRR and Sovereign AI users since August.",
       "announced_value_usd": null,
@@ -194,6 +202,14 @@
           "source_tier": "S1",
           "date": "2026",
           "retrieved_at": "2026-10-23T01:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.bristol.ac.uk/research/centres/bristol-supercomputing/articles/2025/isambard-ai-launches-july-2025.html",
+          "publisher": "University of Bristol",
+          "source_tier": "S1",
+          "date": "2025-07-17",
+          "retrieved_at": "2026-10-25T16:04:35Z",
           "opened": true
         }
       ],
@@ -245,9 +261,17 @@
           "date": "2026-07-04",
           "retrieved_at": "2026-10-23T01:15:00Z",
           "opened": true
+        },
+        {
+          "url": "https://computerweekly.com/news/366641483/OpenAI-pauses-Stargate-UK-Sudden-setback-or-calculated-move",
+          "publisher": "Computer Weekly",
+          "source_tier": "S2",
+          "date": "2026-04-10",
+          "retrieved_at": "2026-10-25T16:04:35Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
+      "corroborated": true,
       "confidence": "medium",
       "analyst_inference": "Pole null: the operator split between Nscale (UK, would be domestic) and OpenAI (US offtaker) was not documented. Tier 1 because nothing beyond an announcement was evidenced. Reason coded commercial (energy cost and regulatory climate, not geopolitics). Corroboration false because both TNW items are one host; Sharecast is the only other."
     },
@@ -337,10 +361,18 @@
           "date": "2025-09-16",
           "retrieved_at": "2026-10-23T01:15:00Z",
           "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/google-opens-hertfordshire-data-center-as-part-of-5bn-uk-investment/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-09-16",
+          "retrieved_at": "2026-10-25T16:04:35Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
+      "corroborated": true,
+      "confidence": "medium",
       "analyst_inference": "Only one opened S1-S3 source (UKTN) plus Google's own release (S4), so not corroborated despite low doubt. Cost of the site itself not stated; the £5bn is a multi-purpose corporate pledge and is not converted."
     },
     {
@@ -447,11 +479,19 @@
           "date": null,
           "retrieved_at": "2026-10-23T01:15:00Z",
           "opened": false
+        },
+        {
+          "url": "https://htn.co.uk/2026/02/02/dsit-partners-with-anthropic-on-ai-assistant-to-help-people-navigate-gov-uk-services/",
+          "publisher": "HTN (Health Tech Newspaper)",
+          "source_tier": "S2",
+          "date": "2026-02-02",
+          "retrieved_at": "2026-10-25T16:04:35Z",
+          "opened": true
         }
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Only the provider's own announcement (S4) was opened. Search results also showed a later Anthropic 'gov.UK partnership' item (assistant launch) that was not opened; deployment status unverified. Pole us via provider service; base_model null."
+      "analyst_inference": "Only the provider's own announcement (S4) was opened. Search results also showed a later Anthropic 'gov.UK partnership' item (assistant launch) that was not opened; deployment status unverified. Pole us via provider service; base_model null. Audit 2026-10-25: newer information - HTN (2 Feb 2026): DSIT is partnering with Anthropic to build and pilot a GOV.UK AI assistant (initial focus employment/training), building on the Feb 2025 MOU; described as a pilot under 'scan, pilot, scale', no contract value. This is a separate tier-2 event candidate."
     }
   ],
   "layers_searched": {
@@ -475,7 +515,20 @@
       "null_reason": "no dedicated AI/data-centre power plant found; grid-capacity constraints appear only as causes in GBR-006 and GBR-007"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "GBR-001",
+        "GBR-005",
+        "GBR-006",
+        "GBR-008",
+        "GBR-011"
+      ],
+      "note": "Weekly audit 2026-10-25: 7 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "Progress of operators towards the end-2027 Huawei 5G removal deadline (Ofcom/DSIT reports) and whether any extension has been granted.",
     "Get the S1 written ministerial statement (Nov 2022) on Chinese surveillance cameras, and whether the 2023 Procurement Act-era restrictions extended it.",

@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "TZA",
   "name": "Tanzania",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T21:25:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -39,7 +39,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "AidData records Huawei and CITCC as contractors for Phase II; Phase III contractor not confirmed in this pass. Pole prc because Huawei supplies the transmission equipment and firmware. AidData converts the RMB700m commitment to about US$133m (constant 2023 USD), not used as announced value. The 2023 Huawei extension (TZA-002) suggests the backbone remains in service, but current status was not confirmed directly, so still_current is null."
+      "analyst_inference": "AidData records Huawei and CITCC as contractors for Phase II; Phase III contractor not confirmed in this pass. Pole prc because Huawei supplies the transmission equipment and firmware. AidData converts the RMB700m commitment to about US$133m (constant 2023 USD), not used as announced value. The 2023 Huawei extension (TZA-002) suggests the backbone remains in service, but current status was not confirmed directly, so still_current is null. Audit 2026-10-25: newer information - AidData: Phase II 3,230 km laid, completed 21 Oct 2015; Phase III separate US$93.77m loan signed 25 Mar 2013 (Zanzibar/Pemba, IP-MPLS, Dar es Salaam data centre), NICTBB operational Sept 2016."
     },
     {
       "id": "TZA-002",
@@ -139,7 +139,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Vodacom group CEO attributed the swap to a more attractive Huawei offer (commercial). The TelcoTitans article is paywalled and undated; the two September 2025 reports name Huawei only for energy-saving radio technology and do not state Huawei supplies the whole $100m programme, so the two claims are linked by inference and corroborated is left false. Tier 4 because rollout is under way (1,000+ sites), not complete."
+      "analyst_inference": "Vodacom group CEO attributed the swap to a more attractive Huawei offer (commercial). The TelcoTitans article is paywalled and undated; the two September 2025 reports name Huawei only for energy-saving radio technology and do not state Huawei supplies the whole $100m programme, so the two claims are linked by inference and corroborated is left false. Tier 4 because rollout is under way (1,000+ sites), not complete. Audit 2026-10-25: partly supported - TelcoTitans (undated, paywalled, apparently Huawei-sourced) supports a Nokia-to-Huawei RAN rip-and-replace being initiated but gives no sites, cost or status. Tech In Africa names Huawei only as supplier of energy-saving radio tech and does not mention Nokia, so tying the US$100m+ programme and 1,000+ sites to the Huawei swap (and announced_value_usd) is inference. techafricanews URL did not appear in search; not fetched."
     },
     {
       "id": "TZA-004",
@@ -469,7 +469,17 @@
       "null_reason": "no AI/data-centre-specific power evidence surfaced"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "TZA-001",
+        "TZA-003"
+      ],
+      "note": "Weekly audit 2026-10-25: 7 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "Date, scope and site count of Vodacom Tanzania's Nokia-to-Huawei RAN swap (TelcoTitans article paywalled and undated); does Huawei also supply Vodacom's core?",
     "RAN/core vendors for Airtel Tanzania, Halotel (Viettel) and TTCL mobile; whether Yas (ex-Tigo) kept Ericsson after the Axian rebrand.",

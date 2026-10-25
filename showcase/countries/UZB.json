@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "UZB",
   "name": "Uzbekistan",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-24T01:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -139,7 +139,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Owner-operator DataVolt is Saudi-based (per Euronews), so pole third; lenders are European/multilateral and do not set the pole. Tier 4 assumes the announced package is a committed financing; signing/first disbursement not confirmed. US$150m is the debt package, not total project cost. Chip vendor not disclosed."
+      "analyst_inference": "Owner-operator DataVolt is Saudi-based (per Euronews), so pole third; lenders are European/multilateral and do not set the pole. Tier 4 assumes the announced package is a committed financing; signing/first disbursement not confirmed. US$150m is the debt package, not total project cost. Chip vendor not disclosed. Audit 2026-10-25: partly supported - Proparco describes a financing commitment announced at the Tashkent International Investment Forum, not a closed financing; tier 4 (financing closed) is not evidenced. Proparco page does not mention the 300 MW programme or operation date (Euronews does). EBRD NTS not fetched."
     },
     {
       "id": "UZB-004",
@@ -177,11 +177,19 @@
           "date": "2026-09-24",
           "retrieved_at": "2026-10-24T01:10:00Z",
           "opened": true
+        },
+        {
+          "url": "https://gov.uz/en/digital/news/view/106572",
+          "publisher": "Ministry of Digital Technologies of Uzbekistan (gov.uz)",
+          "source_tier": "S1",
+          "date": "2025-11-30",
+          "retrieved_at": "2026-10-25T16:06:49Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "PRC owner-operator via a local subsidiary, so pole prc. Tier 1: no signed agreement or construction reported; Euronews (Sept 2026) says only that it is being developed. announced_value_usd is the first-phase figure only. GPU vendor unstated; if Nvidia, US export licensing for a PRC-headquartered operator would be a constraint (inference). Sited next to the Takhiatash thermal plant."
+      "analyst_inference": "PRC owner-operator via a local subsidiary, so pole prc. Tier 1: no signed agreement or construction reported; Euronews (Sept 2026) says only that it is being developed. announced_value_usd is the first-phase figure only. GPU vendor unstated; if Nvidia, US export licensing for a PRC-headquartered operator would be a constraint (inference). Sited next to the Takhiatash thermal plant. Audit 2026-10-25: newer information - gov.uz (30 Nov 2025): Karakalpakstan Council of Ministers chairman, the digital minister and a LinkWise delegation signed an action plan for a Modular Intelligent Computing Center (60 MW phase one, 240 MW phase two, 300 MW total); page does not name Takhiatash or confirm LinkWise as developer. Separately IT Park (29 Oct 2025) reports a US$130.9m framework agreement with Taiwan's Keycore Technology for a Takhiatash data centre using Nvidia AI servers, unrelated to LinkWise."
     },
     {
       "id": "UZB-005",
@@ -365,7 +373,17 @@
       "null_reason": "no AI-specific power deal surfaced; LinkWise site adjacency to Takhiatash thermal plant noted in UZB-004 only"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "UZB-003",
+        "UZB-004"
+      ],
+      "note": "Weekly audit 2026-10-25: 5 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "Vendors for private operators Ucell, Beeline and Mobiuz (RAN and core); split of the 2022 Uzbektelecom contracts between Huawei and ZTE and their financing.",
     "Tashkent Safe City: identity of the Chinese JV partner and camera/platform vendor; whether it was commissioned and extended nationwide.",

@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "USA",
   "name": "United States",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T21:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -63,7 +63,7 @@
       ],
       "corroborated": true,
       "confidence": "high",
-      "analyst_inference": "Tier 5 is the tier of the thing reversed (operational network equipment). announced_value_usd is the sum of the US$1.9bn 2021 appropriation and the US$3.08bn Treasury borrowing authorised in December 2024, as stated separately in the sources; it is not a verified spend. still_current true because the FCC's August 2026 notice shows removal work and 90-day status reporting continuing, with some extensions beyond May 2026. The US is treated as a pole on the map; this records a US decision against the PRC stack rather than US adoption."
+      "analyst_inference": "Tier 5 is the tier of the thing reversed (operational network equipment). announced_value_usd is the sum of the US$1.9bn 2021 appropriation and the US$3.08bn Treasury borrowing authorised in December 2024, as stated separately in the sources; it is not a verified spend. still_current true because the FCC's August 2026 notice shows removal work and 90-day status reporting continuing, with some extensions beyond May 2026. The US is treated as a pole on the map; this records a US decision against the PRC stack rather than US adoption. Audit 2026-10-25: newer information - Broadband Breakfast: original deadline 8 May 2026; most unfinished providers granted 3-6 month extensions; AWS-3 re-auction had cleared the US$3bn borrowed."
     },
     {
       "id": "USA-002",
@@ -197,7 +197,7 @@
       ],
       "corroborated": true,
       "confidence": "high",
-      "analyst_inference": "A prospective market exclusion rather than removal of an installed base; coded tier 3 (commercial sales and imports) as the tier of what is foreclosed, a judgment call. Layer applications because the rule targets vehicle software and connectivity systems; it also touches networks. Covers Russia as well as the PRC; pole prc reflects the main target. Commercial vehicles were left to a separate rulemaking not checked here."
+      "analyst_inference": "A prospective market exclusion rather than removal of an installed base; coded tier 3 (commercial sales and imports) as the tier of what is foreclosed, a judgment call. Layer applications because the rule targets vehicle software and connectivity systems; it also touches networks. Covers Russia as well as the PRC; pole prc reflects the main target. Commercial vehicles were left to a separate rulemaking not checked here. Audit 2026-10-25: newer information - BIS: rule applies only to passenger vehicles under 10,001 lb; hardware ban also applies from 1 Jan 2029 for units without a model year; also bars PRC/Russia-nexus manufacturers selling new connected vehicles in the US."
     },
     {
       "id": "USA-005",
@@ -242,6 +242,14 @@
           "source_tier": "S3",
           "date": "2025-12",
           "retrieved_at": "2026-10-23T21:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.news4jax.com/business/2026/01/23/tiktok-finalizes-deal-to-form-new-american-entity/",
+          "publisher": "Associated Press (via News4Jax)",
+          "source_tier": "S3",
+          "date": "2026-01-23",
+          "retrieved_at": "2026-10-25T16:06:49Z",
           "opened": true
         }
       ],
@@ -297,7 +305,7 @@
       ],
       "corroborated": true,
       "confidence": "high",
-      "analyst_inference": "All parties (Oracle, Crusoe, OpenAI, Nvidia) are US firms, so pole domestic; the exact owner-operator split between Oracle and Crusoe differs by source. The 421 MW figure is Epoch AI's satellite-based estimate, not a company disclosure. still_current true on Epoch's July 2026 operational status. Included as a domestic flagship; the US is treated as a pole on the map."
+      "analyst_inference": "All parties (Oracle, Crusoe, OpenAI, Nvidia) are US firms, so pole domestic; the exact owner-operator split between Oracle and Crusoe differs by source. The 421 MW figure is Epoch AI's satellite-based estimate, not a company disclosure. still_current true on Epoch's July 2026 operational status. Included as a domestic flagship; the US is treated as a pole on the map. Audit 2026-10-25: newer information - Epoch (updated July 2026): buildings 5-8 structurally complete but not yet confirmed operational as of 28 July 2026."
     }
   ],
   "layers_searched": {
@@ -323,7 +331,19 @@
       "null_reason": "the US is treated as a pole on the map, not scored; domestic AI power supply was out of scope for this pole-focused pass"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "USA-001",
+        "USA-004",
+        "USA-005",
+        "USA-006"
+      ],
+      "note": "Weekly audit 2026-10-25: 6 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "Did the FCC adopt the October 2025 order closing the previously-authorized-device and component loopholes for Covered List equipment, and has it been applied to Hikvision or Dahua models?",
     "Rip-and-replace completion count after the September 2026 status updates, and how many recipients missed their extended deadlines.",

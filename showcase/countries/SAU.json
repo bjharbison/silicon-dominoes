@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "SAU",
   "name": "Saudi Arabia",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-24T01:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -148,7 +148,7 @@
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
-      "date": "2018-10",
+      "date": "2018-10-17",
       "still_current": null,
       "summary": "Mobily signed a five-year 'Network 2023' memorandum with Huawei covering an end-to-end network review, the 4.5G-to-5G transition, network cloudification, and IT and data-centre strategy.",
       "announced_value_usd": null,
@@ -296,13 +296,13 @@
       "base_model": null,
       "base_model_pole": null,
       "scale": "national",
-      "instrument_tier": 2,
+      "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
-      "date": "2025-11",
+      "date": "2025-11-19",
       "still_current": null,
-      "summary": "HUMAIN, AMD and Cisco formed a joint venture to deliver 1 GW of AI infrastructure in Saudi Arabia by 2030, with a 100 MW first phase on AMD Instinct MI450 GPUs and Cisco networking.",
+      "summary": "AMD, Cisco and HUMAIN announced plans to form a joint venture delivering up to 1 GW of AI infrastructure in Saudi Arabia by 2030, starting with a 100 MW phase on AMD Instinct MI450 GPUs and Cisco infrastructure.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -312,6 +312,14 @@
           "source_tier": "S2",
           "date": "2025-11",
           "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://newsroom.amd.com/news/amd-cisco-and-humain-to-form-joint-venture/",
+          "publisher": "AMD",
+          "source_tier": "S4",
+          "date": "2025-11-19",
+          "retrieved_at": "2026-10-25T16:06:07Z",
           "opened": true
         }
       ],
@@ -454,7 +462,7 @@
       "reversal_reason": null,
       "date": "2025-08-26",
       "still_current": null,
-      "summary": "HUMAIN launched HUMAIN Chat powered by ALLaM 34B, an Arabic model building on SDAIA-originated work; in August 2026 Microsoft agreed to offer ALLaM on Foundry and integrate it with Microsoft 365 Copilot.",
+      "summary": "HUMAIN launched HUMAIN Chat in Saudi Arabia on its Arabic model ALLaM 34B; in August 2026 Microsoft and HUMAIN announced plans to bring ALLaM to Microsoft Foundry and Microsoft 365 Copilot.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -480,6 +488,14 @@
           "source_tier": "S2",
           "date": "2026-08-27",
           "retrieved_at": "2026-10-24T01:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://en.sharikatmubasher.com/media-hub/news/21503216/humain-launches-ai-chat-app-powered-by-allam-34b-in-saudi-arabia?lang=en",
+          "publisher": "Mubasher",
+          "source_tier": "S3",
+          "date": "2025-08-26",
+          "retrieved_at": "2026-10-25T16:06:07Z",
           "opened": true
         }
       ],
@@ -544,7 +560,18 @@
       "null_reason": "no AI-specific power evidence surfaced; budget spent on other layers"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "SAU-004",
+        "SAU-008",
+        "SAU-012"
+      ],
+      "note": "Weekly audit 2026-10-25: 6 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "Current RAN and core vendor shares at stc, Mobily and Zain KSA, and which vendor built Zain's July 2026 commercial 5G-Advanced network.",
     "Did HUMAIN's Riyadh and Dammam sites go live in 2026, and have Nvidia GB300 deliveries under the November 2025 Commerce authorisation actually arrived?",

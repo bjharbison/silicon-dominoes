@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "CAN",
   "name": "Canada",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-24T01:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -55,7 +55,7 @@
       ],
       "corroborated": true,
       "confidence": "high",
-      "analyst_inference": "Reversal of installed Huawei/ZTE 4G equipment, so tier 5. Coded geopolitical (national-security grounds). Caveat: an ISED Question Period note received 15 Sep 2025 says the removal timelines were tied to Bill C-26, which died without Royal Assent, and that successor Bill C-8 (June 2025) 'would provide' prohibition authority, implying the exclusion rests on a policy statement rather than binding orders. Whether 5G removal completed by June 2024 was not confirmed."
+      "analyst_inference": "Reversal of installed Huawei/ZTE 4G equipment, so tier 5. Coded geopolitical (national-security grounds). Caveat: an ISED Question Period note received 15 Sep 2025 says the removal timelines were tied to Bill C-26, which died without Royal Assent, and that successor Bill C-8 (June 2025) 'would provide' prohibition authority, implying the exclusion rests on a policy statement rather than binding orders. Whether 5G removal completed by June 2024 was not confirmed. Audit 2026-10-25: newer information - ISED QP note (Sep 2025): Bill C-26 did not become law; successor Bill C-8 introduced 18 Jun 2025 would provide the prohibition authority."
     },
     {
       "id": "CAN-002",
@@ -219,6 +219,14 @@
           "date": "2025-09-25",
           "retrieved_at": "2026-10-24T01:12:00Z",
           "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/?p=424916",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T16:05:45Z",
+          "opened": true
         }
       ],
       "corroborated": true,
@@ -260,6 +268,14 @@
           "source_tier": "S2",
           "date": "2025-09-25",
           "retrieved_at": "2026-10-24T01:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/?p=424916",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T16:05:45Z",
           "opened": true
         }
       ],
@@ -437,6 +453,14 @@
           "date": "2025-07-09",
           "retrieved_at": "2026-10-24T01:16:00Z",
           "opened": true
+        },
+        {
+          "url": "https://www.lawtimesnews.com/news/general/chinese-surveillance-equipment-company-appeals-ottawas-shutdown-order/392859",
+          "publisher": "Law Times",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T16:05:45Z",
+          "opened": true
         }
       ],
       "corroborated": true,
@@ -465,7 +489,19 @@
       "null_reason": "no AI-specific power plant evidence surfaced; Bell AI Fabric's hydro supply is noted under CAN-007 but no dedicated plant or utility filing was found"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [
+        "CAN-001",
+        "CAN-005",
+        "CAN-006",
+        "CAN-010"
+      ],
+      "note": "Weekly audit 2026-10-25: 5 selected finding(s) source-checked by independent checkers; corrections from pages the checkers read (dates, summaries, still_current, newer information, added opened sources) and spec-required recoding."
+    }
+  ],
   "research_gaps": [
     "Are Huawei/ZTE exclusions legally binding? Bill C-26 died; status of Bill C-8 and of any orders issued to operators; was 5G removal actually complete by June 2024?",
     "How much Huawei 4G equipment remains in Telus, Bell and other networks ahead of the end-2027 deadline? Rogers' 5G RAN vendors.",

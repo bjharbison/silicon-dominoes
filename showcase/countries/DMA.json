@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "DMA",
   "name": "Dominica",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T01:18:59Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [],
@@ -33,7 +33,14 @@
       "null_reason": "no AI- or data-centre-specific power evidence surfaced"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-25",
+      "audit": "AUDIT-2026-10-25.md",
+      "ids": [],
+      "note": "Weekly audit 2026-10-25: 0 selected finding(s) source-checked by independent checkers; no corrections needed."
+    }
+  ],
   "research_gaps": [
     "Which vendors supply Digicel Dominica's and Flow (Liberty Latin America) Dominica's RAN, core and fibre? Seek operator or NTRC evidence.",
     "Is there any Chinese-funded government ICT/e-government network in Dominica (the brief's lead)? Not found in this pass; AidData's Huawei national broadband project with that profile is Guyana's.",
