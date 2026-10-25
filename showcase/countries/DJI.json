@@ -1,0 +1,297 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "DJI",
+  "name": "Djibouti",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T05:19:31Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "DJI-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Djibouti Télécom",
+      "builder": null,
+      "financier": "China Development Bank (loan US$18.29m)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2007-06-20",
+      "still_current": null,
+      "summary": "Phase II of Djibouti Télécom's network expansion and renovation, financed by a China Development Bank loan with Huawei as contractor, supplied core network equipment and expanded GSM capacity; completed June 2007.",
+      "announced_value_usd": 18290000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/59254",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole prc: Huawei supplied core network equipment. Pre-2020 and still_current not checked; whether Huawei core remains in Djibouti Télécom's network today is unknown. US$18.29m is the nominal loan amount per AidData; ZTE also issued a loan guarantee. Single opened source."
+    },
+    {
+      "id": "DJI-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "HMN Technologies (Huawei Marine) / Hengtong Marine",
+      "local_actor": "Djibouti Télécom",
+      "builder": null,
+      "financier": "Bank of China, China Construction Bank, China CITIC Bank (system loans)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-08-29",
+      "still_current": null,
+      "summary": "Djibouti Télécom signed a landing party agreement with PEACE Cable International Network, a Hengtong subsidiary, to land the PEACE cable in Djibouti; Huawei Marine handled installation and Hengtong manufactured the cable.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/?p=7666",
+          "publisher": "SubTel Forum (Huawei Marine press release)",
+          "source_tier": "S2",
+          "date": "2018-08-29",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://communicationsafrica.com/internet/peace-cable-signs-deal-with-pakistan-and-djibouti",
+          "publisher": "Communications Africa",
+          "source_tier": "S2",
+          "date": "2018-09-05",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/92355",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole prc: cable supplier and installer are PRC firms. Tier 3 for the signed landing agreement; this run did not confirm that the Djibouti landing is in service (TeleGeography 2022 expected full completion end-2022). Corroboration rests on two trade outlets carrying the same release; reviewer may downgrade."
+    },
+    {
+      "id": "DJI-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SubCom",
+      "local_actor": "Djibouti Télécom (consortium with Somtel, Hormuud, Telkom Kenya)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-02",
+      "still_current": null,
+      "summary": "The DARE1 cable, manufactured by SubCom for a consortium led by Djibouti Télécom, links Djibouti City with Bosaso, Mogadishu and Mombasa; it entered service in February 2021 with 36 Tbps capacity.",
+      "announced_value_usd": 81000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/dare-1-cable-system-now-in-service/",
+          "publisher": "SubTel Forum (Djibouti Télécom release)",
+          "source_tier": "S2",
+          "date": "2021-03-30",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/dare1-manufacturing-complete-rfs-june-2020/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2019-12-04",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/optical-fixed-networks/18988-djibouti-telecom-to-extend-dare1-cable-from-kenya-to-south-africa.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2025-09-01",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole us: SubCom is the equipment supplier. The supplier is named only in the 2019 SubTel Forum piece; Developing Telecoms confirms operation since 2021. US$81m is the consortium's stated investment. Djibouti Télécom plans a Kenya–South Africa extension (work from 2026, RFS 2028; supplier not named)."
+    },
+    {
+      "id": "DJI-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Djibouti Télécom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12-04",
+      "still_current": null,
+      "summary": "Djibouti Télécom signed a partnership agreement with Ericsson on 4 December 2024 to deploy 5G in Djibouti; no rollout date was given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.osiris.sn/la-5g-a-djibouti-un-levier-pour-accelerer-la-transformation-numerique.html",
+          "publisher": "OSIRIS (relaying Agence Ecofin)",
+          "source_tier": "S3",
+          "date": "2024-12-06",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third: Ericsson is Swedish. Tier 2 as a partnership agreement without disclosed value. Notable because Huawei was earlier the core vendor (DJI-001) and in Feb 2024 discussed rural 4G/5G antennas with the minister (OperatorWatch, opened, S5-type blog, not cited). Not a reversal of Huawei on the evidence."
+    },
+    {
+      "id": "DJI-005",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "PAIX Data Centres",
+      "local_actor": "Djibouti Sovereign Fund (JV partner)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05-15",
+      "still_current": null,
+      "summary": "PAIX Data Centres announced a joint venture with the Djibouti Sovereign Fund to build JIB1, a 5 MW carrier- and cloud-neutral data centre in Djibouti City, scheduled to open in 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/paix-data-centres-plans-5mw-data-center-in-jv-with-djibouti-sovereign-fund",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-05-15",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://w.media/paix-partners-with-djiboutis-sovereign-fund-to-build-data-centers/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third: PAIX, a foreign African operator (Accra, Nairobi; Africa50-backed), is to own land, buildings and equipment; its home jurisdiction and JV equity split were not stated, so domestic share of control is unclear. Tier 1: announcement only; 2026 opening not confirmed."
+    },
+    {
+      "id": "DJI-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Djibouti Data Center (JV of Djibouti Télécom and Djibouti Data Center SARL)",
+      "local_actor": "Djibouti Télécom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2013-03-08",
+      "still_current": null,
+      "summary": "Djibouti Data Center, a joint venture of Djibouti Télécom and a group of local and international investors, began commercial colocation and internet-exchange operations in 2013 beside Djibouti Télécom's cable landing station.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/djibouti-launches-data-center-near-submarine-cable-landing",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2013-03-08",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/djibouti-to-get-new-data-center-and-cable-landing-stations/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2021-10-15",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole domestic assumed: state telco is a JV partner, but the SARL includes unnamed international investors and the equity split is unknown. DCD 2021 describes it as the only carrier-neutral facility then, so operating at least to 2021; still_current not confirmed for 2026. Both sources on one host, so not corroborated."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in network or data-centre searches"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no government frontier-model partnership surfaced in other searches"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one safe-city/surveillance search returned no Djibouti-specific results"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Is PEACE cable's Djibouti landing in service, and at which landing station?",
+    "Current radio and core vendors for Djibouti Télécom's 4G (2017/18 launch) network; is Huawei core equipment still in use, and has the Ericsson 5G deal moved to a contract?",
+    "Supplier and landing arrangements for 2Africa, IEX, SMW-5, AAE-1 and SMW-6 in Djibouti; Djibouti Télécom's 2021 cable landing station builder and equipment vendor.",
+    "Has PAIX JIB1 opened in 2026, and what is the JV equity split? Did the Wingu.Africa/TO7 carrier-neutral data centre (planned 2022) open?",
+    "China Telecom Group's Dec 2015 cooperation and financing agreement with Djibouti Télécom: which projects, if any, it financed.",
+    "Any safe-city, CCTV or e-government AI systems in Djibouti City and their vendors; any frontier-model partnerships."
+  ],
+  "searches_run": 9
+}

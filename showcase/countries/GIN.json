@@ -1,0 +1,342 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GIN",
+  "name": "Guinea",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T05:19:13Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GIN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "SOGEB (Société de Gestion et d'Exploitation du Backbone National)",
+      "builder": "Huawei Technologies (with Tactis, France, on design)",
+      "financier": "China Eximbank (US$214.2m preferential buyer's credit)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-09-11",
+      "still_current": true,
+      "summary": "Huawei built Guinea's national fibre backbone (about 4,000–4,500 km, with data and monitoring centres) under a China Eximbank loan covering 90% of a US$238m cost; state operator SOGEB launched commercial service in September 2020.",
+      "announced_value_usd": 238000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/52224",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://osiris.sn/Guinee-la-SOGEB-lance-l.html",
+          "publisher": "OSIRIS (reposting Financial Afrik)",
+          "source_tier": "S3",
+          "date": "2020-09-12",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-digital/2205-55854-guinea-doubles-national-fiber-backbone-capacity-amid-rising-internet-use",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2026-05-22",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Pole prc: Huawei is the equipment vendor and designer. Still current: Ecofin (May 2026) reports SOGEB raising backbone capacity to 400 Gb/s with Huawei technical support, target 600 Gb/s by end-2026. Length figures vary across sources (3,987 / 4,352 / 4,500 km). US$238m is total project cost per AidData and Financial Afrik.",
+      "bundle_id": "GIN-B1"
+    },
+    {
+      "id": "GIN-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Guinea (SOGEB backbone data centres)",
+      "local_actor": "SOGEB",
+      "builder": "Huawei Technologies",
+      "financier": "China Eximbank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-04-28",
+      "still_current": null,
+      "summary": "AidData records that the Huawei-built national backbone project included data centres and network monitoring centres, completed around April 2020.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/52224",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded facilities as the buildings are owned by the state SPV SOGEB (pole domestic); Huawei is builder. IT equipment inside is presumably Huawei (prc) but not stated. Single opened source; number, size and current use of these data centres unknown.",
+      "bundle_id": "GIN-B1"
+    },
+    {
+      "id": "GIN-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "SOTELGUI (state-owned telecom operator)",
+      "builder": "Huawei Technologies",
+      "financier": "China Eximbank (US$50m preferential buyer's credit)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2013",
+      "still_current": null,
+      "summary": "A US$50m China Eximbank loan, on-lent to state operator SOTELGUI, financed a Huawei-implemented modernisation and 2G-to-4G fibre upgrade; AidData lists it as completed by December 2020 but notes operational status is unclear.",
+      "announced_value_usd": 50000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/64324",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 3, not 5: AidData itself doubts the 4G upgrade became operational (no 4G network in early 2019). Pre-2020 commitment; still_current not established and SOTELGUI's present operating status was not checked in this run. Single opened source."
+    },
+    {
+      "id": "GIN-004",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Guinea (Ministries of Plan, Security and Civil Protection)",
+      "builder": null,
+      "financier": "Export-Import Bank of China (385.3m yuan concessional loan, 2%, 20 years)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03",
+      "still_current": null,
+      "summary": "Guinea signed a China-financed agreement for a 'Guinea Safe City' video-surveillance network covering Conakry's 13 communes and other cities: 324 camera sites, eight command centres and a dedicated LTE network; the transitional parliament approved the loan in March 2026.",
+      "announced_value_usd": 56000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fr.allafrica.com/stories/202503270587.html",
+          "publisher": "AllAfrica",
+          "source_tier": "S3",
+          "date": "2025-03-27",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-digital/1603-53809-guinea-approves-56m-chinese-financing-for-video-surveillance-network",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2026-03-16",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://guineenews.org/2025/05/02/vers-linstallation-de-cameras-et-le-renforcement-de-linfrastructure-routiere-dans-certaines-villes-le-gouvernement-fait-dimportantes-annonces/",
+          "publisher": "Guinéenews",
+          "source_tier": "S3",
+          "date": "2025-05-02",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://osiris.sn/la-guinee-fait-appel-a-huawei-pour-la-mise-en-oeuvre-de-divers-projets.html",
+          "publisher": "OSIRIS (reposting WeAreTech Africa)",
+          "source_tier": "S2",
+          "date": "2024-04-08",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Huawei is named as vendor only by AllAfrica; WeAreTech (Apr 2024) shows Guinea asked Huawei to implement the Guinea Safe City programme. Ecofin and Guinéenews do not name a vendor, so the pole rests on that attribution. Value: AllAfrica/Guinéenews give EUR 50m; Ecofin gives 385.3m yuan, about US$56m (Ecofin's conversion). Tier 3 (signed, ratified financing agreement); no construction start confirmed. Guinéenews (May 2025) said deployment was under way, unverified.",
+      "bundle_id": "GIN-B2"
+    },
+    {
+      "id": "GIN-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Guinea (security forces)",
+      "builder": null,
+      "financier": "Export-Import Bank of China",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03",
+      "still_current": null,
+      "summary": "The same Safe City financing includes six LTE base stations for a dedicated security-forces wireless network, plus 900 portable and 100 vehicle terminals.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/news-digital/1603-53809-guinea-approves-56m-chinese-financing-for-video-surveillance-network",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2026-03-16",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Vendor inferred from the Safe City bundle (Huawei per AllAfrica); Ecofin names no vendor. Single opened source for the LTE component.",
+      "bundle_id": "GIN-B2"
+    },
+    {
+      "id": "GIN-006",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Posts, Telecommunications and Digital Economy, Guinea",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-08-02",
+      "still_current": null,
+      "summary": "Guinea's digital minister signed an MOU with Huawei in Beijing covering high-speed and rural fibre networks, e-government, data centres, cybersecurity and ICT training; a July 2026 ministerial meeting discussed a future state cloud, with no instrument signed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://osiris.sn/la-guinee-s-associe-a-huawei-pour-accelerer-sa-transformation-numerique.html",
+          "publisher": "OSIRIS (reposting WeAreTech Africa)",
+          "source_tier": "S2",
+          "date": "2024-08-06",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.capmad.com/post/mourana-soumah-deepens-guineas-strategic-partnership-with-huawei-to-speed-up-the-countrys-digital-transformation",
+          "publisher": "CapMad",
+          "source_tier": "S3",
+          "date": "2026-07-06",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1 non-binding MOU spanning several layers; coded networks as its most concrete strand. CapMad (July 2026) says formal agreements and financing remain undefined. Corroboration not met: CapMad covers a later meeting, not the 2024 MOU."
+    },
+    {
+      "id": "GIN-007",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Guinea (Ministry of Posts, Telecommunications and Digital Economy)",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-04",
+      "still_current": null,
+      "summary": "Guinea inaugurated its first national data centre, a 600 m² facility with Uptime Institute Tier III design certification, alongside relaunch of the .gn domain, in Conakry in September 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/news-digital/0409-48427-guinea-opens-tier-3-national-data-center-to-strengthen-digital-transition",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2025-09-04",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://guineenews.org/2025/09/04/guinee-le-ministre-djiba-diakite-procede-au-double-lancement-du-point-gn-et-le-data-center-national-tier-lll/",
+          "publisher": "Guinéenews",
+          "source_tier": "S3",
+          "date": "2025-09-04",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole domestic assumed: government-inaugurated, but neither source names owner-operator, builder, financier or IT-equipment vendor. A COREX executive spoke at the launch; COREX's role unknown. Small facility; tier 5 means inaugurated and in service, not large-scale."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in data-centre, Huawei or AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search on government AI partnerships found only an enterprise AI-adoption programme (AI Xcelerate) and Huawei MOUs, no frontier-model or sovereign-model partnership"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendors for Orange Guinée and the nationalised Areeba (ex-MTN Guinea, state takeover completed Dec 2025) not established in two searches.",
+    "Which contractor holds the Guinea Safe City contract (Huawei per AllAfrica only), and has construction started after the March 2026 loan ratification?",
+    "Owner-operator, builder and IT vendor of the September 2025 national Tier III data centre; role of COREX.",
+    "Is SOTELGUI still operating, and did the 2013 Huawei/Exim 4G modernisation ever enter service?",
+    "AI Xcelerate programme (enterprise AI adoption): which model or cloud providers are partners?",
+    "Any digital/telecom layer of Simandou-linked infrastructure not searched."
+  ],
+  "searches_run": 9
+}

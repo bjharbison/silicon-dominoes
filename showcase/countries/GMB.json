@@ -1,0 +1,288 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GMB",
+  "name": "Gambia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T05:19:18Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GMB-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Gamtel",
+      "builder": "Huawei Technologies (joint implementer with Gamtel)",
+      "financier": "Export-Import Bank of China (concessional loan, on-lent via Government of the Gambia)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-06-26",
+      "still_current": null,
+      "summary": "The Gambia National Broadband Network, at least 420 km of fibre plus a data centre extending the ECOWAN/WARCIP backbone, was implemented by Huawei and Gamtel on a China Exim loan and commissioned in June 2019.",
+      "announced_value_usd": 25900473,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/56878",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://worldbroadbandassociation.com/wp-content/uploads/2024/05/WBBA-GAMTEL_Final.pdf",
+          "publisher": "World Broadband Association / Gamtel case study",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole prc: Huawei named as implementer by AidData; WBBA confirms the 420 km NBN, Gamtel ownership and US$25m China Exim loan but names no vendor, and is an S4 industry document, so not counted for corroboration. Value is the loan-agreement figure reported by AidData. Gamtel data centre in the package not coded separately (vendor and status unknown)."
+    },
+    {
+      "id": "GMB-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Gamtel",
+      "builder": "Huawei",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-10-25",
+      "still_current": null,
+      "summary": "Gamtel signed a partnership with Huawei to modernise and extend its core network backbone, with Huawei deploying seven DWDM units and OLTs to raise capacity; no value or financing was disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/15705-gamtel-expanding-and-upgrading-backbone-network-with-huawei.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2023-10-30",
+          "retrieved_at": "2026-10-25T05:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomreviewafrica.com/articles/telecom-vendor/3890-huawei-to-enhance-gambia-s-telecom-infrastructure",
+          "publisher": "Telecom Review Africa",
+          "source_tier": "S2",
+          "date": "2023-10-30",
+          "retrieved_at": "2026-10-25T05:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/Gambie-Gamtel-confie-a-Huawei-la.html",
+          "publisher": "Osiris",
+          "source_tier": "S3",
+          "date": "2023-10-26",
+          "retrieved_at": "2026-10-25T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 3 is a reviewer call: a signed agreement with named equipment scope but no value; could be tier 2 if it is a framework only. Deployment status not confirmed."
+    },
+    {
+      "id": "GMB-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "QCell",
+      "builder": "Huawei",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-06-09",
+      "still_current": null,
+      "summary": "QCell, the second-largest mobile operator (about 28% share), launched The Gambia's first commercial 5G service in selected Banjul-area locations, with Huawei as its technology partner.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.connectingafrica.com/5g-networks/qcell-launches-5g-in-the-gambia",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2023-06-09",
+          "retrieved_at": "2026-10-25T05:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/telecom/0906-44616-qcell-launches-gambia-s-first-commercial-5g-network",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2023-06-09",
+          "retrieved_at": "2026-10-25T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Sources call Huawei QCell's technology partner/technical support rather than explicitly the RAN supplier; inferred vendor. Tier 4 not 5 because coverage was limited to a few Banjul-area sites at launch. QCell's parent QGroup describes Huawei as a 17-year partner (The Point, 2026)."
+    },
+    {
+      "id": "GMB-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "All four mobile operators (Africell, QCell, Gamcel, Comium)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-08-30",
+      "still_current": null,
+      "summary": "The US Commerce Department's country commercial guide states Huawei has installed the network cabling for all four Gambian network providers, naming no other vendor.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://trade.gov/country-commercial-guides/gambia-information-and-communications-technology",
+          "publisher": "US International Trade Administration",
+          "source_tier": "S1",
+          "date": "2022-08-30",
+          "retrieved_at": "2026-10-25T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Single opened S1 source; the statement is broad and does not distinguish radio, core or transmission equipment. Operator list taken from Ecofin's citation of regulator PURA market shares. Overlaps GMB-001 to GMB-003; read as evidence of Huawei incumbency across operators."
+    },
+    {
+      "id": "GMB-005",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Presight (G42 group, Abu Dhabi)",
+      "local_actor": "Ministry of Communications and Digital Economy",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05-30",
+      "still_current": null,
+      "summary": "At Gitex Africa 2024 the ministry signed an MoU naming UAE firm Presight its digital-transformation partner: phase one digital government services, national digital ID and a national data centre; phase two a national safety operations centre.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://presight.ai/presight-chosen-to-propel-digital-transformation-by-gambias-ministry-of-communications-and-digital-economy",
+          "publisher": "Presight (corporate release)",
+          "source_tier": "S4",
+          "date": "2024-05-30",
+          "retrieved_at": "2026-10-25T05:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://gambiana.com/gambia-selects-uae-tech-firm-for-digital-transformation-journey/",
+          "publisher": "Gambiana",
+          "source_tier": "S3",
+          "date": "2024-06-01",
+          "retrieved_at": "2026-10-25T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third: Presight is majority-owned by G42 (UAE). MoU only; no value, contract or delivery found. The national data centre component, if built, would be a separate facilities finding; owner-operator unknown."
+    },
+    {
+      "id": "GMB-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "QGroup",
+      "local_actor": "QGroup",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-04-29",
+      "still_current": null,
+      "summary": "President Barrow inaugurated QGroup House in April 2026, an eight-storey building housing what was presented as The Gambia's first data centre; no capacity, tier rating, vendor or cost was given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://thepoint.gm/africa/gambia/headlines/barrow-inaugurates-qgroup-house-unveils-gambias-first-data-centre",
+          "publisher": "The Point (Banjul)",
+          "source_tier": "S3",
+          "date": "2026-04-30",
+          "retrieved_at": "2026-10-25T05:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole domestic: QGroup is a Gambian conglomerate (parent of QCell); the article does not state the operating entity. Inauguration date inferred as Wednesday 29 April 2026. Tier 4 because operation at scale is not described. Huawei is QCell's long-time partner but is not named as data-centre supplier."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in data-centre, Huawei or AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one AI-partnership search found no government partnership with a frontier model provider or sovereign model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Second submarine cable (World Bank WARDIP, ~US$30-35m, Gambia–Guinea MoU April 2024): has a supplier been selected and on what terms (BOT)? Not coded because no vendor is named.",
+    "Africell (about 63% share) radio/core vendor not established; trade.gov claim of Huawei across all four operators needs operator-level confirmation.",
+    "Did the Presight MoU lead to a contract for the national data centre, digital ID or safety operations centre?",
+    "Is the Gamtel data centre built under the China Exim NBN project still operating, and who supplied its IT equipment?",
+    "Was the Gamtel–Huawei backbone upgrade (Oct 2023) delivered, and is YCELL's acquisition of 80% of Gamcel (July 2026) changing vendors? YCELL's nationality unknown.",
+    "No safe-city/CCTV deal found in one search; check airport security-equipment donation reports and any police surveillance procurement."
+  ],
+  "searches_run": 10
+}

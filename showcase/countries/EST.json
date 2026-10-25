@@ -1,0 +1,387 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "EST",
+  "name": "Estonia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T05:21:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "EST-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Elisa Eesti AS; Government of Estonia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei radio equipment in Elisa Eesti's 2G–5G networks",
+      "reversal_reason": "geopolitical",
+      "date": "2022",
+      "still_current": null,
+      "summary": "Under Estonia's prior-authorisation regime for network equipment, a 2022 government order classed Huawei as high-risk and gave Elisa only time-limited permits: Huawei gear allowed in 5G until end-2025 and in 2G–4G until end-2029.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.insideprivacy.com/emea-tech-regulation/cjeu-advocate-general-indicates-that-communications-network-operators-can-lawfully-be-required-to-remove-chinese-components-and-that-compensation-is-not-required/",
+          "publisher": "Inside Privacy (Covington & Burling)",
+          "source_tier": "S2",
+          "date": "2026-03",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecoms.com/telecoms-law/european-court-gives-preliminary-green-light-to-national-5g-vendor-bans",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.err.ee/1117602/elisa-huawei-vorguseadmete-kasutamist-ei-tohiks-keelata-enne-2030-aastat",
+          "publisher": "ERR",
+          "source_tier": "S3",
+          "date": "2020-07-28",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reversal tier 5: Huawei equipment was operating in Elisa's network. Enabling law: May 2020 Electronic Communications Act amendment letting government set by regulation which devices may be used (ERR 2020). Elisa challenged the order; Tallinn Administrative Court referred case C-354/24 to the CJEU; AG Ćapeta's non-binding opinion of 19 March 2026 found such restrictions justifiable without compensation. Final judgment not seen. Whether Elisa met the end-2025 5G deadline not confirmed."
+    },
+    {
+      "id": "EST-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Elisa Eesti AS",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "Elisa Estonia chose Nokia under a five-year deal to supply its nationwide 5G network, replacing its 4G network equipment, with rollout expected in 2022; Elisa has since replaced most of its Huawei equipment with Nokia.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://estonianworld.com/technology/nokia-to-develop-a-5g-network-in-estonia/",
+          "publisher": "Estonian World",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecoms.com/telecoms-law/european-court-gives-preliminary-green-light-to-national-5g-vendor-bans",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third: Nokia is Finnish. Contract date not given in the opened page (rollout expected 2022), so date null. Tier 3 coded for the contract; Telecoms.com's statement that most Huawei kit was replaced suggests operation at scale, but no deployment figures seen. Value undisclosed."
+    },
+    {
+      "id": "EST-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Tele2 Eesti",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-01",
+      "still_current": null,
+      "summary": "Tele2 picked Nokia as its 5G radio access partner across Estonia, Latvia and Lithuania, and as primary vendor for standalone 5G core and voice-over-5G, including Estonia.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/5g/tele2-picks-nokia-for-5g-ran-in-baltics",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2022-01-04",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third (Finnish vendor). Single opened source. Light Reading does not say whether Tele2 Estonia previously used Huawei RAN; legacy vendor not established. Value undisclosed."
+    },
+    {
+      "id": "EST-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (RAN); Nokia (5G standalone core)",
+      "local_actor": "Telia Eesti",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-06",
+      "still_current": null,
+      "summary": "Telia signed group deals in November 2025 naming Ericsson for radio access in Estonia and Nokia for its 5G standalone core there; Telia's Estonian 5G network launched in 2020 was already Ericsson-built.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/telia-bolsters-ran-offering-with-ericsson-nokia-deals/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-11-06",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://estonianworld.com/technology/nokia-to-develop-a-5g-network-in-estonia/",
+          "publisher": "Estonian World",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third: both vendors are Swedish/Finnish. Values undisclosed. Estonian World supports only the 2020 Ericsson build, not the 2025 deal; the 2025 contract details rest on DCD."
+    },
+    {
+      "id": "EST-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Greenergy Data Centers (MCF Group Estonia)",
+      "local_actor": "Greenergy Data Centers; Nebius (tenant)",
+      "builder": "Caverion (Finland), main contractor",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-13",
+      "still_current": null,
+      "summary": "Greenergy is expanding its Hüüru data centre near Tallinn, Estonia's largest, by 22MW (to 31.5MW) for AI workloads, with Nebius deploying AI cloud infrastructure; first phase due to operate in late 2026.",
+      "announced_value_usd": 58000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/nebius-expands-european-presence-announces-deployment-in-estonia-and-second-data-center-in-m%C3%A4nts%C3%A4l%C3%A4-finland/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-08-13",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://estonianworld.com/?p=89952",
+          "publisher": "Estonian World",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.intellinews.com/investors-commit-nearly-200mn-to-expand-estonia-s-largest-data-centre-458132/",
+          "publisher": "bne IntelliNews",
+          "source_tier": "S2",
+          "date": "2026-07-30",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole domestic: owner-operator Greenergy is owned by MCF Group Estonia, with Estonian private investors (IntelliNews). Tenant Nebius (Amsterdam-headquartered, Nasdaq-listed) would be pole third for its cloud/compute but is a tenant here. Tier 4 because a main contractor is appointed and investment committed; construction start not explicitly dated. US$58m is DCD's conversion of a locally reported EUR 50m expansion; IntelliNews reports total investment of nearly EUR 200m by end-2026. GPU type undisclosed."
+    },
+    {
+      "id": "EST-006",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "EuroHPC Joint Undertaking / LUMI AI Factory consortium (CSC, Finland)",
+      "local_actor": "ETAIS / University of Tartu (Estonian consortium partner)",
+      "builder": "Bull (France), system vendor",
+      "financier": "EuroHPC JU (Digital Europe Programme) 50%; LUMI AI Factory consortium 50%",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-31",
+      "still_current": null,
+      "summary": "Estonia is one of six countries in the LUMI AI Factory consortium; EuroHPC signed a EUR 387.8m contract with Bull in August 2026 for the LUMI-AI supercomputer at CSC's Kajaani site in Finland, due 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-signs-contract-deploy-lumi-ai-supercomputer-2026-08-31_en",
+          "publisher": "EuroHPC Joint Undertaking",
+          "source_tier": "S1",
+          "date": "2026-08-31",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://hpc.ut.ee/news/2026-09-01",
+          "publisher": "University of Tartu HPC Centre",
+          "source_tier": "S1",
+          "date": "2026-09-01",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third: facility is in Finland, operated by CSC and controlled by EuroHPC and the consortium, not by Estonia alone. Estonia's own financial share not stated; the EUR 387.8m is the whole contract (half EuroHPC, half consortium), so values left null. Accelerators are AMD Instinct MI430X (US silicon), supplied via Bull (France); not coded as an Estonian silicon finding because the system sits outside Estonia."
+    },
+    {
+      "id": "EST-007",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI; Google",
+      "local_actor": "Ministry of Education and Research; AI Leap Foundation",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02-25",
+      "still_current": null,
+      "summary": "Estonia's AI Leap (TI-Hüpe) programme gives upper-secondary students and teachers AI learning tools; announced February 2025 with OpenAI and Anthropic negotiations, its 2025–26 pilot covers 154 schools and 20,000 students using OpenAI and Google technology.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://hm.ee/en/news/estonia-announces-groundbreaking-national-initiative-ai-leap-programme-bring-ai-tools-all",
+          "publisher": "Estonian Ministry of Education and Research",
+          "source_tier": "S1",
+          "date": "2025-02-25",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://euronews.com/next/2025/02/25/estonia-announces-new-ai-initiative-with-openai-to-roll-out-chatbots-in-schools",
+          "publisher": "Euronews",
+          "source_tier": "S3",
+          "date": "2025-02-25",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://e-estonia.com/wp-content/uploads/factsheet_ai_leap_1_04_26.pdf",
+          "publisher": "e-Estonia Briefing Centre (factsheet)",
+          "source_tier": "S4",
+          "date": "2026-04",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2 (pilot). The ministry release and Euronews describe negotiations with OpenAI and Anthropic, with OpenAI saying it would bring ChatGPT Edu; the April 2026 state factsheet names only OpenAI and Google, not Anthropic, and describes an Estonian-language app built on their technology, so pole us via provider service. Anthropic's final role unconfirmed. Pilot budget EUR 4m, half ministry and half private (incl. Telia); not converted. Expansion to 38,000 more learners planned 2026–27."
+    },
+    {
+      "id": "EST-008",
+      "layer": "applications",
+      "pole": "domestic",
+      "controller": "Information System Authority (RIA)",
+      "local_actor": "RIA, Ministry of Justice and Digital Affairs",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "RIA runs Bürokratt, a round-the-clock Estonian-language virtual assistant for public-service questions that hands users over to human staff, and is developing rules and tools for secure public-sector use of autonomous AI assistants.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ria.ee/en/state-information-system/artificial-intelligence",
+          "publisher": "Information System Authority (RIA)",
+          "source_tier": "S1",
+          "date": "2026-06-19",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole domestic: RIA develops and operates the service. Underlying model or provider not stated on the page, so a foreign model dependency cannot be excluded. Tier 5 assumes the service described as existing runs nationally; launch date not given. Source date is the page's last update."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no in-country accelerator purchase found; Nebius GPU type at Hüüru undisclosed; LUMI-AI AMD GPUs sit in Finland"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced; Sunly AI data centre lead not followed"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Did Elisa remove all Huawei 5G equipment by the 31 Dec 2025 deadline, and has the CJEU ruled in C-354/24?",
+    "Do Telia Eesti or Tele2 Eesti still run any Huawei/ZTE equipment in 2G–4G layers?",
+    "What GPUs will Nebius deploy at Greenergy Hüüru, and when did construction start?",
+    "Did Anthropic sign an AI Leap agreement, and which model underlies the student app?",
+    "Which model or provider underlies Bürokratt and the Aruait autonomous-assistant project?",
+    "Not searched: Estonian data embassy in Luxembourg, Sunly AI data centre, any PRC-vendor surveillance or safe-city systems."
+  ],
+  "searches_run": 10
+}

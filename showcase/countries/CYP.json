@@ -1,0 +1,327 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "CYP",
+  "name": "Cyprus",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T05:19:48Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "CYP-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Epic Ltd (mobile operator)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-11-01",
+      "still_current": null,
+      "summary": "A 2021 company profile describes Huawei as Epic's major hardware supplier for 5G site and network upgrades and its preferred vendor in many network areas since 2009; Juniper supplied the IP backbone revamp.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://technologymagazine.com/company-reports/epic-cyprus-leading-way-mobile-networks-cyprus-0",
+          "publisher": "Technology Magazine (company report)",
+          "source_tier": "S4",
+          "date": "2021-11-01",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://cyprus-mail.com/2021/07/14/epic-5g-5g-by-the-1-mobile-network-in-test-in-cyprus",
+          "publisher": "Cyprus Mail (Epic press release)",
+          "source_tier": "S4",
+          "date": "2021-07-14",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole prc: Huawei named as main hardware supplier, but the profile does not say explicitly that Huawei supplies the 5G RAN or core. Technology Magazine company reports are sponsored-style profiles, coded S4. The Cyprus Mail release confirms Epic 5G was live in July 2021 but names no vendor. Current vendor in 2026 not confirmed. No Cyprus national decision excluding Huawei was found."
+    },
+    {
+      "id": "CYP-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Cyta (state-owned telecom operator)",
+      "local_actor": "Cyta",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-07",
+      "still_current": null,
+      "summary": "Cyta agreed to acquire the RedMax data centre in Latsia industrial area and expand it in phases into the largest privately owned data centre in Cyprus, with phase one targeted for commercial operation in early 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://cyprus-mail.com/2026/07/07/cyta-invests-in-biggest-privately-owned-data-centre-in-cyprus",
+          "publisher": "Cyprus Mail",
+          "source_tier": "S3",
+          "date": "2026-07-07",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole domestic: Cyta is a Cypriot semi-governmental operator. Tier 3 as a signed acquisition agreement; no value or capacity disclosed, seller not named. Single S3 source. Not AI-specific per the article; IT equipment vendors unknown."
+    },
+    {
+      "id": "CYP-003",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Khazna Data Centers (G42 group, UAE)",
+      "local_actor": "Deputy Ministry of Research, Innovation and Digital Policy",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-10-15",
+      "still_current": null,
+      "summary": "Cyprus's Deputy Ministry of Research, Innovation and Digital Policy signed an MoU in Dubai with Khazna, a G42 company, setting a framework for joint data-centre projects; possible AI and other cooperation was mentioned but not part of the MoU.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://pio.gov.cy/en/press-releases-article.html?id=44466",
+          "publisher": "Press and Information Office, Republic of Cyprus",
+          "source_tier": "S1",
+          "date": "2024-10-15",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://cyprus-mail.com/2024/10/15/cyprus-signs-mou-with-largest-data-centre-operator-in-uae",
+          "publisher": "Cyprus Mail",
+          "source_tier": "S3",
+          "date": "2024-10-15",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third (UAE operator) on the assumption Khazna would own-operate any resulting facility; neither source names a site, value or controller of any project. Tier 1 MoU; no follow-on contract found."
+    },
+    {
+      "id": "CYP-004",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "NVIDIA",
+      "local_actor": "Deputy Ministry of Research, Innovation and Digital Policy / EuroHPC JU (Pharos-CY AI Factory Antenna)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-10",
+      "still_current": null,
+      "summary": "Cyprus's AI Factory Antenna (Pharos-CY), approved with EuroHPC in late 2025, links to Greece's Pharos AI factory and DAIDALOS supercomputer; reporting says a smaller supercomputer will be built with NVIDIA. Not reported operational.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://euronews.com/next/2026/02/10/cyprus-connects-to-greek-supercomputer-as-it-enters-ai-race",
+          "publisher": "Euronews",
+          "source_tier": "S3",
+          "date": "2026-02-10",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://fastforward.com.cy/tech/pharos-cy-cyprus-host-ai-factory-antenna",
+          "publisher": "Fast Forward (Cyprus)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Fast Forward confirms the antenna and its link to Pharos but names no hardware vendor; only Euronews mentions NVIDIA, and it is unclear whether that machine is in Cyprus or Greece. Tier 2: approved programme, no procurement award found. EuroHPC co-funding implies an EU dimension; accelerator vendor sets pole us."
+    },
+    {
+      "id": "CYP-005",
+      "layer": "silicon",
+      "pole": null,
+      "controller": "Tenstorrent",
+      "local_actor": "Research and Innovation Foundation (for the Government of Cyprus)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12-12",
+      "still_current": null,
+      "summary": "Tenstorrent signed a strategic MoU with Cyprus's Research and Innovation Foundation to set up a national AI innovation hub, sovereign compute on open hardware, and skills and semiconductor programmes. No value or hardware quantities disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://tenstorrent.com/newsroom/republic-of-cyprus-selects-tenstorrent-for-ai-innovation",
+          "publisher": "Tenstorrent (company release)",
+          "source_tier": "S4",
+          "date": "2025-12-12",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: Tenstorrent's controller jurisdiction (Canadian origin, substantial US presence) not established in this run; reviewer to set us or third. Single S4 corporate release; tier 1 MoU."
+    },
+    {
+      "id": "CYP-006",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Microsoft (Azure OpenAI)",
+      "local_actor": "Deputy Ministry of Research, Innovation and Digital Policy",
+      "builder": null,
+      "financier": null,
+      "base_model": "OpenAI GPT (version not stated)",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12-18",
+      "still_current": null,
+      "summary": "The gov.cy Digital Assistant, built on Microsoft Azure OpenAI services, launched as a beta for Social Insurance questions in December 2024; by mid-2025 it had answered over 115,000 questions and added education and disability-benefit modules.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://cbn.com.cy/article/2024/12/18/811902/digital-assistant-now-available-on-govcy",
+          "publisher": "Cyprus Business Now",
+          "source_tier": "S3",
+          "date": "2024-12-18",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://fastforward.com.cy/tech/cyprus-launches-1st-ai-digital-assistant-govcy",
+          "publisher": "Fast Forward (Cyprus)",
+          "source_tier": "S3",
+          "date": "2024-12-18",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.cbn.com.cy/article/116040/digital-assistant-gives-over-115-000-answers-to-citizens-questions-in-first-six-months",
+          "publisher": "Cyprus Business Now",
+          "source_tier": "S3",
+          "date": "2025-07-03",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Model used through Microsoft's hosted Azure OpenAI service, so us. Tier 2 because launched as a pilot/beta with limited modules; reviewer may judge tier 5 given live national use. Not corroborated: all sources S3, no S1/S2 opened. The July 2025 piece does not restate the provider."
+    },
+    {
+      "id": "CYP-007",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "Deputy Ministry of Research, Innovation and Digital Policy",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-03-13",
+      "still_current": null,
+      "summary": "The Cypriot government signed an EUR 8m enterprise agreement with Microsoft for 10,000 Microsoft 365 licences, cloud services, collaboration tools, partner implementation and executive training for the public sector.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://cyprus-mail.com/2024/03/13/microsoft-deal-to-help-public-sectors-digital-transformation",
+          "publisher": "Cyprus Mail",
+          "source_tier": "S3",
+          "date": "2024-03-13",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://cbn.com.cy/article/2024/3/13/763919/cyprus-microsoft-eur8m-agreement-for-public-sectors-digital-transformation",
+          "publisher": "Cyprus Business Now",
+          "source_tier": "S3",
+          "date": "2024-03-13",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "E-government productivity stack, not AI-specific; neither article mentions Copilot or Azure AI. EUR 8m not converted, values left null. Not corroborated (two S3, no S1/S2), so low confidence despite tier 3."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendors for Cyta (Cytamobile-Vodafone) and PrimeTel networks not established in three searches.",
+    "Does Epic still use Huawei RAN/core in 2026, and has Cyprus adopted any national law or decision restricting high-risk 5G vendors (as distinct from the EU toolbox)?",
+    "Did the Khazna/G42 MoU produce any data-centre project in Cyprus?",
+    "Hardware vendor and location of the Pharos-CY compute; Tenstorrent controller jurisdiction and any follow-on contract.",
+    "Safe-city or police video surveillance vendors in Cyprus: one search found nothing Cyprus-specific."
+  ],
+  "searches_run": 12
+}

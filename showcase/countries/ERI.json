@@ -1,0 +1,128 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ERI",
+  "name": "Eritrea",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T05:19:30Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ERI-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "Eritel (Eritrea Telecommunication Services Corporation)",
+      "builder": null,
+      "financier": "Export-Import Bank of China (RMB 166m government concessional loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2009-06",
+      "still_current": null,
+      "summary": "Phase 1 of a China Eximbank-financed telecom rehabilitation: ZTE, under a 2005 contract, rehabilitated Eritel's 200,000-line fixed network and rolled out a nationwide CDMA wireless network, completed in June 2009.",
+      "announced_value_usd": 21450000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/55516",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.tresor.economie.gouv.fr/Pays/ER/telecoms-un-secteur-embryonnaire-dans-un-pays-sous-sanctions-internationales",
+          "publisher": "Direction générale du Trésor (French Ministry of Economy)",
+          "source_tier": "S1",
+          "date": "2022-06-02",
+          "retrieved_at": "2026-10-25T05:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://btw.media/en/eritel-drives-digital-access-in-eritrea-within-deep-infrastructure-gap",
+          "publisher": "BTW Media",
+          "source_tier": "S3",
+          "date": "2025-08-27",
+          "retrieved_at": "2026-10-25T05:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole prc: ZTE is the equipment vendor. US$21.45m is the ZTE contract value per AidData; the RMB 166m loan is not converted. ZTE is named only by AidData; Trésor (2022) and BTW Media (2025) confirm a 2006 Chinese concessional loan for telecom modernisation (both say US$23m) without naming a vendor. Trésor coded S1 as a government publication, but it is a foreign government's country note: reviewer call. Pre-2020: whether the CDMA network is still in service was not confirmed."
+    },
+    {
+      "id": "ERI-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE and Huawei",
+      "local_actor": "Eritel (Eritrea Telecommunication Services Corporation)",
+      "builder": null,
+      "financier": "Export-Import Bank of China (government concessional loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2014",
+      "still_current": null,
+      "summary": "Phase 2 of the Eximbank-financed rehabilitation, with ZTE and Huawei as contractors, was to build Eritel a national MPLS IP backbone, a GSM mobile network and the TSEiNET ISP network; AidData records it completed in 2014.",
+      "announced_value_usd": 23000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/73378",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole prc: equipment vendors ZTE and Huawei; the split between them is not documented. Tier 4 not 5: AidData marks the project complete (2012-2014) but gives no operational detail. US$23m is AidData's single-source estimated face value; it matches the figure Trésor and BTW Media attach to the 2006 loan, so the amounts may be conflated. Pre-2020; current status not confirmed, though Eritel remains the sole operator and plausibly still runs this kit."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "no data-centre or AI-campus project found in 2 searches; Eritrea has no submarine-cable landing (BTW Media 2025)"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in network, data-centre or AI searches; US chip-export posture covered by global layer"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found no government AI strategy or frontier-model partnership"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one safe-city/surveillance search returned no Eritrea-specific results"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Who supplies Eritel's current radio/core network (GSM/3G expansion since 2014), and is the ZTE CDMA network from phase 1 still in service?",
+    "Split of phase-2 scope between ZTE and Huawei, and the true phase-2 loan amount (AidData US$23m face value vs the US$23m that Trésor and BTW Media attribute to the 2006 loan).",
+    "Any post-2014 Chinese-financed telecom, data-centre or e-government projects in Eritrea (none found).",
+    "Is any surveillance or safe-city system deployed in Asmara, and by which vendor?"
+  ],
+  "searches_run": 9
+}

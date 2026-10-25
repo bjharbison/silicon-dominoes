@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "CYP",
-  "DJI",
-  "ERI",
-  "EST",
-  "FJI",
-  "FSM",
-  "GAB",
-  "GIN",
-  "GMB",
-  "GNB",
   "GNQ",
   "GRD",
   "GTM",
@@ -254,6 +244,16 @@
   "CAF",
   "COD",
   "COM",
-  "CPV"
+  "CPV",
+  "CYP",
+  "DJI",
+  "ERI",
+  "EST",
+  "FJI",
+  "FSM",
+  "GAB",
+  "GIN",
+  "GMB",
+  "GNB"
  ]
 }

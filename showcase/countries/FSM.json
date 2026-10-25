@@ -1,0 +1,152 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "FSM",
+  "name": "Micronesia, Federated States of",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T05:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "FSM-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "HMN Technologies (formerly Huawei Marine Networks; majority-owned by Hengtong Optic-Electric)",
+      "local_actor": "Government of the Federated States of Micronesia (with Nauru and Kiribati)",
+      "builder": null,
+      "financier": "World Bank (lead); Asian Development Bank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "HMN Technologies' lowest-price bid in the World Bank-led East Micronesia Cable tender",
+      "reversal_reason": "geopolitical",
+      "date": "2021-06-18",
+      "still_current": true,
+      "summary": "The World Bank-led East Micronesia Cable tender, in which HMN Technologies bid about 20% below NEC and Alcatel Submarine Networks, ended with no award after the US warned FSM in 2020 that the Chinese bidder posed a security risk.",
+      "announced_value_usd": 72600000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/east-micronesia-subsea-cable-scrapped-as-us-says-chinese-firms-pose-threat",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2021-06-18",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://pina.com.fj/2021/06/22/pacific-undersea-cable-project-sinks-after-u-s-warns-against-chinese-bid/",
+          "publisher": "Pacific Islands News Association (Reuters/PACNEWS)",
+          "source_tier": "S3",
+          "date": "2021-06-22",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://pina.com.fj/2021/09/06/u-s-funding-tapped-for-pacific-undersea-cable-after-china-rebuffed/",
+          "publisher": "Pacific Islands News Association (Reuters/PACNEWS)",
+          "source_tier": "S3",
+          "date": "2021-09-06",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.pacificislandtimes.com/post/fsm-nauru-kiribati-agree-to-push-forward-a-stalled-fiber-optic-cable-project",
+          "publisher": "Pacific Island Times",
+          "source_tier": "S3",
+          "date": "2023-01-31",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Formal World Bank reason was that all three bids were non-responsive; sources attribute the stall to US security objections, so reason coded geopolitical. Tier 2 is a reviewer call: the reversed item was a pre-award bid, not a signed contract. US$72.6m is reported as HMN's bid/project value. still_current true because the cable was later built by NEC (FSM-002)."
+    },
+    {
+      "id": "FSM-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "NEC Corporation (cable supplier)",
+      "local_actor": "FSM Telecommunications Cable Corporation (co-owner with BwebwerikiNet and Nauru Fibre Cable Corporation)",
+      "builder": "NEC (cable supply and installation); DXN (cable landing stations)",
+      "financier": "Governments of Australia, Japan and the United States (grants)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-15",
+      "still_current": null,
+      "summary": "After a re-run competitive tender, NEC won the East Micronesia Cable contract in June 2023; it finished construction linking Kosrae and Pohnpei to Nauru and Kiribati and handed the system to its three owners by May 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/optical-fixed-networks/20253-nec-completes-emcs-cable-linking-fsm-kiribati-and-nauru.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-05-15",
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.dfat.gov.au/news/media-release/work-start-east-micronesia-cable-following-contract-signing",
+          "publisher": "Australian Department of Foreign Affairs and Trade",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://lightwaveonline.com/network-design/high-speed-networks/article/14294814/nec-named-supply-and-installation-contractor-for-the-east-micronesia-cable-system",
+          "publisher": "Lightwave",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:18:30Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third: equipment vendor NEC is Japanese. Tier 4 rather than 5 because sources confirm construction completion and handover but not commercial service at scale. DFAT gives an estimated AUD 135m overall project cost; not converted, value left null. Pohnpei lands at the existing HANTRU-1 landing point. In 2021 Reuters reported ~US$14m of US American Rescue Plan funds for a Kosrae–Pohnpei segment, apparently folded into this project."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found only the UN-funded Tonoas Smart Island Digital Hub (April 2025), a small connectivity centre with no vendor or data-centre detail; no data-centre or AI-campus projects found"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in digital or data-centre searches for a ~100k-population state"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "no government partnership with a model provider surfaced in a general digital/AI search"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search for Chinese-donated surveillance/police equipment found only a 2017 police-uniform donation (not stack-relevant); no safe-city or e-government AI system found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core network vendors for FSM Telecommunications Corporation's mobile network not established (only a 2002 interWAVE GSM contract surfaced).",
+    "Is the East Micronesia Cable in commercial service in 2026, and who sells capacity over it in FSM?",
+    "Vendor and status of HANTRU-1 (Pohnpei–Guam, c.2010) and of any Chuuk/Yap connections; any PRC-vendor involvement?",
+    "Which licensed satellite providers (Kacific, Starlink) operate in FSM; TRA licensing records could not be read."
+  ],
+  "searches_run": 8
+}

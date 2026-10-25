@@ -1,0 +1,297 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "FJI",
+  "name": "Fiji",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T05:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "FJI-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Digicel Fiji (Telstra-owned Digicel Pacific)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-09-01",
+      "still_current": null,
+      "summary": "Reporting on Telstra's 2022 Digicel Pacific acquisition said Digicel's 3G and 4G networks across its five markets, including Fiji, run on Huawei equipment that Telstra would keep until future refreshes.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.channelnews.com.au/telstra-to-keep-huawei-infrastructure-for-digicel/",
+          "publisher": "ChannelNews",
+          "source_tier": "S3",
+          "date": "2022-09-01",
+          "retrieved_at": "2026-10-25T05:18:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://pina.com.fj/2022/09/09/telstra-to-tear-out-digicels-huawei-equipment-in-next-refresh/",
+          "publisher": "Pacific Islands News Association (PINA)",
+          "source_tier": "S3",
+          "date": "2022-09-09",
+          "retrieved_at": "2026-10-25T05:18:10Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Only ChannelNews names Fiji; PINA covers Digicel Pacific generally (PNG-based) and reports Telstra's pledge to remove Huawei gear at the next refresh, which is a statement of intent, not yet a reversal. Neither source is S1/S2, so not corroborated. FJI-002 (Nokia upgrade, 2024) may be that refresh, but no source confirms Huawei kit was removed in Fiji."
+    },
+    {
+      "id": "FJI-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Digicel Fiji",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-03-17",
+      "still_current": null,
+      "summary": "Digicel Fiji said it is working with Nokia to upgrade cell sites nationwide using Nokia's AirScale equipment in preparation for 5G; Digicel and Vodafone Fiji launched first-phase 5G in September 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fijisun.com.fj/news/business/digicel-fiji-gets-5g-ready",
+          "publisher": "Fiji Sun",
+          "source_tier": "S3",
+          "date": "2024-03-17",
+          "retrieved_at": "2026-10-25T05:18:50Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/16422-fiji-telcos-are-gearing-up-for-5g-launches-later-this-year.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2024-03-18",
+          "retrieved_at": "2026-10-25T05:18:50Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/vodafone-and-digicel-launch-5g-services-in-fiji/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-09-15",
+          "retrieved_at": "2026-10-25T05:19:20Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third: Nokia (Finland) is the equipment vendor. Tier 3: a vendor engagement is reported but no contract value. DCD confirms the 5G launch but names no vendor, so tier 5 is not coded. Possibly the Huawei swap Telstra promised (FJI-001); not stated by any source, so no reversal coded."
+    },
+    {
+      "id": "FJI-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Fiji International Telecommunications (FINTEL)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-01-28",
+      "still_current": null,
+      "summary": "Google's Bulikula and Tabua subsea cables, part of its South/Central Pacific Connect programme, landed at FINTEL's Vatuwaqa station in Suva in January 2025, with FINTEL providing landing facilities and cable management.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.fijitimes.com.fj/cables-have-landed/",
+          "publisher": "The Fiji Times",
+          "source_tier": "S3",
+          "date": "2025-01-29",
+          "retrieved_at": "2026-10-25T05:19:20Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/google-announces-two-transpacific-cables-connecting-us-to-australia/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-10-26",
+          "retrieved_at": "2026-10-25T05:19:20Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole us: Google owns the systems; the cable manufacturer is not named, so the equipment-vendor rule cannot be applied and owner control is used instead; reviewer call. Tier 4 (landed, not confirmed in service). DCD 2023 covers the Tabua announcement only."
+    },
+    {
+      "id": "FJI-004",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Google",
+      "local_actor": "Government of Fiji",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-08-20",
+      "still_current": null,
+      "summary": "Fiji's Deputy Prime Minister said Google would invest about US$200 million in a data centre in Fiji alongside new international cables; no location, specification or timeline was given.",
+      "announced_value_usd": 200000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://w.media/fijis-deputy-prime-minister-announces-that-google-will-build-200-million-data-centre-in-fiji/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2024-08-20",
+          "retrieved_at": "2026-10-25T05:19:20Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: a ministerial statement relayed from a fijivillage interview, with no confirmation from Google in the sources seen. Pole us assumes Google would own and operate the facility."
+    },
+    {
+      "id": "FJI-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "PRC Ministry of Public Security (donor; equipment vendor not named)",
+      "local_actor": "Fiji Police Force",
+      "builder": null,
+      "financier": "PRC Ministry of Public Security (grant)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-04-15",
+      "still_current": null,
+      "summary": "China's Ministry of Public Security donated police vehicles, drones, vehicle conference systems and servers linking CCTV cameras to the police monitoring network to Fiji Police, worth about US$730,000 at the time.",
+      "announced_value_usd": 730357,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/96580",
+          "publisher": "AidData (William & Mary)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:18:10Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole prc because the PRC state supplied the kit; the server and CCTV equipment vendor is not named, so this is a reviewer call. Tier 5 because the handover was completed; whether the servers are still in use is unconfirmed. Small value, but it touches the police CCTV network."
+    },
+    {
+      "id": "FJI-006",
+      "layer": "applications",
+      "pole": null,
+      "controller": "Unknown (camera and platform vendor not named)",
+      "local_actor": "Fiji Police Force / Telecom Fiji",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05-21",
+      "still_current": null,
+      "summary": "Under its Safe City Project, Fiji Police contracted Telecom Fiji for fibre and CCTV along the Suva–Nausori corridor, with feeds monitored at police command centres; by August 2026, 97 of 230 planned cameras were working, and facial recognition was planned.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecom.com.fj/telecom-fiji-knowledge/telecom-fiji-and-fiji-police-partner-to-launch-safe-city-project-for-suva-nausori-corridor/",
+          "publisher": "Telecom Fiji Limited",
+          "source_tier": "S4",
+          "date": "2025-05-21",
+          "retrieved_at": "2026-10-25T05:18:50Z",
+          "opened": true
+        },
+        {
+          "url": "https://fijisun.com.fj/news/nation/police-launch-247-surveillance-network",
+          "publisher": "Fiji Sun",
+          "source_tier": "S3",
+          "date": "2025-10-29",
+          "retrieved_at": "2026-10-25T05:18:50Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.fbcnews.com.fj/?p=793244",
+          "publisher": "FBC News",
+          "source_tier": "S3",
+          "date": "2026-08-19",
+          "retrieved_at": "2026-10-25T05:18:10Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: no source names the camera, analytics or facial-recognition vendor. Telecom Fiji (state-linked, domestic) is the integrator and connectivity supplier, not documented as the equipment vendor. Tier 5 for the partial operation in Suva. Not corroborated because there is no S1/S2 source (Telecom Fiji's own release counted as S4)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in data-centre or network searches"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search within budget; no government frontier-model partnership surfaced"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio and core vendors for Vodafone Fiji (ATH), which invested over US$100m in 5G; no source named a vendor.",
+    "Has Digicel Fiji's Huawei 3G/4G kit been replaced by Nokia, and is any Huawei core still in place?",
+    "Who supplies the cameras, video platform and facial recognition for the Fiji Police Safe City Project, and who funds it?",
+    "Are the Google Bulikula/Tabua cables in service in Fiji, and who manufactured them? Status of the Natadola landing station.",
+    "Has the announced US$200m Google data centre in Fiji moved beyond a ministerial statement? Who supplied IT equipment for the government's Berkeley Crescent data centre?",
+    "Southern Cross NEXT and the older Southern Cross and Tui-Samoa cables serving Fiji: confirm suppliers and landing operators (not coded).",
+    "Nature and still-current status of US-funded ICT and cybersecurity upgrades Fiji announced in May 2025 (FBC News; agency and amount not stated)."
+  ],
+  "searches_run": 10
+}

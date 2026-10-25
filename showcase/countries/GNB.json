@@ -1,0 +1,179 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GNB",
+  "name": "Guinea-Bissau",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T05:19:30Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GNB-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Guiné Telecom (state-owned)",
+      "builder": null,
+      "financier": "Unclear: Ecofin says government-funded; Osiris says Huawei to invest",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015-12-30",
+      "still_current": null,
+      "summary": "The government and Huawei signed a contract to rebuild state-owned Guiné Telecom's network with 150 powered telecom sites, aiming to relaunch it as the country's third mobile operator after it halted mobile service in 2014.",
+      "announced_value_usd": 60000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ecofinagency.com/telecom/0401-33175-guinee-bissau-telecom-inks-modernization-agreement-with-huawei",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2016-01-04",
+          "retrieved_at": "2026-10-25T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/la-guinee-bissau-et-huawei-ont-signe-un-contrat-de-reconstruction-du-reseau.html",
+          "publisher": "OSIRIS (Observatoire sur les systèmes d'information, Senegal)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole prc: Huawei is the equipment vendor. Implementation is unverified and doubtful: DCD (Feb 2023) reports Guiné Telecom/Guinetel bankrupt since 2013, relicensed in 2021 for revival and offered for 80% sale; the finance minister said in 2022 the network is controlled by MTN and Orange. Possibly never built; still_current left null. Value is Ecofin's (FCFA 36bn); source dates approximate (Ecofin article id suggests 4 Jan 2016)."
+    },
+    {
+      "id": "GNB-002",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Government of Guinea-Bissau with Orange Bissau and MTN (now Telecel) consortium",
+      "builder": null,
+      "financier": "World Bank (c. US$31.6m loan); Orange and MTN c. US$8m each",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-03-28",
+      "still_current": null,
+      "summary": "Guinea-Bissau's first submarine-cable connection, a roughly 30 km link from the ACE cable landing at Suru to Antula near Bissau, was completed and inaugurated in March 2023 under a US$47m World Bank-backed government–Orange–MTN project.",
+      "announced_value_usd": 47000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://osiris.sn/la-guinee-bissau-se-connecte-a-son-premier-cable-sous-marin-a-fibre-optique.html",
+          "publisher": "OSIRIS (Senegal)",
+          "source_tier": "S2",
+          "date": "2023-03-29",
+          "retrieved_at": "2026-10-25T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://forbesafricalusofona.com/?p=58914",
+          "publisher": "Forbes África Lusófona",
+          "source_tier": "S3",
+          "date": "2023-03-30",
+          "retrieved_at": "2026-10-25T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/guinea-bissau-reaches-47-million-deal-on-cable/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2017-07-19",
+          "retrieved_at": "2026-10-25T05:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-digital/2908-48269-guinea-bissau-plans-to-fix-its-internet-learning-from-chads-experience",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2025-08-29",
+          "retrieved_at": "2026-10-25T05:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: no opened source names the equipment supplier for the landing link or Guinea-Bissau's ACE branch; Orange (France) and MTN are operator consortium partners, not vendors. Reviewer may set third if the supplier is confirmed (ACE system was built by a French supplier, not verified here). Ecofin (2025) says benefits remain mostly coastal pending a national backbone; Forbes cites EUR 30m World Bank funding."
+    },
+    {
+      "id": "GNB-003",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "President Umaro Sissoco Embaló / Ministry of Interior",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12",
+      "still_current": null,
+      "summary": "The president promised surveillance cameras across all of Bissau from January 2025, extending cameras he ordered in parts of the capital in 2020 with monitoring at the Interior Ministry; no vendor, contract or funder was named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://forbesafricalusofona.com/?p=118591",
+          "publisher": "Forbes África Lusófona",
+          "source_tier": "S3",
+          "date": "2024-12-23",
+          "retrieved_at": "2026-10-25T05:18:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: vendor unknown. Statement of intent only (tier 1). Whether the 2025 rollout happened, and who supplied the 2020 cameras, is unestablished."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "only a planned data-centre goal in the UNDP/Japan-supported National Digital Transformation Strategy 2025-2030; no project, controller or vendor found in 2 searches"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in network, data-centre or Huawei searches"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no model partnerships surfaced in digital-strategy or Huawei searches"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI- or data-centre-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Was the 2015 Huawei–Guiné Telecom network rebuild (150 sites, US$60m) ever implemented, cancelled or abandoned? If cancelled, code as reversal with reason.",
+    "Radio/core vendors for Orange Bissau and Telecel (ex-MTN Bissau) not established in 1 search.",
+    "Who supplied the ACE landing link and Guinea-Bissau's ACE branch equipment?",
+    "Award of the World Bank WARDIP national fibre backbone design-build-operate tender (OP00427760, bids closed 21 Apr 2026): winning contractor and equipment vendor.",
+    "Vendor of the Bissau surveillance cameras (2020 deployment and promised 2025 citywide expansion).",
+    "Did the IFC-led sale of 80% of Guiné Telecom/Guinetel proceed, and to whom?"
+  ],
+  "searches_run": 10
+}

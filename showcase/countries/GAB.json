@@ -1,0 +1,347 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GAB",
+  "name": "Gabon",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-25T05:20:30Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GAB-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "ANINF / SPIN (state digital-infrastructure agencies)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-07",
+      "still_current": null,
+      "summary": "Huawei won the contract to supply active optical equipment for Gabon's national fibre backbone (CAB4 project); in 2017 Huawei trained 17 ANINF, SPIN and Axione engineers on its OptiX OSN 8800/1800 transmission kit and U2000 management system.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.digitalbusiness.africa/gabon-huawei-gagne-le-marche-de-fourniture-des-equipements-actifs-pour-la-fibre-optique/",
+          "publisher": "Digital Business Africa",
+          "source_tier": "S2",
+          "date": "2016-07-12",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.gabonreview.com/telecommunications-17-ingenieurs-formes-aux-equipements-optix-osn-8800-1800/",
+          "publisher": "Gabonreview",
+          "source_tier": "S3",
+          "date": "2017-10-27",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole prc: Huawei is the active-equipment vendor. Digital Business Africa page rendered only its headline and date, so contract value, counterparty and funder (World Bank CAB likely) unconfirmed. Tier 4 not 5: installation implied by operator training, but no source confirms Huawei kit is still in service; the ~1,800 km backbone was operated by Axione and passed to a Gabon Fiber concession in Sept 2026 (w.media), vendor unstated."
+    },
+    {
+      "id": "GAB-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Airtel Gabon",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015-08-04",
+      "still_current": null,
+      "summary": "Ericsson was named sole supplier of Airtel Gabon's new LTE network, supplying RBS 6000 multi-standard radio base stations, microwave upgrades and a core-network transformation, plus professional services.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/5950-airtel-and-ericsson-deploying-lte-in-gabon.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2015-08-04",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.business-standard.com/article/pti-stories/airtel-selects-ericsson-as-lte-network-supplier-for-gabon-115072700391_1.html",
+          "publisher": "Business Standard (PTI)",
+          "source_tier": "S3",
+          "date": "2015-07-27",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third: Ericsson is Swedish. Value undisclosed. Pre-2020 and not checked as still current; whether Airtel Gabon has since added or swapped vendors is unknown. Only one opened source."
+    },
+    {
+      "id": "GAB-003",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "ST Digital (Cameroon)",
+      "local_actor": "ST Digital Gabon; Ministry of Digital Economy (MoU on startup hosting)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-03",
+      "still_current": true,
+      "summary": "Cameroon-based operator ST Digital opened a data centre in the Nkok Special Economic Zone near Libreville in July 2026, after breaking ground in August 2025; the digital ministry signed an MoU for discounted startup hosting.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/cameroons-st-digital-opens-data-center-in-gabon/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-07-06",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/data-centres-networks/20496-gabon-inaugurates-tier-iii-data-centre.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-07-07",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third: owner-operator is Cameroonian, a foreign non-US non-PRC controller. Capacity, value and IT-equipment vendors undisclosed. Tier III label comes from Developing Telecoms headline; DCD does not confirm the tier rating. still_current true as opening is three months before run date."
+    },
+    {
+      "id": "GAB-004",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Unclear (Cybastion, US, as developer)",
+      "local_actor": "Ministry of Digital Economy, Gabon",
+      "builder": "PORTEO S.A. (Côte d'Ivoire)",
+      "financier": "Citibank, with Gabonese and US government guarantees (per Gabonreview)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-01-28",
+      "still_current": null,
+      "summary": "Gabon signed a strategic agreement with US firm Cybastion and Ivorian builder PORTEO for a Libreville data centre (reported as 20MW), plus digital ID and Cisco-backed training; a symbolic foundation stone was later laid.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gabonreview.com/libreville-se-dotera-dun-data-center-grace-a-une-alliance-usa-cote-divoire-gabon/",
+          "publisher": "Gabonreview",
+          "source_tier": "S3",
+          "date": "2025-01-29",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/cybastion-to-build-20mw-data-center-in-gabon/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-02-05",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: no source names the owner-operator; if Cybastion owns and operates it the pole would be us. Date conflict: Gabonreview reports signing 28 Jan 2025, DCD (Feb 2026) says 28 Jan 2026 - possibly a second signing or a DCD error. Tier 2: framework agreement; foundation stone is symbolic, construction start not confirmed. Gov plans a 20MW gas plant to supply it.",
+      "bundle_id": "GAB-B1"
+    },
+    {
+      "id": "GAB-005",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Presight (G42 group, UAE)",
+      "local_actor": "Ministry of Digital Economy, Gabon",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-06",
+      "still_current": null,
+      "summary": "Gabon's digital economy minister renewed an MoU with Presight, a G42 subsidiary, in Abu Dhabi to apply AI, big data and analytics to public administration and state services; operational agreements and investment to follow.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.wearetech.africa/fr/fils/actualites/tech/gabon-un-accord-avec-presight-pour-introduire-l-ia-dans-les-services-publics",
+          "publisher": "We Are Tech Africa",
+          "source_tier": "S2",
+          "date": "2026-02-09",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.gabonreview.com/or-intelligence-artificielle-et-ports-a-abu-dhabi-le-gabon-verrouille-trois-partenariats-strategiques/",
+          "publisher": "Gabonreview",
+          "source_tier": "S3",
+          "date": "2026-02-08",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third: Presight is Emirati. Underlying model/compute stack unstated; Presight/G42 work often uses US models and chips, but that is not evidenced here. Described as renewed, implying an earlier MoU not traced."
+    },
+    {
+      "id": "GAB-006",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Gabon / Ministry of Digital Economy",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12-23",
+      "still_current": null,
+      "summary": "Gabon's government and Huawei signed an MoU creating a joint committee to steer priority digital projects, involve local startups and build skills, consolidating the existing connected-schools programme; no value disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gabonreview.com/transformation-numerique-le-gabon-scelle-un-partenariat-avec-huawei/",
+          "publisher": "Gabonreview",
+          "source_tier": "S3",
+          "date": "2025-12-29",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/news-digital/3012-51705-gabon-signs-mou-with-huawei-on-digital-economy-push",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2025-12-30",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.digitalbusiness.africa/gabon-accord-entre-le-gouvernement-et-huawei-technologies-sur-la-transformation-numerique-nationale/",
+          "publisher": "Digital Business Africa",
+          "source_tier": "S2",
+          "date": "2025-12-29",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Layer networks is a reviewer call: the MoU is a cross-layer umbrella with no named project; connected schools is the only cited initiative, assumed connectivity. Followed a meeting between President Oligui Nguema and Huawei about a month earlier."
+    },
+    {
+      "id": "GAB-007",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Digital Economy, Gabon",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05-08",
+      "still_current": null,
+      "summary": "Huawei's Central Africa chief presented an intelligent video-surveillance offer to the digital economy minister for a planned smart-security project in Greater Libreville (Libreville, Akanda, Owendo); no contract, value or timeline reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gabonreview.com/data-center-vers-la-mise-en-place-des-videos-securites-dans-le-grand-libreville/",
+          "publisher": "Gabonreview",
+          "source_tier": "S3",
+          "date": "2024-05-12",
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://gabonmediatime.com/securite-urbaine-le-geant-chinois-huawei-presente-sa-solution-de-videosurveillance-intelligente/",
+          "publisher": "Gabon Media Time",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-25T05:19:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Coded tier 1 generously: this is a vendor pitch the government was considering, not a signed statement of intent. No evidence Huawei was selected. Reviewer may prefer to drop it."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchases surfaced in data-centre or AI searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "AI search found only the Presight (applications) MoU and a national AI strategy launch; no frontier-model partnership or sovereign model found"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "only AI-linked power item is the planned 20MW gas plant for the Cybastion data centre, noted in GAB-004"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendors of Moov Africa Gabon Telecom (Maroc Telecom group) not found in one search.",
+    "Is Huawei equipment still running the national backbone, and which vendor will Gabon Fiber use for the ~1,550 km extension under its Sept 2026 SPIN concession (~US$72m PPP per Financial Afrik, not opened)?",
+    "Cybastion data centre: owner-operator, signing year (2025 vs 2026 conflict), whether construction actually started, US guarantee details (EXIM?).",
+    "Was a Libreville video-surveillance contract ever awarded, and to whom?",
+    "Earlier (pre-renewal) Presight MoU date and any operational contracts since Feb 2026.",
+    "Gabon's segments of the CAB/WACS/SAT-3/ACE cables and Huawei's 2014 550 km Congo-Gabon fibre link not coded; check supplier and status."
+  ],
+  "searches_run": 8
+}
