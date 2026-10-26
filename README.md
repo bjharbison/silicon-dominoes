@@ -16,6 +16,20 @@ The name is deliberate irony. The original domino theory failed because it treat
 
 **Immutability and traceability.** Published scores are never edited; corrections append. Every cited source is snapshotted at capture time so citations survive link rot.
 
+## DEPTH-N in brief
+
+DEPTH-N is the measurement framework (full specification in `project-knowledge/01-methodology-depth-n.md`). Each of the seven stack layers in each country is scored on five dimensions:
+
+| Dim | Question it answers | Type |
+|---|---|---|
+| **D** — Dependence | Whose kit is installed, by share? | stock |
+| **E** — Exit cost | What would it cost to leave — contract tenor, encumbered debt, retrained workforce, data portability, whether an alternative actually exists? | stock |
+| **P** — Provenance & control | Who can see the flows, who can switch them off, and under whose law? Published as separate panopticon and chokepoint sub-indicators, never summed. | chokepoint |
+| **T** — Trajectory | Which way are new commitments pointing, and are they MOUs or built infrastructure? Always shown with its instrument-tier composition. | flow |
+| **H** — Headroom | How much can the country absorb — power, compute, connectivity, human capital, capital, institutions? | country-level |
+
+The **N** is the network: every score is formalized over dyadic exposure edges (country → controller → pole), so a country's exposure to the US, PRC, and sovereign/third-pole stacks is derived from its position in that graph, not entered as a scalar. Stocks (D, E) and flows (T) recompute on different cadences and are never averaged into one "movement" number.
+
 ## Repository map
 
 | Path | Contents |
