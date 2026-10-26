@@ -1,0 +1,301 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "VUT",
+  "name": "Vanuatu",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T05:21:08Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "VUT-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei Technologies",
+      "local_actor": "Government of Vanuatu (Ministry of Infrastructure and Utilities)",
+      "builder": "Huawei Technologies",
+      "financier": "China Export-Import Bank (concessional loan, RMB 200m)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2012-07-20",
+      "still_current": null,
+      "summary": "Huawei built Vanuatu's Government Broadband Network under a 2008 contract financed by a China Eximbank concessional loan: about 100 km of fibre, fixed wireless to roughly 100 government offices, and microwave/VSAT links to provincial capitals; completed July 2012.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/41920",
+          "publisher": "AidData (William & Mary), Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:21:08Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment vendor rule: Huawei supplied the network, so pole prc. Tier 5 for a completed national network; current operational status and vendor role in maintenance not confirmed, so still_current null. Single opened S2 research dataset (it cites the loan agreement and Huawei contract, not opened). Loan face value RMB 200m; not converted at a source-date rate, so values null.",
+      "bundle_id": "VUT-B1"
+    },
+    {
+      "id": "VUT-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Vanuatu",
+      "local_actor": "Government of Vanuatu (Ministry of Infrastructure and Utilities)",
+      "builder": "Huawei Technologies",
+      "financier": "China Export-Import Bank (concessional loan, same as VUT-001)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2012-07-20",
+      "still_current": null,
+      "summary": "The same China Eximbank-financed, Huawei-built e-Government project included a government data centre, completed in 2012 alongside the broadband network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/41920",
+          "publisher": "AidData (William & Mary), Chinese Development Finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:21:08Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator rule: the data centre is a Government of Vanuatu facility, so domestic; Huawei is builder and China Eximbank financier, neither sets the pole. If Huawei holds operational access to the facility the pole would be prc; not established. Location not stated by the source.",
+      "bundle_id": "VUT-B1"
+    },
+    {
+      "id": "VUT-003",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei Technologies",
+      "local_actor": "Government of Vanuatu; Port Vila",
+      "builder": "Huawei Technologies",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "Reuters reported Huawei earlier supplied crime-reduction digital systems to Port Vila, needing a local data centre; the PM's office said police do not currently use the Huawei surveillance system. The PM toured Huawei policing technology in Shenzhen.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rappler.com/technology/vanuatu-prime-minister-visits-huawei-views-policing-technology",
+          "publisher": "Rappler (Reuters)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:21:08Z",
+          "opened": true
+        },
+        {
+          "url": "https://islandsbusiness.com/news-break/vanuatu-prime-minister-visits-huawei/",
+          "publisher": "Islands Business",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:21:08Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 3 on reported supply of a system to Port Vila; no contract, value or delivery date found, and police non-use suggests it may not be operational for policing. Article undated on the page; context (PM Salwai, Japan Pacific leaders meeting the following week) suggests mid-2024 but date left null. Islands Business carries the same Reuters story, so not independent."
+    },
+    {
+      "id": "VUT-004",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SubCom (TE SubCom, United States)",
+      "local_actor": "Interchange Limited (Vanuatu-based consortium)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-05-31",
+      "still_current": null,
+      "summary": "TE SubCom announced a contract in force to build the 1,632 km ICN2 submarine cable for Vanuatu's Interchange Limited, linking Port Vila and Luganville to Honiara, Solomon Islands, with service expected in Q4 2019.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.subcom.com/documents/ICN2_CIF_TE-SubCom_31MAY2018.pdf",
+          "publisher": "TE SubCom",
+          "source_tier": "S1",
+          "date": "2018-05-31",
+          "retrieved_at": "2026-10-26T05:21:08Z",
+          "opened": true
+        },
+        {
+          "url": "https://oceannews.com/news/subsea-cable/the-icn2-cable-system-linking-vanuatu-to-solomon-islands-is-in-force/",
+          "publisher": "Ocean News & Technology",
+          "source_tier": "S2",
+          "date": "2018-06-04",
+          "retrieved_at": "2026-10-26T05:21:08Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightwaveonline.com/data-center/article/16675912/te-subcom-building-icn2-submarine-cable-from-vanuatu-to-solomon-islands",
+          "publisher": "Lightwave",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:21:08Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: SubCom (US) supplied the cable, so pole us. Tier 3 (contract in force); ready-for-service not confirmed in this run, so not tier 5. Ocean News echoes the SubCom release, so not independent corroboration; medium on the single opened S1. Pre-2020 and not reconfirmed."
+    },
+    {
+      "id": "VUT-005",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei Technologies",
+      "local_actor": "Digicel Vanuatu (Digicel Pacific, acquired by Telstra 2022)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-09-01",
+      "still_current": null,
+      "summary": "Reporting on Telstra's Digicel Pacific takeover said Digicel's 3G and 4G networks across its Pacific markets, including Vanuatu, run on Huawei equipment, which Telstra would keep for now and align with Australian standards only at future refresh.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.channelnews.com.au/telstra-to-keep-huawei-infrastructure-for-digicel/",
+          "publisher": "ChannelNews",
+          "source_tier": "S3",
+          "date": "2022-09-01",
+          "retrieved_at": "2026-10-26T05:21:08Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment vendor rule: Huawei RAN, so pole prc. Region-wide statement, not Vanuatu-specific vendor evidence. The Register (Aug 2025) states Telstra removed Huawei gear after taking control of Digicel; if true for Vanuatu this would be a geopolitical reversal, but no Vanuatu-specific replacement evidence found, so not coded as a reversal."
+    },
+    {
+      "id": "VUT-006",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Not stated (Government of Vanuatu announced the facilities)",
+      "local_actor": "Government of Vanuatu",
+      "builder": null,
+      "financier": "Government of Australia (Nakamal Agreement package)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-13",
+      "still_current": null,
+      "summary": "Australia committed to help fund two data centres, in Port Vila and on Santo, reported at A$120 million within the A$500 million Nakamal Agreement package, initialled August 2025 and signed 29 June 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/australia-to-help-fund-two-data-centers-in-vanuatu-island/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:21:08Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.theregister.com/2025/08/14/nakamal_agreement_australia_vanuatu_datacenters/",
+          "publisher": "The Register",
+          "source_tier": "S3",
+          "date": "2025-08-14",
+          "retrieved_at": "2026-10-26T05:21:08Z",
+          "opened": true
+        },
+        {
+          "url": "https://devpolicy.org/the-nakamal-agreement-has-been-signed-but-at-what-cost/",
+          "publisher": "Devpolicy Blog (ANU Development Policy Centre)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:21:08Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.dfat.gov.au/countries/vanuatu/vanuatu-australia-nakamal-agreement",
+          "publisher": "Australian Department of Foreign Affairs and Trade",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:21:08Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: owner-operator not stated; Vanuatu government origin suggests domestic, Australian funding does not set the pole. Tier 1: funding commitment, no contract, builder or vendor named. The signed treaty text (DFAT) does not mention data centres, but Article 8 requires Vanuatu to consult Australia on third-party engagement in critical infrastructure including telecommunications. DCD and Register likely derive from the same announcement, so not counted as corroboration. A$120m converts to about US$79m per The Register; not recorded as value pending source-date conversion."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in facilities or models searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only aggregator (S5) reports of a Unisound (PRC) AI MOU with the Vanuatu government for smart hospitals/campuses, not citable; no frontier-provider partnership or sovereign model found"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Unisound AI (HK:9678) MOU with the Government of Vanuatu on AI for smart hospitals and campuses (reported c. July 2025 by aggregators only): find the HKEX announcement or a Vanuatu government source, signing ministry and date.",
+    "Digicel Vanuatu: whether Telstra has replaced Huawei RAN/core in Vanuatu (The Register says Huawei gear was removed after the takeover; ChannelNews 2022 says it would be kept until refresh).",
+    "Vodafone Vanuatu (formerly TVL, ATH-owned) RAN/core vendor; the 2017 4G launch report names no vendor.",
+    "Port Vila Huawei crime-reduction system: contract date, value, scope (CCTV?), the data centre it uses, and current status given police non-use.",
+    "Government Broadband Network (Huawei, 2012): current operational status, maintenance vendor, and whether the government data centre is the one near the Meteo building in Port Vila.",
+    "ICN2 cable: confirm ready-for-service date and financing.",
+    "Australian-funded Port Vila and Santo data centres: owner-operator, builder, contract award and timeline.",
+    "Nakamal Agreement Article 8 critical-infrastructure consultation: any applied case involving PRC vendors since entry into force; date of entry into force.",
+    "Dahua equipment reported at Port Vila airport (vendor-site search result, not fetched under the no-PRC-vendor-site rule): find secondary confirmation."
+  ],
+  "searches_run": 11
+}

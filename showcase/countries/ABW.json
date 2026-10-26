@@ -1,0 +1,187 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ABW",
+  "name": "Aruba",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T05:19:45Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ABW-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia (Finland)",
+      "local_actor": "SETAR N.V. (Aruba's leading, state-owned telecom operator)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-12-19",
+      "still_current": null,
+      "summary": "SETAR chose Nokia for a phased, island-wide end-to-end 5G transformation: RAN upgrades with AirScale and centralised RAN, a virtualised EPC, data-management modernisation and massive MIMO at first 5G sites. Nokia already ran SETAR's island-wide 4.5G Pro network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.nokia.com/newsroom/setar-and-nokia-bring-5g-to-aruba-in-end-to-end-deal/",
+          "publisher": "Nokia",
+          "source_tier": "S1",
+          "date": "2019-12-19",
+          "retrieved_at": "2026-10-26T05:19:45Z",
+          "opened": true
+        },
+        {
+          "url": "https://convergedigest.com/nokia-to-supply-5g-in-aruba/",
+          "publisher": "Converge Digest",
+          "source_tier": "S2",
+          "date": "2019-12-19",
+          "retrieved_at": "2026-10-26T05:19:45Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.capacitymedia.com/articles/3824701/setar-and-nokia-partner-to-deliver-5g-in-aruba",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:19:45Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: Nokia supplies RAN and core, so pole third. Tier 3 as a vendor selection/deal with named counterparty; value undisclosed; 5G rollout completion not confirmed this run. Pre-2020 and still_current not confirmed. Converge Digest appears to echo the Nokia release, so not counted as independent; single opened S1, hence medium. SETAR state ownership is background knowledge, not stated in the opened sources."
+    },
+    {
+      "id": "ABW-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (ASN, France)",
+      "local_actor": "SETAR N.V. (Aruba landing partner); CELIA consortium with Orange, Telxius and APUA",
+      "builder": "Alcatel Submarine Networks (end-to-end supplier); Orange Marine (marine deployment)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12-04",
+      "still_current": null,
+      "summary": "The CELIA consortium of SETAR, Orange, Telxius and APUA named ASN end-to-end supplier for a roughly 3,700 km cable linking Aruba, Martinique, Antigua, Puerto Rico and Boca Raton, Florida, targeted for service in Q3 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/setar-orange-telxius-unveil-celia-caribbean-cable/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2024-12-04",
+          "retrieved_at": "2026-10-26T05:19:45Z",
+          "opened": true
+        },
+        {
+          "url": "https://capacityglobal.com/news/telxius-and-partners-launch-celia/",
+          "publisher": "Capacity",
+          "source_tier": "S2",
+          "date": "2024-12-04",
+          "retrieved_at": "2026-10-26T05:19:45Z",
+          "opened": true
+        },
+        {
+          "url": "https://caribbeantoday.com/sections/news-2/submarine-cable-agreement-signed-to-connect-caribbean-to-the-united-states",
+          "publisher": "Caribbean Today",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:19:45Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment vendor rule: ASN (French) supplies the cable, so pole third; Telxius (Spain) to provide NOC monitoring. Tier 3: supplier contract reported by SubTel Forum, though Capacity does not state a signed contract. Both opened reports relay the same consortium announcement, so not treated as independent; no S1 opened. Not yet operational."
+    },
+    {
+      "id": "ABW-003",
+      "layer": "applications",
+      "pole": null,
+      "controller": "Not stated (camera/platform vendor unknown)",
+      "local_actor": "Korps Politie Aruba (Aruba Police Force) Operation Command Center",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06-18",
+      "still_current": null,
+      "summary": "Aruba police opened an Operation Command Center combining dispatch and radar monitoring, with real-time feeds from 258 cameras covering the high-rise hotel area, San Nicolas Main Street and 40 other locations. No vendor is named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gobierno.aw/en/aruba-has-its-own-operation-command-center",
+          "publisher": "Government of Aruba",
+          "source_tier": "S1",
+          "date": "2024-06-18",
+          "retrieved_at": "2026-10-26T05:19:45Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.gobierno.aw/en/cameras-and-loudspeakers-to-be-installed-in-main-street",
+          "publisher": "Government of Aruba",
+          "source_tier": "S1",
+          "date": "2026-01-27",
+          "retrieved_at": "2026-10-26T05:19:45Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: no camera, VMS or analytics vendor named, so controller unknown; no AI analytics stated. Second government page (Jan 2026) adds 43 cameras on Caya Grandi, Oranjestad, also without vendor; same publisher, so not independent corroboration. Tier 5 as an operational island-wide system."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "two searches returned only Aruba S.p.A. (Italian hosting firm) results; no large data-centre or AI-campus project in Aruba found"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only that the ministry began drafting a national AI strategy (July 2026) naming no model provider; no frontier-provider partnership or sovereign model found"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Whether SETAR's Nokia 5G rollout completed island-wide and Nokia remains RAN/core vendor (still_current).",
+    "Digicel Aruba RAN/core vendor: Digicel's 2017 ZTE LTE deal covered 26 unnamed markets; Aruba inclusion not established.",
+    "Camera, VMS and analytics vendor for the police Operation Command Center (258 cameras) and the 2026 Caya Grandi cameras; check procurement records.",
+    "CELIA cable: primary ASN or consortium release confirming signed supply contract and value.",
+    "Aruba national AI strategy (Ministry of Education/Innovation, drafting from July 2026): any vendor or model-provider partnerships once published.",
+    "Existing submarine cables landing in Aruba and their suppliers (e.g. PCCS) not checked."
+  ],
+  "searches_run": 10
+}

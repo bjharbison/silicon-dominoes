@@ -1,0 +1,153 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "TUV",
+  "name": "Tuvalu",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T05:20:10Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "TUV-001",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SubCom (cable supplier); Google (Bulikula trunk, Pacific Connect)",
+      "local_actor": "Tuvalu Telecommunications Corporation (TTC); Government of Tuvalu",
+      "builder": "SubCom (cable); Google technical partner with subcontractors incl. Ciena",
+      "financier": "Grant package: Australia (AIFFP, up to USD 37m), Japan, New Zealand, Taiwan, United States (incl. USTDA grant to TTC)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-24",
+      "still_current": true,
+      "summary": "Tuvalu's first international submarine cable, the Vaka cable, branches about 668 km from Funafuti to Google's Bulikula trunk; SubCom supplied the cable, it landed in December 2024 and was launched by TTC in October 2025.",
+      "announced_value_usd": 56000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/vaka-cable-lands-tuvalus-first/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2024-12-12",
+          "retrieved_at": "2026-10-26T05:20:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/tuvalu-telecommunications-corporation-launches-vaka-cable/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-10-28",
+          "retrieved_at": "2026-10-26T05:20:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.pacificislandtimes.com/post/tuvalu-launches-submarine-cable-government-offers-free-internet-service",
+          "publisher": "Pacific Island Times",
+          "source_tier": "S3",
+          "date": "2025-10-27",
+          "retrieved_at": "2026-10-26T05:20:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.aiffp.gov.au/sites/default/files/2025-09/aiffp_dsn_factsheet_21_tuvalu_vaka_cable_20250902.pdf",
+          "publisher": "Australian Infrastructure Financing Facility for the Pacific (AIFFP)",
+          "source_tier": "S1",
+          "date": "2025-09-02",
+          "retrieved_at": "2026-10-26T05:20:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.aiffp.gov.au/news/tuvalu-breaks-ground-first-undersea-telecommunications-cable",
+          "publisher": "Australian Infrastructure Financing Facility for the Pacific (AIFFP)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:20:10Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: SubCom (US) supplied the cable per SubTel Forum, and the onward trunk is Google's, so pole us. SubCom is named only by SubTel Forum; launch is corroborated by DCD, Pacific Island Times and AIFFP. USD 56m is the announced total (SubTel Forum, Pacific Island Times); no audited figure. still_current true from the October 2025 launch. AIFFP groundbreaking page gives no year."
+    },
+    {
+      "id": "TUV-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Alepo (LTE core, charging, policy, BSS; Austin, Texas)",
+      "local_actor": "Tuvalu Telecommunications Corporation (TTC)",
+      "builder": "Blue Arcus Technologies (California-based integrator)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-02-13",
+      "still_current": null,
+      "summary": "State operator TTC selected Alepo's LTE-in-a-box core platform, with charging, policy and BSS, and integrator Blue Arcus to launch LTE and WiFi in Funafuti, upgrading from 3G, targeting service in early 2017.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://alepo.com/tuvalu-telecommunications-corporation-selects-alepo-blue-arcus-launch-lte-wifi-services-tuvalu/",
+          "publisher": "Alepo",
+          "source_tier": "S1",
+          "date": "2017-02-13",
+          "retrieved_at": "2026-10-26T05:20:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://totaltele.com/blue-arcus-strikes-ttc-mobile-lte-project-for-tuvalu/",
+          "publisher": "Total Telecom (press release)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:20:10Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole us from the US-headquartered core vendor; RAN vendor not named in either source. Tier 3 as a vendor selection with counterparty but no value; commercial launch not confirmed by these sources. Total Telecom item is a Blue Arcus press release, so not independent. Pre-2020 and not reconfirmed as current."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search on government data centre / Digital Nation cloud found the Digital Nation programme but no named data-centre project, owner-operator or vendor"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other searches for a ~11,000-person state"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "searches for government AI partnerships found no frontier-provider partnership or sovereign model for Tuvalu"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on police CCTV/surveillance returned only other Pacific and Caribbean states; no Tuvalu safe-city or surveillance system found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Falepili Union (signed 8 May 2024): Article 4(4) requires Tuvalu to mutually agree with Australia any security engagement with third states, and the DFAT explanatory memorandum lists telecommunications as covered critical infrastructure. Not coded as a finding (constraint, not a deployment or reversal); reviewer to decide how to represent it and confirm entry-into-force date.",
+    "TTC mobile RAN vendor (LTE sites in Funafuti and outer islands) not established; confirm whether the 2017 Alepo/Blue Arcus LTE core is still in service.",
+    "Owner of the Vaka cable asset (Government of Tuvalu vs TTC) and Google's ongoing O&M role; landing-station equipment vendor.",
+    "Digital Nation programme (Digital Ark, digital twin, e-government): who hosts the cloud platform and where; no vendor named in the Global Voices report.",
+    "Satellite connectivity (e.g. Starlink or Kacific) licensing or bans, not searched."
+  ],
+  "searches_run": 9
+}

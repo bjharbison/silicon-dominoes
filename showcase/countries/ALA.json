@@ -1,0 +1,137 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ALA",
+  "name": "Åland Islands",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T05:19:14Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ALA-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (Sweden)",
+      "local_actor": "Ålands Mobiltelefon AB",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2004-07-13",
+      "still_current": null,
+      "summary": "Ericsson was named sole supplier to upgrade Ålands Mobiltelefon's GSM/GPRS network to EDGE, including base-station software and a GPRS core node, with rollout from September 2004; the operator then held over half the local mobile market.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/2004/7/ericsson-awarded-edge-contract-with-alands-mobiltelefon",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2004-07-13",
+          "retrieved_at": "2026-10-26T05:19:14Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: Ericsson is Swedish, so pole third whether the unit is Åland or Finland (no Finnish/Ålandic controller question arises here). Tier 3: sole-supplier contract with named counterparty, value undisclosed. Pre-2020 2G/EDGE network; current 4G/5G RAN and core vendors of Ålands Mobiltelefon and other Åland operators not established, still_current null. Single opened S1 vendor release, so medium."
+    },
+    {
+      "id": "ALA-002",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Not stated (cable equipment vendor unnamed; owner GlobalConnect, Nordic)",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-03",
+      "still_current": null,
+      "summary": "GlobalConnect announced a roughly EUR 14m, 150 km Stockholm–Turku subsea fibre cable with a beach landing on Åland; seabed surveys and permitting were under way in 2025, with cable laying planned for 2026 and go-live by end-2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/globalconnect-to-lay-subsea-cable-to-link-sweden-and-finland/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07",
+          "retrieved_at": "2026-10-26T05:19:14Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomtv.com/content/telco-and-csp/new-globalconnect-subsea-cable-to-link-sweden-and-finland-securing-baltic-connectivity-53373",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2025-07-03",
+          "retrieved_at": "2026-10-26T05:19:14Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/globalconnect-unveils-baltic-sea-cable-plan/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2025-07-03",
+          "retrieved_at": "2026-10-26T05:19:14Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mynewsdesk.com/globalconnect/pressreleases/new-globalconnect-subsea-cable-to-link-sweden-and-finland-securing-baltic-connectivity-3395048",
+          "publisher": "GlobalConnect (press release)",
+          "source_tier": "S1",
+          "date": "2025-07-03",
+          "retrieved_at": "2026-10-26T05:19:14Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: spec sets cable pole by equipment vendor, which no source names. Owner GlobalConnect is Nordic, so third is likely if the vendor is European, but unconfirmed. Tier 2: surveys and permitting only; construction start not confirmed. Opened reports all relay one company release, so not independent; corroborated false. Value is in EUR; DCD's USD 16.4m conversion not recorded as announced_value_usd."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found no Åland data-centre or AI-campus project; results concerned mainland Finland and Sweden"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search of Åland government (regeringen.ax) AI material returned only unopened session protocols; no frontier-provider partnership or sovereign model found"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on Åland police/municipal camera surveillance (Hikvision/Huawei) found nothing Åland-specific"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current RAN/core vendors for Åland's mobile operators (Ålands Mobiltelefon/Ålcom, Telia, Elisa) including any 5G deployment; whether Finland's Huawei/ZTE restrictions affected Åland operators.",
+    "GlobalConnect Stockholm–Turku via Åland cable: equipment supplier, Åland landing site, whether construction started in 2026 and go-live status.",
+    "Ownership and vendors of existing Åland–mainland Finland and Åland–Sweden fibre cables (incl. the 2023 Brändö–Kumlinge fibre project noted in a Kumlinge municipal press release, not opened).",
+    "Åland government (landskapsregeringen) AI or digitalisation decisions naming a model or cloud provider; protocols on regeringen.ax not opened.",
+    "Unit-of-analysis choice: whether Finnish controllers (e.g. Nokia, Elisa) should be coded domestic or third for Åland; no such finding arose this run."
+  ],
+  "searches_run": 9
+}

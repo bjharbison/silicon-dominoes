@@ -1,0 +1,312 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "WSM",
+  "name": "Samoa",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T05:20:44Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "WSM-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (ASN, France; then part of Nokia)",
+      "local_actor": "Samoa Submarine Cable Company Ltd (SSCC, private, Apia)",
+      "builder": "Alcatel Submarine Networks (turnkey)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-05",
+      "still_current": null,
+      "summary": "The Tui-Samoa cable, over 1,470 km from Apia to Suva with spurs to Savai'i and Wallis and Futuna, was supplied turnkey by ASN under a 2016 contract with SSCC and was reported live in May 2018.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://itwire.com/deals/alcatel-lucent-secures-contract-for-submarine-cable-link-between-samoa-and-fiji.html",
+          "publisher": "iTWire",
+          "source_tier": "S2",
+          "date": "2016-10-24",
+          "retrieved_at": "2026-10-26T05:20:44Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/samoan-celebrations-tui-samoa-cable/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2018-05-24",
+          "retrieved_at": "2026-10-26T05:20:44Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/te-subcom-sscc-build-new-cable-depot/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2018-02-02",
+          "retrieved_at": "2026-10-26T05:20:44Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment-vendor rule: ASN (French) supplied the cable, so pole third; owner-operator SSCC is domestic. Contract value and financier not stated in opened sources. Pre-2020; in-service status as of 2026 not reconfirmed, so still_current null."
+    },
+    {
+      "id": "WSM-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Bluesky Samoa (now Vodafone Samoa)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-04-06",
+      "still_current": null,
+      "summary": "Bluesky announced a partnership with Huawei to upgrade its Samoa 2G/3G network to 4.5G LTE-Advanced, including WTTx fixed-wireless broadband and VoLTE, covering Samoa, American Samoa and the Cook Islands.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://samoaobserver.ws/category/samoa/29333",
+          "publisher": "Samoa Observer",
+          "source_tier": "S3",
+          "date": "2017-04-06",
+          "retrieved_at": "2026-10-26T05:20:44Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.samoaobserver.ws/category/article/1308",
+          "publisher": "Samoa Observer",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:20:44Z",
+          "opened": true
+        },
+        {
+          "url": "https://samoanews.com/regional/bluesky-partners-huawei-serve-fastest-broadband-pacific",
+          "publisher": "Samoa News",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:20:44Z",
+          "opened": false
+        },
+        {
+          "url": "https://itwire.com/business-it-news/business-technology/bluesky,-huawei-partner-on-pacific-islands-lte-deployments",
+          "publisher": "iTWire",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:20:44Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 because a later undated Samoa Observer report states Huawei provides 4G/4.5G technology across Samoa for Bluesky and Digicel; both opened sources share one host, so not corroborated. Whether Vodafone Samoa's 2024 5G uses Huawei is unknown (launch report names no vendor). Pre-2020, still_current null."
+    },
+    {
+      "id": "WSM-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Digicel Samoa (Digicel Pacific, owned by Telstra since 2022)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-09-01",
+      "still_current": null,
+      "summary": "Telstra said it would keep the Huawei equipment running Digicel Pacific's 3G/4G networks, including Samoa, after its 2022 acquisition, without near-term upgrades, aligning with Australian standards only at future refreshes.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.channelnews.com.au/telstra-to-keep-huawei-infrastructure-for-digicel/",
+          "publisher": "ChannelNews",
+          "source_tier": "S3",
+          "date": "2022-09-01",
+          "retrieved_at": "2026-10-26T05:20:44Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.samoaobserver.ws/category/article/1308",
+          "publisher": "Samoa Observer",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:20:44Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Samoa is named only in a list of Digicel markets relying on Huawei gear; the Samoa Observer piece independently says Digicel works with Huawei for 4G. No S1/S2 source opened. Nokia 5G overlay (WSM-004) may signal the refresh Telstra described, but no Huawei removal is reported, so no reversal coded."
+    },
+    {
+      "id": "WSM-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Digicel Samoa (Digicel Pacific / Telstra)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-07-08",
+      "still_current": null,
+      "summary": "After conditional government approval in March 2024, Digicel Samoa upgraded sites with Nokia AirScale non-standalone 5G and switched on Samoa's first live 5G at five sites in Apia's central business district in July 2024.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/digicel-gets-green-light-for-5g-launch-in-samoa/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-03-13",
+          "retrieved_at": "2026-10-26T05:20:44Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-business/operator-news/16390-digicel-samoa-cleared-to-offer-5g-taps-nokia-for-upgrades.html.md",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2024-03-12",
+          "retrieved_at": "2026-10-26T05:20:44Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.developingtelecoms.com/telecom-technology/wireless-networks/16974-digicel-samoa-s-5g-network-goes-live-in-five-locations-in-apia.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2024-07-09",
+          "retrieved_at": "2026-10-26T05:20:44Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nokia (Finland) supplies the 5G radio, so pole third. NSA 5G rides on the existing 4G core/RAN, which per WSM-003 was Huawei; mixed-vendor network inferred. Go-live date from 'Monday' before 9 July 2024 article. Scale municipal: five Apia sites only."
+    },
+    {
+      "id": "WSM-005",
+      "layer": "applications",
+      "pole": null,
+      "controller": "Not stated (vendor not named)",
+      "local_actor": "Samoa Police Service; Australian Federal Police (technical partner)",
+      "builder": null,
+      "financier": "Government of Australia",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-05",
+      "still_current": null,
+      "summary": "Samoa Police and the Australian Federal Police launched an Australian-funded Safer CCTV Network of 30 cameras with a monitoring room and emergency radio network, part of a roughly AUD 6.5m three-year investment ahead of CHOGM 2024.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://islandsbusiness.com/news-break/cctv-network-launched-in-samoa/",
+          "publisher": "Islands Business",
+          "source_tier": "S3",
+          "date": "2024-05-01",
+          "retrieved_at": "2026-10-26T05:20:44Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: equipment vendor, which sets the pole under the equipment rule, is not named. Australian financing does not set pole. AUD 6.5m covers a wider policing package, so not recorded as a value. Partial launch; full operation was due before October 2024."
+    },
+    {
+      "id": "WSM-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Samoa (Ministry of Communications and Information Technology)",
+      "local_actor": "MCIT; Office of the Regulator; Ministry of Finance (executing agency)",
+      "builder": null,
+      "financier": "World Bank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "The World Bank-financed Digitally Connected and Resilient Samoa project includes upgrading and establishing a secure, resilient government data centre alongside a national fibre network and government intranet upgrades.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://mcit.gov.ws/ws/digital-samoa/",
+          "publisher": "Ministry of Communications and Information Technology, Samoa",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:20:44Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator rule: government-run data centre, so domestic; World Bank is financier only. Tier 2 because the page describes a planned component with no award, construction or completion; project value and dates not stated (linked documents appear to be 2024). No vendors named."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in facilities, models or network searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only UNDP AI-readiness work and an April 2026 MCIT speech at the World Internet Conference (Hong Kong) with no agreement; no frontier-provider partnership or sovereign model found"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Vodafone Samoa (ATH-owned) 5G vendor for its September 2024 soft launch at 11 CHOGM sites; launch report names none. Is it still Huawei as for Bluesky's 4.5G?",
+    "Whether Digicel Samoa's Nokia 5G upgrade replaced any Huawei RAN/core (a possible commercial or geopolitical swap) or is an overlay only.",
+    "Safer CCTV Network camera and VMS vendor; check Australian procurement (AusTender) records.",
+    "Digital Samoa project: World Bank approval date, financing amount, and whether the government data centre has been tendered or awarded and to whom.",
+    "Samoa's second cable links (e.g. Manatua, SAS) and their suppliers; whether any HMN Tech involvement exists.",
+    "AidData lists PRC-financed Samoa projects (only one opened, a 2007 vehicle donation); check for ICT, e-government or police-surveillance items."
+  ],
+  "searches_run": 9
+}

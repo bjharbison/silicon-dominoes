@@ -1,0 +1,273 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "YEM",
+  "name": "Yemen",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T05:20:06Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "YEM-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Unnamed Chinese equipment vendor(s)",
+      "local_actor": "Internationally recognised government (Aden); AdenNet ISP",
+      "builder": null,
+      "financier": "United Arab Emirates",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-06",
+      "still_current": null,
+      "summary": "The internationally recognised government inaugurated AdenNet in Aden in June 2018, a USD 100m ISP and 4G package built with UAE funding and Chinese equipment, giving it internet capacity independent of Houthi-run YemenNet.",
+      "announced_value_usd": 100000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://debriefer.net/en/news-1082.html",
+          "publisher": "Debriefer",
+          "source_tier": "S3",
+          "date": "2018-06-19",
+          "retrieved_at": "2026-10-26T05:20:06Z",
+          "opened": true
+        },
+        {
+          "url": "https://foreignpolicy.com/2018/11/28/the-other-war-in-yemen-for-control-of-the-countrys-internet/",
+          "publisher": "Foreign Policy",
+          "source_tier": "S3",
+          "date": "2018-11-28",
+          "retrieved_at": "2026-10-26T05:20:06Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.recordedfuture.com/research/yemen-internet-control",
+          "publisher": "Recorded Future (Insikt Group)",
+          "source_tier": "S2",
+          "date": "2019-03-12",
+          "retrieved_at": "2026-10-26T05:20:06Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Authority: Aden-based internationally recognised government. Equipment vendor rule gives pole prc, but only Foreign Policy says 'Chinese equipment' and names no firm; Debriefer gives the USD 100m figure (package incl. Aden gateway and Aden 4G) and no vendor. Recorded Future (2019) says AdenNet saw little adoption, so tier 4 not 5. No S1/S2 source confirms the vendor: uncorroborated, low. still_current not checked."
+    },
+    {
+      "id": "YEM-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Not stated (Recorded Future says 'Yemen'; CEP relays it as YemenNet, Houthi-controlled Sanaa)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-03",
+      "still_current": null,
+      "summary": "A 2019 Recorded Future study reports that Yemen bought a large amount of telecommunications equipment from Huawei; the purchasing entity, date, value and equipment type are not given.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.recordedfuture.com/research/yemen-internet-control",
+          "publisher": "Recorded Future (Insikt Group)",
+          "source_tier": "S2",
+          "date": "2019-03-12",
+          "retrieved_at": "2026-10-26T05:20:06Z",
+          "opened": true
+        },
+        {
+          "url": "https://counterextremism.com/content/houthis-use-technology-repression",
+          "publisher": "Counter Extremism Project",
+          "source_tier": "S4",
+          "date": "2023-10",
+          "retrieved_at": "2026-10-26T05:20:06Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Date is the report date, not the purchase date. Authority unclear: Recorded Future does not say whether the buyer was Sanaa (Houthi) or Aden; CEP attributes it to YemenNet, which is Houthi-controlled. Tier 3 assumes a completed purchase; no counterparty contract seen. CEP echoes Recorded Future, so not independent. Low."
+    },
+    {
+      "id": "YEM-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Netsweeper (Canada)",
+      "local_actor": "YemenNet (Houthi-controlled, Sanaa)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015-10-21",
+      "still_current": null,
+      "summary": "Citizen Lab found Netsweeper filtering on YemenNet after the Houthi takeover of Sanaa, blocking political, independent media and all .il sites; Recorded Future identified further Netsweeper devices on YemenNet in 2019.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://citizenlab.ca/netsweeper-censors-internet-yemen/",
+          "publisher": "Citizen Lab (University of Toronto)",
+          "source_tier": "S2",
+          "date": "2015-10-21",
+          "retrieved_at": "2026-10-26T05:20:06Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.recordedfuture.com/research/yemen-internet-control",
+          "publisher": "Recorded Future (Insikt Group)",
+          "source_tier": "S2",
+          "date": "2019-03-12",
+          "retrieved_at": "2026-10-26T05:20:06Z",
+          "opened": true
+        },
+        {
+          "url": "https://foreignpolicy.com/2018/11/28/the-other-war-in-yemen-for-control-of-the-countrys-internet/",
+          "publisher": "Foreign Policy",
+          "source_tier": "S3",
+          "date": "2018-11-28",
+          "retrieved_at": "2026-10-26T05:20:06Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Authority: Houthi-controlled Sanaa institutions. Filtering appliances classed as network equipment; Netsweeper (Canadian) supplies and updates them, so pole third. Two independent opened S2 sources four years apart. Pre-2020; not reconfirmed as current, so still_current null. Citizen Lab notes US vendor Websense withdrew from Yemeni ISPs after 2009."
+    },
+    {
+      "id": "YEM-004",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Internationally recognised government (Aden)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09-17",
+      "still_current": null,
+      "summary": "The internationally recognised government signed a five-year Starlink licence in January 2024, running to January 2029; Starlink announced service availability in Yemen in September 2024, with kits around USD 389.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://globalvoices.org/2025/03/21/starlink-in-yemen-a-digital-revolution-or-a-security-threat/",
+          "publisher": "Global Voices",
+          "source_tier": "S3",
+          "date": "2025-03-21",
+          "retrieved_at": "2026-10-26T05:20:06Z",
+          "opened": true
+        },
+        {
+          "url": "https://totaltele.com/houthis-begin-rounding-up-starlink-terminals-in-yemen/",
+          "publisher": "Total Telecom",
+          "source_tier": "S2",
+          "date": "2025-04-29",
+          "retrieved_at": "2026-10-26T05:20:06Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Authority: internationally recognised government; licensing ministry not named in sources opened. Tier 4 (licence issued, service launched); subscriber scale unknown, so not tier 5. Global Voices gives licence terms, Total Telecom the launch date; they are independent but neither is S1."
+    },
+    {
+      "id": "YEM-005",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Houthi Ministry of Communications and Information Technology (Sanaa)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": true,
+      "reversal_of": "YEM-004 Starlink licence and service",
+      "reversal_reason": "geopolitical",
+      "date": "2025-04",
+      "still_current": null,
+      "summary": "Houthi authorities in Sanaa banned Starlink, calling it a US espionage and war tool, threatened sellers with jail, and in April 2025 ordered residents to surrender terminals or face security investigation.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://totaltele.com/houthis-begin-rounding-up-starlink-terminals-in-yemen/",
+          "publisher": "Total Telecom",
+          "source_tier": "S2",
+          "date": "2025-04-29",
+          "retrieved_at": "2026-10-26T05:20:06Z",
+          "opened": true
+        },
+        {
+          "url": "https://globalvoices.org/2025/03/21/starlink-in-yemen-a-digital-revolution-or-a-security-threat/",
+          "publisher": "Global Voices",
+          "source_tier": "S3",
+          "date": "2025-03-21",
+          "retrieved_at": "2026-10-26T05:20:06Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Authority: Houthi de facto government, so scale subnational (territory it controls). Reversal at tier of the licensed service; reason geopolitical per stated US-threat rationale. Ban date not stated; date is the surrender order reported April 2025."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found no data-centre or AI-campus project since 2023 under either authority"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase surfaced in other searches; conflict and sanctions context makes one unlikely"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found no frontier-model partnership or sovereign model for either authority"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on Houthi surveillance cameras/Hikvision found nothing Yemen-specific; DPI purchase by TeleYemen reported (CEP relaying UN Panel) without vendor"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Vendor of the 'bandwidth management system' (DPI) bought by Houthi-controlled TeleYemen per the 2022 UN Panel of Experts report, and whether deployed.",
+    "Named vendor and current status of AdenNet / Aden 4G equipment (Huawei vs ZTE) and whether AdenNet still operates.",
+    "Huawei purchase cited by Recorded Future 2019: buyer (YemenNet/PTC Sanaa vs Aden), date, value, equipment type.",
+    "RAN/core vendors of Yemen Mobile, YOU (ex-MTN Yemen), Sabafon and Y-Telecom, and how the 2021 move of an operator HQ to Aden affected them.",
+    "Licensing ministry and instrument for the January 2024 Starlink licence (S1 source), and Starlink subscriber numbers.",
+    "Whether Netsweeper filtering on YemenNet continued after 2019.",
+    "Submarine cable landings (AAE-1, FALCON, etc.) and post-2024 Red Sea repairs; any PRC-built cable or HMN Tech role; Aden government probe of AAE-1 repair delays (SubTel Forum, not opened)."
+  ],
+  "searches_run": 10
+}

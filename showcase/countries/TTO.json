@@ -1,0 +1,321 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "TTO",
+  "name": "Trinidad and Tobago",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T05:20:54Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "TTO-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "TSTT (bmobile; 51% state-owned)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-12-04",
+      "still_current": null,
+      "summary": "bmobile (TSTT) launched Trinidad and Tobago's first 5G service, a fixed wireless network built with Huawei, with a first phase covering Port of Spain, San Fernando, Point Lisas, Arima and industrial and campus zones.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://trinidadexpress.com/features/local/5g-is-here/article_96af41c0-1ade-11ea-a888-4b2424e4ff02.html",
+          "publisher": "Trinidad Express",
+          "source_tier": "S3",
+          "date": "2019-12-09",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        },
+        {
+          "url": "https://technewstt.com/pr-tstt-5g/",
+          "publisher": "TSTT press release (via TechNewsTT)",
+          "source_tier": "S1",
+          "date": "2019-12-08",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        },
+        {
+          "url": "https://trinidadexpress.com/business/local/tstt-building-5g-for-new-industrial-park/article_7f545302-4a3b-11eb-9b63-cb809fcf4c45.html",
+          "publisher": "Trinidad Express",
+          "source_tier": "S3",
+          "date": "2020-12-29",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: Huawei supplies the 5G FWA network, so pole prc. Tier 5 for a launched commercial service, though described as a limited first phase. A Dec 2020 Express report says TSTT will also use Huawei 5G at Phoenix Park Industrial Estate, a park financed by a US$104.3m China Exim concessional loan; not coded separately. Huawei supply of TSTT 4G/core not established. Corroboration: operator release (S1) plus independent newspaper report. Not reconfirmed as current in 2026."
+    },
+    {
+      "id": "TTO-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Digicel Trinidad and Tobago",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2012-08-31",
+      "still_current": null,
+      "summary": "Ericsson deployed Digicel's Evolved HSPA network in Trinidad and Tobago using RBS 6000 multi-standard radio base stations, with design, integration and deployment services; the network went live in 2012.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/20120831/americas/digicel-taps-ericsson-deploy-hspa-trinidad-tobago",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2012-08-31",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson (Sweden) is the RAN vendor, so pole third. Core vendor not stated. Pre-2020 and not reconfirmed; Digicel's 2018 LTE upgrade release names no vendor, so current RAN supplier is unverified. Single opened S2 source, so low."
+    },
+    {
+      "id": "TTO-003",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "Hummingbird AI Holdings LLC (Delaware-incorporated; Florida-based)",
+      "local_actor": "Government of Trinidad and Tobago (Office of the Prime Minister)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-10",
+      "still_current": null,
+      "summary": "The government signed a non-binding MOU with Hummingbird AI Holdings for a 150 MW AI data-centre campus, potentially expandable by 500 MW, with initial commercial operation proposed for Q1 2028; no construction reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/trinidad-and-tobago-inks-mous-with-american-companies-for-ai-data-centers/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-07-14",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        },
+        {
+          "url": "https://broadbandbreakfast.com/trinidad-and-tobago-signs-agreements-with-u-s-companies-that-pave-way-for-data-centers/",
+          "publisher": "Broadband Breakfast (Associated Press)",
+          "source_tier": "S3",
+          "date": "2026-07-12",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        },
+        {
+          "url": "https://w.media/ey-and-hummingbird-ai-to-develop-up-to-800-mw-of-data-center-capacity-in-trinidad-and-tobago/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2026-07-13",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        },
+        {
+          "url": "https://guardian.co.tt/news/major-data-centre-already-in-works-in-tt-but-location-a-secret-6.2.2629003.23f009d68e",
+          "publisher": "Trinidad and Tobago Guardian",
+          "source_tier": "S3",
+          "date": "2026-07-19",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole us on the proposed owner-operator's incorporation (Delaware); its founder, Marc Farrell, is reported as linked to T&T conglomerate Massy, so beneficial control may be partly domestic. DCD notes the firm has little public footprint. Government cites ~US$5bn for three projects combined; no per-project value, so null. Tier 1: MOU only. Signing date inferred as Friday 10 July from AP and Guardian."
+    },
+    {
+      "id": "TTO-004",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Not established (EY with unnamed third-party developers)",
+      "local_actor": "Government of Trinidad and Tobago (Office of the Prime Minister)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-10",
+      "still_current": null,
+      "summary": "The government signed a non-binding MOU with Ernst & Young (US) for a 300 MW data centre to be developed with third-party developers, plus a framework for large-scale data-centre collaboration; no site, value or construction reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/trinidad-and-tobago-inks-mous-with-american-companies-for-ai-data-centers/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-07-14",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        },
+        {
+          "url": "https://broadbandbreakfast.com/trinidad-and-tobago-signs-agreements-with-u-s-companies-that-pave-way-for-data-centers/",
+          "publisher": "Broadband Breakfast (Associated Press)",
+          "source_tier": "S3",
+          "date": "2026-07-12",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        },
+        {
+          "url": "https://w.media/ey-and-hummingbird-ai-to-develop-up-to-800-mw-of-data-center-capacity-in-trinidad-and-tobago/",
+          "publisher": "W.Media",
+          "source_tier": "S2",
+          "date": "2026-07-13",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: EY is an adviser/convenor and the future owner-operator is unnamed; if EY-led US developers own it the pole would be us. Debe is reported as a candidate special economic zone. Tier 1: MOU only."
+    },
+    {
+      "id": "TTO-005",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Trinidad and Tobago (Ministry of Public Administration and Artificial Intelligence)",
+      "local_actor": "Ministry of Public Administration and Artificial Intelligence (formerly Ministry of Digitalisation)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12",
+      "still_current": null,
+      "summary": "A government-owned Tier 4 data centre begun in 2022, funded by a US$120m CAF loan, had its site leased for 20 years in December 2025, civil works due to finish June 2026, and equipment reportedly already procured; location undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://guardian.co.tt/news/major-data-centre-already-in-works-in-tt-but-location-a-secret-6.2.2629003.23f009d68e",
+          "publisher": "Trinidad and Tobago Guardian",
+          "source_tier": "S3",
+          "date": "2026-07-19",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator is the state, so domestic. Tier 4 for construction under way (civil works). CAF loan is financier and does not set pole; the loan amount is not the facility value, so values null. 2023 tender named Phoenix Park Industrial Estate; current site undisclosed. IT equipment vendors unnamed. Single opened S3 source citing December 2025 procurement notices."
+    },
+    {
+      "id": "TTO-006",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "Ministry of Public Administration and Artificial Intelligence; Ministry of Education",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05",
+      "still_current": null,
+      "summary": "Ministers of Public Administration and Education signed a partnership agreement launching Future Ready TT, deploying ChatGPT tools (and Grammarly) in education and the public service, after a 550-licence pilot; T&T was in OpenAI's first Education for Countries cohort.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ttt.live/?p=155887",
+          "publisher": "TTT News (state broadcaster)",
+          "source_tier": "S4",
+          "date": "2026-05-28",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ttt.live/?p=138627",
+          "publisher": "TTT News (state broadcaster)",
+          "source_tier": "S4",
+          "date": "2026-01-22",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        },
+        {
+          "url": "https://technewstt.com/open-ai-announces-education-partnership-with-tt/",
+          "publisher": "TechNewsTT",
+          "source_tier": "S2",
+          "date": "2026-01-21",
+          "retrieved_at": "2026-10-26T05:20:54Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Model used through OpenAI's service, so pole us; no locally controlled weights. Tier 2: framework partnership plus pilot; no contract value or licence count for the full rollout. The agreement itself is sourced only to the state broadcaster (S4); TechNewsTT confirms only cohort membership. Whether OpenAI signed the May agreement directly is not stated."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or vendor named in data-centre reporting"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found TSTT's 2015 national CCTV expansion (800 cameras, four command centres) but no equipment vendor named; no Huawei/Hikvision safe-city system found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power plant found; reporting raises grid (2.4 GW) and water concerns for proposed campuses only"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current RAN/core vendors for bmobile (TSTT) 4G/5G and Digicel; whether Huawei remains TSTT's 5G supplier and any Phoenix Park Huawei 5G deployment.",
+    "Equipment vendors and current site of the CAF-funded government Tier 4 data centre; operational status after June 2026 civil-works deadline.",
+    "Beneficial ownership of Hummingbird AI Holdings LLC and progress beyond the July 2026 MOU (due diligence, site, power and water agreements).",
+    "Owner-operator of the EY-convened 300 MW data centre and whether any binding agreement followed.",
+    "Text and counterparties of the May 2026 Future Ready TT agreement (signed with OpenAI directly?) and licence numbers.",
+    "Vendor of the TSTT-delivered national police CCTV network (2015, 1,673 cameras).",
+    "Any instrument from T&T's February 2026 AI engagement with India (none named in reporting)."
+  ],
+  "searches_run": 8
+}

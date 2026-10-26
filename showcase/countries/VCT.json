@@ -1,0 +1,228 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "VCT",
+  "name": "Saint Vincent and the Grenadines",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T05:20:27Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "VCT-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "LIME (Cable & Wireless Communications; now Flow)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2011-09",
+      "still_current": null,
+      "summary": "LIME, Cable & Wireless's Caribbean arm, contracted Ericsson to modernise its mobile networks in 12 territories including Saint Vincent, with a new core network and multi-standard radio base stations plus design, rollout and services.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/3471-core-network-modernisation-will-boost-cover-across-caribbean.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2011-09-14",
+          "retrieved_at": "2026-10-26T05:20:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightreading.com/business-management/lime-picks-ericsson",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2011-09-12",
+          "retrieved_at": "2026-10-26T05:20:27Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson (Sweden) as equipment vendor, so pole third. Two opened S2 reports likely both relay one Ericsson/LIME announcement, so not treated as independent. Tier 3 (contract); SVG-specific rollout not confirmed. Pre-2020; current Flow SVG vendor not reconfirmed."
+    },
+    {
+      "id": "VCT-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Digicel (St. Vincent and the Grenadines)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2006-05",
+      "still_current": null,
+      "summary": "A 2006 report on Digicel's Turks and Caicos network said Ericsson had been Digicel's preferred network vendor in several markets, naming Saint Vincent and the Grenadines among them.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/?p=118264",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2006-05-01",
+          "retrieved_at": "2026-10-26T05:20:27Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Background mention only, not a dedicated SVG award; tier 5 assumes the Digicel GSM network was operational on Ericsson kit. Pre-2020; Digicel's 2018 LTE launch (BNamericas, opened) named no vendor, so current vendor unknown."
+    },
+    {
+      "id": "VCT-003",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Not stated (cable supplier unnamed; laid by vessel CS Intrepid)",
+      "local_actor": "Government of St. Vincent and the Grenadines; Digicel (SVG) Ltd (public-private partnership)",
+      "builder": null,
+      "financier": "World Bank (CARCIP National Broadband Project)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-05",
+      "still_current": null,
+      "summary": "A World Bank-funded CARCIP subsea fibre cable, delivered as a government–Digicel partnership, linked mainland St Vincent with Bequia, Mustique, Canouan, Union Island, Carriacou and Grenada; subsea laying was completed May 2019, terrestrial network due later.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://finance.gov.vc/finance/index.php/news/327-installation-of-subsea-fibre-cable",
+          "publisher": "Ministry of Finance, St. Vincent and the Grenadines",
+          "source_tier": "S1",
+          "date": "2019-05",
+          "retrieved_at": "2026-10-26T05:20:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://nbcsvg.com/2019/05/29/fibre-cable",
+          "publisher": "NBC Radio SVG (state broadcaster)",
+          "source_tier": "S4",
+          "date": "2019-05-29",
+          "retrieved_at": "2026-10-26T05:20:27Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: equipment vendor (sets pole for cables) not named and asset owner/operator under the PPP unclear. World Bank financier does not set pole. Tier 4: subsea laying done, network completion not confirmed. Single opened S1 (NBC echoes it, S4), so medium."
+    },
+    {
+      "id": "VCT-004",
+      "layer": "applications",
+      "pole": null,
+      "controller": "Not stated (camera/analytics vendor unnamed)",
+      "local_actor": "Royal St. Vincent and the Grenadines Police Force; Information Technology Services Division",
+      "builder": "Taiwanese associates (Phase 1 installation)",
+      "financier": "Taiwan (Republic of China) government",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-08",
+      "still_current": null,
+      "summary": "Taiwan-funded police CCTV ('Intelligent Video Analytics') programme: 172 cameras in Phase 1 (2021); Phase 2, launched March 2023 and including licence-plate recognition cameras, closed August 2025 with nearly 300 cameras across 20+ sites.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://security.gov.vc/security/images/stories/Press_Release_11323_-_Second_Phase_of_CCTV_Project_launched.pdf",
+          "publisher": "Ministry of National Security, St. Vincent and the Grenadines",
+          "source_tier": "S1",
+          "date": "2023-03-11",
+          "retrieved_at": "2026-10-26T05:20:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.iwnsvg.com/2021/06/02/phase-1-of-cctv-project-completed-envoy-completes-tour/",
+          "publisher": "iWitness News",
+          "source_tier": "S3",
+          "date": "2021-06-02",
+          "retrieved_at": "2026-10-26T05:20:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.iwnsvg.com/2024/08/19/taiwan-donates-over-100-cameras-to-bolster-svgs-public-security-efforts/",
+          "publisher": "iWitness News",
+          "source_tier": "S3",
+          "date": "2024-08-19",
+          "retrieved_at": "2026-10-26T05:20:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://onenewsstvincent.com/2025/08/12/nearly-300-security-cameras-installed-to-boost-public-safety-in-svg/",
+          "publisher": "One News St. Vincent",
+          "source_tier": "S3",
+          "date": "2025-08-12",
+          "retrieved_at": "2026-10-26T05:20:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://searchlight.vc/news/2023/10/06/taiwan-donates-cctv-mobile-cameras-police",
+          "publisher": "Searchlight",
+          "source_tier": "S3",
+          "date": "2023-10-06",
+          "retrieved_at": "2026-10-26T05:20:27Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: no source names the camera or analytics vendor, which would set the pole; police operate it domestically and Taiwan is donor, not documented controller. Not a PRC safe-city deployment. Corroborated by S1 ministry release plus independent S3 reporting; 2025 report drew on a Taiwanese Embassy release. Camera totals across phases may overlap."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found only an undated government–Digicel digital-transformation item naming no data centre; no data-centre or AI-campus project found"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only a Sept 2025 ruling-party pledge of an AI policy naming no provider; no frontier-model partnership or national model found"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current RAN/core vendors for Flow and Digicel in SVG, including Digicel's 2018 LTE launch (no vendor named) and any 5G plans.",
+    "American University infographic lists SVG in a Huawei-5G Caribbean map but the category could not be read; check underlying sources.",
+    "CARCIP subsea cable: equipment supplier, asset owner under the government–Digicel PPP, and completion of the terrestrial network.",
+    "Vendor/brand of the Taiwan-funded CCTV and licence-plate-recognition system and whether any vendor holds remote access.",
+    "Content of the ULP AI policy promised in the 2025 manifesto and any provider named after the election."
+  ],
+  "searches_run": 8
+}

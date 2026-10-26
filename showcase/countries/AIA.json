@@ -1,0 +1,171 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "AIA",
+  "name": "Anguilla",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T05:20:02Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "AIA-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (managed services operator)",
+      "local_actor": "Flow (Cable & Wireless Communications)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-07-12",
+      "still_current": null,
+      "summary": "Cable & Wireless awarded Ericsson a three-year managed-services contract to operate Flow's mobile networks in twelve Caribbean markets including Anguilla, covering network operations centre, field services and maintenance of mobile core and radio equipment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.cwc.com/news-and-media/press-releases/ericsson-to-provide-world-class-managed-services-for-flow-mobile-networks-in-caribbean.html",
+          "publisher": "Cable & Wireless Communications",
+          "source_tier": "S1",
+          "date": "2016-07-12",
+          "retrieved_at": "2026-10-26T05:20:02Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/6604-ericsson-to-provide-managed-services-for-flow-mobile-networks-in-caribbean.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T05:20:02Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden) operates and maintains the network, so it is treated as controller and pole third; the release does not name the equipment vendor for Flow Anguilla's RAN/core. Three-year term from 2016 means it may have lapsed; not reconfirmed, so still_current null. Single opened S1 source, so medium."
+    },
+    {
+      "id": "AIA-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Identity Digital (US)",
+      "local_actor": "Government of Anguilla (ccTLD manager for .ai)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-10-15",
+      "still_current": null,
+      "summary": "The Government of Anguilla signed a partnership with US-based Identity Digital to run registry technology for the .ai country-code domain, moving .ai services from a locally built system onto Identity Digital's globally distributed servers; the government keeps policy authority.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.businesswire.com/news/home/20241015024971/en",
+          "publisher": "Identity Digital / Government of Anguilla (Business Wire release)",
+          "source_tier": "S1",
+          "date": "2024-10-15",
+          "retrieved_at": "2026-10-26T05:20:02Z",
+          "opened": true
+        },
+        {
+          "url": "https://abcnews.go.com/Business/wireStory/tiny-caribbean-island-anguilla-turned-ai-boom-digital-114809388",
+          "publisher": "Associated Press (via ABC News)",
+          "source_tier": "S3",
+          "date": "2024-10",
+          "retrieved_at": "2026-10-26T05:20:02Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as networks because the registry/DNS back-end is internet naming infrastructure a vendor can update or switch off; revenue from .ai sales is not itself coded. Pole us because Identity Digital operates the technical platform, though the government retains administrative authority. AP independently interviewed officials. Migration was expected by early 2025 but completion not confirmed, so tier 3 not 5 and still_current null."
+    },
+    {
+      "id": "AIA-003",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Digicel (installs and operates the network)",
+      "local_actor": "Government of Anguilla (Ministry of Infrastructure and IT); Governor's Office; Joint Emergency Services Control Room",
+      "builder": "Digicel",
+      "financier": "Government of Anguilla (2024 Budget allocation via Governor's Office)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09",
+      "still_current": null,
+      "summary": "The government awarded Digicel a contract to install and operate Anguilla's first island-wide CCTV network at 30 locations, monitored from the Joint Emergency Services Control Room; plate recognition and AI analytics remained under discussion, with operation expected November 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://anguillafocus.com/digicel-wins-contract-to-operate-anguillas-island-wide-cctv-network/",
+          "publisher": "Anguilla Focus",
+          "source_tier": "S3",
+          "date": "2026-03-24",
+          "retrieved_at": "2026-10-26T05:20:02Z",
+          "opened": true
+        },
+        {
+          "url": "https://anguillafocus.com/island-wide-cctv-network-expected-to-be-up-and-running-by-november/",
+          "publisher": "Anguilla Focus",
+          "source_tier": "S3",
+          "date": "2026-07-22",
+          "retrieved_at": "2026-10-26T05:20:02Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Camera/VMS vendor not named, so the stack vendor is unknown; Digicel (Caribbean group, non-US/PRC) is documented as operator and so treated as controller, pole third. EC$1m was a 2024 budget allocation, not the contract value, so values null. Both sources from one outlet; no S1/S2 opened."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found only .ai domain revenue coverage; no data-centre or AI-campus project in Anguilla"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in facilities, models or networks searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only .ai domain stories and the Identity Digital registry deal; no frontier-model partnership or sovereign model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Camera and video-management vendor for the Digicel island-wide CCTV network (check for Hikvision/Dahua), contract value, and whether AI analytics or plate recognition were added.",
+    "Award outcome and supplier for procurement 2026/MICUHITES/DITES/41 (CCTV and access control for Government HQ, AG Chambers and Magistrate Court; closed 2 June 2026).",
+    "Radio/core equipment vendors for Digicel Anguilla (2018 LTE rollout, EC$8.1m) and Flow Anguilla; whether the Ericsson managed-services contract was renewed after 2019.",
+    "Submarine cable(s) serving Anguilla, their owners and suppliers; AP describes a single cable dependency.",
+    "Whether the .ai registry migration to Identity Digital completed and on which hosting providers its servers run.",
+    "Coastal surveillance system announced for border security (Anguilla Focus, not opened): vendor and funder."
+  ],
+  "searches_run": 8
+}

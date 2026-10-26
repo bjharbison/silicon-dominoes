@@ -1,0 +1,205 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "TON",
+  "name": "Tonga",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T05:20:26Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "TON-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Tonga Communications Corporation (TCC, state-owned; U Call brand)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12",
+      "still_current": null,
+      "summary": "TCC launched commercial 5G at its Nuku'alofa headquarters with Huawei as vendor; a Huawei live test at launch recorded about 854 Mbps download. Both Tongan operators had trialled 5G since February 2024 on 2500 and 3500 MHz.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/tcc-and-digicel-tonga-roll-out-commercial-5g",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-12-09",
+          "retrieved_at": "2026-10-26T05:20:26Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/17722-tcc-and-digicel-tonga-launch-commercial-5g.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2024-12-09",
+          "retrieved_at": "2026-10-26T05:20:26Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment vendor rule: Huawei supplies the 5G network, so pole prc. Tier 5 for a commercial launch, though coverage extent is not stated. Two opened S2 reports on the same day carry identical figures and likely echo one launch report or release, so not counted as independent; Developing Telecoms also carries Huawei partner banners. Vendor of TCC's 4G and core not stated."
+    },
+    {
+      "id": "TON-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Digicel Tonga (Digicel Pacific; owned by Telstra since 2022)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-11-20",
+      "still_current": null,
+      "summary": "Digicel Tonga launched a 4G Plus service, described as the centrepiece of a US$1.7m investment made with Huawei, which the report calls Digicel's network partner in the South Pacific.",
+      "announced_value_usd": 1700000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://matangitonga.to/print/18177",
+          "publisher": "Matangi Tonga",
+          "source_tier": "S3",
+          "date": "2017-11-23",
+          "retrieved_at": "2026-10-26T05:20:26Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole prc by equipment vendor rule. Pre-2020 and not reconfirmed as current. Telstra said in 2022 (Islands Business citing AFR, not Tonga-specific) that Digicel Pacific's Huawei kit would be removed at the next refresh; no Tonga-specific removal found, and Digicel Tonga's November 2024 5G launch named no vendor. That pledge is a statement, not a coded reversal."
+    },
+    {
+      "id": "TON-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (ASN, France)",
+      "local_actor": "Tonga Cable Limited (TCL)",
+      "builder": "ASN with Optic Marine (repair ship C/S Lodbrog)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-07-12",
+      "still_current": null,
+      "summary": "After the January 2022 Hunga Tonga eruption cut it, the Tonga Domestic Cable linking Tongatapu with Ha'apai and Vava'u was restored in July 2023 using about 108 km of ASN-made replacement cable, with Tonga Cable Limited managing the repair.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/tongas-domestic-submarine-cable-fixed-18-months-on-from-volcanic-eruption/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-07-14",
+          "retrieved_at": "2026-10-26T05:20:26Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/tonga-cable-fixed-18-months-post-eruption/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2023-07-14",
+          "retrieved_at": "2026-10-26T05:20:26Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: ASN (French) supplied the cable, so pole third. Both reports cite local reporting (Matangi Tonga) but DCD adds independent detail (Optic Marine, NIWA survey); reviewer to confirm independence. Original suppliers of the 2013 Tonga-Fiji international cable and of the domestic cable not established; owner and financier of repair not stated."
+    },
+    {
+      "id": "TON-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Tonga (Digital Transformation Department)",
+      "local_actor": "Government of Tonga",
+      "builder": null,
+      "financier": "US Trade and Development Agency (feasibility study grant; amount not stated)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09-02",
+      "still_current": null,
+      "summary": "USTDA and Tonga's government signed an agreement for a feasibility study, conducted by CyberCX USA, on modernising the government data centre and network to host critical systems securely on trusted US technology, including future AI applications.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://ustda.gov/?p=31830",
+          "publisher": "US Trade and Development Agency",
+          "source_tier": "S1",
+          "date": "2026-09-02",
+          "retrieved_at": "2026-10-26T05:20:26Z",
+          "opened": true
+        },
+        {
+          "url": "https://islandsbusiness.com/?p=51854",
+          "publisher": "Islands Business",
+          "source_tier": "S3",
+          "date": "2026-09-04",
+          "retrieved_at": "2026-10-26T05:20:26Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator rule: the data centre belongs to the Tongan government, so pole domestic; the US role is financier and study contractor and sets no pole. Tier 2 feasibility study. Islands Business attributes funding to the State Department and quotes the Prime Minister, so treated as independent of the USTDA release. Release frames it against unnamed malign actors; a separate State Department-supported migration of government data to trusted cloud is cloud-layer and not coded here."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in facilities or models searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "two searches found no frontier-provider partnership, government model adoption or sovereign model for Tonga, only regional UNDP commentary"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on police CCTV/surveillance found reporting of PRC police assistance but no identified safe-city or surveillance system"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Whether Digicel Tonga has replaced Huawei RAN/core since Telstra's 2022 refresh pledge, and the vendor for its November 2024 5G launch (not named).",
+    "Vendor of TCC's 4G radio and core network; extent of TCC's Huawei 5G coverage.",
+    "Original supplier of the 2013 Tonga Cable to Fiji and the domestic cable, and financiers of the 2023 repair.",
+    "USTDA/CyberCX data-centre study: grant value, timeline, and whether a build or cloud-migration contract follows (and with which provider).",
+    "PRC police assistance to Tonga (2024 delegation reporting): whether it included CCTV, ICT or surveillance equipment; AidData project 39235 not opened.",
+    "Any Tonga government AI policy or model-provider engagement."
+  ],
+  "searches_run": 10
+}
