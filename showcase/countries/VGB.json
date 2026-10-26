@@ -1,0 +1,86 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "VGB",
+  "name": "British Virgin Islands",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "VGB-001",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Government of the Virgin Islands / Royal Virgin Islands Police Force",
+      "builder": "Cable and Wireless BVI Ltd (Flow BVI)",
+      "financier": "Caribbean Development Bank and Government of the Virgin Islands capital budget",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-09-09",
+      "still_current": null,
+      "summary": "Government signed a contract worth just over US$411,000 with Cable and Wireless BVI (Flow) to rebuild the territory-wide CCTV surveillance backbone, including dedicated fibre, destroyed by the 2017 hurricanes; CDB and government capital funds paid for it.",
+      "announced_value_usd": 411000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://virginislandsnewsonline.com/en/news/fahie-govt-signs-contract-for-restoration-of-cctv-network-lines",
+          "publisher": "Virgin Islands News Online",
+          "source_tier": "S3",
+          "date": "2021-09-10",
+          "retrieved_at": "2026-10-26T21:18:51Z",
+          "opened": true
+        },
+        {
+          "url": "https://virginislandsnewsonline.com/en/news/vis-cctv-network-in-final-stages-of-roll-out-cop-collins",
+          "publisher": "Virgin Islands News Online",
+          "source_tier": "S3",
+          "date": "2023-10-18",
+          "retrieved_at": "2026-10-26T21:18:51Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: no camera or network-equipment vendor is named in any source opened, and under the v0.2 equipment rule the vendor, not the fibre contractor, is the controller. Flow BVI is a Liberty Latin America subsidiary, recorded as builder only. The October 2023 article (police say rollout in final stages) shows progress but names no vendor; both sources are the same outlet, so not corroborated. USD is the territory's currency; value is a floor ('just over')."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "null",
+      "null_reason": "four searches: Digicel BVI LTE launch (Capacity, opened) and CCT 4G launch (VINO, opened, March 2014) name no vendor; Digicel's 2017 ZTE 26-market LTE deal (TelecomTV, opened) and 2007 Huawei CDMA deal (Light Reading, opened) do not name BVI; no cable supplier or HMN Tech link found"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found no BVI data-centre or AI-campus project (results were Antigua and UK items)"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other layer searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "two searches found only calls for an AI policy and digital-transformation consultancy tenders, with no named model provider, partnership or sovereign model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Camera and video-management vendor for the RVIPF territory-wide CCTV network (2018 US$140,000 consultant procurement led by Russell Jones; 2021 Flow fibre backbone); check for Hikvision/Dahua.",
+    "Radio/core vendors for Digicel BVI, Flow BVI and CCT; whether Digicel's 2017 ZTE LTE programme across 26 markets included BVI.",
+    "Submarine cable systems landing in Tortola (e.g. ECFS and newer links) and their suppliers; check for HMN Tech.",
+    "Whether the BVI applies UK-style high-risk-vendor telecoms rules (TRC)."
+  ],
+  "searches_run": 8
+}

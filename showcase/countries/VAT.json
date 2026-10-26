@@ -1,0 +1,280 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "VAT",
+  "name": "Holy See (Vatican City State)",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "VAT-001",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Microsoft (AI for Good Lab processed the imagery with AI)",
+      "local_actor": "Fabric of Saint Peter (Fabbrica di San Pietro)",
+      "builder": "Iconem (France), photogrammetric capture",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-11-11",
+      "still_current": null,
+      "summary": "The Fabric of Saint Peter and Microsoft launched an AI-built digital twin of St Peter's Basilica from Iconem's 2023 imagery capture, used for virtual visits and to map cracks and missing mosaic tiles for conservation.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://press.vatican.va/content/salastampa/en/info/2024/11/11/241111a.html",
+          "publisher": "Holy See Press Office",
+          "source_tier": "S1",
+          "date": "2024-11-11",
+          "retrieved_at": "2026-10-26T21:19:26Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.usccb.org/es/node/77714",
+          "publisher": "Catholic News Service (USCCB)",
+          "source_tier": "S3",
+          "date": "2024-11-11",
+          "retrieved_at": "2026-10-26T21:19:26Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.vaticannews.va/en/vatican-city/news/2024-11/ai-technology-st-peters-basilica-digital-experience-microsoft.print.html",
+          "publisher": "Vatican News",
+          "source_tier": "S1",
+          "date": "2024-11",
+          "retrieved_at": "2026-10-26T21:19:26Z",
+          "opened": false
+        },
+        {
+          "url": "https://wjla.com/news/nation-world/vatcan-microsoft-ai-artificial-intelligence-st-peters-basilica-drones-photos-terabytes-videos-lasers-replica-exhibits-jubilee-year-pilgrims-holy-door-monuments-structural-damage-deterioration-mosaic-crackss-ethical-religion-peace-message-pope",
+          "publisher": "WJLA (AP)",
+          "source_tier": "S3",
+          "date": "2024-11-11",
+          "retrieved_at": "2026-10-26T21:19:26Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole us because Microsoft supplied the AI processing; hosting of the 3D model and websites (basilicasanpietro.va) is undisclosed, so whether Microsoft retains operational control after delivery is unknown. Described as a collaboration; no contract, value or ownership terms published. Tier 5 because the product was delivered and launched, but this is a single-building cultural project, not a state stack commitment."
+    },
+    {
+      "id": "VAT-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Governorate of Vatican City State, Directorate of Telecommunications and Information Systems",
+      "local_actor": "Governorate of Vatican City State",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-17",
+      "still_current": null,
+      "summary": "The Governorate's telecoms and IT director said state data are stored and processed in data centres inside Vatican territory, with more server clusters planned and data-centre areas being engineered to host AI solutions on-premise.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://vaticanstate.va/en/news/3726-an-interview-with-engineer-antonino-intersimone-director-of-telecommunications-and-information-systems-of-the-governorate.html",
+          "publisher": "Vatican City State Governorate (vaticanstate.va)",
+          "source_tier": "S1",
+          "date": "2026-02-17",
+          "retrieved_at": "2026-10-26T21:19:26Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Single S1 source (the Holy See's own outlet describing its own infrastructure). No hardware, AI or model vendors are named; the 'AI ready' on-premise hosting is a plan, not an observed deployment, and is not separately coded."
+    },
+    {
+      "id": "VAT-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Vatican Apostolic Library",
+      "local_actor": "Vatican Apostolic Library (IT director Luciano Ammenti)",
+      "builder": "Panduit (US), racks, cabling and monitoring gateways",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-05-31",
+      "still_current": null,
+      "summary": "The Vatican Apostolic Library replaced its obsolete data centre using Panduit racks with hot-aisle containment, fibre and copper cabling and monitoring gateways, supporting digitisation of its collections.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lemondeinformatique.fr/actualites/lireamp-le-vatican-charge-panduit-de-moderniser-son-datacenter-75468.html",
+          "publisher": "Le Monde Informatique",
+          "source_tier": "S2",
+          "date": "2019-05-31",
+          "retrieved_at": "2026-10-26T21:19:26Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator is the Library, so domestic; Panduit supplied largely passive physical infrastructure and is recorded as builder. Single opened S2 source; pre-2020 and current status not confirmed."
+    },
+    {
+      "id": "VAT-004",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "TIM (Telecom Italia); Vodafone Italia in progress",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025",
+      "still_current": null,
+      "summary": "Italian operator TIM completed 5G mobile coverage of Vatican territory in 2025, according to the Governorate's IT director; Vodafone 5G coverage was still in progress and Castel Gandolfo coverage was being designed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://vaticanstate.va/en/news/3726-an-interview-with-engineer-antonino-intersimone-director-of-telecommunications-and-information-systems-of-the-governorate.html",
+          "publisher": "Vatican City State Governorate (vaticanstate.va)",
+          "source_tier": "S4",
+          "date": "2026-02-17",
+          "retrieved_at": "2026-10-26T21:19:26Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: under the equipment-vendor rule the controller is TIM's radio/core vendor for the Vatican sites, which no source names. Source treated as S4 because it is a Holy See outlet describing a third party's network. An October 2020 ITU profile (opened) said no 5G had launched in the Vatican and fibre links connect to an unnamed Italian operator."
+    },
+    {
+      "id": "VAT-005",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "ioimage (Israel), video analytics appliances",
+      "local_actor": "Gendarmerie Corps of Vatican City State",
+      "builder": "Picksec International Group (integrator)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2008-12-04",
+      "still_current": null,
+      "summary": "Israeli firm ioimage's intelligent-video cameras and encoders, installed from 2005 via integrator Picksec, monitor about 60 km of sensitive perimeter, gates and walls from the Vatican Gendarmerie control room for intruder detection.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.securityworldmarket.com/int/Newsarchive/the-vatican-puts-its-trust-in-intelligent-video",
+          "publisher": "Security World Market",
+          "source_tier": "S2",
+          "date": "2008-12-04",
+          "retrieved_at": "2026-10-26T21:19:26Z",
+          "opened": true
+        },
+        {
+          "url": "https://facilityexecutive.com/2008/12/security-provider-selected-for-vatican-video-surveillance/",
+          "publisher": "Facility Executive",
+          "source_tier": "S2",
+          "date": "2008-12",
+          "retrieved_at": "2026-10-26T21:19:26Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both opened sources appear to reproduce the same vendor press release (same facts and integrator quote), so they are not independent and corroboration is false. Pre-2020; current use not confirmed."
+    },
+    {
+      "id": "VAT-006",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Panasonic (Japan), CCTV system vendor",
+      "local_actor": "Gendarmerie Corps of Vatican City State; Vatican Museums",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2007-12-16",
+      "still_current": null,
+      "summary": "A Panasonic CCTV system of 556 cameras on a dedicated fibre network, run by the Gendarmerie, covered the Vatican site, with a separate Vatican Museums control room using video analytics and Panasonic recorders.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ifsecglobal.com/?p=545245",
+          "publisher": "IFSEC Global",
+          "source_tier": "S2",
+          "date": "2007-12-16",
+          "retrieved_at": "2026-10-26T21:19:26Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single S2 trade-press source from a Panasonic-organised press trip. Pre-2020 (2007); whether Panasonic equipment is still in service is unknown."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchase or deployment surfaced; the Governorate interview names no hardware vendor for planned on-premise AI hosting"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "Governorate AI Guidelines (end 2024) and AI proofs of concept found, but no named model provider, partnership or sovereign model; Rome Call for AI Ethics is a non-binding ethics pledge, not stack adoption"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Which AI products or model providers were used in the Governorate's AI proofs of concept and planned on-premise AI hosting (Feb 2026 interview names none).",
+    "Radio/core equipment vendor for TIM's (2025) and Vodafone's 5G coverage of Vatican territory and Castel Gandolfo.",
+    "Current Gendarmerie CCTV/video-analytics vendor; whether the 2005-2008 ioimage and 2007 Panasonic systems remain in service and whether any PRC camera brands were introduced since.",
+    "Hosting/cloud provider and data-ownership terms for the St Peter's Basilica digital twin and basilicasanpietro.va sites (Azure or other).",
+    "Microsoft's ties with the Holy See beyond the Rome Call for AI Ethics (a non-binding pledge, not coded; CNS dates Microsoft-Vatican work from 2018): any service or licence agreements beyond the basilica project.",
+    "NTT Data's earlier digitisation/archive partnership with the Vatican Apostolic Library (seen only as a search-result title, not opened) and where the archive is hosted."
+  ],
+  "searches_run": 7
+}

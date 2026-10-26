@@ -1,0 +1,186 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "TKL",
+  "name": "Tokelau",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "TKL-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei (LTE radio equipment vendor)",
+      "local_actor": "Teletok (Tokelau telecommunications provider)",
+      "builder": "Bluearcus Technologies (4G mobile supplier/installer); Telecom Pasifika Samoa (tower foundations)",
+      "financier": "Government of Tokelau (General Fono capital injection)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-05-05",
+      "still_current": null,
+      "summary": "Tokelau's first 4G mobile network launched on Fakaofo in May 2017, running a full LTE solution on Huawei radio equipment, installed by Bluearcus Technologies from November 2016 and funded by a General Fono capital injection.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.tokelau.org.nz/Bulletin/May+2017/4G+launch.html",
+          "publisher": "Government of Tokelau (Tokelau Bulletin)",
+          "source_tier": "S1",
+          "date": "2017-05",
+          "retrieved_at": "2026-10-26T21:19:16Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.samoaobserver.ws/category/article/35576",
+          "publisher": "Samoa Observer",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T21:19:16Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Both sources carry near-identical wording and appear to reproduce the same Government of Tokelau release, so they are not treated as independent; corroborated set false, medium confidence rests on the opened S1 bulletin. The bulletin page's dateline reads 2012, apparently a typo for May 2017. Project value was a NZ$1.05m capital injection; not converted to USD because it is a funding allocation rather than a vendor contract value. Launch covered Fakaofo; extent on Atafu and Nukunonu and whether Huawei equipment is still in service were not confirmed, so still_current null."
+    },
+    {
+      "id": "TKL-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (cable, repeater and branching-unit supplier and installer)",
+      "local_actor": "Teletok / Government of Tokelau (Nukunonu branch landing)",
+      "builder": "Alcatel Submarine Networks",
+      "financier": "Governments of Tokelau and New Zealand (Nukunonu connection, jointly funded)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-09",
+      "still_current": null,
+      "summary": "Tokelau's Nukunonu atoll was linked by branching unit to the Southern Cross NEXT trans-Pacific cable, landing celebrated in September 2021; ASN designed and installed the system, with commercial service expected July 2022. Tokelau and New Zealand jointly funded the connection.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mfat.govt.nz/en/media-and-resources/submarine-internet-cable-lands-in-tokelau",
+          "publisher": "New Zealand Ministry of Foreign Affairs and Trade",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T21:19:16Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.samoaobserver.ws/category/samoa/92190",
+          "publisher": "Samoa Observer",
+          "source_tier": "S3",
+          "date": "2021-09-29",
+          "retrieved_at": "2026-10-26T21:19:16Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightwaveonline.com/network-design/high-speed-networks/article/14276502/telstra-anticipates-southern-cross-next-submarine-cable-rfs",
+          "publisher": "Lightwave",
+          "source_tier": "S2",
+          "date": "2022-05-12",
+          "retrieved_at": "2026-10-26T21:19:16Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/tokelau-via-southern-cross-next/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2018-01-23",
+          "retrieved_at": "2026-10-26T21:19:16Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Under the equipment-vendor rule the controller is ASN (French, non-US/PRC), so pole third; the system owner Southern Cross Cable Network is also non-PRC. Coded tier 4 (cable landed, construction complete) because no opened source confirms the Tokelau branch entered commercial service; the July 2022 RFS date is for the overall system. MFAT and Samoa Observer likely relay the same official statement, but Lightwave is independent on the vendor and branching-unit facts."
+    },
+    {
+      "id": "TKL-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (cable supplier)",
+      "local_actor": "Teletok (manages the cable for the Tokelau and New Zealand governments)",
+      "builder": "Alcatel Submarine Networks",
+      "financier": "Governments of New Zealand and Tokelau (co-funded)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-01",
+      "still_current": null,
+      "summary": "ASN was awarded a 250 km unrepeated domestic cable (OALC5, two fibre pairs) linking Atafu, Nukunonu and Fakaofo and interconnecting with Southern Cross NEXT; co-funded by New Zealand and Tokelau, managed by Teletok, RFS planned for 2021.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.capacitymedia.com/articles/3824795/asn-to-build-tokelau-subsea-cable",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T21:19:16Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.hawaii.edu/piren/2020/01/21/alcatel-submarine-networks-to-deploy-an-unrepeated-cabel-to-connect-tokelau",
+          "publisher": "Pacific Islands Research and Education Network (repost of ASN press release)",
+          "source_tier": "S4",
+          "date": "2020-01-21",
+          "retrieved_at": "2026-10-26T21:19:16Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "The PIREN page reposts ASN's own press release (corporate, S4), so only one opened S1-S3 source; not corroborated. Neither source names the contracting party or value. Completion of the domestic cable was not confirmed by any opened source (MFAT in 2021 still described it as coming in months), so tier held at 3 and still_current null."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one combined search (Starlink / data centre / AI + Tokelau) returned only telecom and satellite items; no data-centre or AI-campus project"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other searches for a territory of about 1,500 people"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "the combined AI/government search found no model partnership, government adoption or sovereign model for Tokelau"
+    },
+    "applications": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no surveillance or e-government AI system surfaced in other searches"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Whether Teletok's Huawei LTE radio equipment (2017) is still in service, extended to Atafu and Nukunonu, or slated for replacement, and who supplies the core network.",
+    "Whether the Tokelau branch of Southern Cross NEXT and the ASN inter-atoll cable (OALC5) actually entered service, with dates and contract value.",
+    "Status of Teletok's 2014 Kacific satellite capacity agreement (seen in search results only, not opened) and any Starlink licensing in Tokelau.",
+    "Any New Zealand-funded e-government or ICT upgrade (2017 NZ package covering wharves and IT) that involves cloud or AI vendors."
+  ],
+  "searches_run": 6
+}

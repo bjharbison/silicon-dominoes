@@ -1,0 +1,202 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "VIR",
+  "name": "US Virgin Islands",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "VIR-001",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "ShotSpotter, Inc. (now SoundThinking, US), retains ownership of sensors and runs the subscription service",
+      "local_actor": "Virgin Islands Police Department",
+      "builder": null,
+      "financier": "US Department of Justice technology grant (initial deployment)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-04-02",
+      "still_current": null,
+      "summary": "VIPD runs ShotSpotter Flex acoustic gunshot detection on St. Thomas and St. Croix under territorial procurement contracts (2016 term; new contract from April 2020), with live-fire testing in 2020 and officers using it in a November 2022 arrest.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dpp.vi.gov/?p=2044",
+          "publisher": "Virgin Islands Department of Property and Procurement (contract P041VPDT20)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T21:20:07Z",
+          "opened": true
+        },
+        {
+          "url": "https://dpp.vi.gov/?p=1098",
+          "publisher": "Virgin Islands Department of Property and Procurement (contract P005VPDT17)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T21:20:07Z",
+          "opened": true
+        },
+        {
+          "url": "https://stthomassource.com/?p=192280",
+          "publisher": "St. Thomas Source",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T21:20:07Z",
+          "opened": true
+        },
+        {
+          "url": "https://viconsortium.com/vi-crime/virgin-islands-after-complaints-vipd-notifies-st-croix-public-of-live-fire-shotspotter-tests-set-for-monday",
+          "publisher": "The Virgin Islands Consortium",
+          "source_tier": "S3",
+          "date": "2020-06-28",
+          "retrieved_at": "2026-10-26T21:20:07Z",
+          "opened": true
+        },
+        {
+          "url": "https://stthomassource.com/content/2022/11/26/shotspotter-aids-officers-in-arrest-of-sion-farm-man/",
+          "publisher": "St. Thomas Source",
+          "source_tier": "S3",
+          "date": "2022-11-26",
+          "retrieved_at": "2026-10-26T21:20:07Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Vendor retains equipment ownership and operates the alert/analysis service, so it is controller; pole us. The 2020 procurement listing shows an end date earlier than its start date (likely a data-entry error), and contract values are not stated. Tier 5 as operational across two main islands, though coverage is limited to high-crime neighbourhoods. Latest evidence of use is November 2022, so still_current null. AI relevance: automated acoustic classification of gunfire."
+    },
+    {
+      "id": "VIR-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Ciena (US), supplier of submarine line-terminal optical equipment lighting TAM-1",
+      "local_actor": "Trans Americas Fiber US, LLC; AT&T of the Virgin Islands (Butler Bay cable station); Government of the Virgin Islands via viNGN",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-14",
+      "still_current": null,
+      "summary": "USVI lawmakers advanced a 20-year lease and the Governor approved a permit for the TAM-1 cable from Florida to land at Butler Bay, St. Croix, giving government free bandwidth via viNGN; Ciena supplies its optical equipment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://viconsortium.com/vi-technology/virgin-islands-st--croix-to-become-key-landing-site-in-global-fiber-network--bringing-free-bandwidth-to-the-vi-government",
+          "publisher": "The Virgin Islands Consortium",
+          "source_tier": "S3",
+          "date": "2025-08-15",
+          "retrieved_at": "2026-10-26T21:20:07Z",
+          "opened": true
+        },
+        {
+          "url": "https://legvi.org/committeemeetings/Comm%20of%20The%20Whole/2025-08-14/Supplemental%20Submissions/Trans-America%20Fiber/TESTIMONIAL-Trans%20Americas%20Fiber-Cable%20Landing%20Butler%20Bay_BK%20edits.pdf",
+          "publisher": "Legislature of the Virgin Islands (testimony submitted by applicant Trans Americas Fiber U.S., LLC)",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-26T21:20:07Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.fierce-network.com/broadband/tafs-selects-cienas-optical-tech-submarine-tam-1-project",
+          "publisher": "Fierce Network",
+          "source_tier": "S2",
+          "date": "2025-10-24",
+          "retrieved_at": "2026-10-26T21:20:07Z",
+          "opened": true
+        },
+        {
+          "url": "https://bnamericas.com/en/news/trans-americas-fiber-system-and-xtera-announce-initial-construction-of-ground-breaking-tam-1-submarine-cable-system",
+          "publisher": "BNamericas",
+          "source_tier": "S2",
+          "date": "2023-09-12",
+          "retrieved_at": "2026-10-26T21:20:07Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment-vendor rule: Ciena (US) lights the system, so pole us; but the wet-plant supplier is not confirmed (Xtera announced 'initial construction' in 2023 without stating its role) and TAFS ownership is not stated, so the pole could change. Ciena coverage does not mention the USVI landing, and the landing is evidenced only by one S3 report plus the applicant's own testimony, so not corroborated. Tier 3 for the approved permit and legislated 20-year lease (rent USD 67,000/yr, not a project value); construction start (planned August 2025) and RFS not confirmed."
+    },
+    {
+      "id": "VIR-003",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Anthropic (Claude) and OpenAI (ChatGPT), used through their provider services",
+      "local_actor": "Delegates of the sixth USVI Constitutional Convention",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09-19",
+      "still_current": null,
+      "summary": "Delegates drafting a new USVI constitution use Claude and ChatGPT to redraft wording, cross-check each other's answers and compare legal frameworks, and an AI app builder for voter-engagement tools; no formal AI-use policy is described.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.schneier.com/essays/archives/2026/09/how-ai-is-helping-to-write-a-new-constitution-in-the-us-virgin-islands.html",
+          "publisher": "Schneier on Security (essay by Nathan E. Sanders and Bruce Schneier, first published in The Renovator)",
+          "source_tier": "S3",
+          "date": "2026-09-19",
+          "retrieved_at": "2026-10-26T21:20:07Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Informal, uncontracted use by individual delegates of a territorial body, coded as tier 2 (pilot-like) rather than an adoption contract. Used via US providers' services, so pole us. Single named-author essay; no procurement or official notice located."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search returned no USVI data-centre or AI-campus project; results were federal-land AI data-centre policy and an Antigua government data centre"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase surfaced; USVI is US territory so US export controls do not apply as to a foreign destination"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Whether Viya (formerly Innovative/Choice) or any USVI carrier held Huawei/ZTE equipment or participated in the FCC Secure and Trusted Communications Networks Reimbursement Program; two searches found no USVI-specific filing.",
+    "Radio and core vendors for Viya's 2017 LTE network and Liberty's USVI network (former AT&T USVI, acquired November 2020); Ericsson's June 2020 LLA core deal covers unnamed 'Caribbean islands' and predates the AT&T USVI closing, so USVI coverage is unconfirmed.",
+    "TAM-1 wet-plant supplier and TAFS ownership; whether the St. Croix landing has been built and the system is ready for service.",
+    "Suppliers of other USVI submarine cables and any data-centre projects with named owner-operators.",
+    "Current status and value of VIPD's ShotSpotter subscription after 2022, and any VIPD CCTV, licence-plate-reader or facial-recognition vendors.",
+    "Any formal Government of the Virgin Islands AI policy or agency AI procurement (e.g., via the Bureau of Information Technology)."
+  ],
+  "searches_run": 10
+}

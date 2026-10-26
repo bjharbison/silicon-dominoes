@@ -1,0 +1,212 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "TCA",
+  "name": "Turks and Caicos Islands",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "TCA-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "LIME Turks and Caicos (Cable & Wireless, now Flow)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015-08-04",
+      "still_current": null,
+      "summary": "LIME (Cable & Wireless) launched 4G LTE in the Turks and Caicos Islands, covering Providenciales, Grand Turk and South Caicos, with Ericsson deploying the network under the operator's Project Marlin capital programme.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://cwc.com/news-and-media/press-releases/mobile-4g-lte-launched-in-turks-and-caicos-islands.html",
+          "publisher": "Cable & Wireless Communications",
+          "source_tier": "S1",
+          "date": "2015-08-04",
+          "retrieved_at": "2026-10-26T21:19:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telesemana.com/blog/2015/08/05/cable-wireless-lanzo-4g-lte-en-turcas-y-caicos/",
+          "publisher": "TeleSemana",
+          "source_tier": "S2",
+          "date": "2015-08-05",
+          "retrieved_at": "2026-10-26T21:19:10Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden) treated as controller under the equipment-vendor rule, pole third. The US$1.05bn Project Marlin figure is region-wide, not TCI-specific, so no value is recorded. Whether Ericsson still supplies Flow TCI's current RAN/core (including any later 5G or vendor swap) was not confirmed, so still_current null; TeleSemana likely relays the operator release."
+    },
+    {
+      "id": "TCA-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Digicel Turks and Caicos",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2006-07",
+      "still_current": null,
+      "summary": "Digicel, licensed in Turks and Caicos in spring 2006, built and launched its GSM network there with equipment from Ericsson, then described as Digicel Group's exclusive infrastructure provider across its Caribbean markets.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/?p=25468",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2006-04-26",
+          "retrieved_at": "2026-10-26T21:19:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://rcrwireless.com/?p=24465",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2006-07-12",
+          "retrieved_at": "2026-10-26T21:19:10Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Both sources are from one publisher, so not independent corroboration. This is a 2006 GSM build; Digicel's current TCI LTE/core vendor was not found, so the Ericsson relationship may not describe today's network. still_current null; pre-2020 finding."
+    },
+    {
+      "id": "TCA-003",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Digicel Turks and Caicos (Digicel Group), installer and maintainer",
+      "local_actor": "Royal Turks and Caicos Islands Police Force / Turks and Caicos Islands Government (911 Centre)",
+      "builder": "Digicel Turks and Caicos",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-07",
+      "still_current": null,
+      "summary": "Police reported a public CCTV network of over 100 HD cameras on Providenciales feeding a new 911 control room, with Digicel contracted to install and maintain cameras, video-management software, servers and storage; FortisTCI hosts cameras on its poles.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.tcipolice.tc/?p=1968",
+          "publisher": "Royal Turks and Caicos Islands Police Force",
+          "source_tier": "S1",
+          "date": "2018-07-30",
+          "retrieved_at": "2026-10-26T21:19:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.fortistci.com/news/fortistci-partners-with-turks-and-caicos-islands-on-national-cctv-project",
+          "publisher": "FortisTCI",
+          "source_tier": "S4",
+          "date": "2018-06-07",
+          "retrieved_at": "2026-10-26T21:19:10Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Camera and VMS manufacturer not named in either source; Digicel is documented as maintaining the system, so it is treated as controller (Caribbean group, pole third). If the cameras or VMS turn out to be Hikvision/Dahua, pole would change. Police said about US$800,000 had been spent on CCTV and 911 infrastructure combined; that is spend-to-date, not a contract value, so not recorded. FortisTCI release cited as S4 (corporate). Phase-two expansion to Grand Turk was planned; current status unconfirmed."
+    },
+    {
+      "id": "TCA-004",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Turks and Caicos Islands Government / TCI Telecommunications Commission",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-05-02",
+      "still_current": null,
+      "summary": "The government, via the Telecommunications Commission, commissioned Cambridge Management Consulting to prepare an outline business case for a domestic inter-island submarine fibre system, replacing outage-prone microwave links; TCI's international connectivity relies on ARCOS-1.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.cambridgemc.com/laying-a-subsea-cable-to-the-turks-and-caicos-islands",
+          "publisher": "Cambridge Management Consulting",
+          "source_tier": "S4",
+          "date": "2023-05-02",
+          "retrieved_at": "2026-10-26T21:19:10Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/turks-and-caicos-islands-seek-to-build-national-fiber-ring-to-improve-connectivity/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-01-30",
+          "retrieved_at": "2026-10-26T21:19:10Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Planning stage only (consultancy, tier 2); no cable supplier, builder or financier named, so pole null: the controller under the equipment-vendor rule is not yet determined. DCD reports a January 2023 consultant tender for a national fibre ring linked to ARCOS-1; treated as the same domestic-connectivity initiative, which a reviewer should confirm. Cambridge MC page is the consultant's own marketing (S4)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found only a government ICT/data-centre manager job description; no data-centre or AI-campus project"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other layer searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only a July 2026 regional parliamentary AI workshop attended by the TCI technology minister (RTC, opened) with no provider partnership, adoption or sovereign model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current RAN/core vendors for Flow TCI and Digicel TCI (any LTE/5G vendor changes since 2015; check for Huawei/ZTE).",
+    "Whether UK high-risk-vendor rules or any TCI Telecommunications Commission security requirement applies to TCI operators; none found.",
+    "Camera and video-management-system manufacturer for the RTCIPF/911 CCTV network, and whether phase two (Grand Turk and other islands) was built.",
+    "Outcome of the domestic submarine cable / national fibre ring business case: procurement, supplier (check HMN Tech), financier and status.",
+    "Cable and terminal-equipment supplier and any upgrades for the ARCOS-1 landing serving Providenciales."
+  ],
+  "searches_run": 8
+}

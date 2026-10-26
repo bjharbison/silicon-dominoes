@@ -1,0 +1,170 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SXM",
+  "name": "Sint Maarten",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SXM-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia Siemens Networks (now Nokia)",
+      "local_actor": "TelCell St. Maarten (TelEm Group, government-owned)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2011-04",
+      "still_current": null,
+      "summary": "Nokia Siemens Networks won a turnkey contract to supply TelCell, the mobile arm of state-owned TelEm Group, with a 3G/HSPA network covering Flexi Multiradio base stations and core elements (MSC server, gateway nodes, NetAct management).",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rcrwireless.com/20110414/network-infrastructure/nsn-to-deploy-hspa-on-st-maarten",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2011-04-14",
+          "retrieved_at": "2026-10-26T21:19:11Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/3228-st-maarten-operator-to-deploy-3ghspa-mobile-broadband-network.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2011-04-15",
+          "retrieved_at": "2026-10-26T21:19:11Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "NSN was a Finnish-German joint venture, now wholly Nokia (Finland), so pole third. Both trade-press items probably derive from the same vendor release, so independence is weak. Coded at tier 3 (contract); launch was only expected end-April 2011 and not confirmed. Pre-2020 and no evidence on whether TelCell's later LTE layer still uses Nokia, so still_current null."
+    },
+    {
+      "id": "SXM-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "NSW Submarine Cable Systems (a Corning Cable Systems company), turnkey supplier",
+      "local_actor": "SMITCOMS (St. Maarten international carrier); TelEm Group named as SMPR-1 owner in 2024",
+      "builder": "NSW Submarine Cable Systems (Corning Cable Systems)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2003-05",
+      "still_current": null,
+      "summary": "SMITCOMS contracted Corning's NSW Submarine Cable Systems for a turnkey 374 km Puerto Rico to St. Maarten undersea cable. TelEm Group reported repairing its SMPR-1 cable off San Juan in August 2024 after an eight-year outage.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.lightreading.com/business-management/corning-links-puerto-rico-st-maarten",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2003-05-07",
+          "retrieved_at": "2026-10-26T21:19:11Z",
+          "opened": true
+        },
+        {
+          "url": "https://thedailyherald.sx/islands/telem-group-successfully-repairs-smpr-1-cable-after-8-year-hiatus",
+          "publisher": "The Daily Herald (St. Maarten)",
+          "source_tier": "S3",
+          "date": "2024-08-19",
+          "retrieved_at": "2026-10-26T21:19:11Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Vendor claim rests on Light Reading alone; the Daily Herald item confirms SMPR-1 exists and is TelEm-owned but names no vendor, so not treated as corroborating. Linking the 2003 SMITCOMS contract to the cable named SMPR-1 is an inference from route (Puerto Rico to St. Maarten). NSW was German-based but Corning (US) owned it at the time, so pole us; terminal equipment vendor unknown and any later upgrade unknown. Post-repair tests were pending, so still_current null."
+    },
+    {
+      "id": "SXM-003",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Ministry of Justice / St. Maarten Police Force (Camera Surveillance Centre); TelEm Group (connection and maintenance)",
+      "builder": "Security Concepts and Solutions (installer)",
+      "financier": "Government of Sint Maarten",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-02",
+      "still_current": null,
+      "summary": "A government camera surveillance system, launched in Philipsburg in 2016 (phase one about NAf 2 million) with TelEm connection and maintenance, went live with a police-run monitoring centre in early 2019, billed as the start of a smart-city concept.",
+      "announced_value_usd": 1117318,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://thedailyherald.sx/islands/philipsburg-camera-system-inaugurated",
+          "publisher": "The Daily Herald (St. Maarten)",
+          "source_tier": "S3",
+          "date": "2016-07-29",
+          "retrieved_at": "2026-10-26T21:19:11Z",
+          "opened": true
+        },
+        {
+          "url": "https://thedailyherald.sx/islands/etnel-camera-surveillance-means-safety-start-of-smart-city-concept",
+          "publisher": "The Daily Herald (St. Maarten)",
+          "source_tier": "S3",
+          "date": "2019-02-05",
+          "retrieved_at": "2026-10-26T21:19:11Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Neither article names the camera or software manufacturer, so the equipment controller and pole are unknown (null); the operator is domestic. Value converted from NAf 2,000,000 at the fixed peg of NAf 1.79 per USD (phase one only). Both sources are one outlet, so not corroborated. No AI analytics are documented."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search returned only directory listings (an OCIX colocation entry in Philipsburg, Internet Society Pulse); no data-centre or AI-campus project since 2023"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other layer searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found Parliament's Digital Transformation and AI Workgroup (approved Feb 2026, opened) with no named provider, partnership or sovereign model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current RAN/core vendor for TelCell LTE and any 5G plans; whether Nokia remains the supplier.",
+    "Whether Digicel's and Flow's Sint Maarten networks are covered by Digicel's 2017 ZTE LTE deal (opened article names no specific markets).",
+    "Other cables landing on the Dutch side (e.g. SMITCOMS/TelEm systems, Caribbean regional cables) and their suppliers; check for HMN Tech.",
+    "Camera manufacturer and video-management software for the Police Camera Surveillance Centre and any later phases.",
+    "Whether SMPR-1 passed post-repair tests and is in service after August 2024."
+  ],
+  "searches_run": 8
+}

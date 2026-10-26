@@ -1,0 +1,152 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "WLF",
+  "name": "Wallis and Futuna",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T21:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "WLF-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (Nokia group), Tui-Samoa turnkey supplier",
+      "local_actor": "Territory of Wallis and Futuna (Administration supérieure); Samoa Submarine Cable Company (SSCC), commercial operator",
+      "builder": "Alcatel Submarine Networks",
+      "financier": "AFD (EUR 13m non-sovereign bridge loan pending EU grant); European Union; French State",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-11-28",
+      "still_current": null,
+      "summary": "Wallis and Futuna were added as branches of SSCC's Tui-Samoa cable, built by Alcatel Submarine Networks under an October 2016 turnkey contract; the cable reached Wallis on 19 November and Futuna on 28 November 2017, replacing satellite-only capacity.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ssccsamoa.com/the-territory-of-wallis-futuna-and-the-island-of-vanua-levu-fiji-join-the-tui-samoa-cable-family/",
+          "publisher": "Samoa Submarine Cable Company",
+          "source_tier": "S1",
+          "date": "2016-11-25",
+          "retrieved_at": "2026-10-26T21:19:14Z",
+          "opened": true
+        },
+        {
+          "url": "https://outremers360.com/bassin-pacifique-appli/economie-numerique-wallis-et-futuna-raccorde-au-cable-sous-marin-numerique-tui-samoa",
+          "publisher": "Outremers360",
+          "source_tier": "S3",
+          "date": "2016-11-28",
+          "retrieved_at": "2026-10-26T21:19:14Z",
+          "opened": true
+        },
+        {
+          "url": "https://outremers360.com/economie/numerique-en-outre-mer-wallis-et-futuna-raccordee-au-haut-debit",
+          "publisher": "Outremers360",
+          "source_tier": "S3",
+          "date": "2017-11",
+          "retrieved_at": "2026-10-26T21:19:14Z",
+          "opened": true
+        },
+        {
+          "url": "https://outremers360.com/bassin-pacifique-appli/numerique-en-outre-mer-futuna-a-desormais-acces-au-haut-debit",
+          "publisher": "Outremers360",
+          "source_tier": "S3",
+          "date": "2017-11-30",
+          "retrieved_at": "2026-10-26T21:19:14Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.afd.fr/fr/projets/raccorder-wallis-et-futuna-au-cable-sous-marin-de-telecommunications-tui-samoa",
+          "publisher": "Agence française de développement",
+          "source_tier": "S1",
+          "date": "2016-11-16",
+          "retrieved_at": "2026-10-26T21:19:14Z",
+          "opened": true
+        },
+        {
+          "url": "https://amp.rnz.co.nz/article/15f64ac5-5f28-461e-b4c0-70e1179708e3",
+          "publisher": "RNZ",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T21:19:14Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "French/EU controllers are 'third' (PYF/NCL convention). ASN is named as Tui-Samoa supplier by SSCC and Outremers360; neither states separately who built the Wallis/Futuna branch segments, so branch supplier is inferred from the system contract. SSCC release coded S1 as the project company's notice; a reviewer could treat it as S4. Tier 4: landings and connections documented, but contemporaneous sources expected commercial service from spring/March 2018 and activation was not confirmed in this run. AFD (EUR 13m) and Outremers360 (EUR 11m) disagree on the AFD amount; EUR not converted, so USD null. Pre-2020; current status not checked."
+    },
+    {
+      "id": "WLF-002",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Service des Postes et Télécommunications (SPT) de Wallis-et-Futuna, operator",
+      "builder": null,
+      "financier": "AFD (XPF 370m non-sovereign loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2014-09-09",
+      "still_current": null,
+      "summary": "AFD lent XPF 370m from September 2014 to finance the territory's first mobile network, a 3G network upgradeable to 4G run by the SPT and designed to keep local service if satellite links fail; AFD lists the project as completed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.afd.fr/fr/projets/un-reseau-de-telephonie-mobile-pour-la-collectivite-de-wallis-et-futuna",
+          "publisher": "Agence française de développement",
+          "source_tier": "S1",
+          "date": "2014-09-09",
+          "retrieved_at": "2026-10-26T21:19:14Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the radio/core equipment vendor is not named in the opened source, so the equipment-rule controller is unknown; SPT is a territorial service (domestic) but is the operator, not the vendor. Tier 4 (financing closed); AFD's 'completed' status suggests operation but commissioning was not separately confirmed. XPF not converted. Pre-2020; still_current not checked."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one combined search (data centre / video-protection / AI + Wallis-et-Futuna) returned only job notices and unrelated administrative items; no data-centre or AI-campus project"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "the combined search including 'intelligence artificielle' returned no territorial partnership with a model provider and no local model"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "the combined search including vidéoprotection returned no surveillance or e-government AI system or vendor for the territory"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced; one unopened item on the electricity utility EEWF suspending contracts was not AI-related"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio and core equipment vendor of SPT's Manuia mobile network (3G, later 4G), including any Huawei or ZTE equipment.",
+    "Date commercial service over Tui-Samoa started for Wallis and Futuna (expected March/spring 2018) and whether ASN supplied the branch segments; current backup arrangement (satellite provider).",
+    "Content of the 12 Aug 2020 OPT-NC / SPT partnership press kit (office.opt.nc PDF, not opened) for any network or equipment component.",
+    "Reconcile AFD financing figure for the cable (EUR 13m per AFD vs EUR 11m per Outremers360) and total project cost."
+  ],
+  "searches_run": 6
+}

@@ -15,15 +15,7 @@
   "NFK": "Norfolk Island",
   "ESH": "Western Sahara"
  },
- "pending": [
-  "SXM",
-  "TCA",
-  "TKL",
-  "VAT",
-  "VGB",
-  "VIR",
-  "WLF"
- ],
+ "pending": [],
  "done": [
   "IDN",
   "VNM",
@@ -254,6 +246,13 @@
   "REU",
   "SHN",
   "SJM",
-  "SPM"
+  "SPM",
+  "SXM",
+  "TCA",
+  "TKL",
+  "VAT",
+  "VGB",
+  "VIR",
+  "WLF"
  ]
 }
