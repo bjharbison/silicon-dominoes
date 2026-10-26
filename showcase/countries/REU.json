@@ -1,0 +1,253 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "REU",
+  "name": "Réunion",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T17:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "REU-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei (5G radio equipment vendor)",
+      "local_actor": "SRR (Société réunionnaise du radiotéléphone, SFR Réunion)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-07-01",
+      "still_current": null,
+      "summary": "On 1 July 2021 the Prime Minister authorised SRR (SFR Réunion) under France's network-security law to operate Huawei equipment in its Réunion 5G network; the Conseil d'État upheld the authorisations in June 2022 against Orange's challenge.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2022-06-09/460203",
+          "publisher": "Conseil d'État",
+          "source_tier": "S1",
+          "date": "2022-06-09",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.universfreebox.com/?p=527886",
+          "publisher": "Univers Freebox",
+          "source_tier": "S3",
+          "date": "2022-06-14",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://alloforfait.fr/mobile/news/102850-5g-sfr-pourra-deployer-antennes-huawei-la-reunion.html",
+          "publisher": "AlloForfait",
+          "source_tier": "S3",
+          "date": "2022-06-15",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4 because the instrument is a state authorisation (licence-equivalent), not evidence of operation at scale. Duration of the authorisation is not stated in the opened sources; the national regime limits Huawei authorisations in time, so still_current null. Univers Freebox and AlloForfait both appear to relay the same June 2022 ruling, so independence rests partly on the Conseil d'État text itself."
+    },
+    {
+      "id": "REU-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei (equipment vendor refused)",
+      "local_actor": "Orange (La Réunion)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": true,
+      "reversal_of": "Orange's request to operate Huawei equipment in its Réunion 5G network",
+      "reversal_reason": "geopolitical",
+      "date": "2020-07-13",
+      "still_current": null,
+      "summary": "The Prime Minister refused on 13 July 2020 Orange's request under the national-security authorisation regime to use Huawei equipment in its Réunion 5G network, while SRR was later authorised; Orange's competition challenge failed for lack of standing.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2022-06-09/460203",
+          "publisher": "Conseil d'État",
+          "source_tier": "S1",
+          "date": "2022-06-09",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.universfreebox.com/?p=527886",
+          "publisher": "Univers Freebox",
+          "source_tier": "S3",
+          "date": "2022-06-14",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://alloforfait.fr/mobile/news/102850-5g-sfr-pourra-deployer-antennes-huawei-la-reunion.html",
+          "publisher": "AlloForfait",
+          "source_tier": "S3",
+          "date": "2022-06-15",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reason coded geopolitical: the refusal was issued under Article L. 34-11 CPCE, a defence/national-security regime aimed at high-risk vendors. AlloForfait (relaying Capital, not opened) adds that Orange must swap its roughly 430 Huawei 4G antennas in Réunion for Nokia during the 5G rollout at about EUR 43m; single relayed source, so not coded as a separate finding."
+    },
+    {
+      "id": "REU-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (France) and Elettra TLC (Italy), cable suppliers",
+      "local_actor": "SRR, Zeop, Canal+ Telecom and Telco OI (Réunion consortium members)",
+      "builder": "Alcatel Submarine Networks; Elettra TLC",
+      "financier": "European Union; Agence française de développement",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-03",
+      "still_current": null,
+      "summary": "METISS, a roughly 3,200 km submarine cable linking Réunion, Mauritius and Madagascar to Durban, entered service in March 2021; a regional operator consortium financed it, with ASN and Elettra TLC as suppliers, at about EUR 75m.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.osiris.sn/La-construction-du-cable-METISS.html",
+          "publisher": "OSIRIS (Observatoire sur les systèmes d'information, les réseaux et les inforoutes au Sénégal)",
+          "source_tier": "S3",
+          "date": "2018-02-19",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/metiss-cable-system-is-commissioned-and-in-service/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2021-03-22",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.leaderreunion.fr/en/le-cable-metiss-operationnel/",
+          "publisher": "Leader Réunion",
+          "source_tier": "S3",
+          "date": "2021-04-08",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://itweb.africa/article/cable-connecting-sa-mauritius-reunion-madagascar-goes-live/LPwQ57l6kxeqNgkj",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2021-04-15",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Controller convention (as GLP/GUF): REU is coded as its own territory, so French-state, French-company and EU controllers are 'third'; only actors headquartered in Réunion are 'domestic'. Equipment rule: the supplier is the controller; ASN and Elettra are named as suppliers only in the 2018 OSIRIS article, so the pole rests on one opened source while the cable's operation is corroborated. Consortium membership differs by source (ten members at signing vs six financing members in 2021). Service date given as 5 March (Leader Réunion) or 8 March 2021 (SubTel Forum). EUR value not converted, so USD null."
+    },
+    {
+      "id": "REU-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Groupe Océinde, via Omega Data Centers (THD Group subsidiary)",
+      "local_actor": "Omega Data Centers",
+      "builder": null,
+      "financier": "Agence française de développement (EUR 3.55m non-sovereign loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-11-13",
+      "still_current": null,
+      "summary": "Réunion conglomerate Océinde inaugurated Omega 1 in Le Port in November 2024, described as the island's first Tier III data centre: 1 MW, up to 120 racks, about EUR 10m, part-financed by an AFD loan.",
+      "announced_value_usd": 10900000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/oc%C3%A9inde-breaks-ground-on-new-reunion-island-data-center",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-05-15",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://outremers360.com/bassin-indien-appli/la-reunion-inauguration-de-omega-1-premier-data-center-du-territoire",
+          "publisher": "Outremers360",
+          "source_tier": "S3",
+          "date": "2024-11-14",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.afd.fr/fr/projets/la-reunion-omega-data-centers-implante-le-premier-data-center-de-lile",
+          "publisher": "Agence française de développement",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Controller convention (as GLP/GUF): REU is coded as its own territory, so French-state, French-company and EU controllers are 'third'; only actors headquartered in Réunion are 'domestic'. Océinde is described as a local Réunion conglomerate founded in 1970, so owner-operator is coded domestic; HQ not stated explicitly. AFD (French state) is financier and does not set the pole. USD value is DatacenterDynamics' own conversion of EUR 10m (May 2023). Tier 5 for an operational 1 MW facility; small in absolute terms, but national scale for the territory. Inauguration was Wednesday 13 November 2024 per Outremers360 (published 14 November)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found no Région Réunion or departmental partnership with any model provider and no local model; results were national Mistral/Microsoft news only"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found only a 2023 TED contract notice for maintaining a Saint-Paul water utility's video-surveillance system (no vendor, no AI component) and results about Saint-Denis (93), mainland France"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Duration and current status of SRR's July 2021 Huawei 5G authorisation in Réunion, and whether national removal deadlines (reported as 2031/2032) apply to it.",
+    "Primary confirmation that Orange is replacing its Huawei 4G/5G radio network in Réunion with Nokia (reported via Capital: ~430 antennas, ~EUR 43m) and its completion status.",
+    "Radio/core vendors of Free Réunion (Telco OI/Only) and Zeop mobile.",
+    "Second source naming METISS suppliers (ASN, Elettra TLC); suppliers and status of LION/LION2, SAFE and any 2Africa or other new cable landing in Réunion.",
+    "Any municipal or Région CCTV / algorithmic video-surveillance procurement in Réunion and its camera vendor.",
+    "Whether Zeop's announced 2024 data centre is the same project as Omega 1 or a separate facility."
+  ],
+  "searches_run": 9
+}

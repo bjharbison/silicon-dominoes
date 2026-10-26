@@ -1,0 +1,128 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MTQ",
+  "name": "Martinique",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T17:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MTQ-001",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Not stated (cable and terminal-equipment vendor unnamed in opened source)",
+      "local_actor": "Orange",
+      "builder": "Orange Marine",
+      "financier": "Orange",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019",
+      "still_current": null,
+      "summary": "Orange's Kanawa submarine cable, landing at Le Lamentin, Martinique and in French Guiana, was installed by Orange Marine and inaugurated; it interconnects with Americas II and ECFS. Orange's CEO put the investment at EUR 35 million.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://capacitymedia.com/articles/3822993/orange-chief-inaugurates-kanawa-subsea-cable-system",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T17:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://kulturegeek.fr/news-144003/internet-orange-poser-cable-10-terabits-seconde-entre-guyane-martinique",
+          "publisher": "KultureGeek",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T17:03:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null because the opened source names no cable or optical-equipment vendor; under the equipment rule the vendor, not owner Orange (France), sets the pole. GLP-001 (prior run) attributes the Martinique-Guadeloupe optical platform to Infinera; not re-verified here. Article undated; 2019 inferred from its context (late-2018 announcement described as past). Pre-2020, still_current not confirmed. EUR value not converted."
+    },
+    {
+      "id": "MTQ-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Eutelsat (OneWeb constellation)",
+      "local_actor": "Orange",
+      "builder": "Orange",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-06",
+      "still_current": null,
+      "summary": "A teleport at Le Lamentin hosting Eutelsat's OneWeb low-Earth-orbit gateway, with 14 LEO antennas, was inaugurated; Orange built it and operates it for Eutelsat, linking it to the Kanawa, SCF and ECFS cables. No value disclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://outremers360.com/bassin-atlantique-appli/orange-et-eutelsat-inaugurent-la-nouvelle-gateway-eutelsat-en-martinique-un-levier-strategique-pour-la-connectivite-dans-les-caraibes",
+          "publisher": "Outremers360",
+          "source_tier": "S3",
+          "date": "2025-11-07",
+          "retrieved_at": "2026-10-26T17:04:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://acteurspublics.fr/articles/orange-et-eutelsat-font-de-la-martinique-un-hub-numerique-strategique-pour-les-caraibes/",
+          "publisher": "Acteurs Publics",
+          "source_tier": "S3",
+          "date": "2025-11-14",
+          "retrieved_at": "2026-10-26T17:04:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Controller taken as Eutelsat, which runs the OneWeb constellation the gateway serves and on whose behalf Orange operates the site; both are French, so pole third under the French-controller treatment used for GLP and BLM. Antenna and ground-equipment vendors not named. Two opened S3 sources but no S1/S2, so not corroborated."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "two searches returned only directory listings (Datacentermap, Inflect: Middle Caribbean Network site at Le Lamentin, S5, not cited); no dated data-centre or AI-campus project found"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search for Martinique/CTM AI partnerships (Mistral, OpenAI, Microsoft) returned only non-Martinique results"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found State-funded 35 extra videoprotection cameras in Fort-de-France (RCI, Mar 2022, opened) and a Regie Transports de Martinique videosurveillance framework tender (Mar 2026, max EUR 5m, opened); neither names a vendor or AI feature, so not coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core equipment vendors for Orange, SFR Caraibe, Digicel AFG and Free Caraibe in Martinique, including 5G launched 18 February 2025 (opened RCI report names none); any application of the French 2019 L34-11 Huawei authorisation regime in Martinique.",
+    "Cable and optical-equipment vendors for Kanawa's Martinique landing (MTQ-001) and for the CaribbeanConnect cable reported in GLP-003 to land in Martinique.",
+    "Award and vendor of the Regie Transports de Martinique videosurveillance framework (tender March 2026, max EUR 5m) and of Fort-de-France municipal videoprotection.",
+    "Owner and capacity of the Middle Caribbean Network data centre at Le Lamentin listed in directories, and any newer Martinique data-centre projects."
+  ],
+  "searches_run": 9
+}

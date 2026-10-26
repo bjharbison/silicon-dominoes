@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "MTQ",
-  "MYT",
-  "NCL",
-  "NIU",
-  "PRI",
-  "PYF",
-  "REU",
-  "SHN",
-  "SJM",
-  "SPM",
   "SXM",
   "TCA",
   "TKL",
@@ -254,6 +244,16 @@
   "JEY",
   "MAF",
   "MNP",
-  "MSR"
+  "MSR",
+  "MTQ",
+  "MYT",
+  "NCL",
+  "NIU",
+  "PRI",
+  "PYF",
+  "REU",
+  "SHN",
+  "SJM",
+  "SPM"
  ]
 }

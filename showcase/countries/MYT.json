@@ -1,0 +1,210 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MYT",
+  "name": "Mayotte",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T17:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MYT-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Orange (consortium lead; equipment supplier not stated)",
+      "local_actor": "FLY-LION3 consortium (Orange, Société Réunionnaise du Radiotéléphone, Comores Câbles)",
+      "builder": "Orange Marine",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-10-10",
+      "still_current": null,
+      "summary": "FLY-LION3, a roughly 400 km submarine cable laid by Orange Marine between Kaweni (Mamoudzou) and Moroni, Comoros, was commissioned in October 2019 by an Orange-led consortium, linking Mayotte onward to the LION2 and EASSy systems.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://convergedigest.com/fly-lion3-subsea-cable-to-provide/",
+          "publisher": "Converge Digest",
+          "source_tier": "S2",
+          "date": "2020-01-26",
+          "retrieved_at": "2026-10-26T17:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomtv.com/content/orange/the-submarine-cable-fly-lion3-will-allow-the-institut-de-physique-du-globe-de-paris-paris-institute-of-earth-physics-to-listen-to-seismo-volcanic-activity-in-the-mayotte-region-37396",
+          "publisher": "TelecomTV (Orange channel content)",
+          "source_tier": "S4",
+          "date": "2020-01-14",
+          "retrieved_at": "2026-10-26T17:02:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/le-cable-sous-marin-tres-haut-debit-fly-lion3-atterrit-a-mayotte.html",
+          "publisher": "OSIRIS (relays Orange press release)",
+          "source_tier": "S4",
+          "date": "2019-02-25",
+          "retrieved_at": "2026-10-26T17:03:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Controller convention follows GUF/GLP: MYT is coded as its own territory, so French-company controllers are 'third'; only Mahoran actors are domestic. Wet-plant and terminal-equipment supplier not named in any opened source, so documented owner-operator Orange (France) is treated as controller. All three sources trace to Orange announcements; TelecomTV piece sits in Orange's sponsored channel, coded S4, so only one independent S2 source and not corroborated. Pre-2020; current operation not confirmed in this run, so still_current null. Sources differ on landing date (25 Feb vs 12 Mar 2019)."
+    },
+    {
+      "id": "MYT-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Information Technology Hosting SAS (ITH), Mayotte-founded operator",
+      "local_actor": "ITH (founder-president Feyçoil Mouhoussoune)",
+      "builder": null,
+      "financier": "Banque des Territoires (equity, ~44%), AFD and Crédit Agricole Mutuel de La Réunion (loans), FEDER, Conseil départemental de Mayotte",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-10-21",
+      "still_current": null,
+      "summary": "ITH's neutral colocation data centre in Mamoudzou, Mayotte's first designed to Tier III (420 kW, about 76-80 racks), opened in October 2022 after a roughly EUR 10m financing closed in November 2020; about 30 clients were reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.afd.fr/fr/projets/construction-du-premier-data-center-de-mayotte",
+          "publisher": "Agence française de développement",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T17:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.caissedesdepots.fr/sites/default/files/2020-12/CP%20ITH%20DC%20Mayotte%20financement%20AFD%20CACR%20closing%20v6.pdf",
+          "publisher": "Caisse des Dépôts / Banque des Territoires",
+          "source_tier": "S1",
+          "date": "2020-11-24",
+          "retrieved_at": "2026-10-26T17:00:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mayottehebdo.com/?p=42464",
+          "publisher": "Mayotte Hebdo",
+          "source_tier": "S3",
+          "date": "2022-10-24",
+          "retrieved_at": "2026-10-26T17:01:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Building rule: owner-operator ITH is a Mayotte-founded company majority-held by its local founder, so pole domestic; Banque des Territoires (French state group) holds a ~44% minority stake, which is a judgment call reviewers may weigh. Tier 5 because the facility is open with tenants (about 70% of racks taken per Mayotte Hebdo, Oct 2022). Rack count differs by source (76 vs 80). EUR values not converted, so USD null. Post-Chido (Dec 2024) status not checked."
+    },
+    {
+      "id": "MYT-003",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Orange",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-10-18",
+      "still_current": null,
+      "summary": "Orange began offering 5G in Mayotte to business customers from 18 October 2023 and was still the only operator doing so in December 2024; SFR said it intended to follow without giving a date.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mayottehebdo.com/actualite/numerique/une-5g-reservee-pour-le-moment-aux-professionnels",
+          "publisher": "Mayotte Hebdo",
+          "source_tier": "S3",
+          "date": "2024-12-05",
+          "retrieved_at": "2026-10-26T17:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the radio-equipment vendor for Orange's Mayotte 5G network is not named, and the equipment rule makes the vendor the controller. Tier 4 because only a business-only service is documented, not consumer rollout at scale."
+    },
+    {
+      "id": "MYT-004",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Commune de Mamoudzou",
+      "builder": null,
+      "financier": "French State (EUR 1m) and Commune de Mamoudzou",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-03-25",
+      "still_current": null,
+      "summary": "Mamoudzou was expanding a EUR 4.8m municipal video-protection network, with 58 cameras running and a similar number due in a first phase, monitored live by operators for traffic enforcement; no vendor or AI features were reported.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.mayottehebdo.com/actualite/insecurite/mamoudzou-monte-dun-cran-avec-videoprotection/",
+          "publisher": "Mayotte Hebdo",
+          "source_tier": "S3",
+          "date": "2024-03-25",
+          "retrieved_at": "2026-10-26T17:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null because no camera, software or integrator vendor is identified; included as a lead for a vendor check. Tier 4 because the expansion is funded and partly installed. EUR values not converted, so USD null."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found no Mayotte government or departmental partnership with any model provider and no local model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Wet-plant and line-terminal equipment supplier of FLY-LION3 (check for HMN Tech), and whether Mayotte has any route other than FLY-LION3 and LION/LION2.",
+    "Radio/core equipment vendors of Orange, SFR (SRR) and Only (Free/Axian) in Mayotte, including equipment replaced after Cyclone Chido (Dec 2024), and any Huawei kit under France's 2019 high-risk-vendor regime.",
+    "Whether the ITH Tier III data centre survived Cyclone Chido intact and remains operational; any further data-centre projects.",
+    "Camera and software vendor for Mamoudzou's video-protection network and any algorithmic features."
+  ],
+  "searches_run": 9
+}

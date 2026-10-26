@@ -1,0 +1,136 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SPM",
+  "name": "Saint Pierre and Miquelon",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T17:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SPM-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (ASN, France), design-build-maintain contractor",
+      "local_actor": "Collectivité Territoriale de Saint-Pierre-et-Miquelon (contracting authority); Globaltel (operating right)",
+      "builder": "Alcatel Submarine Networks (ASN, France)",
+      "financier": "French State (EUR 5m, digital 'grand emprunt' programme); Caisse des Dépôts (EUR 3m loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-06",
+      "still_current": null,
+      "summary": "The Collectivité contracted ASN in March 2016 to design, build and maintain a three-segment submarine fibre loop linking Saint-Pierre, Miquelon and Newfoundland (Fortune, Lamaline); amended to about EUR 11.3m; laid June 2018; Globaltel holds a five-year operating right.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.jo-spm.fr/doc_jo/DELIB2016-0350.pdf",
+          "publisher": "Journal officiel de Saint-Pierre-et-Miquelon (Conseil exécutif délibération 350/2016)",
+          "source_tier": "S1",
+          "date": "2016-12-20",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://jo-spm.fr/doc_jo/DELIB2017-0293.pdf",
+          "publisher": "Journal officiel de Saint-Pierre-et-Miquelon (Conseil exécutif délibération 293/2017)",
+          "source_tier": "S1",
+          "date": "2017-10-17",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.iedom.fr/IMG/rapport_annuel_iedom_st-pierre-et-miquelon_2021/index-105.html",
+          "publisher": "IEDOM (annual report 2021, Saint-Pierre-et-Miquelon)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: ASN (French) supplies and maintains the system, coded third, consistent with BLM. Tier 4 not 5: opened sources confirm laying in June 2018 but none states commissioning or current service, so still_current null. Contract value EUR 11,308,825.78 after amendment 2 (gazette); IEDOM cites EUR 12m total; not converted to USD. IEDOM report date not shown on page; 2021 edition. The two gazette deliberations are one authority's records, so independence rests on IEDOM."
+    },
+    {
+      "id": "SPM-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "AW2S (France), 4G radio equipment vendor",
+      "local_actor": "Globaltel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-09-14",
+      "still_current": null,
+      "summary": "AW2S said Globaltel, first 4G operator on the archipelago, was installing its LTE radio equipment at 800 MHz after about 18 months of 1800 MHz trials; IEDOM reports Globaltel's 4G network operational since 2019.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.serma-ingenierie.com/?p=29",
+          "publisher": "SERMA Ingénierie / AW2S (vendor marketing)",
+          "source_tier": "S4",
+          "date": "2018-09-14",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.iedom.fr/IMG/rapport_annuel_iedom_st-pierre-et-miquelon_2021/index-105.html",
+          "publisher": "IEDOM (annual report 2021, Saint-Pierre-et-Miquelon)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Vendor attribution rests only on the vendor's own S4 marketing; IEDOM confirms Globaltel 4G operation from 2019 but names no vendor. Tier 4 because the vendor source shows installation starting, not that AW2S equipment carries the whole live network. Whether AW2S is still the RAN/core supplier is unconfirmed. AW2S taken as French (SERMA group); not separately verified this run."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found no data-centre or AI-campus project in Saint-Pierre-et-Miquelon; results were only open-data and IEDOM economic overviews"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one combined search on AI/vidéoprotection returned only national French parliamentary material; no provider partnership or sovereign model for the territory"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on vidéoprotection/AI and one on Huawei/ZTE found no Saint-Pierre-et-Miquelon surveillance or e-government AI system and no PRC vendor involvement"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Confirm the ASN Saint-Pierre/Miquelon/Newfoundland cable was commissioned, is in service, and who operates it after Globaltel's five-year right (from 2016) expired; Canadian onward backhaul provider.",
+    "Radio/core vendors of SPM Telecom (Orange-linked) 2G/4G network, and whether Globaltel's AW2S RAN remains in service; any Huawei/ZTE equipment in either network.",
+    "Whether France's 2019 5G authorisation regime (anti-Huawei law) has been applied to any Saint-Pierre-et-Miquelon sites.",
+    "Any Gendarmerie or Collectivité vidéoprotection system and its camera/VMS vendor."
+  ],
+  "searches_run": 9
+}

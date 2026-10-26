@@ -1,0 +1,350 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SHN",
+  "name": "Saint Helena, Ascension and Tristan da Cunha",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T17:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SHN-001",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Google (Equiano cable system)",
+      "local_actor": "St Helena Government (owns the 1,154 km branch and Ruperts cable landing station)",
+      "builder": null,
+      "financier": "European Union (EDF 11 allocation of EUR 21.5m to the territory)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-10-01",
+      "still_current": null,
+      "summary": "St Helena's branch of Google's Equiano subsea cable, landed at Ruperts in August 2021 under a December 2019 SHG-Google contract, was activated on 1 October 2023, giving the island its first fibre link.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sainthelena.gov.sh/?p=42695",
+          "publisher": "St Helena Government",
+          "source_tier": "S1",
+          "date": "2021-09-01",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/googles-equiano-cable-branch-to-saint-helena-activated",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-10-03",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/google-activates-equiano-cable-in-saint-helena/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2023-10-03",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "SHG owns the branch, but the trunk system and its operation are Google's and no line-terminal equipment vendor was named in any opened source, so Google is treated as controller (pole us); a reviewer may prefer pole null pending the SLTE vendor. The EUR 21.5m EDF allocation funded the wider digital programme, not only the cable, so no value is recorded. Not reconfirmed in service at run date, so still_current null."
+    },
+    {
+      "id": "SHN-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "OneWeb (Eutelsat group)",
+      "local_actor": "St Helena Government (lessor, Horse Point Space Park); Sure South Atlantic (OneWeb local agent, to build and manage)",
+      "builder": "Sure South Atlantic",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-06-28",
+      "still_current": null,
+      "summary": "SHG signed a lease with OneWeb for a LEO satellite ground station at Horse Point, linked to the Equiano landing station; OneWeb also takes about 10% of St Helena's cable capacity, with Sure as local agent.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sainthelena.gov.sh/lease-signed-with-oneweb-for-ground-station-on-st-helena/",
+          "publisher": "St Helena Government",
+          "source_tier": "S1",
+          "date": "2023-06-28",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/oneweb-to-build-satellite-ground-station-on-st-helena-island-in-partnership-with-sure",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-05-03",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 3 as a signed lease; neither source confirms construction or operation, so not coded higher. OneWeb is now part of Eutelsat (France), hence pole third. DCD relies on St Helena Independent reporting, but the SHG release is independent and primary."
+    },
+    {
+      "id": "SHN-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Star Solutions (Canada)",
+      "local_actor": "Sure South Atlantic (Batelco group), St Helena and Ascension",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015-03-04",
+      "still_current": null,
+      "summary": "Batelco announced that Canada-based Star Solutions would build and implement combined GSM/LTE mobile networks for its Sure South Atlantic operations on St Helena and Ascension Island.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://batelco.com/?p=18947",
+          "publisher": "Batelco Group",
+          "source_tier": "S1",
+          "date": "2015-03-04",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pre-2020 finding; whether Star Solutions equipment still runs Sure's St Helena network was not confirmed, so still_current null. The release does not separate radio and core. Ascension service by Sure was reported ending in February 2026 (see SHN-006)."
+    },
+    {
+      "id": "SHN-004",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "St Helena Government (Executive Council; Telecommunications Ordinance 1989)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": true,
+      "reversal_of": "Informal, unlicensed use of Starlink satellite terminals on St Helena",
+      "reversal_reason": "regulatory",
+      "date": "2023-12-06",
+      "still_current": null,
+      "summary": "SHG reminded the public that using Starlink and similar unlicensed terminals breached the exclusive telecoms licence, approved new enforcement regulations, and warned of confiscation and prosecution after a grace period.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sainthelena.gov.sh/?p=57888",
+          "publisher": "St Helena Government",
+          "source_tier": "S1",
+          "date": "2023-12-06",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Reviewer call: coded as a regulatory exclusion of US LEO broadband driven by licence exclusivity, not alignment, so it should not move the map. Instrument_tier 1 is a placeholder because the reversed use had no formal instrument. A March 2025 Communications Bill consultation (SHG, opened) proposes an independent regulator but does not mention Starlink; current legal status of Starlink on St Helena unknown."
+    },
+    {
+      "id": "SHN-005",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "St Helena Government (network owner); Maestro St Helena Ltd (contractor)",
+      "builder": "Maestro St Helena Ltd (Maestro Technologies group, UK)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-11-17",
+      "still_current": null,
+      "summary": "SHG awarded Maestro St Helena the design and build of an island-wide fibre network (passive optical plus wireless for remote areas), for handover to a new operator when Sure's licence expired at end-2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sainthelena.gov.sh/?p=51795",
+          "publisher": "St Helena Government",
+          "source_tier": "S1",
+          "date": "2022-11-30",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the release names the builder but not the equipment vendor, and under the equipment rule the vendor is the controller. Contract value not stated. Which operator won the separate Lot 3 services licence from January 2024 was not established."
+    },
+    {
+      "id": "SHN-006",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Sure South Atlantic (Batelco group, Bahrain)",
+      "local_actor": "Ascension Island Government",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Sure South Atlantic's mobile, fixed-line and broadband service on Ascension Island",
+      "reversal_reason": "commercial",
+      "date": "2026-02-28",
+      "still_current": null,
+      "summary": "Sure South Atlantic said it would cease all telecoms services on Ascension on 28 February 2026, citing an unsustainable market after the island government licensed a second provider and allowed Starlink.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ispreview.co.uk/index.php/2026/02/confusion-on-ascension-island-as-local-broadband-and-mobile-suffers-shakeup.html",
+          "publisher": "ISPreview",
+          "source_tier": "S2",
+          "date": "2026-02-18",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Date is the announced cessation date; the run did not confirm the exit actually took effect. Commercial reason as stated by Sure, so it should not move the map. Scale subnational as Ascension is one constituent island of the territory."
+    },
+    {
+      "id": "SHN-007",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Omnitouch (Australia)",
+      "local_actor": "Ascension Island Government (contracting authority); Ascension Island Mobile brand",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12",
+      "still_current": null,
+      "summary": "Ascension Island Government selected Australian remote-network firm Omnitouch to build and run a new separate 4G network, branded Ascension Island Mobile, planned to launch 1 March 2026 to replace Sure.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ispreview.co.uk/index.php/2026/02/confusion-on-ascension-island-as-local-broadband-and-mobile-suffers-shakeup.html",
+          "publisher": "ISPreview",
+          "source_tier": "S2",
+          "date": "2026-02-18",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 3 assumes the announced partnership is a binding award; the tender was reportedly not publicly advertised and no value or contract text was found. Omnitouch is treated as operator and controller; underlying radio/core vendor unknown. Launch not confirmed."
+    },
+    {
+      "id": "SHN-008",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Ascension Island Government",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-18",
+      "still_current": null,
+      "summary": "Ascension Island Government permits residents to use Starlink satellite broadband, which ISPreview links to Sure's withdrawal; a later ISPreview headline reports Starlink service live on the island.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ispreview.co.uk/index.php/2026/02/confusion-on-ascension-island-as-local-broadband-and-mobile-suffers-shakeup.html",
+          "publisher": "ISPreview",
+          "source_tier": "S2",
+          "date": "2026-02-18",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ispreview.co.uk/index.php/2026/07/spacex-puts-starlink-broadband-live-on-the-british-ascension-island.html",
+          "publisher": "ISPreview",
+          "source_tier": "S2",
+          "date": "2026-07",
+          "retrieved_at": "2026-10-26T17:20:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Date is the report date, not the authorisation date, which was not found. Tier 4 treats government permission as a licence; the July 2026 go-live article could not be fetched, so only its headline is relied on. Both sources are the same publisher."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found only the OneWeb ground station (coded under networks) and the Horse Point Space Park; no data-centre or AI-campus project"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other searches"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no model partnership or government AI adoption surfaced in other searches"
+    },
+    "applications": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no surveillance or e-government AI system surfaced in other searches"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Submarine line-terminal equipment vendor for the St Helena Equiano branch and landing station.",
+    "Which operator won the SHG Lot 3 telecoms services licence from 1 January 2024, and whether Sure's St Helena licence lapsed (an openfalklands S5 lead, not cited, says it expired); equipment vendor of the Maestro-built fibre network.",
+    "Whether the OneWeb Horse Point ground station was completed and is operational.",
+    "Current legal status of Starlink on St Helena after the 2023 enforcement notice and the 2025 Communications Bill.",
+    "Whether Sure actually exited Ascension on 28 February 2026, whether Ascension Island Mobile (Omnitouch) launched, its radio/core vendor, and the formal Starlink authorisation date on Ascension.",
+    "Tristan da Cunha connectivity and vendors were not searched."
+  ],
+  "searches_run": 10
+}

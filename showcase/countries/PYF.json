@@ -1,0 +1,313 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "PYF",
+  "name": "French Polynesia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T17:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "PYF-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel-Lucent (submarine business now Alcatel Submarine Networks), turnkey supplier",
+      "local_actor": "Office des Postes et Télécommunications (OPT) de Polynésie française",
+      "builder": "Alcatel-Lucent",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2008-01-28",
+      "still_current": null,
+      "summary": "OPT awarded Alcatel-Lucent a turnkey contract, about EUR 72.2m, for Honotua, a roughly 4,650 km Tahiti-Hawaii submarine cable plus a 305 km domestic inter-island link, with service targeted for 2010.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/5-alcatel-lucent-wins-tahiti-hawaii-contract/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2008-01-28",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Controller convention follows GUF: French-state, French-company and EU controllers are 'third'; only Polynesian actors (OPT, Onati, TNT) are 'domestic'. Equipment rule makes the supplier Alcatel-Lucent (France; submarine arm now ASN, Nokia group) the controller. Tier 3 because the opened source documents the award only; a 2014 relayed Tahiti Infos item mentions the Honotua landing at Papenoo, implying it was built, but operation was not confirmed here. Pre-2020 and still_current not checked. EUR value not converted, so USD null."
+    },
+    {
+      "id": "PYF-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (Nokia group), turnkey supplier",
+      "local_actor": "Office des Postes et Télécommunications (OPT) de Polynésie française",
+      "builder": "Alcatel Submarine Networks",
+      "financier": "French State (45%); OPT (55%)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-12",
+      "still_current": null,
+      "summary": "OPT signed a turnkey deal with Alcatel Submarine Networks in July 2017 for Natitua, a 2,500 km domestic cable linking Tahiti to Tuamotu and Marquesas islands; costing over XPF 6.5bn, it entered commercial service in December 2018.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.service-public.pf/dgen/inauguration-de-la-station-datterrage-du-cable-natitua/",
+          "publisher": "Direction générale de l'économie numérique, Polynésie française",
+          "source_tier": "S1",
+          "date": "2018-12-07",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.service-public.pf/dgen/tag/natitua/",
+          "publisher": "Direction générale de l'économie numérique, Polynésie française",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/optical-fixed-networks/7204-opt-asn-win-natitua-subsea-cable-deal-in-polynesia.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2017-07-26",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightwaveonline.com/optical-tech/transport/article/16673886/natitua-submarine-cable-system-to-bridge-french-polynesian-digital-divide",
+          "publisher": "Lightwave",
+          "source_tier": "S2",
+          "date": "2017-07-25",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Controller convention follows GUF (French/EU = third; Polynesian = domestic). Equipment rule makes ASN the controller; the trade-press items likely relay one ASN release. Commissioning (tier 5) rests on the territorial DGEN pages, which list the 20 July 2017 OPT-ASN signing and December 2018 commissioning; they do not name the manufacturer themselves. XPF value not converted, so USD null. Current operation not separately checked, so still_current null."
+    },
+    {
+      "id": "PYF-003",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Office des Postes et Télécommunications (OPT); subsidiary Onati assisted deployment",
+      "builder": "OMS Group (partnership with OPT); Alcatel Submarine Networks named as project partner",
+      "financier": "Government of French Polynesia investment subsidy to OPT",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-04-28",
+      "still_current": null,
+      "summary": "Natitua Sud extends OPT's domestic cable to Tubuai and Rurutu (Austral Islands); estimated at XPF 1.5bn with a territorial subsidy, it landed at Toahotu Bay, Tahiti, in April 2023, works due to end May 2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/natitua-sud-cable-lands-in-toahotu-bay/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2023-04-28",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.service-public.pf/dgen/tag/natitua/",
+          "publisher": "Direction générale de l'économie numérique, Polynésie française",
+          "source_tier": "S1",
+          "date": "2020-11-04",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: the opened sources do not state who supplied the cable and terminal equipment. ASN is named only as a project partner and OMS Group as OPT's partner, so the equipment-rule controller is unconfirmed; if ASN supplied it, pole would be third. The two sources evidence different stages (2020 subsidy; 2023 landing). Completion and commissioning not confirmed in this run. XPF value not converted."
+    },
+    {
+      "id": "PYF-004",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SubCom (TE SubCom), turnkey supplier",
+      "local_actor": "Manatua Consortium: OPT (French Polynesia), Avaroa Cables (Cook Islands), Telecom Niue, Samoa Submarine Cable Company",
+      "builder": "SubCom",
+      "financier": "French State and Government of French Polynesia support; OPT share over EUR 20m",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-07",
+      "still_current": null,
+      "summary": "Manatua, about 3,600 km linking Samoa, Niue, the Cook Islands and Tahiti with a Bora Bora branch, was built by SubCom under a contract in force from November 2018 and declared ready for service July 2020; cost about EUR 41.9m.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://oceannews.com/?p=51082",
+          "publisher": "Ocean News & Technology",
+          "source_tier": "S2",
+          "date": "2018-11-20",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://convergedigest.com/manatua-one-polynesia-cable-is-now/",
+          "publisher": "Converge Digest",
+          "source_tier": "S2",
+          "date": "2020-07-22",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://outremers360.com/bassin-pacifique-appli/numerique-manatua-le-cable-sous-marin-transpolynesien-pret-au-service",
+          "publisher": "Outremers360",
+          "source_tier": "S3",
+          "date": "2020-07-24",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment rule makes US-headquartered SubCom the controller (pole us); OPT is a domestic consortium member. Outremers360 noted final negotiations were still needed before full operation at RFS. EUR values not converted, so USD null. Current operation not separately checked."
+    },
+    {
+      "id": "PYF-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia (equipment and technical-support partner)",
+      "local_actor": "Vini (ONATi)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-18",
+      "still_current": null,
+      "summary": "Vini began a phased non-standalone 5G rollout in Papeete and Faaa in August 2025, choosing Nokia as equipment and technical partner and committing over XPF 850m to 5G over five years.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.vini.pf/sites/default/files/2025-08/Dossier%20de%20presse%20-%20Lancement%20de%20la%205G%20Vini.pdf",
+          "publisher": "Vini (Onati)",
+          "source_tier": "S1",
+          "date": "2025-08-18",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia (Finland) is third under the GUF convention. The press kit does not say whether Nokia supplies radio, core or both; the 5G layer is NSA on the existing 4G network, whose vendor is not named. Source tier S1 treats the operator's own launch press kit as a company notice; a reviewer could treat it as corporate communications (S4). Confidence kept low pending a second source. XPF not converted."
+    },
+    {
+      "id": "PYF-006",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Tahiti Nui Telecom (TNT), OPT subsidiary",
+      "local_actor": "Tahiti Nui Telecom",
+      "builder": "DRFortress (Hawaii), partner for build and colocation/cloud services",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2014-08",
+      "still_current": null,
+      "summary": "Tahiti's first data centre, at TNT's Papenoo site beside the Honotua landing, built with Hawaiian partner DRFortress for just under XPF 200m, was finished in August 2014 with first servers being installed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.service-public.pf/dgen/tahiti-infos-le-premier-data-center-de-tahiti-est-concu-comme-une-forteresse/",
+          "publisher": "Tahiti Infos (relayed by DGEN, Polynésie française)",
+          "source_tier": "S3",
+          "date": "2014-08",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.service-public.pf/dgen/mise-en-place-dun-data-center-a-tahiti-nui-telecom/",
+          "publisher": "Direction générale de l'économie numérique, Polynésie française",
+          "source_tier": "S1",
+          "date": "2013-05-22",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://outremers360.com/energies/energies-en-polynesie-un-projet-de-ferme-solaire-de-12-mwc-porte-par-tahiti-nui-telecom",
+          "publisher": "Outremers360",
+          "source_tier": "S3",
+          "date": "2021-02-16",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator rule: TNT (an OPT subsidiary per Outremers360) controls the building, so domestic; DRFortress is recorded as builder/partner. Tier 4 not 5: only completion and first installs are documented. Not corroborated because only the 2014 Tahiti Infos item evidences completion; the 2013 DGEN page is a Council of Ministers plan. Small, pre-2023 and pre-2020; current operation not confirmed. XPF not converted."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only metropolitan French Mistral/government items; no territorial partnership with a model provider and no local model"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on Papeete video surveillance returned only metropolitan French prefecture documents; no Polynesian surveillance or e-government AI system or vendor found"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "TNT's 2021 12 MWc solar-farm partner search was linked to data-centre energy costs but not documented as supplying it; no AI/data-centre-dedicated power project found"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio and core vendors of Vini's 4G network (Ericsson was reported supporting Vini in 2017, unspecified) and of Vodafone Polynésie / Pacific Mobile Telecom; any Huawei or ZTE equipment and its treatment under France's high-risk-vendor regime (if applicable in the territory).",
+    "Cable and terminal-equipment supplier of Natitua Sud (ASN vs OMS Group role) and whether it was commissioned in 2023.",
+    "Whether Honotua remains in service and its upgrade status; any new international cable for Tahiti since 2023.",
+    "The 2014 Tahiti Infos item mentions a separate Chinese-financed solar-farm project at Papenoo; its financier and fate are unchecked.",
+    "Current operation and ownership of the TNT Papenoo data centre and any newer data-centre projects.",
+    "Any police or municipal CCTV procurement in Papeete and its camera vendor."
+  ],
+  "searches_run": 10
+}

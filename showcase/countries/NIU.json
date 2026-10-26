@@ -1,0 +1,246 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "NIU",
+  "name": "Niue",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T17:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "NIU-001",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SubCom (US)",
+      "local_actor": "Telecom Niue Limited (state-owned enterprise), member of the Manatua Consortium",
+      "builder": "SubCom (turnkey supplier)",
+      "financier": "Government of Niue and New Zealand Aid Programme (Telecom Niue share)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-07-22",
+      "still_current": null,
+      "summary": "The SubCom-built Manatua One Polynesia cable gave Niue its first submarine cable, replacing sole reliance on satellite; Telecom Niue holds Niue's share. The Niue government announced local ready-for-service in May 2021 after landing work at Makefu.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.hawaii.edu/piren/2020/08/05/manatua-consortium-confirms-one-polynesia-fibre-cable-ready-to-light-up-the-south-pacific/",
+          "publisher": "Manatua Consortium press release (reposted by University of Hawaii PIREN)",
+          "source_tier": "S1",
+          "date": "2020-07-22",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://tvniue.com/?p=5436",
+          "publisher": "Broadcasting Corporation of Niue (TV Niue)",
+          "source_tier": "S4",
+          "date": "2021-05-13",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://tvniue.com/telecon-niue-ceo-assures-the-manatua-cable-service-will-be-delivered-asap-despite-delays/",
+          "publisher": "Broadcasting Corporation of Niue (TV Niue)",
+          "source_tier": "S4",
+          "date": "2020-07-13",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: SubCom (US) supplied the cable, so pole us; consistent with COK-002. Dates conflict: the July 2020 consortium release lists Niue as live, while TV Niue reports the cable brought ashore at Makefu in December 2020 and government-declared ready for service on 13 May 2021; date set to the consortium RFS. TV Niue is a government-owned broadcaster, treated as S4, so single opened S1 carries medium. Values not stated."
+    },
+    {
+      "id": "NIU-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Alepo (US; digital BSS and PCRF); Blue Arcus (California-based, role not specified)",
+      "local_actor": "Telecom Niue Limited",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-08",
+      "still_current": null,
+      "summary": "Telecom Niue launched 4G in August 2018; vendor Alepo says it supplied the digital BSS with policy control (PCRF) in partnership with California-based Blue Arcus, and reported wide 4G uptake by mid-2019. Radio and core vendors are not named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://alepo.com/telecom-niue-sees-widespread-adoption-of-4g-following-launch-alepo-and-blue-arcus-partnership-credited/",
+          "publisher": "Alepo (vendor release)",
+          "source_tier": "S4",
+          "date": "2019-06-25",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Only vendor marketing evidence. Alepo treated as US-controlled (corporate base assumed from general knowledge, not stated in the opened page) — reviewer should confirm. Covers billing/policy software only, not the RAN or packet core, so this says little about who can switch off the radio network."
+    },
+    {
+      "id": "NIU-003",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Lenovo (ThinkAgile VX hardware, thin clients, laptops); VMware (vSAN/virtualisation software)",
+      "local_actor": "Government of Niue (all 22 departments, plus schools and the bank)",
+      "builder": "Aiscorp (New Zealand integrator)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-05",
+      "still_current": null,
+      "summary": "The Government of Niue consolidated its on-island IT onto a Lenovo ThinkAgile VX hyperconverged cluster running VMware vSAN, installed by NZ integrator Aiscorp, serving all 22 departments plus schools and the bank; older hardware became disaster recovery.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.intelligentcio.com/apac/2022/05/19/putting-a-pacific-island-nation-on-the-digital-map/",
+          "publisher": "Intelligent CIO APAC",
+          "source_tier": "S2",
+          "date": "2022-05-19",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://aiscorp.co.nz/case-studies/putting-a-pacific-island-nation-on-the-digital-map",
+          "publisher": "Aiscorp (integrator case study)",
+          "source_tier": "S4",
+          "date": "2022-11",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole left null: under the IT-equipment rule control is split between Lenovo hardware/firmware (PRC-headquartered) and VMware virtualisation software (US, Broadcom-owned); which dominates is a reviewer call. Coded as facilities because it is the government's primary compute platform, not a data-centre building. Intelligent CIO appears to relay the same case study, so not independent. Install date unknown; date is first report. A Lenovo-hosted case study surfaced in search but was not fetched (PRC vendor site)."
+    },
+    {
+      "id": "NIU-004",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Government of Niue (Ministry of Infrastructure)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": true,
+      "reversal_of": "Unlicensed Starlink use in Niue via terminals bought in New Zealand",
+      "reversal_reason": "regulatory",
+      "date": "2024-05",
+      "still_current": false,
+      "summary": "Niue's government declared Starlink use unauthorised under the Communications Act 1989, cited fines or jail for breaches, and in mid-May 2024 asked SpaceX to geo-block the service; Telecom Niue's CEO backed the restriction.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://tvniue.com/?p=11554",
+          "publisher": "Broadcasting Corporation of Niue (TV Niue)",
+          "source_tier": "S4",
+          "date": "2024-07-26",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://pmn.co.nz/read/pacific-region/niue-starlink-internet-users-could-face-strict-penalties",
+          "publisher": "Pacific Media Network (PMN)",
+          "source_tier": "S3",
+          "date": "2024-08-16",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reason coded regulatory (unlicensed operation under the 1989 Act); national security and protection of the local operator's investment were also cited, so a reviewer may prefer commercial or geopolitical. Tier 2 is a judgement: what was reversed was informal roaming use, not a contract. Superseded by the May 2026 temporary licence (NIU-005), hence still_current false."
+    },
+    {
+      "id": "NIU-005",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Government of Niue (licensing authority)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-12",
+      "still_current": null,
+      "summary": "Niue's government granted Starlink a temporary 12-month Spectrum and Internet Communications Licence as a trial, after regulatory and compliance checks, with monitoring of performance, national security and community impact; Telecom Niue continues separate fibre and site upgrades.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gov.nu/media-releases/government-of-niue-strengthens-national-connectivity-with-temporary-starlink-license",
+          "publisher": "Government of Niue",
+          "source_tier": "S1",
+          "date": "2026-05-12",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4 because a licence was issued; it is temporary (trial to about May 2027), so in-force status at run date not separately confirmed. Single opened S1 carries medium. Reverses the 2024 restriction (NIU-004)."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other searches for a state of under 2,000 people"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only a TV Niue report of an ICT policy consultation naming AI as an emerging technology; no provider partnership, government model adoption or sovereign model"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "two searches (China/Huawei/ZTE ICT assistance; police CCTV) returned nothing specific to Niue"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio access and packet core vendor for Telecom Niue's 2018 4G network and the 2026 new sites at Alofi and Tuapa (check for Huawei/ZTE).",
+    "Resolve the Manatua date conflict for Niue: consortium RFS July 2020 versus TV Niue reports of December 2020 landing at Makefu and May 2021 local RFS.",
+    "Whether the temporary Starlink licence (May 2026) is converted to a permanent licence or lapses around May 2027.",
+    "Funding source for the government Lenovo/VMware cluster and whether any NZ or other donor programme paid for it.",
+    "Content of Niue's ICT Policy and National Digital Strategy once launched, including any AI or cloud provisions."
+  ],
+  "searches_run": 8
+}

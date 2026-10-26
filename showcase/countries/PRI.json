@@ -1,0 +1,179 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "PRI",
+  "name": "Puerto Rico",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T17:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "PRI-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Covered-list manufacturer (Huawei and/or ZTE; not named in filings)",
+      "local_actor": "Puerto Rico Telephone Company, Inc. (PRTC, d/b/a Claro Puerto Rico); US Federal Communications Commission (Secure and Trusted Communications Networks Reimbursement Program)",
+      "builder": null,
+      "financier": "US FCC Secure and Trusted Communications Networks Reimbursement Program",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "PRTC's covered communications equipment: stored fixed-network gear plus about 39,000 wireless routers, USB modems and hotspots, many loaned to customers after Hurricane Maria",
+      "reversal_reason": "geopolitical",
+      "date": "2025-04-03",
+      "still_current": null,
+      "summary": "In FCC rip-and-replace filings, PRTC reports replacing and destroying its covered fixed-network equipment (January 2023), destroying all spare wireless units, and recovering about 69% of customer-loaned units by April 2025, cancelling service for non-returners.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.fcc.gov/sites/default/files/puertorico-apr25.pdf",
+          "publisher": "FCC (PRTC SCRP status update, Form 5640)",
+          "source_tier": "S1",
+          "date": "2025-04-03",
+          "retrieved_at": "2026-10-26T17:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.fcc.gov/sites/default/files/puerto-rico-telephone-company-01042024.pdf",
+          "publisher": "FCC (PRTC SCRP status update, Form 5640)",
+          "source_tier": "S1",
+          "date": "2024-01-04",
+          "retrieved_at": "2026-10-26T17:08:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.fcc.gov/sites/default/files/scrp-puerto-rico-telephone-company-10132022.pdf",
+          "publisher": "FCC (PRTC SCRP status update, Form 5640)",
+          "source_tier": "S1",
+          "date": "2022-10-13",
+          "retrieved_at": "2026-10-26T17:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "The filings say only 'covered communications equipment'; the reimbursement programme covers Huawei and ZTE equipment, so pole prc is inferred from programme scope, not a named vendor. Reversal reason geopolitical (Secure Networks Act national-security exclusion), consistent with ASM-002. All three sources are the same filer's self-reports, so not independent; medium because S1. Tier 5: deployed at scale before removal. Replacement vendors unnamed. Completion not confirmed: PRTC sought a deadline extension in February 2025 and expects not to recover remaining loaned units."
+    },
+    {
+      "id": "PRI-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (Sweden)",
+      "local_actor": "Liberty Latin America (Liberty Puerto Rico)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-08-10",
+      "still_current": null,
+      "summary": "Liberty Latin America expanded 5G in Puerto Rico with an Ericsson-supplied 5G mobile core and IP stack, reported as operational in August 2023.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://bnamericas.com/en/news/liberty-latin-america-expands-5g-in-puerto-rico-with-ericsson",
+          "publisher": "BNamericas",
+          "source_tier": "S2",
+          "date": "2023-08-10",
+          "retrieved_at": "2026-10-26T17:00:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment vendor rule: Ericsson supplies the core, so pole third. Only the article's lead was readable (paywall); RAN vendor not stated. Single source, so low. Liberty Latin America is US-listed but Ericsson, as equipment vendor, sets the pole."
+    },
+    {
+      "id": "PRI-003",
+      "layer": "applications",
+      "pole": "us",
+      "controller": "Axon Enterprise (US)",
+      "local_actor": "Puerto Rico Police Bureau (Department of Public Safety)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-03-19",
+      "still_current": null,
+      "summary": "The Puerto Rico Police Bureau equipped officers across the territory with Axon Body 4 cameras managed through Axon Evidence, extending an earlier rollout of Axon Body 3 and Fleet 3 in-car cameras.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.criticalcommunicationsreview.com/ccr/news/113001/puerto-rico-police-bureau-continues-expansion-of-axon-body-cameras-to-first-responders",
+          "publisher": "Critical Communications Review",
+          "source_tier": "S2",
+          "date": "2024-03-19",
+          "retrieved_at": "2026-10-26T17:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ventasdeseguridad.com/en/2024040224123/news/enterprises/puerto-rico-police-equips-themselves-with-axon-body-cameras.html",
+          "publisher": "Ventas de Seguridad",
+          "source_tier": "S2",
+          "date": "2024-04-02",
+          "retrieved_at": "2026-10-26T17:12:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://securityjournalamericas.com/puerto-rico-police-bureau-axon-cameras/",
+          "publisher": "Security Journal Americas",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T17:16:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Axon is the vendor operating the evidence-management system, so pole us. All three trade-press items appear to relay one Axon announcement, so treated as not independent and not corroborated. No AI features are described; relevance to the AI stack is as a US-controlled police data platform. Camera count and contract value not stated."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "two searches found no data-centre or AI-campus project with a named controller; only a May 2025 governor announcement of DotAI (Nevada smart-technology firm, about USD 15m, Barceloneta) with no data-centre detail"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase surfaced; Puerto Rico is US territory so US export controls do not apply as to a foreign destination"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found a July 2025 GSA request for information on government AI (no provider named, not a contracting process) and an October 2025 PRFAA-Meta announcement on consumer Meta AI availability, which is not government adoption"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Confirm which covered manufacturer (Huawei or ZTE) supplied PRTC's removed equipment, PRTC's SCRP allocation and funds received, and final completion certification after the 2025 extension.",
+    "Whether other Puerto Rico carriers (Liberty, T-Mobile Puerto Rico, Critical Hub, smaller ISPs) held covered equipment or participated in SCRP.",
+    "Radio access network vendors of Claro Puerto Rico, Liberty and T-Mobile in Puerto Rico; Ericsson collaborated on a 2018 Claro 5G demonstration but no commercial award was confirmed.",
+    "Outcome of the July 2025 GSA AI request for information: any resulting award and its model provider.",
+    "Nature of DotAI's Barceloneta operation (May 2025) and any data-centre or AI-campus projects in Puerto Rico with named owner-operators.",
+    "Any licence-plate-recognition or CCTV systems and vendors (a PIP bill seeks to ban mass-surveillance systems; not opened)."
+  ],
+  "searches_run": 10
+}

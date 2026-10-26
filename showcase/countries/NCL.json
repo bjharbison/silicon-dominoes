@@ -1,0 +1,185 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "NCL",
+  "name": "New Caledonia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T17:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "NCL-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (cable system supplier)",
+      "local_actor": "OPT-NC (Office des Postes et Télécommunications de Nouvelle-Calédonie, owner)",
+      "builder": "Alcatel Submarine Networks",
+      "financier": "OPT-NC own funds, French state subsidies, AFD loan",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-08-25",
+      "still_current": null,
+      "summary": "OPT-NC put the Gondwana-2 international cable to Fiji and the Picot-2 domestic loop into service in August 2022; Alcatel Submarine Networks built them under an April 2020 contract, final cost about XPF 4.68bn.",
+      "announced_value_usd": 40700000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://office.opt.nc/fr/media/fichier/mise-en-service-des-cables-sous-marins-gondwana-2-et-picot-2",
+          "publisher": "OPT-NC",
+          "source_tier": "S1",
+          "date": "2022-08-25",
+          "retrieved_at": "2026-10-26T17:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/opt-awards-contracts-to-asn-and-intelia/",
+          "publisher": "Submarine Telecoms Forum",
+          "source_tier": "S2",
+          "date": "2020-04-24",
+          "retrieved_at": "2026-10-26T17:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/optical-fixed-networks/9483-contract-award-for-new-caledonia-fiji-cable-project.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2020-04-28",
+          "retrieved_at": "2026-10-26T17:08:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lemondedudroit.fr/deals/82617-taylor-wessing-assiste-l-office-des-postes-et-telecommunications-de-nouvelle-caledonie-opt-nc-dans-le-cadre-de-la-finalisation-du-projet-de-cable-sous-marin-gondwana-2.html",
+          "publisher": "Le Monde du Droit",
+          "source_tier": "S2",
+          "date": "2022-07-08",
+          "retrieved_at": "2026-10-26T17:03:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://outremers360.com/bassin-pacifique-appli/nouvelle-caledonie-lopt-detaille-le-programme-de-pose-des-nouveaux-cables-sous-marins-gondwana-2-et-picot-2",
+          "publisher": "Outremers360",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T17:03:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Controller convention (as GLP/GUF): NCL is coded as its own territory, so French-state, French-company and EU controllers are 'third'; only Caledonian actors such as OPT-NC are domestic. Equipment rule: ASN (France) is the system supplier, so pole third; owner OPT-NC is domestic. announced_value_usd is the USD figure stated by Developing Telecoms for the initial contract (XPF 4.474bn); the OPT-reported final cost of XPF 4.675bn was not converted, so verified_value_usd null. At commissioning the Île des Pins landing was still pending. Current operation not re-confirmed this run."
+    },
+    {
+      "id": "NCL-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (radio equipment vendor)",
+      "local_actor": "OPT-NC (sole mobile operator); Intelia (local integrator, exclusive Ericsson representative)",
+      "builder": "Intelia",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-04",
+      "still_current": null,
+      "summary": "OPT-NC selected Intelia, Ericsson's exclusive local representative, for a three-year renewal worth about XPF 1.61bn covering 90 new 3G/LTE sites and the end of 2G; Intelia and Ericsson reportedly held about 20 OPT deals since 2010.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/opt-awards-contracts-to-asn-and-intelia/",
+          "publisher": "Submarine Telecoms Forum",
+          "source_tier": "S2",
+          "date": "2020-04-24",
+          "retrieved_at": "2026-10-26T17:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/optical-fixed-networks/9483-contract-award-for-new-caledonia-fiji-cable-project.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2020-04-28",
+          "retrieved_at": "2026-10-26T17:08:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Corroborated set false: both trade-press items appeared within four days and almost certainly relay the same OPT-NC announcement, so they are not treated as independent, and they disagree on status (SubTel: selected/renewed; Developing Telecoms: planned renewal, value undisclosed). Ericsson (Sweden) is inferred as the RAN vendor from Intelia's exclusive-representative role; no source states the installed base is wholly Ericsson. EUR/XPF value not converted. Long-running relationship suggests an operational installed base (tier 5), but this run documents only the 2020 contract."
+    },
+    {
+      "id": "NCL-003",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Ville de Nouméa",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05-27",
+      "still_current": null,
+      "summary": "Nouméa's council authorised the mayor to sign a three-year framework contract, about XPF 30m a year, to supply and install 51 video-protection cameras; neither the awardee nor the camera manufacturer is named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.noumea.nc/sites/default/files/publications/delib-2025-654-autorisant-signature-marche-bons-commande-fourniture-travaux-installat.pdf",
+          "publisher": "Ville de Nouméa",
+          "source_tier": "S1",
+          "date": "2025-05-27",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: no vendor or camera manufacturer is identified, and the system is not described as AI-enabled. Tier 2 rather than 3 because the deliberation authorises signature with an unnamed bidder, so no counterparty is documented. XPF value not converted."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search returned only aggregator listings of small Nouméa colocation sites (Citius, DSP DC1/DC2) and a government investment release not opened; no large data-centre or AI-campus project identified"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search returned only general Mistral/Microsoft news; no New Caledonia government partnership with a model provider and no local model found"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Whether OPT-NC's current radio and core network is wholly Ericsson, and the vendor for its private 5G pilots for industry (2024).",
+    "Awardee and camera manufacturer of Nouméa's 2025 video-protection framework contract, and vendors of the Dumbéa licence-plate-reading cameras and other Grand Nouméa CCTV.",
+    "Equipment supplier and current status of Gondwana-1 (Nouméa-Sydney, 2008), and whether the Île des Pins Picot-2 landing was completed.",
+    "Contents of the New Caledonia government release on roughly XPF 9bn of private investment (gouv.nc PDF, not opened) for any data-centre component."
+  ],
+  "searches_run": 8
+}

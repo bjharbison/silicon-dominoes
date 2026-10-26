@@ -1,0 +1,205 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SJM",
+  "name": "Svalbard and Jan Mayen",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T17:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SJM-001",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Tyco Telecommunications (now SubCom), cable system supplier",
+      "local_actor": "Subsidiary of the Norwegian Space Centre (now Space Norway, state-owned), system owner",
+      "builder": "Tyco Telecommunications (now SubCom)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2003-04",
+      "still_current": true,
+      "summary": "In April 2003 a Norwegian Space Centre subsidiary chose Tyco Telecommunications to build the two-segment Svalbard Undersea Cable System to mainland Norway; both cables remain in service and will become backups after 2028.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://convergedigest.com/tyco-to-build-undersea-cable-for/?amp=1",
+          "publisher": "Converge Digest",
+          "source_tier": "S2",
+          "date": "2003-04-21",
+          "retrieved_at": "2026-10-26T17:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.marineinsight.com/worlds-northernmost-subsea-cable-system-arctic-way-launched/",
+          "publisher": "Marine Insight",
+          "source_tier": "S2",
+          "date": "2025-02-17",
+          "retrieved_at": "2026-10-26T17:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment rule: the wet-plant supplier sets the pole; Tyco Telecommunications (US, the predecessor of SubCom) is named only by Converge Digest, so supplier attribution is single-sourced and not corroborated. Marine Insight confirms the two existing cables are in use and will remain as backups, hence still_current true. Date is the contract award; the in-service date was not confirmed this run. Owner Space Norway is Norwegian state-owned; under the GLP/GUF convention a parent-state controller would be third, but the equipment rule makes the US vendor the controller here."
+    },
+    {
+      "id": "SJM-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SubCom (cable system supplier)",
+      "local_actor": "Space Norway (owned by the Norwegian Ministry of Trade, Industry and Fisheries)",
+      "builder": "SubCom",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-02",
+      "still_current": null,
+      "summary": "Space Norway signed SubCom for full supply of Arctic Way, a roughly 2,350 km repeatered trunk-and-branch cable landing at Bodø, Jan Mayen and Longyearbyen, covering survey, design, manufacture and installation; service is planned for 2028.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.marineinsight.com/worlds-northernmost-subsea-cable-system-arctic-way-launched/",
+          "publisher": "Marine Insight",
+          "source_tier": "S2",
+          "date": "2025-02-17",
+          "retrieved_at": "2026-10-26T17:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.static3.wirenet.org/news-categories/item/1559-subcom-chosen-as-the-cable-supplier-for-system-to-be-located-in-the-arctic-circle",
+          "publisher": "Wire Association International (Wire Journal News)",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T17:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment rule: SubCom (US) manufactures and installs the wet plant, so pole us; Space Norway is the owner. Tier 3 (signed supply contract); no source confirms construction or financing, and no value was disclosed. Both trade-press items likely derive from the same SubCom/Space Norway announcement, so independence is uncertain; reviewer call. The wirenet page carries no date."
+    },
+    {
+      "id": "SJM-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Ciena (optical line and transponder equipment supplier)",
+      "local_actor": "Space Norway (state-owned)",
+      "builder": "Ciena",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-10",
+      "still_current": null,
+      "summary": "Space Norway gave Ciena a turnkey contract to upgrade its legacy Svalbard cable systems and light the new Arctic Way cable, using Ciena's 6500 platform with WaveLogic 6 Extreme transponders and Navigator network-control software.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomtv.com/content/access-evolution/space-norway-selects-ciena-to-upgrade-its-legacy-svalbard-system-and-power-new-arctic-way-subsea-cable-56453/",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": "2026-10-13",
+          "retrieved_at": "2026-10-26T17:05:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment rule: Ciena (US) supplies the terminal optical equipment and network-control software, which carry firmware and updates, so pole us. Tier 3 for the signed turnkey contract; value undisclosed. Single opened S2 source, likely relaying a vendor release, so not corroborated."
+    },
+    {
+      "id": "SJM-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei (SingleRAN LTE equipment)",
+      "local_actor": "Telenor Norway",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2011-06",
+      "still_current": null,
+      "summary": "Telenor Norway switched on an LTE site in Longyearbyen, billed as the world's northernmost, built on Huawei's SingleRAN LTE equipment designed for extreme Arctic cold.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://convergedigest.com/telenor-deploys-lte-in-svalbard/?amp=1",
+          "publisher": "Converge Digest",
+          "source_tier": "S2",
+          "date": "2011-07-07",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://rcrwireless.com/20110628/network-infrastructure/huawei-and-telenor-jointly-launch-the-northernmost-lte-site-in-the-world-2",
+          "publisher": "RCR Wireless (Huawei press release)",
+          "source_tier": "S4",
+          "date": "2011-06-28",
+          "retrieved_at": "2026-10-26T17:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment rule: Huawei RAN, so pole prc. RCR reprints a Huawei press release (S4 corporate marketing), so only one independent S2 source. Pre-2020 and still_current unknown: Telenor decided in December 2019 to move Norway's RAN to Ericsson over a four-to-five-year modernisation (TechRadar, opened), but no source names Svalbard, so no Svalbard reversal is coded; reviewer call."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found only the Arctic World Archive/Piql archival data vault coverage; no data-centre or AI-campus project with an identifiable owner-operator"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced in other searches"
+    },
+    "models": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search within budget; population of about 2,500 and no territorial government AI programme surfaced"
+    },
+    "applications": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search within budget; no surveillance or e-government AI vendor surfaced in other searches"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Whether Telenor's 2019-2024 nationwide Huawei-to-Ericsson RAN swap covered Longyearbyen, and who supplies Telenor's current 4G/5G radio on Svalbard (the 2019 Longyearbyen 5G pilot press release names no vendor).",
+    "Radio vendor for Telia (and any other operator) on Svalbard and for any service on Jan Mayen.",
+    "Arctic Way financing (state budget allocation and amount) and whether marine installation has started; High North News coverage of the urgency case redirected to a different host and was not followed.",
+    "Norway's Svalbard satellite earth-station regulation and Nkom supervision reports (the regulation PDF URL was too long to fetch), including a reported historic fine on KSAT for illegal satellite communication (tu.no, fetch failed); enforcement items would be pole null.",
+    "Any Chinese ground-station or satellite-data activity on Svalbard (including at China's Yellow River research station); not researched this run."
+  ],
+  "searches_run": 8
+}
