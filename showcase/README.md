@@ -14,6 +14,20 @@ the whole world on it.
 > has not yet reviewed. Nothing here is a DEPTH-N score, and nothing here is ingested by the
 > pipeline.
 
+## Where DEPTH-N fits
+
+DEPTH-N is the project's measurement framework (`project-knowledge/01-methodology-depth-n.md`
+on `main`). It scores each of the seven stack layers — Power, Facilities, Silicon, Networks,
+Cloud, Models, Applications — on five dimensions: **D**ependence (whose kit is installed),
+**E**xit cost (what leaving would cost), **P**rovenance & control (who can watch and who can
+switch it off, kept separate), **T**rajectory (which way new commitments point, by instrument
+tier) and **H**eadroom (how much the country can absorb). The **N** is the network: scores are
+derived from dyadic exposure edges, not entered per country.
+
+The showcase borrows only the smallest pieces of that — the seven layers, the instrument-tier
+weights and the Goodhart cap on announcements — to colour a map from draft findings. It has
+no D, E, P or H values and no exposure edges, which is why nothing here is a DEPTH-N score.
+
 ## What you see
 
 | View | What it shows |
