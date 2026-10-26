@@ -1,0 +1,255 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SUR",
+  "name": "Suriname",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T01:19:15Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SUR-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telesur (state-owned operator); Government of Suriname (borrower)",
+      "builder": "Huawei (subcontractor Multi Electric Systems)",
+      "financier": "Export-Import Bank of China (preferential buyer's credit, about USD 98.5m)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-12-20",
+      "still_current": null,
+      "summary": "Huawei built Telesur's National Broadband Network, replacing copper with fibre-to-the-curb and fibre-to-the-home, under a USD 115.8m contract financed about 85% by a China Exim loan; completed December 2019, loan later in arrears.",
+      "announced_value_usd": 115800000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/55437",
+          "publisher": "AidData (William & Mary) Chinese development finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:38Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Huawei is the equipment vendor, so pole prc. Tier 5 on reported completion. USD 115.8m is the contract value as reported by AidData, not a filing. Loan distress (Exim drew on reserve account Feb 2022; arrears reported 2023) is financial, not a reversal. Completed just before 2020 and not reconfirmed as current. Single opened S2 source, so low."
+    },
+    {
+      "id": "SUR-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telesur (state-owned operator, borrower)",
+      "builder": null,
+      "financier": "Bank of China, Shenzhen Branch (USD 25m buyer's credit, Sinosure-insured)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016-12",
+      "still_current": null,
+      "summary": "A USD 25m Bank of China buyer's credit financed 85% of two Huawei supply-and-install contracts for Telesur's 3G and 4G wireless rollout, implemented 2014 to 2016; the loan was reportedly repaid in full.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/97696",
+          "publisher": "AidData (William & Mary) Chinese development finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:38Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Huawei as RAN/equipment vendor, so pole prc. Tier 5 on reported completion. Contract value not stated (loan covered 85%), so announced value null. Pre-2020 and not reconfirmed; Telesur's 5G (live in Paramaribo since Dec 2019 per Developing Telecoms) had no vendor named, so whether Huawei still supplies the mobile network is unconfirmed."
+    },
+    {
+      "id": "SUR-003",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "National Security Directorate (DNVS), Command Center; Ministry of Justice and Police",
+      "builder": "Huawei; Radio, Film & TV Design and Research Institute (DRFT)",
+      "financier": "Government of China via Ministry of Commerce (EUR 10m grant Phase 1; USD 5m Phase 2)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-02-21",
+      "still_current": null,
+      "summary": "China-funded Safe City (Road Monitoring) project: Huawei-contracted Phase 1 put about 300 CCTV cameras in Paramaribo with a DNVS command centre (Dec 2018); Phase 2 added cameras in Wanica and other districts, 378 cameras by 2022.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/70442",
+          "publisher": "AidData (William & Mary) Chinese development finance dataset",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:38Z",
+          "opened": true
+        },
+        {
+          "url": "https://keynews.sr/china-maakt-met-geste-van-15-miljoen-usd-safe-city-3-mogelijk",
+          "publisher": "Key News Suriname",
+          "source_tier": "S3",
+          "date": "2023-01-21",
+          "retrieved_at": "2026-10-26T01:17:38Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole prc on AidData naming Huawei as contractor; Key News confirms the Chinese-aid project and earlier phases but names no vendor, so corroboration of the controller is not met. Grants not converted (EUR 10m). Planned licence-plate and sound recording per AidData. A rights group lawsuit challenges its legal basis; not a reversal."
+    },
+    {
+      "id": "SUR-004",
+      "layer": "applications",
+      "pole": null,
+      "controller": "Not stated in Phase 3 reporting (AidData lists Huawei as contractor for all phases)",
+      "local_actor": "Ministry of Justice and Police; Korps Politie Suriname",
+      "builder": "China Railway Construction Electrification Bureau Group",
+      "financier": "Government of China (USD 15m grant, China-aid fund)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-27",
+      "still_current": true,
+      "summary": "Safe City 3, a USD 15m Chinese grant signed January 2023, broke ground January 2025 for about 650 cameras at 100 sites; by February 2026 police said cameras with licence-plate recognition were active across most districts.",
+      "announced_value_usd": 15000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://keynews.sr/china-maakt-met-geste-van-15-miljoen-usd-safe-city-3-mogelijk",
+          "publisher": "Key News Suriname",
+          "source_tier": "S3",
+          "date": "2023-01-21",
+          "retrieved_at": "2026-10-26T01:17:38Z",
+          "opened": true
+        },
+        {
+          "url": "https://keynews.sr/suriname-breidt-safe-city-project-uit-met-nieuwe-monitoringssystemen",
+          "publisher": "Key News Suriname",
+          "source_tier": "S3",
+          "date": "2025-01-19",
+          "retrieved_at": "2026-10-26T01:18:21Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.srherald.com/suriname/2026/02/27/safe-city-3-landelijk-uitgerold-cameras-actief-in-districten/",
+          "publisher": "Suriname Herald",
+          "source_tier": "S3",
+          "date": "2026-02-27",
+          "retrieved_at": "2026-10-26T01:17:38Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.surinametimes.com/artikel/government-expands-safe-city-project-to-nickerie-district",
+          "publisher": "Times of Suriname",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:38Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: no Phase 3 source names the camera or platform vendor; the named builder is a Chinese civil contractor, which does not set the pole. Likely prc if Huawei continued from Phases 1-2, which a reviewer should check. Tier 5 on police statement of nationwide active cameras. All opened sources S3, none S1/S2, so not corroborated."
+    },
+    {
+      "id": "SUR-005",
+      "layer": "networks",
+      "pole": null,
+      "controller": "EllaLink (Caribbean Gateway cable system owner); equipment vendor not stated",
+      "local_actor": "Telesur",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05-08",
+      "still_current": null,
+      "summary": "State operator Telesur signed a letter of intent to connect Suriname to EllaLink's planned Caribbean Gateway subsea cable, linking to Europe via EllaLink's transatlantic system with onward links to Brazil and the US.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/telesur-joins-ellalink-caribbean-gateway-project/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2026-05-08",
+          "retrieved_at": "2026-10-26T01:17:38Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-business/operator-news/20220-telesur-signs-on-to-ellalink-caribbean-subsea-cable-project.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-05-08",
+          "retrieved_at": "2026-10-26T01:18:21Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null because the cable rule keys on the equipment vendor, which is not stated; EllaLink is a European-based operator, so third is plausible. Tier 1 letter of intent only. Both reports appeared the same day and likely derive from one release; reviewer may discount corroboration."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found only Telesur's commercial Datasur hosting service; no data-centre or AI-campus project since 2023 surfaced"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases, deployments or licence decisions surfaced in facilities, models or network searches; no dedicated search"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search for government AI partnerships with frontier providers returned nothing on Suriname"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Vendor of Safe City 3 cameras and command-centre platform (Huawei, Hikvision, Dahua?) and who operates it; Ministry of Justice and Police or government (CBB/NII) releases not checked.",
+    "Current RAN/core vendor for Telesur 4G/5G and for Digicel Suriname (Ericsson supplied Digicel sites in 2008; not reconfirmed).",
+    "Status of the Huawei-built National Broadband Network loan restructuring with China Exim (arrears about USD 107m in 2023) and any effect on Huawei's role.",
+    "Outcome of the Foundation December 8, 1982 lawsuit challenging the legal basis of Safe City surveillance.",
+    "Supplier of the EllaLink Caribbean Gateway and of the Suriname-Guyana Submarine Cable System; any HMN Tech involvement not checked.",
+    "Telesur's announced partnership with Liberty Networks (seen in search results, not opened)."
+  ],
+  "searches_run": 10
+}

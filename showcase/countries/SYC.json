@@ -1,0 +1,262 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SYC",
+  "name": "Seychelles",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T01:18:10Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SYC-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Cable and Wireless Seychelles (CWS)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-06-26",
+      "still_current": null,
+      "summary": "Cable and Wireless Seychelles launched the country's first commercial 5G network in June 2020 with Huawei as its named technology partner, initially covering Victoria, Roche Caiman and the airport, with island-wide coverage promised.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nation.sc/articles/5188/cws-brings-seychelles-in-the-age-of-5g",
+          "publisher": "Seychelles Nation",
+          "source_tier": "S3",
+          "date": "2020-06-27",
+          "retrieved_at": "2026-10-26T01:17:03Z",
+          "opened": true
+        },
+        {
+          "url": "https://itweb.africa/article/seychelles-operator-cws-launches-5g-network/KWEBbvyZQBK7mRjO",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2020-07-06",
+          "retrieved_at": "2026-10-26T01:17:21Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telesemana.com/blog/2020/07/06/cable-wireless-comercializara-5g-desde-este-mes-en-seychelles/",
+          "publisher": "TeleSemana",
+          "source_tier": "S2",
+          "date": "2020-07-06",
+          "retrieved_at": "2026-10-26T01:17:21Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Huawei named as the 5G partner/vendor, so pole prc; neither source splits RAN from core, so the extent of Huawei supply (RAN only, or RAN and core) is unconfirmed. Tier 5 for a launched commercial service. Seychelles Nation is a state-owned paper but reports on a private operator here; treated as S3. Not reconfirmed as current for 2026."
+    },
+    {
+      "id": "SYC-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "HMN Tech (formerly Huawei Marine Networks)",
+      "local_actor": "Seychelles Cable Systems Co. Ltd (SCS)",
+      "builder": "HMN Tech (formerly Huawei Marine Networks)",
+      "financier": "Seychelles Cable Systems (self-financed, per Seychelles Nation)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-11-16",
+      "still_current": null,
+      "summary": "The Seychelles branch of the PEACE submarine cable, built by Huawei Marine Networks under a 2018 contract, landed at Ile Perseverance in March 2022 and began carrying traffic in November 2022, giving Seychelles its second international cable.",
+      "announced_value_usd": 20000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nation.sc/articles/16417/seychelles-achieves-security-in-international-connectivity-peace-operational-in-seychelles",
+          "publisher": "Seychelles Nation",
+          "source_tier": "S3",
+          "date": "2023-01-06",
+          "retrieved_at": "2026-10-26T01:17:21Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/peace-lands-in-seychelles/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2022-03",
+          "retrieved_at": "2026-10-26T01:17:21Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Cable equipment vendor is the controller, so pole prc. Only Seychelles Nation names Huawei Marine Networks as builder; SubTel Forum confirms landing and the USD 20m project cost but names no supplier, so the vendor claim is single-sourced and corroborated is false. Value is the reported project cost, not verified. Ownership of the wider PEACE system not researched."
+    },
+    {
+      "id": "SYC-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Airtel Seychelles (Bharti Airtel)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2014-11-26",
+      "still_current": null,
+      "summary": "Airtel Seychelles contracted Ericsson to deploy its 4G LTE radio network, including RBS 6000 multi-standard base stations and upgrades to existing 2G/3G access software, with a first phase sized for 10,000 LTE subscribers.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/wireless-networks/5590-airtel-deploys-4g-lte-network-in-seychelles-with-ericsson.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2014-11-26",
+          "retrieved_at": "2026-10-26T01:17:47Z",
+          "opened": true
+        },
+        {
+          "url": "https://microwavejournal.com/articles/23447-airtel-deploys-4glte-network-in-seychelles-with-ericsson",
+          "publisher": "Microwave Journal",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:47Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson (Sweden), so pole third. RAN only; core vendor not stated. Tier 3 for a signed vendor deal; go-live not confirmed in the opened source. Pre-2020 and not reconfirmed as current, so the map halves it. Single opened source."
+    },
+    {
+      "id": "SYC-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Cable and Wireless Seychelles (Seychellois-owned since 2019)",
+      "local_actor": "Cable and Wireless Seychelles (CWS)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-11",
+      "still_current": null,
+      "summary": "Cable and Wireless Seychelles inaugurated a new data centre at Bon Espoir in November 2024; size, tier, value, builder and equipment vendors were not reported in the accessible text.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://nation.sc/articles/24190/cable--wireless-inaugurates-state-of-the-art-data-centre",
+          "publisher": "Seychelles Nation",
+          "source_tier": "S3",
+          "date": "2024-11-22",
+          "retrieved_at": "2026-10-26T01:17:03Z",
+          "opened": true
+        },
+        {
+          "url": "https://sbc.sc/news/major-acquisition-group-of-seychellois-entrepeneurs-buys-cable-wireless-seychelles/",
+          "publisher": "Seychelles Broadcasting Corporation",
+          "source_tier": "S3",
+          "date": "2019-11-07",
+          "retrieved_at": "2026-10-26T01:17:47Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator controls buildings, so pole domestic: SBC reports CWS was bought from Liberty Global in 2019 for USD 130m by Seychellois investors (CWS Investment), financed by a TDB-led bank group. The SBC source supports ownership only, not the facility. Nation article paywalled after its first paragraph; not an AI campus as far as reported."
+    },
+    {
+      "id": "SYC-005",
+      "layer": "applications",
+      "pole": null,
+      "controller": "Not stated (camera vendor not named)",
+      "local_actor": "Seychelles Police Force; Ministry of Local Government and Community Affairs (Anse Royale district)",
+      "builder": null,
+      "financier": "Embassy of the People's Republic of China (SCR 100,000 donation); Ministry of Local Government (about SCR 52,000)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12-04",
+      "still_current": null,
+      "summary": "The Chinese Embassy donated about USD 7,200 towards 22 CCTV cameras for Anse Royale district, co-funded by the local government ministry, with installation planned for 2025 and footage used by the Police Communications Centre.",
+      "announced_value_usd": 11486,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://seychellesnewsagency.com/articles/21639/seychelles-to-boost-safety-with-22-new-cctv-cameras-for-anse-royale-with-chinese-aid",
+          "publisher": "Seychelles News Agency",
+          "source_tier": "S4",
+          "date": "2024-12-04",
+          "retrieved_at": "2026-10-26T01:17:03Z",
+          "opened": true
+        },
+        {
+          "url": "https://nation.sc/articles/20274/chinese-embassy-donates-to-anse-royale-district",
+          "publisher": "Seychelles Nation",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:03Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: camera vendor not named, and a PRC donor does not set the controller. Tier 4 on funds handed over (financing closed); installation not confirmed. USD values are the source's own conversion of SCR 159,000 total. Seychelles News Agency is the state news agency, treated as S4. One district, so municipal."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in facilities or models searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "2 searches found only a Cabinet-approved AI in Education Framework 2026-2030 developed with World Bank support, naming no model provider; not a model adoption"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "CWS 5G: does Huawei supply RAN only or also the core, and is the 4G/5G network still Huawei as of 2026?",
+    "Airtel Seychelles current RAN/core vendor (2014 Ericsson LTE deal not reconfirmed; any later 5G vendor) and the substance and date of a reported Ericsson data-centre deal (Capacity link redirected, not opened) was completed.",
+    "Independent confirmation that HMN Tech built the PEACE Seychelles branch, and the vendor of the earlier SEAS cable (AfDB/EIB co-financed).",
+    "Vendor of police CCTV cameras (Anse Royale and any Victoria/national scheme) and who runs the Police Communications Centre system; AidData projects 103874 and 56716 seen but not opened.",
+    "Bon Espoir data centre: size, tier, builder, IT vendors; any government (DICT) data centre project.",
+    "Which AI tools are used in the World Bank-supported AI Teacher Coach and Student Tutor pilots (education framework 2026-2030)."
+  ],
+  "searches_run": 9
+}

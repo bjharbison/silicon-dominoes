@@ -1,0 +1,279 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "TCD",
+  "name": "Chad",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T01:19:22Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "TCD-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Government of Chad (ICT ministry / ADETIC); SOTEL Tchad (state operator)",
+      "builder": "Huawei (EPC contractor)",
+      "financier": "Export-Import Bank of China (concessional loan, RMB 1.316bn) plus PRC MOFCOM grant (RMB 170m)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-07-07",
+      "still_current": null,
+      "summary": "Huawei is EPC contractor for Chad's China Exim-financed ICT modernisation project (PMICE): 1,200 km south-east fibre backbone, 50 km N'Djamena loop and SOTEL Tchad upgrade with 200 2G/3G/4G sites and a new core; groundbreaking July 2020.",
+      "announced_value_usd": 189000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://china.aiddata.org/projects/92012",
+          "publisher": "AidData (William & Mary), China Development Finance dataset",
+          "source_tier": "S2",
+          "date": "2019-06-26",
+          "retrieved_at": "2026-10-26T01:17:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/91949",
+          "publisher": "AidData (William & Mary), China Development Finance dataset",
+          "source_tier": "S2",
+          "date": "2019-06-26",
+          "retrieved_at": "2026-10-26T01:17:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/tchad-lancement-d-un-projet-d-infrastructures-tic-d-envergure-symbole-de-la.html",
+          "publisher": "OSIRIS (relaying Huawei)",
+          "source_tier": "S4",
+          "date": "2020-07-09",
+          "retrieved_at": "2026-10-26T01:17:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/le-tchad-bientot-dote-d-un-centre-de-donnees-national-en-cours-de-finalisation.html",
+          "publisher": "Agence Ecofin via OSIRIS",
+          "source_tier": "S2",
+          "date": "2025-01-10",
+          "retrieved_at": "2026-10-26T01:18:20Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/chad-invests-175m-in-national-data-center-and-networks/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-01-06",
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Huawei is the equipment vendor/EPC, so pole prc; core-network upgrade of the state operator is the most control-relevant component. Tier 4: loan signed 2019, ratified April 2020, construction started July 2020. No completion confirmed: DCD (Jan 2026) reports a EUR 175m 'Phase I' start covering the same components, unclear whether a relaunch or new phase. USD 189m is the loan at signing and covers the whole bundle including the data centre (TCD-002). OSIRIS 2020 piece cites Huawei as source, so S4. Corroboration of Huawei's role rests on AidData and Ecofin; AidData compiles from secondary reports, so a reviewer may discount independence.",
+      "bundle_id": "TCD-B1"
+    },
+    {
+      "id": "TCD-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Government of Chad (Centre national des données numériques)",
+      "local_actor": "Ministry of Communications and Digital Economy; ADETIC; ANSICE",
+      "builder": "Huawei",
+      "financier": "Export-Import Bank of China (part of PMICE loan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-01-07",
+      "still_current": null,
+      "summary": "Chad's 500 m2 national digital data centre, built by Huawei under the China-financed PMICE, was nearly complete in January 2025; in February 2026 Techso Group was engaged to audit and certify it before launch.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.osiris.sn/le-tchad-bientot-dote-d-un-centre-de-donnees-national-en-cours-de-finalisation.html",
+          "publisher": "Agence Ecofin via OSIRIS",
+          "source_tier": "S2",
+          "date": "2025-01-10",
+          "retrieved_at": "2026-10-26T01:18:20Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/le-tchad-travaille-a-securiser-son-data-center-national-avant-son-lancement.html",
+          "publisher": "Agence Ecofin via OSIRIS",
+          "source_tier": "S2",
+          "date": "2026-02-06",
+          "retrieved_at": "2026-10-26T01:18:20Z",
+          "opened": true
+        },
+        {
+          "url": "https://china.aiddata.org/projects/92012",
+          "publisher": "AidData (William & Mary), China Development Finance dataset",
+          "source_tier": "S2",
+          "date": "2019-06-26",
+          "retrieved_at": "2026-10-26T01:17:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/chad-invests-175m-in-national-data-center-and-networks/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-01-06",
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.digitalbusiness.africa/tchad-le-centre-national-des-donnees-numeriques-affiche-fiere-allure-la-crainte-de-la-chine/",
+          "publisher": "Digital Business Africa",
+          "source_tier": "S2",
+          "date": "2025-01-08",
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator is the Chadian state, so pole domestic under the building rule; Huawei is builder and China Exim financier. IT equipment inside is likely Huawei-supplied (would be prc under the equipment rule) but not confirmed. Tier 4: built, not yet operational as of Feb 2026. Not an AI campus; no accelerators reported. Digital Business Africa headline mentions fears about China but the page body did not load. Value carried on TCD-001.",
+      "bundle_id": "TCD-B1"
+    },
+    {
+      "id": "TCD-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "ARCEP Tchad (telecom regulator), licensing",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07",
+      "still_current": true,
+      "summary": "Chad's regulator ARCEP signed Starlink's operating authorisation on 13 March 2025 and Starlink launched consumer and business satellite broadband nationwide in early July 2025; the government later complained about its prices and service quality.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fr.apanews.net/news/tchad-les-services-de-starlink-desormais-operationnels/",
+          "publisher": "APA News",
+          "source_tier": "S3",
+          "date": "2025-07-04",
+          "retrieved_at": "2026-10-26T01:17:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://spaceinafrica.com/2025/07/03/starlink-launches-services-in-chad-expanding-african-connectivity-network/",
+          "publisher": "Space in Africa",
+          "source_tier": "S2",
+          "date": "2025-07-03",
+          "retrieved_at": "2026-10-26T01:17:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.osiris.sn/numerique-le-tchad-prospecte-aupres-des-geants-americains-de-la-tech.html",
+          "publisher": "OSIRIS",
+          "source_tier": "S3",
+          "date": "2026-06-01",
+          "retrieved_at": "2026-10-26T01:17:27Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "SpaceX controls constellation and terminals, so pole us. Tier 5 as a live commercial service; subscriber numbers unknown. still_current true because a June 2026 report describes the government discussing Starlink pricing and service quality with the company in Washington, implying continued operation. Other reports date a licence approval to Nov 2024; APA gives 13 March 2025 for the signed authorisation."
+    },
+    {
+      "id": "TCD-004",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Ministry of Public Security; Centre National des Opérations de Vidéosurveillance (CNOV)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-12",
+      "still_current": null,
+      "summary": "Chad's security minister met a Huawei delegation in June 2025 to explore its solutions for an N'Djamena intelligent video-surveillance network across seven zones, run by a national video-surveillance centre; a feasibility study is to precede deployment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.alwihdainfo.com/securite-intelligente-le-tchad-mise-sur-la-technologie-pour-proteger-sa-capitale-a143032/",
+          "publisher": "Alwihda Info",
+          "source_tier": "S3",
+          "date": "2025-08-01",
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.wearetech.africa/fr/fils/actualites/tech/tchad-n-djamena-explore-la-voie-d-un-reseau-de-surveillance-intelligent",
+          "publisher": "We Are Tech Africa",
+          "source_tier": "S2",
+          "date": "2025-04-22",
+          "retrieved_at": "2026-10-26T01:18:20Z",
+          "opened": true
+        },
+        {
+          "url": "https://tchadinfos.com/2025/07/28/tchad-creation-dun-centre-national-de-videosurveillance-pour-renforcer-la-securite-publique/",
+          "publisher": "Tchadinfos",
+          "source_tier": "S3",
+          "date": "2025-07-28",
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: exploratory meeting only, no contract or feasibility study reported. Only Alwihda names Huawei; We Are Tech Africa (April 2025) describes the same project with unnamed international experts, so Huawei's role is single-sourced. Pole prc on the named prospective vendor; would be null if another vendor is selected."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or deployments surfaced in data-centre, PMICE or AI searches; national data centre not reported as AI-capable"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found an AI directorate (Oct 2025), AI strategy work and a May 2026 Washington mission with US firms (InterSystems, Starlink, Cybastion, Vertiv, 19Labs), but no model-provider partnership or sovereign model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Has PMICE (Huawei/China Exim) been completed? Status of the 1,200 km backbone and SOTEL core upgrade; is the EUR 175m 'Phase I' reported by DCD in Jan 2026 the same project relaunched or a new phase, and who finances it?",
+    "Who supplies RAN and core for Airtel Tchad and Moov Africa Tchad? Not found; Airtel announced a ~USD 90m network plan in 2025 with no vendor named.",
+    "Equipment vendor on the EU/AfDB-financed Trans-Saharan backbone section (contractor CGPS/LORYNE) not named.",
+    "Is the national data centre operational yet, who operates it (ADETIC?), and whose IT/cloud stack runs inside it? Digital Business Africa Jan 2025 article on 'fears about China' not readable.",
+    "Did the N'Djamena video-surveillance project (CNOV) reach feasibility or contract stage, and with which vendor?",
+    "Government-Huawei digital talent agreement (seen in search results, We Are Tech Africa) not opened or coded; training only, but date and terms unverified.",
+    "Any follow-up agreements from the May 2026 Washington mission (Cybastion, Vertiv, InterSystems)?"
+  ],
+  "searches_run": 8
+}

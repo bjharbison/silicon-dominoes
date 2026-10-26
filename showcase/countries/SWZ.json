@@ -1,0 +1,213 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SWZ",
+  "name": "Eswatini",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T01:19:15Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SWZ-001",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "US Department of State (Clean Network programme)",
+      "local_actor": "Ministry of Information, Communications and Technology",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-01-15",
+      "still_current": false,
+      "summary": "Eswatini and the US issued a joint statement making Eswatini the first African country in the US Clean Network programme, committing to a common approach to 5G network security aimed at excluding Huawei-type vendors.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://dig.watch/updates/eswatini-first-african-country-join-us-coalition-against-huawei-5g",
+          "publisher": "Digital Watch Observatory",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:40Z",
+          "opened": true
+        },
+        {
+          "url": "https://osiris.sn/L-Eswatini-premier-pays-d-Afrique.html",
+          "publisher": "OSIRIS (relaying Agence Ecofin)",
+          "source_tier": "S3",
+          "date": "2021-01-19",
+          "retrieved_at": "2026-10-26T01:17:40Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ecofinagency.com/telecom/1901-42265-eswatini-becomes-first-african-country-to-join-us-coalition-against-huawei-5g",
+          "publisher": "Agence Ecofin",
+          "source_tier": "S2",
+          "date": "2021-01-19",
+          "retrieved_at": "2026-10-26T01:18:30Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 1: non-binding joint statement, no procurement or exclusion order. still_current false because SWZ-002 withdrew it within days. OSIRIS republishes Ecofin, so independence from Digital Watch is partial; both trace to the same joint statement. Ecofin page failed to load."
+    },
+    {
+      "id": "SWZ-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "US Department of State (Clean Network programme)",
+      "local_actor": "Ministry of Information, Communications and Technology",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": true,
+      "reversal_of": "SWZ-001 (Clean Network joint statement, 15 Jan 2021)",
+      "reversal_reason": "geopolitical",
+      "date": "2021-01-24",
+      "still_current": null,
+      "summary": "Days after joining, the ICT ministry withdrew the Clean Network joint statement, citing legitimacy problems with its approval process and saying development should weigh equally with security; Huawei said it had received no notice.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://connectingafrica.com/regulation/eswatini-backs-out-of-trump-s-clean-network",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2021-01-27",
+          "retrieved_at": "2026-10-26T01:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://itweb.co.za/article/eswatini-makes-us-clean-network-u-turn-after-trump-ouster/LPp6VMrDbaZvDKQz",
+          "publisher": "ITWeb",
+          "source_tier": "S2",
+          "date": "2021-01-27",
+          "retrieved_at": "2026-10-26T01:18:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://osiris.sn/L-Eswatini-fait-marche-arriere-et.html",
+          "publisher": "OSIRIS (relaying Agence Ecofin)",
+          "source_tier": "S3",
+          "date": "2021-02-02",
+          "retrieved_at": "2026-10-26T01:17:40Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reversal of a US-pole Tier 1 commitment. Stated reason is procedural (approval legitimacy); coded geopolitical on the ministry's own security-versus-development framing and timing after the US transition, which is inference and a reviewer call (regulatory is the alternative). Not reconfirmed for 2026."
+    },
+    {
+      "id": "SWZ-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "MTN Eswatini (Swazi MTN)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2016",
+      "still_current": null,
+      "summary": "A profile of MTN Eswatini reports a 2016 network revamp with Huawei, around the operator's July 2016 LTE launch on 1800 MHz.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://btw.media/en/swazi-mtn-ltd-powers-eswatinis-mobile-and-digital-growth",
+          "publisher": "BTW Media",
+          "source_tier": "S3",
+          "date": "2025-08-28",
+          "retrieved_at": "2026-10-26T01:17:40Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened general-press profile, one line on Huawei with no contract detail; whether RAN, core or both is not stated. Tier 5 assumes the revamp was completed and operated. Pre-2020 and not reconfirmed as current, so the map should halve it. Needs an S1/S2 source."
+    },
+    {
+      "id": "SWZ-004",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Google (with Stardust Inc and SHE Powers Africa, UAE)",
+      "local_actor": "Ministry of ICT",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-26",
+      "still_current": null,
+      "summary": "On the UNGA sidelines, Eswatini's ICT minister signed an MOU with Google, Stardust Inc and UAE-based SHE Powers Africa to build skills in AI and cybersecurity and improve government services; no model, platform or value named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.eswatiniobserver.com/king-launches-groundbreaking-google-stardust-uae-partnership/",
+          "publisher": "Eswatini Observer",
+          "source_tier": "S3",
+          "date": "2025-09-27",
+          "retrieved_at": "2026-10-26T01:18:30Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole us on Google as the only named technology provider; Stardust's nationality not verified and the UAE party is a women's organisation. Skills/innovation MOU, not model adoption, so it may belong outside the models layer. Single opened local source."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "only the RSTP National Data Centre (Tier III, Mbabane) surfaced; its page gives no opening date, operator detail, builder, financier or vendor, and nothing since 2023 was found in 1 search"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search for safe-city/CCTV systems returned no Eswatini results"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "MTN Eswatini and Eswatini Mobile RAN/core vendors: confirm the 2016 Huawei revamp from an S1/S2 source and identify vendors for Eswatini Mobile's 2023 125-site rollout (Ecofin, no vendor named).",
+    "EPTC/national fibre backbone vendor and any submarine-cable transit arrangements not established.",
+    "RSTP National Data Centre: opening date, operator, builder, financier and equipment vendor (Taiwan or Indian funding possible but not shown).",
+    "April 2026 Eswatini-UAE AI partnership with an unnamed UAE government-owned AI company: identify the company (G42/Presight?) and instrument; only aggregator coverage (africa-press.net, S5) was found, so not coded.",
+    "Whether the Clean Network withdrawal (Jan 2021) was ever revisited, and whether any Huawei/ZTE exclusion exists despite Taiwan recognition.",
+    "Any police CCTV or safe-city system and its vendor; none found."
+  ],
+  "searches_run": 10
+}

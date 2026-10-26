@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "STP",
-  "SUR",
-  "SVK",
-  "SVN",
-  "SWZ",
-  "SYC",
-  "SYR",
-  "TCD",
-  "TKM",
-  "TLS",
   "TON",
   "TTO",
   "TUV",
@@ -254,6 +244,16 @@
   "SLE",
   "SMR",
   "SOM",
-  "SSD"
+  "SSD",
+  "STP",
+  "SUR",
+  "SVK",
+  "SVN",
+  "SWZ",
+  "SYC",
+  "SYR",
+  "TCD",
+  "TKM",
+  "TLS"
  ]
 }

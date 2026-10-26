@@ -1,0 +1,240 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "TKM",
+  "name": "Turkmenistan",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T01:18:43Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "TKM-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Altyn Asyr (state mobile operator); Turkmenaragatnashyk Agency",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-11",
+      "still_current": null,
+      "summary": "Turkmenaragatnashyk was authorised to contract Huawei for equipment, software, licences, installation and support to expand the Altyn Asyr mobile network in Ahal, Balkan and Dashoguz provinces and Ashgabat.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.trend.az/business/it/3510856.html",
+          "publisher": "Trend News Agency",
+          "source_tier": "S3",
+          "date": "2021-11-11",
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://progres.online/economy/huawei-in-turkmenistan-what-are-the-concerns/",
+          "publisher": "Progres.Online",
+          "source_tier": "S3",
+          "date": "2023-03-28",
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Huawei supplies the RAN equipment and support, so pole prc. Tier 3 on a named-counterparty contract; value undisclosed and signature not independently confirmed (Trend relays Turkmen state agency TDH, a government announcement). Two opened S3 sources but no S1/S2, so not corroborated. Covers four of six regions, coded national."
+    },
+    {
+      "id": "TKM-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia Solutions and Networks (Finland)",
+      "local_actor": "Altyn Asyr (state mobile operator); Turkmenaragatnashyk Agency",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-11",
+      "still_current": null,
+      "summary": "In the same 2021 decision, Nokia was to supply equipment, software, licences, installation and support for the Altyn Asyr mobile network in Lebap and Mary provinces.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.trend.az/business/it/3510856.html",
+          "publisher": "Trend News Agency",
+          "source_tier": "S3",
+          "date": "2021-11-11",
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia (Finland) as equipment vendor, so pole third. Tier 3 on a named-counterparty contract authorisation; value undisclosed. Single opened S3 source relaying Turkmen state agency TDH. Two provinces, so subnational."
+    },
+    {
+      "id": "TKM-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Turkmentelecom and Ashgabat city telephone network (GTS); Transport and Communications Agency",
+      "builder": null,
+      "financier": "Islamic Development Bank",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-08-17",
+      "still_current": null,
+      "summary": "An Islamic Development Bank-financed contract to expand the fixed telephone network of Turkmentelecom and Ashgabat's GTS was awarded to Huawei, covering equipment, software, licences, installation and technical support across provinces and Ashgabat.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.isdb.org/project-procurement/tenders/2023/contract-award/expansion-fixed-telephone-network-turkmentelecom-and-gts-contract-award",
+          "publisher": "Islamic Development Bank",
+          "source_tier": "S1",
+          "date": "2023-08-17",
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/huawei-to-support-turkmenistans-fixed-line-telecoms-expansion/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://progres.online/economy/huawei-in-turkmenistan-what-are-the-concerns/",
+          "publisher": "Progres.Online",
+          "source_tier": "S3",
+          "date": "2023-03-28",
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Huawei as equipment vendor, so pole prc. Tier 3 on IsDB contract award notice naming Huawei; value not stated on the notice. DCD reported the January decree (year not shown, likely 2023) before award. IsDB is the financier and does not set the pole."
+    },
+    {
+      "id": "TKM-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Turkmen authorities (operator not named; likely Altyn Asyr)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-30",
+      "still_current": null,
+      "summary": "Authorities launched a 5G mobile network in the new city of Arkadag, deployed with Huawei, following a 4G+ rollout there in February 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.trend.az/business/4064090.html",
+          "publisher": "Trend News Agency",
+          "source_tier": "S3",
+          "date": "2025-06-30",
+          "retrieved_at": "2026-10-26T01:17:55Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Huawei as equipment vendor, so pole prc. Tier 5 as a launched live service, but in one showcase city only, so municipal. Single opened S3 source citing official statements. A later 5G launch in Awaza (Oct 2026, Trend) named no vendor and is not coded."
+    },
+    {
+      "id": "TKM-005",
+      "layer": "models",
+      "pole": "us",
+      "controller": "OpenAI",
+      "local_actor": "Ministry of Education of Turkmenistan",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-05",
+      "still_current": null,
+      "summary": "A Turkmen education ministry delegation met OpenAI at the Education World Forum in London to discuss ChatGPT Edu and possible pilots at selected academic institutions; no pilot or agreement was confirmed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://timesca.com/turkmenistan-looks-to-chatgpt-edu-as-it-modernizes-education/",
+          "publisher": "The Times of Central Asia",
+          "source_tier": "S3",
+          "date": "2026-05-22",
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Service used via OpenAI, so pole us; base_model null as no model weights are held nationally. Coded tier 1 as the weakest instrument (talks only, below a signed MOU). Report relays Turkmen state outlet Golden Age."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "2 searches; only a 2023 report of ongoing Huawei data-centre discussions and a crypto-mining data-centre plan headline, no contracted facility found"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase surfaced in facilities or models searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "2 searches; Huawei reportedly supplies CCTV/smart-city solutions but no specific safe-city deployment, buyer or date found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Has the 2021 Altyn Asyr Huawei/Nokia contract been signed and delivered? Contract values unknown.",
+    "Value of the IsDB-financed Huawei fixed-line contract (IsDB project documents may state it).",
+    "Equipment vendor for the October 2026 Awaza 5G launch and any national 5G rollout plan.",
+    "Starlink: April 2026 raids and confiscations of terminals reported (Eurasianet, citing IPHR/TIHR); not coded as enforcement against an unlicensed service is not a reversal of adoption. Reviewer to decide.",
+    "Vendor of internet filtering/DPI used by Turkmentelecom and of CCTV in Ashgabat and Arkadag smart city.",
+    "Turkmenistan's plan for cryptocurrency-mining data centres (Turkmen state site headline, not opened): status and controller.",
+    "UNDP support for a national AI strategy (seen in search, not opened)."
+  ],
+  "searches_run": 9
+}

@@ -1,0 +1,264 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SYR",
+  "name": "Syria",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T01:19:11Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SYR-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Syriatel and MTN Syria (the two mobile operators)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-26",
+      "still_current": null,
+      "summary": "Reuters, relayed by Al-Monitor and Enab Baladi, reported that Huawei supplies over half of the infrastructure of both Syrian mobile operators, Syriatel and MTN, citing an operator source and documents.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.al-monitor.com/originals/2026/02/exclusive-washington-presses-syria-shift-chinese-telecom-systems",
+          "publisher": "Al-Monitor (Reuters)",
+          "source_tier": "S3",
+          "date": "2026-02-26",
+          "retrieved_at": "2026-10-26T01:17:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://english.enabbaladi.net/archives/2026/02/washington-pressures-damascus-to-reconsider-purchase-of-chinese-equipment/?so=related",
+          "publisher": "Enab Baladi",
+          "source_tier": "S3",
+          "date": "2026-02-26",
+          "retrieved_at": "2026-10-26T01:17:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.arabnews.pk/node/2634586",
+          "publisher": "Arab News Pakistan",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:30Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Huawei as equipment vendor, so pole prc. Tier 5 for an installed, operating base; the >50% share is Reuters' figure, not split into RAN/core. Both opened reports relay a single Reuters story, so not independent, and neither is S1/S2. still_current null: reported as current in Feb 2026, not reconfirmed since. Original install dates unknown (likely pre-2011)."
+    },
+    {
+      "id": "SYR-002",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Not established (equipment vendor not named); stc Group (Saudi Arabia) is the contracted deployer",
+      "local_actor": "Ministry of Communications and Information Technology (SilkLink project)",
+      "builder": "stc Group (Saudi Arabia)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-08",
+      "still_current": null,
+      "summary": "Saudi operator stc said it won a competitive tender and signed a contract for Syria's SilkLink project: a 4,500 km national fibre network, data centres and international subsea cable landing stations, valued at SAR 3bn (about USD 800m).",
+      "announced_value_usd": 800000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://developingtelecoms.com/telecom-technology/optical-fixed-networks/19731-stc-wins-bid-for-syrias-us-800m-silklink-fibre-project.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2026-02-09",
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://meatechwatch.com/2026/02/12/stc-lands-800m-syrian-telecom-infrastructure-project-contract/",
+          "publisher": "MEA Tech Watch",
+          "source_tier": "S2",
+          "date": "2026-02-12",
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.bolsamania.com/noticias_print/empresas/economia-el-fondo-soberano-de-siria-adjudica-a-la-saudi-stc-el-despliegue-de-4500-kilometros-de-fibra-por-675-millones--21634318.html",
+          "publisher": "Bolsamania (Europa Press)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: under the equipment-vendor rule the controller is whoever supplies the fibre/transmission gear, which no source names. If stc operates the network it would be third (Gulf); not documented. USD 800m is the project valuation in SAR 3bn; stc did not disclose its contract value, and an unopened headline gives 675m (currency unclear). Both opened reports likely derive from stc's own disclosure; reviewer may discount corroboration. Data-centre and cable-landing components not coded separately (no detail)."
+    },
+    {
+      "id": "SYR-003",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Not specified (owner-operator of planned national data centre unstated)",
+      "local_actor": "Ministry of Communications and Technology",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05-31",
+      "still_current": null,
+      "summary": "Saudi telco GO (Etihad Atheeb) signed a non-binding MoU with Syria's communications ministry to help provide a national data centre and support e-government, AI, IoT and cloud services; value and site undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/saudi-arabian-telco-go-signs-data-center-mou-with-syrian-government/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07-28",
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.argaam.com/en/article/articledetail/id/1818090",
+          "publisher": "Argaam",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:04Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: MoU explicitly not legally enforceable. Pole null because owner-operator is unstated; GO would make it third if it owns or operates the facility. No follow-up contract found."
+    },
+    {
+      "id": "SYR-004",
+      "layer": "models",
+      "pole": "us",
+      "controller": "aiXplain (US-headquartered, San Jose; MENA HQ Riyadh)",
+      "local_actor": "Syriatel",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-09",
+      "still_current": null,
+      "summary": "Syriatel and aiXplain signed an MoU, ratified at LEAP in Riyadh, to deploy Arabic-first AI infrastructure across Syriatel's network; engineers already use an aiXplain coding tool while a customer-service agent is in development.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.aixplain.com/posts/syriatel-first-ai-infrastructure-syria-aixplain",
+          "publisher": "aiXplain",
+          "source_tier": "S4",
+          "date": "2026-09-02",
+          "retrieved_at": "2026-10-26T01:17:30Z",
+          "opened": true
+        },
+        {
+          "url": "https://enterpriseam.com/ai/2026/10/08/can-ai-help-syria-recover-from-civil-war/",
+          "publisher": "Enterprise AM",
+          "source_tier": "S2",
+          "date": "2026-10-08",
+          "retrieved_at": "2026-10-26T01:18:36Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole us on aiXplain's headquarters as the service provider; aiXplain is an agent/orchestration platform and the underlying model(s) are not named, so base_model null and the true model controller may differ. Tier 2 as a partial pilot (coding tool in use). Only one opened S3+ source; vendor page is S4."
+    },
+    {
+      "id": "SYR-005",
+      "layer": "models",
+      "pole": "us",
+      "controller": "aiXplain (US-headquartered)",
+      "local_actor": "Ministry of Communications and Information Technology",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02",
+      "still_current": null,
+      "summary": "Syria's communications ministry signed an MoU with aiXplain covering AI infrastructure, data security and training, according to an October 2026 feature.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://enterpriseam.com/ai/2026/10/08/can-ai-help-syria-recover-from-civil-war/",
+          "publisher": "Enterprise AM",
+          "source_tier": "S2",
+          "date": "2026-10-08",
+          "retrieved_at": "2026-10-26T01:18:36Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1 MoU; no model or deployment named, so base_model null. Month inferred from the article's 'February' in context of 2026. Same provider as SYR-004; possibly the framework under which the Syriatel deal sits."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchases or deployments found; Enterprise AM (Oct 2026) reports a GPU shortage and US export-control over-compliance"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found no reputable reporting on safe-city or surveillance systems or vendors in Syria"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Whether Syria proceeded with, or dropped, the Chinese purchase for telecom towers and ISP infrastructure after US State Department pressure in Feb 2026 (would be a reversal, reason geopolitical, if dropped).",
+    "Equipment vendor(s) Zain chooses for the former MTN Syria network (licence awarded 30 Jun/1 Jul 2026, USD 747m bid, 25 years, 25% state stake; brand launch Q1 2027): Huawei retention or rip-and-replace?",
+    "SilkLink (stc): fibre/transmission equipment vendor, who operates the network, data-centre locations, and the 800m vs 675m value discrepancy.",
+    "RAN/core split of Huawei's >50% share at Syriatel and MTN, and the other vendor(s) supplying the remainder; Syrian Telecom (fixed) vendors not checked.",
+    "Starlink is not licensed (Jul 2026); regulator declared unlicensed terminals illegal Jan 2025 and a licensing study is reportedly under way. Watch for a licence.",
+    "Wafa Telecom licence (new national mobile player) seen in search results, not opened: vendor and status.",
+    "Surveillance / safe-city systems under the post-2024 government (and legacy Assad-era systems) not established.",
+    "MTN exit (announced 2021, formal 2026) was attributed to judicial guardianship and regulatory demands, not sanctions; not coded since MTN is an operator, not an equipment controller."
+  ],
+  "searches_run": 8
+}

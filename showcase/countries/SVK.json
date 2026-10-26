@@ -1,0 +1,330 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SVK",
+  "name": "Slovakia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T01:18:46Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SVK-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "O2 Slovakia",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2021-04-22",
+      "still_current": null,
+      "summary": "O2 Slovakia chose Ericsson as its sole 5G radio access network vendor after a multi-vendor pilot in Bratislava, with the deal also modernising its existing 2G, 3G and 4G radio network. Value undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/news/3/2021/o2-slovakia-opts-for-ericsson-as-5g-partner",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2021-04-22",
+          "retrieved_at": "2026-10-26T01:17:03Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.5gradar.com/news/o2-slovakia-selects-ericsson-as-sole-commercial-5g-partner",
+          "publisher": "5G Radar",
+          "source_tier": "S2",
+          "date": "2021-04-23",
+          "retrieved_at": "2026-10-26T01:17:03Z",
+          "opened": true
+        },
+        {
+          "url": "https://spectator.sme.sk/business/c/slovak-operators-are-preparing-for-5g",
+          "publisher": "The Slovak Spectator",
+          "source_tier": "S3",
+          "date": "2020-10-08",
+          "retrieved_at": "2026-10-26T01:17:03Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden) is the equipment vendor, so pole third. RAN only; core vendor not stated. Tier 3 as a vendor selection with named counterparty but no value. The Spectator (Oct 2020) confirms Huawei and ZTE were among the four vendors O2 trialled, so Huawei was considered and not chosen; no exclusion is documented. 5G Radar likely relays Ericsson's release, so reviewer may discount independence."
+    },
+    {
+      "id": "SVK-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Nokia",
+      "local_actor": "Orange Slovensko",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-02-10",
+      "still_current": null,
+      "summary": "Orange Slovensko selected Nokia AirScale radio hardware and software plus NetAct management to prepare its radio network for 5G, building on a long-term end-to-end network partnership with Nokia. Value undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://devtelecoms.com/telecom-technology/wireless-networks/9182-orange-slovensko-taps-nokia-for-5g-prep-in-slovakia.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2020-02-10",
+          "retrieved_at": "2026-10-26T01:17:03Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Nokia (Finland) is the equipment vendor, so pole third. RAN scope; core not stated. Tier 3 as a vendor award with no value. Single opened source, so uncorroborated and low."
+    },
+    {
+      "id": "SVK-003",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Slovak Academy of Sciences (Centre of Operations) and Technical University of Kosice",
+      "local_actor": "Slovak Academy of Sciences; Technical University of Kosice",
+      "builder": null,
+      "financier": "EU Recovery and Resilience Facility (via Slovakia's Recovery and Resilience Plan)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-31",
+      "still_current": true,
+      "summary": "The PERUN national supercomputer, run by the Slovak Academy of Sciences in Bratislava and the Technical University of Kosice, entered production after a project funded through Slovakia's Recovery and Resilience Plan with roughly EUR 57m across both sites.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://datacenterdynamics.com/en/news/slovak-academy-of-sciences-completes-integration-of-perun-national-supercomputer/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:03Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.startitup.sk/?p=1188272",
+          "publisher": "Startitup",
+          "source_tier": "S3",
+          "date": "2026-04-02",
+          "retrieved_at": "2026-10-26T01:17:03Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sc.tuke.sk/en/perun-supercomputer-info",
+          "publisher": "Technical University of Kosice",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:03Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operators are Slovak public institutions, so pole domestic. Builder not named in any opened source; DCD gives the architecture as BullSequana XH3000, an Eviden (France) product line, which suggests but does not establish Eviden as builder. Values in EUR (36.3m SAS, 20.9m TUKE); not converted because DCD's own USD figures are inconsistent. Tier 5 on reported production use; project formally ended 31 March 2026."
+    },
+    {
+      "id": "SVK-004",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Slovak Academy of Sciences; Technical University of Kosice (PERUN)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03-31",
+      "still_current": null,
+      "summary": "PERUN's accelerators are Nvidia: the Kosice cluster lists 208 H200 GPUs and the Bratislava system uses Nvidia GH200 Superchips, together reported above 24 petaflops.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.sc.tuke.sk/en/perun-supercomputer-info",
+          "publisher": "Technical University of Kosice",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:03Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/slovak-academy-of-sciences-completes-integration-of-perun-national-supercomputer/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:03Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Nvidia supplies the GPUs and their firmware/software stack, so pole us. Same system as SVK-003. GH200 count at the Bratislava site not stated. The two sources describe different halves of the system; corroboration is of Nvidia as vendor, not of a single count."
+    },
+    {
+      "id": "SVK-005",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Ministry of Education, Research, Development and Youth (Minister Tomas Drucker)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-11",
+      "still_current": null,
+      "summary": "Slovakia's Education Ministry announced a partnership with Nvidia in Paris to develop and optimise large language models reflecting Slovak language and culture, and joined Nvidia's initiative on national LLMs. No value stated.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.tasr.sk/tasr-clanok/TASR:2025061200000078",
+          "publisher": "TASR (News Agency of the Slovak Republic)",
+          "source_tier": "S4",
+          "date": "2025-06-12",
+          "retrieved_at": "2026-10-26T01:17:03Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole us on Nvidia as partner; no model, weights holder or base model named, so base_model null. If a Slovak actor ends up holding fine-tuned weights, a later finding would be domestic. Tier 1: announced partnership, legal form not stated. TASR is a state-established news agency, coded S4 conservatively; reviewer may rate S3."
+    },
+    {
+      "id": "SVK-006",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "AI:AT AI Factory consortium (Austria)",
+      "local_actor": "SKAIAT (Slovak AI Factory Antenna; host not named)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-13",
+      "still_current": null,
+      "summary": "EuroHPC selected SKAIAT as one of 13 AI Factory Antennas, linking Slovakia to Austria's AI:AT AI Factory; the 13 antennas share about EUR 55m of EU funding matched by participating states.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-selects-ai-factory-antennas-broaden-ai-factories-initiative-2025-10-13_en",
+          "publisher": "EuroHPC Joint Undertaking",
+          "source_tier": "S1",
+          "date": "2025-10-13",
+          "retrieved_at": "2026-10-26T01:18:16Z",
+          "opened": true
+        },
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/news/eu-announces-ai-factories-antennas-across-member-states-and-partner-countries",
+          "publisher": "European Commission",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:18:16Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole third on the assumption the antenna gives remote access to compute controlled by the Austrian AI:AT host; Slovak host entity and any local hardware not established, so pole could be domestic if PERUN is the antenna's resource. Tier 2 as a programme selection; no Slovak-specific amount. Single opened S1."
+    },
+    {
+      "id": "SVK-007",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Slovak state (highway and Ukraine-border monitoring; planned police cells)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-11-20",
+      "still_current": null,
+      "summary": "A Slovak research digest, summarising Dennik N, reported that Slovakia used Hikvision technology to monitor highways and the Ukrainian border and planned it for police cells, while the incoming government intended to curb Chinese technology.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.symsite.sk/single-post/slovakia-is-using-hikvision-products-a-potential-security-risk",
+          "publisher": "Symsite Research (summarising Dennik N)",
+          "source_tier": "S3",
+          "date": "2020-11-20",
+          "retrieved_at": "2026-10-26T01:18:16Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Hikvision as camera vendor, so pole prc. Tier 5 assumes systems in use as reported; procuring bodies, scale and dates not stated, and the Dennik N original was not found. Not reconfirmed as current. The stated intent to curb Chinese technology is not coded as a reversal: no decision found."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced in facilities searches"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Slovak Telekom (Deutsche Telekom) RAN and core vendors not established; no source found in this pass.",
+    "Core network vendors for O2 Slovakia, Orange Slovensko and 4ka not established; whether any Huawei/ZTE core or legacy RAN remains.",
+    "Whether Slovakia has adopted any high-risk-vendor rule under its cybersecurity act or the EU 5G Toolbox; PM Pellegrini said in Jan 2019 there was no evidence Huawei was a threat. No decision found.",
+    "Original Dennik N reporting (Nov 2020) on Hikvision use: which agencies, contracts and whether still in use.",
+    "SKAIAT antenna: host institution, whether it uses PERUN or remote AI:AT compute, and Slovak co-funding amount.",
+    "Tatra SuperCompute modular AI factory proposal (Dec 2025 ITAPA talk): any site, financing or GPU vendor since; not coded as it was only a proposal.",
+    "Builder/integrator of PERUN (Eviden suggested by BullSequana architecture) and GH200 count.",
+    "Any Slovak sovereign LLM output from the Nvidia partnership (e.g. Slovak Mistral or Qwen fine-tunes seen in search results) and who holds the weights."
+  ],
+  "searches_run": 10
+}

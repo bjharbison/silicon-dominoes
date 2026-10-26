@@ -1,0 +1,346 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "SVN",
+  "name": "Slovenia",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T01:19:36Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "SVN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei; ZTE",
+      "local_actor": "Government of Slovenia (Information Security Office)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Eligibility of Huawei and ZTE as 5G equipment suppliers in Slovenian networks",
+      "reversal_reason": "geopolitical",
+      "date": "2023-06",
+      "still_current": null,
+      "summary": "At end of June 2023 the government amended its 2020 decision on reducing 5G network risks, citing a European Commission recommendation naming Huawei and ZTE as higher-risk suppliers; Huawei then sought EUR 170m compensation.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://n1info.si/magazin/digitalno/huawei-od-slovenije-terja-povracilo-stroskov-v-visini-170-milijonov-evrov/",
+          "publisher": "N1 Slovenija",
+          "source_tier": "S3",
+          "date": "2023-12-05",
+          "retrieved_at": "2026-10-26T01:17:16Z",
+          "opened": true
+        },
+        {
+          "url": "https://siol.net/novice/slovenija/huawei-od-slovenije-terja-170-milijonov-evrov-povracila-stroskov-621648",
+          "publisher": "Siol.net",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:16Z",
+          "opened": false
+        },
+        {
+          "url": "https://www.rtvslo.si/gospodarstvo/huawei-od-slovenske-vlade-zaradi-sklepa-glede-5g-nismo-zahtevali-povracila/690678",
+          "publisher": "RTV Slovenija",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:16Z",
+          "opened": false
+        },
+        {
+          "url": "https://www.ansa.it/nuova_europa/en/news/sections/news/2020/08/13/us-slovenia-to-exclude-untrusted-vendors-from-5g_fd6570e8-7449-4105-b2a0-c014e0dcef3b.html",
+          "publisher": "ANSA",
+          "source_tier": "S3",
+          "date": "2020-08-13",
+          "retrieved_at": "2026-10-26T01:17:16Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reversal of Huawei/ZTE (prc). Exact operative effect of the amended decision (exclusion, phase-out, deadlines) not established from opened sources. Tier 5 assumes Huawei gear in live use (see SVN-003), uncertain. ANSA covers the August 2020 US-Slovenia 5G declaration (Pompeo-Logar, Bled), the background to the 2020 decision, not the 2023 amendment, so it does not corroborate. An unopened RTV result title suggests Huawei later denied having demanded reimbursement. A 2022 anti-high-risk-vendor bill failed and a later Electronic Communications Act softened the ban (Slovenia Times); not coded separately."
+    },
+    {
+      "id": "SVN-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Telekom Slovenije",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-07-23",
+      "still_current": null,
+      "summary": "Telekom Slovenije launched Slovenia's first commercial 5G in July 2020 via a software upgrade of existing Ericsson radio and packet core equipment, initially covering about a quarter of the population.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/2020/8/telekom-slovenije-and-ericsson-roll-out-first-5g-commercial-network-in-slovenia",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2020-08-12",
+          "retrieved_at": "2026-10-26T01:17:16Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.capacitymedia.com/articles/3826134/ericsson-and-telekom-slovenije-deploy-first-5g-commercial-network-in-slovenia",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": "2020-08",
+          "retrieved_at": "2026-10-26T01:17:16Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden) supplies RAN and packet core, so pole third. Capacity's report likely derives from Ericsson's release; reviewer may discount independence. Contract signed 16 July 2020. Not reconfirmed as current for 2026."
+    },
+    {
+      "id": "SVN-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Telemach Slovenija",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "Slovenia Times reporting on passage of the new Electronic Communications Act described Telemach, one of the main mobile operators, as using Huawei equipment; scope and network domains not stated.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://sloveniatimes.com/35481/new-electronic-communications-act-passed",
+          "publisher": "The Slovenia Times",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:16Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Single opened S3 statement made in passing, in context of an opposition MP's criticism; RAN vs core and share of network unknown. Tier 5 assumes live operational use. Date null: article undated in the fetched text. Slovenia Times is published by the state-owned press agency STA; treated as S3 wire, reviewer may judge otherwise."
+    },
+    {
+      "id": "SVN-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "ARNES (Academic and Research Network of Slovenia)",
+      "local_actor": "ARNES; IZUM; Jožef Stefan Institute",
+      "builder": null,
+      "financier": "EU Recovery and Resilience Plan (data centre); EuroHPC JU and Republic of Slovenia (AI Factory co-funding)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05-06",
+      "still_current": null,
+      "summary": "Construction began in May 2025 on an ARNES data centre beside the Mariborski otok hydro plant in Maribor to host the SLAIF AI Factory supercomputer of about 2,000 GPUs; completion expected 2026.",
+      "announced_value_usd": 20210000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/ground-broken-on-data-center-for-supercomputer-in-slovenia/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-05-10",
+          "retrieved_at": "2026-10-26T01:17:16Z",
+          "opened": true
+        },
+        {
+          "url": "https://izum.si/?p=15703",
+          "publisher": "IZUM",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:16Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/ai-factories/slovenia_en",
+          "publisher": "EuroHPC Joint Undertaking",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:16Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "State research network owns and will operate the building, so pole domestic. USD 20.21m is DCD's conversion of EUR 18m; IZUM gives about EUR 14m for the data centre, so figures disagree. Builder not named. Supercomputer equipment (~EUR 44m phase one) was still to be tendered; no vendor found."
+    },
+    {
+      "id": "SVN-005",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia (A100 GPUs); system supplied by Atos",
+      "local_actor": "IZUM (Vega supercomputer, Maribor)",
+      "builder": "Atos",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "Slovenia's Vega supercomputer, operated by IZUM in Maribor and supplied by Atos, uses Nvidia A100 GPUs and has served as the national research and AI compute platform, including hosting the GaMS Slovenian model.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://sloveniatimes.com/30850/nvidia-to-support-development-of-ai-in-slovenia",
+          "publisher": "The Slovenia Times",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:18:14Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/ground-broken-on-data-center-for-supercomputer-in-slovenia/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-05-10",
+          "retrieved_at": "2026-10-26T01:17:16Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Accelerator vendor Nvidia, so pole us. DCD confirms Vega (6.9 PF, Atos) but not the GPU vendor, so the GPU claim rests on one S3 source; uncorroborated. Commissioning date not in opened sources (date null). IZUM page says Vega maintenance extended to April 2026; still_current not confirmed."
+    },
+    {
+      "id": "SVN-006",
+      "layer": "silicon",
+      "pole": "us",
+      "controller": "Nvidia",
+      "local_actor": "Ministry of Digital Transformation; IZUM; Jožef Stefan Institute",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "Nvidia signed an AI ecosystem partnership in Maribor with Slovenia covering acceleration of the Vega supercomputer, support for the UNESCO AI centre at the Jožef Stefan Institute and free AI training for startups and youth.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://sloveniatimes.com/30850/nvidia-to-support-development-of-ai-in-slovenia",
+          "publisher": "The Slovenia Times",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:18:14Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 1: partnership without binding procurement. Date null: article undated; the quoted minister Mark Boris Andrijanič held office 2021-2022, suggesting that period (inference). Signatories not named."
+    },
+    {
+      "id": "SVN-007",
+      "layer": "models",
+      "pole": "domestic",
+      "controller": "Centre for Language Resources and Technologies, University of Ljubljana (CJVT)",
+      "local_actor": "PoVeJMo research programme (ARIS, Recovery and Resilience Plan)",
+      "builder": null,
+      "financier": "Slovenian Research and Innovation Agency (ARIS) via Recovery and Resilience Plan / NextGenerationEU",
+      "base_model": "Gemma (GaMS3-12B: gemma-3-12b-pt)",
+      "base_model_pole": "us",
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "The University of Ljubljana's CJVT developed GaMS, a state-funded open Slovenian-language model family fine-tuned from Google's Gemma, released publicly free of charge; GaMS3-12B builds on Gemma 3 and was trained mainly on EuroHPC's Leonardo.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://sloveniatimes.com/42904/slovenian-large-language-model-launched",
+          "publisher": "The Slovenia Times",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:18:14Z",
+          "opened": true
+        },
+        {
+          "url": "https://huggingface.co/cjvt/GaMS3-12B-Instruct/blob/main/README.md",
+          "publisher": "CJVT (model card)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:18:14Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Weights held by a Slovenian public university, so domestic; base Gemma (Google), so base_model_pole us; Gemma licence terms apply. Tier 5 on public release and availability, but government adoption not shown. Release dates not stated in opened text. Model card is the developer's own primary publication."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "coded"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on police/city surveillance vendors (Hikvision, Huawei, Dahua) returned only Serbia/Slovakia/Balkans reporting, nothing on Slovenia"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence beyond SLAIF data centre siting beside the DEM Mariborski otok hydro plant (no dedicated supply deal found)"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Operative effect of the June 2023 amended 5G risk decision: does it require Huawei/ZTE removal from Telemach or A1 Slovenija, and by when? Did Huawei pursue the EUR 170m claim (RTV result suggests it denied demanding it)?",
+    "Which Electronic Communications Act (ZEKom-2, c. 2022) provisions on high-risk equipment were finally adopted, and has any vendor been designated under them?",
+    "RAN and core vendors of Telemach Slovenija and A1 Slovenija (A1 vendor not researched).",
+    "Vendor and GPU supplier awarded the SLAIF/EuroHPC AI Factory supercomputer tender (~2,000 GPUs, phase one ~EUR 44m).",
+    "Commissioning date of Vega and confirmation of Nvidia A100 configuration from an S1/S2 source; date and signatories of the Nvidia partnership.",
+    "Any government or public-sector deployment of GaMS or of foreign frontier models (OpenAI, Anthropic, Mistral, DeepSeek) by Slovenian ministries.",
+    "Safe-city or police CCTV vendors in Ljubljana/Maribor not established."
+  ],
+  "searches_run": 10
+}

@@ -1,0 +1,204 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "TLS",
+  "name": "Timor-Leste",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T01:18:39Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "TLS-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (ASN, France)",
+      "local_actor": "Cabos de Timor-Leste, E.P. (state-owned cable operator); Government of Timor-Leste",
+      "builder": "Alcatel Submarine Networks (cable); DXN Limited, Australia (cable landing station)",
+      "financier": "Government of Timor-Leste; Australian Infrastructure Financing Facility for the Pacific (AUD 7.2m, partial)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07-28",
+      "still_current": true,
+      "summary": "The 607 km Timor-Leste South Submarine Cable, supplied by ASN and landed at Bebonuk, Dili in June 2024, links Dili to Australia via Vocus's North-West Cable System and entered commercial operation under state-owned Cabos de Timor-Leste in July 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/dxn-to-deliver-cable-landing-station-to-timor-leste/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-09-22",
+          "retrieved_at": "2026-10-26T01:17:06Z",
+          "opened": true
+        },
+        {
+          "url": "https://convergedigest.com/new-subsea-cable-lands-at-timor-leste/",
+          "publisher": "Converge Digest",
+          "source_tier": "S2",
+          "date": "2024-06-30",
+          "retrieved_at": "2026-10-26T01:17:06Z",
+          "opened": true
+        },
+        {
+          "url": "https://timor-leste.gov.tl/wp-content/uploads/2026/07/Commercial-Launch-of-Submarine-Cable-_28Jul26_ENG1.pdf",
+          "publisher": "Government of Timor-Leste",
+          "source_tier": "S1",
+          "date": "2026-07-28",
+          "retrieved_at": "2026-10-26T01:18:09Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomreviewasia.com/news/industry-news/29917-timor-leste-begins-commercial-operation-of-first-international-submarine-cable/",
+          "publisher": "Telecom Review Asia",
+          "source_tier": "S2",
+          "date": "2026-08-03",
+          "retrieved_at": "2026-10-26T01:18:09Z",
+          "opened": true
+        },
+        {
+          "url": "https://announcements.asx.com.au/asxpdf/20230922/pdf/05v5r923l5p9b4.pdf",
+          "publisher": "DXN Limited (ASX announcement)",
+          "source_tier": "S1",
+          "date": "2023-09-22",
+          "retrieved_at": "2026-10-26T01:17:06Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: ASN (French, state-owned since 2024) supplied the cable, so pole third; operator is domestic and onward link is Australian (Vocus). ASN named by DCD and Converge Digest; government speech and Telecom Review confirm launch but not the builder. USD 1.4m DXN contract covers the landing station only, so no cable value recorded. still_current true from the July 2026 launch."
+    },
+    {
+      "id": "TLS-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Telkomcel (subsidiary of Telkom Indonesia)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-09-28",
+      "still_current": null,
+      "summary": "Telkomcel launched 4G in Timor-Leste on Ericsson equipment, including Ericsson Radio System LTE RAN, a virtual Evolved Packet Core and NFV infrastructure, as a modernisation of its existing network.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/2017/9/ericsson-and-telkomcel-launch-4g-services-in-timor-leste",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2017-09-28",
+          "retrieved_at": "2026-10-26T01:17:06Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.telecomreviewasia.com/news/network-news/787-telkomcel-and-ericsson-launch-4g-services-in-timor-leste/",
+          "publisher": "Telecom Review Asia",
+          "source_tier": "S2",
+          "date": "2017-09",
+          "retrieved_at": "2026-10-26T01:17:06Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden) supplies RAN and core, so pole third. Tier 5 for a launched commercial 4G service; site count not stated. Pre-2020 and not reconfirmed as current. Single opened source (S1 vendor release), so medium per spec."
+    },
+    {
+      "id": "TLS-003",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Not stated (Zchwantech, Malaysia, as technology partner)",
+      "local_actor": "Government of Timor-Leste (Timor Digital 2032 strategy)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12",
+      "still_current": null,
+      "summary": "Malaysian firm Zchwantech announced a planned strategic partnership with Timor-Leste, starting with a feasibility study for a Tier 3+ National Sovereign AI Cloud and Data Centre, followed by AI-enabled digital ID and border systems.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://twentytwo13.my/malaysias-zchwantech-partners-timor-leste-to-co-develop-ai-powered-national-digital-ecosystem/",
+          "publisher": "Twentytwo13",
+          "source_tier": "S3",
+          "date": "2025-12-24",
+          "retrieved_at": "2026-10-26T01:18:09Z",
+          "opened": true
+        },
+        {
+          "url": "https://vsdaily.com/timor-leste-and-malaysias-zchwantech-move-to-co-develop-sovereign-ai-powered-national-digital-ecosystem/",
+          "publisher": "VSDaily",
+          "source_tier": "S3",
+          "date": "2025-12-26",
+          "retrieved_at": "2026-10-26T01:18:09Z",
+          "opened": true
+        },
+        {
+          "url": "https://focusmalaysia.my/?p=229957",
+          "publisher": "Focus Malaysia",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:18:09Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: future owner-operator of the sovereign AI cloud not stated; 'sovereign' and planned technology transfer suggest domestic, Zchwantech involvement suggests third. Tier 1: stated intent, no instrument type named and feasibility study not yet reported as started. No S1/S2 source; both opened reports likely derive from a company release. No model or chip vendor named."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in facilities or models searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only a May 2026 Google-ministry discussion (no signed instrument) and the Zchwantech plan naming no model; no frontier-provider partnership or sovereign model found"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on police CCTV/surveillance found only PRC donations of non-surveillance police kit (2022); no safe-city system found"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Telemor (Viettel) RAN/core vendor, including for its 5G launch of 21 August 2025 (Viettel in-house vs Ericsson/Nokia/Huawei); launch report names no vendor.",
+    "Timor Telecom radio/core vendor not established.",
+    "Telkomcel data centre (telin.net page, undated): inauguration date, location, scale and equipment vendors.",
+    "Zchwantech partnership: legal instrument, signing ministry, whether the feasibility study started, and intended owner-operator of the sovereign AI cloud.",
+    "Google engagement with the Ministry of Transport and Communications (May 2026, reported by state agency Tatoli): whether a partnership framework or AI Opportunity Fund extension followed.",
+    "Owner of the TLSSC cable asset and whether ASN retains any maintenance/O&M role; planned onward link toward Indonesia and its supplier.",
+    "AidData lists PRC-financed Timor-Leste projects (not opened); check for any ICT, e-government or police-surveillance items."
+  ],
+  "searches_run": 9
+}

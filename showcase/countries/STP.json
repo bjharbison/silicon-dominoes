@@ -1,0 +1,129 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "STP",
+  "name": "Sao Tome and Principe",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T01:18:17Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "STP-001",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": null,
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-12-11",
+      "still_current": null,
+      "summary": "Starlink activated retail satellite broadband in Sao Tome and Principe on 11 December 2025, its 26th African market, with standard and mini kits and residential plans priced in dobras and available immediately.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://spaceinafrica.com/2025/12/11/starlink-begins-service-in-sao-tome-and-principe/",
+          "publisher": "Space in Africa",
+          "source_tier": "S2",
+          "date": "2025-12-11",
+          "retrieved_at": "2026-10-26T01:17:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://itweb.africa/article/sao-tome-joins-starlinks-africa-network-drive/WnpNgM21LDX7VrGd",
+          "publisher": "ITWeb Africa",
+          "source_tier": "S2",
+          "date": "2025-12-12",
+          "retrieved_at": "2026-10-26T01:17:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.digitalbusiness.africa/internet-starlink-deploie-ses-services-a-sao-tome-et-principe/",
+          "publisher": "Digital Business Africa",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T01:17:55Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "SpaceX controls constellation and terminals, so pole us. Tier 5 as a live commercial service; neither opened source names the licensing authority or subscriber numbers, so national scale reflects availability, not adoption. Both reports trace to Starlink's own announcement."
+    },
+    {
+      "id": "STP-002",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Atlas Sovereign Smart Solutions LLC (UAE joint venture of IOPn and Betabytes)",
+      "local_actor": "Citizenship and Investment Unit (CIU), via STP Service & Advisory FZCO",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10",
+      "still_current": null,
+      "summary": "The country's citizenship-by-investment unit signed an MoU with a UAE joint venture for a modular data centre, an Nvidia-certified AI academy, a blockchain-based AI factory and digital identity systems, citing up to USD 10bn over a decade.",
+      "announced_value_usd": 10000000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://unlock-bc.com/en/sao-tome-principe-uae-iopn-digital-ai-transformation",
+          "publisher": "Unlock Blockchain",
+          "source_tier": "S2",
+          "date": "2025-10-12",
+          "retrieved_at": "2026-10-26T01:17:41Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole third on the UAE counterparty as prospective owner-operator; ownership of any facility not stated. Tier 1 MoU; USD 10bn is an aspirational 'up to' figure far beyond the economy's size and should be heavily discounted. Signatory is the CIU's agent, not a ministry. Nvidia mention is a certification, not an accelerator purchase, so no silicon finding. Single specialist crypto-press source; no independent corroboration found."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "no accelerator purchase or deployment found; only an Nvidia certification mention in the STP-002 MoU"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "no national partnership with a model provider or sovereign model found in one dedicated search"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "no safe-city or surveillance procurement found; AidData hits were Cabo Verde safe city and a 2020 PRC broadcast-equipment donation to TVS (out of scope)"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core equipment vendors for CST (4G launched Aug 2023, 102 antennas at 34 sites) and Unitel STP (4G May 2023) not stated in any opened source.",
+    "Ownership of CST (Portugal Telecom/Africatel history) and Unitel STP (Angolan Unitel) and whether either uses Huawei or ZTE kit.",
+    "Supplier of the ACE cable landing (2012, Alcatel-Lucent consortium build) and of the planned Sao Tome-Principe inter-island link (World Bank expressed interest in 2021; status unknown).",
+    "Whether the IOPn/Atlas MoU (Oct 2025) has progressed beyond signature; whether any government ministry is party.",
+    "Any national government data centre or e-government platform, its builder and financier.",
+    "Licensing authority and date for Starlink (AGER presumed, not confirmed)."
+  ],
+  "searches_run": 9
+}
