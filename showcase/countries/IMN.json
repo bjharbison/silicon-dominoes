@@ -1,0 +1,255 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "IMN",
+  "name": "Isle of Man",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T13:21:04Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "IMN-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Manx Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-07-20",
+      "still_current": null,
+      "summary": "Manx Telecom's mobile network uses Huawei equipment, including the Huawei SingleRAN LTE kit behind the island's first 4G network; the operator said its fibre network has no Huawei dependency.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.capacitymedia.com/article/29ot6i0dzshi4sy5d23nk/news/4g-comes-to-the-isle-of-man",
+          "publisher": "Capacity Media",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.iomtoday.co.im/news/business/huawei-is-ok-for-manx-after-uks-5g-decision-232890",
+          "publisher": "Isle of Man Today",
+          "source_tier": "S3",
+          "date": "2020-02-02",
+          "retrieved_at": "2026-10-26T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.iomtoday.co.im/news/business/telecomfirms-react-to-uk-5gban-on-huawei-235953",
+          "publisher": "Isle of Man Today",
+          "source_tier": "S3",
+          "date": "2020-07-20",
+          "retrieved_at": "2026-10-26T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Date is the latest opened confirmation of Huawei in the live mobile network; the 4G launch date was not given in the Capacity article (undated in fetch). Huawei's share versus other suppliers (Manx Telecom described a multi-provider strategy) is not stated. Whether Huawei kit remains after the Dec 2020 HRV framework and the May 2026 JT acquisition is unknown, so still_current null. Medium rather than high because the Capacity article is undated."
+    },
+    {
+      "id": "IMN-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei and other high-risk vendors",
+      "local_actor": "Isle of Man Government (Department for Enterprise); Manx Telecom; Sure",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei/high-risk-vendor equipment in Isle of Man telecoms networks (incl. Manx Telecom mobile network, IMN-001)",
+      "reversal_reason": "geopolitical",
+      "date": "2020-12-15",
+      "still_current": null,
+      "summary": "The Isle of Man joined Jersey and Guernsey in a telecoms security framework to exclude high-risk vendors such as Huawei from critical network parts, planning legislation and a phased removal aligned with the UK.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gov.im/news/2020/dec/15/crown-dependencies-join-together-to-develop-critical-telecoms-framework-for-high-risk-vendors",
+          "publisher": "Isle of Man Government",
+          "source_tier": "S1",
+          "date": "2020-12-15",
+          "retrieved_at": "2026-10-26T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.iomtoday.co.im/news/crown-dependencies-look-at-phasing-out-huawei-technology-238764",
+          "publisher": "Isle of Man Today",
+          "source_tier": "S3",
+          "date": "2020-12-21",
+          "retrieved_at": "2026-10-26T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as reversal of the in-service tier-5 Huawei deployment. The announcement is a policy commitment to legislate; enactment of Manx HRV legislation and actual removal were not confirmed in this run, hence medium. Government said the UK ban on new Huawei kit from 31 Dec 2020 extends to island providers via the UK supply chain."
+    },
+    {
+      "id": "IMN-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Sure (Isle of Man), now Sure by Beyon",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-27",
+      "still_current": null,
+      "summary": "Sure announced a £48m build of a standalone 5G network on the Isle of Man with Ericsson as strategic partner for radio access and core, targeting new services in 2026, within a £100m Crown Dependencies programme.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.manx.news/?p=47633",
+          "publisher": "Manx.news",
+          "source_tier": "S3",
+          "date": "2025-10-27",
+          "retrieved_at": "2026-10-26T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.iomtoday.co.im/news/business/the-big-sure-rebrand-telecoms-firm-unveils-new-identity-and-ps48m-5g-investment-847205",
+          "publisher": "Isle of Man Today",
+          "source_tier": "S3",
+          "date": "2025-10-31",
+          "retrieved_at": "2026-10-26T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Ericsson (Sweden) as equipment vendor sets pole third. Tier 3 as an announced vendor appointment with value; no contract filing seen and launch not confirmed. GBP 48m not converted (no source-date rate in this run), so values null. Two S3 sources, no S1/S2, so not corroborated."
+    },
+    {
+      "id": "IMN-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Manx Telecom",
+      "local_actor": "Manx Telecom data centre division",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06-03",
+      "still_current": null,
+      "summary": "Manx Telecom set up a dedicated data-centre division running two Tier III colocation sites on the island, Douglas North and Greenhill, with about 491 racks combined; no AI or hyperscaler tenants named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/manx-telecom-launches-dedicated-data-center-unit/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/tags/isle-of-man/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-06-03",
+          "retrieved_at": "2026-10-26T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Owner-operator Manx Telecom is Manx-incorporated, so domestic; but it was owned by UK fund Basalt Infrastructure Partners in 2024 and JT Group (owned by the Government of Jersey) completed its acquisition on 20 May 2026, so a reviewer may prefer pole third. Date from the DCD tag listing. Both sources are the same outlet, so not corroborated and confidence low."
+    },
+    {
+      "id": "IMN-005",
+      "layer": "applications",
+      "pole": "prc",
+      "controller": "Hikvision",
+      "local_actor": "Isle of Man Department for Enterprise",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-04-20",
+      "still_current": null,
+      "summary": "A freedom-of-information reply showed the Department for Enterprise operates eight surveillance cameras made by Hikvision and Samsung; since 2022 departments must consult the cyber security office before buying government CCTV.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gold.manxradio.com/news/isle-of-man-news/concerns-over-governments-use-of-hikvision-cameras/",
+          "publisher": "Manx Radio",
+          "source_tier": "S3",
+          "date": "2023-04-20",
+          "retrieved_at": "2026-10-26T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Very small deployment; the Hikvision share of the eight cameras is not stated. No removal decision reported. The 2022 procurement-consultation rule is not coded as a reversal because it does not exclude Hikvision by name in the source."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only the January 2026 National AI Office (GBP 1m) and Activate AI scheme; no model-provider partnership or sovereign model named in the opened report"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Whether the Isle of Man enacted high-risk-vendor telecoms legislation after the Dec 2020 framework, and its removal deadline.",
+    "Whether Manx Telecom has removed Huawei from its mobile RAN/core, and its 5G vendor following the May 2026 JT Group acquisition (JT uses Ericsson in Guernsey).",
+    "Launch status of Sure's Ericsson standalone 5G network on the island (IMN-003).",
+    "Vendor for BlueWave Communications' mobile network.",
+    "Submarine cable suppliers serving the Isle of Man.",
+    "Which AI tools/providers the National AI Office and Activate AI scheme use in government.",
+    "Isle of Man Constabulary CCTV and port facial-recognition vendors (an idtechwire item on port facial recognition was not opened)."
+  ],
+  "searches_run": 8
+}

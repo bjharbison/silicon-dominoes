@@ -16,16 +16,6 @@
   "ESH": "Western Sahara"
  },
  "pending": [
-  "GIB",
-  "GLP",
-  "GRL",
-  "GUF",
-  "GUM",
-  "IMN",
-  "JEY",
-  "MAF",
-  "MNP",
-  "MSR",
   "MTQ",
   "MYT",
   "NCL",
@@ -254,6 +244,16 @@
   "CYM",
   "FLK",
   "FRO",
-  "GGY"
+  "GGY",
+  "GIB",
+  "GLP",
+  "GRL",
+  "GUF",
+  "GUM",
+  "IMN",
+  "JEY",
+  "MAF",
+  "MNP",
+  "MSR"
  ]
 }

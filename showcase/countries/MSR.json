@@ -1,0 +1,94 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MSR",
+  "name": "Montserrat",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T13:20:04Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MSR-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Southern Caribbean Fiber (Digicel Group), operator and maintainer",
+      "local_actor": "Government of Montserrat (owns beach manhole and cable landing station)",
+      "builder": "Southern Caribbean Fiber (Digicel Group)",
+      "financier": "UK Government (Capital Investment Programme for Resilient Economic Growth, CIPREG)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-10-01",
+      "still_current": null,
+      "summary": "Montserrat's first submarine fibre link since 1995, a 25 km cable via Antigua and Guadeloupe, went live in October 2020; Digicel subsidiary Southern Caribbean Fiber installed it and operates it under a 15-year contract, with UK CIPREG funding.",
+      "announced_value_usd": 5900000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://discovermni.com/2019/10/25/southern-caribbean-fiber-wins-multi-million-dollar-contract-to-connect-montserrat-by-summer-2020/",
+          "publisher": "Discover Montserrat (MNI)",
+          "source_tier": "S3",
+          "date": "2019-10-25",
+          "retrieved_at": "2026-10-26T13:20:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://discovermni.com/2020/10/02/new-opportunities-open-for-montserrat-as-fibre-optic-goes-live/",
+          "publisher": "Discover Montserrat (MNI)",
+          "source_tier": "S3",
+          "date": "2020-10-02",
+          "retrieved_at": "2026-10-26T13:20:04Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightwaveonline.com/network-design/high-speed-networks/article/14071277/@lightwaveonline",
+          "publisher": "Lightwave",
+          "source_tier": "S2",
+          "date": "2019-11-04",
+          "retrieved_at": "2026-10-26T13:20:04Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "No cable or terminal-equipment manufacturer is named in any source; SCF (Digicel Group, Caribbean-headquartered, non-US/PRC) is documented as operating and maintaining the system, so it is treated as controller, pole third. Announced value converted from 'more than XCD 16m' (15-year contract) at the fixed XCD 2.70/USD peg, a floor not a total. A July 2023 subsea break story (not opened) suggests continued use, but current status not confirmed, so still_current null. Lightwave and MNI likely share a release origin."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found only e-government/digital transformation items (DITES, UNDP US$50k support); no data-centre or AI-campus project"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other layer searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only panel statements on AI potential (ZJB Radio, opened) with no named provider, partnership or sovereign model"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "two searches (government CCTV; Huawei/ZTE/Hikvision + Montserrat) returned no Montserrat surveillance or e-government AI system"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Cable and submarine line-terminal equipment manufacturer for the 2020 SCF Montserrat cable (check for HMN Tech), and the onward systems it joins in Antigua and Guadeloupe.",
+    "Radio/core vendors for Digicel Montserrat and Flow Montserrat; whether Digicel's 2017 ZTE LTE expansion across its 26 Caribbean markets (Montserrat not named) covered Montserrat.",
+    "Whether Flow connected to the SCF cable as expected, and whether the cable remains the sole fibre link after the July 2023 break.",
+    "Any Royal Montserrat Police Service CCTV or surveillance procurement and its camera vendor."
+  ],
+  "searches_run": 7
+}

@@ -1,0 +1,306 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GRL",
+  "name": "Greenland",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T13:20:55Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GRL-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Tusass (formerly Tele Greenland), state-owned sole operator",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-10-03",
+      "still_current": null,
+      "summary": "Ericsson supplies Tusass's mobile network: it modernised the 4G network from 2017 (radio and packet core) and in 2022 began a 5G fixed-wireless pilot in Sisimiut, Maniitsoq and Narsaq, building on that 4G base.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.rcrwireless.com/20221003/featured/ericsson-tusass-to-pilot-5g-fwa-network-in-greenland",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2022-10-03",
+          "retrieved_at": "2026-10-26T13:20:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://focusmalaysia.my/greenland-says-not-considering-huawei-for-5g-rollout/",
+          "publisher": "Reuters (republished by Focus Malaysia)",
+          "source_tier": "S3",
+          "date": "2019-12-20",
+          "retrieved_at": "2026-10-26T13:20:55Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Ericsson (Sweden) as equipment vendor sets pole third. Tier 5 for the operational 4G network; the 5G element was a pilot (tier 2). Whether 5G rolled out beyond the pilot was not confirmed this run, so still_current null."
+    },
+    {
+      "id": "GRL-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Tele Greenland (now Tusass)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": true,
+      "reversal_of": "Huawei as a candidate supplier for Tele Greenland's 5G upgrade",
+      "reversal_reason": "geopolitical",
+      "date": "2019-12-19",
+      "still_current": null,
+      "summary": "Tele Greenland said it did not consider Huawei a supplier for its 5G upgrade and expected to pick Ericsson; the chairman cited quality, price and broad security, amid US pressure on allies to exclude Huawei.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://focusmalaysia.my/greenland-says-not-considering-huawei-for-5g-rollout/",
+          "publisher": "Reuters (republished by Focus Malaysia)",
+          "source_tier": "S3",
+          "date": "2019-12-20",
+          "retrieved_at": "2026-10-26T13:20:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20221003/featured/ericsson-tusass-to-pilot-5g-fwa-network-in-greenland",
+          "publisher": "RCR Wireless News",
+          "source_tier": "S2",
+          "date": "2022-10-03",
+          "retrieved_at": "2026-10-26T13:20:55Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Huawei said it had no mobile network business in Greenland, so nothing installed was removed; this is an exclusion from consideration, coded at the lowest tier. Reason coded geopolitical because RCR reports the CEO citing security concerns first raised by the US; Reuters also notes commercial factors and the CEO declining to call either vendor safer, so reason is a reviewer call."
+    },
+    {
+      "id": "GRL-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel-Lucent (now Alcatel Submarine Networks)",
+      "local_actor": "Tusass (formerly Tele Greenland)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2009-03",
+      "still_current": true,
+      "summary": "Greenland Connect, Greenland's international submarine cable from Newfoundland to Nuuk, Qaqortoq and Iceland, entered service in 2009; trade press reported Alcatel-Lucent landed the cable. A northern domestic extension reaches Aasiaat.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.tusass.gl/en/infrastructure/submarine-cable/",
+          "publisher": "Tusass",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T13:20:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.fiercewireless.com/europe/alca-lu-lands-submarine-cable-greenland",
+          "publisher": "FierceWireless",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T13:20:55Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Supplier attribution rests only on the unopened FierceWireless headline (the page redirected off the search-result URL and was not followed); the opened Tusass page confirms the cable is in service but names no supplier. Alcatel-Lucent was French, so pole third. Tier 5 because operational since 2009; still_current true per the Tusass page."
+    },
+    {
+      "id": "GRL-004",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Tusass (state-owned)",
+      "local_actor": "Tusass",
+      "builder": "Permagreen (Greenlandic) with Polar EL and HJ-Tek; Johnson Controls among technical installers",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-03",
+      "still_current": null,
+      "summary": "State-owned Tusass broke ground on a DKK 155m data centre in Qinngorput, Nuuk, built mainly to secure its own operations, with Greenlandic firm Permagreen as main contractor and completion expected in 2027.",
+      "announced_value_usd": 21500000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/greenlands-tusass-breaks-ground-on-data-center-in-nuuk",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-03-06",
+          "retrieved_at": "2026-10-26T13:20:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sdxcentral.com/news/greenlands-tusass-breaks-ground-on-data-center-in-nuuk/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2025-03-06",
+          "retrieved_at": "2026-10-26T13:20:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/tusass-plans-data-center-in-nuuk-greenland/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-02-12",
+          "retrieved_at": "2026-10-26T13:20:55Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 4 because construction started. Not corroborated: the SDxCentral piece carries the same byline and text as DCD, so the sources are not independent. USD figure is the sources' own conversion of DKK 155m, not ours. Capacity undisclosed; not an AI campus as far as sources show."
+    },
+    {
+      "id": "GRL-005",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "GreenMet / AmForge Corporation",
+      "local_actor": "Inuit Development Company",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02",
+      "still_current": null,
+      "summary": "A US-linked group led by GreenMet's Drew Horn and a Greenlandic partner signed a letter of intent for a phased hyperscale AI data centre at Kangerlussuaq, targeting 300MW from 2027 and 1.5GW by 2028, with a subsea cable.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.arctictoday.com/former-trump-staffer-ex-greenland-official-plan-worlds-largest-ai-data-center/",
+          "publisher": "ArcticToday",
+          "source_tier": "S3",
+          "date": "2026-02-11",
+          "retrieved_at": "2026-10-26T13:20:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/pence-aide-pitches-gigawatt-scale-data-center-campus-for-greenland-report/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-01-23",
+          "retrieved_at": "2026-10-26T13:20:55Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole us is provisional: GreenMet is described as a US firm, but AmForge's nationality and who would own and operate the campus are not stated; reviewer call. In January 2026 DCD reported no land or Greenlandic approvals yet; no financing closed. LOI date not given beyond the February 2026 announcement.",
+      "bundle_id": "GRL-B1"
+    },
+    {
+      "id": "GRL-006",
+      "layer": "power",
+      "pole": "us",
+      "controller": "GreenMet / AmForge Corporation",
+      "local_actor": "Inuit Development Company",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02",
+      "still_current": null,
+      "summary": "The Kangerlussuaq AI data-centre plan includes dedicated power: hydropower (interest in Tasersiaq and Tarsartuup Tasersua sites) plus, per one report, LNG delivered by barge, covered by the same letter of intent.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.arctictoday.com/former-trump-staffer-ex-greenland-official-plan-worlds-largest-ai-data-center/",
+          "publisher": "ArcticToday",
+          "source_tier": "S3",
+          "date": "2026-02-11",
+          "retrieved_at": "2026-10-26T13:20:55Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/pence-aide-pitches-gigawatt-scale-data-center-campus-for-greenland-report/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-01-23",
+          "retrieved_at": "2026-10-26T13:20:55Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Same provisional pole caveat as GRL-005. No hydropower licence award to this group was found; bidding interest only.",
+      "bundle_id": "GRL-B1"
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only Inatsisartut question-and-answer documents on AI (not opened); no provider partnership, pilot or sovereign model named"
+    },
+    "applications": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks and facilities; no surveillance or e-government AI item surfaced"
+    },
+    "power": {
+      "result": "coded"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Supplier for Tusass's planned second domestic subsea cable (Qaqortoq-Nuuk-Aasiaat, possible Ilulissat branch); EU-funded seabed survey ran 2023, no cable vendor award found.",
+    "Primary confirmation that Alcatel-Lucent supplied Greenland Connect and the vendor for Greenland Connect North.",
+    "Whether Tusass's 5G moved beyond the 2022 Ericsson FWA pilot to commercial rollout, and confirmation Ericsson remains the 4G/5G vendor.",
+    "Ownership and nationality of AmForge Corporation and Inuit Development Company, and any Greenlandic approvals, land allocation or hydropower licence for the Kangerlussuaq AI campus.",
+    "Content of the EU Global Gateway package for Greenland (data centre, subsea cable, satellite) and any resulting contracts.",
+    "Any Naalakkersuisut use of foreign AI models or CCTV/surveillance vendors."
+  ],
+  "searches_run": 9
+}

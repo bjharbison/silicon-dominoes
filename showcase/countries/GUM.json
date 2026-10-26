@@ -1,0 +1,146 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GUM",
+  "name": "Guam",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T13:31:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GUM-001",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "GTA Teleguam (owned by Huntsman Family Investments)",
+      "local_actor": "GTA Teleguam",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-10",
+      "still_current": null,
+      "summary": "GTA broke ground on its 4MW Alupang Tier 3 data centre and cable landing station in Tamuning; in late 2024 it was still under construction and named landing site for the MYUS cable.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://subtelforum.com/gta-begins-work-on-new-dc-and-cls-in-guam/",
+          "publisher": "SubTel Forum (republishing Pacific Daily News)",
+          "source_tier": "S2",
+          "date": "2022-10-07",
+          "retrieved_at": "2026-10-26T13:24:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/gta-teleguam-to-land-the-myus-subsea-cable-at-alupang-data-center-in-guam",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-10-25",
+          "retrieved_at": "2026-10-26T13:27:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.lightwaveonline.com/business/article/55238832/gta-teleguam-to-land-myus-subsea-cable-at-its-alupang-data-center",
+          "publisher": "Lightwave",
+          "source_tier": "S2",
+          "date": "2024-10-28",
+          "retrieved_at": "2026-10-26T13:27:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator GTA is US-owned (Huntsman Family Investments; Stonepeak invested USD 200m in GTA in late 2023, not tied to this facility in sources), and Guam is a US territory, so pole us. Tier 4 because construction began; completion (planned late 2024) not confirmed. Not AI-specific: a carrier-neutral colocation and landing facility."
+    },
+    {
+      "id": "GUM-002",
+      "layer": "facilities",
+      "pole": "us",
+      "controller": "US Navy / US Marine Corps (NAVFAC Pacific)",
+      "local_actor": "Marine Corps Base Camp Blaz",
+      "builder": "Core Tech-HDCC-Kajima LLC (Tamuning, Guam)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-23",
+      "still_current": null,
+      "summary": "NAVFAC Pacific awarded a firm-fixed-price contract of about USD 289.8m for a consolidated communications centre, two warehouses and fibre cabling at Camp Blaz, with completion expected by March 2029.",
+      "announced_value_usd": null,
+      "verified_value_usd": 289762614,
+      "sources": [
+        {
+          "url": "https://ncc.navfac.navy.mil/Home/News-Detail/Article/4345959/navfac-pacific-awards-289-million-contract-for-communications-center-upgrades-i/",
+          "publisher": "NAVFAC (US Navy)",
+          "source_tier": "S1",
+          "date": "2025-09-23",
+          "retrieved_at": "2026-10-26T13:29:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.stripes.com/branches/marine_corps/2025-09-25/navy-contract-camp-blaz-guam-19215720.html",
+          "publisher": "Stars and Stripes",
+          "source_tier": "S3",
+          "date": "2025-09-25",
+          "retrieved_at": "2026-10-26T13:29:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/us-navy-to-build-data-center-at-camp-blaz-base-in-guam",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-10-29",
+          "retrieved_at": "2026-10-26T13:28:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "US military owner-operator in a US territory, so pole us. Opened sources describe a communications centre, not a data centre; the unopened DCD headline (Oct 2024) calls the Camp Blaz project a data center, possibly the same project. Builder nationality not stated (Kajima is a Japanese firm name, unverified here). Medium because relevance to the AI stack is indirect."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "null",
+      "null_reason": "five searches on FCC rip-and-replace, Huawei/ZTE kit at GTA, Docomo Pacific and IT&E returned only nationwide coverage or non-Guam documents; no Guam operator vendor award or removal confirmed. MYUS cable (landing at GTA, RFS 2028) found but its supplier is unnamed, so not coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase surfaced; Guam is US territory so US export controls do not apply as to a foreign destination"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only a Guam AI regulatory task force and related legislation; no provider partnership, government deployment or sovereign model named"
+    },
+    "applications": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks and facilities; no surveillance or e-government AI item surfaced"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "only a search-result headline (Isla Public Media, Aug 2026) asking whether Guam has enough power for data centres; not opened, no AI-specific supply project"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Whether any Guam carrier (GTA, Docomo Pacific, IT&E, GTA/Choice) applied to the FCC Secure and Trusted Communications Networks Reimbursement Program, and the status of any Huawei/ZTE removal; the FCC applicant list was not located.",
+    "Radio and core network vendors of Guam's mobile operators.",
+    "Completion status of GTA's Alupang data centre (planned late 2024).",
+    "Supplier and owners of the MYUS cable (Hexa Capital Consultancy, landing at Alupang, RFS 2028) and of other Guam landings (Bifrost, Echo, Apricot, SEA-US).",
+    "Details of the US Navy data center projects at Andersen AFB (DCD, May 2025) and Camp Blaz (DCD, Oct 2024), and of the reported ten-acre USD 3m data centre (DCD, Oct 2025); articles not opened.",
+    "Government of Guam surveillance/CCTV vendors and any agency AI tool adoption."
+  ],
+  "searches_run": 10
+}

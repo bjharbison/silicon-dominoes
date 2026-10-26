@@ -1,0 +1,154 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GLP",
+  "name": "Guadeloupe",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T13:20:46Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GLP-001",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Infinera",
+      "local_actor": "Orange",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-04-16",
+      "still_current": null,
+      "summary": "Orange's Kanawa submarine cable linking French Guiana, Martinique and Guadeloupe entered service, with Infinera supplying the optical transmission platform on the Martinique-Guadeloupe segment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecomtv.com/content/submarine-network/orange-deploys-infinera-for-new-kanawa-subsea-cable-connecting-caribbean-34879",
+          "publisher": "TelecomTV (Infinera press release)",
+          "source_tier": "S2",
+          "date": "2019-04-16",
+          "retrieved_at": "2026-10-26T13:18:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://next.ink/10863/103132-guyane-martinique-et-guadeloupe-orange-va-deployer-cable-sous-marin-a-5-tbs/",
+          "publisher": "Next INpact",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T13:15:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment rule: Infinera (US-headquartered at the source date) supplies the optical line equipment, so pole us; Orange (France) owns the cable. Any later change in Infinera ownership was not verified in this run. Only one opened source, a vendor press release, so not corroborated. Pre-2020 and still_current not confirmed."
+    },
+    {
+      "id": "GLP-002",
+      "layer": "facilities",
+      "pole": "third",
+      "controller": "Canal+ Telecom (Groupe Canal+)",
+      "local_actor": "Canal+ Telecom",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-04-28",
+      "still_current": null,
+      "summary": "Canal+ Telecom inaugurated a Tier III-rated data centre at Moudong in the Jarry zone of Baie-Mahault, offering secure hosting services to local authorities and businesses. Capacity and investment were not stated.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://rci.fm/guadeloupe/infos/Economie/Un-nouveau-data-center-pour-Canal-Telecom",
+          "publisher": "RCI",
+          "source_tier": "S3",
+          "date": "2022-04-28",
+          "retrieved_at": "2026-10-26T13:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "French-controller treatment: SPEC defines domestic as a controller from this same territory, so metropolitan French or EU controllers are coded third for Guadeloupe even though it is a French department. Canal+ Telecom is taken to be controlled by Groupe Canal+ (France), hence third; its corporate parentage was not confirmed in an opened source. Small general-purpose facility, not an AI campus."
+    },
+    {
+      "id": "GLP-003",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Canal+ Telecom (Groupe Canal+)",
+      "builder": null,
+      "financier": "European Union, Connecting Europe Facility (CEF Digital), about 70%",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-15",
+      "still_current": null,
+      "summary": "Groupe Canal+ presented CaribbeanConnect, a 300 Gb/s submarine cable linking Puerto Rico, Guadeloupe and Martinique to replace an end-of-life cable; about 6 million euros, roughly 70% EU CEF Digital co-financed, commissioning expected 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://outremers360.com/bassin-atlantique-appli/numerique-caribbeanconnect-un-cable-sous-marin-a-tres-haut-debit-reliant-porto-rico-la-guadeloupe-et-la-martinique-pour-renforcer-la-connectivite-numerique",
+          "publisher": "Outremers360",
+          "source_tier": "S3",
+          "date": "2025-10-18",
+          "retrieved_at": "2026-10-26T13:17:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null because the cable and terminal equipment vendors are not named; under the equipment rule the vendor, not the owner, sets the pole. Tier 4 because EU co-financing is stated as committed; operation not confirmed. EUR value not converted (no source-date rate obtained), so values null."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search for Guadeloupe AI partnerships (Mistral, OpenAI, Microsoft) returned only non-Guadeloupe results"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search found only Region Guadeloupe co-funding of communal videoprotection and school access control (Feb 2026) with no vendor or AI feature named; not coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core equipment vendors for Orange, SFR Caraibe (Outremer Telecom), Digicel AFG and Free Caraibe in Guadeloupe, including their 5G networks launched 18 February 2025 (opened RCI and Alloforfait reports name no vendor).",
+    "Whether the French 2019 network-security authorisation regime (L34-11) has led to Huawei equipment refusals or removals in Guadeloupe specifically; opened parliamentary question covered only metropolitan zones.",
+    "Equipment vendor, owner and in-service status of the CaribbeanConnect cable (GLP-003).",
+    "Whether Canal+ Telecom is controlled from metropolitan France or locally, and the Moudong data centre's capacity (GLP-002).",
+    "Vendors of communal videoprotection systems co-funded by the Region (2025-2030 convention) and any AI analytics."
+  ],
+  "searches_run": 9
+}

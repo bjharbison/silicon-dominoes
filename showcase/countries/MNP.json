@@ -1,0 +1,121 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MNP",
+  "name": "Northern Mariana Islands",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T13:20:29Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MNP-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (Sweden)",
+      "local_actor": "IT&E",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2015-09-14",
+      "still_current": null,
+      "summary": "After Typhoon Soudelor, IT&E chose Ericsson to upgrade its radio and core network on Saipan, launch its first 4G LTE network there, and more than double HSPA capacity on Saipan, Rota and Tinian; equipment began arriving August 2015.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/6/2015/ite-selects-ericsson-to-enhance-wireless-networks-in-saipan-following-recent-typhoon-soudelor",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2015-09-14",
+          "retrieved_at": "2026-10-26T13:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: Ericsson supplies RAN and core, so pole third. Tier 4 because the release reports equipment delivery under way, not confirmed operation at scale. Single opened S1 vendor release, hence medium. Pre-2020 and not reconfirmed as current; whether IT&E's later 5G (with SK Telecom engineering support, 2019) still runs on Ericsson is unknown."
+    },
+    {
+      "id": "MNP-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "NEC Corporation (Japan, cable supplier)",
+      "local_actor": "Docomo Pacific (lead/owner); CNMI and Guam governments (2016 agreement parties)",
+      "builder": "NEC Corporation",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-05",
+      "still_current": null,
+      "summary": "Docomo Pacific began laying the NEC-built ATISA submarine fibre cable in May 2017, linking Guam with Saipan, Tinian and Rota, with a Saipan landing ceremony on 11 May and full service expected by August 2017.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://oceannews.com/news/subsea-cable/docomo-pacific-starts-marine-lay-of-atisa-cable-in-the-mariana-islands/",
+          "publisher": "Ocean News & Technology",
+          "source_tier": "S2",
+          "date": "2017-06-07",
+          "retrieved_at": "2026-10-26T13:10:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://saipantribune.com/?p=252340",
+          "publisher": "Saipan Tribune",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T13:10:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: NEC built the cable, so pole third. Tier 4 (marine lay under way); ready-for-service was only expected, not confirmed, in sources opened. Both articles appear to derive from Docomo Pacific's announcement, so independence is weak. Docomo Pacific is NTT Docomo-owned (Japan), but as owner-operator it does not set the pole of equipment. Saipan Tribune page showed no year; dated via Ocean News."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one combined search on data centres/AI/surveillance in the CNMI returned nothing territory-specific"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one combined search covering government AI in the CNMI returned nothing territory-specific"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one combined search on Hikvision/surveillance in the CNMI returned only generic Hikvision coverage"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Whether any CNMI operator (IT&E, Docomo Pacific, PTI Pacifica, former iCONNECT) held Huawei/ZTE covered equipment or participated in the FCC rip-and-replace programme; four searches and one FCC FAQ fetch found none, but the FCC participant list was not read in full.",
+    "RAN/core vendor for Docomo Pacific's mobile and 5G network on Saipan (a 2020s advertising feature names Nokia only for Guam).",
+    "Current RAN/core vendor for IT&E's 5G network in the CNMI and the equipment vendor behind its 2019 SK Telecom 5G FWA partnership.",
+    "ATISA ready-for-service confirmation and current status; suppliers of other CNMI cables (e.g. Mariana-Guam Cable, any newer Echo/Bifrost or SMART-cable branches).",
+    "Any CNMI government CCTV/public-safety camera systems and their vendors."
+  ],
+  "searches_run": 9
+}

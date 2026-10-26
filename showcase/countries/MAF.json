@@ -1,0 +1,161 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "MAF",
+  "name": "Saint Martin (French part)",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T13:20:07Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "MAF-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (ASN, France)",
+      "local_actor": "Orange",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06",
+      "still_current": null,
+      "summary": "A State (DEAL Guadeloupe) project annex maps the CELIA subsea cable route through Saint-Martin's contiguous zone to a landing site, with June 2025 bathymetric surveys. Orange's CELIA trunk, supplied by ASN, targets service in Q3 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.guadeloupe.developpement-durable.gouv.fr/IMG/pdf/annexes_3_celia_guadeloupe-st_martin.pdf",
+          "publisher": "DEAL Guadeloupe (French State)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://newsroom.orange.com/orange-and-setar-launch-the-celia-cetc-project-connecting-the-caribbean-co-funded-by-the-european-union?lang=eng",
+          "publisher": "Orange",
+          "source_tier": "S1",
+          "date": "2024-12-03",
+          "retrieved_at": "2026-10-26T13:17:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/celia-cable-system-announced-in-the-caribbean/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-12-04",
+          "retrieved_at": "2026-10-26T13:17:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Only the DEAL annex places CELIA at Saint-Martin; Orange and DCD name ASN as supplier but list only Martinique, Aruba, Antigua, Puerto Rico and Florida, so applying ASN to the Saint-Martin segment is inference. Annex is undated apart from June 2025 surveys. French vendor coded third, consistent with BLM-001. Tier 2: survey/permit-dossier stage."
+    },
+    {
+      "id": "MAF-002",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Not stated (Orange 5G RAN/core vendor unnamed)",
+      "local_actor": "Orange Caraïbe",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-08-11",
+      "still_current": null,
+      "summary": "Orange announced the commercial launch of its 5G network in Saint-Martin from 11 August 2023, starting in Marigot.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://outremers360.com/bassin-atlantique-appli/orange-lance-son-reseau-5g-a-saint-barthelemy-saint-martin-et-en-guyane",
+          "publisher": "Outremers360",
+          "source_tier": "S3",
+          "date": "2023-07-28",
+          "retrieved_at": "2026-10-26T13:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: spec sets network pole by equipment vendor, which the source does not name. Tier 5 as a commercial launch, though initial coverage was limited to Marigot. No Huawei/ZTE mention found. Single opened S3 source."
+    },
+    {
+      "id": "MAF-003",
+      "layer": "applications",
+      "pole": null,
+      "controller": "Not stated (camera/VMS vendor and integrator unnamed)",
+      "local_actor": "Collectivité de Saint-Martin (Police territoriale)",
+      "builder": null,
+      "financier": "French State FIPD (applied for; grant not confirmed)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-10",
+      "still_current": null,
+      "summary": "The Collectivité plans 80 video-protection cameras in two phases (2026-2028), estimated at EUR 4m; prefectoral authorisation obtained and fibre groundwork begun, with the supervision centre to be rebuilt. No AI or vendor mentioned.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://outremers360.com/bassin-atlantique-appli/saint-martin-prevoit-linstallation-de-80-cameras-de-video-protection",
+          "publisher": "Outremers360",
+          "source_tier": "S3",
+          "date": "2026-10-10",
+          "retrieved_at": "2026-10-26T13:12:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null because the equipment vendor is not named; no AI analytics or facial recognition reported, so relevance to the AI stack depends on the vendor. Tier 4 as authorisation obtained and works started. EUR 4m not converted. Single opened S3 source."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found no data-centre or AI-campus project in French Saint-Martin; results were mainland France only"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only a November 2025 CNFPT AI training session for Collectivité staff naming no provider, tool or contract"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Confirm the CELIA Saint-Martin branch: landing site, permit status, whether ASN supplies it, and its ready-for-service date.",
+    "RAN/core equipment vendors of Orange Caraïbe, Digicel, Free Caraïbe and Dauphin Telecom in French Saint-Martin, and any application of the French 2019 Huawei authorisation regime there.",
+    "Camera/VMS vendor and integrator for the Collectivité's 80-camera video-protection programme, and whether FIPD funding was granted.",
+    "Operator and equipment vendor of the Saint-Martin FTTH network (the 2020 Arcep-hosted SDTAN was not opened)."
+  ],
+  "searches_run": 7
+}

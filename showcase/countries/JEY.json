@@ -1,0 +1,404 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "JEY",
+  "name": "Jersey",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T13:21:22Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "JEY-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "JT (Jersey Telecom)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-06-18",
+      "still_current": null,
+      "summary": "ZTE supplied JT's 4G mobile network in the Channel Islands and partnered with JT on a 5G test bed. In June 2019 Jersey's minister confirmed ZTE and Huawei supplied Jersey operators and saw no reason to stop them.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://statesassembly.je/getmedia/7fc285e9-7db5-49f8-ba02-8d1ba395500e/(252) APPROVED AND ANSWERED Con Shenton-Stone to EDTSC re 5G partnership with ZTE.pdf?ext=.pdf",
+          "publisher": "States Assembly of Jersey (WQ.252/2019)",
+          "source_tier": "S1",
+          "date": "2019-06-18",
+          "retrieved_at": "2026-10-26T13:05:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://totaltele.com/zte-and-jt-to-launch-5g-test-network-in-jersey/",
+          "publisher": "Total Telecom",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T13:08:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://jerseyeveningpost.com/news/2020/07/17/huawei-jersey-to-align-its-approach-with-the-uk/",
+          "publisher": "Jersey Evening Post",
+          "source_tier": "S3",
+          "date": "2020-07-17",
+          "retrieved_at": "2026-10-26T13:08:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Date is the earliest dated opened source confirming ZTE in Jersey networks; the ZTE 4G deployment itself predates it (Total Telecom item undated, test bed due mid-2019). Tier 5 because the 4G network was live. DCD (July 2023) said JT's 4G still used ZTE then; JT's Ericsson 5G network (JEY-005) is replacing it, but completion of ZTE removal was not confirmed, so still_current null."
+    },
+    {
+      "id": "JEY-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Sure (Jersey), now Sure by Beyon",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-07-16",
+      "still_current": false,
+      "summary": "Sure ran a free-to-customer 5G trial in Jersey using Huawei equipment; in July 2020 it had not yet chosen a permanent 5G supplier and said it would follow government advice.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://channel103.com/news/jersey/jersey-to-remove-high-risk-telecoms-kit-after-uk-huawei-ban",
+          "publisher": "Channel 103",
+          "source_tier": "S3",
+          "date": "2020-07-16",
+          "retrieved_at": "2026-10-26T13:01:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ispreview.co.uk/index.php/2020/07/channel-islands-align-with-uk-govs-anti-huawei-5g-approach.html",
+          "publisher": "ISPreview",
+          "source_tier": "S2",
+          "date": "2020-07-17",
+          "retrieved_at": "2026-10-26T13:01:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://jerseyeveningpost.com/news/2020/07/17/huawei-jersey-to-align-its-approach-with-the-uk/",
+          "publisher": "Jersey Evening Post",
+          "source_tier": "S3",
+          "date": "2020-07-17",
+          "retrieved_at": "2026-10-26T13:08:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "still_current false inferred because Sure's Jersey 5G is now being built on Ericsson (JEY-006) with launch due 2026; whether Huawei kit remains in Sure's Jersey 2G-4G network is not established."
+    },
+    {
+      "id": "JEY-003",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "ZTE",
+      "local_actor": "JT (Jersey Telecom)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "ZTE equipment in JT's existing mobile network (JEY-001)",
+      "reversal_reason": "geopolitical",
+      "date": "2020-04",
+      "still_current": null,
+      "summary": "JT decided in early 2020, announced with its April results, to move away from ZTE equipment, which the UK rates high risk; in 2021 it said high-risk-vendor kit would leave its 2G-4G networks by 2027.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://jerseyeveningpost.com/news/2020/07/17/huawei-jersey-to-align-its-approach-with-the-uk/",
+          "publisher": "Jersey Evening Post",
+          "source_tier": "S3",
+          "date": "2020-07-17",
+          "retrieved_at": "2026-10-26T13:08:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ispreview.co.uk/index.php/2020/07/channel-islands-align-with-uk-govs-anti-huawei-5g-approach.html",
+          "publisher": "ISPreview",
+          "source_tier": "S2",
+          "date": "2020-07-17",
+          "retrieved_at": "2026-10-26T13:01:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://channel103.com/news/jersey/jersey-to-remove-high-risk-telecoms-kit-after-uk-huawei-ban",
+          "publisher": "Channel 103",
+          "source_tier": "S3",
+          "date": "2020-07-16",
+          "retrieved_at": "2026-10-26T13:01:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://guernseypress.com/news/2021/07/09/telcos-continue-removal-of-high-risk-vendors-equipment",
+          "publisher": "Guernsey Press",
+          "source_tier": "S3",
+          "date": "2021-07-09",
+          "retrieved_at": "2026-10-26T13:09:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/jersey-telecom-outlines-80m-5g-investment-plan-with-ericsson-tie-up",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-07-05",
+          "retrieved_at": "2026-10-26T13:15:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reason coded geopolitical because sources tie the decision to the UK security designation of ZTE as high risk. Exact April 2020 announcement not opened; month taken from Channel 103's reference to JT's April annual results. The 2021 Guernsey Press item refers to JT across the Channel Islands, not Jersey specifically. Removal completion unconfirmed."
+    },
+    {
+      "id": "JEY-004",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei, ZTE and other UK-designated high risk vendors",
+      "local_actor": "Government of Jersey (Minister for Economic Development / Sustainable Economic Development); JCRA",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "High-risk-vendor (Huawei/ZTE) equipment in Jersey telecoms networks (JEY-001, JEY-002)",
+      "reversal_reason": "geopolitical",
+      "date": "2020-07-17",
+      "still_current": null,
+      "summary": "Jersey said it would align with the UK's exclusion of high-risk vendors and built a telecoms security framework; 2024 draft regulations (P.47/2024) bar operators from using high-risk-vendor equipment and allow government removal orders.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://jerseyeveningpost.com/news/2020/07/17/huawei-jersey-to-align-its-approach-with-the-uk/",
+          "publisher": "Jersey Evening Post",
+          "source_tier": "S3",
+          "date": "2020-07-17",
+          "retrieved_at": "2026-10-26T13:08:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ispreview.co.uk/index.php/2020/07/channel-islands-align-with-uk-govs-anti-huawei-5g-approach.html",
+          "publisher": "ISPreview",
+          "source_tier": "S2",
+          "date": "2020-07-17",
+          "retrieved_at": "2026-10-26T13:01:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.gov.je/SiteCollectionDocuments/Industry%20and%20finance/C%20telecoms%20security%20framework%20consultation%202023.pdf",
+          "publisher": "Government of Jersey",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T13:20:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://statesassembly.je/publications/comments/2024/p-47-2024-com",
+          "publisher": "States Assembly of Jersey (Economic and International Affairs Scrutiny Panel)",
+          "source_tier": "S1",
+          "date": "2024-08-27",
+          "retrieved_at": "2026-10-26T13:20:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 5 is the tier of the thing reversed (live ZTE 4G kit). Medium because the 2020 step was a ministerial alignment statement and adoption of P.47/2024 (debate scheduled 10 September 2024) was not confirmed in opened sources; no Jersey removal deadline or removal order was found. The 2023 consultation does not name Huawei or ZTE."
+    },
+    {
+      "id": "JEY-005",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "JT (Jersey Telecom)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-05-27",
+      "still_current": null,
+      "summary": "JT's new end-to-end Ericsson 5G network (core, RAN, managed services, contracted 2023) began going live in Jersey in May 2025, starting in St Ouen, with phased rollout and full standalone service expected by end-2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/jersey-telecom-outlines-80m-5g-investment-plan-with-ericsson-tie-up",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2023-07-05",
+          "retrieved_at": "2026-10-26T13:15:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.uktech.news/news/jersey-telecoms-new-5g-network-goes-live-20250527",
+          "publisher": "UKTN",
+          "source_tier": "S3",
+          "date": "2025-05-27",
+          "retrieved_at": "2026-10-26T13:17:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ericsson.com/en/press-releases/3/2025/jersey-telecoms-new-5g-network-goes-live",
+          "publisher": "Ericsson",
+          "source_tier": "S4",
+          "date": "2025-05-27",
+          "retrieved_at": "2026-10-26T13:02:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Ericsson (Sweden) as equipment vendor sets pole third. Tier 4 because rollout had started but island-wide completion was not confirmed. DCD says the project replaces JT's ZTE-based 4G network. The GBP 80m (~USD 101m per DCD) investment covers the Channel Islands, not Jersey alone, so value left null."
+    },
+    {
+      "id": "JEY-006",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Sure (Jersey), now Sure by Beyon",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11-11",
+      "still_current": null,
+      "summary": "Sure selected Ericsson for RAN and core in a full rebuild of its Channel Islands mobile network and was upgrading 18 Jersey sites, including former Airtel sites, ahead of a 2026 Jersey 5G launch.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://jerseyeveningpost.com/news/2025/11/11/upgrades-at-mobile-sites-across-jersey-to-prepare-for-roll-out-of-5g/",
+          "publisher": "Jersey Evening Post",
+          "source_tier": "S3",
+          "date": "2025-11-11",
+          "retrieved_at": "2026-10-26T13:16:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sure.com/jersey/latest-news/2025/building-the-digital-future/",
+          "publisher": "Sure",
+          "source_tier": "S4",
+          "date": null,
+          "retrieved_at": "2026-10-26T13:06:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 3 for the vendor selection; site works had begun but no Jersey 5G launch was confirmed in opened sources. The GBP 48m figure on Sure's page covers the Channel Islands network, not Jersey alone, so value null. Only one opened S3 source plus corporate material, so not corroborated."
+    },
+    {
+      "id": "JEY-007",
+      "layer": "models",
+      "pole": "us",
+      "controller": "Microsoft",
+      "local_actor": "Government of Jersey (public service)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-23",
+      "still_current": true,
+      "summary": "The Chief Minister said all government Office 365 users on PCs or laptops can use the government's secure Microsoft Copilot implementation, with fast-growing daily use for analysis, summarising and drafting; no other AI provider was named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://statesassembly.je/publications/questions/2025-written-questions/2026-written-questions/wq-31-60/wq-39-2026",
+          "publisher": "States Assembly of Jersey (WQ.39/2026)",
+          "source_tier": "S1",
+          "date": "2026-02-23",
+          "retrieved_at": "2026-10-26T13:06:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://statesassembly.je/publications/questions/2025/2025-written-questions/wq-120-149/wq-132-2025",
+          "publisher": "States Assembly of Jersey (WQ.132/2025)",
+          "source_tier": "S1",
+          "date": "2025-03-31",
+          "retrieved_at": "2026-10-26T13:06:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Used through Microsoft's service, so pole us; underlying model not stated, so base_model null. Tier 5 because it is available government-wide and in daily use; contract terms and value not disclosed. still_current true as of the February 2026 answer. WQ.132/2025 documents the AI Steering Group and internal AI policy only. Both sources are one government, so not corroborated; single-S1 rule allows medium."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found only an upgrade at an existing Jersey data centre (aggregator, not cited) and Alderney items; no large or AI data-centre project with an identified owner-operator"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced in other searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "not_searched",
+      "null_reason": "search budget spent on networks and government AI; no safe-city or surveillance item surfaced"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Whether the States Assembly adopted P.47/2024 (Telecommunications Law amendment regulations) on or after 10 September 2024, and whether any high-risk-vendor designation or removal order with a deadline followed.",
+    "Whether JT has completed removal of ZTE equipment from its Jersey 2G-4G networks, and completion of its Ericsson 5G standalone rollout.",
+    "Whether Huawei kit remained in Sure's Jersey 2G-4G network and whether the Ericsson rebuild has removed it; date of Sure's Jersey 5G launch.",
+    "Airtel-Vodafone Jersey's legacy vendors (reported as non-Huawei in 2020) and the status of its network after Sure acquired Airtel sites.",
+    "Submarine cable suppliers serving Jersey.",
+    "Vendors of States of Jersey Police CCTV/ANPR and the AI tools Health and Care Jersey and the police are deploying.",
+    "Any Jersey data-centre projects since 2023 and their owner-operators."
+  ],
+  "searches_run": 8
+}

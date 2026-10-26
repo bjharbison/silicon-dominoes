@@ -1,0 +1,196 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GUF",
+  "name": "French Guiana",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T13:27:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GUF-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "EllaLink (operator under operation-maintenance contract)",
+      "local_actor": "SPLANG (86.5% owned by Collectivité Territoriale de Guyane)",
+      "builder": "EllaLink",
+      "financier": "EU (FEDER, CEF Digital Gateways), CNES, AFD loan",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-01",
+      "still_current": null,
+      "summary": "Lum@link, a roughly 2,000 km public submarine cable from Cayenne to EllaLink's system off Fortaleza, Brazil, owned by the territory's SPLANG, about EUR 75.8m, EU/AFD/CNES-financed, under construction with commissioning targeted for December 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.afd.fr/fr/projets/construction-du-cable-sous-marin-lumlink-reliant-cayenne-europe",
+          "publisher": "Agence française de développement",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T13:25:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.linfodurable.fr/cooperation-commerce-la-guyane-veut-tirer-des-benefices-de-son-futur-cable-souverain-58025",
+          "publisher": "L'Info Durable",
+          "source_tier": "S3",
+          "date": "2026-07-13",
+          "retrieved_at": "2026-10-26T13:25:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Controller convention: GUF is coded as its own territory, so French-state, French-company and EU controllers are 'third', not 'domestic'; only Guianese actors (CTG, SPLANG) are domestic. Equipment rule: wet-plant supplier not named in opened sources; EllaLink is documented as builder and operator, so it is treated as controller (third). Owner SPLANG is domestic. Tier 4: financing closed and construction under way (AFD start 1 July 2025); tier 5 once commissioned. EUR values not converted, so USD null. Intended to replace the ageing Americas II cable."
+    },
+    {
+      "id": "GUF-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Orange (owner-operator; equipment supplier not stated)",
+      "local_actor": "Orange Caraïbe",
+      "builder": "Orange Marine",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2019-01-16",
+      "still_current": null,
+      "summary": "Orange inaugurated Kanawa, a self-funded EUR 35m submarine fibre cable of about 1,750 km linking French Guiana with Martinique, with commercial service planned from end-January 2019.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://next.ink/brief-article/kanawa-orange-inaugure-son-cable-sous-marin-reliant-la-guyane-a-la-martinique/",
+          "publisher": "Next",
+          "source_tier": "S2",
+          "date": "2019-01-17",
+          "retrieved_at": "2026-10-26T13:25:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.universfreebox.com/article/48106/orange-lance-son-nouveau-cable-sous-marin-kanawa-et-renforce-la-connectivite-en-guyane-et-aux-antilles",
+          "publisher": "Univers Freebox",
+          "source_tier": "S3",
+          "date": "2019-01-17",
+          "retrieved_at": "2026-10-26T13:25:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Controller convention: GUF is coded as its own territory, so French-state, French-company and EU controllers are 'third', not 'domestic'; only Guianese actors (CTG, SPLANG) are domestic. Equipment vendor not named, so the documented owner-operator Orange (France) is treated as controller. Both sources likely relay the same Orange announcement, weakening independence. Pre-2020 and current operation not confirmed in this run, so still_current null. Sources differ on length (1,746 vs 1,766 km)."
+    },
+    {
+      "id": "GUF-003",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Orange Caraïbe",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-08-01",
+      "still_current": null,
+      "summary": "Orange began 5G service in Cayenne and Rémire-Montjoly on 1 August 2023 after Arcep granted 700 MHz and 3.4-3.8 GHz licences; Digicel AFG, Free Caraïbe and Outremer Telecom were also licensed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://outremers360.com/bassin-atlantique-appli/orange-lance-son-reseau-5g-a-saint-barthelemy-saint-martin-et-en-guyane",
+          "publisher": "Outremers360",
+          "source_tier": "S3",
+          "date": "2023-07-28",
+          "retrieved_at": "2026-10-26T13:25:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: the radio-equipment vendor for Orange's Guiana 5G network is not named in the opened source, and the equipment rule makes the vendor the controller. Tier 4 because only an initial-area rollout is documented."
+    },
+    {
+      "id": "GUF-004",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "SPLANG on behalf of Collectivité Territoriale de Guyane",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-08",
+      "still_current": null,
+      "summary": "SPLANG tendered a feasibility study on algorithmic video surveillance for schools, territorial aerodromes and CTG administrative sites, with a final roadmap due November 2024; no software vendor was named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://next.ink/146427/la-guyane-veut-favoriser-lacceptabilite-sociale-de-la-videosurveillance-algorithmique-vsa/",
+          "publisher": "Next",
+          "source_tier": "S2",
+          "date": "2024-08-12",
+          "retrieved_at": "2026-10-26T13:25:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null because no vendor or stack is identified; this is a study, not a deployment. Outcome of the study and any subsequent procurement unknown."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "two searches returned only aggregator listings of small colocation sites (Wayscom, Guyane Numérique) and results about Guyana; no large data-centre project with an identifiable owner-operator"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found no CTG or territorial partnership with any model provider and no local model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core equipment vendors of Orange Caraïbe, Digicel AFG, SFR Caraïbe/Outremer Telecom and Free Caraïbe in French Guiana, and whether any Huawei kit there falls under France's 2019 high-risk-vendor authorisation regime and its 2028 removal deadlines.",
+    "Wet-plant supplier of Lum@link and whether it was commissioned by December 2026.",
+    "Equipment supplier of the Kanawa cable and the Americas II cable's status.",
+    "Outcome of SPLANG's 2024 algorithmic video-surveillance feasibility study and any subsequent procurement and vendor.",
+    "Vendors of municipal CCTV in Cayenne, Kourou and Saint-Laurent-du-Maroni."
+  ],
+  "searches_run": 9
+}

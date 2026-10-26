@@ -1,0 +1,144 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GIB",
+  "name": "Gibraltar",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T13:20:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GIB-001",
+      "layer": "facilities",
+      "pole": null,
+      "controller": "Pelagos Data Centres",
+      "local_actor": "Government of Gibraltar (backing)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-09-04",
+      "still_current": null,
+      "summary": "Pelagos Data Centres, with Government of Gibraltar backing, announced a privately funded AI data-centre campus of up to 250MW near the port, in five phases to 2033, first phase targeted for late 2027, powered off-grid by renewables and LNG.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gibraltar.gov.gi/press-releases/pelagos-data-centres-unveils-ambitious-plan-for-new-250mw-facility-near-the-port-of-gibraltar-6412025-11196",
+          "publisher": "HM Government of Gibraltar",
+          "source_tier": "S1",
+          "date": "2025-09-04",
+          "retrieved_at": "2026-10-26T13:17:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacentrenews.uk/story/pelagos-reveals-gbp-1-8-billion-ai-data-centre-plan-for-gibraltar",
+          "publisher": "DataCentreNews UK",
+          "source_tier": "S2",
+          "date": "2025-09-10",
+          "retrieved_at": "2026-10-26T13:17:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacentremagazine.com/news/pelagos-data-centres-new-250mw-facility-port-of-gibraltar",
+          "publisher": "Data Centre Magazine",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T13:18:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: owner-operator's home jurisdiction is not stated (offices in London and Gibraltar; chairman named as Konstantin Sokolov); no investors named. Tier 1 because only a plan was announced; construction was slated for 2026 but no start was found in one follow-up search. Announced value about GBP 1.8bn, not converted (no source-date rate in run). Not marked corroborated because the trade report appears to relay the launch announcement rather than independently confirm it. Off-grid LNG/renewable power is part of this plan, not coded separately."
+    },
+    {
+      "id": "GIB-002",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Royal Gibraltar Police (data controller); HM Government of Gibraltar",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-07",
+      "still_current": null,
+      "summary": "Ahead of the UK-EU treaty border arrangements, Gibraltar rolled out an expanded CCTV network with live facial recognition and ANPR at the border, airport, Main Street and Casemates, monitored from an airport control room; first-week operation reported in July 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.gibraltar.gov.gi/press-releases/gibraltar-rolls-out-extensive-security-framework-ahead-of-treaty-implementation-2632026-11890",
+          "publisher": "HM Government of Gibraltar",
+          "source_tier": "S1",
+          "date": "2026-04-16",
+          "retrieved_at": "2026-10-26T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://idtechwire.com/gibraltar-reports-no-matches-in-first-week-of-expanded-facial-recognition/",
+          "publisher": "ID Tech Wire",
+          "source_tier": "S2",
+          "date": "2026-07-23",
+          "retrieved_at": "2026-10-26T13:19:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.police.gi/overt-live-facial-recognition-policy",
+          "publisher": "Royal Gibraltar Police",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T13:18:00Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole and controller null: neither opened source names the camera, facial-recognition software vendor or the security contractor operating the system, so the stack pole cannot be assigned. Tier 5 because the system was reported operating territory-wide in July 2026. Corroboration covers the deployment, not any vendor."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "null",
+      "null_reason": "three searches: Gibtelecom launched 5G in June 2021 (opened operator release names no equipment vendor); only a 2003 Ericsson GPRS award surfaced; no Gibraltar high-risk-vendor decision found"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced, and the Pelagos campus names no chip vendor"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only Gibraltar Chronicle items on AI regulation consultation and an AI summit speech; no provider partnership or sovereign model named"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "null",
+      "null_reason": "only AI-tied power evidence is the planned off-grid LNG/renewable supply inside the Pelagos plan (GIB-001), with no separate owner or instrument"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio and core network equipment vendors for Gibtelecom (2G-5G) and any second mobile operator; whether Gibraltar adopted UK-style high-risk-vendor restrictions.",
+    "Pelagos Data Centres' corporate domicile and investors, and whether construction started in 2026 (planned Q1 2026 technical briefing).",
+    "Vendor of the Royal Gibraltar Police live facial recognition software, cameras and ANPR, and the identity of the operating security contractor.",
+    "Submarine cable suppliers serving Gibraltar.",
+    "Any government AI tool adoption (e.g. Microsoft Copilot) or provider partnership."
+  ],
+  "searches_run": 9
+}
