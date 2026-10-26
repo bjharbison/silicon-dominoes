@@ -1,0 +1,238 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "ASM",
+  "name": "American Samoa",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T09:20:27Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "ASM-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "AST Telecom LLC d/b/a Bluesky Communications",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-04-05",
+      "still_current": false,
+      "summary": "Bluesky launched a Huawei-supplied 4.5G LTE-Advanced mobile network, Huawei wireless-to-the-premise fixed broadband, online charging and VoLTE systems, upgrading its 2G/3G network across American Samoa, Samoa and the Cook Islands.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://samoanews.com/node/98679",
+          "publisher": "Samoa News (partner-issued media release)",
+          "source_tier": "S4",
+          "date": "2017-04-05",
+          "retrieved_at": "2026-10-26T09:20:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.fcc.gov/sites/default/files/ast-telecom-bluesky-12202023.pdf",
+          "publisher": "FCC (AST Telecom SCRP status update, Form 5640)",
+          "source_tier": "S1",
+          "date": "2023-12-20",
+          "retrieved_at": "2026-10-26T09:20:27Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: Huawei supplied RAN and core, so pole prc. The launch article is a partner media release (S4); Bluesky's own FCC filing (S1) independently confirms Huawei covered equipment in its network, hence medium. still_current false: the April 2025 FCC filing reports removal and disposal complete (see ASM-002). Superseded by ASM-002 and ASM-003."
+    },
+    {
+      "id": "ASM-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "AST Telecom LLC d/b/a Bluesky Communications; US Federal Communications Commission (Secure and Trusted Communications Networks Reimbursement Program)",
+      "builder": null,
+      "financier": "US FCC Secure and Trusted Communications Networks Reimbursement Program",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Bluesky's Huawei-supplied LTE/WTTx mobile and core network (ASM-001)",
+      "reversal_reason": "geopolitical",
+      "date": "2024-12",
+      "still_current": null,
+      "summary": "Under the FCC rip-and-replace programme, Bluesky removed its Huawei network equipment: FCC approved its reimbursement application in July 2022, physical replacement finished by June 2024, and destruction of the removed equipment completed in December 2024.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.fcc.gov/sites/default/files/ast-apr25.pdf",
+          "publisher": "FCC (AST Telecom SCRP status update, Form 5640)",
+          "source_tier": "S1",
+          "date": "2025-04-03",
+          "retrieved_at": "2026-10-26T09:20:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.fcc.gov/sites/default/files/ast-telecom-bluesky-12202023.pdf",
+          "publisher": "FCC (AST Telecom SCRP status update, Form 5640)",
+          "source_tier": "S1",
+          "date": "2023-12-20",
+          "retrieved_at": "2026-10-26T09:20:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://samoanews.com/local-news/bluesky-funding-approved-under-fcc-reimbursement-program",
+          "publisher": "Samoa News",
+          "source_tier": "S3",
+          "date": "2022-07-30",
+          "retrieved_at": "2026-10-26T09:20:27Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reversal reason geopolitical: the programme implements the US Secure Networks Act's national-security exclusion of Huawei/ZTE. Samoa News (S3) reports an FCC-approved cost estimate above $49.9m and prorated allocation above $19.75m; values left null because these are approval figures relayed second-hand and the filings opened state no funds received. The April 2025 filing says software, optimisation and VoLTE work continue and cites a funding shortfall."
+    },
+    {
+      "id": "ASM-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (Sweden)",
+      "local_actor": "AST Telecom LLC d/b/a Bluesky Communications",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-02-13",
+      "still_current": null,
+      "summary": "Bluesky switched on an Ericsson-built network in American Samoa: Ericsson Radio System plus cloud core, unified data management and IMS, supporting 3G, 4G and non-standalone 5G. The upgrade began in 2022 and replaced Huawei equipment.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/6/2024/bluesky-kicks-off-25th-anniversary-year-by-lighting-up-ericsson-powered-5g-network-in-american-samoa",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2024-02-13",
+          "retrieved_at": "2026-10-26T09:20:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/ericsson/ericsson-lights-5g-network-in-american-samoa/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": "2024-02-14",
+          "retrieved_at": "2026-10-26T09:20:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.fcc.gov/sites/default/files/ast-telecom-bluesky-12202023.pdf",
+          "publisher": "FCC (AST Telecom SCRP status update, Form 5640)",
+          "source_tier": "S1",
+          "date": "2023-12-20",
+          "retrieved_at": "2026-10-26T09:20:27Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: Ericsson supplies RAN and core, so pole third. Corroboration rests on Ericsson's release plus Bluesky's separate FCC filing naming Ericsson as replacement vendor; Mobile World Live largely echoes Ericsson. Neither Ericsson source mentions Huawei; the replacement link comes from the FCC filing. Tier 5: FCC April 2025 filing reports physical replacement complete by June 2024."
+    },
+    {
+      "id": "ASM-004",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "TE SubCom (US cable supplier)",
+      "local_actor": "American Samoa Telecommunications Authority (ASTCA, owns the American Samoa branch); Hawaiki Submarine Cable LP (system owner, New Zealand)",
+      "builder": "TE SubCom",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2018-04-21",
+      "still_current": null,
+      "summary": "The ASTCA-owned American Samoa branch of the TE SubCom-built Hawaiki trans-Pacific cable landed at Tafuna in April 2018, linking the territory to Hawaii, the US West Coast, Australia and New Zealand; planned cost close to $30 million.",
+      "announced_value_usd": 30000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.samoanews.com/local-news/update-hawaiki-cable-officially-lands-american-samoa",
+          "publisher": "Samoa News",
+          "source_tier": "S3",
+          "date": "2018-04-23",
+          "retrieved_at": "2026-10-26T09:20:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/hawaiki-ash-astca-form-pacific-broadband-alliance/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2020-05-28",
+          "retrieved_at": "2026-10-26T09:20:27Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.computerworld.com/article/1674841/hawaiki-cable-installation-to-begin-next-month.html",
+          "publisher": "Computerworld",
+          "source_tier": "S3",
+          "date": "2017-09-28",
+          "retrieved_at": "2026-10-26T09:20:27Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: TE SubCom manufactured the cable, so pole us; supplier attribution comes from Computerworld only. Announced value is the governor's 'close to $30 million' planned cost, treated as approximate. Samoa News notes ASG Employees Retirement Fund support, but its financing role is not specified, so financier null. Pre-2020; in use per 2020 SubTel report, not reconfirmed for 2026."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found only a generic ocean data-centre feature datelined Pago Pago and a call-centre plan; a 2022 DOI-hosted ASTCA proposal to relocate the cable landing station into a data-centre-grade building had no confirmed progress"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in facilities or models searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search on government AI adoption returned nothing specific to American Samoa"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on CCTV/surveillance returned only results for independent Samoa and generic Hikvision coverage"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "ASTCA (government telco) RAN, core and access-network vendors; whether ASTCA held any Huawei/ZTE covered equipment (none found in one search).",
+    "Bluesky rip-and-replace: final SCRP certification and actual reimbursement received; FCC-approved cost figures ($49.9m estimate, $19.75m prorated allocation) seen only via Samoa News.",
+    "Suppliers of the ASH cable (2009) and SAS cable to Samoa, and any proposed backup cable to Samoa.",
+    "Whether ASTCA's proposed data-centre-grade landing station/operations centre relocation (2022 DOI proposal) was funded or built.",
+    "Bluesky's Huawei-era services in Samoa and the Cook Islands are outside this record; check those countries' records for consistency.",
+    "Any territorial-government CCTV or public-safety camera systems and their vendors."
+  ],
+  "searches_run": 9
+}

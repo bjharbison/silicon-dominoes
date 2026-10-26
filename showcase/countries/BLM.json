@@ -1,0 +1,128 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BLM",
+  "name": "Saint Barthélemy",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T09:24:00Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BLM-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (ASN, France)",
+      "local_actor": "Collectivité de Saint-Barthélemy; Orange",
+      "builder": null,
+      "financier": "Collectivité de Saint-Barthélemy (branch connection)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-12",
+      "still_current": null,
+      "summary": "The Collectivité approved in principle linking St Barth to Orange's planned CELIA subsea cable, funding about EUR 10m; studies 2025, construction 2026, service 2027. An FCC application lists St. Barts as a landing.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.journaldesaintbarth.com/en/actualites/technologie/un-troisieme-cable-pour-faire-de-saint-barth-un-hub-numerique--202502061950.html",
+          "publisher": "Journal de Saint-Barth",
+          "source_tier": "S3",
+          "date": "2025-02-06",
+          "retrieved_at": "2026-10-26T09:24:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://communicationsdaily.com/news/2025/08/01/Celia-Subsea-Cable-System-Aims-to-Launch-in-Late-2027-2507310016",
+          "publisher": "Communications Daily",
+          "source_tier": "S2",
+          "date": "2025-08-01",
+          "retrieved_at": "2026-10-26T09:24:00Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/celia-cable-system-announced-in-the-caribbean/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-12-04",
+          "retrieved_at": "2026-10-26T09:24:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: DCD names ASN (French) as CELIA cable supplier but does not list St Barth; Communications Daily (FCC filing, partly paywalled) lists St. Barts but no supplier. Applying ASN to the St Barth branch is inference. French controller coded third, consistent with HKG treating parent-state vendors as foreign. Tier 2: approval in principle and studies; construction not confirmed. EUR value not converted."
+    },
+    {
+      "id": "BLM-002",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Not stated (Orange 5G RAN/core vendor unnamed)",
+      "local_actor": "Orange Caraïbe",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-08-11",
+      "still_current": null,
+      "summary": "Orange announced the commercial launch of its 5G network in Saint-Barthélemy from 11 August 2023, starting with Saint-Jean and Gustavia and extending progressively over following months.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://outremers360.com/bassin-atlantique-appli/orange-lance-son-reseau-5g-a-saint-barthelemy-saint-martin-et-en-guyane",
+          "publisher": "Outremers360",
+          "source_tier": "S3",
+          "date": "2023-07-28",
+          "retrieved_at": "2026-10-26T09:24:00Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: spec sets network pole by equipment vendor, which the source does not name. Tier 5 as a commercial launch, though coverage was initially limited to two zones. No Huawei/ZTE mention found. Single opened S3 source, so low."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found no data-centre or AI-campus project in Saint-Barthélemy; only a new fibre NRO node building in Saint-Jean (H2 2026) surfaced, not a data centre"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one combined search on AI/Huawei/Hikvision returned only generic results; no frontier-model partnership or sovereign model found"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "two searches (vidéoprotection; Hikvision/AI) found no Saint-Barthélemy surveillance or e-government AI procurement"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Confirm whether the St Barth CELIA branch reached construction/contract stage, its final value, and whether ASN supplies the branch unit.",
+    "RAN/core equipment vendors of Orange Caraïbe, Digicel and Free Caraïbe (ex-Dauphin Telecom) in Saint-Barthélemy; whether French 2019 Huawei authorisation regime has been applied to overseas sites.",
+    "Equipment vendor and operator of the Collectivité-led FTTH network (Saint-Barth Digital); the Arcep SDTAN for Saint-Barthélemy (not opened) may name the delegate.",
+    "Any municipal vidéoprotection system in Gustavia and its camera/VMS vendor."
+  ],
+  "searches_run": 8
+}

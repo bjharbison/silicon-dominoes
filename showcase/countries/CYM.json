@@ -1,0 +1,178 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "CYM",
+  "name": "Cayman Islands",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T09:19:45Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "CYM-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (lead technology and marine partner)",
+      "local_actor": "Liberty Networks (Liberty Latin America)",
+      "builder": "Alcatel Submarine Networks",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-26",
+      "still_current": null,
+      "summary": "Liberty Networks began MAYA-1.2, reconfiguring the MAYA-1 cable and keeping its Grand Cayman landing, doubling Cayman capacity to 4 Tbps per direction; Alcatel Submarine Networks is lead technology and marine partner, completion due 2026.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.businesswire.com/news/home/20250826786965/en",
+          "publisher": "Liberty Networks (Business Wire release)",
+          "source_tier": "S1",
+          "date": "2025-08-26",
+          "retrieved_at": "2026-10-26T09:19:45Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.caymancompass.com/2025/08/28/operator-says-subsea-maya-cable-overhaul-secures-caymans-digital-future/",
+          "publisher": "Cayman Compass",
+          "source_tier": "S3",
+          "date": "2025-08-28",
+          "retrieved_at": "2026-10-26T09:19:45Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/liberty-networks-doubling-the-capacity-of-the-cable-submarine-maya-1/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-08-27",
+          "retrieved_at": "2026-10-26T09:19:45Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third because the named equipment/marine vendor is ASN (France); the SLTE vendor is not named, so terminal-equipment control is unconfirmed. Tier 4 because reconfiguration work was underway with completion due H1 2026; completion not confirmed, so still_current null. The $250m figure is Liberty's wider regional programme, not this project, so values null. Compass article relays the operator, so independence is partial."
+    },
+    {
+      "id": "CYM-002",
+      "layer": "networks",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Cayman Islands Government, Ministry of Planning, Lands, Agriculture, Housing & Infrastructure (PLAHI)",
+      "builder": null,
+      "financier": "Cayman Islands Government (one-time grant subsidy)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-02-09",
+      "still_current": null,
+      "summary": "PLAHI issued a Notice of Opportunity seeking an international wholesale operator to build and run a new submarine cable to Grand Cayman, optionally linking Cayman Brac, backed by a one-time government subsidy; a Telconet-led consortium was among declared bidders.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gov.ky/w/plahi-opens-market-opportunity-for-new-submarine-cable-infrastructure",
+          "publisher": "Cayman Islands Government (PLAHI)",
+          "source_tier": "S1",
+          "date": "2026-02-09",
+          "retrieved_at": "2026-10-26T09:19:45Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/rival-consortia-jockey-for-new-cayman-islands-subsea-cable/",
+          "publisher": "SubTel Forum (republishing Mobile Europe)",
+          "source_tier": "S2",
+          "date": "2026-02-10",
+          "retrieved_at": "2026-10-26T09:19:45Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null because no operator or equipment vendor had been selected in the sources read; the Telconet consortium (Ecuador-based) would be third if chosen. Coded tier 2 as a procurement opened after a 2024 business case, not an award. Earlier steps: business case published March 2024 (Baxtel, opened) and a September 2025 ministry update."
+    },
+    {
+      "id": "CYM-003",
+      "layer": "applications",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Department of Public Safety Communications (National CCTV Development Programme)",
+      "builder": null,
+      "financier": "Cayman Islands Government",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-11",
+      "still_current": true,
+      "summary": "The Department of Public Safety Communications runs a national CCTV network of about 400 cameras, with 25-50 more planned for 2025; 21 cameras costing $190,000 went live on Cayman Brac in November 2025. No camera or software vendor is named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.caymancompass.com/2024/11/25/expansion-of-cctv-network-earmarked-for-2025/",
+          "publisher": "Cayman Compass",
+          "source_tier": "S3",
+          "date": "2024-11-25",
+          "retrieved_at": "2026-10-26T09:19:45Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.caymancompass.com/2025/12/04/190000-cctv-boost-for-cayman-brac/",
+          "publisher": "Cayman Compass",
+          "source_tier": "S3",
+          "date": "2025-12-04",
+          "retrieved_at": "2026-10-26T09:19:45Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null because the camera/VMS vendor is not named and the equipment vendor sets the pole; the operator is domestic. No AI analytics reported. The $190,000 is the Brac expansion only, currency assumed CI$ or US$ unstated, so values null. Both sources from one outlet, no S1/S2."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "two searches found only small colocation (Fireminds, BIC Stake Bay listings) and no data-centre or AI-campus project since 2023"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in facilities, networks or models searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "two searches found an AI policy v1.0 and a 2027 AI-law target but no named frontier-model provider partnership or sovereign model"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core equipment vendors for Flow (5G launched June 2024) and Digicel Cayman; any Huawei/ZTE presence or exclusion.",
+    "Camera and video-management vendor for the National CCTV Development Programme (check Hikvision/Dahua) and whether analytics or plate recognition are used.",
+    "Outcome of the PLAHI submarine cable procurement (Notice of Opportunity, Feb 2026): selected operator, cable supplier and ownership.",
+    "SLTE vendor for MAYA-1.2 and confirmation that the reconfiguration completed in 2026.",
+    "Whether the civil service AI policy v1.0 was signed off and which AI tools or providers (e.g. Microsoft Copilot) government has approved."
+  ],
+  "searches_run": 10
+}

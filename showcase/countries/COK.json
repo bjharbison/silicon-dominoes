@@ -1,0 +1,145 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "COK",
+  "name": "Cook Islands",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T09:19:40Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "COK-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Bluesky Cook Islands (formerly Telecom Cook Islands; Vodafone Cook Islands brand since 2020; ATH Fiji-controlled since 2019)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2017-03",
+      "still_current": null,
+      "summary": "Bluesky Cook Islands soft-launched 4G+ mobile service on Rarotonga and Aitutaki with Huawei as network upgrade partner, adding three cell sites; Huawei and Bluesky described a 4.5G LTE-Advanced deployment across Bluesky's Pacific markets including the Cook Islands.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.telecompaper.com/news/bluesky-launches-4g-service-in-cook-islands--1189541",
+          "publisher": "Telecompaper",
+          "source_tier": "S2",
+          "date": "2017-03-27",
+          "retrieved_at": "2026-10-26T09:19:40Z",
+          "opened": true
+        },
+        {
+          "url": "https://itwire.com/business-it-news/business-technology/bluesky,-huawei-partner-on-pacific-islands-lte-deployments",
+          "publisher": "iTWire",
+          "source_tier": "S2",
+          "date": "2017-04-05",
+          "retrieved_at": "2026-10-26T09:19:40Z",
+          "opened": true
+        },
+        {
+          "url": "https://samoanews.com/regional/bluesky-partners-huawei-serve-fastest-broadband-pacific",
+          "publisher": "Samoa News",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T09:19:40Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment vendor rule: Huawei supplied the 4G upgrade, so pole prc. Tier 5 for a commercial (soft) launch on the two main islands. Both opened S2 reports appear to derive from Bluesky/Huawei announcements, so not treated as independent. Pre-2020 and not reconfirmed: ATH (Fiji) took control in 2019 and the Vodafone brand arrived in 2020; no later vendor change or removal found. Whether Huawei also supplies the core is not stated."
+    },
+    {
+      "id": "COK-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SubCom (US)",
+      "local_actor": "Avaroa Cable Limited (Cook Islands crown entity), member of the Manatua Consortium",
+      "builder": "SubCom (turnkey supplier)",
+      "financier": "Cook Islands Government, New Zealand Aid Programme and Asian Development Bank (ACL share)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-07-22",
+      "still_current": null,
+      "summary": "The SubCom-built Manatua One Polynesia cable linking Samoa, Niue, the Cook Islands (Rarotonga and Aitutaki) and French Polynesia was declared ready for service; Avaroa Cable Limited holds the Cook Islands share. Contract had entered force in November 2018.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.hawaii.edu/piren/2020/08/05/manatua-consortium-confirms-one-polynesia-fibre-cable-ready-to-light-up-the-south-pacific/",
+          "publisher": "Manatua Consortium press release (reposted by University of Hawaii PIREN)",
+          "source_tier": "S1",
+          "date": "2020-07-22",
+          "retrieved_at": "2026-10-26T09:19:40Z",
+          "opened": true
+        },
+        {
+          "url": "https://convergedigest.com/manatua-one-polynesia-cable-is-now/",
+          "publisher": "Converge Digest",
+          "source_tier": "S2",
+          "date": "2020-07-22",
+          "retrieved_at": "2026-10-26T09:19:40Z",
+          "opened": true
+        },
+        {
+          "url": "https://oceannews.com/news/subsea-cable/subcom-announces-manatua-cable-system-contract-in-force/",
+          "publisher": "Ocean News & Technology",
+          "source_tier": "S2",
+          "date": "2018-11-20",
+          "retrieved_at": "2026-10-26T09:19:40Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Equipment vendor rule: SubCom (US) supplied the cable, so pole us. Converge Digest publishes the same day and appears to relay the consortium release, and Ocean News relays SubCom's 2018 contract announcement, so these are not counted as independent of the owner and vendor announcements; single opened S1 carries medium. Financier list is from the consortium release; amounts not stated."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search on government data centre, cloud and AI found only a 2023 opinion piece and 2026 opposition calls for an AI policy; no data-centre project identified"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other searches for a territory of about 15,000 people"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "no frontier-provider partnership, government model adoption or sovereign model found; only a 2023 opinion piece citing ChatGPT and 2026 AI-policy debate"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on police CCTV/surveillance found an Australian-donated portable audio-video unit (2021) and PRC-funded police HQ construction reporting, but no identified safe-city or surveillance system"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Current RAN and core vendor of Vodafone Cook Islands since ATH (Fiji) took control in 2019; whether Huawei 4G kit from 2017 remains or has been replaced. Bluesky said in December 2018 that NZ's Huawei 5G block would have little impact locally (Cook Islands News, paywalled).",
+    "February 2025 Cook Islands-China Comprehensive Strategic Partnership Action Plan (2025-2030) and three MoUs: whether any digital, ICT or cable project is included; PMN reported in May 2025 that no projects had progressed. Not coded because no stack-layer content was found.",
+    "New Zealand's response to the 2025 China agreements (review, any aid pause) and any NZ- or Australia-backed digital projects that followed.",
+    "Whether Chinese-funded police headquarters construction (AidData project 37880, not opened) included ICT or surveillance equipment.",
+    "Domestic inter-island connectivity (outer islands) and any satellite (Starlink/O3b) arrangements for government services."
+  ],
+  "searches_run": 9
+}

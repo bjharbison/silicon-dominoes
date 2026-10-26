@@ -1,0 +1,262 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BMU",
+  "name": "Bermuda",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T09:19:34Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BMU-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "One Communications (ATN International)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-12-20",
+      "still_current": null,
+      "summary": "One Communications launched Bermuda's first commercial 5G network, non-standalone on its 4G network, built entirely on Ericsson radio and cloud core (packet core, policy, UDM), covering about 75% of the island at launch.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/press-releases/latin-america/2023/as-frontrunners-in-the-caribbean-one-communications-and-ericsson-launch-5g-in-bermuda",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2023-12-20",
+          "retrieved_at": "2026-10-26T09:19:34Z",
+          "opened": true
+        },
+        {
+          "url": "https://bernews.com/2023/12/one-ericsson-unveil-5g-network-bermuda",
+          "publisher": "Bernews",
+          "source_tier": "S3",
+          "date": "2023-12-18",
+          "retrieved_at": "2026-10-26T09:19:34Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecomtv.com/content/5g/one-communications-and-ericsson-launch-5g-in-bermuda-49274",
+          "publisher": "TelecomTV",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T09:19:34Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ericsson (Sweden) is the equipment vendor for RAN and core, so pole third. Tier 5 because the network is commercially live. Bernews may draw on the joint announcement, so independence is partial; kept at medium. Vendor for the underlying 4G network not stated; still_current not reconfirmed."
+    },
+    {
+      "id": "BMU-002",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Mavenir",
+      "local_actor": "Paradise Mobile",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-02-07",
+      "still_current": null,
+      "summary": "New entrant Paradise Mobile selected Mavenir to supply an end-to-end cloud-native 4G/5G network, including Open vRAN and O-RAN radios, converged packet core, IMS/voice, messaging, digital BSS and system integration; value undisclosed.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://lightreading.com/cloud/mavenir-s-end-to-end-cloud-native-tech-powers-paradise-mobile-in-bermuda",
+          "publisher": "Light Reading",
+          "source_tier": "S2",
+          "date": "2023-02-07",
+          "retrieved_at": "2026-10-26T09:19:34Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.sdxcentral.com/news/mavenir-telecom-to-power-paradise-mobiles-4g-and-5g-networks/",
+          "publisher": "SDxCentral",
+          "source_tier": "S2",
+          "date": "2023-02-08",
+          "retrieved_at": "2026-10-26T09:19:34Z",
+          "opened": true
+        },
+        {
+          "url": "https://developingtelecoms.com/telecom-business/vendor-news/14520-paradise-mobile-taps-mavenir-for-4g-5g-network-build.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T09:19:34Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Mavenir is headquartered in Texas, USA, so pole us (home jurisdiction from analyst knowledge, not stated in sources opened). Operatorwatch (blog, not cited) reports Paradise launched 2023-24, but launch on Mavenir kit not confirmed by an opened S1-S3 source, so tier 3. Both trade pieces likely derive from one vendor release."
+    },
+    {
+      "id": "BMU-003",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "Google (Seagrass Services Ltd)",
+      "local_actor": "Bermuda Land Management Corporation",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-09-23",
+      "still_current": null,
+      "summary": "A Google subsidiary leased 5.9 acres at Burrows Hill from the Bermuda Land Management Corporation for 262 years for about US$4.87m, for a landing station for the Nuvem cable linking Bermuda with Portugal and South Carolina.",
+      "announced_value_usd": 4867500,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/google-signs-48m-lease-for-nuvem-subsea-cable-site-in-bermuda/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-09-23",
+          "retrieved_at": "2026-10-26T09:19:34Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.gov.bm/print/html/node/1212866",
+          "publisher": "Government of Bermuda",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-26T09:19:34Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded as networks (subsea cable infrastructure). Cable supplier/installer not named in opened sources, so the owner-operator Google is treated as controller, pole us. The gov.bm statement describes the lease as agreed in principle; DCD reports it signed, hence tier 3. Value is the lease consideration, not cable capex. Whether Nuvem is now in service was not confirmed."
+    },
+    {
+      "id": "BMU-004",
+      "layer": "applications",
+      "pole": "third",
+      "controller": "Digicel Bermuda (contractor and managed-service operator)",
+      "local_actor": "Government of Bermuda (Ministry of National Security); Bermuda Police Service",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-07-15",
+      "still_current": null,
+      "summary": "Government signed a roughly US$4.05m deal with Digicel Bermuda to upgrade the island CCTV network with 247 new cameras, facial and licence-plate recognition, BriefCam analytics and five years of managed maintenance.",
+      "announced_value_usd": 4047440,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://royalgazette.com/transport/news/article/20230715/government-signs-4m-deal-to-upgrade-islands-cctv-network",
+          "publisher": "The Royal Gazette",
+          "source_tier": "S3",
+          "date": "2023-07-15",
+          "retrieved_at": "2026-10-26T09:19:34Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Camera and VMS manufacturer not named, so the stack vendor is unknown; Digicel (Caribbean group) installs and maintains it, so treated as controller, pole third. BriefCam is a Canon-owned (Japan) analytics vendor per analyst knowledge, also third. Value is BMD, at parity with USD. Predecessor 2013 BAS-SER contract (parliament.bm statement, 2015) not coded separately."
+    },
+    {
+      "id": "BMU-005",
+      "layer": "models",
+      "pole": null,
+      "controller": "NEAR AI / NEAR Foundation",
+      "local_actor": "Government of Bermuda",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-03",
+      "still_current": null,
+      "summary": "The Government of Bermuda began a pilot partnership with NEAR to build a confidential-computing AI assistant for public servants, starting with pension calculations, with a tax portal to follow if the pilot succeeds; models not named.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://near.ai/blog/government-of-bermuda-ai-powered-public-services",
+          "publisher": "NEAR AI",
+          "source_tier": "S1",
+          "date": "2026-05-13",
+          "retrieved_at": "2026-10-26T09:19:34Z",
+          "opened": true
+        },
+        {
+          "url": "https://bbc.bm/?p=40252",
+          "publisher": "Bermuda Broadcasting Company",
+          "source_tier": "S3",
+          "date": "2026-03-09",
+          "retrieved_at": "2026-10-26T09:19:34Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: NEAR AI's jurisdiction is not stated (footer names Jasnah Inc.), and the underlying model providers are not named, so who can update or switch off the models is unclear. NEAR Foundation is understood to be Swiss-based but this is unsourced. Tier 2 as a pilot; May 2026 forum announcement expands it."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found only older C&W data-centre news and the Google Nuvem landing-site lease (coded under networks); no large data-centre or AI campus since 2023"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "one search returned no Bermuda-specific accelerator purchase, deployment or export-licence reporting"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced in other searches"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio/core vendor for Digicel Bermuda's 4G and July 2025 island-wide 5G+ network (check for Huawei/ZTE).",
+    "Camera and VMS manufacturer for the 2023 Digicel CCTV upgrade (check Hikvision/Dahua) and whether facial recognition went live.",
+    "Whether the Nuvem cable is in service, its supplier, and whether the Burrows Hill site hosts the landing station.",
+    "NEAR AI pilot: legal counterparty and jurisdiction, models used, and any contract or expansion after May 2026.",
+    "Vendor for One Communications' 4G/LTE (2016) network and any legacy PRC equipment.",
+    "Whether Paradise Mobile's Mavenir network is commercially live at scale."
+  ],
+  "searches_run": 8
+}

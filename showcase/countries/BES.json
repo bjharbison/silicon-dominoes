@@ -1,0 +1,187 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "BES",
+  "name": "Bonaire, Sint Eustatius and Saba",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T09:19:31Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "BES-001",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks (France), end-to-end supplier of the CELIA trunk; supplier of the Bonaire branch not stated",
+      "local_actor": "Saba Statia Cable System BV (SSCS, 100% Dutch state-owned), contracting with SETAR N.V. (Aruba) as CELIA initiator",
+      "builder": null,
+      "financier": "Dutch government via SSCS; EU CEF Digital grant (scope disputed between sources)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-08-14",
+      "still_current": null,
+      "summary": "State-owned SSCS signed an agreement with Aruba's SETAR to connect Bonaire to the CELIA submarine cable (Aruba, Martinique, Antigua, Puerto Rico, Florida), targeted operational late 2027; a seabed survey began August 2025.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://english.rijksdienstcn.com/latest/news/2025/august/14/bonaire-to-be-connected-to-new-submarine-data-cable",
+          "publisher": "Rijksdienst Caribisch Nederland (Government of the Netherlands)",
+          "source_tier": "S1",
+          "date": "2025-08-14",
+          "retrieved_at": "2026-10-26T09:19:31Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.bes-reporter.com/nieuws/nieuws-van-bonaire-infrastructuur/78186/bonaire-to-get-faster-internet-through-new-submarine-cable",
+          "publisher": "BES Reporter",
+          "source_tier": "S3",
+          "date": "2025-08-14",
+          "retrieved_at": "2026-10-26T09:19:31Z",
+          "opened": true
+        },
+        {
+          "url": "https://infobonaire.com/bonaire-set-to-be-connected-to-new-submarine-data-cable/",
+          "publisher": "InfoBonaire",
+          "source_tier": "S3",
+          "date": "2025-08-14",
+          "retrieved_at": "2026-10-26T09:19:31Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/?p=29774",
+          "publisher": "SubTel Forum (relaying Bonaire Insider)",
+          "source_tier": "S2",
+          "date": "2025-08-15",
+          "retrieved_at": "2026-10-26T09:19:31Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/setar-orange-telxius-unveil-celia-caribbean-cable/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": "2024-12-04",
+          "retrieved_at": "2026-10-26T09:19:31Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole third rests on ASN (France) being named CELIA's end-to-end supplier in Dec 2024 (SubTel Forum); none of the Bonaire sources name the branch supplier, so the controller of the Bonaire segment is inferred. Corroborated: Rijksdienst (S1) plus BES Reporter (S3, own quotes from three parties). Tier 3 because an SSCS-SETAR agreement is signed, though no value is given. Rijksdienst says the project is partly EU CEF-funded; BES Reporter ties the CEF money to the Curacao connection. EUR 4m fibre subsidy to local telcos is separate and not coded."
+    },
+    {
+      "id": "BES-002",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Not stated (equipment vendor of the SSCS cable unknown); capacity provider is Saba Statia Cable System BV (Dutch state-owned)",
+      "local_actor": "EUTEL N.V. and Government of St. Eustatius",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "subnational",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-10",
+      "still_current": null,
+      "summary": "St. Eustatius government and operator EUTEL concluded a five-year IP-transit agreement on the SSCS submarine cable, owned by the Dutch Interior Ministry, linking Statia and Saba to St. Maarten, St. Barts and St. Kitts, with planned Miami routes.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://english.rijksdienstcn.com/latest/news/2020/october/17/eutel-n.v-statia-government-and-the-ministry-of-the-interior-affairs-and-kingdom-relations-arrange-faster-and-cheaper-internet",
+          "publisher": "Rijksdienst Caribisch Nederland (Government of the Netherlands)",
+          "source_tier": "S1",
+          "date": "2020-10-17",
+          "retrieved_at": "2026-10-26T09:19:31Z",
+          "opened": true
+        },
+        {
+          "url": "https://thedailyherald.sx/islands/statia-to-obtain-faster-and-cheaper-internet-next-year",
+          "publisher": "The Daily Herald (St. Maarten)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T09:19:31Z",
+          "opened": false
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: under the equipment-vendor rule the controller is whoever supplied the SSCS cable and terminal equipment, which no source opened names. Owner-operator is the Dutch state (domestic, since BES is part of the Netherlands). Five-year term from late 2020 may expire about 2025; not reconfirmed. Single opened S1, so medium."
+    },
+    {
+      "id": "BES-003",
+      "layer": "applications",
+      "pole": "domestic",
+      "controller": "ZEPCAM (T3 Live body-worn cameras)",
+      "local_actor": "Korps Politie Caribisch Nederland (KPCN); C3 as regional rollout partner",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-03-27",
+      "still_current": null,
+      "summary": "The Dutch Caribbean Police Force deployed ZEPCAM T3 Live body-worn cameras with live video streaming, audio and GPS across Bonaire, Sint Eustatius and Saba, rolled out by regional partner C3. No AI analytics or back-end platform described.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.criticalcommunicationsreview.com/ccr/news/115684/dutch-caribbean-police-force-selects-zepcam-t3-live-body-worn-cameras-to-enhance-safety-and-transparency",
+          "publisher": "Critical Communications Review",
+          "source_tier": "S2",
+          "date": "2025-03-27",
+          "retrieved_at": "2026-10-26T09:19:31Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole domestic assumes ZEPCAM is a Netherlands company (background knowledge; the article does not state nationality) and BES is part of the Netherlands. Tier 5 because the article describes the system as implemented, but number of cameras and contract value are not given. Body-worn video is police surveillance, not AI analytics; reviewer may judge it out of scope. Single opened S2 source."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "two searches (English and Dutch) found no data-centre or AI-campus project in Bonaire, Sint Eustatius or Saba; only a 2014 utility ICT refresh and regional Curacao items"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in facilities or models searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one Dutch-language search found no frontier-model partnership, government AI adoption or sovereign model specific to the Caribbean Netherlands"
+    },
+    "applications": {
+      "result": "coded"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "RAN/core equipment vendors for Bonaire mobile operators (Digicel Bonaire, Flow/Kla, Telbo) and for Satel (Saba) and EUTEL (Statia); Digicel's 2017 ZTE LTE deal covered 26 unnamed markets, Bonaire inclusion not established.",
+    "Supplier of the CELIA Bonaire (and Curacao) branch and whether a supply contract and value were published; confirm the scope of EU CEF Digital co-financing.",
+    "Supplier of the SSCS cable system (Saba-Statia) and whether the 2020 EUTEL IP-transit agreement was renewed; status of the planned direct Miami routes.",
+    "Camera/VMS vendors for public CCTV in Bonaire and Statia (temporary carnival surveillance reported by InfoBonaire and BES Reporter, not opened); check for Hikvision/Dahua.",
+    "ZEPCAM contract value, camera count and where live-stream video is hosted.",
+    "Whether the Dutch national AI/cloud policies (e.g. government cloud rules) apply in the BES islands and to which providers."
+  ],
+  "searches_run": 9
+}

@@ -1,0 +1,263 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "FRO",
+  "name": "Faroe Islands",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T09:20:17Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "FRO-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Føroya Tele (Faroese Telecom) and Nema (formerly Hey), the two main mobile operators",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": null,
+      "still_current": null,
+      "summary": "Huawei built the 4G mobile networks of both leading Faroese operators, Føroya Tele and Nema, according to the national broadcaster's 2021 report on Føroya Tele's 5G vendor choice. Deployment date and scope not stated.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://kvf.fo/greinar/2021/08/19/foroya-tele-ditches-huawei",
+          "publisher": "Kringvarp Føroya (KVF)",
+          "source_tier": "S3",
+          "date": "2021-08-19",
+          "retrieved_at": "2026-10-26T09:20:17Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Equipment vendor rule: Huawei-built RAN, so pole prc. Tier 5 because the networks were operational, but deployment date unknown (date null) and only one opened source. Ericsson's 2021 deal to fully modernise Føroya Tele's 4G suggests its Huawei 4G kit was replaced by ~2023; Nema's 4G status after 2022 not confirmed, so still_current null."
+    },
+    {
+      "id": "FRO-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Føroya Tele (Faroese Telecom)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "FRO-001: Huawei as Føroya Tele's incumbent mobile-network vendor (4G), not retained for 5G",
+      "reversal_reason": "commercial",
+      "date": "2021-08-19",
+      "still_current": null,
+      "summary": "Føroya Tele, whose 4G network Huawei had built, chose Ericsson instead of Huawei for 5G. Its CEO said the decision was purely commercial; in 2020 he had called the reasons practical, not national security.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://kvf.fo/greinar/2021/08/19/foroya-tele-ditches-huawei",
+          "publisher": "Kringvarp Føroya (KVF)",
+          "source_tier": "S3",
+          "date": "2021-08-19",
+          "retrieved_at": "2026-10-26T09:20:17Z",
+          "opened": true
+        },
+        {
+          "url": "https://kvf.fo/greinar/2020/07/18/huawei-debate-flares-again",
+          "publisher": "Kringvarp Føroya (KVF)",
+          "source_tier": "S3",
+          "date": "2020-07-18",
+          "retrieved_at": "2026-10-26T09:20:17Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ericsson.com/en/news/3/2021/faroese-telecom-selects-ericsson-for-5g",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2021-08-19",
+          "retrieved_at": "2026-10-26T09:20:17Z",
+          "opened": true
+        },
+        {
+          "url": "https://telecoms.com/511030/nokia-and-ericsson-continue-to-gain-ground-in-europe/",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2021-08-23",
+          "retrieved_at": "2026-10-26T09:20:17Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Reason coded commercial because the operator's only stated reason is commercial/practical. Context points to geopolitics: in 2019 China's ambassador reportedly tied a Faroese free-trade deal to Huawei winning 5G (Silicon Republic, opened), and the US ambassador lobbied against Huawei (KVF 2020). Reviewer should decide whether geopolitical is warranted. Tier 5 because the reversed thing is the operational Huawei 4G incumbency, which Ericsson was to modernise. Not corroborated: Ericsson release omits Huawei; Telecoms.com only says Ericsson 'seems' to have replaced Huawei; both KVF items are one outlet."
+    },
+    {
+      "id": "FRO-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (Sweden)",
+      "local_actor": "Føroya Tele / FT Samskifti; Nema shares the network under a 2022 collaboration deal",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-04-15",
+      "still_current": null,
+      "summary": "Ericsson is Føroya Tele's exclusive 5G RAN and core partner under a 2021 deal that also modernised 4G. By April 2024 the 5G non-standalone network covered all 18 islands and 100% of the population.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ericsson.com/en/news/3/2021/faroese-telecom-selects-ericsson-for-5g",
+          "publisher": "Ericsson",
+          "source_tier": "S1",
+          "date": "2021-08-19",
+          "retrieved_at": "2026-10-26T09:20:17Z",
+          "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/faroese-telecom-pairs-with-ericsson-to-launch-5g-across-faroe-islands",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2024-04-15",
+          "retrieved_at": "2026-10-26T09:20:17Z",
+          "opened": true
+        },
+        {
+          "url": "https://kvf.fo/greinar/2022/10/06/telecoms-firms-join-forces-5g",
+          "publisher": "Kringvarp Føroya (KVF)",
+          "source_tier": "S3",
+          "date": "2022-10-06",
+          "retrieved_at": "2026-10-26T09:20:17Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Equipment vendor rule: Ericsson supplies RAN and core, so pole third. Contract signed 2021-08-19 (tier 3); coded tier 5 on DCD's 2024 report of full-population operational coverage. Contract value undisclosed. KVF 2022 independently confirms Ericsson as the builder of the Faroese 5G network."
+    },
+    {
+      "id": "FRO-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson (Sweden), via the FT Samskifti-built shared 5G network",
+      "local_actor": "Nema (formerly Hey) and FT Samskifti (Føroya Tele subsidiary)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2022-10-06",
+      "still_current": null,
+      "summary": "Nema and Føroya Tele's network subsidiary FT Samskifti signed a deal to jointly develop the Faroese 5G network that Ericsson was building, subject to competition-authority approval, while still competing on services.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://kvf.fo/greinar/2022/10/06/telecoms-firms-join-forces-5g",
+          "publisher": "Kringvarp Føroya (KVF)",
+          "source_tier": "S3",
+          "date": "2022-10-06",
+          "retrieved_at": "2026-10-26T09:20:17Z",
+          "opened": true
+        },
+        {
+          "url": "https://kvf.fo/greinar/2021/08/19/foroya-tele-ditches-huawei",
+          "publisher": "Kringvarp Føroya (KVF)",
+          "source_tier": "S3",
+          "date": "2021-08-19",
+          "retrieved_at": "2026-10-26T09:20:17Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "In August 2021 Nema said it would keep Huawei 5G technology unless the government directed otherwise (KVF 2021). Joining the Ericsson-built shared network implies Nema dropped Huawei for 5G, but no opened source says so explicitly, so this is not coded as a reversal; reviewer call. Competition-authority approval not confirmed. Single outlet."
+    },
+    {
+      "id": "FRO-005",
+      "layer": "models",
+      "pole": "third",
+      "controller": "TrustLLM consortium (European multi-country research project)",
+      "local_actor": "Centre for Language Technology, University of the Faroe Islands",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 1,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2024-06-24",
+      "still_current": null,
+      "summary": "The University of the Faroe Islands' language-technology centre joined the European TrustLLM project as an external collaborator, supplying Faroese language data and advice so Faroese is included in the project's multilingual LLMs.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://mtd.setur.fo/en/2024/06/24/samstarv-vid-trustllm",
+          "publisher": "Centre for Language Technology, University of the Faroe Islands",
+          "source_tier": "S1",
+          "date": "2024-06-24",
+          "retrieved_at": "2026-10-26T09:20:17Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Pole third because the model is built and controlled by a European consortium, not a Faroese actor. Tier 1: a non-binding research collaboration, no government involvement stated. Low significance; a separate 2024 appeal urged the government to adopt an AI plan, implying none existed then."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search returned no data-centre or AI-campus project in the Faroe Islands"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced in other searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search within budget; no surveillance or e-government AI vendor surfaced in other searches"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Primary confirmation (operator or Ericsson) that Huawei 4G RAN/core at Føroya Tele was physically swapped out, and when.",
+    "Whether Nema retired its Huawei 4G network and formally abandoned Huawei 5G; whether the Competition Authority approved the 2022 shared-network deal.",
+    "Date and scope of the original Huawei 4G deployments for Føroya Tele and Nema.",
+    "Submarine cables (SHEFA-2, FARICE-1, CANTAT legacy, any new Iceland/Shetland builds): suppliers not checked.",
+    "Any Faroese government AI strategy or frontier-model agreement after the September 2024 appeal; whether Faroese-language AI work relies on Google (Google Translate, NLLB) models.",
+    "Police/municipal CCTV or surveillance vendors not searched."
+  ],
+  "searches_run": 9
+}

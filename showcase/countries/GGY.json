@@ -1,0 +1,239 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "GGY",
+  "name": "Guernsey",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T09:19:47Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "GGY-001",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei",
+      "local_actor": "Sure (Guernsey), now Beyon",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2020-07-16",
+      "still_current": null,
+      "summary": "Sure confirmed it used Huawei equipment in its Guernsey 4G network and in an ongoing 5G trial, saying it would stop using Huawei 5G kit by 2027 if the island mirrored the UK ban.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://guernseypress.com/news/2020/07/16/huawei-kit-in-sure-5g-trial/",
+          "publisher": "Guernsey Press",
+          "source_tier": "S3",
+          "date": "2020-07-16",
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        },
+        {
+          "url": "https://guernseypress.com/news/2021/07/09/telcos-continue-removal-of-high-risk-vendors-equipment",
+          "publisher": "Guernsey Press",
+          "source_tier": "S3",
+          "date": "2021-07-09",
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Tier 5 because the Huawei kit was in Sure's live 4G network; the scale of Huawei's share is not stated. The 2021 article says Sure was working to remove Huawei equipment with no completion date, so still_current null. Both sources from one outlet, no S1/S2, so not corroborated."
+    },
+    {
+      "id": "GGY-002",
+      "layer": "networks",
+      "pole": "prc",
+      "controller": "Huawei and other UK-designated high risk vendors",
+      "local_actor": "States of Guernsey (Committees for Home Affairs and Economic Development); Sure; JT",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": true,
+      "reversal_of": "Huawei/high-risk-vendor equipment in Guernsey mobile networks (incl. Sure 4G and 5G trial; GGY-001)",
+      "reversal_reason": "geopolitical",
+      "date": "2020-07-15",
+      "still_current": null,
+      "summary": "Following the UK decision, Guernsey's committees proposed barring Huawei from any 5G network and removing Chinese high-risk-vendor equipment from all networks by 2027, subject to States Assembly approval via a telecoms strategy policy letter.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://gov.gg/article/177981/Committees-for-Home-Affairs-and-Economic-Development-will-continue-to-work-with-regulators-security-agencies-and-telecoms-providers-following-UK-decision-on-Huawei-5G-equipment",
+          "publisher": "States of Guernsey",
+          "source_tier": "S1",
+          "date": "2020-07-15",
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        },
+        {
+          "url": "https://guernseypress.com/news/2020/07/15/guernsey-to-mirror-uk-and-cut-out-huawei-from-telecoms-network",
+          "publisher": "Guernsey Press",
+          "source_tier": "S3",
+          "date": "2020-07-15",
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        },
+        {
+          "url": "https://guernseypress.com/news/2021/07/09/telcos-continue-removal-of-high-risk-vendors-equipment",
+          "publisher": "Guernsey Press",
+          "source_tier": "S3",
+          "date": "2021-07-09",
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        },
+        {
+          "url": "https://gov.im/news/2020/dec/15/crown-dependencies-join-together-to-develop-critical-telecoms-framework-for-high-risk-vendors",
+          "publisher": "Isle of Man Government",
+          "source_tier": "S1",
+          "date": "2020-12-15",
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        },
+        {
+          "url": "https://gsy.bailiwickexpress.com/gsy/news/guernsey-set-match-uks-stance-huawei",
+          "publisher": "Bailiwick Express",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": false
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Enactment by the States Assembly was not confirmed in opened sources; the Bailiwick Express item (search snippet dated 26 April 2024, not opened because it redirected off the search-result URL) may cover later steps. In 2021 JT said it would remove HRV kit from 2G-5G by 2027, Sure was removing Huawei, and Airtel-Vodafone reported no HRV kit. Crown Dependencies agreed a joint HRV framework (Dec 2020). Medium because the decision was a proposal."
+    },
+    {
+      "id": "GGY-003",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "JT (Guernsey)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-06-18",
+      "still_current": null,
+      "summary": "JT switched on its first two 5G sites around St Peter Port with Ericsson as technology partner, starting a phased four-month rollout of a combined 4G/5G network across the Bailiwick of Guernsey.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.ispreview.co.uk/index.php/2026/06/first-mast-sites-live-as-jt-starts-island-wide-5g-mobile-rollout-on-guernsey.html",
+          "publisher": "ISPreview",
+          "source_tier": "S2",
+          "date": "2026-06-18",
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/jt-group-switches-5g-network-on-in-guernsey/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2026-06-18",
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Ericsson (Sweden) as equipment vendor sets pole third. Tier 4 because rollout had started but island-wide operation was not confirmed in opened sources; completion would be tier 5."
+    },
+    {
+      "id": "GGY-004",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Ericsson",
+      "local_actor": "Sure (Guernsey), now Beyon",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-22",
+      "still_current": null,
+      "summary": "Sure announced a £48m Guernsey mobile network rebuild with Ericsson supplying network equipment, aiming for full island 5G coverage by end-2026, part of £100m across Guernsey, Jersey and the Isle of Man.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://guernseypress.com/news/2025/10/22/sure-to-bring-full-5g-access-to-island-by-end-of-next-year",
+          "publisher": "Guernsey Press",
+          "source_tier": "S3",
+          "date": "2025-10-22",
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.aol.com/news/multi-million-pound-boost-islands-054442577.html",
+          "publisher": "BBC (syndicated via AOL)",
+          "source_tier": "S3",
+          "date": null,
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Likely replaces the Huawei-equipped network in GGY-001, but sources do not say so. GBP 48m not converted to USD because no source-date rate was available in this run, so values null. Two S3 sources, no S1/S2, so not corroborated."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found only a 2026 work-plan item to develop a future data-centre strategy (aggregator, not cited) and an opinion piece with a hypothetical 25MW facility; no project with an owner-operator"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or export-licence item surfaced in other searches"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only a January 2026 proposal to consider a States AI office; no provider partnership, pilot or sovereign model named"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on Guernsey CCTV/Hikvision/facial recognition returned only UK-mainland results"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Whether the States Assembly enacted the 2020 high-risk-vendor exclusion (telecoms strategy policy letter / telecoms security legislation) and its final terms; the April 2024 Bailiwick Express item 'Guernsey set to match UK's stance on Huawei' was not opened.",
+    "Whether Sure has completed removal of Huawei 4G/5G equipment from its Guernsey network, and whether the Ericsson rebuild (GGY-004) replaces it.",
+    "Equipment vendors for JT's legacy 2G-4G network in Guernsey and confirmation of its HRV removal by 2027.",
+    "Completion of JT's Guernsey 5G rollout and Sure's 100% 5G target (end-2026).",
+    "Submarine cable suppliers serving Guernsey.",
+    "Vendors of States of Guernsey/Guernsey Police CCTV and any government AI tools (e.g. Microsoft Copilot) in use.",
+    "Outcome of the Committee for Economic Development data-centre strategy work."
+  ],
+  "searches_run": 8
+}

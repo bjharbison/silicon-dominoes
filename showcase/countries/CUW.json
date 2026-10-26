@@ -1,0 +1,145 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "CUW",
+  "name": "Curaçao",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T09:19:47Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "CUW-001",
+      "layer": "networks",
+      "pole": null,
+      "controller": "Not stated (cable supplier for the Curaçao landing not named in opened sources)",
+      "local_actor": "Aquatel / Qonèkt Telecom (Aqualectra group, Curaçao landing party) with SETAR N.V. and the Government of Curaçao",
+      "builder": null,
+      "financier": "Government of Curaçao (budget allocation, Cg 44.6 million planned)",
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-06-02",
+      "still_current": null,
+      "summary": "Aquatel, SETAR and the Curaçao government signed an agreement to land and operate the CELIA subsea cable (Florida–Caribbean) on Curaçao, reported at about US$27 million, targeting service by Q3 2027; government later earmarked Cg 44.6 million.",
+      "announced_value_usd": 27000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.curacaochronicle.com/post/local/aquatel-signs-agreement-for-celia-submarine-cable",
+          "publisher": "Curaçao Chronicle",
+          "source_tier": "S3",
+          "date": "2025-06-02",
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/curacaos-aquatel-joins-celia-subsea-cable-project/",
+          "publisher": "SubTel Forum (repost of DatacenterDynamics)",
+          "source_tier": "S2",
+          "date": "2025-06-09",
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.curacaochronicle.com/post/local/curacao-invests-cg-446-million-in-new-subsea-cable-to-protect-digital-connectivity",
+          "publisher": "Curaçao Chronicle",
+          "source_tier": "S3",
+          "date": "2025-11-17",
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        },
+        {
+          "url": "https://subtelforum.com/curacao-advances-new-celia-subsea-cable-project/",
+          "publisher": "SubTel Forum",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole null: equipment-vendor rule needs the cable supplier, and no opened source names one for the Curaçao segment; the Aruba record (ABW-002) codes ASN (France) as CELIA trunk supplier, which would make this third if the branch is ASN-supplied. Opened reports relay the same signing, so not treated as independent; no S1 opened. US$27m is DCD/SubTel's figure; Cg 44.6m (Nov 2025) not converted. Later SubTel item says Qonèkt Telecom began permitting for a Parasasa Beach landing; its date is inconsistent on-page (May 2025 byline vs May 2026 metadata), so recorded null. Not operational."
+    },
+    {
+      "id": "CUW-002",
+      "layer": "facilities",
+      "pole": "domestic",
+      "controller": "Blue NAP Americas (data-centre operator headquartered in Curaçao)",
+      "local_actor": "Blue NAP Americas; Government of Curaçao (partner, per minister's announcement)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 5,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-07-14",
+      "still_current": null,
+      "summary": "Blue NAP Americas launched a GPU-based AI infrastructure-as-a-service platform at its Willemstad data centre with partners Radian Arc and Emerging International, reported as fully operational; the government presented it as the Caribbean's first sovereign AI platform.",
+      "announced_value_usd": 2000000,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://devtelecoms.com/telecom-technology/telecom-devices-platforms/18771-first-ai-iaas-platform-launched-for-caribbean-and-central-america.html",
+          "publisher": "Developing Telecoms",
+          "source_tier": "S2",
+          "date": "2025-07-14",
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.curacaochronicle.com/post/local/curacao-launches-first-sovereign-ai-platform-in-the-caribbean",
+          "publisher": "Curaçao Chronicle",
+          "source_tier": "S3",
+          "date": "2025-08-01",
+          "retrieved_at": "2026-10-26T09:19:47Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Owner-operator rule: Blue NAP Americas is Curaçao-headquartered (ownership undisclosed), so domestic. Radian Arc supplies the GPU stack; if it operates the GPUs it could be the controller of the compute (Radian Arc's home jurisdiction not stated in opened sources). GPU vendor and quantity not stated. The US$2m is called a joint partner investment by Developing Telecoms but a government investment by Curaçao Chronicle; unresolved. Tier 5 because reported operational, though scale appears small; reviewer may prefer a lower tier. Confidence medium, not high, given vague technical detail."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "coded"
+    },
+    "silicon": {
+      "result": "null",
+      "null_reason": "one dedicated search; the Blue NAP AI platform's GPU vendor, model and count are not stated in opened sources; no accelerator purchase or export-licence item found"
+    },
+    "models": {
+      "result": "null",
+      "null_reason": "one search found only AI-strategy consultation, civil-service workshops (May 2024) and a university study visit to Silicon Valley (May 2026), none naming a model provider; no sovereign model found"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "one search on police camera/surveillance vendors returned only Netherlands and other countries' Hikvision/Dahua coverage; nothing Curaçao-specific"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced; one source notes funds reallocated from a suspended floating offshore wind project to the cable, which is not AI-tied supply"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Mobile RAN/core vendors of Flow/UTS (Liberty Latin America) and Digicel Curaçao; two searches found no vendor award, ban or Huawei/ZTE rip-and-replace.",
+    "CELIA Curaçao branch: supplier (ASN?), signed contract value, permit status for the Parasasa Beach landing, and Qonèkt vs Aquatel roles.",
+    "Blue NAP Americas AI platform: GPU vendor and model, Radian Arc's role and jurisdiction, ownership of Blue NAP, and whether the government holds equity.",
+    "Existing cables (e.g. PCCS backup) and their suppliers; CTEX Tier IV data centre (pre-2023) ownership and current status not coded.",
+    "Curaçao national AI strategy (taskforce under Education Minister): any provider partnerships once published.",
+    "Police/safe-city camera systems in Willemstad and their vendors; check procurement records."
+  ],
+  "searches_run": 10
+}

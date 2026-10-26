@@ -1,0 +1,163 @@
+{
+  "schema": "sd-showcase-country/0.2",
+  "spec_version": "0.2",
+  "iso3": "FLK",
+  "name": "Falkland Islands (Malvinas)",
+  "review_status": "unreviewed",
+  "coded_at": "2026-10-26T09:25:20Z",
+  "coded_by": "claude scheduled desk pass",
+  "findings": [
+    {
+      "id": "FLK-001",
+      "layer": "networks",
+      "pole": "us",
+      "controller": "SpaceX (Starlink)",
+      "local_actor": "Falkland Islands Government; Communications Regulator",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 4,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2025-10-30",
+      "still_current": null,
+      "summary": "The Falkland Islands Government settled with exclusive licensee Sure South Atlantic, agreeing compensation of up to £6.167m for lost broadband revenue, clearing the regulator to license Starlink satellite broadband, previously used unofficially, for homes and businesses.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.falklands.gov.fk/commercialservices/images/FIG_Sure_VSAT_Licensing_Agreement_Statement.pdf",
+          "publisher": "Falkland Islands Government",
+          "source_tier": "S1",
+          "date": "2025-10-30",
+          "retrieved_at": "2026-10-26T09:25:20Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.ispreview.co.uk/index.php/2025/11/falkland-islands-government-grants-licence-for-starlink-satellite-broadband.html",
+          "publisher": "ISPreview",
+          "source_tier": "S2",
+          "date": "2025-11-03",
+          "retrieved_at": "2026-10-26T09:25:20Z",
+          "opened": true
+        }
+      ],
+      "corroborated": true,
+      "confidence": "high",
+      "analyst_inference": "Tier 4 as a licence issued; the FIG statement says the regulator will license Starlink and ISPreview reports the licence granted. The £6.167m is a compensation ceiling to Sure, not the value of the Starlink licence, so values null. Not reconfirmed in force at run date, so still_current null."
+    },
+    {
+      "id": "FLK-002",
+      "layer": "networks",
+      "pole": "third",
+      "controller": "Intelsat (now part of SES, Luxembourg) with OneWeb (Eutelsat) LEO capacity",
+      "local_actor": "Sure South Atlantic (Batelco group)",
+      "builder": null,
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "national",
+      "instrument_tier": 3,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2023-02-28",
+      "still_current": null,
+      "summary": "Intelsat and Sure South Atlantic signed an expanded agreement under which Intelsat's managed AgileCore service, combining its GEO satellites with OneWeb LEO capacity, carries Sure's 4G, broadband, Wi-Fi and government traffic in the Falklands, which lack undersea fibre.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://www.businesswire.com/news/home/20230228005191/nl",
+          "publisher": "Intelsat (Business Wire release)",
+          "source_tier": "S1",
+          "date": "2023-02-28",
+          "retrieved_at": "2026-10-26T09:25:20Z",
+          "opened": true
+        },
+        {
+          "url": "https://www.intelsat.com/wp-content/uploads/2023/04/SureSouthAtlanticCaseStudy.pdf",
+          "publisher": "Intelsat (case study)",
+          "source_tier": "S4",
+          "date": "2023-04",
+          "retrieved_at": "2026-10-26T09:25:20Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "Satellite backhaul is the territory's sole external link, so the managed-service operator is treated as controller. Intelsat was US-headquartered at signing but Luxembourg-domiciled and has since been absorbed into SES (Luxembourg); OneWeb is Eutelsat (France/UK). Pole third is a judgement a reviewer may revisit. Date taken from the release ID. Both sources are Intelsat's own, so not independent."
+    },
+    {
+      "id": "FLK-003",
+      "layer": "models",
+      "pole": null,
+      "controller": null,
+      "local_actor": "Falkland Islands Development Corporation (FIDC)",
+      "builder": "Adapto South Atlantic (support)",
+      "financier": null,
+      "base_model": null,
+      "base_model_pole": null,
+      "scale": "municipal",
+      "instrument_tier": 2,
+      "reversal": false,
+      "reversal_of": null,
+      "reversal_reason": null,
+      "date": "2026-08-05",
+      "still_current": null,
+      "summary": "FIDC launched Project T-1000, a small set of controlled internal AI pilots for document search, enquiry handling, administration and data analysis, supported by Adapto South Atlantic, alongside a survey of AI use by Falklands organisations.",
+      "announced_value_usd": null,
+      "verified_value_usd": null,
+      "sources": [
+        {
+          "url": "https://fidc.co.fk/fidc-launches-ai-trial-with-thoughts-on-islands-uptake/",
+          "publisher": "Falkland Islands Development Corporation",
+          "source_tier": "S1",
+          "date": "2026-08-05",
+          "retrieved_at": "2026-10-26T09:25:20Z",
+          "opened": true
+        }
+      ],
+      "corroborated": false,
+      "confidence": "medium",
+      "analyst_inference": "The release names no AI provider or model, so controller and pole are null rather than guessed. Coded as a tier-2 pilot at municipal scale because it is internal to one statutory body."
+    }
+  ],
+  "layers_searched": {
+    "networks": {
+      "result": "coded"
+    },
+    "facilities": {
+      "result": "null",
+      "null_reason": "one search found no data-centre or AI-campus project in the Falklands; territory has no undersea fibre"
+    },
+    "silicon": {
+      "result": "not_searched",
+      "null_reason": "no dedicated search; no accelerator purchase or deployment surfaced in other searches"
+    },
+    "models": {
+      "result": "coded"
+    },
+    "applications": {
+      "result": "null",
+      "null_reason": "two searches found only a 2023 Police Committee discussion of CCTV in Stanley with no decision, funding or vendor; no surveillance or e-government AI system"
+    },
+    "power": {
+      "result": "not_searched",
+      "null_reason": "no AI-specific power evidence surfaced"
+    }
+  },
+  "corrections": [],
+  "research_gaps": [
+    "Radio and core vendor of Sure's Falklands 2G/4G network: a local blog (openfalklands, S5, not cited) attributes it to Star Solutions (Canada), installed 2018; needs an S1/S2 source. Batelco's 2015 Star Solutions release covers only St Helena and Ascension.",
+    "Which AI provider or model FIDC's Project T-1000 pilots use, and the September 2026 first-phase report findings.",
+    "Whether Starlink commercial service actually launched in the Falklands after the late-2025 licence, and take-up.",
+    "Status of the National Broadband Strategy subsea cable study (openfalklands lead only) and any proposed cable route or supplier.",
+    "Whether the Intelsat/OneWeb backhaul arrangement continues after SES's acquisition of Intelsat; when Sure's exclusive licence expires.",
+    "Whether Stanley CCTV was ever procured after the October 2023 Police Committee discussion, and the vendor."
+  ],
+  "searches_run": 8
+}
