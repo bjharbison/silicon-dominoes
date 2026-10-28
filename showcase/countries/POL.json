@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "POL",
   "name": "Poland",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-24T05:25:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -55,7 +55,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Coded as a prospective reversal of operational Chinese network equipment: no vendor had been designated in sources seen, though press dubs it 'Lex Huawei'. In force from 2 April 2026 per Clifford Chance, but the president referred the high-risk-vendor provisions to the Constitutional Tribunal, so they could lapse. Tier 5 is the tier of the installed kit that would be removed."
+      "analyst_inference": "Coded as a prospective reversal of operational Chinese network equipment: no vendor had been designated in sources seen, though press dubs it 'Lex Huawei'. In force from 2 April 2026 per Clifford Chance, but the president referred the high-risk-vendor provisions to the Constitutional Tribunal, so they could lapse. Tier 5 is the tier of the installed kit that would be removed. Audit 2026-10-28: The president referred the whole amendment to the Constitutional Tribunal; 2 April 2026 entry into force not confirmed."
     },
     {
       "id": "POL-002",
@@ -181,7 +181,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Single host. Orange gave no current share; the reduction target suggests a deliberate but unstated vendor rebalancing, not coded as a reversal. Orange and T-Mobile share radio sites via the NetWorkS! JV (not verified in this pass)."
+      "analyst_inference": "Single host. Orange gave no current share; the reduction target suggests a deliberate but unstated vendor rebalancing, not coded as a reversal. Orange and T-Mobile share radio sites via the NetWorkS! JV (not verified in this pass). Audit 2026-10-28: GSMONLINE/PAP (2025-04-01): Orange \"on a 50/50 course\" by end-2025."
     },
     {
       "id": "POL-005",
@@ -200,7 +200,7 @@
       "reversal_reason": null,
       "date": "2025-03-19",
       "still_current": null,
-      "summary": "Ministry of Digital Affairs figures put Chinese equipment at about 70% of T-Mobile Polska's network; GSMONLINE said the ministry's data were outdated and T-Mobile gave no update.",
+      "summary": "Ministry of Digital Affairs figures put Chinese equipment at about 70% of T-Mobile Polska's network; GSMONLINE called this outdated, and in April 2025 T-Mobile put the Chinese share at about 50%.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -219,11 +219,19 @@
           "date": "2025-03-19",
           "retrieved_at": "2026-10-24T05:15:00Z",
           "opened": true
+        },
+        {
+          "url": "https://gsmonline.pl/artykuly/pap-podaje-nowe-dane-o-udzialach-huawei-w-polskich-sieciach",
+          "publisher": "GSMONLINE (relaying PAP)",
+          "source_tier": "S2",
+          "date": "2025-04-01",
+          "retrieved_at": "2026-10-28T15:57:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Share is a ministry figure the reporting outlet itself flagged as unreliable; Huawei not named explicitly in the ministry figure (Chinese equipment generally). Plus (Polkomtel) reportedly uses no Chinese equipment; its vendors were not established in this pass."
+      "analyst_inference": "Share is a ministry figure the reporting outlet itself flagged as unreliable; Huawei not named explicitly in the ministry figure (Chinese equipment generally). Plus (Polkomtel) reportedly uses no Chinese equipment; its vendors were not established in this pass. Audit 2026-10-28: GSMONLINE/PAP (2025-04-01): T-Mobile spokesperson puts Chinese equipment/software at about 50%."
     },
     {
       "id": "POL-006",
@@ -375,7 +383,7 @@
       ],
       "corroborated": true,
       "confidence": "high",
-      "analyst_inference": "Tier 5 because Cyfronet lists Helios as an operating system and the Bielik model card reports training on 256 of its GH200s. HPE (US) is the system builder."
+      "analyst_inference": "Tier 5 because Cyfronet lists Helios as an operating system and the Bielik model card reports training on 256 of its GH200s. HPE (US) is the system builder. Audit 2026-10-28: Cyfronet's Helios page is pre-launch; Athena A100 count and Bielik GH200 training not re-verified."
     },
     {
       "id": "POL-010",
@@ -518,7 +526,19 @@
       "null_reason": "no AI- or data-centre-specific power arrangement surfaced in facilities searches"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "POL-005",
+        "POL-004",
+        "POL-001",
+        "POL-009"
+      ],
+      "note": "Source-verified corrections and audit notes: POL-005, POL-004, POL-001, POL-009"
+    }
+  ],
   "research_gaps": [
     "Has the Minister of Digital Affairs designated any vendor (Huawei, ZTE) as high-risk under the amended KSC Act, and has the Constitutional Tribunal ruled on those provisions?",
     "Current Huawei vs Ericsson/Nokia shares at Play, Orange Polska and T-Mobile Polska (2025 figures are approximate and partly from data the ministry admitted were wrong); vendors used by Plus (Polkomtel).",

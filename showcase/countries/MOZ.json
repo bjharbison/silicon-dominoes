@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "MOZ",
   "name": "Mozambique",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T17:19:38Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -177,11 +177,19 @@
           "date": null,
           "retrieved_at": "2026-10-23T17:18:00Z",
           "opened": false
+        },
+        {
+          "url": "https://datacentrereview.com/2024/05/raxio-unveils-tier-iii-data-centre-in-mozambique/",
+          "publisher": "Data Centre Review",
+          "source_tier": "S2",
+          "date": "2024-05-29",
+          "retrieved_at": "2026-10-28T15:57:00Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
-      "analyst_inference": "Pole null: Raxio is backed by US private-equity firm Roha Group and French fund Meridiam, and its controlling home jurisdiction was not established in this pass. Mozambique-specific capacity and cost not stated; the US$290m covers seven markets, so no value entered. Opening reported but operational scale unconfirmed; tier 5 is a cautious reading of a live facility. Only one source opened."
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Pole null: Raxio is backed by US private-equity firm Roha Group and French fund Meridiam, and its controlling home jurisdiction was not established in this pass. Mozambique-specific capacity and cost not stated; the US$290m covers seven markets, so no value entered. Opening reported but operational scale unconfirmed; tier 5 is a cautious reading of a live facility. Only one source opened. Audit 2026-10-28: Data Centre Review (2024-05-29) confirms the MZ1 opening at Beluluane near Maputo; the US$290m build-out and Proparco/EAIF financing were not on pages read."
     },
     {
       "id": "MOZ-005",
@@ -241,7 +249,16 @@
       "null_reason": "no AI- or data-centre-specific power project surfaced; budget spent on networks, facilities and applications"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "MOZ-004"
+      ],
+      "note": "Source-verified corrections and audit notes: MOZ-004"
+    }
+  ],
   "research_gaps": [
     "Which vendors supply Vodacom Mozambique's 5G RAN/core (launched May 2023) and Movitel's (Viettel) RAN/core?",
     "Did Tmcel's US$200m 2020 modernisation financing come from China Eximbank (reported by @Verdade, unconfirmed) and which vendor did it fund?",

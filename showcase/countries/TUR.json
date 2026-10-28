@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "TUR",
   "name": "Türkiye",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-24T01:25:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -39,7 +39,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Tier 5 reflects Huawei's role in Turkcell's operational 4G RAN as described by Light Reading; Huawei's share of the RAN and any core role were not stated. Single opened source, so uncorroborated. Pre-2020 and not re-confirmed as current; Turkiye Today (Aug 2025, opened) says much of Turkish telecom infrastructure of the past decade relies on Huawei, which suggests continuity but is not operator-specific."
+      "analyst_inference": "Tier 5 reflects Huawei's role in Turkcell's operational 4G RAN as described by Light Reading; Huawei's share of the RAN and any core role were not stated. Single opened source, so uncorroborated. Pre-2020 and not re-confirmed as current; Turkiye Today (Aug 2025, opened) says much of Turkish telecom infrastructure of the past decade relies on Huawei, which suggests continuity but is not operator-specific. Audit 2026-10-28: Date per AUDIT-2026-10-25 check is 2019-02-06 (not re-checked this run)."
     },
     {
       "id": "TUR-002",
@@ -103,11 +103,19 @@
           "date": "2011-12-26",
           "retrieved_at": "2026-10-24T01:20:00Z",
           "opened": true
+        },
+        {
+          "url": "https://connectivitybusiness.com/news/turkcell-secures-us250m-loan-china-development-bank/",
+          "publisher": "Connectivity Business",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
-      "analyst_inference": "Tier 4: financing closed (exchange disclosure reported). Pole prc because the financed equipment is Huawei's; China Development Bank recorded as financier. Pre-2020 and not re-checked as current; loans would have matured by about 2019. The underlying KAP/ISE filing was not opened."
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 4: financing closed (exchange disclosure reported). Pole prc because the financed equipment is Huawei's; China Development Bank recorded as financier. Pre-2020 and not re-checked as current; loans would have matured by about 2019. The underlying KAP/ISE filing was not opened. Audit 2026-10-28: Connectivity Business confirms up to US$250m from CDB for Huawei products in two loans; collateral-free terms and ISE disclosure not on it."
     },
     {
       "id": "TUR-004",
@@ -166,7 +174,7 @@
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
-      "date": "2025-11-25",
+      "date": "2025-11-12",
       "still_current": null,
       "summary": "Turkcell and Google Cloud announced Türkiye's first hyperscale data centre, to host a Google Cloud region: about US$3bn in total, Google US$2bn over ten years and Turkcell about US$1bn to 2032, with clusters planned for 2028-2029.",
       "announced_value_usd": 3000000000,
@@ -187,11 +195,19 @@
           "date": "2025-11-13",
           "retrieved_at": "2026-10-24T01:20:00Z",
           "opened": true
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1071321/000110465925109979/tm2531004d1_6k.htm",
+          "publisher": "Turkcell (SEC Form 6-K)",
+          "source_tier": "S1",
+          "date": "2025-11-12",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Pole domestic because AGBI describes Turkcell as the infrastructure provider (owner-operator); Google's cloud region inside it is a us cloud-layer fact covered by the global layers. Ownership split is not stated explicitly, so if Google co-owns the building the pole could be us. Tier 1: announcement only, no construction start found. Site and MW capacity not disclosed."
+      "analyst_inference": "Pole domestic because AGBI describes Turkcell as the infrastructure provider (owner-operator); Google's cloud region inside it is a us cloud-layer fact covered by the global layers. Ownership split is not stated explicitly, so if Google co-owns the building the pole could be us. Tier 1: announcement only, no construction start found. Site and MW capacity not disclosed. Audit 2026-10-28: Turkcell 6-K dated 2025-11-12 confirms the partnership, US$1bn Turkcell investment to 2032 and 2028-29 region; it does not mention Google's US$2bn or facility ownership."
     },
     {
       "id": "TUR-006",
@@ -218,7 +234,7 @@
           "url": "https://ulakbim.tubitak.gov.tr/en/performance-boost-from-our-arf-acc-supercomputers/",
           "publisher": "TÜBİTAK ULAKBİM",
           "source_tier": "S1",
-          "date": "2025-11-18",
+          "date": "2025-12-01",
           "retrieved_at": "2026-10-24T01:20:00Z",
           "opened": true
         }
@@ -292,7 +308,19 @@
       "null_reason": "no AI/data-centre-specific power evidence surfaced; budget spent on other layers"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "TUR-001",
+        "TUR-005",
+        "TUR-003",
+        "TUR-006"
+      ],
+      "note": "Source-verified corrections and audit notes: TUR-001, TUR-005, TUR-003, TUR-006"
+    }
+  ],
   "research_gaps": [
     "Which vendors supply Turkcell, Türk Telekom and Vodafone Türkiye 5G RAN and core after the October 2025 auction and April 2026 launch? Huawei vs Ericsson/Nokia split per operator.",
     "What domestic-equipment (e.g. ULAK) share do the 5G licence conditions require, and has any operator deployed ULAK 5G base stations?",

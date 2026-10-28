@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "NOR",
   "name": "Norway",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T17:19:04Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -108,7 +108,7 @@
       "reversal_reason": null,
       "date": "2019-12-13",
       "still_current": null,
-      "summary": "Telenor chose Ericsson as its main 5G radio-network supplier in Norway; Nokia and Ericsson were already its 5G core vendors, with Huawei given no core role.",
+      "summary": "Telenor chose Ericsson as its main 5G radio-network supplier in Norway.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -135,11 +135,19 @@
           "date": "2019-12-13",
           "retrieved_at": "2026-10-23T17:10:00Z",
           "opened": true
+        },
+        {
+          "url": "https://www.rcrwireless.com/20191216/carriers/telenor-extensive-security-ericsson-huawei",
+          "publisher": "RCR Wireless",
+          "source_tier": "S2",
+          "date": "2019-12-16",
+          "retrieved_at": "2026-10-28T16:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Ericsson (Swedish) and Nokia (Finnish) are both third-pole vendors. Telenor is Norway's largest operator, so scale is national. Value undisclosed."
+      "analyst_inference": "Ericsson (Swedish) and Nokia (Finnish) are both third-pole vendors. Telenor is Norway's largest operator, so scale is national. Value undisclosed. Audit 2026-10-28: The core-vendor claim (Nokia/Ericsson, no Huawei core role) is not in Reuters or RCR and rests on SDxCentral, which failed to load; removed from summary."
     },
     {
       "id": "NOR-004",
@@ -158,7 +166,7 @@
       "reversal_reason": "commercial",
       "date": "2019-12-13",
       "still_current": null,
-      "summary": "Telenor began phasing out Huawei, its 4G partner of about a decade, replacing most Huawei radio gear over four to five years, while Huawei kept a limited role upgrading and maintaining parts of the network.",
+      "summary": "Telenor began phasing out Huawei, its 4G partner of about a decade, with Huawei components to be phased out over a four-to-five-year modernisation, Huawei maintaining parts of the network meanwhile.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -189,7 +197,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Partial reversal of an operational (tier 5) Huawei 4G RAN. Telenor's CEO cited a holistic evaluation covering security, technical quality, commercial terms and innovation, not politics; coded commercial, though the security element makes geopolitical arguable. A 4-5 year phase-out implies completion around 2023-24; not confirmed, and Huawei's residual role is unquantified."
+      "analyst_inference": "Partial reversal of an operational (tier 5) Huawei 4G RAN. Telenor's CEO cited a holistic evaluation covering security, technical quality, commercial terms and innovation, not politics; coded commercial, though the security element makes geopolitical arguable. A 4-5 year phase-out implies completion around 2023-24; not confirmed, and Huawei's residual role is unquantified. Audit 2026-10-28: Reuters says Huawei components will be phased out (all, not most) over 4-5 years; the CEO led with a security evaluation, so the commercial reason is weak (see rule problem on reversal reasons)."
     },
     {
       "id": "NOR-005",
@@ -377,7 +385,17 @@
       "null_reason": "no dedicated AI/DC power plant surfaced; Narvik site described as grid-connected renewable supply"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "NOR-003",
+        "NOR-004"
+      ],
+      "note": "Source-verified corrections and audit notes: NOR-003, NOR-004"
+    }
+  ],
   "research_gaps": [
     "Did Telia Norway and Telenor Norge complete their Huawei RAN swap-outs (targets 2023 and ~2023-24), and does Huawei retain any maintenance or coverage role at Telenor?",
     "Has Norway adopted any formal vendor-screening rule for telecoms (follow-up to Meld. St. 9 (2022-2023) or the new ekom law) that restricts Huawei/ZTE? Search found only 2019 deliberations and no ban.",

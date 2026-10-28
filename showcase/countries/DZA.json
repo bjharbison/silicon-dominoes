@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "DZA",
   "name": "Algeria",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T01:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -109,7 +109,7 @@
       "financier": null,
       "base_model": null,
       "base_model_pole": null,
-      "scale": "subnational",
+      "scale": "municipal",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
@@ -131,7 +131,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "A pilot only. Mobilis's commercial 5G (launched December 2025) vendor is not identified in any source this run opened; an April 2025 Mobilis test report named no vendor. still_current null: the vendor of the live network was not confirmed."
+      "analyst_inference": "A pilot only. Mobilis's commercial 5G (launched December 2025) vendor is not identified in any source this run opened; an April 2025 Mobilis test report named no vendor. still_current null: the vendor of the live network was not confirmed. Audit 2026-10-28: Scale national/subnational -> municipal: a single-city 5G test (spec-required patch listed in AUDIT-2026-10-25)."
     },
     {
       "id": "DZA-004",
@@ -224,7 +224,7 @@
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
-      "date": "2021-01",
+      "date": "2020-12-31",
       "still_current": null,
       "summary": "The ORVAL/ALVAL submarine cable linking Algiers and Oran to Valencia, Spain, went into service as Algérie Télécom-run infrastructure, with IslaLink and ASN named as project partners.",
       "announced_value_usd": null,
@@ -245,11 +245,19 @@
           "date": "2021-01-12",
           "retrieved_at": "2026-10-23T01:10:00Z",
           "opened": false
+        },
+        {
+          "url": "https://subtelforum.com/alval-orval-cable-in-service/",
+          "publisher": "Submarine Telecoms Forum",
+          "source_tier": "S2",
+          "date": "2021-01-14",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Capacity names ASN only as a partner, not explicitly as supplier; pole third (French vendor) is an inference. Date from the Algérie Eco headline seen in search only. Not PRC-built on available evidence."
+      "analyst_inference": "Capacity names ASN only as a partner, not explicitly as supplier; pole third (French vendor) is an inference. Date from the Algérie Eco headline seen in search only. Not PRC-built on available evidence. Audit 2026-10-28: Submarine Telecoms Forum (2021-01-14) gives in-service 2020-12-31 (Algiers/Oran-Valencia, ~770 km) but does not name IslaLink or ASN, so vendor and pole remain unverified; not counted as corroboration of the vendor."
     },
     {
       "id": "DZA-007",
@@ -316,7 +324,17 @@
       "null_reason": "no AI- or data-centre-specific power evidence surfaced; budget spent on networks and facilities"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "DZA-003",
+        "DZA-006"
+      ],
+      "note": "Source-verified corrections and audit notes: DZA-003, DZA-006"
+    }
+  ],
   "research_gaps": [
     "Which vendors supply RAN and core for Mobilis, Djezzy and Ooredoo commercial 5G (licences December 2025, about US$492m)? No source opened named them.",
     "Does Huawei supply the IT equipment, cloud stack or operations of the High Commission for Digitisation data centre (2024 contract)? Contract value and status?",

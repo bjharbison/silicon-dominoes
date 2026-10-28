@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "NGA",
   "name": "Nigeria",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-24T01:19:09Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -24,7 +24,7 @@
       "reversal_reason": null,
       "date": "2022-09",
       "still_current": null,
-      "summary": "MTN Nigeria launched commercial 5G in selected Lagos and other areas on an Ericsson-supplied 5G radio access network and non-standalone packet core, extending a roughly 21-year Ericsson-MTN Nigeria partnership.",
+      "summary": "MTN Nigeria launched commercial 5G in Lagos, with other cities to follow, on an Ericsson-supplied 5G radio access network and non-standalone packet core, extending a roughly 21-year Ericsson-MTN Nigeria partnership.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -47,7 +47,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Ericsson is Swedish, so pole third under the equipment rule. Tier 5 reflects a live commercial launch, though only a first-phase footprint. Neither source mentions Huawei; MTN Nigeria's 2G-4G vendor mix and Airtel/Globacom 5G suppliers were not established in this pass. Contract value not disclosed."
+      "analyst_inference": "Ericsson is Swedish, so pole third under the equipment rule. Tier 5 reflects a live commercial launch, though only a first-phase footprint. Neither source mentions Huawei; MTN Nigeria's 2G-4G vendor mix and Airtel/Globacom 5G suppliers were not established in this pass. Contract value not disclosed. Audit 2026-10-28: RCR confirms Ericsson RAN and NSA core and a Lagos-first launch; the ~21-year partnership figure was not on the page read."
     },
     {
       "id": "NGA-002",
@@ -105,7 +105,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Pole prc: Huawei as equipment vendor/contractor per the 2018 agreement (ThisDay, Techpoint); Techpoint notes the contractor was not formally confirmed. Tier 2 because only the MoU and government approval are evidenced; loan closing, construction and completion were not found. Capacity Media supports the loan but does not name Huawei."
+      "analyst_inference": "Pole prc: Huawei as equipment vendor/contractor per the 2018 agreement (ThisDay, Techpoint); Techpoint notes the contractor was not formally confirmed. Tier 2 because only the MoU and government approval are evidenced; loan closing, construction and completion were not found. Capacity Media supports the loan but does not name Huawei. Audit 2026-10-28: BusinessDay (2022-11-25): the House halted payments and probed the Galaxy Backbone-Huawei MoU; the US$328m Phase II loan was described as not finalised."
     },
     {
       "id": "NGA-003",
@@ -122,7 +122,7 @@
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
-      "date": "2026-05-20",
+      "date": "2026-05-19",
       "still_current": null,
       "summary": "Kasi Cloud launched its LOS1 AI-oriented data-centre campus in Lekki, Lagos in May 2026, moving into commissioning; it is designed to scale to about 100 MW, with the sovereign wealth fund NSIA as a foundational investor.",
       "announced_value_usd": 250000000,
@@ -143,16 +143,24 @@
           "date": "2026-01-08",
           "retrieved_at": "2026-10-24T01:05:00Z",
           "opened": true
+        },
+        {
+          "url": "https://nsia.com.ng/?p=15386",
+          "publisher": "Nigeria Sovereign Investment Authority",
+          "source_tier": "S1",
+          "date": "2026-05-19",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Pole domestic: owner-operator is a Nigerian company backed by NSIA; full shareholding not disclosed. Tier 4 (built, commissioning) rather than 5, as operation at scale is not evidenced. The US$250m value is from TechCabal only. Chip vendor and builder not stated."
+      "analyst_inference": "Pole domestic: owner-operator is a Nigerian company backed by NSIA; full shareholding not disclosed. Tier 4 (built, commissioning) rather than 5, as operation at scale is not evidenced. The US$250m value is from TechCabal only. Chip vendor and builder not stated. Audit 2026-10-28: NSIA release confirms commissioning on 2026-05-19, ~100 MW design and NSIA as foundational investor; US$250m not on it."
     },
     {
       "id": "NGA-004",
       "layer": "facilities",
-      "pole": "third",
+      "pole": null,
       "controller": "Airtel Africa (Nxtra)",
       "local_actor": "Airtel Nigeria; Eko Atlantic, Lagos",
       "builder": null,
@@ -185,11 +193,19 @@
           "date": "2026-01-08",
           "retrieved_at": "2026-10-24T01:05:00Z",
           "opened": true
+        },
+        {
+          "url": "https://www.connectingafrica.com/data-centers/airtel-africa-breaks-ground-on-first-nxtra-data-center-in-nigeria",
+          "publisher": "Connecting Africa",
+          "source_tier": "S2",
+          "date": "2024-03-13",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
-      "confidence": "medium",
-      "analyst_inference": "Pole third: Airtel Africa is London-listed and controlled by India's Bharti Airtel. Tier 1 as Developing Telecoms reports a plan; TechCabal (Jan 2026) says early GPU shipments arrived in late 2025, implying construction, but this rests on one S3 source. Go-live and GPU vendor unconfirmed."
+      "confidence": "low",
+      "analyst_inference": "Pole third: Airtel Africa is London-listed and controlled by India's Bharti Airtel. Tier 1 as Developing Telecoms reports a plan; TechCabal (Jan 2026) says early GPU shipments arrived in late 2025, implying construction, but this rests on one S3 source. Go-live and GPU vendor unconfirmed. Audit 2026-10-28: NOT SUPPORTED as coded: Connecting Africa reports Nxtra broke ground on the 38 MW Eko Atlantic site on 2024-03-12 with Q1 2026 go-live targeted, so a tier-1 plan dated 2025-08-08 is wrong. Pole set null per AUDIT_PROCEDURE step 4; recoding as a tier-4 construction start dated 2024-03-12 (pole third) is proposed for Brian."
     },
     {
       "id": "NGA-005",
@@ -273,7 +289,7 @@
       ],
       "corroborated": true,
       "confidence": "high",
-      "analyst_inference": "Pole domestic: released by the Nigerian government with a Nigerian partner; exact weights holder not stated but the licence terms imply national control. Base model Llama-3 8B (Meta, us) per Open Source For You only; speech component reportedly fine-tuned from Whisper Small (OpenAI). Tier 5 reflects release, not proven adoption."
+      "analyst_inference": "Pole domestic: released by the Nigerian government with a Nigerian partner; exact weights holder not stated but the licence terms imply national control. Base model Llama-3 8B (Meta, us) per Open Source For You only; speech component reportedly fine-tuned from Whisper Small (OpenAI). Tier 5 reflects release, not proven adoption. Audit 2026-10-28: TechCabal does not mention NCAIR or the Llama-3 8B base; those rest on sources not re-read."
     },
     {
       "id": "NGA-007",
@@ -339,7 +355,20 @@
       "null_reason": "no AI/data-centre-specific power evidence surfaced; budget spent on other layers"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "NGA-001",
+        "NGA-002",
+        "NGA-003",
+        "NGA-004",
+        "NGA-006"
+      ],
+      "note": "Source-verified corrections and audit notes: NGA-001, NGA-002, NGA-003, NGA-004, NGA-006"
+    }
+  ],
   "research_gaps": [
     "Was the NICTIB II China Exim loan closed and the Huawei-built northern fibre backbone constructed or completed?",
     "Radio and core vendors for Airtel Nigeria, Globacom and 9mobile, and MTN Nigeria's legacy 2G-4G mix (Huawei/ZTE share).",

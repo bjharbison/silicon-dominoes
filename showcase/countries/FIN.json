@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "FIN",
   "name": "Finland",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T01:22:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -35,11 +35,19 @@
           "date": "2020-12-08",
           "retrieved_at": "2026-10-23T01:15:00Z",
           "opened": true
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/ZTE-CORPORATION-6495034/news/Finland-approves-law-to-ban-telecoms-gear-on-security-grounds-31956148/",
+          "publisher": "Reuters (via MarketScreener)",
+          "source_tier": "S3",
+          "date": "2020-12-07",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
-      "analyst_inference": "Reporting does not specify which network domains (RAN vs core) or regions Huawei supplies at each operator, nor whether that remains true in 2026. The December 2020 law (Traficom sets requirements) names no vendor and no exclusion decision under it was found in this pass, so it is not coded as a reversal. Tier 5 assumes deployed equipment in live networks."
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Reporting does not specify which network domains (RAN vs core) or regions Huawei supplies at each operator, nor whether that remains true in 2026. The December 2020 law (Traficom sets requirements) names no vendor and no exclusion decision under it was found in this pass, so it is not coded as a reversal. Tier 5 assumes deployed equipment in live networks. Audit 2026-10-28: Reuters (via MarketScreener, 2020-12-07) confirms the law and that Elisa and DNA used Huawei parts in 5G rollout; corroborated with Telecoms.com."
     },
     {
       "id": "FIN-002",
@@ -124,9 +132,9 @@
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
-      "date": "2024-05",
+      "date": "2024-05-20",
       "still_current": true,
-      "summary": "Google announced a further €1bn expansion of its Hamina data-centre campus, operating since 2009 in a former paper mill, with heat recovery to supply about 80% of Hamina's district heating; total Finland investment then €3.5bn.",
+      "summary": "Google announced a further €1bn expansion of its Hamina data-centre campus, operating since 2009 in a former paper mill, with heat recovery to supply about 80% of Hamina's district heating; Hamina investment then €3.5bn and Finland total over €4.5bn.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -157,7 +165,7 @@
       ],
       "corroborated": true,
       "confidence": "high",
-      "analyst_inference": "Tier 5 reflects the operating Hamina campus (ITPro 2026 describes it as a live hub serving Nokia and Elisa among others), not the 2024 expansion, whose construction status was not verified. Date from SiliconANGLE URL (seen only). €1bn not converted to USD."
+      "analyst_inference": "Tier 5 reflects the operating Hamina campus (ITPro 2026 describes it as a live hub serving Nokia and Elisa among others), not the 2024 expansion, whose construction status was not verified. Date from SiliconANGLE URL (seen only). €1bn not converted to USD. Audit 2026-10-28: Business Finland (2024-05-20): €3.5bn was the Hamina-only investment since 2009; Finland total after the expansion is over €4.5bn."
     },
     {
       "id": "FIN-005",
@@ -267,7 +275,7 @@
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
-      "date": "2022-06-14",
+      "date": "2022-06-13",
       "still_current": null,
       "summary": "LUMI, an HPE Cray EX system with AMD EPYC CPUs and AMD MI250X GPUs across 4,112 nodes, launched at CSC's Kajaani data centre, co-funded by EuroHPC, at a reported cost of about US$211m.",
       "announced_value_usd": 211000000,
@@ -288,11 +296,19 @@
           "date": null,
           "retrieved_at": "2026-10-23T01:15:00Z",
           "opened": false
+        },
+        {
+          "url": "https://www.eurohpc-ju.europa.eu/inauguration-lumi-fastest-greenest-supercomputer-europe-2022-06-13_en",
+          "publisher": "EuroHPC Joint Undertaking",
+          "source_tier": "S1",
+          "date": "2022-06-13",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Pole is the accelerator vendor (US). The system is EU/EuroHPC-owned and CSC-hosted, so facility control is European/domestic. Reported cost recorded as announced. Poro 34B was trained on LUMI's GPU partition (FIN-010)."
+      "analyst_inference": "Pole is the accelerator vendor (US). The system is EU/EuroHPC-owned and CSC-hosted, so facility control is European/domestic. Reported cost recorded as announced. Poro 34B was trained on LUMI's GPU partition (FIN-010). Audit 2026-10-28: EuroHPC JU gives inauguration 2022-06-13 and a total budget of EUR 144.5m; the US$211m figure was not confirmed. EuroHPC does not name AMD, so not counted as corroboration of the vendor."
     },
     {
       "id": "FIN-008",
@@ -352,8 +368,8 @@
       "reversal_of": null,
       "reversal_reason": null,
       "date": "2026-01",
-      "still_current": null,
-      "summary": "CSC began building a new data centre in Kajaani's Renforsin Ranta business park in January 2026 to host LUMI-AI, with completion expected in summer 2027.",
+      "still_current": true,
+      "summary": "CSC began building a new data centre in Kajaani's Renforsin Ranta business park in January 2026 to host LUMI-AI, with operations due at end-2027.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -364,11 +380,19 @@
           "date": "2026-08-31",
           "retrieved_at": "2026-10-23T01:15:00Z",
           "opened": true
+        },
+        {
+          "url": "https://www.srv.fi/en/srv-as-a-company/newsroom/press-release/lumi-ai-factory-data-center-construction-progresses-in-kajaani/",
+          "publisher": "SRV",
+          "source_tier": "S1",
+          "date": "2026-09-03",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
-      "analyst_inference": "CSC is a Finnish state-owned company, so the owner-operator is domestic. Construction start rests on a single trade-press report; investment value not found."
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "CSC is a Finnish state-owned company, so the owner-operator is domestic. Construction start rests on a single trade-press report; investment value not found. Audit 2026-10-28: SRV (contractor, 2026-09-03) confirms the January 2026 start, CSC ownership and topping-out; commissioning from early 2027, operations end-2027."
     },
     {
       "id": "FIN-010",
@@ -387,7 +411,7 @@
       "reversal_reason": null,
       "date": "2024-04",
       "still_current": null,
-      "summary": "Poro 34B, a Finnish-English-code model trained from scratch on LUMI's AMD GPUs by Silo AI and the University of Turku's TurkuNLP group, was released with open weights, data and scripts.",
+      "summary": "Poro 34B, a Finnish-English-code model trained from scratch on LUMI's AMD GPUs by Silo AI, TurkuNLP and HPLT, was released with open weights and training code.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -410,7 +434,7 @@
       ],
       "corroborated": false,
       "confidence": "medium",
-      "analyst_inference": "Pole null because control is split: open weights co-developed by a Finnish public university and Silo AI, which became US-owned (AMD) in August 2024 (FIN-011). Successor Viking models not verified here. Trained from scratch, so no base model. Date inferred from the arXiv ID (April 2024); the model was unveiled earlier per VentureBeat (seen only). arXiv treated as the authors' primary publication."
+      "analyst_inference": "Pole null because control is split: open weights co-developed by a Finnish public university and Silo AI, which became US-owned (AMD) in August 2024 (FIN-011). Successor Viking models not verified here. Trained from scratch, so no base model. Date inferred from the arXiv ID (April 2024); the model was unveiled earlier per VentureBeat (seen only). arXiv treated as the authors' primary publication. Audit 2026-10-28: Model card: training data itself is not released (only sources listed); HPLT is a co-developer; paper dated 2024-04-02."
     },
     {
       "id": "FIN-011",
@@ -429,7 +453,7 @@
       "reversal_reason": null,
       "date": "2024-08-12",
       "still_current": null,
-      "summary": "AMD completed its roughly US$665m all-cash acquisition of Helsinki-based Silo AI, developer of the Poro and Viking open multilingual models; the team joined AMD's AI Group under CEO Peter Sarlin.",
+      "summary": "AMD completed its roughly US$665m all-cash acquisition of Helsinki-based Silo AI, developer of the Poro and Viking open multilingual models; the team joined AMD's AI Group.",
       "announced_value_usd": 665000000,
       "verified_value_usd": null,
       "sources": [
@@ -452,7 +476,7 @@
       ],
       "corroborated": true,
       "confidence": "high",
-      "analyst_inference": "Coded as a transfer of Finland's largest private AI lab to US corporate control. This concerns ownership of a model developer, not a model the Finnish state uses. Value is the announced deal price."
+      "analyst_inference": "Coded as a transfer of Finland's largest private AI lab to US corporate control. This concerns ownership of a model developer, not a model the Finnish state uses. Value is the announced deal price. Audit 2026-10-28: AMD release does not mention Peter Sarlin; the AI Group is led by Vamsi Boppana."
     },
     {
       "id": "FIN-012",
@@ -511,7 +535,21 @@
       "result": "coded"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "FIN-001",
+        "FIN-004",
+        "FIN-007",
+        "FIN-009",
+        "FIN-010",
+        "FIN-011"
+      ],
+      "note": "Source-verified corrections and audit notes: FIN-001, FIN-004, FIN-007, FIN-009, FIN-010, FIN-011"
+    }
+  ],
   "research_gaps": [
     "Do Elisa and DNA still use Huawei RAN or core in 2026? Has Traficom issued any decision under the December 2020 critical-network-equipment law?",
     "Was the Suomen Yhteisverkko Huawei-to-Nokia swap completed, and what are Telia Finland's main RAN/core vendors?",

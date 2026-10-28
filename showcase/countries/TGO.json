@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "TGO",
   "name": "Togo",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T21:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -74,7 +74,7 @@
       "reversal_reason": null,
       "date": "2017-04-24",
       "still_current": null,
-      "summary": "A Huawei-built e-government fibre network of about 200 km in Lomé, financed by China Exim Bank, was inaugurated in April 2017, connecting roughly 560 public buildings including ministries, hospitals, universities and the airport.",
+      "summary": "A Huawei-built e-government fibre network of about 250 km in Lomé, financed by China Exim Bank, was inaugurated in April 2017, connecting roughly 560 public buildings including ministries, hospitals, universities and the airport.",
       "announced_value_usd": 25000000,
       "verified_value_usd": null,
       "sources": [
@@ -105,7 +105,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Huawei as vendor is stated by Ecofin and TechCabal; Financial Afrik confirms inauguration and Exim financing but does not name the vendor. Ecofin gives about US$25m; Financial Afrik gives 15bn FCFA. Pre-2020 and continued operation not confirmed, so still_current null."
+      "analyst_inference": "Huawei as vendor is stated by Ecofin and TechCabal; Financial Afrik confirms inauguration and Exim financing but does not name the vendor. Ecofin gives about US$25m; Financial Afrik gives 15bn FCFA. Pre-2020 and continued operation not confirmed, so still_current null. Audit 2026-10-28: Fibre length 250 km (checked in both audits)."
     },
     {
       "id": "TGO-003",
@@ -160,10 +160,10 @@
     {
       "id": "TGO-004",
       "layer": "networks",
-      "pole": "us",
-      "controller": "Google",
+      "pole": "third",
+      "controller": "Alcatel Submarine Networks",
       "local_actor": "Société d'Infrastructures Numériques (SIN) and CSquared, via landing JV CSquared Woezon",
-      "builder": "Alcatel Submarine Networks",
+      "builder": null,
       "financier": null,
       "base_model": null,
       "base_model_pole": null,
@@ -205,7 +205,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Coded us on owner-operator Google, following the treatment of Google-owned cables elsewhere; the builder, Alcatel Submarine Networks, is French, so pole could be argued third under the equipment-vendor rule. Tier 4 because the landing is documented; ready-for-service date not confirmed, though TGO-005 implies it was carrying traffic by October 2023."
+      "analyst_inference": "Coded us on owner-operator Google, following the treatment of Google-owned cables elsewhere; the builder, Alcatel Submarine Networks, is French, so pole could be argued third under the equipment-vendor rule. Tier 4 because the landing is documented; ready-for-service date not confirmed, though TGO-005 implies it was carrying traffic by October 2023. Audit 2026-10-28: Cable rule (SPEC 3, equipment vendor is controller; builder carve-out is for buildings only): controller Google -> ASN, pole us -> third. Compare SHN-001 (Google as controller of the Equiano branch), not yet audited."
     },
     {
       "id": "TGO-005",
@@ -218,7 +218,7 @@
       "base_model": null,
       "base_model_pole": null,
       "scale": "national",
-      "instrument_tier": 5,
+      "instrument_tier": 4,
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
@@ -239,7 +239,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Vendor press release only (S4). Adtran Holdings is US-headquartered, but the FSP product line comes from its German subsidiary (ex-ADVA), so third is arguable. Tier 5 rests on the release's description of the network as in service; no independent confirmation."
+      "analyst_inference": "Vendor press release only (S4). Adtran Holdings is US-headquartered, but the FSP product line comes from its German subsidiary (ex-ADVA), so third is arguable. Tier 5 rests on the release's description of the network as in service; no independent confirmation. Audit 2026-10-28: Developing Telecoms (echo of the release) says CSquared \"has selected\"/\"is using\" Adtran: deployment underway, not operational at scale; tier 5 -> 4."
     },
     {
       "id": "TGO-006",
@@ -258,7 +258,7 @@
       "reversal_reason": null,
       "date": "2021-06",
       "still_current": true,
-      "summary": "Lomé Data Centre, Togo's first carrier-neutral colocation facility, owned by state company SIN and operated by Africa Data Centres, opened in June 2021 at a reported cost of US$23.7m financed by the World Bank; it was later Tier III-certified.",
+      "summary": "Lomé Data Centre, Togo's first carrier-neutral colocation facility, owned by state company SIN and operated by Africa Data Centres, opened in June 2021 at a reported cost of US$23.7m financed by the World Bank; Tier III certification then pending.",
       "announced_value_usd": 23700000,
       "verified_value_usd": null,
       "sources": [
@@ -289,7 +289,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Coded third because the spec makes a documented operator the controller, and DCD names Africa Data Centres (Liquid group, Mauritius-domiciled, Zimbabwean-founded) as operator. The 2026 source describes the facility as government-owned through SIN and does not mention ADC; if the operating contract has ended, the pole would be domestic. still_current true for the facility itself."
+      "analyst_inference": "Coded third because the spec makes a documented operator the controller, and DCD names Africa Data Centres (Liquid group, Mauritius-domiciled, Zimbabwean-founded) as operator. The 2026 source describes the facility as government-owned through SIN and does not mention ADC; if the operating contract has ended, the pole would be domestic. still_current true for the facility itself. Audit 2026-10-28: Togo First (2021-06-07) gives CFA 1.7bn (~US$3m) against DCD's US$23.7m, so the value is disputed; inaugurated 4 Jun 2021; Tier III certification only in progress then."
     },
     {
       "id": "TGO-007",
@@ -422,7 +422,7 @@
       "layer": "models",
       "pole": "domestic",
       "controller": "Togo AI Lab and Umbaji (with Zindi)",
-      "local_actor": "Ministry of Digital Economy and Transformation",
+      "local_actor": "Ministry of Public Sector Efficiency and Digital Transformation",
       "builder": null,
       "financier": null,
       "base_model": null,
@@ -445,11 +445,19 @@
           "date": "2026-07-08",
           "retrieved_at": "2026-10-23T21:10:00Z",
           "opened": true
+        },
+        {
+          "url": "https://cioafrica.co/togo-launches-ai-project-to-build-models-for-50-languages/",
+          "publisher": "CIO Africa",
+          "source_tier": "S2",
+          "date": "2026-07-09",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
-      "analyst_inference": "Coded domestic because the work is led by the Togolese government and Togolese organisations, with outputs intended to be open; who will hold the weights is not stated. Zindi is a pan-African platform from outside Togo. No base model named. Tier 2 because this is a launched pilot or competition, not a deployment."
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Coded domestic because the work is led by the Togolese government and Togolese organisations, with outputs intended to be open; who will hold the weights is not stated. Zindi is a pan-African platform from outside Togo. No base model named. Tier 2 because this is a launched pilot or competition, not a deployment. Audit 2026-10-28: CIO Africa (2026-07-09) independently confirms; ministry name corrected."
     }
   ],
   "layers_searched": {
@@ -474,7 +482,20 @@
       "null_reason": "no AI- or data-centre-specific power evidence surfaced"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "TGO-002",
+        "TGO-004",
+        "TGO-005",
+        "TGO-006",
+        "TGO-010"
+      ],
+      "note": "Source-verified corrections and audit notes: TGO-002, TGO-004, TGO-005, TGO-006, TGO-010"
+    }
+  ],
   "research_gaps": [
     "Which vendors supply Moov Africa Togo's RAN and core (Maroc Telecom group), and Togocom's core network? Is Nokia still Togocom's sole RAN vendor after the 2020-2023 deal?",
     "Did the September 2024 Togo-Huawei MoU produce any contracts (data centres, cybersecurity, e-government)? Is the 2017 Huawei/China Exim e-government fibre network still Huawei-maintained?",

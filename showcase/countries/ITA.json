@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "ITA",
   "name": "Italy",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T09:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -45,9 +45,9 @@
           "opened": true
         }
       ],
-      "corroborated": true,
+      "corroborated": false,
       "confidence": "medium",
-      "analyst_inference": "Tier 2 is a cautious reading: the thing reversed is Huawei's eligibility for a core tender, not a signed core contract, and whether Huawei supplied TIM's earlier 4G core was not checked. Reason coded geopolitical because sources frame the core exclusion around sensitive data and US pressure; TIM gave no public reason. Both sources rely on Reuters reporting."
+      "analyst_inference": "Tier 2 is a cautious reading: the thing reversed is Huawei's eligibility for a core tender, not a signed core contract, and whether Huawei supplied TIM's earlier 4G core was not checked. Reason coded geopolitical because sources frame the core exclusion around sensitive data and US pressure; TIM gave no public reason. Both sources rely on Reuters reporting. Audit 2026-10-28: Both sources rely on Reuters reporting, so not independent: corroborated false (spec-required). Reuters (July 2020) says Huawei had no role in TIM's existing Italian core, which supports tier 2."
     },
     {
       "id": "ITA-002",
@@ -187,9 +187,9 @@
           "opened": true
         }
       ],
-      "corroborated": true,
-      "confidence": "medium",
-      "analyst_inference": "All three outlets relay one Reuters report from anonymous sources; the government did not confirm publicly. Golden-power reviews apply to signed supply contracts, hence tier 3. Coded geopolitical: the stated pretext was supplier concentration, but sources frame it as a response to US pressure."
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "All three outlets relay one Reuters report from anonymous sources; the government did not confirm publicly. Golden-power reviews apply to signed supply contracts, hence tier 3. Coded geopolitical: the stated pretext was supplier concentration, but sources frame it as a response to US pressure. Audit 2026-10-28: All three outlets relay one Reuters report: corroborated false, confidence low (spec-required for an uncorroborated tier-3 finding)."
     },
     {
       "id": "ITA-005",
@@ -219,11 +219,19 @@
           "date": "2021-06",
           "retrieved_at": "2026-10-23T09:15:00Z",
           "opened": true
+        },
+        {
+          "url": "https://www.mobileworldlive.com/vodafone/huawei-vodafone-italy-5g/",
+          "publisher": "Mobile World Live",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-28T16:00:00Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
-      "analyst_inference": "Conditional approval, not a reversal. Single opened source. Vodafone Italia has since changed ownership; whether Huawei RAN remains in that network was not checked."
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Conditional approval, not a reversal. Single opened source. Vodafone Italia has since changed ownership; whether Huawei RAN remains in that network was not checked. Audit 2026-10-28: Mobile World Live independently confirms the deal; the exact date 2021-05-20 is unverified (reporting appeared around 31 May-1 Jun 2021)."
     },
     {
       "id": "ITA-006",
@@ -627,7 +635,18 @@
       "null_reason": "search budget spent on other layers; no AI-specific power evidence surfaced incidentally"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "ITA-001",
+        "ITA-004",
+        "ITA-005"
+      ],
+      "note": "Source-verified corrections and audit notes: ITA-001, ITA-004, ITA-005"
+    }
+  ],
   "research_gaps": [
     "Hikvision/Dahua removal from Italian government offices: no removal order found. May 2023 reporting (Decode39 relaying Il Sole 24 Ore) said stricter rules for cameras at critical sites were under evaluation; did a law or removal follow?",
     "Did TIM's April 2021 termination of Huawei RAN supply complete, and what share of TIM's RAN remains Huawei today?",

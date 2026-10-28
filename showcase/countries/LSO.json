@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "LSO",
   "name": "Lesotho",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T09:19:02Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -89,7 +89,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Licence issued is coded tier 4; whether service is commercially live at scale was not confirmed. Both sources note the grant coincided with Lesotho seeking trade talks after a US tariff, but neither attributes the decision to US pressure. allAfrica (headline 'Lesotho Gives in') seen in search only."
+      "analyst_inference": "Licence issued is coded tier 4; whether service is commercially live at scale was not confirmed. Both sources note the grant coincided with Lesotho seeking trade talks after a US tariff, but neither attributes the decision to US pressure. allAfrica (headline 'Lesotho Gives in') seen in search only. Audit 2026-10-28: Search results (not opened) indicate commercial Starlink launch around June 2025."
     },
     {
       "id": "LSO-003",
@@ -139,7 +139,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Neither source states who would own or operate the data centre; Convalt is coded as controller because it is the developer funding the project, which is an inference. Announced US$6.2bn (Connecting Africa) covers the whole package incl. solar and storage; DCD gives about US$5.92bn (M98bn) construction cost. No tenant or chip vendor disclosed. MOU only, so tier 1.",
+      "analyst_inference": "Neither source states who would own or operate the data centre; Convalt is coded as controller because it is the developer funding the project, which is an inference. Announced US$6.2bn (Connecting Africa) covers the whole package incl. solar and storage; DCD gives about US$5.92bn (M98bn) construction cost. No tenant or chip vendor disclosed. MOU only, so tier 1. Audit 2026-10-28: Water Power Magazine (2026-06-08) calls it a \"binding Memorandum of Agreement\" with the Government of Lesotho, still subject to feasibility, financing and definitive agreements; tier 1 vs 2 left for Brian.",
       "bundle_id": "LSO-B1"
     },
     {
@@ -225,7 +225,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Single opened S3 source, so uncorroborated and low confidence. USD figure is the article's own conversion. Whether the loan was signed, construction began, or the system is operational was not confirmed; tier 3 reflects the reported award only."
+      "analyst_inference": "Single opened S3 source, so uncorroborated and low confidence. USD figure is the article's own conversion. Whether the loan was signed, construction began, or the system is operational was not confirmed; tier 3 reflects the reported award only. Audit 2026-10-28: Sunday Express (2022-11-12, sister paper, not independent) says the agreement was signed Dec 2021 but not implemented as of Nov 2022."
     }
   ],
   "layers_searched": {
@@ -250,7 +250,18 @@
       "result": "coded"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "LSO-002",
+        "LSO-003",
+        "LSO-005"
+      ],
+      "note": "Source-verified corrections and audit notes: LSO-002, LSO-003, LSO-005"
+    }
+  ],
   "research_gaps": [
     "Who supplies Vodacom Lesotho's and Econet Telecom Lesotho's current RAN and core? Vodacom's US$40m upgrade (ITWeb, March 2026), ETL's 2025 Maseru RAN upgrade and Vodacom's 2018 5G FWA launch reports name no vendor.",
     "Lesotho Safe City Project (Huawei, CNY600m Eximbank): was the loan signed, and is the Maseru phase built and operational? Seek S1 (Finance ministry, parliament) evidence.",

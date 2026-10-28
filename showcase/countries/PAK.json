@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "PAK",
   "name": "Pakistan",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T17:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -55,7 +55,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Cable owner is a Hong Kong-registered Hengtong subsidiary and the lead contractor was Huawei Marine (now HMN Tech) per Converge Digest's 2018 item; the vendor attribution rests on that one source, while RFS status is corroborated by two hosts. Pole prc because both supplier and owner-operator are PRC firms."
+      "analyst_inference": "Cable owner is a Hong Kong-registered Hengtong subsidiary and the lead contractor was Huawei Marine (now HMN Tech) per Converge Digest's 2018 item; the vendor attribution rests on that one source, while RFS status is corroborated by two hosts. Pole prc because both supplier and owner-operator are PRC firms. Audit 2026-10-28: Batch-4 checker: TelecomTV (2018) says the PEACE cable supply contract went to Hengtong Marine, with Huawei Marine co-announcing (compare EGY-004, pole null)."
     },
     {
       "id": "PAK-002",
@@ -163,7 +163,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Huawei Pakistan signed an MoU and design agreement (May 2026) and a strategic partnership (June 2026) to provide design, technical planning and solutions; it is recorded as builder/designer and does not set the pole for a building. If Huawei turns out to supply the IT/network equipment, a separate prc equipment finding would be warranted. Capacity is reported as 80MW (IASP) or 100MW (QGDC site per DCD). Tier 4 rests on DCD's groundbreaking report."
+      "analyst_inference": "Huawei Pakistan signed an MoU and design agreement (May 2026) and a strategic partnership (June 2026) to provide design, technical planning and solutions; it is recorded as builder/designer and does not set the pole for a building. If Huawei turns out to supply the IT/network equipment, a separate prc equipment finding would be warranted. Capacity is reported as 80MW (IASP) or 100MW (QGDC site per DCD). Tier 4 rests on DCD's groundbreaking report. Audit 2026-10-28: Business Recorder does not mention the groundbreaking, 136MW captive power or 2027 target; DCD (basis for tier 4) could not be loaded, so tier 4 is unverified this audit."
     },
     {
       "id": "PAK-004",
@@ -265,7 +265,7 @@
       "reversal_of": null,
       "reversal_reason": null,
       "date": "2026-07",
-      "still_current": null,
+      "still_current": true,
       "summary": "Sky47's 8.5MW 'Karakoram One' data centre and AI cloud in Islamabad, billed as Pakistan's largest, was inaugurated by the Prime Minister and army chief; Sky47 says it has deployed many GPUs and is building a 5MW Karachi site.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -277,11 +277,19 @@
           "date": "2026-07-25",
           "retrieved_at": "2026-10-23T17:05:00Z",
           "opened": true
+        },
+        {
+          "url": "https://english.aaj.tv/news/330464959",
+          "publisher": "Aaj News",
+          "source_tier": "S3",
+          "date": "2026-07-24",
+          "retrieved_at": "2026-10-28T16:00:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Single source from an NGO-run outlet, treated as S4. GPU vendor not named. Sky47 appears to be a Pakistani company, hence domestic; ownership not confirmed."
+      "analyst_inference": "Single source from an NGO-run outlet, treated as S4. GPU vendor not named. Sky47 appears to be a Pakistani company, hence domestic; ownership not confirmed. Audit 2026-10-28: Aaj News (2026-07-24) confirms the inauguration but gives over 50MW planned and >3,000 racks, not 8.5MW; capacity inconsistent across sources."
     },
     {
       "id": "PAK-007",
@@ -365,7 +373,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "The US$150m is from a contractor's lawsuit, so not entered as a value. The 2021 data-security check was a review, not a reversal; its outcome was not found. Pre-2020: still_current not confirmed. Bloomberg also reports a ~US$100m Islamabad command centre (2016, ~1,950 cameras, about half out of order) but the vendor attribution for Islamabad was not verified in this pass, so it is not coded."
+      "analyst_inference": "The US$150m is from a contractor's lawsuit, so not entered as a value. The 2021 data-security check was a review, not a reversal; its outcome was not found. Pre-2020: still_current not confirmed. Bloomberg also reports a ~US$100m Islamabad command centre (2016, ~1,950 cameras, about half out of order) but the vendor attribution for Islamabad was not verified in this pass, so it is not coded. Audit 2026-10-28: Dawn (2021-08-17): Huawei bid with subcontractor BES; PSCA and a third-party audit found no breach. The ~8,000 cameras figure was not on pages read."
     }
   ],
   "layers_searched": {
@@ -389,7 +397,19 @@
       "null_reason": "only AI-adjacent power found is QGDC's 136MW captive Gul Ahmed plant, which predates the DC and is noted in PAK-003 rather than coded separately"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "PAK-001",
+        "PAK-003",
+        "PAK-006",
+        "PAK-008"
+      ],
+      "note": "Source-verified corrections and audit notes: PAK-001, PAK-003, PAK-006, PAK-008"
+    }
+  ],
   "research_gaps": [
     "Which vendors supply RAN and core for Jazz, Zong (China Mobile), Ufone/PTCL and Telenor Pakistan, especially for the 2026 5G launches after the spectrum auction? Search returned no vendor awards.",
     "Does Huawei supply IT or network equipment (not just design) for the QGDC Karachi data centre?",

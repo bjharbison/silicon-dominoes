@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "SLV",
   "name": "El Salvador",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T21:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -101,11 +101,19 @@
           "date": "2025-07-04",
           "retrieved_at": "2026-10-23T21:05:00Z",
           "opened": true
+        },
+        {
+          "url": "https://www.bloomberglinea.com/latinoamerica/el-salvador/el-salvador-recibe-los-chips-de-nvidia-b300-asi-arma-bukele-su-proyecto-de-soberania-en-ia/",
+          "publisher": "Bloomberg Linea",
+          "source_tier": "S3",
+          "date": "2025-11-17",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
-      "analyst_inference": "Tier 3 treats the announced purchase as a binding buy with Nvidia (via intermediary Hydra Host, US) as counterparty; no quantity, value, export-licence or delivery confirmation found. Single opened source. Whether the National AI Lab is operational is unknown."
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 3 treats the announced purchase as a binding buy with Nvidia (via intermediary Hydra Host, US) as counterparty; no quantity, value, export-licence or delivery confirmation found. Single opened source. Whether the National AI Lab is operational is unknown. Audit 2026-10-28: Bloomberg Linea (2025-11-17): first B300 hardware (a Supermicro server) delivered Nov 2025 for the National AI Lab; quantity and value undisclosed; a possible new dated event."
     },
     {
       "id": "SLV-003",
@@ -214,7 +222,7 @@
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
-      "date": "2025-07-22",
+      "date": "2025-07-14",
       "still_current": null,
       "summary": "A Tier III-certified state data centre (Centro de Datos del Estado) to centralise government data received a US$9m budget allocation, within an IDB-financed US$60m programme; a consultancy is to design and adapt the building.",
       "announced_value_usd": 9000000,
@@ -227,11 +235,19 @@
           "date": "2025-07-22",
           "retrieved_at": "2026-10-23T21:05:00Z",
           "opened": true
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/es/noticias/el-salvador-aprueba-9-millones-de-d%C3%B3lares-adicionales-para-el-centro-de-datos-del-estado/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": "2025-07-17",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
-      "analyst_inference": "Tier 2: budget reform and design stage, no construction or equipment vendor reported. Owner-operator is the state, so domestic; IDB is lender only. That the US$9m comes from the IDB loan is implied, not stated."
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Tier 2: budget reform and design stage, no construction or equipment vendor reported. Owner-operator is the state, so domestic; IDB is lender only. That the US$9m comes from the IDB loan is implied, not stated. Audit 2026-10-28: DCD confirms the US$9m, approved on 14 Jul 2025."
     },
     {
       "id": "SLV-006",
@@ -299,7 +315,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Pole null: the camera/platform manufacturer is not named, and the nationality of 'Bolide' is not stated in the source. Integrator Radiocomp appears to be Salvadoran (S.A. de C.V.). Award notice on Comprasal (S1) not opened."
+      "analyst_inference": "Pole null: the camera/platform manufacturer is not named, and the nationality of 'Bolide' is not stated in the source. Integrator Radiocomp appears to be Salvadoran (S.A. de C.V.). Award notice on Comprasal (S1) not opened. Audit 2026-10-28: El Mundo cites Comprasal's certified amount of US$19,964,786 and CABEI loan 2240 (local_actor says BCIE-2244; programme number to check); manufacturer not named."
     },
     {
       "id": "SLV-008",
@@ -358,7 +374,18 @@
       "null_reason": "no AI/data-centre-specific power evidence surfaced"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "SLV-002",
+        "SLV-005",
+        "SLV-007"
+      ],
+      "note": "Source-verified corrections and audit notes: SLV-002, SLV-005, SLV-007"
+    }
+  ],
   "research_gaps": [
     "Which vendors supply the RAN and core of Tigo (Millicom), Claro (América Móvil) and Digicel El Salvador, and which vendor built Tigo's 5G network launched October 2025?",
     "Status of Google Distributed Cloud deployment and actual spend under the Ley General de Modernización Digital del Estado (min US$500m); the agreement text was reportedly classified by the Foreign Ministry.",

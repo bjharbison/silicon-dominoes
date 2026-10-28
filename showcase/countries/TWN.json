@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "TWN",
   "name": "Taiwan",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T21:19:12Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -274,9 +274,9 @@
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
-      "date": "2026-06",
+      "date": "2025-11",
       "still_current": true,
-      "summary": "NCHC's national Nano4 supercomputer, built by Asus on Nvidia H200 GPUs (plus GB200 NVL72 racks per earlier plans), launched in 2026 at 33rd on the Top500, replacing Taiwania 2 for academic, government and SME use.",
+      "summary": "NCHC's national Nano4 supercomputer, built by Asus on Nvidia H200 GPUs (plus GB200 NVL72 racks per earlier plans), in operation from November 2025 (29th on the Top500), replacing Taiwania 2 for academic, government and SME use.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -303,11 +303,19 @@
           "date": null,
           "retrieved_at": "2026-10-23T21:05:00Z",
           "opened": false
+        },
+        {
+          "url": "https://press.asus.com/news/press-releases/asus-nchc-taiwan-ai-supercomputer/",
+          "publisher": "ASUS",
+          "source_tier": "S4",
+          "date": "2025-11-26",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "The Register (2025) gives the plan (>1,700 H200 plus GB200 NVL72 and B300); DCD (2026) confirms launch with H200 but no total count. Asus (Taiwanese) is builder only; GPU vendor Nvidia supplies firmware/software stack, hence us. Full operations were scheduled from July 2026."
+      "analyst_inference": "The Register (2025) gives the plan (>1,700 H200 plus GB200 NVL72 and B300); DCD (2026) confirms launch with H200 but no total count. Asus (Taiwanese) is builder only; GPU vendor Nvidia supplies firmware/software stack, hence us. Full operations were scheduled from July 2026. Audit 2026-10-28: Asus (2025-11-26) says Nano4 was officially in operation and No. 29 on the TOP500; DCD (2026) gives 33rd and full operations from July 2026."
     },
     {
       "id": "TWN-007",
@@ -381,7 +389,16 @@
       "null_reason": "no AI/data-centre-specific power evidence surfaced; budget spent on other layers"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "TWN-006"
+      ],
+      "note": "Source-verified corrections and audit notes: TWN-006"
+    }
+  ],
   "research_gaps": [
     "FarEasTone's 5G RAN/core vendor(s) and whether any Taiwanese operator's legacy 2G-4G network still contains Huawei/ZTE equipment; locate the NCC/legal basis barring PRC equipment from operator core networks (lead, not verified).",
     "Did the Foxconn/Visonbay.ai GB300 cluster (TWN-004/005) go live in H1 2026, where is it sited, and what is NSTC's financial stake?",

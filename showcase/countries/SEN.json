@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "SEN",
   "name": "Senegal",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T21:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -149,7 +149,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "CIO Mag (March 2020) confirms 473 of 500 planned cameras installed by ADIE but does not name the vendor; Huawei as contractor rests on AidData alone, so the controller attribution is uncorroborated. Georgetown commentary alleges facial-recognition use against opposition members 2021-2024; that is the author's claim, not verified here.",
+      "analyst_inference": "CIO Mag (March 2020) confirms 473 of 500 planned cameras installed by ADIE but does not name the vendor; Huawei as contractor rests on AidData alone, so the controller attribution is uncorroborated. Georgetown commentary alleges facial-recognition use against opposition members 2021-2024; that is the author's claim, not verified here. Audit 2026-10-28: CIO Mag names no camera vendor; AidData names Huawei for Smart Senegal but gives no camera count, so the Huawei-camera link is an inference; cameras largely in by March 2020; Georgetown says 13 cities.",
       "bundle_id": "SEN-B1"
     },
     {
@@ -177,14 +177,14 @@
           "url": "https://uschinadialogue.georgetown.edu/responses/chinese-huawei-group-and-the-building-of-senegalese-digital-grammar-from-2006-to-2024",
           "publisher": "Georgetown University US-China Dialogue (commentary)",
           "source_tier": "S4",
-          "date": "2024",
+          "date": "2025-10-20",
           "retrieved_at": "2026-10-23T21:12:00Z",
           "opened": true
         }
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Single S4 commentary source; values (US$49.6m, US$100m, US$85m) come from that author and were not verified, so left null. Pre-2016 phases are pre-2020; current use of Huawei equipment in the state backbone not confirmed (still_current null)."
+      "analyst_inference": "Single S4 commentary source; values (US$49.6m, US$100m, US$85m) come from that author and were not verified, so left null. Pre-2016 phases are pre-2020; current use of Huawei equipment in the state backbone not confirmed (still_current null). Audit 2026-10-28: Georgetown page dated 2025-10-20."
     },
     {
       "id": "SEN-005",
@@ -323,12 +323,12 @@
       "base_model": null,
       "base_model_pole": null,
       "scale": "national",
-      "instrument_tier": 4,
+      "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
       "date": "2026-10",
-      "still_current": null,
+      "still_current": true,
       "summary": "Axian's data-centre arm Stellarix is expanding its Senegal facility to meet AI demand, with French engineering firm Snef among contributors; capacity, site and investment were not disclosed.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -340,11 +340,19 @@
           "date": "2026-10-03",
           "retrieved_at": "2026-10-23T21:15:00Z",
           "opened": true
+        },
+        {
+          "url": "https://techafricanews.com/?p=88566",
+          "publisher": "TechAfrica News",
+          "source_tier": "S3",
+          "date": "2026-10-02",
+          "retrieved_at": "2026-10-28T15:50:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Tier 4 because the source describes the expansion as underway, but no construction milestone is documented; could be tier 2-3. Axian is headquartered in Madagascar, so pole third. Single source."
+      "analyst_inference": "Tier 4 because the source describes the expansion as underway, but no construction milestone is documented; could be tier 2-3. Axian is headquartered in Madagascar, so pole third. Single source. Audit 2026-10-28: Neither Billionaires.Africa nor TechAfrica News reports a construction milestone; tier 4 -> 2 (announced expansion)."
     },
     {
       "id": "SEN-009",
@@ -404,7 +412,18 @@
       "null_reason": "no AI-specific power evidence surfaced; Axian's NEA Kolda solar plant was mentioned alongside the data-centre business but not documented as dedicated supply"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "SEN-003",
+        "SEN-004",
+        "SEN-008"
+      ],
+      "note": "Source-verified corrections and audit notes: SEN-003, SEN-004, SEN-008"
+    }
+  ],
   "research_gaps": [
     "Which vendor(s) supply Sonatel's commercial 5G (launched June 2024) RAN and core, and Expresso's network? Is Huawei the incumbent at Sonatel beyond the trials?",
     "Senegal-Huawei strategic agreement reported around June 2025 during PM Sonko's China visit (data-centre modernisation, IT assembly plant, AI/cloud/5G training): seen only via AllAfrica (aggregator, not citable); find the original APS or ministry release and the instrument type.",

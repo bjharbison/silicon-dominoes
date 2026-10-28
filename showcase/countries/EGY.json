@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "EGY",
   "name": "Egypt",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-24T01:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -129,9 +129,9 @@
           "opened": true
         }
       ],
-      "corroborated": true,
-      "confidence": "medium",
-      "analyst_inference": "Pole prc under the equipment rule. Both reports derive from the same company press release, so independence is limited. Core network vendor and value not disclosed. Vodafone Egypt's 5G vendor was not identified."
+      "corroborated": false,
+      "confidence": "low",
+      "analyst_inference": "Pole prc under the equipment rule. Both reports derive from the same company press release, so independence is limited. Core network vendor and value not disclosed. Vodafone Egypt's 5G vendor was not identified. Audit 2026-10-28: Both sources derive from one company release, so not independent: corroborated false, confidence low (spec-required). Developing Telecoms (2025-06-17) reports no signed contract or value; tier 3 may be too high (tier 1-2), left for Brian."
     },
     {
       "id": "EGY-004",
@@ -173,7 +173,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Pole null: neither opened source names the cable's owner-parent or equipment supplier, so the controller's home jurisdiction is not documented here; PCCW Global is Hong Kong-based (HKT). still_current not checked for this pre-2020 item. The US$45m is Telecom Egypt's announced lifetime value."
+      "analyst_inference": "Pole null: neither opened source names the cable's owner-parent or equipment supplier, so the controller's home jurisdiction is not documented here; PCCW Global is Hong Kong-based (HKT). still_current not checked for this pre-2020 item. The US$45m is Telecom Egypt's announced lifetime value. Audit 2026-10-28: Batch-7 checker notes the source calls Hengtong an affiliate of the cable company (compare PAK-001 coded prc for the same PEACE cable)."
     },
     {
       "id": "EGY-005",
@@ -286,7 +286,7 @@
       "reversal_reason": null,
       "date": "2026-08-26",
       "still_current": null,
-      "summary": "Bloomberg reported Huawei bid to build Egyptian government AI data centres with 2,008 Ascend chips on a 12-month timeline, paired with iFlytek recognition and city-monitoring tools; Washington sought a rival Nvidia/AMD/Microsoft offer.",
+      "summary": "Bloomberg reported Huawei bid to build Egyptian government AI data centres with 2,008 Ascend chips on a 12-month timeline, paired with iFlytek person and vehicle recognition and situation-awareness tools; Washington sought a rival Nvidia/AMD/Microsoft offer.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -317,7 +317,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "A vendor bid, not an Egyptian commitment; coded tier 1 as an offer only. Both opened sources relay Bloomberg's single report, so marked not corroborated. AFP says Xi and Sisi agreed broader AI cooperation without concrete deals; no Egyptian decision found as of the run date."
+      "analyst_inference": "A vendor bid, not an Egyptian commitment; coded tier 1 as an offer only. Both opened sources relay Bloomberg's single report, so marked not corroborated. AFP says Xi and Sisi agreed broader AI cooperation without concrete deals; no Egyptian decision found as of the run date. Audit 2026-10-28: Channel Insider (citing Bloomberg) confirms the chip counts and bid; it describes person/vehicle recognition and a situation-awareness system, not \"city monitoring\". Same Bloomberg origin, so no corroboration."
     },
     {
       "id": "EGY-008",
@@ -433,7 +433,18 @@
       "null_reason": "no AI-specific power evidence surfaced; Elsewedy Electric's energy role in EGY-005 not detailed; budget spent on other layers"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "EGY-003",
+        "EGY-007",
+        "EGY-004"
+      ],
+      "note": "Source-verified corrections and audit notes: EGY-003, EGY-007, EGY-004"
+    }
+  ],
   "research_gaps": [
     "Outcome of the Egyptian government AI data-centre tender: did Huawei's Ascend bid or a US-backed Nvidia/AMD/Microsoft offer win?",
     "Who will own and operate the Vodafone/Cassava/Elsewedy sovereign AI data centre, its site, financing close and any BIS licence for Nvidia chips.",

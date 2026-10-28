@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "TJK",
   "name": "Tajikistan",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T21:19:22Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -181,7 +181,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Both sources derive from the same Yotta/darya.ai announcement, so they are not independent. GPU count, supplier channel and any US export licence are unknown; Tajikistan is in Country Group D:1 so a licence would normally be required for H200-class chips."
+      "analyst_inference": "Both sources derive from the same Yotta/darya.ai announcement, so they are not independent. GPU count, supplier channel and any US export licence are unknown; Tajikistan is in Country Group D:1 so a licence would normally be required for H200-class chips. Audit 2026-10-28: Khovar (state agency, S4) names no GPU model and reports 8 servers at US$40k each, low for 8-GPU H200 servers; the H200 claim rests on the vendor release, and tier 5 at scale is doubtful."
     },
     {
       "id": "TJK-005",
@@ -200,7 +200,7 @@
       "reversal_reason": null,
       "date": "2025-06-25",
       "still_current": null,
-      "summary": "President Rahmon inaugurated an AI cluster and 'Area AI' technopark in Dushanbe's Darvoz district built by local company darya.ai, focused on Tajik-language models and high-performance computing.",
+      "summary": "President Rahmon inaugurated an AI cluster and 'Area AI' technopark in Darvoz district, Gorno-Badakhshan, built by local company darya.ai, focused on Tajik-language models and high-performance computing.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -219,11 +219,19 @@
           "date": "2025-10-29",
           "retrieved_at": "2026-10-23T21:10:00Z",
           "opened": true
+        },
+        {
+          "url": "https://asiaplus.news/?p=390210",
+          "publisher": "Asia-Plus",
+          "source_tier": "S3",
+          "date": "2025-06-26",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
-      "analyst_inference": "Ownership of darya.ai not found; coded domestic on its description as a local company. Same physical deployment as TJK-004 (silicon layer). Caspian Policy Center is a think tank (S4). Capacity in MW not disclosed."
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Ownership of darya.ai not found; coded domestic on its description as a local company. Same physical deployment as TJK-004 (silicon layer). Caspian Policy Center is a think tank (S4). Capacity in MW not disclosed. Audit 2026-10-28: Asia-Plus (2025-06-26) confirms the inauguration; location is Zev village, Darvoz district (GBAO), not Dushanbe."
     },
     {
       "id": "TJK-006",
@@ -349,7 +357,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Pole null because who holds the weights is unclear: the listing gives no author institutions or government role. If a Tajik actor holds the weights it would be domestic under spec v0.2. Whether this is linked to darya.ai's Tajik-language work is unverified."
+      "analyst_inference": "Pole null because who holds the weights is unclear: the listing gives no author institutions or government role. If a Tajik actor holds the weights it would be domestic under spec v0.2. Whether this is linked to darya.ai's Tajik-language work is unverified. Audit 2026-10-28: Co-author Azizjon Azimi chairs the government AI Council and co-created darya.ai; state link unverified."
     }
   ],
   "layers_searched": {
@@ -373,7 +381,18 @@
       "null_reason": "no AI-dedicated power plant surfaced; Darvoz AI data-centre plans cite grid hydropower generally"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "TJK-004",
+        "TJK-005",
+        "TJK-008"
+      ],
+      "note": "Source-verified corrections and audit notes: TJK-004, TJK-005, TJK-008"
+    }
+  ],
   "research_gaps": [
     "RAN/core vendors of Tcell, MegaFon Tajikistan, ZET-Mobile and Babilon-M: a ZTE corporate page (not fetched, PRC vendor site) appeared in search about Tcell's 3G network (2012); confirm current vendors with S1/S2 sources.",
     "Did the December 2023 Huawei 7,600-base-station memorandum become a binding contract, with what financing, and which operators are covered?",

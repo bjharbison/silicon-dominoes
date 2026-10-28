@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "OMN",
   "name": "Oman",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T17:18:44Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -166,7 +166,7 @@
       "reversal_reason": null,
       "date": "2024-11",
       "still_current": null,
-      "summary": "Ooredoo opened a 10MW Tier III data centre in Sohar with room for about 1,200 racks, first planned in 2022; the group plans to grow its Oman capacity past 120MW through a medium-to-long-term US$1bn programme.",
+      "summary": "Ooredoo opened a 10MW Tier III data centre in Sohar with room for about 1,200 racks, first planned in 2022; Ooredoo plans over 120MW group-wide through a US$1bn programme.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -189,7 +189,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Owner-operator is Ooredoo, a Qatari group, so pole is third (Ooredoo Oman is a listed local subsidiary; control rests with the group). Tier 5 because the site was launched, though 10MW is modest. The US$1bn refers to future expansion, not this facility, so value fields are null. The Gulf News headline (seen only) points to a separate Salalah data centre, not coded."
+      "analyst_inference": "Owner-operator is Ooredoo, a Qatari group, so pole is third (Ooredoo Oman is a listed local subsidiary; control rests with the group). Tier 5 because the site was launched, though 10MW is modest. The US$1bn refers to future expansion, not this facility, so value fields are null. The Gulf News headline (seen only) points to a separate Salalah data centre, not coded. Audit 2026-10-28: SDxCentral: the >120MW / US$1bn plan covers Ooredoo's 26 data centres in five countries, not Oman alone."
     },
     {
       "id": "OMN-005",
@@ -299,7 +299,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Date taken from the article URL path; the page itself carried none. Reads like a company release relayed by regional tech press. Tier 4 rather than 5 because the GPU count and scale are unknown. H200s to Oman need a US licence (D:4, global layer), so a licence was presumably granted, but no licence record was seen."
+      "analyst_inference": "Date taken from the article URL path; the page itself carried none. Reads like a company release relayed by regional tech press. Tier 4 rather than 5 because the GPU count and scale are unknown. H200s to Oman need a US licence (D:4, global layer), so a licence was presumably granted, but no licence record was seen. Audit 2026-10-28: Tier 4 rests on no licence record (a deployment claim); a search snippet suggests Oman Data Park now trades as Otech."
     },
     {
       "id": "OMN-008",
@@ -374,7 +374,17 @@
       "null_reason": "no AI/data-centre-specific power evidence surfaced; O-Green's renewables portfolio is not tied to a specific data centre"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "OMN-004",
+        "OMN-007"
+      ],
+      "note": "Source-verified corrections and audit notes: OMN-004, OMN-007"
+    }
+  ],
   "research_gaps": [
     "Who supplies Omantel's 5G core, and is its RAN split between Ericsson and Huawei by region? Seek Omantel or TRA S1 evidence to confirm or drop OMN-003.",
     "Vodafone Oman (third operator, launched 2022): which RAN and core vendors?",

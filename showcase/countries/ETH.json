@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "ETH",
   "name": "Ethiopia",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T01:26:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -17,7 +17,7 @@
       "financier": null,
       "base_model": null,
       "base_model_pole": null,
-      "scale": "national",
+      "scale": "municipal",
       "instrument_tier": 2,
       "reversal": false,
       "reversal_of": null,
@@ -47,7 +47,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Tier 2 because the launch was pre-commercial on a handful of sites. RCR names Huawei and ZTE; Mobile World Live names only Huawei. Current 5G vendor split across the national network is not established."
+      "analyst_inference": "Tier 2 because the launch was pre-commercial on a handful of sites. RCR names Huawei and ZTE; Mobile World Live names only Huawei. Current 5G vendor split across the national network is not established. Audit 2026-10-28: Scale -> municipal: pre-commercial launch on six sites in Addis Ababa (spec-required patch listed in AUDIT-2026-10-25)."
     },
     {
       "id": "ETH-002",
@@ -106,9 +106,9 @@
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
-      "date": null,
+      "date": "2013-08-19",
       "still_current": null,
-      "summary": "Huawei and ZTE shared a roughly US$1.6bn deal to build LTE in Addis Ababa and 3G nationwide for state monopoly Ethio Telecom, backed by low-interest vendor-linked loans from state-linked banks.",
+      "summary": "Huawei and ZTE shared a roughly US$1.6bn deal to build LTE in Addis Ababa and 3G nationwide for state monopoly Ethio Telecom, backed by low-interest vendor financing.",
       "announced_value_usd": 1600000000,
       "verified_value_usd": null,
       "sources": [
@@ -127,11 +127,19 @@
           "date": null,
           "retrieved_at": "2026-10-23T01:20:00Z",
           "opened": false
+        },
+        {
+          "url": "https://www.telecoms.com/wireless-networking/ethiopia-signs-1-6bn-lte-deal-with-zte-huawei",
+          "publisher": "Telecoms.com",
+          "source_tier": "S2",
+          "date": "2013-08-19",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
-      "analyst_inference": "The opened page gives no year (it refers to Ethio Telecom as the only operator, so pre-2022); date left null rather than inferred. Pre-2020 in all likelihood, so still_current is null. Financier is described only as Chinese state-linked banks, so not named. Capacity headline (ZTE could lose the contract) seen in search only; a possible partial reversal not verified."
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "The opened page gives no year (it refers to Ethio Telecom as the only operator, so pre-2022); date left null rather than inferred. Pre-2020 in all likelihood, so still_current is null. Financier is described only as Chinese state-linked banks, so not named. Capacity headline (ZTE could lose the contract) seen in search only; a possible partial reversal not verified. Audit 2026-10-28: Telecoms.com (2013-08-19) confirms the US$1.6bn deal, US$800m each, with low-interest vendor financing; no state-linked banks named. Date set from it; corroborated with Fierce (independent S2)."
     },
     {
       "id": "ETH-004",
@@ -291,12 +299,12 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Pole us rests on DCD describing Raxio's parent Roha Group as a US-based investment firm; Raxio's own corporate domicile was not checked and other investors may hold stakes. Pole should be re-checked."
+      "analyst_inference": "Pole us rests on DCD describing Raxio's parent Roha Group as a US-based investment firm; Raxio's own corporate domicile was not checked and other investors may hold stakes. Pole should be re-checked. Audit 2026-10-28: Connecting Africa (2023-11-22) confirms 3MW/800 racks but not the Roha Group parent or Ethio ICT Park; pole us still unverified (compare MOZ-004, pole null for Raxio)."
     },
     {
       "id": "ETH-008",
       "layer": "facilities",
-      "pole": null,
+      "pole": "third",
       "controller": "Wingu.Africa",
       "local_actor": "Ethio ICT Park",
       "builder": null,
@@ -329,11 +337,19 @@
           "date": null,
           "retrieved_at": "2026-10-23T01:20:00Z",
           "opened": false
+        },
+        {
+          "url": "https://www.datacenterdynamics.com/en/news/winguafrica-inaugurates-ethiopia-data-center/",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Pole null: the source calls Wingu.Africa pan-African without stating its home jurisdiction or ownership. Tier 4 for construction started; operational status not confirmed in this pass."
+      "analyst_inference": "Pole null: the source calls Wingu.Africa pan-African without stating its home jurisdiction or ownership. Tier 4 for construction started; operational status not confirmed in this pass. Audit 2026-10-28: DCD names Wingu.Africa as Djibouti-based, so the owner-operator home jurisdiction is Djibouti: pole null -> third. DCD also reports the facility has since been inaugurated (10MW, 800 racks at full build); inauguration date not recorded."
     },
     {
       "id": "ETH-009",
@@ -477,7 +493,19 @@
       "null_reason": "power deals found are bitcoin-mining PPAs with EEP (e.g. Bitdeer 50MW Oromia, SEC 6-K May 2025) and EEP's Aug 2025 phase-out of crypto mining; none AI- or data-centre-specific"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "ETH-001",
+        "ETH-003",
+        "ETH-007",
+        "ETH-008"
+      ],
+      "note": "Source-verified corrections and audit notes: ETH-001, ETH-003, ETH-007, ETH-008"
+    }
+  ],
   "research_gaps": [
     "Current RAN/core vendor split for Ethio Telecom 4G/5G after the 2026 Ericsson agreement; did Huawei/ZTE in-principle deals at MWC26 get signed?",
     "Confirm Safaricom Ethiopia vendors from primary sources (Safaricom IR/annual report) and whether Huawei supplies RAN only.",

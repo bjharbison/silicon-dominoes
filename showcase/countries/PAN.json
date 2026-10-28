@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "PAN",
   "name": "Panama",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T17:18:59Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -63,7 +63,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Reversal of installed (operational) Huawei equipment, so tier 5 is the tier of the thing reversed; the sources do not say whether the sites carried a public mobile network or a state security radio network. Announced by the US Embassy, not the Panamanian government; President Mulino objected to the framing but did not reject the project. Coded geopolitical because the stated purpose is countering Chinese influence. Execution status as of October 2026 not confirmed."
+      "analyst_inference": "Reversal of installed (operational) Huawei equipment, so tier 5 is the tier of the thing reversed; the sources do not say whether the sites carried a public mobile network or a state security radio network. Announced by the US Embassy, not the Panamanian government; President Mulino objected to the framing but did not reject the project. Coded geopolitical because the stated purpose is countering Chinese influence. Execution status as of October 2026 not confirmed. Audit 2026-10-28: No evidence found of progress on the US-funded tower replacement in 2025-26."
     },
     {
       "id": "PAN-002",
@@ -132,7 +132,7 @@
       "reversal_reason": null,
       "date": "2023-06",
       "still_current": true,
-      "summary": "Panama Digital Gateway, a carrier-neutral 5 MW, 600-rack colocation data centre in Corozal run by Italy's Sparkle with Panamanian telco Trans Ocean Network, opened in 2023; by 2026 it was adapting rooms for AI workloads.",
+      "summary": "Panama Digital Gateway, a carrier-neutral 3.5 MW, up-to-650-rack colocation data centre in Corozal run by Italy's Sparkle with Panamanian telco Trans Ocean Network, opened in 2023; by 2026 it was adapting rooms for AI workloads.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -159,11 +159,19 @@
           "date": "2026-02-25",
           "retrieved_at": "2026-10-23T17:10:00Z",
           "opened": true
+        },
+        {
+          "url": "https://datacenterdynamics.com/en/news/sparkle-launches-panama-data-center",
+          "publisher": "DatacenterDynamics",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-28T15:50:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Joint venture with a domestic partner; coded third because Sparkle (Italian) leads the project in both sources, but the equity split was not found, so domestic control is possible. TVN gives an initial investment of 11.5 million with no currency, so value fields are left null. The TVN page did not show the exact inauguration date."
+      "analyst_inference": "Joint venture with a domestic partner; coded third because Sparkle (Italian) leads the project in both sources, but the equity split was not found, so domestic control is possible. TVN gives an initial investment of 11.5 million with no currency, so value fields are left null. The TVN page did not show the exact inauguration date. Audit 2026-10-28: DCD's launch article gives 3.5 MW and up to 650 racks (the pre-launch piece said 5 MW/600)."
     },
     {
       "id": "PAN-004",
@@ -203,9 +211,9 @@
       "id": "PAN-005",
       "layer": "networks",
       "pole": "us",
-      "controller": "Google",
+      "controller": "SubCom",
       "local_actor": "Balboa (Panama City) landing",
-      "builder": "SubCom",
+      "builder": null,
       "financier": null,
       "base_model": null,
       "base_model_pole": null,
@@ -231,7 +239,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Pre-2020; completion and current operation of the Panama branch were not confirmed in this pass, so still_current is null. Owner Google and installer SubCom are both US, so the pole is us. Tier 4 because work had started."
+      "analyst_inference": "Pre-2020; completion and current operation of the Panama branch were not confirmed in this pass, so still_current is null. Owner Google and installer SubCom are both US, so the pole is us. Tier 4 because work had started. Audit 2026-10-28: Cable rule (SPEC 3, equipment vendor is controller): controller Google -> SubCom, builder cleared; pole stays us."
     }
   ],
   "layers_searched": {
@@ -258,7 +266,18 @@
       "null_reason": "no AI/DC-specific power evidence surfaced"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "PAN-003",
+        "PAN-005",
+        "PAN-001"
+      ],
+      "note": "Source-verified corrections and audit notes: PAN-003, PAN-005, PAN-001"
+    }
+  ],
   "research_gaps": [
     "Which vendors supply the RAN and core of Panama's mobile operators (Tigo/Millicom, Claro, +Móvil/Cable & Wireless)? Reports relayed by China Global South say Panama ran 5G tests with Huawei in April 2024; did any 5G spectrum award or vendor selection follow?",
     "What network did the 13 Huawei sites removed under the June 2025 US Embassy project carry (public mobile or state security radio), who owned them, which US vendor supplies the replacement, and how far along is it as of late 2026?",

@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "DEU",
   "name": "Germany",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T01:25:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -214,13 +214,13 @@
       "base_model": null,
       "base_model_pole": null,
       "scale": "national",
-      "instrument_tier": 4,
+      "instrument_tier": 1,
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
       "date": "2025-11-11",
       "still_current": null,
-      "summary": "Google announced EUR 5.5bn of German investment for 2026-2029, including construction of a new Dietzenbach data centre with heat reuse into local district heating, and continued expansion of its Hanau campus opened in 2023.",
+      "summary": "Google announced EUR 5.5bn of German investment for 2026-2029, including a new Dietzenbach data centre it will build with heat reuse into local district heating, and continued expansion of its Hanau campus opened in 2023.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -239,11 +239,19 @@
           "date": "2025-11-12",
           "retrieved_at": "2026-10-23T01:20:00Z",
           "opened": true
+        },
+        {
+          "url": "https://www.datacentremagazine.com/news/behind-googles-5-5bn-funding-in-germany-ai-data-centres",
+          "publisher": "Data Centre Magazine",
+          "source_tier": "S2",
+          "date": null,
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Tier 4 rests on the release announcing Dietzenbach construction and Hanau already operating; a construction-start date was not independently confirmed. EUR 5.5bn is a corporate commitment covering offices too, not verified spend, and is not converted to USD. Microsoft and AWS German DC investments were not searched in this pass."
+      "analyst_inference": "Tier 4 rests on the release announcing Dietzenbach construction and Hanau already operating; a construction-start date was not independently confirmed. EUR 5.5bn is a corporate commitment covering offices too, not verified spend, and is not converted to USD. Microsoft and AWS German DC investments were not searched in this pass. Audit 2026-10-28: Second audit to find no Dietzenbach construction start (Data Centre Magazine says Google \"will build\"); tier 4 -> 1 as an investment announcement. The Hanau opening year (2023) was not on the page read."
     },
     {
       "id": "DEU-007",
@@ -373,11 +381,19 @@
           "date": "2026-09-22",
           "retrieved_at": "2026-10-23T01:20:00Z",
           "opened": true
+        },
+        {
+          "url": "https://whbl.com/2026/09/16/cohere-aleph-alpha-combine-to-target-enterprise-ai-market/",
+          "publisher": "Reuters (via WHBL)",
+          "source_tier": "S3",
+          "date": "2026-09-16",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Germany's main domestic model developer moves under a Canadian-led group, so pole is third (Canada); planned HQs are Toronto and Berlin. Not closed: awaits regulatory approval. Tier 3 rests on the definitive agreement, reported only by a relayed corporate release (S4). Aleph Alpha's PhariaAI base models were not identified, so base_model is null."
+      "analyst_inference": "Germany's main domestic model developer moves under a Canadian-led group, so pole is third (Canada); planned HQs are Toronto and Berlin. Not closed: awaits regulatory approval. Tier 3 rests on the definitive agreement, reported only by a relayed corporate release (S4). Aleph Alpha's PhariaAI base models were not identified, so base_model is null. Audit 2026-10-28: Reuters (via WHBL, 2026-09-16) confirms the definitive merger agreement on 16 Sep 2026, Schwarz Group EUR 500m and pending regulatory approval; the ~90% Cohere-shareholder stake was not found on the pages read."
     },
     {
       "id": "DEU-010",
@@ -419,7 +435,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "still_current true because the August 2026 article describes Hesse as still using HessenDATA. Both sources are S3, so the S1/S2 corroboration requirement is not met. The Constitutional Court found Hesse's legal basis unconstitutional in February 2023; the law was reformed and challenged again."
+      "analyst_inference": "still_current true because the August 2026 article describes Hesse as still using HessenDATA. Both sources are S3, so the S1/S2 corroboration requirement is not met. The Constitutional Court found Hesse's legal basis unconstitutional in February 2023; the law was reformed and challenged again. Audit 2026-10-28: IamExpat (2025-08-18) confirms the three state deployments; ingenieur.de (2025-10-06) says Hesse used the full Gotham version \"until 2023\", which may conflict with still_current true. No 2026 page confirming current use was read; still_current left as coded (judgment call)."
     },
     {
       "id": "DEU-011",
@@ -480,7 +496,7 @@
       "reversal_reason": "regulatory",
       "date": "2023",
       "still_current": null,
-      "summary": "Then interior minister Nancy Faeser stopped a federal-level Palantir project in 2023; her successor Alexander Dobrindt has said he is open to extending Gotham to federal police and criminal investigation agencies.",
+      "summary": "Then interior minister Nancy Faeser opposed federal Palantir use; her successor Alexander Dobrindt ordered a review of its use by federal police and intelligence services.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -499,11 +515,19 @@
           "date": "2025-08-05",
           "retrieved_at": "2026-10-23T01:20:00Z",
           "opened": true
+        },
+        {
+          "url": "https://www.ingenieur.de/palantir-in-deutschland-polizei-schwaermt-datenschuetzer-warnen-feb659b2-99d6-4f10-b4d6-212e15c53c22/",
+          "publisher": "ingenieur.de (VDI)",
+          "source_tier": "S2",
+          "date": "2025-10-06",
+          "retrieved_at": "2026-10-28T15:55:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Tier of the reversed project is unknown; coded 2 as a planned federal deployment. The reason for the 2023 halt was not stated in the sources read; coded regulatory as the conservative choice (it does not move the map), not as an established motive."
+      "analyst_inference": "Tier of the reversed project is unknown; coded 2 as a planned federal deployment. The reason for the 2023 halt was not stated in the sources read; coded regulatory as the conservative choice (it does not move the map), not as an established motive. Audit 2026-10-28: Checker found no page showing Faeser stopped a federal Palantir project in 2023 (the 2023 date in ingenieur.de belongs to the Hesse Constitutional Court ruling); summary narrowed to what was read. Whether this is a reversal at all, and its date, are open. Regulatory reason, so no map effect."
     }
   ],
   "layers_searched": {
@@ -527,7 +551,19 @@
       "null_reason": "no dedicated AI/data-centre power plant surfaced; Google's renewable PPAs (Engie, Ørsted) are general supply, and search budget went to other layers"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "DEU-006",
+        "DEU-009",
+        "DEU-010",
+        "DEU-012"
+      ],
+      "note": "Source-verified corrections and audit notes: DEU-006, DEU-009, DEU-010, DEU-012"
+    }
+  ],
   "research_gaps": [
     "Have Telekom, Vodafone and Telefónica actually removed Huawei/ZTE from 5G cores by the end-2026 deadline? Get BSI/BMI or operator confirmation.",
     "Current (post-2024) Huawei share of each operator's RAN, and what the 2029 stage requires for radio hardware versus management software.",

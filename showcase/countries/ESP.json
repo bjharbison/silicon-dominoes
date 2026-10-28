@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "ESP",
   "name": "Spain",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-24T05:19:44Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -66,7 +66,7 @@
       "reversal_reason": "geopolitical",
       "date": "2025-01-23",
       "still_current": null,
-      "summary": "Telefónica removed Huawei, awarded its 5G core in 2019, from the core network after international pressure, completing the replacement with Ericsson and Nokia; Orange and Vodafone had already dropped Huawei from their 5G cores.",
+      "summary": "Telefónica removed Huawei, awarded its 5G core in 2019, from the core network after international pressure, awarding the replacement to Ericsson and Nokia; Orange and Vodafone had already dropped Huawei from their 5G cores.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -89,7 +89,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Coded as reversal of the 2019 Huawei 5G core award (tier 3). Sources attribute it to international/US pressure and an indirect Spanish ban via exclusion of high-risk suppliers from 5G subsidies, so geopolitical. Euronews reports Huawei sued in the Audiencia Nacional over exclusion from rural 5G aid."
+      "analyst_inference": "Coded as reversal of the 2019 Huawei 5G core award (tier 3). Sources attribute it to international/US pressure and an indirect Spanish ban via exclusion of high-risk suppliers from 5G subsidies, so geopolitical. Euronews reports Huawei sued in the Audiencia Nacional over exclusion from rural 5G aid. Audit 2026-10-28: Xataka (2025-01-24): the Nokia migration was rolling out region by region and expected to take over a year, so the swap was awarded, not complete, in Jan 2025."
     },
     {
       "id": "ESP-003",
@@ -108,7 +108,7 @@
       "reversal_reason": null,
       "date": "2025-01-23",
       "still_current": null,
-      "summary": "Vodafone in Spain still ran about 70% of its radio network on Huawei equipment in early 2025, mostly pre-5G layers, though its 5G core went to Nokia in 2023 and 5G radio is Nokia/Ericsson.",
+      "summary": "Vodafone in Spain still ran about 70% of its radio network on Huawei equipment in early 2025, though it had already dropped Huawei from its 5G core.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -131,7 +131,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Operational legacy RAN (2G-4G), so tier 5. Vodafone España has since changed ownership (Zegona); any later swap plan was not checked."
+      "analyst_inference": "Operational legacy RAN (2G-4G), so tier 5. Vodafone España has since changed ownership (Zegona); any later swap plan was not checked. Audit 2026-10-28: Neither cited source names Nokia as 5G core vendor, the 2023 date or Nokia/Ericsson 5G radio; those details removed."
     },
     {
       "id": "ESP-004",
@@ -150,7 +150,7 @@
       "reversal_reason": "commercial",
       "date": "2025-01-23",
       "still_current": null,
-      "summary": "MasOrange plans to cut Huawei's share of its radio network from 54% to 39% by 2027 and remove it entirely from 2028; 5G radio and core are already supplied by European vendors.",
+      "summary": "MasOrange plans to cut Huawei's share of its radio network from 54% to 39% by 2027 and remove it entirely from 2028; its 5G core is already Huawei-free.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -173,7 +173,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Coded as a planned reversal of operational Huawei legacy RAN. Neither source gives MasOrange's own reason; coded commercial for lack of a stated geopolitical rationale, though the general context sources describe is a de facto Huawei exclusion."
+      "analyst_inference": "Coded as a planned reversal of operational Huawei legacy RAN. Neither source gives MasOrange's own reason; coded commercial for lack of a stated geopolitical rationale, though the general context sources describe is a de facto Huawei exclusion. Audit 2026-10-28: The sources confirm only a Huawei-free 5G core, not European 5G radio; Xataka calls the operator Orange. Tier-5 reversal for a plan not yet executed is a coding question for Brian."
     },
     {
       "id": "ESP-005",
@@ -215,7 +215,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "The contracting board had proposed Telefónica's bid; formalisation status at cancellation is unclear, so tier 3 is an upper bound. The stated rationale (European/Spanish sovereignty) and reported US/EU warnings support geopolitical. Existing RedIRIS IP gear remains Huawei, near end of life."
+      "analyst_inference": "The contracting board had proposed Telefónica's bid; formalisation status at cancellation is unclear, so tier 3 is an upper bound. The stated rationale (European/Spanish sovereignty) and reported US/EU warnings support geopolitical. Existing RedIRIS IP gear remains Huawei, near end of life. Audit 2026-10-28: El Independiente: tender 24 Jul 2025, board proposed Telefónica 25 Aug 2025, formal award not stated, Huawei not ruled out of the new tender; a dplnews headline (not read) suggests a later re-tender."
     },
     {
       "id": "ESP-006",
@@ -375,7 +375,7 @@
       ],
       "corroborated": false,
       "confidence": "medium",
-      "analyst_inference": "Initial planning approval coded as tier 2 (pre-construction). The $6.17bn conversion is DCD's and is a building-cost estimate; left null. Final approval and construction start after Nov 2025 not checked."
+      "analyst_inference": "Initial planning approval coded as tier 2 (pre-construction). The $6.17bn conversion is DCD's and is a building-cost estimate; left null. Final approval and construction start after Nov 2025 not checked. Audit 2026-10-28: No final approval or construction start found after the Nov 2025 initial approval."
     },
     {
       "id": "ESP-010",
@@ -393,7 +393,7 @@
       "reversal_of": null,
       "reversal_reason": null,
       "date": "2024-10-15",
-      "still_current": null,
+      "still_current": true,
       "summary": "Aragón declared Blackstone's €7.5bn 'Proyecto Rodes' data-centre campus at Calatorao (224 ha) a project of regional general interest, opening permitting; not yet under construction.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -409,7 +409,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Blackstone is a US fund, so us as owner-operator; tenant unknown. Planning declaration coded tier 2. A later snippet (ecosistemastartup, S5, not cited) mentions a larger €11.8bn figure; not verified."
+      "analyst_inference": "Blackstone is a US fund, so us as owner-operator; tenant unknown. Planning declaration coded tier 2. A later snippet (ecosistemastartup, S5, not cited) mentions a larger €11.8bn figure; not verified. Audit 2026-10-28: El Español (2026-07-28) reports environmental approval in July 2026; total €11.8bn, €7.5bn first phase; construction not started."
     },
     {
       "id": "ESP-011",
@@ -428,7 +428,7 @@
       "reversal_reason": null,
       "date": "2024-09",
       "still_current": null,
-      "summary": "MareNostrum 5, an Atos-built EuroHPC supercomputer hosted at BSC, uses Nvidia H100 GPUs with Intel Sapphire Rapids CPUs in its main accelerated partition; it was in production use training Spain's ALIA models from 2024.",
+      "summary": "MareNostrum 5, an Atos-built EuroHPC supercomputer hosted at BSC, uses Nvidia Hopper GPUs with Intel Sapphire Rapids CPUs in its main accelerated partition; it was in production use training Spain's ALIA models from 2024.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -451,7 +451,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Hardware is from HPCwire's 2022 procurement report (€151.4m, split between EuroHPC JU and a Spain/Portugal/Turkey consortium); operational use is from Xataka's ALIA report. The sources cover different facts, so not counted as corroboration. H100 count not found."
+      "analyst_inference": "Hardware is from HPCwire's 2022 procurement report (€151.4m, split between EuroHPC JU and a Spain/Portugal/Turkey consortium); operational use is from Xataka's ALIA report. The sources cover different facts, so not counted as corroboration. H100 count not found. Audit 2026-10-28: HPCwire says Hopper (not H100 explicitly) and lists Lenovo ThinkSystem alongside Atos; ALIA training use not re-verified."
     },
     {
       "id": "ESP-012",
@@ -517,7 +517,22 @@
       "null_reason": "no AI/data-centre-dedicated power plant surfaced in facilities searches; budget spent on higher-priority layers"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "ESP-002",
+        "ESP-003",
+        "ESP-004",
+        "ESP-005",
+        "ESP-009",
+        "ESP-010",
+        "ESP-011"
+      ],
+      "note": "Source-verified corrections and audit notes: ESP-002, ESP-003, ESP-004, ESP-005, ESP-009, ESP-010, ESP-011"
+    }
+  ],
   "research_gaps": [
     "Is the Interior Ministry's Huawei wiretap-storage (SITEL) arrangement still in force after the 2021-2025 framework ended, and was it re-tendered without Huawei following US/EU warnings?",
     "Was the RedIRIS router tender re-issued, and which vendor won?",

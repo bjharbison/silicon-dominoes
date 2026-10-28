@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "IND",
   "name": "India",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T09:19:58Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -208,7 +208,7 @@
       "reversal_reason": null,
       "date": "2026-04-28",
       "still_current": null,
-      "summary": "Google announced a US$15bn, gigawatt-scale AI hub in Visakhapatnam with Airtel and AdaniConneX, to be built 2026-2030; Airtel adds a cable landing station. A foundation stone for the planned 1 GW site was laid in April 2026.",
+      "summary": "Google announced a US$15bn, gigawatt-scale AI hub in Visakhapatnam with Airtel and AdaniConneX, to be built 2026-2030; Airtel adds a cable landing station. A foundation stone was laid in April 2026.",
       "announced_value_usd": 15000000000,
       "verified_value_usd": null,
       "sources": [
@@ -239,7 +239,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Ownership split not stated: Google is the announcing investor and the hub is branded a Google Cloud AI hub, so Google is treated as controller (us); AdaniConneX co-develops core infrastructure and Airtel supplies connectivity, either could hold building ownership. Tier 4 reads the foundation-stone ceremony as construction start. US$15bn is announced, described variously as Google's and as Airtel-plus-Google combined."
+      "analyst_inference": "Ownership split not stated: Google is the announcing investor and the hub is branded a Google Cloud AI hub, so Google is treated as controller (us); AdaniConneX co-develops core infrastructure and Airtel supplies connectivity, either could hold building ownership. Tier 4 reads the foundation-stone ceremony as construction start. US$15bn is announced, described variously as Google's and as Airtel-plus-Google combined. Audit 2026-10-28: W.Media (2026-04-28) confirms the ground-breaking and \"GW-scale\" but not \"1 GW\" or the 2026-2030 window."
     },
     {
       "id": "IND-006",
@@ -334,7 +334,7 @@
       "reversal_reason": null,
       "date": "2025-06-24",
       "still_current": null,
-      "summary": "Under the IndiaAI Mission's first two GPU tenders, about 17,300 accelerators had reportedly been installed by June 2025, mainly Nvidia H100/H200/B200 plus AMD MI300X, operated by Indian providers; Yotta held the largest share, including H100s for Sarvam.",
+      "summary": "Under the IndiaAI Mission's first two GPU tenders, about 17,300 accelerators had reportedly been installed by June 2025, mainly Nvidia H100/H200 plus AMD MI300X, operated by Indian providers including Yotta, whose H100s serve Sarvam.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -365,7 +365,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Chip vendor is the controller (firmware/drivers), so pole us. tele.net confirms workload allocation to Yotta, NxtGen and E2E but not GPU makes, so it does not corroborate the GPU details; marked uncorroborated. Installation counts are 'reported'. No Huawei Ascend deployment found. Business Standard (Feb 2026) cites nearly 40,000 GPUs nationally."
+      "analyst_inference": "Chip vendor is the controller (firmware/drivers), so pole us. tele.net confirms workload allocation to Yotta, NxtGen and E2E but not GPU makes, so it does not corroborate the GPU details; marked uncorroborated. Installation counts are 'reported'. No Huawei Ascend deployment found. Business Standard (Feb 2026) cites nearly 40,000 GPUs nationally. Audit 2026-10-28: Inc42 names H100, H200, MI300X, A100, L40S and L4 (no B200) and does not say Yotta held the largest share; it relays the same report, so no corroboration."
     },
     {
       "id": "IND-009",
@@ -565,7 +565,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "No order naming Hikvision or Dahua was seen; the exclusion works through certification, which officials told Reuters was partly driven by China concerns, so reason coded geopolitical rather than regulatory. Tier 5 reflects their ~30% installed market share (Counterpoint via Reuters). Existing installations are not ordered removed per the sources."
+      "analyst_inference": "No order naming Hikvision or Dahua was seen; the exclusion works through certification, which officials told Reuters was partly driven by China concerns, so reason coded geopolitical rather than regulatory. Tier 5 reflects their ~30% installed market share (Counterpoint via Reuters). Existing installations are not ordered removed per the sources. Audit 2026-10-28: Pages read (MediaNama, The News Minute) confirm the April 2026 certification regime but not a source-code requirement; Indian brands held over 80% of the market by Feb 2026, so the ~30% Chinese share is dated."
     }
   ],
   "layers_searched": {
@@ -588,7 +588,18 @@
       "result": "coded"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "IND-005",
+        "IND-008",
+        "IND-012"
+      ],
+      "note": "Source-verified corrections and audit notes: IND-005, IND-008, IND-012"
+    }
+  ],
   "research_gaps": [
     "Obtain the DoT licence amendment / NSDTT text (S1) and confirm whether Huawei or ZTE ever received trusted-source status; is any Huawei/ZTE 4G equipment still in Airtel or Vodafone Idea networks?",
     "Vodafone Idea and BSNL 5G/4G vendors (BSNL uses TCS/Tejas/C-DOT domestic stack, not researched here).",

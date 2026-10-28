@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "SDN",
   "name": "Sudan",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T21:18:51Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -66,7 +66,7 @@
           "url": "https://sudantribune.com/?p=14948",
           "publisher": "Sudan Tribune (republishing Balancing Act)",
           "source_tier": "S3",
-          "date": "2006-03-07",
+          "date": "2006-03-06",
           "retrieved_at": "2026-10-23T21:10:00Z",
           "opened": true
         }
@@ -115,7 +115,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Tier 5 reflects de facto operational use as a substitute network during the war, not any licence or contract; terminal counts are not reported. Use by the warring parties is not established in the sources opened. Whether use continues in October 2026 was not checked."
+      "analyst_inference": "Tier 5 reflects de facto operational use as a substitute network during the war, not any licence or contract; terminal counts are not reported. Use by the warring parties is not established in the sources opened. Whether use continues in October 2026 was not checked. Audit 2026-10-28: Gizmodo (2024-05-02) reports Starlink still working in Sudan after the cut-off."
     },
     {
       "id": "SDN-004",
@@ -165,7 +165,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Coded regulatory (licensing) rather than geopolitical; Dabanga notes unconfirmed allegations of government pressure. The sources do not confirm the cut-off was actually carried out, so still_current is null. Internet Society is an advocacy organisation, hence S4."
+      "analyst_inference": "Coded regulatory (licensing) rather than geopolitical; Dabanga notes unconfirmed allegations of government pressure. The sources do not confirm the cut-off was actually carried out, so still_current is null. Internet Society is an advocacy organisation, hence S4. Audit 2026-10-28: Gizmodo (2024-05-02) reports terminals still operating after the 30 April 2024 deadline, so the cut-off may not have been carried out."
     }
   ],
   "layers_searched": {
@@ -193,7 +193,18 @@
       "null_reason": "no AI/data-centre-specific power evidence surfaced"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "SDN-002",
+        "SDN-003",
+        "SDN-004"
+      ],
+      "note": "Source-verified corrections and audit notes: SDN-002, SDN-003, SDN-004"
+    }
+  ],
   "research_gaps": [
     "Which vendors supply the RAN and core of Zain Sudan, MTN Sudan and Sudani (Sudatel) today, and has wartime reconstruction since 2023 relied on Huawei/ZTE or others?",
     "How much operator infrastructure (switches, data centres in Khartoum) was destroyed or captured during the war, and have any operators formally exited or written down Sudan operations (e.g. MTN Group impairments)? The February 2024 nationwide outage (Sudani, MTN down; Zain forced off in River Nile and Port Sudan, per Reuters via The New Arab) was attributed by SUNA and sector sources to the RSF, which denied it.",

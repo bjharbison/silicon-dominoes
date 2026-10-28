@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "MWI",
   "name": "Malawi",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T17:18:55Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -55,7 +55,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Equipment vendor Huawei sets the pole. Tier 4 = loan signed and construction launched; completion not confirmed. AidData (research dataset, treated as S2) gives RMB 693m, World Bank DRS face value about US$100.5m, disbursed RMB 299m by June 2023 amid Malawi debt-distress rescheduling talks; value fields left null because this is the loan, not a verified project award. Phase I (2017-18, 28 districts, about $23m) was also Huawei-built with ESCOM per Developing Telecoms.",
+      "analyst_inference": "Equipment vendor Huawei sets the pole. Tier 4 = loan signed and construction launched; completion not confirmed. AidData (research dataset, treated as S2) gives RMB 693m, World Bank DRS face value about US$100.5m, disbursed RMB 299m by June 2023 amid Malawi debt-distress rescheduling talks; value fields left null because this is the loan, not a verified project award. Phase I (2017-18, 28 districts, about $23m) was also Huawei-built with ESCOM per Developing Telecoms. Audit 2026-10-28: AidData: RMB 299.3m disbursed by June 2023; rescheduling unresolved July 2023; Phase II completion not confirmed.",
       "bundle_id": "MWI-B1"
     },
     {
@@ -74,7 +74,7 @@
       "reversal_of": null,
       "reversal_reason": null,
       "date": "2022-07",
-      "still_current": null,
+      "still_current": true,
       "summary": "Malawi's first National Data Centre, in Blantyre, was launched in July 2022 to host government-wide systems; it was built by Huawei as part of the National Fibre Backbone project.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -125,7 +125,7 @@
       "reversal_of": null,
       "reversal_reason": null,
       "date": "2026-04",
-      "still_current": null,
+      "still_current": true,
       "summary": "A World Bank-funded National Data Centre in Lilongwe, begun under the Digital Malawi Foundation Project, was reported fully completed in April 2026, already hosting eleven government systems and six co-locating ministries, linked to the Blantyre site.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -267,7 +267,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Licence issued = tier 4. Single opened source. Satellite access network, controlled by the US operator."
+      "analyst_inference": "Licence issued = tier 4. Single opened source. Satellite access network, controlled by the US operator. Audit 2026-10-28: An unopened search result reports Starlink's later commercial launch in Malawi."
     },
     {
       "id": "MWI-007",
@@ -301,7 +301,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Partial pause, not an exit. Coded commercial: the suspension was Starlink's response to pricing and foreign-exchange constraints, not a security or alignment decision, though a regulator's price ruling triggered it. Whether new sales have resumed was not checked."
+      "analyst_inference": "Partial pause, not an exit. Coded commercial: the suspension was Starlink's response to pricing and foreign-exchange constraints, not a security or alignment decision, though a regulator's price ruling triggered it. Whether new sales have resumed was not checked. Audit 2026-10-28: Coding a temporary sales pause as a tier-4 reversal is an analytic choice the source does not settle; whether sales resumed was not checked."
     },
     {
       "id": "MWI-008",
@@ -361,7 +361,20 @@
       "null_reason": "no AI- or data-centre-specific power evidence surfaced"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "MWI-002",
+        "MWI-003",
+        "MWI-001",
+        "MWI-006",
+        "MWI-007"
+      ],
+      "note": "Source-verified corrections and audit notes: MWI-002, MWI-003, MWI-001, MWI-006, MWI-007"
+    }
+  ],
   "research_gaps": [
     "Which vendor supplied Airtel Malawi's 5G (56 sites, Nov 2025) and its RAN/core generally? DCD says the vendor is unknown.",
     "Which vendor supported TNM's commercial 5G launch (~July 2025), and is Huawei TNM's core as well as RAN supplier today?",

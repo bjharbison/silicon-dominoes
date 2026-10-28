@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "JPN",
   "name": "Japan",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T09:19:15Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -193,11 +193,19 @@
           "date": null,
           "retrieved_at": "2026-10-23T09:10:00Z",
           "opened": false
+        },
+        {
+          "url": "https://oecd.ai/en/dashboards/policy-initiatives/ai-bridging-cloud-infrastructure-30-abci-30",
+          "publisher": "OECD.AI Policy Navigator",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-28T15:50:00Z",
+          "opened": true
         }
       ],
       "corroborated": true,
       "confidence": "high",
-      "analyst_inference": "The arXiv paper is written by the operator's own staff, treated as S1. Its January 2025 operational date was a plan at submission (Nov 2024); later confirmation was not fetched. GPU count from arXiv; HPE integrator and METI funding from StorageReview. The facility itself is domestically owned (AIST); only the accelerator layer is coded."
+      "analyst_inference": "The arXiv paper is written by the operator's own staff, treated as S1. Its January 2025 operational date was a plan at submission (Nov 2024); later confirmation was not fetched. GPU count from arXiv; HPE integrator and METI funding from StorageReview. The facility itself is domestically owned (AIST); only the accelerator layer is coded. Audit 2026-10-28: OECD.AI confirms ABCI 3.0 fully operational in January 2025, resolving the note that the date was only planned."
     },
     {
       "id": "JPN-005",
@@ -365,7 +373,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Models used through OpenAI's service, so pole us. The US$3bn is an annual announced spend, not a verified contract value. Operational status of the JV and scale of Cristal deployment were not confirmed this run."
+      "analyst_inference": "Models used through OpenAI's service, so pole us. The US$3bn is an annual announced spend, not a verified contract value. Operational status of the JV and scale of Cristal deployment were not confirmed this run. Audit 2026-10-28: AP names SoftBank Group (not SoftBank Corp.) as OpenAI's 50:50 partner."
     },
     {
       "id": "JPN-009",
@@ -413,7 +421,7 @@
       "id": "JPN-010",
       "layer": "models",
       "pole": "domestic",
-      "controller": "Digital Agency (Gennai); domestic LLM developers (unnamed)",
+      "controller": "Digital Agency (Gennai); NTT DATA (tsuzumi 2), Fujitsu (Takane 32B), Preferred Networks (PLaMo 2.0 Prime)",
       "local_actor": "Digital Agency",
       "builder": null,
       "financier": null,
@@ -425,7 +433,7 @@
       "reversal_of": null,
       "reversal_reason": null,
       "date": "2026-07-10",
-      "still_current": null,
+      "still_current": true,
       "summary": "Gennai, built in-house by the Digital Agency for about 180,000 civil servants in FY2026, is trialling domestic LLMs: a call for candidates in December 2025, a domestic-cloud trial from July 2026, and a PLaMo Translate tool added.",
       "announced_value_usd": null,
       "verified_value_usd": null,
@@ -441,7 +449,7 @@
       ],
       "corroborated": false,
       "confidence": "medium",
-      "analyst_inference": "Pilot stage, so tier 2. The page names no domestic LLM vendor; PLaMo is Preferred Networks' model family, but the page does not say so. base_model unknown. Gennai software itself was released open source in April 2026."
+      "analyst_inference": "Pilot stage, so tier 2. The page names no domestic LLM vendor; PLaMo is Preferred Networks' model family, but the page does not say so. base_model unknown. Gennai software itself was released open source in April 2026. Audit 2026-10-28: The Digital Agency page names the domestic model vendors (NTT DATA, Fujitsu, Preferred Networks) on SAKURA Cloud; December 2025 call date not confirmed; an unopened search result says the pilot also tests Claude and Amazon Nova."
     },
     {
       "id": "JPN-011",
@@ -558,7 +566,18 @@
       "null_reason": "no AI- or data-centre-specific power evidence surfaced in the searches run"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "JPN-004",
+        "JPN-008",
+        "JPN-010"
+      ],
+      "note": "Source-verified corrections and audit notes: JPN-004, JPN-008, JPN-010"
+    }
+  ],
   "research_gaps": [
     "Current RAN and core vendors of NTT Docomo, KDDI and Rakuten Mobile (Rakuten's Open RAN suppliers), and whether SoftBank has since removed Huawei/ZTE from its 4G network.",
     "Is the December 2018 government procurement guideline still applied, and has it been extended (e.g. to critical infrastructure under the Economic Security Promotion Act)?",

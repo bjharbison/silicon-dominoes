@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "ZAF",
   "name": "South Africa",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-24T01:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -47,7 +47,7 @@
       ],
       "corroborated": true,
       "confidence": "high",
-      "analyst_inference": "Equipment rule: Huawei is the vendor, so pole prc. rain is a smaller data-focused operator, but its 5G core is Huawei. Whether Johannesburg migration completed and current vendor mix were not checked."
+      "analyst_inference": "Equipment rule: Huawei is the vendor, so pole prc. rain is a smaller data-focused operator, but its 5G core is Huawei. Whether Johannesburg migration completed and current vendor mix were not checked. Audit 2026-10-28: Light Reading confirms the 2020 SA core but not Huawei supply of the 2019 network (rests on RCR). AUDIT-2026-10-25 judged the Light Reading item Huawei-written (S4); not reclassified here (judgment for Brian, would remove corroboration)."
     },
     {
       "id": "ZAF-002",
@@ -88,7 +88,7 @@
       "layer": "silicon",
       "pole": "us",
       "controller": "Nvidia",
-      "local_actor": "Cassava Technologies / Africa Data Centres; CSIR NICIS (partner)",
+      "local_actor": "Cassava Technologies / Africa Data Centres",
       "builder": null,
       "financier": null,
       "base_model": null,
@@ -123,7 +123,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Equipment rule: Nvidia accelerators, so pole us. Tier 4 because deployment has started but full operation is not reported. GPU model and actual installed count in South Africa not confirmed; the US$720m is continental, so left out of value fields.",
+      "analyst_inference": "Equipment rule: Nvidia accelerators, so pole us. Tier 4 because deployment has started but full operation is not reported. GPU model and actual installed count in South Africa not confirmed; the US$720m is continental, so left out of value fields. Audit 2026-10-28: CSIR NICIS not in either source; removed from local_actor. SA rollout slipped from June 2025 to March 2026; Cassava reported 12,000 Nvidia GPUs acquired (Nov 2025).",
       "bundle_id": "ZAF-B1"
     },
     {
@@ -251,7 +251,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Pole domestic: weights held by a South African firm; trained from scratch so base_model null. Tier 5 reflects public release, not evidence of broad or government adoption. Licence terms not confirmed. A private start-up, not a state model."
+      "analyst_inference": "Pole domestic: weights held by a South African firm; trained from scratch so base_model null. Tier 5 reflects public release, not evidence of broad or government adoption. Licence terms not confirmed. A private start-up, not a state model. Audit 2026-10-28: Model card: licence CC BY-NC 4.0 (non-commercial)."
     },
     {
       "id": "ZAF-007",
@@ -293,7 +293,7 @@
       ],
       "corroborated": true,
       "confidence": "low",
-      "analyst_inference": "Pole null: three partners from three poles (Huawei prc, IBM us, Gijima domestic) and the split of hardware, software and operation is not documented. Confidence low on control, though the partnership itself is corroborated. Current operation not confirmed."
+      "analyst_inference": "Pole null: three partners from three poles (Huawei prc, IBM us, Gijima domestic) and the split of hardware, software and operation is not documented. Confidence low on control, though the partnership itself is corroborated. Current operation not confirmed. Audit 2026-10-28: Gijima is prime contractor, with IBM and Huawei as equipment suppliers."
     },
     {
       "id": "ZAF-008",
@@ -351,7 +351,19 @@
       "null_reason": "no AI-specific dedicated power evidence surfaced; a September 2026 civil-society call to pause data-centre construction over water and power was found but names no halted project"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "ZAF-001",
+        "ZAF-003",
+        "ZAF-006",
+        "ZAF-007"
+      ],
+      "note": "Source-verified corrections and audit notes: ZAF-001, ZAF-003, ZAF-006, ZAF-007"
+    }
+  ],
   "research_gaps": [
     "Vodacom South Africa's RAN and core vendors: TechCentral (2019) calls Huawei a large Vodacom supplier, but Vodafone's 2019 Huawei core pause was Europe-only; current split unknown.",
     "Does Huawei hold any share of MTN South Africa or Cell C/Telkom radio networks?",

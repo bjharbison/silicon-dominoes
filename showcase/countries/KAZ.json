@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "KAZ",
   "name": "Kazakhstan",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T09:35:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -198,7 +198,7 @@
       "layer": "facilities",
       "pole": "us",
       "controller": "Firebird",
-      "local_actor": "Kazakhtelecom; Ministry of AI and Digital Development",
+      "local_actor": "KT-Telecom (Kazakhtelecom subsidiary); Ministry of AI and Digital Development",
       "builder": null,
       "financier": null,
       "base_model": null,
@@ -209,8 +209,8 @@
       "reversal_of": null,
       "reversal_reason": null,
       "date": "2026-06",
-      "still_current": null,
-      "summary": "US infrastructure firm Firebird signed a strategic cooperation agreement with the AI ministry and a binding term sheet with Kazakhtelecom for 'Data Center Valley' at Ekibastuz: two 125 MW AI data centres planned for 2027-28, about US$10bn announced.",
+      "still_current": true,
+      "summary": "US infrastructure firm Firebird signed a strategic cooperation agreement with the AI ministry and a binding term sheet with Kazakhtelecom's KT-Telecom for 'Data Center Valley' at Ekibastuz: two 125 MW AI data centres planned for 2027-28, about US$10bn announced.",
       "announced_value_usd": 10000000000,
       "verified_value_usd": null,
       "sources": [
@@ -241,7 +241,7 @@
       ],
       "corroborated": true,
       "confidence": "low",
-      "analyst_inference": "Tier 2: a term sheet and framework agreement, no financing or construction start reported. Pole us is a tentative reading from the Prime Minister's attribution of the US$10bn investment to Firebird; ownership/operation is not stated, and Kazakhtelecom could be co-owner. Nvidia is named as Firebird's partner but no chip order is identified. 300 MW of power available, 1 GW target."
+      "analyst_inference": "Tier 2: a term sheet and framework agreement, no financing or construction start reported. Pole us is a tentative reading from the Prime Minister's attribution of the US$10bn investment to Firebird; ownership/operation is not stated, and Kazakhtelecom could be co-owner. Nvidia is named as Firebird's partner but no chip order is identified. 300 MW of power available, 1 GW target. Audit 2026-10-28: Times of Central Asia (updated 2026-09-30): site surveys and excavation under way, first 125 MW due H1 2027, no construction start or financing close reported; values do not reconcile (US$5bn first phase vs over US$10bn)."
     },
     {
       "id": "KAZ-007",
@@ -499,7 +499,16 @@
       "null_reason": "only AI-linked power evidence is the 300 MW available at Ekibastuz for Data Center Valley (captured in KAZ-006); no dedicated plant or utility filing found"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "KAZ-006"
+      ],
+      "note": "Source-verified corrections and audit notes: KAZ-006"
+    }
+  ],
   "research_gaps": [
     "Which vendors supply 5G/4G RAN and core for Kazakhtelecom/Tele2-Altel and Beeline (Veon)? Is Huawei an incumbent RAN supplier, and what does the October 2025 Huawei-Tele2/Altel memorandum cover?",
     "Huawei-Samruk-Kazyna purchase agreement (July 2026): what equipment, value and binding status?",

@@ -3,7 +3,7 @@
   "spec_version": "0.2",
   "iso3": "RUS",
   "name": "Russian Federation",
-  "review_status": "unreviewed",
+  "review_status": "audited",
   "coded_at": "2026-10-23T17:20:00Z",
   "coded_by": "claude scheduled desk pass",
   "findings": [
@@ -47,7 +47,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Tier 5 is the tier of the thing reversed: installed, operating mobile network equipment whose vendor support was withdrawn. Ericsson cited sanctions analysis and 'recent events'; coded sanctions per the desk rule for post-2022 Western exits. Ericsson is Swedish, so pole third."
+      "analyst_inference": "Tier 5 is the tier of the thing reversed: installed, operating mobile network equipment whose vendor support was withdrawn. Ericsson cited sanctions analysis and 'recent events'; coded sanctions per the desk rule for post-2022 Western exits. Ericsson is Swedish, so pole third. Audit 2026-10-28: RCR (2022-04-11) confirms indefinite suspension citing sanctions; \"ending support and upgrades\" not stated."
     },
     {
       "id": "RUS-002",
@@ -89,7 +89,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Tier 5 reflects the installed operator networks losing vendor support. Nokia cited the invasion and sanctions compliance; coded sanctions per the desk rule. Nokia is Finnish, so pole third. Whether any residual Nokia support continues via third parties is not known."
+      "analyst_inference": "Tier 5 reflects the installed operator networks losing vendor support. Nokia cited the invasion and sanctions compliance; coded sanctions per the desk rule. Nokia is Finnish, so pole third. Whether any residual Nokia support continues via third parties is not known. Audit 2026-10-28: Nokia applied for licences to keep supporting existing Russian networks, so support was not fully withdrawn at the exit announcement."
     },
     {
       "id": "RUS-003",
@@ -139,7 +139,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Both opened S2 sources assert embeddedness without operator-level shares or contracts, so this is a cautious tier-5 reading of an installed base. DCD (2023, relaying TASS) says Huawei was still operating in Russia but had cut staff. Current Huawei RAN/core share by operator was not found."
+      "analyst_inference": "Both opened S2 sources assert embeddedness without operator-level shares or contracts, so this is a cautious tier-5 reading of an installed base. DCD (2023, relaying TASS) says Huawei was still operating in Russia but had cut staff. Current Huawei RAN/core share by operator was not found. Audit 2026-10-28: The cited Light Reading article undercuts the claim (MTS named Ericsson and Alcatel as main suppliers; wide-scale 5G not started); only SDxCentral supports it."
     },
     {
       "id": "RUS-004",
@@ -257,7 +257,7 @@
       ],
       "corroborated": true,
       "confidence": "medium",
-      "analyst_inference": "Tier 3 = ongoing supply/distribution relationships reversed; already-installed chips keep running. AMD explicitly cited sanctions; Intel cited the invasion; Nvidia gave no reason and went beyond what sanctions then required. Coded sanctions per the desk rule. Grey imports reportedly continued then collapsed (Novaya Gazeta, 2026)."
+      "analyst_inference": "Tier 3 = ongoing supply/distribution relationships reversed; already-installed chips keep running. AMD explicitly cited sanctions; Intel cited the invasion; Nvidia gave no reason and went beyond what sanctions then required. Coded sanctions per the desk rule. Grey imports reportedly continued then collapsed (Novaya Gazeta, 2026). Audit 2026-10-28: Silicon UK describes Nvidia's halt as \"in line with US sanctions\", contrary to the note that it went beyond them; Belarus not mentioned."
     },
     {
       "id": "RUS-007",
@@ -324,7 +324,7 @@
       "reversal": false,
       "reversal_of": null,
       "reversal_reason": null,
-      "date": "2021",
+      "date": "2021-11",
       "still_current": null,
       "summary": "Sber's Christofari Neo supercomputer, used for its AI work, runs on 2021-era Nvidia A100 accelerators bought before the 2022 embargo, according to a July 2026 analysis.",
       "announced_value_usd": null,
@@ -341,7 +341,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "Single S3 analysis; date reflects the hardware vintage, not a confirmed install date. The same article estimates Russia's whole AI accelerator fleet at about 15,000 H100-equivalents (upper bound). Nvidia retains no support role after its exit, so 'us' reflects hardware origin and firmware lineage."
+      "analyst_inference": "Single S3 analysis; date reflects the hardware vintage, not a confirmed install date. The same article estimates Russia's whole AI accelerator fleet at about 15,000 H100-equivalents (upper bound). Nvidia retains no support role after its exit, so 'us' reflects hardware origin and firmware lineage. Audit 2026-10-28: Christofari Neo presented Nov 2021 with A100 80GB (Wikipedia, S5, not cited); date set as in AUDIT-2026-10-25 check."
     },
     {
       "id": "RUS-009",
@@ -409,7 +409,7 @@
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "US$193m is DCD's own conversion of 16bn roubles at the April 2025 rate. Capacity not stated; based on local-media reporting of a planning application. Tier 2 as a planned project without confirmed construction."
+      "analyst_inference": "US$193m is DCD's own conversion of 16bn roubles at the April 2025 rate. Capacity not stated; based on local-media reporting of a planning application. Tier 2 as a planned project without confirmed construction. Audit 2026-10-28: No newer information on construction found."
     },
     {
       "id": "RUS-011",
@@ -428,7 +428,7 @@
       "reversal_reason": null,
       "date": "2026-07",
       "still_current": null,
-      "summary": "Sber's GigaChat family is described as pretrained from scratch for Russian with Sber-owned weights, though its architecture, compute kernels and training recipe closely follow DeepSeek V3 and Qwen designs.",
+      "summary": "Sber's GigaChat family is described as pretrained from scratch for Russian with Sber-owned weights, with a mixture-of-experts design that credits DeepSeek.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -439,11 +439,19 @@
           "date": "2026-07-19",
           "retrieved_at": "2026-10-23T17:10:00Z",
           "opened": true
+        },
+        {
+          "url": "https://arxiv.org/html/2506.09440v1",
+          "publisher": "arXiv (Sber authors)",
+          "source_tier": "S1",
+          "date": null,
+          "retrieved_at": "2026-10-28T15:50:00Z",
+          "opened": true
         }
       ],
-      "corroborated": false,
-      "confidence": "low",
-      "analyst_inference": "Date is the analysis date; GigaChat launched earlier (2023 per a search snippet not opened). Weights domestic, so base_model null; architectural borrowing from DeepSeek/Qwen noted here rather than as a base model. Single S3 source citing Sber's arXiv paper. A July 2026 Duma law creates 'sovereign' and 'national' model categories."
+      "corroborated": true,
+      "confidence": "medium",
+      "analyst_inference": "Date is the analysis date; GigaChat launched earlier (2023 per a search snippet not opened). Weights domestic, so base_model null; architectural borrowing from DeepSeek/Qwen noted here rather than as a base model. Single S3 source citing Sber's arXiv paper. A July 2026 Duma law creates 'sovereign' and 'national' model categories. Audit 2026-10-28: Sber's arXiv paper 2506.09440 confirms pretraining from scratch and DeepSeek MoE influence; Qwen appears only as a benchmark."
     },
     {
       "id": "RUS-012",
@@ -462,7 +470,7 @@
       "reversal_reason": null,
       "date": "2026-07",
       "still_current": null,
-      "summary": "Yandex's Alice, T-Bank's T-Pro and MTS's Cotype models were initialised from Alibaba's Qwen open weights, according to the companies' own technical posts as summarised in a July 2026 analysis.",
+      "summary": "T-Bank's T-Pro (Qwen3) and MTS's Cotype (Qwen 2.5) are built on Alibaba's Qwen open weights; a July 2026 analysis says Yandex's Alice is too.",
       "announced_value_usd": null,
       "verified_value_usd": null,
       "sources": [
@@ -473,11 +481,19 @@
           "date": "2026-07-19",
           "retrieved_at": "2026-10-23T17:10:00Z",
           "opened": true
+        },
+        {
+          "url": "https://mts.ai/tech/mts-ai-launches-an-open-large-language-model/",
+          "publisher": "MTS AI (corporate)",
+          "source_tier": "S4",
+          "date": "2024-12-16",
+          "retrieved_at": "2026-10-28T15:50:00Z",
+          "opened": true
         }
       ],
       "corroborated": false,
       "confidence": "low",
-      "analyst_inference": "National actors control the fine-tuned weights, so domestic, with a PRC open-weight base. Qwen version not specified in the source. Single S3 source; the underlying Habr posts were not opened."
+      "analyst_inference": "National actors control the fine-tuned weights, so domestic, with a PRC open-weight base. Qwen version not specified in the source. Single S3 source; the underlying Habr posts were not opened. Audit 2026-10-28: T-Pro 2.0 on Qwen3 (arXiv 2512.10430) and Cotype on Qwen 2.5 (MTS AI) confirmed; Alice on Qwen not verified."
     },
     {
       "id": "RUS-013",
@@ -585,7 +601,23 @@
       "null_reason": "search budget spent on networks, silicon and models; no AI/DC-specific power project (e.g. Rosatom NPP-sited data centres) was researched"
     }
   },
-  "corrections": [],
+  "corrections": [
+    {
+      "date": "2026-10-28",
+      "audit": "AUDIT-2026-10-28.md",
+      "ids": [
+        "RUS-001",
+        "RUS-002",
+        "RUS-003",
+        "RUS-006",
+        "RUS-008",
+        "RUS-010",
+        "RUS-011",
+        "RUS-012"
+      ],
+      "note": "Source-verified corrections and audit notes: RUS-001, RUS-002, RUS-003, RUS-006, RUS-008, RUS-010, RUS-011, RUS-012"
+    }
+  ],
   "research_gaps": [
     "Current RAN/core vendor shares at MTS, MegaFon, Beeline and Tele2 (T2): how much Huawei/ZTE equipment is still being delivered after the 2022 pause, and how much legacy Ericsson/Nokia gear remains in service?",
     "Domestic base-station programme (Rostec/Bulat, Yadro, others): named manufacturers, operator contracts (MegaFon-Rostelecom deal headline seen, not opened), delivery volumes and the status of the 2025 5G pilots on domestic gear.",
